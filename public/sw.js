@@ -1,28 +1,61 @@
-const CACHE_NAME = "offlearn-v3";
+const CACHE_NAME = "offlearn-v4";
 
+// Precache runs while installing (usually online). Seeds the app shell + curriculum
+// index so a first offline open still has something to show.
 const PRECACHE_URLS = [
   "/",
   "/manifest.json",
+  "/curriculum/index.json",
 ];
+
+function cachePutSafe(cache, request, response) {
+  if (!response || !response.ok) return;
+  const clone = response.clone();
+  return cache.put(request, clone).catch(() => {
+    /* QuotaExceededError for huge assets — ignore */
+  });
+}
+
+async function offlineNavigationFallback(request) {
+  const origin = new URL(request.url).origin;
+  const candidates = [
+    request,
+    new Request(`${origin}/`),
+    new Request(`${origin}/index.html`),
+    new Request(`${origin}`),
+  ];
+  for (const key of candidates) {
+    const hit = await caches.match(key);
+    if (hit) return hit;
+  }
+  const cache = await caches.open(CACHE_NAME);
+  const keys = await cache.keys();
+  for (const req of keys) {
+    const u = req.url;
+    if (u.endsWith("/") || u.endsWith("index.html")) {
+      const hit = await caches.match(req);
+      if (hit) return hit;
+    }
+  }
+  return undefined;
+}
 
 self.addEventListener("install", (event) => {
   event.waitUntil(
-    caches.open(CACHE_NAME).then((cache) => {
-      return cache.addAll(PRECACHE_URLS);
-    })
+    caches.open(CACHE_NAME).then((cache) => cache.addAll(PRECACHE_URLS))
   );
   self.skipWaiting();
 });
 
 self.addEventListener("activate", (event) => {
   event.waitUntil(
-    caches.keys().then((keys) => {
-      return Promise.all(
+    caches.keys().then((keys) =>
+      Promise.all(
         keys
           .filter((key) => key !== CACHE_NAME)
           .map((key) => caches.delete(key))
-      );
-    })
+      )
+    )
   );
   self.clients.claim();
 });
@@ -30,80 +63,85 @@ self.addEventListener("activate", (event) => {
 self.addEventListener("fetch", (event) => {
   const url = new URL(event.request.url);
 
-  // Skip caching for model files (too large for Cache API)
-  if (url.pathname.startsWith("/models/")) {
+  // Same-origin only (ignore chrome-extension etc.)
+  if (url.origin !== self.location.origin) {
     return;
   }
 
-  // Curriculum must always hit the network first — stale index/lessons break the app
-  // when courses are added or removed. Offline: fall back to last cached copy.
-  if (url.pathname.startsWith("/curriculum/")) {
+  // Large model weights: network-first, cache when possible, offline = last good copy
+  if (url.pathname.startsWith("/models/")) {
     event.respondWith(
-      fetch(event.request)
-        .then((response) => {
-          if (response.ok) {
-            const clone = response.clone();
-            caches.open(CACHE_NAME).then((cache) => {
-              cache.put(event.request, clone);
-            });
-          }
-          return response;
-        })
-        .catch(() => caches.match(event.request))
+      caches.open(CACHE_NAME).then((cache) =>
+        fetch(event.request)
+          .then((response) => {
+            cachePutSafe(cache, event.request, response);
+            return response;
+          })
+          .catch(() => caches.match(event.request))
+      )
     );
     return;
   }
 
-  // Cache-first for static assets and WASM
+  // Curriculum: network-first so lists stay fresh online; offline uses cache
+  if (url.pathname.startsWith("/curriculum/")) {
+    event.respondWith(
+      caches.open(CACHE_NAME).then((cache) =>
+        fetch(event.request)
+          .then((response) => {
+            cachePutSafe(cache, event.request, response);
+            return response;
+          })
+          .catch(() => caches.match(event.request))
+      )
+    );
+    return;
+  }
+
+  // Static assets & WASM
   if (
     url.pathname.startsWith("/mediapipe-wasm/") ||
     url.pathname.startsWith("/knowledge-packs/") ||
+    url.pathname.startsWith("/_next/static/") ||
     url.pathname.endsWith(".js") ||
     url.pathname.endsWith(".css") ||
     url.pathname.endsWith(".wasm") ||
+    url.pathname.endsWith(".woff2") ||
     url.pathname.endsWith(".json")
   ) {
     event.respondWith(
-      caches.match(event.request).then((cached) => {
-        if (cached) return cached;
-        return fetch(event.request).then((response) => {
-          if (response.ok) {
-            const clone = response.clone();
-            caches.open(CACHE_NAME).then((cache) => {
-              cache.put(event.request, clone);
-            });
-          }
-          return response;
-        });
-      })
+      caches.open(CACHE_NAME).then((cache) =>
+        caches.match(event.request).then((cached) => {
+          if (cached) return cached;
+          return fetch(event.request).then((response) => {
+            cachePutSafe(cache, event.request, response);
+            return response;
+          });
+        })
+      )
     );
     return;
   }
 
-  // Network-first for navigation requests
+  // HTML navigations
   if (event.request.mode === "navigate") {
     event.respondWith(
-      fetch(event.request)
-        .then((response) => {
-          const clone = response.clone();
-          caches.open(CACHE_NAME).then((cache) => {
-            cache.put(event.request, clone);
-          });
-          return response;
-        })
-        .catch(() => {
-          return caches.match(event.request).then((cached) => {
-            return cached || caches.match("/");
-          });
-        })
+      caches.open(CACHE_NAME).then((cache) =>
+        fetch(event.request)
+          .then((response) => {
+            cachePutSafe(cache, event.request, response);
+            return response;
+          })
+          .catch(() => offlineNavigationFallback(event.request))
+      )
     );
     return;
   }
 
-  // Default: try cache, then network
+  // Default: cache then network
   event.respondWith(
-    caches.match(event.request).then((cached) => {
-      return cached || fetch(event.request);
-    })
+    caches.match(event.request).then(
+      (cached) => cached || fetch(event.request)
+    )
   );
 });
