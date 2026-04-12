@@ -144,4 +144,4 @@ export interface TeacherModule {
 
 // Navigation
 
-export type AppMode = "learn" | "testprep" | "module";
+export type AppMode = "learn" | "testprep";

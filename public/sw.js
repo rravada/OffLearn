@@ -1,7 +1,5 @@
-const CACHE_NAME = "offlearn-v4";
+const CACHE_NAME = "offlearn-v5";
 
-// Precache runs while installing (usually online). Seeds the app shell + curriculum
-// index so a first offline open still has something to show.
 const PRECACHE_URLS = [
   "/",
   "/manifest.json",
@@ -11,9 +9,7 @@ const PRECACHE_URLS = [
 function cachePutSafe(cache, request, response) {
   if (!response || !response.ok) return;
   const clone = response.clone();
-  return cache.put(request, clone).catch(() => {
-    /* QuotaExceededError for huge assets — ignore */
-  });
+  return cache.put(request, clone).catch(() => {});
 }
 
 async function offlineNavigationFallback(request) {
@@ -63,12 +59,10 @@ self.addEventListener("activate", (event) => {
 self.addEventListener("fetch", (event) => {
   const url = new URL(event.request.url);
 
-  // Same-origin only (ignore chrome-extension etc.)
   if (url.origin !== self.location.origin) {
     return;
   }
 
-  // Large model weights: network-first, cache when possible, offline = last good copy
   if (url.pathname.startsWith("/models/")) {
     event.respondWith(
       caches.open(CACHE_NAME).then((cache) =>
@@ -83,22 +77,39 @@ self.addEventListener("fetch", (event) => {
     return;
   }
 
-  // Curriculum: network-first so lists stay fresh online; offline uses cache
+  // Curriculum index: network-first so the course list can update after deploy.
+  // Lesson JSON: cache-first so reopening a lesson is instant after the first load.
   if (url.pathname.startsWith("/curriculum/")) {
+    const isCourseIndex =
+      url.pathname === "/curriculum/index.json" ||
+      url.pathname.endsWith("/curriculum/index.json");
+    if (isCourseIndex) {
+      event.respondWith(
+        caches.open(CACHE_NAME).then((cache) =>
+          fetch(event.request)
+            .then((response) => {
+              cachePutSafe(cache, event.request, response);
+              return response;
+            })
+            .catch(() => caches.match(event.request))
+        )
+      );
+      return;
+    }
     event.respondWith(
       caches.open(CACHE_NAME).then((cache) =>
-        fetch(event.request)
-          .then((response) => {
+        caches.match(event.request).then((cached) => {
+          if (cached) return cached;
+          return fetch(event.request).then((response) => {
             cachePutSafe(cache, event.request, response);
             return response;
-          })
-          .catch(() => caches.match(event.request))
+          });
+        })
       )
     );
     return;
   }
 
-  // Static assets & WASM
   if (
     url.pathname.startsWith("/mediapipe-wasm/") ||
     url.pathname.startsWith("/knowledge-packs/") ||
@@ -123,7 +134,6 @@ self.addEventListener("fetch", (event) => {
     return;
   }
 
-  // HTML navigations
   if (event.request.mode === "navigate") {
     event.respondWith(
       caches.open(CACHE_NAME).then((cache) =>
@@ -138,7 +148,6 @@ self.addEventListener("fetch", (event) => {
     return;
   }
 
-  // Default: cache then network
   event.respondWith(
     caches.match(event.request).then(
       (cached) => cached || fetch(event.request)

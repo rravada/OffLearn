@@ -3,21 +3,14 @@
 import { useEffect, useRef, useState, useCallback } from "react";
 import { useAppStore } from "@/lib/store/useAppStore";
 import { LLMSession, checkWebGPUSupport } from "@/lib/inference/mediapipe";
-import {
-  getMeta,
-  setMeta,
-  getTeacherModules,
-  deleteTeacherModule,
-} from "@/lib/db/indexeddb";
+import { getMeta, setMeta } from "@/lib/db/indexeddb";
 import { LoadingScreen } from "@/components/LoadingScreen";
 import { WelcomeScreen } from "@/components/WelcomeScreen";
 import { Sidebar } from "@/components/layout/Sidebar";
 import { TutorPanel } from "@/components/layout/TutorPanel";
 import { LearnView } from "@/components/views/LearnView";
 import { TestPrepView } from "@/components/views/TestPrepView";
-import { CreateModuleView } from "@/components/views/CreateModuleView";
-import { ModuleStudyView } from "@/components/views/ModuleStudyView";
-import type { CurriculumIndex, TeacherModule } from "@/types";
+import type { CurriculumIndex } from "@/types";
 
 export default function Home() {
   const {
@@ -38,18 +31,7 @@ export default function Home() {
   const [initChecked, setInitChecked] = useState(false);
   const [showWelcome, setShowWelcome] = useState(false);
   const [curriculum, setCurriculum] = useState<CurriculumIndex | null>(null);
-
-  const [teacherModules, setTeacherModules] = useState<TeacherModule[]>([]);
-  const [activeModuleId, setActiveModuleId] = useState<string | null>(null);
-  const [showCreateModule, setShowCreateModule] = useState(false);
-  const [moduleSendHandler, setModuleSendHandler] = useState<
-    ((text: string) => Promise<void>) | null
-  >(null);
-
-  const refreshModules = useCallback(async () => {
-    const modules = await getTeacherModules();
-    setTeacherModules(modules.sort((a, b) => b.createdAt - a.createdAt));
-  }, []);
+  const [learnHomeNonce, setLearnHomeNonce] = useState(0);
 
   useEffect(() => {
     let cancelled = false;
@@ -70,8 +52,6 @@ export default function Home() {
         } else {
           setHasVisited(true);
         }
-
-        await refreshModules();
       } catch (err) {
         console.error("Init failed:", err);
       } finally {
@@ -82,7 +62,7 @@ export default function Home() {
     return () => {
       cancelled = true;
     };
-  }, [setHasVisited, refreshModules]);
+  }, [setHasVisited]);
 
   useEffect(() => {
     if (!curriculum?.subjects?.length) return;
@@ -140,61 +120,18 @@ export default function Home() {
     await setMeta("hasVisited", "true");
   };
 
-  const handleOpenModule = useCallback(
-    (id: string) => {
-      setActiveModuleId(id);
-      setShowCreateModule(false);
-      setAppMode("module");
-    },
-    [setAppMode]
-  );
-
-  const handleCreateModule = useCallback(() => {
-    setShowCreateModule(true);
-    setActiveModuleId(null);
-    setAppMode("module");
-  }, [setAppMode]);
-
-  const handleDeleteModule = useCallback(
-    async (id: string) => {
-      await deleteTeacherModule(id);
-      await refreshModules();
-      if (activeModuleId === id) {
-        setActiveModuleId(null);
-        setShowCreateModule(false);
-        setAppMode("learn");
-      }
-    },
-    [activeModuleId, refreshModules, setAppMode]
-  );
-
-  const handleModuleCreated = useCallback(
-    async (module: TeacherModule) => {
-      await refreshModules();
-      setShowCreateModule(false);
-      setActiveModuleId(module.id);
-      setAppMode("module");
-    },
-    [refreshModules, setAppMode]
-  );
-
   const handleModeChange = useCallback(
-    (mode: "learn" | "testprep" | "module") => {
+    (mode: "learn" | "testprep") => {
       setAppMode(mode);
-      setShowCreateModule(false);
-      if (mode !== "module") {
-        setActiveModuleId(null);
-      }
     },
     [setAppMode]
   );
 
-  const handleBackFromModule = useCallback(() => {
-    setShowCreateModule(false);
-    setActiveModuleId(null);
-    setModuleSendHandler(null);
+  const goLearnHome = useCallback(() => {
     setAppMode("learn");
-  }, [setAppMode]);
+    setSelectedSubject(null);
+    setLearnHomeNonce((n) => n + 1);
+  }, [setAppMode, setSelectedSubject]);
 
   if (!initChecked) {
     return <div className="h-dvh bg-le-bg" />;
@@ -203,27 +140,10 @@ export default function Home() {
   const showLoading = modelStatus === "loading" && !showWelcome;
 
   const renderMainContent = () => {
-    if (appMode === "module" && showCreateModule) {
-      return (
-        <CreateModuleView
-          onBack={handleBackFromModule}
-          onModuleCreated={handleModuleCreated}
-        />
-      );
-    }
-    if (appMode === "module" && activeModuleId) {
-      return (
-        <ModuleStudyView
-          key={activeModuleId}
-          moduleId={activeModuleId}
-          onBack={handleBackFromModule}
-          onSendHandlerReady={(handler) => setModuleSendHandler(() => handler)}
-        />
-      );
-    }
     if (appMode === "learn" && curriculum) {
       return (
         <LearnView
+          key={learnHomeNonce}
           curriculum={curriculum}
           selectedSubject={selectedSubject}
         />
@@ -246,30 +166,20 @@ export default function Home() {
           appMode={appMode}
           selectedSubject={selectedSubject}
           onModeChange={handleModeChange}
+          onLearnHome={goLearnHome}
           onSubjectChange={(subject: string) => {
             setSelectedSubject(subject);
             if (appMode !== "learn") {
               handleModeChange("learn");
             }
           }}
-          teacherModules={teacherModules}
-          activeModuleId={activeModuleId}
-          onOpenModule={handleOpenModule}
-          onCreateModule={handleCreateModule}
-          onDeleteModule={handleDeleteModule}
         />
 
         <main className="flex min-w-0 flex-1 flex-col overflow-y-auto">
           {renderMainContent()}
         </main>
 
-        <TutorPanel
-          onSendOverride={
-            appMode === "module" && moduleSendHandler
-              ? moduleSendHandler
-              : undefined
-          }
-        />
+        <TutorPanel />
       </div>
     </>
   );

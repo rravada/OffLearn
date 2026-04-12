@@ -4,12 +4,14 @@ import { useRef, useEffect, useState, useCallback } from "react";
 import { X, Send, Sparkles } from "lucide-react";
 import { useAppStore } from "@/lib/store/useAppStore";
 import { LLMSession } from "@/lib/inference/mediapipe";
-import { cleanResponse, generateId } from "@/lib/utils";
+import { cleanResponse, generateId, cn } from "@/lib/utils";
 import type { Message } from "@/types";
 
 interface TutorPanelProps {
   onSendOverride?: (text: string) => Promise<void>;
 }
+
+const MAX_INPUT_PX = 200;
 
 export function TutorPanel({ onSendOverride }: TutorPanelProps = {}) {
   const {
@@ -28,7 +30,15 @@ export function TutorPanel({ onSendOverride }: TutorPanelProps = {}) {
 
   const [input, setInput] = useState("");
   const scrollRef = useRef<HTMLDivElement>(null);
-  const inputRef = useRef<HTMLInputElement>(null);
+  const textareaRef = useRef<HTMLTextAreaElement>(null);
+
+  const adjustTextareaHeight = useCallback(() => {
+    const el = textareaRef.current;
+    if (!el) return;
+    el.style.height = "auto";
+    const next = Math.min(el.scrollHeight, MAX_INPUT_PX);
+    el.style.height = `${next}px`;
+  }, []);
 
   useEffect(() => {
     if (scrollRef.current) {
@@ -37,10 +47,15 @@ export function TutorPanel({ onSendOverride }: TutorPanelProps = {}) {
   }, [tutorMessages, tutorStreamingContent]);
 
   useEffect(() => {
-    if (tutorOpen && inputRef.current) {
-      inputRef.current.focus();
+    if (tutorOpen && textareaRef.current) {
+      textareaRef.current.focus();
+      adjustTextareaHeight();
     }
-  }, [tutorOpen]);
+  }, [tutorOpen, adjustTextareaHeight]);
+
+  useEffect(() => {
+    adjustTextareaHeight();
+  }, [input, adjustTextareaHeight]);
 
   const handleSend = useCallback(async () => {
     const text = input.trim();
@@ -119,7 +134,6 @@ export function TutorPanel({ onSendOverride }: TutorPanelProps = {}) {
 
   return (
     <aside className="flex h-dvh w-[320px] flex-shrink-0 flex-col border-l border-le-border bg-le-surface animate-slide-in-right">
-      {/* Header */}
       <div className="flex items-center justify-between border-b border-le-border px-4 py-3">
         <div className="flex items-center gap-2">
           <Sparkles className="h-4 w-4 text-le-accent" />
@@ -137,7 +151,6 @@ export function TutorPanel({ onSendOverride }: TutorPanelProps = {}) {
         </button>
       </div>
 
-      {/* Messages */}
       <div ref={scrollRef} className="flex-1 overflow-y-auto px-4 py-4">
         {tutorMessages.length === 0 && !tutorStreamingContent && (
           <div className="flex flex-col items-center justify-center py-12 text-center">
@@ -168,12 +181,16 @@ export function TutorPanel({ onSendOverride }: TutorPanelProps = {}) {
         </div>
       </div>
 
-      {/* Input */}
       <div className="border-t border-le-border p-3">
-        <div className="flex items-center gap-2 rounded-lg border border-le-border bg-le-bg px-3 py-2">
-          <input
-            ref={inputRef}
-            type="text"
+        <div
+          className={cn(
+            "flex gap-2 rounded-xl border border-le-border bg-le-bg px-3 py-2",
+            "items-end"
+          )}
+        >
+          <textarea
+            ref={textareaRef}
+            rows={1}
             value={input}
             onChange={(e) => setInput(e.target.value)}
             onKeyDown={(e) => {
@@ -184,13 +201,15 @@ export function TutorPanel({ onSendOverride }: TutorPanelProps = {}) {
             }}
             placeholder="Ask the tutor..."
             disabled={isTutorGenerating || modelStatus !== "ready"}
-            className="flex-1 bg-transparent text-sm text-le-text placeholder:text-le-text-hint outline-none disabled:opacity-50"
+            className="max-h-[200px] min-h-[40px] w-0 flex-1 resize-none bg-transparent py-2 text-sm leading-relaxed text-le-text placeholder:text-le-text-hint outline-none disabled:opacity-50"
+            style={{ height: "40px" }}
           />
           <button
             type="button"
             onClick={handleSend}
             disabled={!input.trim() || isTutorGenerating || modelStatus !== "ready"}
-            className="rounded-md p-1.5 text-le-accent transition-colors hover:bg-le-accent-soft disabled:opacity-30"
+            className="mb-1.5 flex-shrink-0 rounded-md p-1.5 text-le-accent transition-colors hover:bg-le-accent-soft disabled:opacity-30"
+            aria-label="Send"
           >
             <Send className="h-4 w-4" />
           </button>
