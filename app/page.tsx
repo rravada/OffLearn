@@ -12,6 +12,7 @@ import { LearnView } from "@/components/views/LearnView";
 import { TestPrepView } from "@/components/views/TestPrepView";
 import type { CurriculumIndex } from "@/types";
 import { normalizeCurriculumIndex } from "@/lib/curriculum/normalizeCurriculumIndex";
+import { waitUntilSwControlling } from "@/lib/offline/waitUntilSwControlling";
 
 export default function Home() {
   const {
@@ -135,23 +136,53 @@ export default function Home() {
       }
     }, 2000);
 
-    LLMSession.getInstance((pct) => {
-      setModelProgress(pct);
-    })
-      .then(() => {
-        setModelStatus("ready");
-        setModelProgress(100);
-      })
-      .catch((err) => {
-        console.error("Model init failed:", err);
-        setModelStatus("error");
-        setModelError(
-          err instanceof Error ? err.message : "Failed to set up the tutor"
-        );
-      })
-      .finally(() => {
+    let cancelled = false;
+
+    void (async () => {
+      if (
+        process.env.NODE_ENV === "production" &&
+        typeof navigator !== "undefined" &&
+        "serviceWorker" in navigator
+      ) {
+        try {
+          await navigator.serviceWorker.ready;
+          await waitUntilSwControlling(12000);
+        } catch {
+          /* continue — model may still load; SW cache less reliable */
+        }
+      }
+
+      if (cancelled) {
         clearInterval(progressInterval);
-      });
+        return;
+      }
+
+      LLMSession.getInstance((pct) => {
+        setModelProgress(pct);
+      })
+        .then(() => {
+          if (cancelled) return;
+          setModelStatus("ready");
+          setModelProgress(100);
+        })
+        .catch((err) => {
+          if (cancelled) return;
+          console.error("Model init failed:", err);
+          setModelStatus("error");
+          setModelError(
+            err instanceof Error ? err.message : "Failed to set up the tutor"
+          );
+        })
+        .finally(() => {
+          clearInterval(progressInterval);
+        });
+    })();
+
+    return () => {
+      cancelled = true;
+      clearInterval(progressInterval);
+      modelInitStarted.current = false;
+    };
   }, [setModelStatus, setModelProgress, setModelError]);
 
   const handleWelcomeDismiss = async () => {

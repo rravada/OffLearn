@@ -1,4 +1,4 @@
-const CACHE_NAME = "offlearn-v12";
+const CACHE_NAME = "offlearn-v13";
 
 /**
  * Production: replaced in `out/sw.js` by scripts/bake-sw-remote-model.js from
@@ -105,28 +105,71 @@ function modelCacheKeyRequest(request) {
   return new Request(`${url.origin}${url.pathname}`, { method: "GET" });
 }
 
+/** One stable key for the env-configured remote .task (HF redirects hit many hosts). */
+function remoteGemmaCanonicalRequest() {
+  if (!BAKED_GEMMA_REMOTE_URL) return null;
+  try {
+    const u = new URL(BAKED_GEMMA_REMOTE_URL);
+    return new Request(`${u.origin}${u.pathname}`, { method: "GET" });
+  } catch {
+    return null;
+  }
+}
+
+async function findCachedTaskByFilename(cache, filename) {
+  const keys = await cache.keys();
+  for (const req of keys) {
+    try {
+      const u = new URL(req.url);
+      if (u.pathname.endsWith(`/${filename}`) || u.pathname.endsWith(filename)) {
+        const hit = await cache.match(req);
+        if (hit) return hit;
+      }
+    } catch {
+      /* ignore */
+    }
+  }
+  return undefined;
+}
+
 async function serveModelAsset(cache, request) {
-  const keyReq = modelCacheKeyRequest(request);
-  const fromCache = await cache.match(keyReq);
+  const url = new URL(request.url);
+  const canonical =
+    BAKED_GEMMA_REMOTE_URL && isRemoteGemmaModelRequest(url)
+      ? remoteGemmaCanonicalRequest()
+      : null;
+  const keyReq = canonical || modelCacheKeyRequest(request);
+
+  let fromCache = await cache.match(keyReq);
+  if (!fromCache && canonical) {
+    fromCache = await findCachedTaskByFilename(cache, "gemma-4-E2B-it-web.task");
+  }
   if (fromCache) return fromCache;
 
+  /** Full GET without client Range headers so we can store one 200 body for offline. */
+  const fetchReq = canonical || request;
+
   try {
-    const response = await fetch(request);
+    const response = await fetch(fetchReq);
     const fullOk =
       response &&
       response.ok &&
       response.status === 200 &&
       !response.headers.get("Content-Range");
     if (fullOk) {
+      const storeKey = canonical || modelCacheKeyRequest(request);
       try {
-        await cache.put(keyReq, response.clone());
+        await cache.put(storeKey, response.clone());
       } catch {
         /* disk quota / huge file — still return live response */
       }
     }
     return response;
   } catch {
-    const again = await cache.match(keyReq);
+    let again = await cache.match(keyReq);
+    if (!again && canonical) {
+      again = await findCachedTaskByFilename(cache, "gemma-4-E2B-it-web.task");
+    }
     if (again) return again;
     return new Response("", { status: 503, statusText: "Model not cached" });
   }
