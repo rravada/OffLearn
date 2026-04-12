@@ -89,4 +89,4 @@ OffLearn/
 
 ## License
 
-ISC
+[MIT](LICENSE)
