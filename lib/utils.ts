@@ -14,6 +14,7 @@ export function stripArtifactTokens(text: string): string {
 
 export function cleanResponse(text: string): string {
   return text
+    .replace(/\u200B|\uFEFF/g, "")
     .replace(/<end_of_turn>/g, "")
     .replace(/<start_of_turn>/g, "")
     .replace(/\[INST\]/g, "")
@@ -22,6 +23,7 @@ export function cleanResponse(text: string): string {
     .replace(/<eos>/g, "")
     .replace(/<bos>/g, "")
     .replace(/<pad>/g, "")
+    .replace(/\s+\n/g, "\n")
     .trim();
 }
 

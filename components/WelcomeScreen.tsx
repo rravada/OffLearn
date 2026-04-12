@@ -1,6 +1,7 @@
 "use client";
 
-import { Zap, BookOpen, Target } from "lucide-react";
+import { BookOpen, Target, WifiOff } from "lucide-react";
+import { BrandLogo } from "@/components/BrandLogo";
 
 interface WelcomeScreenProps {
   onStart: () => void;
@@ -8,7 +9,7 @@ interface WelcomeScreenProps {
 
 const FEATURES = [
   {
-    icon: Zap,
+    icon: WifiOff,
     title: "Runs 100% Offline",
     description:
       "A 2B parameter AI model runs entirely in your browser using WebGPU. No API keys. No servers.",
@@ -29,9 +30,10 @@ const FEATURES = [
 
 export function WelcomeScreen({ onStart }: WelcomeScreenProps) {
   return (
-    <div className="fixed inset-0 z-50 flex flex-col items-center justify-center bg-le-bg px-6">
+    <div className="le-app-shell fixed inset-0 z-50 flex flex-col items-center justify-center px-6">
       <div className="flex max-w-2xl flex-col items-center gap-10">
-        <div className="label-badge rounded-full border border-le-accent/30 bg-le-accent-soft px-4 py-1.5 text-le-accent">
+        <BrandLogo size={48} className="drop-shadow-[0_0_24px_rgba(240,165,0,0.35)]" />
+        <div className="label-badge rounded-full border border-le-mint/25 bg-le-mint/10 px-4 py-1.5 text-le-mint">
           GDG Solution Challenge — SDG 4: Quality Education
         </div>
 

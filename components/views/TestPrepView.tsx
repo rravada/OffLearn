@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useCallback, useEffect } from "react";
+import { useState, useCallback, useEffect, useRef } from "react";
 import { useAppStore } from "@/lib/store/useAppStore";
 import type { TestBank, TestQuestion, Difficulty } from "@/types";
 import { cn } from "@/lib/utils";
@@ -13,6 +13,7 @@ import {
   ArrowRight,
   RotateCcw,
   BarChart3,
+  Loader2,
 } from "lucide-react";
 
 const TEST_SECTIONS = [
@@ -37,7 +38,7 @@ const TEST_SECTIONS = [
     time: "~40 min",
     file: "/testprep/act-math.json",
   },
-];
+] as const;
 
 const DIFFICULTY_COLORS: Record<Difficulty, string> = {
   easy: "bg-le-green/15 text-le-green",
@@ -56,6 +57,12 @@ function DifficultyBadge({ difficulty }: { difficulty: Difficulty }) {
       {difficulty}
     </span>
   );
+}
+
+async function loadTestBankJson(url: string): Promise<TestBank> {
+  const res = await fetch(url);
+  if (!res.ok) throw new Error("Failed to load test bank");
+  return (await res.json()) as TestBank;
 }
 
 export function TestPrepView() {
@@ -80,20 +87,53 @@ export function TestPrepView() {
 
   const [activeSection, setActiveSection] = useState<string | null>(null);
   const [reviewMode, setReviewMode] = useState(false);
+  const [loadingSectionId, setLoadingSectionId] = useState<string | null>(null);
+  const bankCache = useRef<Map<string, TestQuestion[]>>(new Map());
+
+  useEffect(() => {
+    let cancelled = false;
+    (async () => {
+      await Promise.all(
+        TEST_SECTIONS.map(async (s) => {
+          if (bankCache.current.has(s.id)) return;
+          try {
+            const data = await loadTestBankJson(s.file);
+            if (!cancelled) bankCache.current.set(s.id, data.questions);
+          } catch {
+            /* offline or blocked — startPractice will try again */
+          }
+        })
+      );
+    })();
+    return () => {
+      cancelled = true;
+    };
+  }, []);
 
   const startPractice = useCallback(
     async (sectionId: string) => {
       const section = TEST_SECTIONS.find((s) => s.id === sectionId);
       if (!section) return;
 
+      const cached = bankCache.current.get(sectionId);
+      if (cached?.length) {
+        resetTestSession();
+        setCurrentTestBank(cached);
+        setActiveSection(sectionId);
+        return;
+      }
+
+      setLoadingSectionId(sectionId);
       try {
-        const res = await fetch(section.file);
-        const data = (await res.json()) as TestBank;
+        const data = await loadTestBankJson(section.file);
+        bankCache.current.set(sectionId, data.questions);
         resetTestSession();
         setCurrentTestBank(data.questions);
         setActiveSection(sectionId);
       } catch (err) {
         console.error("Failed to load test bank:", err);
+      } finally {
+        setLoadingSectionId(null);
       }
     },
     [resetTestSession, setCurrentTestBank]
@@ -189,18 +229,18 @@ Guide the student Socratically to understand WHY the correct answer is right wit
       <div className="flex flex-1 items-center justify-center px-8 py-12">
         <div className="w-full max-w-lg">
           <div className="flex flex-col items-center gap-4 text-center">
-            <div className="flex h-20 w-20 items-center justify-center rounded-full bg-le-accent-soft">
+            <div className="flex h-20 w-20 items-center justify-center rounded-full bg-gradient-to-br from-le-accent-soft to-le-violet/15 ring-1 ring-le-mint/20">
               <BarChart3 className="h-10 w-10 text-le-accent" />
             </div>
             <h1 className="heading text-3xl text-le-text">Practice Complete!</h1>
-            <p className="text-5xl font-bold text-le-accent">
+            <p className="text-5xl font-bold tabular-nums text-le-accent">
               {correct}/{total}
             </p>
             <p className="text-sm text-le-text-secondary">{pct}% correct</p>
             <p className="text-sm text-le-text-secondary">{encouragement}</p>
           </div>
 
-          <div className="mt-8 rounded-xl border border-le-border bg-le-surface p-5">
+          <div className="mt-8 rounded-xl border border-le-border bg-le-surface/80 p-5 shadow-sm backdrop-blur-sm">
             <p className="label-badge mb-3 text-le-text-hint">Topic Breakdown</p>
             <div className="space-y-2">
               {Object.entries(topicBreakdown).map(([topic, data]) => (
@@ -208,7 +248,7 @@ Guide the student Socratically to understand WHY the correct answer is right wit
                   <span className="text-le-text-secondary">{topic}</span>
                   <span
                     className={cn(
-                      "font-medium",
+                      "font-medium tabular-nums",
                       data.correct === data.total ? "text-le-green" : "text-le-red"
                     )}
                   >
@@ -231,7 +271,7 @@ Guide the student Socratically to understand WHY the correct answer is right wit
             <button
               type="button"
               onClick={goBackToMenu}
-              className="flex flex-1 items-center justify-center gap-2 rounded-xl bg-le-accent px-4 py-3 text-sm font-semibold text-le-bg transition-all hover:brightness-110"
+              className="flex flex-1 items-center justify-center gap-2 rounded-xl bg-gradient-to-r from-le-accent to-amber-500 px-4 py-3 text-sm font-semibold text-le-bg transition-all hover:brightness-110"
             >
               Try another section
             </button>
@@ -250,7 +290,7 @@ Guide the student Socratically to understand WHY the correct answer is right wit
     return (
       <div className="flex-1 overflow-y-auto px-8 py-8">
         <div className="mx-auto max-w-2xl">
-          <div className="flex items-center gap-3 mb-6">
+          <div className="mb-6 flex items-center gap-3">
             <button
               type="button"
               onClick={() => setReviewMode(false)}
@@ -273,14 +313,14 @@ Guide the student Socratically to understand WHY the correct answer is right wit
                 return (
                   <div
                     key={question.id}
-                    className="rounded-xl border border-le-border bg-le-surface p-5"
+                    className="rounded-xl border border-le-border bg-le-surface/80 p-5 shadow-sm"
                   >
-                    <div className="flex items-center gap-2 mb-2">
+                    <div className="mb-2 flex items-center gap-2">
                       <DifficultyBadge difficulty={question.difficulty} />
                       <span className="text-xs text-le-text-hint">{question.topic}</span>
                     </div>
-                    <p className="text-sm font-medium text-le-text mb-3">{question.question}</p>
-                    <div className="space-y-2 mb-4">
+                    <p className="mb-3 text-sm font-medium text-le-text">{question.question}</p>
+                    <div className="mb-4 space-y-2">
                       {question.options.map((opt, optIdx) => (
                         <div
                           key={optIdx}
@@ -293,7 +333,7 @@ Guide the student Socratically to understand WHY the correct answer is right wit
                                 : "border border-le-border text-le-text-secondary"
                           )}
                         >
-                          <span className="font-medium mr-2">
+                          <span className="mr-2 font-medium tabular-nums">
                             {String.fromCharCode(65 + optIdx)}.
                           </span>
                           {opt}
@@ -315,7 +355,7 @@ Guide the student Socratically to understand WHY the correct answer is right wit
             <button
               type="button"
               onClick={goBackToMenu}
-              className="rounded-xl bg-le-accent px-6 py-3 text-sm font-semibold text-le-bg transition-all hover:brightness-110"
+              className="rounded-xl bg-gradient-to-r from-le-accent to-amber-500 px-6 py-3 text-sm font-semibold text-le-bg transition-all hover:brightness-110"
             >
               Try another section
             </button>
@@ -333,11 +373,10 @@ Guide the student Socratically to understand WHY the correct answer is right wit
 
     return (
       <div className="flex flex-1 flex-col">
-        {/* Progress bar */}
-        <div className="border-b border-le-border bg-le-surface/50 px-8 py-4">
-          <div className="flex items-center justify-between mb-2">
+        <div className="border-b border-le-border bg-le-surface/50 px-8 py-4 backdrop-blur-sm">
+          <div className="mb-2 flex items-center justify-between">
             <div className="flex items-center gap-3">
-              <span className="text-sm font-medium text-le-text">
+              <span className="text-sm font-medium tabular-nums text-le-text">
                 Question {currentQuestionIndex + 1} of {total}
               </span>
               <span className="text-xs text-le-text-hint">—</span>
@@ -347,26 +386,23 @@ Guide the student Socratically to understand WHY the correct answer is right wit
           </div>
           <div className="h-1.5 w-full overflow-hidden rounded-full bg-le-elevated">
             <div
-              className="h-full rounded-full bg-le-accent transition-all"
+              className="h-full rounded-full bg-gradient-to-r from-le-mint/90 to-le-accent transition-all"
               style={{ width: `${(answered / total) * 100}%` }}
             />
           </div>
         </div>
 
-        {/* Question */}
         <div className="flex-1 overflow-y-auto px-8 py-8">
           <div className="mx-auto max-w-2xl">
             {question.passage && (
-              <div className="mb-6 rounded-lg border-l-4 border-le-text-hint bg-le-surface/50 px-6 py-4">
+              <div className="mb-6 rounded-lg border-l-4 border-le-violet/60 bg-le-surface/60 px-6 py-4 ring-1 ring-white/5">
                 <p className="text-sm italic leading-relaxed text-le-text-secondary">
                   {question.passage}
                 </p>
               </div>
             )}
 
-            <p className="text-lg font-medium leading-relaxed text-le-text">
-              {question.question}
-            </p>
+            <p className="text-lg font-medium leading-relaxed text-le-text">{question.question}</p>
 
             <div className="mt-6 space-y-3">
               {question.options.map((option, optIdx) => {
@@ -374,14 +410,15 @@ Guide the student Socratically to understand WHY the correct answer is right wit
                 const isCorrectOption = optIdx === question.correct;
                 const showResult = selectedAnswer !== null;
 
-                let cardStyle = "border-le-border bg-le-surface hover:border-le-border-strong hover:bg-le-elevated cursor-pointer";
+                let cardStyle =
+                  "border-le-border bg-le-surface/80 hover:border-le-mint/30 hover:bg-le-elevated cursor-pointer";
                 if (showResult) {
                   if (isCorrectOption) {
                     cardStyle = "border-le-green/40 bg-le-green/10";
                   } else if (isSelected && !answeredCorrectly) {
                     cardStyle = "border-le-red/40 bg-le-red/10";
                   } else {
-                    cardStyle = "border-le-border bg-le-surface opacity-60";
+                    cardStyle = "border-le-border bg-le-surface/60 opacity-60";
                   }
                 }
 
@@ -399,7 +436,7 @@ Guide the student Socratically to understand WHY the correct answer is right wit
                   >
                     <span
                       className={cn(
-                        "flex h-8 w-8 flex-shrink-0 items-center justify-center rounded-lg text-sm font-semibold",
+                        "flex h-8 w-8 flex-shrink-0 items-center justify-center rounded-lg text-sm font-semibold tabular-nums",
                         showResult && isCorrectOption
                           ? "bg-le-green/20 text-le-green"
                           : showResult && isSelected
@@ -429,7 +466,7 @@ Guide the student Socratically to understand WHY the correct answer is right wit
                     answeredCorrectly ? "bg-le-green/10" : "bg-le-red/10"
                   )}
                 >
-                  <div className="flex items-center gap-2 mb-2">
+                  <div className="mb-2 flex items-center gap-2">
                     {answeredCorrectly ? (
                       <CheckCircle2 className="h-5 w-5 text-le-green" />
                     ) : (
@@ -444,15 +481,13 @@ Guide the student Socratically to understand WHY the correct answer is right wit
                       {answeredCorrectly ? "Correct!" : "Not quite right"}
                     </span>
                   </div>
-                  <p className="text-sm leading-relaxed text-le-text-secondary">
-                    {question.explanation}
-                  </p>
+                  <p className="text-sm leading-relaxed text-le-text-secondary">{question.explanation}</p>
                 </div>
 
                 <button
                   type="button"
                   onClick={handleNextQuestion}
-                  className="mt-4 flex items-center gap-2 rounded-xl bg-le-accent px-6 py-3 text-sm font-semibold text-le-bg transition-all hover:brightness-110"
+                  className="mt-4 flex items-center gap-2 rounded-xl bg-gradient-to-r from-le-accent to-amber-500 px-6 py-3 text-sm font-semibold text-le-bg transition-all hover:brightness-110"
                 >
                   {currentQuestionIndex + 1 >= total ? "See results" : "Next question"}
                   <ArrowRight className="h-4 w-4" />
@@ -465,7 +500,6 @@ Guide the student Socratically to understand WHY the correct answer is right wit
     );
   }
 
-  // Test prep landing
   return (
     <div className="flex-1 overflow-y-auto px-8 py-8">
       <div className="mx-auto max-w-2xl">
@@ -475,30 +509,38 @@ Guide the student Socratically to understand WHY the correct answer is right wit
         </p>
 
         <div className="mt-8 grid gap-4 sm:grid-cols-3">
-          {TEST_SECTIONS.map((section) => (
-            <button
-              key={section.id}
-              type="button"
-              onClick={() => startPractice(section.id)}
-              className="group flex flex-col items-center gap-4 rounded-xl border border-le-border bg-le-surface p-6 text-center transition-all hover:border-le-border-strong hover:bg-le-elevated"
-            >
-              <div className="flex h-14 w-14 items-center justify-center rounded-xl bg-le-accent-soft">
-                <ClipboardList className="h-7 w-7 text-le-accent" />
-              </div>
-              <div>
-                <h3 className="heading text-base text-le-text">{section.title}</h3>
-                <p className="mt-1 text-xs text-le-text-secondary">{section.subtitle}</p>
-                <p className="mt-0.5 flex items-center justify-center gap-1 text-xs text-le-text-hint">
-                  <Clock className="h-3 w-3" />
-                  {section.time}
-                </p>
-              </div>
-              <span className="flex items-center gap-1 rounded-lg bg-le-accent px-4 py-2 text-xs font-semibold text-le-bg transition-all group-hover:brightness-110">
-                Start Practice
-                <ChevronRight className="h-3 w-3" />
-              </span>
-            </button>
-          ))}
+          {TEST_SECTIONS.map((section) => {
+            const loading = loadingSectionId === section.id;
+            return (
+              <button
+                key={section.id}
+                type="button"
+                onClick={() => startPractice(section.id)}
+                disabled={loading}
+                className="group flex flex-col items-center gap-4 rounded-xl border border-le-border bg-le-surface/80 p-6 text-center shadow-sm transition-all hover:border-le-mint/35 hover:bg-le-elevated hover:shadow-[0_0_24px_-8px_rgba(94,234,212,0.25)] disabled:pointer-events-none disabled:opacity-70"
+              >
+                <div className="flex h-14 w-14 items-center justify-center rounded-xl bg-gradient-to-br from-le-accent-soft to-le-violet/15 ring-1 ring-white/10">
+                  {loading ? (
+                    <Loader2 className="h-7 w-7 animate-spin text-le-accent" />
+                  ) : (
+                    <ClipboardList className="h-7 w-7 text-le-accent" />
+                  )}
+                </div>
+                <div>
+                  <h3 className="heading text-base text-le-text">{section.title}</h3>
+                  <p className="mt-1 text-xs text-le-text-secondary">{section.subtitle}</p>
+                  <p className="mt-0.5 flex items-center justify-center gap-1 text-xs text-le-text-hint">
+                    <Clock className="h-3 w-3" />
+                    {section.time}
+                  </p>
+                </div>
+                <span className="flex items-center gap-1 rounded-lg bg-gradient-to-r from-le-accent to-amber-500 px-4 py-2 text-xs font-semibold text-le-bg transition-all group-hover:brightness-110">
+                  {loading ? "Loading…" : "Start Practice"}
+                  {!loading && <ChevronRight className="h-3 w-3" />}
+                </span>
+              </button>
+            );
+          })}
         </div>
       </div>
     </div>

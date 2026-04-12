@@ -164,17 +164,18 @@ export function TutorPanel({ onSendOverride }: TutorPanelProps = {}) {
           {tutorMessages.map((msg) => (
             <div
               key={msg.id}
-              className={`rounded-lg px-3 py-2.5 text-sm leading-relaxed ${
+              className={cn(
+                "rounded-lg px-3 py-2.5 text-sm leading-relaxed tabular-nums",
                 msg.role === "user"
                   ? "ml-8 bg-le-accent/15 text-le-text"
                   : "mr-4 bg-le-elevated text-le-text"
-              }`}
+              )}
             >
               {msg.content}
             </div>
           ))}
           {tutorStreamingContent && (
-            <div className="mr-4 rounded-lg bg-le-elevated px-3 py-2.5 text-sm leading-relaxed text-le-text">
+            <div className="mr-4 rounded-lg bg-le-elevated px-3 py-2.5 text-sm leading-relaxed tabular-nums text-le-text">
               {cleanResponse(tutorStreamingContent)}
             </div>
           )}

@@ -160,7 +160,7 @@ export default function Home() {
       {showWelcome && <WelcomeScreen onStart={handleWelcomeDismiss} />}
       <LoadingScreen progress={modelProgress} visible={showLoading} />
 
-      <div className="flex h-dvh bg-le-bg">
+      <div className="le-app-shell flex h-dvh">
         <Sidebar
           curriculum={curriculum}
           appMode={appMode}

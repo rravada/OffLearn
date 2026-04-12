@@ -22,6 +22,8 @@ const config: Config = {
         "le-hover": "#252D40",
         "le-accent": "#F0A500",
         "le-accent-soft": "rgba(240,165,0,0.12)",
+        "le-mint": "#5EEAD4",
+        "le-violet": "#A78BFA",
         "le-green": "#2ECC71",
         "le-red": "#E74C3C",
         "le-text": "#F0F2F5",

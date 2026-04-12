@@ -1,6 +1,6 @@
 "use client";
 
-import { Zap } from "lucide-react";
+import { BrandLogo } from "@/components/BrandLogo";
 
 interface LoadingScreenProps {
   progress: number;
@@ -15,8 +15,8 @@ export function LoadingScreen({ progress, visible }: LoadingScreenProps) {
       }`}
     >
       <div className="flex flex-col items-center gap-10">
-        <div className="flex h-20 w-20 items-center justify-center rounded-2xl bg-le-accent/20">
-          <Zap className="h-10 w-10 text-le-accent" />
+        <div className="flex h-24 w-24 items-center justify-center rounded-2xl bg-gradient-to-br from-le-mint/15 via-le-accent/15 to-le-violet/15 ring-1 ring-white/10">
+          <BrandLogo size={56} />
         </div>
 
         <div className="flex flex-col items-center gap-2">

@@ -19,48 +19,73 @@ export function checkWebGPUSupport(): boolean {
   return typeof navigator !== "undefined" && "gpu" in navigator;
 }
 
+async function withRetries<T>(fn: () => Promise<T>, attempts = 3, delayMs = 400): Promise<T> {
+  let last: unknown;
+  for (let i = 0; i < attempts; i++) {
+    try {
+      return await fn();
+    } catch (e) {
+      last = e;
+      if (i < attempts - 1) await new Promise((r) => setTimeout(r, delayMs * (i + 1)));
+    }
+  }
+  throw last;
+}
+
 export class LLMSession {
   private static instance: LLMSession | null = null;
+  /** Single in-flight boot; cleared on failure so callers can retry. */
+  private static boot: Promise<LLMSession> | null = null;
   private llm: LlmInference | null = null;
 
   private constructor() {}
 
-  static async getInstance(
-    onProgress?: (pct: number) => void
-  ): Promise<LLMSession> {
+  static getInstance(onProgress?: (pct: number) => void): Promise<LLMSession> {
     if (LLMSession.instance?.llm) {
-      return LLMSession.instance;
+      return Promise.resolve(LLMSession.instance);
     }
+    if (!LLMSession.boot) {
+      LLMSession.boot = (async () => {
+        const session = new LLMSession();
 
-    const session = new LLMSession();
+        const genai = await FilesetResolver.forGenAiTasks(WASM_PATH);
 
-    const genai = await FilesetResolver.forGenAiTasks(WASM_PATH);
+        const wasCached = await getMeta(MODEL_CACHED_KEY);
 
-    const wasCached = await getMeta(MODEL_CACHED_KEY);
+        if (wasCached && onProgress) {
+          onProgress(100);
+        }
 
-    if (wasCached && onProgress) {
-      onProgress(100);
+        const device = await withRetries(() => LlmInference.createWebGpuDevice(), 3, 500);
+
+        const llm = await withRetries(
+          () =>
+            LlmInference.createFromOptions(genai, {
+              baseOptions: {
+                modelAssetPath: MODEL_PATH,
+                gpuOptions: { device },
+              },
+              maxTokens: 1024,
+              topK: 40,
+              temperature: 0.8,
+              randomSeed: 42,
+            }),
+          2,
+          600
+        );
+
+        await setMeta(MODEL_CACHED_KEY, "true");
+        if (onProgress) onProgress(100);
+
+        session.llm = llm;
+        LLMSession.instance = session;
+        return session;
+      })().catch((e) => {
+        LLMSession.boot = null;
+        throw e;
+      });
     }
-
-    const device = await LlmInference.createWebGpuDevice();
-
-    const llm = await LlmInference.createFromOptions(genai, {
-      baseOptions: {
-        modelAssetPath: MODEL_PATH,
-        gpuOptions: { device },
-      },
-      maxTokens: 1024,
-      topK: 40,
-      temperature: 0.8,
-      randomSeed: 42,
-    });
-
-    await setMeta(MODEL_CACHED_KEY, "true");
-    if (onProgress) onProgress(100);
-
-    session.llm = llm;
-    LLMSession.instance = session;
-    return session;
+    return LLMSession.boot;
   }
 
   async streamResponse(
@@ -114,5 +139,6 @@ export class LLMSession {
     this.llm?.close();
     this.llm = null;
     LLMSession.instance = null;
+    LLMSession.boot = null;
   }
 }

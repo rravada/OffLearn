@@ -4,7 +4,6 @@ import { useState, useEffect, useCallback, useRef } from "react";
 import { useAppStore } from "@/lib/store/useAppStore";
 import type { CurriculumIndex, CurriculumSubject, CurriculumUnit, LessonData } from "@/types";
 import {
-  BookOpen,
   Clock,
   ChevronRight,
   Sparkles,
@@ -14,6 +13,7 @@ import {
   Loader2,
 } from "lucide-react";
 import { cn } from "@/lib/utils";
+import { getSubjectIcon } from "@/lib/subjectIcons";
 
 interface LearnViewProps {
   curriculum: CurriculumIndex;
@@ -73,17 +73,26 @@ export function LearnView({ curriculum, selectedSubject }: LearnViewProps) {
         return;
       }
 
+      const controller = new AbortController();
+      const t = window.setTimeout(() => controller.abort(), 90_000);
+
       setOpeningKey(key);
       try {
-        const res = await fetch(`/curriculum/${subject.id}/${unit.id}/${lesson.id}.json`);
+        const res = await fetch(
+          `/curriculum/${subject.id}/${unit.id}/${lesson.id}.json`,
+          { signal: controller.signal }
+        );
         if (!res.ok) throw new Error("Lesson not found");
         const data = (await res.json()) as LessonData;
         lessonCache.current.set(key, data);
         setViewState({ mode: "lesson", subject, unit, lessonIdx, data });
         clearTutorMessages();
       } catch (err) {
-        console.error("Failed to load lesson:", err);
+        if ((err as Error).name !== "AbortError") {
+          console.error("Failed to load lesson:", err);
+        }
       } finally {
+        window.clearTimeout(t);
         setOpeningKey(null);
       }
     },
@@ -153,7 +162,7 @@ Rules:
             </p>
             <div className="h-1.5 flex-1 overflow-hidden rounded-full bg-le-elevated">
               <div
-                className="h-full rounded-full bg-le-accent transition-all"
+                className="h-full rounded-full bg-gradient-to-r from-le-mint/90 to-le-accent transition-all"
                 style={{ width: `${((lessonIdx + 1) / totalLessons) * 100}%` }}
               />
             </div>
@@ -291,10 +300,17 @@ Rules:
         </p>
 
         <div className="mt-8 space-y-8">
-          {filteredSubjects.map((subject) => (
+          {filteredSubjects.map((subject) => {
+            const SubjectGlyph = getSubjectIcon(subject.id);
+            return (
             <div key={subject.id}>
               {!selectedSubject && (
-                <h2 className="heading mb-4 text-lg text-le-text">{subject.title}</h2>
+                <h2 className="heading mb-4 flex items-center gap-2 text-lg text-le-text">
+                  <span className="flex h-8 w-8 items-center justify-center rounded-lg bg-le-accent-soft/80 ring-1 ring-le-mint/20">
+                    <SubjectGlyph className="h-4 w-4 text-le-mint" />
+                  </span>
+                  {subject.title}
+                </h2>
               )}
               {subject.units.map((unit) => (
                 <div key={unit.id} className="mb-6">
@@ -307,21 +323,24 @@ Rules:
                         <button
                           key={lesson.id}
                           type="button"
-                          disabled={!!openingKey}
+                          disabled={isOpening}
                           onMouseEnter={() => prefetchLesson(subject, unit, lessonIdx)}
                           onFocus={() => prefetchLesson(subject, unit, lessonIdx)}
                           onClick={() => openLesson(subject, unit, lessonIdx)}
                           className={cn(
-                            "group flex w-full items-center gap-4 rounded-xl border border-le-border bg-le-surface px-5 py-4 text-left transition-all hover:border-le-border-strong hover:bg-le-elevated",
-                            isOpening && "border-le-accent/50 bg-le-elevated",
-                            openingKey && !isOpening && "pointer-events-none opacity-60"
+                            "group flex w-full items-center gap-4 rounded-xl border border-le-border bg-le-surface/80 px-5 py-4 text-left shadow-sm transition-all hover:border-le-mint/35 hover:bg-le-elevated hover:shadow-[0_0_0_1px_rgba(94,234,212,0.12)]",
+                            isOpening && "border-le-accent/50 bg-le-elevated"
                           )}
                         >
-                          <div className="flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-lg bg-le-accent-soft">
+                          <div
+                            className={cn(
+                              "flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-lg bg-gradient-to-br from-le-accent-soft to-le-mint/10 ring-1 ring-white/5"
+                            )}
+                          >
                             {isOpening ? (
                               <Loader2 className="h-5 w-5 animate-spin text-le-accent" />
                             ) : (
-                              <BookOpen className="h-5 w-5 text-le-accent" />
+                              <SubjectGlyph className="h-5 w-5 text-le-accent" />
                             )}
                           </div>
                           <div className="flex-1">
@@ -341,7 +360,8 @@ Rules:
                 </div>
               ))}
             </div>
-          ))}
+            );
+          })}
         </div>
       </div>
     </div>
