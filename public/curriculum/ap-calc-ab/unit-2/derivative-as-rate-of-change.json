@@ -1,0 +1,55 @@
+{
+  "id": "ap-calc-ab-u2-derivative-as-rate-of-change",
+  "title": "The Derivative as a Rate of Change",
+  "subject": "AP Calculus AB",
+  "unit": "Differentiation",
+  "track": "ap",
+  "difficulty": "ap",
+  "duration": "30 min",
+  "objectives": [
+    "Distinguish between average rate of change and instantaneous rate of change, and explain why the difference matters physically.",
+    "Use the limit definition of the derivative to compute f'(x) for simple functions and interpret the result as the slope of the tangent line.",
+    "Read and translate between derivative notations — f'(x), dy/dx, and df/dx — understanding that they all describe the same idea."
+  ],
+  "sections": [
+    {
+      "type": "explanation",
+      "heading": "The Big Idea: How Fast Is Something Changing Right Now?",
+      "content": "Imagine you're driving from your town to the city, 60 miles away. The trip takes you 1 hour. Your average speed? 60 miles per hour. Simple division: distance divided by time.\n\nBut here's what average speed hides: you probably weren't going exactly 60 mph the entire trip. You sped up on the highway, slowed down through that one small town, maybe stopped at a light. At any given *instant*, your speedometer showed a specific number — your *instantaneous* speed. That number is almost certainly different from 60 mph at most moments of the trip.\n\nThis is the core distinction in calculus. The **average rate of change** of a function f(x) between two points x = a and x = b is:\n\n  Average rate of change = [f(b) − f(a)] / (b − a)\n\nYou've seen this before — it's the slope of the line connecting the two points (a, f(a)) and (b, f(b)) on the graph. That line is called a **secant line**.\n\nBut what if you want to know how fast f is changing *at exactly one point*? Not over an interval, but at a single instant? That's the **instantaneous rate of change**, and finding it is one of the most important ideas in all of mathematics. It's what the derivative gives you."
+    },
+    {
+      "type": "explanation",
+      "heading": "From Secant Line to Tangent Line",
+      "content": "Picture a smooth curve on a graph. Pick a point on it — call it (a, f(a)). Now pick a second point nearby on the same curve: (a + h, f(a + h)), where h is just some small horizontal distance.\n\nThe secant line through these two points has slope:\n\n  [f(a + h) − f(a)] / h\n\nNow imagine sliding that second point closer and closer to the first one. Make h smaller — 0.1, then 0.01, then 0.001. As the second point approaches the first, the secant line starts to rotate and settle into a specific position. When the two points are infinitely close together, that secant line *becomes* the **tangent line** — the line that just barely touches the curve at that single point.\n\nThe slope of that tangent line is the instantaneous rate of change. And computing it means taking a **limit**:\n\n  f'(a) = lim(h→0) [f(a + h) − f(a)] / h\n\nThis is the **limit definition of the derivative**, and it's worth understanding deeply. You are literally asking: \"What happens to the slope of the secant line as the two points merge into one?\" The answer — when the limit exists — is the derivative.\n\nThink of it like zooming in on the curve with a microscope. The more you zoom into a smooth curve at a single point, the more the curve looks like a straight line. The derivative tells you the slope of that line."
+    },
+    {
+      "type": "example",
+      "heading": "Using the Limit Definition: f(x) = x²",
+      "content": "Let's compute the derivative of f(x) = x² at a general point x using the limit definition.\n\nf'(x) = lim(h→0) [f(x + h) − f(x)] / h\n\nStep 1: Expand f(x + h).\n  f(x + h) = (x + h)² = x² + 2xh + h²\n\nStep 2: Compute f(x + h) − f(x).\n  (x² + 2xh + h²) − x² = 2xh + h²\n\nStep 3: Divide by h.\n  (2xh + h²) / h = 2x + h\n\nStep 4: Take the limit as h → 0.\n  lim(h→0) (2x + h) = 2x\n\nSo f'(x) = 2x. What does this tell you? At x = 1, the slope of the tangent line to f(x) = x² is 2(1) = 2. At x = 3, the slope is 2(3) = 6. The curve gets steeper as x grows — and the derivative captures that precisely.\n\nNotice something beautiful: the derivative f'(x) = 2x is itself a function. It takes in any x-value and returns the slope of the original curve at that point. The derivative transforms a position question ('where am I?') into a rate question ('how fast am I moving?')."
+    },
+    {
+      "type": "keypoint",
+      "content": "The derivative f'(a) is the slope of the tangent line to f(x) at x = a. It measures the instantaneous rate of change — how fast f is changing at that exact point. You find it by computing lim(h→0) [f(a + h) − f(a)] / h."
+    },
+    {
+      "type": "example",
+      "heading": "Physical Meaning: Position, Velocity, and the Derivative",
+      "content": "Suppose a ball is thrown straight up, and its height in feet after t seconds is given by s(t) = −16t² + 48t + 5.\n\nThe average velocity between t = 0 and t = 1 is:\n  [s(1) − s(0)] / (1 − 0) = [(−16 + 48 + 5) − 5] / 1 = 32 ft/sec\n\nBut the instantaneous velocity at exactly t = 1 is found using the derivative:\n  s'(t) = lim(h→0) [s(t+h) − s(t)] / h\n\nUsing the limit definition (or applying what we learned with x²), we get:\n  s'(t) = −32t + 48\n  s'(1) = −32(1) + 48 = 16 ft/sec\n\nNotice the average velocity (32 ft/sec) and instantaneous velocity (16 ft/sec) are different! At t = 1 second, the ball is still going up, but it's already slowing down because gravity is pulling on it. By t = 1.5 seconds, s'(1.5) = −32(1.5) + 48 = 0 — the ball has momentarily stopped at its peak. After that, s'(t) becomes negative — the ball is falling.\n\nThis is the power of the derivative: it doesn't just tell you a number, it tells you the story of how something is changing moment by moment."
+    },
+    {
+      "type": "explanation",
+      "heading": "Derivative Notation: Different Symbols, Same Idea",
+      "content": "You'll see the derivative written in several ways, and it's important to know they all mean the same thing:\n\n• f'(x) — read 'f prime of x.' This is **Lagrange notation**. It emphasizes that the derivative is a new function derived from f.\n\n• dy/dx — read 'dee y dee x.' This is **Leibniz notation**. It reminds you that the derivative is a ratio of tiny changes: a tiny change in y divided by a tiny change in x. It's not literally a fraction (it's a limit), but it *behaves* like one in many useful ways, which is part of why Leibniz notation is so popular.\n\n• df/dx — same as dy/dx, just using f instead of y.\n\nWhen you see dy/dx evaluated at a specific point, you might see it written as dy/dx |_{x=3}, meaning 'the derivative evaluated at x = 3.'\n\nWhy so many notations? Historical reasons — Newton and Leibniz invented calculus independently and used different symbols. Both survived because they're each useful in different contexts. Lagrange notation is compact and clean. Leibniz notation is powerful when you need to track which variable you're differentiating with respect to, especially when chain rule and implicit differentiation come into play later in this unit."
+    },
+    {
+      "type": "deepdive",
+      "heading": "Why the Limit Must Exist — And When It Doesn't",
+      "content": "Not every function has a derivative at every point. The limit definition requires that lim(h→0) [f(a+h) − f(a)] / h exists — meaning the limit from the left and the limit from the right must agree.\n\nConsider f(x) = |x| at x = 0. From the right, the slope approaching 0 is +1 (the right side of the V goes up). From the left, the slope approaching 0 is −1 (the left side goes down). The two sides disagree, so the limit doesn't exist, and f'(0) is undefined. Graphically, the function has a sharp corner at x = 0 — there's no single tangent line you could draw there.\n\nThis connects to a deep idea: **differentiability implies continuity** (if a function has a derivative at a point, it must be continuous there), but continuity does NOT imply differentiability (|x| is continuous at 0 but not differentiable there).\n\nOther places derivatives fail to exist: vertical tangent lines (where the slope would be infinite) and discontinuities (jumps or holes in the graph). On the AP exam, you'll often be asked to identify these situations from a graph — look for corners, cusps, vertical tangents, and jumps."
+    },
+    {
+      "type": "keypoint",
+      "content": "A function can be continuous at a point but still not have a derivative there. Corners, cusps, vertical tangent lines, and discontinuities are all places where the derivative fails to exist. Always check that the limit from both sides agrees."
+    }
+  ],
+  "aiContext": "AP Calculus AB. Guide students to understand concepts graphically before algebraically. Push them to explain what a derivative or integral MEANS physically, not just how to compute it. Common confusion: chain rule application order, and confusing definite vs indefinite integrals."
+}

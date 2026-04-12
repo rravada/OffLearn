@@ -1,0 +1,46 @@
+{
+  "id": "cell-organelles",
+  "title": "Cell Organelles and Their Roles",
+  "subject": "AP Biology",
+  "unit": "Cell Structure and Function",
+  "track": "ap",
+  "difficulty": "ap",
+  "duration": "30 min",
+  "objectives": [
+    "Identify the major organelles of eukaryotic cells and describe their functions",
+    "Trace the pathway of protein production from the nucleus through the endomembrane system",
+    "Compare the organelle composition of animal and plant cells"
+  ],
+  "sections": [
+    {
+      "type": "explanation",
+      "heading": "The Nucleus: Information Headquarters",
+      "content": "The nucleus is the largest organelle in most eukaryotic cells, enclosed by a double membrane called the nuclear envelope. Pores in this envelope regulate what enters and exits — mRNA leaves, ribosomal subunits leave, but proteins needed for DNA replication and transcription must enter.\n\nInside the nucleus, DNA is organized into chromosomes. When the cell is not dividing, the DNA exists as loosely packed chromatin, allowing genes to be accessed for transcription. Within the nucleus is the nucleolus, a dense region where ribosomal RNA (rRNA) is synthesized and ribosomal subunits are partially assembled before being exported to the cytoplasm.\n\nThink of the nucleus as the front office of a factory: it holds the master blueprints (DNA) and produces the work orders (mRNA) that are sent out to the production floor (ribosomes)."
+    },
+    {
+      "type": "explanation",
+      "heading": "The Endomembrane System: A Production and Shipping Network",
+      "content": "The endomembrane system is a network of interconnected membranes that includes the endoplasmic reticulum (ER), Golgi apparatus, lysosomes, and vesicles. These organelles work together to produce, modify, package, and transport proteins and lipids.\n\nThe rough ER is studded with ribosomes and is where proteins destined for secretion, the plasma membrane, or other organelles are synthesized. As a polypeptide is translated by a ribosome on the rough ER, it threads into the ER lumen, where it begins to fold and may receive carbohydrate chains (glycosylation).\n\nThe smooth ER lacks ribosomes and specializes in lipid synthesis, detoxification of drugs and poisons (especially in liver cells), and calcium ion storage (especially in muscle cells).\n\nThe Golgi apparatus receives transport vesicles from the ER and further modifies, sorts, and packages proteins. Think of it as the post office of the cell — products arrive, get their final labels, and are shipped to the correct destination: the plasma membrane, lysosomes, or outside the cell.\n\nLysosomes are membrane-bound sacs filled with digestive enzymes (hydrolases) that operate best at pH 5, far more acidic than the cytoplasm's pH of 7.2. They break down worn-out organelles, food particles, and invading bacteria."
+    },
+    {
+      "type": "example",
+      "heading": "The Protein Secretion Pathway",
+      "content": "Follow a secretory protein (like insulin) from gene to export:\n\n1. Transcription: The insulin gene is transcribed into mRNA in the nucleus.\n2. Translation begins: mRNA exits through nuclear pores; ribosomes begin translating it in the cytoplasm.\n3. Signal sequence: A signal peptide at the start of the polypeptide directs the ribosome to dock on the rough ER.\n4. ER processing: The polypeptide enters the ER lumen, the signal peptide is cleaved, and the protein folds and is glycosylated.\n5. ER to Golgi: The protein is packaged in a transport vesicle that buds off the ER and fuses with the cis face of the Golgi.\n6. Golgi modification: The protein is further modified (sugars trimmed or added) as it moves through Golgi cisternae.\n7. Secretory vesicle: The finished protein is packaged in a vesicle that buds from the trans face of the Golgi.\n8. Exocytosis: The vesicle fuses with the plasma membrane, releasing insulin outside the cell."
+    },
+    {
+      "type": "explanation",
+      "heading": "Energy Organelles and the Cytoskeleton",
+      "content": "Mitochondria are the sites of aerobic cellular respiration — they convert glucose-derived molecules into ATP using oxygen. They have a double membrane: the outer membrane is smooth, and the inner membrane is highly folded into cristae, which increase surface area for the electron transport chain.\n\nChloroplasts are found only in plant cells and some protists. They carry out photosynthesis, capturing light energy and converting it to chemical energy in the form of glucose. Like mitochondria, they have a double membrane plus internal membrane structures called thylakoids (stacked into grana) where the light reactions occur.\n\nThe cytoskeleton is a network of protein fibers that provides structural support, enables cell movement, and facilitates intracellular transport. It has three components: microfilaments (actin, involved in cell shape and muscle contraction), intermediate filaments (structural reinforcement), and microtubules (tubulin, involved in chromosome separation during cell division and vesicle transport)."
+    },
+    {
+      "type": "keypoint",
+      "content": "The endomembrane system (rough ER → smooth ER → Golgi → vesicles → lysosomes) forms an integrated production and shipping network for proteins and lipids. Mitochondria and chloroplasts are energy-converting organelles with their own DNA, supporting the endosymbiotic theory."
+    },
+    {
+      "type": "deepdive",
+      "heading": "Plant Cells vs. Animal Cells",
+      "content": "Plant cells have everything animal cells have — plus three additional structures:\n\n1. Cell wall: A rigid layer of cellulose outside the plasma membrane that provides structural support and prevents the cell from bursting in a hypotonic environment (turgor pressure pushes the membrane against the wall).\n\n2. Central vacuole: A large, membrane-bound compartment that can occupy up to 90% of the cell's volume. It stores water, ions, pigments, and waste products, and its turgor pressure helps maintain the plant's rigidity.\n\n3. Chloroplasts: The site of photosynthesis (animal cells do not photosynthesize).\n\nAnimal cells, in contrast, have centrioles (involved in organizing the mitotic spindle during cell division) and lysosomes (plant cells use the vacuole for some digestive functions instead). Understanding these differences is essential for interpreting microscopy images on the AP exam — if you see a cell wall and chloroplasts, it is a plant cell."
+    }
+  ],
+  "aiContext": "AP Biology. Connect molecular mechanisms to organism and ecosystem outcomes. Stress experimental design and data analysis. Common confusion: transcription vs translation, and when to apply Hardy-Weinberg conditions."
+}

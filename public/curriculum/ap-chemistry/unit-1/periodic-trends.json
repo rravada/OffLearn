@@ -1,0 +1,41 @@
+{
+  "id": "periodic-trends",
+  "title": "Periodic Trends: Atomic Radius, Ionization Energy",
+  "subject": "AP Chemistry",
+  "unit": "Atomic Structure and Properties",
+  "track": "ap",
+  "difficulty": "ap",
+  "duration": "25 min",
+  "objectives": [
+    "Predict how atomic radius, ionization energy, and electronegativity change across a period and down a group",
+    "Explain all periodic trends using the concept of effective nuclear charge (Zeff)",
+    "Compare the sizes and ionization energies of atoms and their ions"
+  ],
+  "sections": [
+    {
+      "type": "explanation",
+      "heading": "Effective Nuclear Charge: The Master Key",
+      "content": "Almost every periodic trend can be explained by one concept: effective nuclear charge (Zeff). The effective nuclear charge is the net positive charge experienced by an electron after accounting for the shielding effect of inner (core) electrons.\n\nZeff ≈ Z − S, where Z is the actual nuclear charge (number of protons) and S is the shielding from inner electrons. As you move across a period from left to right, protons are added to the nucleus and electrons are added to the same shell. The shielding increases only slightly because electrons in the same shell do not shield each other effectively. So Zeff increases across a period.\n\nAs you move down a group, electrons are added to higher energy levels (farther from the nucleus) with more shielding layers between them and the nucleus. Even though Z increases, the additional shielding means Zeff felt by valence electrons does not increase much. The dominant factor is that valence electrons are simply farther from the nucleus."
+    },
+    {
+      "type": "example",
+      "heading": "Atomic Radius Trends",
+      "content": "Across a period (left to right): Atomic radius DECREASES.\n  Li (152 pm) > Be (112 pm) > B (87 pm) > C (77 pm) > N (75 pm) > O (73 pm) > F (72 pm)\n  Why: Increasing Zeff pulls electrons closer to the nucleus.\n\nDown a group (top to bottom): Atomic radius INCREASES.\n  Li (152 pm) < Na (186 pm) < K (227 pm) < Rb (248 pm)\n  Why: Each row adds a new electron shell, putting valence electrons farther from the nucleus despite higher Z.\n\nIons vs. atoms:\n  Cations (positive ions) are SMALLER than their parent atoms — electrons removed, Zeff per remaining electron increases, cloud shrinks. Na (186 pm) → Na⁺ (95 pm).\n  Anions (negative ions) are LARGER than their parent atoms — extra electrons increase repulsion, cloud expands. Cl (99 pm) → Cl⁻ (181 pm)."
+    },
+    {
+      "type": "explanation",
+      "heading": "Ionization Energy and Electronegativity",
+      "content": "Ionization energy (IE) is the energy required to remove the outermost electron from a gaseous atom. High IE means the atom holds onto its electrons tightly.\n\nAcross a period: IE generally INCREASES (higher Zeff = electrons held more tightly). Down a group: IE DECREASES (valence electrons are farther from the nucleus and easier to remove).\n\nElectronegativity is the tendency of an atom to attract bonding electrons toward itself. The trend mirrors ionization energy: it increases across a period and decreases down a group. Fluorine is the most electronegative element.\n\nElectron affinity — the energy change when an atom gains an electron — follows a similar but less clean trend. Halogens have the most negative (most favorable) electron affinities because adding one electron gives them a noble gas configuration."
+    },
+    {
+      "type": "keypoint",
+      "content": "All major periodic trends — atomic radius, ionization energy, electronegativity, electron affinity — are explained by the balance between nuclear charge and electron shielding. Zeff increases across a period (explaining smaller atoms and higher IE), while additional shells down a group dominate (explaining larger atoms and lower IE)."
+    },
+    {
+      "type": "deepdive",
+      "heading": "Exceptions in Ionization Energy",
+      "content": "The general trend of increasing IE across a period has two notable dips:\n\n1. IE drops slightly from Group 2 to Group 13 (e.g., Be to B). Why? Beryllium's outermost electron is in a 2s orbital, which is closer to the nucleus and more stable. Boron's outermost electron is in a 2p orbital, which is slightly higher in energy and easier to remove.\n\n2. IE drops slightly from Group 15 to Group 16 (e.g., N to O). Why? Nitrogen has a half-filled 2p subshell (one electron per orbital), which is particularly stable. Oxygen's 2p⁴ configuration forces one pair, and the paired electron experiences extra electron-electron repulsion, making it easier to remove.\n\nThese exceptions are direct consequences of orbital structure and are frequently tested on the AP exam. Knowing them shows that you understand the deeper quantum mechanical reasoning behind the trends, not just the surface pattern."
+    }
+  ],
+  "aiContext": "AP Chemistry. Use dimensional analysis for all calculations. Stress WHY reactions happen, not just equation balancing. Common confusion: entropy vs enthalpy direction, and applying Le Chatelier to specific perturbations."
+}

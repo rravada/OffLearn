@@ -1,0 +1,41 @@
+{
+  "id": "atomic-theory-subatomic",
+  "title": "Atomic Theory and Subatomic Particles",
+  "subject": "AP Chemistry",
+  "unit": "Atomic Structure and Properties",
+  "track": "ap",
+  "difficulty": "ap",
+  "duration": "25 min",
+  "objectives": [
+    "Trace the development of atomic theory from Dalton through the quantum mechanical model",
+    "Identify the properties and locations of protons, neutrons, and electrons",
+    "Use atomic number and mass number to determine the composition of isotopes"
+  ],
+  "sections": [
+    {
+      "type": "explanation",
+      "heading": "The Evolution of Atomic Models",
+      "content": "The idea that matter is made of indivisible particles goes back to the ancient Greek philosopher Democritus, but modern atomic theory begins with John Dalton in the early 1800s. Dalton proposed that all matter is composed of tiny, indivisible atoms; atoms of the same element are identical; and atoms combine in fixed ratios to form compounds.\n\nJ.J. Thomson discovered the electron in 1897 using cathode ray tubes, showing that atoms are not indivisible — they contain negatively charged particles. His 'plum pudding' model pictured electrons embedded in a uniform sphere of positive charge.\n\nErnest Rutherford shattered that model with his gold foil experiment (1911). When alpha particles were fired at thin gold foil, most passed straight through, but a few bounced back at large angles. Rutherford concluded that the atom's positive charge and most of its mass are concentrated in a tiny, dense nucleus, with electrons orbiting at a great distance. The atom is mostly empty space.\n\nNiels Bohr refined Rutherford's model for hydrogen, proposing that electrons orbit the nucleus in fixed energy levels (like rungs on a ladder) and can jump between levels by absorbing or emitting specific amounts of energy. This explained hydrogen's line spectrum.\n\nThe modern quantum mechanical model, developed by Schrödinger, Heisenberg, and others, replaces fixed orbits with orbitals — three-dimensional probability distributions describing where an electron is most likely to be found. This is the model used in AP Chemistry."
+    },
+    {
+      "type": "example",
+      "heading": "Subatomic Particles at a Glance",
+      "content": "Particle   | Charge  | Mass (amu) | Location\n-----------|---------|------------|----------\nProton     | +1      | ~1.007     | Nucleus\nNeutron    | 0       | ~1.009     | Nucleus\nElectron   | −1      | ~0.00055   | Orbitals around nucleus\n\nThe atomic number (Z) = number of protons = defines the element.\nThe mass number (A) = protons + neutrons.\nNumber of neutrons = A − Z.\n\nFor carbon-12: Z = 6, A = 12, so 6 protons, 6 neutrons, and (in a neutral atom) 6 electrons.\nFor carbon-14: Z = 6, A = 14, so 6 protons, 8 neutrons. Same element, different isotope."
+    },
+    {
+      "type": "explanation",
+      "heading": "Isotopes and Average Atomic Mass",
+      "content": "Isotopes are atoms of the same element (same number of protons) with different numbers of neutrons. Carbon-12 and carbon-14 are both carbon, but carbon-14 has two extra neutrons, making it heavier and radioactive.\n\nThe atomic mass listed on the periodic table is a weighted average of all naturally occurring isotopes of that element, based on their relative abundance. For example, chlorine exists as about 75.8% chlorine-35 and 24.2% chlorine-37:\n\nAverage atomic mass = (0.758 × 35) + (0.242 × 37) = 26.53 + 8.95 = 35.48 amu\n\nThis is why chlorine's atomic mass on the periodic table (35.45) is not a whole number — it reflects the mixture of isotopes found in nature."
+    },
+    {
+      "type": "keypoint",
+      "content": "The atomic number defines the element (number of protons). Isotopes of the same element differ in neutron count. The periodic table's atomic masses are weighted averages reflecting natural isotope abundances."
+    },
+    {
+      "type": "deepdive",
+      "heading": "Why the Quantum Model Matters",
+      "content": "You might wonder why we abandoned Bohr's clean, intuitive model of electrons orbiting like planets. The answer is that Bohr's model only works for hydrogen. It fails to predict the spectra of multi-electron atoms, cannot explain chemical bonding, and violates the Heisenberg uncertainty principle (you cannot simultaneously know an electron's exact position and momentum).\n\nThe quantum mechanical model is more abstract — orbitals are probability clouds, not paths — but it is enormously more powerful. It explains periodic trends, bonding behavior, molecular geometry, and the entire structure of the periodic table. When you learn electron configurations in the next lesson, you are learning the direct consequence of quantum mechanics applied to atoms.\n\nThe key conceptual shift: an electron does not orbit the nucleus in a defined path. Instead, there is a probability distribution describing where it is likely to be found. The s orbital is a sphere; p orbitals are dumbbell-shaped; d and f orbitals have more complex shapes. These shapes matter because they determine how atoms bond to each other."
+    }
+  ],
+  "aiContext": "AP Chemistry. Use dimensional analysis for all calculations. Stress WHY reactions happen, not just equation balancing. Common confusion: entropy vs enthalpy direction, and applying Le Chatelier to specific perturbations."
+}

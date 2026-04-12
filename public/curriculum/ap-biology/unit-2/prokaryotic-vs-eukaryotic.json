@@ -1,0 +1,41 @@
+{
+  "id": "prokaryotic-vs-eukaryotic",
+  "title": "Prokaryotic vs Eukaryotic Cells",
+  "subject": "AP Biology",
+  "unit": "Cell Structure and Function",
+  "track": "ap",
+  "difficulty": "ap",
+  "duration": "25 min",
+  "objectives": [
+    "Compare the structural features of prokaryotic and eukaryotic cells",
+    "Explain how cell size is constrained by the surface-area-to-volume ratio",
+    "Describe the endosymbiotic theory and the evidence supporting it"
+  ],
+  "sections": [
+    {
+      "type": "explanation",
+      "heading": "Two Fundamental Designs for Life",
+      "content": "Every cell on Earth falls into one of two categories: prokaryotic or eukaryotic. The difference is profound. Prokaryotic cells (bacteria and archaea) lack a membrane-bound nucleus — their DNA floats in a region called the nucleoid. They are generally small (0.1–5 μm), have no internal membrane-bound organelles, and reproduce by binary fission.\n\nEukaryotic cells (protists, fungi, plants, and animals) have a true nucleus enclosed by a double membrane called the nuclear envelope. They are typically much larger (10–100 μm) and contain a complex system of membrane-bound organelles — mitochondria, endoplasmic reticulum, Golgi apparatus, and in plants, chloroplasts.\n\nDespite these differences, both cell types share fundamental features: a plasma membrane, ribosomes for protein synthesis, DNA as genetic material, and cytoplasm. These shared features point to a common ancestor billions of years ago."
+    },
+    {
+      "type": "example",
+      "heading": "Size and the Surface-Area-to-Volume Ratio",
+      "content": "Imagine a cube-shaped cell with sides of length 1 μm:\n  Surface area = 6 × 1² = 6 μm²\n  Volume = 1³ = 1 μm³\n  SA:V ratio = 6:1\n\nNow scale up to sides of 10 μm:\n  Surface area = 6 × 10² = 600 μm²\n  Volume = 10³ = 1000 μm³\n  SA:V ratio = 0.6:1\n\nThe larger cell has 10× the surface but 1000× the volume. Materials must pass through the surface to reach the interior, so as a cell grows, its surface becomes increasingly insufficient to serve its volume. This is why most cells are small — and why eukaryotic cells need internal membranes (organelles) to create additional surface area for chemical reactions."
+    },
+    {
+      "type": "keypoint",
+      "content": "Prokaryotes lack a nucleus and membrane-bound organelles; eukaryotes have both. The surface-area-to-volume ratio constrains cell size: larger cells need internal compartmentalization to function efficiently."
+    },
+    {
+      "type": "explanation",
+      "heading": "The Endosymbiotic Theory",
+      "content": "How did eukaryotic cells acquire mitochondria and chloroplasts? The endosymbiotic theory, championed by Lynn Margulis in the 1960s, proposes that these organelles were once free-living prokaryotes that were engulfed by an ancestral eukaryotic cell. Instead of being digested, the engulfed cells survived and provided a benefit — aerobic respiration (mitochondria) or photosynthesis (chloroplasts) — while the host provided protection and nutrients.\n\nOver hundreds of millions of years, most of the endosymbiont's genes transferred to the host's nuclear DNA, making the arrangement permanent. The evidence is compelling:\n\n• Both mitochondria and chloroplasts have their own circular DNA, similar to bacterial chromosomes.\n• They have double membranes — the inner membrane is thought to be the original prokaryote's membrane, the outer from the host's engulfment.\n• They replicate by binary fission, independent of the cell cycle.\n• Their ribosomes resemble bacterial ribosomes (70S) more than eukaryotic cytoplasmic ribosomes (80S).\n• Phylogenetic analysis shows mitochondrial DNA is closely related to alpha-proteobacteria, and chloroplast DNA to cyanobacteria."
+    },
+    {
+      "type": "deepdive",
+      "heading": "Archaea: The Third Domain",
+      "content": "When you first learn about prokaryotes, it is tempting to lump bacteria and archaea together because they look similar under a microscope. But molecular analysis reveals that archaea are actually more closely related to eukaryotes than to bacteria in several key ways: their RNA polymerase, their use of histone-like proteins to organize DNA, and aspects of their transcription machinery.\n\nArchaea also thrive in extreme environments — boiling hot springs, hyper-saline lakes, deep-sea hydrothermal vents — earning some of them the name 'extremophiles.' But they also live in ordinary soil and ocean water. The three-domain system (Bacteria, Archaea, Eukarya) reflects the deep evolutionary split between these groups, and understanding it is essential for AP Biology questions about phylogenetics and evolutionary relationships."
+    }
+  ],
+  "aiContext": "AP Biology. Connect molecular mechanisms to organism and ecosystem outcomes. Stress experimental design and data analysis. Common confusion: transcription vs translation, and when to apply Hardy-Weinberg conditions."
+}

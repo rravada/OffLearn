@@ -1,0 +1,41 @@
+{
+  "id": "biogeochemical-cycles",
+  "title": "Biogeochemical Cycles",
+  "subject": "AP Biology",
+  "unit": "Ecology",
+  "track": "ap",
+  "difficulty": "ap",
+  "duration": "25 min",
+  "objectives": [
+    "Trace the movement of carbon, nitrogen, and phosphorus through biotic and abiotic components of ecosystems",
+    "Explain the role of bacteria in nitrogen fixation, nitrification, and denitrification",
+    "Analyze how human activities disrupt biogeochemical cycles"
+  ],
+  "sections": [
+    {
+      "type": "explanation",
+      "heading": "Why Nutrients Cycle but Energy Does Not",
+      "content": "Energy flows through ecosystems in one direction — from sun to producers to consumers to heat. Once energy is lost as heat, it cannot be recaptured. But matter is different: the atoms that make up living organisms are recycled over and over. The carbon atoms in your body may once have been part of a dinosaur, a tree, or a molecule of atmospheric CO₂.\n\nBiogeochemical cycles describe how elements move between living organisms (bio), the Earth (geo), and chemical processes (chemical). The four major cycles for AP Biology are the carbon cycle, nitrogen cycle, phosphorus cycle, and water cycle."
+    },
+    {
+      "type": "explanation",
+      "heading": "The Carbon Cycle",
+      "content": "Carbon enters the living world when producers (plants, algae) fix atmospheric CO₂ into organic molecules through photosynthesis. It moves through food webs as consumers eat producers and each other. Carbon returns to the atmosphere as CO₂ when organisms perform cellular respiration, when decomposers break down dead matter, and when fossil fuels are burned.\n\nCarbon is also stored in long-term reservoirs: fossil fuels (coal, oil, natural gas are compressed remains of ancient organisms), carbonate rocks (limestone), dissolved CO₂ in the ocean, and standing forests.\n\nHuman impact: Burning fossil fuels releases carbon that was sequestered underground for millions of years, increasing atmospheric CO₂. Deforestation reduces the planet's capacity to absorb CO₂ through photosynthesis. These changes are the primary driver of climate change."
+    },
+    {
+      "type": "example",
+      "heading": "The Nitrogen Cycle: Bacteria Are Essential",
+      "content": "Nitrogen makes up 78% of the atmosphere as N₂ gas, but most organisms cannot use N₂ directly. It must be converted to usable forms:\n\n1. Nitrogen fixation: Specialized bacteria (like Rhizobium in root nodules of legumes) convert N₂ → NH₃ (ammonia). Lightning also fixes small amounts.\n\n2. Nitrification: Soil bacteria convert NH₃ → NO₂⁻ (nitrite) → NO₃⁻ (nitrate). Plants absorb nitrate through their roots.\n\n3. Assimilation: Plants use nitrogen to build amino acids, nucleotides, and other organic molecules. Animals get nitrogen by eating plants or other animals.\n\n4. Ammonification: Decomposers break down dead organisms and waste, releasing NH₃ back into the soil.\n\n5. Denitrification: Bacteria in anaerobic (oxygen-poor) conditions convert NO₃⁻ back to N₂, returning nitrogen to the atmosphere.\n\nHuman impact: The Haber-Bosch process (industrial nitrogen fixation) produces massive amounts of synthetic fertilizer. Excess nitrogen runs off into waterways, causing eutrophication — algal blooms that deplete oxygen and create dead zones."
+    },
+    {
+      "type": "keypoint",
+      "content": "Nutrients (C, N, P, H₂O) cycle between living organisms and the physical environment. Human activities — fossil fuel combustion, deforestation, synthetic fertilizer use — are disrupting these cycles at unprecedented rates, with consequences including climate change, ocean acidification, and eutrophication."
+    },
+    {
+      "type": "deepdive",
+      "heading": "The Phosphorus Cycle: No Atmospheric Phase",
+      "content": "Unlike carbon and nitrogen, phosphorus does not have a significant gaseous phase. It cycles primarily through rocks, soil, water, and organisms. Phosphorus is released from rocks through weathering, absorbed by plants from the soil as phosphate (PO₄³⁻), moves through food webs, and returns to the soil through decomposition. Over geological timescales, it is incorporated into sedimentary rock and recycled through tectonic uplift.\n\nPhosphorus is a limiting nutrient in many ecosystems — meaning there is so little available that it constrains the growth of producers. This is why adding phosphate (from agricultural runoff or detergents) to aquatic ecosystems can trigger explosive algal growth.\n\nThe water cycle connects all the others: water is the medium in which nutrients dissolve and move through ecosystems. Evaporation, transpiration, condensation, and precipitation circulate water between the atmosphere, land, and oceans. Human impacts include groundwater depletion, dam construction altering river flows, and deforestation reducing transpiration."
+    }
+  ],
+  "aiContext": "AP Biology. Connect molecular mechanisms to organism and ecosystem outcomes. Stress experimental design and data analysis. Common confusion: transcription vs translation, and when to apply Hardy-Weinberg conditions."
+}

@@ -1,0 +1,41 @@
+{
+  "id": "acid-base-ph",
+  "title": "Acid-Base Chemistry and pH",
+  "subject": "AP Chemistry",
+  "unit": "Kinetics and Equilibrium",
+  "track": "ap",
+  "difficulty": "ap",
+  "duration": "30 min",
+  "objectives": [
+    "Define acids and bases using both the Arrhenius and Brønsted-Lowry models",
+    "Calculate pH and pOH from hydrogen ion concentration and vice versa",
+    "Distinguish between strong and weak acids/bases and explain Ka as a measure of acid strength"
+  ],
+  "sections": [
+    {
+      "type": "explanation",
+      "heading": "Two Models for Acids and Bases",
+      "content": "The Arrhenius model defines acids as substances that produce H⁺ ions in water and bases as substances that produce OH⁻ ions. HCl → H⁺ + Cl⁻ (acid). NaOH → Na⁺ + OH⁻ (base).\n\nThe Brønsted-Lowry model is broader: an acid is a proton (H⁺) donor, and a base is a proton acceptor. This model works even without water. In the reaction NH₃ + H₂O ⇌ NH₄⁺ + OH⁻, water donates a proton to ammonia — water acts as the acid, ammonia acts as the base.\n\nEvery Brønsted-Lowry acid-base reaction involves conjugate pairs. When HCl donates H⁺, it becomes Cl⁻ (its conjugate base). When NH₃ accepts H⁺, it becomes NH₄⁺ (its conjugate acid). The stronger an acid, the weaker its conjugate base."
+    },
+    {
+      "type": "example",
+      "heading": "The pH Scale",
+      "content": "pH = −log[H⁺]    and    [H⁺] = 10^(−pH)\npOH = −log[OH⁻]   and    [OH⁻] = 10^(−pOH)\npH + pOH = 14     (at 25°C)\n\nThe ion product of water: Kw = [H⁺][OH⁻] = 1.0 × 10⁻¹⁴ at 25°C\n\nExamples:\n  [H⁺] = 1.0 × 10⁻³ M → pH = 3.0 (acidic)\n  [H⁺] = 1.0 × 10⁻⁷ M → pH = 7.0 (neutral)\n  [H⁺] = 1.0 × 10⁻¹² M → pH = 12.0 (basic)\n\npH < 7: acidic    pH = 7: neutral    pH > 7: basic\n\nThe pH scale is logarithmic: a difference of 1 pH unit means a 10-fold change in [H⁺]. Stomach acid (pH ~2) is 100,000 times more acidic than pure water (pH 7)."
+    },
+    {
+      "type": "explanation",
+      "heading": "Strong vs. Weak Acids and Bases",
+      "content": "Strong acids ionize completely in water. There are six to memorize: HCl, HBr, HI, HNO₃, H₂SO₄, and HClO₄. If you dissolve 0.10 M HCl, you get 0.10 M H⁺ and 0.10 M Cl⁻ — no intact HCl molecules remain. pH = −log(0.10) = 1.0.\n\nWeak acids ionize only partially. Acetic acid (CH₃COOH) in water establishes an equilibrium:\nCH₃COOH ⇌ CH₃COO⁻ + H⁺, Ka = 1.8 × 10⁻⁵\n\nKa (acid dissociation constant) measures acid strength. A larger Ka means more ionization, stronger acid. Ka for HCl is essentially infinite (complete ionization); Ka for acetic acid is tiny (very little ionization).\n\nStrong bases (NaOH, KOH, Ca(OH)₂) dissociate completely. Weak bases (like NH₃) only partially accept protons:\nNH₃ + H₂O ⇌ NH₄⁺ + OH⁻, Kb = 1.8 × 10⁻⁵"
+    },
+    {
+      "type": "keypoint",
+      "content": "pH = −log[H⁺]. Strong acids/bases ionize completely; weak acids/bases establish equilibrium. Ka measures acid strength: larger Ka = stronger acid. For any conjugate pair, Ka × Kb = Kw = 1.0 × 10⁻¹⁴."
+    },
+    {
+      "type": "deepdive",
+      "heading": "Buffers: Resisting pH Change",
+      "content": "A buffer is a solution that resists changes in pH when small amounts of acid or base are added. Buffers consist of a weak acid and its conjugate base (or a weak base and its conjugate acid) in roughly equal concentrations.\n\nExample: An acetic acid/sodium acetate buffer (CH₃COOH / CH₃COO⁻).\n\nIf you add H⁺: The conjugate base (CH₃COO⁻) reacts with it: CH₃COO⁻ + H⁺ → CH₃COOH. The H⁺ is consumed, pH barely changes.\n\nIf you add OH⁻: The weak acid reacts with it: CH₃COOH + OH⁻ → CH₃COO⁻ + H₂O. The OH⁻ is consumed, pH barely changes.\n\nThe Henderson-Hasselbalch equation gives the pH of a buffer:\npH = pKa + log([A⁻]/[HA])\n\nwhere pKa = −log(Ka), [A⁻] is the conjugate base concentration, and [HA] is the weak acid concentration. When [A⁻] = [HA], pH = pKa.\n\nBuffers are essential in biology — your blood is buffered at pH 7.4 by the carbonic acid/bicarbonate system (H₂CO₃/HCO₃⁻). A change of even 0.2 pH units can be life-threatening. Understanding buffers connects acid-base chemistry directly to physiology."
+    }
+  ],
+  "aiContext": "AP Chemistry. Use dimensional analysis for all calculations. Stress WHY reactions happen, not just equation balancing. Common confusion: entropy vs enthalpy direction, and applying Le Chatelier to specific perturbations."
+}

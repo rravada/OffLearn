@@ -1,0 +1,60 @@
+{
+  "id": "ap-calc-ab-unit4-area-between-curves",
+  "title": "Area Between Curves",
+  "subject": "AP Calculus AB",
+  "unit": "Integration",
+  "track": "ap",
+  "difficulty": "ap",
+  "duration": "30 min",
+  "objectives": [
+    "Set up and evaluate a definite integral of the form ∫(top − bottom) dx to find the area of a region enclosed between two curves.",
+    "Find intersection points of two curves algebraically and use them as limits of integration.",
+    "Determine when integrating with respect to y (using dy) is more efficient and set up ∫(right − left) dy accordingly."
+  ],
+  "sections": [
+    {
+      "type": "explanation",
+      "heading": "From Area Under One Curve to Area Between Two",
+      "content": "You already know that ∫ from a to b of f(x) dx gives the net signed area between f(x) and the x-axis. But what if you want the area of a region trapped between two curves — say, between y = x² and y = x? The x-axis isn't involved at all.\n\nThe idea is beautifully simple. Imagine slicing the region into thin vertical strips. Each strip is a skinny rectangle. Its width is dx (an infinitesimally small change in x). Its height is the distance between the two curves at that x-value: the top function minus the bottom function. So the area of one tiny strip is [f(x) − g(x)] dx, where f(x) is the curve on top and g(x) is the curve on the bottom.\n\nAdd up all the strips from the left boundary x = a to the right boundary x = b, and you get:\n\nArea = ∫ from a to b of [f(x) − g(x)] dx.\n\nThis is always top minus bottom, regardless of whether the functions are positive or negative. Even if both curves are below the x-axis, the area between them is still ∫(top − bottom) dx, and this will be positive as long as you correctly identify which curve is on top.\n\nHere's an analogy: if you want to know how much taller your friend is than you, you subtract your height from theirs. It doesn't matter whether you're both standing on the ground floor or both standing on the third floor. The difference is what matters, not the absolute positions. Same principle here."
+    },
+    {
+      "type": "explanation",
+      "heading": "Finding Intersection Points",
+      "content": "Before you can set up the integral, you need to know where the two curves meet. These intersection points give you the limits of integration — the left and right boundaries of the enclosed region.\n\nTo find intersection points, set the two functions equal to each other: f(x) = g(x), and solve for x. This is just algebra, but it's where many errors creep in on the AP exam, so be careful.\n\nFor example, to find where y = x and y = x² intersect: set x = x², which gives x² − x = 0, so x(x − 1) = 0, meaning x = 0 and x = 1. These are your limits.\n\nCritical step that many students skip: determine which function is on top between the intersection points. You can do this by plugging in any x-value between the intersection points. For x = 0.5: f(0.5) = 0.5 and g(0.5) = 0.25. Since 0.5 > 0.25, the line y = x is on top and y = x² is on the bottom between x = 0 and x = 1.\n\nWhat if the curves cross more than once, and the top and bottom switch? Then you must split the integral at each crossing point. Between each pair of consecutive intersection points, check which function is on top, and set up a separate integral for each sub-region. Then add the areas.\n\nAlways, always sketch the region before computing. Even a rough sketch will save you from sign errors and wrong limits. On the AP exam, this is the difference between a clean solution and a confused mess."
+    },
+    {
+      "type": "example",
+      "heading": "Area Between y = x and y = x²",
+      "content": "Find the area enclosed between y = x and y = x² for x in [0, 1].\n\nStep 1: Find intersections. x = x² → x = 0 and x = 1. ✓\n\nStep 2: Determine top and bottom. At x = 0.5: x = 0.5, x² = 0.25. So y = x is on top.\n\nStep 3: Set up the integral.\nArea = ∫ from 0 to 1 of (x − x²) dx.\n\nStep 4: Evaluate.\n= [x²/2 − x³/3] from 0 to 1\n= (1/2 − 1/3) − (0 − 0)\n= 3/6 − 2/6\n= 1/6.\n\nThe area of the region between these two curves is 1/6 square units. Notice this is a positive number, as area always should be. If you got a negative answer, it means you subtracted in the wrong order (bottom minus top instead of top minus bottom)."
+    },
+    {
+      "type": "example",
+      "heading": "When Curves Switch — A Split Integral",
+      "content": "Find the total area enclosed between y = sin(x) and y = cos(x) from x = 0 to x = π.\n\nStep 1: Find where they intersect on [0, π]. Set sin(x) = cos(x), so tan(x) = 1, giving x = π/4.\n\nStep 2: Determine top and bottom on each sub-interval.\n  On [0, π/4]: test x = 0. cos(0) = 1 > sin(0) = 0. So cos(x) is on top.\n  On [π/4, π]: test x = π/2. sin(π/2) = 1 > cos(π/2) = 0. So sin(x) is on top.\n\nStep 3: Set up split integrals.\nArea = ∫ from 0 to π/4 of (cos x − sin x) dx + ∫ from π/4 to π of (sin x − cos x) dx.\n\nStep 4: Evaluate each.\nFirst integral: [sin x + cos x] from 0 to π/4 = (√2/2 + √2/2) − (0 + 1) = √2 − 1.\nSecond integral: [−cos x − sin x] from π/4 to π = (−(−1) − 0) − (−√2/2 − √2/2) = 1 − (−√2) = 1 + √2.\n\nTotal area = (√2 − 1) + (1 + √2) = 2√2 ≈ 2.828.\n\nKey lesson: if you hadn't split the integral at x = π/4, you would have gotten the wrong answer because you'd be subtracting in the wrong order on part of the interval."
+    },
+    {
+      "type": "keypoint",
+      "content": "Area between two curves = ∫ from a to b of (top function − bottom function) dx. Always find intersection points first (set f(x) = g(x)), always check which function is on top by testing a point, and always split the integral if the functions switch positions. Sketch before you compute."
+    },
+    {
+      "type": "explanation",
+      "heading": "When to Integrate with Respect to y",
+      "content": "Sometimes the region between two curves is much easier to describe using horizontal slices instead of vertical ones. This means integrating with respect to y instead of x.\n\nConsider the region between x = y² and x = y + 2. If you tried to use vertical slices (integrating with respect to x), you'd have to split the integral because the boundary curves change at different x-values, and you'd need to solve for y in terms of x — messy.\n\nBut with horizontal slices, each strip is a skinny horizontal rectangle. Its height is dy. Its width is the distance between the right curve and the left curve at that y-value: (right function) − (left function). So:\n\nArea = ∫ from c to d of [x_right(y) − x_left(y)] dy,\n\nwhere c and d are the y-coordinates of the intersection points.\n\nThe rule changes from \"top minus bottom\" to \"right minus left.\" Everything else is the same idea: you're adding up thin strips, just oriented horizontally instead of vertically.\n\nHow do you decide which to use? Look at the region:\n• If the region is naturally bounded by functions of x (y = f(x) type curves), use dx.\n• If the region is naturally bounded by functions of y (x = g(y) type curves), or if using dx would force you into multiple integrals, use dy.\n• The goal is always to set up the simplest possible integral. There's no rule that says you must use dx."
+    },
+    {
+      "type": "example",
+      "heading": "Integrating with Respect to y",
+      "content": "Find the area between x = y² and x = y + 2.\n\nStep 1: Find intersections. Set y² = y + 2 → y² − y − 2 = 0 → (y − 2)(y + 1) = 0 → y = −1 and y = 2.\n\nStep 2: Determine right and left. At y = 0: x = 0² = 0 (parabola) and x = 0 + 2 = 2 (line). Since 2 > 0, the line x = y + 2 is to the right and the parabola x = y² is to the left.\n\nStep 3: Set up the integral.\nArea = ∫ from −1 to 2 of [(y + 2) − y²] dy.\n\nStep 4: Evaluate.\n= [y²/2 + 2y − y³/3] from −1 to 2\n= (4/2 + 4 − 8/3) − (1/2 − 2 + 1/3)\n= (2 + 4 − 8/3) − (1/2 − 2 + 1/3)\n= (18/3 − 8/3) − (3/6 − 12/6 + 2/6)\n= 10/3 − (−7/6)\n= 10/3 + 7/6\n= 20/6 + 7/6\n= 27/6\n= 9/2.\n\nThis was a single, clean integral. If you'd used dx, you would have needed to split the region at x = 1 (where the parabola's two branches become relevant) and solve for y = ±√x, making the problem much harder. Choosing dy saved significant effort."
+    },
+    {
+      "type": "deepdive",
+      "heading": "Why Sketching Isn't Optional — It's Mathematical Thinking",
+      "content": "Students sometimes treat sketching as busywork — something the teacher makes you do but isn't really necessary. In area-between-curves problems, sketching is the mathematics. Here's why.\n\nWhen you sketch, you're answering every important question at once: Where do the curves intersect? Which one is on top? Do they switch? Is the region better described with dx or dy? Is there symmetry you can exploit? Without a sketch, you're flying blind through all of these decisions.\n\nConsider a real pitfall. Suppose you're asked to find the area between y = x³ − x and y = 0. If you just blindly compute ∫ from −1 to 1 of (x³ − x) dx, you get zero. But the area isn't zero — the cubic crosses the x-axis at x = 0, and the two lobes have equal area but opposite signs that cancel. A sketch would reveal this instantly, telling you to split the integral or use absolute values.\n\nEven on the AP exam, where time is tight, a 15-second rough sketch pays for itself many times over. Mark the intersection points, shade the region, label which function is on top in each sub-interval, and note your limits. Then the integral practically writes itself.\n\nThe deeper point: integration is geometric. The symbols ∫(top − bottom) dx encode a picture. If you can see the picture, the symbols make sense. If you can't, you're just manipulating notation and hoping for the best. Develop the habit of sketching first — it's what mathematicians and engineers actually do in practice."
+    },
+    {
+      "type": "keypoint",
+      "content": "When a region is more naturally described by functions of y (or when using dx would require splitting into multiple integrals), integrate with respect to y: Area = ∫ from c to d of (right − left) dy. The principle is identical — you're still summing thin strips — but the strips are horizontal instead of vertical. Choose whichever orientation gives the simplest single integral."
+    }
+  ],
+  "aiContext": "AP Calculus AB. Guide students to understand concepts graphically before algebraically. Push them to explain what a derivative or integral MEANS physically, not just how to compute it. Common confusion: chain rule application order, and confusing definite vs indefinite integrals."
+}

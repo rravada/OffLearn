@@ -1,0 +1,36 @@
+{
+  "id": "enthalpy-calorimetry",
+  "title": "Enthalpy and Calorimetry",
+  "subject": "AP Chemistry",
+  "unit": "Thermodynamics",
+  "track": "ap",
+  "difficulty": "ap",
+  "duration": "30 min",
+  "objectives": [
+    "Define enthalpy and distinguish between exothermic (ΔH < 0) and endothermic (ΔH > 0) reactions",
+    "Apply q = mcΔT to calculate heat absorbed or released in calorimetry experiments",
+    "Interpret enthalpy diagrams showing the energy relationship between reactants and products"
+  ],
+  "sections": [
+    {
+      "type": "explanation",
+      "heading": "Energy in Chemical Reactions",
+      "content": "Every chemical reaction involves energy changes. Bonds must be broken in the reactants (which requires energy) and new bonds form in the products (which releases energy). Enthalpy (H) is a thermodynamic quantity that represents the heat content of a system at constant pressure.\n\nWe cannot measure absolute enthalpy, but we can measure the change in enthalpy (ΔH) during a reaction. If the products have less enthalpy than the reactants, the excess energy is released as heat — this is an exothermic reaction (ΔH < 0). If the products have more enthalpy, energy must be absorbed from the surroundings — this is an endothermic reaction (ΔH > 0).\n\nExothermic example: Combustion of methane. CH₄ + 2O₂ → CO₂ + 2H₂O, ΔH = −890 kJ/mol. The negative sign means 890 kJ of heat is released per mole of methane burned. Your stove works because of this reaction.\n\nEndothermic example: Photosynthesis. 6CO₂ + 6H₂O → C₆H₁₂O₆ + 6O₂, ΔH = +2803 kJ/mol. The plant absorbs energy from sunlight to drive this reaction uphill."
+    },
+    {
+      "type": "example",
+      "heading": "Coffee-Cup Calorimetry",
+      "content": "A coffee-cup calorimeter is a simple Styrofoam cup used to measure ΔH for reactions in solution. The key equation is:\n\nq = mcΔT\n\nwhere q = heat (in joules), m = mass of solution (in grams), c = specific heat capacity (4.18 J/g·°C for dilute aqueous solutions), and ΔT = change in temperature.\n\nProblem: When 50.0 mL of 1.0 M HCl is mixed with 50.0 mL of 1.0 M NaOH, the temperature rises from 22.0°C to 28.8°C. Find ΔH for the neutralization.\n\nTotal mass of solution ≈ 100.0 g (assuming density ≈ 1.0 g/mL)\nΔT = 28.8 − 22.0 = 6.8°C\nq = (100.0 g)(4.18 J/g·°C)(6.8°C) = 2842 J = 2.84 kJ\n\nMoles of reaction = 0.050 L × 1.0 M = 0.050 mol\nΔH = −2.84 kJ / 0.050 mol = −56.8 kJ/mol\n\nThe negative sign indicates exothermic (temperature went up, so heat was released by the reaction into the solution)."
+    },
+    {
+      "type": "keypoint",
+      "content": "ΔH < 0 means exothermic (heat released, surroundings warm up). ΔH > 0 means endothermic (heat absorbed, surroundings cool down). Calorimetry uses q = mcΔT to measure the heat exchanged, then divides by moles to find ΔH per mole."
+    },
+    {
+      "type": "deepdive",
+      "heading": "Bond Energy and Why Reactions Release or Absorb Heat",
+      "content": "At the molecular level, ΔH is determined by the balance between energy required to break bonds in reactants and energy released when forming bonds in products.\n\nΔH ≈ Σ(bonds broken) − Σ(bonds formed)\n\nIf the bonds formed in the products are stronger (release more energy) than the bonds broken in the reactants, the reaction is exothermic. In combustion, the C=O and O−H bonds formed in CO₂ and H₂O are very strong — stronger than the C−H and O=O bonds broken — so combustion releases energy.\n\nThis approach gives an approximation because bond energies are averages, but it builds excellent intuition. The key insight: breaking bonds ALWAYS requires energy; forming bonds ALWAYS releases energy. The net ΔH tells you which effect wins."
+    }
+  ],
+  "aiContext": "AP Chemistry. Use dimensional analysis for all calculations. Stress WHY reactions happen, not just equation balancing. Common confusion: entropy vs enthalpy direction, and applying Le Chatelier to specific perturbations."
+}

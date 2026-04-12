@@ -1,0 +1,41 @@
+{
+  "id": "solution-chemistry",
+  "title": "Solution Chemistry and Molarity",
+  "subject": "AP Chemistry",
+  "unit": "Chemical Reactions and Stoichiometry",
+  "track": "ap",
+  "difficulty": "ap",
+  "duration": "25 min",
+  "objectives": [
+    "Define molarity and calculate it from moles of solute and volume of solution",
+    "Apply the dilution equation M₁V₁ = M₂V₂ to prepare solutions of known concentration",
+    "Solve solution stoichiometry problems using molarity as a conversion factor"
+  ],
+  "sections": [
+    {
+      "type": "explanation",
+      "heading": "Concentration: How Much Solute Is Dissolved",
+      "content": "A solution is a homogeneous mixture of a solute (the substance dissolved) in a solvent (the substance doing the dissolving, usually water in chemistry). Molarity (M) is the most common way to express concentration:\n\nMolarity = moles of solute / liters of solution\n\nA 1.0 M NaCl solution contains 1.0 mole of NaCl dissolved in enough water to make 1.0 liter of total solution. Notice: it is the total volume of solution, not the volume of water added. This distinction matters when making solutions in the lab.\n\nMolarity is powerful because it directly connects volume (which you can measure with a graduated cylinder) to moles (which you need for stoichiometry). If you know the molarity and volume, you can calculate moles: moles = M × V (in liters)."
+    },
+    {
+      "type": "example",
+      "heading": "Dilution: Making a Less Concentrated Solution",
+      "content": "The dilution equation M₁V₁ = M₂V₂ works because the number of moles of solute does not change when you add more solvent — you are just spreading the same amount of solute into a larger volume.\n\nProblem: You have a stock solution of 12.0 M HCl. How many mL do you need to make 500.0 mL of 0.100 M HCl?\n\nM₁V₁ = M₂V₂\n(12.0 M)(V₁) = (0.100 M)(500.0 mL)\nV₁ = (0.100 × 500.0) / 12.0 = 4.17 mL\n\nSo you would measure 4.17 mL of the concentrated acid and add enough water to bring the total volume to 500.0 mL.\n\nSafety note: When diluting concentrated acids, always add acid to water (not water to acid) because the heat released by mixing can cause spattering. Remember: 'Do as you oughta — add the acid to the water.'"
+    },
+    {
+      "type": "explanation",
+      "heading": "Solution Stoichiometry",
+      "content": "Solution stoichiometry combines molarity with the mole ratios from balanced equations. Instead of starting with grams of a solid, you start with volume and concentration of a solution.\n\nExample: How many mL of 0.250 M AgNO₃ are needed to react completely with 25.0 mL of 0.100 M NaCl?\n\nAgNO₃ + NaCl → AgCl↓ + NaNO₃\n\nStep 1: Moles of NaCl = 0.100 M × 0.0250 L = 0.00250 mol\nStep 2: Mole ratio is 1:1, so moles of AgNO₃ needed = 0.00250 mol\nStep 3: Volume of AgNO₃ = moles / M = 0.00250 / 0.250 = 0.0100 L = 10.0 mL\n\nThe chain: volume → moles (via M) → mole ratio → moles → volume (via M). Molarity acts as a conversion factor in both directions."
+    },
+    {
+      "type": "keypoint",
+      "content": "Molarity (M = mol/L) connects measurable volumes to moles needed for stoichiometry. Dilution (M₁V₁ = M₂V₂) changes concentration without changing moles of solute. In solution stoichiometry, molarity replaces molar mass as the bridge between measurable quantities and moles."
+    },
+    {
+      "type": "deepdive",
+      "heading": "Solubility Rules and Predicting Precipitates",
+      "content": "When two aqueous ionic solutions are mixed, a precipitate (insoluble solid) may form if the product is insoluble. Solubility rules help you predict this:\n\n• Most nitrate (NO₃⁻) and alkali metal (Na⁺, K⁺) salts are soluble.\n• Most chloride salts are soluble, EXCEPT AgCl, PbCl₂, and Hg₂Cl₂.\n• Most sulfate salts are soluble, EXCEPT BaSO₄, PbSO₄, and CaSO₄.\n• Most hydroxide salts are insoluble, EXCEPT NaOH, KOH, and Ca(OH)₂ (slightly soluble).\n• Most carbonate, phosphate, and sulfide salts are insoluble.\n\nWhen writing net ionic equations, you split soluble ionic compounds into their ions but leave precipitates (and molecular compounds like water) intact. Spectator ions — present on both sides unchanged — are removed. The net ionic equation shows only the species that actually participate in the reaction.\n\nExample: Ag⁺(aq) + Cl⁻(aq) → AgCl(s)\n\nThis is the net ionic equation for mixing any soluble silver salt with any soluble chloride salt. The identity of the spectator ions does not matter."
+    }
+  ],
+  "aiContext": "AP Chemistry. Use dimensional analysis for all calculations. Stress WHY reactions happen, not just equation balancing. Common confusion: entropy vs enthalpy direction, and applying Le Chatelier to specific perturbations."
+}

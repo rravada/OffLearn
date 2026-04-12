@@ -1,0 +1,41 @@
+{
+  "id": "community-ecology",
+  "title": "Community Ecology and Biodiversity",
+  "subject": "AP Biology",
+  "unit": "Ecology",
+  "track": "ap",
+  "difficulty": "ap",
+  "duration": "25 min",
+  "objectives": [
+    "Describe the major types of species interactions: competition, predation, mutualism, and parasitism",
+    "Explain the concepts of ecological niche, competitive exclusion, and resource partitioning",
+    "Compare primary and secondary succession and analyze the importance of biodiversity to ecosystem stability"
+  ],
+  "sections": [
+    {
+      "type": "explanation",
+      "heading": "Species Interactions Shape Communities",
+      "content": "An ecological community is all the populations of different species living and interacting in the same area. The interactions between species are the forces that shape community structure.\n\nCompetition (−/−): Two species using the same limited resource are both harmed. The competitive exclusion principle states that two species cannot occupy exactly the same niche indefinitely — one will outcompete the other. But species often coexist through resource partitioning — dividing up the resource. Warblers in the same forest, for example, feed at different heights in the same trees.\n\nPredation (+/−): One species (the predator) benefits by eating another (the prey). Predator-prey relationships drive adaptations on both sides — prey evolve camouflage, speed, and chemical defenses; predators evolve sharper senses and faster pursuit.\n\nMutualism (+/+): Both species benefit. Bees pollinate flowers while collecting nectar. Mycorrhizal fungi help plant roots absorb nutrients while receiving sugars from the plant.\n\nParasitism (+/−): The parasite benefits at the expense of the host. Tapeworms, ticks, and malaria-causing Plasmodium are examples. Unlike predation, parasitism usually does not immediately kill the host."
+    },
+    {
+      "type": "example",
+      "heading": "Keystone Species: Outsized Influence",
+      "content": "A keystone species has a disproportionately large effect on its community relative to its abundance. Remove it, and the community changes dramatically.\n\nClassic example: When ecologist Robert Paine removed the sea star Pisaster from intertidal communities, mussel populations exploded and outcompeted other species, reducing the community from 15 species to 8. The sea star was a keystone predator — by eating mussels, it kept them in check and maintained space for other species.\n\nOther keystone types:\n  • Keystone mutualists: Fig trees in tropical forests fruit year-round, sustaining fruit-eating animals during lean seasons.\n  • Ecosystem engineers: Beavers build dams that create wetland habitats for countless other species.\n\nThe keystone concept matters because it means that protecting biodiversity is not just about saving charismatic species — some ecologically critical species may be small, unglamorous, and easily overlooked."
+    },
+    {
+      "type": "explanation",
+      "heading": "Ecological Succession",
+      "content": "Ecological succession is the process by which the species composition of a community changes over time after a disturbance.\n\nPrimary succession occurs on surfaces where no soil exists — bare rock exposed by a retreating glacier, a new volcanic island, or a lava flow. Pioneer species like lichens and mosses are the first to colonize. They break down rock into soil, which allows grasses and shrubs to establish, followed eventually by trees. Primary succession can take hundreds to thousands of years.\n\nSecondary succession occurs where a disturbance has destroyed the community but soil remains — after a forest fire, flood, or agricultural abandonment. Because soil and seed banks already exist, recovery is much faster (decades to a century).\n\nBoth types tend toward a climax community — a relatively stable community that persists until the next major disturbance. However, modern ecologists recognize that most communities are in a constant state of dynamic equilibrium, with disturbances of various sizes creating a mosaic of successional stages."
+    },
+    {
+      "type": "keypoint",
+      "content": "Species interactions (competition, predation, mutualism, parasitism) shape community structure. Keystone species maintain biodiversity disproportionate to their abundance. Succession rebuilds communities after disturbance, with primary succession starting from bare rock and secondary succession starting from existing soil."
+    },
+    {
+      "type": "deepdive",
+      "heading": "Why Biodiversity Matters",
+      "content": "Biodiversity — the variety of life at the genetic, species, and ecosystem levels — is far more than an aesthetic value. Research consistently shows that more biodiverse ecosystems are more productive, more stable, and more resilient to disturbance.\n\nThe redundancy hypothesis explains part of this: in a diverse community, many species perform similar ecological functions. If one species is lost to disease or environmental change, others can fill its role. In a low-diversity community, losing a single species can collapse an entire function.\n\nEcosystem services — the benefits humans derive from ecosystems — depend on biodiversity. Pollination, water purification, carbon sequestration, flood control, nutrient cycling, and pharmaceutical discovery all require functioning, diverse ecosystems.\n\nCurrent biodiversity loss is occurring at 100 to 1,000 times the natural background extinction rate, driven by habitat destruction, overexploitation, pollution, invasive species, and climate change. Understanding why biodiversity matters is not just an academic exercise — it is one of the most urgent scientific issues of our time."
+    }
+  ],
+  "aiContext": "AP Biology. Connect molecular mechanisms to organism and ecosystem outcomes. Stress experimental design and data analysis. Common confusion: transcription vs translation, and when to apply Hardy-Weinberg conditions."
+}

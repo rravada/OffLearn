@@ -1,0 +1,36 @@
+{
+  "id": "natural-selection-adaptation",
+  "title": "Natural Selection and Adaptation",
+  "subject": "AP Biology",
+  "unit": "Evolution",
+  "track": "ap",
+  "difficulty": "ap",
+  "duration": "25 min",
+  "objectives": [
+    "Identify the three conditions necessary for natural selection to occur",
+    "Distinguish between directional, stabilizing, and disruptive selection with examples",
+    "Define biological fitness and explain why it is measured by reproductive success, not strength"
+  ],
+  "sections": [
+    {
+      "type": "explanation",
+      "heading": "Darwin's Key Insight",
+      "content": "Charles Darwin's theory of evolution by natural selection rests on a simple but powerful observation: in any population, individuals vary in their traits. Some of that variation is heritable — passed from parents to offspring through genes. And because resources are limited, not all individuals survive and reproduce equally well.\n\nIndividuals whose traits give them even a slight advantage in a particular environment tend to survive longer and produce more offspring. Over generations, those advantageous traits become more common in the population. This is natural selection — the environment 'selecting' which traits are passed on, not through any conscious choice, but through the simple math of differential reproduction.\n\nCritically, natural selection acts on phenotypes (observable traits), not directly on genotypes. It does not create new traits — mutations do that. Natural selection only increases or decreases the frequency of traits that already exist in the population."
+    },
+    {
+      "type": "example",
+      "heading": "Three Modes of Natural Selection",
+      "content": "Directional selection: One extreme phenotype is favored. Example — during a drought, finches with larger, stronger beaks survive because they can crack the tough seeds that remain. Over time, average beak size in the population increases.\n\nStabilizing selection: The intermediate phenotype is favored, and both extremes are selected against. Example — human birth weight. Very small babies face health risks; very large babies face difficult births. Babies of intermediate weight have the highest survival rate.\n\nDisruptive selection: Both extremes are favored over the intermediate phenotype. Example — a bird population where large beaks crack hard seeds and small beaks eat soft seeds efficiently, but medium beaks do neither well. Over time, the population may split into two distinct groups.\n\nDisruptive selection is the rarest but the most interesting for AP Biology because it can lead to speciation — the formation of new species."
+    },
+    {
+      "type": "keypoint",
+      "content": "Natural selection requires three conditions: variation in traits, heritability of those traits, and differential reproduction based on those traits. Fitness in biology means reproductive success — not physical strength."
+    },
+    {
+      "type": "deepdive",
+      "heading": "Adaptation Is Not Perfection",
+      "content": "Natural selection produces adaptations — traits that increase fitness in a given environment. But adaptations are not perfect designs. Evolution is constrained by several factors:\n\n1. Historical constraints: Evolution modifies existing structures rather than building from scratch. The human spine, for example, evolved from a horizontal beam (in our four-legged ancestors) into a vertical column. This is why back pain is so common — our spines are a retrofit, not an optimal design.\n\n2. Trade-offs: Improving one trait often comes at the cost of another. Bright plumage in male birds attracts mates but also attracts predators.\n\n3. Chance: Genetic drift — random changes in allele frequencies — can override natural selection, especially in small populations. A perfectly adapted individual can die in a random event (a flood, a lightning strike) without passing on its genes.\n\n4. Changing environments: An adaptation that is advantageous today may become a liability if the environment changes.\n\nUnderstanding these constraints helps you avoid the common misconception that every trait must be an adaptation. Some traits are byproducts of other adaptations, and some persist simply because they are not harmful enough for selection to eliminate."
+    }
+  ],
+  "aiContext": "AP Biology. Connect molecular mechanisms to organism and ecosystem outcomes. Stress experimental design and data analysis. Common confusion: transcription vs translation, and when to apply Hardy-Weinberg conditions."
+}

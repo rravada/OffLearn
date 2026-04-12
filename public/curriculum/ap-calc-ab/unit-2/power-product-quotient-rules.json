@@ -1,0 +1,65 @@
+{
+  "id": "ap-calc-ab-u2-power-product-quotient-rules",
+  "title": "Power, Product, and Quotient Rules",
+  "subject": "AP Calculus AB",
+  "unit": "Differentiation",
+  "track": "ap",
+  "difficulty": "ap",
+  "duration": "30 min",
+  "objectives": [
+    "Apply the power rule to differentiate polynomial and radical expressions, and explain why the rule works using the limit definition.",
+    "Use the product rule and quotient rule to differentiate functions that are built from multiplication or division of simpler pieces.",
+    "Combine multiple differentiation rules in a single problem to handle complex expressions efficiently and correctly."
+  ],
+  "sections": [
+    {
+      "type": "explanation",
+      "heading": "The Power Rule: Your Most-Used Tool",
+      "content": "Here's the single most frequently used rule in all of calculus:\n\nIf f(x) = xⁿ, then f'(x) = n·xⁿ⁻¹.\n\nBring the exponent down as a coefficient, then reduce the exponent by 1. That's it.\n\nExamples:\n• f(x) = x⁵ → f'(x) = 5x⁴\n• f(x) = x¹ → f'(x) = 1·x⁰ = 1 (the derivative of x is 1 — makes sense, y = x is a line with slope 1)\n• f(x) = x⁰ = 1 → f'(x) = 0·x⁻¹ = 0 (the derivative of a constant is 0 — a flat line has zero slope)\n\nBut the power rule is far more versatile than it first appears. It works for *any* real exponent, not just positive integers:\n• f(x) = x⁻² = 1/x² → f'(x) = −2x⁻³ = −2/x³\n• f(x) = x^(1/2) = √x → f'(x) = (1/2)x^(−1/2) = 1/(2√x)\n• f(x) = x^(2/3) → f'(x) = (2/3)x^(−1/3)\n\nThis means whenever you see a square root, cube root, or reciprocal, rewrite it using exponents first, then apply the power rule. The ability to convert between forms — √x to x^(1/2), 1/x³ to x⁻³ — is essential. Get comfortable with it; you'll use it constantly."
+    },
+    {
+      "type": "deepdive",
+      "heading": "Why Does the Power Rule Work? Building Intuition",
+      "content": "You can prove the power rule for positive integers using the limit definition and the binomial theorem, but let's build intuition first.\n\nThink about f(x) = x³ geometrically — it represents the volume of a cube with side length x. If you increase the side length by a tiny amount h, the new volume is (x + h)³. How much volume did you add?\n\nPicture the cube: you've extended it by h in each of three dimensions. The added volume is roughly three slabs, each with area x² and thickness h. So the change in volume is approximately 3x²·h, and the rate of change (dividing by h) is about 3x². That's exactly the power rule: d/dx(x³) = 3x².\n\nThe 'approximately' comes from the fact that those three slabs overlap at their edges and corners, creating thin strips and a tiny corner cube that involve h² and h³ terms. But as h → 0, those higher-order terms vanish, and you're left with exactly 3x².\n\nThis same geometric reasoning extends: for x⁴ (a 4-dimensional hypercube), you'd add 4 'slabs' of volume x³·h, giving d/dx(x⁴) = 4x³. The pattern holds for all positive integers, and mathematicians have shown it extends to all real exponents through more advanced arguments.\n\nAlso, two essential companion rules: the **constant multiple rule** says d/dx[c·f(x)] = c·f'(x) — constants just come along for the ride. And the **sum/difference rule** says d/dx[f(x) ± g(x)] = f'(x) ± g'(x) — you can differentiate term by term. Together with the power rule, these let you differentiate any polynomial instantly."
+    },
+    {
+      "type": "example",
+      "heading": "Power Rule in Action: Polynomials and Rewritten Expressions",
+      "content": "Example 1: f(x) = 3x⁴ − 7x² + 5x − 2\n  f'(x) = 3(4x³) − 7(2x) + 5(1) − 0\n  f'(x) = 12x³ − 14x + 5\n\nExample 2: g(x) = (4/x²) + 3√x\nFirst rewrite: g(x) = 4x⁻² + 3x^(1/2)\n  g'(x) = 4(−2)x⁻³ + 3(1/2)x^(−1/2)\n  g'(x) = −8x⁻³ + (3/2)x^(−1/2)\n  g'(x) = −8/x³ + 3/(2√x)\n\nExample 3: h(x) = (x³ + 2x) / x\nDon't reach for the quotient rule yet! Simplify first:\n  h(x) = x² + 2\n  h'(x) = 2x\n\nThis last example illustrates a crucial strategy: always simplify before differentiating if you can. The simpler the expression, the less room for error."
+    },
+    {
+      "type": "explanation",
+      "heading": "The Product Rule: When Two Functions Multiply",
+      "content": "What if you need to differentiate f(x) = x²·sin(x)? You can't just differentiate each piece separately and multiply the results — that gives the wrong answer. (Try it later once you know the derivative of sin(x), and you'll see it fails.)\n\nThe **product rule** handles this. If f(x) = u(x)·v(x), then:\n\n  f'(x) = u'(x)·v(x) + u(x)·v'(x)\n\nIn words: the derivative of a product is 'the derivative of the first times the second, plus the first times the derivative of the second.'\n\nHere's an analogy to help it stick. Imagine a rectangle whose width is u(x) and whose height is v(x). The area is u·v. Now both dimensions are changing as x changes. The change in area comes from two sources: the width grows (by u'·h) while the height stays roughly v, contributing u'·v to the rate of change. And the height grows (by v'·h) while the width stays roughly u, contributing u·v'. The total rate of area change is u'v + uv'.\n\n(There's also a tiny corner rectangle of size u'·h · v'·h, but it involves h² and vanishes in the limit — just like the corner cube in the power rule story.)\n\nMany students try to memorize the product rule by chanting the formula. That works, but understanding *why* it's true — the rectangle analogy — means you'll never confuse it or misremember it under test pressure."
+    },
+    {
+      "type": "example",
+      "heading": "Applying the Product Rule",
+      "content": "Differentiate f(x) = (3x² + 1)(x⁴ − 2x).\n\nLet u = 3x² + 1 and v = x⁴ − 2x.\nThen u' = 6x and v' = 4x³ − 2.\n\nProduct rule: f'(x) = u'v + uv'\n  = (6x)(x⁴ − 2x) + (3x² + 1)(4x³ − 2)\n  = 6x⁵ − 12x² + 12x⁵ − 6x² + 4x³ − 2\n  = 18x⁵ + 4x³ − 18x² − 2\n\nYou could verify this by expanding f(x) first — multiply out (3x² + 1)(x⁴ − 2x) = 3x⁶ − 6x³ + x⁴ − 2x — then differentiating term by term. You'll get the same answer: 18x⁵ + 4x³ − 18x² − 2. That consistency check is a great way to build confidence in the product rule."
+    },
+    {
+      "type": "explanation",
+      "heading": "The Quotient Rule: When One Function Divides Another",
+      "content": "If f(x) = u(x)/v(x), the **quotient rule** says:\n\n  f'(x) = [u'(x)·v(x) − u(x)·v'(x)] / [v(x)]²\n\nThere's a classic mnemonic: 'low d-high minus high d-low, all over the square of what's below.' Here 'high' means the numerator u, 'low' means the denominator v, and 'd' means 'derivative of.'\n\nNotice the subtraction sign — this is where students make the most common error. In the product rule, it's plus. In the quotient rule, it's minus, and the order matters: it's (derivative of top)(bottom) MINUS (top)(derivative of bottom). Swap the order and you get the wrong sign.\n\nWhy is there a minus sign? Think of it this way: if the denominator v is growing, that makes the fraction smaller (you're dividing by a bigger number), so its growth works *against* the fraction's growth. That opposition shows up as the subtraction.\n\nPractical tip: if you can rewrite a quotient as a product using negative exponents, you can use the product rule instead. For instance, f(x) = u(x)/v(x) = u(x)·[v(x)]⁻¹. Some people prefer this; others find the quotient rule more direct. Either approach is valid — use whichever feels more natural to you."
+    },
+    {
+      "type": "example",
+      "heading": "Applying the Quotient Rule",
+      "content": "Differentiate f(x) = (x² + 3) / (2x − 1).\n\nLet u = x² + 3, so u' = 2x.\nLet v = 2x − 1, so v' = 2.\n\nQuotient rule: f'(x) = [u'v − uv'] / v²\n  = [(2x)(2x − 1) − (x² + 3)(2)] / (2x − 1)²\n  = [4x² − 2x − 2x² − 6] / (2x − 1)²\n  = [2x² − 2x − 6] / (2x − 1)²\n\nYou can factor the numerator if useful: 2(x² − x − 3) / (2x − 1)², though for most purposes the unfactored form is fine.\n\nCommon mistake to avoid: don't forget to square the entire denominator. Students sometimes write (2x − 1) instead of (2x − 1)². The square is part of the formula — always."
+    },
+    {
+      "type": "keypoint",
+      "content": "Power rule: d/dx(xⁿ) = nxⁿ⁻¹. Product rule: d/dx(uv) = u'v + uv'. Quotient rule: d/dx(u/v) = (u'v − uv') / v². Always simplify expressions before differentiating when possible — it reduces errors and saves time."
+    },
+    {
+      "type": "example",
+      "heading": "Combining Rules: A Multi-Step Problem",
+      "content": "Differentiate f(x) = x² · (3x + 1)/(x − 4).\n\nStrategy: treat this as x² times the fraction (3x + 1)/(x − 4). Use the product rule where u = x² and v = (3x + 1)/(x − 4), and use the quotient rule to find v'.\n\nStep 1 — Find v' using the quotient rule on (3x + 1)/(x − 4):\n  v' = [3(x − 4) − (3x + 1)(1)] / (x − 4)²\n  v' = [3x − 12 − 3x − 1] / (x − 4)²\n  v' = −13 / (x − 4)²\n\nStep 2 — Apply the product rule: f'(x) = u'v + uv'\n  = 2x · (3x + 1)/(x − 4) + x² · [−13/(x − 4)²]\n  = [2x(3x + 1)] / (x − 4) − 13x² / (x − 4)²\n\nStep 3 — Combine over a common denominator (x − 4)²:\n  = [2x(3x + 1)(x − 4) − 13x²] / (x − 4)²\n  = [2x(3x² − 11x − 4) − 13x²] / (x − 4)²\n  = [6x³ − 22x² − 8x − 13x²] / (x − 4)²\n  = [6x³ − 35x² − 8x] / (x − 4)²\n  = x(6x² − 35x − 8) / (x − 4)²\n\nThis kind of layered problem — using one rule inside another — is exactly what the AP exam tests. The key is to work systematically: identify the outermost operation, apply the appropriate rule, then handle the inner pieces."
+    },
+    {
+      "type": "keypoint",
+      "content": "When multiple rules apply, work from the outside in. Identify the outermost structure (is it a product? a quotient? a composition?) and apply that rule first. Then differentiate the inner pieces using whatever rules they require. Stay organized and write out each step — speed comes from accuracy, not from skipping steps."
+    }
+  ],
+  "aiContext": "AP Calculus AB. Guide students to understand concepts graphically before algebraically. Push them to explain what a derivative or integral MEANS physically, not just how to compute it. Common confusion: chain rule application order, and confusing definite vs indefinite integrals."
+}

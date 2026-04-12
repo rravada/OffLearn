@@ -1,0 +1,46 @@
+{
+  "id": "nucleic-acids-central-dogma",
+  "title": "Nucleic Acids and the Central Dogma",
+  "subject": "AP Biology",
+  "unit": "Chemistry of Life",
+  "track": "ap",
+  "difficulty": "ap",
+  "duration": "30 min",
+  "objectives": [
+    "Compare the structures of DNA and RNA, including sugar, bases, and strandedness",
+    "Explain the central dogma of molecular biology: DNA → RNA → Protein",
+    "Describe the basic processes of replication, transcription, and translation at a conceptual level"
+  ],
+  "sections": [
+    {
+      "type": "explanation",
+      "heading": "Nucleotides: The Monomers of Nucleic Acids",
+      "content": "Nucleic acids — DNA and RNA — are polymers built from monomers called nucleotides. Each nucleotide has three parts: a five-carbon sugar, a phosphate group, and a nitrogenous base.\n\nIn DNA, the sugar is deoxyribose (missing an oxygen at the 2' carbon). In RNA, the sugar is ribose (which has that oxygen). This single oxygen difference makes RNA less chemically stable than DNA, which is one reason DNA is better suited for long-term information storage.\n\nThere are five nitrogenous bases. DNA uses adenine (A), thymine (T), guanine (G), and cytosine (C). RNA uses the same bases except uracil (U) replaces thymine. The bases come in two size categories: purines (A and G) have two fused rings, and pyrimidines (T, C, and U) have one ring.\n\nNucleotides link together through phosphodiester bonds — the phosphate group of one nucleotide bonds to the sugar of the next. This creates a sugar-phosphate backbone with bases projecting off to the side, like the teeth of a zipper."
+    },
+    {
+      "type": "explanation",
+      "heading": "DNA: The Double Helix",
+      "content": "DNA is typically double-stranded, forming the iconic double helix discovered by Watson and Crick (building on critical X-ray crystallography data from Rosalind Franklin). The two strands run antiparallel — one runs 5' to 3' and the other runs 3' to 5'.\n\nThe strands are held together by hydrogen bonds between complementary base pairs: A pairs with T (two hydrogen bonds), and G pairs with C (three hydrogen bonds). This complementary base pairing is the foundation of DNA replication and of the flow of genetic information.\n\nBecause of base pairing, if you know the sequence of one strand, you automatically know the sequence of the other. If one strand reads 5'-ATCGGA-3', the complementary strand reads 3'-TAGCCT-5'. This redundancy is a built-in error-correction mechanism: if one strand is damaged, the other strand provides the template for repair."
+    },
+    {
+      "type": "example",
+      "heading": "Comparing DNA and RNA",
+      "content": "Feature          | DNA                  | RNA\n-----------------|-----------------------|----------------------\nSugar            | Deoxyribose           | Ribose\nStrands          | Double-stranded       | Usually single-stranded\nBases            | A, T, G, C            | A, U, G, C\nFunction         | Long-term storage     | Temporary messenger,\n                 | of genetic info       | ribosomal structure,\n                 |                       | transfer of amino acids\nStability        | Very stable           | Less stable\nLocation (euks)  | Nucleus               | Nucleus and cytoplasm\n\nThink of DNA as the master blueprint kept locked in a vault (the nucleus) and RNA as the photocopy that gets carried out to the construction site (the ribosome)."
+    },
+    {
+      "type": "explanation",
+      "heading": "The Central Dogma: DNA → RNA → Protein",
+      "content": "The central dogma of molecular biology, articulated by Francis Crick, describes the flow of genetic information in cells:\n\n1. DNA replication: DNA copies itself before cell division so each daughter cell gets a complete set of instructions.\n\n2. Transcription: A specific segment of DNA (a gene) is used as a template to build a complementary strand of messenger RNA (mRNA). This happens in the nucleus of eukaryotic cells. The enzyme RNA polymerase reads the template strand and assembles the mRNA.\n\n3. Translation: The mRNA travels to a ribosome in the cytoplasm, where its sequence is read in three-letter chunks called codons. Each codon specifies a particular amino acid. Transfer RNA (tRNA) molecules carry amino acids to the ribosome and match them to the correct codons via their anticodons. The ribosome links the amino acids into a polypeptide chain, which folds into a functional protein.\n\nSo the flow is: DNA stores the information, RNA carries and translates it, and protein does the work. This is the central organizing principle of molecular biology."
+    },
+    {
+      "type": "keypoint",
+      "content": "The central dogma — DNA → RNA → Protein — describes the one-directional flow of genetic information. DNA is the permanent archive, mRNA is the temporary working copy, and the ribosome is the machine that reads the copy to build proteins."
+    },
+    {
+      "type": "deepdive",
+      "heading": "Exceptions and Nuances to the Central Dogma",
+      "content": "The central dogma is powerful, but biology is full of exceptions. Retroviruses like HIV carry their genetic information as RNA and use an enzyme called reverse transcriptase to convert it back into DNA — this is reverse transcription, a flow from RNA → DNA that Crick's original model did not predict.\n\nAdditionally, not all RNA molecules are messengers. Ribosomal RNA (rRNA) forms the structural and catalytic core of ribosomes. Transfer RNA (tRNA) physically carries amino acids. Small interfering RNA (siRNA) and microRNA (miRNA) regulate gene expression by silencing specific mRNAs. Some RNA molecules (called ribozymes) even catalyze chemical reactions, much like protein enzymes.\n\nThese discoveries led scientists to propose the RNA World hypothesis — the idea that early life may have relied on RNA both for storing information and catalyzing reactions, before DNA and proteins evolved. Understanding the central dogma is essential, but appreciating its exceptions reveals how much more complex and elegant molecular biology truly is."
+    }
+  ],
+  "aiContext": "AP Biology. Connect molecular mechanisms to organism and ecosystem outcomes. Stress experimental design and data analysis. Common confusion: transcription vs translation, and when to apply Hardy-Weinberg conditions."
+}

@@ -1,0 +1,36 @@
+{
+  "id": "hess-law",
+  "title": "Hess's Law",
+  "subject": "AP Chemistry",
+  "unit": "Thermodynamics",
+  "track": "ap",
+  "difficulty": "ap",
+  "duration": "25 min",
+  "objectives": [
+    "Explain why enthalpy is a state function and what this means for Hess's Law",
+    "Calculate ΔH for a target reaction by manipulating and adding known thermochemical equations",
+    "Use standard enthalpies of formation to calculate ΔH°rxn"
+  ],
+  "sections": [
+    {
+      "type": "explanation",
+      "heading": "Enthalpy Is a State Function",
+      "content": "A state function depends only on the initial and final states, not on the path taken between them. Altitude is a good analogy: whether you hike straight up a mountain or take a winding switchback trail, the change in altitude is the same.\n\nEnthalpy works the same way. The total enthalpy change for a reaction depends only on the reactants and products, not on the intermediate steps. This is Hess's Law: if a reaction can be expressed as the sum of two or more other reactions, the total ΔH equals the sum of the ΔH values of those individual reactions.\n\nThis is incredibly useful because some reactions are difficult or impossible to carry out directly in a calorimeter. By measuring the enthalpy changes of simpler reactions that add up to the target reaction, you can calculate ΔH indirectly."
+    },
+    {
+      "type": "example",
+      "heading": "Applying Hess's Law Step by Step",
+      "content": "Target: C(s) + ½O₂(g) → CO(g), ΔH = ?\n\nGiven reactions:\n  (1) C(s) + O₂(g) → CO₂(g), ΔH₁ = −393.5 kJ\n  (2) CO(g) + ½O₂(g) → CO₂(g), ΔH₂ = −283.0 kJ\n\nStrategy: We need CO as a PRODUCT, but in reaction (2) CO is a reactant. Reverse reaction (2) and change the sign of ΔH:\n  (2 reversed) CO₂(g) → CO(g) + ½O₂(g), ΔH = +283.0 kJ\n\nNow add reaction (1) + reversed (2):\n  C(s) + O₂(g) → CO₂(g)          ΔH = −393.5 kJ\n  CO₂(g) → CO(g) + ½O₂(g)        ΔH = +283.0 kJ\n  ─────────────────────────────────────────────\n  C(s) + ½O₂(g) → CO(g)           ΔH = −110.5 kJ\n\nCO₂ cancels (appears on both sides), and ½O₂ cancels from the full O₂, leaving the target reaction."
+    },
+    {
+      "type": "keypoint",
+      "content": "Hess's Law: ΔH for a reaction is the same regardless of the pathway. When manipulating equations: reversing a reaction flips the sign of ΔH; multiplying a reaction by a factor multiplies ΔH by the same factor."
+    },
+    {
+      "type": "deepdive",
+      "heading": "Standard Enthalpies of Formation",
+      "content": "The standard enthalpy of formation (ΔH°f) is the enthalpy change when one mole of a compound is formed from its constituent elements in their standard states (the most stable form at 25°C and 1 atm). By definition, ΔH°f for any element in its standard state is zero.\n\nUsing formation enthalpies, you can calculate ΔH° for any reaction:\n\nΔH°rxn = Σ ΔH°f(products) − Σ ΔH°f(reactants)\n\nExample: CH₄(g) + 2O₂(g) → CO₂(g) + 2H₂O(l)\nΔH°rxn = [1(−393.5) + 2(−285.8)] − [1(−74.8) + 2(0)]\n       = [−393.5 + (−571.6)] − [−74.8]\n       = −965.1 − (−74.8)\n       = −890.3 kJ\n\nThis method works for any reaction as long as you have ΔH°f values for all reactants and products — which are tabulated in reference tables provided on the AP exam. It is essentially Hess's Law automated: you are summing the formation reactions that build each product and subtracting those that build each reactant."
+    }
+  ],
+  "aiContext": "AP Chemistry. Use dimensional analysis for all calculations. Stress WHY reactions happen, not just equation balancing. Common confusion: entropy vs enthalpy direction, and applying Le Chatelier to specific perturbations."
+}

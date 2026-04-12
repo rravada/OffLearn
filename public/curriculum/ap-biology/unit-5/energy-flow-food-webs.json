@@ -1,0 +1,36 @@
+{
+  "id": "energy-flow-food-webs",
+  "title": "Energy Flow: Food Webs and Trophic Levels",
+  "subject": "AP Biology",
+  "unit": "Ecology",
+  "track": "ap",
+  "difficulty": "ap",
+  "duration": "25 min",
+  "objectives": [
+    "Trace energy flow from producers through primary, secondary, and tertiary consumers",
+    "Apply the 10% rule to calculate energy transfer between trophic levels",
+    "Explain why food webs are more accurate representations of ecosystems than food chains"
+  ],
+  "sections": [
+    {
+      "type": "explanation",
+      "heading": "Trophic Levels: Who Eats Whom",
+      "content": "Every ecosystem runs on energy, and that energy enters almost exclusively through photosynthesis. Producers (autotrophs) — plants, algae, and cyanobacteria — capture solar energy and convert it into chemical energy stored in organic molecules like glucose.\n\nPrimary consumers (herbivores) eat producers. Secondary consumers eat primary consumers. Tertiary consumers eat secondary consumers. Decomposers (bacteria and fungi) break down dead organisms at every level, recycling nutrients back into the soil and atmosphere.\n\nThese feeding levels are called trophic levels. A food chain shows a single linear pathway of energy transfer: grass → grasshopper → frog → snake → hawk. But real ecosystems are more complex — most organisms eat and are eaten by multiple species. A food web shows the interconnected network of all feeding relationships in an ecosystem."
+    },
+    {
+      "type": "example",
+      "heading": "The 10% Rule and Energy Pyramids",
+      "content": "When a grasshopper eats grass, it does not capture all of the grass's energy. Most of the energy at each trophic level is lost as heat through cellular respiration, used for the organism's own life processes, or lost in waste. On average, only about 10% of the energy at one trophic level is transferred to the next.\n\nIf producers capture 10,000 kcal of energy:\n  Primary consumers receive: 10,000 × 0.10 = 1,000 kcal\n  Secondary consumers receive: 1,000 × 0.10 = 100 kcal\n  Tertiary consumers receive: 100 × 0.10 = 10 kcal\n\nThis is why energy pyramids are always widest at the bottom. It is also why there are far fewer top predators than herbivores — there simply is not enough energy to support large populations at the top of the food web.\n\nReal-world implication: eating lower on the food chain is more energy-efficient. It takes roughly 10 kg of grain to produce 1 kg of beef, because the cow uses 90% of that energy for its own metabolism."
+    },
+    {
+      "type": "keypoint",
+      "content": "Energy flows through ecosystems in one direction: from producers to consumers to decomposers. Only about 10% of energy transfers between trophic levels; the rest is lost as heat. This limits the number of trophic levels an ecosystem can support."
+    },
+    {
+      "type": "deepdive",
+      "heading": "Why Removing a Species Can Collapse a Food Web",
+      "content": "Food webs are interconnected, so removing one species can have cascading effects. When sea otters were hunted to near-extinction along the Pacific coast, sea urchin populations exploded (no predator to keep them in check). The urchins devoured kelp forests, destroying habitat for hundreds of other species. Restoring otter populations allowed kelp forests to recover.\n\nThis is called a trophic cascade — a change at one trophic level that ripples through the entire food web. Keystone species like sea otters have a disproportionately large effect on their ecosystem relative to their biomass. Losing them causes changes that are far greater than you would predict based on their numbers alone.\n\nFor AP Biology, understanding trophic cascades helps you analyze experimental data about ecosystem disruption and predict the consequences of species loss."
+    }
+  ],
+  "aiContext": "AP Biology. Connect molecular mechanisms to organism and ecosystem outcomes. Stress experimental design and data analysis. Common confusion: transcription vs translation, and when to apply Hardy-Weinberg conditions."
+}

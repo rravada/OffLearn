@@ -1,0 +1,46 @@
+{
+  "id": "proteins-structure-function",
+  "title": "Proteins: Structure and Function",
+  "subject": "AP Biology",
+  "unit": "Chemistry of Life",
+  "track": "ap",
+  "difficulty": "ap",
+  "duration": "30 min",
+  "objectives": [
+    "Describe how amino acids join via peptide bonds to form polypeptides",
+    "Explain the four levels of protein structure and how each contributes to function",
+    "Analyze how denaturation disrupts protein function and connect enzyme shape to catalytic activity"
+  ],
+  "sections": [
+    {
+      "type": "explanation",
+      "heading": "Amino Acids: The Building Blocks",
+      "content": "Proteins are the workhorses of the cell — they catalyze reactions, provide structural support, transport materials, send signals, and defend against pathogens. Every protein is built from a set of 20 amino acids, each with the same basic structure: a central carbon bonded to an amino group (−NH₂), a carboxyl group (−COOH), a hydrogen atom, and a variable side chain called the R group.\n\nThe R group is what makes each amino acid unique. Some R groups are nonpolar and hydrophobic (like valine and leucine), some are polar and hydrophilic (like serine and threonine), some are positively charged (like lysine), and some are negatively charged (like glutamate). The sequence of R groups in a protein determines how it folds and, therefore, what it does.\n\nAmino acids link together through peptide bonds, formed by dehydration synthesis between the carboxyl group of one amino acid and the amino group of the next. A chain of amino acids is called a polypeptide. Once the polypeptide folds into its functional shape, we call it a protein."
+    },
+    {
+      "type": "example",
+      "heading": "Peptide Bond Formation",
+      "content": "Amino acid 1 (−COOH) + Amino acid 2 (−NH₂) → peptide bond (−CO−NH−) + H₂O\n\nThis is dehydration synthesis, exactly like forming a glycosidic bond between sugars. The resulting peptide bond is rigid and planar, which constrains how the chain can fold.\n\nA dipeptide has 1 peptide bond.\nA tripeptide has 2 peptide bonds.\nA polypeptide of n amino acids has (n − 1) peptide bonds.\n\nInsulin, a small protein hormone, has 51 amino acids. Titin, a structural protein in muscles and the largest known protein, has over 34,000 amino acids."
+    },
+    {
+      "type": "explanation",
+      "heading": "Four Levels of Protein Structure",
+      "content": "Primary structure is the linear sequence of amino acids — think of it as the spelling of the protein. Change one letter (one amino acid) and the meaning can change drastically. Sickle cell disease results from a single amino acid substitution in hemoglobin: glutamate is replaced by valine at position 6 of the β-chain.\n\nSecondary structure refers to local folding patterns that arise from hydrogen bonds between backbone atoms. The two most common patterns are the alpha helix (a coiled spring) and the beta pleated sheet (a zigzag pattern where adjacent strands are connected by hydrogen bonds). These form because of the regular repeating nature of the polypeptide backbone.\n\nTertiary structure is the overall three-dimensional shape of a single polypeptide chain, determined by interactions among the R groups: hydrophobic interactions (nonpolar R groups cluster in the interior, away from water), ionic bonds (between oppositely charged R groups), hydrogen bonds (between polar R groups), and disulfide bridges (covalent bonds between cysteine residues). Tertiary structure is what gives each protein its unique shape.\n\nQuaternary structure exists only in proteins made of more than one polypeptide subunit. Hemoglobin, for instance, is a tetramer — four polypeptide chains (two α and two β) that must assemble together to function."
+    },
+    {
+      "type": "keypoint",
+      "content": "A protein's function depends entirely on its three-dimensional shape, which is determined by the sequence of amino acids (primary structure) and the folding interactions that follow. Change the shape, and you change — or destroy — the function."
+    },
+    {
+      "type": "explanation",
+      "heading": "Enzymes and Denaturation",
+      "content": "Enzymes are proteins that catalyze (speed up) chemical reactions without being consumed in the process. They work by lowering the activation energy — the energy barrier that must be overcome for a reaction to proceed. The region of the enzyme where the substrate binds is called the active site, and it fits the substrate with high specificity, like a lock and key (though the induced fit model is more accurate — the enzyme slightly changes shape to grip the substrate).\n\nDenaturation is the loss of a protein's three-dimensional shape due to environmental stress — extreme heat, extreme pH, or high concentrations of certain chemicals. When a protein denatures, its secondary, tertiary, and quaternary structures unravel, but the peptide bonds (primary structure) remain intact. The amino acid sequence is unchanged, but the protein can no longer function because its shape is wrong.\n\nA familiar example: when you cook an egg, the clear, liquid egg white turns solid and opaque. The albumin proteins have denatured — their normal folding has been destroyed by heat. You cannot \"uncook\" an egg because the proteins cannot easily refold to their original shape."
+    },
+    {
+      "type": "deepdive",
+      "heading": "Why Shape Determines Everything",
+      "content": "The connection between protein shape and function is one of the most important principles in all of biology. Consider hemoglobin: its quaternary structure allows cooperative binding — when one subunit binds oxygen, it changes shape in a way that makes the other subunits bind oxygen more easily. This is why hemoglobin loads oxygen efficiently in the lungs (where O₂ is abundant) and releases it efficiently in tissues (where O₂ is scarce).\n\nNow consider what happens with a single amino acid change: in sickle cell disease, the glutamate-to-valine substitution creates a hydrophobic patch on the surface of the β-chain. Under low-oxygen conditions, this patch causes hemoglobin molecules to stick together into long fibers, distorting red blood cells into sickle shapes. One amino acid. One changed property. A life-altering disease.\n\nThis principle extends far beyond hemoglobin. Drug design, genetic engineering, and understanding disease all come down to understanding how the primary sequence determines the final three-dimensional shape and how that shape enables function. Proteins are molecular machines, and their blueprints are written in the language of amino acid sequences."
+    }
+  ],
+  "aiContext": "AP Biology. Connect molecular mechanisms to organism and ecosystem outcomes. Stress experimental design and data analysis. Common confusion: transcription vs translation, and when to apply Hardy-Weinberg conditions."
+}

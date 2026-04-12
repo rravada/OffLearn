@@ -1,0 +1,55 @@
+{
+  "id": "mean-value-theorem",
+  "title": "The Mean Value Theorem",
+  "subject": "AP Calculus AB",
+  "unit": "Applications of Derivatives",
+  "track": "ap",
+  "difficulty": "ap",
+  "duration": "25 min",
+  "objectives": [
+    "State the Mean Value Theorem and identify its two hypotheses: continuity on [a, b] and differentiability on (a, b)",
+    "Interpret the MVT geometrically as the existence of a tangent line parallel to the secant line connecting the endpoints",
+    "Apply the MVT to prove that certain values of f'(c) must exist and to draw conclusions about a function's behavior"
+  ],
+  "sections": [
+    {
+      "type": "explanation",
+      "heading": "The idea before the formula",
+      "content": "Imagine you drive from your house to a town 120 miles away, and the trip takes exactly 2 hours. Your average speed was 120/2 = 60 mph. Now here's the question: at some moment during the trip, were you going exactly 60 mph?\n\nYour gut says yes — and your gut is right. You might have started slow, sped up on the highway, slowed down in a school zone, but at some instant your speedometer must have read exactly 60. Why? Because if you were always below 60, you couldn't have covered 120 miles in 2 hours. And if you were always above 60, you would have covered more than 120 miles. To transition between speeds below and above the average, you must have passed through the average at some point.\n\nThat's the Mean Value Theorem in plain English. It says: if a function is well-behaved enough (continuous and differentiable), then at some point in the interval, the instantaneous rate of change equals the average rate of change. The speedometer (instantaneous rate) must match the trip-average (average rate) at least once.\n\nThis is one of those theorems that sounds obvious but has profound consequences. It connects the local behavior of a function (its derivative at a single point) to its global behavior (the average slope over an entire interval)."
+    },
+    {
+      "type": "explanation",
+      "heading": "The formal statement",
+      "content": "The Mean Value Theorem (MVT): If f is continuous on the closed interval [a, b] and differentiable on the open interval (a, b), then there exists at least one number c in (a, b) such that:\n\nf'(c) = (f(b) - f(a)) / (b - a)\n\nLet's unpack every piece of this.\n\nThe left side, f'(c), is the slope of the tangent line to the graph of f at the point x = c. This is the instantaneous rate of change.\n\nThe right side, (f(b) - f(a))/(b - a), is the slope of the secant line connecting the points (a, f(a)) and (b, f(b)). This is the average rate of change over the whole interval.\n\nSo the MVT says: somewhere between a and b, the tangent line is parallel to the secant line. Geometrically, if you draw the straight line connecting the two endpoints of the graph, then somewhere in between, the curve has the same slope as that straight line.\n\nThe conditions matter. Continuity on [a, b] ensures no jumps or holes — the function connects the two endpoints smoothly. Differentiability on (a, b) ensures no sharp corners or vertical tangents — the function has a well-defined slope everywhere inside the interval. If either condition fails, the theorem can break down."
+    },
+    {
+      "type": "example",
+      "heading": "Finding the guaranteed point c",
+      "content": "Let f(x) = x³ - 3x + 1 on the interval [0, 2]. Find the value of c guaranteed by the MVT.\n\nFirst, verify the conditions: f is a polynomial, so it's continuous everywhere and differentiable everywhere. Both conditions are satisfied on [0, 2].\n\nCompute the average rate of change:\nf(2) = 8 - 6 + 1 = 3\nf(0) = 0 - 0 + 1 = 1\nAverage rate = (3 - 1)/(2 - 0) = 2/2 = 1\n\nNow set f'(c) equal to this average rate:\nf'(x) = 3x² - 3\n3c² - 3 = 1\n3c² = 4\nc² = 4/3\nc = ±2/√3 ≈ ±1.155\n\nSince c must be in (0, 2), we take c = 2/√3 ≈ 1.155.\n\nAt this point, the tangent line has slope 1, exactly matching the slope of the secant line from (0, 1) to (2, 3). If you were to graph this, you'd see the tangent line at x ≈ 1.155 running perfectly parallel to the straight line connecting the endpoints."
+    },
+    {
+      "type": "explanation",
+      "heading": "When the MVT fails: why conditions matter",
+      "content": "The MVT has two hypotheses, and both are necessary. If you violate either one, the conclusion can fail.\n\nViolation of continuity: Consider f(x) = 1 for x in [0, 1) and f(1) = 5. This function has a jump at x = 1. The secant line from (0, 1) to (1, 5) has slope 4, but the derivative is 0 everywhere on (0, 1) — the function is flat and then jumps. There's no point where f'(c) = 4. Continuity was violated.\n\nViolation of differentiability: Consider f(x) = |x| on [-1, 1]. This function is continuous everywhere but not differentiable at x = 0 (it has a sharp corner). The secant line from (-1, 1) to (1, 1) has slope 0, but the only place where f'(c) = 0 would be at a peak — and the peak at x = 0 is the very point where the derivative doesn't exist. On this interval, no c satisfies the MVT because the sharp corner at x = 0 prevents it.\n\nOn the AP exam, you might be asked to verify that the hypotheses hold before applying the theorem. Always check: is f continuous on the closed interval? Is f differentiable on the open interval? If either answer is no, you cannot apply the MVT."
+    },
+    {
+      "type": "keypoint",
+      "content": "The Mean Value Theorem says: if f is continuous on [a, b] and differentiable on (a, b), there exists some c in (a, b) where f'(c) = (f(b) - f(a))/(b - a). In words: the instantaneous rate of change must equal the average rate of change somewhere in the interval. Geometrically: the tangent line is parallel to the secant line at least once."
+    },
+    {
+      "type": "deepdive",
+      "heading": "Powerful consequences of the MVT",
+      "content": "The MVT might seem like a curiosity — who cares if there's a point where the tangent is parallel to the secant? But this theorem is the foundation for several critical results in calculus.\n\nConsequence 1: If f'(x) = 0 for all x in an interval, then f is constant on that interval. Proof: For any two points a and b in the interval, the MVT gives f(b) - f(a) = f'(c)(b - a) = 0 · (b - a) = 0, so f(b) = f(a). Every output is the same — the function is constant. This sounds trivial, but it's the rigorous justification for why two antiderivatives of the same function differ by a constant.\n\nConsequence 2: If f'(x) > 0 for all x in an interval, then f is strictly increasing. The MVT gives f(b) - f(a) = f'(c)(b - a). If b > a and f'(c) > 0, then the right side is positive, so f(b) > f(a). This is the proof behind the Increasing/Decreasing Test you use for curve sketching.\n\nConsequence 3: Speed traps. If a highway has toll cameras that record your entry time and exit time, and the distance between them is known, the police can calculate your average speed. If it exceeds the speed limit, the MVT guarantees you exceeded the limit at some point — even without catching you on radar. Some countries actually use this method for enforcement.\n\nConsequence 4: The MVT is also the gateway to proving the Fundamental Theorem of Calculus. Without it, you can't rigorously connect derivatives and integrals. So this \"simple\" theorem about tangent lines being parallel to secant lines is actually holding together the entire structure of calculus.\n\nOn the AP exam, you're most likely to see the MVT in free-response questions that give you a table of values for f and ask you to justify that f'(c) = some value for some c. The key is to compute the average rate of change between two table entries and then cite the MVT to conclude that f' must take that value somewhere in between."
+    },
+    {
+      "type": "example",
+      "heading": "AP-style table problem",
+      "content": "The function f is continuous on [1, 7] and differentiable on (1, 7). Selected values:\n\nx:    1    3    5    7\nf(x): 2    10   6    14\n\nMust there be a value c in (1, 7) where f'(c) = 2?\n\nCompute the average rate of change on [1, 7]: (f(7) - f(1))/(7 - 1) = (14 - 2)/6 = 12/6 = 2.\n\nSince f is continuous on [1, 7] and differentiable on (1, 7), the MVT guarantees there exists at least one c in (1, 7) where f'(c) = 2. Yes — and this is not just a guess, it's a theorem.\n\nNotice you didn't need the values at x = 3 and x = 5. Those extra values are often included as distractors. The MVT only needs the endpoints and the two conditions.\n\nBut what if the question asked: must there be a c where f'(c) = -2? Check: (f(5) - f(3))/(5 - 3) = (6 - 10)/2 = -4/2 = -2. The MVT on [3, 5] guarantees such a c exists in (3, 5), which is inside (1, 7). So yes again."
+    },
+    {
+      "type": "keypoint",
+      "content": "The MVT is not just an abstract theorem — it's the engine behind key calculus results: why antiderivatives differ by constants, why positive derivatives mean increasing functions, and how tables of values can prove the existence of specific derivative values. When the AP exam says \"justify that f'(c) = k for some c,\" the MVT is almost always the tool you need."
+    }
+  ],
+  "aiContext": "AP Calculus AB. Guide students to understand concepts graphically before algebraically. Push them to explain what a derivative or integral MEANS physically, not just how to compute it. Common confusion: chain rule application order, and confusing definite vs indefinite integrals."
+}

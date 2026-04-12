@@ -1,0 +1,46 @@
+{
+  "id": "carbohydrates-lipids",
+  "title": "Carbohydrates and Lipids",
+  "subject": "AP Biology",
+  "unit": "Chemistry of Life",
+  "track": "ap",
+  "difficulty": "ap",
+  "duration": "25 min",
+  "objectives": [
+    "Distinguish monosaccharides, disaccharides, and polysaccharides by structure and function",
+    "Explain dehydration synthesis and hydrolysis as the reactions that build and break polymers",
+    "Compare the structures and biological roles of fats, phospholipids, and steroids"
+  ],
+  "sections": [
+    {
+      "type": "explanation",
+      "heading": "Carbohydrates: Quick Energy and Structural Support",
+      "content": "Carbohydrates are organic molecules made of carbon, hydrogen, and oxygen, usually in a ratio close to 1:2:1. The simplest carbohydrates are monosaccharides — single sugar units. Glucose (C₆H₁₂O₆) is the most important one for biology because it is the primary fuel molecule for cellular respiration.\n\nWhen two monosaccharides join together, they form a disaccharide. Sucrose (table sugar) is glucose + fructose. Lactose (milk sugar) is glucose + galactose. The bond that links them is formed through dehydration synthesis — a reaction that removes a water molecule (one −OH from one sugar and one −H from the other combine to release H₂O). Breaking that bond requires hydrolysis — adding water back to split the molecule.\n\nPolysaccharides are long chains of monosaccharides. The three you need to know are starch (energy storage in plants), glycogen (energy storage in animals, packed into your liver and muscles), and cellulose (structural support in plant cell walls). All three are made entirely of glucose monomers, but they differ in how those glucose units are linked — and that seemingly small difference determines whether you can digest the molecule or not. You can break down starch and glycogen, but humans lack the enzyme to break the β-1,4 linkages in cellulose. That is why you cannot digest wood or grass."
+    },
+    {
+      "type": "example",
+      "heading": "Dehydration Synthesis vs. Hydrolysis",
+      "content": "Building a polymer:\n  glucose + glucose → maltose + H₂O  (dehydration synthesis)\n\nBreaking a polymer:\n  maltose + H₂O → glucose + glucose  (hydrolysis)\n\nThink of it like snapping LEGO bricks together: joining two releases a tiny piece (water), and splitting them requires inserting that piece back in. Every major biological polymer — carbohydrates, proteins, nucleic acids — is built and broken by these same two reaction types."
+    },
+    {
+      "type": "explanation",
+      "heading": "Lipids: Energy Storage, Membranes, and Signaling",
+      "content": "Lipids are a diverse group of hydrophobic molecules. Unlike carbohydrates, they are not true polymers — they do not form from repeating monomer units linked in a single chain. What unites all lipids is their insolubility in water.\n\nThe most common lipids for AP Biology are fats (triglycerides), phospholipids, and steroids.\n\nA triglyceride consists of one glycerol molecule bonded to three fatty acid chains through ester bonds (another form of dehydration synthesis). Fatty acids can be saturated — every carbon in the chain holds as many hydrogens as possible, creating straight chains that pack tightly (solid at room temperature, like butter). Or they can be unsaturated — one or more double bonds between carbons create kinks in the chain, preventing tight packing (liquid at room temperature, like olive oil).\n\nFats store more than twice as much energy per gram as carbohydrates (about 9 kcal/g vs. 4 kcal/g) because their long hydrocarbon chains are highly reduced — packed with C−H bonds that release energy when oxidized."
+    },
+    {
+      "type": "keypoint",
+      "content": "Saturated fats have no double bonds and pack tightly (solid at room temperature). Unsaturated fats have one or more double bonds that create kinks, preventing tight packing (liquid at room temperature). This structural difference directly determines physical properties."
+    },
+    {
+      "type": "explanation",
+      "heading": "Phospholipids and the Basis of Cell Membranes",
+      "content": "A phospholipid looks like a triglyceride with a twist: one of the three fatty acid chains is replaced by a phosphate group attached to a small polar molecule. This gives the phospholipid a hydrophilic head (the phosphate end, which interacts with water) and two hydrophobic tails (the fatty acid chains, which avoid water).\n\nIn an aqueous environment, phospholipids spontaneously arrange into a bilayer — two layers with the hydrophilic heads facing outward toward the water on both sides, and the hydrophobic tails facing inward, hidden from water. This bilayer is the fundamental structure of every cell membrane on Earth. It forms automatically, without any external energy input, purely because of the thermodynamics of hydrophobic exclusion."
+    },
+    {
+      "type": "deepdive",
+      "heading": "Steroids and Cholesterol",
+      "content": "Steroids have a completely different structure from fats and phospholipids: four fused carbon rings with various functional groups attached. Cholesterol is the most important steroid in animal cells. It sits within the phospholipid bilayer and acts as a fluidity buffer — at high temperatures it restrains membrane movement, and at low temperatures it prevents the membrane from becoming too rigid.\n\nCholesterol is also the precursor for steroid hormones like estrogen, testosterone, and cortisol. These hormones are lipid-soluble, so they can pass directly through cell membranes and bind to intracellular receptors, often activating genes. This is fundamentally different from how water-soluble signals (like peptide hormones) work — they must bind to receptors on the cell surface because they cannot cross the hydrophobic bilayer.\n\nThe key AP concept: the chemical properties of a signaling molecule (soluble vs. insoluble in water) determine where its receptor must be located and how the signal is transduced."
+    }
+  ],
+  "aiContext": "AP Biology. Connect molecular mechanisms to organism and ecosystem outcomes. Stress experimental design and data analysis. Common confusion: transcription vs translation, and when to apply Hardy-Weinberg conditions."
+}

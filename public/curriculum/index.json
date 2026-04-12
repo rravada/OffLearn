@@ -4,6 +4,7 @@
       "id": "math",
       "title": "Mathematics",
       "icon": "calculator",
+      "track": "standard",
       "units": [
         {
           "id": "algebra",
@@ -28,6 +29,7 @@
       "id": "science",
       "title": "Science",
       "icon": "flask",
+      "track": "standard",
       "units": [
         {
           "id": "biology",
@@ -52,6 +54,7 @@
       "id": "history",
       "title": "History",
       "icon": "landmark",
+      "track": "standard",
       "units": [
         {
           "id": "us-history",
@@ -76,6 +79,7 @@
       "id": "english",
       "title": "English",
       "icon": "pen",
+      "track": "standard",
       "units": [
         {
           "id": "grammar",
@@ -100,6 +104,7 @@
       "id": "economics",
       "title": "Economics",
       "icon": "trending-up",
+      "track": "standard",
       "units": [
         {
           "id": "micro",
@@ -124,6 +129,7 @@
       "id": "cs",
       "title": "Computer Science",
       "icon": "code",
+      "track": "standard",
       "units": [
         {
           "id": "algorithms",
@@ -140,6 +146,160 @@
           "lessons": [
             { "id": "arrays-lists", "title": "Arrays & Linked Lists", "duration": "20 min" },
             { "id": "stacks-queues", "title": "Stacks & Queues", "duration": "20 min" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ap-calc-ab",
+      "title": "AP Calculus AB",
+      "icon": "calculator",
+      "track": "ap",
+      "units": [
+        {
+          "id": "unit-1",
+          "title": "Limits and Continuity",
+          "lessons": [
+            { "id": "understanding-limits-intuitively", "title": "Understanding Limits Intuitively", "duration": "25 min" },
+            { "id": "computing-limits-algebraically", "title": "Computing Limits Algebraically", "duration": "30 min" },
+            { "id": "continuity-and-discontinuity", "title": "Continuity and Types of Discontinuity", "duration": "25 min" },
+            { "id": "limits-at-infinity", "title": "Limits at Infinity and Horizontal Asymptotes", "duration": "25 min" }
+          ]
+        },
+        {
+          "id": "unit-2",
+          "title": "Differentiation",
+          "lessons": [
+            { "id": "derivative-as-rate-of-change", "title": "The Derivative as a Rate of Change", "duration": "30 min" },
+            { "id": "power-product-quotient-rules", "title": "Power, Product, and Quotient Rules", "duration": "30 min" },
+            { "id": "chain-rule", "title": "The Chain Rule", "duration": "25 min" },
+            { "id": "implicit-differentiation", "title": "Implicit Differentiation", "duration": "25 min" }
+          ]
+        },
+        {
+          "id": "unit-3",
+          "title": "Applications of Derivatives",
+          "lessons": [
+            { "id": "related-rates", "title": "Related Rates", "duration": "30 min" },
+            { "id": "optimization-problems", "title": "Optimization Problems", "duration": "30 min" },
+            { "id": "mean-value-theorem", "title": "The Mean Value Theorem", "duration": "25 min" },
+            { "id": "curve-sketching", "title": "Curve Sketching Using Derivatives", "duration": "30 min" }
+          ]
+        },
+        {
+          "id": "unit-4",
+          "title": "Integration",
+          "lessons": [
+            { "id": "antiderivatives-indefinite-integrals", "title": "Antiderivatives and Indefinite Integrals", "duration": "25 min" },
+            { "id": "fundamental-theorem-of-calculus", "title": "The Fundamental Theorem of Calculus", "duration": "30 min" },
+            { "id": "u-substitution", "title": "U-Substitution", "duration": "25 min" },
+            { "id": "area-between-curves", "title": "Area Between Curves", "duration": "30 min" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ap-biology",
+      "title": "AP Biology",
+      "icon": "flask",
+      "track": "ap",
+      "units": [
+        {
+          "id": "unit-1",
+          "title": "Chemistry of Life",
+          "lessons": [
+            { "id": "water-biological-properties", "title": "Water and Its Biological Properties", "duration": "25 min" },
+            { "id": "carbohydrates-lipids", "title": "Carbohydrates and Lipids", "duration": "25 min" },
+            { "id": "proteins-structure-function", "title": "Proteins: Structure and Function", "duration": "30 min" },
+            { "id": "nucleic-acids-central-dogma", "title": "Nucleic Acids and the Central Dogma", "duration": "30 min" }
+          ]
+        },
+        {
+          "id": "unit-2",
+          "title": "Cell Structure and Function",
+          "lessons": [
+            { "id": "prokaryotic-vs-eukaryotic", "title": "Prokaryotic vs Eukaryotic Cells", "duration": "25 min" },
+            { "id": "cell-organelles", "title": "Cell Organelles and Their Roles", "duration": "30 min" },
+            { "id": "membrane-transport", "title": "Membrane Transport: Diffusion, Osmosis, Active Transport", "duration": "30 min" },
+            { "id": "cell-communication", "title": "Cell Communication and Signal Transduction", "duration": "30 min" }
+          ]
+        },
+        {
+          "id": "unit-3",
+          "title": "Genetics and Heredity",
+          "lessons": [
+            { "id": "mendelian-genetics", "title": "Mendelian Genetics and Probability", "duration": "30 min" },
+            { "id": "chromosomal-inheritance", "title": "Chromosomal Basis of Inheritance", "duration": "25 min" },
+            { "id": "transcription-translation", "title": "Transcription and Translation", "duration": "30 min" },
+            { "id": "mutations-consequences", "title": "Mutations and Their Consequences", "duration": "25 min" }
+          ]
+        },
+        {
+          "id": "unit-4",
+          "title": "Evolution",
+          "lessons": [
+            { "id": "natural-selection-adaptation", "title": "Natural Selection and Adaptation", "duration": "25 min" },
+            { "id": "evidence-for-evolution", "title": "Evidence for Evolution", "duration": "25 min" },
+            { "id": "hardy-weinberg", "title": "Hardy-Weinberg Equilibrium", "duration": "30 min" },
+            { "id": "speciation-phylogenetics", "title": "Speciation and Phylogenetics", "duration": "25 min" }
+          ]
+        },
+        {
+          "id": "unit-5",
+          "title": "Ecology",
+          "lessons": [
+            { "id": "energy-flow-food-webs", "title": "Energy Flow: Food Webs and Trophic Levels", "duration": "25 min" },
+            { "id": "biogeochemical-cycles", "title": "Biogeochemical Cycles", "duration": "25 min" },
+            { "id": "population-dynamics", "title": "Population Dynamics and Carrying Capacity", "duration": "25 min" },
+            { "id": "community-ecology", "title": "Community Ecology and Biodiversity", "duration": "25 min" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ap-chemistry",
+      "title": "AP Chemistry",
+      "icon": "flask",
+      "track": "ap",
+      "units": [
+        {
+          "id": "unit-1",
+          "title": "Atomic Structure and Properties",
+          "lessons": [
+            { "id": "atomic-theory-subatomic", "title": "Atomic Theory and Subatomic Particles", "duration": "25 min" },
+            { "id": "electron-configuration", "title": "Electron Configuration and Orbital Notation", "duration": "30 min" },
+            { "id": "periodic-trends", "title": "Periodic Trends: Atomic Radius, Ionization Energy", "duration": "25 min" },
+            { "id": "bonding-vsepr", "title": "Chemical Bonding and VSEPR Theory", "duration": "30 min" }
+          ]
+        },
+        {
+          "id": "unit-2",
+          "title": "Chemical Reactions and Stoichiometry",
+          "lessons": [
+            { "id": "types-of-reactions", "title": "Types of Chemical Reactions", "duration": "25 min" },
+            { "id": "mole-stoichiometry", "title": "The Mole and Stoichiometry", "duration": "30 min" },
+            { "id": "limiting-reagents", "title": "Limiting Reagents and Percent Yield", "duration": "25 min" },
+            { "id": "solution-chemistry", "title": "Solution Chemistry and Molarity", "duration": "25 min" }
+          ]
+        },
+        {
+          "id": "unit-3",
+          "title": "Thermodynamics",
+          "lessons": [
+            { "id": "enthalpy-calorimetry", "title": "Enthalpy and Calorimetry", "duration": "30 min" },
+            { "id": "hess-law", "title": "Hess's Law", "duration": "25 min" },
+            { "id": "entropy-gibbs", "title": "Entropy and Gibbs Free Energy", "duration": "30 min" },
+            { "id": "spontaneity", "title": "Spontaneity and Thermodynamic Favorability", "duration": "25 min" }
+          ]
+        },
+        {
+          "id": "unit-4",
+          "title": "Kinetics and Equilibrium",
+          "lessons": [
+            { "id": "reaction-rates", "title": "Reaction Rates and Rate Laws", "duration": "30 min" },
+            { "id": "activation-energy-catalysts", "title": "Activation Energy and Catalysts", "duration": "25 min" },
+            { "id": "equilibrium-le-chatelier", "title": "Chemical Equilibrium and Le Chatelier's Principle", "duration": "30 min" },
+            { "id": "acid-base-ph", "title": "Acid-Base Chemistry and pH", "duration": "30 min" }
           ]
         }
       ]

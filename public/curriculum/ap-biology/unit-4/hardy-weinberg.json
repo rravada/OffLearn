@@ -1,0 +1,41 @@
+{
+  "id": "hardy-weinberg",
+  "title": "Hardy-Weinberg Equilibrium",
+  "subject": "AP Biology",
+  "unit": "Evolution",
+  "track": "ap",
+  "difficulty": "ap",
+  "duration": "30 min",
+  "objectives": [
+    "State the Hardy-Weinberg equations and the five conditions required for equilibrium",
+    "Calculate allele and genotype frequencies from population data",
+    "Explain how deviations from Hardy-Weinberg expectations indicate that evolution is occurring"
+  ],
+  "sections": [
+    {
+      "type": "explanation",
+      "heading": "A Mathematical Null Hypothesis for Evolution",
+      "content": "The Hardy-Weinberg principle provides a mathematical baseline: what would allele and genotype frequencies look like in a population where NO evolution is occurring? If a real population's frequencies deviate from this baseline, you know that one or more evolutionary forces are at work.\n\nFor a gene with two alleles, let p = the frequency of the dominant allele and q = the frequency of the recessive allele. Since these are the only two alleles, p + q = 1.\n\nThe genotype frequencies in the next generation, if the population is in Hardy-Weinberg equilibrium, will be:\n  p² = frequency of homozygous dominant (AA)\n  2pq = frequency of heterozygous (Aa)\n  q² = frequency of homozygous recessive (aa)\n\nAnd p² + 2pq + q² = 1."
+    },
+    {
+      "type": "explanation",
+      "heading": "The Five Conditions for Equilibrium",
+      "content": "Hardy-Weinberg equilibrium holds only when ALL five of these conditions are met:\n\n1. No mutations: No new alleles are being created.\n2. Random mating: Individuals do not choose mates based on genotype.\n3. No natural selection: All genotypes are equally fit.\n4. Very large population size: No genetic drift (random fluctuations in allele frequencies).\n5. No gene flow: No migration of individuals into or out of the population.\n\nIn reality, no natural population meets all five conditions perfectly — which is exactly the point. Hardy-Weinberg equilibrium is an ideal that never truly exists. By comparing real populations to this ideal, you can identify which evolutionary forces are acting and how strong they are."
+    },
+    {
+      "type": "example",
+      "heading": "Solving a Hardy-Weinberg Problem",
+      "content": "Problem: In a population of 1000 individuals, 160 have the recessive phenotype (aa). What are the allele and genotype frequencies?\n\nStep 1: Find q².\n  160 / 1000 = 0.16, so q² = 0.16\n\nStep 2: Find q.\n  q = √0.16 = 0.4\n\nStep 3: Find p.\n  p = 1 − q = 1 − 0.4 = 0.6\n\nStep 4: Find genotype frequencies.\n  p² = (0.6)² = 0.36 → 360 individuals are AA\n  2pq = 2(0.6)(0.4) = 0.48 → 480 individuals are Aa\n  q² = 0.16 → 160 individuals are aa\n\nCheck: 360 + 480 + 160 = 1000 ✓\n\nThe key entry point is almost always q² because recessive phenotype frequency gives you q² directly. You cannot count heterozygotes by looking at them (they look like homozygous dominants), which is why you start with the recessive class."
+    },
+    {
+      "type": "keypoint",
+      "content": "Hardy-Weinberg equilibrium (p² + 2pq + q² = 1) is a null model. Real populations deviate from it because of natural selection, genetic drift, mutation, gene flow, or nonrandom mating. Always start Hardy-Weinberg calculations from q² (the recessive phenotype frequency)."
+    },
+    {
+      "type": "deepdive",
+      "heading": "Using Hardy-Weinberg to Detect Selection",
+      "content": "Suppose you study a population across multiple generations and find that q (the frequency of the recessive allele for sickle cell hemoglobin) remains at about 0.1 in regions with endemic malaria, but drops to near 0.01 in regions without malaria. What is happening?\n\nIn malaria regions, heterozygotes (HbA HbS) have an advantage over both homozygotes: they are resistant to malaria (unlike HbA HbA) and do not have sickle cell disease (unlike HbS HbS). This is heterozygote advantage, a form of balancing selection that maintains both alleles in the population.\n\nIn non-malaria regions, there is no advantage to carrying HbS, so natural selection against sickle cell disease slowly reduces q.\n\nThis example shows how Hardy-Weinberg is used in practice: you compare observed frequencies to expected frequencies, and when they do not match, you investigate which of the five conditions is being violated and why. It transforms evolution from an abstract concept into something you can measure with actual numbers."
+    }
+  ],
+  "aiContext": "AP Biology. Connect molecular mechanisms to organism and ecosystem outcomes. Stress experimental design and data analysis. Common confusion: transcription vs translation, and when to apply Hardy-Weinberg conditions."
+}

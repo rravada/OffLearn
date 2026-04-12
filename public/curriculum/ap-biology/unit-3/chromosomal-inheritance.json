@@ -1,0 +1,41 @@
+{
+  "id": "chromosomal-inheritance",
+  "title": "Chromosomal Basis of Inheritance",
+  "subject": "AP Biology",
+  "unit": "Genetics and Heredity",
+  "track": "ap",
+  "difficulty": "ap",
+  "duration": "25 min",
+  "objectives": [
+    "Explain how genes located on the same chromosome can be linked and violate independent assortment",
+    "Describe how crossing over during meiosis produces recombinant offspring",
+    "Analyze sex-linked inheritance patterns and predict outcomes of nondisjunction"
+  ],
+  "sections": [
+    {
+      "type": "explanation",
+      "heading": "Genes on Chromosomes",
+      "content": "Mendel's Law of Independent Assortment works perfectly when genes are on different chromosomes. But humans have about 20,000 genes spread across only 23 pairs of chromosomes — so many genes must share a chromosome. Genes on the same chromosome tend to be inherited together and are called linked genes.\n\nThomas Hunt Morgan demonstrated linkage using fruit flies (Drosophila). He found that certain trait combinations appeared together far more often than predicted by independent assortment. The closer two genes are on the same chromosome, the more tightly linked they are and the less frequently they are separated during meiosis."
+    },
+    {
+      "type": "explanation",
+      "heading": "Crossing Over and Genetic Recombination",
+      "content": "During prophase I of meiosis, homologous chromosomes pair up and exchange segments of DNA in a process called crossing over. The points where exchanges occur are called chiasmata. Crossing over produces recombinant chromosomes — chromosomes with new combinations of alleles that were not present in either parent.\n\nThe recombination frequency between two genes tells you how far apart they are on the chromosome. Genes that are very far apart recombine so frequently (close to 50%) that they behave as if they are on separate chromosomes. Genes very close together rarely recombine. Geneticists use recombination frequencies to construct genetic maps showing the relative positions of genes on chromosomes.\n\nCrossing over is enormously important for evolution because it generates genetic diversity. Without it, all the alleles on a single chromosome would always be inherited as a unit, severely limiting the variation available for natural selection."
+    },
+    {
+      "type": "example",
+      "heading": "Sex-Linked Traits: Color Blindness",
+      "content": "In humans, the gene for red-green color vision is on the X chromosome. Males are XY, so they have only one copy of any X-linked gene. Females are XX, so they have two copies.\n\nLet X^B = normal vision (dominant), X^b = color blindness (recessive).\n\nCarrier mother (X^B X^b) × Normal father (X^B Y):\n\n         X^B      X^b\nX^B  | X^B X^B | X^B X^b |\nY    | X^B Y   | X^b Y   |\n\nDaughters: 1/2 normal, 1/2 carriers (all phenotypically normal)\nSons: 1/2 normal, 1/2 color blind\n\nNotice that sons inherit their X from their mother. A carrier mother has a 50% chance of passing the color-blind allele to each son. This is why X-linked recessive conditions are far more common in males — they have no second X to mask the recessive allele."
+    },
+    {
+      "type": "keypoint",
+      "content": "Linked genes on the same chromosome violate independent assortment but can be separated by crossing over. Sex-linked (X-linked) traits show distinctive inheritance patterns because males have only one X chromosome."
+    },
+    {
+      "type": "deepdive",
+      "heading": "Nondisjunction and Chromosomal Abnormalities",
+      "content": "Nondisjunction occurs when chromosomes fail to separate properly during meiosis, resulting in gametes with too many or too few chromosomes. If such a gamete is fertilized, the resulting offspring has an abnormal chromosome number (aneuploidy).\n\nThe most common human example is trisomy 21 (Down syndrome) — three copies of chromosome 21 instead of two. Other aneuploidies include Turner syndrome (45,X — a single X with no second sex chromosome), Klinefelter syndrome (47,XXY), and trisomy 18 (Edwards syndrome).\n\nMost autosomal trisomies and all monosomies (except Turner syndrome) are lethal before birth. This tells you how precisely calibrated gene dosage must be — having even one extra or one missing chromosome disrupts development so severely that the embryo cannot survive.\n\nNondisjunction can occur during meiosis I (homologous chromosomes fail to separate) or meiosis II (sister chromatids fail to separate). The consequences differ: meiosis I nondisjunction affects all four resulting gametes, while meiosis II nondisjunction affects only two of the four."
+    }
+  ],
+  "aiContext": "AP Biology. Connect molecular mechanisms to organism and ecosystem outcomes. Stress experimental design and data analysis. Common confusion: transcription vs translation, and when to apply Hardy-Weinberg conditions."
+}

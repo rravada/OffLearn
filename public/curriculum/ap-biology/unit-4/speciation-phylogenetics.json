@@ -1,0 +1,41 @@
+{
+  "id": "speciation-phylogenetics",
+  "title": "Speciation and Phylogenetics",
+  "subject": "AP Biology",
+  "unit": "Evolution",
+  "track": "ap",
+  "difficulty": "ap",
+  "duration": "25 min",
+  "objectives": [
+    "Compare allopatric and sympatric speciation and identify the role of reproductive isolation",
+    "Read and interpret phylogenetic trees to determine evolutionary relationships",
+    "Explain how shared derived characters are used to construct cladograms"
+  ],
+  "sections": [
+    {
+      "type": "explanation",
+      "heading": "What Is a Species?",
+      "content": "The biological species concept defines a species as a group of organisms that can interbreed in nature and produce fertile offspring. Dogs and wolves can interbreed (same species complex), but horses and donkeys produce infertile mules (different species).\n\nSpeciation is the process by which one species splits into two or more distinct species. The key requirement is reproductive isolation — something must prevent gene flow between the diverging populations long enough for them to accumulate enough genetic differences that they can no longer interbreed, even if they come back into contact."
+    },
+    {
+      "type": "explanation",
+      "heading": "Allopatric vs. Sympatric Speciation",
+      "content": "Allopatric speciation occurs when a geographic barrier physically separates a population into two groups. A river changes course, a mountain range rises, or a few individuals colonize an island. With no gene flow between the groups, natural selection and genetic drift cause them to diverge independently. Over enough time, they become reproductively incompatible — they are now separate species.\n\nThis is the most common form of speciation. Darwin's finches likely originated from a single mainland species that colonized different Galápagos islands, diversified in isolation, and eventually became distinct species.\n\nSympatric speciation occurs without geographic separation — the populations diverge while living in the same area. This is rarer in animals but common in plants, often through polyploidy (a mutation that doubles the chromosome number, instantly creating reproductive isolation because the polyploid cannot produce viable offspring with the original diploid population)."
+    },
+    {
+      "type": "example",
+      "heading": "Reading a Phylogenetic Tree",
+      "content": "A phylogenetic tree is a diagram showing evolutionary relationships. Key features:\n\n• Branch tips represent current species (or groups).\n• Internal nodes represent common ancestors.\n• The root is the most recent common ancestor of all species in the tree.\n• Sister taxa are two groups that share the most recent common ancestor.\n\nExample tree: ((Cat, Dog), (Horse, (Cow, Pig)))\n\nThis tells you:\n  - Cat and Dog share a more recent common ancestor with each other than with Horse, Cow, or Pig.\n  - Cow and Pig are sister taxa.\n  - Horse is more closely related to (Cow, Pig) than to (Cat, Dog).\n\nImportant: the order of the branch tips does not matter — you can rotate any node without changing the relationships. What matters is which groups share common ancestors."
+    },
+    {
+      "type": "keypoint",
+      "content": "Speciation requires reproductive isolation. Allopatric speciation uses geographic barriers; sympatric speciation occurs without them (often via polyploidy in plants). Phylogenetic trees show evolutionary relationships based on shared ancestry, not superficial similarity."
+    },
+    {
+      "type": "deepdive",
+      "heading": "Cladistics: Building Trees from Evidence",
+      "content": "Cladistics is the method used to construct phylogenetic trees based on shared derived characters (synapomorphies) — traits that evolved in a common ancestor and are shared by its descendants but not by more distantly related organisms.\n\nFor example, feathers are a shared derived character of birds. All birds have them; no non-bird reptiles do (with some nuance regarding feathered dinosaurs, which are actually the ancestors of birds). This shared derived character tells us that all feathered organisms form a group (clade) that shares a common feathered ancestor.\n\nShared ancestral characters (plesiomorphies), like having a backbone, do not help you determine relationships within vertebrates because all vertebrates share that trait.\n\nMolecular cladistics uses DNA or protein sequence similarities instead of physical traits. The more sequence differences between two species, the longer they have been diverging. Molecular clocks (the assumption that mutations accumulate at a roughly constant rate) allow scientists to estimate when two species last shared a common ancestor.\n\nOn the AP exam, you may be given a table of traits and asked to construct a cladogram. The strategy: identify the outgroup (the most distantly related species), then group species by shared derived characters, nesting groups within groups."
+    }
+  ],
+  "aiContext": "AP Biology. Connect molecular mechanisms to organism and ecosystem outcomes. Stress experimental design and data analysis. Common confusion: transcription vs translation, and when to apply Hardy-Weinberg conditions."
+}

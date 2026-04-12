@@ -1,0 +1,60 @@
+{
+  "id": "ap-calc-ab-unit1-limits-at-infinity",
+  "title": "Limits at Infinity and Horizontal Asymptotes",
+  "subject": "AP Calculus AB",
+  "unit": "Limits and Continuity",
+  "track": "ap",
+  "difficulty": "ap",
+  "duration": "25 min",
+  "objectives": [
+    "Evaluate limits as x approaches positive or negative infinity for polynomial and rational functions",
+    "Determine horizontal asymptotes by comparing the degrees of numerator and denominator in rational functions",
+    "Explain the end behavior of a function in plain language and connect it to the concept of horizontal asymptotes"
+  ],
+  "sections": [
+    {
+      "type": "explanation",
+      "heading": "What Does 'x → ∞' Mean?",
+      "content": "So far, you've studied limits where x approaches a specific number — like lim(x→3) f(x). Now we're asking a different question: what happens to f(x) when x gets astronomically large? What if x is a million? A billion? What does the function *settle toward* in the long run?\n\nWhen we write lim(x→∞) f(x) = L, we're saying that as x grows without bound, the function values get closer and closer to the number L. The function might never actually reach L, but it gets as close as you want if you go far enough out along the x-axis.\n\nThink of it like a road that gradually flattens out. As you drive further and further, the road gets closer and closer to being perfectly level at some elevation. That elevation is the limit at infinity. The road might wiggle slightly above and below, but the overall trend is unmistakable — it's approaching a specific height.\n\nSimilarly, lim(x→-∞) f(x) asks what happens as x goes to the far left — toward negative numbers with ever-larger absolute value.\n\nWhy does this matter? Because in the real world, we constantly want to know long-term behavior. If you model a population, what does it approach over decades? If you model the concentration of medicine in your bloodstream, what happens after many hours? These are all 'limit at infinity' questions."
+    },
+    {
+      "type": "example",
+      "heading": "Simple Limits at Infinity",
+      "content": "Let's start with some building blocks you should internalize:\n\n1) lim(x→∞) 1/x = 0. As x gets huge, 1/x gets tiny. 1/1000 = 0.001, 1/1000000 = 0.000001. It shrinks toward 0 but never reaches it.\n\n2) lim(x→∞) 1/x² = 0. Same idea, but even faster — 1/x² shrinks much quicker.\n\n3) In general, lim(x→∞) 1/xⁿ = 0 for any positive n. Any positive power of x in the denominator will drive the fraction to 0.\n\n4) lim(x→∞) 5 = 5. A constant function doesn't change — it's already at its 'long-term value.'\n\n5) lim(x→∞) x² = ∞. As x grows, x² grows even faster. There's no finite number it approaches — it just keeps climbing forever. We say the limit 'is infinity,' which really means the limit does not exist as a finite number, but the function grows without bound.\n\nThese basic facts are your tools. Almost every limit at infinity for rational functions can be figured out by combining these building blocks."
+    },
+    {
+      "type": "explanation",
+      "heading": "Rational Functions: The Degree Comparison Method",
+      "content": "A rational function is a fraction where both the numerator and denominator are polynomials, like (3x² + 2x - 1)/(5x² - 4). Finding the limit at infinity for these functions is one of the most important skills in this unit, and there's a clean, systematic approach.\n\nThe key insight is that when x is enormous, only the *highest-degree term* in each polynomial matters. All the lower-degree terms become negligible in comparison. Think of it this way: if you're counting a fortune of a million dollars, the pennies on the table don't matter. When x = 1,000,000, the term 3x² = 3,000,000,000,000 completely dwarfs the term 2x = 2,000,000.\n\nThis gives us three cases based on comparing the degree of the numerator (let's call it n) to the degree of the denominator (call it d):\n\n**Case 1: n < d (numerator has lower degree).** The denominator grows faster and overwhelms the numerator. The limit is 0. Example: lim(x→∞) (2x + 1)/(x³ - 5) = 0 because degree 1 < degree 3.\n\n**Case 2: n = d (same degree).** The terms grow at the same rate, and the limit equals the ratio of their leading coefficients. Example: lim(x→∞) (3x² + 2x)/(5x² - 4) = 3/5 because both are degree 2, and the leading coefficients are 3 and 5.\n\n**Case 3: n > d (numerator has higher degree).** The numerator grows faster, and the function grows without bound. The limit is ±∞ (not a finite number). Example: lim(x→∞) (x³ + 1)/(2x + 7) = ∞ because degree 3 > degree 1.\n\nMemorize these three cases. They come up constantly on the AP exam and in later calculus work."
+    },
+    {
+      "type": "example",
+      "heading": "Applying the Degree Comparison Method",
+      "content": "Find each limit:\n\n1) lim(x→∞) (4x³ - x + 2)/(7x³ + 3x²)\nDegrees: numerator = 3, denominator = 3. Same degree → ratio of leading coefficients = 4/7.\n\n2) lim(x→∞) (x² + 100x + 999)/(x⁵)\nDegrees: numerator = 2, denominator = 5. Bottom wins → limit = 0. (Even though 100x and 999 seem large, when x is truly enormous, x⁵ annihilates x².)\n\n3) lim(x→-∞) (2x⁴ - 3)/(6x² + 1)\nDegrees: numerator = 4, denominator = 2. Top wins → limit is ±∞. Since x⁴ is always positive and 6x² is always positive, and 2x⁴ grows much faster, the whole expression → +∞.\n\n4) lim(x→∞) (8x + 3)/(2x - 5)\nSame degree (both 1) → 8/2 = 4.\n\nAlternative technique: divide every term by the highest power of x in the denominator. For problem 4: divide top and bottom by x: (8 + 3/x)/(2 - 5/x). As x → ∞, the 3/x and 5/x vanish, leaving 8/2 = 4. This 'divide through' technique is especially helpful if you want to show your work rigorously on a free-response question."
+    },
+    {
+      "type": "keypoint",
+      "content": "For rational functions as x → ±∞, compare degrees: if the bottom's degree is bigger, the limit is 0; if degrees are equal, the limit is the ratio of leading coefficients; if the top's degree is bigger, the limit is ±∞. Only the highest-power terms matter when x is enormous."
+    },
+    {
+      "type": "explanation",
+      "heading": "Horizontal Asymptotes",
+      "content": "A horizontal asymptote is simply the graphical manifestation of a finite limit at infinity. If lim(x→∞) f(x) = L, then the line y = L is a horizontal asymptote of the graph on the right side. If lim(x→-∞) f(x) = M, then y = M is a horizontal asymptote on the left side.\n\nA function can have zero, one, or two horizontal asymptotes. A polynomial like x³ + 2x has no horizontal asymptotes because it grows without bound in both directions. A function like f(x) = 3x/(x + 1) has one horizontal asymptote at y = 3 (the limit is 3 in both directions). A function like f(x) = x/√(x² + 1) actually has two different horizontal asymptotes: y = 1 as x → +∞ and y = -1 as x → -∞.\n\nImportant misconception to avoid: a horizontal asymptote is NOT a wall that the function can never cross. Functions can and often do cross their horizontal asymptotes. For example, f(x) = sin(x)/x oscillates back and forth across the horizontal asymptote y = 0 infinitely many times, even as it gets closer and closer to 0 overall. The asymptote only describes the *long-run* behavior — what happens as x gets very large.\n\nThis is different from vertical asymptotes, which the function truly cannot cross (because it's blowing up to infinity there). Don't confuse the two — vertical asymptotes are about specific x-values where the function explodes, while horizontal asymptotes are about the overall trend as x stretches toward infinity."
+    },
+    {
+      "type": "example",
+      "heading": "Finding Horizontal Asymptotes",
+      "content": "Find all horizontal asymptotes of f(x) = (5x² - 3)/(2x² + x + 1).\n\nCheck lim(x→∞): Degrees are equal (both 2), so the limit is 5/2. Horizontal asymptote: y = 5/2.\n\nCheck lim(x→-∞): Same logic applies. For rational functions where both numerator and denominator are polynomials, the limit as x → -∞ usually equals the limit as x → +∞ (both are determined by the leading terms, and for even-degree terms the sign doesn't flip). So lim(x→-∞) = 5/2 as well.\n\nThis function has one horizontal asymptote: y = 5/2.\n\nNow consider g(x) = (3x + 1)/(x² + 2). The numerator has degree 1, denominator has degree 2. Bottom wins. Both lim(x→∞) g(x) = 0 and lim(x→-∞) g(x) = 0. Horizontal asymptote: y = 0 (the x-axis).\n\nFinally, h(x) = (x³ + 2)/(4x - 1). Numerator has degree 3, denominator has degree 1. Top wins. No finite limit in either direction. No horizontal asymptote. The function grows without bound."
+    },
+    {
+      "type": "keypoint",
+      "content": "A horizontal asymptote y = L exists when lim(x→∞) f(x) = L or lim(x→-∞) f(x) = L. Functions can cross horizontal asymptotes — they only describe the end behavior. Don't confuse horizontal asymptotes (end behavior, crossable) with vertical asymptotes (specific x-values, uncrossable)."
+    },
+    {
+      "type": "deepdive",
+      "heading": "Growth Rates: Why Some Functions Dominate Others",
+      "content": "There's a deeper idea behind the degree-comparison method that's worth understanding. Different types of functions grow at fundamentally different speeds, and when two of them compete inside a fraction, the faster-growing one always wins.\n\nHere's the hierarchy of growth, from slowest to fastest:\n  logarithmic: ln(x)\n  polynomial: xⁿ (higher n = faster)\n  exponential: aˣ where a > 1\n\nThis means:\n- lim(x→∞) ln(x)/x = 0 — logarithms grow so slowly that any polynomial eventually dwarfs them. Even though ln(x) keeps increasing forever, it does so at a snail's pace compared to x.\n- lim(x→∞) x¹⁰⁰/2ˣ = 0 — exponentials eventually crush any polynomial, no matter how high the degree. x¹⁰⁰ seems enormous, but 2ˣ eventually overtakes it and leaves it in the dust.\n- lim(x→∞) x²/x⁵ = lim(x→∞) 1/x³ = 0 — among polynomials, higher degree wins.\n\nHere's a vivid way to think about it. Imagine three runners: Logarithm, Polynomial, and Exponential. At the start, Logarithm might be ahead — ln(2) = 0.693 while 2⁰·⁵ = 0.0.., actually no. Let's think of it differently. Logarithm is a tortoise who keeps going but gets slower and slower (relatively). Polynomial runs at a steady accelerating pace. Exponential starts slow but keeps doubling its speed at regular intervals. Over a long enough race, the doubler always wins. Always.\n\nFor AP Calculus AB, you'll mostly work with polynomial vs. polynomial comparisons (the degree method). But understanding this broader hierarchy prepares you for BC Calculus and for the real-world modeling you'll do later. When a biologist models bacterial growth, they use exponentials precisely because exponentials outpace any polynomial — bacteria don't just grow fast, they grow fast in a way that *accelerates*.\n\nOne more subtle point: when x → -∞, you need to be careful about signs. Even powers (x², x⁴) are always positive, so they go to +∞ in both directions. Odd powers (x, x³, x⁵) flip sign: x³ → +∞ as x → +∞, but x³ → -∞ as x → -∞. This affects whether limits at negative infinity give +∞ or -∞, and it's a common source of sign errors on the AP exam. When in doubt, think about what happens when you plug in a very large negative number."
+    }
+  ],
+  "aiContext": "AP Calculus AB. Guide students to understand concepts graphically before algebraically. Push them to explain what a derivative or integral MEANS physically, not just how to compute it. Common confusion: chain rule application order, and confusing definite vs indefinite integrals."
+}

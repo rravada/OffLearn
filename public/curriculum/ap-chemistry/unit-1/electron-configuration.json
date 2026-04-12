@@ -1,0 +1,41 @@
+{
+  "id": "electron-configuration",
+  "title": "Electron Configuration and Orbital Notation",
+  "subject": "AP Chemistry",
+  "unit": "Atomic Structure and Properties",
+  "track": "ap",
+  "difficulty": "ap",
+  "duration": "30 min",
+  "objectives": [
+    "Write electron configurations using the Aufbau principle, Hund's rule, and the Pauli exclusion principle",
+    "Draw orbital diagrams showing electron spin in each orbital",
+    "Write configurations for ions and identify exceptions for chromium and copper"
+  ],
+  "sections": [
+    {
+      "type": "explanation",
+      "heading": "The Three Rules of Electron Filling",
+      "content": "Electrons fill orbitals according to three rules:\n\n1. Aufbau Principle (building up): Electrons fill the lowest-energy orbitals first. The filling order is: 1s, 2s, 2p, 3s, 3p, 4s, 3d, 4p, 5s, 4d, 5p, 6s, 4f, 5d, 6p... The diagonal rule (drawing arrows from top-right to bottom-left on an energy level chart) helps you remember this order.\n\n2. Pauli Exclusion Principle: Each orbital holds a maximum of two electrons, and they must have opposite spins (one spin-up ↑, one spin-down ↓). This is why the s subshell (1 orbital) holds 2 electrons, p (3 orbitals) holds 6, d (5 orbitals) holds 10, and f (7 orbitals) holds 14.\n\n3. Hund's Rule: When filling orbitals of equal energy (like the three 2p orbitals), electrons spread out — one per orbital with parallel spins first — before pairing up. Think of it like passengers on a bus: everyone takes their own seat before sitting next to a stranger."
+    },
+    {
+      "type": "example",
+      "heading": "Writing Configurations: Oxygen and Iron",
+      "content": "Oxygen (Z = 8): 1s² 2s² 2p⁴\n  Orbital diagram:\n  1s: ↑↓   2s: ↑↓   2p: ↑↓ ↑ ↑\n  (The 2p has 4 electrons: by Hund's rule, fill each orbital singly first, then pair)\n\nIron (Z = 26): 1s² 2s² 2p⁶ 3s² 3p⁶ 4s² 3d⁶\n  Noble gas shorthand: [Ar] 4s² 3d⁶\n  ([Ar] represents 1s² 2s² 2p⁶ 3s² 3p⁶ — the first 18 electrons)\n\n  3d orbital diagram: ↑↓ ↑ ↑ ↑ ↑\n  (6 electrons in 5 d-orbitals: one pair and four singles)\n\nFor ions, remove electrons from the highest principal energy level first:\n  Fe²⁺: [Ar] 3d⁶ (remove the two 4s electrons first, NOT 3d)\n  Fe³⁺: [Ar] 3d⁵ (remove 4s² then one 3d)"
+    },
+    {
+      "type": "explanation",
+      "heading": "Why Configuration Matters",
+      "content": "An element's electron configuration determines its chemical behavior. The outermost electrons — called valence electrons — are the ones involved in bonding. Elements in the same group of the periodic table have the same valence electron configuration, which is why they have similar chemical properties.\n\nGroup 1 (alkali metals): [noble gas] ns¹ — one valence electron, easily lost → +1 ions\nGroup 17 (halogens): [noble gas] ns² np⁵ — seven valence electrons, readily gain one → −1 ions\nGroup 18 (noble gases): [noble gas] ns² np⁶ — full valence shell → extremely stable, rarely react\n\nThe entire structure of the periodic table — its groups, periods, blocks (s, p, d, f) — is a direct map of electron configuration patterns."
+    },
+    {
+      "type": "keypoint",
+      "content": "Electron configurations follow three rules: Aufbau (lowest energy first), Pauli (max 2 electrons per orbital with opposite spins), and Hund's (spread out before pairing). For transition metal ions, remove electrons from the s orbital before the d orbital."
+    },
+    {
+      "type": "deepdive",
+      "heading": "The Chromium and Copper Exceptions",
+      "content": "You would predict chromium (Z = 24) to be [Ar] 4s² 3d⁴, but its actual configuration is [Ar] 4s¹ 3d⁵. Similarly, copper (Z = 29) is [Ar] 4s¹ 3d¹⁰ instead of the expected [Ar] 4s² 3d⁹.\n\nWhy? Half-filled and fully-filled d subshells are especially stable due to the symmetrical distribution of electron density and favorable exchange energy (a quantum mechanical effect). The energy gained by having 3d⁵ (half-filled) or 3d¹⁰ (fully-filled) outweighs the energy cost of moving one electron from 4s to 3d.\n\nThese exceptions reinforce a deeper point: the Aufbau filling order is a useful approximation, but real atoms are governed by quantum mechanics, and sometimes a configuration with lower total energy does not follow the simple filling rules. On the AP exam, you are expected to know these two exceptions and explain why they occur."
+    }
+  ],
+  "aiContext": "AP Chemistry. Use dimensional analysis for all calculations. Stress WHY reactions happen, not just equation balancing. Common confusion: entropy vs enthalpy direction, and applying Le Chatelier to specific perturbations."
+}

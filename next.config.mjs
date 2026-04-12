@@ -17,17 +17,26 @@ const nextConfig = {
         path: false,
         crypto: false,
         sharp: false,
+        canvas: false,
+        encoding: false,
       };
 
       config.resolve.alias = {
         ...config.resolve.alias,
         sharp: false,
         "onnxruntime-node": false,
+        canvas: false,
       };
+
+      config.module.rules.push({
+        test: /node_modules[\\/]pdfjs-dist[\\/]build[\\/]pdf\.js$/,
+        loader: "null-loader",
+        issuerLayer: "server",
+      });
     }
 
     if (isServer) {
-      config.externals = [...(config.externals || []), "onnxruntime-node", "sharp"];
+      config.externals = [...(config.externals || []), "onnxruntime-node", "sharp", "canvas"];
     }
 
     return config;

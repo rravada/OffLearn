@@ -1,0 +1,55 @@
+{
+  "id": "ap-calc-ab-u2-chain-rule",
+  "title": "The Chain Rule",
+  "subject": "AP Calculus AB",
+  "unit": "Differentiation",
+  "track": "ap",
+  "difficulty": "ap",
+  "duration": "25 min",
+  "objectives": [
+    "Identify composite functions by recognizing an 'outer function' and an 'inner function,' and explain why neither the product rule nor the power rule alone can handle them.",
+    "Apply the chain rule — d/dx[f(g(x))] = f'(g(x))·g'(x) — to differentiate composite functions involving powers, roots, and trigonometric expressions.",
+    "Use the chain rule multiple times in a single problem when functions are composed more than two layers deep."
+  ],
+  "sections": [
+    {
+      "type": "explanation",
+      "heading": "Why You Need a New Rule",
+      "content": "You already know how to differentiate x⁵ (power rule gives 5x⁴) and you know how to differentiate 3x + 7 (it's just 3). But what about (3x + 7)⁵?\n\nYour first instinct might be to use the power rule: bring down the 5, reduce the exponent, and get 5(3x + 7)⁴. But that's incomplete. Think about it — if you changed the inside from (3x + 7) to (100x + 7), the function should change much faster because x has a much larger multiplier. Yet 5(100x + 7)⁴ wouldn't account for that speed difference at all.\n\nThe issue is that (3x + 7)⁵ is a **composite function** — a function inside another function. The outer function is 'raise to the 5th power' and the inner function is '3x + 7.' When you differentiate, you need to account for how fast *both* the outer and inner functions are changing. That's what the **chain rule** does.\n\nHere's a real-world analogy. Suppose the temperature outside is rising at 2 degrees per hour, and a metal rod expands at 0.01 inches per degree. How fast is the rod expanding per hour? You multiply: 0.01 inches/degree × 2 degrees/hour = 0.02 inches/hour. You 'chained' two rates together. The chain rule in calculus does exactly this — it multiplies the rate of the outer function by the rate of the inner function."
+    },
+    {
+      "type": "explanation",
+      "heading": "The Chain Rule Formula",
+      "content": "If y = f(g(x)), meaning you first apply g to x, then apply f to the result, the chain rule says:\n\n  dy/dx = f'(g(x)) · g'(x)\n\nIn words: take the derivative of the outer function, evaluated at the inner function, then multiply by the derivative of the inner function.\n\nIn Leibniz notation, if y = f(u) and u = g(x), then:\n\n  dy/dx = (dy/du) · (du/dx)\n\nThis version looks like fraction cancellation — the du's 'cancel.' They don't literally cancel (these are limits, not fractions), but the notation is designed to suggest the right answer, and that's one reason Leibniz notation is so powerful.\n\nThe most common mistake students make with the chain rule is *forgetting to multiply by the derivative of the inner function*. They differentiate the outer function correctly but then stop. Always ask yourself: 'Did I multiply by the derivative of what's inside?' Make this a reflex."
+    },
+    {
+      "type": "example",
+      "heading": "Basic Chain Rule Examples",
+      "content": "Example 1: Differentiate y = (3x + 7)⁵.\n  Outer function: u⁵, so dy/du = 5u⁴.\n  Inner function: u = 3x + 7, so du/dx = 3.\n  Chain rule: dy/dx = 5(3x + 7)⁴ · 3 = 15(3x + 7)⁴.\n\nExample 2: Differentiate y = √(x² + 9).\n  Rewrite: y = (x² + 9)^(1/2).\n  Outer: u^(1/2), derivative is (1/2)u^(−1/2).\n  Inner: u = x² + 9, derivative is 2x.\n  Chain rule: dy/dx = (1/2)(x² + 9)^(−1/2) · 2x = x / √(x² + 9).\n\nExample 3: Differentiate y = (4x³ − x)⁻³.\n  Outer: u⁻³, derivative is −3u⁻⁴.\n  Inner: u = 4x³ − x, derivative is 12x² − 1.\n  Chain rule: dy/dx = −3(4x³ − x)⁻⁴ · (12x² − 1).\n\nIn every case, the pattern is the same: differentiate the outside, leave the inside unchanged, then multiply by the derivative of the inside."
+    },
+    {
+      "type": "keypoint",
+      "content": "Chain rule: d/dx[f(g(x))] = f'(g(x)) · g'(x). Differentiate the outer function (leaving the inner function untouched inside it), then MULTIPLY by the derivative of the inner function. Forgetting this multiplication is the #1 chain rule error."
+    },
+    {
+      "type": "explanation",
+      "heading": "Identifying Inner and Outer Functions",
+      "content": "The hardest part of the chain rule isn't the formula — it's recognizing *when* to use it and correctly identifying which part is the inner function and which is the outer function.\n\nHere's a reliable method: ask yourself, 'If I were to evaluate this function at a specific number, what's the last operation I would perform?'\n\nFor (3x + 7)⁵: you'd first compute 3x + 7, then raise to the 5th power. The last operation — raising to the 5th power — is the outer function. The first operation — 3x + 7 — is the inner function.\n\nFor √(x² + 9): you'd first compute x² + 9, then take the square root. Outer = square root. Inner = x² + 9.\n\nFor 1/(2x + 1)³: rewrite as (2x + 1)⁻³. Last operation = raise to the −3 power (outer). First operation = 2x + 1 (inner).\n\nThis 'last operation' test works every time. On the AP exam, functions won't always look like neatly nested parentheses — sometimes you'll need to *see* the composition. Practice asking: what's the last thing happening here?"
+    },
+    {
+      "type": "example",
+      "heading": "Chains Within Chains: Multiple Applications",
+      "content": "Differentiate y = ((2x + 1)³ + 5)⁴.\n\nThis is a three-layer composition. From outside to inside:\n  Layer 1 (outermost): ( · )⁴\n  Layer 2 (middle): ( · )³ + 5\n  Layer 3 (innermost): 2x + 1\n\nApply the chain rule layer by layer, from the outside in:\n\nStep 1: Differentiate the outermost function.\n  dy/dx = 4·((2x + 1)³ + 5)³ · d/dx[(2x + 1)³ + 5]\n\nStep 2: Differentiate (2x + 1)³ + 5. The +5 has derivative 0, so focus on (2x + 1)³.\n  d/dx[(2x + 1)³] = 3(2x + 1)² · d/dx[2x + 1] = 3(2x + 1)² · 2 = 6(2x + 1)²\n\nStep 3: Combine everything.\n  dy/dx = 4·((2x + 1)³ + 5)³ · 6(2x + 1)²\n  dy/dx = 24·(2x + 1)² · ((2x + 1)³ + 5)³\n\nNotice the pattern: each layer of composition produces another factor in the derivative. Three layers deep means three factors multiplied together. If you ever feel lost, just peel the function like an onion — start at the outermost layer and work inward, applying the chain rule at each step."
+    },
+    {
+      "type": "deepdive",
+      "heading": "The Chain Rule Meets the Product and Quotient Rules",
+      "content": "In real AP problems, you'll often need to combine the chain rule with the product or quotient rule. The key is to stay organized and ask: what's the outermost structure?\n\nConsider y = x² · (5x − 1)⁴.\n\nThe outermost structure is a *product*: x² times (5x − 1)⁴. So start with the product rule:\n  dy/dx = (d/dx[x²]) · (5x − 1)⁴ + x² · (d/dx[(5x − 1)⁴])\n\nNow, d/dx[x²] = 2x (power rule, no chain rule needed).\nAnd d/dx[(5x − 1)⁴] requires the chain rule: 4(5x − 1)³ · 5 = 20(5x − 1)³.\n\nPutting it together:\n  dy/dx = 2x(5x − 1)⁴ + x² · 20(5x − 1)³\n  dy/dx = 2x(5x − 1)⁴ + 20x²(5x − 1)³\n\nYou can factor out common terms: 2x(5x − 1)³ is common to both.\n  dy/dx = 2x(5x − 1)³ [(5x − 1) + 10x]\n  dy/dx = 2x(5x − 1)³ (15x − 1)\n\nThe factoring step isn't always required, but it's satisfying and often expected on the AP exam for simplification.\n\nHere's the principle that will save you on complicated problems: **never try to apply two rules simultaneously.** Identify the outermost structure, apply its rule, and then handle the inner derivatives one at a time. Write every step. The students who make errors are the ones who try to do three things at once in their heads."
+    },
+    {
+      "type": "keypoint",
+      "content": "When chain rule combines with product or quotient rule, work from the outermost structure inward. For nested compositions, peel one layer at a time: differentiate the outer function, leave the inner intact, multiply by the inner's derivative, and repeat for each layer. Write out every step — clarity beats speed."
+    }
+  ],
+  "aiContext": "AP Calculus AB. Guide students to understand concepts graphically before algebraically. Push them to explain what a derivative or integral MEANS physically, not just how to compute it. Common confusion: chain rule application order, and confusing definite vs indefinite integrals."
+}

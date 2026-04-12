@@ -7,7 +7,11 @@ import { LLMSession } from "@/lib/inference/mediapipe";
 import { cleanResponse, generateId } from "@/lib/utils";
 import type { Message } from "@/types";
 
-export function TutorPanel() {
+interface TutorPanelProps {
+  onSendOverride?: (text: string) => Promise<void>;
+}
+
+export function TutorPanel({ onSendOverride }: TutorPanelProps = {}) {
   const {
     tutorOpen,
     setTutorOpen,
@@ -43,6 +47,11 @@ export function TutorPanel() {
     if (!text || isTutorGenerating || modelStatus !== "ready") return;
 
     setInput("");
+
+    if (onSendOverride) {
+      await onSendOverride(text);
+      return;
+    }
 
     const userMsg: Message = {
       id: generateId(),
@@ -98,6 +107,7 @@ export function TutorPanel() {
     input,
     isTutorGenerating,
     modelStatus,
+    onSendOverride,
     addTutorMessage,
     setIsTutorGenerating,
     setTutorStreamingContent,

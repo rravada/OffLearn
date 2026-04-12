@@ -1,0 +1,56 @@
+{
+  "id": "curve-sketching",
+  "title": "Curve Sketching Using Derivatives",
+  "subject": "AP Calculus AB",
+  "unit": "Applications of Derivatives",
+  "track": "ap",
+  "difficulty": "ap",
+  "duration": "30 min",
+  "objectives": [
+    "Use the first derivative to determine where a function is increasing or decreasing and locate local extrema",
+    "Use the second derivative to determine concavity and locate inflection points",
+    "Combine information from f, f', and f'' to produce an accurate sketch of a function's graph"
+  ],
+  "sections": [
+    {
+      "type": "explanation",
+      "heading": "Reading the story a derivative tells",
+      "content": "Before you ever plot a single point, the first and second derivatives of a function can tell you almost everything about the shape of its graph. Think of f'(x) as the function's speedometer and f''(x) as the accelerometer. Together, they narrate the entire journey of the curve.\n\nThe first derivative, f'(x), tells you whether the function is going up or going down. When f'(x) > 0, the function is increasing — the graph is climbing from left to right. When f'(x) < 0, the function is decreasing — the graph is falling. When f'(x) = 0, the function has a horizontal tangent — the graph is momentarily flat, which might be a local maximum, a local minimum, or just a brief pause.\n\nThe second derivative, f''(x), tells you how the function is curving. When f''(x) > 0, the function is concave up — the graph curves upward like the inside of a bowl or a smile. When f''(x) < 0, the function is concave down — the graph curves downward like a hill or a frown. The sign of f'' tells you whether the slope itself is getting steeper or shallower.\n\nHere's an analogy that might help: imagine you're driving a car on a hilly road. f'(x) tells you whether you're going uphill (positive) or downhill (negative). f''(x) tells you whether the hill is getting steeper (positive while increasing, negative while decreasing) or leveling off. A positive f'' while going uphill means you're heading into an increasingly steep climb. A negative f'' while going uphill means the hill is flattening out — you might be approaching the top."
+    },
+    {
+      "type": "explanation",
+      "heading": "The first derivative test: finding local maxima and minima",
+      "content": "The first derivative test uses the sign changes of f' to classify critical points. Here's the complete method:\n\n1. Find all critical points: Solve f'(x) = 0 and note where f'(x) is undefined (but f(x) still exists).\n\n2. Build a sign chart for f': Pick test points in each interval between consecutive critical points and evaluate f' there. You don't need exact values — you only care about positive or negative.\n\n3. Read the sign chart:\n   • f' changes from + to − → local maximum (function rises then falls)\n   • f' changes from − to + → local minimum (function falls then rises)\n   • f' doesn't change sign → neither max nor min (function keeps going the same direction)\n\nWhy does this work? A local maximum is literally a point where the function stops increasing and starts decreasing. That's a transition from positive slope to negative slope. A local minimum is where the function stops decreasing and starts increasing — negative slope to positive slope.\n\nOne important note: not every point where f'(x) = 0 is a max or min. The function f(x) = x³ has f'(0) = 0, but x = 0 is neither a maximum nor a minimum — the function increases on both sides of 0. The sign chart would show f' is positive on both sides, confirming no sign change."
+    },
+    {
+      "type": "example",
+      "heading": "Complete sign chart analysis",
+      "content": "Analyze f(x) = x³ - 6x² + 9x + 1.\n\nStep 1 — Find critical points:\nf'(x) = 3x² - 12x + 9 = 3(x² - 4x + 3) = 3(x - 1)(x - 3)\nCritical points: x = 1 and x = 3.\n\nStep 2 — Sign chart for f':\n• For x < 1 (try x = 0): f'(0) = 3(0-1)(0-3) = 3(-1)(-3) = 9 > 0 → f is increasing\n• For 1 < x < 3 (try x = 2): f'(2) = 3(2-1)(2-3) = 3(1)(-1) = -3 < 0 → f is decreasing\n• For x > 3 (try x = 4): f'(4) = 3(4-1)(4-3) = 3(3)(1) = 9 > 0 → f is increasing\n\nStep 3 — Classify critical points:\n• At x = 1: f' changes from + to − → local maximum. f(1) = 1 - 6 + 9 + 1 = 5.\n• At x = 3: f' changes from − to + → local minimum. f(3) = 27 - 54 + 27 + 1 = 1.\n\nSo the function rises to a peak at (1, 5), falls to a valley at (3, 1), then rises again. You already have a strong mental image of the shape."
+    },
+    {
+      "type": "explanation",
+      "heading": "The second derivative and concavity",
+      "content": "The second derivative reveals the curvature of the graph. Here's how to think about it:\n\nWhen f''(x) > 0, the function is concave up. Visually, the graph holds water — it curves like a cup. Technically, the slopes are increasing: the tangent lines get steeper as you move right. Even if the function is decreasing, if it's concave up, it's decreasing at a slowing rate — like a ball rolling uphill that's decelerating.\n\nWhen f''(x) < 0, the function is concave down. The graph spills water — it curves like a cap. The slopes are decreasing: the tangent lines get less steep (or more negative) as you move right.\n\nAn inflection point is where the concavity changes — from concave up to concave down, or vice versa. At an inflection point, f''(x) = 0 or is undefined, AND the sign of f'' actually changes. This is important: f''(x) = 0 alone is not enough. You need a sign change in f'', just like you need a sign change in f' for a local extremum.\n\nGraphically, an inflection point is where the curve transitions from bending one way to bending the other way. It's like the midpoint of an S-curve — the place where the graph is momentarily a straight line (in terms of curvature, not slope) before bending the other way."
+    },
+    {
+      "type": "example",
+      "heading": "Finding concavity and inflection points",
+      "content": "Continue with f(x) = x³ - 6x² + 9x + 1.\n\nWe found f'(x) = 3x² - 12x + 9. Now find f''(x):\nf''(x) = 6x - 12 = 6(x - 2)\n\nSet f''(x) = 0: 6(x - 2) = 0, so x = 2.\n\nSign chart for f'':\n• For x < 2 (try x = 0): f''(0) = 6(0-2) = -12 < 0 → concave down\n• For x > 2 (try x = 3): f''(3) = 6(3-2) = 6 > 0 → concave up\n\nSince f'' changes sign at x = 2 (from negative to positive), x = 2 is an inflection point.\nf(2) = 8 - 24 + 18 + 1 = 3. Inflection point at (2, 3).\n\nNow combine everything:\n• From x = −∞ to x = 1: increasing and concave down (rising but bending downward)\n• At x = 1: local maximum at (1, 5)\n• From x = 1 to x = 2: decreasing and concave down (falling and bending downward)\n• At x = 2: inflection point at (2, 3) — concavity switches\n• From x = 2 to x = 3: decreasing and concave up (falling but bending upward — the decline is slowing)\n• At x = 3: local minimum at (3, 1)\n• From x = 3 to x = ∞: increasing and concave up (rising and bending upward)"
+    },
+    {
+      "type": "deepdive",
+      "heading": "Putting it all together: the complete curve-sketching checklist",
+      "content": "When the AP exam asks you to sketch a curve or describe a function's behavior, use this systematic checklist. It works for any function.\n\n1. Domain: Where is the function defined? Watch for division by zero, negative square roots, and logarithms of non-positive numbers.\n\n2. Intercepts: Set x = 0 for the y-intercept. Set f(x) = 0 for x-intercepts (if feasible to solve).\n\n3. Symmetry: Is f even (f(-x) = f(x), symmetric about y-axis)? Is f odd (f(-x) = -f(x), symmetric about origin)? This can cut your work in half.\n\n4. Asymptotes: For rational functions, check horizontal asymptotes (behavior as x → ±∞) and vertical asymptotes (where the denominator is zero).\n\n5. First derivative analysis: Find f'(x), identify critical points, build a sign chart, determine intervals of increase and decrease, classify local maxima and minima.\n\n6. Second derivative analysis: Find f''(x), identify possible inflection points, build a sign chart, determine intervals of concave up and concave down, confirm inflection points where concavity changes.\n\n7. Plot key points: Mark all local extrema, inflection points, intercepts, and a few additional points if needed. Then connect them with a smooth curve that respects all the information you've gathered.\n\nHere's why this matters beyond the AP exam: in the real world, you often can't graph a function by plugging in hundreds of points. But with this checklist, you need only a handful of calculations to understand the entire shape. Engineers use this approach to analyze stress functions, economists use it to find profit-maximizing quantities, and biologists use it to understand growth rates. The ability to read a function's behavior from its derivatives is one of the most practically powerful skills in all of mathematics.\n\nOne final note for the AP exam: you may be given the graph of f'(x) — not f(x) — and asked to describe f(x). Remember that f' > 0 means f is increasing, f' < 0 means f is decreasing, and where f' changes from increasing to decreasing (i.e., f'' = 0 with a sign change in f''), f has an inflection point. This \"reading backwards\" from f' to f is a very common AP question and rewards deep understanding over memorization."
+    },
+    {
+      "type": "example",
+      "heading": "Sketching from a derivative graph",
+      "content": "Suppose you're given that f'(x) = x(x - 2)(x + 1) and f(0) = 3. Describe the graph of f.\n\nCritical points (where f' = 0): x = -1, x = 0, x = 2.\n\nSign chart for f':\n• x < -1 (try x = -2): (-2)(-4)(-1) = -8 < 0 → f decreasing\n• -1 < x < 0 (try x = -0.5): (-0.5)(-2.5)(0.5) = 0.625 > 0 → f increasing\n• 0 < x < 2 (try x = 1): (1)(-1)(2) = -2 < 0 → f decreasing\n• x > 2 (try x = 3): (3)(1)(4) = 12 > 0 → f increasing\n\nClassification:\n• x = -1: f' goes from − to + → local minimum\n• x = 0: f' goes from + to − → local maximum at (0, 3)\n• x = 2: f' goes from − to + → local minimum\n\nFor concavity, you'd need f''(x) = 3x² - 2x - 2. Setting f'' = 0 gives x = (2 ± √28)/6 = (1 ± √7)/3, approximately x ≈ -0.55 and x ≈ 1.22. These are inflection points where the concavity changes.\n\nThe sketch: f comes from below on the left, decreasing. It bottoms out at x = -1, rises to a local max at (0, 3), falls again to a local min at x = 2, then rises forever to the right. The graph has two inflection points where it transitions between concave up and concave down."
+    },
+    {
+      "type": "keypoint",
+      "content": "Curve sketching combines everything you know about derivatives: f' tells you where the function increases and decreases (and locates extrema), f'' tells you where the function curves up or down (and locates inflection points). Together they give you the complete shape of any graph. For the AP exam, practice both directions: deriving the sketch from the formula, and reading the formula's properties from a given graph of f' or f''."
+    }
+  ],
+  "aiContext": "AP Calculus AB. Guide students to understand concepts graphically before algebraically. Push them to explain what a derivative or integral MEANS physically, not just how to compute it. Common confusion: chain rule application order, and confusing definite vs indefinite integrals."
+}

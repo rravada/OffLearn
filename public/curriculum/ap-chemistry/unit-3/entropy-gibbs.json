@@ -1,0 +1,41 @@
+{
+  "id": "entropy-gibbs",
+  "title": "Entropy and Gibbs Free Energy",
+  "subject": "AP Chemistry",
+  "unit": "Thermodynamics",
+  "track": "ap",
+  "difficulty": "ap",
+  "duration": "30 min",
+  "objectives": [
+    "Define entropy as a measure of disorder/dispersal and predict the sign of ΔS for a reaction",
+    "Apply the Gibbs equation ΔG = ΔH − TΔS to determine whether a reaction is spontaneous",
+    "Analyze the four ΔH/ΔS sign combinations and their implications for spontaneity"
+  ],
+  "sections": [
+    {
+      "type": "explanation",
+      "heading": "Entropy: The Universe Tends Toward Disorder",
+      "content": "Enthalpy tells you about heat flow, but it does not tell the full story of why reactions happen. Entropy (S) is the other half. Entropy is a measure of the dispersal of energy and matter — the number of ways particles and energy can be arranged (microstates).\n\nThe Second Law of Thermodynamics states that the total entropy of the universe always increases in a spontaneous process. Nature favors spreading out: gas expands to fill a container, hot objects cool to room temperature, sugar dissolves in water. All of these increase the total number of microstates.\n\nYou can predict the sign of ΔS (entropy change) for a reaction using simple rules:\n• ΔS > 0 (entropy increases): Solids → liquids → gases, fewer moles → more moles of gas, dissolving a solid in water\n• ΔS < 0 (entropy decreases): Gases → liquids → solids, more moles → fewer moles of gas, crystallization"
+    },
+    {
+      "type": "example",
+      "heading": "Predicting ΔS from Reaction Equations",
+      "content": "Reaction 1: 2H₂O(l) → 2H₂(g) + O₂(g)\n  ΔS > 0 (liquid → gas, 0 moles gas → 3 moles gas — huge entropy increase)\n\nReaction 2: N₂(g) + 3H₂(g) → 2NH₃(g)\n  ΔS < 0 (4 moles gas → 2 moles gas — fewer microstates for gas particles)\n\nReaction 3: NaCl(s) → Na⁺(aq) + Cl⁻(aq)\n  ΔS > 0 (ordered crystal → ions dispersed in solution)\n\nThe key is counting gas moles and looking at phase changes. Gas molecules have far more entropy than liquids, which have more than solids."
+    },
+    {
+      "type": "explanation",
+      "heading": "Gibbs Free Energy: The Spontaneity Criterion",
+      "content": "Gibbs free energy (G) combines enthalpy and entropy into a single criterion for spontaneity at constant temperature and pressure:\n\nΔG = ΔH − TΔS\n\nIf ΔG < 0: The reaction is spontaneous (thermodynamically favorable) — it can proceed without continuous external energy input.\nIf ΔG > 0: The reaction is nonspontaneous — it requires continuous energy input.\nIf ΔG = 0: The system is at equilibrium.\n\nNotice the minus sign in front of TΔS. This means that nature favors both lowering enthalpy (exothermic, ΔH < 0) AND increasing entropy (ΔS > 0). A reaction that does both is always spontaneous. A reaction that does neither is never spontaneous."
+    },
+    {
+      "type": "keypoint",
+      "content": "ΔG = ΔH − TΔS determines spontaneity. ΔG < 0 means spontaneous. Spontaneity depends on both the enthalpy change (energy) and entropy change (disorder), weighted by temperature."
+    },
+    {
+      "type": "deepdive",
+      "heading": "The Four Sign Combinations",
+      "content": "The interplay of ΔH and ΔS creates four possibilities:\n\n1. ΔH < 0, ΔS > 0: ΔG is ALWAYS negative. Spontaneous at all temperatures.\n   Example: Combustion reactions — exothermic and produce more gas molecules.\n\n2. ΔH > 0, ΔS < 0: ΔG is ALWAYS positive. Never spontaneous.\n   The reverse of case 1. These reactions require continuous energy input.\n\n3. ΔH < 0, ΔS < 0: ΔG depends on temperature. Spontaneous at LOW temperatures (where the ΔH term dominates) but not at high temperatures (where TΔS overwhelms ΔH).\n   Example: Freezing water — exothermic but decreases entropy. Spontaneous below 0°C.\n\n4. ΔH > 0, ΔS > 0: ΔG depends on temperature. Spontaneous at HIGH temperatures (where TΔS outweighs ΔH) but not at low temperatures.\n   Example: Melting ice — endothermic but increases entropy. Spontaneous above 0°C.\n\nThe crossover temperature (where ΔG = 0) is T = ΔH/ΔS. This is the temperature at which the system is at equilibrium between the two states — exactly the boiling point or melting point for phase changes."
+    }
+  ],
+  "aiContext": "AP Chemistry. Use dimensional analysis for all calculations. Stress WHY reactions happen, not just equation balancing. Common confusion: entropy vs enthalpy direction, and applying Le Chatelier to specific perturbations."
+}

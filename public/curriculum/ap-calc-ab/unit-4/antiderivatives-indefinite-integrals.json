@@ -1,0 +1,55 @@
+{
+  "id": "ap-calc-ab-unit4-antiderivatives-indefinite-integrals",
+  "title": "Antiderivatives and Indefinite Integrals",
+  "subject": "AP Calculus AB",
+  "unit": "Integration",
+  "track": "ap",
+  "difficulty": "ap",
+  "duration": "25 min",
+  "objectives": [
+    "Understand that an antiderivative reverses differentiation and explain why antiderivative families require a constant of integration (+C).",
+    "Apply the power rule for antiderivatives and basic antiderivative rules for trigonometric, exponential, and reciprocal functions.",
+    "Interpret the indefinite integral notation ∫f(x)dx and translate between derivative statements and antiderivative statements."
+  ],
+  "sections": [
+    {
+      "type": "explanation",
+      "heading": "What Is an Antiderivative?",
+      "content": "You've spent weeks learning how to take derivatives — how to start with a function and find its rate of change. Now we're going to flip that entire process around. An antiderivative answers the question: \"If I know the rate of change, what was the original function?\"\n\nThink of it like this. Suppose someone hands you a speedometer reading that says you're traveling at 60 mph. The derivative told you how to go from position to speed. The antiderivative takes you from speed back to position. If your velocity is v(t) = 60, then your position function must be something like s(t) = 60t. But wait — 60t + 5 also works, because if you started 5 miles from home, your speed is still 60. So does 60t + 100, or 60t − 37. The derivative of all of these is 60.\n\nFormally, we say F(x) is an antiderivative of f(x) if F′(x) = f(x). That's the whole definition. You're looking for a function whose derivative gives you back the function you started with. It's like being handed an answer and asked to figure out the question.\n\nHere's the critical thing: antiderivatives are never unique. If F(x) is an antiderivative of f(x), then so is F(x) + 1, F(x) + 42, F(x) − π, or F(x) plus any constant. Why? Because the derivative of a constant is zero, so adding a constant doesn't change the derivative. This means every function has an entire family of antiderivatives, all differing by a constant."
+    },
+    {
+      "type": "explanation",
+      "heading": "The +C and Why It Matters",
+      "content": "That constant we just talked about gets a name: the constant of integration, written as +C. When you write an antiderivative, you must include +C. This isn't a formality or a picky teacher thing — it represents real mathematical content.\n\nImagine you're tracking temperature over time. Someone tells you the temperature is rising at 3 degrees per hour. You know the rate of change (the derivative) is 3. The antiderivative is 3t + C. But what's C? It's the starting temperature. Without knowing the initial condition — the temperature at time zero — you can't pin down C. The +C is your way of honestly saying, \"I know the shape of the function, but I don't know exactly where it sits vertically.\"\n\nGraphically, the family of antiderivatives looks like infinitely many copies of the same curve, each shifted up or down. They all have the same slopes at every x-value (because they share the same derivative), but they're at different heights. When you write +C, you're describing all of them at once.\n\nOn the AP exam, forgetting +C on an indefinite integral will cost you points every single time. More importantly, it means you've forgotten what the antiderivative actually represents — a whole family, not a single function."
+    },
+    {
+      "type": "keypoint",
+      "content": "An antiderivative of f(x) is any function F(x) such that F′(x) = f(x). Because the derivative of a constant is 0, antiderivatives always come in families: F(x) + C, where C is any real number. Always include +C when writing an indefinite integral."
+    },
+    {
+      "type": "explanation",
+      "heading": "Indefinite Integral Notation",
+      "content": "Now let's talk about the notation. We write the antiderivative using the integral sign: ∫f(x) dx. This is called an indefinite integral. Let's break down every piece of this symbol because it's dense with meaning.\n\nThe ∫ symbol is an elongated S — it stands for \"sum,\" and you'll see why when we get to definite integrals and area. For now, think of it as the command: \"find the antiderivative.\"\n\nThe f(x) part is called the integrand — it's the function you're anti-differentiating.\n\nThe dx at the end tells you which variable you're integrating with respect to. This matters more than you might think. If you see ∫3t dt, you're finding the antiderivative with respect to t. The dx (or dt, or du) also plays a critical role in substitution, which you'll learn soon.\n\nSo ∫f(x) dx = F(x) + C means: \"The family of all functions whose derivative is f(x) is F(x) + C.\" It's a complete sentence in mathematics. The left side asks a question; the right side answers it."
+    },
+    {
+      "type": "example",
+      "heading": "Basic Antiderivative Rules — The Power Rule in Reverse",
+      "content": "Remember the power rule for derivatives: d/dx[xⁿ] = nxⁿ⁻¹. The power rule for antiderivatives reverses this:\n\n∫xⁿ dx = xⁿ⁺¹ / (n + 1) + C, as long as n ≠ −1.\n\nYou increase the exponent by 1, then divide by the new exponent. Let's see why this works: if you take d/dx of xⁿ⁺¹/(n+1), the power rule brings down (n+1) and reduces the exponent by 1, giving you (n+1)·xⁿ/(n+1) = xⁿ. It checks out.\n\nExamples:\n• ∫x³ dx = x⁴/4 + C (raise 3→4, divide by 4)\n• ∫x dx = x²/2 + C (raise 1→2, divide by 2)\n• ∫1 dx = x + C (since 1 = x⁰, raise 0→1, divide by 1)\n• ∫x⁻² dx = x⁻¹/(−1) + C = −1/x + C (raise −2→−1, divide by −1)\n• ∫√x dx = ∫x^(1/2) dx = x^(3/2)/(3/2) + C = (2/3)x^(3/2) + C\n\nThe exception: when n = −1, the formula gives x⁰/0, which is undefined. Instead, ∫x⁻¹ dx = ∫(1/x) dx = ln|x| + C. This is a special case worth memorizing."
+    },
+    {
+      "type": "example",
+      "heading": "More Antiderivative Rules You Need",
+      "content": "Beyond the power rule, here are the essential antiderivatives for AP Calculus AB. Each one comes from a derivative rule you already know, just read backwards:\n\n• ∫cos(x) dx = sin(x) + C — because d/dx[sin(x)] = cos(x)\n• ∫sin(x) dx = −cos(x) + C — because d/dx[−cos(x)] = sin(x)\n• ∫sec²(x) dx = tan(x) + C — because d/dx[tan(x)] = sec²(x)\n• ∫eˣ dx = eˣ + C — because d/dx[eˣ] = eˣ (the function that is its own antiderivative!)\n• ∫(1/x) dx = ln|x| + C — because d/dx[ln|x|] = 1/x\n\nConstant multiple rule: ∫k·f(x) dx = k·∫f(x) dx. You can pull constants out front.\nSum/difference rule: ∫[f(x) ± g(x)] dx = ∫f(x) dx ± ∫g(x) dx. You can split integrals across addition or subtraction.\n\nPutting it together: ∫(3x² − 5sin(x) + 7) dx = 3·(x³/3) − 5·(−cos(x)) + 7x + C = x³ + 5cos(x) + 7x + C.\n\nNotice: you only write one +C at the end, not a separate constant for each term. Since C represents any constant, the sum of several arbitrary constants is still just one arbitrary constant."
+    },
+    {
+      "type": "deepdive",
+      "heading": "Why Does Every Continuous Function Have an Antiderivative?",
+      "content": "Here's something profound that you might not expect: every continuous function has an antiderivative. This isn't obvious at all. You might wonder — what if I have some wild, complicated continuous function? Is there always a function whose derivative gives it back?\n\nThe answer is yes, and the proof comes from the Fundamental Theorem of Calculus (next lesson). The function F(x) = ∫ from a to x of f(t) dt is always an antiderivative of f(x) when f is continuous. The integral literally constructs an antiderivative for you by accumulating area.\n\nBut here's a humbling twist: just because an antiderivative exists doesn't mean you can write it in a nice closed form. The function f(x) = e^(−x²) is continuous, so it has an antiderivative — but that antiderivative can't be expressed using any finite combination of elementary functions (polynomials, trig, exponentials, logs). It exists, but it has no \"formula\" in the usual sense. This is why numerical integration methods matter in real-world applications.\n\nFor AP Calculus AB, every antiderivative you're asked to find will have a nice closed form. But knowing that some don't is part of understanding the bigger picture of what integration really is."
+    },
+    {
+      "type": "keypoint",
+      "content": "The core antiderivative rules you need: ∫xⁿ dx = xⁿ⁺¹/(n+1) + C for n ≠ −1; ∫(1/x) dx = ln|x| + C; ∫eˣ dx = eˣ + C; ∫cos(x) dx = sin(x) + C; ∫sin(x) dx = −cos(x) + C; ∫sec²(x) dx = tan(x) + C. Always verify an antiderivative by differentiating it — you should get back the original integrand."
+    }
+  ],
+  "aiContext": "AP Calculus AB. Guide students to understand concepts graphically before algebraically. Push them to explain what a derivative or integral MEANS physically, not just how to compute it. Common confusion: chain rule application order, and confusing definite vs indefinite integrals."
+}

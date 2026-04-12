@@ -1,0 +1,36 @@
+{
+  "id": "reaction-rates",
+  "title": "Reaction Rates and Rate Laws",
+  "subject": "AP Chemistry",
+  "unit": "Kinetics and Equilibrium",
+  "track": "ap",
+  "difficulty": "ap",
+  "duration": "30 min",
+  "objectives": [
+    "Define reaction rate and express it in terms of changes in concentration over time",
+    "Write a rate law expression and determine reaction order from experimental data",
+    "Distinguish zero-order, first-order, and second-order reactions by their graphical signatures"
+  ],
+  "sections": [
+    {
+      "type": "explanation",
+      "heading": "What Is a Reaction Rate?",
+      "content": "The rate of a chemical reaction measures how fast reactants are consumed or products are formed. Formally, rate = −Δ[reactant]/Δt = +Δ[product]/Δt, where [brackets] indicate molar concentration and t is time.\n\nThe negative sign for reactants ensures the rate is positive (concentrations of reactants decrease over time). For a reaction aA + bB → cC, the rate can be expressed as: rate = −(1/a)Δ[A]/Δt = (1/c)Δ[C]/Δt, where the stoichiometric coefficients normalize the rates.\n\nFactors that affect reaction rate include: concentration of reactants (more molecules = more collisions), temperature (faster molecules = more energetic collisions), surface area (more exposed area = more collision sites), and the presence of a catalyst (lowers activation energy)."
+    },
+    {
+      "type": "example",
+      "heading": "Determining Rate Law from Experimental Data",
+      "content": "For the reaction: 2NO(g) + O₂(g) → 2NO₂(g)\n\nExperiment | [NO] (M) | [O₂] (M) | Initial Rate (M/s)\n     1     |  0.010   |  0.010   |  2.5 × 10⁻⁵\n     2     |  0.020   |  0.010   |  1.0 × 10⁻⁴\n     3     |  0.010   |  0.020   |  5.0 × 10⁻⁵\n\nCompare experiments 1 and 2 ([O₂] constant, [NO] doubles):\n  Rate increased by factor: (1.0 × 10⁻⁴) / (2.5 × 10⁻⁵) = 4 = 2²\n  So rate ∝ [NO]² — second order in NO.\n\nCompare experiments 1 and 3 ([NO] constant, [O₂] doubles):\n  Rate increased by factor: (5.0 × 10⁻⁵) / (2.5 × 10⁻⁵) = 2 = 2¹\n  So rate ∝ [O₂]¹ — first order in O₂.\n\nRate law: rate = k[NO]²[O₂]\nOverall order: 2 + 1 = 3 (third order overall)\n\nSolve for k using any experiment:\n  k = rate / ([NO]²[O₂]) = 2.5 × 10⁻⁵ / ((0.010)²(0.010)) = 2.5 × 10³ M⁻²s⁻¹"
+    },
+    {
+      "type": "keypoint",
+      "content": "The rate law rate = k[A]^m[B]^n must be determined experimentally — you CANNOT deduce the exponents from the balanced equation. Change one reactant at a time, compare how the rate changes, and determine each exponent."
+    },
+    {
+      "type": "deepdive",
+      "heading": "Integrated Rate Laws and Graphical Analysis",
+      "content": "Integrated rate laws relate concentration to time (rather than rate to concentration):\n\nZero order: [A] = −kt + [A]₀\n  Plot [A] vs. t → straight line, slope = −k\n\nFirst order: ln[A] = −kt + ln[A]₀\n  Plot ln[A] vs. t → straight line, slope = −k\n  Half-life: t₁/₂ = 0.693/k (constant, independent of initial concentration)\n\nSecond order: 1/[A] = kt + 1/[A]₀\n  Plot 1/[A] vs. t → straight line, slope = k\n\nTo determine the order experimentally from concentration-time data, plot all three versions. Whichever gives a straight line tells you the order.\n\nThe first-order half-life being constant is particularly important: radioactive decay is first order, which is why we can use half-lives to date archaeological artifacts (carbon-14 dating) and geological formations (uranium-lead dating). Each half-life, exactly half the remaining material decays, regardless of how much started."
+    }
+  ],
+  "aiContext": "AP Chemistry. Use dimensional analysis for all calculations. Stress WHY reactions happen, not just equation balancing. Common confusion: entropy vs enthalpy direction, and applying Le Chatelier to specific perturbations."
+}

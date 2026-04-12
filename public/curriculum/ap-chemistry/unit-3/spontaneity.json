@@ -1,0 +1,41 @@
+{
+  "id": "spontaneity",
+  "title": "Spontaneity and Thermodynamic Favorability",
+  "subject": "AP Chemistry",
+  "unit": "Thermodynamics",
+  "track": "ap",
+  "difficulty": "ap",
+  "duration": "25 min",
+  "objectives": [
+    "Explain why spontaneous does not mean fast — thermodynamics vs. kinetics",
+    "Predict how temperature changes affect the spontaneity of reactions in each ΔH/ΔS category",
+    "Describe how coupled reactions allow nonspontaneous processes to occur in biological systems"
+  ],
+  "sections": [
+    {
+      "type": "explanation",
+      "heading": "Spontaneous Does Not Mean Instantaneous",
+      "content": "One of the most common misconceptions in chemistry is confusing spontaneity with speed. A spontaneous reaction is thermodynamically favorable — ΔG < 0 — but it says nothing about how fast the reaction occurs.\n\nDiamond converting to graphite is spontaneous (ΔG < 0 under normal conditions) — but it takes billions of years. The rusting of iron is spontaneous but takes weeks or months. The combustion of gasoline is spontaneous but requires a spark to get started.\n\nThermodynamics tells you WHETHER a reaction can happen. Kinetics (reaction rates, activation energy) tells you HOW FAST it happens. A reaction can be thermodynamically favorable but kinetically so slow that it effectively never occurs without a catalyst or an energy input to overcome the activation energy barrier."
+    },
+    {
+      "type": "example",
+      "heading": "Temperature and Spontaneity",
+      "content": "Consider the decomposition of calcium carbonate:\nCaCO₃(s) → CaO(s) + CO₂(g)   ΔH = +178 kJ, ΔS = +161 J/K\n\nThis is case 4 (ΔH > 0, ΔS > 0): spontaneous only at high temperatures.\n\nFind the crossover temperature:\nΔG = 0 when T = ΔH/ΔS = 178,000 J / 161 J/K = 1106 K ≈ 833°C\n\nBelow 833°C: ΔG > 0 — CaCO₃ is stable (limestone stays solid).\nAbove 833°C: ΔG < 0 — CaCO₃ decomposes (this is how lime kilns work).\n\nThis is not just a textbook exercise — the cement industry heats limestone above this temperature to produce lime (CaO), one of the most important industrial chemicals in the world."
+    },
+    {
+      "type": "explanation",
+      "heading": "Coupled Reactions in Biology",
+      "content": "Many essential biological reactions are nonspontaneous on their own. Building proteins from amino acids, synthesizing DNA, and pumping ions against their concentration gradient all have ΔG > 0. How do cells drive these reactions?\n\nBy coupling them to a strongly spontaneous reaction. The hydrolysis of ATP (adenosine triphosphate) releases about −30.5 kJ/mol:\n\nATP + H₂O → ADP + Pᵢ, ΔG = −30.5 kJ/mol\n\nWhen a nonspontaneous reaction (ΔG = +15 kJ/mol) is coupled with ATP hydrolysis (ΔG = −30.5 kJ/mol), the overall ΔG is −15.5 kJ/mol — spontaneous! The cell pays for the unfavorable reaction with the energy stored in ATP.\n\nThis is why ATP is called the 'energy currency' of the cell. Your body hydrolyzes roughly 40 kg of ATP per day — recycling it continuously — to power all the nonspontaneous processes that keep you alive."
+    },
+    {
+      "type": "keypoint",
+      "content": "Spontaneous (ΔG < 0) means thermodynamically favorable, NOT fast. Temperature determines spontaneity when ΔH and ΔS have the same sign. Cells drive nonspontaneous reactions by coupling them with ATP hydrolysis, making the overall ΔG negative."
+    },
+    {
+      "type": "deepdive",
+      "heading": "ΔG, Equilibrium, and the Relationship Between Them",
+      "content": "There is a direct mathematical relationship between ΔG° (standard free energy change) and the equilibrium constant K:\n\nΔG° = −RT ln K\n\nwhere R = 8.314 J/(mol·K) and T is in Kelvin.\n\nIf ΔG° < 0: K > 1, meaning products are favored at equilibrium.\nIf ΔG° > 0: K < 1, meaning reactants are favored at equilibrium.\nIf ΔG° = 0: K = 1, meaning neither is favored.\n\nThis equation unifies thermodynamics and equilibrium — two topics that might seem separate but are actually two perspectives on the same underlying reality. A large negative ΔG° means the reaction strongly favors products, which is the same thing as saying K is very large.\n\nUnder nonstandard conditions, the actual ΔG depends on the reaction quotient Q:\nΔG = ΔG° + RT ln Q\n\nWhen Q < K, ΔG < 0 and the reaction proceeds forward. When Q > K, ΔG > 0 and the reaction proceeds in reverse. When Q = K, ΔG = 0 and the system is at equilibrium."
+    }
+  ],
+  "aiContext": "AP Chemistry. Use dimensional analysis for all calculations. Stress WHY reactions happen, not just equation balancing. Common confusion: entropy vs enthalpy direction, and applying Le Chatelier to specific perturbations."
+}

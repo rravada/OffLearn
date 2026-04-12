@@ -1,5 +1,5 @@
 import { openDB, type DBSchema, type IDBPDatabase } from "idb";
-import type { StoredMessage, MasteryEntry, Session } from "@/types";
+import type { StoredMessage, MasteryEntry, Session, TeacherModule } from "@/types";
 
 interface OffLearnDB extends DBSchema {
   sessions: {
@@ -19,24 +19,31 @@ interface OffLearnDB extends DBSchema {
     key: string;
     value: { key: string; value: string };
   };
+  teacherModules: {
+    key: string;
+    value: TeacherModule;
+  };
 }
 
 const DB_NAME = "offlearn";
-const DB_VERSION = 1;
+const DB_VERSION = 2;
 
 let dbPromise: Promise<IDBPDatabase<OffLearnDB>> | null = null;
 
 function getDB(): Promise<IDBPDatabase<OffLearnDB>> {
   if (!dbPromise) {
     dbPromise = openDB<OffLearnDB>(DB_NAME, DB_VERSION, {
-      upgrade(db) {
-        db.createObjectStore("sessions", { keyPath: "id" });
-
-        const msgStore = db.createObjectStore("messages", { keyPath: "id" });
-        msgStore.createIndex("by-session", "sessionId");
-
-        db.createObjectStore("mastery", { keyPath: "concept" });
-        db.createObjectStore("meta", { keyPath: "key" });
+      upgrade(db, oldVersion) {
+        if (oldVersion < 1) {
+          db.createObjectStore("sessions", { keyPath: "id" });
+          const msgStore = db.createObjectStore("messages", { keyPath: "id" });
+          msgStore.createIndex("by-session", "sessionId");
+          db.createObjectStore("mastery", { keyPath: "concept" });
+          db.createObjectStore("meta", { keyPath: "key" });
+        }
+        if (oldVersion < 2) {
+          db.createObjectStore("teacherModules", { keyPath: "id" });
+        }
       },
     });
   }
@@ -115,4 +122,28 @@ export async function getMeta(key: string): Promise<string | undefined> {
   const db = await getDB();
   const record = await db.get("meta", key);
   return record?.value;
+}
+
+// --- Teacher Modules ---
+
+export async function saveTeacherModule(module: TeacherModule): Promise<void> {
+  const db = await getDB();
+  await db.put("teacherModules", module);
+}
+
+export async function getTeacherModules(): Promise<TeacherModule[]> {
+  const db = await getDB();
+  return db.getAll("teacherModules");
+}
+
+export async function getTeacherModule(
+  id: string
+): Promise<TeacherModule | undefined> {
+  const db = await getDB();
+  return db.get("teacherModules", id);
+}
+
+export async function deleteTeacherModule(id: string): Promise<void> {
+  const db = await getDB();
+  await db.delete("teacherModules", id);
 }

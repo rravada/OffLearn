@@ -1,0 +1,41 @@
+{
+  "id": "mutations-consequences",
+  "title": "Mutations and Their Consequences",
+  "subject": "AP Biology",
+  "unit": "Genetics and Heredity",
+  "track": "ap",
+  "difficulty": "ap",
+  "duration": "25 min",
+  "objectives": [
+    "Classify point mutations as silent, missense, or nonsense and predict their effects on protein function",
+    "Explain why frameshift mutations are generally more damaging than point mutations",
+    "Connect mutations to both disease (cancer) and evolution (source of new alleles)"
+  ],
+  "sections": [
+    {
+      "type": "explanation",
+      "heading": "What Is a Mutation?",
+      "content": "A mutation is any change in the nucleotide sequence of DNA. Mutations can occur during DNA replication (errors made by DNA polymerase that escape proofreading), during DNA repair, or as a result of exposure to mutagens — environmental agents that damage DNA, such as UV radiation, certain chemicals (like those in cigarette smoke), and some viruses.\n\nMutations are the ultimate source of genetic variation. Without mutations, evolution would have no raw material. Most mutations are neutral or harmful, but occasionally a mutation confers a benefit in a particular environment. Natural selection acts on these variations over generations."
+    },
+    {
+      "type": "explanation",
+      "heading": "Point Mutations: Substitutions",
+      "content": "A point mutation changes a single nucleotide in the DNA sequence. Because the genetic code is degenerate (multiple codons code for the same amino acid), not all point mutations change the protein:\n\nSilent mutation: The new codon still codes for the same amino acid. For example, changing CUU to CUC — both code for leucine. The protein is unaffected.\n\nMissense mutation: The new codon codes for a different amino acid. The effect depends on where the change occurs and how chemically different the new amino acid is. The sickle cell mutation (GAG → GUG, glutamate → valine in hemoglobin) is a missense mutation with devastating consequences because it changes a charged, hydrophilic amino acid to a nonpolar, hydrophobic one at a critical position.\n\nNonsense mutation: The new codon is a stop codon (UAA, UAG, or UGA). Translation ends prematurely, producing a truncated protein that is usually nonfunctional. Nonsense mutations are almost always harmful."
+    },
+    {
+      "type": "example",
+      "heading": "Frameshift Mutations",
+      "content": "If a nucleotide is inserted or deleted (not in multiples of three), every codon downstream of the mutation shifts. This is called a frameshift mutation.\n\nOriginal mRNA:  AUG | CCU | GAA | UUC | UAG\nAmino acids:    Met   Pro   Glu   Phe   Stop\n\nAfter inserting one nucleotide (A) after the first codon:\nMutant mRNA:   AUG | ACC | UGA | AUU | CUA | G...\nAmino acids:   Met   Thr   Stop\n\nThe entire reading frame shifts, producing completely wrong amino acids and often hitting a premature stop codon. Frameshift mutations are almost always devastating because they alter every amino acid downstream of the insertion or deletion.\n\nThis is why insertions/deletions in multiples of three are less harmful — they add or remove whole amino acids without shifting the reading frame."
+    },
+    {
+      "type": "keypoint",
+      "content": "Silent mutations do not change the protein. Missense mutations change one amino acid (effects vary). Nonsense mutations create premature stop codons. Frameshift mutations (insertions/deletions not in multiples of 3) disrupt the entire downstream reading frame and are usually the most damaging."
+    },
+    {
+      "type": "deepdive",
+      "heading": "Mutations, Cancer, and Evolution",
+      "content": "Cancer is fundamentally a disease of accumulated mutations. When mutations occur in proto-oncogenes (genes that promote cell growth) or tumor suppressor genes (genes that restrain cell growth), cells can begin dividing uncontrollably.\n\nA mutation that converts a proto-oncogene into an oncogene is like jamming the accelerator pedal down — the cell keeps getting growth signals even when it should not. A mutation that disables a tumor suppressor gene is like cutting the brake lines. Most cancers require multiple mutations accumulating over a lifetime, which is why cancer risk increases with age.\n\nFrom an evolutionary perspective, mutations are the sole source of new alleles. A mutation in a somatic cell (body cell) affects only that individual and cannot be passed to offspring. But a mutation in a germ cell (egg or sperm) can be inherited by the next generation, potentially introducing a new trait into the population.\n\nMost new alleles are neutral. Some are harmful and are removed by natural selection. But occasionally, a mutation creates an allele that is advantageous — like the mutation that confers malaria resistance in carriers of one sickle cell allele. These beneficial mutations spread through populations over generations, driving adaptive evolution."
+    }
+  ],
+  "aiContext": "AP Biology. Connect molecular mechanisms to organism and ecosystem outcomes. Stress experimental design and data analysis. Common confusion: transcription vs translation, and when to apply Hardy-Weinberg conditions."
+}

@@ -1,0 +1,46 @@
+{
+  "id": "membrane-transport",
+  "title": "Membrane Transport: Diffusion, Osmosis, Active Transport",
+  "subject": "AP Biology",
+  "unit": "Cell Structure and Function",
+  "track": "ap",
+  "difficulty": "ap",
+  "duration": "30 min",
+  "objectives": [
+    "Distinguish passive transport (diffusion, facilitated diffusion, osmosis) from active transport",
+    "Predict the direction of water movement given a cell's tonicity environment",
+    "Explain how cells use ATP-powered pumps and vesicle transport to move materials against concentration gradients"
+  ],
+  "sections": [
+    {
+      "type": "explanation",
+      "heading": "The Fluid Mosaic Model",
+      "content": "The plasma membrane is not a rigid wall — it is a dynamic, fluid structure described by the fluid mosaic model. The membrane is a phospholipid bilayer with proteins embedded in it like icebergs in a sea. Some proteins span the entire bilayer (integral/transmembrane proteins), while others sit on the surface (peripheral proteins).\n\nThe membrane is selectively permeable: small nonpolar molecules (like O₂ and CO₂) pass through freely by dissolving in the hydrophobic core. Small polar molecules (like water) cross slowly on their own but much faster through special channel proteins called aquaporins. Large or charged molecules (like glucose or Na⁺) cannot cross the lipid bilayer at all without the help of transport proteins.\n\nThis selective permeability is how the cell controls its internal environment — letting in what it needs and keeping out what it does not."
+    },
+    {
+      "type": "explanation",
+      "heading": "Passive Transport: Going with the Flow",
+      "content": "Passive transport moves substances down their concentration gradient — from where they are more concentrated to where they are less concentrated — without any input of cellular energy (ATP).\n\nSimple diffusion is the movement of small nonpolar molecules directly through the lipid bilayer. Imagine opening a bottle of perfume in the corner of a room: eventually the scent spreads everywhere because molecules move randomly from high concentration to low concentration until equilibrium is reached.\n\nFacilitated diffusion uses transport proteins to move substances that cannot cross the bilayer on their own. Channel proteins form hydrophilic tunnels (ion channels are an example), while carrier proteins change shape to shuttle specific molecules across. Both still move substances down the gradient — no ATP required.\n\nOsmosis is the diffusion of water across a selectively permeable membrane. Water moves from the region of lower solute concentration (more free water) to the region of higher solute concentration (less free water). This is just diffusion of the solvent rather than the solute."
+    },
+    {
+      "type": "example",
+      "heading": "Tonicity and Cell Behavior",
+      "content": "Tonicity describes the relative solute concentration outside vs. inside a cell:\n\nHypotonic solution (less solute outside): Water flows INTO the cell by osmosis.\n  • Animal cell: swells, may lyse (burst)\n  • Plant cell: becomes turgid (firm) — the cell wall prevents bursting\n\nHypertonic solution (more solute outside): Water flows OUT of the cell.\n  • Animal cell: shrivels (crenation)\n  • Plant cell: plasmolysis — the membrane pulls away from the cell wall, the plant wilts\n\nIsotonic solution (equal solute on both sides): No net water movement.\n  • Both cell types maintain their normal shape\n\nReal-world connection: When you put salt on a slug, you create a hypertonic environment on its skin. Water rushes out of its cells by osmosis, which is why the slug shrivels. Hospitals use isotonic IV fluids (0.9% NaCl, called normal saline) so that patients' blood cells neither swell nor shrink."
+    },
+    {
+      "type": "keypoint",
+      "content": "In passive transport, substances move DOWN their concentration gradient without ATP. In osmosis, water moves toward higher solute concentration. A cell's fate in hypo-, hyper-, or isotonic solutions depends on the direction of water flow."
+    },
+    {
+      "type": "explanation",
+      "heading": "Active Transport: Moving Against the Gradient",
+      "content": "Sometimes cells need to accumulate substances against the concentration gradient — pumping them from low concentration to high concentration. This requires energy, usually from ATP hydrolysis.\n\nThe sodium-potassium pump (Na⁺/K⁺-ATPase) is the classic example. For every molecule of ATP used, it pumps 3 Na⁺ ions OUT and 2 K⁺ ions IN, maintaining the electrochemical gradient across the membrane that is essential for nerve impulse transmission and many other cellular processes.\n\nBulk transport moves large molecules or particles using vesicles:\n• Endocytosis: The membrane folds inward to engulf material, forming a vesicle that enters the cell. Phagocytosis engulfs large particles (like bacteria), pinocytosis takes in fluid and small solutes, and receptor-mediated endocytosis uses specific receptor proteins to capture targeted molecules (like cholesterol via LDL receptors).\n• Exocytosis: Vesicles inside the cell fuse with the plasma membrane and release their contents outside. This is how neurotransmitters are released at synapses and how digestive enzymes are secreted."
+    },
+    {
+      "type": "deepdive",
+      "heading": "The Electrochemical Gradient",
+      "content": "The Na⁺/K⁺ pump does more than just move ions — by pumping 3 positive charges out for every 2 it brings in, it makes the inside of the cell slightly negative relative to the outside. This creates a voltage difference (membrane potential) of about −70 mV in a typical neuron.\n\nThis electrochemical gradient is a form of stored energy, like water behind a dam. When ion channels open, ions rush down their gradient, and the cell can harness that flow to do work — transmitting nerve signals, driving secondary active transport (cotransport), or powering the synthesis of ATP in mitochondria (where the proton gradient across the inner membrane drives ATP synthase).\n\nUnderstanding that concentration gradients and electrical gradients together form a single electrochemical gradient is crucial for AP Biology topics spanning from cell transport to neuroscience to cellular respiration."
+    }
+  ],
+  "aiContext": "AP Biology. Connect molecular mechanisms to organism and ecosystem outcomes. Stress experimental design and data analysis. Common confusion: transcription vs translation, and when to apply Hardy-Weinberg conditions."
+}

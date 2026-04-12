@@ -1,0 +1,36 @@
+{
+  "id": "activation-energy-catalysts",
+  "title": "Activation Energy and Catalysts",
+  "subject": "AP Chemistry",
+  "unit": "Kinetics and Equilibrium",
+  "track": "ap",
+  "difficulty": "ap",
+  "duration": "25 min",
+  "objectives": [
+    "Explain activation energy using collision theory and energy diagrams",
+    "Describe how catalysts increase reaction rate by lowering activation energy without being consumed",
+    "Interpret energy diagrams for catalyzed and uncatalyzed reactions"
+  ],
+  "sections": [
+    {
+      "type": "explanation",
+      "heading": "Collision Theory and Activation Energy",
+      "content": "For a reaction to occur, reactant molecules must collide with sufficient energy and the correct orientation. The minimum energy required for a productive collision is the activation energy (Ea).\n\nThink of it like rolling a ball over a hill. The ball (reactants) must have enough kinetic energy to reach the top of the hill (the transition state) before it can roll down the other side (to products). If the ball does not have enough energy, it rolls back — no reaction.\n\nAn energy diagram plots potential energy on the y-axis and reaction progress on the x-axis. The height of the peak above the reactants' energy level is Ea. The difference between the energy of products and reactants is ΔH. For exothermic reactions, the products are lower than the reactants; for endothermic reactions, the products are higher.\n\nTemperature affects rate because higher temperature means molecules move faster, so a greater fraction of collisions have energy ≥ Ea. This is described by the Arrhenius equation: k = Ae^(−Ea/RT), where A is the frequency factor, R is the gas constant, and T is temperature in Kelvin."
+    },
+    {
+      "type": "example",
+      "heading": "Reading an Energy Diagram",
+      "content": "For an exothermic reaction:\n\n  Energy\n    |     /\\  ← Transition state\n    |    /  \\\n    |   / Ea \\\n    |  /      \\___  ← Products\n    | /        ΔH (negative)\n    |/___________  ← Reactants\n    |_______________\n       Reaction progress\n\nEa (forward) = energy from reactants to peak\nEa (reverse) = energy from products to peak\nΔH = energy of products − energy of reactants\n\nNote: Ea(forward) + |ΔH| = Ea(reverse) for exothermic reactions\n\nA catalyst lowers the peak — it provides an alternative pathway with a lower activation energy. The starting and ending energies (reactants and products) are unchanged, so ΔH is unchanged. Only the height of the barrier changes."
+    },
+    {
+      "type": "keypoint",
+      "content": "Catalysts speed up reactions by lowering the activation energy, providing an alternative reaction pathway. They are not consumed in the reaction and do not change ΔH — they only change how fast equilibrium is reached, not where equilibrium lies."
+    },
+    {
+      "type": "deepdive",
+      "heading": "Enzymes: Nature's Catalysts",
+      "content": "Biological catalysts are called enzymes, and they are extraordinarily effective. The enzyme catalase decomposes hydrogen peroxide about 10 million times faster than the uncatalyzed reaction. Enzymes achieve this by binding reactants (substrates) in their active site, which positions them in exactly the right orientation and stabilizes the transition state.\n\nEnzyme activity is sensitive to temperature and pH because these affect protein shape (and enzymes are proteins). Each enzyme has an optimal temperature and pH at which it works fastest. Outside this range, the enzyme denatures and loses its catalytic activity.\n\nIndustrial catalysts work on similar principles. The catalytic converter in a car uses platinum and palladium to catalyze the conversion of toxic exhaust gases (CO, NOx) into less harmful products (CO₂, N₂). The Haber process uses an iron catalyst to make ammonia from nitrogen and hydrogen.\n\nIn all cases, the fundamental principle is the same: the catalyst lowers Ea by providing a different mechanism — a different sequence of elementary steps — that reaches the same products with a lower energy barrier."
+    }
+  ],
+  "aiContext": "AP Chemistry. Use dimensional analysis for all calculations. Stress WHY reactions happen, not just equation balancing. Common confusion: entropy vs enthalpy direction, and applying Le Chatelier to specific perturbations."
+}

@@ -1,0 +1,41 @@
+{
+  "id": "population-dynamics",
+  "title": "Population Dynamics and Carrying Capacity",
+  "subject": "AP Biology",
+  "unit": "Ecology",
+  "track": "ap",
+  "difficulty": "ap",
+  "duration": "25 min",
+  "objectives": [
+    "Compare exponential and logistic growth models and identify when each applies",
+    "Define carrying capacity and explain how density-dependent factors regulate populations",
+    "Distinguish between r-selected and K-selected life history strategies"
+  ],
+  "sections": [
+    {
+      "type": "explanation",
+      "heading": "Exponential Growth: Unlimited Resources",
+      "content": "When a population has abundant resources and no significant predation or disease, it grows exponentially. Each generation, the population multiplies by a constant factor. The equation is dN/dt = rN, where N is the population size and r is the intrinsic rate of increase (birth rate minus death rate).\n\nOn a graph, exponential growth looks like a J-curve — slow at first (when N is small), then accelerating faster and faster. Bacteria in a fresh nutrient-rich medium show this pattern: one cell becomes two, two become four, four become eight, doubling every 20 minutes.\n\nBut exponential growth cannot continue forever. Eventually, the population runs into limits — food runs out, waste accumulates, diseases spread, predators increase. No population grows exponentially indefinitely in nature."
+    },
+    {
+      "type": "explanation",
+      "heading": "Logistic Growth and Carrying Capacity",
+      "content": "The logistic growth model accounts for environmental limits. The equation is dN/dt = rN(1 − N/K), where K is the carrying capacity — the maximum population size the environment can sustain indefinitely.\n\nWhen N is small relative to K, the term (1 − N/K) is close to 1, and the population grows nearly exponentially. As N approaches K, (1 − N/K) approaches 0, and growth slows. At N = K, the population stops growing — births and deaths are roughly equal.\n\nOn a graph, logistic growth looks like an S-curve (sigmoidal curve). The population grows quickly at first, slows as it approaches carrying capacity, and then levels off. In reality, populations often fluctuate around K rather than settling exactly on it."
+    },
+    {
+      "type": "example",
+      "heading": "Density-Dependent vs. Density-Independent Factors",
+      "content": "Density-dependent factors become stronger as the population grows denser:\n  • Competition for food, water, shelter (more individuals = more competition)\n  • Predation (predators are attracted to concentrated prey)\n  • Disease (spreads faster in crowded populations)\n  • Waste accumulation (more individuals = more waste in the same space)\n\nDensity-independent factors affect populations regardless of size:\n  • Natural disasters (floods, fires, hurricanes)\n  • Extreme weather (unseasonable frost, drought)\n  • Human-caused destruction (habitat clearing, pollution)\n\nA wildfire kills the same percentage of a deer population whether there are 50 or 5,000 deer. But a contagious disease will spread much faster in a population of 5,000 crowded together than in 50 spread across the same area.\n\nDensity-dependent factors are the ones that actually cause logistic growth, because their strength increases as the population approaches K."
+    },
+    {
+      "type": "keypoint",
+      "content": "Exponential growth (J-curve) occurs with unlimited resources. Logistic growth (S-curve) occurs when populations approach carrying capacity (K). Density-dependent factors like competition and disease regulate population size near K."
+    },
+    {
+      "type": "deepdive",
+      "heading": "r-Selected vs. K-Selected Species",
+      "content": "Species have evolved different reproductive strategies depending on the stability and predictability of their environments.\n\nr-selected species (like bacteria, insects, and mice) invest in producing many offspring with little parental care. They mature quickly, reproduce early, and have short lifespans. They thrive in unstable, unpredictable environments where the ability to reproduce rapidly and colonize new habitats is more important than competing for scarce resources.\n\nK-selected species (like elephants, whales, and humans) invest in fewer offspring with extensive parental care. They mature slowly, reproduce late, and have long lifespans. They thrive in stable, competitive environments where careful resource allocation and offspring survival are paramount.\n\nIn reality, most species fall somewhere on a continuum between r-selected and K-selected extremes. And the same species may behave more r-selected when colonizing a new habitat and more K-selected when resources become scarce.\n\nFor the AP exam, you should be able to predict which strategy a species uses based on its traits and explain why that strategy is adaptive in its particular environment."
+    }
+  ],
+  "aiContext": "AP Biology. Connect molecular mechanisms to organism and ecosystem outcomes. Stress experimental design and data analysis. Common confusion: transcription vs translation, and when to apply Hardy-Weinberg conditions."
+}

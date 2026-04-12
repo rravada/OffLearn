@@ -1,0 +1,41 @@
+{
+  "id": "evidence-for-evolution",
+  "title": "Evidence for Evolution",
+  "subject": "AP Biology",
+  "unit": "Evolution",
+  "track": "ap",
+  "difficulty": "ap",
+  "duration": "25 min",
+  "objectives": [
+    "Evaluate multiple lines of evidence supporting evolution including fossils, anatomy, and molecular data",
+    "Distinguish between homologous, analogous, and vestigial structures",
+    "Explain how DNA and protein sequence comparisons reveal evolutionary relationships"
+  ],
+  "sections": [
+    {
+      "type": "explanation",
+      "heading": "The Fossil Record",
+      "content": "Fossils are preserved remains or traces of organisms from the past. The fossil record reveals a pattern of change over time: older rock layers contain simpler organisms, and newer layers show increasingly complex and diverse forms. Transitional fossils — organisms with features of both ancestral and descendant groups — provide direct evidence of evolutionary change.\n\nTiktaalik, for instance, is a transitional fossil between fish and land-dwelling vertebrates. It had fish-like scales and fins but also had a flat head, a neck (fish do not have necks), and limb-like bones inside its front fins. It lived about 375 million years ago, exactly when paleontologists predicted such a transitional form should appear based on the ages of known fish and amphibian fossils."
+    },
+    {
+      "type": "explanation",
+      "heading": "Comparative Anatomy",
+      "content": "Homologous structures are anatomical features in different species that share a common underlying structure because they were inherited from a common ancestor, even though they may serve different functions. The bones in a human arm, a whale flipper, a bat wing, and a dog leg are all built from the same skeletal elements (humerus, radius, ulna, carpals, metacarpals, phalanges) arranged in the same order. The functions differ — grasping, swimming, flying, running — but the shared blueprint points to common descent.\n\nAnalogous structures serve similar functions in different species but evolved independently (convergent evolution). A bird wing and a butterfly wing both enable flight, but they are structurally completely different and did not come from a shared winged ancestor.\n\nVestigial structures are remnants of features that served a function in ancestors but are reduced or nonfunctional in the descendant. The human appendix, the hip bones in whales (whales evolved from four-legged land mammals), and the tiny eyes of cave-dwelling fish are all vestigial structures — they make no sense without evolutionary history."
+    },
+    {
+      "type": "example",
+      "heading": "Molecular Evidence: DNA Tells the Story",
+      "content": "The most powerful modern evidence for evolution comes from comparing DNA and protein sequences across species.\n\nHumans and chimpanzees share about 98.7% of their DNA sequences. Humans and mice share about 85%. Humans and bananas share about 60% of their genes. The more closely related two species are, the more similar their DNA.\n\nSpecific example: Cytochrome c is a protein used in cellular respiration by almost all eukaryotes. The human version differs from the chimpanzee version by 0 amino acids, from the rhesus monkey version by 1 amino acid, from the dog version by 11, and from the yeast version by 44. This pattern of increasing molecular difference with increasing evolutionary distance exactly mirrors the pattern predicted by phylogenetics.\n\nThis molecular evidence is particularly convincing because it is independent of anatomy. You could arrive at the same evolutionary tree using only DNA sequences, without ever looking at a single bone or fossil."
+    },
+    {
+      "type": "keypoint",
+      "content": "Evolution is supported by multiple independent lines of evidence: fossils, homologous structures, vestigial organs, molecular sequence comparisons, biogeography, and direct observation of evolution in action. No single line stands alone — together they form an overwhelming case."
+    },
+    {
+      "type": "deepdive",
+      "heading": "Biogeography and Evolution in Real Time",
+      "content": "Biogeography — the study of where species live — provides powerful evidence. Island species often resemble species on the nearest mainland but differ enough to be distinct species. Darwin's finches on the Galápagos Islands are a classic example: they are clearly related to South American finches but have diversified into unique species adapted to different food sources on each island.\n\nWe can also observe evolution happening in real time. Bacteria develop antibiotic resistance through natural selection in hospitals. Pesticide-resistant insects evolve within years. Peter and Rosemary Grant documented beak size changes in Galápagos finch populations across single drought events — natural selection operating over just a few generations.\n\nThese observations crush the misconception that evolution is 'just a theory' or too slow to observe. Evolution is both a fact (it happens — we see it) and a theory (the scientific explanation of how and why it happens, supported by vast evidence)."
+    }
+  ],
+  "aiContext": "AP Biology. Connect molecular mechanisms to organism and ecosystem outcomes. Stress experimental design and data analysis. Common confusion: transcription vs translation, and when to apply Hardy-Weinberg conditions."
+}

@@ -1,0 +1,41 @@
+{
+  "id": "limiting-reagents",
+  "title": "Limiting Reagents and Percent Yield",
+  "subject": "AP Chemistry",
+  "unit": "Chemical Reactions and Stoichiometry",
+  "track": "ap",
+  "difficulty": "ap",
+  "duration": "25 min",
+  "objectives": [
+    "Identify the limiting reagent in a reaction when given amounts of two or more reactants",
+    "Calculate theoretical yield from the limiting reagent",
+    "Determine percent yield by comparing actual yield to theoretical yield"
+  ],
+  "sections": [
+    {
+      "type": "explanation",
+      "heading": "Why One Reactant Runs Out First",
+      "content": "In a real reaction, you rarely have the exact stoichiometric amounts of each reactant. One reactant will be completely consumed before the others — this is the limiting reagent (or limiting reactant). The other reactant(s) are in excess.\n\nThink of making sandwiches. If you have 10 slices of bread and 8 slices of cheese, and each sandwich needs 2 bread and 1 cheese, you can only make 5 sandwiches (limited by bread). You will have 3 leftover cheese slices. Bread is the limiting reagent.\n\nThe limiting reagent determines the maximum amount of product that can form. This maximum is called the theoretical yield."
+    },
+    {
+      "type": "example",
+      "heading": "Finding the Limiting Reagent",
+      "content": "Problem: 5.00 g of hydrogen reacts with 20.0 g of oxygen. Which is the limiting reagent for water production?\n\n2H₂ + O₂ → 2H₂O\n\nConvert both to moles:\n  5.00 g H₂ × (1 mol / 2.016 g) = 2.48 mol H₂\n  20.0 g O₂ × (1 mol / 32.00 g) = 0.625 mol O₂\n\nUse the mole ratio to see how much of each is needed:\n  2.48 mol H₂ would need: 2.48 × (1 mol O₂ / 2 mol H₂) = 1.24 mol O₂\n  But we only have 0.625 mol O₂ — not enough!\n\nO₂ is the limiting reagent.\n\nTheoretical yield of H₂O:\n  0.625 mol O₂ × (2 mol H₂O / 1 mol O₂) = 1.25 mol H₂O\n  1.25 mol × 18.02 g/mol = 22.5 g H₂O"
+    },
+    {
+      "type": "explanation",
+      "heading": "Percent Yield: Theory vs. Reality",
+      "content": "In practice, you almost never get the theoretical yield. Side reactions, incomplete reactions, loss during transfer, and purification all reduce the amount of product you actually collect.\n\nPercent yield = (actual yield / theoretical yield) × 100%\n\nIf the theoretical yield is 22.5 g but you actually collect 19.8 g:\nPercent yield = (19.8 / 22.5) × 100% = 88.0%\n\nA percent yield over 100% means there is an error — perhaps the product was not fully dried, or an impurity added mass. A yield close to 100% indicates an efficient reaction with good technique."
+    },
+    {
+      "type": "keypoint",
+      "content": "The limiting reagent is consumed first and determines the theoretical yield. Percent yield = (actual / theoretical) × 100%. Always calculate theoretical yield from the limiting reagent, never from the excess reactant."
+    },
+    {
+      "type": "deepdive",
+      "heading": "Stoichiometry in Industrial Chemistry",
+      "content": "In industrial chemistry, understanding limiting reagents and percent yield has enormous economic consequences. Consider the Haber process for making ammonia:\n\nN₂ + 3H₂ → 2NH₃\n\nThis reaction has a typical yield of only about 15% per pass under standard industrial conditions (high pressure, moderate temperature, iron catalyst). Unreacted N₂ and H₂ are recycled and run through the reactor again and again.\n\nChemical engineers carefully choose which reactant to make the limiting reagent based on cost and availability. If hydrogen is more expensive, they might use excess nitrogen so that all the expensive hydrogen is consumed. This strategic choice of limiting reagent can save millions of dollars annually in a large-scale industrial process.\n\nThe concept also matters in pharmaceutical manufacturing, where reaction yields directly affect drug costs, and in environmental chemistry, where incomplete combustion (low yield of CO₂, high yield of CO) creates toxic carbon monoxide pollution."
+    }
+  ],
+  "aiContext": "AP Chemistry. Use dimensional analysis for all calculations. Stress WHY reactions happen, not just equation balancing. Common confusion: entropy vs enthalpy direction, and applying Le Chatelier to specific perturbations."
+}

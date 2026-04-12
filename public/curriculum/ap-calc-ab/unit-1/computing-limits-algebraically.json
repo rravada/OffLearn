@@ -1,0 +1,60 @@
+{
+  "id": "ap-calc-ab-unit1-computing-limits-algebraically",
+  "title": "Computing Limits Algebraically",
+  "subject": "AP Calculus AB",
+  "unit": "Limits and Continuity",
+  "track": "ap",
+  "difficulty": "ap",
+  "duration": "30 min",
+  "objectives": [
+    "Evaluate limits using direct substitution and recognize when it produces a valid answer",
+    "Apply factoring, expanding, and rationalizing techniques to resolve 0/0 indeterminate forms",
+    "Analyze rational functions to compute limits where direct substitution fails"
+  ],
+  "sections": [
+    {
+      "type": "explanation",
+      "heading": "Direct Substitution: The First Thing to Try",
+      "content": "Here's the good news: most limits are easy. If a function is 'well-behaved' at a point — meaning it's continuous there — then the limit is simply the function value. You just plug in the number.\n\nFor example: lim(x→4) (3x² - 2x + 1). Just substitute x = 4: 3(16) - 2(4) + 1 = 48 - 8 + 1 = 41. Done. The limit is 41.\n\nThis works for polynomials everywhere, and for most familiar functions (sin, cos, eˣ, ln x) wherever they're defined. The fancy name for this is the 'Direct Substitution Property': if f is continuous at x = a, then lim(x→a) f(x) = f(a).\n\nSo your first move when computing any limit should always be: try plugging in the number. If you get an actual real number out, that's your answer. You're done. Celebrate.\n\nBut sometimes plugging in gives you something problematic — like 0/0, or ∞/∞, or other strange expressions. These are called *indeterminate forms*, and they're not answers — they're signals that you need to do more work. The expression 0/0 doesn't mean the limit is zero, or undefined, or anything specific. It means 'I can't tell yet — let me try a different approach.' Think of 0/0 as a locked door that tells you there's something interesting inside, but you need to find the right key."
+    },
+    {
+      "type": "example",
+      "heading": "When Direct Substitution Works — and When It Doesn't",
+      "content": "Try these:\n\n1) lim(x→2) (x³ + 5x) = 2³ + 5(2) = 8 + 10 = 18 ✓ Direct substitution works!\n\n2) lim(x→0) sin(x)/x = sin(0)/0 = 0/0 ✗ Indeterminate! Direct substitution fails.\n\n3) lim(x→1) (x² - 1)/(x - 1) = (1 - 1)/(1 - 1) = 0/0 ✗ Indeterminate! Need another method.\n\n4) lim(x→3) √(x + 6) = √(3 + 6) = √9 = 3 ✓ Direct substitution works!\n\n5) lim(x→5) (2x + 1)/(x - 5) = 11/0 ✗ This is NOT indeterminate — it's a genuine division by zero. The limit either goes to ±∞ or doesn't exist. (We'll analyze this kind in a later lesson.)\n\nKey distinction: 0/0 is indeterminate (the limit might still exist — keep working). But something-nonzero/0 means the function is blowing up, and you're looking at a potential infinite limit or a vertical asymptote."
+    },
+    {
+      "type": "explanation",
+      "heading": "The Factoring Technique",
+      "content": "When direct substitution gives 0/0, the most common rescue strategy is factoring. Here's why it works: if plugging in x = a gives 0 in both the numerator and denominator, that means both the numerator and denominator have (x - a) as a factor. You can cancel that common factor, and then try direct substitution again on the simplified expression.\n\nThink of it like this: the 0/0 is caused by a shared factor that's making both top and bottom vanish. Canceling that factor removes the obstruction, like clearing a fallen tree from a road so you can keep driving.\n\nLet's walk through an example in detail. Find lim(x→3) (x² - 9)/(x - 3).\n\nStep 1: Try direct substitution. (9 - 9)/(3 - 3) = 0/0. Indeterminate. Keep going.\n\nStep 2: Factor the numerator. x² - 9 = (x + 3)(x - 3). So the expression becomes (x + 3)(x - 3)/(x - 3).\n\nStep 3: Cancel the common factor (x - 3). This is valid because we're looking at the limit as x *approaches* 3, not *at* x = 3. Since x ≠ 3 in a limit context, (x - 3) ≠ 0, and the cancellation is legal. We get: x + 3.\n\nStep 4: Now substitute. lim(x→3) (x + 3) = 3 + 3 = 6.\n\nThe answer is 6. The original function had a 'hole' at x = 3, but the limit tells us what value the function was heading toward."
+    },
+    {
+      "type": "example",
+      "heading": "Factoring with Trickier Expressions",
+      "content": "Find lim(x→-2) (x² + 5x + 6)/(x² + 3x + 2).\n\nStep 1: Direct substitution gives (4 - 10 + 6)/(4 - 6 + 2) = 0/0. Indeterminate.\n\nStep 2: Factor both. Numerator: x² + 5x + 6 = (x + 2)(x + 3). Denominator: x² + 3x + 2 = (x + 2)(x + 1).\n\nStep 3: Cancel (x + 2): we get (x + 3)/(x + 1).\n\nStep 4: Substitute x = -2: (-2 + 3)/(-2 + 1) = 1/(-1) = -1.\n\nThe limit is -1.\n\nHere's another: lim(x→0) (3x² + x)/x.\n\nDirect substitution: 0/0. Factor out x from the numerator: x(3x + 1)/x. Cancel x: 3x + 1. Substitute x = 0: 3(0) + 1 = 1. The limit is 1."
+    },
+    {
+      "type": "keypoint",
+      "content": "When you get 0/0 from direct substitution, don't panic — it just means the limit needs more work. Factor both numerator and denominator, cancel the common factor that's causing the 0/0, then substitute again. The cancellation is valid because limits consider values near the point, not at the point itself."
+    },
+    {
+      "type": "explanation",
+      "heading": "The Rationalizing Technique",
+      "content": "Some limits involve square roots that prevent easy factoring. When you see a square root expression giving you 0/0, try multiplying the numerator and denominator by the *conjugate*.\n\nRemember conjugates? The conjugate of (√a - b) is (√a + b), and vice versa. Multiplying conjugates eliminates the square root because of the difference of squares pattern: (√a - b)(√a + b) = a - b².\n\nThis technique is like a magic trick where you multiply by a clever form of 1 that transforms the expression into something you can work with. You're not changing the function's value — you're just rewriting it in a more useful form.\n\nLet's see it in action. Find lim(x→0) (√(x + 4) - 2)/x.\n\nStep 1: Direct substitution gives (√4 - 2)/0 = (2 - 2)/0 = 0/0. Indeterminate.\n\nStep 2: Multiply top and bottom by the conjugate of the numerator, which is (√(x + 4) + 2):\n\n[(√(x+4) - 2)(√(x+4) + 2)] / [x(√(x+4) + 2)]\n\nThe numerator simplifies using difference of squares: (x + 4) - 4 = x.\n\nSo we have: x / [x(√(x+4) + 2)]\n\nStep 3: Cancel the x: 1 / (√(x+4) + 2)\n\nStep 4: Now substitute x = 0: 1/(√4 + 2) = 1/(2 + 2) = 1/4.\n\nThe limit is 1/4. Beautiful, right? The square root was hiding a common factor, and the conjugate trick revealed it."
+    },
+    {
+      "type": "example",
+      "heading": "Rationalizing — Another Example",
+      "content": "Find lim(x→9) (x - 9)/(√x - 3).\n\nStep 1: Direct substitution: (9 - 9)/(3 - 3) = 0/0.\n\nStep 2: This time, multiply top and bottom by the conjugate of the *denominator*: (√x + 3).\n\n(x - 9)(√x + 3) / [(√x - 3)(√x + 3)]\n\nThe denominator becomes x - 9 (difference of squares: (√x)² - 9 = x - 9).\n\nStep 3: Cancel (x - 9): we get √x + 3.\n\nStep 4: Substitute x = 9: √9 + 3 = 3 + 3 = 6.\n\nNotice you can choose to rationalize either the numerator or the denominator — whichever has the square root that's causing trouble. The goal is always the same: create a common factor you can cancel to escape the 0/0 trap."
+    },
+    {
+      "type": "keypoint",
+      "content": "Your limit-solving toolkit has three main strategies, and you should try them in this order: (1) Direct substitution — always try this first. (2) If you get 0/0, try factoring and canceling. (3) If square roots are involved and factoring doesn't work, multiply by the conjugate. Each technique is about rewriting the expression to remove whatever is causing 0/0."
+    },
+    {
+      "type": "deepdive",
+      "heading": "Why 0/0 Is 'Indeterminate' and Not Just 'Undefined'",
+      "content": "You might wonder: why do we treat 0/0 differently from, say, 5/0? After all, both involve dividing by zero. The answer lies in what these expressions tell us about the limit.\n\nWhen you get something like 5/0, the numerator is pushing the fraction toward ±∞ while the denominator is collapsing to zero. There's no tug-of-war — the result is always going to blow up. The limit is either +∞, -∞, or doesn't exist.\n\nBut 0/0 is a tug-of-war. The numerator is pulling toward 0 (making the fraction small), while the denominator is also pulling toward 0 (making the fraction large). The outcome depends on *how fast* each one approaches 0. If the numerator shrinks faster, the limit is 0. If the denominator shrinks faster, the limit is ±∞. If they shrink at comparable rates, the limit is some finite nonzero number.\n\nConsider three different functions as x → 0:\n- x²/x = x → 0 (numerator wins — shrinks faster)\n- x/x = 1 → 1 (they shrink at the same rate)\n- x/x² = 1/x → ∞ (denominator wins — shrinks faster)\n\nAll three are '0/0' at x = 0, but they give completely different limits: 0, 1, and ∞. That's why 0/0 is called *indeterminate* — the form alone doesn't determine the answer. You have to do the algebra to find out who wins the race to zero.\n\nOther indeterminate forms you'll encounter later in calculus include ∞/∞, 0 · ∞, ∞ - ∞, 0⁰, 1^∞, and ∞⁰. Each of these represents a similar tug-of-war where the answer isn't obvious without further analysis. For now, 0/0 is the one you'll see most often."
+    }
+  ],
+  "aiContext": "AP Calculus AB. Guide students to understand concepts graphically before algebraically. Push them to explain what a derivative or integral MEANS physically, not just how to compute it. Common confusion: chain rule application order, and confusing definite vs indefinite integrals."
+}

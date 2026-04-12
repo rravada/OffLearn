@@ -1,9 +1,8 @@
-const CACHE_NAME = "offlearn-v1";
+const CACHE_NAME = "offlearn-v3";
 
 const PRECACHE_URLS = [
   "/",
   "/manifest.json",
-  "/curriculum/index.json",
 ];
 
 self.addEventListener("install", (event) => {
@@ -33,6 +32,25 @@ self.addEventListener("fetch", (event) => {
 
   // Skip caching for model files (too large for Cache API)
   if (url.pathname.startsWith("/models/")) {
+    return;
+  }
+
+  // Curriculum must always hit the network first — stale index/lessons break the app
+  // when courses are added or removed. Offline: fall back to last cached copy.
+  if (url.pathname.startsWith("/curriculum/")) {
+    event.respondWith(
+      fetch(event.request)
+        .then((response) => {
+          if (response.ok) {
+            const clone = response.clone();
+            caches.open(CACHE_NAME).then((cache) => {
+              cache.put(event.request, clone);
+            });
+          }
+          return response;
+        })
+        .catch(() => caches.match(event.request))
+    );
     return;
   }
 

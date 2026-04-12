@@ -1,0 +1,36 @@
+{
+  "id": "mole-stoichiometry",
+  "title": "The Mole and Stoichiometry",
+  "subject": "AP Chemistry",
+  "unit": "Chemical Reactions and Stoichiometry",
+  "track": "ap",
+  "difficulty": "ap",
+  "duration": "30 min",
+  "objectives": [
+    "Define the mole and use Avogadro's number to convert between atoms/molecules and moles",
+    "Calculate molar mass from the periodic table and use it to convert between grams and moles",
+    "Solve stoichiometry problems using dimensional analysis and mole ratios from balanced equations"
+  ],
+  "sections": [
+    {
+      "type": "explanation",
+      "heading": "The Mole: Chemistry's Counting Unit",
+      "content": "Atoms and molecules are far too small to count individually. Chemists use the mole as a counting unit, just as you use 'dozen' to mean 12. One mole of anything contains 6.022 × 10²³ particles — this is Avogadro's number.\n\nWhy that specific number? It was chosen so that one mole of carbon-12 atoms has a mass of exactly 12 grams. This creates a beautifully simple bridge: the atomic mass on the periodic table (in amu for one atom) equals the molar mass (in grams for one mole of atoms).\n\nCarbon: atomic mass = 12.01 amu → molar mass = 12.01 g/mol\nOxygen: atomic mass = 16.00 amu → molar mass = 16.00 g/mol\nWater (H₂O): molar mass = 2(1.008) + 16.00 = 18.02 g/mol\n\nSo 18.02 grams of water contains 6.022 × 10²³ molecules. That is roughly one tablespoon of water."
+    },
+    {
+      "type": "example",
+      "heading": "Mass-to-Mass Stoichiometry via Dimensional Analysis",
+      "content": "Problem: How many grams of CO₂ are produced when 10.0 g of CH₄ is burned?\n\nBalanced equation: CH₄ + 2O₂ → CO₂ + 2H₂O\n\nStep 1: Convert grams of CH₄ to moles.\n  10.0 g CH₄ × (1 mol CH₄ / 16.04 g) = 0.624 mol CH₄\n\nStep 2: Use the mole ratio from the balanced equation.\n  0.624 mol CH₄ × (1 mol CO₂ / 1 mol CH₄) = 0.624 mol CO₂\n\nStep 3: Convert moles of CO₂ to grams.\n  0.624 mol CO₂ × (44.01 g / 1 mol CO₂) = 27.5 g CO₂\n\nThe dimensional analysis chain:\n  10.0 g CH₄ × (1 mol / 16.04 g) × (1 mol CO₂ / 1 mol CH₄) × (44.01 g / 1 mol) = 27.5 g CO₂\n\nEvery stoichiometry problem follows this pattern: grams → moles → mole ratio → moles → grams. The mole is always the bridge."
+    },
+    {
+      "type": "keypoint",
+      "content": "The mole bridges the atomic world (amu, individual particles) and the laboratory world (grams, measurable quantities). Every stoichiometry problem routes through moles: grams → moles → mole ratio → moles → grams."
+    },
+    {
+      "type": "deepdive",
+      "heading": "Why Dimensional Analysis Is Your Best Friend",
+      "content": "Dimensional analysis is not just a technique — it is a way of thinking that prevents errors. The idea is simple: set up your calculation as a chain of conversion factors so that unwanted units cancel and desired units remain.\n\nEvery conversion factor is a fraction equal to 1:\n  (1 mol / 16.04 g CH₄) = 1 because 1 mol of CH₄ IS 16.04 g\n  (6.022 × 10²³ molecules / 1 mol) = 1 because 1 mol IS 6.022 × 10²³ molecules\n\nIf you set up the chain and the units cancel properly, the math must be correct. If the units do not cancel, you know immediately that something is wrong — before you waste time calculating.\n\nThis approach works for any unit conversion in any science: grams to moles, moles to particles, liters to moles (using molarity), joules to calories, miles to kilometers. Master dimensional analysis now and you will use it for the rest of your science career."
+    }
+  ],
+  "aiContext": "AP Chemistry. Use dimensional analysis for all calculations. Stress WHY reactions happen, not just equation balancing. Common confusion: entropy vs enthalpy direction, and applying Le Chatelier to specific perturbations."
+}

@@ -38,3 +38,6 @@ next-env.d.ts
 
 # MediaPipe WASM (regenerated on npm install)
 /public/mediapipe-wasm/
+
+# PDF.js worker (regenerated on npm install)
+/public/pdf.worker.min.js

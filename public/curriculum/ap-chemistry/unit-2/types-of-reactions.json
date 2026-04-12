@@ -1,0 +1,36 @@
+{
+  "id": "types-of-reactions",
+  "title": "Types of Chemical Reactions",
+  "subject": "AP Chemistry",
+  "unit": "Chemical Reactions and Stoichiometry",
+  "track": "ap",
+  "difficulty": "ap",
+  "duration": "25 min",
+  "objectives": [
+    "Classify reactions as synthesis, decomposition, single replacement, double replacement, or combustion",
+    "Balance chemical equations using inspection and identify coefficients as mole ratios",
+    "Recognize oxidation-reduction reactions by tracking electron transfer"
+  ],
+  "sections": [
+    {
+      "type": "explanation",
+      "heading": "Five Major Reaction Types",
+      "content": "Chemical reactions rearrange atoms into new combinations. Recognizing the pattern helps you predict products.\n\nSynthesis (combination): Two or more reactants form a single product. A + B → AB. Example: 2Na + Cl₂ → 2NaCl. Think of it as building something from parts.\n\nDecomposition: A single compound breaks into two or more simpler substances. AB → A + B. Example: 2H₂O₂ → 2H₂O + O₂. The reverse of synthesis.\n\nSingle replacement: One element replaces another in a compound. A + BC → AC + B. Example: Zn + CuSO₄ → ZnSO₄ + Cu. Zinc is more reactive than copper, so it displaces copper from solution. The activity series tells you which metals can displace which.\n\nDouble replacement (metathesis): Two compounds swap partners. AB + CD → AD + CB. Example: AgNO₃ + NaCl → AgCl↓ + NaNO₃. This typically occurs when a precipitate, gas, or water is formed.\n\nCombustion: A hydrocarbon reacts with O₂ to produce CO₂ and H₂O. Example: CH₄ + 2O₂ → CO₂ + 2H₂O. Every fossil fuel you burn undergoes combustion."
+    },
+    {
+      "type": "example",
+      "heading": "Balancing a Chemical Equation",
+      "content": "Unbalanced: Fe + O₂ → Fe₂O₃\n\nStep 1: Count atoms on each side.\n  Left: 1 Fe, 2 O    Right: 2 Fe, 3 O\n\nStep 2: Balance Fe by placing a 2 in front of Fe on the left.\n  2Fe + O₂ → Fe₂O₃   (Fe balanced, O still off: 2 vs 3)\n\nStep 3: Balance O. You need 3 O on the left. With O₂, try 3/2:\n  2Fe + 3/2 O₂ → Fe₂O₃\n\nStep 4: Clear fractions by multiplying everything by 2:\n  4Fe + 3O₂ → 2Fe₂O₃\n\nCheck: Left: 4 Fe, 6 O.  Right: 4 Fe, 6 O. ✓\n\nThe coefficients (4, 3, 2) are mole ratios: 4 moles of iron react with 3 moles of oxygen gas to produce 2 moles of iron(III) oxide."
+    },
+    {
+      "type": "keypoint",
+      "content": "Balanced equations conserve atoms (Law of Conservation of Mass). Coefficients represent mole ratios, which are the bridge between quantities in stoichiometry problems. Never change subscripts to balance — only coefficients."
+    },
+    {
+      "type": "deepdive",
+      "heading": "Introduction to Oxidation-Reduction (Redox)",
+      "content": "Many reactions involve the transfer of electrons. In oxidation, a substance loses electrons (its oxidation number increases). In reduction, a substance gains electrons (its oxidation number decreases). The mnemonic OIL RIG helps: Oxidation Is Loss, Reduction Is Gain.\n\nIn the single replacement reaction Zn + Cu²⁺ → Zn²⁺ + Cu:\n  Zinc loses 2 electrons: Zn → Zn²⁺ + 2e⁻ (oxidation)\n  Copper gains 2 electrons: Cu²⁺ + 2e⁻ → Cu (reduction)\n\nThe substance that gets oxidized is the reducing agent (it reduces something else by giving away electrons). The substance that gets reduced is the oxidizing agent.\n\nRedox is everywhere: combustion, corrosion (rusting), batteries, photosynthesis, and cellular respiration are all redox processes. Recognizing redox is essential for AP Chemistry because it connects reaction types, electrochemistry, and thermodynamics."
+    }
+  ],
+  "aiContext": "AP Chemistry. Use dimensional analysis for all calculations. Stress WHY reactions happen, not just equation balancing. Common confusion: entropy vs enthalpy direction, and applying Le Chatelier to specific perturbations."
+}

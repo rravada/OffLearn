@@ -1,0 +1,41 @@
+{
+  "id": "mendelian-genetics",
+  "title": "Mendelian Genetics and Probability",
+  "subject": "AP Biology",
+  "unit": "Genetics and Heredity",
+  "track": "ap",
+  "difficulty": "ap",
+  "duration": "30 min",
+  "objectives": [
+    "Apply Mendel's laws of segregation and independent assortment to predict offspring ratios",
+    "Use Punnett squares and probability rules to solve monohybrid and dihybrid crosses",
+    "Distinguish between genotype and phenotype and explain dominance relationships"
+  ],
+  "sections": [
+    {
+      "type": "explanation",
+      "heading": "Mendel's Revolutionary Experiments",
+      "content": "Gregor Mendel, an Austrian monk working in the 1860s, spent eight years crossing pea plants and meticulously counting the offspring. He chose pea plants because they have distinct, easily observable traits (purple vs. white flowers, tall vs. short stems, round vs. wrinkled seeds) and can self-fertilize or be cross-pollinated by hand.\n\nMendel's genius was in recognizing mathematical patterns. When he crossed true-breeding purple-flowered plants with true-breeding white-flowered plants, all the first generation (F₁) were purple. But when he let the F₁ plants self-fertilize, the F₂ generation showed a 3:1 ratio of purple to white flowers. The white trait had not disappeared — it was hidden in the F₁ generation.\n\nFrom these results, Mendel concluded that each organism carries two copies of each hereditary factor (what we now call alleles) — one from each parent. The dominant allele masks the recessive allele in heterozygotes. During gamete formation, the two alleles separate so each gamete carries only one — this is the Law of Segregation."
+    },
+    {
+      "type": "example",
+      "heading": "A Monohybrid Cross with a Punnett Square",
+      "content": "Cross two heterozygous purple pea plants (Pp × Pp):\n\n        P       p\n  P  |  PP   |  Pp  |\n  p  |  Pp   |  pp  |\n\nGenotype ratio: 1 PP : 2 Pp : 1 pp\nPhenotype ratio: 3 purple : 1 white\n\nThe Punnett square works because each parent has a 50% chance of passing either allele to any given offspring. This is probability in action — the same math you use when flipping coins. Each box represents an equally likely outcome."
+    },
+    {
+      "type": "explanation",
+      "heading": "Independent Assortment and Dihybrid Crosses",
+      "content": "Mendel's Law of Independent Assortment states that alleles for different genes segregate independently during gamete formation — as long as the genes are on different chromosomes. This means the inheritance of seed shape (round vs. wrinkled) does not affect the inheritance of seed color (yellow vs. green).\n\nA dihybrid cross between two double heterozygotes (RrYy × RrYy) produces a 9:3:3:1 phenotype ratio in the F₂ generation. Each parent can make four types of gametes (RY, Ry, rY, ry), and the 4×4 Punnett square has 16 boxes.\n\nThe probability rules make this easier. The multiplication rule says that the probability of two independent events both occurring equals the product of their individual probabilities. The addition rule says that the probability of either event occurring equals the sum of their individual probabilities. So for the dihybrid cross, you can solve each gene separately and multiply: P(round) × P(yellow) = 3/4 × 3/4 = 9/16."
+    },
+    {
+      "type": "keypoint",
+      "content": "The Law of Segregation says each organism has two alleles per gene and passes one to each gamete. The Law of Independent Assortment says genes on different chromosomes sort independently. Together, these laws predict the ratios you see in genetic crosses."
+    },
+    {
+      "type": "deepdive",
+      "heading": "Beyond Simple Dominance",
+      "content": "Mendel was fortunate that his pea traits showed complete dominance — one allele completely masks the other. But many traits do not work this way.\n\nIn incomplete dominance, the heterozygote has an intermediate phenotype. Red flower × white flower → pink flower (neither allele fully dominates). The F₂ ratio is 1:2:1 instead of 3:1 because each genotype produces a distinct phenotype.\n\nIn codominance, both alleles are fully expressed simultaneously. Human blood type is a classic example: a person with genotype I^A I^B expresses both A and B antigens on their red blood cells (type AB blood).\n\nMultiple alleles means more than two alleles exist in the population for a single gene (though any individual still carries only two). The ABO blood group has three alleles: I^A, I^B, and i.\n\nPolygenic inheritance involves multiple genes contributing to a single trait, producing a continuous range of phenotypes — like human height or skin color. These traits do not sort into neat Mendelian ratios.\n\nFor the AP exam, you need to recognize when a problem involves simple dominance, incomplete dominance, codominance, or sex-linkage, because the expected ratios change accordingly."
+    }
+  ],
+  "aiContext": "AP Biology. Connect molecular mechanisms to organism and ecosystem outcomes. Stress experimental design and data analysis. Common confusion: transcription vs translation, and when to apply Hardy-Weinberg conditions."
+}

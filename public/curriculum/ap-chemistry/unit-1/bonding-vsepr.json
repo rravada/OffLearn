@@ -1,0 +1,41 @@
+{
+  "id": "bonding-vsepr",
+  "title": "Chemical Bonding and VSEPR Theory",
+  "subject": "AP Chemistry",
+  "unit": "Atomic Structure and Properties",
+  "track": "ap",
+  "difficulty": "ap",
+  "duration": "30 min",
+  "objectives": [
+    "Distinguish between ionic, covalent, and metallic bonding based on electronegativity differences",
+    "Draw Lewis structures and use VSEPR theory to predict molecular geometry",
+    "Determine whether a molecule is polar or nonpolar based on geometry and bond polarity"
+  ],
+  "sections": [
+    {
+      "type": "explanation",
+      "heading": "Three Types of Chemical Bonds",
+      "content": "Chemical bonds form because atoms are more stable when bonded than when alone. There are three main types:\n\nIonic bonds form between metals and nonmetals when one atom transfers electrons to another. The resulting positive and negative ions attract each other electrostatically. NaCl is the classic example: sodium loses one electron to become Na⁺, chlorine gains it to become Cl⁻, and the electrostatic attraction holds them in a crystal lattice.\n\nCovalent bonds form between nonmetals when atoms share electrons. In H₂, each hydrogen contributes one electron to a shared pair, giving both atoms a filled 1s shell. Covalent bonds can be single (one shared pair), double (two shared pairs), or triple (three shared pairs).\n\nMetallic bonds are found in pure metals. Valence electrons are delocalized — not belonging to any single atom but shared across a 'sea' of electrons that holds the positive metal cation cores together. This explains why metals conduct electricity, are malleable, and have luster."
+    },
+    {
+      "type": "explanation",
+      "heading": "Lewis Structures and VSEPR Geometry",
+      "content": "A Lewis structure shows how valence electrons are distributed in a molecule. To draw one: (1) count total valence electrons, (2) connect atoms with single bonds, (3) complete octets on outer atoms, (4) place remaining electrons on the central atom, (5) convert lone pairs to double/triple bonds if the central atom lacks an octet.\n\nVSEPR (Valence Shell Electron Pair Repulsion) theory predicts molecular geometry: electron groups around the central atom arrange themselves to minimize repulsion.\n\n2 electron groups → linear (180°)\n3 electron groups → trigonal planar (120°)\n4 electron groups → tetrahedral (109.5°)\n5 electron groups → trigonal bipyramidal (90°/120°)\n6 electron groups → octahedral (90°)\n\nLone pairs count as electron groups but are not visible in the molecular shape. This creates bent, trigonal pyramidal, seesaw, T-shaped, and square planar geometries depending on the combination of bonding pairs and lone pairs."
+    },
+    {
+      "type": "example",
+      "heading": "Water: Why It's Bent, Not Linear",
+      "content": "Water (H₂O): Oxygen has 6 valence electrons. Two are shared with hydrogens (two bonding pairs), and four remain as two lone pairs.\n\nElectron geometry: 4 electron groups around oxygen → tetrahedral arrangement.\nMolecular geometry: 2 bonding pairs + 2 lone pairs → bent shape.\nBond angle: ~104.5° (slightly less than 109.5° because lone pairs take up more space than bonding pairs and squeeze the bonds closer together).\n\nBecause water is bent (not linear) and the O−H bonds are polar (oxygen is more electronegative), the bond dipoles do NOT cancel. Water is a polar molecule. If water were linear, the dipoles would cancel, it would be nonpolar, and life as we know it would not exist."
+    },
+    {
+      "type": "keypoint",
+      "content": "VSEPR predicts geometry by minimizing electron group repulsion. Lone pairs compress bond angles. A molecule is polar only if it has polar bonds AND a geometry where the dipoles do not cancel. Symmetrical molecules (like CO₂ and CH₄) can have polar bonds but be nonpolar overall."
+    },
+    {
+      "type": "deepdive",
+      "heading": "Intermolecular Forces: What Holds Molecules Together",
+      "content": "Bonds hold atoms together within a molecule. Intermolecular forces (IMFs) hold molecules to each other. IMFs are much weaker than covalent bonds, but they determine physical properties like boiling point, melting point, and solubility.\n\nLondon Dispersion Forces (LDF): Present in ALL molecules. Caused by temporary, instantaneous dipoles from fluctuating electron distributions. Strength increases with molecular size (more electrons = more polarizable). This is why larger noble gases and longer hydrocarbons have higher boiling points.\n\nDipole-Dipole Forces: Present in polar molecules. The positive end of one molecule attracts the negative end of another. Stronger than LDF of similar-sized molecules.\n\nHydrogen Bonding: A special, strong type of dipole-dipole interaction. Occurs when H is bonded to F, O, or N (very electronegative, small atoms) and interacts with a lone pair on F, O, or N of a neighboring molecule. Hydrogen bonding explains water's unusually high boiling point, surface tension, and specific heat.\n\nFor the AP exam, you need to identify which IMFs are present in a substance and use them to predict and explain physical properties. The ranking is: ion-ion > hydrogen bonding > dipole-dipole > London dispersion (for molecules of similar size)."
+    }
+  ],
+  "aiContext": "AP Chemistry. Use dimensional analysis for all calculations. Stress WHY reactions happen, not just equation balancing. Common confusion: entropy vs enthalpy direction, and applying Le Chatelier to specific perturbations."
+}

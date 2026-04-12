@@ -1,0 +1,46 @@
+{
+  "id": "transcription-translation",
+  "title": "Transcription and Translation",
+  "subject": "AP Biology",
+  "unit": "Genetics and Heredity",
+  "track": "ap",
+  "difficulty": "ap",
+  "duration": "30 min",
+  "objectives": [
+    "Describe the process of transcription including initiation, elongation, and termination",
+    "Explain mRNA processing in eukaryotes: 5' cap, poly-A tail, and intron splicing",
+    "Trace translation from start codon to stop codon, identifying the roles of mRNA, tRNA, and ribosomes"
+  ],
+  "sections": [
+    {
+      "type": "explanation",
+      "heading": "Transcription: Copying DNA to mRNA",
+      "content": "Transcription is the first step in gene expression — copying a gene's DNA sequence into a messenger RNA (mRNA) molecule. The enzyme RNA polymerase binds to a promoter region upstream of the gene, unwinds the DNA, and reads the template strand in the 3' to 5' direction while synthesizing mRNA in the 5' to 3' direction.\n\nThe mRNA sequence is complementary to the template strand and nearly identical to the coding strand (with uracil replacing thymine). For example, if the template strand reads 3'-TACGGA-5', the mRNA reads 5'-AUGCCU-3'.\n\nTranscription has three phases: initiation (RNA polymerase binds the promoter with the help of transcription factors), elongation (RNA polymerase moves along the template, adding nucleotides at about 40 per second), and termination (the polymerase reaches a terminator sequence and releases the mRNA).\n\nIn prokaryotes, the mRNA can be translated while it is still being transcribed — the ribosome attaches to the mRNA even before transcription is complete. In eukaryotes, transcription occurs in the nucleus and the mRNA must be processed and exported to the cytoplasm before translation begins."
+    },
+    {
+      "type": "explanation",
+      "heading": "mRNA Processing in Eukaryotes",
+      "content": "Before a eukaryotic mRNA leaves the nucleus, it undergoes three modifications:\n\n1. 5' cap: A modified guanine nucleotide is added to the 5' end. This protects the mRNA from degradation and helps the ribosome recognize and bind to it.\n\n2. Poly-A tail: A string of 100-250 adenine nucleotides is added to the 3' end. This also protects against degradation and aids in mRNA export from the nucleus.\n\n3. RNA splicing: Eukaryotic genes contain introns (non-coding sequences) interspersed with exons (coding sequences). A molecular machine called the spliceosome removes the introns and joins the exons together. The mature mRNA contains only exons.\n\nAlternative splicing allows one gene to produce multiple different proteins by including different combinations of exons in the final mRNA. This is one reason why humans can produce over 100,000 different proteins from only about 20,000 genes."
+    },
+    {
+      "type": "example",
+      "heading": "Reading the Genetic Code",
+      "content": "The genetic code is read in three-nucleotide units called codons. There are 64 possible codons (4³ = 64), coding for 20 amino acids plus stop signals.\n\nKey codons to know:\n  AUG — Methionine (start codon, also codes for Met)\n  UAA, UAG, UGA — Stop codons (no amino acid)\n\nThe code is:\n  • Degenerate (redundant): Multiple codons can specify the same amino acid. Leucine, for example, has six codons (UUA, UUG, CUU, CUC, CUA, CUG).\n  • Unambiguous: Each codon specifies only one amino acid.\n  • Nearly universal: The same code is used by almost all organisms on Earth — strong evidence for common ancestry.\n\nTo decode a protein from an mRNA sequence, start at the AUG start codon and read in groups of three until you hit a stop codon:\n  mRNA: 5'-AUGCCUGAAUAG-3'\n  Codons: AUG | CCU | GAA | UAG\n  Amino acids: Met - Pro - Glu - (stop)\n  Resulting peptide: Met-Pro-Glu (3 amino acids)"
+    },
+    {
+      "type": "explanation",
+      "heading": "Translation: Building the Protein",
+      "content": "Translation occurs at the ribosome, which has two subunits (large and small) that clamp together around the mRNA. The ribosome has three binding sites for tRNA molecules: the A site (aminoacyl — where incoming tRNA arrives), the P site (peptidyl — where the growing peptide chain is held), and the E site (exit — where empty tRNA leaves).\n\nEach tRNA has an anticodon on one end that base-pairs with a complementary mRNA codon, and the correct amino acid attached to the other end. The enzyme aminoacyl-tRNA synthetase is responsible for matching each tRNA with its correct amino acid — a critical proofreading step.\n\nTranslation proceeds in three phases:\n1. Initiation: The small ribosomal subunit binds to the mRNA at the 5' cap and scans for the start codon (AUG). The initiator tRNA (carrying methionine) binds to the P site, and the large subunit joins.\n2. Elongation: A new tRNA enters the A site. The ribosome catalyzes a peptide bond between the amino acid in the P site and the one in the A site. The ribosome shifts one codon forward (translocation), moving the empty tRNA to the E site and the peptidyl tRNA to the P site. This cycle repeats.\n3. Termination: When a stop codon enters the A site, no tRNA can bind. Instead, a release factor enters, the completed polypeptide is freed, and the ribosome disassembles."
+    },
+    {
+      "type": "keypoint",
+      "content": "Transcription copies DNA → mRNA in the nucleus. Translation reads mRNA → protein at the ribosome. The genetic code uses three-nucleotide codons, is degenerate but unambiguous, and is nearly universal across life."
+    },
+    {
+      "type": "deepdive",
+      "heading": "Why Transcription and Translation Are Separate in Eukaryotes",
+      "content": "In prokaryotes, transcription and translation happen simultaneously — ribosomes attach to mRNA while RNA polymerase is still making it. This coupling is efficient but limits regulation.\n\nEukaryotes separated the two processes with the nuclear envelope. This separation allows for extensive mRNA processing (capping, polyadenylation, splicing) and multiple layers of gene regulation — controlling when and how much of each protein is made.\n\nThis is a common source of confusion on the AP exam. Remember: in eukaryotes, transcription happens in the nucleus, mRNA is processed there, then exported to the cytoplasm for translation. In prokaryotes, both happen in the cytoplasm, often simultaneously. The physical separation in eukaryotes is not just a structural quirk — it enables the sophisticated gene regulation that makes complex multicellular life possible."
+    }
+  ],
+  "aiContext": "AP Biology. Connect molecular mechanisms to organism and ecosystem outcomes. Stress experimental design and data analysis. Common confusion: transcription vs translation, and when to apply Hardy-Weinberg conditions."
+}

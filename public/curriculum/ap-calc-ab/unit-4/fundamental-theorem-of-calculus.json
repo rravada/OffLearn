@@ -1,0 +1,55 @@
+{
+  "id": "ap-calc-ab-unit4-fundamental-theorem-of-calculus",
+  "title": "The Fundamental Theorem of Calculus",
+  "subject": "AP Calculus AB",
+  "unit": "Integration",
+  "track": "ap",
+  "difficulty": "ap",
+  "duration": "30 min",
+  "objectives": [
+    "State and apply FTC Part 1: if F(x) = ∫ from a to x of f(t) dt, then F′(x) = f(x), and extend this to composite upper limits using the chain rule.",
+    "State and apply FTC Part 2: ∫ from a to b of f(x) dx = F(b) − F(a), where F is any antiderivative of f.",
+    "Explain in your own words how the FTC connects the concept of accumulating area under a curve with the concept of antidifferentiation."
+  ],
+  "sections": [
+    {
+      "type": "explanation",
+      "heading": "The Big Picture — Why This Theorem Matters",
+      "content": "The Fundamental Theorem of Calculus (FTC) is arguably the most important theorem in all of calculus. It's the bridge that connects two ideas that, on the surface, seem completely unrelated: derivatives (rates of change) and integrals (accumulated area).\n\nThink about that for a moment. On one hand, you have the slope of a tangent line — an instantaneous rate. On the other hand, you have the area under a curve — a total accumulation. Why should those be connected at all? It's like discovering that multiplication and division are inverses of each other. The FTC says: differentiation and integration are inverse operations.\n\nBefore Newton and Leibniz figured this out in the 1600s, computing areas was incredibly hard. People used exhaustion methods, breaking regions into infinitely many tiny pieces and summing them up — a painstaking process for every single problem. The FTC changed everything. It said: if you can find an antiderivative, you can compute exact areas almost instantly.\n\nThe theorem has two parts, and both are essential. Part 1 tells you that integration followed by differentiation gets you back where you started. Part 2 tells you how to evaluate definite integrals by using antiderivatives. Together, they unify calculus into a single coherent theory."
+    },
+    {
+      "type": "explanation",
+      "heading": "FTC Part 1: Differentiating an Integral",
+      "content": "FTC Part 1 says: If f is continuous on [a, b] and you define a new function F(x) = ∫ from a to x of f(t) dt, then F′(x) = f(x).\n\nLet's unpack this carefully. The function F(x) takes a variable upper limit x. For each value of x, F(x) is the area under f from a fixed starting point a up to x. As x moves to the right, you're sweeping out more area. F(x) is an accumulation function — it tells you how much area has accumulated so far.\n\nNow, the theorem says: the rate at which that area is growing equals the height of the function at that point. This is beautiful and intuitive. Imagine filling a bathtub where the water flow rate varies over time. F(t) is the total water in the tub at time t. The rate of change of total water — F′(t) — is exactly the flow rate at time t, which is f(t). The rate at which you're accumulating equals the current value of what you're accumulating.\n\nGraphically: if f(x) is positive and large at some point, then the area is growing quickly there, so F′(x) is large. If f(x) is near zero, area is barely growing, so F′(x) is near zero. If f(x) is negative, the area is actually decreasing (subtracting area), so F′(x) is negative. The derivative of the accumulation function IS the original function.\n\nImportant extension: What if the upper limit isn't just x but something like x²? Then you need the chain rule. If G(x) = ∫ from a to g(x) of f(t) dt, then G′(x) = f(g(x)) · g′(x). You evaluate f at the upper limit, then multiply by the derivative of that upper limit. The AP exam loves testing this."
+    },
+    {
+      "type": "example",
+      "heading": "FTC Part 1 in Action",
+      "content": "Example 1: If F(x) = ∫ from 2 to x of (t³ + 1) dt, find F′(x).\nBy FTC Part 1, F′(x) = x³ + 1. That's it — just replace t with x in the integrand.\n\nExample 2: If G(x) = ∫ from 0 to x² of sin(t) dt, find G′(x).\nHere the upper limit is x², not just x. Apply the chain rule version: G′(x) = sin(x²) · d/dx[x²] = sin(x²) · 2x = 2x·sin(x²).\n\nExample 3: If H(x) = ∫ from x to 5 of eᵗ dt, find H′(x).\nThe variable is in the lower limit, not the upper. Flip the integral: H(x) = −∫ from 5 to x of eᵗ dt. Now FTC Part 1 applies: H′(x) = −eˣ.\n\nExample 4: If F(x) = ∫ from 1 to x of (1/t) dt, what function is F(x)?\nF′(x) = 1/x by FTC Part 1, and F(1) = ∫ from 1 to 1 of (1/t) dt = 0. What function has derivative 1/x and equals 0 when x = 1? That's ln(x). This is actually how the natural log function is rigorously defined in many textbooks — as an integral."
+    },
+    {
+      "type": "keypoint",
+      "content": "FTC Part 1: d/dx[∫ from a to x of f(t) dt] = f(x). If the upper limit is g(x) instead of x, apply the chain rule: d/dx[∫ from a to g(x) of f(t) dt] = f(g(x)) · g′(x). If the variable is in the lower limit, flip the integral (which introduces a negative sign) and then apply the rule."
+    },
+    {
+      "type": "explanation",
+      "heading": "FTC Part 2: Evaluating Definite Integrals",
+      "content": "FTC Part 2 is the workhorse of calculus. It says: If f is continuous on [a, b] and F is any antiderivative of f, then ∫ from a to b of f(x) dx = F(b) − F(a).\n\nThis is revolutionary. To compute the exact area under a curve from x = a to x = b, you don't need to set up Riemann sums with infinitely many rectangles. You just find any antiderivative of f, plug in the two endpoints, and subtract. That's it.\n\nWe use the notation F(x) | from a to b, or sometimes written with brackets as [F(x)] from a to b, to mean F(b) − F(a). It's always the value at the top limit minus the value at the bottom limit.\n\nNotice it says \"any antiderivative.\" You don't need to include +C here, because it would cancel: (F(b) + C) − (F(a) + C) = F(b) − F(a). The constant drops out. This is one of the key differences between definite and indefinite integrals. Indefinite integrals need +C because they represent a family of functions. Definite integrals are just numbers — specific areas — so no +C.\n\nPhysically, if f(t) represents velocity, then ∫ from a to b of f(t) dt = F(b) − F(a) is the total displacement from time a to time b. The position at the end minus the position at the start. The area under a velocity curve is displacement. The FTC makes this precise."
+    },
+    {
+      "type": "example",
+      "heading": "Evaluating Definite Integrals with FTC Part 2",
+      "content": "Example 1: ∫ from 1 to 3 of x² dx\nAntiderivative: F(x) = x³/3.\nF(3) − F(1) = 27/3 − 1/3 = 26/3.\n\nExample 2: ∫ from 0 to π of sin(x) dx\nAntiderivative: F(x) = −cos(x).\nF(π) − F(0) = −cos(π) − (−cos(0)) = −(−1) − (−1) = 1 + 1 = 2.\nThis tells you the area under one arch of the sine curve is exactly 2 — a beautiful result.\n\nExample 3: ∫ from 0 to 1 of eˣ dx\nAntiderivative: F(x) = eˣ.\nF(1) − F(0) = e − 1 ≈ 1.718.\n\nExample 4: ∫ from 1 to e of (1/x) dx\nAntiderivative: F(x) = ln|x| = ln(x) since x > 0 on [1, e].\nF(e) − F(1) = ln(e) − ln(1) = 1 − 0 = 1.\nThe area under 1/x from 1 to e is exactly 1. In fact, this is essentially the definition of e."
+    },
+    {
+      "type": "deepdive",
+      "heading": "Connecting the Two Parts — What the FTC Really Says",
+      "content": "Let's step back and see both parts of the FTC as one unified idea.\n\nPart 1 says: if you integrate a function and then differentiate, you get back to the original function. Integration followed by differentiation is a round trip.\n\nPart 2 says: if you differentiate a function (to get f from F) and then integrate, you recover the net change in the original function: F(b) − F(a). Differentiation followed by integration gives you the net change.\n\nTogether: differentiation and integration undo each other, just like squaring and square-rooting, or multiplying and dividing. They're inverse processes. This is why the FTC is \"fundamental\" — it establishes the central relationship of calculus.\n\nHere's an analogy that ties it all together. Think of f(x) as the rate at which water flows into a tank (gallons per minute). The integral ∫ from a to b of f(x) dx is the total gallons added between time a and time b — that's the area under the rate curve. If F(x) is the total amount of water in the tank at time x, then F′(x) = f(x) (the rate of flow is the derivative of total water), and the total water added is F(b) − F(a). Both parts of the FTC are just saying the same obvious thing about the tank, from two different angles.\n\nThis connection is not just theoretical elegance — it's what makes calculus practical. Without it, computing areas would require limits of Riemann sums every time. The FTC lets you bypass all of that whenever you can find an antiderivative."
+    },
+    {
+      "type": "keypoint",
+      "content": "FTC Part 2: ∫ from a to b of f(x) dx = F(b) − F(a), where F is any antiderivative of f. No +C needed for definite integrals because the constant cancels. Definite integrals produce a number (net signed area); indefinite integrals produce a family of functions. Never confuse the two."
+    }
+  ],
+  "aiContext": "AP Calculus AB. Guide students to understand concepts graphically before algebraically. Push them to explain what a derivative or integral MEANS physically, not just how to compute it. Common confusion: chain rule application order, and confusing definite vs indefinite integrals."
+}

@@ -57,6 +57,8 @@ export function getMasteryBadge(score: number): MasteryBadge {
 
 // Curriculum types
 
+export type CurriculumTrack = "standard" | "ap" | "college-prep";
+
 export interface CurriculumLesson {
   id: string;
   title: string;
@@ -73,6 +75,7 @@ export interface CurriculumSubject {
   id: string;
   title: string;
   icon: string;
+  track?: CurriculumTrack;
   units: CurriculumUnit[];
 }
 
@@ -81,7 +84,7 @@ export interface CurriculumIndex {
 }
 
 export interface LessonSection {
-  type: "explanation" | "example" | "keypoint";
+  type: "explanation" | "example" | "keypoint" | "deepdive";
   heading?: string;
   content: string;
 }
@@ -91,6 +94,8 @@ export interface LessonData {
   title: string;
   subject: string;
   unit: string;
+  track?: "ap" | "college-prep";
+  difficulty?: "ap" | "college-prep";
   duration: string;
   objectives: string[];
   sections: LessonSection[];
@@ -119,6 +124,24 @@ export interface TestBank {
   questions: TestQuestion[];
 }
 
+// Teacher module types
+
+export interface TeacherModuleEmbedding {
+  id: string;
+  text: string;
+  embedding: number[];
+}
+
+export interface TeacherModule {
+  id: string;
+  title: string;
+  subject: string;
+  createdAt: number;
+  pageCount: number;
+  chunkCount: number;
+  embeddings: TeacherModuleEmbedding[];
+}
+
 // Navigation
 
-export type AppMode = "learn" | "testprep";
+export type AppMode = "learn" | "testprep" | "module";

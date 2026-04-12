@@ -1,0 +1,41 @@
+{
+  "id": "cell-communication",
+  "title": "Cell Communication and Signal Transduction",
+  "subject": "AP Biology",
+  "unit": "Cell Structure and Function",
+  "track": "ap",
+  "difficulty": "ap",
+  "duration": "30 min",
+  "objectives": [
+    "Distinguish between autocrine, paracrine, and endocrine signaling based on distance and mechanism",
+    "Trace a signal transduction pathway from receptor binding through cellular response",
+    "Explain how signal amplification and feedback loops regulate cellular responses"
+  ],
+  "sections": [
+    {
+      "type": "explanation",
+      "heading": "Why Cells Need to Communicate",
+      "content": "A multicellular organism is not just a pile of cells — it is a coordinated society. Your heart cells need to know when to beat faster. Your immune cells need to know where an infection is. Your cells need to know when to divide and when to stop. All of this requires cell communication.\n\nCells communicate by releasing signaling molecules (ligands) that are detected by receptor proteins on or inside target cells. The process has three stages: reception (the signal molecule binds to a receptor), transduction (the signal is converted into a form the cell can use, often through a cascade of molecular events), and response (the cell changes its behavior — altering gene expression, changing enzyme activity, or rearranging its cytoskeleton).\n\nThink of it like a relay race: the starting gun is the signal molecule, each runner is a protein in the transduction pathway, and the finish line is the cellular response."
+    },
+    {
+      "type": "explanation",
+      "heading": "Types of Signaling",
+      "content": "Cells use different signaling strategies depending on distance:\n\nDirect contact: Some cells communicate through gap junctions (animals) or plasmodesmata (plants), which are physical channels that allow small molecules and ions to flow directly between neighboring cells.\n\nParacrine signaling: A cell releases a signal that affects nearby cells. Growth factors that stimulate wound healing are a good example — they diffuse through the extracellular fluid to reach neighboring cells.\n\nEndocrine signaling: Hormones are released into the bloodstream and travel to distant target cells throughout the body. Insulin released by the pancreas reaches muscle and fat cells far away.\n\nAutocrine signaling: A cell releases a signal that binds to receptors on its own surface. Some cancer cells use autocrine signaling to stimulate their own growth, bypassing normal regulatory checks."
+    },
+    {
+      "type": "example",
+      "heading": "A Signal Transduction Pathway: Epinephrine",
+      "content": "When you are startled, your adrenal glands release epinephrine (adrenaline) into the blood:\n\n1. Reception: Epinephrine binds to a G protein-coupled receptor (GPCR) on a liver cell's surface.\n2. G protein activation: The receptor activates a G protein inside the membrane, which exchanges GDP for GTP.\n3. Enzyme activation: The activated G protein turns on adenylyl cyclase, an enzyme that converts ATP into cyclic AMP (cAMP), a second messenger.\n4. Kinase cascade: cAMP activates protein kinase A (PKA), which phosphorylates other enzymes in a chain reaction.\n5. Response: The final enzyme in the cascade breaks down glycogen into glucose, flooding the bloodstream with fuel for fight-or-flight.\n\nOne epinephrine molecule activates one receptor, which activates many G proteins, each producing many cAMP molecules, each activating many kinases. This amplification means a tiny signal produces a massive response."
+    },
+    {
+      "type": "keypoint",
+      "content": "Signal transduction pathways amplify signals through cascades of molecular interactions. A single signaling molecule can ultimately affect millions of target molecules inside the cell, enabling rapid and powerful responses to small stimuli."
+    },
+    {
+      "type": "deepdive",
+      "heading": "Feedback Loops and Signal Termination",
+      "content": "Cells do not just turn signals on — they must also turn them off. Without signal termination, a cell could be stuck in a permanent response state, which can lead to disease.\n\nPhosphodiesterases break down cAMP, ending the signal. Phosphatases remove phosphate groups added by kinases, reversing the cascade. GTPase activity in G proteins hydrolyzes GTP back to GDP, deactivating the G protein.\n\nFeedback loops add another layer of control. In negative feedback, the product of a pathway inhibits an earlier step — like a thermostat turning off the heater when the room reaches the set temperature. In positive feedback, the product amplifies the signal — like oxytocin during childbirth, where each contraction stimulates more oxytocin release, intensifying contractions until delivery.\n\nWhen these regulatory mechanisms fail, the consequences can be severe. Many cancers result from mutations in signal transduction proteins — a receptor that is permanently active (even without a ligand) or a G protein that cannot hydrolyze GTP keeps telling the cell to grow and divide without stopping."
+    }
+  ],
+  "aiContext": "AP Biology. Connect molecular mechanisms to organism and ecosystem outcomes. Stress experimental design and data analysis. Common confusion: transcription vs translation, and when to apply Hardy-Weinberg conditions."
+}

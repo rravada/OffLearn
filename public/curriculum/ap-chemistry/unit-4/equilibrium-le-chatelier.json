@@ -1,0 +1,41 @@
+{
+  "id": "equilibrium-le-chatelier",
+  "title": "Chemical Equilibrium and Le Chatelier's Principle",
+  "subject": "AP Chemistry",
+  "unit": "Kinetics and Equilibrium",
+  "track": "ap",
+  "difficulty": "ap",
+  "duration": "30 min",
+  "objectives": [
+    "Write equilibrium constant expressions and calculate Keq from concentration data",
+    "Compare Q and K to predict the direction a reaction will shift to reach equilibrium",
+    "Apply Le Chatelier's Principle to predict how changes in concentration, pressure, and temperature affect equilibrium"
+  ],
+  "sections": [
+    {
+      "type": "explanation",
+      "heading": "Dynamic Equilibrium",
+      "content": "Many chemical reactions are reversible. When the forward and reverse reactions occur at the same rate, the system is in dynamic equilibrium. The concentrations of reactants and products remain constant — not because the reactions have stopped, but because they are proceeding in both directions at equal rates.\n\nFor the generic reaction aA + bB ⇌ cC + dD, the equilibrium constant expression is:\n\nKeq = [C]^c[D]^d / [A]^a[B]^b\n\nProducts go in the numerator, reactants in the denominator, each raised to the power of its stoichiometric coefficient. Pure solids and pure liquids are NOT included in the expression (their concentrations are effectively constant).\n\nIf Keq >> 1: Products are heavily favored at equilibrium.\nIf Keq << 1: Reactants are heavily favored.\nIf Keq ≈ 1: Significant amounts of both are present."
+    },
+    {
+      "type": "example",
+      "heading": "Q vs. K: Which Way Will It Shift?",
+      "content": "The reaction quotient Q has the same form as Keq but uses current concentrations (not necessarily equilibrium concentrations).\n\nFor N₂(g) + 3H₂(g) ⇌ 2NH₃(g), Keq = 0.50 at a given temperature.\n\nCurrent concentrations: [N₂] = 1.0 M, [H₂] = 2.0 M, [NH₃] = 3.0 M\n\nQ = [NH₃]² / ([N₂][H₂]³) = (3.0)² / ((1.0)(2.0)³) = 9.0 / 8.0 = 1.125\n\nSince Q (1.125) > K (0.50): Too much product. The reaction shifts LEFT (toward reactants) to reach equilibrium.\n\nIf Q < K: Too much reactant. The reaction shifts RIGHT (toward products).\nIf Q = K: The system is already at equilibrium."
+    },
+    {
+      "type": "explanation",
+      "heading": "Le Chatelier's Principle",
+      "content": "Le Chatelier's Principle states: if a stress is applied to a system at equilibrium, the system shifts in the direction that partially relieves the stress.\n\nConcentration changes: Adding a reactant shifts equilibrium toward products (to consume the added reactant). Removing a product shifts toward products (to replace what was removed). Think of it as the system trying to counteract the change.\n\nPressure changes (gases only): Increasing pressure shifts toward the side with FEWER moles of gas. Decreasing pressure shifts toward MORE moles. For N₂ + 3H₂ ⇌ 2NH₃ (4 moles gas → 2 moles), increasing pressure favors NH₃ production.\n\nTemperature changes: Treat heat as a reactant (endothermic) or product (exothermic). For an exothermic reaction (A → B + heat), increasing temperature is like adding product (heat), so equilibrium shifts LEFT (toward reactants), and Keq decreases. For endothermic reactions, increasing temperature shifts RIGHT, and Keq increases.\n\nCatalysts: A catalyst does NOT shift equilibrium — it helps both the forward and reverse reactions equally. It only makes the system reach equilibrium faster."
+    },
+    {
+      "type": "keypoint",
+      "content": "Compare Q to K to predict shift direction. Le Chatelier's Principle: the system shifts to counteract any stress. Adding reactant or removing product shifts right. Temperature is the ONLY stress that changes the value of K."
+    },
+    {
+      "type": "deepdive",
+      "heading": "Le Chatelier in Industrial Chemistry: The Haber Process",
+      "content": "The synthesis of ammonia (N₂ + 3H₂ ⇌ 2NH₃, ΔH = −92 kJ) is one of the most important industrial reactions — ammonia is used to make fertilizer that feeds billions of people.\n\nApplying Le Chatelier to optimize yield:\n• High pressure: 4 moles gas → 2 moles, so high pressure favors products. Industrial plants run at 150–300 atm.\n• Low temperature: The reaction is exothermic, so low temperature favors products (Keq is larger). BUT low temperature makes the reaction painfully slow.\n• Compromise: Use moderate temperature (~400–500°C) with an iron catalyst to achieve a reasonable rate, even though the equilibrium yield is lower than at low temperature.\n• Removal of NH₃: Continuously removing ammonia from the mixture (by cooling it to a liquid) shifts equilibrium right, driving more production.\n\nThis is a beautiful example of the tension between thermodynamics (which favors low temperature) and kinetics (which favors high temperature). Industrial chemistry is the art of finding the optimal compromise."
+    }
+  ],
+  "aiContext": "AP Chemistry. Use dimensional analysis for all calculations. Stress WHY reactions happen, not just equation balancing. Common confusion: entropy vs enthalpy direction, and applying Le Chatelier to specific perturbations."
+}
