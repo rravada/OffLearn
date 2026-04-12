@@ -1,4 +1,4 @@
-const CACHE_NAME = "offlearn-v10";
+const CACHE_NAME = "offlearn-v11";
 
 /** App shell + manifest index (full list in precache-manifest.json). */
 const PRECACHE_URLS = [
@@ -88,6 +88,43 @@ async function networkFirstWithCacheFallback(cache, request) {
   }
 }
 
+/**
+ * Large .task models: browsers / MediaPipe may use Range or varying headers.
+ * Cache API keys requests by full URL + headers, so offline misses the entry.
+ * We always store and look up by a plain GET to pathname only.
+ */
+function modelCacheKeyRequest(request) {
+  const url = new URL(request.url);
+  return new Request(`${url.origin}${url.pathname}`, { method: "GET" });
+}
+
+async function serveModelAsset(cache, request) {
+  const keyReq = modelCacheKeyRequest(request);
+  const fromCache = await cache.match(keyReq);
+  if (fromCache) return fromCache;
+
+  try {
+    const response = await fetch(request);
+    const fullOk =
+      response &&
+      response.ok &&
+      response.status === 200 &&
+      !response.headers.get("Content-Range");
+    if (fullOk) {
+      try {
+        await cache.put(keyReq, response.clone());
+      } catch {
+        /* disk quota / huge file — still return live response */
+      }
+    }
+    return response;
+  } catch {
+    const again = await cache.match(keyReq);
+    if (again) return again;
+    return new Response("", { status: 503, statusText: "Model not cached" });
+  }
+}
+
 self.addEventListener("install", (event) => {
   event.waitUntil(
     caches.open(CACHE_NAME).then(async (cache) => {
@@ -145,16 +182,7 @@ self.addEventListener("fetch", (event) => {
   if (url.pathname.startsWith("/models/")) {
     event.respondWith(
       caches.open(CACHE_NAME).then((cache) =>
-        fetch(event.request)
-          .then((response) => {
-            cachePutSafe(cache, event.request, response);
-            return response;
-          })
-          .catch(() =>
-            cache
-              .match(event.request)
-              .then((r) => r || new Response("", { status: 503 }))
-          )
+        serveModelAsset(cache, event.request)
       )
     );
     return;
