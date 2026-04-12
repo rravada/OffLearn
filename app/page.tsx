@@ -13,6 +13,7 @@ import { TestPrepView } from "@/components/views/TestPrepView";
 import type { CurriculumIndex } from "@/types";
 import { normalizeCurriculumIndex } from "@/lib/curriculum/normalizeCurriculumIndex";
 import { waitUntilSwControlling } from "@/lib/offline/waitUntilSwControlling";
+import { primeRemoteGemmaModelCacheIfNeeded } from "@/lib/offline/primeRemoteGemmaCache";
 
 export default function Home() {
   const {
@@ -150,6 +151,18 @@ export default function Home() {
         } catch {
           /* continue — model may still load; SW cache less reliable */
         }
+      }
+
+      if (cancelled) {
+        clearInterval(progressInterval);
+        return;
+      }
+
+      /** Worker fetches may not fill SW cache; prime from main thread so offline works right after first load. */
+      try {
+        await primeRemoteGemmaModelCacheIfNeeded();
+      } catch (e) {
+        console.warn("[OffLearn] Gemma cache prime skipped:", e);
       }
 
       if (cancelled) {
