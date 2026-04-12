@@ -11,6 +11,7 @@ import { TutorPanel } from "@/components/layout/TutorPanel";
 import { LearnView } from "@/components/views/LearnView";
 import { TestPrepView } from "@/components/views/TestPrepView";
 import type { CurriculumIndex } from "@/types";
+import { normalizeCurriculumIndex } from "@/lib/curriculum/normalizeCurriculumIndex";
 
 export default function Home() {
   const {
@@ -37,14 +38,20 @@ export default function Home() {
     let cancelled = false;
     async function init() {
       try {
-        const [visited, curriculumData] = await Promise.all([
+        const [visited, res] = await Promise.all([
           getMeta("hasVisited"),
-          fetch("/curriculum/index.json", { cache: "no-store" }).then(
-            (r) => r.json() as Promise<CurriculumIndex>
-          ),
+          fetch("/curriculum/index.json"),
         ]);
         if (cancelled) return;
 
+        if (!res.ok) {
+          throw new Error(`Curriculum index failed (${res.status})`);
+        }
+        const raw = await res.json();
+        const curriculumData = normalizeCurriculumIndex(raw);
+        if (!curriculumData?.subjects?.length) {
+          throw new Error("Invalid or empty curriculum index");
+        }
         setCurriculum(curriculumData);
 
         if (!visited) {
@@ -73,6 +80,39 @@ export default function Home() {
       setSelectedSubject(null);
     }
   }, [curriculum, selectedSubject, setSelectedSubject]);
+
+  /** Warm test prep + knowledge JSON so Test Prep and RAG work offline without visiting those screens first. */
+  useEffect(() => {
+    if (!curriculum?.subjects?.length) return;
+    const win = typeof window !== "undefined" ? window : null;
+    if (!win) return;
+    let cancelled = false;
+    const urls = [
+      "/testprep/sat-math.json",
+      "/testprep/sat-reading.json",
+      "/testprep/act-math.json",
+      "/knowledge-packs/biology-krebs.json",
+      "/knowledge-packs/physics-newton.json",
+    ];
+    const run = () => {
+      if (cancelled) return;
+      void Promise.allSettled(urls.map((u) => fetch(u)));
+    };
+    let idleHandle: number;
+    if ("requestIdleCallback" in win) {
+      idleHandle = win.requestIdleCallback(run, { timeout: 45_000 });
+    } else {
+      idleHandle = setTimeout(run, 500) as unknown as number;
+    }
+    return () => {
+      cancelled = true;
+      if ("cancelIdleCallback" in win) {
+        win.cancelIdleCallback(idleHandle);
+      } else {
+        clearTimeout(idleHandle);
+      }
+    };
+  }, [curriculum]);
 
   useEffect(() => {
     if (modelInitStarted.current) return;
@@ -106,7 +146,7 @@ export default function Home() {
         console.error("Model init failed:", err);
         setModelStatus("error");
         setModelError(
-          err instanceof Error ? err.message : "Failed to load AI model"
+          err instanceof Error ? err.message : "Failed to set up the tutor"
         );
       })
       .finally(() => {
@@ -149,6 +189,16 @@ export default function Home() {
         />
       );
     }
+    if (appMode === "learn" && !curriculum) {
+      return (
+        <div className="flex flex-1 flex-col items-center justify-center gap-2 px-8 py-16 text-center">
+          <p className="text-sm font-medium text-le-text">Could not load courses</p>
+          <p className="text-xs text-le-text-secondary">
+            Check your connection and refresh the page.
+          </p>
+        </div>
+      );
+    }
     if (appMode === "testprep") {
       return <TestPrepView />;
     }
@@ -175,7 +225,7 @@ export default function Home() {
           }}
         />
 
-        <main className="flex min-w-0 flex-1 flex-col overflow-y-auto">
+        <main className="main-scroll-panel flex min-h-0 min-w-0 flex-1 flex-col overflow-y-auto [overflow-anchor:none]">
           {renderMainContent()}
         </main>
 

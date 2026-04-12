@@ -30,17 +30,19 @@ export function Sidebar({
   onSubjectChange,
 }: SidebarProps) {
   const { standardSubjects, apSubjects, collegeSubjects } = useMemo(() => {
-    if (!curriculum?.subjects?.length) {
-      return {
-        standardSubjects: [] as CurriculumSubject[],
-        apSubjects: [] as CurriculumSubject[],
-        collegeSubjects: [] as CurriculumSubject[],
-      };
-    }
+    const empty = {
+      standardSubjects: [] as CurriculumSubject[],
+      apSubjects: [] as CurriculumSubject[],
+      collegeSubjects: [] as CurriculumSubject[],
+    };
+    const list = curriculum?.subjects;
+    if (!Array.isArray(list) || list.length === 0) return empty;
+
     const standard: CurriculumSubject[] = [];
     const ap: CurriculumSubject[] = [];
     const college: CurriculumSubject[] = [];
-    for (const s of curriculum.subjects) {
+    for (const s of list) {
+      if (!s || typeof s !== "object" || typeof s.id !== "string") continue;
       if (s.track === "ap") ap.push(s);
       else if (s.track === "college-prep") college.push(s);
       else standard.push(s);

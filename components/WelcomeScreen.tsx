@@ -12,7 +12,7 @@ const FEATURES = [
     icon: WifiOff,
     title: "Runs 100% Offline",
     description:
-      "A 2B parameter AI model runs entirely in your browser using WebGPU. No API keys. No servers.",
+      "The tutor runs in your browser with WebGPU — no API keys, no servers.",
   },
   {
     icon: BookOpen,
@@ -33,9 +33,6 @@ export function WelcomeScreen({ onStart }: WelcomeScreenProps) {
     <div className="le-app-shell fixed inset-0 z-50 flex flex-col items-center justify-center px-6">
       <div className="flex max-w-2xl flex-col items-center gap-10">
         <BrandLogo size={48} className="drop-shadow-[0_0_24px_rgba(240,165,0,0.35)]" />
-        <div className="label-badge rounded-full border border-le-mint/25 bg-le-mint/10 px-4 py-1.5 text-le-mint">
-          GDG Solution Challenge — SDG 4: Quality Education
-        </div>
 
         <div className="flex flex-col items-center gap-4 text-center">
           <h1 className="heading text-4xl text-le-text sm:text-5xl">
@@ -73,7 +70,7 @@ export function WelcomeScreen({ onStart }: WelcomeScreenProps) {
         </button>
 
         <p className="text-xs text-le-text-hint">
-          Built for underserved students. Powered by Google&apos;s Gemma 4.
+          Offline-first — your study sessions stay on this device.
         </p>
       </div>
     </div>

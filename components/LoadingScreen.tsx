@@ -20,11 +20,10 @@ export function LoadingScreen({ progress, visible }: LoadingScreenProps) {
         </div>
 
         <div className="flex flex-col items-center gap-2">
-          <h1 className="heading text-2xl text-le-text">
-            Preparing your offline classroom
-          </h1>
+          <h1 className="heading text-2xl text-le-text">Getting ready</h1>
           <p className="text-sm text-le-text-secondary">
-            The AI model is loading to your device. This only happens once.
+            Setting up the local tutor so lessons work offline. This only runs
+            once.
           </p>
         </div>
 

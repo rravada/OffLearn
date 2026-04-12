@@ -5,9 +5,10 @@
   "main": "index.js",
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
+    "build": "node scripts/generate-precache-manifest.js && next build && node scripts/finalize-precache-manifest.js",
     "start": "next start",
     "lint": "next lint",
+    "precache:manifest": "node scripts/generate-precache-manifest.js",
     "postinstall": "node scripts/copy-mediapipe-wasm.js"
   },
   "keywords": [],

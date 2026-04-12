@@ -1,11 +1,41 @@
-const CACHE_NAME = "offlearn-v6";
+const CACHE_NAME = "offlearn-v10";
 
-const PRECACHE_URLS = ["/", "/manifest.json", "/curriculum/index.json"];
+/** App shell + manifest index (full list in precache-manifest.json). */
+const PRECACHE_URLS = [
+  "/",
+  "/manifest.json",
+  "/curriculum/index.json",
+  "/testprep/sat-math.json",
+  "/testprep/sat-reading.json",
+  "/testprep/act-math.json",
+  "/precache-manifest.json",
+];
 
 function cachePutSafe(cache, request, response) {
   if (!response || !response.ok) return Promise.resolve();
   const clone = response.clone();
   return cache.put(request, clone).catch(() => {});
+}
+
+/** Precache many URLs in small batches (reliable on CDN / mobile). */
+async function precacheUrlList(cache, urls) {
+  if (!Array.isArray(urls) || urls.length === 0) return;
+  const BATCH = 16;
+  for (let i = 0; i < urls.length; i += BATCH) {
+    const slice = urls.slice(i, i + BATCH);
+    await Promise.allSettled(
+      slice.map((u) =>
+        cache.add(u).catch(async () => {
+          try {
+            const r = await fetch(u);
+            if (r.ok) await cache.put(u, r.clone());
+          } catch {
+            /* skip */
+          }
+        })
+      )
+    );
+  }
 }
 
 async function offlineNavigationFallback(request) {
@@ -32,7 +62,6 @@ async function offlineNavigationFallback(request) {
   return undefined;
 }
 
-/** Cache-first: offline-safe (returns cached on network failure). */
 async function cacheFirst(cache, request) {
   const cached = await cache.match(request);
   if (cached) return cached;
@@ -47,7 +76,6 @@ async function cacheFirst(cache, request) {
   }
 }
 
-/** Network-first with cache fallback (for curriculum index updates). */
 async function networkFirstWithCacheFallback(cache, request) {
   try {
     const response = await fetch(request);
@@ -72,11 +100,23 @@ self.addEventListener("install", (event) => {
               const res = await fetch(path);
               if (res.ok) await cache.put(path, res.clone());
             } catch {
-              /* precache best-effort */
+              /* best-effort */
             }
           }
         })
       );
+
+      try {
+        const res = await fetch("/precache-manifest.json", { cache: "reload" });
+        if (!res.ok) return;
+        const data = await res.json();
+        const urls = data.urls;
+        if (Array.isArray(urls) && urls.length > 0) {
+          await precacheUrlList(cache, urls);
+        }
+      } catch {
+        /* dev or missing file */
+      }
     })
   );
   self.skipWaiting();

@@ -10,15 +10,21 @@ export function ServiceWorkerRegistration() {
   useEffect(() => {
     if (!("serviceWorker" in navigator)) return;
 
-    const register = () => {
-      navigator.serviceWorker
-        .register("/sw.js", { scope: "/", updateViaCache: "none" })
-        .then((reg) => reg.update())
+    if (process.env.NODE_ENV === "development") {
+      /** Tear down SW from earlier sessions so dev always loads fresh bundles from Next. */
+      void navigator.serviceWorker
+        .getRegistrations()
+        .then((regs) => {
+          for (const r of regs) void r.unregister();
+        })
         .catch(() => {});
-    };
+      return;
+    }
 
-    if (document.readyState === "complete") register();
-    else window.addEventListener("load", register, { once: true });
+    navigator.serviceWorker
+      .register("/sw.js", { scope: "/", updateViaCache: "none" })
+      .then((reg) => reg.update())
+      .catch(() => {});
   }, []);
 
   return null;
