@@ -1,0 +1,30 @@
+{
+  "id": "revolution",
+  "title": "The American Revolution",
+  "subject": "History",
+  "unit": "US History",
+  "duration": "25 min",
+  "objectives": ["Understand the causes of the American Revolution", "Identify key events and turning points", "Explain the significance of independence"],
+  "sections": [
+    {
+      "type": "explanation",
+      "heading": "Seeds of revolution",
+      "content": "The American Revolution did not begin overnight. By the 1760s, Britain's thirteen American colonies had grown prosperous and self-governing, but the relationship with the mother country was straining. After the costly French and Indian War (1754-1763), Britain needed revenue and turned to taxing the colonies.\n\nThe Stamp Act (1765) and Townshend Acts (1767) imposed taxes on everyday items. Colonists objected not to the amounts — which were modest — but to the principle. They had no representatives in the British Parliament, giving rise to the rallying cry 'No taxation without representation.'"
+    },
+    {
+      "type": "explanation",
+      "heading": "The road to war",
+      "content": "Tensions escalated through a series of confrontations. The Boston Massacre (1770) saw British soldiers kill five colonists during a street confrontation. The Boston Tea Party (1773) was a dramatic protest against the Tea Act, as colonists dumped 342 chests of tea into Boston Harbor.\n\nBritain responded with the Intolerable Acts (1774), which closed Boston's port and revoked many colonial self-governance rights. Rather than subduing the colonies, these punitive measures united them. The First Continental Congress met in 1774 to coordinate a response."
+    },
+    {
+      "type": "example",
+      "heading": "Key turning points",
+      "content": "• Lexington and Concord (April 1775): The first military engagements — 'the shot heard round the world' — turned political protest into armed conflict.\n\n• Declaration of Independence (July 4, 1776): Thomas Jefferson articulated the philosophical foundation: 'All men are created equal' with 'unalienable rights' to 'life, liberty, and the pursuit of happiness.'\n\n• Battle of Saratoga (1777): This American victory convinced France to enter the war as an ally, providing crucial military and financial support.\n\n• Siege of Yorktown (1781): With French naval and military assistance, Washington forced British General Cornwallis to surrender, effectively ending the war."
+    },
+    {
+      "type": "keypoint",
+      "content": "The American Revolution was driven by disputes over taxation, representation, and self-governance. It transformed from protest to war between 1765-1775, and the alliance with France proved decisive in achieving independence."
+    }
+  ],
+  "aiContext": "This lesson covers the American Revolution at a high school US History level. Students learn about the causes (taxation without representation), key events (Boston Tea Party, Lexington and Concord), and the path to independence."
+}

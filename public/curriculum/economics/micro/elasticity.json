@@ -1,0 +1,30 @@
+{
+  "id": "elasticity",
+  "title": "Elasticity",
+  "subject": "Economics",
+  "unit": "Microeconomics",
+  "duration": "15 min",
+  "objectives": ["Define price elasticity of demand", "Calculate elasticity using the midpoint formula", "Distinguish elastic, inelastic, and unit elastic demand"],
+  "sections": [
+    {
+      "type": "explanation",
+      "heading": "What is elasticity?",
+      "content": "Elasticity measures how responsive quantity demanded is to a change in price. If a small price increase causes customers to stop buying, demand is elastic. If a price increase barely changes buying behavior, demand is inelastic.\n\nThink of it this way: if the price of a specific brand of bottled water doubles, you would just buy a different brand (elastic). But if the price of insulin doubles, diabetic patients still need it (inelastic)."
+    },
+    {
+      "type": "explanation",
+      "heading": "Factors affecting elasticity",
+      "content": "Demand tends to be more elastic when:\n• Close substitutes exist (Coke vs. Pepsi)\n• The good is a luxury rather than a necessity\n• The good takes a large share of the buyer's budget\n• Consumers have more time to adjust their behavior\n\nDemand tends to be more inelastic when:\n• Few or no substitutes exist (gasoline, prescription drugs)\n• The good is a necessity\n• The good is a small fraction of income (salt, paper clips)"
+    },
+    {
+      "type": "example",
+      "heading": "Calculating elasticity",
+      "content": "Price elasticity of demand = % change in quantity demanded ÷ % change in price\n\nIf the price of movie tickets rises from $10 to $12 (20% increase) and ticket sales fall from 1000 to 800 (20% decrease):\n\nElasticity = 20% ÷ 20% = 1.0 (unit elastic)\n\nInterpretation:\n• |E| > 1: Elastic — quantity changes more than price\n• |E| = 1: Unit elastic — quantity changes proportionally\n• |E| < 1: Inelastic — quantity changes less than price"
+    },
+    {
+      "type": "keypoint",
+      "content": "Elasticity measures how sensitive demand is to price changes. Goods with close substitutes tend to be elastic; necessities without substitutes tend to be inelastic. This concept is crucial for business pricing decisions."
+    }
+  ],
+  "aiContext": "This lesson covers price elasticity of demand at a high school microeconomics level. Students learn what elasticity measures, the factors that affect it, and how to calculate and interpret elasticity values."
+}

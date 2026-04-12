@@ -1,0 +1,30 @@
+{
+  "id": "industrial-revolution",
+  "title": "The Industrial Revolution",
+  "subject": "History",
+  "unit": "World History",
+  "duration": "20 min",
+  "objectives": ["Explain what the Industrial Revolution was", "Identify key inventions and their impact", "Analyze both positive and negative consequences"],
+  "sections": [
+    {
+      "type": "explanation",
+      "heading": "From farms to factories",
+      "content": "The Industrial Revolution (roughly 1760-1840) began in Britain and fundamentally transformed how goods were produced — shifting from hand tools and home workshops to machines and factories. This was the most dramatic change in human economic life since the invention of agriculture 10,000 years earlier.\n\nBritain led the way due to several advantages: abundant coal and iron deposits, a stable government, a colonial empire providing raw materials and markets, an agricultural revolution that freed workers from farms, and a culture that valued innovation."
+    },
+    {
+      "type": "example",
+      "heading": "Transformative inventions",
+      "content": "• Spinning jenny (1764) and power loom (1785): Mechanized textile production, making cloth faster and cheaper.\n\n• Steam engine (James Watt, 1769): Provided reliable power for factories and later transportation. Changed everything.\n\n• Steam locomotive (1825) and railroads: Enabled fast, cheap transportation of goods and people over long distances.\n\n• Cotton gin (Eli Whitney, 1793): Rapidly separated cotton fibers from seeds, dramatically increasing cotton production — but also increasing demand for enslaved labor in the American South."
+    },
+    {
+      "type": "explanation",
+      "heading": "Social consequences",
+      "content": "Industrialization brought both progress and suffering. On the positive side: production increased enormously, goods became cheaper, transportation improved, and new jobs were created. Over time, living standards rose dramatically.\n\nBut the short-term costs were severe. Factory workers — including young children — labored 14-16 hour days in dangerous conditions for meager wages. Rapid urbanization created overcrowded, polluted cities with poor sanitation. The gap between wealthy factory owners and impoverished workers widened dramatically. These conditions eventually sparked labor movements, reforms, and new political ideologies."
+    },
+    {
+      "type": "keypoint",
+      "content": "The Industrial Revolution transformed production from hand-made to machine-made, beginning in Britain. While it brought enormous economic growth, it also caused severe social disruption, child labor, and urban poverty that took decades of reform to address."
+    }
+  ],
+  "aiContext": "This lesson covers the Industrial Revolution at a high school world history level. Students learn about the shift from agrarian to industrial economies, key inventions, and the social consequences including both progress and suffering."
+}

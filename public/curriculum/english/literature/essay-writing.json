@@ -1,0 +1,30 @@
+{
+  "id": "essay-writing",
+  "title": "Essay Writing Basics",
+  "subject": "English",
+  "unit": "Literature",
+  "duration": "25 min",
+  "objectives": ["Understand the five-paragraph essay structure", "Write a strong thesis statement", "Use evidence and analysis effectively"],
+  "sections": [
+    {
+      "type": "explanation",
+      "heading": "The essay structure",
+      "content": "A standard academic essay follows a clear structure:\n\n1. Introduction: Hook the reader, provide background, and state your thesis.\n2. Body paragraph 1: First main argument + evidence + analysis.\n3. Body paragraph 2: Second main argument + evidence + analysis.\n4. Body paragraph 3: Third main argument + evidence + analysis.\n5. Conclusion: Restate thesis in new words, summarize key points, and leave the reader with a final thought.\n\nThis structure is a foundation. As you advance, you will learn to vary it, but mastering the basics first is essential."
+    },
+    {
+      "type": "explanation",
+      "heading": "Writing a thesis statement",
+      "content": "The thesis statement is the single most important sentence in your essay. It appears at the end of your introduction and tells the reader exactly what you will argue.\n\nA strong thesis is:\n• Specific (not vague or overly broad)\n• Arguable (someone could disagree with it)\n• Supportable (you can find evidence for it)\n\nWeak: 'Shakespeare is a good writer.'\nStrong: 'In Hamlet, Shakespeare uses the motif of decay to illustrate how corruption in leadership destroys an entire society.'"
+    },
+    {
+      "type": "example",
+      "heading": "The evidence sandwich",
+      "content": "Each body paragraph should follow the 'evidence sandwich' pattern:\n\n1. Topic sentence (your claim for this paragraph)\n2. Evidence (a quote or specific detail from the text)\n3. Analysis (explain HOW the evidence supports your claim)\n\nExample:\n'Atticus demonstrates moral courage through his defense of Tom Robinson. (claim) He tells Scout, \"The one thing that doesn't abide by majority rule is a person's conscience\" (Lee 120). (evidence) This statement reveals that Atticus defines courage not as following the crowd, but as following one's own sense of right and wrong, even at personal cost. (analysis)'"
+    },
+    {
+      "type": "keypoint",
+      "content": "Strong essays have a clear thesis, organized body paragraphs using the evidence sandwich (claim → evidence → analysis), and a conclusion that extends beyond mere repetition."
+    }
+  ],
+  "aiContext": "This lesson covers essay writing basics at a high school English level. Students learn the five-paragraph essay structure, how to write thesis statements, and how to use the evidence sandwich technique."
+}

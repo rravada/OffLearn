@@ -1,0 +1,30 @@
+{
+  "id": "civil-war",
+  "title": "The Civil War",
+  "subject": "History",
+  "unit": "US History",
+  "duration": "25 min",
+  "objectives": ["Identify the causes of the Civil War", "Understand the major events of the war", "Explain the lasting impact of the war"],
+  "sections": [
+    {
+      "type": "explanation",
+      "heading": "The causes of division",
+      "content": "The Civil War (1861-1865) was the result of decades of growing tension between the Northern and Southern states, primarily over slavery. The Southern economy depended on enslaved labor for cotton plantations, while the Northern economy was increasingly industrial.\n\nPolitical flashpoints included the Missouri Compromise (1820), the Compromise of 1850, the Kansas-Nebraska Act (1854), and the Dred Scott decision (1857). Each attempt to resolve the slavery question only deepened the divide. When Abraham Lincoln — who opposed the expansion of slavery — won the 1860 election, seven Southern states seceded before he even took office."
+    },
+    {
+      "type": "explanation",
+      "heading": "The war unfolds",
+      "content": "The war began when Confederate forces fired on Fort Sumter in South Carolina on April 12, 1861. The Confederacy eventually included eleven states.\n\nThe Union had significant advantages: a larger population, more industry, and a stronger navy. But the Confederacy had skilled military leaders and the defensive advantage of fighting on home territory.\n\nKey battles included Bull Run (1861), Antietam (1862) — the bloodiest single day in American history — Gettysburg (1863) — the war's turning point — and Sherman's March to the Sea (1864), which devastated the Southern economy."
+    },
+    {
+      "type": "example",
+      "heading": "The Emancipation Proclamation",
+      "content": "On January 1, 1863, President Lincoln issued the Emancipation Proclamation, declaring enslaved people in Confederate states 'forever free.' While it did not immediately free anyone in Confederate-controlled territory, it transformed the war's purpose.\n\nThe war was no longer just about preserving the Union — it was now also explicitly about ending slavery. This prevented European nations from supporting the Confederacy and allowed Black men to enlist in the Union Army, with nearly 180,000 serving by war's end."
+    },
+    {
+      "type": "keypoint",
+      "content": "The Civil War was caused primarily by the issue of slavery and states' rights. It resulted in over 600,000 deaths and ultimately preserved the Union while abolishing slavery through the 13th Amendment."
+    }
+  ],
+  "aiContext": "This lesson covers the American Civil War at a high school level. Students learn about the causes including slavery, key battles, the Emancipation Proclamation, and the war's lasting impact."
+}

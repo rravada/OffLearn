@@ -1,0 +1,35 @@
+{
+  "id": "cells",
+  "title": "Cell Structure & Function",
+  "subject": "Science",
+  "unit": "Biology",
+  "duration": "20 min",
+  "objectives": ["Describe the basic parts of a cell", "Distinguish between prokaryotic and eukaryotic cells", "Explain the function of major organelles"],
+  "sections": [
+    {
+      "type": "explanation",
+      "heading": "The cell: the basic unit of life",
+      "content": "Every living organism is made of cells. Some organisms, like bacteria, consist of just one cell. Others, like humans, are made of trillions of cells working together. Despite this range, all cells share certain features: a cell membrane that forms the boundary, cytoplasm (a jelly-like substance inside), and DNA that carries genetic instructions."
+    },
+    {
+      "type": "explanation",
+      "heading": "Prokaryotic vs. eukaryotic cells",
+      "content": "Cells fall into two broad categories. Prokaryotic cells (like bacteria) are small and simple — they have no nucleus or membrane-bound organelles. Their DNA floats freely in the cytoplasm.\n\nEukaryotic cells (found in plants, animals, fungi) are larger and more complex. They have a true nucleus enclosed in a membrane, plus specialized organelles that perform specific jobs. Think of a prokaryote as a studio apartment and a eukaryote as a house with separate rooms."
+    },
+    {
+      "type": "explanation",
+      "heading": "Key organelles and their functions",
+      "content": "• Nucleus: the control center, containing DNA. It directs all cell activities.\n• Mitochondria: the powerhouses. They convert glucose into ATP (energy) through cellular respiration.\n• Ribosomes: tiny factories that build proteins by reading instructions from messenger RNA.\n• Endoplasmic reticulum (ER): a network of membranes. Rough ER (with ribosomes) makes proteins; smooth ER makes lipids.\n• Golgi apparatus: the post office. It packages and ships proteins to their destinations.\n• Cell membrane: the gatekeeper. It controls what enters and exits the cell.\n• Cell wall (plants only): a rigid outer layer that provides structural support.\n• Chloroplasts (plants only): capture sunlight and perform photosynthesis."
+    },
+    {
+      "type": "example",
+      "heading": "Plant vs. animal cells",
+      "content": "Both plant and animal cells are eukaryotic, but they have key differences:\n\n• Plant cells have a rigid cell wall; animal cells do not.\n• Plant cells have chloroplasts for photosynthesis; animal cells do not.\n• Plant cells typically have a large central vacuole for water storage; animal cells have smaller vacuoles.\n• Animal cells have centrioles (used in cell division); most plant cells do not."
+    },
+    {
+      "type": "keypoint",
+      "content": "All living things are made of cells. Eukaryotic cells have a nucleus and specialized organelles, while prokaryotic cells do not. Each organelle plays a specific role in keeping the cell alive."
+    }
+  ],
+  "aiContext": "This lesson covers cell biology at a high school level. The student is learning about the differences between prokaryotic and eukaryotic cells, and the functions of major organelles including the nucleus, mitochondria, ribosomes, and more."
+}

@@ -1,0 +1,30 @@
+{
+  "id": "sorting",
+  "title": "Sorting Algorithms",
+  "subject": "Computer Science",
+  "unit": "Algorithms",
+  "duration": "25 min",
+  "objectives": ["Understand why sorting matters", "Implement bubble sort and selection sort", "Introduce merge sort and its efficiency"],
+  "sections": [
+    {
+      "type": "explanation",
+      "heading": "Why sorting matters",
+      "content": "Sorting — arranging data in a specific order — is one of the most fundamental operations in computing. Databases sort records for fast retrieval. Search engines sort results by relevance. Binary search (which we just learned) requires sorted data.\n\nThere are many sorting algorithms, each with different tradeoffs. Simple algorithms are easy to understand but slow for large datasets. Advanced algorithms are faster but more complex."
+    },
+    {
+      "type": "example",
+      "heading": "Bubble sort",
+      "content": "Bubble sort repeatedly steps through the list, compares adjacent elements, and swaps them if they are in the wrong order. Larger values 'bubble' to the end.\n\nSort [5, 3, 8, 1]:\nPass 1: [3,5,8,1] → [3,5,8,1] → [3,5,1,8]\nPass 2: [3,5,1,8] → [3,1,5,8]\nPass 3: [1,3,5,8] ✓\n\nTime complexity: O(n²). For each of n elements, we potentially compare it to every other element. This makes it impractical for large lists."
+    },
+    {
+      "type": "explanation",
+      "heading": "Merge sort: a faster approach",
+      "content": "Merge sort uses a divide-and-conquer strategy:\n\n1. Split the list in half\n2. Recursively sort each half\n3. Merge the two sorted halves back together\n\nThe merging step is key: combining two sorted lists into one sorted list takes O(n) time. Since we divide the list in half at each level (log n levels), the total time is O(n log n).\n\nFor 1,000 elements: bubble sort takes up to 1,000,000 operations. Merge sort takes about 10,000. That is 100 times faster."
+    },
+    {
+      "type": "keypoint",
+      "content": "Sorting is a fundamental computing operation. Simple algorithms like bubble sort are O(n²). Advanced algorithms like merge sort achieve O(n log n) by dividing the problem. Choosing the right sorting algorithm matters enormously for performance."
+    }
+  ],
+  "aiContext": "This lesson covers sorting algorithms at a high school computer science level. Students learn about bubble sort (simple but O(n²)), and merge sort (divide-and-conquer, O(n log n)), and understand why algorithm choice matters."
+}

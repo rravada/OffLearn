@@ -1,0 +1,30 @@
+{
+  "id": "stacks-queues",
+  "title": "Stacks & Queues",
+  "subject": "Computer Science",
+  "unit": "Data Structures",
+  "duration": "20 min",
+  "objectives": ["Understand the stack (LIFO) data structure", "Understand the queue (FIFO) data structure", "Identify real-world applications of each"],
+  "sections": [
+    {
+      "type": "explanation",
+      "heading": "Stacks: Last In, First Out",
+      "content": "A stack is a data structure where the last element added is the first one removed — like a stack of plates. You can only add (push) to the top and remove (pop) from the top.\n\nKey operations:\n• push(item): Add an item to the top — O(1)\n• pop(): Remove and return the top item — O(1)\n• peek(): Look at the top item without removing it — O(1)\n\nStacks are used everywhere: the 'undo' function in text editors, the back button in web browsers, and function calls in programming languages all use stack behavior."
+    },
+    {
+      "type": "explanation",
+      "heading": "Queues: First In, First Out",
+      "content": "A queue is a data structure where the first element added is the first one removed — like a line at a store. You add (enqueue) at the back and remove (dequeue) from the front.\n\nKey operations:\n• enqueue(item): Add an item to the back — O(1)\n• dequeue(): Remove and return the front item — O(1)\n• peek(): Look at the front item without removing it — O(1)\n\nQueues model real-world waiting lines: print job queues, customer service systems, and task scheduling in operating systems."
+    },
+    {
+      "type": "example",
+      "heading": "Stack vs. queue in action",
+      "content": "Imagine processing the sequence: A, B, C, D\n\nUsing a stack (LIFO):\n  Push A, B, C, D → Stack: [A, B, C, D] (D on top)\n  Pop → D, Pop → C, Pop → B, Pop → A\n  Output order: D, C, B, A (reversed!)\n\nUsing a queue (FIFO):\n  Enqueue A, B, C, D → Queue: [A, B, C, D] (A at front)\n  Dequeue → A, Dequeue → B, Dequeue → C, Dequeue → D\n  Output order: A, B, C, D (preserved!)\n\nThis is why stacks are used for reversing things and queues for maintaining order."
+    },
+    {
+      "type": "keypoint",
+      "content": "Stacks follow LIFO (Last In, First Out) and are used for undo operations and function calls. Queues follow FIFO (First In, First Out) and are used for scheduling and waiting lines. Both have O(1) push/pop or enqueue/dequeue operations."
+    }
+  ],
+  "aiContext": "This lesson covers stacks and queues at a high school computer science level. Students learn the LIFO and FIFO principles, key operations for each data structure, and real-world applications."
+}

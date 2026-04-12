@@ -1,0 +1,35 @@
+{
+  "id": "inequalities",
+  "title": "Inequalities",
+  "subject": "Mathematics",
+  "unit": "Algebra",
+  "duration": "15 min",
+  "objectives": ["Understand inequality symbols and their meanings", "Solve and graph simple linear inequalities", "Know when to flip the inequality sign"],
+  "sections": [
+    {
+      "type": "explanation",
+      "heading": "What is an inequality?",
+      "content": "An inequality is like an equation, but instead of saying two things are equal, it says one side is greater than or less than the other. The four inequality symbols are:\n\n• < means 'less than' (e.g., 3 < 5)\n• > means 'greater than' (e.g., 7 > 2)\n• ≤ means 'less than or equal to'\n• ≥ means 'greater than or equal to'\n\nUnlike equations, inequalities often have many solutions. For example, x > 3 is true for x = 4, x = 5, x = 100, or even x = 3.001."
+    },
+    {
+      "type": "example",
+      "heading": "Solving a linear inequality",
+      "content": "Solve: 2x + 1 < 9\n\nThe process is the same as solving an equation:\n  Step 1: Subtract 1 from both sides → 2x < 8\n  Step 2: Divide both sides by 2 → x < 4\n\nThe solution is all numbers less than 4. On a number line, you would draw an open circle at 4 and shade everything to the left."
+    },
+    {
+      "type": "explanation",
+      "heading": "The sign-flip rule",
+      "content": "There is one critical difference between solving equations and inequalities: when you multiply or divide both sides by a negative number, you must flip the inequality sign.\n\nWhy? Consider: 2 < 5. If we multiply both sides by -1, we get -2 and -5. But -2 is actually greater than -5 on the number line! So the inequality becomes -2 > -5. Multiplying by a negative reverses the order."
+    },
+    {
+      "type": "example",
+      "heading": "Flipping the sign",
+      "content": "Solve: -3x ≥ 12\n\nDivide both sides by -3 and FLIP the sign:\n  x ≤ -4\n\nCheck with x = -5 (which should satisfy x ≤ -4):\n  -3(-5) = 15, and 15 ≥ 12 ✓\n\nCheck with x = 0 (which should NOT satisfy x ≤ -4):\n  -3(0) = 0, and 0 ≥ 12 is false ✓"
+    },
+    {
+      "type": "keypoint",
+      "content": "Solve inequalities the same way you solve equations, but remember: multiplying or dividing by a negative number flips the inequality sign."
+    }
+  ],
+  "aiContext": "This lesson covers linear inequalities at a high school intro level. The student learns inequality symbols, solving techniques, and the critical rule about flipping the sign when multiplying/dividing by negatives."
+}

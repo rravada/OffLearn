@@ -1,0 +1,30 @@
+{
+  "id": "intro-algorithms",
+  "title": "What Are Algorithms?",
+  "subject": "Computer Science",
+  "unit": "Algorithms",
+  "duration": "15 min",
+  "objectives": ["Define what an algorithm is", "Understand algorithmic thinking", "Analyze algorithm efficiency with Big O notation"],
+  "sections": [
+    {
+      "type": "explanation",
+      "heading": "Algorithms are everywhere",
+      "content": "An algorithm is a step-by-step set of instructions for solving a problem or completing a task. You follow algorithms every day without realizing it: a recipe is an algorithm for cooking, directions are an algorithm for getting somewhere, and a morning routine is an algorithm for starting your day.\n\nIn computer science, algorithms are precise instructions that a computer can follow. The key properties of a good algorithm are: it must be unambiguous (each step is clear), finite (it eventually ends), and effective (each step can actually be performed)."
+    },
+    {
+      "type": "example",
+      "heading": "A simple algorithm",
+      "content": "Algorithm: Find the largest number in a list\n\n1. Set 'max' equal to the first element\n2. For each remaining element in the list:\n   a. If the current element is greater than 'max'\n   b. Set 'max' equal to the current element\n3. Return 'max'\n\nFor the list [3, 7, 2, 9, 4]:\n• Start: max = 3\n• Compare 7 > 3? Yes → max = 7\n• Compare 2 > 7? No\n• Compare 9 > 7? Yes → max = 9\n• Compare 4 > 9? No\n• Result: 9"
+    },
+    {
+      "type": "explanation",
+      "heading": "Big O notation",
+      "content": "Not all algorithms are equally efficient. Big O notation describes how an algorithm's running time grows as the input size increases.\n\n• O(1) — Constant: Same time regardless of input size. Looking up an array element by index.\n• O(log n) — Logarithmic: Time grows slowly. Binary search.\n• O(n) — Linear: Time grows proportionally. Searching an unsorted list.\n• O(n²) — Quadratic: Time grows rapidly. Comparing every pair of elements.\n\nThe algorithm to find the maximum value above is O(n) — it looks at each element once. If the list has 1000 elements, it takes about 1000 steps."
+    },
+    {
+      "type": "keypoint",
+      "content": "An algorithm is a finite, step-by-step procedure for solving a problem. Big O notation measures efficiency — how an algorithm's time scales with input size. Choosing the right algorithm can be the difference between a program that runs in seconds and one that takes hours."
+    }
+  ],
+  "aiContext": "This lesson introduces algorithms at a high school computer science level. Students learn what algorithms are, see a simple example (finding the maximum), and are introduced to Big O notation for analyzing efficiency."
+}

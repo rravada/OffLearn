@@ -1,0 +1,30 @@
+{
+  "id": "constitution",
+  "title": "The Constitution",
+  "subject": "History",
+  "unit": "US History",
+  "duration": "20 min",
+  "objectives": ["Understand why the Constitution replaced the Articles of Confederation", "Explain the structure of the three branches", "Describe the system of checks and balances"],
+  "sections": [
+    {
+      "type": "explanation",
+      "heading": "From Articles to Constitution",
+      "content": "After winning independence, the new nation governed itself under the Articles of Confederation (1781). However, the Articles created a weak central government with no power to tax, no executive branch, and no national court system. Each state acted almost like an independent country.\n\nBy 1787, economic problems and interstate disputes (like Shays' Rebellion) made it clear that a stronger government was needed. Delegates from twelve states gathered in Philadelphia for the Constitutional Convention."
+    },
+    {
+      "type": "explanation",
+      "heading": "The three branches of government",
+      "content": "The Constitution established three branches, each with distinct powers:\n\n• Legislative Branch (Congress): Makes laws. Divided into the Senate (2 per state) and House of Representatives (based on population). This bicameral structure was the Great Compromise between large and small states.\n\n• Executive Branch (President): Enforces laws. The president serves as commander-in-chief, negotiates treaties, and appoints judges.\n\n• Judicial Branch (Supreme Court): Interprets laws. The Court can declare laws unconstitutional through judicial review (established by Marbury v. Madison, 1803)."
+    },
+    {
+      "type": "example",
+      "heading": "Checks and balances in action",
+      "content": "No single branch can dominate because each can check the others:\n\n• The President can veto laws passed by Congress\n• Congress can override a veto with a 2/3 vote in both chambers\n• The President appoints Supreme Court justices, but the Senate must confirm them\n• The Supreme Court can strike down laws as unconstitutional\n• Congress can impeach and remove the President or federal judges\n\nThis interlocking system ensures that power is shared and abuses are prevented."
+    },
+    {
+      "type": "keypoint",
+      "content": "The Constitution replaced the weak Articles of Confederation with a stronger federal government divided into three branches — legislative, executive, and judicial — each checking the others' power."
+    }
+  ],
+  "aiContext": "This lesson covers the US Constitution at a high school level. Students learn about the weaknesses of the Articles of Confederation, the structure of the three branches, and the system of checks and balances."
+}

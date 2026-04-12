@@ -1,0 +1,30 @@
+{
+  "id": "renaissance",
+  "title": "The Renaissance",
+  "subject": "History",
+  "unit": "World History",
+  "duration": "20 min",
+  "objectives": ["Define the Renaissance and its origins", "Identify key figures and their contributions", "Understand how the Renaissance changed European society"],
+  "sections": [
+    {
+      "type": "explanation",
+      "heading": "A rebirth of ideas",
+      "content": "The Renaissance (roughly 1350-1600) was a period of cultural, artistic, and intellectual revival that began in Italy and spread across Europe. The word 'Renaissance' means 'rebirth' in French, referring to the renewed interest in the classical learning of ancient Greece and Rome.\n\nSeveral factors made Italy the birthplace: wealthy city-states like Florence, Venice, and Rome had the money to patronize artists and scholars. The fall of Constantinople (1453) sent Greek scholars westward carrying ancient texts. And the growth of trade created a prosperous merchant class eager to display their status through art."
+    },
+    {
+      "type": "explanation",
+      "heading": "Humanism: a new way of thinking",
+      "content": "The intellectual foundation of the Renaissance was humanism — a philosophy emphasizing human potential, reason, and individual achievement. Medieval thought had focused primarily on religious devotion and the afterlife. Humanists, by contrast, celebrated human creativity and the study of classical literature, history, and philosophy.\n\nThis did not mean rejection of religion; rather, humanists believed that studying the world and human experience was complementary to faith. Education became valued not just for clergy but for all people."
+    },
+    {
+      "type": "example",
+      "heading": "Key Renaissance figures",
+      "content": "• Leonardo da Vinci (1452-1519): The quintessential 'Renaissance man' — painter, sculptor, inventor, scientist. Created the Mona Lisa and The Last Supper.\n\n• Michelangelo (1475-1564): Sculptor and painter. His David and the Sistine Chapel ceiling remain among the greatest artworks ever created.\n\n• Niccolò Machiavelli (1469-1527): Political philosopher who wrote The Prince, a pragmatic guide to acquiring and maintaining power.\n\n• Johannes Gutenberg (c. 1400-1468): Invented the printing press with movable type around 1440, making books affordable and spreading ideas rapidly across Europe."
+    },
+    {
+      "type": "keypoint",
+      "content": "The Renaissance was a cultural rebirth centered in Italy that emphasized humanism, classical learning, and individual achievement. It transformed art, science, and political thought, laying the groundwork for the modern world."
+    }
+  ],
+  "aiContext": "This lesson covers the Renaissance at a high school world history level. Students learn about the origins in Italy, humanism as a philosophical movement, key figures like da Vinci and Michelangelo, and the broader cultural impact."
+}

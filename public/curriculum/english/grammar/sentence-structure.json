@@ -1,0 +1,30 @@
+{
+  "id": "sentence-structure",
+  "title": "Sentence Structure",
+  "subject": "English",
+  "unit": "Grammar",
+  "duration": "20 min",
+  "objectives": ["Identify subjects and predicates", "Distinguish simple, compound, and complex sentences", "Avoid run-on sentences and fragments"],
+  "sections": [
+    {
+      "type": "explanation",
+      "heading": "Subject and predicate",
+      "content": "Every complete sentence has two essential parts. The subject tells who or what the sentence is about. The predicate tells what the subject does or is.\n\n'The cat sat on the mat.'\n• Subject: The cat\n• Predicate: sat on the mat\n\nThe simple subject is just the key noun (cat), while the complete subject includes all its modifiers (The cat). The simple predicate is just the verb (sat), while the complete predicate includes everything that follows it."
+    },
+    {
+      "type": "explanation",
+      "heading": "Types of sentences",
+      "content": "Sentences are classified by their structure:\n\n• Simple sentence: one independent clause (one subject-predicate pair). 'She studies every night.'\n\n• Compound sentence: two independent clauses joined by a coordinating conjunction (and, but, or, so, yet). 'She studies every night, and she earns good grades.'\n\n• Complex sentence: one independent clause + one or more dependent clauses. 'Because she studies every night, she earns good grades.'\n\nVarying your sentence structure makes writing more engaging and sophisticated."
+    },
+    {
+      "type": "example",
+      "heading": "Common errors",
+      "content": "Run-on sentence (two sentences fused without proper punctuation):\n  Wrong: 'I love reading I go to the library every week.'\n  Fixed: 'I love reading. I go to the library every week.'\n  Also fixed: 'I love reading, so I go to the library every week.'\n\nFragment (a group of words missing a subject or predicate):\n  Wrong: 'Because I was tired.'\n  Fixed: 'Because I was tired, I went to bed early.'\n\nComma splice (two sentences joined only by a comma):\n  Wrong: 'The test was hard, many students failed.'\n  Fixed: 'The test was hard, and many students failed.'"
+    },
+    {
+      "type": "keypoint",
+      "content": "Every sentence needs a subject and predicate. Use simple, compound, and complex sentences for variety. Avoid run-ons, fragments, and comma splices."
+    }
+  ],
+  "aiContext": "This lesson covers sentence structure at a high school English level. Students learn about subjects, predicates, sentence types (simple, compound, complex), and common errors like run-ons and fragments."
+}

@@ -1,0 +1,22 @@
+{
+  "name": "OffLearn",
+  "short_name": "OffLearn",
+  "description": "A fully equipped school that fits in a browser tab — no internet required, no cost, no data collected, ever.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0D1117",
+  "theme_color": "#0D1117",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}

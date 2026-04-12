@@ -1,0 +1,148 @@
+{
+  "subjects": [
+    {
+      "id": "math",
+      "title": "Mathematics",
+      "icon": "calculator",
+      "units": [
+        {
+          "id": "algebra",
+          "title": "Algebra",
+          "lessons": [
+            { "id": "variables", "title": "Variables & Expressions", "duration": "15 min" },
+            { "id": "equations", "title": "Solving Equations", "duration": "20 min" },
+            { "id": "inequalities", "title": "Inequalities", "duration": "15 min" }
+          ]
+        },
+        {
+          "id": "geometry",
+          "title": "Geometry",
+          "lessons": [
+            { "id": "angles", "title": "Angles & Triangles", "duration": "20 min" },
+            { "id": "area", "title": "Area & Perimeter", "duration": "15 min" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "science",
+      "title": "Science",
+      "icon": "flask",
+      "units": [
+        {
+          "id": "biology",
+          "title": "Biology",
+          "lessons": [
+            { "id": "cells", "title": "Cell Structure & Function", "duration": "20 min" },
+            { "id": "photosynthesis", "title": "Photosynthesis", "duration": "20 min" },
+            { "id": "genetics", "title": "Introduction to Genetics", "duration": "25 min" }
+          ]
+        },
+        {
+          "id": "chemistry",
+          "title": "Chemistry",
+          "lessons": [
+            { "id": "atoms", "title": "Atomic Structure", "duration": "20 min" },
+            { "id": "bonding", "title": "Chemical Bonding", "duration": "20 min" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "history",
+      "title": "History",
+      "icon": "landmark",
+      "units": [
+        {
+          "id": "us-history",
+          "title": "US History",
+          "lessons": [
+            { "id": "revolution", "title": "The American Revolution", "duration": "25 min" },
+            { "id": "constitution", "title": "The Constitution", "duration": "20 min" },
+            { "id": "civil-war", "title": "The Civil War", "duration": "25 min" }
+          ]
+        },
+        {
+          "id": "world-history",
+          "title": "World History",
+          "lessons": [
+            { "id": "renaissance", "title": "The Renaissance", "duration": "20 min" },
+            { "id": "industrial-revolution", "title": "The Industrial Revolution", "duration": "20 min" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "english",
+      "title": "English",
+      "icon": "pen",
+      "units": [
+        {
+          "id": "grammar",
+          "title": "Grammar",
+          "lessons": [
+            { "id": "parts-of-speech", "title": "Parts of Speech", "duration": "15 min" },
+            { "id": "sentence-structure", "title": "Sentence Structure", "duration": "20 min" }
+          ]
+        },
+        {
+          "id": "literature",
+          "title": "Literature",
+          "lessons": [
+            { "id": "literary-devices", "title": "Literary Devices", "duration": "20 min" },
+            { "id": "theme-analysis", "title": "Analyzing Themes", "duration": "20 min" },
+            { "id": "essay-writing", "title": "Essay Writing Basics", "duration": "25 min" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "economics",
+      "title": "Economics",
+      "icon": "trending-up",
+      "units": [
+        {
+          "id": "micro",
+          "title": "Microeconomics",
+          "lessons": [
+            { "id": "supply-demand", "title": "Supply & Demand", "duration": "20 min" },
+            { "id": "elasticity", "title": "Elasticity", "duration": "15 min" },
+            { "id": "market-structures", "title": "Market Structures", "duration": "20 min" }
+          ]
+        },
+        {
+          "id": "macro",
+          "title": "Macroeconomics",
+          "lessons": [
+            { "id": "gdp", "title": "GDP & Economic Growth", "duration": "20 min" },
+            { "id": "inflation", "title": "Inflation & Monetary Policy", "duration": "20 min" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cs",
+      "title": "Computer Science",
+      "icon": "code",
+      "units": [
+        {
+          "id": "algorithms",
+          "title": "Algorithms",
+          "lessons": [
+            { "id": "intro-algorithms", "title": "What Are Algorithms?", "duration": "15 min" },
+            { "id": "searching", "title": "Searching Algorithms", "duration": "20 min" },
+            { "id": "sorting", "title": "Sorting Algorithms", "duration": "25 min" }
+          ]
+        },
+        {
+          "id": "data-structures",
+          "title": "Data Structures",
+          "lessons": [
+            { "id": "arrays-lists", "title": "Arrays & Linked Lists", "duration": "20 min" },
+            { "id": "stacks-queues", "title": "Stacks & Queues", "duration": "20 min" }
+          ]
+        }
+      ]
+    }
+  ]
+}

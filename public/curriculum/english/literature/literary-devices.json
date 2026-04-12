@@ -1,0 +1,30 @@
+{
+  "id": "literary-devices",
+  "title": "Literary Devices",
+  "subject": "English",
+  "unit": "Literature",
+  "duration": "20 min",
+  "objectives": ["Identify common literary devices in texts", "Understand the purpose of figurative language", "Analyze how devices enhance meaning"],
+  "sections": [
+    {
+      "type": "explanation",
+      "heading": "What are literary devices?",
+      "content": "Literary devices are techniques that writers use to convey meaning, create effects, and engage readers beyond the literal meaning of words. They are the tools of a writer's craft, used to create vivid imagery, build emotion, and add layers of meaning to a text."
+    },
+    {
+      "type": "explanation",
+      "heading": "Key devices to know",
+      "content": "• Simile: a comparison using 'like' or 'as.' 'Her smile was like sunshine.'\n• Metaphor: a direct comparison without 'like' or 'as.' 'Time is money.'\n• Personification: giving human qualities to non-human things. 'The wind whispered through the trees.'\n• Hyperbole: exaggeration for emphasis. 'I've told you a million times.'\n• Alliteration: repetition of initial consonant sounds. 'Peter Piper picked a peck.'\n• Imagery: descriptive language appealing to the senses. 'The warm, golden bread crackled as she sliced through the crisp crust.'\n• Symbolism: using an object to represent something abstract. A dove symbolizing peace.\n• Irony: a contrast between expectation and reality. A fire station burning down."
+    },
+    {
+      "type": "example",
+      "heading": "Analyzing literary devices",
+      "content": "Consider this passage from Romeo and Juliet:\n'But soft, what light through yonder window breaks? It is the east, and Juliet is the sun.'\n\nShakespeare uses a metaphor — comparing Juliet to the sun. This isn't literal; he means Juliet is radiant, life-giving, and the center of Romeo's world. The metaphor reveals the depth of Romeo's admiration more powerfully than simply saying 'Juliet is beautiful.'\n\nThis is why literary devices matter: they compress complex emotions and ideas into vivid, memorable language."
+    },
+    {
+      "type": "keypoint",
+      "content": "Literary devices are tools writers use to convey meaning beyond the literal. Recognizing them helps you understand deeper layers of any text and makes your own writing more powerful."
+    }
+  ],
+  "aiContext": "This lesson covers literary devices at a high school English level. Students learn to identify simile, metaphor, personification, hyperbole, alliteration, imagery, symbolism, and irony, and analyze how they enhance meaning."
+}

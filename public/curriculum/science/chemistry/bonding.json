@@ -1,0 +1,35 @@
+{
+  "id": "bonding",
+  "title": "Chemical Bonding",
+  "subject": "Science",
+  "unit": "Chemistry",
+  "duration": "20 min",
+  "objectives": ["Explain why atoms form bonds", "Distinguish between ionic and covalent bonds", "Understand electronegativity's role in bonding"],
+  "sections": [
+    {
+      "type": "explanation",
+      "heading": "Why do atoms bond?",
+      "content": "Atoms form chemical bonds to achieve a more stable electron configuration — typically a full outer electron shell. This is known as the octet rule: most atoms are most stable when they have 8 electrons in their outermost shell (or 2 for hydrogen and helium).\n\nNoble gases (helium, neon, argon) already have full outer shells, which is why they rarely react with other elements. Every other atom bonds with others to reach this stable arrangement."
+    },
+    {
+      "type": "explanation",
+      "heading": "Ionic bonds",
+      "content": "Ionic bonds form when one atom transfers electrons to another. This typically happens between a metal (which easily loses electrons) and a nonmetal (which easily gains them).\n\nFor example, sodium (Na) has 1 electron in its outer shell, and chlorine (Cl) needs 1 more to complete its outer shell. Sodium gives its electron to chlorine, creating Na⁺ and Cl⁻ ions. The opposite charges attract, forming sodium chloride (table salt)."
+    },
+    {
+      "type": "explanation",
+      "heading": "Covalent bonds",
+      "content": "Covalent bonds form when two atoms share electrons. This usually happens between two nonmetals. For example, two hydrogen atoms each have 1 electron. By sharing their electrons, both atoms achieve a full outer shell (2 electrons for hydrogen).\n\nWater (H₂O) is a classic covalent compound: oxygen shares electrons with two hydrogen atoms. The shared electrons spend more time near the oxygen (because oxygen is more electronegative), making water a polar molecule."
+    },
+    {
+      "type": "example",
+      "heading": "Ionic vs. covalent comparison",
+      "content": "Sodium chloride (NaCl) — ionic bond:\n• Electron transfer from Na to Cl\n• Forms a crystal lattice structure\n• High melting point, conducts electricity when dissolved\n\nWater (H₂O) — covalent bond:\n• Electrons shared between O and H\n• Forms discrete molecules\n• Lower melting point, does not conduct electricity as pure liquid"
+    },
+    {
+      "type": "keypoint",
+      "content": "Atoms bond to achieve stable electron configurations. Ionic bonds involve electron transfer (metal + nonmetal). Covalent bonds involve electron sharing (nonmetal + nonmetal). The type of bond determines a substance's physical properties."
+    }
+  ],
+  "aiContext": "This lesson covers chemical bonding at a high school chemistry level. Students learn about the octet rule, ionic bonds (electron transfer), covalent bonds (electron sharing), and how bond type affects properties."
+}

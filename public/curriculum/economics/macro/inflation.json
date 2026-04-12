@@ -1,0 +1,30 @@
+{
+  "id": "inflation",
+  "title": "Inflation & Monetary Policy",
+  "subject": "Economics",
+  "unit": "Macroeconomics",
+  "duration": "20 min",
+  "objectives": ["Define inflation and how it's measured", "Understand causes of inflation", "Explain how central banks use monetary policy"],
+  "sections": [
+    {
+      "type": "explanation",
+      "heading": "What is inflation?",
+      "content": "Inflation is a sustained increase in the general price level of goods and services over time. When inflation occurs, each unit of currency buys fewer goods — your purchasing power decreases.\n\nInflation is measured by tracking price changes in a 'basket' of common goods and services. The most common measure in the US is the Consumer Price Index (CPI). If the CPI rises by 3% in a year, that means the average price level increased by 3%.\n\nModerate inflation (2-3% per year) is considered normal and healthy. High inflation erodes savings and creates uncertainty."
+    },
+    {
+      "type": "explanation",
+      "heading": "Causes of inflation",
+      "content": "There are two main causes:\n\n1. Demand-pull inflation: Too much money chasing too few goods. When consumers and businesses spend more than the economy can produce, prices rise. This often happens during economic booms.\n\n2. Cost-push inflation: Rising production costs force businesses to raise prices. This can be caused by increases in wages, raw material prices (like oil), or supply chain disruptions.\n\nA third factor is expectations: if people expect prices to rise, they may demand higher wages, which raises costs, which raises prices — a self-fulfilling cycle."
+    },
+    {
+      "type": "example",
+      "heading": "How the Federal Reserve responds",
+      "content": "The Federal Reserve (the US central bank) controls inflation primarily through interest rates.\n\nTo fight high inflation:\n• The Fed raises interest rates → borrowing becomes more expensive → consumers and businesses spend less → demand decreases → prices stabilize\n\nTo fight a weak economy:\n• The Fed lowers interest rates → borrowing becomes cheaper → consumers and businesses spend more → demand increases → economic activity rises\n\nThis balancing act is the core of monetary policy. The Fed targets roughly 2% annual inflation as the sweet spot between growth and stability."
+    },
+    {
+      "type": "keypoint",
+      "content": "Inflation reduces purchasing power and is caused by excessive demand or rising costs. Central banks use interest rates as their primary tool to keep inflation near the target rate of about 2%."
+    }
+  ],
+  "aiContext": "This lesson covers inflation and monetary policy at a high school macroeconomics level. Students learn about CPI, demand-pull and cost-push inflation, and how the Federal Reserve uses interest rates to manage the economy."
+}

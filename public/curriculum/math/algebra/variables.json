@@ -1,0 +1,35 @@
+{
+  "id": "variables",
+  "title": "Variables & Expressions",
+  "subject": "Mathematics",
+  "unit": "Algebra",
+  "duration": "15 min",
+  "objectives": ["Understand what a variable represents", "Write and evaluate basic algebraic expressions", "Translate word problems into expressions"],
+  "sections": [
+    {
+      "type": "explanation",
+      "heading": "What is a variable?",
+      "content": "A variable is a symbol — usually a letter like x, y, or n — that stands in for an unknown or changing value. Think of it as a blank space in a sentence: 'I ate ___ apples.' The blank could be any number. In algebra, we write that as 'I ate x apples,' where x can represent 2, 5, or 100.\n\nVariables let us describe general patterns and relationships without needing to know the specific numbers yet. This is one of the most powerful ideas in all of mathematics: we can reason about quantities even when we don't know exactly what they are."
+    },
+    {
+      "type": "example",
+      "heading": "Evaluating an expression",
+      "content": "Consider the expression 2x + 3.\n\nIf x = 5:\n  2(5) + 3 = 10 + 3 = 13\n\nIf x = 0:\n  2(0) + 3 = 0 + 3 = 3\n\nIf x = -2:\n  2(-2) + 3 = -4 + 3 = -1\n\nNotice how the same expression gives different results depending on the value of x. The expression is like a machine: you feed in a value, and it produces an output."
+    },
+    {
+      "type": "explanation",
+      "heading": "Terms, coefficients, and constants",
+      "content": "In the expression 3x + 7, there are two terms: 3x and 7. The number 3 is called the coefficient — it tells you how many x's you have. The number 7 is called a constant because its value never changes, regardless of what x is.\n\nTerms that contain the same variable (like 2x and 5x) are called like terms, and they can be combined: 2x + 5x = 7x. But 2x and 3y are unlike terms because they involve different variables."
+    },
+    {
+      "type": "example",
+      "heading": "Translating words into algebra",
+      "content": "Word problems often hide algebraic expressions in plain English. Here are some translations:\n\n• 'Five more than a number' → x + 5\n• 'Three times a number' → 3x\n• 'A number decreased by 4' → x - 4\n• 'Twice a number plus 7' → 2x + 7\n• 'The product of a number and itself' → x²\n\nThe key skill is identifying which operation each phrase implies: 'more than' means addition, 'times' means multiplication, 'decreased by' means subtraction."
+    },
+    {
+      "type": "keypoint",
+      "content": "Variables let us write general rules that work for any number. An algebraic expression is a combination of variables, numbers, and operations that represents a value."
+    }
+  ],
+  "aiContext": "This lesson covers variables and algebraic expressions at a high school intro level. The student is learning for the first time what variables are, how to evaluate expressions by substitution, and how to translate English phrases into algebra."
+}

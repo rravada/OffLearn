@@ -1,0 +1,25 @@
+{
+  "id": "parts-of-speech",
+  "title": "Parts of Speech",
+  "subject": "English",
+  "unit": "Grammar",
+  "duration": "15 min",
+  "objectives": ["Identify the eight parts of speech", "Understand the function of each in a sentence", "Correctly classify words in context"],
+  "sections": [
+    {
+      "type": "explanation",
+      "heading": "The eight parts of speech",
+      "content": "Every word in English belongs to at least one of eight categories called parts of speech. Understanding them is essential for writing clearly and fixing grammatical errors.\n\n1. Noun: a person, place, thing, or idea (dog, Paris, freedom)\n2. Pronoun: replaces a noun (he, she, it, they, who)\n3. Verb: an action or state of being (run, think, is)\n4. Adjective: describes a noun (tall, blue, three)\n5. Adverb: describes a verb, adjective, or another adverb (quickly, very, often)\n6. Preposition: shows relationships between words (in, on, between, during)\n7. Conjunction: connects words or groups of words (and, but, because)\n8. Interjection: expresses emotion (wow, ouch, hey)"
+    },
+    {
+      "type": "example",
+      "heading": "Identifying parts of speech in a sentence",
+      "content": "Consider: 'The clever student quickly solved the difficult problem.'\n\n• The — article (a type of adjective)\n• clever — adjective (describes 'student')\n• student — noun (person)\n• quickly — adverb (describes how the student solved)\n• solved — verb (action)\n• the — article\n• difficult — adjective (describes 'problem')\n• problem — noun (thing)\n\nNotice that a word's part of speech depends on how it's used. 'Run' is a verb in 'I run daily' but a noun in 'I went for a run.'"
+    },
+    {
+      "type": "keypoint",
+      "content": "The eight parts of speech are the building blocks of English grammar. A word's category depends on its function in the sentence, not just the word itself."
+    }
+  ],
+  "aiContext": "This lesson covers the eight parts of speech at a high school English level. Students learn to identify nouns, pronouns, verbs, adjectives, adverbs, prepositions, conjunctions, and interjections."
+}

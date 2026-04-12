@@ -1,0 +1,30 @@
+{
+  "id": "theme-analysis",
+  "title": "Analyzing Themes",
+  "subject": "English",
+  "unit": "Literature",
+  "duration": "20 min",
+  "objectives": ["Define theme and distinguish it from topic", "Identify themes in literary works", "Support thematic analysis with textual evidence"],
+  "sections": [
+    {
+      "type": "explanation",
+      "heading": "Theme vs. topic",
+      "content": "A topic is what a story is about in one or two words: love, war, growing up. A theme is the message or insight about that topic that the author communicates through the work.\n\nFor example, the topic of Romeo and Juliet is love. But the theme might be: 'Unchecked passion combined with family hatred leads to destruction.' The theme is a complete idea — a statement about human experience."
+    },
+    {
+      "type": "explanation",
+      "heading": "How to identify themes",
+      "content": "Themes rarely appear as direct statements. Instead, look for:\n\n1. Repeated patterns: What ideas, images, or conflicts recur throughout the work?\n2. Character development: How do characters change, and what drives that change?\n3. Conflict resolution: How is the central conflict resolved, and what does that resolution suggest?\n4. Title significance: Often the title hints at a central theme.\n5. Symbols: What do recurring objects or images represent?\n\nA single work can contain multiple themes. The most important one is called the central or dominant theme."
+    },
+    {
+      "type": "example",
+      "heading": "Thematic analysis in practice",
+      "content": "In To Kill a Mockingbird by Harper Lee:\n\nTopic: Racial injustice in the American South\n\nTheme: 'True moral courage means standing up for what is right even when society pressures you to conform.'\n\nEvidence: Atticus Finch defends Tom Robinson despite social ostracism. Scout learns to see people as individuals rather than stereotypes. Boo Radley, initially feared, turns out to be gentle and protective.\n\nEach of these elements reinforces the theme that moral courage and empathy triumph over prejudice."
+    },
+    {
+      "type": "keypoint",
+      "content": "A theme is a message about life that emerges from the text, not a single word. Always support your thematic claims with specific evidence from the work."
+    }
+  ],
+  "aiContext": "This lesson covers thematic analysis at a high school English level. Students learn to distinguish theme from topic, identify themes through patterns and evidence, and articulate thematic statements with textual support."
+}

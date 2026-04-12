@@ -1,0 +1,40 @@
+{
+  "id": "angles",
+  "title": "Angles & Triangles",
+  "subject": "Mathematics",
+  "unit": "Geometry",
+  "duration": "20 min",
+  "objectives": ["Classify angles by their measure", "Understand the triangle angle sum property", "Identify types of triangles"],
+  "sections": [
+    {
+      "type": "explanation",
+      "heading": "What is an angle?",
+      "content": "An angle is formed when two rays share a common endpoint called the vertex. We measure angles in degrees (°). A full rotation is 360°, a straight line is 180°, and a right angle is 90°.\n\nAngles are classified by their size:\n• Acute angle: less than 90°\n• Right angle: exactly 90°\n• Obtuse angle: between 90° and 180°\n• Straight angle: exactly 180°"
+    },
+    {
+      "type": "explanation",
+      "heading": "Complementary and supplementary angles",
+      "content": "Two angles are complementary if they add up to 90°. For example, 30° and 60° are complementary because 30 + 60 = 90.\n\nTwo angles are supplementary if they add up to 180°. For example, 110° and 70° are supplementary because 110 + 70 = 180.\n\nThese relationships appear constantly in geometry problems and are essential tools for finding unknown angles."
+    },
+    {
+      "type": "example",
+      "heading": "Finding a missing angle",
+      "content": "If two angles are supplementary and one measures 135°, find the other.\n\nSince supplementary angles sum to 180°:\n  135 + x = 180\n  x = 180 - 135\n  x = 45°\n\nThe missing angle is 45°."
+    },
+    {
+      "type": "explanation",
+      "heading": "The triangle angle sum",
+      "content": "One of the most important facts in geometry: the three interior angles of any triangle always add up to exactly 180°. This is true for every triangle — small, large, flat, tall, equilateral, or scalene.\n\nTriangles are classified by their angles:\n• Acute triangle: all angles less than 90°\n• Right triangle: one angle is exactly 90°\n• Obtuse triangle: one angle is greater than 90°\n\nAnd by their sides:\n• Equilateral: all three sides equal (all angles are 60°)\n• Isosceles: two sides equal (two angles are equal)\n• Scalene: no sides equal (no angles are equal)"
+    },
+    {
+      "type": "example",
+      "heading": "Finding a missing angle in a triangle",
+      "content": "A triangle has angles measuring 50° and 75°. Find the third angle.\n\nUsing the angle sum property:\n  50 + 75 + x = 180\n  125 + x = 180\n  x = 55°\n\nSince all angles are less than 90°, this is an acute triangle."
+    },
+    {
+      "type": "keypoint",
+      "content": "The interior angles of any triangle always sum to 180°. This single fact is the foundation for solving countless geometry problems."
+    }
+  ],
+  "aiContext": "This lesson covers angles and triangles at a high school geometry level. Students learn angle classification, complementary/supplementary angles, the triangle angle sum theorem, and triangle classification."
+}

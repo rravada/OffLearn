@@ -1,0 +1,30 @@
+{
+  "id": "area",
+  "title": "Area & Perimeter",
+  "subject": "Mathematics",
+  "unit": "Geometry",
+  "duration": "15 min",
+  "objectives": ["Calculate the perimeter of common shapes", "Calculate the area of rectangles, triangles, and circles", "Apply area formulas to real-world problems"],
+  "sections": [
+    {
+      "type": "explanation",
+      "heading": "Perimeter: the distance around",
+      "content": "Perimeter is the total distance around the outside of a shape. To find the perimeter, add up the lengths of all the sides.\n\nFor a rectangle with length l and width w:\n  Perimeter = 2l + 2w\n\nFor a square with side length s:\n  Perimeter = 4s\n\nFor a circle, the perimeter is called the circumference:\n  Circumference = 2πr (where r is the radius)"
+    },
+    {
+      "type": "explanation",
+      "heading": "Area: the space inside",
+      "content": "Area measures the amount of surface a shape covers, expressed in square units (cm², m², etc.).\n\nKey area formulas:\n• Rectangle: A = length × width\n• Square: A = side²\n• Triangle: A = ½ × base × height\n• Circle: A = πr²\n\nThe triangle formula makes intuitive sense: a triangle is exactly half of a rectangle with the same base and height."
+    },
+    {
+      "type": "example",
+      "heading": "Calculating area step by step",
+      "content": "Find the area of a triangle with base 10 cm and height 6 cm.\n\n  A = ½ × base × height\n  A = ½ × 10 × 6\n  A = ½ × 60\n  A = 30 cm²\n\nFind the area of a circle with radius 5 m.\n\n  A = πr²\n  A = π × 5²\n  A = π × 25\n  A ≈ 78.54 m²"
+    },
+    {
+      "type": "keypoint",
+      "content": "Perimeter measures the distance around a shape (in linear units), while area measures the space inside (in square units). Memorize the key formulas: rectangle = l × w, triangle = ½bh, circle = πr²."
+    }
+  ],
+  "aiContext": "This lesson covers area and perimeter at a high school level. Students learn the difference between perimeter and area, key formulas for rectangles, triangles, and circles, and how to apply them."
+}

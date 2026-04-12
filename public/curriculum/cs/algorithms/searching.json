@@ -1,0 +1,30 @@
+{
+  "id": "searching",
+  "title": "Searching Algorithms",
+  "subject": "Computer Science",
+  "unit": "Algorithms",
+  "duration": "20 min",
+  "objectives": ["Implement linear search", "Implement binary search", "Compare their efficiency"],
+  "sections": [
+    {
+      "type": "explanation",
+      "heading": "Linear search",
+      "content": "Linear search is the simplest searching algorithm: check each element one by one until you find the target or reach the end of the list.\n\nIt works on any list (sorted or unsorted) and is easy to understand, but it can be slow for large lists. In the worst case, you might have to check every single element.\n\nTime complexity: O(n) — if the list has n elements, you might need up to n comparisons."
+    },
+    {
+      "type": "explanation",
+      "heading": "Binary search",
+      "content": "Binary search is dramatically faster, but it only works on sorted lists. The idea: look at the middle element. If it is your target, you are done. If your target is smaller, search the left half. If larger, search the right half. Repeat.\n\nEach step eliminates half the remaining elements. For a list of 1,000,000 elements, binary search needs at most 20 comparisons (because 2²⁰ ≈ 1,000,000). Linear search might need all 1,000,000.\n\nTime complexity: O(log n)"
+    },
+    {
+      "type": "example",
+      "heading": "Binary search walkthrough",
+      "content": "Search for 23 in [2, 5, 8, 12, 16, 23, 38, 56, 72, 91]\n\nStep 1: Middle element = 16 (index 4). 23 > 16 → search right half [23, 38, 56, 72, 91]\nStep 2: Middle element = 56 (index 7). 23 < 56 → search left half [23, 38]\nStep 3: Middle element = 23 (index 5). 23 = 23 → Found it!\n\nOnly 3 comparisons for a list of 10 elements. Linear search would have needed 6."
+    },
+    {
+      "type": "keypoint",
+      "content": "Linear search checks every element (O(n)) and works on any list. Binary search halves the search space each step (O(log n)) but requires a sorted list. For large datasets, binary search is vastly superior."
+    }
+  ],
+  "aiContext": "This lesson covers linear search and binary search at a high school computer science level. Students learn how each algorithm works, trace through examples, and compare their time complexities."
+}

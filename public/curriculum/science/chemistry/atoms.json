@@ -1,0 +1,30 @@
+{
+  "id": "atoms",
+  "title": "Atomic Structure",
+  "subject": "Science",
+  "unit": "Chemistry",
+  "duration": "20 min",
+  "objectives": ["Describe the structure of an atom", "Define atomic number and mass number", "Understand isotopes and ions"],
+  "sections": [
+    {
+      "type": "explanation",
+      "heading": "Inside an atom",
+      "content": "An atom is the smallest unit of an element that retains the properties of that element. Every atom consists of three types of subatomic particles:\n\n• Protons: positively charged (+1), located in the nucleus\n• Neutrons: no charge (0), also in the nucleus\n• Electrons: negatively charged (-1), orbiting the nucleus in electron shells\n\nThe nucleus (protons + neutrons) is incredibly tiny compared to the atom as a whole — if an atom were the size of a football stadium, the nucleus would be a marble on the 50-yard line."
+    },
+    {
+      "type": "explanation",
+      "heading": "Atomic number and mass number",
+      "content": "The atomic number is the number of protons in an atom's nucleus. This number defines the element: every atom with 6 protons is carbon, every atom with 8 protons is oxygen.\n\nThe mass number is the total number of protons plus neutrons. Electrons are so light they barely contribute to the mass.\n\nFor example, carbon-12 has 6 protons and 6 neutrons (mass number = 12). Carbon-14 has 6 protons and 8 neutrons (mass number = 14). Both are carbon because they both have 6 protons."
+    },
+    {
+      "type": "example",
+      "heading": "Calculating subatomic particles",
+      "content": "Oxygen has atomic number 8 and mass number 16.\n\n• Protons = atomic number = 8\n• Neutrons = mass number - atomic number = 16 - 8 = 8\n• Electrons = protons (in a neutral atom) = 8\n\nIf oxygen gains 2 electrons, it becomes an ion with charge -2 (written O²⁻), having 8 protons but 10 electrons."
+    },
+    {
+      "type": "keypoint",
+      "content": "Atoms consist of protons, neutrons, and electrons. The atomic number (protons) defines the element. Isotopes have the same number of protons but different numbers of neutrons. Ions form when atoms gain or lose electrons."
+    }
+  ],
+  "aiContext": "This lesson covers atomic structure at a high school chemistry level. Students learn about protons, neutrons, electrons, atomic number, mass number, isotopes, and ions."
+}

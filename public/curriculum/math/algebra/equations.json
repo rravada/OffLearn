@@ -1,0 +1,35 @@
+{
+  "id": "equations",
+  "title": "Solving Equations",
+  "subject": "Mathematics",
+  "unit": "Algebra",
+  "duration": "20 min",
+  "objectives": ["Understand what an equation is", "Solve one-step and two-step linear equations", "Check solutions by substitution"],
+  "sections": [
+    {
+      "type": "explanation",
+      "heading": "What is an equation?",
+      "content": "An equation is a mathematical statement that two expressions are equal. It always contains an equals sign (=). For example, 2x + 3 = 11 says that 'two times some number, plus three, equals eleven.'\n\nSolving an equation means finding the value of the variable that makes the statement true. In this case, we need to find the value of x that makes the left side equal to 11."
+    },
+    {
+      "type": "explanation",
+      "heading": "The balance principle",
+      "content": "Think of an equation as a balanced scale. The left side and right side weigh the same. To keep it balanced, anything you do to one side, you must also do to the other.\n\nThis is the golden rule of equation solving: whatever operation you perform on one side of the equals sign, you must perform the exact same operation on the other side."
+    },
+    {
+      "type": "example",
+      "heading": "Solving a one-step equation",
+      "content": "Solve: x + 7 = 15\n\nWe need to isolate x (get it alone on one side). Since 7 is being added to x, we subtract 7 from both sides:\n\n  x + 7 - 7 = 15 - 7\n  x = 8\n\nCheck: 8 + 7 = 15 ✓"
+    },
+    {
+      "type": "example",
+      "heading": "Solving a two-step equation",
+      "content": "Solve: 3x + 5 = 20\n\nStep 1 — Remove the constant by subtracting 5 from both sides:\n  3x + 5 - 5 = 20 - 5\n  3x = 15\n\nStep 2 — Remove the coefficient by dividing both sides by 3:\n  3x ÷ 3 = 15 ÷ 3\n  x = 5\n\nCheck: 3(5) + 5 = 15 + 5 = 20 ✓\n\nThe general strategy is: undo addition/subtraction first, then undo multiplication/division."
+    },
+    {
+      "type": "keypoint",
+      "content": "To solve an equation, perform inverse operations on both sides to isolate the variable. Always check your answer by substituting it back into the original equation."
+    }
+  ],
+  "aiContext": "This lesson covers solving linear equations at a high school intro level. Students learn the balance principle, one-step equations, and two-step equations. They should understand inverse operations."
+}

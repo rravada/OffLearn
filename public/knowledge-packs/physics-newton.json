@@ -1,0 +1,47 @@
+{
+  "id": "physics-newton",
+  "title": "Newton's Laws of Motion",
+  "subject": "Physics",
+  "chunks": [
+    {
+      "id": "n1",
+      "text": "Newton's laws of motion are three fundamental principles that describe the relationship between the motion of an object and the forces acting upon it. First published by Sir Isaac Newton in his work 'Philosophiæ Naturalis Principia Mathematica' (Mathematical Principles of Natural Philosophy) in 1687, these laws form the foundation of classical mechanics and remain remarkably accurate for everyday objects moving at speeds much less than the speed of light."
+    },
+    {
+      "id": "n2",
+      "text": "Newton's First Law, also known as the Law of Inertia, states: an object at rest stays at rest, and an object in motion stays in motion with the same speed and in the same direction, unless acted upon by an unbalanced external force. Inertia is the property of matter that resists changes in motion. Mass is the quantitative measure of inertia — the greater the mass of an object, the greater its resistance to changes in velocity."
+    },
+    {
+      "id": "n3",
+      "text": "Common examples of Newton's First Law include a book resting on a table remaining stationary until pushed, passengers lurching forward when a car brakes suddenly, and a hockey puck sliding across ice continuing in a straight line until friction or a wall stops it. The first law also explains why seatbelts are essential: without them, your body would continue moving forward at the car's original speed during a collision."
+    },
+    {
+      "id": "n4",
+      "text": "Newton's Second Law states that the acceleration of an object is directly proportional to the net force acting on it and inversely proportional to its mass: F = ma, where F is the net force (in Newtons), m is mass (in kilograms), and a is acceleration (in meters per second squared). This law quantifies the relationship between force and motion. A force of 1 Newton is defined as the force needed to accelerate a 1 kg mass at 1 m/s²."
+    },
+    {
+      "id": "n5",
+      "text": "The Second Law can also be expressed in terms of momentum: F = dp/dt, where p = mv is the linear momentum. This form is more general because it accounts for cases where mass changes, such as a rocket expelling fuel. The impulse-momentum theorem, derived from this law, states that the impulse (force multiplied by time) equals the change in momentum. This principle explains why airbags reduce injuries — they increase the time over which the stopping force is applied."
+    },
+    {
+      "id": "n6",
+      "text": "Newton's Third Law states: for every action, there is an equal and opposite reaction. When object A exerts a force on object B, object B simultaneously exerts a force equal in magnitude but opposite in direction on object A. These are called action-reaction pairs or Newton's third law pairs. Importantly, action and reaction forces act on different objects, so they cannot cancel each other out."
+    },
+    {
+      "id": "n7",
+      "text": "Examples of Newton's Third Law are everywhere: when you walk, your foot pushes backward on the ground and the ground pushes your foot forward; a rocket propels itself by expelling exhaust gases downward while the gases push the rocket upward; when you sit in a chair, your weight pushes down on the chair and the chair pushes up on you with an equal normal force. Swimming works because your hands push water backward and the water pushes you forward."
+    },
+    {
+      "id": "n8",
+      "text": "Free body diagrams are essential tools for applying Newton's laws. They isolate a single object and represent all the forces acting on it as vectors. Common forces include gravity (weight, W = mg, directed downward), the normal force (perpendicular to the contact surface), friction (opposing relative motion along the surface), tension (along a rope or string), and applied forces. By summing all force vectors, you find the net force and can apply F = ma."
+    },
+    {
+      "id": "n9",
+      "text": "Newton's laws have important limitations. They break down at very high speeds approaching the speed of light, where Einstein's special relativity must be used instead. They also fail at atomic and subatomic scales, where quantum mechanics governs behavior. Additionally, Newton's laws are formulated for inertial reference frames — frames that are not accelerating. In non-inertial frames, fictitious forces like the Coriolis effect and centrifugal force must be introduced."
+    },
+    {
+      "id": "n10",
+      "text": "Applications of Newton's laws span nearly all of engineering and physics. Structural engineers use them to calculate loads on buildings and bridges. Aerospace engineers apply them to design aircraft and spacecraft trajectories. Automotive engineers use them for crash safety analysis. Even in biology, Newton's laws help explain biomechanics — how muscles, bones, and joints produce movement. The universality of these laws makes them one of the most important achievements in the history of science."
+    }
+  ]
+}

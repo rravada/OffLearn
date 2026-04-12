@@ -1,0 +1,25 @@
+{
+  "id": "market-structures",
+  "title": "Market Structures",
+  "subject": "Economics",
+  "unit": "Microeconomics",
+  "duration": "20 min",
+  "objectives": ["Identify the four main market structures", "Compare key characteristics of each", "Understand real-world examples"],
+  "sections": [
+    {
+      "type": "explanation",
+      "heading": "The four market structures",
+      "content": "Economists classify markets into four structures based on the number of firms, the type of product, and barriers to entry:\n\n1. Perfect competition: Many small firms sell identical products. No single firm can influence the price. Examples: agricultural commodities (wheat, corn).\n\n2. Monopolistic competition: Many firms sell similar but differentiated products. Each firm has a small degree of pricing power. Examples: restaurants, clothing brands.\n\n3. Oligopoly: A few large firms dominate the market. Their decisions are interdependent. Examples: airlines, smartphone manufacturers, car companies.\n\n4. Monopoly: A single firm is the sole seller. It has significant pricing power. Examples: local utility companies, patented drugs."
+    },
+    {
+      "type": "example",
+      "heading": "Comparing market structures",
+      "content": "Feature comparison:\n\n• Number of firms: Perfect competition (many) → Monopoly (one)\n• Product type: Identical → Differentiated → Differentiated → Unique\n• Price control: None → Some → Considerable → Significant\n• Barriers to entry: None → Low → High → Very high\n• Examples: Corn farmers → Coffee shops → Boeing/Airbus → Your local water company\n\nAs we move from perfect competition toward monopoly, firms gain more market power and consumers have fewer choices."
+    },
+    {
+      "type": "keypoint",
+      "content": "Market structure determines how much power firms have over prices. Perfect competition gives firms zero pricing power; monopolies have the most. Most real-world markets fall somewhere between these extremes."
+    }
+  ],
+  "aiContext": "This lesson covers market structures at a high school microeconomics level. Students learn about perfect competition, monopolistic competition, oligopoly, and monopoly, comparing their characteristics and real-world examples."
+}

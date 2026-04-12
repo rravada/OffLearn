@@ -1,0 +1,30 @@
+{
+  "id": "genetics",
+  "title": "Introduction to Genetics",
+  "subject": "Science",
+  "unit": "Biology",
+  "duration": "25 min",
+  "objectives": ["Understand DNA and genes", "Explain dominant and recessive traits", "Use a Punnett square to predict offspring traits"],
+  "sections": [
+    {
+      "type": "explanation",
+      "heading": "DNA and genes",
+      "content": "DNA (deoxyribonucleic acid) is a long molecule shaped like a twisted ladder — the famous double helix. It carries the genetic instructions for building and maintaining an organism.\n\nA gene is a specific segment of DNA that contains the instructions for one particular trait (like eye color or blood type). Humans have about 20,000-25,000 genes spread across 23 pairs of chromosomes."
+    },
+    {
+      "type": "explanation",
+      "heading": "Alleles: dominant and recessive",
+      "content": "Since you have two copies of each chromosome (one from each parent), you have two versions of each gene. These versions are called alleles.\n\nIf the two alleles are the same, you are homozygous for that trait (BB or bb). If they are different, you are heterozygous (Bb).\n\nA dominant allele (represented by a capital letter, like B) shows its effect even when only one copy is present. A recessive allele (lowercase, like b) only shows its effect when two copies are present (bb)."
+    },
+    {
+      "type": "example",
+      "heading": "Using a Punnett square",
+      "content": "Let's predict the offspring of two heterozygous parents (Bb × Bb), where B = brown eyes (dominant) and b = blue eyes (recessive).\n\n       B     b\n  B | BB  | Bb |\n  b | Bb  | bb |\n\nResults:\n• BB (homozygous dominant) = 25% → brown eyes\n• Bb (heterozygous) = 50% → brown eyes\n• bb (homozygous recessive) = 25% → blue eyes\n\nPhenotype ratio: 75% brown eyes, 25% blue eyes\nGenotype ratio: 1 BB : 2 Bb : 1 bb"
+    },
+    {
+      "type": "keypoint",
+      "content": "Genes are segments of DNA that determine traits. Each person has two alleles for every gene. Dominant alleles mask recessive ones. Punnett squares help predict the probability of offspring inheriting specific traits."
+    }
+  ],
+  "aiContext": "This lesson covers introductory genetics at a high school level. Students learn about DNA structure, genes, alleles, dominant vs. recessive traits, and how to use Punnett squares to predict inheritance patterns."
+}

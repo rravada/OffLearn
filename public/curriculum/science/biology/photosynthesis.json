@@ -1,0 +1,30 @@
+{
+  "id": "photosynthesis",
+  "title": "Photosynthesis",
+  "subject": "Science",
+  "unit": "Biology",
+  "duration": "20 min",
+  "objectives": ["Explain the overall equation for photosynthesis", "Describe where photosynthesis occurs", "Understand the role of light and chlorophyll"],
+  "sections": [
+    {
+      "type": "explanation",
+      "heading": "What is photosynthesis?",
+      "content": "Photosynthesis is the process by which plants, algae, and some bacteria convert light energy into chemical energy stored in glucose. It is arguably the most important chemical reaction on Earth because it produces the oxygen we breathe and the food that sustains nearly all life.\n\nThe overall equation is:\n6CO₂ + 6H₂O + light energy → C₆H₁₂O₆ + 6O₂\n\nIn words: carbon dioxide plus water, powered by sunlight, produces glucose and oxygen."
+    },
+    {
+      "type": "explanation",
+      "heading": "Where does it happen?",
+      "content": "Photosynthesis takes place inside chloroplasts — organelles found in plant cells and algae. Chloroplasts contain a green pigment called chlorophyll, which absorbs light energy (especially red and blue wavelengths) and reflects green light, which is why plants appear green.\n\nInside the chloroplast, there are stacked membrane structures called thylakoids (where light-dependent reactions occur) surrounded by a fluid called the stroma (where the Calvin cycle occurs)."
+    },
+    {
+      "type": "example",
+      "heading": "The two stages",
+      "content": "Photosynthesis occurs in two main stages:\n\n1. Light-dependent reactions (in thylakoids):\n   - Chlorophyll absorbs sunlight\n   - Water molecules are split, releasing oxygen as a byproduct\n   - Energy is stored in ATP and NADPH\n\n2. Calvin cycle (in stroma):\n   - CO₂ from the air is captured\n   - ATP and NADPH from stage 1 power the conversion of CO₂ into glucose\n   - This cycle doesn't need light directly, but depends on products from the light reactions"
+    },
+    {
+      "type": "keypoint",
+      "content": "Photosynthesis converts light energy into chemical energy (glucose), using CO₂ and water, and releasing oxygen. It occurs in chloroplasts and has two stages: light-dependent reactions and the Calvin cycle."
+    }
+  ],
+  "aiContext": "This lesson covers photosynthesis at a high school biology level. Students learn the overall equation, where the process takes place, the role of chlorophyll, and the two main stages of photosynthesis."
+}

@@ -1,0 +1,454 @@
+{
+  "questions": [
+    {
+      "id": "sr001",
+      "test": "SAT",
+      "section": "Reading",
+      "difficulty": "easy",
+      "topic": "Vocabulary in Context",
+      "question": "As used in the passage, 'acute' most nearly means",
+      "passage": "The researcher noted an acute shortage of funding for climate studies in developing nations. Without immediate intervention, she warned, critical data collection efforts would cease entirely within the year.",
+      "options": [
+        "Sharp and severe",
+        "Relating to angles",
+        "High-pitched",
+        "Barely noticeable"
+      ],
+      "correct": 0,
+      "explanation": "'Acute' in this context describes a shortage that is sharp and severe, as indicated by the urgency conveyed through phrases like 'immediate intervention' and the warning that efforts would 'cease entirely.'",
+      "aiHint": "Guide the student to look at surrounding words like 'immediate intervention' and 'cease entirely' to determine the intensity implied by 'acute.'"
+    },
+    {
+      "id": "sr002",
+      "test": "SAT",
+      "section": "Reading",
+      "difficulty": "easy",
+      "topic": "Main Idea",
+      "question": "Which of the following best summarizes the main idea of the passage?",
+      "passage": "Urban green spaces do far more than beautify cities. Studies have consistently shown that access to parks and community gardens reduces stress hormones, lowers blood pressure, and improves overall mental health among residents of all ages.",
+      "options": [
+        "Cities should invest more money in building parks.",
+        "Urban green spaces provide significant health benefits to city residents.",
+        "Stress hormones are the leading cause of poor health in urban areas.",
+        "Community gardens are more beneficial than parks."
+      ],
+      "correct": 1,
+      "explanation": "The passage focuses on the health benefits of urban green spaces, citing reduced stress hormones, lower blood pressure, and improved mental health. Option B captures this central point without overstating or narrowing the claim.",
+      "aiHint": "Ask the student what the passage spends most of its time discussing. Help them distinguish between the main point and supporting details."
+    },
+    {
+      "id": "sr003",
+      "test": "SAT",
+      "section": "Reading",
+      "difficulty": "easy",
+      "topic": "Tone",
+      "question": "The tone of the passage is best described as",
+      "passage": "After decades of neglect, the old library on Maple Street was finally being restored. Volunteers gathered each Saturday, carefully sanding woodwork and replacing broken windows, their laughter echoing through halls that had been silent for years.",
+      "options": [
+        "Melancholy and regretful",
+        "Hopeful and appreciative",
+        "Detached and clinical",
+        "Sarcastic and dismissive"
+      ],
+      "correct": 1,
+      "explanation": "The passage conveys a hopeful and appreciative tone through positive imagery: volunteers gathering, careful restoration work, laughter, and the contrast between past neglect and present renewal.",
+      "aiHint": "Direct the student to identify emotionally charged words and images. 'Laughter,' 'carefully,' and 'finally' all suggest a positive, hopeful attitude."
+    },
+    {
+      "id": "sr004",
+      "test": "SAT",
+      "section": "Reading",
+      "difficulty": "easy",
+      "topic": "Inference",
+      "question": "Based on the passage, it can most reasonably be inferred that",
+      "passage": "Dr. Huang's team published their findings on coral bleaching in a leading marine biology journal. Within weeks, three other research groups announced plans to replicate the study using different reef populations across the Pacific.",
+      "options": [
+        "Dr. Huang's research was considered untrustworthy by peers.",
+        "Coral bleaching only affects reefs in the Pacific Ocean.",
+        "The findings generated significant interest in the scientific community.",
+        "The other research groups intended to disprove Dr. Huang's conclusions."
+      ],
+      "correct": 2,
+      "explanation": "The fact that three research groups quickly moved to replicate the study indicates that the findings generated significant scientific interest. Replication is a standard response to important findings, not necessarily an attempt to disprove them.",
+      "aiHint": "Help the student understand what replication means in science. If other teams want to repeat the study, what does that suggest about how they view the original research?"
+    },
+    {
+      "id": "sr005",
+      "test": "SAT",
+      "section": "Reading",
+      "difficulty": "easy",
+      "topic": "Author's Purpose",
+      "question": "The primary purpose of the passage is to",
+      "passage": "Many people assume that goldfish have a memory span of only three seconds. In reality, researchers have demonstrated that goldfish can remember information for months and can even be trained to navigate mazes and respond to specific signals.",
+      "options": [
+        "Argue that goldfish make better pets than commonly believed",
+        "Correct a widespread misconception about goldfish cognition",
+        "Describe experimental methods used in animal research",
+        "Compare the intelligence of goldfish with other animals"
+      ],
+      "correct": 1,
+      "explanation": "The passage opens by identifying a common assumption ('many people assume') and then directly contradicts it with research evidence. The primary purpose is to correct this misconception.",
+      "aiHint": "Ask the student to notice the structure: the passage starts with a belief people hold, then says 'In reality.' What is the author trying to do with that contrast?"
+    },
+    {
+      "id": "sr006",
+      "test": "SAT",
+      "section": "Reading",
+      "difficulty": "easy",
+      "topic": "Vocabulary in Context",
+      "question": "As used in the passage, 'tempered' most nearly means",
+      "passage": "The governor's enthusiasm for the new infrastructure plan was tempered by concerns over its projected cost. She acknowledged the plan's potential benefits but urged the legislature to explore more affordable alternatives before committing state funds.",
+      "options": [
+        "Heated to a high degree",
+        "Completely eliminated",
+        "Moderated or restrained",
+        "Strengthened and reinforced"
+      ],
+      "correct": 2,
+      "explanation": "'Tempered' here means moderated or restrained. The governor still had enthusiasm but it was held in check by cost concerns—she didn't abandon the plan entirely, nor was her enthusiasm strengthened.",
+      "aiHint": "Have the student substitute each answer choice into the sentence. Which one makes sense given that the governor is enthusiastic but also cautious?"
+    },
+    {
+      "id": "sr007",
+      "test": "SAT",
+      "section": "Reading",
+      "difficulty": "easy",
+      "topic": "Evidence-Based Reasoning",
+      "question": "Which choice provides the best evidence for the claim that sleep deprivation affects cognitive performance?",
+      "passage": "",
+      "options": [
+        "Most adults report sleeping fewer than eight hours per night during the workweek.",
+        "Participants who slept fewer than five hours performed 40% worse on memory recall tasks compared to those who slept eight hours.",
+        "Sleep researchers have been studying circadian rhythms since the 1960s.",
+        "Many employers now offer flexible scheduling to promote work-life balance."
+      ],
+      "correct": 1,
+      "explanation": "Option B provides direct, quantifiable evidence linking sleep deprivation (fewer than five hours) to reduced cognitive performance (40% worse on memory tasks). The other options discuss related topics but do not directly support the specific claim.",
+      "aiHint": "Ask the student which option contains both a cause (sleep deprivation) and a measurable effect (cognitive performance decline). That's the strongest evidence."
+    },
+    {
+      "id": "sr008",
+      "test": "SAT",
+      "section": "Reading",
+      "difficulty": "easy",
+      "topic": "Text Structure",
+      "question": "The passage is primarily organized by",
+      "passage": "First, the beans are harvested by hand from the coffee plant. Next, they are dried in the sun for several weeks. After drying, the beans are roasted at precise temperatures to develop their characteristic flavor. Finally, the roasted beans are ground and packaged for distribution.",
+      "options": [
+        "Comparing two opposing viewpoints",
+        "Presenting a sequence of steps in a process",
+        "Providing a problem followed by a solution",
+        "Describing a general principle and giving exceptions"
+      ],
+      "correct": 1,
+      "explanation": "The passage uses sequential transition words ('First,' 'Next,' 'After,' 'Finally') to describe the step-by-step process of coffee production, making it a chronological/process organization.",
+      "aiHint": "Point out the transition words in the passage. What kind of organizational pattern do words like 'first,' 'next,' and 'finally' signal?"
+    },
+    {
+      "id": "sr009",
+      "test": "SAT",
+      "section": "Reading",
+      "difficulty": "medium",
+      "topic": "Vocabulary in Context",
+      "question": "As used in the passage, 'dissolution' most nearly means",
+      "passage": "The historian characterized the dissolution of the empire not as a sudden collapse but as a gradual erosion of centralized authority. Provincial governors assumed increasing autonomy as communication networks deteriorated over several decades.",
+      "options": [
+        "A chemical process of breaking down",
+        "The formal ending of a partnership or assembly",
+        "The gradual disintegration and decline of a system",
+        "A feeling of moral corruption"
+      ],
+      "correct": 2,
+      "explanation": "In this historical context, 'dissolution' refers to the gradual disintegration and decline of the empire as a political system, as reinforced by 'gradual erosion' and the description of decentralizing authority over decades.",
+      "aiHint": "Ask the student to look at how the passage defines the dissolution through description—'gradual erosion,' 'deteriorated over several decades.' Which answer matches that characterization?"
+    },
+    {
+      "id": "sr010",
+      "test": "SAT",
+      "section": "Reading",
+      "difficulty": "medium",
+      "topic": "Inference",
+      "question": "It can most reasonably be inferred from the passage that the author believes",
+      "passage": "While standardized testing provides a convenient metric for comparing student performance across districts, it captures only a narrow slice of what students know and can do. A student who struggles with timed multiple-choice exams may excel at collaborative problem-solving, creative writing, or laboratory investigation.",
+      "options": [
+        "Standardized testing should be immediately abolished in all districts.",
+        "Student ability is more multifaceted than standardized tests can measure.",
+        "Collaborative problem-solving is the most important academic skill.",
+        "Timed exams are the fairest way to assess student knowledge."
+      ],
+      "correct": 1,
+      "explanation": "The author acknowledges that standardized tests capture only 'a narrow slice' and provides examples of abilities they miss. This implies the author believes student ability is broader and more complex than such tests can measure, without calling for total abolition.",
+      "aiHint": "Help the student notice the phrase 'narrow slice.' If the test captures only a narrow slice, what must the author think about the full picture of student ability?"
+    },
+    {
+      "id": "sr011",
+      "test": "SAT",
+      "section": "Reading",
+      "difficulty": "medium",
+      "topic": "Author's Purpose",
+      "question": "The author includes the example of the Japanese railway system primarily to",
+      "passage": "Efficiency in public transit is not merely about speed—it encompasses reliability, safety, and passenger experience. The Japanese railway system, renowned for its average delay of less than one minute per train per year, demonstrates that meticulous scheduling and maintenance protocols can produce extraordinary results.",
+      "options": [
+        "Argue that Japan is superior to other countries in all transportation sectors",
+        "Illustrate how comprehensive efficiency standards can yield remarkable outcomes",
+        "Suggest that all countries should adopt Japan's exact railway model",
+        "Criticize countries that have not invested sufficiently in rail infrastructure"
+      ],
+      "correct": 1,
+      "explanation": "The Japanese railway example serves to illustrate the author's broader point about efficiency. The extraordinary delay statistics demonstrate what 'meticulous scheduling and maintenance protocols' can achieve, supporting the claim that efficiency involves more than speed.",
+      "aiHint": "Ask the student to identify the general claim the author makes before the example. How does the Japanese railway example connect to that claim?"
+    },
+    {
+      "id": "sr012",
+      "test": "SAT",
+      "section": "Reading",
+      "difficulty": "medium",
+      "topic": "Main Idea",
+      "question": "Which statement best expresses the central claim of the passage?",
+      "passage": "The notion that artistic talent is purely innate has been challenged by decades of research in cognitive psychology. Studies of expert musicians, painters, and writers consistently reveal that deliberate, structured practice—not genetic predisposition alone—is the primary driver of exceptional performance.",
+      "options": [
+        "Genetics play no role whatsoever in artistic ability.",
+        "Deliberate practice is more important than innate talent in achieving artistic expertise.",
+        "Cognitive psychology has failed to explain the origins of creativity.",
+        "Expert musicians practice more hours per day than painters or writers."
+      ],
+      "correct": 1,
+      "explanation": "The passage argues that research challenges the idea of purely innate talent and identifies deliberate practice as the 'primary driver.' It does not claim genetics play no role at all—only that practice matters more.",
+      "aiHint": "Guide the student to notice the word 'primary.' The author isn't saying genetics don't matter at all—just that practice is the bigger factor. Which answer reflects that nuance?"
+    },
+    {
+      "id": "sr013",
+      "test": "SAT",
+      "section": "Reading",
+      "difficulty": "medium",
+      "topic": "Tone",
+      "question": "The author's attitude toward the proposed policy can best be described as",
+      "passage": "The proposed emissions cap represents a step in the right direction, though its targets fall well short of what climate scientists have recommended. If legislators are serious about meaningful change, they will need to supplement this measure with far more aggressive timelines and enforceable penalties.",
+      "options": [
+        "Enthusiastically supportive",
+        "Cautiously critical",
+        "Completely indifferent",
+        "Bitterly hostile"
+      ],
+      "correct": 1,
+      "explanation": "The author acknowledges the policy as 'a step in the right direction' (showing some approval) but criticizes it as falling 'well short' and calls for more aggressive measures. This combination reflects cautious criticism—approval mixed with clear reservations.",
+      "aiHint": "Have the student identify phrases that show both agreement and disagreement. 'Step in the right direction' versus 'well short'—what kind of tone balances both?"
+    },
+    {
+      "id": "sr014",
+      "test": "SAT",
+      "section": "Reading",
+      "difficulty": "medium",
+      "topic": "Evidence-Based Reasoning",
+      "question": "Which of the following, if true, would most weaken the author's argument?",
+      "passage": "Proponents of remote work argue that employees are more productive when freed from the distractions of a traditional office. They cite studies showing that remote workers complete tasks faster and report higher job satisfaction than their in-office counterparts.",
+      "options": [
+        "Some companies have invested heavily in redesigning their office spaces.",
+        "A comprehensive meta-analysis found that remote workers show no productivity gain once collaborative tasks are included in the measurement.",
+        "The technology required for remote work has become significantly cheaper in recent years.",
+        "Many employees prefer a hybrid schedule that combines remote and in-office work."
+      ],
+      "correct": 1,
+      "explanation": "The author's argument rests on studies showing remote workers are more productive. A meta-analysis showing no productivity gain when collaborative tasks are included would directly undermine this claim by suggesting the cited studies used incomplete measures.",
+      "aiHint": "Ask the student: what is the core evidence the argument depends on? Then find the option that directly contradicts or undermines that specific evidence."
+    },
+    {
+      "id": "sr015",
+      "test": "SAT",
+      "section": "Reading",
+      "difficulty": "medium",
+      "topic": "Text Structure",
+      "question": "The second sentence of the passage primarily serves to",
+      "passage": "Many historians once attributed the fall of the western Roman provinces solely to external invasions. More recent scholarship, however, emphasizes that internal factors—economic instability, political fragmentation, and overtaxation—played an equally significant role in the decline.",
+      "options": [
+        "Provide an example that supports the first sentence",
+        "Offer a contrasting perspective to the view presented in the first sentence",
+        "Summarize the overall argument of the passage",
+        "Introduce a topic that will be explored later in the passage"
+      ],
+      "correct": 1,
+      "explanation": "The transition word 'however' signals a contrast. The first sentence presents an older view (external invasions), and the second sentence introduces a newer, contrasting view (internal factors), making it a counterpoint.",
+      "aiHint": "Point out the word 'however' and ask the student what it signals about the relationship between the two sentences."
+    },
+    {
+      "id": "sr016",
+      "test": "SAT",
+      "section": "Reading",
+      "difficulty": "medium",
+      "topic": "Vocabulary in Context",
+      "question": "As used in the passage, 'prosecute' most nearly means",
+      "passage": "The general vowed to prosecute the war with renewed vigor after the humiliating defeat at the border. Supply lines were reinforced, additional battalions were called up, and a bold new offensive strategy was devised within weeks.",
+      "options": [
+        "To bring legal charges against",
+        "To carry out or pursue actively",
+        "To investigate a crime",
+        "To formally accuse in a court"
+      ],
+      "correct": 1,
+      "explanation": "'Prosecute' in this military context means to carry out or pursue actively. The general is committing to waging the war more aggressively, as evidenced by the reinforced supply lines, additional troops, and new offensive strategy.",
+      "aiHint": "Remind the student that words can have multiple meanings. In a military context, 'prosecute' doesn't mean legal action. What does it mean to 'prosecute a war'?"
+    },
+    {
+      "id": "sr017",
+      "test": "SAT",
+      "section": "Reading",
+      "difficulty": "medium",
+      "topic": "Inference",
+      "question": "The passage most strongly suggests that the artist",
+      "passage": "Rivera's later murals abandoned the bright, celebratory palette of her early career in favor of muted grays and stark compositions. Critics noted that this shift coincided with a period of personal loss and growing disillusionment with the political movements she had once championed.",
+      "options": [
+        "Was primarily motivated by commercial success",
+        "Experienced changes in her personal life that influenced her artistic style",
+        "Preferred abstract art to representational painting",
+        "Received more critical acclaim for her early work than her later work"
+      ],
+      "correct": 1,
+      "explanation": "The passage directly links Rivera's stylistic shift (from bright to muted) with 'personal loss and growing disillusionment,' strongly suggesting that personal experiences influenced her art.",
+      "aiHint": "Ask the student what changed in Rivera's art and what changed in her life at the same time. When two things happen together and critics connect them, what can we infer?"
+    },
+    {
+      "id": "sr018",
+      "test": "SAT",
+      "section": "Reading",
+      "difficulty": "medium",
+      "topic": "Author's Purpose",
+      "question": "The author most likely mentions the cost of the Apollo program in order to",
+      "passage": "Critics of modern space exploration often cite its enormous expense, yet they rarely acknowledge the broader returns on that investment. The Apollo program, which cost roughly $25 billion in 1960s dollars, generated technological innovations—from water purification systems to scratch-resistant lenses—that have produced economic returns many times over.",
+      "options": [
+        "Argue that space exploration is too expensive to justify",
+        "Provide a specific example showing that space investment yields significant economic returns",
+        "Compare the Apollo program unfavorably with modern space missions",
+        "Demonstrate that government spending is generally wasteful"
+      ],
+      "correct": 1,
+      "explanation": "The author mentions the Apollo program's cost to show that despite being expensive, the program generated innovations with economic returns 'many times over.' This supports the broader argument that space investment pays off.",
+      "aiHint": "Ask the student to identify the author's overall position on space exploration spending. Is the author for or against it? Then consider why mentioning the cost alongside the returns serves that position."
+    },
+    {
+      "id": "sr019",
+      "test": "SAT",
+      "section": "Reading",
+      "difficulty": "hard",
+      "topic": "Vocabulary in Context",
+      "question": "As used in the passage, 'plastic' most nearly means",
+      "passage": "Neuroscientists have demonstrated that the adult brain is far more plastic than previously thought. Even in patients well past middle age, targeted cognitive exercises can forge new neural pathways, suggesting that the architecture of the mind is never truly fixed.",
+      "options": [
+        "Made of synthetic material",
+        "Superficial or lacking authenticity",
+        "Capable of being shaped or molded",
+        "Rigid and unyielding"
+      ],
+      "correct": 2,
+      "explanation": "'Plastic' here refers to neuroplasticity—the brain's ability to be shaped and molded through experience. The passage supports this with evidence that new neural pathways can be formed, indicating the brain's adaptable, malleable nature.",
+      "aiHint": "Ask the student to consider what the passage says about the brain changing and forming new pathways. If something can be reshaped, what adjective describes that quality?"
+    },
+    {
+      "id": "sr020",
+      "test": "SAT",
+      "section": "Reading",
+      "difficulty": "hard",
+      "topic": "Inference",
+      "question": "Based on the passage, it can be inferred that the author would most likely agree with which of the following statements?",
+      "passage": "The rise of algorithmic content curation has created an environment in which users are increasingly exposed only to information that aligns with their existing views. While such personalization may enhance user satisfaction in the short term, it risks entrenching ideological divisions by depriving individuals of exposure to alternative perspectives.",
+      "options": [
+        "Algorithmic curation should be banned because it is inherently harmful.",
+        "Short-term user satisfaction can come at the cost of broader societal well-being.",
+        "Ideological divisions are primarily caused by social media platforms.",
+        "Users prefer to encounter viewpoints that challenge their own beliefs."
+      ],
+      "correct": 1,
+      "explanation": "The author explicitly notes that personalization 'may enhance user satisfaction in the short term' but 'risks entrenching ideological divisions.' This trade-off directly supports the idea that short-term satisfaction can come at a broader societal cost.",
+      "aiHint": "Guide the student to identify the tension the author sets up: something good in the short term versus something harmful in the long term. Which answer captures that exact trade-off?"
+    },
+    {
+      "id": "sr021",
+      "test": "SAT",
+      "section": "Reading",
+      "difficulty": "hard",
+      "topic": "Text Structure",
+      "question": "Which of the following best describes the overall structure of the passage?",
+      "passage": "Traditional economic models assume that individuals make rational decisions designed to maximize personal benefit. Behavioral economists have challenged this assumption, documenting systematic patterns of irrational behavior—from loss aversion to anchoring bias—that consistently lead people to make choices contrary to their own interests.",
+      "options": [
+        "A hypothesis is proposed and then tested through experimentation",
+        "An established framework is presented and then challenged by newer findings",
+        "Two competing theories are compared and ultimately reconciled",
+        "A historical event is described and its long-term consequences are evaluated"
+      ],
+      "correct": 1,
+      "explanation": "The passage first presents the established framework (traditional economic models assuming rationality) and then introduces behavioral economics as a challenge to that framework, supported by specific examples of irrational behavior.",
+      "aiHint": "Ask the student to identify two distinct ideas in the passage. What is the relationship between the traditional view and the behavioral economics view? Is one supporting, contradicting, or extending the other?"
+    },
+    {
+      "id": "sr022",
+      "test": "SAT",
+      "section": "Reading",
+      "difficulty": "hard",
+      "topic": "Evidence-Based Reasoning",
+      "question": "Which statement best supports the conclusion that antibiotic resistance poses a growing public health threat?",
+      "passage": "",
+      "options": [
+        "Antibiotics were first widely used during World War II to treat battlefield infections.",
+        "Pharmaceutical companies invest billions annually in drug development research.",
+        "The World Health Organization reported that infections from drug-resistant bacteria caused over 1.2 million deaths globally in a single recent year, a figure expected to rise sharply.",
+        "Many patients do not complete their full course of prescribed antibiotics."
+      ],
+      "correct": 2,
+      "explanation": "Option C provides specific, quantifiable evidence (1.2 million deaths, expected to rise) that directly demonstrates antibiotic resistance as a growing public health threat. While Option D describes a contributing cause, it does not directly support the conclusion about the threat's magnitude and growth.",
+      "aiHint": "Ask the student which option provides both current impact data and evidence of a worsening trend. A 'growing threat' requires evidence that the problem is both serious now and getting worse."
+    },
+    {
+      "id": "sr023",
+      "test": "SAT",
+      "section": "Reading",
+      "difficulty": "hard",
+      "topic": "Tone",
+      "question": "The author's tone in the passage is best described as",
+      "passage": "One might suppose that a century of archaeological investigation would have settled the question of the city's origins, yet each new excavation seems only to multiply the uncertainties. The most recent dig uncovered artifacts that contradict three of the leading theories, leaving scholars to contemplate whether the question is even answerable with current methods.",
+      "options": [
+        "Resigned and despairing",
+        "Objectively analytical with an undercurrent of irony",
+        "Aggressively confrontational toward the scholarly community",
+        "Warmly nostalgic for earlier theories"
+      ],
+      "correct": 1,
+      "explanation": "The author maintains an analytical stance while employing subtle irony—'One might suppose' sets up an expectation that is undercut by 'multiply the uncertainties.' The tone is measured but carries a wry awareness that more research has not brought clarity.",
+      "aiHint": "Help the student identify the gap between what 'one might suppose' and what actually happened. When an author sets up an expectation and then deflates it, what does that suggest about tone?"
+    },
+    {
+      "id": "sr024",
+      "test": "SAT",
+      "section": "Reading",
+      "difficulty": "hard",
+      "topic": "Author's Purpose",
+      "question": "The primary purpose of the passage is to",
+      "passage": "The widespread celebration of individualism in Western culture has obscured a fundamental truth about human cognition: our thinking is profoundly social. From the language we use to the categories we impose on experience, our most seemingly private mental processes are shaped by communal practices developed over generations.",
+      "options": [
+        "Celebrate the achievements of Western individualist philosophy",
+        "Argue that individual thought is more deeply influenced by social forces than commonly recognized",
+        "Compare Western and non-Western approaches to understanding cognition",
+        "Demonstrate that language is the most important factor in shaping thought"
+      ],
+      "correct": 1,
+      "explanation": "The passage argues that individualism has 'obscured a fundamental truth'—that cognition is 'profoundly social.' The author's purpose is to reveal this underappreciated social dimension of thought, not to celebrate individualism or make cross-cultural comparisons.",
+      "aiHint": "Ask the student what 'fundamental truth' the author believes has been obscured. The author's purpose is to bring that hidden truth to light. Which answer best captures that intent?"
+    },
+    {
+      "id": "sr025",
+      "test": "SAT",
+      "section": "Reading",
+      "difficulty": "hard",
+      "topic": "Inference",
+      "question": "The passage implies that the relationship between economic growth and environmental sustainability is",
+      "passage": "For decades, policymakers treated economic growth and environmental protection as fundamentally opposed objectives, forcing a choice between prosperity and ecological health. A growing body of evidence now suggests that this framing is a false dilemma: nations that invest in renewable energy infrastructure often experience both reduced emissions and accelerated job creation in emerging technology sectors.",
+      "options": [
+        "Inherently antagonistic and impossible to reconcile",
+        "Irrelevant, since environmental policy has no economic impact",
+        "More complementary than traditional policy frameworks have assumed",
+        "Only beneficial in countries with large technology sectors"
+      ],
+      "correct": 2,
+      "explanation": "The passage calls the growth-versus-environment framing a 'false dilemma' and provides evidence that renewable energy investment produces both environmental and economic benefits. This implies the relationship is more complementary than traditionally assumed.",
+      "aiHint": "Guide the student to the phrase 'false dilemma.' If treating growth and sustainability as opposed is a false dilemma, what must the author believe the real relationship is?"
+    }
+  ]
+}

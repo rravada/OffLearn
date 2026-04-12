@@ -1,0 +1,30 @@
+{
+  "id": "gdp",
+  "title": "GDP & Economic Growth",
+  "subject": "Economics",
+  "unit": "Macroeconomics",
+  "duration": "20 min",
+  "objectives": ["Define GDP and its components", "Distinguish nominal from real GDP", "Understand what GDP does and doesn't measure"],
+  "sections": [
+    {
+      "type": "explanation",
+      "heading": "What is GDP?",
+      "content": "Gross Domestic Product (GDP) is the total market value of all final goods and services produced within a country's borders in a given time period (usually a year or quarter). It is the single most commonly used measure of a nation's economic output.\n\nGDP includes:\n• Consumer spending (C): What households buy — food, cars, Netflix subscriptions\n• Investment (I): Business spending on equipment and structures, plus new housing\n• Government spending (G): Federal, state, and local government purchases\n• Net exports (NX): Exports minus imports\n\nGDP = C + I + G + NX"
+    },
+    {
+      "type": "explanation",
+      "heading": "Nominal vs. real GDP",
+      "content": "Nominal GDP measures output using current prices. The problem? If prices double but production stays the same, nominal GDP doubles — even though the economy hasn't actually grown.\n\nReal GDP adjusts for inflation by using prices from a base year. This gives us an accurate picture of whether the economy is truly producing more goods and services.\n\nEconomic growth is measured as the percentage change in real GDP from one period to the next."
+    },
+    {
+      "type": "example",
+      "heading": "What GDP misses",
+      "content": "GDP is useful but imperfect. It does NOT measure:\n\n• Distribution: A country might have high GDP but extreme inequality.\n• Unpaid work: Household labor, volunteering, and caregiving are excluded.\n• Quality of life: Leisure time, environmental quality, and health outcomes are not captured.\n• Underground economy: Illegal transactions and unreported income are missed.\n\nThis is why economists also use metrics like GDP per capita, the Human Development Index (HDI), and the Gini coefficient alongside GDP."
+    },
+    {
+      "type": "keypoint",
+      "content": "GDP measures the total value of goods and services produced in a country. Real GDP (adjusted for inflation) is used to track actual economic growth. While GDP is the most common economic indicator, it does not capture quality of life or inequality."
+    }
+  ],
+  "aiContext": "This lesson covers GDP and economic growth at a high school macroeconomics level. Students learn the GDP formula (C+I+G+NX), the difference between nominal and real GDP, and the limitations of GDP as a measure."
+}

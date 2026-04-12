@@ -1,0 +1,47 @@
+{
+  "id": "biology-krebs",
+  "title": "The Krebs Cycle",
+  "subject": "Biology",
+  "chunks": [
+    {
+      "id": "k1",
+      "text": "The Krebs cycle, also called the citric acid cycle or tricarboxylic acid (TCA) cycle, is a series of chemical reactions that takes place in the mitochondrial matrix. It is a central metabolic pathway that completes the oxidation of acetyl-CoA, which is derived from carbohydrates, fats, and proteins. The cycle was first described by Hans Krebs in 1937, for which he received the Nobel Prize in Physiology or Medicine in 1953."
+    },
+    {
+      "id": "k2",
+      "text": "Acetyl-CoA enters the cycle by combining with oxaloacetate (a four-carbon molecule) to form citrate (a six-carbon molecule). This condensation reaction is catalyzed by the enzyme citrate synthase. Citrate is then rearranged to form isocitrate by the enzyme aconitase. This is important because citrate cannot be directly oxidized, but isocitrate can."
+    },
+    {
+      "id": "k3",
+      "text": "Isocitrate is oxidized by isocitrate dehydrogenase to produce alpha-ketoglutarate, releasing one molecule of CO2 and reducing NAD+ to NADH. This is the first of two oxidative decarboxylation steps in the cycle. Alpha-ketoglutarate is then converted to succinyl-CoA by the alpha-ketoglutarate dehydrogenase complex, releasing another CO2 and producing another NADH."
+    },
+    {
+      "id": "k4",
+      "text": "Succinyl-CoA is converted to succinate by succinyl-CoA synthetase. This step is coupled with the phosphorylation of GDP to GTP (in animals) or ADP to ATP (in plants and bacteria), representing substrate-level phosphorylation. The GTP produced can be readily converted to ATP by nucleoside diphosphate kinase."
+    },
+    {
+      "id": "k5",
+      "text": "Succinate is oxidized to fumarate by succinate dehydrogenase, which is the only enzyme of the Krebs cycle that is embedded in the inner mitochondrial membrane. This reaction reduces FAD to FADH2 rather than NAD+ to NADH. Succinate dehydrogenase is also Complex II of the electron transport chain, directly linking the Krebs cycle to oxidative phosphorylation."
+    },
+    {
+      "id": "k6",
+      "text": "Fumarate is hydrated to malate by fumarase, and then malate is oxidized to regenerate oxaloacetate by malate dehydrogenase, producing the cycle's final NADH. The regeneration of oxaloacetate allows the cycle to continue by accepting another acetyl-CoA. Although the equilibrium of this last reaction strongly favors malate, the cycle continues because citrate synthase rapidly consumes oxaloacetate."
+    },
+    {
+      "id": "k7",
+      "text": "For each turn of the Krebs cycle, the net products are: 3 NADH, 1 FADH2, 1 GTP (or ATP), and 2 CO2. Since each glucose molecule yields two acetyl-CoA through glycolysis and the pyruvate dehydrogenase reaction, the cycle turns twice per glucose. The NADH and FADH2 produced carry high-energy electrons to the electron transport chain for oxidative phosphorylation, where the majority of ATP is generated."
+    },
+    {
+      "id": "k8",
+      "text": "The Krebs cycle is regulated at multiple points to match energy demand. Key regulatory enzymes include citrate synthase (inhibited by ATP, NADH, and citrate), isocitrate dehydrogenase (activated by ADP, inhibited by ATP and NADH), and alpha-ketoglutarate dehydrogenase (inhibited by succinyl-CoA and NADH). When cellular energy levels are high, the cycle slows; when energy is needed, it accelerates."
+    },
+    {
+      "id": "k9",
+      "text": "Beyond energy production, the Krebs cycle serves as a metabolic hub. Intermediates are drawn off for biosynthetic pathways: citrate for fatty acid synthesis, alpha-ketoglutarate and oxaloacetate for amino acid synthesis, and succinyl-CoA for heme synthesis. These intermediates are replenished by anaplerotic reactions, such as the carboxylation of pyruvate to oxaloacetate by pyruvate carboxylase."
+    },
+    {
+      "id": "k10",
+      "text": "The Krebs cycle is an amphibolic pathway, meaning it participates in both catabolism (breaking down molecules for energy) and anabolism (building larger molecules from smaller ones). This dual role makes it indispensable for cellular metabolism. Disruptions to the cycle, such as mutations in succinate dehydrogenase, have been linked to various diseases including certain hereditary cancers like paragangliomas."
+    }
+  ]
+}

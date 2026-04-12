@@ -1,0 +1,82 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    border-color: rgba(255, 255, 255, 0.07);
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-le-bg font-sans text-le-text antialiased;
+  }
+
+  ::-webkit-scrollbar {
+    width: 6px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: transparent;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 3px;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: rgba(255, 255, 255, 0.2);
+  }
+}
+
+@layer components {
+  .heading {
+    @apply font-semibold tracking-heading;
+  }
+
+  .label-badge {
+    @apply text-[11px] font-semibold uppercase tracking-label;
+  }
+
+  .lesson-prose {
+    @apply text-[17px] leading-[1.85] max-w-[680px];
+  }
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: -200% 0;
+  }
+  100% {
+    background-position: 200% 0;
+  }
+}
+
+.skeleton {
+  background: linear-gradient(
+    90deg,
+    #161B27 25%,
+    #1E2535 50%,
+    #161B27 75%
+  );
+  background-size: 200% 100%;
+  animation: shimmer 1.5s ease-in-out infinite;
+}
+
+.progress-bar-glow {
+  box-shadow: 0 0 12px rgba(240, 165, 0, 0.4);
+}
+
+@keyframes celebrate {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.05); }
+  100% { transform: scale(1); }
+}
+
+.celebrate-pulse {
+  animation: celebrate 0.4s ease-in-out;
+}

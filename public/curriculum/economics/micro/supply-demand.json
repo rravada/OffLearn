@@ -1,0 +1,30 @@
+{
+  "id": "supply-demand",
+  "title": "Supply & Demand",
+  "subject": "Economics",
+  "unit": "Microeconomics",
+  "duration": "20 min",
+  "objectives": ["Understand the law of demand", "Understand the law of supply", "Explain how equilibrium price is determined"],
+  "sections": [
+    {
+      "type": "explanation",
+      "heading": "The law of demand",
+      "content": "The law of demand states: as the price of a good rises, the quantity demanded falls, and vice versa — all else being equal. This is intuitive. If your favorite coffee costs $3, you might buy one every day. If it jumps to $10, you would buy it less often or switch to tea.\n\nThe demand curve on a graph slopes downward from left to right, with price on the vertical axis and quantity on the horizontal axis. This inverse relationship between price and quantity demanded is one of the most fundamental patterns in economics."
+    },
+    {
+      "type": "explanation",
+      "heading": "The law of supply",
+      "content": "The law of supply is the mirror image: as the price of a good rises, the quantity supplied also rises. Higher prices give producers more incentive to make and sell a product because they earn more profit per unit.\n\nThe supply curve slopes upward from left to right. When prices are high, producers are eager to sell; when prices are low, some producers may not find it worthwhile to produce at all."
+    },
+    {
+      "type": "example",
+      "heading": "Finding equilibrium",
+      "content": "Equilibrium occurs where the supply and demand curves intersect — the point where the quantity demanded equals the quantity supplied.\n\nImagine a market for apples:\n• At $5/lb, consumers want 100 lbs but farmers supply 300 lbs → surplus (prices fall)\n• At $1/lb, consumers want 400 lbs but farmers supply 50 lbs → shortage (prices rise)\n• At $3/lb, consumers want 200 lbs and farmers supply 200 lbs → equilibrium\n\nMarket forces naturally push prices toward equilibrium. Surpluses create downward pressure on price; shortages create upward pressure."
+    },
+    {
+      "type": "keypoint",
+      "content": "Supply and demand together determine market prices. The equilibrium price is where quantity supplied equals quantity demanded. Surpluses push prices down; shortages push prices up."
+    }
+  ],
+  "aiContext": "This lesson covers supply and demand at a high school microeconomics level. Students learn the laws of supply and demand, how to read supply/demand graphs, and how equilibrium price is determined by market forces."
+}

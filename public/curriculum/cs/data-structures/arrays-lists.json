@@ -1,0 +1,30 @@
+{
+  "id": "arrays-lists",
+  "title": "Arrays & Linked Lists",
+  "subject": "Computer Science",
+  "unit": "Data Structures",
+  "duration": "20 min",
+  "objectives": ["Understand how arrays store data in memory", "Understand how linked lists work", "Compare arrays and linked lists for different operations"],
+  "sections": [
+    {
+      "type": "explanation",
+      "heading": "Arrays: contiguous memory",
+      "content": "An array stores elements in consecutive memory locations. Think of it like a row of numbered mailboxes — each box is the same size and right next to the other.\n\nBecause of this structure:\n• Accessing any element by index is instant: O(1). You can jump directly to mailbox #50.\n• Inserting or deleting in the middle is slow: O(n). You might need to shift all subsequent elements to make room or fill the gap."
+    },
+    {
+      "type": "explanation",
+      "heading": "Linked lists: scattered nodes",
+      "content": "A linked list stores elements as individual nodes, each containing data and a pointer to the next node. Think of a scavenger hunt where each clue tells you where to find the next one.\n\nBecause of this structure:\n• Inserting or deleting at the beginning is instant: O(1). Just update one pointer.\n• Accessing an element by position is slow: O(n). You must follow the chain from the start.\n• Each node requires extra memory for the pointer."
+    },
+    {
+      "type": "example",
+      "heading": "When to use which",
+      "content": "Use an array when:\n• You need fast access by index (e.g., looking up student #42)\n• The size of the collection is known and relatively fixed\n• You need to iterate through all elements frequently\n\nUse a linked list when:\n• You frequently insert or delete elements at the beginning\n• The size changes unpredictably\n• You don't need random access by index\n\nExample: A playlist where songs are frequently added/removed → linked list. High scores that are looked up by rank → array."
+    },
+    {
+      "type": "keypoint",
+      "content": "Arrays excel at random access (O(1)) but are slow for insertions/deletions. Linked lists excel at insertions/deletions (O(1) at the head) but are slow for random access. Choose based on your most common operations."
+    }
+  ],
+  "aiContext": "This lesson covers arrays and linked lists at a high school computer science level. Students learn how each structure stores data, their time complexities for common operations, and when to choose one over the other."
+}
