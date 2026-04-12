@@ -5,8 +5,7 @@ import {
 } from "@mediapipe/tasks-genai";
 import { getMeta, setMeta } from "@/lib/db/indexeddb";
 import { cleanResponse } from "@/lib/utils";
-
-const MODEL_PATH = "/models/gemma-4-E2B-it-web.task";
+import { GEMMA_MODEL_ASSET_URL } from "@/lib/inference/gemmaModelUrl";
 const WASM_PATH = "/mediapipe-wasm";
 const MODEL_CACHED_KEY = "model_loaded";
 
@@ -62,7 +61,7 @@ export class LLMSession {
           () =>
             LlmInference.createFromOptions(genai, {
               baseOptions: {
-                modelAssetPath: MODEL_PATH,
+                modelAssetPath: GEMMA_MODEL_ASSET_URL,
                 gpuOptions: { device },
               },
               maxTokens: 1024,

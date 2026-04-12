@@ -1,4 +1,11 @@
-const CACHE_NAME = "offlearn-v11";
+const CACHE_NAME = "offlearn-v12";
+
+/**
+ * Production: replaced in `out/sw.js` by scripts/bake-sw-remote-model.js from
+ * NEXT_PUBLIC_GEMMA_MODEL_URL so the SW can cache the remote .task for offline.
+ * @type {string}
+ */
+const BAKED_GEMMA_REMOTE_URL = "";
 
 /** App shell + manifest index (full list in precache-manifest.json). */
 const PRECACHE_URLS = [
@@ -125,6 +132,26 @@ async function serveModelAsset(cache, request) {
   }
 }
 
+/** Remote Gemma .task (Vercel + HF CDN redirects): same file, varying huggingface.co hosts. */
+function isRemoteGemmaModelRequest(url) {
+  if (!BAKED_GEMMA_REMOTE_URL) return false;
+  let baked;
+  try {
+    baked = new URL(BAKED_GEMMA_REMOTE_URL);
+  } catch {
+    return false;
+  }
+  if (!url.pathname.endsWith("/gemma-4-E2B-it-web.task")) return false;
+  if (url.origin === baked.origin && url.pathname === baked.pathname) return true;
+  if (
+    baked.hostname.includes("huggingface.co") &&
+    url.hostname.includes("huggingface.co")
+  ) {
+    return true;
+  }
+  return false;
+}
+
 self.addEventListener("install", (event) => {
   event.waitUntil(
     caches.open(CACHE_NAME).then(async (cache) => {
@@ -174,6 +201,15 @@ self.addEventListener("activate", (event) => {
 
 self.addEventListener("fetch", (event) => {
   const url = new URL(event.request.url);
+
+  if (isRemoteGemmaModelRequest(url)) {
+    event.respondWith(
+      caches.open(CACHE_NAME).then((cache) =>
+        serveModelAsset(cache, event.request)
+      )
+    );
+    return;
+  }
 
   if (url.origin !== self.location.origin) {
     return;
