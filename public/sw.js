@@ -1,13 +1,9 @@
-const CACHE_NAME = "offlearn-v5";
+const CACHE_NAME = "offlearn-v6";
 
-const PRECACHE_URLS = [
-  "/",
-  "/manifest.json",
-  "/curriculum/index.json",
-];
+const PRECACHE_URLS = ["/", "/manifest.json", "/curriculum/index.json"];
 
 function cachePutSafe(cache, request, response) {
-  if (!response || !response.ok) return;
+  if (!response || !response.ok) return Promise.resolve();
   const clone = response.clone();
   return cache.put(request, clone).catch(() => {});
 }
@@ -36,9 +32,52 @@ async function offlineNavigationFallback(request) {
   return undefined;
 }
 
+/** Cache-first: offline-safe (returns cached on network failure). */
+async function cacheFirst(cache, request) {
+  const cached = await cache.match(request);
+  if (cached) return cached;
+  try {
+    const response = await fetch(request);
+    await cachePutSafe(cache, request, response);
+    return response;
+  } catch {
+    const again = await cache.match(request);
+    if (again) return again;
+    throw new Error("offline-miss");
+  }
+}
+
+/** Network-first with cache fallback (for curriculum index updates). */
+async function networkFirstWithCacheFallback(cache, request) {
+  try {
+    const response = await fetch(request);
+    await cachePutSafe(cache, request, response);
+    return response;
+  } catch {
+    const hit = await cache.match(request);
+    if (hit) return hit;
+    throw new Error("offline-miss");
+  }
+}
+
 self.addEventListener("install", (event) => {
   event.waitUntil(
-    caches.open(CACHE_NAME).then((cache) => cache.addAll(PRECACHE_URLS))
+    caches.open(CACHE_NAME).then(async (cache) => {
+      await Promise.all(
+        PRECACHE_URLS.map(async (path) => {
+          try {
+            await cache.add(path);
+          } catch {
+            try {
+              const res = await fetch(path);
+              if (res.ok) await cache.put(path, res.clone());
+            } catch {
+              /* precache best-effort */
+            }
+          }
+        })
+      );
+    })
   );
   self.skipWaiting();
 });
@@ -71,40 +110,39 @@ self.addEventListener("fetch", (event) => {
             cachePutSafe(cache, event.request, response);
             return response;
           })
-          .catch(() => caches.match(event.request))
+          .catch(() =>
+            cache
+              .match(event.request)
+              .then((r) => r || new Response("", { status: 503 }))
+          )
       )
     );
     return;
   }
 
-  // Curriculum index: network-first so the course list can update after deploy.
-  // Lesson JSON: cache-first so reopening a lesson is instant after the first load.
   if (url.pathname.startsWith("/curriculum/")) {
     const isCourseIndex =
       url.pathname === "/curriculum/index.json" ||
       url.pathname.endsWith("/curriculum/index.json");
-    if (isCourseIndex) {
-      event.respondWith(
-        caches.open(CACHE_NAME).then((cache) =>
-          fetch(event.request)
-            .then((response) => {
-              cachePutSafe(cache, event.request, response);
-              return response;
-            })
-            .catch(() => caches.match(event.request))
-        )
-      );
-      return;
-    }
     event.respondWith(
       caches.open(CACHE_NAME).then((cache) =>
-        caches.match(event.request).then((cached) => {
-          if (cached) return cached;
-          return fetch(event.request).then((response) => {
-            cachePutSafe(cache, event.request, response);
-            return response;
-          });
-        })
+        isCourseIndex
+          ? networkFirstWithCacheFallback(cache, event.request).catch(async () => {
+              const hit = await cache.match(event.request);
+              if (hit) return hit;
+              return new Response(
+                JSON.stringify({ error: "offline", path: url.pathname }),
+                { status: 503, headers: { "Content-Type": "application/json" } }
+              );
+            })
+          : cacheFirst(cache, event.request).catch(async () => {
+              const hit = await cache.match(event.request);
+              if (hit) return hit;
+              return new Response(
+                JSON.stringify({ error: "offline", path: url.pathname }),
+                { status: 503, headers: { "Content-Type": "application/json" } }
+              );
+            })
       )
     );
     return;
@@ -113,6 +151,7 @@ self.addEventListener("fetch", (event) => {
   if (
     url.pathname.startsWith("/mediapipe-wasm/") ||
     url.pathname.startsWith("/knowledge-packs/") ||
+    url.pathname.startsWith("/testprep/") ||
     url.pathname.startsWith("/_next/static/") ||
     url.pathname.endsWith(".js") ||
     url.pathname.endsWith(".css") ||
@@ -122,12 +161,10 @@ self.addEventListener("fetch", (event) => {
   ) {
     event.respondWith(
       caches.open(CACHE_NAME).then((cache) =>
-        caches.match(event.request).then((cached) => {
-          if (cached) return cached;
-          return fetch(event.request).then((response) => {
-            cachePutSafe(cache, event.request, response);
-            return response;
-          });
+        cacheFirst(cache, event.request).catch(async () => {
+          const hit = await cache.match(event.request);
+          if (hit) return hit;
+          return new Response("", { status: 503, statusText: "Offline" });
         })
       )
     );
@@ -142,15 +179,27 @@ self.addEventListener("fetch", (event) => {
             cachePutSafe(cache, event.request, response);
             return response;
           })
-          .catch(() => offlineNavigationFallback(event.request))
+          .catch(() =>
+            offlineNavigationFallback(event.request).then(
+              (res) =>
+                res ||
+                new Response("<!DOCTYPE html><html><body>Offline</body></html>", {
+                  status: 503,
+                  headers: { "Content-Type": "text/html; charset=utf-8" },
+                })
+            )
+          )
       )
     );
     return;
   }
 
   event.respondWith(
-    caches.match(event.request).then(
-      (cached) => cached || fetch(event.request)
-    )
+    caches.match(event.request).then((cached) => {
+      if (cached) return cached;
+      return fetch(event.request)
+        .catch(() => caches.match(event.request))
+        .then((res) => res || new Response("", { status: 503 }));
+    })
   );
 });
