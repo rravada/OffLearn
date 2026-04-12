@@ -26,6 +26,7 @@ export function TutorPanel({ onSendOverride }: TutorPanelProps = {}) {
     setTutorStreamingContent,
     appendTutorStreamingContent,
     modelStatus,
+    modelError,
   } = useAppStore();
 
   const [input, setInput] = useState("");
@@ -197,17 +198,29 @@ export function TutorPanel({ onSendOverride }: TutorPanelProps = {}) {
             onKeyDown={(e) => {
               if (e.key === "Enter" && !e.shiftKey) {
                 e.preventDefault();
-                handleSend();
+                void handleSend();
               }
             }}
-            placeholder="Ask the tutor..."
-            disabled={isTutorGenerating || modelStatus !== "ready"}
-            className="max-h-[200px] min-h-[40px] w-0 flex-1 resize-none bg-transparent py-2 text-sm leading-relaxed text-le-text placeholder:text-le-text-hint outline-none disabled:opacity-50"
+            placeholder={
+              modelStatus === "ready"
+                ? "Ask the tutor…"
+                : modelStatus === "loading"
+                  ? "Type here — send when the tutor is ready…"
+                  : modelStatus === "error"
+                    ? "Tutor unavailable in this browser"
+                    : "Ask the tutor…"
+            }
+            readOnly={isTutorGenerating}
+            aria-disabled={isTutorGenerating}
+            className={cn(
+              "max-h-[200px] min-h-[40px] min-w-0 flex-1 resize-none bg-transparent py-2 text-sm leading-relaxed text-le-text placeholder:text-le-text-hint outline-none",
+              isTutorGenerating && "cursor-wait opacity-60"
+            )}
             style={{ height: "40px" }}
           />
           <button
             type="button"
-            onClick={handleSend}
+            onClick={() => void handleSend()}
             disabled={!input.trim() || isTutorGenerating || modelStatus !== "ready"}
             className="mb-1.5 flex-shrink-0 rounded-md p-1.5 text-le-accent transition-colors hover:bg-le-accent-soft disabled:opacity-30"
             aria-label="Send"
@@ -215,6 +228,14 @@ export function TutorPanel({ onSendOverride }: TutorPanelProps = {}) {
             <Send className="h-4 w-4" />
           </button>
         </div>
+        {modelStatus !== "ready" && (
+          <p className="mt-2 px-0.5 text-xs leading-snug text-le-text-hint">
+            {modelStatus === "loading" && "Loading the on-device model — you can draft your message; Send stays off until ready."}
+            {modelStatus === "error" &&
+              (modelError ?? "WebGPU or model load failed. Try Chrome on desktop.")}
+            {modelStatus === "idle" && "Starting the tutor…"}
+          </p>
+        )}
       </div>
     </aside>
   );
