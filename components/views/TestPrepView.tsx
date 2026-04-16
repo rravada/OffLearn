@@ -505,7 +505,7 @@ Guide the student Socratically to understand WHY the correct answer is right wit
       <div className="mx-auto max-w-2xl">
         <h1 className="heading text-2xl text-le-text">Test Prep</h1>
         <p className="mt-1 text-sm text-le-text-secondary">
-          Practice with real-format questions and AI-guided explanations
+          Practice with real-format questions and guided explanations
         </p>
 
         <div className="mt-8 grid gap-4 sm:grid-cols-3">

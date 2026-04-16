@@ -440,7 +440,7 @@ Rules:
             className="fixed bottom-6 right-6 z-30 flex items-center gap-2 rounded-full bg-le-accent px-5 py-3 text-sm font-semibold text-le-bg shadow-lg shadow-le-accent/25 transition-all hover:brightness-110"
           >
             <Sparkles className="h-4 w-4" />
-            Ask the AI tutor
+            Get lesson help
           </button>
         )}
       </div>

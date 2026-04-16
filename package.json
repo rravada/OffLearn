@@ -1,7 +1,7 @@
 {
   "name": "offlearn",
   "version": "1.0.0",
-  "description": "",
+  "description": "Offline-first school in the browser (curriculum, SAT/ACT prep) with optional local Gemma LLM + client-side RAG (MediaPipe, Transformers.js, Voy). Desktop WebGPU only.",
   "main": "index.js",
   "scripts": {
     "dev": "next dev",

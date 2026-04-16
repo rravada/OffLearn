@@ -183,7 +183,7 @@ export default function Home() {
           console.error("Model init failed:", err);
           setModelStatus("error");
           setModelError(
-            err instanceof Error ? err.message : "Failed to set up the tutor"
+            err instanceof Error ? err.message : "Failed to finish setup"
           );
         })
         .finally(() => {

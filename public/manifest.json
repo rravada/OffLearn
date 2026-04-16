@@ -1,12 +1,12 @@
 {
   "name": "OffLearn",
   "short_name": "OffLearn",
-  "description": "A fully equipped school that fits in a browser tab — no internet required, no cost, no data collected, ever.",
+  "description": "Offline curriculum & SAT/ACT prep; optional local LLM + RAG for lesson help. Desktop only — mobile not supported.",
   "start_url": "/",
   "display": "standalone",
   "background_color": "#0D1117",
   "theme_color": "#0D1117",
-  "orientation": "portrait-primary",
+  "orientation": "any",
   "icons": [
     {
       "src": "/icon-192.png",

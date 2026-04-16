@@ -22,8 +22,8 @@ export function LoadingScreen({ progress, visible }: LoadingScreenProps) {
         <div className="flex flex-col items-center gap-2">
           <h1 className="heading text-2xl text-le-text">Getting ready</h1>
           <p className="text-sm text-le-text-secondary">
-            Setting up the local tutor so lessons work offline. This only runs
-            once.
+            Caching lessons and the optional help model so everything works
+            offline. This only runs once.
           </p>
         </div>
 

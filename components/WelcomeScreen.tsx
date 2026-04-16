@@ -12,7 +12,7 @@ const FEATURES = [
     icon: WifiOff,
     title: "Runs 100% Offline",
     description:
-      "The tutor runs in your browser with WebGPU — no API keys, no servers.",
+      "Courses and practice run entirely in your browser with WebGPU — no API keys, no servers.",
   },
   {
     icon: BookOpen,
@@ -24,7 +24,7 @@ const FEATURES = [
     icon: Target,
     title: "SAT & ACT Test Prep",
     description:
-      "Timed practice with AI-guided explanations. Free. Forever. Offline.",
+      "Timed practice with guided explanations. Free. Forever. Offline.",
   },
 ] as const;
 
@@ -39,8 +39,10 @@ export function WelcomeScreen({ onStart }: WelcomeScreenProps) {
             Every student deserves a great teacher.
           </h1>
           <p className="max-w-lg text-base leading-relaxed text-le-text-secondary">
-            OffLearn brings personalized AI tutoring to students with no
-            internet, no cost, and no data ever leaving their device.
+            OffLearn is an offline-first school in your browser: structured
+            courses and SAT/ACT-style prep — no internet required after setup, no
+            cost, and no data leaving this device. Optional lesson help is there
+            when you want to work through something step by step.
           </p>
         </div>
 
@@ -70,7 +72,8 @@ export function WelcomeScreen({ onStart }: WelcomeScreenProps) {
         </button>
 
         <p className="text-xs text-le-text-hint">
-          Offline-first — your study sessions stay on this device.
+          Desktop browsers only — mobile is not supported. Offline-first; your
+          study sessions stay on this device.
         </p>
       </div>
     </div>

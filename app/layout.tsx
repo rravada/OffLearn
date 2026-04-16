@@ -6,9 +6,9 @@ import { ServiceWorkerRegistration } from "@/components/ServiceWorkerRegistratio
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "OffLearn — Offline AI Learning Platform",
+  title: "OffLearn — Offline-first learning in your browser",
   description:
-    "A fully equipped school that fits in a browser tab — no internet required, no cost, no data collected, ever.",
+    "Offline curriculum and SAT/ACT prep in your browser (static PWA). Optional lesson help: local Gemma via MediaPipe/WebGPU, Transformers.js embeddings, Voy RAG — no backend, no data to third parties. Desktop only; mobile not supported.",
   manifest: "/manifest.json",
 };
 

@@ -138,7 +138,7 @@ export function TutorPanel({ onSendOverride }: TutorPanelProps = {}) {
       <div className="flex items-center justify-between border-b border-le-border px-4 py-3">
         <div className="flex items-center gap-2">
           <Sparkles className="h-4 w-4 text-le-accent" />
-          <span className="heading text-sm text-le-text">AI Tutor</span>
+          <span className="heading text-sm text-le-text">Lesson help</span>
           {modelStatus === "ready" && (
             <span className="h-2 w-2 rounded-full bg-le-green animate-pulse-dot" />
           )}
@@ -203,12 +203,12 @@ export function TutorPanel({ onSendOverride }: TutorPanelProps = {}) {
             }}
             placeholder={
               modelStatus === "ready"
-                ? "Ask the tutor…"
+                ? "Ask about this lesson…"
                 : modelStatus === "loading"
-                  ? "Type here — send when the tutor is ready…"
+                  ? "Type here — send when the model is ready…"
                   : modelStatus === "error"
-                    ? "Tutor unavailable in this browser"
-                    : "Ask the tutor…"
+                    ? "Help unavailable in this browser"
+                    : "Ask about this lesson…"
             }
             readOnly={isTutorGenerating}
             aria-disabled={isTutorGenerating}
@@ -230,10 +230,10 @@ export function TutorPanel({ onSendOverride }: TutorPanelProps = {}) {
         </div>
         {modelStatus !== "ready" && (
           <p className="mt-2 px-0.5 text-xs leading-snug text-le-text-hint">
-            {modelStatus === "loading" && "Loading the on-device model — you can draft your message; Send stays off until ready."}
+            {modelStatus === "loading" && "Loading the help model — you can draft your message; Send stays off until ready."}
             {modelStatus === "error" &&
               (modelError ?? "WebGPU or model load failed. Try Chrome on desktop.")}
-            {modelStatus === "idle" && "Starting the tutor…"}
+            {modelStatus === "idle" && "Starting lesson help…"}
           </p>
         )}
       </div>
