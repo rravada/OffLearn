@@ -1,7 +1,8 @@
 "use client";
 
-import { useMemo } from "react";
-import { BookOpen, ClipboardList } from "lucide-react";
+import { useMemo, useState, useEffect } from "react";
+import { createPortal } from "react-dom";
+import { BookOpen, ClipboardList, Download, X } from "lucide-react";
 import { cn } from "@/lib/utils";
 import type { AppMode, CurriculumIndex, CurriculumSubject } from "@/types";
 import { getSubjectIcon } from "@/lib/subjectIcons";
@@ -29,6 +30,10 @@ export function Sidebar({
   onLearnHome,
   onSubjectChange,
 }: SidebarProps) {
+  const [showExportModal, setShowExportModal] = useState(false);
+  const [mounted, setMounted] = useState(false);
+  useEffect(() => { setMounted(true); }, []);
+
   const { standardSubjects, apSubjects, collegeSubjects } = useMemo(() => {
     const empty = {
       standardSubjects: [] as CurriculumSubject[],
@@ -186,12 +191,83 @@ export function Sidebar({
         </div>
       </div>
 
+      <button
+        type="button"
+        onClick={() => setShowExportModal(true)}
+        className="mx-3 mb-2 flex w-[calc(100%-1.5rem)] items-center gap-2 rounded-lg border border-le-border bg-le-bg px-3 py-2.5 text-xs font-medium text-le-text-secondary transition-colors hover:bg-le-hover hover:text-le-text"
+      >
+        <Download className="h-3.5 w-3.5 flex-shrink-0" />
+        Export for offline
+      </button>
+
       <div className="mx-3 mb-4 flex flex-shrink-0 items-center gap-2 rounded-lg border border-le-border bg-le-bg px-3 py-2.5">
         <span className="h-2 w-2 animate-pulse-dot rounded-full bg-le-green" />
         <span className="text-xs font-medium text-le-text-secondary">
           Studying offline
         </span>
       </div>
+
+      {mounted &&
+        showExportModal &&
+        createPortal(
+          <div
+            className="fixed inset-0 z-50 flex items-center justify-center bg-black/60 backdrop-blur-sm"
+            onClick={() => setShowExportModal(false)}
+          >
+            <div
+              className="relative mx-4 w-full max-w-md rounded-xl border border-le-border bg-le-surface p-6 shadow-2xl"
+              onClick={(e) => e.stopPropagation()}
+            >
+              <button
+                type="button"
+                onClick={() => setShowExportModal(false)}
+                className="absolute right-4 top-4 rounded-md p-1 text-le-text-hint transition-colors hover:bg-le-hover hover:text-le-text"
+                aria-label="Close"
+              >
+                <X className="h-4 w-4" />
+              </button>
+
+              <div className="mb-4 flex items-center gap-2.5">
+                <Download className="h-5 w-5 flex-shrink-0 text-le-accent" />
+                <h2 className="text-base font-semibold text-le-text">
+                  Export for Offline Use
+                </h2>
+              </div>
+
+              <p className="mb-3 text-sm text-le-text-secondary">
+                Package the entire app — including the AI tutor model — into a
+                single zip file. Copy it to a USB drive, share it with students,
+                and they can run OffLearn with zero internet connection, even on
+                first launch.
+              </p>
+
+              <p className="mb-2 text-sm text-le-text-secondary">
+                In your terminal, run:
+              </p>
+              <pre className="mb-4 overflow-x-auto rounded-lg border border-le-border bg-le-bg px-4 py-3 text-sm font-mono text-le-mint">
+                npm run export:portable
+              </pre>
+
+              <p className="text-xs text-le-text-hint">
+                The script downloads the Gemma model (~1.6 GB), patches the
+                build for offline use, and creates{" "}
+                <span className="font-mono">offlearn-portable.zip</span> in the
+                project root. Students unzip it and run{" "}
+                <span className="font-mono">run.sh</span> (macOS/Linux) or{" "}
+                <span className="font-mono">run.bat</span> (Windows).
+              </p>
+
+              <button
+                type="button"
+                onClick={() => setShowExportModal(false)}
+                className="mt-5 w-full rounded-lg bg-le-accent px-4 py-2.5 text-sm font-medium text-white transition-opacity hover:opacity-90"
+              >
+                Got it
+              </button>
+            </div>
+          </div>,
+          document.body
+        )}
     </aside>
   );
 }

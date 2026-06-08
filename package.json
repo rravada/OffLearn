@@ -9,7 +9,8 @@
     "start": "next start",
     "lint": "next lint",
     "precache:manifest": "node scripts/generate-precache-manifest.js",
-    "postinstall": "node scripts/copy-mediapipe-wasm.js"
+    "postinstall": "node scripts/copy-mediapipe-wasm.js",
+    "export:portable": "node scripts/export-portable.js"
   },
   "keywords": [],
   "author": "",
