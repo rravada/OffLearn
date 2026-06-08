@@ -15,6 +15,7 @@ export function stripArtifactTokens(text: string): string {
 export function cleanResponse(text: string): string {
   return text
     .replace(/\u200B|\uFEFF/g, "")
+    // Model artifact tokens
     .replace(/<end_of_turn>/g, "")
     .replace(/<start_of_turn>/g, "")
     .replace(/\[INST\]/g, "")
@@ -23,6 +24,12 @@ export function cleanResponse(text: string): string {
     .replace(/<eos>/g, "")
     .replace(/<bos>/g, "")
     .replace(/<pad>/g, "")
+    // LaTeX/math dollar delimiters \u2014 keep inner content, drop the $ wrappers
+    .replace(/\$\$([^$]+)\$\$/gs, "$1")
+    .replace(/\$([^$\n]+)\$/g, "$1")
+    // Markdown bold and italic \u2014 keep inner text, drop the * wrappers
+    .replace(/\*\*([^*]+)\*\*/g, "$1")
+    .replace(/\*([^*\n]+)\*/g, "$1")
     .replace(/\s+\n/g, "\n")
     .trim();
 }

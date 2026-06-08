@@ -88,7 +88,7 @@ export class LLMSession {
   }
 
   async streamResponse(
-    prompt: string,
+    messages: { role: "user" | "model"; content: string }[],
     onChunk: (text: string, done: boolean) => void,
     systemPrompt?: string
   ): Promise<string> {
@@ -97,7 +97,18 @@ export class LLMSession {
     }
 
     const sysPrompt = systemPrompt ?? DEFAULT_SYSTEM_PROMPT;
-    const fullPrompt = `<start_of_turn>user\n${sysPrompt}\n\n${prompt}<end_of_turn>\n<start_of_turn>model\n`;
+
+    let fullPrompt = "";
+    for (let i = 0; i < messages.length; i++) {
+      const { role, content } = messages[i];
+      if (role === "user") {
+        const body = i === 0 ? `${sysPrompt}\n\n${content}` : content;
+        fullPrompt += `<start_of_turn>user\n${body}<end_of_turn>\n`;
+      } else {
+        fullPrompt += `<start_of_turn>model\n${content}<end_of_turn>\n`;
+      }
+    }
+    fullPrompt += `<start_of_turn>model\n`;
 
     const listener: ProgressListener = (partialResult, done) => {
       onChunk(partialResult, done);
@@ -139,5 +150,14 @@ export class LLMSession {
     this.llm = null;
     LLMSession.instance = null;
     LLMSession.boot = null;
+  }
+
+  /** Destroy the singleton without needing to await getInstance() first. */
+  static closeInstance(): void {
+    if (LLMSession.instance) {
+      LLMSession.instance.close();
+    } else {
+      LLMSession.boot = null;
+    }
   }
 }

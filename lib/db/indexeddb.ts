@@ -92,6 +92,19 @@ export async function getSessionMessages(
   return db.getAllFromIndex("messages", "by-session", sessionId);
 }
 
+export async function deleteSession(id: string): Promise<void> {
+  const db = await getDB();
+  await db.delete("sessions", id);
+}
+
+export async function deleteSessionMessages(sessionId: string): Promise<void> {
+  const db = await getDB();
+  const msgs = await db.getAllFromIndex("messages", "by-session", sessionId);
+  const tx = db.transaction("messages", "readwrite");
+  await Promise.all(msgs.map((m) => tx.store.delete(m.id)));
+  await tx.done;
+}
+
 // --- Mastery ---
 
 export async function upsertMastery(entry: MasteryEntry): Promise<void> {

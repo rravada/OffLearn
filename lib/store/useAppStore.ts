@@ -30,6 +30,7 @@ interface AppState {
   // AI Tutor panel
   tutorOpen: boolean;
   tutorMessages: Message[];
+  currentSessionId: string | null;
   tutorSystemPrompt: string;
   isTutorGenerating: boolean;
   tutorStreamingContent: string;
@@ -59,6 +60,8 @@ interface AppState {
   setTutorOpen: (open: boolean) => void;
   addTutorMessage: (msg: Message) => void;
   clearTutorMessages: () => void;
+  setTutorMessages: (msgs: Message[]) => void;
+  setCurrentSessionId: (id: string | null) => void;
   setTutorSystemPrompt: (prompt: string) => void;
   setIsTutorGenerating: (v: boolean) => void;
   setTutorStreamingContent: (content: string) => void;
@@ -87,6 +90,7 @@ export const useAppStore = create<AppState>((set) => ({
 
   tutorOpen: false,
   tutorMessages: [],
+  currentSessionId: null,
   tutorSystemPrompt: "",
   isTutorGenerating: false,
   tutorStreamingContent: "",
@@ -126,6 +130,8 @@ export const useAppStore = create<AppState>((set) => ({
   addTutorMessage: (msg) =>
     set((state) => ({ tutorMessages: [...state.tutorMessages, msg] })),
   clearTutorMessages: () => set({ tutorMessages: [] }),
+  setTutorMessages: (msgs) => set({ tutorMessages: msgs }),
+  setCurrentSessionId: (id) => set({ currentSessionId: id }),
   setTutorSystemPrompt: (prompt) => set({ tutorSystemPrompt: prompt }),
   setIsTutorGenerating: (v) => set({ isTutorGenerating: v }),
   setTutorStreamingContent: (content) => set({ tutorStreamingContent: content }),
