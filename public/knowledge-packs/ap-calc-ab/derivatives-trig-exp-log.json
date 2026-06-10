@@ -1,0 +1,30 @@
+{
+  "id": "ap-calc-ab-derivatives-trig-exp-log",
+  "title": "Derivatives of Trig, Exponential, and Log Functions",
+  "subject": "AP Calculus AB",
+  "chunks": [
+    { "id": "c1", "text": "The derivative of sin x is cos x, and the derivative of cos x is negative sin x. The minus sign on the cosine derivative is the most commonly forgotten detail." },
+    { "id": "c2", "text": "The derivatives of sine and cosine come directly from the special trig limits lim(x→0) sin(x)/x = 1 and lim(x→0) (1 - cos x)/x = 0 applied in the limit definition of the derivative." },
+    { "id": "c3", "text": "The slope of the sine curve at every point traces out the cosine curve, which is why the derivative of sine is cosine. Likewise the slope function of cosine is negative sine." },
+    { "id": "c4", "text": "Repeatedly differentiating sine produces a four-step cycle: sin x to cos x to negative sin x to negative cos x and back to sin x, so every fourth derivative returns to the start." },
+    { "id": "c5", "text": "The derivative of tan x is sec² x, the derivative of cot x is negative csc² x, the derivative of sec x is sec x tan x, and the derivative of csc x is negative csc x cot x." },
+    { "id": "c6", "text": "All three co-functions, cosine, cotangent, and cosecant, pick up a negative sign when differentiated, which serves as a useful memory aid for the trig derivative signs." },
+    { "id": "c7", "text": "The trigonometric derivative formulas are valid only when the angle is measured in radians, because the derivative of sin x equals cos x precisely from the radian limit lim(x→0) sin(x)/x = 1." },
+    { "id": "c8", "text": "Example: the derivative of 3 sin x - 2 cos x is 3 cos x + 2 sin x, because the minus sign in the cosine derivative flips the -2 into +2 sin x." },
+    { "id": "c9", "text": "The natural exponential function eˣ is its own derivative: d/dx[eˣ] = eˣ. No other function except constant multiples of eˣ has this property." },
+    { "id": "c10", "text": "Because eˣ is its own derivative, at every point on y = eˣ the slope of the tangent line equals the height of the curve, which is why exponential growth accelerates." },
+    { "id": "c11", "text": "For a general base a greater than 0, the derivative of aˣ is aˣ times ln a. When a = e, ln e = 1 and the factor disappears, recovering d/dx[eˣ] = eˣ." },
+    { "id": "c12", "text": "The power rule does not apply to eˣ because eˣ is not a power of x; its variable is in the exponent, not the base, so its derivative is simply eˣ." },
+    { "id": "c13", "text": "It is essential to distinguish d/dx[x²] = 2x, where the variable is the base, from d/dx[2ˣ] = 2ˣ ln 2, where the variable is the exponent. The rules are completely different." },
+    { "id": "c14", "text": "The derivative of the natural logarithm is d/dx[ln x] = 1/x, valid for x greater than 0." },
+    { "id": "c15", "text": "The natural logarithm fills a gap in the power rule: no power of x has derivative 1/x, but ln x does, making it the missing antiderivative of 1/x." },
+    { "id": "c16", "text": "For a general base a, the derivative of log_a x is 1/(x ln a). When a = e this reduces to 1/x because ln e = 1." },
+    { "id": "c17", "text": "The graph of ln x is steep near x = 0 from the right, where 1/x is large, and nearly flat for large x, where 1/x is small, matching its derivative 1/x." },
+    { "id": "c18", "text": "To differentiate a mixed expression, identify the overall structure, classify each piece as a power, trig, exponential, or log function, differentiate each with its own rule, then assemble using the product, quotient, or sum rule." },
+    { "id": "c19", "text": "Example with the product rule: for f(x) = x² eˣ, the derivative is 2x eˣ + x² eˣ = x eˣ(2 + x), with eˣ factoring out." },
+    { "id": "c20", "text": "Example with the quotient rule: for g(x) = (sin x)/x, the derivative is (x cos x - sin x)/x²." },
+    { "id": "c21", "text": "Example with a logarithm: for h(x) = x ln x, the product rule gives 1·ln x + x·(1/x) = ln x + 1, since x times 1/x simplifies to 1." },
+    { "id": "c22", "text": "The base e is special because differentiating aˣ gives aˣ times the constant lim(h→0)[(aʰ - 1)/h], and e is the unique base where that constant equals exactly 1, making eˣ its own derivative." },
+    { "id": "c23", "text": "The self-derivative property of eˣ is why e governs processes where the rate of change is proportional to the current amount, such as population growth, radioactive decay, and compound interest." }
+  ]
+}

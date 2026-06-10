@@ -1,0 +1,30 @@
+{
+  "id": "ap-calc-ab-product-and-quotient-rules",
+  "title": "The Product and Quotient Rules",
+  "subject": "AP Calculus AB",
+  "chunks": [
+    { "id": "c1", "text": "The product rule states that if f(x) = u(x)·v(x), then f'(x) = u'(x)·v(x) + u(x)·v'(x): the derivative of the first times the second plus the first times the derivative of the second." },
+    { "id": "c2", "text": "Differentiation does not distribute over multiplication. The derivative of a product is NOT the product of the derivatives; d/dx[u·v] = u'·v' is false." },
+    { "id": "c3", "text": "A test of the product rule: d/dx[x·x] = d/dx[x²] = 2x, and the product rule gives (1)(x) + (x)(1) = 2x, while multiplying the derivatives would wrongly give 1." },
+    { "id": "c4", "text": "The rectangle analogy for the product rule: if a rectangle has width u and height v, its area u·v changes from the width growing (contributing u'v) and the height growing (contributing uv'), giving a total rate of u'v + uv'." },
+    { "id": "c5", "text": "Example of the product rule: for f(x) = (3x² + 1)(x⁴ − 2x) with u' = 6x and v' = 4x³ − 2, f'(x) = (6x)(x⁴ − 2x) + (3x² + 1)(4x³ − 2) = 18x⁵ + 4x³ − 18x² − 2." },
+    { "id": "c6", "text": "For a simple product, an alternative to the product rule is to expand the multiplication first and then differentiate term by term with the power rule; both methods give the same result." },
+    { "id": "c7", "text": "The quotient rule states that if f(x) = u(x)/v(x), then f'(x) = [u'(x)·v(x) − u(x)·v'(x)] / [v(x)]²." },
+    { "id": "c8", "text": "The quotient rule mnemonic is 'low d-high minus high d-low, all over the square of what's below,' where high is the numerator, low is the denominator, and d means derivative of." },
+    { "id": "c9", "text": "The quotient rule uses a minus sign between its two terms, unlike the product rule's plus, and the order matters: it must be (derivative of top)(bottom) minus (top)(derivative of bottom)." },
+    { "id": "c10", "text": "The minus sign in the quotient rule reflects that a growing denominator makes a fraction smaller, so the denominator's growth works against the fraction's growth." },
+    { "id": "c11", "text": "The quotient rule requires squaring the entire denominator, written [v]², not just v. Forgetting the square is a common error." },
+    { "id": "c12", "text": "To apply the quotient rule cleanly: label u and v, differentiate each, assemble the numerator as u'v − uv', square the whole denominator, and simplify only the numerator if needed." },
+    { "id": "c13", "text": "Example of the quotient rule: for f(x) = (x² + 3)/(2x − 1) with u' = 2x and v' = 2, f'(x) = [(2x)(2x − 1) − (x² + 3)(2)]/(2x − 1)² = (2x² − 2x − 6)/(2x − 1)²." },
+    { "id": "c14", "text": "When applying the quotient rule, the minus sign must be distributed across every term of the product uv'; failing to distribute it is a frequent source of lost points." },
+    { "id": "c15", "text": "Comparison of the rules: the product rule is u'v + uv' with a plus and no denominator, while the quotient rule is (u'v − uv')/v² with a minus, an order that matters, and a squared denominator." },
+    { "id": "c16", "text": "On the AP exam, a correct but unsimplified derivative earns full credit, so it is safer to leave a quotient-rule answer with the denominator as [v]² than to risk an algebra error simplifying it." },
+    { "id": "c17", "text": "A quotient u/v can be rewritten as u·v⁻¹ and differentiated using the product rule together with the chain rule, which some students prefer over memorizing the quotient rule." },
+    { "id": "c18", "text": "When the numerator of a quotient is a constant, the quotient rule simplifies because the derivative of the constant is zero; for example, d/dx[5/(x²+1)] = −10x/(x²+1)²." },
+    { "id": "c19", "text": "Differentiation distributes over addition and subtraction but never over multiplication or division, so products require the product rule and quotients require the quotient rule." },
+    { "id": "c20", "text": "For multi-step problems combining rules, work from the outside in: identify the outermost operation, apply its rule first, and then differentiate the inner pieces with whatever rules they require." },
+    { "id": "c21", "text": "Example combining rules: for f(x) = x²·(3x + 1)/(x − 4), treat it as a product of x² and a quotient; the quotient's derivative is −13/(x−4)², and the product rule gives f'(x) = x(6x² − 35x − 8)/(x − 4)²." },
+    { "id": "c22", "text": "The product rule can be derived from the limit definition by adding and subtracting the middle term u(x+h)v(x) in the difference quotient, which splits it into pieces approaching u'v and uv'." },
+    { "id": "c23", "text": "The product and quotient rules matter because real quantities are built by multiplying and dividing: power is voltage times current, density is mass divided by volume, and finding their rates of change requires these rules." }
+  ]
+}

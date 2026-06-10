@@ -1,0 +1,29 @@
+{
+  "id": "ap-calc-ab-intermediate-value-theorem",
+  "title": "The Intermediate Value Theorem",
+  "subject": "AP Calculus AB",
+  "chunks": [
+    { "id": "c1", "text": "The Intermediate Value Theorem states that if f is continuous on the closed interval [a, b] and N is any number between f(a) and f(b), then there exists at least one value c in the open interval (a, b) such that f(c) = N." },
+    { "id": "c2", "text": "The intuition behind the Intermediate Value Theorem is that a continuous function cannot skip values: to go from one output height to another it must pass through every height in between, like a hiker passing through every elevation between the start and end of a hike." },
+    { "id": "c3", "text": "Continuity is the essential hypothesis of the Intermediate Value Theorem. A function with a jump discontinuity can skip over a value, so the theorem does not apply unless the function is continuous on the whole closed interval." },
+    { "id": "c4", "text": "The Intermediate Value Theorem is an existence theorem: it guarantees that a value c exists but does not tell you what c equals and does not tell you how many such values there are." },
+    { "id": "c5", "text": "To apply the Intermediate Value Theorem to an equation g(x) = k, define a helper function f(x) = g(x) - k so that a solution of the equation is exactly a zero of f, making the target value N equal to 0." },
+    { "id": "c6", "text": "When the target value is N = 0, the Intermediate Value Theorem applies if f(a) and f(b) have opposite signs, because then 0 is bracketed between the endpoint values." },
+    { "id": "c7", "text": "A complete IVT application has five parts: set up the function and target N, verify continuity on the closed interval, evaluate the endpoints, check that N is bracketed by the endpoint values, and then state the conclusion that a c exists." },
+    { "id": "c8", "text": "Example: to show cos(x) = x has a solution on [0, π/2], define f(x) = cos(x) - x; it is continuous, f(0) = 1 is positive, and f(π/2) ≈ -1.571 is negative, so by the IVT some c gives f(c) = 0, meaning cos(c) = c." },
+    { "id": "c9", "text": "The Intermediate Value Theorem does not count solutions. A sign change between f(a) and f(b) guarantees at least one solution, but the function may cross the target value several times." },
+    { "id": "c10", "text": "The Intermediate Value Theorem does not locate solutions. It certifies that a value is attained somewhere in the interval but never identifies the exact input that achieves it." },
+    { "id": "c11", "text": "The Intermediate Value Theorem is one-directional: continuity plus a bracketed target implies a solution exists, but it never says that a non-bracketed value cannot be attained. A function may still reach values the IVT does not guarantee." },
+    { "id": "c12", "text": "For the Intermediate Value Theorem to apply on an interval, the target value N must lie strictly between the two endpoint outputs f(a) and f(b). If N is above both or below both, the theorem says nothing on that interval." },
+    { "id": "c13", "text": "AP free-response problems often present a table of selected values of a continuous function and ask whether a value must be attained on a sub-interval; the IVT applies whenever the target lies between the two endpoint values of that sub-interval." },
+    { "id": "c14", "text": "Example with a table: if g is continuous with g(1) = 4 and g(3) = -2, then because 0 lies between -2 and 4, the IVT guarantees a value c in (1, 3) where g(c) = 0." },
+    { "id": "c15", "text": "Choosing the right interval matters: a target value of 5 is not bracketed by g(1) = 4 and g(3) = -2, but it is bracketed by g(3) = -2 and g(5) = 6, so the IVT guarantees g(x) = 5 on (3, 5) rather than on (1, 3)." },
+    { "id": "c16", "text": "On the AP exam, an IVT justification earns credit only if it explicitly states the function is continuous on the closed interval and shows the endpoint values bracket the target value before concluding that a c exists." },
+    { "id": "c17", "text": "The three-part IVT justification template is: state that f is continuous on [a, b], show f(a) and f(b) with N between them, then conclude that by the IVT there exists c in (a, b) with f(c) = N." },
+    { "id": "c18", "text": "If the continuity hypothesis fails, the correct conclusion is that the IVT does not apply, not that no solution exists; absence of the guarantee is not a guarantee of absence." },
+    { "id": "c19", "text": "The bisection method used by computers to solve equations repeatedly applies the Intermediate Value Theorem, checking the midpoint of an interval and keeping the half that still shows a sign change to narrow in on a root." },
+    { "id": "c20", "text": "The IVT proves real solutions exist even for equations with no algebraic solution formula. For f(x) = x⁵ + 3x - 7, f(1) = -3 and f(2) = 31, so continuity and the sign change guarantee a root between 1 and 2." },
+    { "id": "c21", "text": "The Intermediate Value Theorem belongs to a family of existence theorems in calculus that includes the Extreme Value Theorem, which guarantees a maximum and minimum on a closed interval, and the Mean Value Theorem, which guarantees an instant where the instantaneous rate equals the average rate." },
+    { "id": "c22", "text": "An existence theorem lets mathematicians prove that something exists without constructing it explicitly, which is practical for reasoning about functions and solutions that cannot be written down with a formula." }
+  ]
+}

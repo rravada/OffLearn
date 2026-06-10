@@ -5,22 +5,35 @@
   "unit": "Limits and Continuity",
   "track": "ap",
   "difficulty": "ap",
-  "duration": "25 min",
+  "duration": "40 min",
   "objectives": [
-    "Explain what a limit means conceptually, distinguishing between approaching a value and actually reaching it",
-    "Determine left-hand and right-hand limits from graphs and tables of values",
-    "Identify when a two-sided limit exists and when it does not by comparing one-sided limits"
+    "Interpret the meaning of a limit as the value a function approaches and distinguish it from the value the function actually takes",
+    "Estimate limits of functions from graphs and from tables of values",
+    "Determine left-hand and right-hand limits and use them to decide whether a two-sided limit exists",
+    "Use correct limit notation, including one-sided notation, and identify when a limit fails to exist"
   ],
   "sections": [
     {
       "type": "explanation",
       "heading": "What Is a Limit, Really?",
-      "content": "Imagine you're walking toward a campfire on a cold night. As you take each step closer, you feel warmer and warmer. The limit is the temperature you're *approaching* — not necessarily the temperature right at the fire itself (which might be too hot to stand in). In math, a limit describes what value a function is heading toward as the input gets closer and closer to some target number.\n\nHere's the formal idea in plain language: when we write lim(x→3) f(x) = 7, we're saying that as x gets closer and closer to 3 — from both sides — the output f(x) gets closer and closer to 7. Notice something crucial: we never actually care what happens *at* x = 3. The function might equal 7 there, it might equal something else, or it might not even be defined at x = 3. The limit only asks: what value are we *approaching*?\n\nThis is one of the most important ideas in all of calculus, and it's worth pausing on. Think of it like this: if you're driving toward a town and every road sign says the town is getting closer — 10 miles, 5 miles, 2 miles, 1 mile — you can predict where you're heading even if you never actually arrive. That prediction is the limit.\n\nWhy does this matter? Because calculus is fundamentally about things that change — velocity, growth rates, areas under curves. And to describe change precisely, we need to talk about what happens as quantities get *infinitely close* to each other, without necessarily touching. The limit is the tool that makes this possible."
+      "content": "Imagine you're walking toward a campfire on a cold night. As you take each step closer, you feel warmer and warmer. The limit is the temperature you're *approaching* — not necessarily the temperature right at the fire itself (which might be too hot to stand in). In math, a limit describes what value a function is heading toward as the input gets closer and closer to some target number.\n\nHere's the formal idea in plain language: when we write lim(x→3) f(x) = 7, we're saying that as x gets closer and closer to 3 — from both sides — the output f(x) gets closer and closer to 7. Notice something crucial: we never actually care what happens *at* x = 3. The function might equal 7 there, it might equal something else, or it might not even be defined at x = 3. The limit only asks: what value are we *approaching*?\n\nThis is one of the most important ideas in all of calculus, and it's worth pausing on. Think of it like this: if you're driving toward a town and every road sign says the town is getting closer — 10 miles, 5 miles, 2 miles, 1 mile — you can predict where you're heading even if you never actually arrive. That prediction is the limit.\n\nWhy does this matter? Because calculus is fundamentally about things that change — velocity, growth rates, areas under curves. And to describe change precisely, we need to talk about what happens as quantities get *infinitely close* to each other, without necessarily touching. The limit is the tool that makes this possible. Every single major idea you will meet this year — the derivative, the integral, the Fundamental Theorem — is built directly on this one concept. Get comfortable with it now, and the rest of the course has a foundation to stand on."
     },
     {
       "type": "example",
       "heading": "Approaching vs. Arriving: A Table Example",
-      "content": "Consider the function f(x) = (x² - 9)/(x - 3). If you try to plug in x = 3, you get 0/0, which is undefined. The function literally has no value at x = 3. But let's see what happens as x *approaches* 3.\n\nFrom the left side:\n  x = 2.0 → f(x) = 5.0\n  x = 2.5 → f(x) = 5.5\n  x = 2.9 → f(x) = 5.9\n  x = 2.99 → f(x) = 5.99\n  x = 2.999 → f(x) = 5.999\n\nFrom the right side:\n  x = 4.0 → f(x) = 7.0\n  x = 3.5 → f(x) = 6.5\n  x = 3.1 → f(x) = 6.1\n  x = 3.01 → f(x) = 6.01\n  x = 3.001 → f(x) = 6.001\n\nDo you see the pattern? From both sides, the outputs are zeroing in on 6. So we write lim(x→3) (x² - 9)/(x - 3) = 6. The function doesn't exist at x = 3, but the limit exists and equals 6. If you factor the numerator, you'll see why: (x² - 9)/(x - 3) = (x+3)(x-3)/(x-3) = x + 3 for all x ≠ 3. And x + 3 clearly approaches 6 as x approaches 3."
+      "content": "Consider the function f(x) = (x² - 9)/(x - 3). If you try to plug in x = 3, you get 0/0, which is undefined. The function literally has no value at x = 3. But let's see what happens as x *approaches* 3.\n\nFrom the left side (inputs slightly less than 3):\n  x = 2.0 → f(x) = 5.0\n  x = 2.5 → f(x) = 5.5\n  x = 2.9 → f(x) = 5.9\n  x = 2.99 → f(x) = 5.99\n  x = 2.999 → f(x) = 5.999\n\nFrom the right side (inputs slightly more than 3):\n  x = 4.0 → f(x) = 7.0\n  x = 3.5 → f(x) = 6.5\n  x = 3.1 → f(x) = 6.1\n  x = 3.01 → f(x) = 6.01\n  x = 3.001 → f(x) = 6.001\n\nDo you see the pattern? From both sides, the outputs are zeroing in on 6. So we write lim(x→3) (x² - 9)/(x - 3) = 6. The function doesn't exist at x = 3, but the limit exists and equals 6. If you factor the numerator, you'll see why: (x² - 9)/(x - 3) = (x+3)(x-3)/(x-3) = x + 3 for all x ≠ 3. And x + 3 clearly approaches 6 as x approaches 3. The table didn't prove the answer — it revealed it. On the AP exam you'll often be handed a table exactly like this and asked to estimate the limit. Read the trend, not the missing middle row."
+    },
+    {
+      "type": "quiz",
+      "question": "A table shows that as x approaches 5, f(x) gives values 8.9, 8.99, 8.999 from the left and 9.1, 9.01, 9.001 from the right. The table also lists f(5) = 2. What is lim(x→5) f(x)?",
+      "options": [
+        "2, because that is the actual value of f at x = 5",
+        "9, because the outputs approach 9 from both sides",
+        "The limit does not exist because f(5) ≠ 9",
+        "5, because x is approaching 5"
+      ],
+      "correctIndex": 1,
+      "explanation": "The limit is the value the outputs approach from both sides, which is 9. The actual value f(5) = 2 is irrelevant to the limit — a function's value at a point and its limit at that point can be completely different. The limit is about the trend, not the dot."
     },
     {
       "type": "keypoint",
@@ -29,22 +42,90 @@
     {
       "type": "explanation",
       "heading": "Left-Hand and Right-Hand Limits",
-      "content": "Sometimes a function approaches different values depending on which direction you come from. Think of standing at a cliff edge: the ground level to your left might be very different from the drop-off to your right. We need language for this.\n\nThe left-hand limit, written lim(x→a⁻) f(x), asks: what does f(x) approach as x comes from values *less than* a (from the left on a number line)? The right-hand limit, written lim(x→a⁺) f(x), asks the same thing but from values *greater than* a (from the right).\n\nHere's the big rule: the two-sided limit lim(x→a) f(x) exists *only if* both one-sided limits exist AND they equal each other. If the left-hand limit is 4 and the right-hand limit is 7, then the two-sided limit does not exist — the function is trying to go to two different places at once, which means there's no single value it's approaching.\n\nA classic example is the function that equals 1 when x < 0 and equals -1 when x ≥ 0 (a step function). As x → 0 from the left, f(x) → 1. As x → 0 from the right, f(x) → -1. Since 1 ≠ -1, the two-sided limit at x = 0 does not exist."
+      "content": "Sometimes a function approaches different values depending on which direction you come from. Think of standing at a cliff edge: the ground level to your left might be very different from the drop-off to your right. We need language for this.\n\nThe left-hand limit, written lim(x→a⁻) f(x), asks: what does f(x) approach as x comes from values *less than* a (from the left on a number line)? The little minus sign sits up high after the a, and it means 'approaching from below.' The right-hand limit, written lim(x→a⁺) f(x), asks the same thing but from values *greater than* a (from the right) — the plus sign means 'approaching from above.'\n\nHere's the big rule, and it's worth tattooing on your brain: the two-sided limit lim(x→a) f(x) exists *only if* both one-sided limits exist AND they equal each other. If the left-hand limit is 4 and the right-hand limit is 7, then the two-sided limit does not exist — the function is trying to go to two different places at once, which means there's no single value it's approaching.\n\nA classic example is the function that equals 1 when x < 0 and equals -1 when x ≥ 0 (a step function). As x → 0 from the left, f(x) → 1. As x → 0 from the right, f(x) → -1. Since 1 ≠ -1, the two-sided limit at x = 0 does not exist. The function isn't broken or wrong — it simply has no single 'destination' as you approach 0, because the destination depends on your direction of travel."
+    },
+    {
+      "type": "table",
+      "heading": "Limit Notation at a Glance",
+      "headers": ["Notation", "Meaning", "Exists when..."],
+      "rows": [
+        ["lim(x→a⁻) f(x)", "Left-hand limit: value approached from inputs below a", "The outputs settle toward one number as x increases toward a"],
+        ["lim(x→a⁺) f(x)", "Right-hand limit: value approached from inputs above a", "The outputs settle toward one number as x decreases toward a"],
+        ["lim(x→a) f(x)", "Two-sided limit: the value approached from both sides", "BOTH one-sided limits exist AND are equal"],
+        ["f(a)", "The actual function value at a (NOT a limit)", "The function is defined at a (there is a filled dot)"],
+        ["DNE", "Does Not Exist", "One-sided limits disagree, oscillate forever, or blow up to ±∞"]
+      ]
+    },
+    {
+      "type": "steps",
+      "heading": "How to Read a Limit from a Graph",
+      "steps": [
+        {
+          "title": "Cover up the point itself",
+          "content": "Put your finger or pencil over what happens exactly at x = a. The limit doesn't care about the single point at x = a — only about the neighborhood around it. Hiding the point keeps you from being fooled by a stray dot."
+        },
+        {
+          "title": "Trace the curve from the left",
+          "content": "Starting well to the left of x = a, slide your finger along the curve toward a. Ask: what height (y-value) is the curve heading toward? That height is the left-hand limit, lim(x→a⁻) f(x). Watch the curve, not any isolated point."
+        },
+        {
+          "title": "Trace the curve from the right",
+          "content": "Now start well to the right of x = a and slide your finger toward a from that side. The height the curve heads toward is the right-hand limit, lim(x→a⁺) f(x)."
+        },
+        {
+          "title": "Compare the two one-sided limits",
+          "content": "If the left-hand and right-hand limits are the same number, that number is the two-sided limit. If they're different, the two-sided limit does not exist (DNE)."
+        },
+        {
+          "title": "Read the function value separately (if asked)",
+          "content": "Only now look at the point itself. A filled-in dot gives the actual value f(a); an open circle means the function is not defined there (or is defined elsewhere). The function value is a separate question from the limit — answer them independently."
+        }
+      ]
     },
     {
       "type": "example",
       "heading": "Reading Limits from a Graph",
-      "content": "Picture a graph of some function f(x). At x = 2, there's an open circle at the point (2, 5) and a filled-in dot at (2, 3). What does this tell us?\n\nThe open circle at (2, 5) means the function *approaches* 5 as x gets close to 2, but doesn't actually take the value 5 there. The filled dot at (2, 3) means f(2) = 3 — the actual function value at x = 2 is 3.\n\nSo: lim(x→2) f(x) = 5, but f(2) = 3. The limit and the function value are different! This is perfectly legal in math. It just means there's a kind of 'glitch' in the function at that point.\n\nNow imagine a different graph where, as you trace toward x = 4 from the left, the curve heads toward y = 2, but from the right, the curve heads toward y = 6. Then: lim(x→4⁻) f(x) = 2, lim(x→4⁺) f(x) = 6, and lim(x→4) f(x) does not exist (DNE).\n\nWhen you read limits from graphs on the AP exam, always trace the curve with your finger from each side separately. Don't look at the dot — look at where the curve is heading."
+      "content": "Picture a graph of some function f(x). At x = 2, there's an open circle at the point (2, 5) and a filled-in dot at (2, 3). What does this tell us?\n\nThe open circle at (2, 5) means the function *approaches* 5 as x gets close to 2, but doesn't actually take the value 5 there. The filled dot at (2, 3) means f(2) = 3 — the actual function value at x = 2 is 3.\n\nSo: lim(x→2) f(x) = 5, but f(2) = 3. The limit and the function value are different! This is perfectly legal in math. It just means there's a kind of 'glitch' in the function at that point — the curve is heading to height 5, but the point has been moved down to height 3.\n\nNow imagine a different graph where, as you trace toward x = 4 from the left, the curve heads toward y = 2, but from the right, the curve heads toward y = 6. Then: lim(x→4⁻) f(x) = 2, lim(x→4⁺) f(x) = 6, and lim(x→4) f(x) does not exist (DNE). The two sides disagree, so there's no single destination.\n\nWhen you read limits from graphs on the AP exam, always trace the curve with your finger from each side separately. Don't look at the dot — look at where the curve is heading."
+    },
+    {
+      "type": "callout",
+      "variant": "warning",
+      "heading": "The #1 Limit-Reading Mistake",
+      "content": "When a graph has both an open circle and a filled dot stacked at the same x-value, students grab the filled dot and call it the limit. Wrong. The filled dot is f(a) — the function VALUE. The limit follows the *curve*, which heads toward the open circle. On the AP exam, questions deliberately separate the dot from the curve to test whether you know the difference. Trace the curve; ignore the dot when finding a limit."
+    },
+    {
+      "type": "quiz",
+      "question": "For a function g, you find that lim(x→1⁻) g(x) = 4 and lim(x→1⁺) g(x) = 4, but g(1) = 9. What can you correctly conclude about lim(x→1) g(x)?",
+      "options": [
+        "It does not exist, because g(1) = 9 does not match the one-sided limits",
+        "It equals 9, because that is the function's value at x = 1",
+        "It equals 4, because both one-sided limits are 4",
+        "It cannot be determined without more information"
+      ],
+      "correctIndex": 2,
+      "explanation": "A two-sided limit exists and equals L whenever both one-sided limits equal L — here both are 4, so the limit is 4. The mismatched value g(1) = 9 does NOT prevent the limit from existing; it only means g is discontinuous at x = 1. Limit existence depends on the one-sided limits, never on the function value."
     },
     {
       "type": "keypoint",
       "content": "The two-sided limit lim(x→a) f(x) exists only when the left-hand limit and the right-hand limit both exist and are equal. When reading graphs, trace the curve from each side separately — the filled dot tells you the function value, not the limit."
     },
     {
+      "type": "callout",
+      "variant": "remember",
+      "heading": "Three Ways a Limit Can Fail to Exist",
+      "content": "A two-sided limit fails to exist (DNE) in exactly three situations: (1) the left-hand and right-hand limits disagree (a jump); (2) the function blows up toward +∞ or -∞ near the point (it never settles on a finite value); or (3) the function oscillates forever without settling, like sin(1/x) near x = 0. Memorize these three — 'DNE' on the AP exam is almost always one of them."
+    },
+    {
+      "type": "callout",
+      "variant": "tip",
+      "heading": "Say the Limit Out Loud",
+      "content": "When you see lim(x→a) f(x), read it aloud as 'the limit, as x approaches a, of f of x.' The word 'approaches' should remind you every time: you are NOT plugging in and you are NOT reading the dot — you are describing motion toward a target. Building this verbal habit now prevents the most common conceptual errors later."
+    },
+    {
       "type": "deepdive",
       "heading": "Why Limits Are the Foundation of All Calculus",
-      "content": "You might wonder: why start an entire branch of mathematics with this seemingly simple idea of 'approaching'? Here's the deep reason.\n\nThink about velocity. If you drive 120 miles in 2 hours, your average velocity is 60 mph. But what's your velocity at one specific instant — say, at exactly 1:32:07 PM? You can't divide distance by time for a single instant because no time passes and no distance is covered. You'd get 0/0, which is meaningless.\n\nBut here's Newton's and Leibniz's brilliant insight: you *can* calculate the average velocity over shorter and shorter time intervals — 1 second, 0.1 seconds, 0.01 seconds — all centered around that instant. As the time interval shrinks toward zero, these average velocities approach a specific number. That number is the instantaneous velocity, and finding it requires a *limit*.\n\nThis is exactly what a derivative is: lim(h→0) [f(x+h) - f(x)] / h. You're taking the average rate of change over a tiny interval h, and then asking what happens as h approaches zero. Without limits, this expression is just 0/0. With limits, it becomes the most powerful tool in applied mathematics.\n\nThe same thing happens with integrals (areas under curves). You estimate the area using more and more rectangles, each getting thinner. The limit of that sum as the rectangles get infinitely thin gives the exact area. Every major idea in calculus — derivatives, integrals, series — is built on limits. Master this concept now, and you've laid the foundation for everything that follows."
+      "content": "You might wonder: why start an entire branch of mathematics with this seemingly simple idea of 'approaching'? Here's the deep reason.\n\nThink about velocity. If you drive 120 miles in 2 hours, your average velocity is 60 mph. But what's your velocity at one specific instant — say, at exactly 1:32:07 PM? You can't divide distance by time for a single instant because no time passes and no distance is covered. You'd get 0/0, which is meaningless.\n\nBut here's Newton's and Leibniz's brilliant insight: you *can* calculate the average velocity over shorter and shorter time intervals — 1 second, 0.1 seconds, 0.01 seconds — all centered around that instant. As the time interval shrinks toward zero, these average velocities approach a specific number. That number is the instantaneous velocity, and finding it requires a *limit*.\n\nThis is exactly what a derivative is: lim(h→0) [f(x+h) - f(x)] / h. You're taking the average rate of change over a tiny interval h, and then asking what happens as h approaches zero. Without limits, this expression is just 0/0. With limits, it becomes the most powerful tool in applied mathematics.\n\nThe same thing happens with integrals (areas under curves). You estimate the area using more and more rectangles, each getting thinner. The limit of that sum as the rectangles get infinitely thin gives the exact area. Every major idea in calculus — derivatives, integrals, series — is built on limits. Master this concept now, and you've laid the foundation for everything that follows. When this course feels hard in March, it will almost always be because a limit is hiding underneath the problem. Find the limit, and the fog clears."
     }
   ],
-  "aiContext": "AP Calculus AB. Guide students to understand concepts graphically before algebraically. Push them to explain what a derivative or integral MEANS physically, not just how to compute it. Common confusion: chain rule application order, and confusing definite vs indefinite integrals."
+  "aiContext": "This is the first lesson of AP Calculus AB Unit 1 (Limits and Continuity). Emphasize the conceptual distinction between the limit (the value approached) and the function value f(a) — this is THE foundational idea and the most common early confusion. Watch for students who try to 'plug in' immediately or who read the filled dot off a graph as the limit; redirect them to trace the curve from each side. Push them to verbalize limits using the word 'approaches.' Connect forward: this idea underlies the derivative (lim h→0 of the difference quotient) and the definite integral (limit of Riemann sums), so framing limits as the engine of all of calculus helps motivate the work. On the AP exam, this topic shows up as multiple-choice questions reading limits and one-sided limits off graphs and tables, and identifying when a limit does not exist; free-response questions rarely test it in isolation but rely on it constantly when interpreting f, f', and accumulation functions."
 }

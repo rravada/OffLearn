@@ -1,0 +1,31 @@
+{
+  "id": "ap-calc-ab-derivative-definition-and-rate-of-change",
+  "title": "The Derivative: Definition and Rate of Change",
+  "subject": "AP Calculus AB",
+  "chunks": [
+    { "id": "c1", "text": "The average rate of change of a function f between x = a and x = b is [f(b) - f(a)] / (b - a). It equals the slope of the secant line connecting the points (a, f(a)) and (b, f(b))." },
+    { "id": "c2", "text": "The instantaneous rate of change of a function at a single point is the slope of the tangent line there, and it is computed using a limit rather than by simple division over an interval." },
+    { "id": "c3", "text": "A secant line passes through two points on a curve, while a tangent line touches the curve at a single point. As the second point slides toward the first, the secant line approaches the tangent line." },
+    { "id": "c4", "text": "The limit definition of the derivative is f'(x) = lim(h→0) [f(x + h) - f(x)] / h. It is the limit of secant-line slopes as the interval width h shrinks to zero." },
+    { "id": "c5", "text": "The derivative f'(a) is the slope of the tangent line to f at x = a and represents the instantaneous rate of change of f at that point." },
+    { "id": "c6", "text": "To compute a derivative from the limit definition: write the definition, expand f(x + h) carefully, subtract f(x) so the original terms cancel, factor and cancel the h in the denominator, then take the limit as h approaches 0." },
+    { "id": "c7", "text": "Example using the limit definition: for f(x) = x², expanding (x + h)² gives x² + 2xh + h²; subtracting x² and dividing by h gives 2x + h; taking h to 0 gives f'(x) = 2x." },
+    { "id": "c8", "text": "The derivative is itself a function: f'(x) = 2x takes any input x and returns the slope of the original curve at that point, for example a slope of 2 at x = 1 and a slope of 6 at x = 3." },
+    { "id": "c9", "text": "The 'at a point' form of the derivative is f'(a) = lim(x→a) [f(x) - f(a)] / (x - a). It is equivalent to the h-form and lets the input slide directly toward a." },
+    { "id": "c10", "text": "Example of the at-a-point form: f'(3) for f(x) = x² is lim(x→3) (x² - 9)/(x - 3); factoring gives (x - 3)(x + 3)/(x - 3), which cancels to x + 3 and equals 6 at x = 3." },
+    { "id": "c11", "text": "A limit written in the form lim(x→a) [f(x) - f(a)]/(x - a) or lim(h→0) [f(a+h) - f(a)]/h is a disguised derivative equal to f'(a) and can often be evaluated by recognizing f and a directly." },
+    { "id": "c12", "text": "Average rate of change uses two points and requires no limit, while instantaneous rate of change uses one point and requires a limit. Confusing the two is a common error; wording like 'average velocity' signals the secant formula and 'velocity at an instant' signals the derivative." },
+    { "id": "c13", "text": "For position s(t) = -16t² + 48t + 5, the average velocity from t = 0 to t = 1 is 32 ft/sec, while the instantaneous velocity s'(1) = -32(1) + 48 = 16 ft/sec, showing the two can differ." },
+    { "id": "c14", "text": "The derivative of a position function is velocity. For s(t) = -16t² + 48t + 5, the velocity is s'(t) = -32t + 48, which is zero at t = 1.5 seconds when the ball reaches its highest point." },
+    { "id": "c15", "text": "Lagrange notation writes the derivative as f'(x), read 'f prime of x,' emphasizing that the derivative is a new function derived from f." },
+    { "id": "c16", "text": "Leibniz notation writes the derivative as dy/dx, read 'dee y dee x,' emphasizing the ratio of a tiny change in y to a tiny change in x. The notation df/dx means the same thing." },
+    { "id": "c17", "text": "Although dy/dx is written like a fraction, it is defined as a limit, not a literal fraction, though it behaves like one in many useful manipulations such as the chain rule and implicit differentiation." },
+    { "id": "c18", "text": "The units of a derivative dy/dx are the units of y per unit of x. For example, if volume V is in liters and time t is in minutes, then dV/dt has units of liters per minute." },
+    { "id": "c19", "text": "A negative derivative value such as dV/dt = -3 means the quantity is decreasing at that instant, at a rate of 3 units per unit of input. The sign indicates direction and the magnitude indicates speed of change." },
+    { "id": "c20", "text": "Interpreting a derivative in context on the AP exam requires stating the rate, the direction (increasing or decreasing based on the sign), and the correct units in a complete sentence." },
+    { "id": "c21", "text": "The derivative fails to exist where the left-hand and right-hand secant slopes disagree. The absolute value function f(x) = |x| has slope -1 from the left and +1 from the right at x = 0, so it has no derivative there." },
+    { "id": "c22", "text": "A derivative fails to exist at corners, at cusps, at vertical tangent lines where the slope would be infinite, and at any discontinuity such as a jump, hole, or asymptote." },
+    { "id": "c23", "text": "Differentiability is stronger than continuity: every differentiable function is continuous, but not every continuous function is differentiable. The absolute value function is continuous at 0 but not differentiable there." },
+    { "id": "c24", "text": "Zooming in on a smooth curve at a point makes it look like a straight line, an idea called local linearity. The slope of that line is the derivative, and this idea underlies tangent-line approximation." }
+  ]
+}

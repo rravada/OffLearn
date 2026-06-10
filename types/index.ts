@@ -83,11 +83,15 @@ export interface CurriculumIndex {
   subjects: CurriculumSubject[];
 }
 
-export interface LessonSection {
-  type: "explanation" | "example" | "keypoint" | "deepdive";
-  heading?: string;
-  content: string;
-}
+export type LessonSection =
+  | { type: "explanation"; heading?: string; content: string }
+  | { type: "example"; heading?: string; content: string }
+  | { type: "keypoint"; heading?: string; content: string }
+  | { type: "deepdive"; heading?: string; content: string }
+  | { type: "steps"; heading?: string; steps: Array<{ title: string; content: string }> }
+  | { type: "quiz"; question: string; options: string[]; correctIndex: number; explanation: string }
+  | { type: "table"; heading?: string; headers: string[]; rows: string[][] }
+  | { type: "callout"; variant: "warning" | "tip" | "remember"; heading?: string; content: string };
 
 export interface LessonData {
   id: string;
@@ -100,6 +104,33 @@ export interface LessonData {
   objectives: string[];
   sections: LessonSection[];
   aiContext: string;
+}
+
+// Assessment types
+
+export interface AssessmentQuestion {
+  question: string;
+  options: string[];
+  correctIndex: number;
+  explanation: string;
+}
+
+export interface AssessmentData {
+  id: string;
+  title: string;
+  subject: string;
+  unit?: string;
+  type: "unit-review" | "course-final";
+  questionsPerAttempt: number;
+  bank: AssessmentQuestion[];
+  isAssessment: true;
+}
+
+export interface AssessmentResult {
+  assessmentId: string;
+  score: number;
+  total: number;
+  dateTaken: number;
 }
 
 // Test prep types

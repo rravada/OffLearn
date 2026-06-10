@@ -1,0 +1,138 @@
+{
+  "id": "ap-calc-ab-unit1-infinite-limits-and-limits-at-infinity",
+  "title": "Infinite Limits, Limits at Infinity, and Asymptotes",
+  "subject": "AP Calculus AB",
+  "unit": "Limits and Continuity",
+  "track": "ap",
+  "difficulty": "ap",
+  "duration": "45 min",
+  "objectives": [
+    "Evaluate infinite limits and connect them to vertical asymptotes, including determining the sign from each side",
+    "Evaluate limits as x approaches positive or negative infinity for polynomial and rational functions",
+    "Determine horizontal asymptotes by comparing the degrees of the numerator and denominator of a rational function",
+    "Distinguish between vertical asymptotes (infinite limits) and horizontal asymptotes (limits at infinity) and describe a function's end behavior"
+  ],
+  "sections": [
+    {
+      "type": "explanation",
+      "heading": "Two Different Questions Involving Infinity",
+      "content": "The word 'infinity' shows up in two completely different limit questions, and keeping them straight is half the battle in this lesson.\n\nThe first question is about *infinite limits*: what happens to the OUTPUT as x approaches a specific finite number where the function blows up? For example, near x = 0 the function 1/x rockets toward ±∞. Here x is heading to a normal number (0), but f(x) is exploding. Infinite limits live at *vertical asymptotes*.\n\nThe second question is about *limits at infinity*: what happens to the output as the INPUT x runs off toward ±∞? For example, as x gets astronomically large, 1/x shrinks toward 0. Here x itself is the thing going to infinity, and we're asking where the function settles in the long run. Limits at infinity describe *end behavior* and live at *horizontal asymptotes*.\n\nA helpful way to keep them apart: in an infinite limit, the infinity is in the *answer* (the output blows up). In a limit at infinity, the infinity is in the *question* (the input runs away). One produces vertical asymptotes; the other produces horizontal asymptotes. We'll tackle both in this lesson, starting with infinite limits.\n\nOne more crucial point before we dive in: when we write a limit 'equals ∞,' we are NOT saying the limit exists as a finite number. Infinity is not a real number — it's shorthand for 'grows without bound.' Saying lim = ∞ is a precise *description* of how the limit fails to be finite, which is more informative than just writing DNE."
+    },
+    {
+      "type": "explanation",
+      "heading": "Infinite Limits and Vertical Asymptotes",
+      "content": "An infinite limit happens when, as x approaches some finite value a, the function's outputs grow without bound — toward +∞ or -∞. Graphically, the curve hugs a vertical line x = a and shoots up or down. That vertical line is a *vertical asymptote*.\n\nWhere do vertical asymptotes come from? Almost always from a denominator going to zero while the numerator stays nonzero. Recall the earlier diagnosis: (nonzero)/0 is NOT the indeterminate 0/0 — it signals a blow-up. So to find vertical asymptotes of a rational function, look for inputs that make the denominator zero but do NOT also make the numerator zero (those that make both zero are holes, not asymptotes).\n\nThe subtle part is the *sign*: does the function go to +∞ or -∞? And it can differ on the two sides. Take f(x) = 1/x near x = 0. Plug in a tiny positive number like x = 0.001: 1/0.001 = 1000, large and positive — so lim(x→0⁺) 1/x = +∞. Plug in a tiny negative number like x = -0.001: 1/(-0.001) = -1000, large and negative — so lim(x→0⁻) 1/x = -∞. The two sides disagree in sign, which is completely normal for a vertical asymptote.\n\nTo decide the sign without a calculator, do a quick *sign analysis*: pick a test value just to the left of a and just to the right, and track the sign of each factor in the numerator and denominator. The magnitude blows up; you only need to determine whether the result is positive or negative. Whenever the two one-sided infinite limits have opposite signs, the two-sided limit does not exist (though each one-sided limit is precisely described as +∞ or -∞)."
+    },
+    {
+      "type": "example",
+      "heading": "Finding Vertical Asymptotes and Their Signs",
+      "content": "Analyze the behavior of f(x) = (x + 2)/(x - 3) near its vertical asymptote.\n\nStep 1: Find where the denominator is zero: x - 3 = 0 gives x = 3. Check the numerator there: 3 + 2 = 5 ≠ 0. Since the denominator is zero and the numerator is nonzero, x = 3 is a vertical asymptote (not a hole).\n\nStep 2: Determine the sign from the right, lim(x→3⁺). Pick a test value just above 3, say x = 3.1. Numerator: 3.1 + 2 = 5.1 (positive). Denominator: 3.1 - 3 = 0.1 (positive, tiny). Positive over tiny-positive = large positive. So lim(x→3⁺) f(x) = +∞.\n\nStep 3: Determine the sign from the left, lim(x→3⁻). Pick x = 2.9. Numerator: 2.9 + 2 = 4.9 (positive). Denominator: 2.9 - 3 = -0.1 (negative, tiny). Positive over tiny-negative = large negative. So lim(x→3⁻) f(x) = -∞.\n\nStep 4: Conclusion. The two one-sided limits have opposite signs, so the two-sided limit at x = 3 does not exist, but we describe the behavior precisely: the curve plunges to -∞ on the left of x = 3 and rises to +∞ on the right.\n\nContrast with g(x) = 1/(x - 4)². At x = 4 the denominator is zero and the numerator (1) is nonzero, so x = 4 is a vertical asymptote. But (x - 4)² is always positive, so from BOTH sides g(x) → +∞. Here the two-sided limit is +∞ (both sides agree). The squared denominator removes the sign difference."
+    },
+    {
+      "type": "callout",
+      "variant": "warning",
+      "heading": "Infinity Is a Description, Not a Number",
+      "content": "Two errors to avoid. First, never treat ∞ like an ordinary number you can do arithmetic with — writing 'lim = ∞' means 'grows without bound,' and a one-sided limit of +∞ versus -∞ means the two-sided limit DNE. Second, don't assume both sides of a vertical asymptote go the same way. A factor like (x - 3) in the denominator flips sign as you cross x = 3, so the two sides usually have opposite infinite signs; a squared factor like (x - 3)² stays positive, so both sides agree. Always do the sign check — never guess."
+    },
+    {
+      "type": "quiz",
+      "question": "For f(x) = (x - 1)/(x + 2), what is lim(x→-2⁻) f(x)?",
+      "options": [
+        "-∞, because the numerator is negative just left of -2",
+        "+∞, because a negative numerator over a tiny negative denominator is large positive",
+        "0, because there is a vertical asymptote at x = -2",
+        "It equals -1/2 by direct substitution"
+      ],
+      "correctIndex": 1,
+      "explanation": "Test x = -2.1: numerator -2.1 - 1 = -3.1 (negative); denominator -2.1 + 2 = -0.1 (tiny negative). A negative divided by a tiny negative is a large positive, so the limit is +∞. The trap answer -∞ comes from looking only at the negative numerator and forgetting the denominator is also negative on this side; you must track both signs."
+    },
+    {
+      "type": "explanation",
+      "heading": "Limits at Infinity: What Does 'x → ∞' Mean?",
+      "content": "Now we flip to the other question. Instead of x approaching a finite trouble spot, we ask: what happens to f(x) when x gets astronomically large? What if x is a million? A billion? What does the function *settle toward* in the long run?\n\nWhen we write lim(x→∞) f(x) = L, we're saying that as x grows without bound, the function values get closer and closer to the number L. The function might never actually reach L, but it gets as close as you want if you go far enough out along the x-axis. Similarly, lim(x→-∞) f(x) asks what happens as x goes to the far left — toward negative numbers with ever-larger absolute value. Think of a road that gradually flattens out: as you drive further, it gets closer and closer to a fixed elevation. That elevation is the limit at infinity.\n\nYou need a few building blocks burned into memory, because almost every limit at infinity is assembled from them:\n- lim(x→∞) 1/x = 0. As x gets huge, 1/x gets tiny: 1/1,000,000 = 0.000001.\n- lim(x→∞) 1/xⁿ = 0 for any positive n. Any positive power of x in the denominator drives the fraction to 0.\n- lim(x→∞) c = c for any constant c. A constant doesn't change.\n- lim(x→∞) xⁿ = ∞ for positive n. Powers of x grow without bound.\n\nWhy care? Because the real world constantly asks long-term questions. What does a population approach over decades? What concentration does a drug settle to after many hours? Those are all limits at infinity."
+    },
+    {
+      "type": "explanation",
+      "heading": "Rational Functions: The Degree Comparison Method",
+      "content": "A rational function is a fraction where both the numerator and denominator are polynomials, like (3x² + 2x - 1)/(5x² - 4). Finding the limit at infinity for these is one of the most important skills in this unit, and there's a clean, systematic approach.\n\nThe key insight is that when x is enormous, only the *highest-degree term* in each polynomial matters. All the lower-degree terms become negligible in comparison. Think of it this way: if you're counting a fortune of a million dollars, the pennies on the table don't matter. When x = 1,000,000, the term 3x² = 3,000,000,000,000 completely dwarfs the term 2x = 2,000,000.\n\nThis gives three cases based on comparing the degree of the numerator (call it n) to the degree of the denominator (call it d):\n\n**Case 1: n < d (numerator has lower degree).** The denominator grows faster and overwhelms the numerator. The limit is 0. Example: lim(x→∞) (2x + 1)/(x³ - 5) = 0 because degree 1 < degree 3.\n\n**Case 2: n = d (same degree).** The limit equals the ratio of the leading coefficients. Example: lim(x→∞) (3x² + 2x)/(5x² - 4) = 3/5.\n\n**Case 3: n > d (numerator has higher degree).** The numerator grows faster, and the function grows without bound. The limit is ±∞ (not finite). Example: lim(x→∞) (x³ + 1)/(2x + 7) = ∞.\n\nMemorize these three cases. They come up constantly on the AP exam and in later calculus work."
+    },
+    {
+      "type": "example",
+      "heading": "Applying the Degree Comparison Method",
+      "content": "Find each limit:\n\n1) lim(x→∞) (4x³ - x + 2)/(7x³ + 3x²)\nDegrees: numerator = 3, denominator = 3. Same degree → ratio of leading coefficients = 4/7.\n\n2) lim(x→∞) (x² + 100x + 999)/(x⁵)\nDegrees: numerator = 2, denominator = 5. Bottom wins → limit = 0. (Even though 100x and 999 look large, x⁵ annihilates x² when x is truly enormous.)\n\n3) lim(x→-∞) (2x⁴ - 3)/(6x² + 1)\nDegrees: numerator = 4, denominator = 2. Top wins → limit is ±∞. Since x⁴ is always positive and 6x² is always positive, and 2x⁴ grows much faster, the expression → +∞.\n\n4) lim(x→∞) (8x + 3)/(2x - 5)\nSame degree (both 1) → 8/2 = 4."
+    },
+    {
+      "type": "steps",
+      "heading": "The Divide-by-Highest-Power Method (for full work on free response)",
+      "steps": [
+        {
+          "title": "Identify the highest power of x in the denominator",
+          "content": "Scan the denominator and find the largest exponent on x. Call it x^d. This is the term you'll divide everything by."
+        },
+        {
+          "title": "Divide every term, top and bottom, by x^d",
+          "content": "Distribute the division across all terms in both numerator and denominator. This rewrites the function without changing its value, since you've multiplied by (1/x^d)/(1/x^d) = 1."
+        },
+        {
+          "title": "Send each 1/x^k term to zero",
+          "content": "As x → ±∞, every term of the form constant/x^k (with k > 0) approaches 0. Cross those out mentally and see what survives."
+        },
+        {
+          "title": "Read off the surviving expression",
+          "content": "What remains is the limit. If a constant survives over a constant, that's your finite limit. If the numerator still has a power of x left over, the limit is ±∞; if only the denominator does, the limit is 0."
+        }
+      ]
+    },
+    {
+      "type": "quiz",
+      "question": "What is lim(x→∞) (6x² + 5x)/(2x² - 9)?",
+      "options": [
+        "0, because both top and bottom grow large",
+        "∞, because the numerator grows without bound",
+        "3, the ratio of the leading coefficients 6 and 2",
+        "6/(-9), plugging the surviving constants"
+      ],
+      "correctIndex": 2,
+      "explanation": "Numerator and denominator both have degree 2, so the limit is the ratio of leading coefficients 6/2 = 3. Dividing every term by x² confirms it: (6 + 5/x)/(2 - 9/x²) → 6/2 as the 5/x and 9/x² terms vanish. The lower-degree terms 5x and -9 are irrelevant at infinity."
+    },
+    {
+      "type": "table",
+      "heading": "Asymptotes and End Behavior Reference",
+      "headers": ["Feature", "Comes from", "How to find it"],
+      "rows": [
+        ["Vertical asymptote (infinite limit)", "Denominator = 0 while numerator ≠ 0 at a finite x", "Set denominator = 0; exclude values that also zero the numerator (those are holes)"],
+        ["Horizontal asymptote, deg(num) < deg(den)", "Limit as x → ±∞", "y = 0 (the x-axis)"],
+        ["Horizontal asymptote, deg(num) = deg(den)", "Limit as x → ±∞", "y = (ratio of leading coefficients)"],
+        ["No horizontal asymptote, deg(num) > deg(den)", "Limit as x → ±∞ is ±∞", "Function grows without bound (possible slant asymptote)"],
+        ["Sign of an infinite limit", "Sign of numerator ÷ sign of (tiny) denominator near a", "Plug a test value just left and just right of the asymptote"]
+      ]
+    },
+    {
+      "type": "keypoint",
+      "content": "For rational functions as x → ±∞, compare degrees: bottom bigger → limit 0; degrees equal → ratio of leading coefficients; top bigger → ±∞. Only the highest-power terms matter when x is enormous; all lower-degree terms vanish."
+    },
+    {
+      "type": "explanation",
+      "heading": "Horizontal Asymptotes and a Common Misconception",
+      "content": "A horizontal asymptote is simply the graphical manifestation of a finite limit at infinity. If lim(x→∞) f(x) = L, then the line y = L is a horizontal asymptote on the right. If lim(x→-∞) f(x) = M, then y = M is a horizontal asymptote on the left.\n\nA function can have zero, one, or two horizontal asymptotes. A polynomial like x³ + 2x has none (it grows without bound both ways). The function f(x) = 3x/(x + 1) has one, at y = 3 (the limit is 3 in both directions). The function f(x) = x/√(x² + 1) actually has two different horizontal asymptotes: y = 1 as x → +∞ and y = -1 as x → -∞.\n\nHere's the misconception to kill: a horizontal asymptote is NOT a wall the function can never cross. Functions can and often do cross their horizontal asymptotes. For example, sin(x)/x oscillates back and forth across the asymptote y = 0 infinitely many times, even as it settles toward 0 overall. A horizontal asymptote describes only *long-run* behavior — what happens way out near ±∞ — not what happens in the middle of the graph.\n\nThis is the opposite of a vertical asymptote, which the function truly cannot cross (because it's blowing up to infinity right there). Don't confuse the two: vertical asymptotes are specific x-values where the function explodes; horizontal asymptotes are y-values the function approaches as x stretches to infinity."
+    },
+    {
+      "type": "callout",
+      "variant": "remember",
+      "heading": "Vertical vs. Horizontal Asymptotes",
+      "content": "Vertical asymptote: a value x = a where the function blows up (an infinite limit). The function CANNOT cross it. Found where the denominator is zero but the numerator isn't. Horizontal asymptote: a value y = L the function approaches as x → ±∞ (a limit at infinity). The function CAN cross it. Found by the degree-comparison rule. If you mix these up, you'll answer the wrong question entirely on the exam."
+    },
+    {
+      "type": "callout",
+      "variant": "tip",
+      "heading": "Watch Signs When x → -∞",
+      "content": "Going to negative infinity, even powers (x², x⁴) stay positive but odd powers (x, x³, x⁵) flip sign. So a top-heavy limit like lim(x→-∞) (x³ + 1)/(2x + 7) needs a sign check: x³ → -∞ and 2x → -∞, but the degree-3 numerator dominates, giving +∞ here. When in doubt, mentally plug in a huge negative number and track the sign of the surviving leading terms."
+    },
+    {
+      "type": "deepdive",
+      "heading": "Growth Rates: Why Some Functions Dominate Others",
+      "content": "There's a deeper idea behind the degree-comparison method worth understanding. Different types of functions grow at fundamentally different speeds, and when two compete inside a fraction, the faster-growing one always wins.\n\nThe hierarchy of growth, from slowest to fastest, is: logarithmic ln(x), then polynomial xⁿ (higher n = faster), then exponential aˣ for a > 1. This means:\n- lim(x→∞) ln(x)/x = 0 — logarithms grow so slowly that any polynomial eventually dwarfs them.\n- lim(x→∞) x¹⁰⁰/2ˣ = 0 — exponentials eventually crush any polynomial, no matter how high its degree.\n- lim(x→∞) x²/x⁵ = lim(x→∞) 1/x³ = 0 — among polynomials, higher degree wins.\n\nA vivid picture: imagine three runners — Logarithm, Polynomial, and Exponential. Logarithm is a tortoise that never stops but slows relentlessly. Polynomial runs at an accelerating but fixed-style pace. Exponential keeps *doubling* its speed at regular intervals. Over a long enough race, the doubler always wins. Always.\n\nFor AP Calculus AB, you'll mostly do polynomial-vs-polynomial comparisons (the degree method), but understanding this broader hierarchy pays off when you meet L'Hôpital's Rule in Unit 4 (which resolves ∞/∞ limits using derivatives) and when you model real phenomena. Biologists model bacterial growth with exponentials precisely because exponentials outpace any polynomial — bacteria don't just grow fast, they grow in a way that accelerates. Engineers compare algorithm running times the same way. The end behavior of a function tells you what dominates in the long run, and that is exactly the kind of question calculus was invented to answer."
+    }
+  ],
+  "aiContext": "This is Unit 1 Lesson 4 of AP Calculus AB, covering both infinite limits (vertical asymptotes) and limits at infinity (horizontal asymptotes). The central confusion to police is the difference between the two: 'infinity in the answer' (output blows up at a finite x → vertical asymptote) versus 'infinity in the question' (input runs to ±∞ → horizontal asymptote). Emphasize sign analysis for one-sided infinite limits — students forget that a linear factor flips sign across the asymptote while a squared factor does not, and they forget that opposite one-sided infinite signs mean the two-sided limit DNE. For limits at infinity, drill the degree-comparison rule and the divide-by-highest-power method, and correct the belief that a horizontal asymptote cannot be crossed (it can). Connect forward to L'Hôpital's Rule (Unit 4) for ∞/∞ forms and to curve sketching (Unit 5) where asymptotes shape the graph. On the AP exam this appears as multiple-choice end-behavior and asymptote questions and supports analyzing graphs of rational functions."
+}

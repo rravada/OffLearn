@@ -1,0 +1,132 @@
+{
+  "id": "ap-calc-ab-unit2-product-and-quotient-rules",
+  "title": "The Product and Quotient Rules",
+  "subject": "AP Calculus AB",
+  "unit": "Differentiation: Definition and Fundamental Properties",
+  "track": "ap",
+  "difficulty": "ap",
+  "duration": "45 min",
+  "objectives": [
+    "Apply the product rule to differentiate a product of two functions",
+    "Apply the quotient rule to differentiate a ratio of two functions, with correct sign and order",
+    "Choose efficiently between the quotient rule and rewriting a quotient as a product",
+    "Combine the power, product, and quotient rules in multi-step problems"
+  ],
+  "sections": [
+    {
+      "type": "explanation",
+      "heading": "The Product Rule: When Two Functions Multiply",
+      "content": "What if you need to differentiate f(x) = x²·sin(x)? Your first instinct might be to differentiate each piece and multiply the results. That's wrong, and it's worth seeing why it's tempting and why it fails: differentiation does NOT distribute over multiplication. The derivative of a product is genuinely more subtle.\n\nThe **product rule** handles it. If f(x) = u(x)·v(x), then f'(x) = u'(x)·v(x) + u(x)·v'(x). In words: 'the derivative of the first times the second, plus the first times the derivative of the second.' Both functions get a turn being differentiated, and the other one stays put each time.\n\nHere's an analogy that makes it stick. Imagine a rectangle whose width is u(x) and whose height is v(x). Its area is u·v. Now both dimensions change as x changes. The change in area comes from two contributions: the width grows (by about u'·h) while the height stays roughly v, contributing u'·v to the rate; and the height grows (by about v'·h) while the width stays roughly u, contributing u·v'. The total rate of area change is u'v + uv'. (There's also a tiny corner rectangle of size u'·h · v'·h, but it involves h² and vanishes in the limit — the same 'higher-order terms disappear' idea from the power rule.)\n\nMany students just chant 'u prime v plus u v prime,' which works — but understanding the rectangle means you'll never misremember it under pressure, and you'll know it generalizes (for three factors, each one takes a turn being differentiated)."
+    },
+    {
+      "type": "example",
+      "heading": "Applying the Product Rule",
+      "content": "Differentiate f(x) = (3x² + 1)(x⁴ − 2x).\n\nStep 1 — Name the pieces. Let u = 3x² + 1 and v = x⁴ − 2x.\nStep 2 — Differentiate each. u' = 6x and v' = 4x³ − 2.\nStep 3 — Apply the product rule f' = u'v + uv':\n  f'(x) = (6x)(x⁴ − 2x) + (3x² + 1)(4x³ − 2)\nStep 4 — Expand and combine:\n  = 6x⁵ − 12x² + 12x⁵ − 6x² + 4x³ − 2\n  = 18x⁵ + 4x³ − 18x² − 2\n\nCheck (optional but reassuring): expand f(x) first as (3x² + 1)(x⁴ − 2x) = 3x⁶ − 6x³ + x⁴ − 2x, then differentiate term by term to get 18x⁵ + 4x³ − 18x² − 2. Same answer. That consistency check is a great way to build confidence in the product rule — and a reminder that for simple products, expanding first is also a valid route."
+    },
+    {
+      "type": "callout",
+      "variant": "warning",
+      "heading": "The Derivative of a Product Is NOT the Product of Derivatives",
+      "content": "The single most common product-rule error is writing d/dx[u·v] = u'·v'. That is FALSE. For example, d/dx[x·x] should be d/dx[x²] = 2x, but u'·v' would give (1)(1) = 1 — wrong. You must use u'v + uv': (1)(x) + (x)(1) = 2x. ✓ Differentiation distributes over addition and subtraction, but never over multiplication or division. Burn this in: products need the product rule."
+    },
+    {
+      "type": "quiz",
+      "question": "If h(x) = x³·(2x − 5), what is h'(x)?",
+      "options": [
+        "h'(x) = 3x²·2 = 6x²",
+        "h'(x) = 3x²(2x − 5) + x³(2) = 8x³ − 15x²",
+        "h'(x) = 3x²(2x − 5) + x³ = 7x³ − 15x²",
+        "h'(x) = (2x − 5) + x³"
+      ],
+      "correctIndex": 1,
+      "explanation": "Product rule with u = x³ (u' = 3x²) and v = 2x − 5 (v' = 2): h' = 3x²(2x − 5) + x³(2) = 6x³ − 15x² + 2x³ = 8x³ − 15x². Option A multiplies the derivatives (the classic error), and option C forgets to multiply x³ by v' = 2."
+    },
+    {
+      "type": "explanation",
+      "heading": "The Quotient Rule: When One Function Divides Another",
+      "content": "If f(x) = u(x)/v(x), the **quotient rule** says f'(x) = [u'(x)·v(x) − u(x)·v'(x)] / [v(x)]².\n\nThere's a classic chant: 'low d-high minus high d-low, all over the square of what's below.' Here 'high' means the numerator u, 'low' means the denominator v, and 'd' means 'derivative of.' Spelled out: (bottom)(derivative of top) − (top)(derivative of bottom), all divided by (bottom) squared.\n\nNotice the MINUS sign — this is where students make the most errors. In the product rule it's plus; in the quotient rule it's minus, and the order matters: it's (derivative of top)(bottom) MINUS (top)(derivative of bottom). Swap the order and you flip the sign of the whole answer, which is wrong.\n\nWhy is there a minus sign at all? Intuitively: if the denominator v is growing, that makes the fraction *smaller* (you're dividing by a bigger number), so the denominator's growth works *against* the fraction's growth. That opposition is exactly what the subtraction encodes. And why square the denominator? It comes out of the algebra of combining the two fraction terms over a common denominator — and it conveniently means the result's denominator is always positive (so the quotient rule never changes the sign of where the function is increasing or decreasing due to the denominator)."
+    },
+    {
+      "type": "steps",
+      "heading": "Applying the Quotient Rule Cleanly",
+      "steps": [
+        {
+          "title": "Label top and bottom",
+          "content": "Write u = (numerator) and v = (denominator) explicitly. Keeping them labeled prevents the order/sign mistakes that dominate this rule."
+        },
+        {
+          "title": "Differentiate each",
+          "content": "Compute u' and v' separately using the power/product rules as needed. Set them aside before assembling."
+        },
+        {
+          "title": "Assemble in the correct order",
+          "content": "Write the numerator as u'v − uv' (derivative of top times bottom, minus top times derivative of bottom). The order and the minus sign are non-negotiable."
+        },
+        {
+          "title": "Square the entire denominator",
+          "content": "Divide by [v]², the whole denominator squared — not just v. Write the square explicitly so you don't forget it."
+        },
+        {
+          "title": "Simplify only the numerator (carefully)",
+          "content": "Expand and combine like terms in the numerator if asked, but you can usually leave the denominator as [v]². Don't over-simplify and risk an algebra error — on the AP exam an unsimplified correct answer earns full credit."
+        }
+      ]
+    },
+    {
+      "type": "example",
+      "heading": "Applying the Quotient Rule",
+      "content": "Differentiate f(x) = (x² + 3)/(2x − 1).\n\nStep 1 — Label. u = x² + 3, v = 2x − 1.\nStep 2 — Differentiate. u' = 2x, v' = 2.\nStep 3 — Assemble u'v − uv' over v²:\n  f'(x) = [(2x)(2x − 1) − (x² + 3)(2)] / (2x − 1)²\nStep 4 — Expand the numerator:\n  = [4x² − 2x − 2x² − 6] / (2x − 1)²\n  = [2x² − 2x − 6] / (2x − 1)²\nStep 5 — Optionally factor the numerator: 2(x² − x − 3)/(2x − 1)². Either form is acceptable.\n\nTwo things to notice: the denominator stayed as (2x − 1)² — squared, the whole thing — and the subtraction in the numerator required distributing the minus sign across both terms of (x² + 3)(2). Dropping that distribution is a top source of lost points."
+    },
+    {
+      "type": "table",
+      "heading": "Product Rule vs. Quotient Rule",
+      "headers": ["Feature", "Product rule (u·v)", "Quotient rule (u/v)"],
+      "rows": [
+        ["Formula", "u'v + uv'", "(u'v − uv') / v²"],
+        ["Sign between terms", "Plus (+)", "Minus (−)"],
+        ["Order matters?", "No (addition commutes)", "Yes (subtraction does not)"],
+        ["Denominator", "None", "Square the whole bottom, v²"],
+        ["Alternative", "Expand and use power rule", "Rewrite as u·v⁻¹ and use product rule"]
+      ]
+    },
+    {
+      "type": "callout",
+      "variant": "warning",
+      "heading": "Quotient Rule: Order, Sign, and the Square",
+      "content": "Three errors cost students points on the quotient rule. (1) Order: the numerator MUST start with u'v (derivative of top times bottom), then minus uv'. Reversing them flips the sign. (2) The minus sign must be distributed across every term of uv'. (3) The denominator is v² — the ENTIRE bottom squared, not v. Write out u, v, u', v' before assembling, and the rule becomes mechanical."
+    },
+    {
+      "type": "quiz",
+      "question": "A student differentiates f(x) = (5)/(x² + 1) and writes f'(x) = [0·(x²+1) − 5·(2x)] / (x²+1)² = −10x/(x²+1)². Is this correct?",
+      "options": [
+        "No — the derivative of 5 is 5, not 0",
+        "Yes — u = 5 so u' = 0, and the quotient rule gives −10x/(x²+1)²",
+        "No — the denominator should not be squared",
+        "No — the sign should be positive"
+      ],
+      "correctIndex": 1,
+      "explanation": "With u = 5 (so u' = 0) and v = x² + 1 (so v' = 2x), the quotient rule gives [0·(x²+1) − 5·(2x)]/(x²+1)² = −10x/(x²+1)². The work is correct: the derivative of the constant 5 is 0, the denominator is correctly squared, and the minus sign is right."
+    },
+    {
+      "type": "keypoint",
+      "content": "Product rule: d/dx[uv] = u'v + uv'. Quotient rule: d/dx[u/v] = (u'v − uv')/v². Differentiation distributes over + and −, but NEVER over × or ÷. Always square the whole denominator in the quotient rule, and keep the subtraction order u'v − uv'."
+    },
+    {
+      "type": "example",
+      "heading": "Combining Rules: A Multi-Step Problem",
+      "content": "Differentiate f(x) = x²·(3x + 1)/(x − 4).\n\nStrategy: treat this as x² times the fraction (3x + 1)/(x − 4). Use the product rule with u = x² and v = (3x + 1)/(x − 4), finding v' by the quotient rule.\n\nStep 1 — Find v' by the quotient rule on (3x + 1)/(x − 4):\n  v' = [3(x − 4) − (3x + 1)(1)] / (x − 4)²\n     = [3x − 12 − 3x − 1] / (x − 4)²\n     = −13 / (x − 4)²\n\nStep 2 — Apply the product rule f' = u'v + uv' with u = x², u' = 2x:\n  f'(x) = 2x·(3x + 1)/(x − 4) + x²·[−13/(x − 4)²]\n        = [2x(3x + 1)]/(x − 4) − 13x²/(x − 4)²\n\nStep 3 — Combine over the common denominator (x − 4)²:\n  = [2x(3x + 1)(x − 4) − 13x²]/(x − 4)²\n  = [2x(3x² − 11x − 4) − 13x²]/(x − 4)²\n  = [6x³ − 22x² − 8x − 13x²]/(x − 4)²\n  = [6x³ − 35x² − 8x]/(x − 4)²\n  = x(6x² − 35x − 8)/(x − 4)²\n\nThis kind of layered problem — one rule inside another — is exactly what the AP exam tests. Work from the outside in: identify the outermost operation (here, a product), apply that rule, and handle the inner pieces with whatever rules they need."
+    },
+    {
+      "type": "callout",
+      "variant": "tip",
+      "heading": "You Can Trade a Quotient for a Product",
+      "content": "Any quotient u/v can be rewritten as u·v⁻¹ and differentiated with the product rule plus the chain rule (Unit 3). Some students find this cleaner than memorizing the quotient rule's sign and square. Also: if the numerator is a constant, like 5/(x²+1), the quotient rule simplifies fast because u' = 0. And remember — on free response, a correct unsimplified derivative earns full credit, so don't risk algebra errors over-simplifying."
+    },
+    {
+      "type": "deepdive",
+      "heading": "Where These Rules Come From — and Why They Matter",
+      "content": "Both the product and quotient rules fall straight out of the limit definition, and seeing the structure deepens your trust in them.\n\nFor the product rule, start with f(x) = u(x)v(x) and form the difference quotient [u(x+h)v(x+h) − u(x)v(x)]/h. The clever step is to add and subtract the same middle term, u(x+h)v(x), in the numerator — it's adding zero, so it changes nothing, but it lets you group the expression into two pieces. One piece becomes [u(x+h) − u(x)]/h · v(x+h), which approaches u'·v as h → 0. The other becomes u(x+h)·[v(x+h) − v(x)]/h, which approaches u·v'. Add them: u'v + uv'. The rule isn't arbitrary — it's the algebra of how two changing quantities jointly change a product, exactly as the rectangle picture suggested.\n\nThe quotient rule can be derived the same way, or more slickly by writing u/v as u·v⁻¹, applying the product rule, and using the chain rule on v⁻¹ (which you'll meet next unit). The minus sign and the v² both emerge naturally from that derivation.\n\nWhy do these matter beyond the exam? Because real quantities are constantly built by multiplying and dividing other quantities. Power is voltage times current (a product). Density is mass divided by volume (a quotient). Velocity in many models is one changing quantity over another. Cost per unit, concentration, pressure, fuel efficiency — all are products or ratios of varying quantities, and to find how fast they change you need exactly these rules. Together with the power rule and the chain rule, the product and quotient rules let you differentiate essentially any function you can write down with elementary operations — which is the practical superpower that makes calculus so widely useful in science and engineering."
+    }
+  ],
+  "aiContext": "This is Unit 2 Lesson 4 of AP Calculus AB, covering the product and quotient rules and combining rules. The dominant error to police is believing differentiation distributes over multiplication/division (d/dx[uv] = u'v' is the classic wrong move) — stress that products need the product rule. For the quotient rule, the three recurring mistakes are order (numerator must be u'v − uv'), distributing the minus sign, and squaring the entire denominator. Encourage labeling u, v, u', v' before assembling, and remind students that unsimplified correct answers earn full AP credit (over-simplifying causes errors). For multi-step problems, teach working outside-in. Connect backward to the power rule (Lesson 3) and forward to the chain rule (Unit 3, which combines with these for nearly any function) and to applications throughout Units 4-5. On the AP exam these rules appear in routine multiple-choice differentiation and embedded in almost every free-response derivative computation; quotient-rule sign/order errors are among the most common point losses."
+}

@@ -1,0 +1,30 @@
+{
+  "id": "ap-calc-ab-power-rule-basic-derivatives",
+  "title": "The Power Rule and Basic Derivatives",
+  "subject": "AP Calculus AB",
+  "chunks": [
+    { "id": "c1", "text": "The power rule states that if f(x) = xⁿ, then f'(x) = n·xⁿ⁻¹. Bring the exponent down as a coefficient and reduce the exponent by one." },
+    { "id": "c2", "text": "The power rule works for any real exponent, including negative and fractional exponents, not only positive integers." },
+    { "id": "c3", "text": "Examples of the power rule: d/dx[x⁵] = 5x⁴, d/dx[x] = 1·x⁰ = 1, and d/dx[x⁻²] = -2x⁻³ = -2/x³." },
+    { "id": "c4", "text": "The power rule applied to roots: d/dx[x^(1/2)] = (1/2)x^(-1/2) = 1/(2√x), and d/dx[x^(2/3)] = (2/3)x^(-1/3)." },
+    { "id": "c5", "text": "The constant rule states that the derivative of any constant is 0, because a horizontal line has zero slope. For example, d/dx[12] = 0." },
+    { "id": "c6", "text": "The constant multiple rule states that d/dx[c·f(x)] = c·f'(x); a constant coefficient is preserved through differentiation. For example, d/dx[5x³] = 15x²." },
+    { "id": "c7", "text": "The sum and difference rules state that d/dx[f ± g] = f' ± g', so polynomials can be differentiated term by term." },
+    { "id": "c8", "text": "The derivative of x is 1, since y = x is a line of slope 1, and the derivative of a constant is 0. Confusing these two facts causes common errors." },
+    { "id": "c9", "text": "Before differentiating, rewrite radicals and reciprocals as powers of x: √x becomes x^(1/2), the cube root of x becomes x^(1/3), and 1/x³ becomes x⁻³." },
+    { "id": "c10", "text": "An intuition for the power rule: x³ is the volume of a cube of side x; increasing the side by a tiny h adds about three slabs of area x² and thickness h, giving a rate of change of 3x², which matches d/dx[x³] = 3x²." },
+    { "id": "c11", "text": "The higher-order overlap terms in the cube argument involve h² and h³ and vanish as h approaches 0, leaving exactly the power-rule result." },
+    { "id": "c12", "text": "To differentiate a polynomial: rewrite each term as a power of x, apply the power rule to each term, send standalone constants to zero, and rewrite negative or fractional exponents in radical or fraction form if desired." },
+    { "id": "c13", "text": "Example of differentiating a polynomial: for f(x) = 3x⁴ - 7x² + 5x - 2, the derivative is f'(x) = 12x³ - 14x + 5; the constant -2 differentiates to 0." },
+    { "id": "c14", "text": "Example with reciprocals and roots: for g(x) = 4x⁻² + 3x^(1/2), the derivative is g'(x) = -8x⁻³ + (3/2)x^(-1/2), which equals -8/x³ + 3/(2√x)." },
+    { "id": "c15", "text": "Always simplify before differentiating when possible. For example, (x³ + 2x)/x simplifies to x² + 2, whose derivative is 2x, avoiding the quotient rule entirely." },
+    { "id": "c16", "text": "The derivative of a constant term is 0, but the derivative of a constant times x keeps the constant: d/dx[7] = 0 while d/dx[7x] = 7." },
+    { "id": "c17", "text": "The derivative f'(a) gives the slope of the tangent line to f at x = a, which is the geometric meaning of the derivative." },
+    { "id": "c18", "text": "To find the tangent line at x = a, use the point (a, f(a)) from the original function and the slope f'(a) from the derivative, then write y - f(a) = f'(a)(x - a)." },
+    { "id": "c19", "text": "A common tangent-line error is using f'(a) for the point's y-coordinate; the derivative gives the slope while the original function gives the height f(a)." },
+    { "id": "c20", "text": "A horizontal tangent line has slope 0, so horizontal tangents occur exactly where f'(x) = 0. Setting the derivative to zero and solving locates them." },
+    { "id": "c21", "text": "Example: for f(x) = x³ - 6x² + 9x + 1, f'(x) = 3x² - 12x + 9; setting it to zero gives x = 1 and x = 3, so the horizontal tangents are at (1, 5) and (3, 1)." },
+    { "id": "c22", "text": "Points where f'(x) = 0 are the candidates for the peaks and valleys (maxima and minima) of a function, a connection developed in the analytical applications of derivatives." },
+    { "id": "c23", "text": "Example with mixed terms: for f(x) = 2x^(1/3) - 5x⁻¹ + (1/4)x, the derivative is f'(x) = (2/3)x^(-2/3) + 5x⁻² + 1/4." }
+  ]
+}

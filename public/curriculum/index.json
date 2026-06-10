@@ -160,20 +160,22 @@
           "id": "unit-1",
           "title": "Limits and Continuity",
           "lessons": [
-            { "id": "understanding-limits-intuitively", "title": "Understanding Limits Intuitively", "duration": "25 min" },
-            { "id": "computing-limits-algebraically", "title": "Computing Limits Algebraically", "duration": "30 min" },
-            { "id": "continuity-and-discontinuity", "title": "Continuity and Types of Discontinuity", "duration": "25 min" },
-            { "id": "limits-at-infinity", "title": "Limits at Infinity and Horizontal Asymptotes", "duration": "25 min" }
+            { "id": "understanding-limits-intuitively", "title": "Understanding Limits Intuitively", "duration": "40 min" },
+            { "id": "computing-limits-algebraically", "title": "Computing Limits Algebraically", "duration": "45 min" },
+            { "id": "continuity-and-discontinuity", "title": "Continuity and Types of Discontinuity", "duration": "45 min" },
+            { "id": "infinite-limits-and-limits-at-infinity", "title": "Infinite Limits, Limits at Infinity, and Asymptotes", "duration": "45 min" },
+            { "id": "intermediate-value-theorem", "title": "The Intermediate Value Theorem", "duration": "40 min" }
           ]
         },
         {
           "id": "unit-2",
-          "title": "Differentiation",
+          "title": "Differentiation: Definition and Fundamental Properties",
           "lessons": [
-            { "id": "derivative-as-rate-of-change", "title": "The Derivative as a Rate of Change", "duration": "30 min" },
-            { "id": "power-product-quotient-rules", "title": "Power, Product, and Quotient Rules", "duration": "30 min" },
-            { "id": "chain-rule", "title": "The Chain Rule", "duration": "25 min" },
-            { "id": "implicit-differentiation", "title": "Implicit Differentiation", "duration": "25 min" }
+            { "id": "derivative-definition-and-rate-of-change", "title": "The Derivative: Definition and Rate of Change", "duration": "45 min" },
+            { "id": "differentiability-and-continuity", "title": "Differentiability and Continuity", "duration": "40 min" },
+            { "id": "power-rule-basic-derivatives", "title": "The Power Rule and Basic Derivatives", "duration": "40 min" },
+            { "id": "product-and-quotient-rules", "title": "The Product and Quotient Rules", "duration": "45 min" },
+            { "id": "derivatives-trig-exp-log", "title": "Derivatives of Trig, Exponential, and Log Functions", "duration": "45 min" }
           ]
         },
         {

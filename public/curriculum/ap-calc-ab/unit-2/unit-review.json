@@ -1,0 +1,173 @@
+{
+  "id": "ap-calc-ab-unit2-review",
+  "title": "Unit 2 Review: Differentiation — Definition and Fundamental Properties",
+  "subject": "AP Calculus AB",
+  "unit": "Differentiation: Definition and Fundamental Properties",
+  "type": "unit-review",
+  "questionsPerAttempt": 10,
+  "isAssessment": true,
+  "bank": [
+    {
+      "question": "What is the average rate of change of f(x) = x² on the interval [1, 3]?",
+      "options": ["2", "4", "8", "9"],
+      "correctIndex": 1,
+      "explanation": "Average rate of change is [f(3) − f(1)]/(3 − 1) = (9 − 1)/2 = 4. This is the secant slope, computed without a limit. Answer 8 would be the instantaneous rate at x = 4, a different quantity."
+    },
+    {
+      "question": "The limit lim(x→3) (x² − 9)/(x − 3) is the definition of which derivative value?",
+      "options": ["f'(3) for f(x) = x², which equals 6", "f'(9) for f(x) = x", "f(3) for f(x) = x²", "The average rate of change on [0, 3]"],
+      "correctIndex": 0,
+      "explanation": "This matches f'(a) = lim(x→a)[f(x) − f(a)]/(x − a) with f(x) = x² and a = 3, so it equals f'(3) = 2(3) = 6. Recognizing a 'disguised derivative' limit lets you evaluate it instantly."
+    },
+    {
+      "question": "Using the limit definition, the derivative of f(x) = x² is:",
+      "options": ["f'(x) = x", "f'(x) = 2x", "f'(x) = 2x + h", "f'(x) = x²"],
+      "correctIndex": 1,
+      "explanation": "Expanding [(x+h)² − x²]/h = (2xh + h²)/h = 2x + h, then taking h → 0 gives 2x. The answer 2x + h forgets to take the limit, which is the final required step."
+    },
+    {
+      "question": "If P(t) is a population in thousands and t is in years, and P'(4) = 7, what does this mean?",
+      "options": ["The population at year 4 is 7 thousand", "At year 4, the population is increasing at 7 thousand people per year", "The population grew by 7 thousand over 4 years", "The population reaches 7 at t = 4"],
+      "correctIndex": 1,
+      "explanation": "A derivative is an instantaneous rate with units of (output units) per (input unit) = thousands per year. The positive sign means increasing. It describes the rate at that instant, not a total change or the population value."
+    },
+    {
+      "question": "At which kind of point does a function have a derivative that fails to exist even though the function is continuous there?",
+      "options": ["A point on a smooth curve", "A corner (like |x| at x = 0)", "A point where f(x) = 0", "A horizontal tangent"],
+      "correctIndex": 1,
+      "explanation": "A corner is continuous but the left and right slopes disagree, so no derivative exists. A horizontal tangent has a perfectly good derivative (zero), and a zero of f or a smooth point poses no problem."
+    },
+    {
+      "question": "Which statement is always TRUE?",
+      "options": ["If f is continuous at a, then f is differentiable at a", "If f is differentiable at a, then f is continuous at a", "If f is continuous at a, then f'(a) = 0", "Continuity and differentiability are the same condition"],
+      "correctIndex": 1,
+      "explanation": "Differentiability implies continuity, never the reverse. A continuous function can have a corner (not differentiable), so continuity does not imply differentiability, and continuity says nothing about the value of f'(a)."
+    },
+    {
+      "question": "A function f has a jump discontinuity at x = 2. What can you conclude about f'(2)?",
+      "options": ["f'(2) exists and is large", "f'(2) does not exist, because differentiability requires continuity", "f'(2) = 0", "f'(2) equals the size of the jump"],
+      "correctIndex": 1,
+      "explanation": "A discontinuity automatically prevents differentiability, since the difference quotient has no finite limit there. A jump is not differentiable regardless of its size."
+    },
+    {
+      "question": "For f(x) = x² (x ≤ 1) and f(x) = ax + b (x > 1) to be differentiable at x = 1, the constants must satisfy:",
+      "options": ["a = 2 and b = −1", "a = 1 and b = 0", "a = 2 and b = 1", "Any a and b that make the pieces meet"],
+      "correctIndex": 0,
+      "explanation": "Continuity gives a + b = 1; matching slopes gives a = f'(1) = 2. So a = 2 and b = −1. Differentiability needs BOTH equations — making the pieces merely meet (continuity alone) is not enough."
+    },
+    {
+      "question": "What is the derivative of f(x) = 4x⁵ − 3x² + 7?",
+      "options": ["20x⁴ − 6x + 7", "20x⁴ − 6x", "20x⁴ − 6x²", "x⁴ − x"],
+      "correctIndex": 1,
+      "explanation": "Apply the power rule term by term: 4(5x⁴) − 3(2x) + 0 = 20x⁴ − 6x. The constant 7 differentiates to 0, so keeping it (answer A) is a common error."
+    },
+    {
+      "question": "What is the derivative of f(x) = 1/x³?",
+      "options": ["−3/x⁴", "3/x⁴", "−3x²", "1/(3x²)"],
+      "correctIndex": 0,
+      "explanation": "Rewrite as x⁻³; the power rule gives −3x⁻⁴ = −3/x⁴. Failing to rewrite the reciprocal as a negative power before differentiating produces the wrong exponent."
+    },
+    {
+      "question": "What is the derivative of f(x) = √x?",
+      "options": ["1/(2√x)", "2√x", "1/√x", "(1/2)√x"],
+      "correctIndex": 0,
+      "explanation": "Rewrite √x as x^(1/2); the power rule gives (1/2)x^(−1/2) = 1/(2√x). The fractional exponent must be reduced by one to −1/2."
+    },
+    {
+      "question": "Find the equation of the tangent line to f(x) = x² at x = 3.",
+      "options": ["y = 6x − 9", "y = 9x", "y = 6x + 9", "y = 2x − 3"],
+      "correctIndex": 0,
+      "explanation": "The point is (3, 9) since f(3) = 9; the slope is f'(3) = 2(3) = 6. Point-slope form y − 9 = 6(x − 3) simplifies to y = 6x − 9. Using f'(3) as the y-coordinate is the classic mistake."
+    },
+    {
+      "question": "For f(x) = x² − 10x + 1, where is the tangent line horizontal?",
+      "options": ["x = 0", "x = 5", "x = 10", "Nowhere"],
+      "correctIndex": 1,
+      "explanation": "Set f'(x) = 2x − 10 = 0, giving x = 5. A horizontal tangent has slope 0, which means f'(x) = 0, not f(x) = 0 or the value of a coefficient."
+    },
+    {
+      "question": "Using the product rule, what is the derivative of f(x) = x³(2x − 5)?",
+      "options": ["6x²", "8x³ − 15x²", "3x²(2x − 5)", "6x⁴"],
+      "correctIndex": 1,
+      "explanation": "With u = x³ (u' = 3x²) and v = 2x − 5 (v' = 2): f' = 3x²(2x − 5) + x³(2) = 6x³ − 15x² + 2x³ = 8x³ − 15x². Multiplying the two derivatives (answer A) is invalid."
+    },
+    {
+      "question": "Which is the correct derivative of a product f(x) = u(x)v(x)?",
+      "options": ["u'v'", "u'v + uv'", "u'v − uv'", "(u'v + uv')/v²"],
+      "correctIndex": 1,
+      "explanation": "The product rule is u'v + uv'. Multiplying derivatives (u'v') is the most common error; the minus-sign version and the v² denominator belong to the quotient rule."
+    },
+    {
+      "question": "Using the quotient rule, what is the derivative of f(x) = (x² + 3)/(2x − 1)?",
+      "options": ["(2x² − 2x − 6)/(2x − 1)²", "(2x² + 2x + 6)/(2x − 1)", "(2x)/(2)", "(2x² − 2x − 6)/(2x − 1)"],
+      "correctIndex": 0,
+      "explanation": "With u' = 2x, v' = 2: [(2x)(2x − 1) − (x² + 3)(2)]/(2x − 1)² = (2x² − 2x − 6)/(2x − 1)². Both the squared denominator and distributing the minus sign are required; dropping either gives a wrong option."
+    },
+    {
+      "question": "A student writes d/dx[u/v] = (uv' − u'v)/v². What is wrong?",
+      "options": ["Nothing, this is correct", "The order is reversed; it should be (u'v − uv')/v²", "The denominator should be v, not v²", "It should be a plus sign"],
+      "correctIndex": 1,
+      "explanation": "The quotient rule is (u'v − uv')/v² — derivative of top times bottom FIRST. The student reversed the order, which flips the sign of the entire answer. Order matters because subtraction does not commute."
+    },
+    {
+      "question": "What is the derivative of f(x) = (x² + 1)/x? (Hint: simplify first.)",
+      "options": ["1 − 1/x²", "2x", "(x² − 1)/x²", "1 + 1/x²"],
+      "correctIndex": 0,
+      "explanation": "Simplify to x + 1/x = x + x⁻¹, then differentiate: 1 − x⁻² = 1 − 1/x². Simplifying before differentiating avoids the quotient rule and reduces errors. (The quotient rule gives the same result after simplification.)"
+    },
+    {
+      "question": "What is d/dx[sin x]?",
+      "options": ["cos x", "−cos x", "−sin x", "sec² x"],
+      "correctIndex": 0,
+      "explanation": "The derivative of sin x is cos x. This is a base fact derived from the limit lim(x→0) sin(x)/x = 1 and must be memorized."
+    },
+    {
+      "question": "What is d/dx[cos x]?",
+      "options": ["sin x", "−sin x", "cos x", "−cos x"],
+      "correctIndex": 1,
+      "explanation": "The derivative of cos x is −sin x. The negative sign is essential — all three 'co-' functions (cos, cot, csc) carry a minus when differentiated. Forgetting it is the most common trig-derivative error."
+    },
+    {
+      "question": "What is d/dx[eˣ]?",
+      "options": ["x·eˣ⁻¹", "eˣ", "eˣ/x", "x·eˣ"],
+      "correctIndex": 1,
+      "explanation": "eˣ is its own derivative. The power rule does NOT apply because eˣ is not a power of x (the variable is in the exponent), so x·eˣ⁻¹ is invalid."
+    },
+    {
+      "question": "What is d/dx[ln x]?",
+      "options": ["1/x", "x", "ln x", "1/(ln x)"],
+      "correctIndex": 0,
+      "explanation": "The derivative of ln x is 1/x for x > 0. This makes ln x the function that fills the power-rule gap, since no power of x has derivative 1/x."
+    },
+    {
+      "question": "Which pair is correct?",
+      "options": ["d/dx[x²] = 2x and d/dx[2ˣ] = 2ˣ ln 2", "d/dx[x²] = x²ln2 and d/dx[2ˣ] = x·2ˣ⁻¹", "d/dx[x²] = 2ˣ and d/dx[2ˣ] = 2x", "Both have the same derivative"],
+      "correctIndex": 0,
+      "explanation": "x² has a variable base and constant exponent → power rule → 2x. 2ˣ has a constant base and variable exponent → exponential rule → 2ˣ ln 2. Swapping which rule applies is a frequent trap."
+    },
+    {
+      "question": "What is the derivative of f(x) = x² eˣ?",
+      "options": ["2x eˣ", "x² eˣ", "eˣ(x² + 2x)", "2x eˣ⁻¹"],
+      "correctIndex": 2,
+      "explanation": "Product rule with u = x² (u' = 2x) and v = eˣ (v' = eˣ): f' = 2x eˣ + x² eˣ = eˣ(2x + x²). Both terms are required; using only one piece gives the wrong options."
+    },
+    {
+      "question": "What is the derivative of f(x) = x ln x?",
+      "options": ["1", "ln x + 1", "1/x", "ln x"],
+      "correctIndex": 1,
+      "explanation": "Product rule with u = x (u' = 1) and v = ln x (v' = 1/x): f' = 1·ln x + x·(1/x) = ln x + 1. The clean step x·(1/x) = 1 is easy to overlook."
+    },
+    {
+      "question": "What is the derivative of f(x) = tan x?",
+      "options": ["sec x tan x", "sec² x", "−csc² x", "1 + tan x"],
+      "correctIndex": 1,
+      "explanation": "d/dx[tan x] = sec² x, which follows from applying the quotient rule to sin x / cos x. The answer sec x tan x is the derivative of sec x, a different function."
+    },
+    {
+      "question": "At a vertical tangent line, why does the derivative fail to exist?",
+      "options": ["Because the function is discontinuous", "Because the slope is infinite, not a finite number", "Because the function equals zero", "Because the left and right values differ"],
+      "correctIndex": 1,
+      "explanation": "A vertical tangent has an infinite slope, and the limit defining the derivative must be a finite number to exist. The function is still continuous there, so it is not a discontinuity or a jump in value."
+    }
+  ]
+}

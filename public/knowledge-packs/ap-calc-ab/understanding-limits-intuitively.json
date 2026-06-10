@@ -1,0 +1,30 @@
+{
+  "id": "ap-calc-ab-understanding-limits-intuitively",
+  "title": "Understanding Limits Intuitively",
+  "subject": "AP Calculus AB",
+  "chunks": [
+    { "id": "c1", "text": "A limit describes the value that a function's outputs approach as the input gets closer and closer to a target number. It captures where the function is heading, not necessarily where it arrives." },
+    { "id": "c2", "text": "The notation lim(x→3) f(x) = 7 means that as x gets closer and closer to 3 from both sides, the output f(x) gets closer and closer to 7." },
+    { "id": "c3", "text": "A limit at a point does not depend on the function's actual value at that point. The function may equal the limit there, equal something different, or be undefined there entirely." },
+    { "id": "c4", "text": "A function can have a limit at a point where the function itself is not defined. For example, f(x) = (x² - 9)/(x - 3) is undefined at x = 3 because plugging in gives 0/0, yet the limit as x approaches 3 equals 6." },
+    { "id": "c5", "text": "For f(x) = (x² - 9)/(x - 3), factoring gives (x + 3)(x - 3)/(x - 3) = x + 3 for all x not equal to 3. As x approaches 3, x + 3 approaches 6, so the limit is 6 even though the function has no value at x = 3." },
+    { "id": "c6", "text": "A table of values estimates a limit by listing outputs for inputs that get progressively closer to the target from each side. If the outputs from both sides settle toward the same number, that number is the limit." },
+    { "id": "c7", "text": "The left-hand limit, written lim(x→a⁻) f(x), is the value the function approaches as x comes from inputs less than a (from the left on the number line)." },
+    { "id": "c8", "text": "The right-hand limit, written lim(x→a⁺) f(x), is the value the function approaches as x comes from inputs greater than a (from the right on the number line)." },
+    { "id": "c9", "text": "The two-sided limit lim(x→a) f(x) exists if and only if both the left-hand limit and the right-hand limit exist and are equal to each other." },
+    { "id": "c10", "text": "If the left-hand limit and the right-hand limit at a point are different numbers, the two-sided limit at that point does not exist." },
+    { "id": "c11", "text": "For the step function that equals 1 when x < 0 and equals -1 when x ≥ 0, the left-hand limit at 0 is 1 and the right-hand limit at 0 is -1. Because these disagree, the two-sided limit at x = 0 does not exist." },
+    { "id": "c12", "text": "To read a limit from a graph, trace the curve toward the target x-value from the left and from the right separately, and note the height the curve heads toward from each side." },
+    { "id": "c13", "text": "On a graph, an open circle at a point means the function approaches that height but does not actually take that value there. A filled-in dot marks the function's actual value at that input." },
+    { "id": "c14", "text": "If a graph shows an open circle at (2, 5) and a filled dot at (2, 3), then lim(x→2) f(x) = 5 while f(2) = 3. The limit follows the curve toward the open circle; the function value is the filled dot." },
+    { "id": "c15", "text": "When finding a limit from a graph, the filled dot gives the function value f(a), not the limit. Reading the dot instead of following the curve is the most common limit-reading mistake on the AP exam." },
+    { "id": "c16", "text": "A two-sided limit fails to exist when the one-sided limits disagree (a jump), when the function grows without bound toward positive or negative infinity, or when the function oscillates forever without settling on a value." },
+    { "id": "c17", "text": "The abbreviation DNE stands for 'does not exist' and is used when a limit has no single finite value it approaches." },
+    { "id": "c18", "text": "The function sin(1/x) oscillates infinitely fast near x = 0 and never settles toward a single value, so its limit as x approaches 0 does not exist due to endless oscillation." },
+    { "id": "c19", "text": "Reading lim(x→a) f(x) aloud as 'the limit as x approaches a of f of x' reinforces that a limit describes motion toward a target, not the result of plugging in a value." },
+    { "id": "c20", "text": "The derivative is defined as a limit: f'(x) = lim(h→0) [f(x + h) - f(x)] / h. This expression is the average rate of change over a tiny interval h as h approaches zero." },
+    { "id": "c21", "text": "Limits are the foundation of calculus because instantaneous velocity, the derivative, requires taking the limit of average velocities over shorter and shorter time intervals, avoiding the meaningless 0/0 of a single instant." },
+    { "id": "c22", "text": "The definite integral, the area under a curve, is computed as the limit of sums of rectangle areas as the rectangles become infinitely thin. Every major idea in calculus rests on limits." },
+    { "id": "c23", "text": "Instantaneous velocity is the limit of average velocity as the time interval shrinks to zero. Average velocity over a finite interval is total distance divided by elapsed time, but a single instant covers no time and no distance, giving 0/0 without a limit." }
+  ]
+}

@@ -1,0 +1,134 @@
+{
+  "id": "ap-calc-ab-unit2-derivatives-trig-exp-log",
+  "title": "Derivatives of Trig, Exponential, and Log Functions",
+  "subject": "AP Calculus AB",
+  "unit": "Differentiation: Definition and Fundamental Properties",
+  "track": "ap",
+  "difficulty": "ap",
+  "duration": "45 min",
+  "objectives": [
+    "State and apply the derivatives of the six trigonometric functions",
+    "State and apply the derivatives of exponential functions eˣ and aˣ and logarithmic functions ln x and log_a x",
+    "Combine these derivatives with the power, product, and quotient rules",
+    "Explain why eˣ is its own derivative and why the trig derivative formulas require radian measure"
+  ],
+  "sections": [
+    {
+      "type": "explanation",
+      "heading": "The Derivatives of Sine and Cosine",
+      "content": "You already met the two special trig limits in Unit 1: lim(x→0) sin(x)/x = 1 and lim(x→0) (1 − cos x)/x = 0. Those weren't just curiosities — they are exactly the machinery that produces the derivatives of sine and cosine. Plug sin(x) into the limit definition, use the angle-addition formula and those two limits, and out falls a clean, memorable result:\n\n  d/dx[sin x] = cos x      and      d/dx[cos x] = −sin x.\n\nThe derivative of sine is cosine; the derivative of cosine is *negative* sine. That minus sign on cosine is the detail students forget most.\n\nLet's make this visual, because it's genuinely beautiful. Picture the graph of sin x. Its slope is steepest (equal to 1) right at x = 0, where the curve is rising fastest. At the peak (x = π/2), the curve momentarily flattens — slope 0. Just past the peak, it starts heading down — slope negative. If you plot the slope of sin x at every point, you trace out... cos x exactly. The slope function of sine *is* cosine. Likewise, the slope function of cosine turns out to be −sin x. This is why these two functions are so deeply intertwined — differentiating just rotates you around a little cycle.\n\nIn fact, if you keep differentiating sine you get a four-step cycle: sin x → cos x → −sin x → −cos x → back to sin x. Every fourth derivative returns to where you started. That cyclic structure shows up all over physics, in anything that oscillates."
+    },
+    {
+      "type": "example",
+      "heading": "Using the Sine and Cosine Derivatives",
+      "content": "Example 1: f(x) = 3 sin x − 2 cos x.\nDifferentiate term by term: f'(x) = 3 cos x − 2(−sin x) = 3 cos x + 2 sin x. Watch how the minus sign from d/dx[cos x] = −sin x flipped the −2 into +2 sin x.\n\nExample 2: Find the slope of g(x) = sin x at x = π/3.\ng'(x) = cos x, so g'(π/3) = cos(π/3) = 1/2. The tangent line to the sine curve at x = π/3 has slope 1/2.\n\nExample 3: f(x) = 4x² + cos x.\nf'(x) = 8x − sin x. The polynomial part uses the power rule; the cosine part contributes −sin x. Mixed expressions like this — polynomial plus trig — are extremely common, and you just differentiate each piece with its own rule.\n\nA reminder you'll appreciate later: right now the arguments are just plain x. Once you reach the chain rule in Unit 3, you'll handle things like sin(3x) or cos(x²), where the inside function matters. For now, keep the input simple and focus on the base formulas."
+    },
+    {
+      "type": "table",
+      "heading": "Derivatives of the Six Trig Functions",
+      "headers": ["Function", "Derivative", "Memory hook"],
+      "rows": [
+        ["sin x", "cos x", "sine → cosine"],
+        ["cos x", "−sin x", "the 'co' function gets the minus"],
+        ["tan x", "sec² x", "from quotient rule on sin/cos"],
+        ["cot x", "−csc² x", "the 'co' function gets the minus"],
+        ["sec x", "sec x · tan x", "starts with sec"],
+        ["csc x", "−csc x · cot x", "the 'co' function gets the minus"]
+      ]
+    },
+    {
+      "type": "quiz",
+      "question": "What is the derivative of f(x) = 5 cos x?",
+      "options": [
+        "5 sin x",
+        "−5 sin x",
+        "−5 cos x",
+        "5 sec² x"
+      ],
+      "correctIndex": 1,
+      "explanation": "The constant multiple 5 stays, and d/dx[cos x] = −sin x, giving −5 sin x. Forgetting the negative sign (answer 5 sin x) is the single most common trig-derivative mistake."
+    },
+    {
+      "type": "callout",
+      "variant": "warning",
+      "heading": "Two Trig Pitfalls: the Minus Sign and Radians",
+      "content": "First: d/dx[cos x] = −sin x, NOT sin x. All three 'co-' functions (cos, cot, csc) pick up a negative sign when differentiated — use that as a memory aid. Second, and easy to forget: these formulas are ONLY valid when x is in RADIANS. The derivative of sin x equals cos x precisely because lim(x→0) sin(x)/x = 1, and that limit is 1 only in radian measure. If a problem ever uses degrees, the formulas change. On the AP exam, always work in radians."
+    },
+    {
+      "type": "explanation",
+      "heading": "The Exponential Function: Its Own Derivative",
+      "content": "Now for one of the most remarkable facts in all of mathematics. The natural exponential function eˣ has this astonishing property:\n\n  d/dx[eˣ] = eˣ.\n\nThe function is its own derivative. Differentiate it and you get back exactly what you started with. No other function (except constant multiples of eˣ) does this. Graphically, it means that at every point on the curve y = eˣ, the slope of the tangent line equals the height of the curve at that point. Where the curve is at height 5, its slope is 5; where it's at height 100, its slope is 100. The steeper it climbs, the higher it already is — which is exactly why exponential growth feels like it 'runs away' from you.\n\nThis self-replicating property is *the* reason e (≈ 2.71828) is the natural base for calculus. Among all possible exponential bases, e is the unique one whose growth rate exactly matches its current value. That makes eˣ the cleanest function to work with, and it's why e shows up everywhere change is proportional to amount: population growth, radioactive decay, compound interest, cooling, charging capacitors.\n\nFor a general base a > 0, the derivative picks up an extra factor: d/dx[aˣ] = aˣ · ln a. Notice that when a = e, ln e = 1, so the factor disappears and you recover d/dx[eˣ] = eˣ. That ln a factor is the 'tax' you pay for using a base other than e — another reason e is the natural choice."
+    },
+    {
+      "type": "example",
+      "heading": "Differentiating Exponentials",
+      "content": "Example 1: f(x) = 7eˣ. The constant rides along: f'(x) = 7eˣ. (Yes, it really is that clean — eˣ is its own derivative.)\n\nExample 2: f(x) = eˣ + x³. Differentiate each piece: f'(x) = eˣ + 3x². Don't fall for the trap of applying the power rule to eˣ — eˣ is NOT a power of x (the variable is in the exponent, not the base), so the power rule does not apply. Its derivative is just eˣ.\n\nExample 3: f(x) = 2ˣ. Here the base is 2, not e, so d/dx[2ˣ] = 2ˣ · ln 2.\n\nExample 4: A tempting mistake to name explicitly. d/dx[x²] = 2x (power rule: variable base, constant exponent). But d/dx[2ˣ] = 2ˣ ln 2 (exponential rule: constant base, variable exponent). They look similar but are completely different — always check whether the variable is in the base or the exponent before choosing a rule."
+    },
+    {
+      "type": "explanation",
+      "heading": "The Natural Logarithm and Other Logs",
+      "content": "The natural logarithm is the inverse of eˣ, and its derivative is surprisingly simple and important:\n\n  d/dx[ln x] = 1/x      (valid for x > 0).\n\nThis is a small miracle. Here is a function whose derivative is the simple algebraic expression 1/x. It also fills a gap in the power rule: recall that the power rule turns xⁿ into n·xⁿ⁻¹, which can produce any power of x as a derivative *except* x⁻¹. There's no power of x whose derivative is 1/x. The natural log fills exactly that gap — it is the 'missing antiderivative' of 1/x, a fact that becomes hugely important when you start integrating in Unit 6.\n\nFor a general base a, the derivative is d/dx[log_a x] = 1/(x ln a). As with exponentials, when a = e we have ln e = 1 and recover d/dx[ln x] = 1/x. The same ln a factor appears, again marking e as the natural, frictionless base.\n\nIntuition for why d/dx[ln x] = 1/x: the logarithm grows, but ever more slowly as x increases (remember the growth-rate hierarchy from Unit 1 — logs are the slowest). A slowing growth means a shrinking slope, and 1/x is exactly a positive quantity that shrinks toward 0 as x grows. The graph of ln x is steep near x = 0⁺ (where 1/x is large) and nearly flat for big x (where 1/x is tiny) — precisely what 1/x predicts."
+    },
+    {
+      "type": "steps",
+      "heading": "Choosing the Right Rule for a Mixed Expression",
+      "steps": [
+        {
+          "title": "Scan for the overall structure",
+          "content": "Is the whole expression a sum/difference of terms, a single product, or a single quotient? The outermost structure decides whether you start with term-by-term, the product rule, or the quotient rule."
+        },
+        {
+          "title": "Classify each building-block function",
+          "content": "Identify each piece: power of x (power rule), trig function (trig table), exponential (eˣ or aˣ rule), or logarithm (1/x or log rule). Check carefully whether a variable is in the base or the exponent."
+        },
+        {
+          "title": "Differentiate the pieces with their own rules",
+          "content": "Apply the matching derivative to each building block. Keep constant multiples attached and respect the minus signs on cos, cot, and csc."
+        },
+        {
+          "title": "Assemble using the outer rule",
+          "content": "Combine the pieces using the product or quotient rule (or simple addition for a sum). Substitute the piece-derivatives in carefully, watching signs and order."
+        }
+      ]
+    },
+    {
+      "type": "example",
+      "heading": "Combining the New Derivatives with Product and Quotient Rules",
+      "content": "Example 1 (product rule): f(x) = x² eˣ.\nLet u = x² (u' = 2x) and v = eˣ (v' = eˣ).\nf'(x) = u'v + uv' = 2x·eˣ + x²·eˣ = eˣ(2x + x²) = x eˣ(2 + x).\nNotice eˣ factors out neatly — a common and tidy feature of these problems.\n\nExample 2 (quotient rule): g(x) = (sin x)/x.\nLet u = sin x (u' = cos x) and v = x (v' = 1).\ng'(x) = [cos x · x − sin x · 1]/x² = (x cos x − sin x)/x².\n\nExample 3 (product rule with a log): h(x) = x ln x.\nLet u = x (u' = 1) and v = ln x (v' = 1/x).\nh'(x) = 1·ln x + x·(1/x) = ln x + 1.\nThat last step — x·(1/x) = 1 — is a clean simplification worth watching for. The derivative of x ln x is simply ln x + 1, a result you'll see again when integrating ln x in Unit 6."
+    },
+    {
+      "type": "quiz",
+      "question": "Which statement is correct?",
+      "options": [
+        "d/dx[ln x] = x and d/dx[eˣ] = x·eˣ⁻¹",
+        "d/dx[ln x] = 1/x and d/dx[eˣ] = eˣ",
+        "d/dx[ln x] = 1/x and d/dx[eˣ] = x·eˣ",
+        "d/dx[ln x] = ln x and d/dx[eˣ] = eˣ·ln x"
+      ],
+      "correctIndex": 1,
+      "explanation": "The natural log's derivative is 1/x, and eˣ is its own derivative. The wrong options apply the power rule to eˣ (it is not a power of x, so that is invalid) or misremember ln x. There is no x multiplying eˣ in its derivative."
+    },
+    {
+      "type": "keypoint",
+      "content": "Memorize: d/dx[sin x] = cos x, d/dx[cos x] = −sin x, d/dx[tan x] = sec² x, d/dx[eˣ] = eˣ, d/dx[aˣ] = aˣ ln a, d/dx[ln x] = 1/x, d/dx[log_a x] = 1/(x ln a). Trig derivatives require radians; eˣ is its own derivative; ln x fills the power-rule gap as the function whose derivative is 1/x."
+    },
+    {
+      "type": "callout",
+      "variant": "remember",
+      "heading": "The Must-Memorize Derivative List",
+      "content": "These are non-negotiable for the AP exam — know them cold: sin x → cos x; cos x → −sin x; tan x → sec² x; sec x → sec x tan x; cot x → −csc² x; csc x → −csc x cot x; eˣ → eˣ; aˣ → aˣ ln a; ln x → 1/x; log_a x → 1/(x ln a). The three 'co-' trig functions all carry a minus sign. Mixing up x² (power rule) with 2ˣ (exponential rule) is a classic trap."
+    },
+    {
+      "type": "callout",
+      "variant": "tip",
+      "heading": "Base or Exponent? That Decides the Rule",
+      "content": "Before differentiating any power-looking expression, ask: where is the variable? If the variable is the BASE with a constant exponent (like x⁵), use the power rule: 5x⁴. If the variable is in the EXPONENT with a constant base (like 5ˣ), use the exponential rule: 5ˣ ln 5. Getting these backward is one of the most common errors on the exam — a two-second check prevents it."
+    },
+    {
+      "type": "deepdive",
+      "heading": "Why eˣ Is Its Own Derivative",
+      "content": "Let's understand *why* e is the magic base, because it's one of the most elegant ideas in calculus. Consider differentiating a general exponential f(x) = aˣ from the limit definition: f'(x) = lim(h→0) [a^(x+h) − aˣ]/h. Factor out aˣ (it doesn't depend on h): f'(x) = aˣ · lim(h→0) [aʰ − 1]/h. So the derivative of aˣ is aˣ times a constant — call it k(a) = lim(h→0) [aʰ − 1]/h — that depends only on the base a, not on x. Every exponential is proportional to its own derivative; the only question is the proportionality constant.\n\nFor a = 2, that constant works out to about 0.693; for a = 3, about 1.099. Somewhere between 2 and 3 there must be a base where the constant is *exactly* 1. That base is e ≈ 2.71828. By definition, e is the base for which lim(h→0) [eʰ − 1]/h = 1, which makes d/dx[eˣ] = eˣ · 1 = eˣ. That constant k(a) for a general base turns out to be exactly ln a — which is why d/dx[aˣ] = aˣ ln a, and why the factor vanishes when a = e (since ln e = 1).\n\nThis self-derivative property is why e governs every process where the rate of change is proportional to the current amount. If a population grows at a rate proportional to its size, or a savings account earns interest proportional to its balance, or a radioactive sample decays at a rate proportional to how much is left, the solution always involves eˣ. You'll prove this rigorously in Unit 7 when you solve the differential equation dy/dx = ky and discover its solution is y = Ce^(kx). The humble fact that eˣ is its own derivative is the seed from which the entire theory of exponential growth and decay grows — and that theory describes an enormous slice of the natural and financial world."
+    }
+  ],
+  "aiContext": "This is Unit 2 Lesson 5 of AP Calculus AB, covering derivatives of the six trig functions, exponentials (eˣ and aˣ), and logarithms (ln x and log_a x). Emphasize three things: the negative signs on the 'co-' functions (cos, cot, csc), that trig derivative formulas require radians (they follow from lim sin(x)/x = 1), and the distinction between the power rule (variable base, like x²) and the exponential rule (variable exponent, like 2ˣ) — students mix these up constantly. Stress that eˣ is its own derivative and ln x has derivative 1/x (the function filling the power-rule gap). Keep arguments as plain x here; note the chain rule (Unit 3) is needed for composite arguments like sin(3x). Connect backward to the special trig limits (Unit 1) and forward to the chain rule (Unit 3), integration of these functions and the 1/x antiderivative (Unit 6), and exponential growth/decay (Unit 7). On the AP exam these derivatives are tested in routine multiple choice, embedded in product/quotient/chain problems, and underpin motion and growth free-response questions."
+}

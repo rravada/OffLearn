@@ -1,5 +1,5 @@
 import { openDB, type DBSchema, type IDBPDatabase } from "idb";
-import type { StoredMessage, MasteryEntry, Session, TeacherModule } from "@/types";
+import type { StoredMessage, MasteryEntry, Session, TeacherModule, AssessmentResult } from "@/types";
 
 interface OffLearnDB extends DBSchema {
   sessions: {
@@ -23,10 +23,14 @@ interface OffLearnDB extends DBSchema {
     key: string;
     value: TeacherModule;
   };
+  assessmentResults: {
+    key: string;
+    value: AssessmentResult;
+  };
 }
 
 const DB_NAME = "offlearn";
-const DB_VERSION = 2;
+const DB_VERSION = 3;
 
 let dbPromise: Promise<IDBPDatabase<OffLearnDB>> | null = null;
 
@@ -43,6 +47,9 @@ function getDB(): Promise<IDBPDatabase<OffLearnDB>> {
         }
         if (oldVersion < 2) {
           db.createObjectStore("teacherModules", { keyPath: "id" });
+        }
+        if (oldVersion < 3) {
+          db.createObjectStore("assessmentResults", { keyPath: "assessmentId" });
         }
       },
     });
@@ -159,4 +166,18 @@ export async function getTeacherModule(
 export async function deleteTeacherModule(id: string): Promise<void> {
   const db = await getDB();
   await db.delete("teacherModules", id);
+}
+
+// --- Assessment Results ---
+
+export async function saveAssessmentResult(result: AssessmentResult): Promise<void> {
+  const db = await getDB();
+  await db.put("assessmentResults", result);
+}
+
+export async function getAssessmentResult(
+  assessmentId: string
+): Promise<AssessmentResult | null> {
+  const db = await getDB();
+  return (await db.get("assessmentResults", assessmentId)) ?? null;
 }

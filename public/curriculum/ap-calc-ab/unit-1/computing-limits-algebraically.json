@@ -5,22 +5,29 @@
   "unit": "Limits and Continuity",
   "track": "ap",
   "difficulty": "ap",
-  "duration": "30 min",
+  "duration": "45 min",
   "objectives": [
     "Evaluate limits using direct substitution and recognize when it produces a valid answer",
     "Apply factoring, expanding, and rationalizing techniques to resolve 0/0 indeterminate forms",
-    "Analyze rational functions to compute limits where direct substitution fails"
+    "Use the algebraic properties of limits (sum, product, quotient, power) to break complex limits into manageable pieces",
+    "Apply the Squeeze Theorem and the special trigonometric limits to evaluate limits that algebra alone cannot resolve"
   ],
   "sections": [
     {
       "type": "explanation",
       "heading": "Direct Substitution: The First Thing to Try",
-      "content": "Here's the good news: most limits are easy. If a function is 'well-behaved' at a point — meaning it's continuous there — then the limit is simply the function value. You just plug in the number.\n\nFor example: lim(x→4) (3x² - 2x + 1). Just substitute x = 4: 3(16) - 2(4) + 1 = 48 - 8 + 1 = 41. Done. The limit is 41.\n\nThis works for polynomials everywhere, and for most familiar functions (sin, cos, eˣ, ln x) wherever they're defined. The fancy name for this is the 'Direct Substitution Property': if f is continuous at x = a, then lim(x→a) f(x) = f(a).\n\nSo your first move when computing any limit should always be: try plugging in the number. If you get an actual real number out, that's your answer. You're done. Celebrate.\n\nBut sometimes plugging in gives you something problematic — like 0/0, or ∞/∞, or other strange expressions. These are called *indeterminate forms*, and they're not answers — they're signals that you need to do more work. The expression 0/0 doesn't mean the limit is zero, or undefined, or anything specific. It means 'I can't tell yet — let me try a different approach.' Think of 0/0 as a locked door that tells you there's something interesting inside, but you need to find the right key."
+      "content": "Here's the good news: most limits are easy. If a function is 'well-behaved' at a point — meaning it's continuous there — then the limit is simply the function value. You just plug in the number.\n\nFor example: lim(x→4) (3x² - 2x + 1). Just substitute x = 4: 3(16) - 2(4) + 1 = 48 - 8 + 1 = 41. Done. The limit is 41.\n\nThis works for polynomials everywhere, and for most familiar functions (sin, cos, eˣ, ln x) wherever they're defined. The fancy name for this is the 'Direct Substitution Property': if f is continuous at x = a, then lim(x→a) f(x) = f(a). Behind the scenes this is justified by the limit laws — the limit of a sum is the sum of the limits, the limit of a product is the product of the limits, and so on — so any expression built from continuous pieces can be evaluated by plugging in.\n\nSo your first move when computing any limit should always be: try plugging in the number. If you get an actual real number out, that's your answer. You're done. Celebrate.\n\nBut sometimes plugging in gives you something problematic — like 0/0, or ∞/∞, or other strange expressions. These are called *indeterminate forms*, and they're not answers — they're signals that you need to do more work. The expression 0/0 doesn't mean the limit is zero, or undefined, or anything specific. It means 'I can't tell yet — let me try a different approach.' Think of 0/0 as a locked door that tells you there's something interesting inside, but you need to find the right key."
     },
     {
       "type": "example",
       "heading": "When Direct Substitution Works — and When It Doesn't",
-      "content": "Try these:\n\n1) lim(x→2) (x³ + 5x) = 2³ + 5(2) = 8 + 10 = 18 ✓ Direct substitution works!\n\n2) lim(x→0) sin(x)/x = sin(0)/0 = 0/0 ✗ Indeterminate! Direct substitution fails.\n\n3) lim(x→1) (x² - 1)/(x - 1) = (1 - 1)/(1 - 1) = 0/0 ✗ Indeterminate! Need another method.\n\n4) lim(x→3) √(x + 6) = √(3 + 6) = √9 = 3 ✓ Direct substitution works!\n\n5) lim(x→5) (2x + 1)/(x - 5) = 11/0 ✗ This is NOT indeterminate — it's a genuine division by zero. The limit either goes to ±∞ or doesn't exist. (We'll analyze this kind in a later lesson.)\n\nKey distinction: 0/0 is indeterminate (the limit might still exist — keep working). But something-nonzero/0 means the function is blowing up, and you're looking at a potential infinite limit or a vertical asymptote."
+      "content": "Try these:\n\n1) lim(x→2) (x³ + 5x) = 2³ + 5(2) = 8 + 10 = 18 ✓ Direct substitution works!\n\n2) lim(x→0) sin(x)/x = sin(0)/0 = 0/0 ✗ Indeterminate! Direct substitution fails.\n\n3) lim(x→1) (x² - 1)/(x - 1) = (1 - 1)/(1 - 1) = 0/0 ✗ Indeterminate! Need another method.\n\n4) lim(x→3) √(x + 6) = √(3 + 6) = √9 = 3 ✓ Direct substitution works!\n\n5) lim(x→5) (2x + 1)/(x - 5) = 11/0 ✗ This is NOT indeterminate — it's a genuine division by zero. The limit either goes to ±∞ or doesn't exist. (We analyze this kind in the lesson on infinite limits.)\n\nKey distinction: 0/0 is indeterminate (the limit might still exist — keep working). But something-nonzero/0 means the function is blowing up, and you're looking at a potential infinite limit or a vertical asymptote."
+    },
+    {
+      "type": "callout",
+      "variant": "warning",
+      "heading": "0/0 and (nonzero)/0 Are Completely Different",
+      "content": "Students see a zero in the denominator and immediately write 'DNE' or 'undefined.' Slow down. If substitution gives 0/0, the limit might be a perfectly nice finite number — you just have more algebra to do. If it gives (nonzero)/0, like 11/0, the function is exploding and you have an infinite limit or vertical asymptote, NOT a 0/0 problem. Diagnose which case you're in before choosing a technique. Treating 0/0 as 'undefined' and stopping is a guaranteed lost point."
     },
     {
       "type": "explanation",
@@ -30,31 +37,107 @@
     {
       "type": "example",
       "heading": "Factoring with Trickier Expressions",
-      "content": "Find lim(x→-2) (x² + 5x + 6)/(x² + 3x + 2).\n\nStep 1: Direct substitution gives (4 - 10 + 6)/(4 - 6 + 2) = 0/0. Indeterminate.\n\nStep 2: Factor both. Numerator: x² + 5x + 6 = (x + 2)(x + 3). Denominator: x² + 3x + 2 = (x + 2)(x + 1).\n\nStep 3: Cancel (x + 2): we get (x + 3)/(x + 1).\n\nStep 4: Substitute x = -2: (-2 + 3)/(-2 + 1) = 1/(-1) = -1.\n\nThe limit is -1.\n\nHere's another: lim(x→0) (3x² + x)/x.\n\nDirect substitution: 0/0. Factor out x from the numerator: x(3x + 1)/x. Cancel x: 3x + 1. Substitute x = 0: 3(0) + 1 = 1. The limit is 1."
+      "content": "Find lim(x→-2) (x² + 5x + 6)/(x² + 3x + 2).\n\nStep 1: Direct substitution gives (4 - 10 + 6)/(4 - 6 + 2) = 0/0. Indeterminate.\n\nStep 2: Factor both. Numerator: x² + 5x + 6 = (x + 2)(x + 3). Denominator: x² + 3x + 2 = (x + 2)(x + 1).\n\nStep 3: Cancel (x + 2): we get (x + 3)/(x + 1).\n\nStep 4: Substitute x = -2: (-2 + 3)/(-2 + 1) = 1/(-1) = -1.\n\nThe limit is -1.\n\nHere's another: lim(x→0) (3x² + x)/x.\n\nDirect substitution: 0/0. Factor out x from the numerator: x(3x + 1)/x. Cancel x: 3x + 1. Substitute x = 0: 3(0) + 1 = 1. The limit is 1. Notice the factor you cancel is always the one that was forcing both top and bottom to zero — here it was a plain x, not (x - a) for some nonzero a, because the target was x = 0."
     },
     {
-      "type": "keypoint",
-      "content": "When you get 0/0 from direct substitution, don't panic — it just means the limit needs more work. Factor both numerator and denominator, cancel the common factor that's causing the 0/0, then substitute again. The cancellation is valid because limits consider values near the point, not at the point itself."
+      "type": "quiz",
+      "question": "A student computes lim(x→4) (x² - 16)/(x - 4) by plugging in x = 4, gets 0/0, and concludes the limit is 0. What went wrong?",
+      "options": [
+        "Nothing — 0/0 always equals 0",
+        "0/0 is indeterminate, not an answer; factoring gives (x+4), so the limit is 8",
+        "The limit does not exist because the denominator is 0 at x = 4",
+        "The student should have concluded the limit is 16"
+      ],
+      "correctIndex": 1,
+      "explanation": "0/0 is an indeterminate form, not a value — it signals more work is needed. Factoring the numerator as (x-4)(x+4) and canceling (x-4) leaves x+4, which approaches 8 as x→4. Concluding '0' or 'DNE' from a 0/0 are both classic errors."
     },
     {
       "type": "explanation",
       "heading": "The Rationalizing Technique",
-      "content": "Some limits involve square roots that prevent easy factoring. When you see a square root expression giving you 0/0, try multiplying the numerator and denominator by the *conjugate*.\n\nRemember conjugates? The conjugate of (√a - b) is (√a + b), and vice versa. Multiplying conjugates eliminates the square root because of the difference of squares pattern: (√a - b)(√a + b) = a - b².\n\nThis technique is like a magic trick where you multiply by a clever form of 1 that transforms the expression into something you can work with. You're not changing the function's value — you're just rewriting it in a more useful form.\n\nLet's see it in action. Find lim(x→0) (√(x + 4) - 2)/x.\n\nStep 1: Direct substitution gives (√4 - 2)/0 = (2 - 2)/0 = 0/0. Indeterminate.\n\nStep 2: Multiply top and bottom by the conjugate of the numerator, which is (√(x + 4) + 2):\n\n[(√(x+4) - 2)(√(x+4) + 2)] / [x(√(x+4) + 2)]\n\nThe numerator simplifies using difference of squares: (x + 4) - 4 = x.\n\nSo we have: x / [x(√(x+4) + 2)]\n\nStep 3: Cancel the x: 1 / (√(x+4) + 2)\n\nStep 4: Now substitute x = 0: 1/(√4 + 2) = 1/(2 + 2) = 1/4.\n\nThe limit is 1/4. Beautiful, right? The square root was hiding a common factor, and the conjugate trick revealed it."
+      "content": "Some limits involve square roots that prevent easy factoring. When you see a square root expression giving you 0/0, try multiplying the numerator and denominator by the *conjugate*.\n\nRemember conjugates? The conjugate of (√a - b) is (√a + b), and vice versa. Multiplying conjugates eliminates the square root because of the difference of squares pattern: (√a - b)(√a + b) = a - b².\n\nThis technique is like a magic trick where you multiply by a clever form of 1 that transforms the expression into something you can work with. You're not changing the function's value — you're just rewriting it in a more useful form.\n\nLet's see it in action. Find lim(x→0) (√(x + 4) - 2)/x.\n\nStep 1: Direct substitution gives (√4 - 2)/0 = (2 - 2)/0 = 0/0. Indeterminate.\n\nStep 2: Multiply top and bottom by the conjugate of the numerator, which is (√(x + 4) + 2):\n[(√(x+4) - 2)(√(x+4) + 2)] / [x(√(x+4) + 2)]\nThe numerator simplifies using difference of squares: (x + 4) - 4 = x.\nSo we have: x / [x(√(x+4) + 2)]\n\nStep 3: Cancel the x: 1 / (√(x+4) + 2)\n\nStep 4: Now substitute x = 0: 1/(√4 + 2) = 1/(2 + 2) = 1/4.\n\nThe limit is 1/4. The square root was hiding a common factor, and the conjugate trick revealed it."
     },
     {
       "type": "example",
       "heading": "Rationalizing — Another Example",
-      "content": "Find lim(x→9) (x - 9)/(√x - 3).\n\nStep 1: Direct substitution: (9 - 9)/(3 - 3) = 0/0.\n\nStep 2: This time, multiply top and bottom by the conjugate of the *denominator*: (√x + 3).\n\n(x - 9)(√x + 3) / [(√x - 3)(√x + 3)]\n\nThe denominator becomes x - 9 (difference of squares: (√x)² - 9 = x - 9).\n\nStep 3: Cancel (x - 9): we get √x + 3.\n\nStep 4: Substitute x = 9: √9 + 3 = 3 + 3 = 6.\n\nNotice you can choose to rationalize either the numerator or the denominator — whichever has the square root that's causing trouble. The goal is always the same: create a common factor you can cancel to escape the 0/0 trap."
+      "content": "Find lim(x→9) (x - 9)/(√x - 3).\n\nStep 1: Direct substitution: (9 - 9)/(3 - 3) = 0/0.\n\nStep 2: This time, multiply top and bottom by the conjugate of the *denominator*: (√x + 3).\n(x - 9)(√x + 3) / [(√x - 3)(√x + 3)]\nThe denominator becomes x - 9 (difference of squares: (√x)² - 9 = x - 9).\n\nStep 3: Cancel (x - 9): we get √x + 3.\n\nStep 4: Substitute x = 9: √9 + 3 = 3 + 3 = 6.\n\nNotice you can choose to rationalize either the numerator or the denominator — whichever has the square root that's causing trouble. The goal is always the same: create a common factor you can cancel to escape the 0/0 trap."
+    },
+    {
+      "type": "steps",
+      "heading": "A Reliable Order of Attack for Any Limit",
+      "steps": [
+        {
+          "title": "Try direct substitution first",
+          "content": "Plug the target value into the function. If you get a real number, that IS the limit — stop. This single step resolves the majority of limits you'll meet, so never skip it."
+        },
+        {
+          "title": "Diagnose the form you got",
+          "content": "If substitution gave 0/0, you have an indeterminate form: keep working. If it gave (nonzero)/0, the limit is infinite or DNE — switch to the infinite-limit analysis. If it gave a clean number, you're already done."
+        },
+        {
+          "title": "For 0/0, factor and cancel",
+          "content": "Factor the numerator and denominator, then cancel the common factor that forced both to zero. After canceling, substitute again into the simplified expression."
+        },
+        {
+          "title": "If square roots block factoring, rationalize",
+          "content": "Multiply numerator and denominator by the conjugate of whichever part contains the square root. The difference-of-squares pattern clears the root and usually exposes a cancelable factor."
+        },
+        {
+          "title": "If it's a trig 0/0, use the special trig limits",
+          "content": "Reshape the expression to match lim(x→0) sin(x)/x = 1 or lim(x→0) (1 - cos x)/x = 0, or use the Squeeze Theorem. Then substitute."
+        }
+      ]
+    },
+    {
+      "type": "explanation",
+      "heading": "The Squeeze Theorem and Special Trig Limits",
+      "content": "Some limits can't be cracked by factoring or rationalizing — especially ones with trig functions or wild oscillation. For those, calculus gives us the Squeeze Theorem (also called the Sandwich Theorem), and it's exactly as friendly as it sounds.\n\nThe idea: suppose you're trying to find the limit of a function g(x), and you can trap it between two other functions, f(x) ≤ g(x) ≤ h(x), near the point you care about. If the bottom bread f(x) and the top bread h(x) both approach the same value L as x → a, then the filling g(x) has nowhere else to go — it's squeezed, so it must also approach L. Picture a person squeezed in a crowded elevator between two walls moving toward the same spot: they have to end up there too.\n\nThe most famous use of the Squeeze Theorem proves the single most important trig limit in all of calculus: lim(x→0) sin(x)/x = 1. Plugging in gives 0/0, and no amount of factoring helps. But by trapping sin(x)/x between cos(x) and 1 near zero (a geometric argument using areas of triangles and a sector), both bounds approach 1, so sin(x)/x is squeezed to 1. A close cousin, lim(x→0) (1 - cos(x))/x = 0, follows from the same circle of ideas.\n\nThese two limits are not optional trivia — they are the reason the derivative of sin(x) turns out to be cos(x). You will use them directly later in the course. For now, memorize them and learn to reshape trig 0/0 limits until one of these patterns appears. A common trick: lim(x→0) sin(5x)/x equals 5 because sin(5x)/x = 5 · sin(5x)/(5x), and sin(5x)/(5x) → 1 as the inside 5x → 0."
+    },
+    {
+      "type": "example",
+      "heading": "Using the Special Trig Limits",
+      "content": "Find lim(x→0) sin(3x)/(4x).\n\nStep 1: Direct substitution gives sin(0)/0 = 0/0. Indeterminate — and it's trig, so reach for the special limit.\n\nStep 2: Reshape to create the pattern sin(▢)/▢. We want a 3x underneath the sin(3x). Rewrite:\nsin(3x)/(4x) = (3/4) · sin(3x)/(3x).\nWe multiplied and divided to turn the bottom into 3x (matching the inside of the sine), and pulled the leftover constant 3/4 out front.\n\nStep 3: Take the limit. As x → 0, the inside 3x → 0, so sin(3x)/(3x) → 1.\nTherefore the whole thing approaches (3/4) · 1 = 3/4.\n\nThe limit is 3/4. A faster shortcut for these: lim(x→0) sin(ax)/(bx) = a/b. But you should understand WHY (the reshaping above), not just memorize the shortcut, because the AP exam loves to disguise the pattern.\n\nNow a Squeeze Theorem example: find lim(x→0) x² sin(1/x). The factor sin(1/x) oscillates wildly between -1 and 1 near zero, so direct substitution is hopeless. But since -1 ≤ sin(1/x) ≤ 1, multiply through by x² (which is ≥ 0): -x² ≤ x² sin(1/x) ≤ x². Both -x² and x² approach 0 as x → 0. The function is squeezed between them, so lim(x→0) x² sin(1/x) = 0."
+    },
+    {
+      "type": "quiz",
+      "question": "What is lim(x→0) sin(7x)/(2x)?",
+      "options": [
+        "1, because sin of anything over itself approaches 1",
+        "7/2, by reshaping into (7/2)·sin(7x)/(7x)",
+        "0, because sin(0) = 0",
+        "Does not exist, because direct substitution gives 0/0"
+      ],
+      "correctIndex": 1,
+      "explanation": "Rewrite sin(7x)/(2x) = (7/2)·sin(7x)/(7x); as x→0 the inside 7x→0 so sin(7x)/(7x)→1, leaving 7/2. The trap answer '1' ignores that the inside of the sine must match the denominator exactly, and '0' is the classic 0/0 mistake of stopping too early."
+    },
+    {
+      "type": "table",
+      "heading": "Limit-Evaluation Toolkit",
+      "headers": ["Situation after substituting", "Technique", "Key formula or idea"],
+      "rows": [
+        ["You get a real number", "Direct substitution — done", "lim(x→a) f(x) = f(a) when f is continuous at a"],
+        ["0/0 with polynomials", "Factor and cancel the common factor", "Both top and bottom share an (x - a) factor"],
+        ["0/0 with a square root", "Multiply by the conjugate", "(√A - B)(√A + B) = A - B²"],
+        ["0/0 with sine over its argument", "Special trig limit", "lim(x→0) sin(x)/x = 1"],
+        ["0/0 with (1 - cosine) over x", "Special trig limit", "lim(x→0) (1 - cos x)/x = 0"],
+        ["Function trapped between two others", "Squeeze (Sandwich) Theorem", "If f ≤ g ≤ h and f, h → L, then g → L"],
+        ["(nonzero)/0", "NOT 0/0 — analyze as infinite limit", "Limit is ±∞ or DNE (vertical asymptote)"]
+      ]
+    },
+    {
+      "type": "callout",
+      "variant": "remember",
+      "heading": "Memorize These Two Trig Limits",
+      "content": "lim(x→0) sin(x)/x = 1 and lim(x→0) (1 - cos x)/x = 0. These are non-negotiable. They appear directly on the AP exam, and they are the engine behind the derivatives of sine and cosine. When you see a trig function over its own argument heading to 0/0, your reflex should be to reshape until one of these patterns appears."
     },
     {
       "type": "keypoint",
-      "content": "Your limit-solving toolkit has three main strategies, and you should try them in this order: (1) Direct substitution — always try this first. (2) If you get 0/0, try factoring and canceling. (3) If square roots are involved and factoring doesn't work, multiply by the conjugate. Each technique is about rewriting the expression to remove whatever is causing 0/0."
+      "content": "Attack every limit in order: (1) direct substitution; (2) if 0/0, factor and cancel; (3) if a square root blocks you, rationalize with the conjugate; (4) if it's a trig 0/0, use lim(x→0) sin(x)/x = 1 or the Squeeze Theorem. Each technique simply rewrites the expression to remove whatever caused the 0/0."
     },
     {
       "type": "deepdive",
       "heading": "Why 0/0 Is 'Indeterminate' and Not Just 'Undefined'",
-      "content": "You might wonder: why do we treat 0/0 differently from, say, 5/0? After all, both involve dividing by zero. The answer lies in what these expressions tell us about the limit.\n\nWhen you get something like 5/0, the numerator is pushing the fraction toward ±∞ while the denominator is collapsing to zero. There's no tug-of-war — the result is always going to blow up. The limit is either +∞, -∞, or doesn't exist.\n\nBut 0/0 is a tug-of-war. The numerator is pulling toward 0 (making the fraction small), while the denominator is also pulling toward 0 (making the fraction large). The outcome depends on *how fast* each one approaches 0. If the numerator shrinks faster, the limit is 0. If the denominator shrinks faster, the limit is ±∞. If they shrink at comparable rates, the limit is some finite nonzero number.\n\nConsider three different functions as x → 0:\n- x²/x = x → 0 (numerator wins — shrinks faster)\n- x/x = 1 → 1 (they shrink at the same rate)\n- x/x² = 1/x → ∞ (denominator wins — shrinks faster)\n\nAll three are '0/0' at x = 0, but they give completely different limits: 0, 1, and ∞. That's why 0/0 is called *indeterminate* — the form alone doesn't determine the answer. You have to do the algebra to find out who wins the race to zero.\n\nOther indeterminate forms you'll encounter later in calculus include ∞/∞, 0 · ∞, ∞ - ∞, 0⁰, 1^∞, and ∞⁰. Each of these represents a similar tug-of-war where the answer isn't obvious without further analysis. For now, 0/0 is the one you'll see most often."
+      "content": "You might wonder: why do we treat 0/0 differently from, say, 5/0? After all, both involve dividing by zero. The answer lies in what these expressions tell us about the limit.\n\nWhen you get something like 5/0, the numerator is pushing the fraction toward ±∞ while the denominator is collapsing to zero. There's no tug-of-war — the result is always going to blow up. The limit is either +∞, -∞, or doesn't exist.\n\nBut 0/0 is a tug-of-war. The numerator is pulling toward 0 (making the fraction small), while the denominator is also pulling toward 0 (making the fraction large). The outcome depends on *how fast* each one approaches 0. If the numerator shrinks faster, the limit is 0. If the denominator shrinks faster, the limit is ±∞. If they shrink at comparable rates, the limit is some finite nonzero number.\n\nConsider three different functions as x → 0:\n- x²/x = x → 0 (numerator wins — shrinks faster)\n- x/x = 1 → 1 (they shrink at the same rate)\n- x/x² = 1/x → ∞ (denominator wins — shrinks faster)\n\nAll three are '0/0' at x = 0, but they give completely different limits: 0, 1, and ∞. That's why 0/0 is called *indeterminate* — the form alone doesn't determine the answer. You have to do the algebra to find out who wins the race to zero.\n\nOther indeterminate forms you'll encounter later in calculus include ∞/∞, 0 · ∞, ∞ - ∞, 0⁰, 1^∞, and ∞⁰. In Unit 4 you'll meet L'Hôpital's Rule, a powerful tool that resolves 0/0 and ∞/∞ forms using derivatives — but it's only legal precisely because of the indeterminate nature described here. For now, 0/0 is the one you'll see most often, and factoring, rationalizing, and the trig limits are your keys to it."
     }
   ],
-  "aiContext": "AP Calculus AB. Guide students to understand concepts graphically before algebraically. Push them to explain what a derivative or integral MEANS physically, not just how to compute it. Common confusion: chain rule application order, and confusing definite vs indefinite integrals."
+  "aiContext": "This is Unit 1 Lesson 2 of AP Calculus AB. Emphasize the decision process: always try direct substitution first, then diagnose the form. The central confusion to watch for is treating 0/0 as 'undefined/DNE' (it's indeterminate and usually resolvable) versus (nonzero)/0 (genuinely infinite) — students conflate these constantly. Reinforce that canceling a common factor is legal because limits concern values near a point, not at it. For the special trig limits, make sure students reshape so the sine's argument matches the denominator exactly before applying sin(x)/x → 1; the most common error is forgetting the compensating constant. Connect forward: these trig limits are exactly what produce d/dx[sin x] = cos x, and L'Hôpital's Rule (Unit 4) generalizes 0/0 resolution. On the AP exam, this appears as multiple-choice algebraic limit evaluations (factoring, conjugates, trig limits) and as a building block in nearly every free-response problem."
 }

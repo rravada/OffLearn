@@ -1,0 +1,137 @@
+{
+  "id": "ap-calc-ab-unit2-derivative-definition-and-rate-of-change",
+  "title": "The Derivative: Definition and Rate of Change",
+  "subject": "AP Calculus AB",
+  "unit": "Differentiation: Definition and Fundamental Properties",
+  "track": "ap",
+  "difficulty": "ap",
+  "duration": "45 min",
+  "objectives": [
+    "Distinguish between average rate of change (secant slope) and instantaneous rate of change (tangent slope) and interpret each in context",
+    "Use both forms of the limit definition of the derivative to compute f'(x) and f'(a) for simple functions",
+    "Interpret the derivative as the slope of the tangent line and as a rate of change with appropriate units",
+    "Read and translate among the derivative notations f'(x), dy/dx, and df/dx"
+  ],
+  "sections": [
+    {
+      "type": "explanation",
+      "heading": "The Big Idea: How Fast Is Something Changing Right Now?",
+      "content": "Imagine you're driving from your town to the city, 60 miles away. The trip takes you 1 hour. Your average speed? 60 miles per hour. Simple division: distance divided by time.\n\nBut here's what average speed hides: you probably weren't going exactly 60 mph the entire trip. You sped up on the highway, slowed down through that one small town, maybe stopped at a light. At any given *instant*, your speedometer showed a specific number — your *instantaneous* speed. That number is almost certainly different from 60 mph at most moments of the trip.\n\nThis is the core distinction in calculus. The **average rate of change** of a function f(x) between two points x = a and x = b is [f(b) − f(a)] / (b − a). You've seen this before — it's the slope of the line connecting the two points (a, f(a)) and (b, f(b)) on the graph. That line is called a **secant line**.\n\nBut what if you want to know how fast f is changing *at exactly one point* — not over an interval, but at a single instant? That's the **instantaneous rate of change**, and finding it is one of the most important ideas in all of mathematics. It's what the derivative gives you. The whole trick of this lesson is turning a question we know how to answer (average rate over an interval) into one we don't yet (rate at an instant) by shrinking the interval to nothing."
+    },
+    {
+      "type": "explanation",
+      "heading": "From Secant Line to Tangent Line",
+      "content": "Picture a smooth curve on a graph. Pick a point on it — call it (a, f(a)). Now pick a second point nearby on the same curve: (a + h, f(a + h)), where h is just some small horizontal distance.\n\nThe secant line through these two points has slope [f(a + h) − f(a)] / h.\n\nNow imagine sliding that second point closer and closer to the first one. Make h smaller — 0.1, then 0.01, then 0.001. As the second point approaches the first, the secant line starts to rotate and settle into a specific position. When the two points are infinitely close together, that secant line *becomes* the **tangent line** — the line that just barely touches the curve at that single point.\n\nThe slope of that tangent line is the instantaneous rate of change. And computing it means taking a **limit**: f'(a) = lim(h→0) [f(a + h) − f(a)] / h. This is the **limit definition of the derivative**. You are literally asking: 'What happens to the slope of the secant line as the two points merge into one?' The answer — when the limit exists — is the derivative.\n\nThink of it like zooming in on the curve with a microscope. The more you zoom into a smooth curve at a single point, the more the curve looks like a straight line. The derivative tells you the slope of that line. This zoom-in idea, called 'local linearity,' returns in Unit 4 when you use the tangent line to approximate function values."
+    },
+    {
+      "type": "table",
+      "heading": "Average vs. Instantaneous Rate of Change",
+      "headers": ["Feature", "Average rate of change", "Instantaneous rate of change"],
+      "rows": [
+        ["Over what?", "An interval [a, b]", "A single point x = a"],
+        ["Formula", "[f(b) − f(a)] / (b − a)", "lim(h→0) [f(a+h) − f(a)] / h"],
+        ["Geometric meaning", "Slope of the secant line", "Slope of the tangent line"],
+        ["Needs a limit?", "No — just plug in two points", "Yes — shrink the interval to zero"],
+        ["Physical example", "Average velocity over a trip", "Speedometer reading at one instant"]
+      ]
+    },
+    {
+      "type": "steps",
+      "heading": "Computing a Derivative from the Limit Definition",
+      "steps": [
+        {
+          "title": "Write down the definition with f(x+h)",
+          "content": "Start from f'(x) = lim(h→0) [f(x + h) − f(x)] / h. Set up the fraction before substituting anything so you don't lose track of the structure."
+        },
+        {
+          "title": "Compute f(x + h) carefully",
+          "content": "Replace every x in the formula with (x + h) and expand fully. This is where most errors happen — keep the parentheses and expand squares and products completely."
+        },
+        {
+          "title": "Subtract f(x) and simplify the numerator",
+          "content": "Form f(x + h) − f(x). The original f(x) terms should cancel, leaving every remaining term with at least one factor of h."
+        },
+        {
+          "title": "Factor out and cancel h",
+          "content": "Divide the numerator by h. Because every surviving term has a factor of h, the h in the denominator cancels — this is what removes the 0/0 problem."
+        },
+        {
+          "title": "Take the limit as h → 0",
+          "content": "Now substitute h = 0 into the simplified expression. What remains is f'(x), the derivative function."
+        }
+      ]
+    },
+    {
+      "type": "example",
+      "heading": "Using the Limit Definition: f(x) = x²",
+      "content": "Let's compute the derivative of f(x) = x² at a general point x using the limit definition.\n\nf'(x) = lim(h→0) [f(x + h) − f(x)] / h\n\nStep 1: Expand f(x + h). f(x + h) = (x + h)² = x² + 2xh + h²\n\nStep 2: Compute f(x + h) − f(x). (x² + 2xh + h²) − x² = 2xh + h²\n\nStep 3: Divide by h. (2xh + h²) / h = 2x + h\n\nStep 4: Take the limit as h → 0. lim(h→0) (2x + h) = 2x\n\nSo f'(x) = 2x. What does this tell you? At x = 1, the slope of the tangent line to f(x) = x² is 2(1) = 2. At x = 3, the slope is 2(3) = 6. The curve gets steeper as x grows — and the derivative captures that precisely.\n\nNotice something beautiful: the derivative f'(x) = 2x is itself a function. It takes in any x-value and returns the slope of the original curve at that point. The derivative transforms a position question ('where am I?') into a rate question ('how fast am I changing?')."
+    },
+    {
+      "type": "quiz",
+      "question": "If f'(4) = 7 for some function f, which interpretation is correct?",
+      "options": [
+        "The value of f at x = 4 is 7",
+        "The slope of the tangent line to f at x = 4 is 7, i.e. f is increasing at instantaneous rate 7 there",
+        "The average rate of change of f on [0, 4] is 7",
+        "f crosses the x-axis at x = 7"
+      ],
+      "correctIndex": 1,
+      "explanation": "The derivative f'(4) is the instantaneous rate of change at x = 4, equal to the slope of the tangent line there. It says nothing about the function's value f(4), about an average rate over an interval, or about x-intercepts — those confuse the derivative with other quantities."
+    },
+    {
+      "type": "keypoint",
+      "content": "The derivative f'(a) is the slope of the tangent line to f(x) at x = a — the instantaneous rate of change. It is found by the limit lim(h→0) [f(a + h) − f(a)] / h, the limiting slope of secant lines."
+    },
+    {
+      "type": "example",
+      "heading": "The 'At a Point' Form of the Definition",
+      "content": "There's a second, equivalent way to write the derivative at a specific point a:\n\n  f'(a) = lim(x→a) [f(x) − f(a)] / (x − a)\n\nInstead of using a step h, this form lets the input x slide directly toward a. It's the same secant-slope idea — [f(x) − f(a)] / (x − a) is the slope between the points (a, f(a)) and (x, f(x)) — but it's often cleaner when you already know the specific point.\n\nExample: find f'(3) for f(x) = x² using this form.\n  f'(3) = lim(x→3) [x² − 9] / (x − 3)\n  = lim(x→3) [(x − 3)(x + 3)] / (x − 3)   (factor the numerator)\n  = lim(x→3) (x + 3)   (cancel x − 3, legal since x ≠ 3 in the limit)\n  = 3 + 3 = 6.\n\nThis matches f'(x) = 2x evaluated at 3: 2(3) = 6. ✓ Recognizing this form matters because the AP exam loves to disguise a derivative as a limit: if you see lim(x→a) [f(x) − f(a)]/(x − a), that IS f'(a) — you can often evaluate it instantly instead of doing algebra."
+    },
+    {
+      "type": "callout",
+      "variant": "warning",
+      "heading": "Average and Instantaneous Are Not the Same",
+      "content": "Students routinely answer an instantaneous-rate question with an average-rate computation (or vice versa). Average rate of change uses TWO points and needs no limit: [f(b)−f(a)]/(b−a). Instantaneous rate uses ONE point and requires a limit (the derivative). On the AP exam, watch the wording: 'average velocity' / 'average rate' means the secant formula; 'velocity at t = 3' / 'rate at the instant' means the derivative. Picking the wrong one is an instant lost point."
+    },
+    {
+      "type": "example",
+      "heading": "Physical Meaning: Position, Velocity, and the Derivative",
+      "content": "Suppose a ball is thrown straight up, and its height in feet after t seconds is s(t) = −16t² + 48t + 5.\n\nThe average velocity between t = 0 and t = 1 is [s(1) − s(0)] / (1 − 0) = [(−16 + 48 + 5) − 5] / 1 = 32 ft/sec.\n\nBut the instantaneous velocity at exactly t = 1 is the derivative. Using the limit definition (or the power rule you'll learn shortly), s'(t) = −32t + 48, so s'(1) = −32(1) + 48 = 16 ft/sec.\n\nNotice the average velocity (32 ft/sec) and instantaneous velocity (16 ft/sec) are different! At t = 1 second, the ball is still going up, but it's already slowing down because gravity is pulling on it. By t = 1.5 seconds, s'(1.5) = −32(1.5) + 48 = 0 — the ball has momentarily stopped at its peak. After that, s'(t) becomes negative — the ball is falling.\n\nThis is the power of the derivative: it doesn't just give a number, it tells the story of how something changes moment by moment. The units matter too: s is in feet and t in seconds, so s'(t) is in feet per second — a velocity."
+    },
+    {
+      "type": "explanation",
+      "heading": "Derivative Notation: Different Symbols, Same Idea",
+      "content": "You'll see the derivative written in several ways, and it's important to know they all mean the same thing.\n\nf'(x), read 'f prime of x,' is **Lagrange notation**. It emphasizes that the derivative is a new function derived from f, and it's compact.\n\ndy/dx, read 'dee y dee x,' is **Leibniz notation**. It reminds you that the derivative is a ratio of tiny changes: a tiny change in y divided by a tiny change in x. It's not literally a fraction (it's a limit), but it *behaves* like one in many useful ways, which is part of why Leibniz notation is so popular. df/dx means the same thing, just using f instead of y. To evaluate at a point you write dy/dx at x = 3, sometimes shown as dy/dx |₍ₓ₌₃₎.\n\nWhy so many notations? Historical reasons — Newton and Leibniz invented calculus independently. Both survived because they're each useful. Lagrange notation is clean for stating results; Leibniz notation is powerful when you need to track which variable you're differentiating with respect to, especially for the chain rule and implicit differentiation later in the course. The Leibniz form also makes units obvious: if y is distance in meters and x is time in seconds, dy/dx literally reads as meters per second."
+    },
+    {
+      "type": "quiz",
+      "question": "A tank's water volume V is measured in liters and time t in minutes. What are the units of dV/dt, and what does dV/dt = -3 mean?",
+      "options": [
+        "Liters; the tank holds 3 liters",
+        "Minutes per liter; the tank fills in 3 minutes",
+        "Liters per minute; the volume is decreasing at 3 liters per minute at that instant",
+        "Liters per minute; the tank gained 3 liters over the whole time"
+      ],
+      "correctIndex": 2,
+      "explanation": "A derivative dV/dt has units of (units of V) per (units of t) = liters per minute. The negative sign means V is decreasing, and because it's a derivative it describes the instantaneous rate at that moment — not a total change. Reporting units and sign correctly is heavily rewarded on AP free response."
+    },
+    {
+      "type": "callout",
+      "variant": "remember",
+      "heading": "Two Forms of the Definition — Recognize Both",
+      "content": "f'(x) = lim(h→0) [f(x+h) − f(x)]/h (the 'h form', good for finding the derivative function) and f'(a) = lim(x→a) [f(x) − f(a)]/(x − a) (the 'at-a-point form'). They're equal. When a multiple-choice problem shows you a limit that matches either pattern, it is secretly asking for a derivative value — identify f and a, and write down f'(a)."
+    },
+    {
+      "type": "callout",
+      "variant": "tip",
+      "heading": "Always Attach Units and a Sentence",
+      "content": "On AP free-response problems, a derivative answer in context must include units AND a sentence of interpretation. 'f'(5) = 12 means that at x = 5, [the quantity] is increasing at 12 [units] per [input unit].' Stating the rate, the direction (increasing/decreasing from the sign), and the units is exactly what earns the interpretation point."
+    },
+    {
+      "type": "deepdive",
+      "heading": "When the Derivative Fails to Exist",
+      "content": "Not every function has a derivative at every point. The limit definition requires that lim(h→0) [f(a+h) − f(a)] / h exists — meaning the limit from the left and from the right must agree.\n\nConsider f(x) = |x| at x = 0. From the right, the slope approaching 0 is +1 (the right side of the V goes up). From the left, the slope approaching 0 is −1 (the left side goes down). The two sides disagree, so the limit doesn't exist, and f'(0) is undefined. Graphically, the function has a sharp corner at x = 0 — there's no single tangent line you could draw there.\n\nThere are four classic places a derivative fails to exist, and the AP exam tests all of them from graphs: corners (like |x|), cusps (sharp points where the slopes head to +∞ on one side and −∞ on the other), vertical tangent lines (where the slope would be infinite, like x^(1/3) at 0), and any kind of discontinuity (jumps, holes, asymptotes). A useful slogan: 'no break, no corner, no vertical tangent' is what you need for differentiability.\n\nThis points toward one of the most important relationships in the course: differentiability is a *stronger* condition than continuity. Every differentiable function is continuous, but not every continuous function is differentiable — |x| is the standard counterexample. The next lesson is devoted entirely to untangling this relationship, because the AP exam returns to it again and again, both on multiple choice and as justification parts on free response."
+    }
+  ],
+  "aiContext": "This is Unit 2 Lesson 1 of AP Calculus AB, introducing the derivative as a limit and as a rate of change. Emphasize the secant-to-tangent limiting process and make students articulate the meaning of a derivative (slope of tangent / instantaneous rate) with correct units, not just compute it. The most common confusions: conflating average rate of change (secant, two points, no limit) with instantaneous rate (tangent, one point, requires a limit), and failing to recognize a 'disguised derivative' limit of the form lim(x→a)[f(x)-f(a)]/(x-a). Drill both forms of the definition. Connect backward to limits (Unit 1, the engine here) and forward to differentiability vs continuity (next lesson), the power/product/quotient rules (which make limit computations unnecessary for standard functions), local linearity and motion (Unit 4). On the AP exam this appears as multiple-choice questions identifying derivative-limits and reading slopes from graphs, and as free-response parts requiring interpretation of a derivative's value with units and sign."
+}

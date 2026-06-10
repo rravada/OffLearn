@@ -1,0 +1,31 @@
+{
+  "id": "ap-calc-ab-continuity-and-discontinuity",
+  "title": "Continuity and Types of Discontinuity",
+  "subject": "AP Calculus AB",
+  "chunks": [
+    { "id": "c1", "text": "A function f is continuous at a point x = a if and only if three conditions all hold: f(a) is defined, lim(x→a) f(x) exists, and lim(x→a) f(x) equals f(a)." },
+    { "id": "c2", "text": "The first condition for continuity at x = a is that f(a) is defined, meaning the function actually has a value there and the graph shows a filled-in point rather than a hole." },
+    { "id": "c3", "text": "The second condition for continuity at x = a is that lim(x→a) f(x) exists, which requires the left-hand limit and the right-hand limit to agree on a single value." },
+    { "id": "c4", "text": "The third condition for continuity at x = a is that the limit equals the function value: lim(x→a) f(x) = f(a). This condition is the strongest because if it holds, the value and the limit must both exist." },
+    { "id": "c5", "text": "The informal idea of continuity is that the graph can be drawn without lifting the pencil, but the precise definition requires the three-part test of value, limit, and their equality." },
+    { "id": "c6", "text": "An existing limit alone does not guarantee continuity. A function can have a perfectly good limit at a point while still being discontinuous there because the value is undefined or does not match the limit." },
+    { "id": "c7", "text": "A removable discontinuity occurs when the two-sided limit exists but the function value is either undefined or different from the limit. On a graph it appears as a single hole, sometimes with a stray dot elsewhere." },
+    { "id": "c8", "text": "A removable discontinuity can be fixed by redefining the function's value at that point to equal the limit. For example, f(x) = (x² - 4)/(x - 2) has a removable discontinuity at x = 2 where the limit is 4 but f(2) is undefined." },
+    { "id": "c9", "text": "A jump discontinuity occurs when both one-sided limits exist but are not equal to each other. On a graph the function breaks and jumps from one value to another, like a staircase step." },
+    { "id": "c10", "text": "The greatest integer (floor) function has jump discontinuities at every integer. At x = 3 it jumps from a left-hand limit of 2 to a right-hand limit of 3." },
+    { "id": "c11", "text": "An infinite discontinuity occurs when at least one one-sided limit is positive or negative infinity. The function blows up near the point, producing a vertical asymptote." },
+    { "id": "c12", "text": "The function f(x) = 1/x has an infinite discontinuity at x = 0: as x approaches 0 from the right f(x) goes to positive infinity, and from the left it goes to negative infinity." },
+    { "id": "c13", "text": "To classify a discontinuity: if the two-sided limit exists but the value is missing or misplaced it is removable; if one-sided limits exist but disagree it is a jump; if a one-sided limit is infinite it is infinite." },
+    { "id": "c14", "text": "When a rational function is undefined at a point, factoring reveals the type: if the problematic factor cancels, the discontinuity is a removable hole; if it does not cancel and the denominator goes to zero, it is an infinite discontinuity." },
+    { "id": "c15", "text": "Polynomials are continuous for all real numbers. Rational functions are continuous everywhere except where the denominator equals zero." },
+    { "id": "c16", "text": "The square root function √x is continuous for x ≥ 0, sin x and cos x are continuous everywhere, eˣ is continuous everywhere, ln x is continuous for x > 0, and tan x is discontinuous wherever cos x = 0." },
+    { "id": "c17", "text": "A function formed by adding, multiplying, or composing continuous functions is continuous everywhere all of its component pieces are continuous." },
+    { "id": "c18", "text": "A function is continuous on an interval if it is continuous at every point of the interval. On a closed interval the endpoints require only one-sided continuity matching the function value." },
+    { "id": "c19", "text": "To make a piecewise function continuous by choosing an unknown constant, set the left-hand limit equal to the right-hand limit equal to the function value at the seam where the rule changes, then solve for the constant." },
+    { "id": "c20", "text": "A piecewise function can only be discontinuous at the seams where its rule changes, because each individual piece is typically a continuous function on its own. Continuity therefore reduces to matching pieces at those boundary points." },
+    { "id": "c21", "text": "Example of finding a constant for continuity: if f(x) = x² + k for x ≤ 3 and f(x) = 2x + 1 for x > 3, setting 9 + k = 7 gives k = -2, which welds the pieces together at (3, 7) with no jump." },
+    { "id": "c22", "text": "If a problem requires a piecewise function to be both continuous and differentiable and gives two unknown constants, two equations are needed: one from matching values (continuity) and one from matching derivatives (differentiability)." },
+    { "id": "c23", "text": "Differentiability requires continuity: if a function is differentiable at a point it must be continuous there, but a continuous function need not be differentiable, such as the absolute value function which has a corner at x = 0." },
+    { "id": "c24", "text": "Continuity is the required hypothesis for the major theorems of calculus, including the Intermediate Value Theorem, the Extreme Value Theorem, the Mean Value Theorem, and the Fundamental Theorem of Calculus." }
+  ]
+}

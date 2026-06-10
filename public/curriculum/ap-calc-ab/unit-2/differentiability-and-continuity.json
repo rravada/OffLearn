@@ -1,0 +1,131 @@
+{
+  "id": "ap-calc-ab-unit2-differentiability-and-continuity",
+  "title": "Differentiability and Continuity",
+  "subject": "AP Calculus AB",
+  "unit": "Differentiation: Definition and Fundamental Properties",
+  "track": "ap",
+  "difficulty": "ap",
+  "duration": "40 min",
+  "objectives": [
+    "Explain why differentiability at a point implies continuity at that point, and why the converse is false",
+    "Identify from a graph or formula the points where a function fails to be differentiable: corners, cusps, vertical tangents, and discontinuities",
+    "Use one-sided derivatives to test differentiability at a junction",
+    "Determine constants that make a piecewise-defined function both continuous and differentiable"
+  ],
+  "sections": [
+    {
+      "type": "explanation",
+      "heading": "Differentiable Is a Stronger Demand Than Continuous",
+      "content": "In the last lesson you met the idea that a function can be continuous yet still have no derivative at a point — the corner of |x| at x = 0 was our first example. This lesson makes that relationship precise, because the AP exam tests it relentlessly.\n\nHere's the headline, and it's worth memorizing word for word: **if a function is differentiable at a point, then it is continuous at that point — but a continuous function need not be differentiable.** Differentiability is the more demanding condition. Every differentiable function is automatically continuous, but continuity is not enough to guarantee a derivative.\n\nAn analogy: think of 'continuous' as 'the road has no gaps — you can drive along it without falling into a hole or hitting a wall.' Think of 'differentiable' as 'the road is not only gap-free but also *smooth* — no sudden sharp turns, no spikes, no cliffs where the steering wheel would have to jerk instantly.' A road can be perfectly connected (continuous) and still have a sharp hairpin corner where you'd have to stop and pivot (not differentiable). Smoothness is more than connectedness.\n\nSo the set of differentiable functions sits *inside* the set of continuous functions. Differentiable ⊂ continuous. Whenever you've shown a function is differentiable somewhere, you've automatically gotten continuity there for free — but the reverse bargain doesn't work."
+    },
+    {
+      "type": "explanation",
+      "heading": "Why Differentiable Implies Continuous",
+      "content": "Let's see *why* differentiability forces continuity — the reasoning is short and it builds real understanding.\n\nTo say f is continuous at a means lim(x→a) f(x) = f(a), which is the same as saying lim(x→a) [f(x) − f(a)] = 0 (the gap between the function value and its target closes up). We want to show that if the derivative exists, this gap must close.\n\nHere's the clever algebra. For x ≠ a, write the difference as a fraction times its denominator: f(x) − f(a) = [f(x) − f(a)]/(x − a) · (x − a). Now take the limit as x → a. The first factor, [f(x) − f(a)]/(x − a), approaches f'(a) — that's exactly the 'at a point' definition of the derivative, and we're assuming it exists (a finite number). The second factor, (x − a), approaches 0. So the whole product approaches f'(a) · 0 = 0.\n\nThat means lim(x→a) [f(x) − f(a)] = 0, which is precisely continuity. Done. The key was that f'(a) had to be a *finite* number for the product to be (finite) · 0 = 0. If the derivative were infinite (a vertical tangent), this argument breaks — which is exactly one of the ways differentiability can fail.\n\nThe big takeaway: a function that jumps or has a hole can't possibly have a derivative there, because the difference quotient would blow up or have disagreeing one-sided limits. Discontinuity is an automatic disqualifier for differentiability."
+    },
+    {
+      "type": "callout",
+      "variant": "warning",
+      "heading": "The Converse Is False — Don't Reverse the Implication",
+      "content": "'Differentiable ⟹ continuous' is TRUE. The reverse, 'continuous ⟹ differentiable,' is FALSE. The classic counterexample is f(x) = |x|, which is continuous everywhere but has no derivative at x = 0 (a corner). On the AP exam, a question may say 'f is continuous at x = 2' and ask whether f must be differentiable there — the answer is NO. But if it says 'f is differentiable at x = 2,' you CAN conclude f is continuous there. Know which direction is valid."
+    },
+    {
+      "type": "table",
+      "heading": "Four Ways Differentiability Fails",
+      "headers": ["Failure type", "What you see on the graph", "Why no derivative", "Continuous there?"],
+      "rows": [
+        ["Corner", "A sharp 'V' or angle (e.g. |x| at 0)", "Left and right slopes disagree", "Yes"],
+        ["Cusp", "A sharp point where the curve reverses steeply (e.g. x^(2/3) at 0)", "Slopes head to +∞ on one side, −∞ on the other", "Yes"],
+        ["Vertical tangent", "The tangent line is vertical (e.g. x^(1/3) at 0)", "Slope is infinite, so the limit isn't finite", "Yes"],
+        ["Discontinuity", "A jump, hole, or asymptote", "Difference quotient has no finite limit", "No"]
+      ]
+    },
+    {
+      "type": "example",
+      "heading": "Reading Differentiability off a Graph",
+      "content": "Suppose you're shown the graph of a function f on [−4, 5] and told it has: a sharp corner at x = −2, a smooth curve from −2 to 1, a hole (removable discontinuity) at x = 1, a smooth curve from 1 to 3, and a vertical tangent at x = 3. At how many of these marked x-values is f differentiable?\n\nWork through each:\n- x = −2: corner → left and right slopes differ → NOT differentiable (though it is continuous).\n- x = 1: hole → not even continuous → NOT differentiable (discontinuity disqualifies it automatically).\n- x = 3: vertical tangent → slope is infinite, not a finite number → NOT differentiable (though it is continuous).\n\nSo f is differentiable at NONE of the three marked points, even though it's continuous at two of them (x = −2 and x = 3). This is the kind of distinction AP multiple choice loves: 'continuous but not differentiable' points are the corner and the vertical tangent; the hole is neither.\n\nThe practical reading skill: scan the graph for breaks (kills continuity AND differentiability), then for corners/cusps/vertical tangents (kills only differentiability). Everywhere else on a smooth curve, the function is differentiable."
+    },
+    {
+      "type": "quiz",
+      "question": "A function g is continuous at x = 5 but its graph has a sharp corner there. What can you conclude?",
+      "options": [
+        "g is differentiable at x = 5 because it is continuous",
+        "g is not differentiable at x = 5; continuity does not guarantee differentiability",
+        "g is neither continuous nor differentiable at x = 5",
+        "g must have a vertical tangent at x = 5"
+      ],
+      "correctIndex": 1,
+      "explanation": "A corner means the left-hand and right-hand slopes disagree, so no derivative exists there — even though the function is continuous. This is the standard reminder that continuity does not imply differentiability. A corner is not a vertical tangent (which is a different failure)."
+    },
+    {
+      "type": "explanation",
+      "heading": "One-Sided Derivatives and Testing a Junction",
+      "content": "How do you decide differentiability at a junction point precisely — say where a piecewise function switches rules? You compare *one-sided derivatives*, the slope coming in from the left and the slope coming in from the right.\n\nThe left-hand derivative is lim(h→0⁻) [f(a+h) − f(a)]/h, and the right-hand derivative is lim(h→0⁺) [f(a+h) − f(a)]/h. The function is differentiable at a only if both one-sided derivatives exist AND are equal — just like a two-sided limit requiring its one-sided limits to match. If the left slope is 3 and the right slope is 7, there's a corner and no derivative, even if the pieces connect.\n\nIn practice, for a piecewise function whose pieces are themselves nice (polynomials, etc.), you don't need the limit definition: you can differentiate each piece and evaluate at the junction. The left-hand derivative is the derivative of the left piece at a; the right-hand derivative is the derivative of the right piece at a. If those two numbers match, the slopes agree.\n\nBut there's a catch you must respect: matching slopes only tells you about *differentiability*. Before you even check slopes, the pieces must actually connect — the function must be *continuous* at the junction. A function can have equal one-sided slopes and still be non-differentiable if it has a jump there (because differentiability requires continuity first). So the correct order is: check continuity first, then check that the slopes match."
+    },
+    {
+      "type": "steps",
+      "heading": "Making a Piecewise Function Continuous AND Differentiable",
+      "steps": [
+        {
+          "title": "Set up the continuity equation at the junction",
+          "content": "At the seam x = a, set the left piece's value equal to the right piece's value: (left piece at a) = (right piece at a). This guarantees the pieces connect with no jump."
+        },
+        {
+          "title": "Differentiate each piece separately",
+          "content": "Find the derivative formula for the left piece and for the right piece using the basic rules. Don't evaluate yet."
+        },
+        {
+          "title": "Set up the differentiability equation at the junction",
+          "content": "Set the left piece's derivative at a equal to the right piece's derivative at a: (left derivative at a) = (right derivative at a). This guarantees the slopes match — no corner."
+        },
+        {
+          "title": "Solve the system for the unknown constants",
+          "content": "You now have two equations (one from continuity, one from differentiability). Solve them simultaneously for the two unknown constants. Two unknowns require these two equations."
+        },
+        {
+          "title": "Verify",
+          "content": "Plug your constants back in and confirm both the values and the slopes agree at the seam. The graph should connect smoothly with no jump and no corner."
+        }
+      ]
+    },
+    {
+      "type": "example",
+      "heading": "Finding Constants for a Smooth Junction",
+      "content": "Find a and b so that the following function is differentiable everywhere:\n  f(x) = x²        for x ≤ 1\n  f(x) = ax + b    for x > 1\n\nStep 1 — Continuity at x = 1. The pieces must meet: left value = 1² = 1; right value = a(1) + b = a + b. Set equal: a + b = 1.  (Equation 1)\n\nStep 2 — Differentiate each piece. Left: d/dx[x²] = 2x. Right: d/dx[ax + b] = a.\n\nStep 3 — Differentiability at x = 1. The slopes must match: left slope = 2(1) = 2; right slope = a. Set equal: a = 2.  (Equation 2)\n\nStep 4 — Solve the system. From Equation 2, a = 2. Substitute into Equation 1: 2 + b = 1, so b = −1.\n\nStep 5 — Verify. With a = 2, b = −1: at x = 1 the left piece gives 1 and the right piece gives 2(1) − 1 = 1 (values match ✓); the left slope is 2 and the right slope is 2 (slopes match ✓). So f(x) = x² for x ≤ 1 and 2x − 1 for x > 1 is differentiable everywhere. The line 2x − 1 is exactly the tangent line to x² at x = 1 — which makes perfect sense, since smoothly continuing a parabola means continuing along its tangent."
+    },
+    {
+      "type": "quiz",
+      "question": "For a piecewise function to be differentiable at its junction x = c, which conditions must hold?",
+      "options": [
+        "Only that the two pieces have equal slopes at x = c",
+        "Only that the two pieces have equal values at x = c",
+        "The pieces must have equal values AND equal slopes at x = c",
+        "The function only needs to be defined at x = c"
+      ],
+      "correctIndex": 2,
+      "explanation": "Differentiability requires continuity first (equal values, so the pieces connect) AND matching one-sided derivatives (equal slopes, so there's no corner). Matching slopes alone is not enough if there's a jump, and matching values alone leaves a possible corner."
+    },
+    {
+      "type": "keypoint",
+      "content": "Differentiable ⟹ continuous, but continuous does NOT ⟹ differentiable. A function fails to be differentiable at corners, cusps, vertical tangents, and any discontinuity. At a junction, differentiability needs both equal values (continuity) and equal one-sided slopes."
+    },
+    {
+      "type": "callout",
+      "variant": "remember",
+      "heading": "Differentiability Checklist",
+      "content": "For f to be differentiable at x = a, ALL must hold: (1) f is continuous at a (no jump, hole, or asymptote); (2) no corner (left slope = right slope); (3) no cusp; (4) no vertical tangent (the slope is a finite number). If any one fails, f'(a) does not exist. Continuity is necessary but not sufficient."
+    },
+    {
+      "type": "callout",
+      "variant": "tip",
+      "heading": "A Corner Is Continuous but Not Differentiable",
+      "content": "When a graph shows a sharp point with no break, the function is continuous there (you can draw it without lifting your pencil) but NOT differentiable (the slope jumps). If an AP question asks where f' fails to exist, corners and cusps count even though they look 'connected.' Train your eye to flag sharp points, not just gaps."
+    },
+    {
+      "type": "deepdive",
+      "heading": "How Smooth Is the Real World?",
+      "content": "It's tempting to assume that 'continuous but not differentiable' is a rare, artificial situation cooked up by math teachers. It isn't. In the late 1800s, the mathematician Karl Weierstrass shocked the mathematical world by constructing a function that is continuous *everywhere* but differentiable *nowhere* — a curve with no smooth points at all, a corner at literally every location. Mathematicians at the time found it so disturbing they called such functions 'monsters.' Today we know these jagged curves are everywhere in nature: the path of a dust particle jittering in air (Brownian motion), the outline of a coastline, the graph of a stock price zoomed in to the second. They're continuous (no teleporting) but nowhere smooth (infinitely jagged).\n\nWhy does the difference matter for you, beyond exam points? Because the derivative is the tool that describes smooth change, and an enormous amount of physics, engineering, and economics assumes the quantities involved are differentiable so that rates of change make sense. When you model the temperature of a cooling cup of coffee, the velocity of a rocket, or the marginal cost of producing one more widget, you're betting that the underlying function is differentiable — smooth enough to have a well-defined instantaneous rate. Recognizing where that bet fails (a sudden shock, an abrupt policy change, an impact) is exactly recognizing where a function stops being differentiable.\n\nThis is also why so much of AP Calculus quietly assumes 'f is differentiable on [a, b]' as a hypothesis: the powerful theorems ahead — the Mean Value Theorem, the rules for finding maxima and minima — all need that smoothness to work. Differentiability isn't a technicality; it's the license that lets the whole toolkit of derivatives operate. Knowing precisely when a function earns that license, and when it doesn't, is a genuinely deep skill that separates students who manipulate formulas from students who understand calculus."
+    }
+  ],
+  "aiContext": "This is Unit 2 Lesson 2 of AP Calculus AB, on the relationship between differentiability and continuity (CED 2.4). The single most important point to drill: differentiability implies continuity, but NOT the reverse — students constantly try to run the implication backward. Make sure they can identify the four failure modes (corner, cusp, vertical tangent, discontinuity) from a graph and state which ones are still continuous (corner, cusp, vertical tangent are continuous; discontinuity is not). The piecewise 'find constants for differentiability' problem is heavily tested and requires TWO equations (continuity AND matching slopes); watch for students who set up only one. Reinforce the correct order: continuity first, then slope-matching. Connect backward to continuity (Unit 1) and the limit definition (Lesson 1), and forward to the Mean Value Theorem and extrema (Unit 5), which require differentiability as a hypothesis. On the AP exam this appears as multiple-choice graph-reading (where is f not differentiable?), conceptual true/false about the implication direction, and free-response parts solving for constants."
+}

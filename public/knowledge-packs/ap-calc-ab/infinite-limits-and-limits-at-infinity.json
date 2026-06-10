@@ -1,0 +1,31 @@
+{
+  "id": "ap-calc-ab-infinite-limits-and-limits-at-infinity",
+  "title": "Infinite Limits, Limits at Infinity, and Asymptotes",
+  "subject": "AP Calculus AB",
+  "chunks": [
+    { "id": "c1", "text": "An infinite limit occurs when, as x approaches a finite value a, the function's outputs grow without bound toward positive or negative infinity. Infinite limits correspond to vertical asymptotes." },
+    { "id": "c2", "text": "A limit at infinity asks what value a function approaches as the input x runs off toward positive or negative infinity. Limits at infinity describe end behavior and correspond to horizontal asymptotes." },
+    { "id": "c3", "text": "In an infinite limit the infinity appears in the answer because the output blows up, while in a limit at infinity the infinity appears in the question because the input runs away. The two produce vertical and horizontal asymptotes respectively." },
+    { "id": "c4", "text": "Infinity is not a real number. Writing that a limit equals infinity means the function grows without bound; it is a precise description of how the limit fails to be finite, not a numerical value." },
+    { "id": "c5", "text": "A vertical asymptote of a rational function occurs at an x-value where the denominator equals zero but the numerator does not. Values that make both numerator and denominator zero are removable holes, not asymptotes." },
+    { "id": "c6", "text": "To determine whether an infinite limit is positive or negative, do a sign analysis: pick a test value just to the left and just to the right of the asymptote and track the sign of the numerator divided by the tiny denominator." },
+    { "id": "c7", "text": "For f(x) = 1/x near x = 0, the limit from the right is positive infinity and the limit from the left is negative infinity, so the one-sided infinite limits have opposite signs." },
+    { "id": "c8", "text": "When the two one-sided infinite limits at a vertical asymptote have opposite signs, the two-sided limit does not exist, although each one-sided limit can be precisely described as plus or minus infinity." },
+    { "id": "c9", "text": "A linear factor like (x - 3) in a denominator changes sign as x crosses 3, so the two sides of that asymptote usually go to opposite infinities. A squared factor like (x - 3)² stays positive, so both sides go to the same infinity." },
+    { "id": "c10", "text": "For f(x) = 1/(x - 4)², the denominator is always positive, so the function approaches positive infinity from both sides and the two-sided limit is positive infinity." },
+    { "id": "c11", "text": "The notation lim(x→∞) f(x) = L means that as x grows without bound, the function values get arbitrarily close to L. The function may never reach L but approaches it as far out along the x-axis as desired." },
+    { "id": "c12", "text": "Key building-block limits at infinity: lim(x→∞) 1/x = 0, lim(x→∞) 1/xⁿ = 0 for any positive n, lim(x→∞) c = c for a constant c, and lim(x→∞) xⁿ = ∞ for positive n." },
+    { "id": "c13", "text": "For a rational function as x approaches infinity, only the highest-degree term in the numerator and the highest-degree term in the denominator matter; all lower-degree terms become negligible." },
+    { "id": "c14", "text": "Degree comparison rule, case 1: if the numerator's degree is less than the denominator's degree, the limit at infinity is 0. Example: lim(x→∞) (2x + 1)/(x³ - 5) = 0." },
+    { "id": "c15", "text": "Degree comparison rule, case 2: if the numerator and denominator have equal degree, the limit at infinity equals the ratio of the leading coefficients. Example: lim(x→∞) (3x² + 2x)/(5x² - 4) = 3/5." },
+    { "id": "c16", "text": "Degree comparison rule, case 3: if the numerator's degree is greater than the denominator's degree, the function grows without bound and the limit at infinity is positive or negative infinity. Example: lim(x→∞) (x³ + 1)/(2x + 7) = ∞." },
+    { "id": "c17", "text": "The divide-by-highest-power method evaluates a limit at infinity by dividing every term in the numerator and denominator by the highest power of x in the denominator, then sending each remaining constant-over-power term to zero." },
+    { "id": "c18", "text": "A horizontal asymptote is the line y = L when lim(x→∞) f(x) = L or lim(x→-∞) f(x) = L. A function can have zero, one, or two horizontal asymptotes." },
+    { "id": "c19", "text": "A function can cross its horizontal asymptote. For example, sin(x)/x oscillates across the line y = 0 infinitely often while still approaching 0 in the long run. A horizontal asymptote describes only end behavior." },
+    { "id": "c20", "text": "A vertical asymptote cannot be crossed because the function blows up there, while a horizontal asymptote can be crossed because it only describes the function's behavior as x approaches infinity." },
+    { "id": "c21", "text": "When evaluating limits as x approaches negative infinity, even powers such as x² and x⁴ stay positive while odd powers such as x, x³, and x⁵ become negative, which can flip the sign of the result." },
+    { "id": "c22", "text": "The hierarchy of growth from slowest to fastest is logarithmic ln(x), then polynomial xⁿ with higher degree faster, then exponential aˣ for a greater than 1. In a competing ratio at infinity, the faster-growing function dominates." },
+    { "id": "c23", "text": "Because exponentials outgrow polynomials, lim(x→∞) x¹⁰⁰/2ˣ = 0, and because polynomials outgrow logarithms, lim(x→∞) ln(x)/x = 0." },
+    { "id": "c24", "text": "Example of finding a vertical asymptote with signs: for f(x) = (x + 2)/(x - 3), the asymptote is at x = 3; from the right the limit is +∞ and from the left it is -∞, so the two-sided limit does not exist." }
+  ]
+}

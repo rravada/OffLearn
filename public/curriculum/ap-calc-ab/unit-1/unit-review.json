@@ -1,0 +1,167 @@
+{
+  "id": "ap-calc-ab-unit1-review",
+  "title": "Unit 1 Review: Limits and Continuity",
+  "subject": "AP Calculus AB",
+  "unit": "Limits and Continuity",
+  "type": "unit-review",
+  "questionsPerAttempt": 10,
+  "isAssessment": true,
+  "bank": [
+    {
+      "question": "A table shows f(x) approaching 7.9, 7.99, 7.999 as x increases toward 4, and 8.1, 8.01, 8.001 as x decreases toward 4. The table also gives f(4) = 3. What is lim(x→4) f(x)?",
+      "options": ["3", "8", "Does not exist", "4"],
+      "correctIndex": 1,
+      "explanation": "Both one-sided trends settle toward 8, so the limit is 8. The value f(4) = 3 is irrelevant to the limit — a function's value and its limit at a point can differ. Reading f(4) as the answer is the most common error."
+    },
+    {
+      "question": "For a function g, lim(x→1⁻) g(x) = 2 and lim(x→1⁺) g(x) = 5. What is lim(x→1) g(x)?",
+      "options": ["3.5, the average of the one-sided limits", "2, the left-hand limit", "Does not exist, because the one-sided limits disagree", "5, the right-hand limit"],
+      "correctIndex": 2,
+      "explanation": "A two-sided limit exists only when both one-sided limits exist AND are equal. Here 2 ≠ 5, so the limit does not exist. You never average one-sided limits, and you cannot pick just one side."
+    },
+    {
+      "question": "On a graph, at x = 3 there is an open circle at (3, 6) and a filled dot at (3, 1). What are lim(x→3) f(x) and f(3)?",
+      "options": ["Limit = 1, f(3) = 6", "Limit = 6, f(3) = 1", "Limit = 6, f(3) = 6", "Limit does not exist, f(3) = 1"],
+      "correctIndex": 1,
+      "explanation": "The curve heads toward the open circle, so the limit is 6; the filled dot gives the actual value f(3) = 1. Swapping these — reading the filled dot as the limit — is the classic graph-reading mistake."
+    },
+    {
+      "question": "Which scenario causes lim(x→a) f(x) to NOT exist?",
+      "options": ["f(a) is undefined but both one-sided limits equal 4", "The left-hand and right-hand limits are both 7", "The left-hand limit is 2 and the right-hand limit is 9", "f(a) = 10 and both one-sided limits equal 10"],
+      "correctIndex": 2,
+      "explanation": "A limit fails to exist when the one-sided limits disagree (2 ≠ 9). An undefined f(a) does NOT prevent a limit from existing, and matching one-sided limits always produce a limit regardless of the function value."
+    },
+    {
+      "question": "Which statement is true about limits?",
+      "options": ["A function must be defined at x = a for lim(x→a) f(x) to exist", "lim(x→a) f(x) always equals f(a)", "A function can have a limit at a point where it is undefined", "If f(a) is undefined, the limit must be DNE"],
+      "correctIndex": 2,
+      "explanation": "Limits describe approach, not arrival, so a function can have a limit where it is undefined — for example (x²-9)/(x-3) has limit 6 at x = 3 even though it is undefined there. The other options confuse the function value with the limit."
+    },
+    {
+      "question": "Evaluate lim(x→2) (x³ + 5x).",
+      "options": ["18", "13", "10", "Does not exist"],
+      "correctIndex": 0,
+      "explanation": "This is a polynomial, which is continuous everywhere, so direct substitution works: 2³ + 5(2) = 8 + 10 = 18. No special technique is needed when substitution gives a real number."
+    },
+    {
+      "question": "Evaluate lim(x→-3) (x² - 9)/(x + 3).",
+      "options": ["0", "-6", "6", "Does not exist"],
+      "correctIndex": 1,
+      "explanation": "Direct substitution gives 0/0, so factor: (x-3)(x+3)/(x+3) cancels to x - 3, which equals -6 at x = -3. Concluding 0 or DNE from the 0/0 form is the standard error."
+    },
+    {
+      "question": "Evaluate lim(x→0) (√(x + 9) - 3)/x.",
+      "options": ["0", "1/3", "1/6", "Does not exist"],
+      "correctIndex": 2,
+      "explanation": "Substitution gives 0/0; multiply by the conjugate (√(x+9)+3) to get x/[x(√(x+9)+3)] = 1/(√(x+9)+3), which is 1/6 at x = 0. The square root hides a cancelable factor that the conjugate reveals."
+    },
+    {
+      "question": "Evaluate lim(x→0) sin(4x)/(6x).",
+      "options": ["1", "4/6 = 2/3", "0", "Does not exist"],
+      "correctIndex": 1,
+      "explanation": "Rewrite as (4/6)·sin(4x)/(4x); since the inside 4x → 0, sin(4x)/(4x) → 1, leaving 2/3. The trap answer 1 forgets the constant needed to match the sine's argument to the denominator."
+    },
+    {
+      "question": "Using the Squeeze Theorem, evaluate lim(x→0) x² cos(1/x).",
+      "options": ["1", "Does not exist, because cos(1/x) oscillates", "0", "Undefined"],
+      "correctIndex": 2,
+      "explanation": "Since -1 ≤ cos(1/x) ≤ 1, multiplying by x² gives -x² ≤ x² cos(1/x) ≤ x². Both bounds approach 0, so the squeezed function approaches 0. The oscillation of cos(1/x) is tamed by the x² factor shrinking to 0."
+    },
+    {
+      "question": "When direct substitution into lim(x→2) (x + 3)/(x - 2) gives 5/0, what should you conclude?",
+      "options": ["The limit is 0", "This is the indeterminate form 0/0, so factor", "The form is (nonzero)/0, so the limit is infinite or DNE — analyze as a vertical asymptote", "The limit is 5"],
+      "correctIndex": 2,
+      "explanation": "5/0 is NOT the indeterminate form 0/0; a nonzero numerator over zero means the function blows up, indicating a vertical asymptote. Factoring does nothing here, and the answer is an infinite limit, not 0 or 5."
+    },
+    {
+      "question": "A function has f(2) = 4, lim(x→2⁻) f(x) = 6, and lim(x→2⁺) f(x) = 6. Which condition for continuity at x = 2 fails?",
+      "options": ["Condition 1: f(2) is undefined", "Condition 2: the limit does not exist", "Condition 3: the limit (6) does not equal f(2) (4)", "No condition fails; f is continuous"],
+      "correctIndex": 2,
+      "explanation": "f(2) is defined (4) and the limit exists (6), but the limit does not equal the value, so condition 3 fails. This is a removable discontinuity — the value is 'misplaced' relative to where the curve is heading."
+    },
+    {
+      "question": "Classify the discontinuity of f(x) = (x² - x - 6)/(x - 3) at x = 3.",
+      "options": ["Jump discontinuity", "Infinite discontinuity", "Removable discontinuity", "No discontinuity"],
+      "correctIndex": 2,
+      "explanation": "Factoring gives (x-3)(x+2)/(x-3), which cancels to x + 2 with limit 5 at x = 3, but f(3) is undefined. Because the limit exists, the discontinuity is removable (a hole), not infinite or jump."
+    },
+    {
+      "question": "For g(x) = {x + 1 if x < 1; 2x - 3 if x ≥ 1}, classify the discontinuity at x = 1.",
+      "options": ["Removable", "Jump", "Infinite", "Continuous there"],
+      "correctIndex": 1,
+      "explanation": "The left-hand limit is 1 + 1 = 2 and the right-hand limit is 2(1) - 3 = -1. Both one-sided limits exist but disagree (2 ≠ -1), which is the definition of a jump discontinuity."
+    },
+    {
+      "question": "Find k so that f(x) = {x² + k if x ≤ 2; 5x - 4 if x > 2} is continuous at x = 2.",
+      "options": ["k = 6", "k = 2", "k = -2", "k = 0"],
+      "correctIndex": 1,
+      "explanation": "Continuity at the seam requires the left value to equal the right limit: 2² + k = 5(2) - 4, so 4 + k = 6, giving k = 2. Matching only one side or mis-evaluating a piece is the usual error."
+    },
+    {
+      "question": "Which function is continuous for ALL real numbers?",
+      "options": ["1/x", "ln x", "√x", "x³ - 2x + 1"],
+      "correctIndex": 3,
+      "explanation": "Polynomials are continuous everywhere. In contrast, 1/x is discontinuous at x = 0, ln x is only defined (and continuous) for x > 0, and √x is only defined for x ≥ 0."
+    },
+    {
+      "question": "Find all vertical asymptotes of f(x) = (x + 1)/(x² - 4).",
+      "options": ["x = -1 only", "x = 2 and x = -2", "x = 4 only", "No vertical asymptotes"],
+      "correctIndex": 1,
+      "explanation": "The denominator x² - 4 = (x-2)(x+2) is zero at x = 2 and x = -2, and the numerator is nonzero at both, so both are vertical asymptotes. The numerator's zero at x = -1 is not an asymptote — it is just where f = 0."
+    },
+    {
+      "question": "Evaluate lim(x→3⁺) 1/(x - 3).",
+      "options": ["+∞", "-∞", "0", "1"],
+      "correctIndex": 0,
+      "explanation": "Just to the right of 3, the denominator x - 3 is a tiny positive number, so 1 over it is a large positive value: the limit is +∞. (From the left it would be -∞, so the two-sided limit DNE.)"
+    },
+    {
+      "question": "Evaluate lim(x→∞) (5x² - 2x)/(3x² + 1).",
+      "options": ["0", "5/3", "∞", "-2/1"],
+      "correctIndex": 1,
+      "explanation": "Numerator and denominator have equal degree (2), so the limit is the ratio of leading coefficients, 5/3. The lower-degree terms -2x and +1 become negligible as x grows large."
+    },
+    {
+      "question": "Evaluate lim(x→∞) (7x + 2)/(x² - 1).",
+      "options": ["7", "∞", "0", "7/1"],
+      "correctIndex": 2,
+      "explanation": "The denominator's degree (2) exceeds the numerator's degree (1), so the denominator grows faster and the limit is 0. Dividing every term by x² confirms it: (7/x + 2/x²)/(1 - 1/x²) → 0/1 = 0."
+    },
+    {
+      "question": "Which statement about horizontal asymptotes is correct?",
+      "options": ["A function can never cross its horizontal asymptote", "A horizontal asymptote describes end behavior and a function may cross it", "Every function has exactly one horizontal asymptote", "Horizontal asymptotes occur where the denominator is zero"],
+      "correctIndex": 1,
+      "explanation": "A horizontal asymptote describes long-run behavior as x → ±∞, and functions like sin(x)/x cross y = 0 infinitely often. Crossing is allowed (unlike vertical asymptotes), functions may have 0, 1, or 2 horizontal asymptotes, and zeros of the denominator give vertical asymptotes."
+    },
+    {
+      "question": "Evaluate lim(x→-∞) (2x³ + 1)/(x² + 5).",
+      "options": ["+∞", "-∞", "2", "0"],
+      "correctIndex": 1,
+      "explanation": "The numerator's degree (3) exceeds the denominator's (2), so the magnitude grows without bound. Since x³ → -∞ as x → -∞ and the rest is positive, the limit is -∞. Watch the sign: odd powers flip going to negative infinity."
+    },
+    {
+      "question": "To guarantee that x³ + x - 1 = 0 has a solution on [0, 1] by the IVT, what do you verify?",
+      "options": ["The function is increasing on [0, 1]", "f is continuous on [0, 1] and f(0), f(1) have opposite signs", "f(0) = f(1)", "The function is differentiable on (0, 1)"],
+      "correctIndex": 1,
+      "explanation": "Let f(x) = x³ + x - 1. It is continuous, f(0) = -1 < 0 and f(1) = 1 > 0, so 0 is bracketed and the IVT guarantees a root. The IVT requires only continuity and bracketing — not monotonicity or differentiability."
+    },
+    {
+      "question": "A continuous function f has f(0) = -2 and f(5) = 8. What does the IVT guarantee about solutions of f(x) = 3 on [0, 5]?",
+      "options": ["Exactly one solution exists", "At least one solution exists", "No solution exists", "Exactly three solutions exist"],
+      "correctIndex": 1,
+      "explanation": "Since 3 lies between -2 and 8 and f is continuous, the IVT guarantees AT LEAST one solution. It never specifies how many — there could be one or several — so claiming an exact count is wrong."
+    },
+    {
+      "question": "A continuous function h satisfies h(1) = 5, h(4) = -3, and h(7) = 2. On which interval does the IVT guarantee h(x) = 0?",
+      "options": ["[1, 4], since 0 is between 5 and -3", "[4, 7], since 0 is between -3 and 2", "Both [1, 4] and [4, 7]", "Neither interval"],
+      "correctIndex": 2,
+      "explanation": "On [1, 4], 0 is between h(1) = 5 and h(4) = -3, and on [4, 7], 0 is between h(4) = -3 and h(7) = 2. Both intervals bracket 0, so the IVT guarantees a zero in each."
+    },
+    {
+      "question": "A continuous function p has p(2) = 4 and p(6) = 4. A student concludes 'by the IVT, p can never equal 9 on [2, 6].' Is this valid?",
+      "options": ["Yes, because 9 is not between 4 and 4", "Yes, because the endpoints are equal", "No — the IVT only affirms attained values; it never forbids values, so p could still reach 9", "No — the IVT requires differentiability"],
+      "correctIndex": 2,
+      "explanation": "The IVT is one-directional: it guarantees bracketed values are attained but never says non-bracketed values are impossible. A continuous function with equal endpoints can easily rise to 9 in between. 'Not guaranteed' is not the same as 'impossible.'"
+    }
+  ]
+}

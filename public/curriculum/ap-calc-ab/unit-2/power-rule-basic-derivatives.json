@@ -1,0 +1,129 @@
+{
+  "id": "ap-calc-ab-unit2-power-rule-basic-derivatives",
+  "title": "The Power Rule and Basic Derivatives",
+  "subject": "AP Calculus AB",
+  "unit": "Differentiation: Definition and Fundamental Properties",
+  "track": "ap",
+  "difficulty": "ap",
+  "duration": "40 min",
+  "objectives": [
+    "Apply the power rule to differentiate any power of x, including negative and fractional exponents",
+    "Use the constant, constant multiple, and sum/difference rules to differentiate polynomials term by term",
+    "Rewrite radicals and reciprocals as powers of x before differentiating",
+    "Find the equation of a tangent line and locate points where the tangent is horizontal"
+  ],
+  "sections": [
+    {
+      "type": "explanation",
+      "heading": "The Power Rule: Your Most-Used Tool",
+      "content": "In the previous lessons you computed derivatives with the limit definition. That's the foundation — but doing it for every function would be exhausting. Calculus gives us shortcut rules, and here's the single most frequently used rule in the entire subject:\n\nIf f(x) = xⁿ, then f'(x) = n·xⁿ⁻¹.\n\nBring the exponent down as a coefficient, then reduce the exponent by 1. That's the whole rule. You'll use it thousands of times.\n\nExamples to anchor it:\n• f(x) = x⁵ → f'(x) = 5x⁴\n• f(x) = x¹ = x → f'(x) = 1·x⁰ = 1 (the derivative of x is 1 — sensible, since y = x is a line of slope 1)\n• f(x) = x⁰ = 1 → f'(x) = 0·x⁻¹ = 0 (the derivative of a constant is 0 — a flat line has zero slope)\n\nThe power rule is far more versatile than it first appears: it works for *any* real exponent, not just positive integers.\n• f(x) = x⁻² = 1/x² → f'(x) = −2x⁻³ = −2/x³\n• f(x) = x^(1/2) = √x → f'(x) = (1/2)x^(−1/2) = 1/(2√x)\n• f(x) = x^(2/3) → f'(x) = (2/3)x^(−1/3)\n\nThis means whenever you see a square root, cube root, or reciprocal, your first move is to rewrite it using exponents, then apply the power rule. Fluency converting √x to x^(1/2) and 1/x³ to x⁻³ is essential — you'll use it constantly."
+    },
+    {
+      "type": "table",
+      "heading": "The Fundamental Differentiation Rules",
+      "headers": ["Rule", "Statement", "Example"],
+      "rows": [
+        ["Power rule", "d/dx[xⁿ] = n·xⁿ⁻¹", "d/dx[x⁷] = 7x⁶"],
+        ["Constant rule", "d/dx[c] = 0", "d/dx[12] = 0"],
+        ["Constant multiple rule", "d/dx[c·f(x)] = c·f'(x)", "d/dx[5x³] = 5·3x² = 15x²"],
+        ["Sum rule", "d/dx[f + g] = f' + g'", "d/dx[x² + x] = 2x + 1"],
+        ["Difference rule", "d/dx[f − g] = f' − g'", "d/dx[x⁴ − x] = 4x³ − 1"],
+        ["Derivative of x", "d/dx[x] = 1", "slope of y = x is 1"]
+      ]
+    },
+    {
+      "type": "deepdive",
+      "heading": "Why Does the Power Rule Work? Building Intuition",
+      "content": "You can prove the power rule for positive integers using the limit definition and the binomial theorem, but let's build intuition first.\n\nThink about f(x) = x³ geometrically — it represents the volume of a cube with side length x. If you increase the side length by a tiny amount h, the new volume is (x + h)³. How much volume did you add?\n\nPicture the cube: you've extended it by h in each of three dimensions. The added volume is roughly three slabs, each with face area x² and thickness h. So the change in volume is approximately 3·x²·h, and the rate of change (dividing by h) is about 3x². That's exactly the power rule: d/dx(x³) = 3x².\n\nThe 'approximately' comes from the fact that those three slabs overlap at their edges and corners, creating thin strips and a tiny corner cube that involve h² and h³ terms. But as h → 0, those higher-order terms vanish, and you're left with exactly 3x².\n\nThis same geometric reasoning extends: for x⁴ (a 4-dimensional hypercube), you'd add 4 'slabs' of volume x³·h, giving d/dx(x⁴) = 4x³. The pattern holds for all positive integers, and mathematicians have shown it extends to all real exponents — negative, fractional, even irrational — through more advanced arguments. The constant multiple rule (constants ride along: d/dx[c·f] = c·f') and the sum/difference rule (differentiate term by term) come straight from the limit laws, since limits distribute over sums and pull out constants. Together with the power rule, these three let you differentiate any polynomial on sight."
+    },
+    {
+      "type": "steps",
+      "heading": "Differentiating a Polynomial Term by Term",
+      "steps": [
+        {
+          "title": "Rewrite every term as a power of x",
+          "content": "Convert radicals and reciprocals: √x becomes x^(1/2), 1/x³ becomes x⁻³, and so on. Constants and plain coefficients stay as they are. This prepares every term for the power rule."
+        },
+        {
+          "title": "Apply the power rule to each term",
+          "content": "For each term c·xⁿ, multiply the coefficient by the exponent and reduce the exponent by 1: the derivative is c·n·xⁿ⁻¹. Handle each term independently thanks to the sum/difference rule."
+        },
+        {
+          "title": "Send constant terms to zero",
+          "content": "Any standalone constant (a term with no x) has derivative 0. Don't forget to drop it — but also don't accidentally drop a term that does contain x."
+        },
+        {
+          "title": "Rewrite in clean form",
+          "content": "Convert negative and fractional exponents back to radical or fraction form if the problem or answer choices use that form: x⁻³ becomes 1/x³, x^(−1/2) becomes 1/√x."
+        }
+      ]
+    },
+    {
+      "type": "example",
+      "heading": "Power Rule in Action: Polynomials and Rewritten Expressions",
+      "content": "Example 1: f(x) = 3x⁴ − 7x² + 5x − 2\n  f'(x) = 3(4x³) − 7(2x) + 5(1) − 0\n  f'(x) = 12x³ − 14x + 5\n\nExample 2: g(x) = 4/x² + 3√x. First rewrite using exponents: g(x) = 4x⁻² + 3x^(1/2).\n  g'(x) = 4(−2)x⁻³ + 3(1/2)x^(−1/2)\n  g'(x) = −8x⁻³ + (3/2)x^(−1/2)\n  g'(x) = −8/x³ + 3/(2√x)\n\nExample 3: h(x) = (x³ + 2x)/x. Don't reach for the quotient rule yet! Simplify first by dividing each term by x:\n  h(x) = x² + 2\n  h'(x) = 2x\n\nThat last example illustrates a crucial strategy: always simplify before differentiating if you can. The simpler the expression, the less room for error — and the less work."
+    },
+    {
+      "type": "quiz",
+      "question": "What is the derivative of f(x) = 6/√x?",
+      "options": [
+        "f'(x) = 6/(2√x)",
+        "f'(x) = −3x^(−3/2) = −3/(x√x)",
+        "f'(x) = −6x^(−1/2)",
+        "f'(x) = 3x^(1/2)"
+      ],
+      "correctIndex": 1,
+      "explanation": "Rewrite 6/√x as 6x^(−1/2). The power rule gives 6·(−1/2)·x^(−3/2) = −3x^(−3/2) = −3/(x√x). The trap answers come from forgetting to rewrite the root as a power, or from mishandling the negative fractional exponent."
+    },
+    {
+      "type": "callout",
+      "variant": "warning",
+      "heading": "Rewrite Roots and Reciprocals First — and Watch Constants",
+      "content": "Two frequent errors. First, students apply the power rule to √x or 1/x² without rewriting them as x^(1/2) and x⁻² first, and they botch the exponent. ALWAYS convert to a power of x before differentiating. Second, the derivative of a constant is 0, not the constant itself — d/dx[7] = 0. But d/dx[7x] = 7, because that term contains x. Don't confuse a constant term with a constant coefficient."
+    },
+    {
+      "type": "example",
+      "heading": "More Radicals and Reciprocals",
+      "content": "Differentiate f(x) = 2∛x − 5/x + x/4.\n\nStep 1 — Rewrite every term as a power of x:\n  2∛x = 2x^(1/3)\n  −5/x = −5x⁻¹\n  x/4 = (1/4)x   (a constant times x)\nSo f(x) = 2x^(1/3) − 5x⁻¹ + (1/4)x.\n\nStep 2 — Apply the power rule term by term:\n  d/dx[2x^(1/3)] = 2·(1/3)x^(−2/3) = (2/3)x^(−2/3)\n  d/dx[−5x⁻¹] = −5·(−1)x⁻² = 5x⁻²\n  d/dx[(1/4)x] = 1/4\n\nStep 3 — Combine and rewrite:\n  f'(x) = (2/3)x^(−2/3) + 5x⁻² + 1/4\n  f'(x) = 2/(3∛(x²)) + 5/x² + 1/4\n\nEvery term followed the same recipe: rewrite as a power, multiply by the exponent, drop the exponent by one. The (1/4)x term behaves just like any constant-times-x and contributes the constant 1/4."
+    },
+    {
+      "type": "keypoint",
+      "content": "Power rule: d/dx[xⁿ] = n·xⁿ⁻¹ for ANY real exponent. Constants have derivative 0; constant coefficients are preserved (d/dx[c·f] = c·f'); sums and differences differentiate term by term. Rewrite all radicals and reciprocals as powers of x first."
+    },
+    {
+      "type": "explanation",
+      "heading": "Using the Derivative to Find a Tangent Line",
+      "content": "Now that you can compute derivatives quickly, you can do something genuinely useful: find the equation of the tangent line to a curve at a point. This is one of the most common applications on the AP exam, and it ties the derivative back to its geometric meaning — slope.\n\nThe recipe rests on one fact you already know: f'(a) is the slope of the tangent line at x = a. So to write the tangent line at x = a you need two ingredients: a point and a slope. The point is (a, f(a)) — plug a into the original function. The slope is m = f'(a) — plug a into the derivative. Then use point-slope form: y − f(a) = f'(a)·(x − a).\n\nThat's it. The original function gives you the y-coordinate of the point; the derivative gives you the slope. A classic mistake is to plug a into the derivative to get the *point's y-value* — don't. The derivative gives the slope, the original function gives the height. Keep those two jobs separate.\n\nA related question: where does a curve have a *horizontal* tangent? A horizontal line has slope 0, so horizontal tangents occur exactly where f'(x) = 0. Setting the derivative equal to zero and solving is how you find these spots — and as you'll see in Unit 5, those are precisely the candidates for the peaks and valleys (maxima and minima) of the function."
+    },
+    {
+      "type": "example",
+      "heading": "Finding a Tangent Line and a Horizontal Tangent",
+      "content": "Let f(x) = x³ − 6x² + 9x + 1.\n\nPart A — Find the tangent line at x = 1.\nStep 1: The point. f(1) = 1 − 6 + 9 + 1 = 5, so the point is (1, 5).\nStep 2: The slope. f'(x) = 3x² − 12x + 9, so f'(1) = 3 − 12 + 9 = 0. The slope is 0.\nStep 3: Point-slope form. y − 5 = 0·(x − 1), which simplifies to y = 5. The tangent line at x = 1 is horizontal!\n\nPart B — Find ALL points with a horizontal tangent.\nSet f'(x) = 0: 3x² − 12x + 9 = 0. Divide by 3: x² − 4x + 3 = 0. Factor: (x − 1)(x − 3) = 0, so x = 1 or x = 3.\nAt x = 1: f(1) = 5 → point (1, 5). At x = 3: f(3) = 27 − 54 + 27 + 1 = 1 → point (3, 1).\nSo the curve has horizontal tangents at (1, 5) and (3, 1). These are exactly the locations where the curve momentarily levels off — a peak and a valley, as you'll classify them in Unit 5."
+    },
+    {
+      "type": "quiz",
+      "question": "For f(x) = x² − 8x + 3, at what x-value does the graph have a horizontal tangent line?",
+      "options": [
+        "x = 8, where f is largest",
+        "x = 4, because f'(x) = 2x − 8 = 0 there",
+        "x = 3, the constant term",
+        "There is no horizontal tangent"
+      ],
+      "correctIndex": 1,
+      "explanation": "A horizontal tangent has slope 0, so set f'(x) = 2x − 8 = 0, giving x = 4. The other options confuse a horizontal tangent with the function's value or a coefficient. (This x = 4 is the vertex of the parabola, its minimum.)"
+    },
+    {
+      "type": "callout",
+      "variant": "tip",
+      "heading": "Simplify Before You Differentiate",
+      "content": "Before applying any rule, check whether algebra makes the function simpler. A quotient like (x³ + 2x)/x simplifies to x² + 2 — no quotient rule needed. A product like x²(x + 3) expands to x³ + 3x² — no product rule needed. Every simplification you do up front removes a chance to make a sign or bookkeeping error later. Lazy algebra now saves points later."
+    },
+    {
+      "type": "callout",
+      "variant": "remember",
+      "heading": "Two Tiny Facts You'll Use Forever",
+      "content": "d/dx[constant] = 0 (a flat line has zero slope) and d/dx[x] = 1 (the line y = x has slope 1). These look trivial, but forgetting them causes real mistakes — students sometimes write d/dx[5] = 5 or d/dx[x] = 0. To find the tangent line at x = a: slope is f'(a), point is (a, f(a)), then y − f(a) = f'(a)(x − a)."
+    }
+  ],
+  "aiContext": "This is Unit 2 Lesson 3 of AP Calculus AB, covering the power rule (all real exponents), the constant/constant-multiple/sum/difference rules, and the tangent-line application. Emphasize the habit of rewriting radicals and reciprocals as powers of x before differentiating — this is the single biggest source of errors here. Watch for the constant-term confusion (d/dx[7] = 0 but d/dx[7x] = 7) and the tangent-line mistake of using f'(a) for the point's y-coordinate instead of f(a). When finding horizontal tangents, students should set f'(x) = 0; flag that these are the future critical points of Unit 5. Connect backward to the limit definition (Lesson 1, which these rules shortcut) and forward to the product/quotient rules (next lesson), the chain rule (Unit 3), and optimization/curve sketching (Unit 5). On the AP exam this appears as routine multiple-choice differentiation, tangent-line equations, and as the computational backbone of nearly every free-response problem."
+}

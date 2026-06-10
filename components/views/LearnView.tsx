@@ -8,6 +8,7 @@ import type {
   CurriculumSubject,
   CurriculumUnit,
   LessonData,
+  AssessmentData,
 } from "@/types";
 import {
   Clock,
@@ -20,7 +21,9 @@ import {
   Loader2,
   Search,
   X,
+  ClipboardList,
 } from "lucide-react";
+import { AssessmentView } from "@/components/views/AssessmentView";
 import { cn } from "@/lib/utils";
 import { getSubjectIcon } from "@/lib/subjectIcons";
 
@@ -31,10 +34,15 @@ interface LearnViewProps {
 
 type ViewState =
   | { mode: "browse" }
-  | { mode: "lesson"; subject: CurriculumSubject; unit: CurriculumUnit; lessonIdx: number; data: LessonData };
+  | { mode: "lesson"; subject: CurriculumSubject; unit: CurriculumUnit; lessonIdx: number; data: LessonData }
+  | { mode: "assessment"; subject: CurriculumSubject; unit: CurriculumUnit; lessonIdx: number; data: AssessmentData };
 
 function lessonCacheKey(subject: CurriculumSubject, unit: CurriculumUnit, lessonId: string) {
   return `${subject.id}/${unit.id}/${lessonId}`;
+}
+
+function isAssessmentId(id: string) {
+  return id === "unit-review" || id === "course-final";
 }
 
 function safeUnits(subject: CurriculumSubject): CurriculumUnit[] {
@@ -50,8 +58,10 @@ export function LearnView({ curriculum, selectedSubject }: LearnViewProps) {
   const [openingKey, setOpeningKey] = useState<string | null>(null);
   /** Bumps when entering a lesson so the main panel scroll resets (incl. reopening same lesson). */
   const [lessonScrollEpoch, setLessonScrollEpoch] = useState(0);
+  const [quizAnswers, setQuizAnswers] = useState<Record<number, number>>({});
   const lessonTopRef = useRef<HTMLDivElement>(null);
   const lessonCache = useRef<Map<string, LessonData>>(new Map());
+  const assessmentCache = useRef<Map<string, AssessmentData>>(new Map());
   const {
     setTutorOpen,
     setTutorSystemPrompt,
@@ -99,6 +109,7 @@ export function LearnView({ curriculum, selectedSubject }: LearnViewProps) {
     (subject: CurriculumSubject, unit: CurriculumUnit, lessonIdx: number) => {
       const lesson = safeLessons(unit)[lessonIdx];
       if (!lesson) return;
+      if (isAssessmentId(lesson.id)) return;
       const key = lessonCacheKey(subject, unit, lesson.id);
       if (lessonCache.current.has(key)) return;
       const url = `/curriculum/${subject.id}/${unit.id}/${lesson.id}.json`;
@@ -165,10 +176,54 @@ export function LearnView({ curriculum, selectedSubject }: LearnViewProps) {
     };
   }, [subjectsList, prefetchLesson]);
 
+  const openAssessment = useCallback(
+    async (subject: CurriculumSubject, unit: CurriculumUnit, lessonIdx: number) => {
+      const lesson = safeLessons(unit)[lessonIdx];
+      if (!lesson) return;
+      const key = lessonCacheKey(subject, unit, lesson.id);
+      const cached = assessmentCache.current.get(key);
+      if (cached) {
+        setLessonScrollEpoch((n) => n + 1);
+        setViewState({ mode: "assessment", subject, unit, lessonIdx, data: cached });
+        clearTutorMessages();
+        return;
+      }
+
+      const controller = new AbortController();
+      const t = window.setTimeout(() => controller.abort(), 90_000);
+
+      setOpeningKey(key);
+      try {
+        const url =
+          lesson.id === "course-final"
+            ? `/curriculum/${subject.id}/course-final.json`
+            : `/curriculum/${subject.id}/${unit.id}/${lesson.id}.json`;
+        const res = await fetch(url, { signal: controller.signal });
+        if (!res.ok) throw new Error("Assessment not found");
+        const data = (await res.json()) as AssessmentData;
+        assessmentCache.current.set(key, data);
+        setLessonScrollEpoch((n) => n + 1);
+        setViewState({ mode: "assessment", subject, unit, lessonIdx, data });
+        clearTutorMessages();
+      } catch (err) {
+        if ((err as Error).name !== "AbortError") {
+          console.error("Failed to load assessment:", err);
+        }
+      } finally {
+        window.clearTimeout(t);
+        setOpeningKey(null);
+      }
+    },
+    [clearTutorMessages]
+  );
+
   const openLesson = useCallback(
     async (subject: CurriculumSubject, unit: CurriculumUnit, lessonIdx: number) => {
       const lesson = safeLessons(unit)[lessonIdx];
       if (!lesson) return;
+      if (isAssessmentId(lesson.id)) {
+        return openAssessment(subject, unit, lessonIdx);
+      }
       const key = lessonCacheKey(subject, unit, lesson.id);
       const cached = lessonCache.current.get(key);
       if (cached) {
@@ -202,7 +257,7 @@ export function LearnView({ curriculum, selectedSubject }: LearnViewProps) {
         setOpeningKey(null);
       }
     },
-    [clearTutorMessages]
+    [clearTutorMessages, openAssessment]
   );
 
   const openTutor = useCallback(() => {
@@ -250,6 +305,10 @@ Rules:
     );
   }, [selectedSubject]);
 
+  useEffect(() => {
+    setQuizAnswers({});
+  }, [lessonScrollEpoch]);
+
   useLayoutEffect(() => {
     if (viewState.mode !== "lesson") return;
 
@@ -272,6 +331,23 @@ Rules:
       window.clearTimeout(t2);
     };
   }, [lessonScrollEpoch, viewState.mode]);
+
+  if (viewState.mode === "assessment") {
+    const { data, subject, unit, lessonIdx } = viewState;
+    const total = safeLessons(unit).length;
+    return (
+      <AssessmentView
+        data={data}
+        subject={subject}
+        unit={unit}
+        lessonIdx={lessonIdx}
+        totalLessons={total}
+        onBack={goBack}
+        onPrevious={lessonIdx > 0 ? goToPreviousLesson : undefined}
+        onNext={lessonIdx + 1 < total ? goToNextLesson : undefined}
+      />
+    );
+  }
 
   if (viewState.mode === "lesson") {
     const { data, subject, unit, lessonIdx } = viewState;
@@ -391,6 +467,149 @@ Rules:
                       <div className="lesson-prose whitespace-pre-line text-sm text-le-text/90">
                         {section.content}
                       </div>
+                    </div>
+                  );
+                }
+                if (section.type === "steps") {
+                  return (
+                    <div key={i}>
+                      {section.heading && (
+                        <h2 className="heading mb-4 text-xl text-le-text">{section.heading}</h2>
+                      )}
+                      <ol className="space-y-5">
+                        {section.steps.map((step, stepIdx) => (
+                          <li key={stepIdx} className="flex gap-4">
+                            <span className="flex h-7 w-7 flex-shrink-0 items-center justify-center rounded-full bg-le-accent text-xs font-bold text-le-bg">
+                              {stepIdx + 1}
+                            </span>
+                            <div className="flex-1 pt-0.5">
+                              <p className="font-semibold text-le-text">{step.title}</p>
+                              <p className="mt-1 whitespace-pre-line text-sm leading-relaxed text-le-text/85">
+                                {step.content}
+                              </p>
+                            </div>
+                          </li>
+                        ))}
+                      </ol>
+                    </div>
+                  );
+                }
+                if (section.type === "quiz") {
+                  const answered = quizAnswers[i];
+                  const hasAnswered = answered !== undefined;
+                  return (
+                    <div key={i} className="rounded-lg border border-le-border bg-le-surface/70 p-5">
+                      <p className="mb-1 text-[11px] font-semibold uppercase tracking-wide text-le-accent">
+                        Quick Check
+                      </p>
+                      <p className="mb-4 text-[15px] font-medium text-le-text">{section.question}</p>
+                      <div className="space-y-2">
+                        {section.options.map((opt, optIdx) => {
+                          let cls =
+                            "w-full rounded-lg border px-4 py-2.5 text-left text-sm transition-colors ";
+                          if (!hasAnswered) {
+                            cls +=
+                              "border-le-border bg-le-elevated text-le-text hover:border-le-mint/40 hover:bg-le-hover";
+                          } else if (optIdx === section.correctIndex) {
+                            cls += "border-green-500/50 bg-green-900/20 text-green-300";
+                          } else if (optIdx === answered) {
+                            cls += "border-red-500/50 bg-red-900/20 text-red-300";
+                          } else {
+                            cls += "border-le-border/50 bg-le-elevated/50 text-le-text/50";
+                          }
+                          return (
+                            <button
+                              key={optIdx}
+                              type="button"
+                              disabled={hasAnswered}
+                              onClick={() => setQuizAnswers((prev) => ({ ...prev, [i]: optIdx }))}
+                              className={cls}
+                            >
+                              {opt}
+                            </button>
+                          );
+                        })}
+                      </div>
+                      {hasAnswered && (
+                        <p className="mt-4 text-sm leading-relaxed text-le-text/80">
+                          {section.explanation}
+                        </p>
+                      )}
+                    </div>
+                  );
+                }
+                if (section.type === "table") {
+                  return (
+                    <div key={i}>
+                      {section.heading && (
+                        <h2 className="heading mb-3 text-xl text-le-text">{section.heading}</h2>
+                      )}
+                      <div className="overflow-x-auto rounded-lg border border-le-border">
+                        <table className="w-full text-sm">
+                          <thead>
+                            <tr className="border-b border-le-border bg-le-elevated">
+                              {section.headers.map((h, hi) => (
+                                <th key={hi} className="px-4 py-3 text-left font-semibold text-le-text">
+                                  {h}
+                                </th>
+                              ))}
+                            </tr>
+                          </thead>
+                          <tbody>
+                            {section.rows.map((row, ri) => (
+                              <tr
+                                key={ri}
+                                className="border-b border-le-border/60 odd:bg-le-surface/30 last:border-0"
+                              >
+                                {row.map((cell, ci) => (
+                                  <td key={ci} className="px-4 py-3 text-le-text/85">
+                                    {cell}
+                                  </td>
+                                ))}
+                              </tr>
+                            ))}
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+                  );
+                }
+                if (section.type === "callout") {
+                  const variantMap = {
+                    warning: {
+                      border: "border-amber-500/70",
+                      bg: "bg-amber-950/20",
+                      label: "text-amber-400",
+                      labelText: "Common Mistake",
+                    },
+                    tip: {
+                      border: "border-teal-500/70",
+                      bg: "bg-teal-950/20",
+                      label: "text-teal-400",
+                      labelText: "Pro Tip",
+                    },
+                    remember: {
+                      border: "border-violet-500/70",
+                      bg: "bg-violet-950/20",
+                      label: "text-violet-400",
+                      labelText: "Remember This",
+                    },
+                  } as const;
+                  const cfg = variantMap[section.variant];
+                  return (
+                    <div
+                      key={i}
+                      className={`rounded-lg border-l-4 px-5 py-4 ${cfg.border} ${cfg.bg}`}
+                    >
+                      <p className={`mb-1 text-[11px] font-semibold uppercase tracking-wide ${cfg.label}`}>
+                        {cfg.labelText}
+                      </p>
+                      {section.heading && (
+                        <p className="mb-2 font-semibold text-le-text">{section.heading}</p>
+                      )}
+                      <p className="whitespace-pre-line text-sm leading-relaxed text-le-text/85">
+                        {section.content}
+                      </p>
                     </div>
                   );
                 }
@@ -551,13 +770,21 @@ Rules:
                             </div>
                             <div className="flex-1">
                               <p className="text-[11px] font-semibold uppercase tracking-label text-le-mint">
-                                Start here · Lesson 1 of {total}
+                                {isAssessmentId(firstLesson.id)
+                                  ? firstLesson.id === "course-final"
+                                    ? "Final Exam"
+                                    : "Unit Review"
+                                  : `Start here · Lesson 1 of ${total}`}
                               </p>
                               <p className="text-sm font-medium text-le-text group-hover:text-le-accent transition-colors">
                                 {firstLesson.title}
                               </p>
                               <p className="mt-0.5 flex items-center gap-1.5 text-xs text-le-text-hint">
-                                <Clock className="h-3 w-3" />
+                                {isAssessmentId(firstLesson.id) ? (
+                                  <ClipboardList className="h-3 w-3" />
+                                ) : (
+                                  <Clock className="h-3 w-3" />
+                                )}
                                 {firstLesson.duration}
                               </p>
                             </div>
@@ -599,11 +826,20 @@ Rules:
                                             {lessonIdx + 1}
                                           </span>
                                           <span className="min-w-0 flex-1">
-                                            <span className="block truncate font-medium text-le-text">
+                                            <span className="flex items-center gap-1.5 truncate font-medium text-le-text">
                                               {lesson.title}
+                                              {isAssessmentId(lesson.id) && (
+                                                <span className="flex-shrink-0 rounded-full border border-le-mint/30 bg-le-accent-soft px-1.5 py-0.5 text-[10px] font-semibold text-le-mint">
+                                                  {lesson.id === "course-final" ? "Final" : "Review"}
+                                                </span>
+                                              )}
                                             </span>
                                             <span className="mt-0.5 flex items-center gap-1 text-xs text-le-text-hint">
-                                              <Clock className="h-3 w-3" />
+                                              {isAssessmentId(lesson.id) ? (
+                                                <ClipboardList className="h-3 w-3" />
+                                              ) : (
+                                                <Clock className="h-3 w-3" />
+                                              )}
                                               {lesson.duration}
                                             </span>
                                           </span>

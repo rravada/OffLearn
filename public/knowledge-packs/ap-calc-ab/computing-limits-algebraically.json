@@ -1,0 +1,31 @@
+{
+  "id": "ap-calc-ab-computing-limits-algebraically",
+  "title": "Computing Limits Algebraically",
+  "subject": "AP Calculus AB",
+  "chunks": [
+    { "id": "c1", "text": "The Direct Substitution Property states that if a function f is continuous at x = a, then lim(x→a) f(x) = f(a). In that case the limit is found simply by plugging the target value into the function." },
+    { "id": "c2", "text": "Direct substitution is always the first thing to try when evaluating a limit. If plugging in the target value yields a real number, that number is the limit and no further work is needed." },
+    { "id": "c3", "text": "Polynomials are continuous everywhere, so their limits are always found by direct substitution. For example, lim(x→4) (3x² - 2x + 1) = 3(16) - 2(4) + 1 = 41." },
+    { "id": "c4", "text": "The limit laws allow a complex limit to be broken into pieces: the limit of a sum is the sum of the limits, the limit of a product is the product of the limits, and the limit of a quotient is the quotient of the limits provided the denominator's limit is not zero." },
+    { "id": "c5", "text": "An indeterminate form such as 0/0 is not an answer; it is a signal that more work is required. The form 0/0 does not mean the limit is zero, undefined, or nonexistent." },
+    { "id": "c6", "text": "The form 0/0 is indeterminate and the limit may still be a finite number, while the form (nonzero)/0, such as 11/0, indicates the function is blowing up to positive or negative infinity, giving an infinite limit or a vertical asymptote." },
+    { "id": "c7", "text": "Confusing 0/0 with (nonzero)/0 is a common error. When substitution gives 0/0 keep working with algebra; when it gives a nonzero number over zero, analyze it as an infinite limit instead." },
+    { "id": "c8", "text": "The factoring technique resolves a 0/0 limit in a rational function: if plugging in x = a makes both numerator and denominator zero, they share the factor (x - a). Factor both, cancel the common factor, and substitute again." },
+    { "id": "c9", "text": "Canceling a common factor in a limit is valid because a limit considers values near the target, not at it. Since x ≠ a while approaching a, the factor (x - a) is nonzero and may legally be canceled." },
+    { "id": "c10", "text": "Example of factoring: lim(x→3) (x² - 9)/(x - 3) gives 0/0 on substitution; factoring the numerator as (x + 3)(x - 3) and canceling (x - 3) leaves x + 3, which approaches 6 as x approaches 3." },
+    { "id": "c11", "text": "Example with two factored polynomials: lim(x→-2) (x² + 5x + 6)/(x² + 3x + 2) factors to (x + 2)(x + 3) over (x + 2)(x + 1); canceling (x + 2) gives (x + 3)/(x + 1), which equals -1 at x = -2." },
+    { "id": "c12", "text": "The rationalizing technique resolves 0/0 limits containing square roots. Multiply the numerator and denominator by the conjugate of the part with the square root; the difference-of-squares pattern (√A - B)(√A + B) = A - B² clears the root." },
+    { "id": "c13", "text": "Example of rationalizing: lim(x→0) (√(x + 4) - 2)/x is 0/0; multiplying by the conjugate (√(x+4) + 2) turns the numerator into x, leaving 1/(√(x+4) + 2), which equals 1/4 at x = 0." },
+    { "id": "c14", "text": "Example of rationalizing the denominator: lim(x→9) (x - 9)/(√x - 3) is 0/0; multiplying by (√x + 3) makes the denominator x - 9, which cancels with the numerator to leave √x + 3, equal to 6 at x = 9." },
+    { "id": "c15", "text": "The Squeeze Theorem (Sandwich Theorem) states that if f(x) ≤ g(x) ≤ h(x) near a point and both f(x) and h(x) approach the same limit L there, then g(x) is forced to approach L as well." },
+    { "id": "c16", "text": "The special trigonometric limit lim(x→0) sin(x)/x = 1 is one of the most important limits in calculus and cannot be evaluated by direct substitution because it gives 0/0." },
+    { "id": "c17", "text": "The special trigonometric limit lim(x→0) (1 - cos(x))/x = 0 is the companion to the sine limit and is also evaluated using the Squeeze Theorem or geometric reasoning, not direct substitution." },
+    { "id": "c18", "text": "The special trig limits are the reason the derivative of sin(x) is cos(x); they are used directly to derive the derivatives of trigonometric functions later in the course." },
+    { "id": "c19", "text": "To use the sine limit, reshape the expression so the sine's argument matches the denominator. For example, sin(3x)/(4x) = (3/4)·sin(3x)/(3x), and since sin(3x)/(3x) → 1, the limit is 3/4." },
+    { "id": "c20", "text": "A useful shortcut following from the sine limit is lim(x→0) sin(ax)/(bx) = a/b, but it must be applied with the compensating constant that comes from matching the sine's argument to the denominator." },
+    { "id": "c21", "text": "Example of the Squeeze Theorem: for lim(x→0) x² sin(1/x), since -1 ≤ sin(1/x) ≤ 1, multiplying by x² gives -x² ≤ x² sin(1/x) ≤ x²; both bounds approach 0, so the limit is 0." },
+    { "id": "c22", "text": "The form 0/0 is called indeterminate because the result depends on how fast numerator and denominator approach zero. As x→0, x²/x → 0, x/x → 1, and x/x² → ∞, all of which are 0/0 forms with different limits." },
+    { "id": "c23", "text": "Other indeterminate forms encountered in calculus include ∞/∞, 0·∞, ∞-∞, 0⁰, 1^∞, and ∞⁰. L'Hôpital's Rule later provides a derivative-based method for resolving 0/0 and ∞/∞ forms." },
+    { "id": "c24", "text": "The recommended order of attack for any limit is: try direct substitution, diagnose the resulting form, factor and cancel for 0/0 with polynomials, rationalize for 0/0 with square roots, and apply the special trig limits or Squeeze Theorem for trigonometric 0/0 forms." }
+  ]
+}

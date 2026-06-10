@@ -1,0 +1,132 @@
+{
+  "id": "ap-calc-ab-unit1-intermediate-value-theorem",
+  "title": "The Intermediate Value Theorem",
+  "subject": "AP Calculus AB",
+  "unit": "Limits and Continuity",
+  "track": "ap",
+  "difficulty": "ap",
+  "duration": "40 min",
+  "objectives": [
+    "State the hypotheses and conclusion of the Intermediate Value Theorem precisely",
+    "Apply the Intermediate Value Theorem to guarantee that a function attains a particular value or that an equation has a solution on an interval",
+    "Verify the continuity hypothesis and check that target values are bracketed before invoking the theorem",
+    "Write a complete IVT justification in the format expected on AP free-response questions"
+  ],
+  "sections": [
+    {
+      "type": "explanation",
+      "heading": "The Idea: You Can't Skip Values",
+      "content": "Here's a theorem that sounds completely obvious the first time you hear it — and then turns out to be surprisingly powerful. Suppose you start a hike at an elevation of 600 feet and finish at 2,000 feet. Somewhere along the way, were you ever at exactly 1,438 feet? Of course you were. To get from 600 to 2,000 by walking continuously, you must pass through *every* elevation in between. You can't teleport over 1,438 feet; there's no trapdoor that skips elevations.\n\nThat's the entire intuition behind the Intermediate Value Theorem (IVT). If a continuous function starts at one height and ends at another, it must hit every height in between at least once along the way.\n\nThink about temperature. If it's 60°F at 8 AM and 80°F at noon, and temperature changes continuously (no sudden jumps in the real world), then at some moment between 8 AM and noon it was exactly 72°F. It had to be — there's no way to climb from 60 to 80 without passing through 72.\n\nThe one essential ingredient is *continuity*. If the function can jump — if it's allowed to teleport — then it could skip right over a value. Imagine an elevator that only stops on floors 1 and 5 and 'jumps' between them: it's never at floor 3. A jump discontinuity breaks the guarantee. That's why the IVT is a payoff of the previous lesson: continuity is the price of admission."
+    },
+    {
+      "type": "explanation",
+      "heading": "The Precise Statement",
+      "content": "Now let's nail down the formal version, because on the AP exam you'll need to state the hypotheses exactly.\n\nIntermediate Value Theorem: If f is continuous on the closed interval [a, b], and N is any number between f(a) and f(b), then there exists at least one value c in the open interval (a, b) such that f(c) = N.\n\nLet's unpack every piece, because each word is doing real work:\n- 'continuous on the closed interval [a, b]' — this is the hypothesis you must verify. No continuity, no theorem.\n- 'N is any number between f(a) and f(b)' — the target value N has to be sandwiched between the two endpoint outputs. If N is outside that range, the IVT says nothing.\n- 'there exists at least one c in (a, b) with f(c) = N' — this is the conclusion: the function actually achieves the value N somewhere strictly inside the interval.\n\nThe IVT is an *existence theorem*. It promises that a c exists, but it does not tell you what c is, and it does not tell you how many such c there are (there could be one, or several). It's like a smoke detector: it tells you there's a fire somewhere in the building, not which room. That might feel unsatisfying, but 'a solution definitely exists' is exactly what you need before you go hunting for it — it saves you from searching for something that isn't there."
+    },
+    {
+      "type": "steps",
+      "heading": "How to Apply the IVT to Show a Value Is Attained",
+      "steps": [
+        {
+          "title": "Set up a function and identify the target N",
+          "content": "If the problem is an equation like g(x) = k, rewrite it as f(x) = 0 by defining f(x) = g(x) - k. Then the target value is N = 0. If the problem already asks whether f attains a value N, use f directly."
+        },
+        {
+          "title": "Verify continuity on the closed interval",
+          "content": "State explicitly that f is continuous on [a, b]. Justify it: polynomials, sums/products/compositions of continuous functions, etc. This is the hypothesis — never skip stating it on free response."
+        },
+        {
+          "title": "Evaluate the endpoints",
+          "content": "Compute f(a) and f(b). Show the actual numbers. These two outputs are the boundaries of the interval of guaranteed values."
+        },
+        {
+          "title": "Check that N is bracketed",
+          "content": "Confirm that N lies strictly between f(a) and f(b) — that is, one endpoint value is below N and the other is above. For the f(x) = 0 setup, this means f(a) and f(b) have opposite signs."
+        },
+        {
+          "title": "Invoke the IVT and state the conclusion",
+          "content": "Because f is continuous on [a, b] and N is between f(a) and f(b), the IVT guarantees there exists c in (a, b) with f(c) = N. Write this sentence; the justification earns the points."
+        }
+      ]
+    },
+    {
+      "type": "example",
+      "heading": "Guaranteeing a Solution to cos(x) = x",
+      "content": "Show that the equation cos(x) = x has at least one solution on [0, π/2].\n\nStep 1: Convert to a 'find a zero' problem. Define f(x) = cos(x) - x. A solution of cos(x) = x is exactly a value where f(x) = 0, so our target is N = 0.\n\nStep 2: Verify continuity. cos(x) is continuous everywhere and x is continuous everywhere, so their difference f(x) = cos(x) - x is continuous on [0, π/2]. ✓\n\nStep 3: Evaluate the endpoints.\n  f(0) = cos(0) - 0 = 1 - 0 = 1 (positive)\n  f(π/2) = cos(π/2) - π/2 = 0 - 1.571... ≈ -1.571 (negative)\n\nStep 4: Check bracketing. We need N = 0 to lie between f(0) = 1 and f(π/2) ≈ -1.571. Indeed, -1.571 < 0 < 1 — the endpoint values have opposite signs, so 0 is sandwiched between them. ✓\n\nStep 5: Apply the IVT. Since f is continuous on [0, π/2] and 0 is between f(0) and f(π/2), the IVT guarantees there exists c in (0, π/2) with f(c) = 0. That means cos(c) = c. A solution exists.\n\nNotice we never found c. We don't have to — the question only asked us to *guarantee* a solution exists, and that's precisely what the IVT delivers."
+    },
+    {
+      "type": "quiz",
+      "question": "To use the IVT to show x³ + x - 1 = 0 has a root on [0, 1], which check is the crucial one after confirming the function is continuous?",
+      "options": [
+        "That the function is increasing on [0, 1]",
+        "That f(0) and f(1) have opposite signs, so 0 is between them",
+        "That the function is differentiable on (0, 1)",
+        "That f(0) = f(1)"
+      ],
+      "correctIndex": 1,
+      "explanation": "For a root (N = 0), the IVT needs 0 to be bracketed by the endpoint values, which happens exactly when f(0) and f(1) have opposite signs. Here f(0) = -1 and f(1) = 1, so a root is guaranteed. The IVT requires only continuity, not increasing behavior or differentiability, and equal endpoint values would NOT bracket 0."
+    },
+    {
+      "type": "table",
+      "heading": "What the IVT Does and Does Not Tell You",
+      "headers": ["Question", "Does the IVT answer it?", "Why"],
+      "rows": [
+        ["Does a value c with f(c) = N exist?", "Yes", "That is exactly the conclusion of the theorem"],
+        ["What is the exact value of c?", "No", "The IVT is an existence theorem; it locates nothing"],
+        ["How many solutions c are there?", "No", "It guarantees at least one; there may be several"],
+        ["Does it work if f has a jump on [a, b]?", "No", "Continuity on [a, b] is a required hypothesis"],
+        ["Does it work if N is outside [f(a), f(b)]?", "No", "N must be between the endpoint outputs"]
+      ]
+    },
+    {
+      "type": "example",
+      "heading": "IVT from a Table of Values (AP Style)",
+      "content": "AP free-response problems often give you a table of selected values of a continuous function and ask an IVT question. Suppose g is continuous on [1, 7] with these values:\n  g(1) = 4, g(3) = -2, g(5) = 6, g(7) = 1.\n\nQuestion: Must there be a value c in [1, 3] where g(c) = 0? Justify.\n\nStep 1: Continuity is given — g is stated continuous on [1, 7], hence on the sub-interval [1, 3]. ✓\n\nStep 2: Look at the endpoints of [1, 3]: g(1) = 4 (positive) and g(3) = -2 (negative). The target N = 0 lies between -2 and 4. ✓\n\nStep 3: By the IVT, since g is continuous on [1, 3] and 0 is between g(1) and g(3), there exists c in (1, 3) with g(c) = 0. Yes, such a c must exist.\n\nFollow-up: Must there be a value where g(x) = 5 on [1, 3]? Check bracketing: 5 must be between g(1) = 4 and g(3) = -2. But 5 is NOT between -2 and 4 (it's above both). The IVT does NOT guarantee it on [1, 3]. (It might still happen — but the IVT can't promise it.) On [3, 5], however, g(3) = -2 and g(5) = 6 bracket 5, so the IVT guarantees a c in (3, 5) with g(c) = 5. The interval you choose matters."
+    },
+    {
+      "type": "callout",
+      "variant": "warning",
+      "heading": "State Continuity and Check the Bracket — Both",
+      "content": "On AP free response, an IVT justification earns full credit only if you (1) explicitly say the function is continuous on the closed interval and (2) show the endpoint values bracket the target N. Students lose points by jumping straight to 'so there's a c' without stating continuity, or by forgetting to verify N is actually between f(a) and f(b). If the target isn't bracketed, the IVT gives you nothing — don't claim it does."
+    },
+    {
+      "type": "explanation",
+      "heading": "What the IVT Cannot Do",
+      "content": "It's just as important to know the IVT's limits as its powers, because the AP exam tests both.\n\nThe IVT does not count solutions. If f(a) and f(b) have opposite signs, the IVT guarantees *at least one* zero — but the function might wiggle and cross zero three times, or five times. The theorem promises existence, not a count. To count or pin down solutions you need other tools (like the derivative, in Unit 5).\n\nThe IVT does not locate solutions. It never tells you what c is. It just certifies that the search is not hopeless. (The bisection method, used by computers to solve equations, repeatedly applies the IVT to narrow down where the root must be — but that's an algorithm built on top of the theorem, not the theorem itself.)\n\nThe IVT is one-directional. It says: continuity + bracketed target ⟹ a solution exists. It does NOT say the reverse. A discontinuous function might still hit a value N — the IVT simply can't promise it. So if the continuity hypothesis fails, you can't conclude 'no solution'; you can only conclude 'the IVT doesn't apply.' Absence of a guarantee is not a guarantee of absence.\n\nFinally, the target must genuinely be *between* the endpoint values. If you're asked about a value N that's larger than both f(a) and f(b), or smaller than both, the IVT is silent on the interval [a, b]. You'd need a different interval where N is bracketed."
+    },
+    {
+      "type": "quiz",
+      "question": "A continuous function h has h(2) = 5 and h(6) = 5. A student claims 'by the IVT, h cannot equal 7 anywhere on [2, 6].' Is this reasoning valid?",
+      "options": [
+        "Yes — since both endpoints are 5, the function stays at 5",
+        "Yes — 7 is not between 5 and 5, so it is impossible",
+        "No — the IVT only guarantees values; it never forbids them, so h could still reach 7",
+        "No — the IVT requires the endpoints to be different"
+      ],
+      "correctIndex": 2,
+      "explanation": "The IVT is one-directional: it guarantees that bracketed values ARE attained, but it never says non-bracketed values are NOT attained. A continuous function with h(2) = h(6) = 5 can easily rise to 7 in between (think of a hill). 'Not guaranteed by the IVT' is very different from 'impossible.'"
+    },
+    {
+      "type": "callout",
+      "variant": "remember",
+      "heading": "The Three-Part IVT Justification",
+      "content": "Every IVT free-response answer should contain three statements, in order: (1) 'f is continuous on [a, b]' (state and justify), (2) 'f(a) = ___ and f(b) = ___, and N is between them' (show the numbers / opposite signs), (3) 'therefore by the IVT, there exists c in (a, b) with f(c) = N.' Memorize this template — readers look for exactly these three pieces."
+    },
+    {
+      "type": "keypoint",
+      "content": "If f is continuous on [a, b] and N lies between f(a) and f(b), then the IVT guarantees at least one c in (a, b) with f(c) = N. It proves a value is attained — but never says where, how many, or anything when continuity fails."
+    },
+    {
+      "type": "callout",
+      "variant": "tip",
+      "heading": "Turn Equations into Zeros",
+      "content": "To show an equation like g(x) = k has a solution, define a helper function f(x) = g(x) - k and hunt for a sign change: a solution of g(x) = k is exactly a zero of f. Sign changes are the easiest bracketing to spot — just check that f is negative at one endpoint and positive at the other. This single trick handles the majority of IVT problems on the exam."
+    },
+    {
+      "type": "deepdive",
+      "heading": "Existence Theorems and Why They Matter",
+      "content": "The IVT is your first 'existence theorem' in calculus, and existence theorems are a genuinely big deal in mathematics. They let you prove something is out there without having to construct it. That sounds like a philosophical luxury, but it's enormously practical.\n\nConsider solving an equation like x⁵ + 3x - 7 = 0. There is no nice algebraic formula for the roots of a general fifth-degree polynomial — none exists, and that's a proven fact. So how do we know it even has a real solution? The IVT. Define f(x) = x⁵ + 3x - 7. Then f(1) = 1 + 3 - 7 = -3 (negative) and f(2) = 32 + 6 - 7 = 31 (positive). Continuity plus a sign change guarantees a root between 1 and 2. We've proven a solution exists without solving anything.\n\nThis is exactly how computers solve equations they can't crack symbolically. The bisection method takes an interval where the function changes sign, checks the midpoint, and keeps the half that still contains a sign change. Each step halves the interval, zeroing in on the root. Every single step is the IVT applied again. Your calculator's 'solve' feature is, under the hood, the IVT running in a loop.\n\nThe IVT also belongs to a family of theorems you'll meet this year that all share the structure 'continuity (and maybe differentiability) guarantees something exists.' The Extreme Value Theorem (Unit 5) guarantees a continuous function on a closed interval attains a maximum and minimum. The Mean Value Theorem (Unit 5) guarantees an instant where the instantaneous rate equals the average rate. These existence theorems are the load-bearing walls of calculus — they're what let you reason confidently about functions you can't write down explicitly, which is most of the interesting ones in science and engineering."
+    }
+  ],
+  "aiContext": "This is Unit 1 Lesson 5 of AP Calculus AB, the Intermediate Value Theorem, capping the limits-and-continuity unit. Emphasize that the IVT is an existence theorem: it guarantees a value is attained but never locates it, counts solutions, or applies the reverse direction. Watch for three common errors: (1) skipping the explicit statement of continuity in a justification, (2) failing to check that the target N is bracketed by the endpoint values, and (3) misusing the IVT to claim a non-bracketed value is impossible (the theorem only affirms, never forbids). Drill the helper-function trick (rewrite g(x)=k as f(x)=g(x)-k and look for a sign change) and the table-of-values format. Connect backward to continuity (Lesson 3, the required hypothesis) and forward to the Extreme Value Theorem and Mean Value Theorem (Unit 5) as fellow existence theorems. On the AP exam, the IVT appears in free-response justification parts (often from a table of values of a continuous function) and in conceptual multiple-choice questions; readers expect the three-part justification template."
+}

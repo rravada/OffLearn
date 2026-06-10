@@ -1,0 +1,31 @@
+{
+  "id": "ap-calc-ab-differentiability-and-continuity",
+  "title": "Differentiability and Continuity",
+  "subject": "AP Calculus AB",
+  "chunks": [
+    { "id": "c1", "text": "If a function is differentiable at a point, then it is continuous at that point. Differentiability is a stronger condition than continuity." },
+    { "id": "c2", "text": "A continuous function need not be differentiable. Continuity does not imply differentiability, so the converse of 'differentiable implies continuous' is false." },
+    { "id": "c3", "text": "The set of differentiable functions sits inside the set of continuous functions. Showing a function is differentiable at a point automatically gives continuity there, but continuity alone does not give differentiability." },
+    { "id": "c4", "text": "Continuous means the graph has no gaps, while differentiable means the graph is also smooth with no sharp corners, cusps, spikes, or vertical tangents. Smoothness is more than connectedness." },
+    { "id": "c5", "text": "Proof that differentiable implies continuous: for x ≠ a, f(x) - f(a) = [f(x) - f(a)]/(x - a) times (x - a). As x approaches a, the first factor approaches the finite derivative f'(a) and the second approaches 0, so the product approaches 0, which is continuity." },
+    { "id": "c6", "text": "The proof that differentiability implies continuity requires the derivative f'(a) to be a finite number; if the slope were infinite, as at a vertical tangent, the argument breaks down." },
+    { "id": "c7", "text": "A discontinuity automatically disqualifies a function from being differentiable, because the difference quotient cannot have a finite limit where the function jumps, has a hole, or has an asymptote." },
+    { "id": "c8", "text": "The function f(x) = |x| is the classic example of a function that is continuous everywhere but not differentiable at x = 0, where it has a corner." },
+    { "id": "c9", "text": "A corner is a point where the left-hand and right-hand slopes disagree, such as |x| at x = 0. The function is continuous there but not differentiable." },
+    { "id": "c10", "text": "A cusp is a sharp point where the slopes head to positive infinity on one side and negative infinity on the other, such as x^(2/3) at x = 0. The function is continuous there but not differentiable." },
+    { "id": "c11", "text": "A vertical tangent occurs where the tangent line is vertical and the slope is infinite, such as x^(1/3) at x = 0. The function is continuous there but not differentiable because the slope is not a finite number." },
+    { "id": "c12", "text": "Among the four ways differentiability fails, corners, cusps, and vertical tangents are still continuous, while a discontinuity is not continuous and therefore also not differentiable." },
+    { "id": "c13", "text": "To read differentiability from a graph, first look for breaks such as jumps, holes, or asymptotes that kill both continuity and differentiability, then look for corners, cusps, and vertical tangents that kill only differentiability." },
+    { "id": "c14", "text": "The left-hand derivative is lim(h→0⁻) [f(a+h) - f(a)]/h and the right-hand derivative is lim(h→0⁺) [f(a+h) - f(a)]/h. A function is differentiable at a only if both one-sided derivatives exist and are equal." },
+    { "id": "c15", "text": "For a piecewise function whose pieces are smooth, the left-hand derivative at the junction equals the derivative of the left piece evaluated there, and the right-hand derivative equals the derivative of the right piece evaluated there." },
+    { "id": "c16", "text": "For a piecewise function to be differentiable at a junction, it must first be continuous there (the pieces connect) and then have matching one-sided slopes (no corner). Continuity must be checked before matching slopes." },
+    { "id": "c17", "text": "To make a piecewise function both continuous and differentiable, set the pieces' values equal at the junction for continuity and set the pieces' derivatives equal at the junction for differentiability, then solve the resulting system for the unknown constants." },
+    { "id": "c18", "text": "Two unknown constants in a piecewise differentiability problem require two equations: one from continuity (equal values) and one from differentiability (equal slopes)." },
+    { "id": "c19", "text": "Example: for f(x) = x² for x ≤ 1 and f(x) = ax + b for x > 1 to be differentiable, continuity gives a + b = 1 and matching slopes gives a = 2, so b = -1; the function is x² for x ≤ 1 and 2x - 1 for x > 1." },
+    { "id": "c20", "text": "When a parabola is smoothly continued by a line, that line is the tangent line to the parabola at the junction, which is why matching value and slope produces the tangent line." },
+    { "id": "c21", "text": "For f to be differentiable at x = a, all of the following must hold: f is continuous at a, there is no corner (equal one-sided slopes), there is no cusp, and there is no vertical tangent (the slope is finite)." },
+    { "id": "c22", "text": "A sharp point on a graph with no break is continuous but not differentiable. When asked where a derivative fails to exist, corners and cusps count even though the graph looks connected." },
+    { "id": "c23", "text": "The Weierstrass function is continuous everywhere but differentiable nowhere, and such jagged curves model natural phenomena like Brownian motion, coastlines, and second-by-second stock prices that are continuous but nowhere smooth." },
+    { "id": "c24", "text": "Many theorems in calculus, including the Mean Value Theorem and the methods for finding maxima and minima, assume the function is differentiable, because differentiability is the license that lets derivative-based tools operate." }
+  ]
+}
