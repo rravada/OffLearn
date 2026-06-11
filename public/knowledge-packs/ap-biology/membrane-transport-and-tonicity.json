@@ -1,0 +1,31 @@
+{
+  "id": "ap-bio-membrane-transport-and-tonicity",
+  "title": "Membrane Transport, Osmosis, and Tonicity",
+  "subject": "AP Biology",
+  "chunks": [
+    { "id": "c1", "text": "Passive transport moves substances down their concentration gradient, from high to low concentration, without using ATP. Active transport moves substances against their gradient, from low to high concentration, and requires energy." },
+    { "id": "c2", "text": "Simple diffusion is the direct movement of small nonpolar molecules such as oxygen and carbon dioxide through the phospholipid bilayer, down their concentration gradient and without any transport protein or ATP." },
+    { "id": "c3", "text": "Facilitated diffusion moves ions and large polar molecules such as glucose down their concentration gradient with the help of a transport protein, but without using ATP. Channel proteins form selective tunnels and carrier proteins change shape to move specific molecules." },
+    { "id": "c4", "text": "Osmosis is the diffusion of water across a selectively permeable membrane. Water moves from where it is more abundant (lower solute concentration) to where it is scarcer (higher solute concentration), without using energy." },
+    { "id": "c5", "text": "The key rule of osmosis is that water moves toward the side with the higher solute concentration, because that side has the lower free-water concentration. Water chases solute." },
+    { "id": "c6", "text": "Tonicity describes the solute concentration of a solution surrounding a cell compared to the inside of the cell. The prefixes hypo and hyper refer to the solute concentration of the solution, not the water." },
+    { "id": "c7", "text": "A hypotonic solution has a lower solute concentration than the cell, so water flows into the cell. A hypertonic solution has a higher solute concentration than the cell, so water flows out of the cell. An isotonic solution has equal solute concentration, so there is no net water movement." },
+    { "id": "c8", "text": "In a hypotonic solution an animal cell swells and may lyse, or burst, because nothing resists the incoming water. A red blood cell placed in pure water will swell and can burst." },
+    { "id": "c9", "text": "In a hypotonic solution a plant cell becomes turgid and firm, but its rigid cell wall prevents bursting. Turgor pressure pushes the membrane against the wall, and this is the healthy state that keeps a plant upright." },
+    { "id": "c10", "text": "In a hypertonic solution an animal cell shrivels, a process called crenation, while a plant cell undergoes plasmolysis as its membrane pulls away from the cell wall and the plant wilts." },
+    { "id": "c11", "text": "In an isotonic solution there is no net water movement, so an animal cell keeps its normal shape. Medical intravenous fluids use isotonic normal saline, about 0.9 percent sodium chloride, so blood cells neither swell nor shrivel." },
+    { "id": "c12", "text": "Water potential, symbolized by the Greek letter psi, predicts the direction of water movement. Water always moves from a region of higher water potential to a region of lower (more negative) water potential." },
+    { "id": "c13", "text": "Water potential equals solute potential plus pressure potential, written as psi equals psi-s plus psi-p. Adding solute lowers water potential and makes it negative, while physical pressure raises water potential." },
+    { "id": "c14", "text": "Osmoregulation is the active regulation of water balance by organisms. A freshwater paramecium lives in a hypotonic environment and uses a contractile vacuole to pump out excess water, which costs ATP." },
+    { "id": "c15", "text": "Saltwater fish are hypotonic to the salty ocean, so they constantly lose water and must drink seawater and pump out salt, while freshwater fish gain water and must excrete excess water and take up salt. The same osmotic physics requires opposite adaptations." },
+    { "id": "c16", "text": "Active transport requires a transport protein called a pump and uses ATP to move substances against their concentration gradient." },
+    { "id": "c17", "text": "The sodium-potassium pump uses the energy of one ATP to pump three sodium ions out of the cell and two potassium ions into the cell, both against their gradients. This builds an electrochemical gradient and leaves the inside of the cell slightly negative." },
+    { "id": "c18", "text": "An electrochemical gradient is a difference in both chemical concentration and electrical charge across a membrane. It stores potential energy that cells use to fire nerve impulses, contract muscles, and drive secondary active transport." },
+    { "id": "c19", "text": "Secondary active transport uses the energy stored in one molecule's downhill gradient to power another molecule's movement against its gradient, such as glucose being carried into intestinal cells alongside sodium ions." },
+    { "id": "c20", "text": "Endocytosis brings large materials into the cell by folding the plasma membrane inward to form a vesicle. Phagocytosis engulfs large particles like bacteria, pinocytosis takes in droplets of fluid, and receptor-mediated endocytosis uses specific receptors to import targeted molecules such as LDL cholesterol." },
+    { "id": "c21", "text": "Exocytosis moves materials out of the cell when a vesicle fuses with the plasma membrane and releases its contents outside. It is used to release neurotransmitters at synapses and to secrete hormones and digestive enzymes." },
+    { "id": "c22", "text": "Endocytosis and exocytosis are forms of active transport because building, moving, and fusing vesicles all consume energy." },
+    { "id": "c23", "text": "In an osmosis lab, a cell or tissue that gains mass was in a hypotonic solution where water entered, while one that loses mass was in a hypertonic solution where water left. The solution in which mass change is zero is isotonic to the cell." },
+    { "id": "c24", "text": "On AP Biology osmosis and water-potential questions, full credit requires stating the direction of water movement, citing evidence such as solute comparison or mass change, and using the equation psi equals psi-s plus psi-p to conclude water moves toward the more negative water potential." }
+  ]
+}

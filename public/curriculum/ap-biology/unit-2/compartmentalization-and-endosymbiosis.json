@@ -1,0 +1,135 @@
+{
+  "id": "ap-bio-u2-compartmentalization-and-endosymbiosis",
+  "title": "Compartmentalization and the Origin of Eukaryotes",
+  "subject": "AP Biology",
+  "unit": "Cell Structure and Function",
+  "track": "ap",
+  "difficulty": "ap",
+  "duration": "40 min",
+  "objectives": [
+    "Explain how membrane-bound compartments increase the efficiency and complexity of eukaryotic cells",
+    "Describe the endosymbiotic theory for the origin of mitochondria and chloroplasts",
+    "Evaluate the structural and molecular evidence supporting endosymbiosis",
+    "Explain how infolding of the plasma membrane could give rise to the nuclear envelope and endomembrane system"
+  ],
+  "sections": [
+    {
+      "type": "explanation",
+      "heading": "Why Build Rooms Inside a Cell?",
+      "content": "A prokaryote runs its whole life in a single open room. A eukaryote partitions its interior into many membrane-bound compartments — organelles — and that one architectural choice is what made large, complex cells possible. So it's worth asking directly: what does a cell actually gain by dividing itself into rooms?\n\nThe biggest payoff is running incompatible processes at the same time. Chemical reactions have preferences — some need an acidic environment, some need particular enzymes, some produce substances that would damage the rest of the cell. In one open room, you'd have to do everything under the same conditions, and dangerous products would mix with everything else. With compartments, the cell can maintain a different local environment in each one: a lysosome can sit at acidic pH 5 to digest waste while, a few nanometers away, the cytoplasm stays at a comfortable pH 7.2.\n\nCompartments also concentrate reactants. If you confine an enzyme and its substrate to a small space, they collide far more often than if they were diluted across the whole cell, so reactions run faster. And as you saw in the cell-size lesson, internal membranes add surface area for reactions without enlarging the cell.\n\nFinally, compartments protect the cell. Sealing destructive digestive enzymes inside a lysosome means they can do their job without dissolving the cell that made them. Bundle all of this together and you get the deep idea: compartmentalization is what allows a single cell to be sophisticated. It's the structural reason eukaryotes can be so much bigger and more capable than prokaryotes."
+    },
+    {
+      "type": "table",
+      "heading": "Compartments and the Conditions They Protect",
+      "headers": ["Compartment", "Special local condition", "Benefit of keeping it separate"],
+      "rows": [
+        ["Lysosome", "Acidic pH (~5) with digestive enzymes", "Digests waste without harming the neutral cytoplasm"],
+        ["Nucleus", "Encloses DNA, separate from cytoplasm", "Allows mRNA to be processed before translation; protects DNA"],
+        ["Mitochondrion", "Proton gradient across inner membrane", "Concentrates the gradient that drives ATP synthesis"],
+        ["Peroxisome", "Contains reactive hydrogen peroxide + enzymes", "Breaks down toxins without releasing damaging H₂O₂"],
+        ["Chloroplast (plants)", "Light reactions on thylakoid membranes", "Builds a proton gradient for sugar production"]
+      ]
+    },
+    {
+      "type": "example",
+      "heading": "A Concrete Payoff: Separating Transcription From Translation",
+      "content": "To see why a compartment is worth the trouble, follow one consequence of the nucleus. In a prokaryote, with no nucleus, a messenger RNA is translated by ribosomes WHILE it is still being transcribed from DNA — the two steps happen at the same time, in the same space, because there's no wall between them.\n\nIn a eukaryote, the nuclear envelope physically separates these steps: transcription happens INSIDE the nucleus, and translation happens OUTSIDE in the cytoplasm. Why does that matter? Because it buys time and space for the cell to PROCESS the mRNA before it's translated. Inside the nucleus, the raw RNA transcript gets edited — a protective cap and tail are added, and non-coding segments called introns are spliced out — before the finished mRNA is exported to the ribosomes.\n\nThe result is a huge gain in flexibility: a single gene can be spliced in different ways to produce different proteins (you'll meet this as alternative splicing in Unit 6), multiplying what the genome can build. None of this regulation would be possible if translation began the instant transcription did. So the simple act of putting a membrane around the DNA — one compartment — unlocked an entire layer of gene regulation that prokaryotes don't have. That's compartmentalization paying dividends."
+    },
+    {
+      "type": "quiz",
+      "question": "Why is it advantageous for a cell to contain its digestive enzymes within lysosomes rather than freely in the cytoplasm?",
+      "options": [
+        "The enzymes work faster when spread throughout the whole cell",
+        "The membrane keeps the destructive enzymes and their acidic conditions separate, protecting the rest of the cell",
+        "Lysosomes prevent the enzymes from ever being used",
+        "Cytoplasmic enzymes cannot be made by ribosomes"
+      ],
+      "correctIndex": 1,
+      "explanation": "Compartmentalizing digestive enzymes in an acidic lysosome lets them break down waste without digesting the neutral cytoplasm and the cell's own components. The enzymes are still fully used, they would damage the cell if free, and there is no problem making them by ribosomes."
+    },
+    {
+      "type": "keypoint",
+      "content": "Compartmentalization lets a single cell maintain many different local conditions at once, concentrate reactants, add reaction surface, and isolate dangerous processes — which is why eukaryotic cells can be large and complex."
+    },
+    {
+      "type": "explanation",
+      "heading": "The Endosymbiotic Theory: Cells Inside Cells",
+      "content": "Two organelles raise a fascinating origin question. Mitochondria and chloroplasts are not like the other organelles — they have their OWN DNA, they make some of their own proteins, and they reproduce on their own schedule. Where did such peculiar organelles come from? The answer, proposed by Lynn Margulis in the 1960s and now strongly supported, is one of biology's great stories: the endosymbiotic theory.\n\nThe theory says that mitochondria and chloroplasts were once free-living prokaryotes. Long ago, an ancestral host cell engulfed a smaller prokaryote — but instead of digesting it, the host kept it alive. The engulfed cell provided a benefit: a mitochondrion's ancestor could perform aerobic respiration (making lots of ATP using oxygen), and a chloroplast's ancestor (a photosynthetic cyanobacterium) could capture sunlight to make food. In return, the host provided protection and raw materials. This is endosymbiosis: one organism living inside another, to mutual benefit ('endo' = inside, 'symbiosis' = living together).\n\nOver hundreds of millions of years, the relationship became permanent and unbreakable. Most of the engulfed cell's genes were transferred to the host's nucleus, so the organelle could no longer survive on its own — but it kept a small remnant of its original circular DNA. The cell and its tenant became a single integrated organism. This wasn't a gradual mutation-by-mutation invention of a new organelle; it was a merger of two separate lineages, which is why endosymbiosis is also called a major example of how evolution can take a giant leap by combining whole genomes."
+    },
+    {
+      "type": "steps",
+      "heading": "The Endosymbiotic Sequence of Events",
+      "steps": [
+        {
+          "title": "An ancestral host cell engulfs a prokaryote",
+          "content": "A larger anaerobic host cell took in a smaller free-living prokaryote, possibly as food, by surrounding it with its membrane. This wrapping is why the organelle ends up with a double membrane: the inner one is the original prokaryote's membrane and the outer one comes from the host's engulfing membrane."
+        },
+        {
+          "title": "The engulfed cell survives instead of being digested",
+          "content": "Rather than being broken down, the engulfed prokaryote remained alive and functional inside the host, beginning an endosymbiotic relationship."
+        },
+        {
+          "title": "A mutually beneficial relationship develops",
+          "content": "The engulfed cell provided a valuable service, aerobic respiration for the mitochondrial ancestor or photosynthesis for the chloroplast ancestor, while the host supplied protection and nutrients. Both partners benefited, so natural selection favored keeping the arrangement."
+        },
+        {
+          "title": "Genes transfer and the merger becomes permanent",
+          "content": "Over time most of the endosymbiont's genes moved to the host's nucleus, making the organelle dependent on the host and unable to live independently. A small amount of the organelle's own circular DNA remained, and the two lineages became one integrated organism."
+        }
+      ]
+    },
+    {
+      "type": "table",
+      "heading": "Evidence Supporting Endosymbiosis",
+      "headers": ["Evidence", "What it shows"],
+      "rows": [
+        ["Own circular DNA", "Mitochondria and chloroplasts have circular DNA like bacteria, not linear like the nucleus"],
+        ["Double membrane", "Consistent with one membrane from the original prokaryote and one from host engulfment"],
+        ["Binary fission", "They replicate on their own by splitting, like bacteria, independent of the cell cycle"],
+        ["Bacteria-like ribosomes", "Their ribosomes (70S) resemble bacterial ribosomes more than eukaryotic 80S ribosomes"],
+        ["Genetic similarity", "Mitochondrial DNA resembles alpha-proteobacteria; chloroplast DNA resembles cyanobacteria"]
+      ]
+    },
+    {
+      "type": "callout",
+      "variant": "warning",
+      "heading": "Endosymbiosis Explains Only Mitochondria and Chloroplasts",
+      "content": "A common exam error is to claim the nucleus, ER, or Golgi arose by endosymbiosis. They did NOT. Only mitochondria and chloroplasts are explained by endosymbiosis — they're the ones with their own DNA, double membranes, and bacteria-like ribosomes. The nucleus and endomembrane system are thought to have formed by INFOLDING of the plasma membrane (covered next). Also be precise about the double membrane: the inner membrane traces to the engulfed prokaryote, the outer to the host's engulfing membrane — not 'two bacteria stacked together.'"
+    },
+    {
+      "type": "deepdive",
+      "heading": "A Merger That Rewired the Tree of Life",
+      "content": "Endosymbiosis isn't a one-time curiosity — it's a recurring engine of evolutionary innovation. The first event, an ancestral cell acquiring the mitochondrion, is thought to have happened once and gave rise to essentially all eukaryotes; the energy windfall from a dedicated ATP-producing organelle may have been the very thing that made large, complex cells affordable. Later, a separate event in which a eukaryote engulfed a photosynthetic cyanobacterium produced the first chloroplast and, with it, the entire lineage of algae and plants. Some algae were then engulfed by yet other eukaryotes (secondary endosymbiosis), passing photosynthesis around the tree of life like a shared tool — which is why chloroplasts in different algal groups can have three or four membranes.\n\nThere's a deeper twist about the host itself. Molecular evidence shows that the host lineage that became eukaryotes is more closely related to archaea than to bacteria — in their DNA-handling and protein-making machinery, eukaryotes resemble archaea. So the modern eukaryotic cell is essentially a chimera: an archaeal-like host that fused with bacterial endosymbionts. You are, at the cellular level, a partnership of two ancient domains of life.\n\nThis matters far beyond trivia. It reframes evolution: change comes not only from slow mutation within a lineage but sometimes from dramatic mergers BETWEEN lineages. On the AP exam, endosymbiosis is a favorite because it ties together cell structure, evidence-based reasoning, and evolution (Unit 7) — exactly the kind of cross-cutting thinking the exam rewards."
+    },
+    {
+      "type": "quiz",
+      "question": "Which observation provides the STRONGEST single piece of evidence that mitochondria descended from free-living prokaryotes?",
+      "options": [
+        "Mitochondria are found in nearly all eukaryotic cells",
+        "Mitochondria have their own circular DNA and bacteria-like (70S) ribosomes",
+        "Mitochondria produce ATP",
+        "Mitochondria are smaller than the nucleus"
+      ],
+      "correctIndex": 1,
+      "explanation": "Having their own circular DNA and bacteria-like 70S ribosomes directly links mitochondria to prokaryotic ancestry, since these are prokaryotic features not shared by the rest of the eukaryotic cell. Being widespread, making ATP, or being small does not specifically indicate a prokaryotic origin."
+    },
+    {
+      "type": "explanation",
+      "heading": "Where the Other Organelles Came From: Membrane Infolding",
+      "content": "If endosymbiosis explains mitochondria and chloroplasts, what about the nucleus, endoplasmic reticulum, and Golgi — the endomembrane system? These have a different and equally elegant origin story: infolding of the plasma membrane.\n\nThe idea is that in an early cell, regions of the outer plasma membrane folded inward, pinched off, and elaborated into internal membrane-bound compartments. Picture pushing your finger into the side of a balloon — you create a pocket lined by the original surface. Fold a pocket around the DNA and you get a nuclear envelope; extend and connect those internal membranes and you get the endoplasmic reticulum. This origin makes sense structurally: the nuclear envelope is directly continuous with the rough ER in living cells today, exactly what you'd expect if they formed from the same infolded membrane.\n\nThe contrast is the key insight for the exam. The endomembrane system arose from the cell's OWN membrane folding inward (no second organism involved), so these organelles have a single membrane and no DNA of their own. Mitochondria and chloroplasts arose from ENGULFING separate organisms, so they have double membranes and their own DNA. Two different mechanisms, two different sets of clues — and together they account for how the open room of a prokaryote became the richly compartmentalized eukaryotic cell."
+    },
+    {
+      "type": "callout",
+      "variant": "remember",
+      "heading": "Compartmentalization and Origins: Key Facts",
+      "content": "Compartmentalization lets a cell maintain different local conditions, concentrate reactants, add surface area, and isolate dangerous processes — enabling large, complex eukaryotic cells. ENDOSYMBIOSIS explains mitochondria and chloroplasts: evidence = own circular DNA, double membrane, binary fission, bacteria-like 70S ribosomes, genetic similarity to alpha-proteobacteria (mito) and cyanobacteria (chloroplast). INFOLDING of the plasma membrane explains the nucleus and endomembrane system (single membranes, no own DNA). The eukaryotic host lineage is most closely related to archaea."
+    },
+    {
+      "type": "callout",
+      "variant": "tip",
+      "heading": "Cite Specific Evidence on Endosymbiosis FRQs",
+      "content": "When an FRQ asks you to support the endosymbiotic theory, do not just restate the theory — list specific, mechanistic evidence and say what each one shows (e.g., 'mitochondria have their own circular DNA, like bacteria, indicating an independent prokaryotic ancestor'). Aim for at least two distinct lines of evidence. If asked to distinguish the origins of organelles, contrast endosymbiosis (double membrane + own DNA = mitochondria/chloroplasts) with membrane infolding (single membrane, no DNA = nucleus/ER/Golgi). Precise evidence beats general description every time."
+    }
+  ],
+  "aiContext": "This AP Biology Unit 2 lesson covers CED topics 2.10 and 2.11: the advantages of compartmentalization and the origins of eukaryotic organelles. Emphasize that compartmentalization enables complexity by allowing different local conditions, concentrating reactants, adding surface area, and isolating harmful processes, and that the separation of transcription and translation by the nucleus enables mRNA processing and regulation (foreshadowing Unit 6). For origins, stress that endosymbiosis explains ONLY mitochondria and chloroplasts (own circular DNA, double membrane, binary fission, 70S ribosomes), while the nucleus and endomembrane system arose by plasma membrane infolding. Watch for the common errors of attributing the nucleus/ER to endosymbiosis and misexplaining the double membrane. Connect to evolution (Unit 7) since endosymbiosis is evidence-based evolutionary reasoning, and note the archaeal affinity of the eukaryotic host lineage. On the exam, expect MCQs on the benefits of compartments and on endosymbiotic evidence, and FRQs asking students to cite specific evidence for endosymbiosis or contrast organelle origins."
+}

@@ -1,0 +1,128 @@
+{
+  "id": "ap-bio-u2-membrane-transport-and-tonicity",
+  "title": "Membrane Transport, Osmosis, and Tonicity",
+  "subject": "AP Biology",
+  "unit": "Cell Structure and Function",
+  "track": "ap",
+  "difficulty": "ap",
+  "duration": "50 min",
+  "objectives": [
+    "Distinguish passive transport (simple diffusion, facilitated diffusion, osmosis) from active transport",
+    "Predict the direction of water movement using tonicity (hypotonic, hypertonic, isotonic) and explain effects on animal and plant cells",
+    "Explain how active transport and the sodium-potassium pump build electrochemical gradients using ATP",
+    "Describe how cells move large materials by endocytosis and exocytosis"
+  ],
+  "sections": [
+    {
+      "type": "explanation",
+      "heading": "Going With the Flow: Passive Transport",
+      "content": "Imagine a ball on a hillside. Left alone, it rolls downhill all by itself — no effort required. To move it uphill, though, you have to push, spending energy. Membrane transport works the same way. Moving a substance 'downhill,' from where it's crowded to where it's sparse, is free; moving it 'uphill,' against the crowd, costs the cell energy. Today we cover both, starting with the free kind.\n\nPassive transport moves substances down their concentration gradient — from high concentration to low — without any ATP. There are three flavors. Simple diffusion is the direct movement of small nonpolar molecules (like O₂ and CO₂) straight through the lipid bilayer. Picture perfume released in one corner of a room: molecules wander randomly until they spread evenly. No one pushes them; random motion plus a gradient does the work.\n\nFacilitated diffusion handles substances that can't cross the bilayer alone — ions and large polar molecules like glucose. They still move down their gradient (still no ATP), but they need a transport protein as a doorway. Channel proteins form selective tunnels (aquaporins for water, ion channels for Na⁺ or K⁺), while carrier proteins bind a specific molecule and change shape to flip it across.\n\nOsmosis is the third, and it's just diffusion applied to water. Water moves across a selectively permeable membrane from where water is more abundant (low solute) to where water is scarcer (high solute). It's passive, it needs no energy, and as you'll see, it has dramatic consequences for cells."
+    },
+    {
+      "type": "table",
+      "heading": "Modes of Membrane Transport",
+      "headers": ["Type", "Needs ATP?", "Direction vs. gradient", "Needs a protein?"],
+      "rows": [
+        ["Simple diffusion", "No", "Down (high → low)", "No"],
+        ["Facilitated diffusion", "No", "Down (high → low)", "Yes (channel or carrier)"],
+        ["Osmosis", "No", "Water moves toward higher solute", "Often via aquaporins"],
+        ["Active transport", "Yes", "Against (low → high)", "Yes (pump)"],
+        ["Endocytosis / Exocytosis", "Yes", "Bulk movement in / out", "Vesicles + membrane"]
+      ]
+    },
+    {
+      "type": "quiz",
+      "question": "Glucose moves into a cell through a carrier protein, traveling from higher glucose concentration outside to lower concentration inside, and no ATP is used. What type of transport is this?",
+      "options": [
+        "Active transport, because a protein is involved",
+        "Simple diffusion, because glucose is small",
+        "Facilitated diffusion, because it moves down its gradient through a protein without ATP",
+        "Osmosis, because it crosses a membrane"
+      ],
+      "correctIndex": 2,
+      "explanation": "Movement down the concentration gradient through a transport protein without ATP is facilitated diffusion. It is not active transport (no ATP, and it moves down the gradient), not simple diffusion (glucose is too polar to cross the bilayer alone), and osmosis refers specifically to water."
+    },
+    {
+      "type": "explanation",
+      "heading": "Osmosis and Tonicity: Which Way Does Water Go?",
+      "content": "Because cells are mostly water surrounded by water, the direction water flows can decide whether a cell swells, shrinks, or stays put. The key rule, worth memorizing exactly: in osmosis, water moves toward the side with HIGHER solute concentration (which is the side with lower free-water concentration). Water chases solute.\n\nTo describe a cell's situation we use tonicity — the solute concentration of the surrounding solution compared to the inside of the cell. There are three cases, and the prefixes are about the SOLUTION, not the water.\n\nA hypotonic solution has LOWER solute concentration than the cell. Since the cell's interior has more solute, water flows INTO the cell. ('Hypo' = under; the solution is under-loaded with solute.)\n\nA hypertonic solution has HIGHER solute concentration than the cell. Water flows OUT of the cell toward the saltier outside. ('Hyper' = over; the solution is over-loaded with solute.)\n\nAn isotonic solution has EQUAL solute concentration inside and out, so there's no net water movement — water still crosses both ways, but equally.\n\nThe consequences depend on whether the cell has a wall, which is where this gets biologically important."
+    },
+    {
+      "type": "example",
+      "heading": "Animal vs. Plant Cells in Three Solutions",
+      "content": "Let's place an animal cell (no wall) and a plant cell (rigid cell wall) into each kind of solution and reason out what happens.\n\nHYPOTONIC solution (water flows IN):\n  Animal cell: swells and may LYSE (burst), because nothing resists the incoming water. A red blood cell in pure water pops.\n  Plant cell: takes in water and becomes TURGID (firm) — but the rigid cell wall stops it from bursting. Turgor pressure pushes the membrane against the wall. This is the healthy, preferred state for a plant; it's why a well-watered plant stands upright.\n\nHYPERTONIC solution (water flows OUT):\n  Animal cell: shrivels (this shrinking is called crenation).\n  Plant cell: the membrane pulls away from the wall as the cell loses water — called plasmolysis — and the plant wilts.\n\nISOTONIC solution (no net movement):\n  Animal cell: stays normal. This is why IV fluids are isotonic 'normal saline' (0.9% NaCl) — so blood cells neither burst nor shrivel.\n  Plant cell: becomes flaccid (limp), which is actually NOT ideal for a plant — without turgor pressure it droops.\n\nNotice the beautiful reversal: the environment that's dangerous for an animal cell (hypotonic) is exactly what a plant cell wants, all because of one structure — the cell wall."
+    },
+    {
+      "type": "steps",
+      "heading": "How to Predict the Direction of Water Movement",
+      "steps": [
+        {
+          "title": "Identify the solute concentrations",
+          "content": "Determine the solute concentration inside the cell and in the surrounding solution. Higher solute means lower free-water concentration on that side."
+        },
+        {
+          "title": "Apply the rule: water chases solute",
+          "content": "Water moves by osmosis toward the side with the higher solute concentration. If the outside is saltier, water leaves the cell; if the inside is saltier, water enters the cell."
+        },
+        {
+          "title": "Classify the solution's tonicity",
+          "content": "Label the surrounding solution hypotonic (lower solute than the cell, water enters), hypertonic (higher solute than the cell, water exits), or isotonic (equal solute, no net movement)."
+        },
+        {
+          "title": "Predict the effect, accounting for a cell wall",
+          "content": "For an animal cell: water in causes swelling or lysis, water out causes shriveling. For a plant cell: water in causes turgidity (the wall prevents bursting), water out causes plasmolysis and wilting. State both the water direction and the structural outcome."
+        }
+      ]
+    },
+    {
+      "type": "keypoint",
+      "content": "In osmosis, water always moves toward the side with higher solute concentration. Tonicity describes the surrounding solution: hypotonic (water enters the cell), hypertonic (water leaves the cell), or isotonic (no net movement)."
+    },
+    {
+      "type": "callout",
+      "variant": "warning",
+      "heading": "Tonicity Describes the SOLUTE, and Water Moves the Opposite Way",
+      "content": "The most common osmosis mistakes: (1) The prefixes hypo/hyper describe the SOLUTE concentration of the SOLUTION, not the water. A hypotonic solution has LESS solute, so it has MORE water — which then flows INTO the cell. (2) Water moves toward HIGHER solute, not toward higher water; don't say 'water moves to where there's more water and that's the high-solute side.' (3) When asked what happens to a cell, state the WATER direction first, then the result (swell/lyse, shrivel, turgid, plasmolysis). Confusing the prefix with the water direction is the single biggest tonicity error on the exam."
+    },
+    {
+      "type": "deepdive",
+      "heading": "Water Potential and How Organisms Manage Osmosis",
+      "content": "AP Biology pushes osmosis one level deeper with water potential (symbol Ψ, the Greek letter psi), the measure that predicts which way water will actually move — and it's a favorite of free-response questions. Water always moves from HIGH water potential to LOW water potential. Two things set water potential: solute potential (more dissolved solute LOWERS water potential, written as a negative number) and pressure potential (physical pressure, like a plant cell's wall pushing back, RAISES it). The equation is simply Ψ = Ψs + Ψp. Add solute and Ψ drops; add pressure and Ψ climbs. Pure water at no pressure has Ψ = 0, and adding any solute makes it negative, so water flows toward the more negative (saltier) side — the same 'water chases solute' rule in quantitative clothing.\n\nLiving things can't just let osmosis happen to them, so many actively regulate their water balance (osmoregulation). A freshwater Paramecium lives in a hypotonic pond, so water constantly floods in; it survives by using a contractile vacuole that collects the excess water and pumps it back out — costing ATP, an active process fighting a passive flood. Your kidneys are osmoregulators too, fine-tuning how much water your blood keeps versus excretes in urine. Saltwater fish face the opposite problem from freshwater fish: they're hypotonic to the salty sea, so they constantly LOSE water and must drink seawater and pump out salt, while freshwater fish must bail out water and grab salt. Same physics, opposite solutions — a recurring evolutionary theme. The takeaway: osmosis is a relentless physical force, and a huge amount of an organism's machinery exists just to manage it."
+    },
+    {
+      "type": "quiz",
+      "question": "A red blood cell is placed in a beaker of distilled (pure) water. What will happen, and why?",
+      "options": [
+        "It will shrivel because water leaves the cell toward the higher solute outside",
+        "It will swell and possibly lyse because the solution is hypotonic and water enters the cell",
+        "Nothing will happen because pure water is isotonic to the cell",
+        "It will become turgid but not burst because of its cell wall"
+      ],
+      "correctIndex": 1,
+      "explanation": "Distilled water has no solute, making it hypotonic to the cell, so water rushes in toward the higher internal solute concentration, and the wall-less animal cell swells and can lyse. Pure water is not isotonic, water does not leave, and a red blood cell has no cell wall to prevent bursting."
+    },
+    {
+      "type": "explanation",
+      "heading": "Active Transport: Pumping Against the Gradient",
+      "content": "Sometimes a cell needs to move a substance the 'wrong' way — accumulating it where it's already concentrated, or expelling it against the gradient. Pushing uphill like this costs energy, almost always from ATP. This is active transport, and it always requires a transport protein called a pump.\n\nThe textbook example is the sodium-potassium pump (Na⁺/K⁺-ATPase) in your cells. Using the energy from one ATP, it pumps 3 sodium ions (Na⁺) OUT of the cell and 2 potassium ions (K⁺) IN — both against their gradients. Why bother? Because this builds and maintains an electrochemical gradient: a difference in both chemical concentration and electrical charge across the membrane. By moving 3 positive charges out for every 2 it brings in, the pump leaves the inside of the cell slightly negative, creating a membrane potential of about −70 millivolts in a neuron.\n\nThat stored gradient is like water held behind a dam — potential energy the cell can cash in. When channels open and ions rush back down their gradient, the cell harnesses that flow to fire nerve impulses, trigger muscle contraction, and drive secondary active transport (where one molecule's downhill rush powers another molecule's uphill ride, as when glucose is pulled into intestinal cells alongside Na⁺). The same gradient principle even powers ATP synthesis in mitochondria. Active transport is the cell spending energy now to store energy it can spend later."
+    },
+    {
+      "type": "explanation",
+      "heading": "Bulk Transport: Moving the Really Big Stuff",
+      "content": "Channels and pumps handle ions and small molecules, but what about cargo too large for any protein doorway — a whole bacterium, a droplet of fluid, a clump of cholesterol? For these the cell uses bulk transport, which packages material in membrane vesicles and requires energy.\n\nEndocytosis brings material IN: the plasma membrane folds inward around the cargo and pinches off into a vesicle inside the cell. It comes in three forms. Phagocytosis ('cell eating') engulfs large particles like bacteria — this is how some white blood cells destroy pathogens. Pinocytosis ('cell drinking') takes in droplets of extracellular fluid and dissolved solutes. Receptor-mediated endocytosis is the selective version: specific receptor proteins on the surface grab a particular target molecule, then that patch of membrane invaginates — this is how your cells import cholesterol packaged as LDL particles.\n\nExocytosis is the reverse, moving material OUT: a vesicle inside the cell fuses with the plasma membrane and dumps its contents to the exterior. You met this in the secretory pathway — it's how neurons release neurotransmitters at synapses and how gland cells secrete hormones and digestive enzymes. Both processes are forms of active transport because building, moving, and fusing vesicles all consume energy. Notice the elegant economy: the very same membrane that keeps things separated can fold in or out to ferry huge cargo across without ever leaving a permanent hole."
+    },
+    {
+      "type": "callout",
+      "variant": "remember",
+      "heading": "Transport Essentials",
+      "content": "PASSIVE (no ATP, down the gradient): simple diffusion (small nonpolar, no protein), facilitated diffusion (needs channel/carrier), osmosis (water toward higher solute). ACTIVE (uses ATP, against the gradient): pumps like the Na⁺/K⁺-ATPase (3 Na⁺ out, 2 K⁺ in) build the electrochemical gradient. BULK (uses ATP, via vesicles): endocytosis (phagocytosis, pinocytosis, receptor-mediated) brings material in; exocytosis sends it out. Tonicity: hypotonic → water IN; hypertonic → water OUT; isotonic → no net movement. Water potential: water moves from high Ψ to low (more negative) Ψ."
+    },
+    {
+      "type": "callout",
+      "variant": "tip",
+      "heading": "Nail the Osmosis Lab and Water-Potential Math",
+      "content": "AP loves the potato-core / dialysis-bag osmosis lab and water-potential calculations. For water potential, use Ψ = Ψs + Ψp, remember solute makes Ψs negative, and conclude water moves toward the MORE NEGATIVE Ψ. On lab data, a cell or tissue that GAINED mass was in a hypotonic solution (water entered); one that LOST mass was in a hypertonic solution. Always state both the direction of water movement and your evidence (mass change, solute comparison). For percent-change graphs, the point where mass change is zero estimates the solution isotonic to the cell."
+    }
+  ],
+  "aiContext": "This AP Biology Unit 2 lesson covers CED topics 2.6 through 2.9: passive transport, facilitated diffusion, tonicity and osmoregulation, and active/bulk transport. Emphasize the master rule that water moves toward higher solute concentration (and, quantitatively, from high to low water potential), because tonicity and water-potential questions are among the most common and most-missed on the exam. Watch for the dominant misconception that the prefixes hypo/hyper describe water rather than solute, and the confusion of facilitated diffusion (passive, no ATP) with active transport. Stress the cell-wall difference between animal and plant cell responses (lysis vs. turgidity; crenation vs. plasmolysis) and the role of the Na+/K+ pump in building the electrochemical gradient. Connect to the membrane lesson (selective permeability creates the need for transport), to neurons and cellular respiration (gradients as stored energy), and to osmoregulation in real organisms. On the exam, expect data-based osmosis lab questions, water-potential calculations using Ψ = Ψs + Ψp, and FRQs predicting and justifying water movement and cell outcomes."
+}

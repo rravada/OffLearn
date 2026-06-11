@@ -1,0 +1,29 @@
+{
+  "id": "ap-calc-ab-curve-sketching",
+  "title": "Curve Sketching: Connecting f, f', and f''",
+  "subject": "AP Calculus AB",
+  "chunks": [
+    { "id": "c1", "text": "Curve sketching combines f, f', and f'': the first derivative gives direction and extrema, the second derivative gives concavity and inflection points." },
+    { "id": "c2", "text": "f'(x) > 0 means the graph is increasing, f'(x) < 0 means decreasing, and f'(x) = 0 means a horizontal tangent." },
+    { "id": "c3", "text": "f''(x) > 0 means concave up and f''(x) < 0 means concave down." },
+    { "id": "c4", "text": "Direction and concavity combine into four local shapes: increasing concave up, increasing concave down, decreasing concave down, and decreasing concave up." },
+    { "id": "c5", "text": "Increasing and concave up means rising and steepening; increasing and concave down means rising but leveling off toward a peak." },
+    { "id": "c6", "text": "Decreasing and concave down means falling and steepening downward; decreasing and concave up means falling but flattening toward a valley." },
+    { "id": "c7", "text": "The curve-sketching checklist covers domain, intercepts, symmetry, asymptotes, first-derivative analysis, and second-derivative analysis." },
+    { "id": "c8", "text": "For the domain, watch for division by zero, even roots of negative numbers, and logarithms of non-positive numbers." },
+    { "id": "c9", "text": "Even functions satisfy f(−x) = f(x) and are symmetric about the y-axis; odd functions satisfy f(−x) = −f(x) and are symmetric about the origin." },
+    { "id": "c10", "text": "For rational functions, find vertical asymptotes where the denominator is zero and horizontal asymptotes from the behavior as x approaches positive or negative infinity." },
+    { "id": "c11", "text": "Example: for f(x) = x³ − 6x² + 9x + 1, f'(x) = 3(x − 1)(x − 3) gives a local max at (1, 5) and local min at (3, 1)." },
+    { "id": "c12", "text": "For that function, f''(x) = 6(x − 2) gives an inflection point at (2, 3), concave down before x = 2 and concave up after." },
+    { "id": "c13", "text": "A complete sketch plots extrema, inflection points, and intercepts, then connects them with a smooth curve matching the sign of f' and f'' on every interval." },
+    { "id": "c14", "text": "A zero of f' or f'' is only a candidate; an extremum needs f' to change sign and an inflection point needs f'' to change sign." },
+    { "id": "c15", "text": "Sketching from f' alone is insufficient because concavity from f'' is needed to get the correct bending of the curve." },
+    { "id": "c16", "text": "When given the graph of f', the height of f' is the slope of f and the slope of f' is the concavity of f." },
+    { "id": "c17", "text": "Where the f' graph is above the x-axis f is increasing, and where it crosses zero from positive to negative f has a local maximum." },
+    { "id": "c18", "text": "Where the f' graph is rising, f is concave up; where the f' graph has a local maximum or minimum, f has an inflection point." },
+    { "id": "c19", "text": "Example: given f'(x) = x(x − 2)(x + 1) and f(0) = 3, f has local minima at x = −1 and x = 2 and a local maximum at (0, 3)." },
+    { "id": "c20", "text": "The most common sketching error from an f' graph is treating it as the graph of f, leading to reversed conclusions about increase and concavity." },
+    { "id": "c21", "text": "A complete sketch of a rational function must include asymptotes and end behavior, not just interior extrema." },
+    { "id": "c22", "text": "Reconstructing f from f' is qualitative in differentiation but becomes quantitative in integration, where the integral of f' recovers f up to a constant via the Fundamental Theorem of Calculus." }
+  ]
+}

@@ -1,0 +1,99 @@
+{
+  "id": "ap-calc-ab-u8-motion-with-integrals",
+  "title": "Motion with Integrals: Displacement and Distance",
+  "subject": "AP Calculus AB",
+  "unit": "Applications of Integration",
+  "track": "ap",
+  "difficulty": "ap",
+  "duration": "45 min",
+  "objectives": [
+    "Recover velocity from acceleration and position from velocity by integration with an initial condition.",
+    "Compute displacement as the integral of velocity, ∫ v(t) dt.",
+    "Compute total distance traveled as the integral of speed, ∫ |v(t)| dt, by splitting at times where v = 0.",
+    "Distinguish displacement (net change in position) from total distance traveled."
+  ],
+  "sections": [
+    {
+      "type": "explanation",
+      "heading": "Running the Motion Ladder Backward",
+      "content": "In the contextual-applications unit you went *down* the motion ladder by differentiating: position s(t) gives velocity v(t) = s'(t), and velocity gives acceleration a(t) = v'(t). Integration runs that same ladder *upward*. Since integration undoes differentiation, the integral of acceleration recovers velocity, and the integral of velocity recovers position.\n\nThis is enormously useful, because in many real situations you measure or know the *rate* (velocity from a speedometer, acceleration from a sensor) and want to recover the *quantity* (where the object is, how far it went). Integration is the tool that rebuilds position and velocity from rate information.\n\nThere's one catch that the slope-field and antiderivative lessons prepared you for: integrating recovers the function only up to a constant, so you need an *initial condition* to pin it down. Knowing v(t) gives s(t) = ∫v(t) dt + C, and the starting position s(0) determines C. The same is true going from acceleration to velocity. So 'integrate the rate, then use the initial value' is the recurring pattern.\n\nThis lesson focuses on the two questions the AP exam asks most about integral-based motion: how far the object ended up from where it started (displacement), and how far it actually traveled along the way (total distance). These sound similar but are genuinely different, and telling them apart is the heart of the topic."
+    },
+    {
+      "type": "explanation",
+      "heading": "Displacement vs. Total Distance",
+      "content": "*Displacement* is the net change in position over a time interval — where the object ends up relative to where it started. Because velocity is the rate of change of position, the Net Change Theorem gives displacement directly as the integral of velocity:\n\n  displacement = ∫ from a to b of v(t) dt = s(b) − s(a).\n\nThis is a *signed* quantity. While the object moves in the positive direction, velocity is positive and contributes positively; while it moves in the negative direction, velocity is negative and contributes negatively. The integral nets these, so an object that goes out and comes partway back has a displacement smaller than the ground it actually covered — and an object that returns exactly to its start has zero displacement.\n\n*Total distance traveled* is the actual ground covered, regardless of direction — always positive. To get it, you must make every bit of motion count positively, which means integrating *speed*, the absolute value of velocity:\n\n  total distance = ∫ from a to b of |v(t)| dt.\n\nThe absolute value is the whole story. Where v(t) is negative, |v(t)| flips it positive so backward motion adds to the distance instead of subtracting. Practically, you compute ∫|v| dt by finding where v(t) = 0 (the times the object changes direction), splitting the interval at those points, and integrating v on each piece with the correct sign so each contribution is positive. This split is the technique that separates the students who get distance problems right from those who confuse them with displacement."
+    },
+    {
+      "type": "steps",
+      "heading": "Finding Displacement and Total Distance",
+      "steps": [
+        { "title": "For displacement, integrate velocity directly", "content": "Compute ∫ from a to b of v(t) dt; this signed value is the net change in position." },
+        { "title": "For distance, find where v(t) = 0", "content": "Solve v(t) = 0 on [a, b] to locate the times the object changes direction." },
+        { "title": "Split the interval at those times", "content": "Break [a, b] at each zero of v, since v keeps one sign on each piece." },
+        { "title": "Integrate and add absolute values", "content": "Integrate v on each subinterval and add the absolute values of the results to get the total distance." }
+      ]
+    },
+    {
+      "type": "example",
+      "heading": "Displacement and Distance From a Velocity Function",
+      "content": "A particle has velocity v(t) = t² − 4t + 3 = (t − 1)(t − 3) m/s for 0 ≤ t ≤ 4. Find the displacement and the total distance traveled.\n\nDisplacement — integrate v directly:\n  ∫ from 0 to 4 of (t² − 4t + 3) dt = [t³/3 − 2t² + 3t] from 0 to 4 = (64/3 − 32 + 12) − 0 = 64/3 − 20 = 4/3 m.\n\nTotal distance — find where v = 0: (t − 1)(t − 3) = 0 gives t = 1 and t = 3. Sign of v: positive on (0,1), negative on (1,3), positive on (3,4). Split and integrate:\n  ∫ from 0 to 1 of v dt = [t³/3 − 2t² + 3t] from 0 to 1 = 1/3 − 2 + 3 = 4/3.\n  ∫ from 1 to 3 of v dt = (9 − 18 + 9) − (4/3) = 0 − 4/3 = −4/3   (take |−4/3| = 4/3).\n  ∫ from 3 to 4 of v dt = (4/3) − 0 = 4/3.\n  Total distance = 4/3 + 4/3 + 4/3 = 4 m.\n\nThe displacement is only 4/3 m but the total distance is 4 m, because the particle moved forward, then backward (covering ground that partly canceled in the displacement), then forward again. Distance counts all of it; displacement nets it."
+    },
+    {
+      "type": "callout",
+      "variant": "warning",
+      "heading": "Displacement Uses v; Distance Uses |v|",
+      "content": "The defining trap of this topic: displacement = ∫ v dt (signed, can be negative or zero) while total distance = ∫ |v| dt (always positive). You CANNOT get total distance by integrating v over the whole interval — backward motion would wrongly subtract. You must find where v = 0, split the interval, and add the ABSOLUTE VALUES of the pieces. A particle can have large total distance but zero displacement (if it returns to start). On the exam, read whether the question asks 'how far from the starting point' (displacement) or 'total distance traveled' (the |v| integral), and never integrate |v| blindly without locating the direction changes first."
+    },
+    {
+      "type": "quiz",
+      "question": "A particle's velocity is v(t), positive on (0, 2) and negative on (2, 5). To find the TOTAL DISTANCE traveled on [0, 5], you compute:",
+      "options": ["∫ from 0 to 5 of v(t) dt", "∫ from 0 to 2 of v dt + ∫ from 2 to 5 of v dt", "∫ from 0 to 2 of v dt − ∫ from 2 to 5 of v dt", "v(5) − v(0)"],
+      "correctIndex": 2,
+      "explanation": "Total distance is ∫|v| dt. Since v > 0 on (0,2) and v < 0 on (2,5), the second integral is negative, so subtracting it (which adds its absolute value) gives the total distance: ∫₀² v dt − ∫₂⁵ v dt. Simply ∫₀⁵ v dt would give displacement, not distance."
+    },
+    {
+      "type": "explanation",
+      "heading": "Recovering Position and Velocity",
+      "content": "Beyond displacement and distance, integration lets you reconstruct the full position or velocity *function* when you know a rate and a starting value — the 'integrate, then use the initial condition' pattern.\n\nFrom velocity to position: s(t) = ∫ v(t) dt + C, and the initial position s(t₀) determines C. Once you have s(t), you can answer 'where is the object at time t?' for any t, not just compute a net change. Often, though, you don't need the whole function — if you only want the position at a specific time b given the position at a, use the Net Change Theorem directly: s(b) = s(a) + ∫ from a to b of v(t) dt. That avoids finding C explicitly and is usually faster on the exam.\n\nFrom acceleration to velocity: the same logic one level down. v(t) = ∫ a(t) dt + C, with the initial velocity v(t₀) determining C. For instance, constant acceleration a(t) = −9.8 (gravity) integrates to v(t) = −9.8t + v₀, the familiar kinematics equation, and integrating again gives s(t) = −4.9t² + v₀t + s₀. Those physics formulas you may have memorized are nothing more than antiderivatives with initial conditions.\n\nThe unifying message: differentiation took position to velocity to acceleration; integration with initial conditions climbs back up. Whether you reconstruct the entire function or just compute a value at one time with the Net Change Theorem depends on what the question asks."
+    },
+    {
+      "type": "example",
+      "heading": "Position From Velocity",
+      "content": "A particle moves with velocity v(t) = 2t m/s, and its position at t = 0 is s(0) = 5 m. Find the position function and the position at t = 3.\n\nIntegrate velocity to get position:\n  s(t) = ∫ 2t dt = t² + C.\n\nApply the initial condition s(0) = 5:\n  5 = 0² + C, so C = 5, giving s(t) = t² + 5.\n\nPosition at t = 3:\n  s(3) = 3² + 5 = 9 + 5 = 14 m.\n\nAlternatively, using the Net Change Theorem without finding C explicitly:\n  s(3) = s(0) + ∫ from 0 to 3 of 2t dt = 5 + [t²] from 0 to 3 = 5 + 9 = 14 m.\n\nBoth routes give s(3) = 14 m. The first builds the entire position function (useful if you need positions at several times); the second is quicker when you only need one value. The initial condition s(0) = 5 was essential — without it, integration alone would leave the position undetermined by a constant."
+    },
+    {
+      "type": "table",
+      "heading": "Differentiate Down, Integrate Up",
+      "headers": ["Going down (differentiate)", "Going up (integrate, + initial condition)"],
+      "rows": [
+        ["v(t) = s'(t)", "s(t) = s(a) + ∫ₐᵗ v(τ) dτ"],
+        ["a(t) = v'(t)", "v(t) = v(a) + ∫ₐᵗ a(τ) dτ"],
+        ["displacement is given by position", "displacement = ∫ₐᵇ v(t) dt"],
+        ["speed is |v(t)|", "total distance = ∫ₐᵇ |v(t)| dt"]
+      ]
+    },
+    {
+      "type": "quiz",
+      "question": "A particle has acceleration a(t) = 6 and initial velocity v(0) = −4. What is its velocity v(t)?",
+      "options": ["6t − 4", "6t", "3t² − 4", "6t + 4"],
+      "correctIndex": 0,
+      "explanation": "Integrate acceleration: v(t) = ∫6 dt = 6t + C. Apply v(0) = −4: 6(0) + C = −4, so C = −4 and v(t) = 6t − 4. The initial velocity determines the constant of integration."
+    },
+    {
+      "type": "callout",
+      "variant": "tip",
+      "heading": "On the Exam: Read 'Displacement' vs 'Distance' Carefully",
+      "content": "AP free-response motion problems almost always ask for one of: displacement (∫ v dt over the interval), total distance (∫ |v| dt — find where v = 0, split, add absolute values), position at a time (s(a) + ∫ₐᵗ v dt using the given initial position), or velocity from acceleration (∫ a dt + initial velocity). Identify which is being asked before computing. For distance, explicitly find the direction-change times. With a calculator-active problem, ∫ |v(t)| dt can often be entered directly, but on no-calculator sections you must split by hand. State units throughout."
+    },
+    {
+      "type": "deepdive",
+      "heading": "Displacement Is Net Area, Distance Is Total Area",
+      "content": "The displacement-versus-distance distinction is the motion incarnation of a deeper idea you've already met: net signed area versus total area under a curve. Seeing them as the same idea makes both effortless to remember.\n\nThink of the graph of velocity v(t). The displacement, ∫ v(t) dt, is the *net signed area* between the velocity curve and the time axis: time spent with v > 0 (above the axis) contributes positive area, and time spent with v < 0 (below the axis) contributes negative area. The integral nets them, which is exactly why an object that goes out and comes back can have small or zero displacement — the positive and negative areas cancel, just as ∫ sin x over a full period is zero. Displacement asks 'what is the net result?'\n\nTotal distance, ∫ |v(t)| dt, is instead the *total area* between the velocity curve and the axis, counting every region positively. Taking the absolute value reflects the below-axis parts up above the axis, so nothing cancels. This is precisely the 'net area vs total area' contrast from the definite-integral lesson, now wearing the clothes of motion: net area = displacement, total area = distance.\n\nThis correspondence is worth internalizing because it unifies the whole unit. The integral of a rate gives net change (displacement, net change in a quantity, net area); the integral of the *magnitude* of a rate gives total accumulation (distance, total area). The same machinery — find where the integrand crosses zero, split, and combine with the right signs — handles total distance traveled, the total area between two curves, and any problem where you need 'how much actually happened' rather than 'what was the net effect.' Once you see displacement and distance as net versus total area, you never have to memorize the two formulas separately; you just ask whether the question wants the signed net or the unsigned total, and the velocity-graph picture tells you the rest."
+    },
+    {
+      "type": "keypoint",
+      "content": "Integration runs the motion ladder upward: v(t) = ∫ a(t) dt + C and s(t) = ∫ v(t) dt + C, with initial conditions fixing the constants. Displacement = ∫ from a to b of v(t) dt (signed net change in position); total distance = ∫ from a to b of |v(t)| dt (always positive — find where v = 0, split, add absolute values). Displacement is net signed area under the velocity curve; distance is total area."
+    }
+  ],
+  "aiContext": "AP Calculus AB Unit 8, motion with integrals. Integration runs the motion ladder upward: v = ∫a dt + C and s = ∫v dt + C, with initial conditions fixing the constants; for a single value use s(b) = s(a) + ∫ₐᵇ v dt (Net Change Theorem). The central, heavily tested distinction: displacement = ∫ v dt (signed net change in position, possibly zero) vs total distance = ∫ |v| dt (always positive). Stress that total distance requires finding where v = 0, splitting the interval, and adding ABSOLUTE VALUES — never integrate v over the whole interval for distance. Connect to net signed area (displacement) vs total area (distance) under the velocity graph, the motion form of the definite-integral net-vs-total idea. Common errors: confusing the two, forgetting to split at direction changes, and dropping the initial condition when recovering position/velocity. Always state units."
+}

@@ -1,0 +1,100 @@
+{
+  "id": "ap-calc-ab-u3-derivatives-of-inverse-functions",
+  "title": "Derivatives of Inverse and Inverse Trig Functions",
+  "subject": "AP Calculus AB",
+  "unit": "Differentiation: Composite, Implicit, and Inverse Functions",
+  "track": "ap",
+  "difficulty": "ap",
+  "duration": "45 min",
+  "objectives": [
+    "Explain geometrically why the slope of an inverse function is the reciprocal of the slope of the original function at the corresponding point.",
+    "Apply the inverse function derivative rule, (f⁻¹)'(a) = 1/f'(f⁻¹(a)), including from a table of values.",
+    "State and apply the derivatives of arcsin, arccos, and arctan, combining them with the chain rule.",
+    "Derive the inverse trig derivative formulas using implicit differentiation and a reference triangle."
+  ],
+  "sections": [
+    {
+      "type": "explanation",
+      "heading": "Slopes Through the Looking Glass",
+      "content": "Imagine standing in front of a mirror placed along the line y = x. The graph of an inverse function f⁻¹ is exactly the reflection of the graph of f across that mirror. Whatever f does, f⁻¹ undoes — if f sends 2 to 7, then f⁻¹ sends 7 back to 2. Geometrically, the point (2, 7) on f becomes the point (7, 2) on f⁻¹.\n\nNow think about what reflection does to *steepness*. A line that rises steeply (large slope) reflects across y = x into a line that rises gently (small slope), because swapping the x- and y-axes swaps 'rise' and 'run.' A slope of 4 (rise 4, run 1) becomes a slope of 1/4 (rise 1, run 4). The slopes are **reciprocals**.\n\nThat single observation is the whole idea behind differentiating inverse functions. If you know how fast f is changing at a point, you instantly know how fast f⁻¹ is changing at the mirrored point — just flip the fraction. You don't even need a formula for f⁻¹ itself, which is wonderful, because (just like with implicit curves) f⁻¹ often has no clean formula.\n\nThe rest of this lesson turns this reflection intuition into a precise rule and then uses it to unlock the derivatives of the inverse trigonometric functions, which appear all over the AP exam."
+    },
+    {
+      "type": "explanation",
+      "heading": "The Inverse Function Derivative Rule",
+      "content": "Suppose f is differentiable and one-to-one, with inverse g = f⁻¹. The reciprocal-slope idea becomes:\n\n  (f⁻¹)'(a) = 1 / f'(f⁻¹(a))\n\nRead it carefully. To find the slope of the inverse at the input a, you do NOT evaluate f' at a. You first find the point f⁻¹(a) — the x-value that f maps to a — and evaluate f' *there*, then take the reciprocal.\n\nWhere does this come from? Start with the defining relationship f(f⁻¹(x)) = x. Differentiate both sides with respect to x using the chain rule:\n  f'(f⁻¹(x)) · (f⁻¹)'(x) = 1\nSolve for (f⁻¹)'(x):\n  (f⁻¹)'(x) = 1 / f'(f⁻¹(x))\n\nThat's the rule, and notice it's really just the chain rule applied to 'f and its undo-er compose to the identity.' The condition for it to work is f'(f⁻¹(a)) ≠ 0 — if f has a horizontal tangent at the corresponding point, the inverse has a vertical tangent and the derivative is undefined there."
+    },
+    {
+      "type": "steps",
+      "heading": "Computing (f⁻¹)'(a) in Three Moves",
+      "steps": [
+        { "title": "Find the matching input", "content": "Determine f⁻¹(a): the value b for which f(b) = a. From a table, scan the f(x) column for the output a and read off its x. By solving, set f(x) = a and solve for x." },
+        { "title": "Differentiate f and evaluate at b", "content": "Compute f'(x), then plug in x = b = f⁻¹(a) to get f'(b). This is the step students misplace — evaluate at b, never at a." },
+        { "title": "Take the reciprocal", "content": "(f⁻¹)'(a) = 1/f'(b). If f'(b) = 0 the inverse has a vertical tangent and (f⁻¹)'(a) does not exist." }
+      ]
+    },
+    {
+      "type": "example",
+      "heading": "A Worked Inverse Derivative",
+      "content": "Let f(x) = x³ + x + 1. Because f'(x) = 3x² + 1 > 0 everywhere, f is strictly increasing, hence one-to-one, so f⁻¹ exists. Find (f⁻¹)'(3).\n\nStep 1: Find f⁻¹(3) — the x with f(x) = 3.\n  x³ + x + 1 = 3  →  x³ + x − 2 = 0\n  Try x = 1: 1 + 1 − 2 = 0 ✓. So f⁻¹(3) = 1.\n\nStep 2: Differentiate f and evaluate at x = 1.\n  f'(x) = 3x² + 1\n  f'(1) = 3(1)² + 1 = 4\n\nStep 3: Take the reciprocal.\n  (f⁻¹)'(3) = 1/f'(1) = 1/4\n\nNotice we never needed an explicit formula for f⁻¹ — solving x³ + x = 2 in general would be ugly, but we only needed the one input that maps to 3. That's the power of the rule."
+    },
+    {
+      "type": "callout",
+      "variant": "warning",
+      "heading": "Evaluate f' at f⁻¹(a), Not at a",
+      "content": "The number-one inverse-derivative error is computing f'(a) instead of f'(f⁻¹(a)). In the example above, f'(3) = 28, and 1/28 is wrong — the correct slope is 1/4, using f'(1). Always locate the matching point first. A quick self-check: the point (a, f⁻¹(a)) lies on the inverse's graph, and you evaluate the *original* derivative at the x-coordinate of the corresponding point on f, which is f⁻¹(a)."
+    },
+    {
+      "type": "quiz",
+      "question": "A table gives f(2) = 5 and f'(2) = 10. If f is invertible, what is (f⁻¹)'(5)?",
+      "options": ["10", "1/10", "5", "1/5"],
+      "correctIndex": 1,
+      "explanation": "Since f(2) = 5, we have f⁻¹(5) = 2. Then (f⁻¹)'(5) = 1/f'(f⁻¹(5)) = 1/f'(2) = 1/10. The answer 10 forgets the reciprocal; 1/5 mistakenly uses the value 5 instead of evaluating f' at the matching input 2."
+    },
+    {
+      "type": "explanation",
+      "heading": "The Inverse Trigonometric Derivatives",
+      "content": "The inverse trig functions — arcsin, arccos, arctan — are genuine inverse functions (with restricted domains so they're one-to-one), so the same reciprocal-slope machinery produces their derivatives. The remarkable result is that these derivatives are *algebraic* — no trig functions appear in them at all:\n\n  d/dx[arcsin x] = 1/√(1 − x²)\n  d/dx[arccos x] = −1/√(1 − x²)\n  d/dx[arctan x] = 1/(1 + x²)\n\nA few things worth noticing. First, arcsin and arccos have derivatives that are negatives of each other — the only difference is a sign, mirroring how sine and cosine differ by a sign when differentiated. Second, the arcsin/arccos derivatives are undefined at x = ±1 (the √ becomes 0), which matches the vertical tangents at the ends of those graphs. Third, arctan's derivative 1/(1 + x²) is defined for all real x and is always positive, so arctan is increasing everywhere — consistent with its gentle S-shape leveling off toward ±π/2.\n\nWith the chain rule, each formula gains an inner-derivative factor: d/dx[arctan(g(x))] = g'(x)/(1 + [g(x)]²), and similarly for the others."
+    },
+    {
+      "type": "table",
+      "heading": "Inverse Trig Derivatives (with Chain Rule)",
+      "headers": ["Function", "Derivative", "Chain rule form"],
+      "rows": [
+        ["arcsin x", "1/√(1 − x²)", "u'/√(1 − u²)"],
+        ["arccos x", "−1/√(1 − x²)", "−u'/√(1 − u²)"],
+        ["arctan x", "1/(1 + x²)", "u'/(1 + u²)"],
+        ["arccot x", "−1/(1 + x²)", "−u'/(1 + u²)"],
+        ["arcsec x", "1/(|x|√(x² − 1))", "u'/(|u|√(u² − 1))"],
+        ["arccsc x", "−1/(|x|√(x² − 1))", "−u'/(|u|√(u² − 1))"]
+      ]
+    },
+    {
+      "type": "example",
+      "heading": "Inverse Trig with the Chain Rule",
+      "content": "Example 1: Differentiate y = arctan(3x).\n  Outer: arctan(u) → 1/(1 + u²). Inner: u = 3x → u' = 3.\n  dy/dx = 3/(1 + (3x)²) = 3/(1 + 9x²).\n\nExample 2: Differentiate y = arcsin(x²).\n  Outer: arcsin(u) → 1/√(1 − u²). Inner: u = x² → u' = 2x.\n  dy/dx = 2x/√(1 − (x²)²) = 2x/√(1 − x⁴).\n\nExample 3: Differentiate y = x·arctan x (product + the arctan derivative).\n  Product rule: dy/dx = (1)·arctan x + x·[1/(1 + x²)]\n  dy/dx = arctan x + x/(1 + x²).\n\nIn each case the inverse trig derivative supplies an algebraic factor, and the chain or product rule glues it to the rest of the problem."
+    },
+    {
+      "type": "quiz",
+      "question": "What is d/dx[arcsin(2x)]?",
+      "options": ["2/√(1 − 4x²)", "1/√(1 − 4x²)", "2/√(1 − 2x²)", "2/(1 + 4x²)"],
+      "correctIndex": 0,
+      "explanation": "Use u'/√(1 − u²) with u = 2x and u' = 2: the result is 2/√(1 − (2x)²) = 2/√(1 − 4x²). Option 1/√(1 − 4x²) forgets the inner factor 2; 2/(1 + 4x²) wrongly uses the arctan formula instead of arcsin."
+    },
+    {
+      "type": "callout",
+      "variant": "tip",
+      "heading": "On the AP Exam, the Table Question Is a Gift",
+      "content": "A staple multiple-choice and free-response setup gives a small table of x, f(x), and f'(x) and asks for (f⁻¹)'(c). It looks intimidating but it's three quick moves: find the row whose f(x) equals c (that x is f⁻¹(c)), read f' in that same row, take the reciprocal. Memorize d/dx[arctan x] = 1/(1 + x²) and d/dx[arcsin x] = 1/√(1 − x²) cold — these are heavily tested and also appear later as antiderivatives in Unit 6 integration."
+    },
+    {
+      "type": "deepdive",
+      "heading": "Deriving d/dx[arcsin x] from Scratch",
+      "content": "Where does 1/√(1 − x²) actually come from? Implicit differentiation plus a reference triangle.\n\nLet y = arcsin x. By definition this means sin y = x, with y restricted to [−π/2, π/2]. Differentiate both sides with respect to x, using the chain rule on the left because y depends on x:\n  cos y · (dy/dx) = 1\n  dy/dx = 1/cos y\n\nNow we must rewrite cos y in terms of x. From sin y = x, draw a right triangle where angle y has opposite side x and hypotenuse 1; the adjacent side is then √(1 − x²) by the Pythagorean theorem. So cos y = adjacent/hypotenuse = √(1 − x²). (We take the positive root because y lives in [−π/2, π/2], where cosine is nonnegative.) Therefore:\n  dy/dx = 1/√(1 − x²)\n\nThe same recipe yields arctan: from tan y = x, differentiate to get sec²y·(dy/dx) = 1, so dy/dx = 1/sec²y = 1/(1 + tan²y) = 1/(1 + x²). Every inverse trig derivative is just implicit differentiation followed by a triangle (or a Pythagorean identity) to eliminate the trig function. If you ever forget a formula, you can rebuild it in under a minute this way — a genuinely useful exam safety net."
+    },
+    {
+      "type": "keypoint",
+      "content": "Inverse function rule: (f⁻¹)'(a) = 1/f'(f⁻¹(a)) — find the matching input first, evaluate the original derivative there, then reciprocate. Memorize d/dx[arcsin x] = 1/√(1 − x²), d/dx[arccos x] = −1/√(1 − x²), d/dx[arctan x] = 1/(1 + x²), and apply the chain rule for composite arguments."
+    }
+  ],
+  "aiContext": "AP Calculus AB Unit 3, derivatives of inverse and inverse trig functions. The core formula (f⁻¹)'(a) = 1/f'(f⁻¹(a)) is most often tested through a table of values, and the dominant error is evaluating f' at a instead of at the matching input f⁻¹(a) — emphasize finding the corresponding point first. Students should memorize the arcsin, arccos, and arctan derivatives and recognize they are algebraic (no trig in the answer), with arcsin/arccos differing only by sign and arctan defined for all x. Connect the formulas to their implicit-differentiation derivations via reference triangles so a student can rebuild any forgotten formula. Flag that 1/(1+x²) and 1/√(1−x²) return as antiderivatives in integration, so this lesson pays off again in Unit 6."
+}

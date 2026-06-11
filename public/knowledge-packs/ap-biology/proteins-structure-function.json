@@ -1,0 +1,29 @@
+{
+  "id": "ap-bio-proteins-structure-function",
+  "title": "Proteins: Structure and Function",
+  "subject": "AP Biology",
+  "chunks": [
+    { "id": "c1", "text": "Proteins perform most of the work in a cell, acting as enzymes, structural components, transporters, motor proteins, antibodies, and signal receptors. All proteins are built from a set of 20 amino acids." },
+    { "id": "c2", "text": "An amino acid has a central carbon bonded to four groups: an amino group (−NH2), a carboxyl group (−COOH), a hydrogen atom, and a variable side chain called the R group." },
+    { "id": "c3", "text": "The 20 amino acids differ only in their R groups. R groups can be nonpolar and hydrophobic, polar and hydrophilic, positively charged and basic, or negatively charged and acidic, and the R group determines each amino acid's chemical behavior." },
+    { "id": "c4", "text": "Cysteine has a sulfhydryl group (−SH) in its R group that can form a covalent disulfide bridge with another cysteine, helping stabilize a protein's folded shape." },
+    { "id": "c5", "text": "The sequence of R groups determines how a polypeptide folds: hydrophobic R groups bury in the protein core away from water, charged R groups attract their opposites, and polar R groups form hydrogen bonds." },
+    { "id": "c6", "text": "Amino acids join together by peptide bonds, which form through dehydration synthesis between the carboxyl group of one amino acid and the amino group of the next, releasing a water molecule." },
+    { "id": "c7", "text": "A polypeptide of n amino acids contains (n minus 1) peptide bonds, and forming it released (n minus 1) water molecules. A dipeptide has one peptide bond and a tripeptide has two." },
+    { "id": "c8", "text": "Primary structure is the linear sequence of amino acids in a polypeptide, held together by covalent peptide bonds. The primary sequence is specified by a gene and determines all higher levels of structure." },
+    { "id": "c9", "text": "Secondary structure is local folding of the polypeptide backbone into repeating patterns, the alpha helix and the beta pleated sheet, held together by hydrogen bonds between atoms of the backbone rather than the R groups." },
+    { "id": "c10", "text": "Tertiary structure is the overall three-dimensional shape of a single polypeptide, determined by interactions among R groups: hydrophobic interactions, ionic bonds, hydrogen bonds, and disulfide bridges. Tertiary structure gives each protein its unique shape." },
+    { "id": "c11", "text": "Quaternary structure exists only in proteins made of two or more polypeptide subunits assembled together. Hemoglobin has quaternary structure because it consists of four subunits, two alpha chains and two beta chains." },
+    { "id": "c12", "text": "Every protein has primary, secondary, and tertiary structure, but only proteins with multiple subunits have quaternary structure." },
+    { "id": "c13", "text": "A protein's function depends entirely on its three-dimensional shape, which is determined by its amino acid sequence. Changing the shape changes or destroys the function." },
+    { "id": "c14", "text": "Denaturation is the loss of a protein's three-dimensional shape caused by environmental stress such as high heat, extreme pH, or certain chemicals. A denatured protein loses its function because its shape is disrupted." },
+    { "id": "c15", "text": "During denaturation, the secondary, tertiary, and quaternary structures unravel, but the primary structure remains intact. The covalent peptide bonds are not broken and the amino acid sequence does not change." },
+    { "id": "c16", "text": "Cooking an egg white is an example of denaturation: heat destroys the folded shape of the albumin proteins, turning the egg white from clear and liquid to solid and opaque. The egg cannot be uncooked because the proteins cannot easily refold to their original shape." },
+    { "id": "c17", "text": "Enzymes are proteins that catalyze reactions by lowering activation energy. The active site is the region where the substrate binds, and its specific shape allows it to recognize particular substrates." },
+    { "id": "c18", "text": "Hemoglobin's quaternary structure enables cooperative binding: when one subunit binds oxygen, it changes shape so the other subunits bind oxygen more easily, allowing efficient oxygen loading in the lungs and unloading in tissues." },
+    { "id": "c19", "text": "Sickle cell disease is caused by a single point mutation that replaces glutamate, a negatively charged hydrophilic amino acid, with valine, a nonpolar hydrophobic amino acid, at position 6 of hemoglobin's beta chain." },
+    { "id": "c20", "text": "In sickle cell disease, the hydrophobic patch created by the valine substitution causes hemoglobin molecules to clump into long fibers under low-oxygen conditions, distorting red blood cells into a sickle shape that blocks capillaries and causes anemia." },
+    { "id": "c21", "text": "Sickle cell disease shows that changing a single amino acid out of many can alter a protein's shape and cause a serious disease, demonstrating that primary sequence determines three-dimensional shape and shape determines function." },
+    { "id": "c22", "text": "On AP Biology free-response questions about protein structure, full credit requires naming the specific interaction at each level: peptide bonds for primary structure, backbone hydrogen bonds for secondary structure, and hydrophobic interactions, ionic bonds, hydrogen bonds, and disulfide bridges for tertiary structure." }
+  ]
+}

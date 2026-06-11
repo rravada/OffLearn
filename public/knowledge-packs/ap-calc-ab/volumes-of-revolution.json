@@ -1,0 +1,29 @@
+{
+  "id": "ap-calc-ab-volumes-of-revolution",
+  "title": "Volumes of Revolution: Disc and Washer Methods",
+  "subject": "AP Calculus AB",
+  "chunks": [
+    { "id": "c1", "text": "A solid of revolution is formed by rotating a flat region about a line called the axis of revolution." },
+    { "id": "c2", "text": "Slicing a solid of revolution perpendicular to its axis gives cross sections that are circles or rings." },
+    { "id": "c3", "text": "Volumes of revolution are a special case of the cross-section formula V = ∫ A dx with circular cross sections." },
+    { "id": "c4", "text": "The radius of a cross section is the distance from the axis of revolution to the edge of the region." },
+    { "id": "c5", "text": "The disc method applies when the region touches the axis, so each cross section is a full disc with no hole." },
+    { "id": "c6", "text": "The disc method gives V = ∫ from a to b of π[r(x)]² dx, where r is the distance from the axis to the curve." },
+    { "id": "c7", "text": "For a region under y = f(x) rotated about the x-axis, the disc radius is r = f(x), the height of the region." },
+    { "id": "c8", "text": "Example: the region under y = √x from 0 to 4 rotated about the x-axis gives V = ∫₀⁴ π(√x)² dx = 8π." },
+    { "id": "c9", "text": "Forgetting the π or failing to square the radius is a common error, since a circle's area is πr²." },
+    { "id": "c10", "text": "The washer method applies when there is a gap between the region and the axis, so each cross section is a ring." },
+    { "id": "c11", "text": "A washer has an outer radius R (distance to the far edge) and an inner radius r (distance to the near edge)." },
+    { "id": "c12", "text": "The washer method gives V = ∫ from a to b of π([R(x)]² − [r(x)]²) dx." },
+    { "id": "c13", "text": "For a region between an upper curve and a lower curve rotated about the x-axis, R is the upper curve and r is the lower curve." },
+    { "id": "c14", "text": "Example: the region between y = x and y = x² on [0, 1] rotated about the x-axis gives V = ∫₀¹ π(x² − x⁴) dx = 2π/15." },
+    { "id": "c15", "text": "The washer area subtracts the squares of the radii, π(R² − r²), and never the square of the difference π(R − r)²." },
+    { "id": "c16", "text": "With R = 3 and r = 2, the true ring area is π(9 − 4) = 5π, while π(R − r)² = π, showing the squares must be taken individually." },
+    { "id": "c17", "text": "For rotation about the y-axis, the radius is a horizontal distance and you integrate with respect to y." },
+    { "id": "c18", "text": "For rotation about a line y = k, the radius is the distance from that line to the curve, such as |f(x) − k|." },
+    { "id": "c19", "text": "Rotating about a horizontal line uses dx with vertical radii; rotating about a vertical line uses dy with horizontal radii." },
+    { "id": "c20", "text": "Disc and washer methods are the cross-section formula with A = πr² or A = π(R² − r²) substituted in." },
+    { "id": "c21", "text": "Setting up the radius correctly as a distance from the axis is where volume-of-revolution problems are won or lost." },
+    { "id": "c22", "text": "Every volume in the unit is an accumulation of infinitesimal slices whose area is integrated, unifying area, cross sections, and revolution." }
+  ]
+}

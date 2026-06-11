@@ -1,0 +1,29 @@
+{
+  "id": "ap-calc-ab-mean-value-and-extreme-value-theorems",
+  "title": "The Mean Value and Extreme Value Theorems",
+  "subject": "AP Calculus AB",
+  "chunks": [
+    { "id": "c1", "text": "The Mean Value Theorem says that if f is continuous on [a, b] and differentiable on (a, b), there exists at least one c in (a, b) where f'(c) = [f(b) − f(a)]/(b − a)." },
+    { "id": "c2", "text": "The MVT states that the instantaneous rate of change equals the average rate of change at some point in the interval." },
+    { "id": "c3", "text": "Geometrically, the MVT guarantees a point where the tangent line is parallel to the secant line connecting the endpoints of the graph." },
+    { "id": "c4", "text": "The left side f'(c) of the MVT is the tangent slope (instantaneous rate); the right side [f(b) − f(a)]/(b − a) is the secant slope (average rate)." },
+    { "id": "c5", "text": "The MVT requires continuity on the closed interval [a, b] and differentiability on the open interval (a, b); if either fails, the conclusion can fail." },
+    { "id": "c6", "text": "Rolle's Theorem is the special case of the MVT where f(a) = f(b), guaranteeing a point c with f'(c) = 0." },
+    { "id": "c7", "text": "To apply the MVT, verify the hypotheses, compute the average rate of change, set f'(x) equal to it, and keep solutions inside (a, b)." },
+    { "id": "c8", "text": "Example: for f(x) = x³ − 3x + 1 on [0, 2], the average rate is 1, and solving 3c² − 3 = 1 gives c = 2/√3 ≈ 1.155 in (0, 2)." },
+    { "id": "c9", "text": "A jump discontinuity can make the MVT fail because no tangent matches the secant slope, as with a step function." },
+    { "id": "c10", "text": "A corner like f(x) = |x| on [−1, 1] satisfies continuity but not differentiability, and the MVT conclusion fails there." },
+    { "id": "c11", "text": "The Extreme Value Theorem says that a function continuous on a closed interval [a, b] attains both an absolute maximum and an absolute minimum on that interval." },
+    { "id": "c12", "text": "The EVT requires a closed, bounded interval; on an open interval like (0, 1) a continuous function such as f(x) = x may attain neither an absolute max nor min." },
+    { "id": "c13", "text": "A critical point is an interior x where f'(x) = 0 or f'(x) is undefined while f is defined." },
+    { "id": "c14", "text": "Absolute extrema of a continuous function on a closed interval occur only at critical points or at the endpoints." },
+    { "id": "c15", "text": "The Candidates Test (Closed Interval Method) evaluates f at all critical points and both endpoints, then takes the largest and smallest values." },
+    { "id": "c16", "text": "Example: for f(x) = 2x³ − 9x² + 12x on [0, 3], the critical points are x = 1 and x = 2, and evaluating gives f(0)=0, f(1)=5, f(2)=4, f(3)=9." },
+    { "id": "c17", "text": "In that example the absolute maximum f(3) = 9 and absolute minimum f(0) = 0 both occur at endpoints, illustrating why endpoints must be checked." },
+    { "id": "c18", "text": "On free response, both MVT hypotheses must be stated as satisfied before applying the theorem, or the justification point is lost." },
+    { "id": "c19", "text": "A consequence of the MVT: if f'(x) = 0 on an interval, then f is constant there, which is why two antiderivatives of the same function differ by a constant." },
+    { "id": "c20", "text": "A consequence of the MVT: if f'(x) > 0 on an interval, then f is strictly increasing there, justifying the Increasing/Decreasing Test." },
+    { "id": "c21", "text": "Toll-camera speed enforcement uses the MVT: average speed over a known distance exceeding the limit guarantees the limit was exceeded at some instant." },
+    { "id": "c22", "text": "A common AP table problem gives values of f and asks you to justify that f'(c) equals a value; compute the average rate of change between two entries and cite the MVT." }
+  ]
+}

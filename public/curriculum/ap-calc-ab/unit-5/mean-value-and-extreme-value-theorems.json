@@ -1,0 +1,98 @@
+{
+  "id": "ap-calc-ab-u5-mean-value-and-extreme-value-theorems",
+  "title": "The Mean Value and Extreme Value Theorems",
+  "subject": "AP Calculus AB",
+  "unit": "Analytical Applications of Differentiation",
+  "track": "ap",
+  "difficulty": "ap",
+  "duration": "45 min",
+  "objectives": [
+    "State the Mean Value Theorem with its two hypotheses (continuity on [a, b], differentiability on (a, b)) and interpret it as a tangent parallel to the secant.",
+    "Apply the MVT to guarantee a value c where the instantaneous rate equals the average rate, including from a table of values.",
+    "State the Extreme Value Theorem and identify critical points where f'(x) = 0 or is undefined.",
+    "Use the Candidates Test (Closed Interval Method) to find absolute extrema on a closed interval."
+  ],
+  "sections": [
+    {
+      "type": "explanation",
+      "heading": "The Idea Before the Formula",
+      "content": "Imagine you drive from your house to a town 120 miles away, and the trip takes exactly 2 hours. Your average speed was 120/2 = 60 mph. Now the question: at some moment during the trip, were you going exactly 60 mph?\n\nYour gut says yes — and your gut is right. You might have started slow, sped up on the highway, slowed in a school zone, but at some instant your speedometer must have read exactly 60. Why? If you were always below 60, you couldn't have covered 120 miles in 2 hours; if you were always above 60, you'd have covered more than 120. To get from speeds below the average to speeds above it, you must pass through the average at least once.\n\nThat's the Mean Value Theorem in plain English: if a function is well-behaved enough (continuous and differentiable), then at some point in the interval the instantaneous rate of change equals the average rate of change. The speedometer reading (instantaneous rate) must match the trip average (average rate) at least once.\n\nThis sounds obvious but has deep consequences, because it links the *local* behavior of a function (its derivative at a single point) to its *global* behavior (the average slope across an entire interval). Much of the analytical machinery of this unit rests on it."
+    },
+    {
+      "type": "explanation",
+      "heading": "The Formal Statement of the MVT",
+      "content": "The Mean Value Theorem (MVT): If f is continuous on the closed interval [a, b] and differentiable on the open interval (a, b), then there exists at least one number c in (a, b) such that\n\n  f'(c) = [f(b) − f(a)] / (b − a).\n\nUnpack each piece. The left side, f'(c), is the slope of the tangent line at x = c — the instantaneous rate of change. The right side is the slope of the secant line connecting the endpoints (a, f(a)) and (b, f(b)) — the average rate of change over the whole interval.\n\nSo the MVT says: somewhere between a and b, the tangent line is parallel to the secant line. If you draw the straight line connecting the two endpoints of the graph, then somewhere in between the curve has exactly that slope.\n\nThe hypotheses matter. Continuity on the closed interval [a, b] guarantees no jumps or holes, so the function actually connects the two endpoints. Differentiability on the open interval (a, b) guarantees no corners or vertical tangents inside, so a slope exists everywhere it needs to. If either condition fails, the conclusion can fail too. A special case worth naming: when f(a) = f(b), the secant slope is 0 and the MVT guarantees a point with f'(c) = 0 — that's Rolle's Theorem."
+    },
+    {
+      "type": "steps",
+      "heading": "Applying the MVT to Find c",
+      "steps": [
+        { "title": "Check the hypotheses", "content": "Confirm f is continuous on [a, b] and differentiable on (a, b). Polynomials, sin, cos, and eˣ satisfy both automatically; watch for corners, holes, or vertical tangents otherwise." },
+        { "title": "Compute the average rate of change", "content": "Find the secant slope [f(b) − f(a)]/(b − a) over the interval." },
+        { "title": "Set f'(x) equal to that slope", "content": "Solve f'(x) = [f(b) − f(a)]/(b − a) for x." },
+        { "title": "Keep only solutions inside (a, b)", "content": "Discard any solutions outside the open interval; each remaining value is a guaranteed c." }
+      ]
+    },
+    {
+      "type": "example",
+      "heading": "Finding the Guaranteed Point c",
+      "content": "Let f(x) = x³ − 3x + 1 on [0, 2]. Find the value of c guaranteed by the MVT.\n\nHypotheses: f is a polynomial, so it is continuous and differentiable everywhere — both conditions hold on [0, 2].\n\nAverage rate of change:\n  f(2) = 8 − 6 + 1 = 3, f(0) = 1, so slope = (3 − 1)/(2 − 0) = 2/2 = 1.\n\nSet f'(x) equal to it:\n  f'(x) = 3x² − 3, so 3c² − 3 = 1 → 3c² = 4 → c² = 4/3 → c = ±2/√3 ≈ ±1.155.\n\nSince c must lie in (0, 2), take c = 2/√3 ≈ 1.155.\n\nAt this point the tangent line has slope 1, exactly matching the secant from (0, 1) to (2, 3). Graphed, the tangent at x ≈ 1.155 runs perfectly parallel to the line connecting the endpoints."
+    },
+    {
+      "type": "callout",
+      "variant": "warning",
+      "heading": "Both Hypotheses Must Hold — Check Them",
+      "content": "The MVT only applies if f is continuous on the CLOSED interval and differentiable on the OPEN interval. Two classic failures: a jump discontinuity (e.g., a step function) where no tangent ever matches the secant slope, and a corner like f(x) = |x| on [−1, 1], where the secant slope is 0 but the only candidate point is the non-differentiable corner. On free response, explicitly state that both hypotheses are met before invoking the theorem — skipping that justification costs points even when your c is correct."
+    },
+    {
+      "type": "quiz",
+      "question": "f is continuous on [1, 7] and differentiable on (1, 7), with f(1) = 2 and f(7) = 14. The MVT guarantees a c in (1, 7) with f'(c) equal to:",
+      "options": ["12", "2", "16", "6"],
+      "correctIndex": 1,
+      "explanation": "The MVT guarantees f'(c) equals the average rate of change [f(7) − f(1)]/(7 − 1) = (14 − 2)/6 = 12/6 = 2. The distractor 12 is the numerator f(7) − f(1) without dividing by the interval length, and 6 is the interval length itself."
+    },
+    {
+      "type": "explanation",
+      "heading": "The Extreme Value Theorem and Critical Points",
+      "content": "The MVT's companion is the Extreme Value Theorem (EVT): if f is continuous on a closed interval [a, b], then f attains both an absolute maximum and an absolute minimum somewhere on [a, b]. Continuity plus a closed, bounded interval *guarantees* a highest and a lowest value exist — they don't escape to infinity and there's no 'almost-but-never-reached' value. The closedness is essential: f(x) = x on the open interval (0, 1) has no absolute max or min, because the endpoints where they'd occur aren't included.\n\nWhere can those extreme values occur? Only at two kinds of locations: critical points, and endpoints of the interval. A *critical point* is an interior point where f'(x) = 0 (a horizontal tangent) or where f'(x) does not exist (a corner or cusp, provided f itself is defined there). The logic is that at an interior maximum or minimum, the function can't be heading uphill or downhill — so the derivative is either zero or undefined.\n\nThis is the bridge from the EVT to a concrete procedure. The EVT promises the extremes exist; critical points and endpoints tell you the only places to look. Putting those together gives the Candidates Test for absolute extrema, which you'll use constantly in optimization."
+    },
+    {
+      "type": "table",
+      "heading": "Two Theorems, Side by Side",
+      "headers": ["Theorem", "Hypotheses", "Conclusion"],
+      "rows": [
+        ["Extreme Value Theorem", "f continuous on closed [a, b]", "f attains an absolute max and an absolute min on [a, b]"],
+        ["Mean Value Theorem", "f continuous on [a, b], differentiable on (a, b)", "some c in (a, b) has f'(c) = average rate of change"],
+        ["Rolle's Theorem (special MVT)", "MVT hypotheses plus f(a) = f(b)", "some c in (a, b) has f'(c) = 0"]
+      ]
+    },
+    {
+      "type": "example",
+      "heading": "The Candidates Test for Absolute Extrema",
+      "content": "Find the absolute maximum and minimum of f(x) = 2x³ − 9x² + 12x on the closed interval [0, 3].\n\nStep 1 — f is a polynomial, hence continuous on [0, 3], so the EVT guarantees absolute extremes exist.\n\nStep 2 — Find critical points. f'(x) = 6x² − 18x + 12 = 6(x² − 3x + 2) = 6(x − 1)(x − 2). So f'(x) = 0 at x = 1 and x = 2, both inside (0, 3). (f' is defined everywhere, so there are no other critical points.)\n\nStep 3 — Evaluate f at every candidate: the critical points and the two endpoints.\n  f(0) = 0\n  f(1) = 2 − 9 + 12 = 5\n  f(2) = 16 − 36 + 24 = 4\n  f(3) = 54 − 81 + 36 = 9\n\nStep 4 — Compare. The largest value is f(3) = 9 (absolute maximum, at an endpoint) and the smallest is f(0) = 0 (absolute minimum, also an endpoint). Notice the absolute extremes here are at the endpoints, NOT the critical points — which is exactly why endpoints must always be tested on a closed interval."
+    },
+    {
+      "type": "quiz",
+      "question": "Which point is NOT a critical point of f(x) = x³ − 3x²?",
+      "options": ["x = 0, where f'(x) = 0", "x = 2, where f'(x) = 0", "x = 1, an interior point where f'(x) ≠ 0", "Critical points occur where f'(x) = 0 or is undefined"],
+      "correctIndex": 2,
+      "explanation": "f'(x) = 3x² − 6x = 3x(x − 2), which is zero at x = 0 and x = 2 — those are critical points. At x = 1, f'(1) = 3 − 6 = −3 ≠ 0 and f' is defined, so x = 1 is not a critical point. Critical points require f'(x) = 0 or f'(x) undefined."
+    },
+    {
+      "type": "callout",
+      "variant": "tip",
+      "heading": "The Candidates Test in One Line",
+      "content": "On a closed interval, the absolute max and min of a continuous function occur among the critical points and the endpoints — so evaluate f at all of them and pick the largest and smallest values. Do not skip the endpoints; the previous example's extremes were both endpoints. Also remember that critical points include places where f' is undefined (corners, cusps), not just where f' = 0. AP free-response questions frequently ask for absolute extrema on a closed interval and expect this comparison shown explicitly."
+    },
+    {
+      "type": "deepdive",
+      "heading": "Powerful Consequences of the MVT",
+      "content": "The MVT might seem like a curiosity, but it is the foundation for several results you use all the time.\n\nConsequence 1: If f'(x) = 0 for all x in an interval, then f is constant there. For any a and b in the interval, the MVT gives f(b) − f(a) = f'(c)(b − a) = 0, so f(b) = f(a). This is the rigorous reason two antiderivatives of the same function differ only by a constant — the '+C' you'll meet in integration.\n\nConsequence 2: If f'(x) > 0 throughout an interval, then f is strictly increasing there. The MVT gives f(b) − f(a) = f'(c)(b − a); with b > a and f'(c) > 0 the right side is positive, so f(b) > f(a). This is the proof behind the Increasing/Decreasing Test that powers the next lesson's first derivative test.\n\nConsequence 3 (real world): toll-camera speed enforcement. If cameras record your entry and exit times over a known distance, your average speed is computable; if it exceeds the limit, the MVT guarantees you exceeded the limit at some instant, even with no radar reading. Several countries use exactly this.\n\nConsequence 4: the MVT is the gateway to proving the Fundamental Theorem of Calculus, which connects derivatives and integrals. So this 'simple' statement about tangents parallel to secants helps hold the whole structure of calculus together.\n\nOn the AP exam, the MVT most often appears in free-response problems giving a table of values for f and asking you to justify that f'(c) equals some number for some c. Compute the average rate of change between two table entries, confirm the hypotheses, and cite the MVT to conclude f' must take that value somewhere between them — for instance, on the interval where (f(b) − f(a))/(b − a) equals the target slope."
+    },
+    {
+      "type": "keypoint",
+      "content": "MVT: if f is continuous on [a, b] and differentiable on (a, b), some c in (a, b) has f'(c) = [f(b) − f(a)]/(b − a) (a tangent parallel to the secant). EVT: a function continuous on a closed [a, b] attains an absolute max and min, which occur only at critical points (f' = 0 or undefined) or endpoints — evaluate f at all of these (the Candidates Test) to find absolute extrema."
+    }
+  ],
+  "aiContext": "AP Calculus AB Unit 5, the Mean Value Theorem and Extreme Value Theorem. For the MVT, stress that both hypotheses (continuity on the closed interval, differentiability on the open interval) must be verified before use, and that it guarantees a point where instantaneous rate equals average rate; the common table-based free-response asks students to justify f'(c) equals a computed average rate. Introduce the EVT as the existence guarantee for absolute extrema on a closed interval, define critical points as where f' = 0 or is undefined, and drill the Candidates Test that evaluates f at critical points and endpoints — students frequently forget the endpoints. Note Rolle's Theorem as the f(a)=f(b) special case and that the MVT underlies the increasing/decreasing test and the +C in antiderivatives. Push justification language, since these theorems are tested for reasoning, not just computation."
+}

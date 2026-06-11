@@ -1,0 +1,99 @@
+{
+  "id": "ap-calc-ab-u6-riemann-sums-and-approximating-area",
+  "title": "Riemann Sums and Approximating Area",
+  "subject": "AP Calculus AB",
+  "unit": "Integration and Accumulation of Change",
+  "track": "ap",
+  "difficulty": "ap",
+  "duration": "50 min",
+  "objectives": [
+    "Approximate the area under a curve using left, right, and midpoint Riemann sums.",
+    "Determine whether a Riemann sum over- or under-estimates based on whether the function is increasing/decreasing.",
+    "Apply the Trapezoidal Rule, including with unequal subinterval widths from a table of data.",
+    "Explain how the limit of Riemann sums as the number of rectangles grows defines the definite integral."
+  ],
+  "sections": [
+    {
+      "type": "explanation",
+      "heading": "The Problem of Area Under a Curve",
+      "content": "You already know how to find the area of rectangles, triangles, and circles — shapes with clean formulas. But what is the area under a curve like y = x² between x = 0 and x = 2? The top boundary is curved, so no elementary formula applies. This question turns out to be one of the two great problems of calculus (the other being the tangent line), and answering it opens the entire second half of the course.\n\nThe idea that cracks it is beautifully simple: if you can't measure a curved region directly, *approximate* it with shapes you can measure. Slice the region into thin vertical strips and replace each strip with a rectangle whose area you can compute. Add up the rectangles, and you get an estimate of the total area. Use a few wide rectangles and the estimate is rough; use many thin ones and it gets remarkably accurate.\n\nThese rectangle approximations are called *Riemann sums*, after Bernhard Riemann. They matter for two reasons. First, they give you a practical way to estimate area (and any accumulated quantity) when you only have data points or can't find a formula. Second, and more profoundly, taking the limit of Riemann sums as the rectangles become infinitely thin *defines* the definite integral — the exact area. So Riemann sums are both a hands-on tool and the conceptual foundation of integration. This lesson builds the tool; the next turns it into the definite integral."
+    },
+    {
+      "type": "explanation",
+      "heading": "Left, Right, and Midpoint Rectangles",
+      "content": "To build a Riemann sum, divide the interval [a, b] into n subintervals. If they're equally wide, each has width Δx = (b − a)/n. On each subinterval you build a rectangle whose width is Δx and whose height is the function value at some chosen point. The three standard choices for that point give three named sums.\n\nA *left Riemann sum* uses the function value at the left endpoint of each subinterval as the height. A *right Riemann sum* uses the right endpoint. A *midpoint Riemann sum* uses the middle of each subinterval. Each sum is just (width) × (height) added across all rectangles: Δx·[f(first point) + f(second point) + … ].\n\nThe choice matters because the rectangles will sit differently relative to the curve. For an increasing function, left endpoints are always below the curve's right portion, so left rectangles fall short — they *underestimate* the true area. Right endpoints sit above, so right rectangles *overestimate*. For a decreasing function the roles reverse. The midpoint sum usually beats both, because each rectangle's top crosses the curve, with the part it overshoots roughly canceling the part it undershoots. Understanding which way each method errs is a frequently tested idea, so it's worth picturing the rectangles against the curve rather than just memorizing a rule."
+    },
+    {
+      "type": "steps",
+      "heading": "Computing a Riemann Sum",
+      "steps": [
+        { "title": "Find the subinterval width", "content": "For n equal subintervals on [a, b], compute Δx = (b − a)/n. (If widths are unequal, as with table data, track each width separately.)" },
+        { "title": "List the sample points", "content": "For a left sum use the left endpoints, for a right sum the right endpoints, for a midpoint sum the midpoints of each subinterval." },
+        { "title": "Evaluate the function at each sample point", "content": "Compute the heights f(sample point) for every rectangle." },
+        { "title": "Multiply by width and add", "content": "Sum the heights and multiply by Δx (or sum width × height for unequal widths) to get the approximate area." }
+      ]
+    },
+    {
+      "type": "example",
+      "heading": "Left and Right Sums for f(x) = x²",
+      "content": "Approximate the area under f(x) = x² on [0, 2] using n = 4 equal subintervals.\n\nWidth: Δx = (2 − 0)/4 = 0.5. Subintervals: [0, 0.5], [0.5, 1], [1, 1.5], [1.5, 2].\n\nLeft Riemann sum (left endpoints x = 0, 0.5, 1, 1.5):\n  heights f = 0, 0.25, 1, 2.25\n  L = 0.5·(0 + 0.25 + 1 + 2.25) = 0.5·3.5 = 1.75\n\nRight Riemann sum (right endpoints x = 0.5, 1, 1.5, 2):\n  heights f = 0.25, 1, 2.25, 4\n  R = 0.5·(0.25 + 1 + 2.25 + 4) = 0.5·7.5 = 3.75\n\nThe exact area (which the next lesson will compute) is 8/3 ≈ 2.667. Notice the left sum (1.75) underestimates and the right sum (3.75) overestimates — exactly what we'd expect for an increasing function. The true area lies between them, and averaging the two gives 2.75, already close."
+    },
+    {
+      "type": "table",
+      "heading": "Over- or Under-Estimate?",
+      "headers": ["Function behavior", "Left sum", "Right sum"],
+      "rows": [
+        ["increasing on [a, b]", "underestimate", "overestimate"],
+        ["decreasing on [a, b]", "overestimate", "underestimate"],
+        ["concave up (trapezoid)", "trapezoid overestimates", "—"],
+        ["concave down (trapezoid)", "trapezoid underestimates", "—"]
+      ]
+    },
+    {
+      "type": "callout",
+      "variant": "warning",
+      "heading": "Over/Under Depends on Increasing vs. Decreasing",
+      "content": "Don't memorize 'left sums underestimate' as a universal rule — it's only true for increasing functions. For a decreasing function, the LEFT endpoints are the high points, so the left sum OVERestimates and the right sum underestimates. The reliable approach on the exam is to picture (or sketch) the rectangles against the curve: if the rectangles poke above the curve, it's an overestimate; if they fall short, it's an underestimate. For the Trapezoidal Rule, the determining factor is concavity, not direction: trapezoids overestimate where the curve is concave up and underestimate where it's concave down."
+    },
+    {
+      "type": "quiz",
+      "question": "For a function that is increasing on [a, b], a LEFT Riemann sum will:",
+      "options": ["Overestimate the area", "Underestimate the area", "Give the exact area", "Depend on concavity"],
+      "correctIndex": 1,
+      "explanation": "For an increasing function, the left endpoint of each subinterval is the lowest point, so the left rectangles sit below the curve and underestimate the area. The right sum, using the higher right endpoints, would overestimate."
+    },
+    {
+      "type": "explanation",
+      "heading": "The Trapezoidal Rule",
+      "content": "Rectangles have flat tops, which is exactly why they miss the curve. A better-fitting shape connects consecutive points with a straight slanted segment, turning each strip into a *trapezoid*. This is the Trapezoidal Rule, and it typically gives a much closer estimate than left or right sums for the same number of subintervals.\n\nThe area of one trapezoid is its width times the average of its two parallel sides (the two function values at the ends): width × [f(left) + f(right)]/2. A trapezoidal approximation just adds these up across all the strips. In fact, the trapezoidal estimate equals the *average of the left and right Riemann sums* — averaging the underestimate and overestimate naturally lands closer to the truth.\n\nA major practical advantage: the Trapezoidal Rule works cleanly even when the subintervals have *unequal* widths, which is the usual situation when you're handed a table of measured data taken at irregular time intervals. You simply compute each trapezoid with its own width and add them. This is precisely the kind of problem the AP exam poses with rate data — a table of, say, water flow measured at scattered times, asking you to estimate the total. Whether the function is given by a formula or only by a table, the trapezoid method applies the same way."
+    },
+    {
+      "type": "example",
+      "heading": "Trapezoidal Estimate From a Data Table",
+      "content": "A sensor records the rate f(t) (in liters/hour) at irregular times. Estimate the total using trapezoids over the data.\n\n  t (hours):   0    2    5\n  f(t):        4    6    10\n\nThe two subintervals have unequal widths: [0, 2] has width 2, and [2, 5] has width 3. Compute each trapezoid as width × (average of the two endpoint heights):\n\n  First trapezoid, [0, 2]: 2 · (4 + 6)/2 = 2 · 5 = 10\n  Second trapezoid, [2, 5]: 3 · (6 + 10)/2 = 3 · 8 = 24\n\n  Total ≈ 10 + 24 = 34 liters.\n\nNotice we never needed a formula for f — only the tabulated values. Each strip used its own width, which is why the trapezoidal rule is the natural tool for unequally spaced data. If asked whether this over- or under-estimates, you'd reason from concavity, which a bare table doesn't reveal, so such problems usually just ask for the estimate and its meaning (here, approximately 34 liters of total accumulated volume)."
+    },
+    {
+      "type": "quiz",
+      "question": "Using the table t = 0, 4 with f = 10, 2, what is the trapezoidal estimate of the area over [0, 4]?",
+      "options": ["48", "24", "12", "8"],
+      "correctIndex": 1,
+      "explanation": "One trapezoid of width 4 with parallel sides 10 and 2 has area 4 · (10 + 2)/2 = 4 · 6 = 24. The trapezoidal estimate uses the average of the endpoint heights times the width, which here equals the average of the left sum (40) and right sum (8)."
+    },
+    {
+      "type": "callout",
+      "variant": "tip",
+      "heading": "Rate Tables, Units, and the Meaning of the Sum",
+      "content": "On AP free response, Riemann sums most often appear with a table of a RATE (velocity, flow rate, rate of consumption). The sum approximates the total accumulated quantity, and its units are (rate units) × (input units) — e.g., (liters/hour)·(hours) = liters. Always state what the estimate represents and its units. Read carefully whether the table calls for a left sum, right sum, or trapezoidal estimate, and remember that for n data points you get n − 1 subintervals. Showing the explicit sum (each width times each height) earns the method points even if arithmetic slips."
+    },
+    {
+      "type": "deepdive",
+      "heading": "From Riemann Sums to the Definite Integral",
+      "content": "Riemann sums are an approximation, but their real significance is what happens in the limit. As you use more and more rectangles — letting n grow toward infinity and the width Δx shrink toward zero — the staircase of rectangle tops hugs the curve ever more tightly, and the total rectangle area converges to a single number: the exact area under the curve.\n\nWe can write a Riemann sum compactly with sigma notation as the sum from i = 1 to n of f(xᵢ)·Δx, where xᵢ is the sample point in the i-th subinterval. The definite integral is *defined* as the limit of this expression:\n\n  ∫ from a to b of f(x) dx = lim (n → ∞) of Σ f(xᵢ)·Δx.\n\nThis definition explains the integral notation itself. The elongated S, ∫, is a stretched 'sum,' a reminder that an integral is the limit of a sum. The 'f(x)' is the height of a representative rectangle, and 'dx' is the infinitesimally small width that Δx becomes in the limit — so 'f(x) dx' is the area of an infinitely thin rectangle, and the integral adds up infinitely many of them. Remarkably, for a continuous function it doesn't matter whether you used left, right, or midpoint heights: all three Riemann sums converge to the same limit, the same exact area.\n\nThis is the conceptual heart of integration, and it's worth holding onto as you learn faster techniques. The Fundamental Theorem of Calculus will soon let you compute these limits instantly using antiderivatives, so you'll rarely sum rectangles by hand again. But the *meaning* never changes: a definite integral is the limit of Riemann sums, an accumulation of infinitely many infinitesimal pieces. Whenever you see an integral, you can read it as 'add up f(x) dx over the interval' — and that reading is what lets you set up integrals for area, volume, distance, and every other accumulated quantity in the rest of the course."
+    },
+    {
+      "type": "keypoint",
+      "content": "A Riemann sum approximates area as Σ f(sample point)·Δx using left, right, or midpoint heights; for an increasing function the left sum underestimates and the right sum overestimates (reversed for decreasing). The Trapezoidal Rule uses width × average of endpoint heights and handles unequal widths from data tables. As n → ∞ the Riemann sum converges to the exact area, which defines the definite integral ∫ₐᵇ f(x) dx."
+    }
+  ],
+  "aiContext": "AP Calculus AB Unit 6, Riemann sums and area approximation. Cover left, right, and midpoint sums and the Trapezoidal Rule, and stress that over/underestimation for left vs right sums depends on whether the function is increasing or decreasing (not a fixed rule), while for trapezoids it depends on concavity. The most common free-response version uses a table of a RATE with possibly unequal subinterval widths, asking for an estimate of total accumulation with correct units and meaning; remind students n data points give n−1 subintervals and to show the explicit sum. Build toward the definition of the definite integral as the limit of Riemann sums (sigma notation, n→∞), explaining the integral sign as an elongated sum and f(x)dx as an infinitesimal rectangle. This sets up the definite integral and the FTC in the next lessons."
+}

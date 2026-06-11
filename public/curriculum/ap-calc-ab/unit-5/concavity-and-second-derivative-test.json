@@ -1,0 +1,101 @@
+{
+  "id": "ap-calc-ab-u5-concavity-and-second-derivative-test",
+  "title": "Concavity and the Second Derivative Test",
+  "subject": "AP Calculus AB",
+  "unit": "Analytical Applications of Differentiation",
+  "track": "ap",
+  "difficulty": "ap",
+  "duration": "45 min",
+  "objectives": [
+    "Use the sign of f''(x) to determine intervals of concave up and concave down.",
+    "Locate inflection points where concavity changes (f'' = 0 or undefined, with a sign change).",
+    "Apply the Second Derivative Test to classify critical points as local maxima or minima.",
+    "Recognize when the Second Derivative Test is inconclusive and fall back to the First Derivative Test."
+  ],
+  "sections": [
+    {
+      "type": "explanation",
+      "heading": "Curvature: How the Slope Itself Changes",
+      "content": "The first derivative tells you whether a graph is going up or down. The second derivative tells you how the graph *bends* — whether it curves like a bowl or like a dome. This curvature is called concavity, and it's the second piece of information you need to know a function's true shape.\n\nWhen f''(x) > 0, the graph is *concave up*: it curves like the inside of a cup or a smile, holding water. When f''(x) < 0, the graph is *concave down*: it curves like a cap or a frown, spilling water. The mechanism behind these labels is that f'' is the derivative of f', so the sign of f'' tells you whether the *slope* f' is increasing or decreasing. Concave up means the slopes are increasing (the curve turns more and more upward); concave down means the slopes are decreasing.\n\nHere's a subtlety worth internalizing early: concavity is independent of whether the function is rising or falling. A function can be increasing while concave down (rising but leveling off, like the top of a hill) or increasing while concave up (rising and accelerating). All four combinations of direction and concavity occur, and together they describe every basic shape a smooth curve can have. The driving analogy: f' is your velocity, f'' is your acceleration — you can be moving forward while either speeding up or slowing down."
+    },
+    {
+      "type": "explanation",
+      "heading": "Inflection Points",
+      "content": "An *inflection point* is where the concavity changes — from concave up to concave down, or vice versa. It's the place where a curve stops bending one way and starts bending the other, like the middle of an S-shape where the curve is momentarily straight in its bending before reversing.\n\nTo find inflection points, look where f''(x) = 0 or where f''(x) is undefined — these are the only candidates — and then confirm that f'' actually *changes sign* there. The sign-change requirement is exactly parallel to the first-derivative situation: just as f'(c) = 0 doesn't guarantee an extremum, f''(c) = 0 doesn't guarantee an inflection point. You need the concavity to truly switch.\n\nThe classic cautionary example is f(x) = x⁴. Its second derivative f''(x) = 12x² is zero at x = 0, but 12x² is positive on both sides of 0, so the concavity never changes — the graph is concave up throughout, and x = 0 is not an inflection point (it's actually the minimum). The lesson: candidates from f'' = 0 must be tested with a sign chart, never assumed. Inflection points matter because they mark where a trend's *curvature* turns over — in applications, the moment growth stops accelerating and starts decelerating."
+    },
+    {
+      "type": "steps",
+      "heading": "Finding Concavity and Inflection Points",
+      "steps": [
+        { "title": "Compute the second derivative", "content": "Differentiate f twice to get f''(x), simplifying f' before differentiating again." },
+        { "title": "Find candidate x-values", "content": "Solve f''(x) = 0 and find where f''(x) is undefined (with f defined). These divide the domain into intervals." },
+        { "title": "Test the sign of f'' in each interval", "content": "Pick a value in each interval; f'' > 0 means concave up, f'' < 0 means concave down." },
+        { "title": "Confirm inflection points", "content": "An inflection point occurs only where f'' actually changes sign — verify the switch before reporting it." }
+      ]
+    },
+    {
+      "type": "example",
+      "heading": "A Concavity Sign Chart",
+      "content": "Find the concavity and inflection points of f(x) = x⁴ − 6x².\n\nFirst derivative: f'(x) = 4x³ − 12x.\nSecond derivative: f''(x) = 12x² − 12 = 12(x² − 1) = 12(x − 1)(x + 1).\n\nCandidates (f'' = 0): x = −1 and x = 1. (f'' is a polynomial, defined everywhere.)\n\nSign chart for f'':\n  x < −1 (try x = −2): 12(−3)(−1) = 36 > 0 → concave up\n  −1 < x < 1 (try x = 0): 12(−1)(1) = −12 < 0 → concave down\n  x > 1 (try x = 2): 12(1)(3) = 36 > 0 → concave up\n\nSince f'' changes sign at both x = −1 and x = 1, both are inflection points.\n  f(−1) = 1 − 6 = −5 and f(1) = 1 − 6 = −5, so the inflection points are (−1, −5) and (1, −5).\n\nThe graph is concave up on (−∞, −1) and (1, ∞) and concave down on (−1, 1), bending from a cup to a cap and back."
+    },
+    {
+      "type": "callout",
+      "variant": "warning",
+      "heading": "f''(c) = 0 Does Not Guarantee an Inflection Point",
+      "content": "Just as a zero of f' need not be an extremum, a zero of f'' need not be an inflection point — you must verify a sign change in f''. The function f(x) = x⁴ has f''(0) = 0, but f''(x) = 12x² stays positive on both sides, so the concavity never changes and x = 0 is NOT an inflection point. Always run the sign chart. On free response, justify an inflection point by stating that f'' changes sign there; merely solving f'' = 0 is not a complete justification."
+    },
+    {
+      "type": "quiz",
+      "question": "If f''(x) = 6x − 12, on which interval is f concave down?",
+      "options": ["(−∞, 2)", "(2, ∞)", "(−∞, ∞)", "f is never concave down"],
+      "correctIndex": 0,
+      "explanation": "f'' = 6x − 12 is negative when 6x − 12 < 0, i.e. x < 2, so f is concave down on (−∞, 2). It is concave up on (2, ∞), and the sign change at x = 2 marks an inflection point of f."
+    },
+    {
+      "type": "explanation",
+      "heading": "The Second Derivative Test",
+      "content": "Concavity gives a fast way to classify a critical point. If c is a critical point with f'(c) = 0, the Second Derivative Test checks the concavity right at c:\n\n• If f''(c) < 0, the graph is concave down at c — shaped like a hilltop — so c is a local MAXIMUM.\n• If f''(c) > 0, the graph is concave up at c — shaped like a valley — so c is a local MINIMUM.\n• If f''(c) = 0 (or is undefined), the test is INCONCLUSIVE, and you must use the First Derivative Test instead.\n\nThe intuition is clean: at a point where the tangent is horizontal (f'(c) = 0), the concavity decides which way the curve opens. Concave down around a flat spot means a peak; concave up around a flat spot means a dip. You only need to plug one number, c, into f'' — which is often quicker than building a full sign chart for f'.\n\nThe trade-off is that the Second Derivative Test sometimes fails to decide. When f''(c) = 0 the curve is too flat at c to reveal its shape from concavity alone (as with x⁴ at 0, where f''(0) = 0 but it's still a minimum). It also can't be used at critical points where f'' doesn't exist. In those cases the First Derivative Test, which only needs the sign change of f', always works. Many students keep both tests ready and choose whichever is faster for the function at hand."
+    },
+    {
+      "type": "example",
+      "heading": "Classifying With the Second Derivative Test",
+      "content": "Classify the critical points of f(x) = x³ − 3x.\n\nFirst derivative: f'(x) = 3x² − 3 = 3(x² − 1) = 3(x − 1)(x + 1).\nCritical points (f' = 0): x = −1 and x = 1.\n\nSecond derivative: f''(x) = 6x.\n\nApply the Second Derivative Test at each critical point:\n  At x = 1: f''(1) = 6 > 0 → concave up → local MINIMUM. Value f(1) = 1 − 3 = −2.\n  At x = −1: f''(−1) = −6 < 0 → concave down → local MAXIMUM. Value f(−1) = −1 + 3 = 2.\n\nSo f has a local maximum at (−1, 2) and a local minimum at (1, −2). Plugging single numbers into f'' = 6x classified both points in seconds — illustrating why the Second Derivative Test is the quick tool when f'' is easy to evaluate and nonzero at the critical points."
+    },
+    {
+      "type": "table",
+      "heading": "Reading the Second Derivative",
+      "headers": ["Quantity", "Sign", "Meaning"],
+      "rows": [
+        ["f''(x) > 0 on an interval", "positive", "concave up (slopes increasing)"],
+        ["f''(x) < 0 on an interval", "negative", "concave down (slopes decreasing)"],
+        ["f'' changes sign at c", "+/− switch", "inflection point at c"],
+        ["f'(c) = 0 and f''(c) > 0", "positive", "local minimum at c"],
+        ["f'(c) = 0 and f''(c) < 0", "negative", "local maximum at c"],
+        ["f'(c) = 0 and f''(c) = 0", "zero", "test inconclusive — use the First Derivative Test"]
+      ]
+    },
+    {
+      "type": "quiz",
+      "question": "A critical point of f satisfies f'(2) = 0 and f''(2) = 5. What does the Second Derivative Test conclude?",
+      "options": ["Local maximum at x = 2", "Local minimum at x = 2", "Inflection point at x = 2", "The test is inconclusive"],
+      "correctIndex": 1,
+      "explanation": "Since f'(2) = 0 (a horizontal tangent) and f''(2) = 5 > 0 (concave up), the graph opens upward at x = 2, giving a local minimum. A negative f''(2) would give a local maximum; the test is inconclusive only when f''(2) = 0."
+    },
+    {
+      "type": "callout",
+      "variant": "tip",
+      "heading": "When the Second Derivative Test Quits, Switch Tests",
+      "content": "If f''(c) = 0 the Second Derivative Test tells you nothing — do not conclude 'inflection point' or 'neither.' Instead apply the First Derivative Test by checking the sign change of f' around c. For example, f(x) = x⁴ has f''(0) = 0, yet f' changes from negative to positive at 0, revealing a local minimum. The Second Derivative Test also cannot be used where f'' is undefined. The First Derivative Test never has these gaps, so keep it as your reliable fallback on the exam."
+    },
+    {
+      "type": "deepdive",
+      "heading": "Concavity as the Rate of Change of the Slope",
+      "content": "Concavity is easy to picture as 'cup vs. cap,' but its real meaning is sharper: f'' measures how fast the slope f' is changing, and that interpretation unlocks why inflection points matter so much in applications.\n\nConsider a quantity growing over time — a population, an investment, the number of users of an app. The first derivative says it's growing. But is the growth itself accelerating or slowing? That's the second derivative. While f'' > 0, the growth rate is increasing: each period adds more than the last, the hallmark of a boom. While f'' < 0, the growth rate is decreasing: still growing, but by less each period, the signature of a market approaching saturation. The inflection point — where f'' switches from positive to negative — is the precise moment the growth stops accelerating and begins to taper. For an epidemic, that inflection point in the cumulative-cases curve is the turning point officials watch for: new cases per day peak exactly when the cumulative curve inflects.\n\nIn physics the same structure is motion: position s, velocity s' = v, and acceleration s'' = a. Concavity of the position graph is literally acceleration. A position curve that is concave up has positive acceleration; concave down has negative acceleration. Inflection points of position are where acceleration changes sign.\n\nThis is also why the Second Derivative Test works at all. Near a critical point where f'(c) = 0, the value of f''(c) tells you whether the slope is increasing through zero (going from negative to positive — a valley) or decreasing through zero (positive to negative — a peak). The test is really the First Derivative Test in disguise, with f''(c) standing in for 'which way is f' changing as it crosses zero.' Seeing that connection means you never have to memorize the test's direction — you can rederive it from the meaning of f'' in a moment of doubt."
+    },
+    {
+      "type": "keypoint",
+      "content": "f is concave up where f''(x) > 0 and concave down where f''(x) < 0; an inflection point occurs where f'' changes sign (not merely where f'' = 0). The Second Derivative Test: at a critical point with f'(c) = 0, f''(c) > 0 gives a local minimum and f''(c) < 0 gives a local maximum, while f''(c) = 0 is inconclusive — then use the First Derivative Test."
+    }
+  ],
+  "aiContext": "AP Calculus AB Unit 5, concavity and the Second Derivative Test. Stress that f'' > 0 is concave up and f'' < 0 is concave down, and that an inflection point requires a SIGN CHANGE in f'' (x⁴ at 0 is the counterexample where f''=0 but no inflection). The Second Derivative Test classifies a critical point with f'(c)=0: positive f''(c) gives a minimum, negative gives a maximum, and zero is inconclusive, requiring the First Derivative Test. Emphasize that the test cannot be used when f''(c)=0 or f'' is undefined, and that the First Derivative Test is the universal fallback. Reinforce the interpretation of f'' as the rate of change of the slope (and as acceleration for position), which explains why inflection points mark where growth stops accelerating. Require justification by sign change for inflection points on free response."
+}

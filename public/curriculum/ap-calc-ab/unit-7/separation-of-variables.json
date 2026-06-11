@@ -1,0 +1,99 @@
+{
+  "id": "ap-calc-ab-u7-separation-of-variables",
+  "title": "Solving Separable Differential Equations",
+  "subject": "AP Calculus AB",
+  "unit": "Differential Equations",
+  "track": "ap",
+  "difficulty": "ap",
+  "duration": "45 min",
+  "objectives": [
+    "Recognize a separable differential equation that can be written as dy/dx = g(x)·h(y).",
+    "Separate the variables and integrate both sides to find the general solution.",
+    "Apply an initial condition to determine the constant and find the particular solution.",
+    "Handle the algebra of solving for y, including exponentiating and absorbing constants."
+  ],
+  "sections": [
+    {
+      "type": "explanation",
+      "heading": "Getting the Variables Onto Separate Sides",
+      "content": "Slope fields let you understand a differential equation qualitatively. Separation of variables is the main *algebraic* technique in AP Calculus AB for finding an exact formula for the solution. It applies to a special but very common type called a *separable* equation — one you can rearrange so that all the y's (with dy) sit on one side and all the x's (with dx) sit on the other.\n\nThe core idea is to treat dy/dx, which you've always read as a single symbol for the derivative, as though it were a ratio of two small quantities dy and dx that you can move around algebraically. If dy/dx = g(x)·h(y), you divide both sides by h(y) and multiply both sides by dx to get dy/h(y) = g(x) dx. Now each side involves only one variable. The y-stuff is fully on the left, the x-stuff fully on the right.\n\nOnce separated, you integrate both sides — the left with respect to y, the right with respect to x — and the differential equation collapses into an ordinary algebraic relationship between x and y (plus a constant). The technique works because of the chain rule running in reverse, which the deep-dive will make precise. For now, the headline is: separate, then integrate. That two-word recipe solves a large share of the differential equations on the exam, including the all-important growth and decay models of the next lesson."
+    },
+    {
+      "type": "explanation",
+      "heading": "Separate, Integrate, Solve",
+      "content": "The full method has a reliable shape. First, separate: rearrange dy/dx = g(x)·h(y) into the form (1/h(y)) dy = g(x) dx, getting every y onto the left with dy and every x onto the right with dx. Second, integrate both sides: ∫(1/h(y)) dy = ∫g(x) dx. Because both sides are antiderivatives, this produces a single constant of integration — by convention you write just one +C, usually on the right side, since combining the two constants from each side gives one arbitrary constant.\n\nThird, solve for y if possible. After integrating you'll have an equation relating y and x; often you can solve it explicitly for y, though sometimes the solution is left in implicit form. A recurring step is exponentiating to undo a logarithm: integrating 1/y gives ln|y|, and solving for y means writing y = e^(everything else), which neatly absorbs the constant.\n\nFinally, if you have an initial condition, apply it to find the constant. There's a strategic choice here: you can solve for C right after integrating (while the equation is in its simplest form) and then finish solving for y, or solve for y first and then apply the condition. Solving for C early is frequently cleaner, especially when a logarithm or exponential is involved, because it avoids carrying an awkward constant through the algebra. Either order is valid; the key is to apply the initial condition exactly once and correctly."
+    },
+    {
+      "type": "steps",
+      "heading": "The Separation of Variables Procedure",
+      "steps": [
+        { "title": "Separate the variables", "content": "Rewrite dy/dx = g(x)·h(y) as (1/h(y)) dy = g(x) dx, with all y's and dy on one side, all x's and dx on the other." },
+        { "title": "Integrate both sides", "content": "Compute ∫(1/h(y)) dy = ∫g(x) dx, writing a single +C (conventionally on the x-side)." },
+        { "title": "Apply the initial condition (often now)", "content": "If given y(x₀) = y₀, substitute to solve for C while the equation is still simple — frequently the cleanest moment." },
+        { "title": "Solve for y", "content": "Use algebra (and exponentiation to undo a logarithm) to express y explicitly as a function of x, if possible." }
+      ]
+    },
+    {
+      "type": "example",
+      "heading": "A First Separable Equation",
+      "content": "Solve dy/dx = xy with the initial condition y(0) = 3.\n\nSeparate: divide by y and multiply by dx:\n  (1/y) dy = x dx.\n\nIntegrate both sides:\n  ∫(1/y) dy = ∫x dx\n  ln|y| = x²/2 + C.\n\nApply the initial condition now, while the equation is simple. At x = 0, y = 3:\n  ln|3| = 0²/2 + C, so C = ln 3.\n\nSolve for y by exponentiating:\n  ln|y| = x²/2 + ln 3\n  |y| = e^(x²/2 + ln 3) = e^(ln 3)·e^(x²/2) = 3e^(x²/2).\n  Since y(0) = 3 > 0, we keep the positive branch: y = 3e^(x²/2).\n\nCheck: dy/dx = 3e^(x²/2)·x = x·(3e^(x²/2)) = xy ✓, and y(0) = 3e⁰ = 3 ✓. The constant ln 3 became the factor 3 out front after exponentiating — a typical and tidy outcome."
+    },
+    {
+      "type": "callout",
+      "variant": "warning",
+      "heading": "One Constant, and Don't Forget to Solve for It",
+      "content": "Three common slips. First, write only ONE +C, not one on each side — combining constants gives a single arbitrary constant (put it on the x-side). Second, you must actually APPLY the initial condition to find C; leaving the answer with a generic C when a particular solution was requested loses points. Third, when integrating 1/y you get ln|y|, and exponentiating gives y = (constant)·e^(...); the arbitrary constant becomes a multiplicative factor (often written A or C·), not an added one. Finally, separation only works if the equation factors as a function of x times a function of y — if it doesn't separate, this method does not apply."
+    },
+    {
+      "type": "quiz",
+      "question": "After separating the equation dy/dx = x/y, which integration is correct?",
+      "options": ["∫y dy = ∫x dx", "∫(1/y) dy = ∫x dx", "∫y dy = ∫(1/x) dx", "∫(1/y) dy = ∫(1/x) dx"],
+      "correctIndex": 0,
+      "explanation": "From dy/dx = x/y, multiply both sides by y dx to separate: y dy = x dx. Integrating gives ∫y dy = ∫x dx, i.e. y²/2 = x²/2 + C. The y must end up multiplied with dy on the left, not as 1/y."
+    },
+    {
+      "type": "explanation",
+      "heading": "Particular Solutions and the Exponential Pattern",
+      "content": "The most important separable equation in the entire course is dy/dx = ky, where k is a constant. It says the rate of change of y is proportional to y itself — the defining property of exponential growth (k > 0) and decay (k < 0). Solving it by separation reveals where the exponential model comes from.\n\nSeparate: (1/y) dy = k dx. Integrate: ln|y| = kx + C. Exponentiate: |y| = e^(kx + C) = e^C·e^(kx). The factor e^C is just a positive constant, and allowing for sign we write y = Ce^(kx), where C is a new arbitrary constant. So *every* solution of dy/dx = ky is an exponential function Ce^(kx) — that's why proportional-rate processes always produce exponential curves.\n\nApplying an initial condition pins down C. If y(0) = y₀, then y₀ = Ce^(k·0) = C, so C is exactly the initial amount, and the particular solution is y = y₀e^(kx). This clean result — the constant equals the starting value — is worth remembering, and it's the backbone of the growth-and-decay lesson that follows. Notice how the absolute value and the additive constant from integration were absorbed into a single multiplicative constant C through exponentiation; managing that algebra confidently is the main technical skill in solving separable equations that involve 1/y."
+    },
+    {
+      "type": "example",
+      "heading": "Deriving the Growth Model",
+      "content": "Solve the initial value problem dy/dt = 0.05y with y(0) = 200 (for example, a population growing at 5% per unit time).\n\nSeparate and integrate:\n  (1/y) dy = 0.05 dt\n  ln|y| = 0.05t + C.\n\nExponentiate to solve for y:\n  |y| = e^(0.05t + C) = e^C·e^(0.05t)\n  y = Ce^(0.05t)   (absorbing e^C and the sign into C).\n\nApply the initial condition y(0) = 200:\n  200 = Ce^(0) = C, so C = 200.\n\nParticular solution:\n  y = 200e^(0.05t).\n\nThe constant turned out to be exactly the initial value 200, matching the general result y = y₀e^(kt). This is the exponential growth law: a quantity whose rate of change is proportional to its current size grows (or, for negative k, decays) exponentially, starting from its initial amount. The next lesson applies this directly to populations, radioactive decay, and other proportional-rate phenomena."
+    },
+    {
+      "type": "table",
+      "heading": "Common Separable Equations",
+      "headers": ["Equation", "Separated form", "Solution"],
+      "rows": [
+        ["dy/dx = ky", "(1/y) dy = k dx", "y = Ce^(kx)"],
+        ["dy/dx = x/y", "y dy = x dx", "y² = x² + C (implicit)"],
+        ["dy/dx = xy", "(1/y) dy = x dx", "y = Ce^(x²/2)"],
+        ["dy/dx = g(x)", "dy = g(x) dx", "y = ∫g(x) dx + C"]
+      ]
+    },
+    {
+      "type": "quiz",
+      "question": "The general solution of dy/dt = ky (k constant) is:",
+      "options": ["y = kt + C", "y = Ce^(kt)", "y = Ct^k", "y = e^(kt) + C"],
+      "correctIndex": 1,
+      "explanation": "Separating gives (1/y) dy = k dt, integrating gives ln|y| = kt + C, and exponentiating gives y = Ce^(kt). A rate proportional to the current amount always yields an exponential solution, not a linear one."
+    },
+    {
+      "type": "callout",
+      "variant": "tip",
+      "heading": "What the AP Reader Wants to See",
+      "content": "On free response, separation-of-variables problems are graded on showing the steps: separate the variables, integrate both sides (with +C), apply the initial condition to find C, and solve for y. Each piece can be worth a point. Don't skip straight to y = Ce^(kx) on a 'solve the differential equation' prompt — show the separation and integration. Watch for the absolute value in ln|y| and exponentiate carefully. Many students lose a point by forgetting the +C or by never using the initial condition; make both automatic."
+    },
+    {
+      "type": "deepdive",
+      "heading": "Why Separation of Variables Works",
+      "content": "Treating dy/dx as a fraction you can split apart feels almost like cheating — dy/dx is defined as a limit, not literally a quotient of two numbers. So why does separating the variables give correct answers? The justification is the chain rule, run in reverse.\n\nStart with a separable equation dy/dx = g(x)·h(y). Divide by h(y) to get (1/h(y))·(dy/dx) = g(x). Now integrate both sides with respect to x: ∫(1/h(y))·(dy/dx) dx = ∫g(x) dx. The left-hand integral is exactly a u-substitution waiting to happen — with u = y, du = (dy/dx) dx — so ∫(1/h(y))·(dy/dx) dx becomes ∫(1/h(y)) dy. That is precisely the left side you'd get by 'multiplying through by dx' and integrating in y. In other words, the informal move of separating dy and dx is shorthand for a legitimate u-substitution that converts an integral in x into an integral in y. The manipulation is rigorous; the fraction notation just hides the chain rule that powers it.\n\nThis also clarifies the method's limits. Separation works only when the right side factors as (function of x) times (function of y), because only then can you isolate all the y-dependence with the dy. Many important differential equations are not separable — for instance dy/dx = x + y cannot be split this way, which is exactly why earlier you could picture its slope field but not solve it by separation. Such equations require other techniques (studied in later courses), or are handled qualitatively with slope fields and numerically with methods like Euler's.\n\nThe payoff of understanding the underlying chain rule is twofold. You'll trust the method instead of memorizing it, and you'll correctly recognize when it applies. And you'll see the unity of the unit: u-substitution from the integration unit is what makes separation of variables valid, slope fields give the geometric view of the same equations, and the exponential model is the single most important equation the method solves. Each tool illuminates the others, and together they let you both *see* and *solve* the differential equations that describe change in the world."
+    },
+    {
+      "type": "keypoint",
+      "content": "A separable equation can be written dy/dx = g(x)·h(y); solve it by separating into (1/h(y)) dy = g(x) dx, integrating both sides (one +C), applying the initial condition to find the constant, and solving for y. Integrating 1/y gives ln|y|, so exponentiating turns the constant into a multiplicative factor. The key result: dy/dt = ky has general solution y = Ce^(kt), the exponential model."
+    }
+  ],
+  "aiContext": "AP Calculus AB Unit 7, separation of variables — the main algebraic method for solving differential equations on the exam. The technique applies to separable equations dy/dx = g(x)h(y): separate so all y's and dy are on one side and all x's and dx on the other, integrate both sides with a single +C, apply the initial condition to find the constant, and solve for y. Emphasize that integrating 1/y gives ln|y| and exponentiating absorbs the constant into a multiplicative factor (y = Ce^(...)). The headline result is dy/dt = ky ⇒ y = Ce^(kt), with C equal to the initial value, which underlies the growth/decay lesson. Common errors: writing +C on both sides, forgetting to apply the initial condition, and mishandling the exponentiation. Justify the method via reverse u-substitution (it is rigorous, not just fraction manipulation) and note that not all equations are separable (e.g., dy/dx = x + y)."
+}

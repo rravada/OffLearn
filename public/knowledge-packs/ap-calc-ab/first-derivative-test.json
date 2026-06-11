@@ -1,0 +1,29 @@
+{
+  "id": "ap-calc-ab-first-derivative-test",
+  "title": "Increasing, Decreasing, and the First Derivative Test",
+  "subject": "AP Calculus AB",
+  "chunks": [
+    { "id": "c1", "text": "A function is increasing where f'(x) > 0 and decreasing where f'(x) < 0, because the derivative is the slope of the graph." },
+    { "id": "c2", "text": "Where f'(x) = 0 the tangent line is horizontal, and the function momentarily pauses, which may or may not be a local extremum." },
+    { "id": "c3", "text": "Critical points are interior values of x where f'(x) = 0 or where f'(x) is undefined while f itself is defined." },
+    { "id": "c4", "text": "Critical points are the only candidates for local maxima and minima, since a function can only turn around where its slope is zero or undefined." },
+    { "id": "c5", "text": "The Increasing/Decreasing Test: on any interval where f' > 0, f is increasing; on any interval where f' < 0, f is decreasing." },
+    { "id": "c6", "text": "Because f' can only change sign at a critical point, testing one value per interval determines the sign of f' on the whole interval." },
+    { "id": "c7", "text": "To build a sign chart for f', differentiate, find critical points, mark them on a number line, test the sign of f' in each interval, and translate to increasing or decreasing." },
+    { "id": "c8", "text": "The First Derivative Test classifies a critical point by the sign change of f': positive to negative is a local maximum, negative to positive is a local minimum." },
+    { "id": "c9", "text": "If f' does not change sign at a critical point, the point is neither a maximum nor a minimum, as with f(x) = x³ at x = 0." },
+    { "id": "c10", "text": "A local maximum is where the function stops increasing and starts decreasing; a local minimum is where it stops decreasing and starts increasing." },
+    { "id": "c11", "text": "Example: for f(x) = x⁴ − 8x², f'(x) = 4x(x − 2)(x + 2), with critical points x = −2, 0, 2." },
+    { "id": "c12", "text": "For that function, f is decreasing on (−∞, −2), increasing on (−2, 0), decreasing on (0, 2), and increasing on (2, ∞)." },
+    { "id": "c13", "text": "For that function, x = −2 and x = 2 are local minima (value −16) and x = 0 is a local maximum (value 0)." },
+    { "id": "c14", "text": "Critical points include where f' is undefined: for f(x) = x^(2/3), f'(x) = (2/3)x^(−1/3) is undefined at x = 0, which is a minimum (a cusp)." },
+    { "id": "c15", "text": "Solving only f'(x) = 0 can miss extrema that occur where f' is undefined, so both conditions must be checked." },
+    { "id": "c16", "text": "A zero of f' does not guarantee an extremum; a local extremum requires an actual sign change in f'." },
+    { "id": "c17", "text": "The First Derivative Test works even at critical points where f' is undefined, as long as f is continuous there, since it only needs the sign change of f'." },
+    { "id": "c18", "text": "On free response, a local maximum or minimum must be justified by stating that f' changes from positive to negative (or vice versa) there." },
+    { "id": "c19", "text": "Stating only that f'(c) = 0 or describing the graph informally does not earn the justification point on the AP exam." },
+    { "id": "c20", "text": "The reason f' > 0 forces f to increase is the Mean Value Theorem: f(b) − f(a) = f'(c)(b − a) is positive when b > a and f'(c) > 0." },
+    { "id": "c21", "text": "The First Derivative Test finds local extrema; absolute extrema on a closed interval still require comparing with endpoint values via the Candidates Test." },
+    { "id": "c22", "text": "Reading the sign of f' to determine the direction of f is the foundational skill for the entire analytical-applications unit." }
+  ]
+}

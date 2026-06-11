@@ -1,0 +1,30 @@
+{
+  "id": "ap-bio-compartmentalization-and-endosymbiosis",
+  "title": "Compartmentalization and the Origin of Eukaryotes",
+  "subject": "AP Biology",
+  "chunks": [
+    { "id": "c1", "text": "Compartmentalization is the division of a eukaryotic cell's interior into membrane-bound compartments called organelles. This architecture is what makes large, complex eukaryotic cells possible, in contrast to the single open space of a prokaryote." },
+    { "id": "c2", "text": "Compartments allow a cell to run incompatible processes at the same time by maintaining different local conditions, such as keeping a lysosome at acidic pH 5 while the surrounding cytoplasm stays near pH 7.2." },
+    { "id": "c3", "text": "Confining an enzyme and its substrate to a small compartment concentrates the reactants so they collide more often, which speeds up reactions compared to being diluted across the whole cell." },
+    { "id": "c4", "text": "Internal membranes add surface area for reactions without increasing the overall size of the cell, helping a large cell overcome the surface-area-to-volume limitation." },
+    { "id": "c5", "text": "Compartments protect the cell by isolating dangerous processes. Sealing destructive digestive enzymes inside a lysosome lets them break down waste without dissolving the cell that made them." },
+    { "id": "c6", "text": "In prokaryotes, which lack a nucleus, translation of an mRNA can begin while the mRNA is still being transcribed, because there is no membrane separating the two processes." },
+    { "id": "c7", "text": "In eukaryotes, the nuclear envelope separates transcription, which occurs inside the nucleus, from translation, which occurs in the cytoplasm. This separation allows mRNA to be processed before it is translated." },
+    { "id": "c8", "text": "Inside the eukaryotic nucleus, a raw RNA transcript is processed by adding a protective cap and tail and splicing out non-coding introns before the finished mRNA is exported to ribosomes. This processing, including alternative splicing, increases the variety of proteins a genome can produce." },
+    { "id": "c9", "text": "The endosymbiotic theory, proposed by Lynn Margulis in the 1960s, states that mitochondria and chloroplasts were once free-living prokaryotes that were engulfed by an ancestral host cell and kept alive instead of being digested." },
+    { "id": "c10", "text": "In endosymbiosis, the engulfed prokaryote provided a benefit, aerobic respiration in the case of the mitochondrial ancestor or photosynthesis in the case of the chloroplast ancestor, while the host cell provided protection and nutrients." },
+    { "id": "c11", "text": "Over hundreds of millions of years, most of the engulfed cell's genes transferred to the host's nucleus, making the organelle unable to survive independently, though it kept a small remnant of its original circular DNA. The two lineages became one integrated organism." },
+    { "id": "c12", "text": "The double membrane of mitochondria and chloroplasts is explained by endosymbiosis: the inner membrane comes from the original engulfed prokaryote, and the outer membrane comes from the host cell's engulfing membrane." },
+    { "id": "c13", "text": "Evidence for endosymbiosis includes that mitochondria and chloroplasts have their own circular DNA like bacteria, have double membranes, replicate by binary fission independent of the cell cycle, and have ribosomes that resemble bacterial 70S ribosomes more than eukaryotic 80S ribosomes." },
+    { "id": "c14", "text": "Genetic analysis shows mitochondrial DNA is most similar to alpha-proteobacteria and chloroplast DNA is most similar to cyanobacteria, supporting the prokaryotic ancestry of these organelles." },
+    { "id": "c15", "text": "Endosymbiosis explains the origin of mitochondria and chloroplasts only. The nucleus, endoplasmic reticulum, and Golgi apparatus did not arise by endosymbiosis." },
+    { "id": "c16", "text": "The acquisition of the mitochondrion is thought to have happened once and gave rise to essentially all eukaryotes. A later, separate event in which a eukaryote engulfed a photosynthetic cyanobacterium produced the first chloroplast and the lineage of algae and plants." },
+    { "id": "c17", "text": "Secondary endosymbiosis occurs when a eukaryote engulfs another photosynthetic eukaryote, spreading photosynthesis among different groups. This explains why chloroplasts in some algal groups have three or four membranes." },
+    { "id": "c18", "text": "Molecular evidence shows that the host lineage that became eukaryotes is more closely related to archaea than to bacteria, especially in its DNA-handling and protein-making machinery. The modern eukaryotic cell is a combination of an archaeal-like host and bacterial endosymbionts." },
+    { "id": "c19", "text": "Endosymbiosis shows that evolutionary change can come not only from slow mutation within a lineage but also from dramatic mergers between separate lineages." },
+    { "id": "c20", "text": "The nucleus and endomembrane system are thought to have formed by infolding of the plasma membrane, in which regions of the outer membrane folded inward and pinched off to form internal compartments." },
+    { "id": "c21", "text": "Membrane infolding explains why the endomembrane organelles have a single membrane and no DNA of their own, and why the nuclear envelope is directly continuous with the rough endoplasmic reticulum in living cells." },
+    { "id": "c22", "text": "Two mechanisms account for eukaryotic organelles: endosymbiosis produced mitochondria and chloroplasts, which have double membranes and their own DNA, while membrane infolding produced the nucleus and endomembrane system, which have single membranes and no DNA." },
+    { "id": "c23", "text": "On AP Biology free-response questions about endosymbiosis, full credit requires citing specific evidence and stating what it shows, such as that mitochondria have their own circular DNA like bacteria, and providing at least two distinct lines of evidence." }
+  ]
+}

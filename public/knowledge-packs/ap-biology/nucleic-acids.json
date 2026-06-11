@@ -1,0 +1,29 @@
+{
+  "id": "ap-bio-nucleic-acids",
+  "title": "Nucleic Acids: DNA and RNA Structure",
+  "subject": "AP Biology",
+  "chunks": [
+    { "id": "c1", "text": "Nucleic acids, DNA and RNA, are polymers built from monomers called nucleotides. Each nucleotide has three parts: a five-carbon sugar, a phosphate group, and a nitrogenous base." },
+    { "id": "c2", "text": "Nucleotides link together through phosphodiester bonds, in which the phosphate group of one nucleotide bonds to the sugar of the next. This creates a sugar-phosphate backbone with the nitrogenous bases projecting off to the side." },
+    { "id": "c3", "text": "The carbons of the nucleotide sugar are numbered 1 prime through 5 prime. The phosphate attaches at the 5 prime carbon and the next nucleotide attaches at the 3 prime carbon, giving each DNA strand a direction from 5 prime to 3 prime." },
+    { "id": "c4", "text": "DNA is double-stranded and forms a double helix, modeled by Watson and Crick in 1953 using Rosalind Franklin's X-ray crystallography data. The two sugar-phosphate backbones form the rails and the paired bases form the rungs of a twisted ladder." },
+    { "id": "c5", "text": "The two strands of DNA are antiparallel, meaning they run in opposite directions: one strand runs 5 prime to 3 prime while its partner runs 3 prime to 5 prime. This opposite orientation is required for the bases to pair correctly." },
+    { "id": "c6", "text": "Complementary base pairing in DNA follows strict rules: adenine pairs with thymine, and guanine pairs with cytosine. A large base always pairs with a small base, keeping the helix a uniform width." },
+    { "id": "c7", "text": "The base pairs are held together by hydrogen bonds: adenine and thymine are joined by two hydrogen bonds, while guanine and cytosine are joined by three hydrogen bonds." },
+    { "id": "c8", "text": "Because base pairing is fixed, the two DNA strands carry the same information in complementary form. If the sequence of one strand is known, the sequence of the other can be determined exactly, which provides built-in error protection and is the basis of DNA replication." },
+    { "id": "c9", "text": "To write the complementary strand of a DNA sequence, pair each base (A with T, G with C) and label the new strand antiparallel, running in the opposite 5 prime to 3 prime direction from the original." },
+    { "id": "c10", "text": "Chargaff's rule states that in double-stranded DNA the percentage of adenine equals the percentage of thymine, and the percentage of guanine equals the percentage of cytosine. The four base percentages add up to 100 percent." },
+    { "id": "c11", "text": "If 30 percent of the bases in a DNA sample are adenine, then 30 percent are thymine, leaving 40 percent split equally between guanine and cytosine, so guanine is 20 percent." },
+    { "id": "c12", "text": "Purines are the larger nitrogenous bases, adenine and guanine, each built from two fused rings. Pyrimidines are the smaller single-ring bases: cytosine, thymine, and uracil." },
+    { "id": "c13", "text": "Every DNA base pair joins one purine with one pyrimidine: adenine (purine) with thymine (pyrimidine), and guanine (purine) with cytosine (pyrimidine). This keeps every rung of the helix the same width." },
+    { "id": "c14", "text": "Guanine-cytosine base pairs have three hydrogen bonds and are stronger than adenine-thymine pairs, which have two. DNA regions rich in guanine and cytosine are harder to separate and melt at higher temperatures." },
+    { "id": "c15", "text": "In DNA the sugar is deoxyribose, which lacks an oxygen at the 2 prime carbon. In RNA the sugar is ribose, which has a hydroxyl group at the 2 prime carbon, making RNA less chemically stable than DNA." },
+    { "id": "c16", "text": "DNA uses the bases adenine, thymine, guanine, and cytosine, while RNA uses adenine, uracil, guanine, and cytosine. In RNA, uracil replaces thymine, so adenine pairs with uracil." },
+    { "id": "c17", "text": "DNA is double-stranded, very stable, and used for long-term storage of genetic information, located mostly in the nucleus of eukaryotic cells. RNA is usually single-stranded, less stable, and used as a temporary working copy that functions in both the nucleus and cytoplasm." },
+    { "id": "c18", "text": "RNA is less stable than DNA because its ribose sugar has a reactive hydroxyl group at the 2 prime carbon that deoxyribose lacks, making RNA better suited to be a temporary copy than a permanent archive." },
+    { "id": "c19", "text": "The sequence of bases in DNA is a four-letter code that spells out instructions for building proteins. The stable, complementary double helix can unzip so the information can be read and copied." },
+    { "id": "c20", "text": "The central dogma of molecular biology describes the flow of genetic information as DNA to RNA to protein. A gene's DNA is transcribed into messenger RNA, which is translated by ribosomes into a chain of amino acids that forms a protein." },
+    { "id": "c21", "text": "Different RNA molecules have different jobs: messenger RNA carries the genetic message, transfer RNA carries amino acids to the ribosome, and ribosomal RNA forms the core of the ribosome." },
+    { "id": "c22", "text": "Ribozymes are RNA molecules that can catalyze chemical reactions. Their existence supports the RNA World hypothesis, the idea that early life may have used RNA both to store information and to catalyze reactions before DNA and proteins evolved." }
+  ]
+}

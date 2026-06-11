@@ -1,0 +1,100 @@
+{
+  "id": "ap-calc-ab-u8-volumes-of-revolution",
+  "title": "Volumes of Revolution: Disc and Washer Methods",
+  "subject": "AP Calculus AB",
+  "unit": "Applications of Integration",
+  "track": "ap",
+  "difficulty": "ap",
+  "duration": "50 min",
+  "objectives": [
+    "Find the volume of a solid of revolution using the disc method, V = ∫ π[r(x)]² dx.",
+    "Use the washer method, V = ∫ π([R(x)]² − [r(x)]²) dx, when the region does not touch the axis.",
+    "Determine the radius (or outer and inner radii) as distances from the axis of rotation.",
+    "Set up volumes of revolution about the x-axis, the y-axis, and other horizontal or vertical lines."
+  ],
+  "sections": [
+    {
+      "type": "explanation",
+      "heading": "Spinning a Region Into a Solid",
+      "content": "Take a flat region in the plane and spin it around a line — the *axis of revolution*. As it sweeps through three dimensions, the region traces out a solid: a *solid of revolution*. A semicircle spun about its diameter makes a sphere; a right triangle spun about a leg makes a cone; a rectangle spun about one side makes a cylinder. Many everyday shapes — bowls, bottles, lathe-turned table legs — are solids of revolution, and calculus lets you compute their volumes exactly.\n\nThe beautiful thing is that this is not a new method, just a special case of volumes by cross sections. When you slice a solid of revolution perpendicular to its axis, every cross section is a *circle* (or a circle with a circular hole). That's because rotating a single point about the axis sweeps out a circle whose radius is the point's distance from the axis. So the cross section at each position is a disc, and its area is the familiar A = πr².\n\nPlugging that into the cross-section volume formula V = ∫ A dx gives V = ∫ πr² dx. The entire topic of volumes of revolution reduces to one question: at each slice, what is the radius — the distance from the axis of revolution to the edge of the region? Answer that, square it, multiply by π, and integrate. When the region is solid against the axis you get the *disc method*; when there's a gap between the region and the axis you get the *washer method*. Both are the same V = ∫ πr² dx idea, with the radius read off the geometry."
+    },
+    {
+      "type": "explanation",
+      "heading": "The Disc Method",
+      "content": "Use the disc method when the region being rotated touches the axis of revolution, so each cross section is a *full* circular disc with no hole. The radius of the disc at a given position is the distance from the axis to the curve bounding the region.\n\nFor a region under y = f(x) (above the x-axis) rotated about the *x-axis*, the radius of each disc is simply the height of the curve, r = f(x), because that's how far the top of the region sits from the x-axis. The disc's area is A(x) = π[f(x)]², and the volume is\n\n  V = ∫ from a to b of π[f(x)]² dx.\n\nThe radius is always a *distance from the axis*, which is the key conceptual point. If you rotate about the x-axis, distance is measured vertically (the y-value); if you rotate about the y-axis, distance is measured horizontally (the x-value), and you'd integrate in dy with the curve written as x = g(y). The π and the squaring are non-negotiable: the area of a circle is πr², so the radius must be squared, and forgetting either the π or the square is the most common error.\n\nThe whole method is: identify the radius as a distance from the axis, write A = πr², and integrate over the region's extent. Everything hinges on correctly reading that radius from the picture."
+    },
+    {
+      "type": "steps",
+      "heading": "The Disc Method Procedure",
+      "steps": [
+        { "title": "Identify the axis of revolution", "content": "Note the line the region is spun about; the radius will be measured as distance from this line." },
+        { "title": "Find the radius as a distance", "content": "Write r as the distance from the axis to the curve — for rotation about the x-axis, r = f(x) (the height)." },
+        { "title": "Write the disc area", "content": "Each cross section is a circle: A = πr² = π[f(x)]²." },
+        { "title": "Integrate over the interval", "content": "Compute V = ∫ π[f(x)]² dx over the region's extent (or in dy for rotation about a vertical axis)." }
+      ]
+    },
+    {
+      "type": "example",
+      "heading": "Disc Method: Rotating y = √x About the x-Axis",
+      "content": "The region under y = √x from x = 0 to x = 4 (above the x-axis) is rotated about the x-axis. Find the volume.\n\nStep 1 — axis: the x-axis. The region touches it, so use discs.\nStep 2 — radius: the distance from the x-axis to the curve is the height, r = √x.\nStep 3 — area: A(x) = πr² = π(√x)² = πx.\nStep 4 — integrate:\n  V = ∫ from 0 to 4 of πx dx = π[x²/2] from 0 to 4 = π(16/2) = 8π.\n\nThe volume is 8π cubic units. Notice how squaring the radius (√x)² conveniently gave x, leaving a simple integral. The radius was just the curve's height because we rotated about the x-axis. Had we forgotten the π or failed to square, the answer would be wrong — both are essential parts of the circle's area πr²."
+    },
+    {
+      "type": "callout",
+      "variant": "warning",
+      "heading": "Radius Is Distance From the Axis — and Square It (With π)",
+      "content": "The radius is always the DISTANCE from the axis of revolution to the curve, not just a function value. For rotation about the x-axis it's the y-distance (= f(x) when the region sits on the x-axis); for rotation about y = 2 it's |f(x) − 2|; for rotation about the y-axis it's the x-distance. Never skip the π or the squaring — each cross section is a circle of area πr². And in the washer method, the integrand is π(R² − r²), the difference of the SQUARES of the radii, NOT π(R − r)². Squaring the difference is the single most common volume-of-revolution mistake and gives a badly wrong answer."
+    },
+    {
+      "type": "quiz",
+      "question": "The region under y = x² from x = 0 to x = 2 is rotated about the x-axis. Which integral gives the volume?",
+      "options": ["∫ from 0 to 2 of π(x²)² dx", "∫ from 0 to 2 of πx² dx", "∫ from 0 to 2 of (x²)² dx", "∫ from 0 to 2 of 2πx² dx"],
+      "correctIndex": 0,
+      "explanation": "Rotating about the x-axis gives discs of radius r = x² (the height), so A = πr² = π(x²)² = πx⁴. The volume is ∫₀² π(x²)² dx. Forgetting to square the radius gives πx², and dropping the π omits the circle's area factor."
+    },
+    {
+      "type": "explanation",
+      "heading": "The Washer Method",
+      "content": "When the rotated region does *not* touch the axis — there's a gap between the region and the axis of revolution — the cross sections are not full discs but *washers*: circles with a circular hole punched out. This happens when you rotate the region between two curves, or a region offset from the axis.\n\nA washer has an *outer radius* R (distance from the axis to the far edge of the region) and an *inner radius* r (distance from the axis to the near edge — the boundary of the hole). Its area is the big circle minus the small circle: A = πR² − πr² = π(R² − r²). The volume is\n\n  V = ∫ from a to b of π([R(x)]² − [r(x)]²) dx.\n\nFor a region between an upper curve y = f(x) and a lower curve y = g(x), both above the x-axis, rotated about the *x-axis*: the outer radius reaches the curve farther from the axis (the top, R = f(x)) and the inner radius reaches the curve nearer the axis (the bottom, r = g(x)). So you subtract the squares of the two heights.\n\nThe crucial subtlety, worth repeating, is that you subtract the *squares of the radii*, π(R² − r²), and absolutely not π(R − r)². The washer's area is the difference of two circle areas, each of which already squared its radius. Computing (R − r)² treats the washer as if its area were π times the squared *width* of the ring, which is geometrically meaningless. Set up R and r as distances from the axis, square each, subtract, multiply by π, and integrate."
+    },
+    {
+      "type": "example",
+      "heading": "Washer Method: Region Between y = x and y = x²",
+      "content": "The region between y = x (top) and y = x² (bottom) on [0, 1] is rotated about the x-axis. Find the volume.\n\nStep 1 — axis: the x-axis. The region between the two curves does not touch the axis as a single edge, so use washers.\nStep 2 — radii (distances from the x-axis): the outer edge is the curve farther from the axis, y = x, so R = x; the inner edge is y = x², so r = x².\nStep 3 — area: A(x) = π(R² − r²) = π(x² − (x²)²) = π(x² − x⁴).\nStep 4 — integrate:\n  V = ∫ from 0 to 1 of π(x² − x⁴) dx = π[x³/3 − x⁵/5] from 0 to 1 = π(1/3 − 1/5) = π(5/15 − 3/15) = π(2/15) = 2π/15.\n\nThe volume is 2π/15. The decisive step was subtracting the squares of the radii: x² − (x²)² = x² − x⁴. Writing (x − x²)² instead would give the wrong integrand and a wrong volume — a reminder that washers subtract squared radii, not the square of the difference."
+    },
+    {
+      "type": "table",
+      "heading": "Disc vs. Washer, and Reading the Radius",
+      "headers": ["Situation", "Method", "Integrand"],
+      "rows": [
+        ["Region touches the axis", "disc", "π[r(x)]² dx, r = distance to the curve"],
+        ["Gap between region and axis", "washer", "π([R]² − [r]²) dx, outer and inner radii"],
+        ["Rotate about x-axis", "discs/washers ⊥ x-axis", "radius is a vertical distance; integrate dx"],
+        ["Rotate about y-axis", "discs/washers ⊥ y-axis", "radius is a horizontal distance; integrate dy"],
+        ["Rotate about line y = k", "shift the radius", "radius = |f(x) − k|"]
+      ]
+    },
+    {
+      "type": "quiz",
+      "question": "Rotating the region between an outer curve R(x) and an inner curve r(x) about the x-axis, the volume integrand is:",
+      "options": ["π(R − r)² ", "π(R² − r²)", "π(R² + r²)", "(R² − r²)"],
+      "correctIndex": 1,
+      "explanation": "A washer's area is the outer circle minus the inner circle: πR² − πr² = π(R² − r²), the difference of the SQUARES of the radii. The form π(R − r)² is wrong — it squares the difference of the radii, which is not the washer's area, and dropping π omits the circle-area factor."
+    },
+    {
+      "type": "callout",
+      "variant": "tip",
+      "heading": "Rotating About Lines Other Than the Axes",
+      "content": "When the axis of revolution is a line like y = 3 or x = −1 instead of an axis, the only thing that changes is the radius: it's the DISTANCE from that line to the curve. For rotation about y = 3, a curve y = f(x) below the line has radius 3 − f(x); for a washer, both R and r are measured from y = 3. Sketch the axis and the region, then write each radius as 'axis value minus curve' (or curve minus axis), keeping it positive. Also match the variable to the axis direction: rotating about a horizontal line uses dx with vertical radii; rotating about a vertical line uses dy with horizontal radii. Setting up the radius correctly is where these problems are won."
+    },
+    {
+      "type": "deepdive",
+      "heading": "Why It's All One Idea — and Why R² − r² Is Not (R − r)²",
+      "content": "Volumes of revolution can feel like a grab bag of cases — disc versus washer, x-axis versus y-axis versus some other line — but they are all a single idea: V = ∫ A(x) dx, the cross-section formula from the previous lesson, with the cross section being a circle or a ring. Internalizing that unity turns memorization into understanding.\n\nWhen you rotate a region about a line, each point of the region travels in a circle whose radius is its distance from that line. Slicing perpendicular to the axis, the slice is whatever the rotated cross section of the region is: a full disc if the region reaches the axis (area πr²), or a washer if a gap leaves a hole (area πR² − πr²). So 'disc method' and 'washer method' are not two different theorems — they are the cross-section formula with A = πr² or A = π(R² − r²) substituted in. The axis of revolution only affects how you measure the radius (a distance from that line), and the choice of dx versus dy only reflects whether the slices stack horizontally or vertically. One formula, read off the geometry each time.\n\nThis perspective also clarifies the most punished error, π(R² − r²) versus π(R − r)². The washer's area is genuinely an outer circle minus an inner circle: πR² minus πr². Each radius is squared *before* subtracting, because area depends on the square of the radius. Writing π(R − r)² instead computes π times the squared *width* of the ring, which corresponds to no real area at all — geometrically it pretends the washer is a tiny disc whose radius is the ring's thickness. A quick numerical check makes it vivid: with R = 3 and r = 2, the true ring area is π(9 − 4) = 5π, while π(3 − 2)² = π — off by a factor of five. The squares must be taken individually. Whenever you set up a washer, picture the two concentric circles and subtract their areas, and you'll never collapse it into a squared difference.\n\nThe takeaway mirrors the whole unit: every volume here is an accumulation of infinitesimal slices, each a circle or ring whose area you can write down, summed by the integral. If you can find the radius (or radii) as a distance from the axis, you can find the volume — and you've connected area between curves, cross sections, and revolution into one coherent method of slicing and summing that defines integral calculus."
+    },
+    {
+      "type": "keypoint",
+      "content": "Volumes of revolution are cross-section volumes with circular slices. Disc method (region touches the axis): V = ∫ π[r(x)]² dx, where r is the distance from the axis to the curve. Washer method (gap between region and axis): V = ∫ π([R]² − [r]²) dx, subtracting the SQUARES of the outer and inner radii — never π(R − r)². The radius is always a distance from the axis of revolution; rotate about a horizontal line with dx, a vertical line with dy."
+    }
+  ],
+  "aiContext": "AP Calculus AB Unit 8, volumes of revolution. These are cross-section volumes with circular slices: disc method V = ∫ π[r]² dx when the region touches the axis (r = distance from axis to curve), washer method V = ∫ π([R]² − [r]²) dx when there is a gap (R, r = outer/inner distances from the axis). Emphasize that the radius is always a DISTANCE from the axis of revolution — y-distance for the x-axis, x-distance for the y-axis, |f(x) − k| for a line y = k — and that rotating about a horizontal line uses dx, a vertical line uses dy. The most punished error is writing π(R − r)² instead of π(R² − r²): the washer area subtracts the squares of the radii, not the square of the difference (numerical check: R=3, r=2 gives 5π, not π). Also stress never dropping the π or the squaring. Connect to the cross-section formula V = ∫ A dx with A = πr² as the unifying idea."
+}

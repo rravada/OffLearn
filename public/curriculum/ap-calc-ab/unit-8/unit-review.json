@@ -1,0 +1,191 @@
+{
+  "id": "ap-calc-ab-unit8-review",
+  "title": "Unit 8 Review: Applications of Integration",
+  "subject": "AP Calculus AB",
+  "unit": "Applications of Integration",
+  "type": "unit-review",
+  "questionsPerAttempt": 10,
+  "isAssessment": true,
+  "bank": [
+    {
+      "question": "The average value of a function f on [a, b] is:",
+      "options": ["∫ from a to b of f(x) dx", "(1/(b − a))∫ from a to b of f(x) dx", "[f(b) − f(a)]/(b − a)", "f(b) − f(a)"],
+      "correctIndex": 1,
+      "explanation": "Average value is (1/(b − a))∫ₐᵇ f(x) dx — the integral divided by the interval length. The expression [f(b) − f(a)]/(b − a) is the average RATE of change, a different quantity."
+    },
+    {
+      "question": "What is the average value of f(x) = x² on [0, 6]?",
+      "options": ["12", "72", "36", "6"],
+      "correctIndex": 0,
+      "explanation": "f_avg = (1/6)∫₀⁶ x² dx = (1/6)[x³/3]₀⁶ = (1/6)(72) = 12. The integral alone is 72; forgetting to divide by the interval length 6 gives the wrong answer."
+    },
+    {
+      "question": "Average value of a function and average rate of change differ because:",
+      "options": ["they are the same", "average value is a height of f (f's units); average rate of change is a slope", "average value is always larger", "average rate of change needs an integral"],
+      "correctIndex": 1,
+      "explanation": "Average value is a representative height of f with f's units, found by integrating; average rate of change is a secant slope [f(b) − f(a)]/(b − a) with rate units. They measure different things."
+    },
+    {
+      "question": "The Net Change Theorem states that ∫ from a to b of f'(x) dx equals:",
+      "options": ["f'(b) − f'(a)", "f(b) − f(a)", "the average value of f", "f(b) + f(a)"],
+      "correctIndex": 1,
+      "explanation": "Integrating a rate of change gives the net change: ∫ₐᵇ f'(x) dx = f(b) − f(a). This is the Fundamental Theorem of Calculus expressed for accumulated change."
+    },
+    {
+      "question": "A tank starts with 200 liters. Water flows at rate P'(t), and ∫ from 0 to 5 of P'(t) dt = 150. How much is in the tank at t = 5?",
+      "options": ["350", "150", "200", "50"],
+      "correctIndex": 0,
+      "explanation": "Final amount = initial + net change = 200 + ∫₀⁵ P'(t) dt = 200 + 150 = 350 liters. The integral gives the change, which is added to the starting amount."
+    },
+    {
+      "question": "The Mean Value Theorem for Integrals guarantees that a continuous function on [a, b]:",
+      "options": ["has a maximum", "attains its average value at some point c in [a, b]", "is differentiable", "has zero average value"],
+      "correctIndex": 1,
+      "explanation": "It guarantees a c in [a, b] with f(c) equal to the average value (1/(b − a))∫ₐᵇ f dx. This is the integral analog of the ordinary Mean Value Theorem and confirms the function reaches its average."
+    },
+    {
+      "question": "Displacement of a particle over [a, b] is given by:",
+      "options": ["∫ from a to b of |v(t)| dt", "∫ from a to b of v(t) dt", "∫ from a to b of a(t) dt", "v(b) − v(a)"],
+      "correctIndex": 1,
+      "explanation": "Displacement is the net change in position, the integral of velocity ∫ₐᵇ v(t) dt. Integrating |v(t)| would instead give total distance traveled."
+    },
+    {
+      "question": "Total distance traveled over [a, b] is given by:",
+      "options": ["∫ from a to b of v(t) dt", "∫ from a to b of |v(t)| dt", "s(b) − s(a)", "∫ from a to b of a(t) dt"],
+      "correctIndex": 1,
+      "explanation": "Total distance is the integral of speed, ∫ₐᵇ |v(t)| dt, which counts all motion positively. The integral of v itself gives displacement (signed)."
+    },
+    {
+      "question": "To compute total distance when velocity changes sign, you must:",
+      "options": ["integrate v over the whole interval", "find where v = 0, split the interval, and add absolute values", "use v(b) − v(a)", "double the displacement"],
+      "correctIndex": 1,
+      "explanation": "Because backward motion would subtract in ∫v dt, total distance requires finding where v = 0, splitting at those times, and adding the absolute values of the pieces so all motion counts positively."
+    },
+    {
+      "question": "A particle has v(t) = 2t and position s(0) = 5. Its position function is:",
+      "options": ["s(t) = t² + 5", "s(t) = t²", "s(t) = 2t² + 5", "s(t) = 2 + 5t"],
+      "correctIndex": 0,
+      "explanation": "Integrate velocity: s(t) = ∫2t dt = t² + C. Apply s(0) = 5: C = 5, so s(t) = t² + 5. The initial position determines the constant."
+    },
+    {
+      "question": "A particle has acceleration a(t) = 6 and initial velocity v(0) = −4. Its velocity is:",
+      "options": ["6t − 4", "6t", "3t² − 4", "6t + 4"],
+      "correctIndex": 0,
+      "explanation": "Integrate acceleration: v(t) = ∫6 dt = 6t + C. Apply v(0) = −4: C = −4, so v(t) = 6t − 4."
+    },
+    {
+      "question": "A particle can have zero displacement but large total distance when:",
+      "options": ["it never moves", "it moves away and returns to its starting point", "its velocity is constant", "its acceleration is zero"],
+      "correctIndex": 1,
+      "explanation": "If the particle returns to its start, the net change in position (displacement) is zero, yet it covered real ground both ways, so total distance (∫|v| dt) is positive. Displacement nets direction; distance does not."
+    },
+    {
+      "question": "The area between two curves with vertical slices is:",
+      "options": ["∫ from a to b of (bottom − top) dx", "∫ from a to b of (top − bottom) dx", "∫ from a to b of (top + bottom) dx", "∫ from a to b of top dx"],
+      "correctIndex": 1,
+      "explanation": "Each vertical strip has height (top − bottom), so the area is ∫ₐᵇ (top − bottom) dx. Reversing the order gives a negative result."
+    },
+    {
+      "question": "Before integrating to find the area between two curves, the intersection points are used as:",
+      "options": ["the integrand", "the limits of integration", "the cross-sectional area", "the radius"],
+      "correctIndex": 1,
+      "explanation": "Setting f(x) = g(x) and solving gives the x-values where the curves meet, which become the limits of integration (the left and right boundaries of the region)."
+    },
+    {
+      "question": "If two curves switch which one is on top inside the interval, you should:",
+      "options": ["use one integral with a fixed order", "split the integral at the crossing and use the correct order on each piece", "integrate bottom − top throughout", "ignore the crossing"],
+      "correctIndex": 1,
+      "explanation": "When the upper and lower curves swap, a single fixed-order integral is wrong on part of the region. Split at the crossing, use (top − bottom) correctly on each sub-interval, and add."
+    },
+    {
+      "question": "When integrating with respect to y, the area between curves is:",
+      "options": ["∫ (top − bottom) dy", "∫ (right − left) dy", "∫ (right − left) dx", "∫ (top − bottom) dx"],
+      "correctIndex": 1,
+      "explanation": "Horizontal slices have width (right − left) and height dy, so the area is ∫ (right − left) dy. The 'right minus left' order keeps each strip's width positive."
+    },
+    {
+      "question": "What is the area between y = x and y = x² on [0, 1]?",
+      "options": ["1/6", "1/2", "1/3", "1"],
+      "correctIndex": 0,
+      "explanation": "Since y = x is on top, area = ∫₀¹ (x − x²) dx = [x²/2 − x³/3]₀¹ = 1/2 − 1/3 = 1/6."
+    },
+    {
+      "question": "If you compute an area between curves and get a negative number, it most likely means:",
+      "options": ["the area is truly negative", "you subtracted bottom − top instead of top − bottom", "the curves don't intersect", "you used dy"],
+      "correctIndex": 1,
+      "explanation": "Area is always positive, so a negative result signals the subtraction order was reversed (bottom − top). Swap the order or take the absolute value."
+    },
+    {
+      "question": "The volume of a solid with cross-sectional area A(x) is:",
+      "options": ["∫ A(x) dx", "∫ πA(x) dx", "A(x)·(b − a)", "∫ [A(x)]² dx"],
+      "correctIndex": 0,
+      "explanation": "Summing slabs of volume A(x)·dx gives V = ∫ A(x) dx. The π appears only when the cross sections happen to be circles (volumes of revolution)."
+    },
+    {
+      "question": "A solid has square cross sections perpendicular to the x-axis with side s = top − bottom. The cross-sectional area is:",
+      "options": ["s", "s²", "πs²", "(1/2)s²"],
+      "correctIndex": 1,
+      "explanation": "A square of side s has area s². The side comes from the base region's height (top − bottom), and you then square it for a square cross section."
+    },
+    {
+      "question": "For semicircular cross sections whose diameter equals s = (top − bottom), the area is:",
+      "options": ["(1/2)πs²", "πs²/8", "πs²", "s²"],
+      "correctIndex": 1,
+      "explanation": "If s is the diameter, the radius is s/2, so the semicircle area is (1/2)π(s/2)² = πs²/8. Treating s as the radius would quadruple the area."
+    },
+    {
+      "question": "For cross sections perpendicular to the x-axis, the relevant length s is found as:",
+      "options": ["the function value alone", "top − bottom of the base region", "right − left of the base region", "the area of the base"],
+      "correctIndex": 1,
+      "explanation": "Slices perpendicular to the x-axis measure the base's vertical extent, so s = top − bottom = f(x) − g(x) (which reduces to f(x) when the base sits on the x-axis)."
+    },
+    {
+      "question": "For equilateral-triangle cross sections of side s, the area is:",
+      "options": ["(√3/4)s²", "(1/2)s²", "s²", "(√3/2)s²"],
+      "correctIndex": 0,
+      "explanation": "The area of an equilateral triangle with side s is (√3/4)s². Using (1/2)s² would be the area of a right triangle with legs s, a different shape."
+    },
+    {
+      "question": "If cross sections are perpendicular to the y-axis, you integrate:",
+      "options": ["A(x) dx", "A(y) dy", "A(x) dy", "A(y) dx"],
+      "correctIndex": 1,
+      "explanation": "Slices perpendicular to the y-axis stack along y with thickness dy, so V = ∫ A(y) dy, with the cross-section length measured as right − left in terms of y."
+    },
+    {
+      "question": "The disc method for a region rotated about the x-axis gives the volume as:",
+      "options": ["∫ π[r(x)]² dx", "∫ r(x) dx", "∫ 2πr(x) dx", "∫ [r(x)]² dx"],
+      "correctIndex": 0,
+      "explanation": "Each cross section is a disc of area πr², so V = ∫ π[r(x)]² dx. Forgetting the π or the square drops part of the circle-area formula."
+    },
+    {
+      "question": "In a volume of revolution, the radius of a cross section is:",
+      "options": ["the function value, always", "the distance from the axis of revolution to the curve", "the width of the region", "the area of the region"],
+      "correctIndex": 1,
+      "explanation": "The radius is the distance from the axis of revolution to the curve — a vertical distance for the x-axis, a horizontal distance for the y-axis, or |f(x) − k| for a line y = k."
+    },
+    {
+      "question": "The washer method integrand for rotation about the x-axis is:",
+      "options": ["π(R − r)²", "π(R² − r²)", "π(R² + r²)", "πR² − r²"],
+      "correctIndex": 1,
+      "explanation": "A washer's area is the outer circle minus the inner circle: πR² − πr² = π(R² − r²), the difference of the squares of the radii."
+    },
+    {
+      "question": "Why is the washer area π(R² − r²) and not π(R − r)²?",
+      "options": ["They are equal", "The washer is the difference of two circle areas, each with its radius squared first", "π(R − r)² is larger", "The radii cannot be subtracted"],
+      "correctIndex": 1,
+      "explanation": "The washer is an outer circle minus an inner circle, πR² − πr², so each radius is squared before subtracting. With R = 3, r = 2 the true area is 5π, while π(R − r)² = π — a large error."
+    },
+    {
+      "question": "The region under y = √x from x = 0 to 4 is rotated about the x-axis. Its volume is:",
+      "options": ["8π", "16π", "4π", "8"],
+      "correctIndex": 0,
+      "explanation": "Disc method: r = √x, so V = ∫₀⁴ π(√x)² dx = ∫₀⁴ πx dx = π[x²/2]₀⁴ = π(8) = 8π."
+    },
+    {
+      "question": "To rotate a region about the y-axis using discs or washers, you generally:",
+      "options": ["integrate with respect to x, radius = y", "integrate with respect to y, radius measured horizontally (in x)", "use π(R − r)²", "ignore the radius"],
+      "correctIndex": 1,
+      "explanation": "Rotation about the y-axis makes the radius a horizontal distance (an x-value), and the slices stack along y, so you integrate with respect to y with the curves written as x in terms of y."
+    }
+  ]
+}

@@ -1,0 +1,173 @@
+{
+  "id": "ap-calc-ab-unit4-review",
+  "title": "Unit 4 Review: Contextual Applications of Differentiation",
+  "subject": "AP Calculus AB",
+  "unit": "Contextual Applications of Differentiation",
+  "type": "unit-review",
+  "questionsPerAttempt": 10,
+  "isAssessment": true,
+  "bank": [
+    {
+      "question": "P(t) is a population in thousands and t is in years. If P'(3) = 2.5, the best interpretation is:",
+      "options": ["At year 3 the population is 2.5 thousand", "At year 3 the population is increasing at 2.5 thousand people per year", "Over 3 years the population grew by 2.5 thousand", "The population reaches 2.5 at year 3"],
+      "correctIndex": 1,
+      "explanation": "P'(3) is an instantaneous rate of change at t = 3, with units of thousands of people per year, and the positive sign means increasing. The amount of the population at year 3 would be P(3), a different quantity with different units."
+    },
+    {
+      "question": "V(t) is the volume of water in a tank in liters, with t in seconds. What does V'(10) = −4 mean?",
+      "options": ["There are −4 liters at t = 10", "At t = 10 the volume is decreasing at 4 liters per second", "The tank loses 4 liters total", "The tank is empty at t = 10"],
+      "correctIndex": 1,
+      "explanation": "V'(10) is a rate with units liters per second, and the negative sign indicates the volume is decreasing. An amount of water would be V(10); the derivative describes how fast that amount is changing at the instant t = 10."
+    },
+    {
+      "question": "The average rate of change of f on the interval [a, b] is computed as:",
+      "options": ["f'(a)", "[f(b) − f(a)]/(b − a)", "[f'(b) − f'(a)]/(b − a)", "f(b) − f(a)"],
+      "correctIndex": 1,
+      "explanation": "Average rate of change is the secant slope [f(b) − f(a)]/(b − a), which needs only two function values and no calculus. The instantaneous rate f'(a) is the tangent slope at a single point, a different quantity."
+    },
+    {
+      "question": "If C(x) is the cost in dollars to produce x items, what are the units of C'(x)?",
+      "options": ["dollars", "items", "dollars per item", "items per dollar"],
+      "correctIndex": 2,
+      "explanation": "A derivative's units are output units divided by input units, here dollars per item — the marginal cost of producing one more item. The function value C(x) carries units of dollars, while the rate C'(x) carries dollars per item."
+    },
+    {
+      "question": "A table gives a quantity Q at t = 4, 6, 8 as Q = 20, 30, 38. The best estimate of Q'(6) is:",
+      "options": ["[38 − 20]/(8 − 4) = 4.5", "[30 − 20]/(6 − 4) = 5", "[38 − 30]/(8 − 6) = 4", "30/6 = 5"],
+      "correctIndex": 0,
+      "explanation": "A symmetric difference around t = 6 gives the best estimate of the instantaneous rate: [Q(8) − Q(4)]/(8 − 4) = (38 − 20)/4 = 4.5. Using only one side (the forward or backward difference) is less accurate, and 30/6 is not a rate of change at all."
+    },
+    {
+      "question": "For a particle on a line with position s(t), the acceleration a(t) equals:",
+      "options": ["s(t)", "s'(t)", "s''(t)", "the antiderivative of s(t)"],
+      "correctIndex": 2,
+      "explanation": "Velocity is the first derivative s'(t) and acceleration is the derivative of velocity, so a(t) = v'(t) = s''(t). Acceleration is the second derivative of position."
+    },
+    {
+      "question": "A particle has velocity v(t) = (t − 1)(t − 4). At what times is it at rest?",
+      "options": ["t = 1 and t = 4", "t = 0 only", "t = 1, 4, and 0", "never"],
+      "correctIndex": 0,
+      "explanation": "A particle is at rest where its velocity is zero: (t − 1)(t − 4) = 0 gives t = 1 and t = 4. These are also the candidate times for a change of direction, confirmed if v changes sign there."
+    },
+    {
+      "question": "At an instant, a particle has velocity v = 3 m/s and acceleration a = −2 m/s². The particle is:",
+      "options": ["Speeding up", "Slowing down", "At rest", "Moving in the negative direction"],
+      "correctIndex": 1,
+      "explanation": "Velocity is positive (moving in the positive direction) and acceleration is negative, so the signs are opposite and the speed is decreasing — the particle is slowing down. Opposite signs always mean slowing down."
+    },
+    {
+      "question": "How is the speed of a particle related to its velocity v(t)?",
+      "options": ["Speed equals v(t)", "Speed equals |v(t)|", "Speed equals v'(t)", "Speed equals −v(t)"],
+      "correctIndex": 1,
+      "explanation": "Speed is the absolute value of velocity, |v(t)|, and is never negative. Velocity is signed and carries direction information; taking the absolute value strips the direction to leave how fast the particle moves."
+    },
+    {
+      "question": "A particle has velocity v(2) = −6 m/s and acceleration a(2) = −1 m/s². At t = 2, the particle is:",
+      "options": ["Moving in the positive direction and speeding up", "Moving in the negative direction and speeding up", "Moving in the negative direction and slowing down", "At rest"],
+      "correctIndex": 1,
+      "explanation": "Negative velocity means the particle moves in the negative direction; velocity and acceleration share the same (negative) sign, so the speed is increasing — it is speeding up. A negative acceleration does not by itself indicate slowing down."
+    },
+    {
+      "question": "A particle's position is s(t) = t² − 6t. During which interval is the particle moving in the negative direction?",
+      "options": ["t < 3", "t > 3", "all t", "never"],
+      "correctIndex": 0,
+      "explanation": "Velocity is v(t) = 2t − 6, which is negative when 2t − 6 < 0, i.e. t < 3. The particle moves in the negative direction for t < 3, is at rest at t = 3, then moves positive for t > 3."
+    },
+    {
+      "question": "In a related-rates problem, you should substitute the specific numerical values for the instant:",
+      "options": ["Before writing the relating equation", "After differentiating both sides with respect to time", "Before differentiating", "Only into constants, never into rates"],
+      "correctIndex": 1,
+      "explanation": "Substitute the instant's values only after differentiating with respect to t. Plugging a changing quantity in earlier makes it a constant whose derivative is 0, destroying the rate you are solving for."
+    },
+    {
+      "question": "Differentiating the ladder relation x² + y² = L² (L constant) with respect to time gives:",
+      "options": ["2x + 2y = 0", "2x(dx/dt) + 2y(dy/dt) = 0", "x²(dx/dt) + y²(dy/dt) = L", "2x(dx/dt) + 2y(dy/dt) = 2L(dL/dt)"],
+      "correctIndex": 1,
+      "explanation": "Each variable term uses the chain rule: d/dt[x²] = 2x(dx/dt) and d/dt[y²] = 2y(dy/dt). Since L is constant, the right side is 0. The option without dx/dt and dy/dt forgets that x and y are functions of time."
+    },
+    {
+      "question": "A spherical balloon (V = (4/3)πr³) has radius increasing at dr/dt = 2 cm/s. How fast is the volume increasing when r = 3 cm?",
+      "options": ["72π cm³/s", "36π cm³/s", "24π cm³/s", "18π cm³/s"],
+      "correctIndex": 0,
+      "explanation": "Differentiating gives dV/dt = 4πr²(dr/dt). Substituting r = 3 and dr/dt = 2: 4π(9)(2) = 72π cm³/s. Forgetting to square the radius or dropping the rate factor produces the smaller wrong answers."
+    },
+    {
+      "question": "A circle's area A = πr² changes as its radius grows. The correct related-rates equation is:",
+      "options": ["dA/dt = πr²", "dA/dt = 2πr(dr/dt)", "dA/dt = 2πr", "dA/dt = πr²(dr/dt)"],
+      "correctIndex": 1,
+      "explanation": "Differentiating A = πr² with respect to t and applying the chain rule gives dA/dt = 2πr(dr/dt). Omitting the dr/dt factor (option 2πr) treats r as if it were the variable of differentiation rather than time."
+    },
+    {
+      "question": "For a cone filling with water, V = (1/3)πr²h has two changing variables. The standard way to reduce it before differentiating is to:",
+      "options": ["Set r = h", "Use similar triangles to write r in terms of h", "Ignore r and differentiate in h only", "Treat r as a constant"],
+      "correctIndex": 1,
+      "explanation": "Similar triangles relate the radius and height by the fixed ratio of the tank's dimensions, letting you write r as a multiple of h and reduce to one variable. Treating r as constant or arbitrarily setting r = h would misrepresent the geometry."
+    },
+    {
+      "question": "Which differentiation rule makes related-rates problems work by attaching a d/dt factor to each variable?",
+      "options": ["The product rule", "The quotient rule", "The chain rule", "The power rule alone"],
+      "correctIndex": 2,
+      "explanation": "Because each variable is a function of time, differentiating with respect to t requires the chain rule, which produces the dx/dt, dr/dt, etc. factors. This is the same mechanism as implicit differentiation, now with time as the inner variable."
+    },
+    {
+      "question": "The linearization of f at x = a is given by:",
+      "options": ["L(x) = f(a) + f'(a)(x − a)", "L(x) = f'(a) + f(a)(x − a)", "L(x) = f(a)(x − a)", "L(x) = f(a) + f(a)(x − a)"],
+      "correctIndex": 0,
+      "explanation": "The tangent line through (a, f(a)) with slope f'(a) is L(x) = f(a) + f'(a)(x − a). It starts at the known height f(a) and adds the slope times the horizontal change (x − a)."
+    },
+    {
+      "question": "Using f(x) = √x at a = 9 (f(9) = 3, f'(9) = 1/6), the linear approximation of √9.1 is about:",
+      "options": ["3.0167", "3.0017", "3.05", "3.6"],
+      "correctIndex": 0,
+      "explanation": "L(x) = 3 + (1/6)(x − 9), so L(9.1) = 3 + (1/6)(0.1) ≈ 3 + 0.0167 = 3.0167. The small change 0.1 is multiplied by the slope 1/6; using the wrong slope or change gives the other values."
+    },
+    {
+      "question": "A tangent-line approximation of a function that is concave down near the base point will be:",
+      "options": ["An underestimate", "An overestimate", "Exactly correct", "Impossible to determine"],
+      "correctIndex": 1,
+      "explanation": "When f'' < 0 (concave down), the curve bends below its tangent line, so the tangent line lies above the curve and the approximation overestimates. Concave up (f'' > 0) would instead give an underestimate."
+    },
+    {
+      "question": "The differential dy for y = f(x) is defined as:",
+      "options": ["dy = f(x) dx", "dy = f'(x) dx", "dy = f''(x) dx", "dy = f'(x)/dx"],
+      "correctIndex": 1,
+      "explanation": "The differential is dy = f'(x) dx, estimating the change in y produced by a small change dx in x. It equals the change in height along the tangent line, which approximates the true change Δy along the curve for small dx."
+    },
+    {
+      "question": "A cube's edge is measured as 10 cm with possible error 0.5 cm. Using dV = 3s² ds for V = s³, the approximate maximum error in volume is:",
+      "options": ["150 cm³", "15 cm³", "300 cm³", "1000 cm³"],
+      "correctIndex": 0,
+      "explanation": "Apply dV = 3s² ds with s = 10 and ds = 0.5: 3(100)(0.5) = 150 cm³. The value 1000 cm³ is the volume itself (10³), not the error; the differential multiplies the derivative 3s² by the small change ds."
+    },
+    {
+      "question": "Which of the following is an indeterminate form for which L'Hôpital's Rule applies?",
+      "options": ["5/0", "0/3", "0/0", "2/7"],
+      "correctIndex": 2,
+      "explanation": "Only 0/0 (and ∞/∞) are indeterminate forms where L'Hôpital's Rule applies. The form 5/0 indicates a limit that diverges, 0/3 equals 0, and 2/7 is already a determinate value."
+    },
+    {
+      "question": "Using L'Hôpital's Rule, lim(x→3) (x² − 9)/(x − 3) equals:",
+      "options": ["3", "6", "0", "does not exist"],
+      "correctIndex": 1,
+      "explanation": "Substituting gives 0/0, so differentiate top and bottom separately: 2x/1, then evaluate at x = 3 to get 6. (Factoring to (x + 3) and substituting gives the same 6, confirming the result.)"
+    },
+    {
+      "question": "When applying L'Hôpital's Rule to f(x)/g(x), you should:",
+      "options": ["Use the quotient rule on f/g", "Differentiate f and g separately and form f'/g'", "Differentiate only the numerator", "Multiply f' by g'"],
+      "correctIndex": 1,
+      "explanation": "L'Hôpital's Rule replaces the limit of f/g with the limit of f'/g', differentiating numerator and denominator separately. Using the quotient rule on the whole fraction is the most common misapplication of the rule."
+    },
+    {
+      "question": "What is lim(x→0) (1 − cos x)/x²?",
+      "options": ["1", "1/2", "0", "does not exist"],
+      "correctIndex": 1,
+      "explanation": "Substituting gives 0/0; one application gives sin(x)/(2x), still 0/0, so apply again to get cos(x)/2 → 1/2. The repeated indeterminate form signals that the rule must be applied a second time."
+    },
+    {
+      "question": "What is lim(x→∞) x/eˣ?",
+      "options": ["0", "1", "∞", "1/e"],
+      "correctIndex": 0,
+      "explanation": "The form is ∞/∞; one application gives 1/eˣ, which tends to 0 as x → ∞. This confirms that eˣ grows faster than any power of x, so the ratio is driven to 0."
+    }
+  ]
+}

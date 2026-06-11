@@ -1,0 +1,148 @@
+{
+  "id": "ap-bio-u2-cell-structure-and-organelles",
+  "title": "Cell Structure and Organelles",
+  "subject": "AP Biology",
+  "unit": "Cell Structure and Function",
+  "track": "ap",
+  "difficulty": "ap",
+  "duration": "50 min",
+  "objectives": [
+    "Compare prokaryotic and eukaryotic cells and identify the features all cells share",
+    "Describe the structure and function of the major eukaryotic organelles",
+    "Trace a secretory protein through the endomembrane system from gene to export",
+    "Explain how organelle structure supports its function and distinguish plant from animal cells"
+  ],
+  "sections": [
+    {
+      "type": "explanation",
+      "heading": "Two Blueprints for Building a Cell",
+      "content": "Every living thing on Earth is built from one of two basic kinds of cell, and the difference comes down to a single question: is the DNA locked in its own room, or is it out in the open? A prokaryotic cell is like a studio apartment — everything happens in one open space. Its DNA floats freely in a region called the nucleoid, with no surrounding membrane, and there are no membrane-bound organelles. Bacteria and archaea are prokaryotes, and they're small, typically 0.1–5 micrometers across.\n\nA eukaryotic cell is like an office building with many specialized rooms. Its DNA is sealed inside a true nucleus wrapped in a double membrane (the nuclear envelope), and the cell is packed with membrane-bound organelles — mitochondria, endoplasmic reticulum, Golgi apparatus, and, in plants, chloroplasts. Protists, fungi, plants, and animals are all eukaryotes, and their cells are usually much larger (10–100 micrometers).\n\nWhy build rooms at all? Compartmentalization. By separating processes into membrane-bound compartments, a eukaryotic cell can run many different chemical reactions at once under different conditions — an acidic lysosome digesting waste right next to a neutral cytoplasm — without those reactions interfering. It's the same reason a hospital has separate operating rooms, kitchens, and labs.\n\nFor all their differences, prokaryotes and eukaryotes share a deep family resemblance that points to a common ancestor: both have a plasma membrane, ribosomes that build proteins, DNA as their genetic material, and cytoplasm. Those shared essentials are the toolkit of all cellular life."
+    },
+    {
+      "type": "table",
+      "heading": "Prokaryotic vs. Eukaryotic Cells",
+      "headers": ["Feature", "Prokaryotic", "Eukaryotic"],
+      "rows": [
+        ["Nucleus", "Absent (DNA in nucleoid region)", "Present (true membrane-bound nucleus)"],
+        ["Membrane-bound organelles", "Absent", "Present (mitochondria, ER, Golgi, etc.)"],
+        ["Typical size", "0.1–5 µm (small)", "10–100 µm (larger)"],
+        ["DNA shape", "Usually one circular chromosome", "Multiple linear chromosomes"],
+        ["Ribosomes", "Present (smaller, 70S)", "Present (larger, 80S)"],
+        ["Examples", "Bacteria, archaea", "Protists, fungi, plants, animals"]
+      ]
+    },
+    {
+      "type": "explanation",
+      "heading": "The Nucleus and Ribosomes: Information and Assembly",
+      "content": "The nucleus is the cell's front office, holding the master blueprints. It's bounded by the nuclear envelope, a double membrane riddled with nuclear pores that act as gatekeepers — messenger RNA and ribosomal subunits exit, while proteins needed for DNA replication and transcription enter. Inside, DNA is wound with proteins into chromatin; when a gene needs to be read, that region loosens so the machinery can access it.\n\nTucked inside the nucleus is the nucleolus, a dense region that is not its own organelle but a busy workshop where ribosomal RNA (rRNA) is made and ribosomal subunits are partially assembled before being shipped out to the cytoplasm.\n\nRibosomes are the cell's protein factories, and here's a key point students miss: ribosomes are NOT membrane-bound organelles. They're made of rRNA and protein, and they come in two locations. Free ribosomes float in the cytoplasm and make proteins that stay in the cytoplasm. Bound ribosomes sit on the rough endoplasmic reticulum and make proteins destined for secretion, membranes, or organelles. The ribosome itself is identical in both spots — its location just determines where the finished protein goes."
+    },
+    {
+      "type": "explanation",
+      "heading": "The Endomembrane System: Production and Shipping",
+      "content": "Many of the cell's organelles form one connected manufacturing-and-shipping network called the endomembrane system: the endoplasmic reticulum, the Golgi apparatus, lysosomes, vesicles, and the nuclear envelope. Together they build, modify, package, and transport proteins and lipids.\n\nThe rough endoplasmic reticulum (rough ER) is studded with ribosomes, giving it a bumpy look. As those ribosomes translate proteins, the new polypeptides thread into the ER's interior (the lumen), where they begin folding and often get carbohydrate tags added (glycosylation). The rough ER is essentially the factory floor for proteins headed out of the cell or into membranes.\n\nThe smooth endoplasmic reticulum (smooth ER) has no ribosomes. It specializes in synthesizing lipids, detoxifying drugs and poisons (abundant in liver cells), and storing calcium ions (abundant in muscle cells, where calcium release triggers contraction).\n\nThe Golgi apparatus is the cell's shipping-and-receiving department. It receives vesicles from the ER at its 'cis' face, modifies and sorts the contents as they move through its stacked membranes, and dispatches finished products from its 'trans' face with the right address labels.\n\nLysosomes are membrane sacs of digestive enzymes that work best at an acidic pH around 5 — far more acidic than the cytoplasm's pH of about 7.2. They break down worn-out organelles, engulfed food, and invading bacteria, recycling the pieces. Keeping those powerful enzymes sealed in a compartment is compartmentalization in action: it protects the rest of the cell from being digested."
+    },
+    {
+      "type": "steps",
+      "heading": "Tracing a Secretory Protein (Like Insulin) From Gene to Export",
+      "steps": [
+        {
+          "title": "Transcription in the nucleus",
+          "content": "The gene for the protein is transcribed into messenger RNA inside the nucleus. The mRNA then exits through a nuclear pore into the cytoplasm."
+        },
+        {
+          "title": "Translation directed to the rough ER",
+          "content": "A ribosome begins translating the mRNA. An early signal sequence on the growing polypeptide directs the ribosome to dock on the rough ER, and the protein threads into the ER lumen as it is made."
+        },
+        {
+          "title": "Folding and modification in the ER",
+          "content": "Inside the ER lumen the protein folds into shape and may be glycosylated (sugar chains added). It is then packaged into a transport vesicle that buds off the ER."
+        },
+        {
+          "title": "Processing through the Golgi apparatus",
+          "content": "The transport vesicle fuses with the cis face of the Golgi. As the protein moves through the Golgi stacks, it is further modified and sorted, then packaged into a secretory vesicle at the trans face."
+        },
+        {
+          "title": "Export by exocytosis",
+          "content": "The secretory vesicle travels to the plasma membrane and fuses with it, releasing the finished protein outside the cell. This release of vesicle contents to the exterior is called exocytosis."
+        }
+      ]
+    },
+    {
+      "type": "example",
+      "heading": "Deducing a Cell's Job From Its Organelles",
+      "content": "On the AP exam you'll be asked to reason from organelle counts to cell function. Let's work two cases.\n\nCase 1: An electron micrograph shows a cell packed with mitochondria — far more than a typical cell. What does this tell you? Mitochondria make ATP, so a cell crammed with them must have very high energy demands. Real examples: heart muscle cells and the flagellated midpiece of a sperm cell are both mitochondria-rich because they never stop doing mechanical work. The reasoning chain is: many mitochondria → high ATP production → energy-intensive function.\n\nCase 2: A cell has abundant rough ER and a large, active Golgi apparatus, plus many secretory vesicles near its surface. What is its job? Rough ER makes proteins for export, the Golgi packages them, and the vesicles ship them out by exocytosis — so this is a secretory cell, like a pancreatic cell that pumps out digestive enzymes or insulin. The reasoning chain is: lots of rough ER + Golgi + vesicles → high protein secretion.\n\nThe general technique: don't memorize cells, read their organelles. Identify the dominant organelle, recall its function, and infer what the cell must spend its resources doing. Structure reveals function, even at a glance under the microscope."
+    },
+    {
+      "type": "quiz",
+      "question": "A cell that specializes in secreting large amounts of digestive enzymes would be expected to have an especially large amount of which organelle?",
+      "options": [
+        "Smooth endoplasmic reticulum",
+        "Rough endoplasmic reticulum",
+        "Central vacuole",
+        "Nucleolus"
+      ],
+      "correctIndex": 1,
+      "explanation": "Secreted proteins like digestive enzymes are synthesized by ribosomes on the rough ER, so a secretory cell needs abundant rough ER. Smooth ER handles lipids and detoxification, the central vacuole is a plant storage structure, and the nucleolus makes ribosomal subunits, not secreted enzymes."
+    },
+    {
+      "type": "explanation",
+      "heading": "Energy Organelles and the Cytoskeleton",
+      "content": "Two organelles are the cell's power plants, and both have a revealing feature: a double membrane. Mitochondria carry out aerobic cellular respiration, using oxygen to convert the energy in glucose-derived molecules into ATP, the cell's usable energy currency. Their outer membrane is smooth, but the inner membrane is folded into deep ridges called cristae. Those folds aren't decoration — they dramatically increase surface area for the electron transport chain, so the cell can make more ATP. Structure serving function, again.\n\nChloroplasts are found only in plants and some protists. They run photosynthesis, capturing light energy and storing it as chemical energy in sugars. Inside, stacks of membrane discs called thylakoids (grouped into grana) hold the light-capturing machinery — once more, folded membranes maximizing the surface where reactions happen.\n\nThe cytoskeleton is the cell's internal scaffolding and highway system: a web of protein fibers that gives the cell shape, anchors organelles, and moves materials around. It has three parts. Microfilaments (made of actin) handle cell shape and muscle contraction. Intermediate filaments provide tension-bearing structural reinforcement. Microtubules (made of tubulin) act as tracks for vesicle transport and pull chromosomes apart during cell division."
+    },
+    {
+      "type": "table",
+      "heading": "Organelle Cheat Sheet",
+      "headers": ["Organelle", "Function", "Structural feature"],
+      "rows": [
+        ["Nucleus", "Stores DNA; site of transcription", "Double membrane with nuclear pores"],
+        ["Ribosome", "Protein synthesis (translation)", "rRNA + protein; NOT membrane-bound"],
+        ["Rough ER", "Makes proteins for export/membranes", "Ribosome-studded membranes"],
+        ["Smooth ER", "Lipid synthesis, detox, Ca²⁺ storage", "Ribosome-free membranes"],
+        ["Golgi apparatus", "Modifies, sorts, ships proteins/lipids", "Stacked flattened sacs (cis/trans faces)"],
+        ["Lysosome", "Digestion and recycling", "Acidic (pH ~5) enzyme-filled sac"],
+        ["Mitochondrion", "Aerobic respiration → ATP", "Double membrane; inner folded into cristae"],
+        ["Chloroplast", "Photosynthesis (plants only)", "Double membrane; thylakoids in grana"]
+      ]
+    },
+    {
+      "type": "keypoint",
+      "content": "Eukaryotic cells use membrane-bound organelles to compartmentalize incompatible reactions, and each organelle's structure (folded cristae, ribosome-studded ER, acidic lysosome) directly supports its function."
+    },
+    {
+      "type": "callout",
+      "variant": "warning",
+      "heading": "Three Organelle Traps on the Exam",
+      "content": "(1) Ribosomes are NOT membrane-bound organelles — they're rRNA-and-protein complexes, and they exist in prokaryotes too. (2) The nucleolus is a region INSIDE the nucleus that makes ribosomal subunits; it is not the same as the nucleus and not its own organelle. (3) BOTH plant and animal cells have mitochondria — a common error is to assume plants only have chloroplasts. Plants photosynthesize AND respire, so they need both."
+    },
+    {
+      "type": "deepdive",
+      "heading": "Reading a Cell Under the Microscope: Plant vs. Animal",
+      "content": "On the AP exam you'll be shown cell images and asked to identify or compare them, so know the tells. Plant cells have everything animal cells have, plus three extra structures. First, a rigid cell wall of cellulose outside the plasma membrane that provides support and stops the cell from bursting when water rushes in — instead the cell becomes firm, or turgid, as it presses against the wall (turgor pressure). Second, a large central vacuole that can fill up to 90% of the cell's volume, storing water, ions, and pigments and helping maintain that turgor. Third, chloroplasts for photosynthesis.\n\nAnimal cells, by contrast, typically have centrioles that help organize the spindle during cell division, and they rely heavily on lysosomes for digestion (plants often use the vacuole for some of that work).\n\nThe practical rule: if you see a cell wall and chloroplasts, it's a plant cell. This isn't just memorization — it connects to physiology you'll use later. Turgor pressure is why a watered plant stands up straight and a thirsty one wilts; it's osmosis (next lessons) acting through structures you can see under a microscope. Structure, function, and the whole organism's behavior are one continuous story."
+    },
+    {
+      "type": "quiz",
+      "question": "A student examines two cells under a microscope. Cell X has a rigid outer wall, a large central vacuole, and chloroplasts. Cell Y has none of these but contains centrioles. What can the student correctly conclude?",
+      "options": [
+        "Cell X is prokaryotic and Cell Y is eukaryotic",
+        "Cell X is a plant cell and Cell Y is an animal cell",
+        "Cell X is an animal cell and Cell Y is a plant cell",
+        "Both cells must be prokaryotic because they have walls"
+      ],
+      "correctIndex": 1,
+      "explanation": "A cell wall, central vacuole, and chloroplasts are hallmark plant-cell features, while centrioles are characteristic of animal cells. Both cells are eukaryotic (they have membrane-bound organelles), and a cell wall does not make a cell prokaryotic."
+    },
+    {
+      "type": "callout",
+      "variant": "remember",
+      "heading": "Lock In the Core Organelle Facts",
+      "content": "Prokaryotes: no nucleus, no membrane-bound organelles, small. Eukaryotes: true nucleus + organelles, larger. All cells share: plasma membrane, ribosomes, DNA, cytoplasm. Endomembrane system = nuclear envelope → rough ER → smooth ER → Golgi → vesicles/lysosomes. Mitochondria (cristae) and chloroplasts (thylakoids) have DOUBLE membranes and folded inner surfaces for more reaction area. Plant-only: cell wall, central vacuole, chloroplasts."
+    },
+    {
+      "type": "callout",
+      "variant": "tip",
+      "heading": "Answer 'Structure-Function' FRQs With the Mechanism",
+      "content": "When asked why an organelle's structure suits its job, name the structural feature AND the functional payoff. Don't just say 'mitochondria have cristae'; say 'the inner membrane is folded into cristae, which increases surface area for the electron transport chain, allowing more ATP to be produced.' For cell-identification questions, justify your answer with the specific structures you see (cell wall + chloroplasts = plant) rather than a bare guess."
+    }
+  ],
+  "aiContext": "This AP Biology Unit 2 lesson covers CED topics 2.1 and 2.2: subcellular components and the relationship between cell structure and function. Emphasize compartmentalization as the central theme — membrane-bound organelles let eukaryotes run incompatible reactions simultaneously — and the recurring idea that folded membranes (cristae, thylakoids, ER) increase surface area for function. Watch for classic confusions: thinking ribosomes are membrane-bound organelles, conflating the nucleolus with the nucleus, and believing plant cells lack mitochondria. Connect forward to the plasma membrane and transport lessons (turgor pressure foreshadows osmosis) and to Unit 3 (mitochondria/chloroplasts as energy organelles) and the endosymbiosis lesson later in this unit. On the exam, expect MCQs matching organelles to functions, microscopy-based plant-vs-animal identification, and FRQs tracing the secretory pathway or asking students to EXPLAIN how an organelle's structure supports its role."
+}

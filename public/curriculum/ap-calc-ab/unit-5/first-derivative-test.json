@@ -1,0 +1,99 @@
+{
+  "id": "ap-calc-ab-u5-first-derivative-test",
+  "title": "Increasing, Decreasing, and the First Derivative Test",
+  "subject": "AP Calculus AB",
+  "unit": "Analytical Applications of Differentiation",
+  "track": "ap",
+  "difficulty": "ap",
+  "duration": "45 min",
+  "objectives": [
+    "Use the sign of f'(x) to determine the intervals on which a function is increasing or decreasing.",
+    "Find all critical points, including where f'(x) = 0 and where f'(x) is undefined.",
+    "Build a sign chart for f' and apply the First Derivative Test to classify local maxima and minima.",
+    "Justify increasing/decreasing and extremum conclusions with correct reasoning language."
+  ],
+  "sections": [
+    {
+      "type": "explanation",
+      "heading": "The Derivative Is the Function's Direction",
+      "content": "If you know the sign of a function's derivative, you know which way the function is heading. A derivative is a slope, and a slope tells you whether the graph is climbing or falling as you move left to right. This single idea — read the sign of f', conclude the direction of f — is the engine of the entire analytical-applications unit.\n\nConcretely: where f'(x) > 0, the tangent lines slope upward, so f is *increasing* — the outputs get larger as x grows. Where f'(x) < 0, the tangent lines slope downward, so f is *decreasing*. Where f'(x) = 0, the tangent is momentarily horizontal — the function pauses, and that pause is often (but not always) the top of a hill or the bottom of a valley.\n\nThink of hiking a trail whose elevation is f(x). Your derivative f'(x) is the steepness underfoot: positive when you're climbing, negative when you're descending, zero at a crest or a dip. To map out the whole hike — every climb, every descent, every peak and valley — you don't need to measure the elevation at thousands of points. You just need to know *where the steepness changes sign*. Those sign changes are where the interesting features live, and finding them is what this lesson is about."
+    },
+    {
+      "type": "explanation",
+      "heading": "Critical Points and the Increasing/Decreasing Test",
+      "content": "The places where f could switch between increasing and decreasing are its *critical points*: interior values of x where f'(x) = 0 or where f'(x) does not exist (while f itself is still defined). These are the only candidates for a local maximum or minimum, because a function can only turn around where its slope is zero or where it has a corner/cusp.\n\nThe Increasing/Decreasing Test formalizes the direction idea: on any interval where f'(x) > 0, f is increasing; on any interval where f'(x) < 0, f is decreasing. To apply it, you find the critical points (which split the number line into intervals), then test the sign of f' on each interval. Because f' can only change sign at a critical point (for a continuous f'), one test value per interval tells you the sign on the entire interval.\n\nA subtle but important point: f'(x) = 0 does NOT guarantee a maximum or minimum. The function f(x) = x³ has f'(0) = 0, yet x = 0 is neither — the function increases on both sides. What actually creates a local extremum is a *sign change* in f', not merely a zero. That's why the sign chart, not the list of zeros, is the real tool."
+    },
+    {
+      "type": "steps",
+      "heading": "Building a Sign Chart for f'",
+      "steps": [
+        { "title": "Differentiate and find critical points", "content": "Compute f'(x). Solve f'(x) = 0 and separately find where f'(x) is undefined (but f is defined). These critical x-values are the only places the sign can change." },
+        { "title": "Mark the critical points on a number line", "content": "Place the critical points in order; they divide the domain into open intervals." },
+        { "title": "Test the sign of f' in each interval", "content": "Pick any convenient value in each interval and determine whether f'(x) is positive or negative there — you need only the sign, not the exact value." },
+        { "title": "Translate signs into behavior", "content": "Positive means increasing, negative means decreasing. A change from + to − is a local max; from − to + is a local min; no change means neither." }
+      ]
+    },
+    {
+      "type": "example",
+      "heading": "Intervals of Increase and Decrease",
+      "content": "Find where f(x) = x⁴ − 8x² is increasing and decreasing.\n\nDifferentiate: f'(x) = 4x³ − 16x = 4x(x² − 4) = 4x(x − 2)(x + 2).\n\nCritical points (f' = 0): x = −2, 0, 2. (f' is a polynomial, defined everywhere, so there are no 'undefined' critical points.)\n\nSign chart, testing each interval:\n  x < −2 (try x = −3): 4(−3)(−5)(−1) = −60 < 0 → decreasing\n  −2 < x < 0 (try x = −1): 4(−1)(−3)(1) = 12 > 0 → increasing\n  0 < x < 2 (try x = 1): 4(1)(−1)(3) = −12 < 0 → decreasing\n  x > 2 (try x = 3): 4(3)(1)(5) = 60 > 0 → increasing\n\nSo f is decreasing on (−∞, −2), increasing on (−2, 0), decreasing on (0, 2), and increasing on (2, ∞). The W-shape this describes is exactly the graph of x⁴ − 8x²."
+    },
+    {
+      "type": "callout",
+      "variant": "warning",
+      "heading": "Don't Forget Where f' Is Undefined",
+      "content": "Critical points include x-values where f'(x) does not exist, not only where f'(x) = 0. For f(x) = x^(2/3), the derivative f'(x) = (2/3)x^(−1/3) is undefined at x = 0, yet f(0) = 0 is defined and is actually the function's minimum (a sharp cusp). If you only solve f'(x) = 0 you'd miss it entirely. Always ask both questions: where is f'(x) zero, and where is f'(x) undefined while f is still defined? Both kinds of points must go on your sign chart."
+    },
+    {
+      "type": "quiz",
+      "question": "If f'(x) = (x − 1)(x + 3), on which interval is f decreasing?",
+      "options": ["(−∞, −3)", "(−3, 1)", "(1, ∞)", "f is increasing everywhere"],
+      "correctIndex": 1,
+      "explanation": "f' = (x − 1)(x + 3) is zero at x = −3 and x = 1. Testing a point in (−3, 1), say x = 0: (−1)(3) = −3 < 0, so f is decreasing there. Outside that interval both factors share a sign, making f' positive, so f increases on (−∞, −3) and (1, ∞)."
+    },
+    {
+      "type": "explanation",
+      "heading": "The First Derivative Test for Local Extrema",
+      "content": "Once your sign chart is built, classifying each critical point is immediate. The First Derivative Test reads the *sign change* of f' across a critical point c:\n\n• If f' changes from positive to negative at c, then f is increasing then decreasing — c is a local MAXIMUM.\n• If f' changes from negative to positive at c, then f is decreasing then increasing — c is a local MINIMUM.\n• If f' does NOT change sign at c, then c is neither a max nor a min (the function keeps going the same direction, as with x³ at 0).\n\nThe reasoning is just the picture of a hill and a valley: a peak is exactly where you stop climbing and start descending (slope goes + to −), and a valley is where you stop descending and start climbing (slope goes − to +). The test simply converts that picture into a rule about the sign of f'.\n\nThis test works even at critical points where f' is undefined (like the cusp of x^(2/3)), as long as f is continuous there — you still just check whether the sign of f' flips across the point. That generality is one reason the First Derivative Test is so reliable: it never requires the second derivative, and it handles corners and cusps that the second derivative test cannot."
+    },
+    {
+      "type": "example",
+      "heading": "Classifying the Extrema",
+      "content": "Classify the local extrema of f(x) = x⁴ − 8x² using the sign chart from before.\n\nRecall the signs of f'(x) = 4x(x − 2)(x + 2):\n  decreasing on (−∞, −2), increasing on (−2, 0), decreasing on (0, 2), increasing on (2, ∞).\n\nNow read the sign changes at each critical point:\n  At x = −2: f' goes from − to + → local MINIMUM. Value: f(−2) = 16 − 32 = −16.\n  At x = 0: f' goes from + to − → local MAXIMUM. Value: f(0) = 0.\n  At x = 2: f' goes from − to + → local MINIMUM. Value: f(2) = 16 − 32 = −16.\n\nSo f has local minima at (−2, −16) and (2, −16) and a local maximum at (0, 0). The two minima share the same value because f is an even function, symmetric about the y-axis — a useful check that the work is consistent."
+    },
+    {
+      "type": "table",
+      "heading": "Sign Change of f' → Conclusion",
+      "headers": ["Behavior of f' across c", "What f is doing", "Classification of c"],
+      "rows": [
+        ["+ then −", "increasing then decreasing", "local maximum"],
+        ["− then +", "decreasing then increasing", "local minimum"],
+        ["+ then + (no change)", "increasing throughout", "neither (e.g. x³ at 0)"],
+        ["− then − (no change)", "decreasing throughout", "neither"]
+      ]
+    },
+    {
+      "type": "quiz",
+      "question": "A continuous function has f'(x) > 0 for x < 4 and f'(x) < 0 for x > 4. What occurs at x = 4?",
+      "options": ["A local minimum", "A local maximum", "An inflection point", "Neither a max nor a min"],
+      "correctIndex": 1,
+      "explanation": "f' changes from positive (increasing) to negative (decreasing) at x = 4, so by the First Derivative Test the function rises then falls — a local maximum. A change from negative to positive would instead give a local minimum; inflection points are about concavity (f''), not f'."
+    },
+    {
+      "type": "callout",
+      "variant": "tip",
+      "heading": "Say It the Way the Rubric Wants",
+      "content": "On AP free response, conclusions must be justified by explicit reference to the sign of f'. Write, for example, 'f has a local maximum at x = 4 because f' changes from positive to negative there.' Stating only 'f'(4) = 0' or 'the graph goes up then down' without citing the sign change typically does not earn the justification point. Also distinguish local from absolute: the First Derivative Test finds LOCAL extrema; for absolute extrema on a closed interval you still compare with endpoint values using the Candidates Test."
+    },
+    {
+      "type": "deepdive",
+      "heading": "Why the Sign of f' Controls Monotonicity",
+      "content": "Why is it true that f'(x) > 0 on an interval forces f to increase there? It feels obvious, but the rigorous reason is the Mean Value Theorem from the previous lesson — and seeing the connection deepens both ideas.\n\nTake any two points a < b in an interval where f'(x) > 0 everywhere. The MVT guarantees some c between them with f(b) − f(a) = f'(c)(b − a). Since b − a > 0 and f'(c) > 0, the product is positive, so f(b) > f(a). Because a and b were arbitrary, every later input gives a larger output: f is strictly increasing. The same argument with f'(x) < 0 gives f(b) < f(a), so f decreases. The Increasing/Decreasing Test is therefore not an assumption — it is a theorem, proved by the MVT.\n\nThis also explains why a zero of f' need not be an extremum. f'(0) = 0 for f(x) = x³, but f'(x) = 3x² is positive on both sides of 0, so by the test f increases through 0 without turning around — there's a horizontal tangent but no peak or valley. The extremum requires the slope to actually *reverse*, which is precisely a sign change. The single most common error in this topic is concluding 'f'(c) = 0, therefore extremum'; the cure is to always confirm the sign change. Mastering this distinction is what lets you read a function's entire shape from the behavior of its derivative — the skill the rest of the unit builds on."
+    },
+    {
+      "type": "keypoint",
+      "content": "f is increasing where f'(x) > 0 and decreasing where f'(x) < 0. Critical points occur where f'(x) = 0 or is undefined (with f defined). The First Derivative Test classifies a critical point by the sign change of f': + to − is a local maximum, − to + is a local minimum, and no sign change is neither. Justify conclusions by citing the sign change, not just that f' = 0."
+    }
+  ],
+  "aiContext": "AP Calculus AB Unit 5, increasing/decreasing behavior and the First Derivative Test. The central skill is building a sign chart of f' from the critical points (where f' = 0 OR is undefined) and reading direction from the sign. The dominant error is concluding an extremum from f'(c) = 0 alone; emphasize that a local extremum requires a sign CHANGE in f' (x³ at 0 is the counterexample). Stress AP justification language: a local max/min must be justified by f' changing from positive to negative (or vice versa). Connect monotonicity to the MVT (positive derivative forces increase) and distinguish local extrema from absolute extrema, which still need the endpoint comparison from the Candidates Test. Note this test handles cusps where f' is undefined, unlike the second derivative test."
+}

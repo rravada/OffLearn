@@ -1,0 +1,269 @@
+{
+  "id": "ap-calc-ab-course-final",
+  "title": "AP Calculus AB Course Final",
+  "subject": "AP Calculus AB",
+  "unit": "Cumulative Final",
+  "type": "course-final",
+  "questionsPerAttempt": 15,
+  "isAssessment": true,
+  "bank": [
+    {
+      "question": "Evaluate lim(x→2) (x² − 4)/(x − 2).",
+      "options": ["4", "0", "2", "Does not exist"],
+      "correctIndex": 0,
+      "explanation": "Factor: (x² − 4)/(x − 2) = (x + 2) for x ≠ 2, so the limit is 2 + 2 = 4. The 0/0 form is removed by canceling the common factor (x − 2)."
+    },
+    {
+      "question": "A function has a hole at x = 3 but is otherwise smooth there. This is which type of discontinuity?",
+      "options": ["jump", "removable", "infinite", "none — it is continuous"],
+      "correctIndex": 1,
+      "explanation": "A hole where the limit exists but the function value is missing or different is a removable discontinuity. Jump discontinuities have differing one-sided limits, and infinite discontinuities involve a vertical asymptote."
+    },
+    {
+      "question": "Evaluate lim(x→∞) (3x² + 1)/(x² − 5).",
+      "options": ["3", "1", "0", "∞"],
+      "correctIndex": 0,
+      "explanation": "For a rational function with equal-degree numerator and denominator, the limit at infinity is the ratio of leading coefficients: 3/1 = 3."
+    },
+    {
+      "question": "f is continuous on [1, 4] with f(1) = −2 and f(4) = 5. The Intermediate Value Theorem guarantees that:",
+      "options": ["f has a maximum at x = 4", "f(c) = 0 for some c in (1, 4)", "f is increasing", "f'(c) = 0 somewhere"],
+      "correctIndex": 1,
+      "explanation": "Since f is continuous and changes sign from −2 to 5, the IVT guarantees f takes every value between them, including 0, at some c in (1, 4)."
+    },
+    {
+      "question": "Evaluate lim(x→0) sin(x)/x.",
+      "options": ["0", "1", "∞", "Does not exist"],
+      "correctIndex": 1,
+      "explanation": "This is the fundamental trig limit: lim(x→0) sin(x)/x = 1. It underlies the derivatives of sine and cosine."
+    },
+    {
+      "question": "Using the limit definition, the derivative of f(x) = x² is:",
+      "options": ["x", "2x", "2x + h", "x²"],
+      "correctIndex": 1,
+      "explanation": "[(x + h)² − x²]/h = (2xh + h²)/h = 2x + h, and taking h → 0 gives 2x. The answer 2x + h forgets the final limit step."
+    },
+    {
+      "question": "What is d/dx[x⁵]?",
+      "options": ["5x⁴", "x⁴", "5x⁵", "4x⁵"],
+      "correctIndex": 0,
+      "explanation": "By the power rule, d/dx[xⁿ] = nxⁿ⁻¹, so d/dx[x⁵] = 5x⁴."
+    },
+    {
+      "question": "What is d/dx[x²·sin x]?",
+      "options": ["2x·cos x", "2x·sin x + x²·cos x", "2x·sin x − x²·cos x", "x²·cos x"],
+      "correctIndex": 1,
+      "explanation": "By the product rule: (2x)(sin x) + (x²)(cos x) = 2x sin x + x² cos x."
+    },
+    {
+      "question": "If a function is differentiable at a point, then at that point it is necessarily:",
+      "options": ["continuous", "increasing", "concave up", "equal to zero"],
+      "correctIndex": 0,
+      "explanation": "Differentiability implies continuity. The converse is false: a function can be continuous but not differentiable (e.g., a corner like |x| at 0)."
+    },
+    {
+      "question": "What is d/dx[sin(x²)]?",
+      "options": ["cos(x²)", "2x·cos(x²)", "2x·sin(x²)", "cos(2x)"],
+      "correctIndex": 1,
+      "explanation": "Chain rule: the derivative of sin(u) is cos(u) times u'. With u = x², u' = 2x, giving 2x·cos(x²)."
+    },
+    {
+      "question": "For the circle x² + y² = 25, implicit differentiation gives dy/dx =",
+      "options": ["x/y", "−x/y", "−y/x", "−2x"],
+      "correctIndex": 1,
+      "explanation": "Differentiating gives 2x + 2y(dy/dx) = 0, so dy/dx = −x/y."
+    },
+    {
+      "question": "What is d/dx[arctan x]?",
+      "options": ["1/√(1 − x²)", "1/(1 + x²)", "−1/(1 + x²)", "1/x"],
+      "correctIndex": 1,
+      "explanation": "The derivative of arctan x is 1/(1 + x²). The form 1/√(1 − x²) belongs to arcsin x."
+    },
+    {
+      "question": "A table gives f(3) = 7 and f'(3) = 4. If f is invertible, what is (f⁻¹)'(7)?",
+      "options": ["4", "1/4", "7", "1/7"],
+      "correctIndex": 1,
+      "explanation": "Since f(3) = 7, f⁻¹(7) = 3, so (f⁻¹)'(7) = 1/f'(3) = 1/4. Evaluate the original derivative at the matching input, then take the reciprocal."
+    },
+    {
+      "question": "If f(x) = x⁴, what is f''(x)?",
+      "options": ["4x³", "12x²", "24x", "12x³"],
+      "correctIndex": 1,
+      "explanation": "f'(x) = 4x³, so f''(x) = 12x². The second derivative is found by differentiating twice."
+    },
+    {
+      "question": "If C(x) is the cost in dollars to produce x items and C'(200) = 4.50, this means:",
+      "options": ["it costs $4.50 to make 200 items", "at 200 items, cost is rising about $4.50 per additional item", "the total cost is $900", "the cost decreases"],
+      "correctIndex": 1,
+      "explanation": "C'(200) is a rate (marginal cost) in dollars per item: at a production level of 200, cost is increasing about $4.50 for each additional item."
+    },
+    {
+      "question": "A spherical balloon (V = (4/3)πr³) has dr/dt = 2 cm/s. How fast is the volume changing when r = 3 cm?",
+      "options": ["72π cm³/s", "36π cm³/s", "24π cm³/s", "18π cm³/s"],
+      "correctIndex": 0,
+      "explanation": "dV/dt = 4πr²(dr/dt) = 4π(9)(2) = 72π cm³/s. The related-rates chain rule produces the dr/dt factor."
+    },
+    {
+      "question": "Using f(x) = √x at a = 9, the linear approximation of √9.1 is about:",
+      "options": ["3.0167", "3.05", "3.5", "3.0017"],
+      "correctIndex": 0,
+      "explanation": "L(x) = 3 + (1/6)(x − 9), so L(9.1) = 3 + (1/6)(0.1) ≈ 3.0167. The slope f'(9) = 1/6 times the change 0.1 gives the small correction."
+    },
+    {
+      "question": "Evaluate lim(x→0) (eˣ − 1)/x using L'Hôpital's Rule.",
+      "options": ["0", "1", "e", "Does not exist"],
+      "correctIndex": 1,
+      "explanation": "The form is 0/0; differentiating top and bottom gives eˣ/1, which is 1 at x = 0."
+    },
+    {
+      "question": "At an instant a particle has velocity v = −5 and acceleration a = −2. The particle is:",
+      "options": ["moving right and speeding up", "moving left and speeding up", "moving left and slowing down", "at rest"],
+      "correctIndex": 1,
+      "explanation": "Negative velocity means moving left; velocity and acceleration share the same sign, so speed is increasing — speeding up. Same signs always mean speeding up."
+    },
+    {
+      "question": "f is continuous on [0, 6] and differentiable on (0, 6) with f(0) = 1 and f(6) = 13. The Mean Value Theorem guarantees a c with f'(c) =",
+      "options": ["12", "2", "13", "6"],
+      "correctIndex": 1,
+      "explanation": "f'(c) equals the average rate of change [f(6) − f(0)]/(6 − 0) = 12/6 = 2."
+    },
+    {
+      "question": "By the First Derivative Test, a local maximum occurs where f' changes from:",
+      "options": ["negative to positive", "positive to negative", "positive to positive", "zero to zero"],
+      "correctIndex": 1,
+      "explanation": "A local maximum is where the function rises then falls, so f' changes from positive to negative."
+    },
+    {
+      "question": "If f''(x) > 0 on an interval, the graph of f is:",
+      "options": ["concave up", "concave down", "increasing", "decreasing"],
+      "correctIndex": 0,
+      "explanation": "A positive second derivative means the slopes are increasing, so the graph is concave up."
+    },
+    {
+      "question": "To find the absolute maximum of a continuous function on a closed interval [a, b], evaluate f at:",
+      "options": ["only critical points", "critical points and both endpoints", "only endpoints", "inflection points"],
+      "correctIndex": 1,
+      "explanation": "The Candidates Test compares f at all critical points and both endpoints; the largest value is the absolute maximum."
+    },
+    {
+      "question": "A farmer uses 100 ft of fencing for three sides of a rectangle against a barn (2x + y = 100), maximizing area xy. The maximum area is:",
+      "options": ["1250 ft²", "2500 ft²", "625 ft²", "1000 ft²"],
+      "correctIndex": 0,
+      "explanation": "A(x) = x(100 − 2x); A'(x) = 100 − 4x = 0 gives x = 25, y = 50, area = 1250 ft². A'' = −4 confirms a maximum."
+    },
+    {
+      "question": "On the graph of f', the function f is increasing where:",
+      "options": ["the f' graph is rising", "the f' graph is above the x-axis", "the f' graph has a maximum", "the f' graph is below the x-axis"],
+      "correctIndex": 1,
+      "explanation": "f is increasing where f'(x) > 0, i.e. where the f' graph is above the x-axis. Whether the f' graph is rising tells you the concavity of f instead."
+    },
+    {
+      "question": "What is ∫x³ dx?",
+      "options": ["x⁴/4 + C", "3x² + C", "4x³ + C", "x⁴ + C"],
+      "correctIndex": 0,
+      "explanation": "By the reverse power rule, ∫x³ dx = x⁴/4 + C."
+    },
+    {
+      "question": "Evaluate ∫ from 1 to 2 of 2x dx.",
+      "options": ["3", "4", "2", "6"],
+      "correctIndex": 0,
+      "explanation": "An antiderivative of 2x is x²; by FTC Part 2, 2² − 1² = 4 − 1 = 3."
+    },
+    {
+      "question": "What is d/dx ∫ from 0 to x² of cos(t) dt?",
+      "options": ["cos(x²)", "2x·cos(x²)", "sin(x²)", "cos(x²) − 1"],
+      "correctIndex": 1,
+      "explanation": "FTC Part 1 with a composite upper limit and the chain rule: cos(x²)·d/dx[x²] = 2x·cos(x²)."
+    },
+    {
+      "question": "For an increasing function, a left Riemann sum gives an estimate that is:",
+      "options": ["an overestimate", "an underestimate", "exact", "dependent on concavity"],
+      "correctIndex": 1,
+      "explanation": "For an increasing function the left endpoints are the lowest points of each subinterval, so the left rectangles underestimate the area."
+    },
+    {
+      "question": "The definite integral ∫ from a to b of f(x) dx represents:",
+      "options": ["total geometric area always", "net signed area (above minus below the axis)", "the slope of f", "the maximum of f"],
+      "correctIndex": 1,
+      "explanation": "The definite integral is net signed area: regions above the axis count positive and below count negative. It equals total area only when f stays nonnegative."
+    },
+    {
+      "question": "Evaluate ∫2x·cos(x²) dx using substitution.",
+      "options": ["sin(x²) + C", "2 sin(x²) + C", "cos(x²) + C", "x² sin(x²) + C"],
+      "correctIndex": 0,
+      "explanation": "Let u = x², du = 2x dx; the integral becomes ∫cos u du = sin(x²) + C."
+    },
+    {
+      "question": "For the accumulation function F(x) = ∫ from a to x of f(t) dt, the FTC gives F'(x) =",
+      "options": ["f(x)", "f'(x)", "f(a)", "F(a)"],
+      "correctIndex": 0,
+      "explanation": "By FTC Part 1, the derivative of an accumulation function is the integrand: F'(x) = f(x), so f acts as the derivative of F."
+    },
+    {
+      "question": "The general solution of dy/dt = ky (k constant) is:",
+      "options": ["y = kt + C", "y = Ce^(kt)", "y = Ct^k", "y = e^(kt) + C"],
+      "correctIndex": 1,
+      "explanation": "Separating and integrating gives ln|y| = kt + C, and exponentiating yields y = Ce^(kt) — the exponential growth/decay model."
+    },
+    {
+      "question": "After separating dy/dx = x/y, the integrated equation is:",
+      "options": ["ln|y| = x²/2 + C", "y²/2 = x²/2 + C", "y²/2 = ln|x| + C", "y = x + C"],
+      "correctIndex": 1,
+      "explanation": "Separate to y dy = x dx, then integrate: y²/2 = x²/2 + C."
+    },
+    {
+      "question": "A slope field draws, at each grid point, a short segment whose slope equals:",
+      "options": ["the value of y", "the value of dy/dx there", "the area under the curve", "the second derivative"],
+      "correctIndex": 1,
+      "explanation": "Each segment's slope is dy/dx = f(x, y) at that point, showing the direction a solution curve would head through it."
+    },
+    {
+      "question": "A substance with half-life 8 years decays as y = y₀e^(kt). Its decay constant k is:",
+      "options": ["(ln 2)/8", "−(ln 2)/8", "8/(ln 2)", "−8 ln 2"],
+      "correctIndex": 1,
+      "explanation": "From 1/2 = e^(8k), we get 8k = −ln 2, so k = −(ln 2)/8 (negative for decay)."
+    },
+    {
+      "question": "The average value of f on [a, b] is:",
+      "options": ["∫ from a to b of f(x) dx", "(1/(b − a))∫ from a to b of f(x) dx", "[f(b) − f(a)]/(b − a)", "f(b) − f(a)"],
+      "correctIndex": 1,
+      "explanation": "Average value is the integral divided by the interval length: (1/(b − a))∫ₐᵇ f(x) dx — a representative height of f."
+    },
+    {
+      "question": "A particle's velocity is v(t). The net change in its position from t = a to t = b (its displacement) is:",
+      "options": ["∫ from a to b of |v(t)| dt", "∫ from a to b of v(t) dt", "v(b) − v(a)", "∫ from a to b of a(t) dt"],
+      "correctIndex": 1,
+      "explanation": "Displacement is the integral of velocity, ∫ₐᵇ v(t) dt — an application of the Net Change Theorem (integrating a rate gives net change). Integrating |v| would give total distance instead."
+    },
+    {
+      "question": "A particle moves with v(t) positive on (0, 2) and negative on (2, 5). Its TOTAL DISTANCE traveled on [0, 5] is:",
+      "options": ["∫ from 0 to 5 of v(t) dt", "∫ from 0 to 2 of v dt − ∫ from 2 to 5 of v dt", "v(5) − v(0)", "∫ from 0 to 5 of a(t) dt"],
+      "correctIndex": 1,
+      "explanation": "Total distance is ∫|v| dt. With v < 0 on (2,5), subtracting that (negative) integral adds its absolute value, giving the total distance. ∫₀⁵ v dt alone would be displacement."
+    },
+    {
+      "question": "The area between two curves with vertical slices is:",
+      "options": ["∫ (bottom − top) dx", "∫ (top − bottom) dx", "∫ (top + bottom) dx", "∫ top dx"],
+      "correctIndex": 1,
+      "explanation": "Each vertical strip has height (top − bottom), so the area is ∫ₐᵇ (top − bottom) dx."
+    },
+    {
+      "question": "The region under y = √x from x = 0 to 4 is rotated about the x-axis. Its volume (disc method) is:",
+      "options": ["8π", "16π", "4π", "8"],
+      "correctIndex": 0,
+      "explanation": "V = ∫₀⁴ π(√x)² dx = ∫₀⁴ πx dx = π[x²/2]₀⁴ = 8π. The disc radius is the height √x, squared with a factor of π."
+    },
+    {
+      "question": "Rotating the region between an outer curve R(x) and inner curve r(x) about the x-axis gives a volume with integrand:",
+      "options": ["π(R − r)²", "π(R² − r²)", "π(R² + r²)", "(R² − r²)"],
+      "correctIndex": 1,
+      "explanation": "A washer's area is the outer circle minus the inner circle: π(R² − r²), the difference of the squares of the radii — never π(R − r)²."
+    },
+    {
+      "question": "A solid has square cross sections perpendicular to the x-axis with side equal to the height (top − bottom) of its base. Its volume is:",
+      "options": ["∫ (top − bottom) dx", "∫ (top − bottom)² dx", "∫ π(top − bottom)² dx", "∫ (1/2)(top − bottom)² dx"],
+      "correctIndex": 1,
+      "explanation": "A square cross section has area side² = (top − bottom)², and the volume is ∫ A(x) dx = ∫ (top − bottom)² dx. No π appears because the cross sections are squares, not circles."
+    }
+  ]
+}

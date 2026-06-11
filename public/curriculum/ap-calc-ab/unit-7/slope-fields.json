@@ -1,0 +1,99 @@
+{
+  "id": "ap-calc-ab-u7-slope-fields",
+  "title": "Slope Fields",
+  "subject": "AP Calculus AB",
+  "unit": "Differential Equations",
+  "track": "ap",
+  "difficulty": "ap",
+  "duration": "40 min",
+  "objectives": [
+    "Interpret a slope field as the geometric picture of a differential equation dy/dx = f(x, y).",
+    "Construct a slope field by computing slopes at grid points and drawing short tangent segments.",
+    "Sketch a particular solution curve through a given point by following the slope field.",
+    "Match a differential equation to its slope field using the equation's dependence on x and y."
+  ],
+  "sections": [
+    {
+      "type": "explanation",
+      "heading": "A Picture of a Differential Equation",
+      "content": "A differential equation like dy/dx = f(x, y) tells you the *slope* of the solution at every point in the plane, even before you know the solution itself. A slope field turns that information into a picture: at a grid of points, you draw a tiny line segment whose slope is the value of dy/dx there. The result is a field of little tangent marks that reveal the 'flow' of all the solution curves at once.\n\nThe intuition is like iron filings around a magnet, or wind arrows on a weather map. Each short segment shows which way a solution passing through that point must head. You don't see the curves directly, but you see their direction everywhere, and the curves are whatever paths follow those directions smoothly. A solution to the differential equation is any curve that is tangent to the field segment at every point it passes through.\n\nSlope fields matter for two reasons. First, they let you understand a differential equation *qualitatively* even when you can't solve it with a formula — you can see where solutions rise, fall, level off, or blow up. Second, they connect the abstract symbol dy/dx = f(x, y) to a concrete geometric object, reinforcing that a differential equation is fundamentally a rule assigning a slope to each point. On the AP exam you'll be asked to sketch slope fields, match them to equations, and trace solution curves through them."
+    },
+    {
+      "type": "explanation",
+      "heading": "Building a Slope Field",
+      "content": "To construct a slope field, you evaluate dy/dx = f(x, y) at each point of a grid and draw a short segment with that slope centered at the point. The length of the segments doesn't matter — only their direction encodes information.\n\nThe value of f(x, y) at a point is the slope there. A slope of 0 gives a horizontal dash; a large positive slope gives a steep upward segment; a negative slope gives a downward segment; an undefined slope (division by zero) gives a vertical segment. You repeat this across the grid, and the pattern of directions emerges.\n\nWatch carefully what the right-hand side depends on, because it controls the pattern. If dy/dx depends only on x, then the slope is the same all along any vertical line (any fixed x), so each *column* of segments looks identical. If dy/dx depends only on y, the slope is the same along any horizontal line (any fixed y), so each *row* looks identical. If it depends on both x and y, the slopes vary throughout the plane. Recognizing these patterns is exactly what lets you match a slope field to its equation, and it's a frequent multiple-choice task. Building even a small slope field by hand — say a 3-by-3 grid — quickly trains your eye to read these structures."
+    },
+    {
+      "type": "steps",
+      "heading": "Drawing a Slope Field",
+      "steps": [
+        { "title": "Set up a grid of points", "content": "Choose a set of (x, y) points covering the region of interest, typically a small lattice of integer coordinates." },
+        { "title": "Evaluate dy/dx at each point", "content": "Plug each point's coordinates into f(x, y) to get the slope there." },
+        { "title": "Draw a short segment with that slope", "content": "At each grid point, draw a small line segment having the computed slope (horizontal for 0, steep for large values, vertical for undefined)." },
+        { "title": "Look for the overall pattern", "content": "Step back and read the flow of the segments; this reveals the shape of the family of solution curves." }
+      ]
+    },
+    {
+      "type": "example",
+      "heading": "Computing Slopes at Grid Points",
+      "content": "Build part of the slope field for dy/dx = x + y.\n\nEvaluate the slope at several points by adding the coordinates:\n  At (0, 0): slope = 0 + 0 = 0 → horizontal segment.\n  At (1, 0): slope = 1 + 0 = 1 → segment rising at 45°.\n  At (0, 1): slope = 0 + 1 = 1 → also rising at 45°.\n  At (1, 1): slope = 1 + 1 = 2 → steeper upward segment.\n  At (−1, 1): slope = −1 + 1 = 0 → horizontal segment.\n  At (2, −2): slope = 2 + (−2) = 0 → horizontal segment.\n\nNotice the horizontal segments occur wherever x + y = 0, i.e. along the line y = −x. Everywhere above that line the slopes are positive (segments tilt up); below it the slopes are negative (segments tilt down). Even from these few points, the field's structure is emerging: solution curves flatten out as they cross the line y = −x and steepen as they move away from it. You never solved the equation, yet you already understand how its solutions behave."
+    },
+    {
+      "type": "callout",
+      "variant": "warning",
+      "heading": "Segments Show Direction, Not the Curve",
+      "content": "A slope-field segment is a tiny piece of the TANGENT line at that point — it shows the direction a solution heads there, not the solution curve itself. The actual solution is a smooth curve that stays tangent to the segments as it moves; it does not jump from segment to segment or follow them as if they were connected. Also remember the slope generally depends on BOTH x and y, so don't assume the slope is constant: re-evaluate f(x, y) at each point. A common error is reading a single segment as the whole solution rather than as one local direction arrow."
+    },
+    {
+      "type": "quiz",
+      "question": "For the differential equation dy/dx = x + y, what is the slope of the field segment at the point (2, −1)?",
+      "options": ["3", "1", "−1", "0"],
+      "correctIndex": 1,
+      "explanation": "Substitute the point into dy/dx = x + y: 2 + (−1) = 1. The segment at (2, −1) has slope 1, rising at 45°. Each grid point's slope is just the value of f(x, y) there."
+    },
+    {
+      "type": "explanation",
+      "heading": "Sketching Solution Curves",
+      "content": "Once you have a slope field, you can sketch the *particular* solution through any given point by tracing a curve that follows the segments. Start at the given point (the initial condition) and move in the direction the local segment indicates; as you advance, continually adjust your direction to match the segments you pass, keeping the curve tangent to the field throughout.\n\nThink of it as steering a small boat through a current. The slope field is the current's direction at every location; the solution curve is the path you trace by always heading the way the current points at your present position. Because exactly one solution passes through each point (for the well-behaved equations in this course), your traced curve is uniquely determined by where you start — different starting points give different members of the solution family, and these curves never cross.\n\nWhen sketching for the AP exam, begin at the marked point, follow the segments smoothly in both directions, and make sure your curve's steepness always matches the nearby field marks — flattening where segments are horizontal, steepening where they're steep. Don't let the curve cut across segments at the wrong angle. A good solution sketch looks like it 'belongs' to the field, threading through the segments like a contour following the flow."
+    },
+    {
+      "type": "example",
+      "heading": "Tracing a Solution Through a Point",
+      "content": "Suppose dy/dx = −x/y and you want the solution curve through (3, 4).\n\nFirst, read the local direction: at (3, 4) the slope is −3/4, a gentle downward segment. As you trace rightward from (3, 4), y decreases and x increases, so the next slopes −x/y become more steeply negative — the curve bends downward more sharply. Tracing leftward from (3, 4), the curve rises.\n\nThis particular field has a recognizable structure. Notice that horizontal segments (slope 0) occur where x = 0, and vertical segments (undefined slope) occur where y = 0. In fact the solution curves here are circles centered at the origin: the relationship y dy = −x dx integrates to x² + y² = constant. The curve through (3, 4) lies on x² + y² = 25, the circle of radius 5. Even without performing that integration, following the slope field from (3, 4) traces out the upper arc of that circle — the field's directions sweep out circular arcs. This shows how a slope field reveals the global shape of solutions from purely local slope information."
+    },
+    {
+      "type": "table",
+      "heading": "Matching an Equation to Its Slope Field",
+      "headers": ["If dy/dx depends on...", "Then the slope field shows...", "Tell-tale sign"],
+      "rows": [
+        ["x only (e.g. dy/dx = x)", "identical segments in each vertical column", "slopes constant along vertical lines"],
+        ["y only (e.g. dy/dx = y)", "identical segments in each horizontal row", "slopes constant along horizontal lines"],
+        ["both x and y", "slopes varying throughout the plane", "no simple row/column repetition"],
+        ["a constant (e.g. dy/dx = 2)", "all segments parallel", "every segment has the same slope"]
+      ]
+    },
+    {
+      "type": "quiz",
+      "question": "If a slope field shows identical segments all along each horizontal line (same slope for a fixed y, regardless of x), the differential equation most likely depends on:",
+      "options": ["x only", "y only", "neither x nor y", "both equally"],
+      "correctIndex": 1,
+      "explanation": "If the slope is the same for any fixed y but changes with y, then dy/dx depends only on y. Dependence on x only would make the columns (vertical lines) identical instead; dependence on both would vary the slope throughout the plane."
+    },
+    {
+      "type": "callout",
+      "variant": "tip",
+      "heading": "Matching on the Multiple-Choice Section",
+      "content": "To match a differential equation to a slope field quickly: first check whether the slope depends on x only (columns identical), y only (rows identical), or both. Then test a few easy points — where is the slope zero (horizontal marks)? where is it undefined (vertical marks)? where is it positive vs negative? For example, dy/dx = x has horizontal marks all along the y-axis (x = 0); dy/dx = y has horizontal marks all along the x-axis (y = 0). Matching the locations of horizontal and vertical segments to the equation usually eliminates every wrong choice in seconds."
+    },
+    {
+      "type": "deepdive",
+      "heading": "Why Slope Fields Are Worth Drawing",
+      "content": "Slope fields might feel like busywork next to algebraic solution methods, but they capture something those methods can't, and they reveal what a differential equation 'is' at the deepest level.\n\nThe key insight is that a slope field requires *no solving whatsoever* — yet it shows you the behavior of *every* solution simultaneously. From the field alone you can see where solutions increase or decrease (positive vs negative segments), where they have horizontal tangents (slope-zero marks, often equilibria), whether they level off toward a limiting value, and how different starting points lead to different long-term fates. This qualitative understanding is available even for differential equations that have no closed-form solution at all — and most real-world differential equations are exactly that kind. Engineers and scientists routinely study systems through their direction fields precisely because a formula is unavailable, making the slope field the primary window into the behavior.\n\nThere's a beautiful unity here with the rest of calculus. A slope field is, at heart, a statement that the derivative dy/dx is known as a function of position — the same idea as the derivative being a slope, now displayed across the whole plane. Tracing a solution curve through the field is the geometric version of solving the equation, and it's the conceptual seed of numerical methods: if instead of sketching by eye you took small steps, each time moving in the field's current direction, you'd be performing Euler's method, the basic algorithm computers use to approximate solutions of differential equations that can't be solved exactly. (Euler's method itself is beyond AP Calculus AB, but the slope-field picture is exactly where it comes from.)\n\nSo when you draw a slope field, you're not just decorating the plane with dashes — you're producing a complete qualitative atlas of an equation's solutions, accessible without any integration. That is a genuinely powerful idea, and it's why this visual technique earns its place alongside the algebraic methods in the next lessons."
+    },
+    {
+      "type": "keypoint",
+      "content": "A slope field draws the slope dy/dx = f(x, y) as a short tangent segment at each grid point, picturing all solution curves at once. Build it by evaluating f at grid points; a solution curve through a given point is traced by following the segments while staying tangent to them. If dy/dx depends only on x the columns are identical, only on y the rows are identical — the key to matching an equation to its field."
+    }
+  ],
+  "aiContext": "AP Calculus AB Unit 7, slope fields. A slope field draws dy/dx = f(x,y) as short tangent segments on a grid, giving a qualitative picture of all solution curves without solving. Stress that segments show local TANGENT direction (not the curve itself), that the slope generally depends on both x and y so it must be re-evaluated at each point, and that a solution curve is traced by following the field while staying tangent. The key matching skill: dependence on x only makes vertical columns identical, dependence on y only makes horizontal rows identical, and locating horizontal (slope 0) and vertical (undefined) segments pins down the equation. Common AP tasks: sketch a slope field, sketch a particular solution through a point, and match an equation to a field. Note that following the field in small steps is the geometric seed of Euler's method (which is beyond AB)."
+}

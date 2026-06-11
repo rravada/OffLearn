@@ -1,0 +1,101 @@
+{
+  "id": "ap-calc-ab-u6-antiderivatives-and-indefinite-integrals",
+  "title": "Antiderivatives and Indefinite Integrals",
+  "subject": "AP Calculus AB",
+  "unit": "Integration and Accumulation of Change",
+  "track": "ap",
+  "difficulty": "ap",
+  "duration": "45 min",
+  "objectives": [
+    "Explain that an antiderivative reverses differentiation and why antiderivatives form a family requiring +C.",
+    "Apply the power rule for antiderivatives and basic rules for trig, exponential, and reciprocal functions.",
+    "Interpret indefinite integral notation ∫f(x) dx and use the constant multiple and sum/difference rules.",
+    "Verify an antiderivative by differentiating to recover the integrand."
+  ],
+  "sections": [
+    {
+      "type": "explanation",
+      "heading": "What Is an Antiderivative?",
+      "content": "You've spent weeks learning to take derivatives — starting with a function and finding its rate of change. Now we flip the whole process around. An antiderivative answers the reverse question: 'If I know the rate of change, what was the original function?'\n\nThink of a speedometer reading 60 mph. The derivative took you from position to speed; the antiderivative takes you from speed back to position. If your velocity is v(t) = 60, your position function is something like s(t) = 60t. But 60t + 5 works too, since starting 5 miles from home doesn't change your speed — and so does 60t + 100 or 60t − 37. The derivative of all of these is 60.\n\nFormally, F(x) is an antiderivative of f(x) if F'(x) = f(x). That's the entire definition: you want a function whose derivative gives back the function you started with, like being handed an answer and asked to reconstruct the question.\n\nThe critical consequence: antiderivatives are never unique. If F(x) is an antiderivative of f(x), then so is F(x) + 1, F(x) + 42, or F(x) plus any constant, because the derivative of a constant is zero. Every function therefore has an entire *family* of antiderivatives, all differing only by a constant — infinitely many curves of identical shape, stacked at different heights."
+    },
+    {
+      "type": "explanation",
+      "heading": "The +C and Why It Matters",
+      "content": "That constant gets a name: the constant of integration, written +C. When you write an antiderivative you must include +C — and this is not a formality, it carries real meaning.\n\nImagine tracking temperature. Someone tells you it's rising at 3 degrees per hour, so the rate of change is 3 and the antiderivative is 3t + C. But what is C? It's the starting temperature. Without an initial condition — the temperature at time zero — you can't pin down C. The +C is your honest way of saying 'I know the shape of the function, but not exactly where it sits vertically.'\n\nGraphically, the family of antiderivatives is infinitely many copies of the same curve shifted up or down. They share identical slopes at every x (same derivative) but sit at different heights, and +C describes all of them at once. Later, an initial condition like 'F(0) = 50' selects one specific member by solving for C.\n\nOn the AP exam, forgetting +C on an indefinite integral costs points every time. More importantly, omitting it signals you've lost sight of what an antiderivative is — a whole family of functions, not a single one."
+    },
+    {
+      "type": "table",
+      "heading": "Basic Antiderivative Rules",
+      "headers": ["Integral", "Antiderivative", "Comes from"],
+      "rows": [
+        ["∫xⁿ dx (n ≠ −1)", "xⁿ⁺¹/(n + 1) + C", "reverse power rule"],
+        ["∫(1/x) dx", "ln|x| + C", "d/dx[ln|x|] = 1/x"],
+        ["∫eˣ dx", "eˣ + C", "eˣ is its own derivative"],
+        ["∫cos x dx", "sin x + C", "d/dx[sin x] = cos x"],
+        ["∫sin x dx", "−cos x + C", "d/dx[−cos x] = sin x"],
+        ["∫sec²x dx", "tan x + C", "d/dx[tan x] = sec²x"]
+      ]
+    },
+    {
+      "type": "example",
+      "heading": "The Power Rule in Reverse",
+      "content": "The derivative power rule is d/dx[xⁿ] = nxⁿ⁻¹. Reversed, the antiderivative power rule is\n\n  ∫xⁿ dx = xⁿ⁺¹/(n + 1) + C, provided n ≠ −1.\n\nYou increase the exponent by 1, then divide by the new exponent. Check it: differentiating xⁿ⁺¹/(n+1) brings down (n+1) and lowers the exponent, giving (n+1)xⁿ/(n+1) = xⁿ. ✓\n\nExamples:\n  ∫x³ dx = x⁴/4 + C\n  ∫x dx = x²/2 + C\n  ∫1 dx = x + C  (since 1 = x⁰)\n  ∫x⁻² dx = x⁻¹/(−1) + C = −1/x + C\n  ∫√x dx = ∫x^(1/2) dx = x^(3/2)/(3/2) + C = (2/3)x^(3/2) + C\n\nThe exception is n = −1, where the formula would divide by zero. Instead, ∫x⁻¹ dx = ∫(1/x) dx = ln|x| + C — a special case worth memorizing, since 1/x is the one power the rule can't handle."
+    },
+    {
+      "type": "steps",
+      "heading": "Finding an Indefinite Integral",
+      "steps": [
+        { "title": "Split the integral over sums and differences", "content": "Use ∫[f ± g] dx = ∫f dx ± ∫g dx to handle one term at a time." },
+        { "title": "Pull out constant factors", "content": "Use ∫k·f dx = k·∫f dx to move numerical coefficients outside the integral." },
+        { "title": "Apply the matching antiderivative rule", "content": "Use the power rule or a known basic rule (trig, exponential, 1/x) for each term." },
+        { "title": "Add a single +C and verify", "content": "Combine all constants into one +C, then differentiate your answer to confirm it returns the original integrand." }
+      ]
+    },
+    {
+      "type": "callout",
+      "variant": "warning",
+      "heading": "Always Write +C, and Mind the n = −1 Case",
+      "content": "Two errors dominate this topic. First, dropping +C on an indefinite integral: it's required because the antiderivative is a family, and on the AP exam its omission loses a point. Second, misapplying the power rule when n = −1: ∫x⁻¹ dx is NOT x⁰/0 — that's undefined. It equals ln|x| + C. Also note the absolute value in ln|x|, which keeps the antiderivative valid for negative x. When you integrate a sum, you still write only one +C at the end, since the sum of several arbitrary constants is just one arbitrary constant."
+    },
+    {
+      "type": "explanation",
+      "heading": "Indefinite Integral Notation",
+      "content": "We write the antiderivative with the integral sign: ∫f(x) dx, called an *indefinite integral*. Each piece carries meaning. The ∫ symbol is an elongated S for 'sum' — the same symbol you'll see in definite integrals, hinting at the deep connection to area. For an indefinite integral, read it as the command 'find the antiderivative.'\n\nThe f(x) is the *integrand*, the function being antidifferentiated. The dx specifies the variable of integration: ∫3t dt means antidifferentiate with respect to t. That dx is not decorative — it identifies the variable and plays an essential role in u-substitution later.\n\nSo ∫f(x) dx = F(x) + C is a complete mathematical sentence: 'the family of all functions whose derivative is f(x) is F(x) + C.' The left side poses a question; the right side answers it. Keep in mind that an *indefinite* integral produces a family of functions (hence +C), which is fundamentally different from a *definite* integral, which produces a single number (net signed area) and needs no +C. Confusing the two is one of the most common mistakes in this unit."
+    },
+    {
+      "type": "example",
+      "heading": "Combining the Rules",
+      "content": "Beyond the power rule, the essential AP antiderivatives are read straight from derivative rules: ∫cos x dx = sin x + C, ∫sin x dx = −cos x + C, ∫sec²x dx = tan x + C, ∫eˣ dx = eˣ + C, and ∫(1/x) dx = ln|x| + C.\n\nWith the constant multiple and sum/difference rules, you can integrate combinations term by term:\n\n  ∫(3x² − 5 sin x + 7) dx\n  = 3·(x³/3) − 5·(−cos x) + 7x + C\n  = x³ + 5 cos x + 7x + C.\n\nWatch the sign carefully: ∫sin x dx = −cos x, so −5∫sin x dx = −5(−cos x) = +5 cos x. Verify the whole answer by differentiating: d/dx[x³ + 5 cos x + 7x + C] = 3x² − 5 sin x + 7, the original integrand. ✓\n\nNote what these rules do NOT let you do: there is no 'product rule' or 'quotient rule' for antiderivatives. You cannot integrate a product by integrating each factor separately. Products and compositions require techniques like u-substitution, coming later in this unit."
+    },
+    {
+      "type": "quiz",
+      "question": "What is ∫(4x³ + 1/x) dx?",
+      "options": ["x⁴ + ln|x| + C", "12x² − 1/x² + C", "x⁴ + ln x", "4x⁴ + ln|x| + C"],
+      "correctIndex": 0,
+      "explanation": "Integrate term by term: ∫4x³ dx = 4·x⁴/4 = x⁴, and ∫(1/x) dx = ln|x| (the n = −1 special case). So the answer is x⁴ + ln|x| + C. The option without +C is incomplete, and 12x² − 1/x² is the derivative, not the antiderivative."
+    },
+    {
+      "type": "callout",
+      "variant": "tip",
+      "heading": "Verify by Differentiating",
+      "content": "Antidifferentiation has a built-in check: differentiate your answer and you must recover the original integrand. This catches sign errors (especially the −cos x from ∫sin x) and power-rule slips in seconds, and it works on any integral, no matter how it was found. Make it a habit on every indefinite integral. Remember too that you can pull out constant multiples but there is no shortcut for products or quotients — if the integrand is a product or a composition, look ahead to u-substitution rather than integrating factor by factor."
+    },
+    {
+      "type": "quiz",
+      "question": "Which function is an antiderivative of f(x) = cos x?",
+      "options": ["−sin x", "sin x", "−cos x", "sec²x"],
+      "correctIndex": 1,
+      "explanation": "An antiderivative F satisfies F'(x) = cos x. Since d/dx[sin x] = cos x, F(x) = sin x works (and so does sin x + C). The choice −sin x differentiates to −cos x, and −cos x differentiates to sin x, so neither is correct."
+    },
+    {
+      "type": "deepdive",
+      "heading": "Why Every Continuous Function Has an Antiderivative",
+      "content": "Here is something profound that isn't at all obvious: every continuous function has an antiderivative. You might wonder whether some wild but continuous function could fail to be the derivative of anything. The answer is no — and the reason ties this lesson to the rest of the unit.\n\nThe guarantee comes from the Fundamental Theorem of Calculus. The accumulation function F(x) = ∫ from a to x of f(t) dt is always an antiderivative of a continuous f, because F'(x) = f(x). In other words, the integral *constructs* an antiderivative for you by accumulating area, whether or not you can find a tidy formula. Existence is never in question for continuous functions.\n\nBut existence and expressibility are different things. The function f(x) = e^(−x²) — central to statistics as the bell curve — is continuous, so it has an antiderivative, yet that antiderivative cannot be written with any finite combination of polynomials, roots, trig functions, exponentials, and logs. It exists and is perfectly well-defined as an accumulation function, but it has no elementary 'formula.' This is exactly why numerical integration (like the Riemann sums and trapezoidal estimates from earlier) matters in real applications: sometimes summing area is the only way to get the values.\n\nFor AP Calculus AB, every antiderivative you're asked to find will have a clean closed form. But knowing that antiderivatives always exist (via accumulation) while sometimes lacking formulas rounds out your understanding of what integration really is — and previews why the FTC, which links antiderivatives to area, is the theorem that ties the whole subject together."
+    },
+    {
+      "type": "keypoint",
+      "content": "An antiderivative of f is any F with F'(x) = f(x); antiderivatives form a family F(x) + C, so indefinite integrals always need +C. Core rules: ∫xⁿ dx = xⁿ⁺¹/(n+1) + C for n ≠ −1, ∫(1/x) dx = ln|x| + C, ∫eˣ dx = eˣ + C, ∫cos x dx = sin x + C, ∫sin x dx = −cos x + C, ∫sec²x dx = tan x + C. Use linearity to integrate term by term, and verify by differentiating."
+    }
+  ],
+  "aiContext": "AP Calculus AB Unit 6, antiderivatives and indefinite integrals. Stress that an antiderivative reverses differentiation, antiderivatives form a family differing by a constant, and +C is required on every indefinite integral (its omission loses points and signals conceptual gaps). Drill the reverse power rule ∫xⁿ dx = xⁿ⁺¹/(n+1) + C with the crucial n = −1 exception giving ln|x| + C, plus the basic trig and exponential antiderivatives, applied via linearity term by term. Common errors: dropping +C, mishandling the n = −1 case, sign slips on ∫sin x = −cos x, and inventing a product/quotient rule for integration (there is none — products and compositions need u-substitution). Encourage verifying every answer by differentiating, and distinguish indefinite integrals (a family of functions) from definite integrals (a number)."
+}

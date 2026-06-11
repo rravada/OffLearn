@@ -1,46 +1,127 @@
 {
-  "id": "proteins-structure-function",
+  "id": "ap-bio-u1-proteins-structure-function",
   "title": "Proteins: Structure and Function",
   "subject": "AP Biology",
   "unit": "Chemistry of Life",
   "track": "ap",
   "difficulty": "ap",
-  "duration": "30 min",
+  "duration": "50 min",
   "objectives": [
-    "Describe how amino acids join via peptide bonds to form polypeptides",
-    "Explain the four levels of protein structure and how each contributes to function",
-    "Analyze how denaturation disrupts protein function and connect enzyme shape to catalytic activity"
+    "Describe the structure of an amino acid and explain how the R group determines its chemical properties",
+    "Explain how amino acids join by peptide bonds to form polypeptides",
+    "Distinguish the four levels of protein structure and identify the interactions responsible for each",
+    "Explain how a protein's three-dimensional shape determines its function, and how denaturation and a single amino acid change can disrupt that function"
   ],
   "sections": [
     {
       "type": "explanation",
-      "heading": "Amino Acids: The Building Blocks",
-      "content": "Proteins are the workhorses of the cell — they catalyze reactions, provide structural support, transport materials, send signals, and defend against pathogens. Every protein is built from a set of 20 amino acids, each with the same basic structure: a central carbon bonded to an amino group (−NH₂), a carboxyl group (−COOH), a hydrogen atom, and a variable side chain called the R group.\n\nThe R group is what makes each amino acid unique. Some R groups are nonpolar and hydrophobic (like valine and leucine), some are polar and hydrophilic (like serine and threonine), some are positively charged (like lysine), and some are negatively charged (like glutamate). The sequence of R groups in a protein determines how it folds and, therefore, what it does.\n\nAmino acids link together through peptide bonds, formed by dehydration synthesis between the carboxyl group of one amino acid and the amino group of the next. A chain of amino acids is called a polypeptide. Once the polypeptide folds into its functional shape, we call it a protein."
+      "heading": "The Cell's Workforce",
+      "content": "If DNA is the cell's instruction manual, proteins are the workers who actually get things done. Almost every job in the cell runs on proteins: enzymes that speed up reactions, structural proteins like collagen and keratin that hold tissues together, transport proteins like hemoglobin that carry oxygen, motor proteins that make muscles contract, antibodies that fight pathogens, and receptors that receive signals. When you picture a cell 'doing' something, you're almost always picturing a protein at work.\n\nEvery one of these diverse machines is built from the same 20-letter alphabet: 20 amino acids. Think of them as 20 kinds of beads, each with an identical clasp on both ends but a different charm hanging off the middle. String them in different orders and you can spell out millions of different proteins — just as 26 letters spell every book ever written.\n\nThe shared 'clasp' is the amino acid's core structure: a central carbon bonded to four things — an amino group (−NH₂), a carboxyl group (−COOH), a hydrogen atom, and a variable side chain called the R group. The amino and carboxyl groups are the connectors that let amino acids link into chains. The R group is the 'charm' — and it's where all the individuality lives."
+    },
+    {
+      "type": "explanation",
+      "heading": "Why the R Group Is Everything",
+      "content": "The 20 amino acids differ only in their R groups, but that one difference does an enormous amount of work. R groups fall into chemical personalities: some are nonpolar and hydrophobic (like valine and leucine), some are polar and hydrophilic (like serine), some are positively charged/basic (like lysine), and some are negatively charged/acidic (like glutamate). A special one, cysteine, has a sulfhydryl (−SH) group that can form strong covalent disulfide bridges with another cysteine.\n\nHere's why this matters: when a chain of amino acids folds, the R groups interact with each other and with the surrounding water, and those interactions decide the final shape. Hydrophobic R groups flee from water and bury themselves in the protein's core; charged R groups attract their opposites; polar R groups hydrogen-bond. The sequence of R groups is therefore the folding instructions written right into the chain.\n\nThis is why a protein's spelling is so important. The order of amino acids — the primary structure — is dictated by a gene, and changing even one amino acid can rewrite the folding instructions. We'll see at the end of this lesson that swapping a single amino acid in hemoglobin causes sickle cell disease. One bead out of place, and the whole machine changes."
     },
     {
       "type": "example",
-      "heading": "Peptide Bond Formation",
-      "content": "Amino acid 1 (−COOH) + Amino acid 2 (−NH₂) → peptide bond (−CO−NH−) + H₂O\n\nThis is dehydration synthesis, exactly like forming a glycosidic bond between sugars. The resulting peptide bond is rigid and planar, which constrains how the chain can fold.\n\nA dipeptide has 1 peptide bond.\nA tripeptide has 2 peptide bonds.\nA polypeptide of n amino acids has (n − 1) peptide bonds.\n\nInsulin, a small protein hormone, has 51 amino acids. Titin, a structural protein in muscles and the largest known protein, has over 34,000 amino acids."
+      "heading": "Building a Peptide Bond Step by Step",
+      "content": "Amino acids link by the same reaction that built carbohydrate and lipid bonds: dehydration synthesis. Watch which groups react.\n\nThe carboxyl group (−COOH) of amino acid 1 meets the amino group (−NH₂) of amino acid 2. The cell removes an −OH from the carboxyl and an −H from the amino group; these leave together as H₂O. What remains is a covalent peptide bond (−CO−NH−) linking the two amino acids.\n\n  amino acid 1 (−COOH) + amino acid 2 (−NH₂) → peptide bond (−CO−NH−) + H₂O\n\nCounting the bonds is a favorite exam move:\n  A dipeptide (2 amino acids) has 1 peptide bond.\n  A tripeptide (3 amino acids) has 2 peptide bonds.\n  A polypeptide of n amino acids has (n − 1) peptide bonds, and forming it released (n − 1) water molecules.\n\nScale gives a sense of the range: insulin, a small hormone, is a 51-amino-acid protein. Titin, a structural protein in your muscles and the largest known protein, has over 34,000 amino acids — that's more than 34,000 peptide bonds in a single chain."
     },
     {
       "type": "explanation",
       "heading": "Four Levels of Protein Structure",
-      "content": "Primary structure is the linear sequence of amino acids — think of it as the spelling of the protein. Change one letter (one amino acid) and the meaning can change drastically. Sickle cell disease results from a single amino acid substitution in hemoglobin: glutamate is replaced by valine at position 6 of the β-chain.\n\nSecondary structure refers to local folding patterns that arise from hydrogen bonds between backbone atoms. The two most common patterns are the alpha helix (a coiled spring) and the beta pleated sheet (a zigzag pattern where adjacent strands are connected by hydrogen bonds). These form because of the regular repeating nature of the polypeptide backbone.\n\nTertiary structure is the overall three-dimensional shape of a single polypeptide chain, determined by interactions among the R groups: hydrophobic interactions (nonpolar R groups cluster in the interior, away from water), ionic bonds (between oppositely charged R groups), hydrogen bonds (between polar R groups), and disulfide bridges (covalent bonds between cysteine residues). Tertiary structure is what gives each protein its unique shape.\n\nQuaternary structure exists only in proteins made of more than one polypeptide subunit. Hemoglobin, for instance, is a tetramer — four polypeptide chains (two α and two β) that must assemble together to function."
+      "content": "A folded protein is organized at four levels, each building on the one before. Get the order and the bonds straight — the AP exam tests this directly.\n\nPrimary structure is the linear sequence of amino acids, held together by peptide bonds. It's the 'spelling' of the protein, set by the gene. Everything else flows from it.\n\nSecondary structure is local folding of the backbone into repeating patterns — the alpha helix (a coil) and the beta pleated sheet (a zigzag) — held together by hydrogen bonds between atoms of the backbone (not the R groups). Because the backbone repeats regularly, these patterns form in many different proteins.\n\nTertiary structure is the overall three-dimensional shape of a single polypeptide, driven by interactions among the R groups: hydrophobic clustering in the core, ionic bonds between charged R groups, hydrogen bonds between polar R groups, and covalent disulfide bridges between cysteines. Tertiary structure is what makes each protein's shape unique.\n\nQuaternary structure exists only when two or more polypeptide subunits assemble into one functional protein. Hemoglobin is the classic example — four subunits (two α and two β chains) that only carry oxygen properly when joined together. Not every protein has quaternary structure, but every protein has the first three levels."
+    },
+    {
+      "type": "table",
+      "heading": "The Four Levels at a Glance",
+      "headers": ["Level", "What it is", "Held together by", "Example"],
+      "rows": [
+        ["Primary", "Linear sequence of amino acids", "Peptide bonds (covalent)", "The order ...-Gly-Ala-Val-... in a chain"],
+        ["Secondary", "Local coils and folds of the backbone", "Hydrogen bonds between backbone atoms", "Alpha helix, beta pleated sheet"],
+        ["Tertiary", "Overall 3-D shape of one polypeptide", "R-group interactions: hydrophobic, ionic, H-bonds, disulfide bridges", "The globular fold of one enzyme"],
+        ["Quaternary", "Assembly of multiple polypeptide subunits", "Same R-group interactions, between subunits", "Hemoglobin's four chains"]
+      ]
+    },
+    {
+      "type": "quiz",
+      "question": "Which level of protein structure is held together specifically by hydrogen bonds between atoms of the polypeptide BACKBONE (not the R groups)?",
+      "options": [
+        "Primary structure",
+        "Secondary structure",
+        "Tertiary structure",
+        "Quaternary structure"
+      ],
+      "correctIndex": 1,
+      "explanation": "Secondary structure (the alpha helix and beta pleated sheet) forms from hydrogen bonds between atoms of the repeating backbone. Primary structure is held by covalent peptide bonds, while tertiary and quaternary structures arise from interactions among R groups, not the backbone."
     },
     {
       "type": "keypoint",
-      "content": "A protein's function depends entirely on its three-dimensional shape, which is determined by the sequence of amino acids (primary structure) and the folding interactions that follow. Change the shape, and you change — or destroy — the function."
+      "content": "A protein's function depends entirely on its three-dimensional shape, and that shape is dictated by the amino acid sequence (primary structure). Change the shape and you change — or destroy — the function."
+    },
+    {
+      "type": "steps",
+      "heading": "How a Polypeptide Folds Into a Working Protein",
+      "steps": [
+        {
+          "title": "The ribosome sets the primary sequence",
+          "content": "Following the instructions in a gene, the ribosome links amino acids in a specific order by peptide bonds. This linear sequence is the primary structure and contains all the information needed to fold the protein."
+        },
+        {
+          "title": "The backbone forms local secondary patterns",
+          "content": "As the chain emerges, hydrogen bonds between backbone atoms pull regions into alpha helices and beta pleated sheets. These regular local structures form quickly because the backbone repeats the same atoms over and over."
+        },
+        {
+          "title": "R groups drive the chain into its tertiary shape",
+          "content": "The side chains now take over. Hydrophobic R groups bury themselves away from water in the protein's interior, charged R groups form ionic bonds, polar R groups hydrogen-bond, and cysteines form covalent disulfide bridges. Together these pull the whole polypeptide into its unique three-dimensional shape."
+        },
+        {
+          "title": "Subunits assemble into quaternary structure (if needed)",
+          "content": "Some proteins require more than one polypeptide. Separately folded subunits join through the same R-group interactions to form the final functional protein, as in hemoglobin's four chains. Only now is the protein able to do its job."
+        }
+      ]
     },
     {
       "type": "explanation",
-      "heading": "Enzymes and Denaturation",
-      "content": "Enzymes are proteins that catalyze (speed up) chemical reactions without being consumed in the process. They work by lowering the activation energy — the energy barrier that must be overcome for a reaction to proceed. The region of the enzyme where the substrate binds is called the active site, and it fits the substrate with high specificity, like a lock and key (though the induced fit model is more accurate — the enzyme slightly changes shape to grip the substrate).\n\nDenaturation is the loss of a protein's three-dimensional shape due to environmental stress — extreme heat, extreme pH, or high concentrations of certain chemicals. When a protein denatures, its secondary, tertiary, and quaternary structures unravel, but the peptide bonds (primary structure) remain intact. The amino acid sequence is unchanged, but the protein can no longer function because its shape is wrong.\n\nA familiar example: when you cook an egg, the clear, liquid egg white turns solid and opaque. The albumin proteins have denatured — their normal folding has been destroyed by heat. You cannot \"uncook\" an egg because the proteins cannot easily refold to their original shape."
+      "heading": "Denaturation: When Shape Falls Apart",
+      "content": "Because function depends on shape, anything that wrecks the shape wrecks the function. Denaturation is the loss of a protein's three-dimensional structure due to environmental stress — high heat, extreme pH, or certain chemicals. These conditions disrupt the relatively weak interactions (hydrogen bonds, ionic bonds, hydrophobic interactions) that hold secondary, tertiary, and quaternary structure together.\n\nHere is the subtle, exam-critical point: denaturation unravels the higher levels of structure but leaves the primary structure intact. The peptide bonds are strong covalent bonds and don't break — the amino acid sequence is unchanged. The protein hasn't lost any amino acids; it has simply lost its shape, and therefore its function.\n\nYou've watched this happen. Crack a raw egg and the white is clear and runny. Heat it and the white turns solid and opaque — the albumin proteins have denatured, their careful folding destroyed by heat. And you can't 'uncook' an egg, because once a complex protein unfolds in a tangle, it generally can't find its way back to the exact original shape on its own. The same vulnerability explains why a high fever is dangerous (it can denature your enzymes) and why stomach acid denatures the proteins in your food as the first step of digestion."
+    },
+    {
+      "type": "callout",
+      "variant": "warning",
+      "heading": "Denaturation Does NOT Break Primary Structure",
+      "content": "A guaranteed AP trap: students claim that heat or pH 'breaks the peptide bonds' or 'changes the amino acid sequence.' It does not. Denaturation disrupts only the weaker interactions that maintain secondary, tertiary, and quaternary structure. The covalent peptide bonds — the primary structure — stay intact, so the sequence is unchanged; only the shape, and thus the function, is lost. Saying denaturation alters primary structure will cost you the point."
+    },
+    {
+      "type": "quiz",
+      "question": "A solution of functional enzyme is heated until it stops working, then slowly cooled. The enzyme does not regain activity. What has most likely happened?",
+      "options": [
+        "The peptide bonds were hydrolyzed, removing amino acids from the chain",
+        "The gene encoding the enzyme was mutated by the heat",
+        "The enzyme denatured — its 3-D shape unraveled while its amino acid sequence stayed intact",
+        "The enzyme was converted into a different protein with a new sequence"
+      ],
+      "correctIndex": 2,
+      "explanation": "Heat denatures the enzyme by disrupting the bonds that maintain its three-dimensional shape, so it loses function even though its primary sequence is unchanged. Peptide bonds are not broken, no gene is involved (the protein, not DNA, is heated), and the sequence is not altered, so the molecule is the same protein in the wrong shape."
     },
     {
       "type": "deepdive",
-      "heading": "Why Shape Determines Everything",
-      "content": "The connection between protein shape and function is one of the most important principles in all of biology. Consider hemoglobin: its quaternary structure allows cooperative binding — when one subunit binds oxygen, it changes shape in a way that makes the other subunits bind oxygen more easily. This is why hemoglobin loads oxygen efficiently in the lungs (where O₂ is abundant) and releases it efficiently in tissues (where O₂ is scarce).\n\nNow consider what happens with a single amino acid change: in sickle cell disease, the glutamate-to-valine substitution creates a hydrophobic patch on the surface of the β-chain. Under low-oxygen conditions, this patch causes hemoglobin molecules to stick together into long fibers, distorting red blood cells into sickle shapes. One amino acid. One changed property. A life-altering disease.\n\nThis principle extends far beyond hemoglobin. Drug design, genetic engineering, and understanding disease all come down to understanding how the primary sequence determines the final three-dimensional shape and how that shape enables function. Proteins are molecular machines, and their blueprints are written in the language of amino acid sequences."
+      "heading": "One Amino Acid, One Disease: Sickle Cell and Hemoglobin",
+      "content": "To feel how much shape matters, look at hemoglobin, the oxygen-carrying protein in your red blood cells. Its quaternary structure — four subunits working together — gives it a clever trick called cooperative binding: when one subunit grabs an oxygen molecule, it nudges the others into a shape that grabs oxygen more easily. This is why hemoglobin loads oxygen efficiently in the high-oxygen lungs and releases it efficiently in low-oxygen tissues. The protein's shape is tuned to its job.\n\nNow change one amino acid. In sickle cell disease, a single point mutation in the gene swaps glutamate (a negatively charged, hydrophilic R group) for valine (a nonpolar, hydrophobic R group) at position 6 of the β-chain. That one substitution puts a sticky hydrophobic patch on the surface of the protein. Under low-oxygen conditions, these patches make hemoglobin molecules clump into long, rigid fibers that warp the red blood cell into a stiff sickle shape. Sickled cells get stuck in capillaries, causing pain, organ damage, and anemia. One amino acid out of 146 in the β-chain — and one changed property, hydrophilic to hydrophobic — produces a serious inherited disease.\n\nThe lesson generalizes far beyond hemoglobin. Cystic fibrosis, many cancers, and countless other conditions trace back to proteins folding wrong because of changes in their amino acid sequence. Drug design, antibody engineering, and biotechnology all rest on the same principle you learned today: primary sequence determines three-dimensional shape, and shape determines function. Proteins are molecular machines whose blueprints are written in the language of amino acids."
+    },
+    {
+      "type": "callout",
+      "variant": "remember",
+      "heading": "Anchor Facts for Proteins",
+      "content": "Amino acids share a central carbon bonded to an amino group, a carboxyl group, an H, and a variable R group; the R group sets the chemistry. Amino acids link by PEPTIDE BONDS via dehydration synthesis; a chain of n amino acids has (n−1) peptide bonds. Primary = sequence (peptide bonds); Secondary = helices/sheets (backbone H-bonds); Tertiary = 3-D shape (R-group interactions); Quaternary = multiple subunits. Denaturation destroys shape and function but NOT the primary sequence."
+    },
+    {
+      "type": "callout",
+      "variant": "tip",
+      "heading": "Use Specific Bond Names on the FRQ",
+      "content": "When an FRQ asks about protein structure, name the exact interaction for each level instead of saying 'bonds hold it together.' Write 'hydrogen bonds between backbone atoms' for secondary structure, and for tertiary structure list 'hydrophobic interactions, ionic bonds, hydrogen bonds, and disulfide bridges between R groups.' Readers reward precise vocabulary, and vague answers like 'the parts attract each other' rarely earn the point."
     }
   ],
-  "aiContext": "AP Biology. Connect molecular mechanisms to organism and ecosystem outcomes. Stress experimental design and data analysis. Common confusion: transcription vs translation, and when to apply Hardy-Weinberg conditions."
+  "aiContext": "This AP Biology Unit 1 lesson covers CED topic 1.5: protein structure and the principle that structure determines function. Emphasize the causal chain from amino acid sequence to R-group interactions to 3-D shape to function, and make the four levels of structure (and the specific bonds at each) crystal clear because the exam tests them directly. Watch for the persistent misconception that denaturation breaks peptide bonds or changes the primary sequence — it disrupts only the weaker interactions of secondary/tertiary/quaternary structure. Use the sickle cell example to show that a single amino acid change (hydrophilic glutamate to hydrophobic valine) can alter shape and cause disease, foreshadowing point mutations in Unit 6. On the exam, expect MCQs identifying which bonds stabilize each level and what denaturation does, and FRQs asking students to EXPLAIN how a change in sequence or environment alters protein shape and therefore function."
 }

@@ -1,0 +1,101 @@
+{
+  "id": "ap-calc-ab-u7-intro-to-differential-equations",
+  "title": "Introduction to Differential Equations and Verifying Solutions",
+  "subject": "AP Calculus AB",
+  "unit": "Differential Equations",
+  "track": "ap",
+  "difficulty": "ap",
+  "duration": "40 min",
+  "objectives": [
+    "Recognize a differential equation as an equation relating a function to its derivatives.",
+    "Verify that a given function is a solution of a differential equation by substitution.",
+    "Distinguish a general solution (with +C) from a particular solution determined by an initial condition.",
+    "Solve a simple initial value problem by antidifferentiating and applying the initial condition."
+  ],
+  "sections": [
+    {
+      "type": "explanation",
+      "heading": "Equations About Change",
+      "content": "Every equation you've solved so far has had numbers or simple variables as its unknowns: solve 3x + 7 = 16 and you get a number, x = 3. A *differential equation* is different in a profound way — its unknown is an entire *function*, and the equation describes that function through its *derivatives*. Instead of asking 'what number makes this true?' it asks 'what function changes in this prescribed way?'\n\nThis matters because most laws of nature are naturally written as statements about rates of change, not about quantities directly. 'A population grows at a rate proportional to its current size' is the sentence dP/dt = kP. 'An object cools at a rate proportional to the temperature difference with its surroundings' is Newton's Law of Cooling. 'Acceleration equals force over mass' is a differential equation for position. We rarely know a quantity's formula up front, but we very often know the rule governing how it changes — and a differential equation packages that rule.\n\nSo a differential equation is simply an equation that involves an unknown function and one or more of its derivatives, such as dy/dx = 2y or y'' + y = 0. 'Solving' it means finding the function (or family of functions) that satisfies the relationship. This unit is your introduction to that process: this lesson covers what these equations and their solutions are; later lessons add slope fields (a visual solution), separation of variables (an algebraic solution method), and the exponential growth model (the most important AP application)."
+    },
+    {
+      "type": "explanation",
+      "heading": "Solutions Are Functions: General vs. Particular",
+      "content": "Because the unknown in a differential equation is a function, a *solution* is a function that makes the equation true when substituted in along with its derivatives. For example, y = e^(2x) is a solution of dy/dx = 2y, because its derivative 2e^(2x) really does equal 2 times the function e^(2x).\n\nHere's the key feature carried over from antiderivatives: differential equations usually have infinitely many solutions, forming a family. The equation dy/dx = 2y is satisfied not just by e^(2x) but by C·e^(2x) for *any* constant C, since differentiating gives 2C·e^(2x) = 2(C·e^(2x)). This whole family is called the *general solution* — it contains an arbitrary constant (or more than one for higher-order equations) and describes every function that works.\n\nA *particular solution* is one specific member of that family, singled out by extra information called an *initial condition* — typically the value of the function at one point, like y(0) = 5. Plugging the initial condition into the general solution lets you solve for the constant and pin down exactly one function. The relationship mirrors the +C situation from integration: the general solution is the +C family, and the initial condition selects one curve from the infinitely many stacked possibilities. A differential equation together with an initial condition is called an *initial value problem*."
+    },
+    {
+      "type": "steps",
+      "heading": "Verifying a Proposed Solution",
+      "steps": [
+        { "title": "Differentiate the candidate function", "content": "Compute the derivative(s) of the proposed solution that the differential equation requires (first derivative, second derivative, etc.)." },
+        { "title": "Substitute into the equation", "content": "Replace y and its derivatives in the differential equation with the candidate and its computed derivatives." },
+        { "title": "Simplify both sides", "content": "Algebraically simplify the left and right sides separately." },
+        { "title": "Check for a true statement", "content": "If both sides are identically equal for all x, the function is a solution; if not, it is not a solution." }
+      ]
+    },
+    {
+      "type": "example",
+      "heading": "Verifying Solutions by Substitution",
+      "content": "Example 1: Show that y = Ce^(kx) is a solution of dy/dx = ky.\n  Differentiate: dy/dx = Cke^(kx) = k·(Ce^(kx)) = ky. The left side equals ky, matching the right side, so it is a solution for every constant C.\n\nExample 2: Verify that y = sin x is a solution of y'' + y = 0.\n  First derivative: y' = cos x. Second derivative: y'' = −sin x.\n  Substitute: y'' + y = −sin x + sin x = 0. ✓ The equation holds, so y = sin x is a solution. (So is y = cos x, and any combination A sin x + B cos x.)\n\nExample 3: Is y = x² a solution of dy/dx = 2x?\n  Differentiate: dy/dx = 2x, which exactly matches the right side. ✓ Yes. Note y = x² + 7 also works, since its derivative is still 2x — another reminder that solutions come in families.\n\nIn each case, verifying didn't require solving anything — you just differentiate the candidate, substitute, and check whether the equation becomes a true statement."
+    },
+    {
+      "type": "callout",
+      "variant": "warning",
+      "heading": "A Solution Is a Function, Not a Number",
+      "content": "The most fundamental adjustment in this unit is that solving a differential equation produces a FUNCTION, not a single value of x. If you find yourself solving for a number, you've misread the problem. When asked to 'verify that y = f(x) is a solution,' do NOT plug in a specific x-value — instead differentiate the function and substitute it (with its derivatives) into the equation, then confirm both sides are identically equal for all x. Checking at just one point is not a verification; the equation must hold everywhere the solution is defined."
+    },
+    {
+      "type": "quiz",
+      "question": "Which function is a solution of the differential equation dy/dx = 3y?",
+      "options": ["y = 3x", "y = e^(3x)", "y = x³", "y = 3eˣ"],
+      "correctIndex": 1,
+      "explanation": "For y = e^(3x), dy/dx = 3e^(3x) = 3y, so the equation holds. For y = 3eˣ, dy/dx = 3eˣ = y (not 3y), and y = x³ gives dy/dx = 3x² ≠ 3x³. Only y = e^(3x) satisfies dy/dx = 3y."
+    },
+    {
+      "type": "explanation",
+      "heading": "Initial Value Problems",
+      "content": "When a differential equation is paired with an initial condition, you can find the one particular solution that fits. The simplest case is a differential equation of the form dy/dx = g(x), where the right side depends only on x. You solve it by antidifferentiating both sides, which is just integration.\n\nFor dy/dx = g(x), integrating gives y = ∫g(x) dx = G(x) + C, the general solution with its arbitrary constant. Then you apply the initial condition to evaluate C. If you're told y(x₀) = y₀, substitute x = x₀ and y = y₀ into the general solution and solve the resulting equation for C. Replacing C with that value gives the particular solution.\n\nThis is exactly the +C story made concrete: integration recovers the function only up to a constant, and the initial condition supplies the missing piece — the 'starting height' of the curve. The same logic extends to the more complicated equations of later lessons (where the right side involves y too), but the structure never changes: find the general solution, then use the initial condition to determine the constant. Recognizing that an initial value problem is 'antidifferentiate, then solve for C' demystifies a large fraction of AP differential-equation questions."
+    },
+    {
+      "type": "example",
+      "heading": "Solving an Initial Value Problem",
+      "content": "Solve the initial value problem dy/dx = 6x² with y(1) = 5.\n\nStep 1 — Find the general solution by integrating both sides:\n  y = ∫6x² dx = 6·(x³/3) + C = 2x³ + C.\n\nStep 2 — Apply the initial condition y(1) = 5. Substitute x = 1, y = 5:\n  5 = 2(1)³ + C = 2 + C, so C = 3.\n\nStep 3 — Write the particular solution:\n  y = 2x³ + 3.\n\nYou can verify both conditions: dy/dx = 6x² ✓, and y(1) = 2 + 3 = 5 ✓. The general solution y = 2x³ + C was an entire family of cubics shifted vertically; the initial condition selected the single one passing through the point (1, 5). This 'integrate, then solve for C' pattern is the backbone of every initial value problem you'll meet."
+    },
+    {
+      "type": "table",
+      "heading": "Key Terminology",
+      "headers": ["Term", "Meaning"],
+      "rows": [
+        ["Differential equation", "an equation relating a function to its derivatives"],
+        ["Solution", "a function that satisfies the equation when substituted in"],
+        ["General solution", "the full family of solutions, containing an arbitrary constant +C"],
+        ["Particular solution", "one specific solution selected by an initial condition"],
+        ["Initial condition", "a known value such as y(x₀) = y₀ used to find C"],
+        ["Initial value problem", "a differential equation together with an initial condition"]
+      ]
+    },
+    {
+      "type": "quiz",
+      "question": "The general solution of dy/dx = 4x is y = 2x² + C. If y(0) = 7, what is the particular solution?",
+      "options": ["y = 2x² + 7", "y = 2x²", "y = 2x² + 4", "y = 4x + 7"],
+      "correctIndex": 0,
+      "explanation": "Apply the initial condition: y(0) = 2(0)² + C = C = 7, so C = 7 and the particular solution is y = 2x² + 7. The initial condition determines the constant that the general solution leaves arbitrary."
+    },
+    {
+      "type": "callout",
+      "variant": "tip",
+      "heading": "Notation and What the AP Exam Asks",
+      "content": "Differential equations are usually written with dy/dx (or dP/dt for time). On the AP exam you'll commonly be asked to (1) verify a given function is a solution by substituting it in, (2) solve an initial value problem and present the particular solution, or (3) interpret what an equation like dP/dt = kP says in context. For verification problems, show the differentiation and substitution explicitly. For initial value problems, always include +C in the general solution and then solve for it — losing the constant or forgetting to apply the initial condition are the usual ways points slip away."
+    },
+    {
+      "type": "deepdive",
+      "heading": "Why Differential Equations Run the Sciences",
+      "content": "Differential equations are arguably the most important application of calculus, because they are the language in which the quantitative sciences are written. The reason is simple but deep: nature usually hands us *rules about change*, not formulas for quantities, and a differential equation is precisely a rule about change waiting to be solved.\n\nConsider how often the governing principle is a statement about a derivative. Newton's second law, F = ma, is a differential equation because acceleration is the second derivative of position — solve it and you predict motion. Radioactive decay obeys dN/dt = −kN: the decay rate is proportional to how much remains, which immediately gives the exponential decay law and the concept of half-life. Population models, the spread of disease, the cooling of a cup of coffee, the charge on a capacitor, the concentration of a drug in the bloodstream — each is first expressed as a differential equation relating a quantity to its rate of change, and calculus is what turns that rule into a prediction.\n\nThis is also why the structure 'general solution plus initial condition' is so meaningful rather than a mere technicality. The differential equation captures the universal *law* (all populations with this growth rule behave like exponentials); the initial condition captures the specific *situation* (this particular population started at 200). Together they make a concrete forecast. The same law, with different initial conditions, describes every instance — which is exactly why one tidy equation can model an entire class of phenomena.\n\nFor AP Calculus AB you'll work with relatively simple differential equations, but the conceptual leap is the valuable part: you're learning to think of an unknown function as something defined by how it changes, and to reconstruct it from that information. That shift in perspective — from 'find the number' to 'find the function obeying this rule of change' — is one of the most powerful ideas mathematics offers, and it carries directly into physics, chemistry, biology, economics, and engineering."
+    },
+    {
+      "type": "keypoint",
+      "content": "A differential equation relates a function to its derivatives; its solution is a FUNCTION, verified by differentiating and substituting (the equation must hold for all x, not at one point). The general solution contains an arbitrary constant +C (a whole family); an initial condition selects the particular solution. Solve a simple initial value problem dy/dx = g(x) by integrating to get the general solution, then using the initial condition to find C."
+    }
+  ],
+  "aiContext": "AP Calculus AB Unit 7, introduction to differential equations. Stress the conceptual shift that the unknown is a FUNCTION, not a number, and that a solution is verified by differentiating the candidate and substituting so the equation holds for all x (checking one point is not verification). Distinguish the general solution (family with +C) from the particular solution selected by an initial condition, and frame an initial value problem as 'integrate to get the general solution, then solve for C.' Common AP tasks: verify a given function solves an equation (show the substitution), solve a simple IVP dy/dx = g(x), and interpret equations like dP/dt = kP in context. Common errors: dropping +C, plugging in a specific x when verifying, and forgetting to apply the initial condition. This sets up slope fields, separation of variables, and exponential growth."
+}

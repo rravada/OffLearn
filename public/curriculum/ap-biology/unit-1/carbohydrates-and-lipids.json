@@ -1,0 +1,126 @@
+{
+  "id": "ap-bio-u1-carbohydrates-and-lipids",
+  "title": "Carbohydrates and Lipids",
+  "subject": "AP Biology",
+  "unit": "Chemistry of Life",
+  "track": "ap",
+  "difficulty": "ap",
+  "duration": "45 min",
+  "objectives": [
+    "Explain how monomers join into polymers by dehydration synthesis and break apart by hydrolysis",
+    "Distinguish monosaccharides, disaccharides, and polysaccharides, and relate the structure of starch, glycogen, and cellulose to their functions",
+    "Compare saturated and unsaturated fatty acids and explain how that difference determines physical properties",
+    "Describe how the amphipathic structure of phospholipids drives the spontaneous formation of cell membranes, and explain the role of cholesterol and steroids"
+  ],
+  "sections": [
+    {
+      "type": "explanation",
+      "heading": "One Rule Builds (Almost) Every Big Molecule",
+      "content": "Before we touch a single sugar or fat, learn the rule that builds nearly every large biological molecule, because you'll use it all year. Think of a freight train. Each boxcar is a small unit — a monomer — and to add a car you snap a coupler closed. Snap enough together and you have a long train — a polymer. Biology builds its big molecules exactly this way: from repeating monomers linked into polymers.\n\nThe 'snap' has a specific chemistry, and it's beautifully consistent. To join two monomers, the cell removes a water molecule: a hydroxyl group (−OH) comes off one monomer and a hydrogen (−H) comes off the other, and together they leave as H₂O while a new covalent bond forms in their place. Because water is removed to build the bond, this reaction is called dehydration synthesis (or condensation).\n\nTo go the other way — to break a polymer back into monomers — the cell does the reverse: it adds a water molecule across the bond, splitting it. One fragment gets the −OH, the other gets the −H. Because water is used to break the bond, this is hydrolysis ('hydro' = water, 'lysis' = to split). This is literally what happens when you digest food: enzymes hydrolyze the polymers in your sandwich back into monomers small enough to absorb.\n\nHold onto this: dehydration synthesis builds polymers and releases water; hydrolysis breaks polymers and consumes water. Carbohydrates, proteins, and nucleic acids are all assembled and disassembled by these same two reactions. Lipids are the partial exception we'll meet later. Master the rule once and three of the four macromolecule families come almost for free."
+    },
+    {
+      "type": "explanation",
+      "heading": "Carbohydrates: Fast Fuel and Structural Scaffolding",
+      "content": "Carbohydrates are made of carbon, hydrogen, and oxygen, usually in a ratio close to 1:2:1 (the name literally means 'hydrated carbon'). Their simplest form is the monosaccharide — a single sugar. Glucose (C₆H₁₂O₆) is the headliner: it's the molecule your cells burn in cellular respiration and the sugar plants produce in photosynthesis.\n\nJoin two monosaccharides by dehydration synthesis and you get a disaccharide. Sucrose (table sugar) is glucose + fructose; lactose (milk sugar) is glucose + galactose; maltose is glucose + glucose. The bond linking the sugars is a glycosidic bond.\n\nLink many monosaccharides and you get a polysaccharide. Three matter most for the AP exam, and remarkably, all three are built entirely from glucose: starch (how plants store energy), glycogen (how animals store energy, stockpiled in your liver and muscles), and cellulose (the structural fiber of plant cell walls — the stuff of wood, cotton, and the crunch in celery). How can three molecules made of the identical monomer behave so differently? The answer is the orientation of the glycosidic bonds, and it teaches one of biology's deepest lessons, which we'll unpack next."
+    },
+    {
+      "type": "example",
+      "heading": "Reading Dehydration Synthesis and Hydrolysis as Equations",
+      "content": "Let's make the universal rule concrete with glucose.\n\nBuilding a disaccharide (dehydration synthesis):\n  glucose (C₆H₁₂O₆) + glucose (C₆H₁₂O₆) → maltose (C₁₂H₂₂O₁₁) + H₂O\n\nCount the atoms to check it. Two glucose molecules supply C₁₂H₂₄O₁₂. The product maltose is C₁₂H₂₂O₁₁. The difference is exactly H₂O (2 hydrogens and 1 oxygen) — the water that was removed to form the bond. Notice the bookkeeping: when you join two monomers you always lose one water.\n\nBreaking it back down (hydrolysis):\n  maltose (C₁₂H₂₂O₁₁) + H₂O → glucose + glucose\n\nNow water is added back in to split the bond. The same logic scales: to build a polysaccharide of n glucose units, the cell removes (n − 1) water molecules — one for every bond. To digest that polysaccharide, it adds (n − 1) water molecules back. So if you fully hydrolyze a starch molecule made of 100 glucose units, you consume 99 water molecules. The arithmetic is the same for proteins and nucleic acids, just with different monomers."
+    },
+    {
+      "type": "quiz",
+      "question": "Humans can digest starch for energy but cannot digest cellulose, even though both are polymers made entirely of glucose. What best explains this difference?",
+      "options": [
+        "Cellulose contains a different monomer than starch does",
+        "Humans lack the enzyme to hydrolyze the specific glycosidic linkages found in cellulose",
+        "Cellulose is held together by hydrogen bonds rather than covalent bonds",
+        "Starch is a monosaccharide while cellulose is a polysaccharide"
+      ],
+      "correctIndex": 1,
+      "explanation": "Both polymers are made of glucose, but the glycosidic bonds are oriented differently, and humans lack the enzyme needed to hydrolyze cellulose's linkages. The monomers are identical, both molecules are polysaccharides held together by covalent glycosidic bonds, so the only valid explanation is the missing enzyme for that bond orientation."
+    },
+    {
+      "type": "table",
+      "heading": "Three Glucose Polymers, Three Jobs",
+      "headers": ["Polysaccharide", "Found in", "Function", "Key structural feature"],
+      "rows": [
+        ["Starch", "Plants (roots, seeds, tubers)", "Energy storage", "Helical, lightly branched chains of glucose; easily hydrolyzed"],
+        ["Glycogen", "Animals (liver, muscle)", "Energy storage", "Highly branched glucose chains; fast to mobilize when energy is needed"],
+        ["Cellulose", "Plant cell walls", "Structural support", "Straight, unbranched glucose chains H-bonded into tough fibers; resists digestion"]
+      ]
+    },
+    {
+      "type": "keypoint",
+      "content": "Starch, glycogen, and cellulose are all polymers of glucose, yet they have completely different functions — the difference comes entirely from how the glucose units are bonded and arranged. Structure determines function."
+    },
+    {
+      "type": "steps",
+      "heading": "How the Cell Builds a Polysaccharide Chain",
+      "steps": [
+        {
+          "title": "Position two monomers with reactive hydroxyl groups",
+          "content": "Each glucose monomer carries hydroxyl (−OH) groups. To start a chain, the cell brings two glucose molecules together so that an −OH on one lines up near an −OH on the other. An enzyme holds them in the right orientation."
+        },
+        {
+          "title": "Remove a water molecule (dehydration synthesis)",
+          "content": "The enzyme strips an −OH from one glucose and an −H from the other. These combine and leave as H₂O. With those atoms gone, the two glucose units form a covalent glycosidic bond where the water used to be."
+        },
+        {
+          "title": "Repeat to extend the polymer",
+          "content": "The growing chain still has free hydroxyl groups at its ends, so the cell adds another glucose by the same dehydration step, releasing another water. Each new bond costs exactly one water molecule, so a chain of n glucose units required (n − 1) dehydration reactions."
+        },
+        {
+          "title": "Branch or pack to set the final function",
+          "content": "Whether the chains stay straight (cellulose) or branch (glycogen) and how they pack together determines the final molecule's job — structural fiber versus quick-access energy store. Reversing the whole process by hydrolysis releases the glucose monomers again for fuel."
+        }
+      ]
+    },
+    {
+      "type": "explanation",
+      "heading": "Lipids: Energy-Dense and Water-Fearing",
+      "content": "Lipids are the cell's hydrophobic molecules. Here's a crucial distinction: lipids are NOT true polymers. They aren't built from a long chain of repeating identical monomers the way carbohydrates and proteins are. What unites them is a behavior, not a shared monomer — they don't dissolve in water. The three lipids to know are fats (triglycerides), phospholipids, and steroids.\n\nA triglyceride is one glycerol molecule joined to three fatty acid chains by ester bonds (formed, like always, by dehydration synthesis). Each fatty acid is a long hydrocarbon tail, and those C−H-rich tails are why fats are such concentrated fuel: they pack about 9 kcal per gram, more than double the ~4 kcal/g of carbohydrates. That energy density is exactly why your body stores long-term reserves as fat, not sugar — and why a bear can hibernate for months on its autumn fat.\n\nFatty acids come in two flavors that you must distinguish. A saturated fatty acid has no carbon-carbon double bonds — every carbon is 'saturated' with as many hydrogens as it can hold. The straight chains stack tightly, so saturated fats (butter, lard) are solid at room temperature. An unsaturated fatty acid has one or more double bonds, and each double bond puts a rigid kink in the tail. Kinked chains can't pack tightly, so unsaturated fats (olive oil, fish oil) are liquid at room temperature. One structural detail — a double bond — flips a fat from solid to liquid."
+    },
+    {
+      "type": "callout",
+      "variant": "warning",
+      "heading": "Don't Call Lipids 'Polymers'",
+      "content": "A frequent AP error: describing fats as polymers of fatty acid 'monomers.' Lipids are NOT polymers — a triglyceride is a glycerol plus three fatty acids, not a long repeating chain of identical units, and steroids aren't chains at all. Reserve the words monomer and polymer for carbohydrates, proteins, and nucleic acids. You CAN still say triglycerides form by dehydration synthesis (ester bonds) — that reaction is shared — but the product is not a polymer."
+    },
+    {
+      "type": "explanation",
+      "heading": "Phospholipids: How Water Builds a Membrane",
+      "content": "A phospholipid is a triglyceride with one strategic edit: one of the three fatty acid tails is swapped for a phosphate group attached to a small polar molecule. That one change makes the molecule two-faced — amphipathic. It now has a hydrophilic head (the charged phosphate end, which loves water) and two hydrophobic tails (the fatty acid chains, which avoid water).\n\nDrop phospholipids into water and something remarkable happens with no outside help: they spontaneously arrange into a bilayer. The hydrophilic heads turn outward to face the water on both sides, and the hydrophobic tails hide in the middle, tucked away from water. This phospholipid bilayer is the basic structure of every cell membrane on Earth — the boundary that separates 'inside the cell' from 'outside.'\n\nThe deep idea here circles back to Lesson 1: the membrane forms not because the cell spends energy assembling it, but because of the thermodynamics of the hydrophobic effect — water organizes the lipids by pushing their nonpolar tails together. Life's most important boundary builds itself, driven by water's refusal to mix with oil."
+    },
+    {
+      "type": "quiz",
+      "question": "A food company wants to convert a liquid vegetable oil into a solid spread. Based on fatty acid structure, what chemical change would accomplish this?",
+      "options": [
+        "Add more double bonds to the fatty acid tails to increase kinking",
+        "Remove double bonds (add hydrogens) so the tails become straighter and pack more tightly",
+        "Replace the glycerol with a phosphate group",
+        "Increase the molecule's hydrophilic regions"
+      ],
+      "correctIndex": 1,
+      "explanation": "Liquid oils are unsaturated (kinked tails that can't pack), so removing double bonds by adding hydrogen makes the chains straight and tightly packing, turning the oil solid — this is hydrogenation. Adding double bonds would keep it liquid, swapping in phosphate makes a phospholipid, and changing hydrophilicity does not control the solid/liquid state."
+    },
+    {
+      "type": "deepdive",
+      "heading": "Trans Fats, Cholesterol, and Why Membranes Need to Stay Just-Fluid",
+      "content": "The saturated-versus-unsaturated story isn't just chemistry trivia — it's on nutrition labels and in your arteries. When food manufacturers hydrogenate vegetable oils to make them solid and shelf-stable, the process can create trans fats: unsaturated fatty acids whose double bonds are in an unusual straight (trans) configuration. Trans fats pack like saturated fats and are strongly linked to heart disease, which is why many countries have banned them. Same atoms, different geometry, real medical consequences — the structure-function principle with stakes.\n\nMembranes face their own balancing act. A cell membrane must stay fluid enough for proteins to move and for the membrane to flex, but not so fluid that it falls apart. Animal cells solve this with cholesterol, a steroid wedged among the phospholipids. At high temperatures cholesterol restrains the phospholipids and reduces fluidity; at low temperatures it spaces them out and prevents the membrane from freezing solid. It's a temperature buffer for the membrane — a fluidity thermostat.\n\nSteroids do more than stabilize membranes. Cholesterol is the raw material your body uses to build steroid hormones like estrogen, testosterone, and cortisol. Because these hormones are lipid-soluble, they slip straight through the membrane and bind receptors inside the cell — a completely different signaling route from water-soluble hormones, which must dock on the cell's surface. Once again, a molecule's solubility (set by its structure) dictates how it does its job."
+    },
+    {
+      "type": "callout",
+      "variant": "remember",
+      "heading": "Core Facts to Lock In",
+      "content": "Dehydration synthesis BUILDS polymers and releases water; hydrolysis BREAKS polymers and consumes water. Carbohydrate monomers are monosaccharides linked by glycosidic bonds. Starch, glycogen, and cellulose are all glucose polymers with different functions. Saturated fats (no double bonds) are solid; unsaturated fats (double bonds = kinks) are liquid. Phospholipids are amphipathic and spontaneously form the bilayer of cell membranes. Cholesterol is a steroid that buffers membrane fluidity."
+    },
+    {
+      "type": "callout",
+      "variant": "tip",
+      "heading": "Watch the Command Word on Macromolecule FRQs",
+      "content": "If an FRQ says DESCRIBE, state the structural fact (e.g., 'unsaturated fatty acids have double bonds that kink the chain'). If it says EXPLAIN or JUSTIFY, you must add the consequence ('...so the chains can't pack tightly, making the fat liquid at room temperature'). Many students lose points by describing structure when the question demanded a cause-and-effect explanation. Underline the command word before you write a single sentence."
+    }
+  ],
+  "aiContext": "This AP Biology Unit 1 lesson covers CED topics 1.3 and 1.4: the universal dehydration-synthesis/hydrolysis logic of polymers, plus the structure and function of carbohydrates and lipids. Emphasize the recurring structure-determines-function theme (identical glucose monomers yielding starch vs. cellulose; one double bond flipping a fat from solid to liquid). Common student confusions to watch for: thinking lipids are polymers, reversing which reaction adds vs. removes water, and conflating saturated/unsaturated with healthy/unhealthy rather than with bond structure and packing. Connect forward to Unit 2, where the amphipathic phospholipid bilayer becomes the fluid mosaic membrane, and to Unit 3, where carbohydrates and fats are oxidized for ATP. On the exam, expect MCQs interpreting dehydration/hydrolysis diagrams and fatty acid structures, and FRQs asking students to EXPLAIN how a structural feature produces a functional or physical property."
+}

@@ -1,0 +1,29 @@
+{
+  "id": "ap-calc-ab-related-rates",
+  "title": "Related Rates",
+  "subject": "AP Calculus AB",
+  "chunks": [
+    { "id": "c1", "text": "Related rates problems involve two or more quantities changing over time and linked by an equation, where you find one unknown rate from a known rate." },
+    { "id": "c2", "text": "A derivative with respect to time, such as dr/dt or dV/dt, measures how fast a quantity changes per unit of time." },
+    { "id": "c3", "text": "The chain rule is the engine of related rates: every variable is secretly a function of time, so differentiating produces a d/dt factor for each variable." },
+    { "id": "c4", "text": "The four-step strategy is: draw and label the changing quantities, write an equation relating them, differentiate both sides with respect to time, then substitute known values and solve." },
+    { "id": "c5", "text": "Step one is to draw a picture and assign variables to every changing quantity, keeping them as variables rather than plugging in numbers yet." },
+    { "id": "c6", "text": "Step two is to write an equation that is true at every instant, using geometry or physics such as the Pythagorean theorem or a volume formula." },
+    { "id": "c7", "text": "Step three differentiates both sides with respect to time, where the chain rule attaches dx/dt, dr/dt, or dh/dt to each variable and constants differentiate to zero." },
+    { "id": "c8", "text": "Step four substitutes the specific values and rates for the instant in question and solves for the unknown rate." },
+    { "id": "c9", "text": "The most common related-rates error is substituting an instant's numerical values before differentiating, which turns a variable into a constant and zeroes out its rate." },
+    { "id": "c10", "text": "For a sliding ladder, the relation x² + y² = L² differentiates to 2x(dx/dt) + 2y(dy/dt) = 0, since the ladder length L is constant." },
+    { "id": "c11", "text": "In the classic ladder problem with a 10-foot ladder whose base slides at 2 ft/s, when the base is 6 ft out the top slides down at dy/dt = −3/2 ft/s." },
+    { "id": "c12", "text": "A negative rate in a related-rates answer indicates a decreasing quantity, such as the top of a ladder moving downward." },
+    { "id": "c13", "text": "For an expanding sphere, V = (4/3)πr³ differentiates to dV/dt = 4πr²(dr/dt), because the 3 from the power rule cancels the 1/3." },
+    { "id": "c14", "text": "Example: air pumped into a balloon at 100 cm³/s makes the radius grow at dr/dt = 1/π ≈ 0.318 cm/s when r = 5 cm." },
+    { "id": "c15", "text": "For a circle, A = πr² differentiates to dA/dt = 2πr(dr/dt)." },
+    { "id": "c16", "text": "When a relating equation has more variables than available rates, use geometry such as similar triangles to write one variable in terms of another before differentiating." },
+    { "id": "c17", "text": "For a filling cone, similar triangles give a fixed ratio of radius to height, allowing the volume to be written in terms of height alone before differentiating." },
+    { "id": "c18", "text": "Example: water poured into a cone (10 ft tall, 4 ft top radius) at 3 ft³/min raises the level at dh/dt = 3/(4π) ≈ 0.239 ft/min when the water is 5 ft deep." },
+    { "id": "c19", "text": "The chain rule converts between rates with respect to different variables, since dV/dt = (dV/dr)(dr/dt)." },
+    { "id": "c20", "text": "Always attach units to a related-rates answer, built from the quantities involved, such as cm³/s, ft/min, or cm/s." },
+    { "id": "c21", "text": "Most AP related-rates problems use the Pythagorean theorem, sphere or cone or cylinder volume formulas, similar triangles, or trigonometric relationships." },
+    { "id": "c22", "text": "Related rates is implicit differentiation with time as the hidden inner variable, so the same chain-rule mechanics from implicit differentiation apply." }
+  ]
+}

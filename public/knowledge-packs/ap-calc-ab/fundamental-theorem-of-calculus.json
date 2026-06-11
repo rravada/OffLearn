@@ -1,0 +1,29 @@
+{
+  "id": "ap-calc-ab-fundamental-theorem-of-calculus",
+  "title": "The Fundamental Theorem of Calculus",
+  "subject": "AP Calculus AB",
+  "chunks": [
+    { "id": "c1", "text": "The Fundamental Theorem of Calculus connects derivatives and integrals, showing that differentiation and integration are inverse processes." },
+    { "id": "c2", "text": "FTC Part 1: if F(x) = ∫ from a to x of f(t) dt with f continuous, then F'(x) = f(x)." },
+    { "id": "c3", "text": "FTC Part 1 means the derivative of an accumulation function equals the integrand evaluated at the upper limit." },
+    { "id": "c4", "text": "The rate at which accumulated area grows equals the height of the function at the leading edge, like a tub filling at the current flow rate." },
+    { "id": "c5", "text": "If the upper limit is a function g(x), FTC Part 1 with the chain rule gives d/dx ∫ from a to g(x) of f(t) dt = f(g(x))·g'(x)." },
+    { "id": "c6", "text": "Forgetting the chain-rule factor when the upper limit is g(x) is the most common FTC Part 1 error." },
+    { "id": "c7", "text": "When the variable is in the lower limit, flip the integral first, which introduces a negative sign." },
+    { "id": "c8", "text": "Example: if G(x) = ∫ from 0 to x² of sin t dt, then G'(x) = sin(x²)·2x = 2x·sin(x²)." },
+    { "id": "c9", "text": "Example: ∫ from 1 to x of (1/t) dt defines ln x, since its derivative is 1/x and it equals 0 at x = 1." },
+    { "id": "c10", "text": "FTC Part 2: if F is any antiderivative of a continuous f, then ∫ from a to b of f(x) dx = F(b) − F(a)." },
+    { "id": "c11", "text": "FTC Part 2 lets you evaluate a definite integral by finding an antiderivative and subtracting its values at the endpoints, avoiding Riemann sums." },
+    { "id": "c12", "text": "The notation F(x) evaluated from a to b means F(b) − F(a): top limit minus bottom limit." },
+    { "id": "c13", "text": "No +C is needed in FTC Part 2 because the constant cancels: (F(b) + C) − (F(a) + C) = F(b) − F(a)." },
+    { "id": "c14", "text": "Example: ∫ from 1 to 3 of x² dx = [x³/3] from 1 to 3 = 27/3 − 1/3 = 26/3." },
+    { "id": "c15", "text": "Example: ∫ from 0 to π of sin x dx = [−cos x] from 0 to π = 1 + 1 = 2, the area of one sine arch." },
+    { "id": "c16", "text": "Indefinite integrals produce a family of functions and need +C; definite integrals produce a single number and do not." },
+    { "id": "c17", "text": "If f(t) is velocity, ∫ from a to b of f(t) dt = F(b) − F(a) is the displacement, the final position minus the initial position." },
+    { "id": "c18", "text": "The Net Change Theorem: ∫ from a to b of f'(x) dx = f(b) − f(a), so integrating a rate gives the net change in the quantity." },
+    { "id": "c19", "text": "A final amount equals the initial amount plus the integral of the rate: f(b) = f(a) + ∫ from a to b of f'(x) dx." },
+    { "id": "c20", "text": "FTC Part 1 says integration followed by differentiation returns the original function, a round trip." },
+    { "id": "c21", "text": "FTC Part 2 says differentiation followed by integration recovers the net change in the original function." },
+    { "id": "c22", "text": "Both parts express one idea about a tank: the flow rate is the derivative of total water, and the integral of the flow rate is the total water added." }
+  ]
+}

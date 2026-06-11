@@ -1,0 +1,124 @@
+{
+  "id": "ap-bio-u1-nucleic-acids",
+  "title": "Nucleic Acids: DNA and RNA Structure",
+  "subject": "AP Biology",
+  "unit": "Chemistry of Life",
+  "track": "ap",
+  "difficulty": "ap",
+  "duration": "40 min",
+  "objectives": [
+    "Describe the three components of a nucleotide and how nucleotides link into a sugar-phosphate backbone",
+    "Explain the antiparallel double-helix structure of DNA and the rule of complementary base pairing",
+    "Use base-pairing rules and 5'-to-3' directionality to write the complementary strand of a DNA sequence",
+    "Compare the structure and roles of DNA and RNA and explain why DNA is suited for stable information storage"
+  ],
+  "sections": [
+    {
+      "type": "explanation",
+      "heading": "The Molecule That Stores You",
+      "content": "Every instruction needed to build and run you — from the color of your eyes to the shape of every enzyme in your liver — is stored in a single kind of molecule: DNA. And the storage is astonishingly compact. If you stretched out the DNA in just one of your cells it would be about two meters long, yet it's packed into a nucleus you could fit thousands of across the width of a hair. Understanding how that molecule is built is understanding how life stores information.\n\nNucleic acids — DNA and RNA — are polymers, and like every polymer we've met, they're chains of repeating monomers. The monomer here is the nucleotide. Picture a nucleotide as a three-part snap-bead: a five-carbon sugar in the middle, a phosphate group on one side, and a nitrogenous base sticking out the other.\n\nNucleotides link together when the phosphate of one bonds to the sugar of the next, forming a phosphodiester bond (yet again by dehydration synthesis). String many together and you build a sugar-phosphate backbone — a repeating rail of sugar-phosphate-sugar-phosphate — with the nitrogenous bases jutting off to the side like teeth on a comb. That backbone is the structural spine; the sequence of bases hanging off it is the actual information.\n\nThe carbons of the sugar are numbered 1' through 5' (read 'one-prime' through 'five-prime'). Two of those numbers will matter enormously in a moment: the phosphate attaches at the 5' carbon, and the next nucleotide attaches at the 3' carbon. That asymmetry gives a DNA strand a direction, which turns out to be one of the most important facts in molecular biology."
+    },
+    {
+      "type": "explanation",
+      "heading": "The Double Helix: Antiparallel and Complementary",
+      "content": "DNA is famously double-stranded — two backbones wound around each other into the double helix that Watson and Crick modeled in 1953, building directly on Rosalind Franklin's X-ray crystallography data. Picture a twisted ladder: the two sugar-phosphate backbones are the side rails, and the paired bases reaching toward each other form the rungs.\n\nThe two strands run antiparallel — they point in opposite directions. One strand runs 5' → 3' (top to bottom, say), and its partner runs 3' → 5' alongside it. This opposite orientation isn't a quirky detail; it's required for the bases to line up and pair correctly, and it dictates how enzymes read and copy DNA later.\n\nThe rungs follow a strict rule called complementary base pairing: adenine (A) always pairs with thymine (T), and guanine (G) always pairs with cytosine (C). These pairs are held together by hydrogen bonds — two between A and T, three between G and C. The pairing is specific because of molecular size and shape: a large base always pairs with a small base, keeping the ladder a uniform width.\n\nThe payoff of this rule is huge. Because the pairing is fixed, the two strands carry the same information in mirror form: if you know one strand, you can deduce the other exactly. That redundancy is built-in error protection — if one strand is damaged, the cell uses the intact partner as a template to rebuild it. It's also the entire basis of DNA replication, which you'll study in depth in Unit 6."
+    },
+    {
+      "type": "example",
+      "heading": "Writing the Complementary Strand",
+      "content": "Let's use the rules to solve a classic exam task: given one DNA strand, write its partner. Suppose one strand reads:\n\n  5'-A T C G G A T-3'\n\nStep 1 — Apply base pairing to each base. A pairs with T, T with A, C with G, G with C:\n  A → T\n  T → A\n  C → G\n  G → C\n  G → C\n  A → T\n  T → A\n\nThat gives the partner bases: T A G C C T A.\n\nStep 2 — Set the direction. The strands are antiparallel, so the complementary strand runs opposite to the original. The original is 5'→3' left to right, so the partner is 3'→5' left to right:\n\n  3'-T A G C C T A-5'\n\nStep 3 — (Common exam convention) Rewrite the answer 5'→3' if asked, by reversing it:\n  5'-A T C C G A T-3'\n\nNotice the check you can always run: every A must face a T and every G must face a C across the rungs. If you ever write A across from G, you've made an error. And if the original were RNA or you were transcribing into RNA, you'd swap thymine for uracil — A pairs with U instead of T."
+    },
+    {
+      "type": "table",
+      "heading": "DNA vs. RNA",
+      "headers": ["Feature", "DNA", "RNA"],
+      "rows": [
+        ["Sugar", "Deoxyribose (no −OH on 2' carbon)", "Ribose (has −OH on 2' carbon)"],
+        ["Strands", "Double-stranded (double helix)", "Usually single-stranded"],
+        ["Bases", "A, T, G, C", "A, U, G, C (uracil replaces thymine)"],
+        ["Main function", "Long-term storage of genetic information", "Carrying and decoding information; structure; regulation"],
+        ["Stability", "Very stable (good for an archive)", "Less stable (good for a temporary copy)"],
+        ["Location in eukaryotes", "Mostly nucleus", "Made in nucleus, works in nucleus and cytoplasm"]
+      ]
+    },
+    {
+      "type": "quiz",
+      "question": "In a double-stranded DNA sample, 30% of the bases are adenine (A). What percentage of the bases are guanine (G)?",
+      "options": [
+        "30%",
+        "20%",
+        "70%",
+        "Cannot be determined from the information given"
+      ],
+      "correctIndex": 1,
+      "explanation": "Because A pairs with T, if A is 30% then T is also 30%, accounting for 60% of the bases. The remaining 40% must be G and C in equal amounts (G pairs with C), so G is 20%. This application of complementary base pairing (Chargaff's rule) is a frequent exam item."
+    },
+    {
+      "type": "keypoint",
+      "content": "DNA is an antiparallel double helix whose strands obey complementary base pairing — A with T (2 hydrogen bonds) and G with C (3 hydrogen bonds) — so each strand is a template that fully specifies the other."
+    },
+    {
+      "type": "steps",
+      "heading": "How to Determine a Complementary Antiparallel Strand",
+      "steps": [
+        {
+          "title": "Note the direction of the given strand",
+          "content": "Find the 5' and 3' labels on the strand you were given. Direction matters because the new strand will run opposite to it. If the strand is written 5' on the left and 3' on the right, keep that orientation in mind."
+        },
+        {
+          "title": "Pair each base using the rules",
+          "content": "Go base by base: A pairs with T, T pairs with A, G pairs with C, and C pairs with G. (If you are pairing DNA with RNA, replace T with U, so A pairs with U.) Write the paired base beneath each original base."
+        },
+        {
+          "title": "Label the new strand antiparallel",
+          "content": "Because the strands are antiparallel, the new strand runs in the opposite direction. If the original is 5' to 3' left to right, the complementary strand is 3' to 5' left to right. Add the correct 5' and 3' labels."
+        },
+        {
+          "title": "Optionally rewrite the answer 5' to 3'",
+          "content": "Conventionally, sequences are reported in the 5' to 3' direction. If the question asks for that, reverse the strand you wrote so its 5' end is on the left, then double-check that every A faces a T and every G faces a C."
+        }
+      ]
+    },
+    {
+      "type": "explanation",
+      "heading": "Purines, Pyrimidines, and Why G-C Pairs Are Stronger",
+      "content": "The four DNA bases come in two structural classes that are worth knowing by name. Purines — adenine and guanine — are the larger bases, built from two fused rings. Pyrimidines — cytosine, thymine, and (in RNA) uracil — are smaller, single-ring bases. A memory trick: 'pyrimidine' and the pyrimidines (Cytosine, Thymine, Uracil) are the shorter words, and they're the smaller molecules.\n\nNotice that every base pair joins one purine with one pyrimidine: A (purine) with T (pyrimidine), and G (purine) with C (pyrimidine). That's not a coincidence — pairing a big base with a small base keeps each rung exactly the same width, so the helix stays a uniform diameter all the way down, like a well-built ladder.\n\nOne more difference matters for stability. The A–T pair is held by two hydrogen bonds, while the G–C pair is held by three. More hydrogen bonds means a stronger grip, so stretches of DNA rich in G–C are harder to pull apart and melt at higher temperatures. Organisms that live in hot environments, like bacteria in hot springs, tend to have higher G–C content in regions where the double helix must stay zipped under heat. It's the same hydrogen-bond logic from the water lesson, applied to the molecule of heredity."
+    },
+    {
+      "type": "callout",
+      "variant": "warning",
+      "heading": "Two Classic DNA/RNA Mix-Ups",
+      "content": "First: DNA does NOT contain uracil and RNA does NOT contain thymine. DNA uses A, T, G, C; RNA swaps in uracil (U) for thymine, using A, U, G, C. Second: don't forget antiparallel. When you write a complementary strand, the partner runs in the OPPOSITE 5'-to-3' direction — a common exam mistake is to copy the same direction. Always label your 5' and 3' ends, and remember A pairs with T (or U in RNA), G pairs with C — never A with G or C with T."
+    },
+    {
+      "type": "quiz",
+      "question": "Why is RNA generally less chemically stable than DNA, making DNA better suited for long-term information storage?",
+      "options": [
+        "RNA is double-stranded, which makes it fragile",
+        "RNA's ribose sugar has an extra hydroxyl (−OH) group at the 2' carbon that DNA's deoxyribose lacks",
+        "RNA uses thymine, which breaks down faster than uracil",
+        "RNA contains a sugar-phosphate backbone while DNA does not"
+      ],
+      "correctIndex": 1,
+      "explanation": "RNA's ribose has a reactive 2' hydroxyl group that deoxyribose lacks, making RNA more prone to chemical breakdown and therefore better as a temporary copy than a permanent archive. RNA is usually single-stranded, it uses uracil rather than thymine, and both DNA and RNA have sugar-phosphate backbones."
+    },
+    {
+      "type": "deepdive",
+      "heading": "From Structure to Information: A Preview of the Central Dogma",
+      "content": "Why does this structural detail deserve its own lesson? Because structure is what makes DNA an information molecule. The sequence of bases — A, T, G, C in any order — is a four-letter code, and the order of those letters spells out the instructions for building every protein in your body. The antiparallel, complementary double helix is the perfect format for that code: stable enough to store information for a lifetime, yet able to unzip down the middle so the information can be read and copied.\n\nThat reading and copying is the central dogma of molecular biology, which you'll study fully in Unit 6: DNA → RNA → protein. In brief, a gene's DNA sequence is transcribed into a messenger RNA copy, and that RNA is translated by ribosomes into a chain of amino acids — the protein. RNA is the ideal middleman precisely because it's the less stable, single-stranded molecule: the cell wants its working copies temporary and disposable, not permanent. Different RNAs do different jobs — mRNA carries the message, tRNA ferries amino acids, rRNA forms the core of the ribosome.\n\nThere's even a deeper hint here about life's origins. Some RNA molecules can both store information and catalyze reactions (these are called ribozymes), which led scientists to the RNA World hypothesis — the idea that early life may have run on RNA alone, before DNA and proteins divided the labor. The molecule you just learned to draw may be a clue to how life itself began."
+    },
+    {
+      "type": "callout",
+      "variant": "remember",
+      "heading": "Nucleic Acid Essentials",
+      "content": "A nucleotide = sugar + phosphate + nitrogenous base. DNA bases: A, T, G, C; RNA bases: A, U, G, C. Base pairing: A–T (2 H-bonds), G–C (3 H-bonds); in RNA, A–U. Purines (A, G) are large/double-ring; pyrimidines (C, T, U) are small/single-ring; every pair is one purine + one pyrimidine. DNA = deoxyribose, double-stranded, stable archive; RNA = ribose, usually single-stranded, temporary worker. Strands are ANTIPARALLEL (5'→3' opposite 3'→5')."
+    },
+    {
+      "type": "callout",
+      "variant": "tip",
+      "heading": "Always Show Your Base-Pairing Work",
+      "content": "On FRQs that ask you to give a complementary or mRNA strand, write the partner base directly under each original base and clearly label the 5' and 3' ends. This earns method credit even if you slip on one base, and it forces you to honor the antiparallel rule. For Chargaff-rule percentage questions, remember %A = %T and %G = %C, and the four must sum to 100%."
+    }
+  ],
+  "aiContext": "This AP Biology Unit 1 lesson covers CED topic 1.6: the structure of nucleic acids (nucleotides, the antiparallel double helix, complementary base pairing, directionality, and DNA vs. RNA). Emphasize that structure enables function — the complementary, antiparallel helix is what lets DNA store and faithfully copy information, setting up replication and the central dogma in Unit 6. Watch for the most common errors: putting uracil in DNA or thymine in RNA, ignoring antiparallel direction when writing a complementary strand, and pairing bases incorrectly. Reinforce Chargaff-rule reasoning (%A=%T, %G=%C) and the link between G-C content (three hydrogen bonds) and helix stability, echoing the hydrogen-bonding theme from the water lesson. On the exam, expect MCQs on base pairing, purines vs. pyrimidines, base-composition percentages, and DNA/RNA differences, plus FRQ subparts asking students to write complementary or mRNA sequences and to justify why DNA suits long-term storage."
+}

@@ -1,0 +1,191 @@
+{
+  "id": "ap-calc-ab-unit6-review",
+  "title": "Unit 6 Review: Integration and Accumulation of Change",
+  "subject": "AP Calculus AB",
+  "unit": "Integration and Accumulation of Change",
+  "type": "unit-review",
+  "questionsPerAttempt": 10,
+  "isAssessment": true,
+  "bank": [
+    {
+      "question": "For a function increasing on [a, b], a left Riemann sum gives an estimate that is:",
+      "options": ["an overestimate", "an underestimate", "exact", "dependent on concavity"],
+      "correctIndex": 1,
+      "explanation": "For an increasing function the left endpoints are the lowest points of each subinterval, so the left rectangles sit below the curve and underestimate the area. The right sum would overestimate."
+    },
+    {
+      "question": "Using one trapezoid over [0, 3] with f(0) = 2 and f(3) = 8, the trapezoidal estimate of the area is:",
+      "options": ["15", "30", "12", "9"],
+      "correctIndex": 0,
+      "explanation": "A trapezoid's area is width × (average of the parallel sides) = 3 · (2 + 8)/2 = 3 · 5 = 15. This also equals the average of the left sum (6) and right sum (24)."
+    },
+    {
+      "question": "The definite integral ∫ from a to b of f(x) dx is formally defined as:",
+      "options": ["the antiderivative of f", "the limit of Riemann sums as the number of rectangles approaches infinity", "the slope of f at b", "f(b) − f(a) always"],
+      "correctIndex": 1,
+      "explanation": "The definite integral is defined as the limit of Riemann sums Σ f(xᵢ)Δx as n → ∞ (Δx → 0), which gives the exact net signed area. The FTC later provides a shortcut for evaluating it via antiderivatives, but that is a theorem, not the definition."
+    },
+    {
+      "question": "A table gives f at x = 0, 1, 2, 3 as 1, 3, 5, 9. The right Riemann sum with Δx = 1 over [0, 3] is:",
+      "options": ["17", "9", "18", "15"],
+      "correctIndex": 0,
+      "explanation": "A right sum uses the right endpoints x = 1, 2, 3 with heights 3, 5, 9: sum = 1·(3 + 5 + 9) = 17. For 4 data points there are 3 subintervals, and the right sum drops the first value (at x = 0)."
+    },
+    {
+      "question": "For a DECREASING function, a right Riemann sum will:",
+      "options": ["overestimate the area", "underestimate the area", "give the exact area", "equal the left sum"],
+      "correctIndex": 1,
+      "explanation": "For a decreasing function the right endpoints are the lowest points, so the right rectangles fall below the curve and underestimate. (For decreasing functions the LEFT sum overestimates — the opposite of the increasing case.)"
+    },
+    {
+      "question": "The definite integral ∫ from a to b of f(x) dx represents:",
+      "options": ["total geometric area always", "net signed area (above minus below the axis)", "the slope of the secant line", "the maximum value of f"],
+      "correctIndex": 1,
+      "explanation": "The definite integral is net signed area: regions above the x-axis count positive and regions below count negative. It equals total geometric area only when f does not go below the axis on [a, b]."
+    },
+    {
+      "question": "Evaluate ∫ from −3 to 3 of √(9 − x²) dx using geometry.",
+      "options": ["9π/2", "9π", "3π", "18π"],
+      "correctIndex": 0,
+      "explanation": "The graph y = √(9 − x²) is the upper half of the circle of radius 3, so the region is a semicircle of area (1/2)π(3)² = 9π/2. The integral equals this positive area since the region is above the axis."
+    },
+    {
+      "question": "If ∫ from 0 to 4 of f(x) dx = 10 and ∫ from 4 to 9 of f(x) dx = −3, what is ∫ from 0 to 9 of f(x) dx?",
+      "options": ["7", "13", "−7", "10"],
+      "correctIndex": 0,
+      "explanation": "By interval additivity, ∫₀⁹ f = ∫₀⁴ f + ∫₄⁹ f = 10 + (−3) = 7. The negative second piece (net area below the axis) reduces the total."
+    },
+    {
+      "question": "If ∫ from 2 to 5 of f(x) dx = 6, what is ∫ from 5 to 2 of f(x) dx?",
+      "options": ["6", "−6", "12", "0"],
+      "correctIndex": 1,
+      "explanation": "Reversing the limits of integration flips the sign, so ∫ from 5 to 2 of f dx = −∫ from 2 to 5 of f dx = −6."
+    },
+    {
+      "question": "If ∫ from 0 to 3 of f(x) dx = 4, what is ∫ from 0 to 3 of 5f(x) dx?",
+      "options": ["20", "9", "4", "5"],
+      "correctIndex": 0,
+      "explanation": "By the constant multiple rule, ∫ 5f dx = 5·∫ f dx = 5·4 = 20. A constant factor can be pulled outside the integral."
+    },
+    {
+      "question": "What is ∫x³ dx?",
+      "options": ["x⁴/4 + C", "3x² + C", "4x³ + C", "x⁴ + C"],
+      "correctIndex": 0,
+      "explanation": "By the reverse power rule, raise the exponent and divide: ∫x³ dx = x⁴/4 + C. The option 3x² is the derivative, and x⁴ omits both the division by 4 and the +C."
+    },
+    {
+      "question": "What is ∫(1/x) dx?",
+      "options": ["ln|x| + C", "x⁰/0 + C", "−1/x² + C", "1 + C"],
+      "correctIndex": 0,
+      "explanation": "The case n = −1 is the exception to the power rule: ∫x⁻¹ dx = ln|x| + C. The absolute value keeps the antiderivative valid for negative x, and the power-rule formula x⁰/0 is undefined here."
+    },
+    {
+      "question": "Which function is an antiderivative of f(x) = cos x?",
+      "options": ["sin x", "−sin x", "−cos x", "sec²x"],
+      "correctIndex": 0,
+      "explanation": "An antiderivative F satisfies F'(x) = cos x. Since d/dx[sin x] = cos x, sin x (and sin x + C) works. The option −cos x differentiates to sin x, not cos x."
+    },
+    {
+      "question": "Evaluate ∫ from 0 to 2 of (2x + 3) dx.",
+      "options": ["10", "8", "7", "13"],
+      "correctIndex": 0,
+      "explanation": "An antiderivative is x² + 3x. By FTC Part 2: (2² + 3·2) − (0² + 0) = (4 + 6) − 0 = 10."
+    },
+    {
+      "question": "What is ∫sin x dx?",
+      "options": ["−cos x + C", "cos x + C", "sin x + C", "−sin x + C"],
+      "correctIndex": 0,
+      "explanation": "Since d/dx[−cos x] = sin x, we have ∫sin x dx = −cos x + C. Forgetting the negative sign is the most common error here."
+    },
+    {
+      "question": "By FTC Part 1, what is d/dx ∫ from 2 to x of (t² + 1) dt?",
+      "options": ["x² + 1", "2x", "x³/3 + x", "t² + 1"],
+      "correctIndex": 0,
+      "explanation": "FTC Part 1 says the derivative of an accumulation function with a simple upper limit x is just the integrand evaluated at x: x² + 1. No integration or antiderivative is needed."
+    },
+    {
+      "question": "What is d/dx ∫ from 0 to x³ of cos(t) dt?",
+      "options": ["cos(x³)", "3x²·cos(x³)", "sin(x³)", "cos(x³) − 1"],
+      "correctIndex": 1,
+      "explanation": "With a composite upper limit, apply the chain rule: f(g(x))·g'(x) = cos(x³)·3x² = 3x²·cos(x³). Forgetting the factor 3x² is the most common FTC Part 1 mistake."
+    },
+    {
+      "question": "Evaluate ∫ from 1 to 2 of 2x dx.",
+      "options": ["3", "4", "2", "6"],
+      "correctIndex": 0,
+      "explanation": "An antiderivative of 2x is x². By FTC Part 2: 2² − 1² = 4 − 1 = 3."
+    },
+    {
+      "question": "The Net Change Theorem states that ∫ from a to b of f'(x) dx equals:",
+      "options": ["f'(b) − f'(a)", "f(b) − f(a)", "f(b) + f(a)", "the area under f'"],
+      "correctIndex": 1,
+      "explanation": "Integrating a rate of change f' over [a, b] gives the net change in f: ∫ₐᵇ f'(x) dx = f(b) − f(a). This is FTC Part 2 read in terms of accumulated change."
+    },
+    {
+      "question": "Why is no +C needed when evaluating a definite integral?",
+      "options": ["Definite integrals are always zero", "The constant cancels in F(b) − F(a)", "Definite integrals have no antiderivative", "+C is only for derivatives"],
+      "correctIndex": 1,
+      "explanation": "In F(b) − F(a), any added constant cancels: (F(b) + C) − (F(a) + C) = F(b) − F(a). A definite integral is a single number, unlike an indefinite integral, which is a family needing +C."
+    },
+    {
+      "question": "For F(x) = ∫ from a to x of f(t) dt, the FTC gives F'(x) =",
+      "options": ["f(x)", "f'(x)", "f(a)", "F(a)"],
+      "correctIndex": 0,
+      "explanation": "By FTC Part 1, the derivative of the accumulation function is the integrand: F'(x) = f(x). This is why f behaves as the derivative of F when analyzing F's behavior."
+    },
+    {
+      "question": "For the accumulation function F(x) = ∫ from 0 to x of f(t) dt, F is increasing on intervals where:",
+      "options": ["f(x) > 0", "f(x) < 0", "f is increasing", "f(x) = 0"],
+      "correctIndex": 0,
+      "explanation": "Since F'(x) = f(x), F is increasing where its derivative f is positive. Whether f itself is increasing controls F's concavity, not whether F rises."
+    },
+    {
+      "question": "F(x) = ∫ from 0 to x of f(t) dt has a local maximum where f:",
+      "options": ["reaches its highest point", "crosses zero from positive to negative", "is increasing", "is negative"],
+      "correctIndex": 1,
+      "explanation": "Because F' = f, a local maximum of F occurs where f (its derivative) changes from positive to negative. The highest point of f is where F is increasing fastest — an inflection point of F, not a maximum."
+    },
+    {
+      "question": "For F(x) = ∫ from 0 to x of f(t) dt, F is concave up where:",
+      "options": ["f(x) > 0", "f is increasing", "f(x) < 0", "f crosses zero"],
+      "correctIndex": 1,
+      "explanation": "Since F''(x) = f'(x), F is concave up where f' > 0, i.e. where f is increasing. The sign of f alone controls whether F increases, not its concavity."
+    },
+    {
+      "question": "Let F(x) = ∫ from 0 to x of f(t) dt. If the region under f from 0 to 2 has area 5 (above the axis) and from 2 to 3 has area 1 (below the axis), what is F(3)?",
+      "options": ["4", "6", "5", "1"],
+      "correctIndex": 0,
+      "explanation": "Accumulate signed area: F(3) = (+5 from 0 to 2) + (−1 from 2 to 3) = 4. The below-axis region subtracts from the running total."
+    },
+    {
+      "question": "For ∫(2x + 5)⁷ dx, the best choice of u is:",
+      "options": ["u = 2x + 5", "u = x⁷", "u = 7", "u = 2x"],
+      "correctIndex": 0,
+      "explanation": "Choose the inner function as u: u = 2x + 5, the base of the power. Then du = 2 dx, and the integral becomes (1/2)∫u⁷ du, which is straightforward."
+    },
+    {
+      "question": "In ∫x·e^(x²) dx, after letting u = x² you find du = 2x dx. The integrand has only x dx, so you should:",
+      "options": ["pull out x² as a constant", "write x dx = du/2 and pull out 1/2", "give up — u-substitution fails", "change u to x"],
+      "correctIndex": 1,
+      "explanation": "The mismatch is only a constant factor: since du = 2x dx, we have x dx = du/2, so the 1/2 pulls outside the integral. Constants can be adjusted freely; only functions of x cannot be moved across the integral sign."
+    },
+    {
+      "question": "When applying u-substitution to a definite integral with changed limits, you must NOT:",
+      "options": ["change the limits to u-values", "substitute back to x after changing the limits", "compute du", "integrate in u"],
+      "correctIndex": 1,
+      "explanation": "After changing the limits to u-values, finish in u-world and evaluate at the u-limits. Substituting back to x and then using u-limits (or vice versa) mixes the two methods and gives a wrong answer."
+    },
+    {
+      "question": "Evaluate ∫2x·cos(x²) dx.",
+      "options": ["sin(x²) + C", "2 sin(x²) + C", "cos(x²) + C", "x²·sin(x²) + C"],
+      "correctIndex": 0,
+      "explanation": "Let u = x², so du = 2x dx; the integral becomes ∫cos u du = sin u + C = sin(x²) + C. Check: d/dx[sin(x²)] = cos(x²)·2x, the original integrand."
+    },
+    {
+      "question": "If, after substituting u = x², an integral still contains a leftover factor of x (not a constant), this means:",
+      "options": ["the substitution is fine; ignore the x", "the choice of u may be wrong or the x must be rewritten in terms of u", "you should pull the x out as a constant", "the integral equals zero"],
+      "correctIndex": 1,
+      "explanation": "A leftover function of x signals the substitution has not fully simplified the integral. Either rewrite the remaining x in terms of u (e.g., x² = u when u = x²) or choose a different u; you cannot treat a function of x as a constant."
+    }
+  ]
+}

@@ -1,0 +1,104 @@
+{
+  "id": "ap-calc-ab-u5-optimization-problems",
+  "title": "Optimization Problems",
+  "subject": "AP Calculus AB",
+  "unit": "Analytical Applications of Differentiation",
+  "track": "ap",
+  "difficulty": "ap",
+  "duration": "50 min",
+  "objectives": [
+    "Translate a word problem into an objective function and a constraint equation.",
+    "Use the constraint to write the objective as a function of a single variable.",
+    "Find and classify critical points with the first or second derivative test.",
+    "Justify that a critical point gives the absolute extreme value using endpoints or domain reasoning."
+  ],
+  "sections": [
+    {
+      "type": "explanation",
+      "heading": "What Optimization Really Means",
+      "content": "Optimization is about finding the best possible outcome. You do it instinctively — figuring out the fastest route to school, how to fit the most into a suitcase, how to spend a budget for the most value. In calculus, 'best' usually means the maximum or minimum value of some quantity, and derivatives let you find it precisely.\n\nThe core idea: if a smooth function f(x) represents the quantity you want to optimize, then at a maximum or minimum the derivative f'(x) = 0. Picture the graph — at the top of a hill the slope is flat, and at the bottom of a valley it's flat too. The slope transitions from positive to negative (at a max) or negative to positive (at a min), and at the transition itself the slope is zero.\n\nThese points where f'(x) = 0 (or is undefined) are the critical points, your candidates for the best answer. But not every critical point is an extremum — some are flat spots where the function briefly levels and then continues the same direction. So you'll classify each candidate with the first or second derivative test, and then make sure you've found the *absolute* best on the relevant domain, not merely a local one."
+    },
+    {
+      "type": "explanation",
+      "heading": "Objective Function and Constraint",
+      "content": "The hardest part of optimization usually isn't the calculus — it's the setup. Every optimization problem has two ingredients.\n\nThe objective function is the quantity you want to maximize or minimize: area, volume, cost, distance, profit, or time. The constraint is a condition that limits your choices: a fixed amount of fencing, a fixed budget, a fixed volume, a fixed surface area.\n\nYour job is to express the objective function in terms of a *single* variable by using the constraint to eliminate the others. Once the objective is a function of one variable, derivatives find its maximum or minimum. Think of it this way: the constraint narrows an infinite universe of possibilities down to a one-variable family, and the objective picks the best member of that family.\n\nA frequent mistake is optimizing the wrong quantity. Read carefully: are you maximizing area or minimizing the fencing used? The objective must represent exactly what the problem asks you to optimize, and the constraint is the *other* relationship in the problem. Mislabeling which is which derails everything that follows."
+    },
+    {
+      "type": "steps",
+      "heading": "The Optimization Procedure",
+      "steps": [
+        { "title": "Identify the quantity to optimize", "content": "Determine precisely what the problem wants maximized or minimized, and name it (area, cost, distance, etc.)." },
+        { "title": "Write the objective function", "content": "Express that quantity as a formula. It often starts with two variables." },
+        { "title": "Apply the constraint to reduce variables", "content": "Use the constraint equation to solve for one variable and substitute, leaving the objective as a function of a single variable. Note the domain." },
+        { "title": "Find critical points", "content": "Differentiate, set the derivative to zero (and check where it's undefined), and solve." },
+        { "title": "Classify and justify the extreme", "content": "Use the first or second derivative test to classify, then confirm it is the ABSOLUTE extreme via endpoints (closed domain) or end-behavior reasoning (open domain)." }
+      ]
+    },
+    {
+      "type": "example",
+      "heading": "Classic: Maximizing a Fenced Area",
+      "content": "A farmer has 200 feet of fencing to enclose a rectangular area next to a barn. The barn is one side, so fencing is needed for only the other three sides. What dimensions maximize the enclosed area?\n\nVariables: let x = length of each side perpendicular to the barn (two of these), y = the side parallel to the barn.\n\nConstraint: total fencing 2x + y = 200.\n\nObjective: area A = xy, to be maximized.\n\nReduce to one variable: from the constraint, y = 200 − 2x, so A(x) = x(200 − 2x) = 200x − 2x².\n\nCritical point: A'(x) = 200 − 4x = 0 → x = 50.\n\nClassify: A''(x) = −4 < 0 everywhere, so the graph is concave down and x = 50 is a maximum.\n\nDimensions: y = 200 − 2(50) = 100. The rectangle is 50 ft × 100 ft, with maximum area 5,000 ft²."
+    },
+    {
+      "type": "callout",
+      "variant": "warning",
+      "heading": "Optimize the Right Quantity — and Reduce to One Variable",
+      "content": "Two setup errors sink optimization problems. First, confusing the objective with the constraint: if the problem says 'maximize area using 200 ft of fence,' area is the objective and the fence length is the constraint — optimizing the fence instead gives nonsense. Second, forgetting to use the constraint to eliminate a variable: you cannot apply single-variable derivative tests to A = xy with two free variables. Always substitute until the objective depends on ONE variable before differentiating, and write down that variable's domain — you'll need it to justify the absolute extreme."
+    },
+    {
+      "type": "quiz",
+      "question": "You want to minimize the cost of fencing a rectangular pen of fixed area 600 ft². In the calculus setup, which is the objective function?",
+      "options": ["The area, A = 600", "The perimeter (total fencing), to be minimized", "The diagonal of the rectangle", "The constraint xy = 600"],
+      "correctIndex": 1,
+      "explanation": "You are minimizing fencing, so the perimeter is the objective function. The fixed area xy = 600 is the constraint, used to reduce the perimeter to one variable before differentiating. Confusing the fixed area for the objective is the classic setup error."
+    },
+    {
+      "type": "explanation",
+      "heading": "Classifying the Critical Point",
+      "content": "After reducing to one variable and finding a critical point, confirm whether it's the max or min you want. Both tests from earlier in the unit apply.\n\nThe First Derivative Test checks the sign of the derivative on each side of the critical point: a change from positive to negative is a local maximum, negative to positive is a local minimum. The Second Derivative Test checks concavity at the point: f''(c) < 0 (concave down) signals a maximum, f''(c) > 0 (concave up) a minimum; f''(c) = 0 is inconclusive and sends you back to the first derivative test.\n\nFor optimization word problems the second derivative test is often fastest — you plug one number into f''. In the fence problem, A''(x) = −4 < 0 instantly confirmed a maximum. But the test you choose isn't the whole job: classifying a point as a *local* max or min doesn't yet prove it's the *absolute* best on the problem's domain. That final justification — comparing with endpoints or reasoning from the function's behavior at the edges of its domain — is what separates a complete optimization answer from an incomplete one, and it's the subject of the next sections."
+    },
+    {
+      "type": "example",
+      "heading": "Minimizing Material for a Box",
+      "content": "Build an open-top rectangular box with a square base that holds 32 ft³, using the least material (surface area).\n\nObjective: surface area S = x² + 4xh (square base of side x plus four sides, no top).\n\nConstraint: volume x²h = 32, so h = 32/x².\n\nReduce: S(x) = x² + 4x(32/x²) = x² + 128/x, for x > 0.\n\nCritical point: S'(x) = 2x − 128/x² = 0 → 2x³ = 128 → x³ = 64 → x = 4.\n\nClassify: S''(x) = 2 + 256/x³; at x = 4, S''(4) = 2 + 256/64 = 6 > 0, concave up → minimum.\n\nDimensions: h = 32/16 = 2 ft, so the box is 4 × 4 × 2, surface area 16 + 32 = 48 ft².\n\nDomain reasoning seals it: as x → 0⁺ the term 128/x → ∞ (a tall, thin box), and as x → ∞ the term x² → ∞ (a huge base). With S → ∞ at both ends and a single critical point at x = 4, that point must be the absolute minimum."
+    },
+    {
+      "type": "table",
+      "heading": "Justifying the Absolute Extreme",
+      "headers": ["Domain type", "How to justify the absolute extreme"],
+      "rows": [
+        ["Closed interval [a, b]", "Candidates Test: compare f at all critical points and at both endpoints; pick the largest/smallest"],
+        ["Open or unbounded (e.g. x > 0)", "Check end behavior; if f → ∞ (or −∞) at the edges and there is one interior critical point, it is the absolute extreme"],
+        ["Single critical point, concave throughout", "Second derivative sign shows the lone critical point is the global max or min"]
+      ]
+    },
+    {
+      "type": "callout",
+      "variant": "tip",
+      "heading": "Always Justify the Absolute Extreme",
+      "content": "Finding a critical point and verifying it's a local min is NOT a complete answer when the problem asks for the absolute best. On a closed interval, use the Candidates Test (compare critical points and endpoints). On an open domain like x > 0, add one justifying sentence about end behavior, e.g. 'Since S(x) → ∞ as x → 0⁺ and as x → ∞, and x = 4 is the only critical point, it gives the absolute minimum.' This single sentence is often worth a point on free response — graders look for it explicitly."
+    },
+    {
+      "type": "quiz",
+      "question": "After reducing an open-domain (x > 0) cost function to one variable, you find exactly one critical point and verify S''(c) > 0 there. To conclude it is the ABSOLUTE minimum, you should also:",
+      "options": ["Check the value at x = 0", "Argue the function tends to infinity at the domain's edges", "Compute the third derivative", "Nothing more is needed"],
+      "correctIndex": 1,
+      "explanation": "On an open domain there are no endpoints to test, so you justify the absolute minimum by noting the function increases without bound toward the edges of its domain, leaving the single critical point as the global minimum. x = 0 is not in the domain, and a second derivative test alone establishes only a local minimum."
+    },
+    {
+      "type": "example",
+      "heading": "Distance Optimization: Closest Point on a Curve",
+      "content": "Find the point on the parabola y = x² closest to (0, 1).\n\nThe distance from (x, x²) to (0, 1) is D = √(x² + (x² − 1)²). Minimizing D is the same as minimizing D² (the square root is increasing), so work with\n  f(x) = x² + (x² − 1)² = x² + x⁴ − 2x² + 1 = x⁴ − x² + 1.\n\nDifferentiate: f'(x) = 4x³ − 2x = 2x(2x² − 1).\n\nCritical points: 2x(2x² − 1) = 0 → x = 0 or x² = 1/2 → x = ±1/√2.\n\nEvaluate f:\n  f(0) = 1\n  f(±1/√2) = 1/4 − 1/2 + 1 = 3/4\n\nSince 3/4 < 1, the closest points are (1/√2, 1/2) and (−1/√2, 1/2), at distance √(3/4) = √3/2 ≈ 0.866.\n\nThe key trick — minimizing the square of the distance instead of the distance — avoids messy square roots in the derivative, and the minimum occurs at the same x because squaring preserves order for nonnegative quantities."
+    },
+    {
+      "type": "deepdive",
+      "heading": "Why Endpoints Matter — and When They Don't",
+      "content": "Here's the subtlety that separates students who understand optimization from those who just follow a recipe. Finding where f'(x) = 0 gives only *local* extrema, but most optimization problems want the *absolute* (global) maximum or minimum on a domain.\n\nIf the domain is a closed interval [a, b], the absolute extreme can hide at three kinds of places: critical points where f'(x) = 0, points where f'(x) is undefined, and the endpoints x = a and x = b. The Closed Interval (Candidates) Method evaluates f at all of them and takes the largest and smallest. Endpoints genuinely can win — recall the earlier candidates example where both absolute extremes occurred at endpoints, not at the interior critical points. Skipping the endpoints is one of the most common ways to lose an optimization problem.\n\nMany word problems, though, have open or unbounded domains — a length must be positive (x > 0), with no largest allowed value. Then there are no endpoints to test, and you justify the absolute extreme by *reasoning about behavior at the edges*. In the box problem, S(x) → ∞ as x → 0⁺ and as x → ∞; with a single interior critical point, that point must be the absolute minimum. This kind of end-behavior argument is precisely what the AP exam rewards, and it's why a one-sentence justification is expected rather than optional.\n\nThe deeper principle is that calculus locates *candidates* but does not by itself certify a *global* winner — that certification always comes from accounting for the entire domain, edges included. Internalizing this saves you from the seductive trap of finding a critical point, confirming it's a local min, and stopping one step short of the actual question."
+    },
+    {
+      "type": "keypoint",
+      "content": "Optimization in five steps: identify the quantity to optimize, write the objective function, use the constraint to reduce to one variable, find critical points, then classify (first/second derivative test) AND justify the absolute extreme — by the Candidates Test on a closed interval or by end-behavior reasoning on an open domain. Always confirm the answer makes physical sense."
+    }
+  ],
+  "aiContext": "AP Calculus AB Unit 5, optimization. The hardest part is the setup: correctly identifying the objective function versus the constraint, then using the constraint to reduce the objective to a single variable before differentiating. After finding critical points, students classify with the first or second derivative test, but the step most often missed is justifying the ABSOLUTE extreme — the Candidates Test (critical points plus endpoints) on a closed interval, or an end-behavior argument on an open domain like x > 0. Emphasize that a local-min verification is not a complete answer and that a one-sentence absolute-extreme justification earns a point on free response. Useful tricks: minimize the square of distance to avoid square roots, and always state the domain. Encourage checking that the result is physically reasonable."
+}

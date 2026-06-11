@@ -1,0 +1,29 @@
+{
+  "id": "ap-calc-ab-antiderivatives-and-indefinite-integrals",
+  "title": "Antiderivatives and Indefinite Integrals",
+  "subject": "AP Calculus AB",
+  "chunks": [
+    { "id": "c1", "text": "An antiderivative reverses differentiation: F(x) is an antiderivative of f(x) if F'(x) = f(x)." },
+    { "id": "c2", "text": "Antiderivatives are never unique, because adding any constant does not change the derivative." },
+    { "id": "c3", "text": "Every function has a whole family of antiderivatives of the form F(x) + C, differing only by a constant." },
+    { "id": "c4", "text": "The constant of integration +C must be included on every indefinite integral, and represents real content such as an unknown initial value." },
+    { "id": "c5", "text": "Graphically, the family of antiderivatives is infinitely many copies of the same curve shifted vertically, all with identical slopes at each x." },
+    { "id": "c6", "text": "An initial condition like F(0) = 50 selects one specific antiderivative by determining the value of C." },
+    { "id": "c7", "text": "The indefinite integral is written ∫f(x) dx, where f(x) is the integrand and dx indicates the variable of integration." },
+    { "id": "c8", "text": "The reverse power rule: ∫xⁿ dx = xⁿ⁺¹/(n + 1) + C, valid for all n except n = −1." },
+    { "id": "c9", "text": "The exception ∫x⁻¹ dx = ∫(1/x) dx = ln|x| + C, since the power rule would divide by zero when n = −1." },
+    { "id": "c10", "text": "The absolute value in ln|x| keeps the antiderivative of 1/x valid for negative x." },
+    { "id": "c11", "text": "∫cos x dx = sin x + C, because the derivative of sin x is cos x." },
+    { "id": "c12", "text": "∫sin x dx = −cos x + C, because the derivative of −cos x is sin x; forgetting the negative sign is a common error." },
+    { "id": "c13", "text": "∫sec²x dx = tan x + C, because the derivative of tan x is sec²x." },
+    { "id": "c14", "text": "∫eˣ dx = eˣ + C, since eˣ is its own derivative." },
+    { "id": "c15", "text": "The constant multiple rule lets you pull constants outside: ∫k·f(x) dx = k·∫f(x) dx." },
+    { "id": "c16", "text": "The sum and difference rule lets you integrate term by term: ∫[f ± g] dx = ∫f dx ± ∫g dx." },
+    { "id": "c17", "text": "When integrating a sum, write only one +C at the end, since the sum of several arbitrary constants is one arbitrary constant." },
+    { "id": "c18", "text": "Example: ∫(3x² − 5 sin x + 7) dx = x³ + 5 cos x + 7x + C, where the −5 times −cos x becomes +5 cos x." },
+    { "id": "c19", "text": "There is no product rule or quotient rule for antiderivatives; products and compositions require techniques like u-substitution." },
+    { "id": "c20", "text": "Any antiderivative can be verified by differentiating it to recover the original integrand." },
+    { "id": "c21", "text": "Every continuous function has an antiderivative, guaranteed by the accumulation function F(x) = ∫ from a to x of f(t) dt, whose derivative is f(x)." },
+    { "id": "c22", "text": "Some antiderivatives exist but cannot be written in closed form, such as the antiderivative of e^(−x²), which is why numerical integration is needed in practice." }
+  ]
+}

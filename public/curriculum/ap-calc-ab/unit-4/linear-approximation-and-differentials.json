@@ -1,0 +1,100 @@
+{
+  "id": "ap-calc-ab-u4-linear-approximation-and-differentials",
+  "title": "Linear Approximation and Differentials",
+  "subject": "AP Calculus AB",
+  "unit": "Contextual Applications of Differentiation",
+  "track": "ap",
+  "difficulty": "ap",
+  "duration": "40 min",
+  "objectives": [
+    "Write the linearization (tangent line approximation) L(x) = f(a) + f'(a)(x − a) and use it to estimate function values near a.",
+    "Use differentials dy = f'(x) dx to approximate small changes and propagate measurement error.",
+    "Determine whether a tangent line approximation overestimates or underestimates using concavity.",
+    "Explain why local linearity makes the tangent line a good approximation near the point of tangency."
+  ],
+  "sections": [
+    {
+      "type": "explanation",
+      "heading": "Up Close, Every Smooth Curve Looks Straight",
+      "content": "Zoom in on the graph of a smooth function near a single point — really zoom, like a microscope. The curve flattens out until, at high enough magnification, it becomes indistinguishable from a straight line. That line is the tangent line at the point, and the phenomenon is called *local linearity*. It's the visual heart of the entire idea of a derivative: the derivative is the slope of the line the curve becomes when you look closely enough.\n\nLinear approximation exploits this. Suppose you need √4.1 and you have no calculator. You know √4 = 2 exactly, and 4.1 is close to 4. Since the square-root curve is nearly straight over the tiny stretch from 4 to 4.1, you can replace the curve with its tangent line at x = 4 and read off an estimate. The tangent line is easy to evaluate — it's just a linear function — and because 4.1 is close to 4, the line hugs the curve closely, so the estimate is excellent.\n\nThis is genuinely useful, but it's also conceptually central: it's the bridge between the derivative as a slope and the derivative as a tool for prediction. The same idea, taken to its limit, underlies how calculators compute roots and how scientists estimate how a quantity responds to a small change in input. In this lesson you'll turn local linearity into a formula and learn when the estimate runs a little high or a little low."
+    },
+    {
+      "type": "explanation",
+      "heading": "The Linearization Formula",
+      "content": "The tangent line to f at x = a passes through the point (a, f(a)) with slope f'(a). Writing that line in point-slope form and solving for y gives the *linearization* of f at a:\n\n  L(x) = f(a) + f'(a)(x − a)\n\nFor x near a, L(x) ≈ f(x). You use the known, easy values f(a) and f'(a) at a convenient base point a, then evaluate the line at the nearby x you actually care about.\n\nReading the formula tells you how it works: start at the known height f(a), then add the slope f'(a) times how far you've moved horizontally, (x − a). It's 'start where you know the answer, then walk along the tangent line by the change in x.'\n\nTwo choices make or break the estimate. First, pick a base point a where f(a) and f'(a) are easy to compute exactly — a perfect square for square roots, a multiple of π for trig, 0 or 1 for many functions. Second, the approximation is only good when x is *close* to a; the farther you move, the more the curve peels away from its tangent line and the worse the estimate becomes."
+    },
+    {
+      "type": "table",
+      "heading": "Picking a Convenient Base Point",
+      "headers": ["To estimate", "Function f", "Good base point a", "Why"],
+      "rows": [
+        ["√4.1", "√x", "4", "4 is the nearest perfect square; f(4) and f'(4) are exact"],
+        ["∛8.2", "∛x", "8", "8 is a perfect cube; f(8) = 2 exactly"],
+        ["sin(0.05)", "sin x", "0", "sin 0 = 0 and cos 0 = 1 are exact"],
+        ["e^0.03", "eˣ", "0", "e⁰ = 1 and the derivative e⁰ = 1 are exact"],
+        ["(1.02)^10", "x^10", "1", "1 raised to any power is 1; derivative is simple"]
+      ]
+    },
+    {
+      "type": "steps",
+      "heading": "Linear Approximation in Four Moves",
+      "steps": [
+        { "title": "Choose a convenient base point a", "content": "Pick a value near your target where f(a) and f'(a) are easy to compute exactly — e.g., a perfect square, a known angle, or a whole number." },
+        { "title": "Compute f(a) and f'(a)", "content": "Find the function value and the derivative value at the base point. These are the only two numbers the tangent line needs." },
+        { "title": "Write the linearization", "content": "Form L(x) = f(a) + f'(a)(x − a), the equation of the tangent line at a." },
+        { "title": "Evaluate at the target", "content": "Plug your nearby x into L(x). The result approximates f(x); judge over- or underestimate using concavity." }
+      ]
+    },
+    {
+      "type": "example",
+      "heading": "Estimating √4.1 With a Tangent Line",
+      "content": "Estimate √4.1 using linear approximation.\n\nStep 1: Let f(x) = √x and choose a = 4 (a perfect square near 4.1).\n\nStep 2: f(4) = 2. The derivative f'(x) = 1/(2√x), so f'(4) = 1/(2·2) = 1/4.\n\nStep 3: Linearization: L(x) = 2 + (1/4)(x − 4).\n\nStep 4: Evaluate at x = 4.1:\n  L(4.1) = 2 + (1/4)(0.1) = 2 + 0.025 = 2.025.\n\nSo √4.1 ≈ 2.025. A calculator gives √4.1 ≈ 2.02485, so the estimate is accurate to about three decimal places — excellent for a one-line hand computation.\n\nIs it an over- or underestimate? The square-root function is concave down (f''(x) = −1/(4x^{3/2}) < 0), so the tangent line sits *above* the curve. The estimate 2.025 is therefore slightly too high, consistent with 2.025 > 2.02485."
+    },
+    {
+      "type": "callout",
+      "variant": "warning",
+      "heading": "It's an Approximation, and Distance Matters",
+      "content": "A linearization gives an estimate, not an exact value — write '≈', never '='. Its accuracy degrades the farther x is from the base point a, because the curve bends away from the tangent line. Using a = 4 to estimate √4.1 is great; using it to estimate √7 would be poor. Also be careful with the order in (x − a): it is target minus base point, so for a = 4 and x = 3.9 the change is −0.1, which makes the linear term negative. Getting that sign wrong flips your estimate the wrong way."
+    },
+    {
+      "type": "quiz",
+      "question": "Using f(x) = x³ at a = 2 (so f(2) = 8, f'(2) = 12), what is the linear approximation of (2.01)³?",
+      "options": ["8.12", "8.12 (using L(x) = 8 + 12(x − 2))", "8.0012", "20"],
+      "correctIndex": 1,
+      "explanation": "L(x) = 8 + 12(x − 2), so L(2.01) = 8 + 12(0.01) = 8 + 0.12 = 8.12. The change in x is 0.01, multiplied by the slope 12 gives 0.12. The option 8.0012 mistakenly multiplies by 0.0001, and 20 wrongly adds the slope itself rather than slope times Δx."
+    },
+    {
+      "type": "explanation",
+      "heading": "Differentials: Estimating Small Changes",
+      "content": "Linear approximation has a close cousin built for a slightly different question: not 'what is f(x)?' but 'how much does f *change* when x changes a little?' The tool is the *differential*.\n\nIf y = f(x), the differential is defined as dy = f'(x) dx, where dx is a small change in x (often written Δx). The differential dy estimates the resulting change in y, the true change being Δy = f(x + dx) − f(x). For small dx, dy ≈ Δy because — once again — the tangent line approximates the curve. In fact dy is exactly the change in height *along the tangent line*, while Δy is the change along the curve; they're close precisely because of local linearity.\n\nThis is the natural language for *error propagation*. If you measure a quantity x with some uncertainty dx, then dy = f'(x) dx tells you roughly how much that uncertainty propagates into a computed quantity y = f(x). It answers questions like 'I measured the radius of a sphere to within 0.1 cm; how uncertain is my computed volume?' The units even check out: f'(x) carries (units of y per unit of x) and dx carries (units of x), so their product carries units of y — exactly what a change in y should be."
+    },
+    {
+      "type": "example",
+      "heading": "Error Propagation With Differentials",
+      "content": "The edge of a cube is measured as 5 cm with a possible error of ±0.1 cm. Use differentials to estimate the maximum error in the computed volume.\n\nThe volume is V = s³, where s is the edge length. Then dV = 3s² ds.\n\nHere s = 5 cm and ds = 0.1 cm (the measurement error). Substitute:\n  dV = 3(5)²(0.1) = 3(25)(0.1) = 7.5 cm³.\n\nSo a 0.1 cm error in the edge produces about a 7.5 cm³ error in the volume. For perspective, the volume itself is V = 5³ = 125 cm³, so the relative error is dV/V = 7.5/125 = 0.06 = 6%.\n\nThere's a tidy shortcut hiding here: since dV/V = 3s² ds/s³ = 3(ds/s), the *relative* error in volume is three times the relative error in the edge. The edge's relative error is 0.1/5 = 2%, and 3 × 2% = 6%, matching above. This 'multiply the relative error by the power' pattern is a recurring AP shortcut for power-law quantities."
+    },
+    {
+      "type": "quiz",
+      "question": "A circle's radius is measured as 10 cm with a possible error of 0.2 cm. Using dA = 2πr dr for A = πr², the approximate maximum error in the area is:",
+      "options": ["4π cm²", "2π cm²", "0.2π cm²", "100π cm²"],
+      "correctIndex": 0,
+      "explanation": "Apply dA = 2πr dr with r = 10 and dr = 0.2: dA = 2π(10)(0.2) = 4π cm². The differential multiplies the derivative 2πr by the small change dr. The option 100π is the area itself (πr²), not the error."
+    },
+    {
+      "type": "callout",
+      "variant": "tip",
+      "heading": "Concavity Tells You Over vs. Under",
+      "content": "A tangent line lies above a concave-down curve and below a concave-up curve. So when f'' < 0 (concave down) near the base point, the linear approximation is an OVERestimate; when f'' > 0 (concave up), it's an UNDERestimate. AP questions frequently ask not just for the estimate but whether it's too high or too low — answer by stating the sign of f'' on the relevant interval and which side of the curve the tangent therefore lies on. This is worth a separate point on free response."
+    },
+    {
+      "type": "deepdive",
+      "heading": "Why the Tangent Line Is the 'Best' Linear Approximation",
+      "content": "Among all the straight lines you could draw through the point (a, f(a)), why is the tangent line the right one to use? Many lines pass through that point — what makes the one with slope f'(a) special?\n\nThe answer is that the tangent line is the unique line that matches the function in both *value* and *slope* at x = a. Any line through (a, f(a)) matches the value there, but only the tangent matches the instantaneous direction the curve is heading. Because it agrees with the curve to 'first order,' the error f(x) − L(x) shrinks faster than the distance (x − a) itself as x approaches a — the gap between curve and tangent line is negligible compared to how far you've moved. No other line through the point can claim that.\n\nConcavity explains the direction of the leftover error. The second derivative measures how the curve bends away from its tangent line. If f'' > 0, the curve cups upward and pulls away above the tangent, so the curve sits above the line and L underestimates. If f'' < 0, the curve bends downward away from the tangent, sitting below the line, so L overestimates. The size of the error grows with both |f''| and the square of the distance (x − a) — which is precisely why staying close to a keeps the estimate sharp.\n\nThis 'match value and slope, then control the error with the second derivative' idea is the seed of Taylor polynomials in later courses, where matching even more derivatives produces even better polynomial approximations. Linear approximation is just the first, most useful case: matching through the first derivative."
+    },
+    {
+      "type": "keypoint",
+      "content": "The linearization L(x) = f(a) + f'(a)(x − a) approximates f(x) for x near a, and the differential dy = f'(x) dx approximates the change in y for a small change dx (useful for error propagation). The estimate is an overestimate where the curve is concave down (f'' < 0) and an underestimate where it is concave up (f'' > 0); accuracy improves the closer x is to a."
+    }
+  ],
+  "aiContext": "AP Calculus AB Unit 4, linear approximation and differentials. The core formula is the tangent-line linearization L(x) = f(a) + f'(a)(x − a), motivated by local linearity, with a chosen as a nearby convenient point where f and f' are exact. Stress that results are approximations (use ≈), degrade with distance from a, and that concavity decides over- vs underestimate: concave down (f'' < 0) gives an overestimate, concave up an underestimate — a frequently tested second part. Differentials dy = f'(x) dx handle small changes and error propagation, including the shortcut that relative error in a power-law quantity multiplies by the exponent. Watch the sign of (x − a) and connect the idea forward to Taylor approximation in later courses."
+}

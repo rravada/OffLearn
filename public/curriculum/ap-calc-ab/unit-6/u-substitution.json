@@ -1,0 +1,100 @@
+{
+  "id": "ap-calc-ab-u6-u-substitution",
+  "title": "Integration by U-Substitution",
+  "subject": "AP Calculus AB",
+  "unit": "Integration and Accumulation of Change",
+  "track": "ap",
+  "difficulty": "ap",
+  "duration": "45 min",
+  "objectives": [
+    "Recognize when an integrand is the result of a chain-rule derivative and choose an appropriate substitution u = g(x).",
+    "Execute u-substitution for indefinite integrals, adjusting the differential du.",
+    "Apply u-substitution to definite integrals by changing the limits of integration.",
+    "Verify substitution results by differentiating, and recognize when a substitution fails."
+  ],
+  "sections": [
+    {
+      "type": "explanation",
+      "heading": "The Chain Rule in Reverse",
+      "content": "You know the chain rule for derivatives: for a composite like sin(x²), differentiate the outer function and multiply by the derivative of the inner, giving d/dx[sin(x²)] = cos(x²)·2x.\n\nNow read that from the integration side. Asked to find ∫2x·cos(x²) dx, you might freeze: 'I know cos integrates to sin, but what about the 2x and the x² inside?' The key realization is that 2x·cos(x²) is exactly what differentiating sin(x²) produces. The integrand has a telltale structure — a composition (cos of something) multiplied by the derivative of that 'something.'\n\nU-substitution is the technique for spotting and exploiting that structure. It's the chain rule running backward. Where the chain rule says 'differentiate the outside, multiply by the derivative of the inside,' u-substitution says 'name the inside function u, find its derivative in the integrand, and collapse everything into a simpler integral in u.'\n\nThis is the single most important integration technique in AP Calculus AB. Master it and you can handle the large majority of integrals on the exam — including the ones that show up inside accumulation, area, and volume problems later."
+    },
+    {
+      "type": "explanation",
+      "heading": "How to Choose u and Find du",
+      "content": "The method has five moves: (1) identify the inner function and call it u; (2) compute du = (du/dx) dx; (3) rewrite the entire integral in terms of u so every x disappears; (4) integrate in u; (5) substitute back to x.\n\nThe art is step 1 — choosing u. Three reliable patterns guide the choice. Look for a function nested inside another: in ∫cos(3x + 1) dx, the inner function is 3x + 1, so u = 3x + 1. Look for a factor that is the derivative (up to a constant) of another part: in ∫x²·e^(x³) dx, x² is a constant multiple of the derivative of x³, so u = x³. And when you see a power of something complicated, let u be the base: in ∫(2x + 5)⁷ dx, take u = 2x + 5.\n\nThe biggest mistake is choosing a u whose derivative du does not appear in the integrand (even after adjusting for a constant). If that happens, the substitution won't eliminate the x's and nothing simplifies — that's your signal to try a different u. A good substitution makes the integral collapse into something you already know how to integrate; if it doesn't collapse, reconsider the choice before going further."
+    },
+    {
+      "type": "steps",
+      "heading": "The U-Substitution Recipe",
+      "steps": [
+        { "title": "Choose u = inner function", "content": "Pick the inside of a composition, or the part whose derivative also appears in the integrand." },
+        { "title": "Compute du and solve for dx", "content": "Find du = (du/dx) dx, then solve for dx (or for the relevant factor like x dx) to substitute in." },
+        { "title": "Rewrite entirely in u", "content": "Replace every x-expression and dx so the integral contains only u and du. If any x remains, the choice of u is wrong." },
+        { "title": "Integrate in u", "content": "Apply the basic antiderivative rules to the simplified integral." },
+        { "title": "Substitute back (or change limits)", "content": "For an indefinite integral, replace u with its x-expression and add +C; for a definite integral, change the limits to u-values instead." }
+      ]
+    },
+    {
+      "type": "example",
+      "heading": "Indefinite Integral Examples",
+      "content": "Example 1: ∫2x·cos(x²) dx. Let u = x², so du = 2x dx. The integral becomes ∫cos u du = sin u + C = sin(x²) + C. Check: d/dx[sin(x²)] = cos(x²)·2x. ✓\n\nExample 2: ∫(3x + 1)⁵ dx. Let u = 3x + 1, so du = 3 dx, giving dx = du/3. Then ∫u⁵·(du/3) = (1/3)·u⁶/6 + C = u⁶/18 + C = (3x + 1)⁶/18 + C. Here du didn't match exactly, so we adjusted by the constant factor 1/3 — allowed because constants pull out of integrals.\n\nExample 3: ∫x·√(x² + 9) dx. Let u = x² + 9, so du = 2x dx, giving x dx = du/2. Then ∫√u·(du/2) = (1/2)·(2/3)u^(3/2) + C = (1/3)(x² + 9)^(3/2) + C.\n\nExample 4: ∫sin x / cos x dx = ∫tan x dx. Let u = cos x, so du = −sin x dx, i.e. sin x dx = −du. Then ∫(−du/u) = −ln|u| + C = −ln|cos x| + C (equivalently ln|sec x| + C)."
+    },
+    {
+      "type": "callout",
+      "variant": "warning",
+      "heading": "Adjust Constants, Never Functions of x",
+      "content": "If du is off by a numerical factor — you have x dx but du = 2x dx — you can fix it by writing x dx = du/2 and pulling out the constant 1/2. That's legal because constants commute with integration. But you can NEVER pull out a function of x as if it were a constant: if a stray x or x² is left over after substituting, the substitution has failed. Two ways out: express the leftover x's in terms of u using your substitution (e.g., if u = x² + 1 then x² = u − 1), or choose a different u. If x's still remain and neither fix works, u-substitution isn't the right tool for that integral."
+    },
+    {
+      "type": "quiz",
+      "question": "For ∫x·cos(x²) dx, which substitution and adjustment is correct?",
+      "options": ["u = x², du = 2x dx, so x dx = du/2", "u = x², du = x dx", "u = cos(x²), du = x dx", "u = x, du = dx"],
+      "correctIndex": 0,
+      "explanation": "Take u = x² (the inner function); then du = 2x dx, so the x dx in the integrand equals du/2. The integral becomes (1/2)∫cos u du = (1/2)sin(x²) + C. The factor of 2 is a constant, so it can be adjusted — but du = x dx (without the 2) is simply incorrect."
+    },
+    {
+      "type": "explanation",
+      "heading": "U-Substitution in Definite Integrals",
+      "content": "With a definite integral you have two valid approaches. Option A: do the substitution, find the antiderivative in terms of u, substitute back to x, then evaluate at the original x-limits. Option B (usually cleaner): change the limits of integration when you change variables, and never return to x.\n\nWith Option B, when you set u = g(x), the limit x = a becomes u = g(a) and x = b becomes u = g(b). The integral ∫ from a to b of f(g(x))·g'(x) dx becomes ∫ from g(a) to g(b) of f(u) du. It's the same accumulated area, just described in the u-variable, because as x runs from a to b, u runs from g(a) to g(b).\n\nThe one rule you must not break: if you change the limits, do NOT also substitute back to x at the end — that mixes the two methods and produces nonsense. Commit to one approach. Either change the limits and finish entirely in u-world, or keep the original limits and substitute back to x-world before evaluating. The changed-limits method is generally faster and avoids the error of evaluating a u-antiderivative at x-values."
+    },
+    {
+      "type": "table",
+      "heading": "Two Ways to Handle Definite Integrals",
+      "headers": ["Step", "Option A: keep x-limits", "Option B: change limits"],
+      "rows": [
+        ["After substituting", "integrate in u", "integrate in u"],
+        ["Limits", "leave as original x-values", "convert to u = g(a) and u = g(b)"],
+        ["Before evaluating", "substitute u back to x", "stay in u — do NOT back-substitute"],
+        ["Evaluate at", "original x-limits", "new u-limits"]
+      ]
+    },
+    {
+      "type": "example",
+      "heading": "Definite Integral With Changed Limits",
+      "content": "Evaluate ∫ from 0 to 2 of x·(x² + 1)³ dx.\n\nLet u = x² + 1, so du = 2x dx, giving x dx = du/2.\n\nChange the limits: when x = 0, u = 0² + 1 = 1; when x = 2, u = 2² + 1 = 5.\n\nRewrite and evaluate: ∫ from 1 to 5 of u³·(du/2) = (1/2)·[u⁴/4] from 1 to 5 = (1/2)·(625/4 − 1/4) = (1/2)·(624/4) = (1/2)·156 = 78.\n\nNo back-substitution was needed — everything, including the limits, lived in u-world.\n\nFor comparison, Option A would find the antiderivative (x² + 1)⁴/8 and evaluate at the original x-limits: (5)⁴/8 − (1)⁴/8 = 625/8 − 1/8 = 624/8 = 78. Same answer, with one extra back-substitution step. Either method works; just don't blend them."
+    },
+    {
+      "type": "quiz",
+      "question": "When using u-substitution on a definite integral and changing the limits, what must you avoid?",
+      "options": ["Changing the limits to u-values", "Substituting back to x after changing the limits", "Integrating with respect to u", "Computing du"],
+      "correctIndex": 1,
+      "explanation": "Once you change the limits to u-values, you must finish in u-world and evaluate at the u-limits. Substituting back to x and then using the u-limits (or vice versa) mixes the two methods and gives a wrong answer. Pick one approach and stay consistent."
+    },
+    {
+      "type": "callout",
+      "variant": "tip",
+      "heading": "Change the Limits — Don't Mix Worlds",
+      "content": "For definite integrals, changing the limits to u-values is the recommended habit: it's faster and removes the temptation to misuse limits. State the new limits explicitly (e.g., 'when x = 2, u = 5') so your work is clear and earns method points. The cardinal sin is evaluating a u-expression at x-limits or an x-expression at u-limits — always match the variable of the antiderivative to the variable of the limits. And as with all integrals, you can verify an indefinite-integral answer by differentiating to recover the original integrand."
+    },
+    {
+      "type": "deepdive",
+      "heading": "Why You Can Adjust Constants but Not Functions of x",
+      "content": "U-substitution often leaves du not quite matching the integrand, and understanding precisely what you're allowed to fix prevents the most common failures.\n\nWhen u = x² gives du = 2x dx but the integrand has only x dx, you write x dx = du/2 and pull the 1/2 outside. This is valid because constants commute with integration: ∫(1/2)f(u) du = (1/2)∫f(u) du. A constant is just a scaling factor that rides along untouched.\n\nNow suppose u = x² but after substituting there's an x³ dx left over instead of x dx. You cannot treat x² as a 'constant' to pull out — it's a function of the variable, and integration does not let you move functions of the integration variable across the integral sign. Concretely, ∫x²·g(u) du is NOT x²∫g(u) du, because x² changes as u changes. So if x-terms survive the substitution, the substitution hasn't done its job.\n\nWhen that happens you have three options. First, use the substitution equation to convert the leftover x's into u's: if u = x² + 1, then x² = u − 1, and an integrand like x³ dx = x²·x dx = (u − 1)·(du/2) becomes fully expressible in u. Second, try a different u entirely. Third, accept that the integral may need a tool beyond u-substitution. For AP Calculus AB, problems are designed so a clean substitution works, so the real skill is training your eye to recognize the chain-rule fingerprint: a composed function accompanied by (a constant multiple of) the derivative of its inside. Once you see that pattern instinctively, u-substitution becomes almost automatic — and since it reverses the chain rule, it's the integration counterpart to the most-used differentiation rule you already know."
+    },
+    {
+      "type": "keypoint",
+      "content": "U-substitution reverses the chain rule: set u = inner function, compute du and solve for dx, rewrite the integral entirely in u, integrate, then substitute back (indefinite) or change the limits to u-values (definite). You may adjust for constant factors but never for functions of x — if x's remain after substituting, change u or rewrite leftover x's via the substitution. For definite integrals, change the limits and don't mix u- and x-worlds."
+    }
+  ],
+  "aiContext": "AP Calculus AB Unit 6, u-substitution — the reverse of the chain rule and the most important integration technique on the exam. The skill is recognizing the pattern of a composite function times (a constant multiple of) the derivative of its inside, then choosing u as the inner function. Stress that constant factors can be adjusted (x dx = du/2) but functions of x cannot be pulled out; leftover x's after substituting signal a wrong u or the need to rewrite them via the substitution (e.g., u = x²+1 ⇒ x² = u−1). For definite integrals, recommend changing the limits to u-values and warn against mixing methods (evaluating a u-antiderivative at x-limits is a top error). Encourage verifying indefinite results by differentiating. This technique recurs throughout accumulation, area, and volume problems."
+}

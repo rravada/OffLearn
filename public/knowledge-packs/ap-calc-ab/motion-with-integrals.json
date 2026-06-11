@@ -1,0 +1,29 @@
+{
+  "id": "ap-calc-ab-motion-with-integrals",
+  "title": "Motion with Integrals: Displacement and Distance",
+  "subject": "AP Calculus AB",
+  "chunks": [
+    { "id": "c1", "text": "Integration runs the motion ladder upward: the integral of acceleration recovers velocity, and the integral of velocity recovers position." },
+    { "id": "c2", "text": "Recovering a function by integration requires an initial condition to determine the constant of integration." },
+    { "id": "c3", "text": "Velocity from acceleration is v(t) = ∫ a(t) dt + C, with the initial velocity fixing C." },
+    { "id": "c4", "text": "Position from velocity is s(t) = ∫ v(t) dt + C, with the initial position fixing C." },
+    { "id": "c5", "text": "Displacement is the net change in position over an interval, given by ∫ from a to b of v(t) dt = s(b) − s(a)." },
+    { "id": "c6", "text": "Displacement is a signed quantity: forward motion contributes positively and backward motion negatively, so they can partly cancel." },
+    { "id": "c7", "text": "An object that returns to its starting point has zero displacement even though it traveled a real distance." },
+    { "id": "c8", "text": "Total distance traveled is ∫ from a to b of |v(t)| dt, the integral of speed, and is always positive." },
+    { "id": "c9", "text": "The absolute value in the distance formula makes backward motion add to the total rather than subtract." },
+    { "id": "c10", "text": "To compute total distance, find where v(t) = 0, split the interval at those times, integrate v on each piece, and add the absolute values." },
+    { "id": "c11", "text": "You cannot get total distance by integrating v over the whole interval, because backward motion would wrongly subtract." },
+    { "id": "c12", "text": "Example: for v(t) = (t − 1)(t − 3) on [0, 4], the displacement is 4/3 m but the total distance is 4 m." },
+    { "id": "c13", "text": "For a single position value, use s(b) = s(a) + ∫ from a to b of v(t) dt, avoiding the explicit constant C." },
+    { "id": "c14", "text": "Example: with v(t) = 2t and s(0) = 5, the position is s(t) = t² + 5, so s(3) = 14." },
+    { "id": "c15", "text": "Example: with a(t) = 6 and v(0) = −4, the velocity is v(t) = 6t − 4." },
+    { "id": "c16", "text": "Constant acceleration a = −9.8 integrates to v = −9.8t + v₀ and then s = −4.9t² + v₀t + s₀, the kinematics equations." },
+    { "id": "c17", "text": "The kinematics formulas from physics are antiderivatives of acceleration with initial conditions." },
+    { "id": "c18", "text": "Displacement is the net signed area under the velocity curve, where below-axis regions count negative." },
+    { "id": "c19", "text": "Total distance is the total area between the velocity curve and the time axis, counting every region positively." },
+    { "id": "c20", "text": "Displacement versus distance is the motion form of net signed area versus total area under a curve." },
+    { "id": "c21", "text": "Reading whether a problem asks for displacement, total distance, position at a time, or velocity from acceleration determines the correct setup." },
+    { "id": "c22", "text": "Common errors include confusing displacement with distance, forgetting to split at direction changes, and dropping the initial condition." }
+  ]
+}

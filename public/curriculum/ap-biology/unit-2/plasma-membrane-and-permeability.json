@@ -1,0 +1,139 @@
+{
+  "id": "ap-bio-u2-plasma-membrane-and-permeability",
+  "title": "The Plasma Membrane and Permeability",
+  "subject": "AP Biology",
+  "unit": "Cell Structure and Function",
+  "track": "ap",
+  "difficulty": "ap",
+  "duration": "45 min",
+  "objectives": [
+    "Describe the fluid mosaic model and the roles of phospholipids, proteins, cholesterol, and carbohydrates in the membrane",
+    "Explain how membrane structure makes it selectively permeable based on molecule size and polarity",
+    "Predict whether a given molecule can cross the phospholipid bilayer unaided",
+    "Explain how cholesterol and fatty acid saturation regulate membrane fluidity"
+  ],
+  "sections": [
+    {
+      "type": "explanation",
+      "heading": "A Membrane That Behaves Like a Liquid",
+      "content": "When you hear 'cell membrane,' you might picture a solid wall, like the skin of a balloon. Throw that image out. A better picture is a crowded outdoor party at dusk: a sea of people (phospholipids) drifting and bumping around, with taller guests (proteins) scattered through the crowd, some standing all the way through it, some only at the edges. People shift positions constantly, but the crowd as a whole holds its shape. That's the fluid mosaic model, and it captures the two essential truths about membranes: they are fluid (the molecules move) and they are a mosaic (a mixed patchwork of different molecules).\n\nThe foundation is the phospholipid bilayer you met in Unit 1. Each phospholipid is amphipathic — a hydrophilic phosphate head that loves water and two hydrophobic fatty acid tails that avoid it. In water, the phospholipids spontaneously line up into two layers, heads facing the watery environments inside and outside the cell, tails tucked together in the oily middle. This self-assembling double layer is the membrane's basic fabric.\n\nThe 'fluid' part is real and important: individual phospholipids slide sideways past their neighbors millions of times per second, so the membrane is more like olive oil than glass. That fluidity lets the membrane bend, self-seal when punctured, and allow its embedded proteins to move to where they're needed. A frozen, rigid membrane would crack and couldn't function — fluidity is not a side effect, it's a requirement for life.\n\nStudded throughout this fluid bilayer is a mosaic of other molecules — proteins, cholesterol, and attached carbohydrates — each adding a capability the bare lipid layer couldn't provide. Together they turn a simple oily film into the cell's intelligent, selective border."
+    },
+    {
+      "type": "explanation",
+      "heading": "The Cast of Membrane Molecules",
+      "content": "A real membrane is far more than phospholipids. Embedded in and on the bilayer are several kinds of molecules, each with a job.\n\nMembrane proteins are the workhorses, and they come in two placements. Integral (transmembrane) proteins span the entire bilayer; because they touch both the watery interior and exterior, they often act as channels and pumps that move materials across. Peripheral proteins sit loosely on one surface, often anchoring the cytoskeleton or assisting other proteins. Proteins do most of the membrane's active jobs: transport, receiving signals, catalyzing reactions, and holding cells together.\n\nCholesterol (in animal cells) wedges between the phospholipids and acts as a fluidity buffer — the same role you saw in the lipids lesson. At warm temperatures it restrains the phospholipids and keeps the membrane from getting too fluid; at cold temperatures it spaces them apart and keeps the membrane from solidifying. It's a built-in thermostat.\n\nCarbohydrates attach to proteins (forming glycoproteins) or to lipids (forming glycolipids) on the OUTER surface of the membrane. These sugar chains act like name tags — they're the molecular ID cards that let cells recognize one another. This is how your immune system distinguishes your own cells from invaders, and it's why blood types (A, B, AB, O) are determined by which carbohydrate tags sit on your red blood cells."
+    },
+    {
+      "type": "table",
+      "heading": "Who's Who in the Membrane",
+      "headers": ["Component", "Location", "Main role"],
+      "rows": [
+        ["Phospholipids", "Form the bilayer", "Self-assembling barrier; amphipathic foundation"],
+        ["Integral (transmembrane) proteins", "Span the bilayer", "Channels, carriers, pumps for transport; receptors"],
+        ["Peripheral proteins", "On one surface", "Anchor cytoskeleton; support and signaling"],
+        ["Cholesterol", "Between phospholipids (animal cells)", "Buffers fluidity across temperatures"],
+        ["Carbohydrates (glyco- proteins/lipids)", "Outer surface only", "Cell-cell recognition and identity (e.g., blood type)"]
+      ]
+    },
+    {
+      "type": "quiz",
+      "question": "The carbohydrate chains that determine a person's blood type are found in which location on red blood cells?",
+      "options": [
+        "Attached to proteins and lipids on the outer surface of the plasma membrane",
+        "Buried in the hydrophobic core of the bilayer",
+        "On the inner (cytoplasmic) surface of the membrane",
+        "Inside the nucleus attached to DNA"
+      ],
+      "correctIndex": 0,
+      "explanation": "Membrane carbohydrates attach to proteins (glycoproteins) and lipids (glycolipids) on the OUTER membrane surface, where they serve as recognition tags such as blood-type markers. They are not in the hydrophobic core, not on the inner surface, and have nothing to do with nuclear DNA."
+    },
+    {
+      "type": "explanation",
+      "heading": "Selective Permeability: Who Gets Through the Oily Core",
+      "content": "The single most important property of the membrane is selective permeability: it lets some substances cross freely while blocking others. And whether a molecule can slip through the bilayer on its own comes down to two features — its size and its polarity. The reason is the membrane's oily middle: to cross unaided, a molecule has to dissolve into that hydrophobic core of fatty acid tails.\n\nSmall, nonpolar (hydrophobic) molecules pass through easily. Oxygen (O₂) and carbon dioxide (CO₂) are the classic examples — they're small and nonpolar, so they dissolve right into the lipid tails and diffuse across. This is exactly why your cells can take in O₂ and dump CO₂ without spending any energy.\n\nLarge or polar/charged molecules are blocked. The hydrophobic core repels anything that is polar or carries a charge, no matter how small. Ions like Na⁺, K⁺, and Cl⁻ cannot cross the bare bilayer, and neither can glucose or amino acids — they're too polar, too big, or both. To get these across, the cell needs help from transport proteins, which is the subject of the next lesson.\n\nWater is the famous special case and a favorite exam trap. Water is polar, so you'd expect it to be blocked — yet it crosses membranes readily. It does cross slowly on its own because the molecules are tiny, but mostly it zips through dedicated channel proteins called aquaporins. So when you classify a molecule, remember water is the exception that proves the rule: small enough to sneak through, but really moving fast thanks to a protein shortcut."
+    },
+    {
+      "type": "example",
+      "heading": "Classifying Four Molecules by How They Cross",
+      "content": "Let's apply the size-and-polarity rule to four substances a cell deals with constantly, and decide how each crosses the membrane.\n\nOxygen (O₂): small and nonpolar. It dissolves into the hydrophobic core and crosses freely by simple diffusion — no protein, no energy. This is how your cells take up oxygen.\n\nCarbon dioxide (CO₂): also small and nonpolar, so it leaves the cell the same way O₂ enters — simple diffusion straight through the bilayer.\n\nSodium ion (Na⁺): small but CHARGED. Size isn't the problem here; the charge is. The hydrophobic core repels it, so Na⁺ cannot cross on its own and must use a channel (facilitated diffusion) or a pump (active transport, if moving against its gradient).\n\nGlucose: large AND polar. It fails both tests, so it cannot diffuse through the bilayer; it requires a carrier protein (facilitated diffusion when moving down its gradient).\n\nNotice the decision pattern: ask 'small?' and 'nonpolar?' If the answer to both is yes, it crosses freely. If either answer is no, a protein is required — and if the molecule must also move against its gradient, that protein is an ATP-powered pump. Water is the lone wildcard: small but polar, so it slips through slowly alone and quickly via aquaporins."
+    },
+    {
+      "type": "steps",
+      "heading": "How to Predict Whether a Molecule Crosses the Bilayer Unaided",
+      "steps": [
+        {
+          "title": "Check the molecule's polarity",
+          "content": "Decide whether the molecule is nonpolar (hydrophobic) or polar/charged (hydrophilic). Nonpolar molecules are compatible with the hydrophobic core; polar or charged ones are repelled by it."
+        },
+        {
+          "title": "Check the molecule's size",
+          "content": "Note whether the molecule is small (like O₂, CO₂) or large (like glucose). Small molecules have a much easier time slipping between the lipid tails than large ones."
+        },
+        {
+          "title": "Combine the two factors",
+          "content": "Small AND nonpolar means the molecule crosses freely by simple diffusion. Large OR polar/charged means it cannot cross the bare bilayer and needs a transport protein. Water is a special case: small but polar, so it crosses slowly alone and rapidly through aquaporins."
+        },
+        {
+          "title": "Decide if a protein is required",
+          "content": "If the molecule fails the size or polarity test, conclude that it requires a membrane transport protein (a channel or carrier) to cross. This sets up whether transport will be passive through a protein or active using energy."
+        }
+      ]
+    },
+    {
+      "type": "keypoint",
+      "content": "The membrane is selectively permeable: small nonpolar molecules (O₂, CO₂) cross the phospholipid bilayer freely, while large or polar/charged molecules (glucose, ions) require transport proteins. Water is polar but small and crosses through aquaporins."
+    },
+    {
+      "type": "table",
+      "heading": "What Crosses the Phospholipid Bilayer?",
+      "headers": ["Molecule type", "Examples", "Crosses bare bilayer?"],
+      "rows": [
+        ["Small nonpolar", "O₂, CO₂, N₂", "Yes — freely by simple diffusion"],
+        ["Small polar (uncharged)", "Water, urea", "Slowly alone; fast via aquaporins/channels"],
+        ["Large polar (uncharged)", "Glucose, sucrose", "No — needs a carrier protein"],
+        ["Ions (charged)", "Na⁺, K⁺, Cl⁻, Ca²⁺", "No — needs a channel or pump"]
+      ]
+    },
+    {
+      "type": "callout",
+      "variant": "warning",
+      "heading": "Water Is Polar — Don't Mislabel It",
+      "content": "A frequent exam slip: students claim water crosses the membrane freely 'because it's small and nonpolar.' Water is small but POLAR. It crosses slowly on its own and rapidly through aquaporin channel proteins, not because it dissolves easily in the hydrophobic core. The flip side trap: assuming a molecule is blocked just because it's polar even when it's tiny. The rule needs BOTH factors — size and polarity — together. Also remember the membrane is fluid and dynamic, not a static rigid wall."
+    },
+    {
+      "type": "deepdive",
+      "heading": "Keeping a Membrane 'Just Fluid Enough'",
+      "content": "A membrane has a Goldilocks problem: too rigid and its proteins can't move and it cracks in the cold; too fluid and it leaks and falls apart in the heat. Cells solve this with two structural dials, both rooted in the lipid chemistry from Unit 1.\n\nThe first dial is fatty acid saturation. Recall that unsaturated fatty acids have kinks (from double bonds) that prevent tight packing, while saturated tails pack tightly. A membrane with more unsaturated tails stays fluid at lower temperatures because the kinks keep the phospholipids from solidifying. This is not just theory: when the weather turns cold, many organisms — from bacteria to fish to plants — actively remodel their membranes to include more unsaturated fatty acids so the membrane doesn't freeze stiff. It's also why fish that live in cold water have oils that stay liquid in your refrigerator.\n\nThe second dial is cholesterol, the membrane's temperature buffer. By wedging among the phospholipids, it blunts the extremes in both directions — reducing fluidity when warm and preventing solidification when cold.\n\nThis matters because membrane fluidity isn't a passive trait; it's a regulated, life-or-death variable. A membrane that loses its fluidity can no longer transport materials, receive signals, or self-repair. The same structure-function logic you've been building all unit applies right down to the wiggle of a fatty acid tail: get the structure wrong and the function fails."
+    },
+    {
+      "type": "quiz",
+      "question": "A species of fish lives in near-freezing Arctic water. Compared to a related fish from warm tropical water, its cell membranes would be expected to contain a higher proportion of which component to maintain fluidity?",
+      "options": [
+        "Saturated fatty acids, which pack tightly",
+        "Unsaturated fatty acids, whose kinks prevent tight packing",
+        "Carbohydrate recognition tags",
+        "Peripheral proteins"
+      ],
+      "correctIndex": 1,
+      "explanation": "Unsaturated fatty acids have kinks that keep phospholipids from packing tightly, so more of them keeps a membrane fluid at low temperatures. Saturated fatty acids would make the cold membrane too rigid, while carbohydrate tags and peripheral proteins do not regulate fluidity."
+    },
+    {
+      "type": "callout",
+      "variant": "remember",
+      "heading": "Membrane Must-Knows",
+      "content": "Fluid mosaic model: a fluid phospholipid bilayer with an embedded mosaic of proteins, cholesterol, and surface carbohydrates. Phospholipids are amphipathic (hydrophilic heads out, hydrophobic tails in). Integral proteins span the bilayer (transport/receptors); peripheral proteins sit on a surface. Carbohydrates on the OUTER surface = cell recognition (e.g., blood type). Cholesterol buffers fluidity; more unsaturated fatty acids = more fluid in cold. Selective permeability depends on SIZE and POLARITY; water uses aquaporins."
+    },
+    {
+      "type": "explanation",
+      "heading": "Membrane Proteins Do the Cell's Business",
+      "content": "If phospholipids make the barrier, proteins make the membrane smart. The exact same fluid bilayer would be a useless oily bag without its embedded proteins, which perform at least five distinct jobs you should be able to name.\n\nTransport proteins move specific substances across — channels form selective tunnels, carriers change shape to ferry molecules, and pumps use energy to push substances against their gradients (the focus of the next lesson). Receptor proteins bind signaling molecules like hormones on the outside and trigger responses inside the cell (the focus of Unit 4). Enzymatic proteins catalyze reactions right at the membrane surface. Cell-recognition proteins, usually glycoproteins, serve as identity tags. And attachment proteins anchor the membrane to the cytoskeleton inside and to neighboring cells or the extracellular matrix outside, holding tissues together.\n\nNotice how this lesson sets up the next two. Selective permeability creates the cell's need to move things in and out in a controlled way — that's membrane transport. Receptor proteins create the cell's ability to listen to its environment — that's cell signaling. The membrane isn't just a wall; it's the cell's skin, its mouth, its ears, and its ID card all at once, and almost every one of those functions runs through a protein floating in the fluid mosaic."
+    },
+    {
+      "type": "callout",
+      "variant": "tip",
+      "heading": "Justify Permeability Claims With Size AND Polarity",
+      "content": "On FRQs, when you say a molecule can or cannot cross the membrane, always give the reason in terms of both size and polarity relative to the hydrophobic core. For example: 'Na⁺ cannot cross the bilayer freely because it is charged and is repelled by the hydrophobic interior, so it requires a channel protein.' Vague answers like 'it's too big' miss the point that polarity, not just size, is decisive — and naming the needed protein (channel, carrier, or pump) often earns an extra point."
+    }
+  ],
+  "aiContext": "This AP Biology Unit 2 lesson covers CED topics 2.4 and 2.5: the fluid mosaic model of the plasma membrane and selective permeability. Emphasize that permeability depends on BOTH molecule size and polarity relative to the hydrophobic core, and that the membrane is dynamic and fluid rather than a static wall. Highlight the roles of each component (phospholipids, integral vs. peripheral proteins, cholesterol as a fluidity buffer, surface carbohydrates as recognition tags). Watch for the classic water trap (water is polar, crosses via aquaporins, not because it is nonpolar) and the error of using size alone to predict permeability. This lesson sets up membrane transport (next) and cell signaling (Unit 4), and connects back to fatty acid saturation from Unit 1. On the exam, expect MCQs on membrane components and permeability, and FRQs asking students to predict and JUSTIFY whether a molecule crosses, or to explain how membranes maintain fluidity at different temperatures."
+}

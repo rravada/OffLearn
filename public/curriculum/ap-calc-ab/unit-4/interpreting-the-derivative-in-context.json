@@ -1,0 +1,100 @@
+{
+  "id": "ap-calc-ab-u4-interpreting-the-derivative-in-context",
+  "title": "Interpreting the Derivative in Context",
+  "subject": "AP Calculus AB",
+  "unit": "Contextual Applications of Differentiation",
+  "track": "ap",
+  "difficulty": "ap",
+  "objectives": [
+    "Interpret the meaning of a derivative value in an applied context, including its sign and units.",
+    "Distinguish the meaning of f(a) from f'(a) and choose the correct units for each.",
+    "Compare average rate of change over an interval with instantaneous rate of change at a point.",
+    "Estimate a rate of change from a table of data and write a complete contextual interpretation sentence."
+  ],
+  "duration": "40 min",
+  "sections": [
+    {
+      "type": "explanation",
+      "heading": "A Derivative Is a Rate You Can Say Out Loud",
+      "content": "Every derivative in the real world is a sentence waiting to be spoken. If W(t) is the amount of water in a tank in gallons and t is measured in minutes, then W'(t) isn't an abstract symbol — it's 'the rate at which water is flowing into (or out of) the tank, in gallons per minute.' The whole skill of this lesson is learning to translate the symbol W'(5) = −3 into the plain-English claim: 'at t = 5 minutes, the water is draining at 3 gallons per minute.'\n\nNotice three pieces of information packed into that one number. The fact that it's a derivative tells you it's a *rate of change*, not an amount. The *sign* (negative) tells you the quantity is decreasing — water is leaving. And the *units* (gallons per minute) come from the units of the output divided by the units of the input. Miss any of these three and your interpretation is incomplete.\n\nThis matters enormously on the AP exam, where free-response questions repeatedly ask you to 'interpret the meaning of f'(a) in the context of the problem.' These questions reward students who can fluently produce a sentence with a rate, a sign, and units — and they penalize students who just restate the number or confuse the rate with the amount. Calculus is most useful precisely when it describes how real quantities change, and that's what this lesson trains."
+    },
+    {
+      "type": "explanation",
+      "heading": "Three Ingredients of a Correct Interpretation",
+      "content": "A complete interpretation of a derivative value f'(a) in context always answers three questions:\n\n1. What kind of quantity is it? A derivative is a *rate of change* — how fast the output changes per unit of input. Always include the words 'rate' or 'per' or an equivalent.\n\n2. What are the units? Take the units of the output and divide by the units of the input. If P(t) is population in thousands and t is in years, then P'(t) has units of thousands of people per year. The units literally come from the fraction (change in output)/(change in input) that defines the derivative.\n\n3. What does the sign mean? A positive derivative means the quantity is increasing at that instant; a negative derivative means it's decreasing. Zero means it's momentarily neither rising nor falling.\n\nPut together, an interpretation of P'(4) = 7 (with the units above) reads: 'At year 4, the population is increasing at a rate of 7 thousand people per year.' Compare that to a frequent wrong answer — 'the population is 7' — which confuses the rate with the amount and omits both the units and the time. The structure 'At [input = a], the [quantity] is increasing/decreasing at a rate of [value] [units].' is a reliable template for nearly every AP interpretation question."
+    },
+    {
+      "type": "steps",
+      "heading": "How to Write a Complete Interpretation",
+      "steps": [
+        { "title": "Name it as a rate of change", "content": "State that f'(a) is an instantaneous rate of change of the quantity, using words like 'rate' or 'per' — not an amount." },
+        { "title": "Pin it to the input value", "content": "Say 'at [input = a with its unit]', so the reader knows the exact moment or level being described." },
+        { "title": "Give the units", "content": "Divide the output units by the input units (e.g., gallons per minute, dollars per item) and attach them to the value." },
+        { "title": "Read the sign", "content": "Positive means the quantity is increasing at that instant; negative means decreasing; zero means momentarily not changing." }
+      ]
+    },
+    {
+      "type": "table",
+      "heading": "The Function Value vs. Its Derivative",
+      "headers": ["Context (f, input)", "f(a) means", "f'(a) means", "Units of f'(a)"],
+      "rows": [
+        ["C(x) = cost of x items", "total cost of a items", "marginal cost — rate cost rises per item", "dollars per item"],
+        ["P(t) = population, t years", "population at year a", "rate the population is changing", "people per year"],
+        ["T(t) = temperature, t hours", "temperature at hour a", "how fast temperature is changing", "degrees per hour"],
+        ["V(t) = volume, t seconds", "volume at second a", "flow rate in or out", "units³ per second"],
+        ["s(t) = position, t seconds", "location at second a", "velocity at second a", "distance per second"]
+      ]
+    },
+    {
+      "type": "example",
+      "heading": "Turning Symbols Into Sentences",
+      "content": "Example 1: A company's cost to produce x widgets is C(x) dollars, and C'(200) = 4.50. Interpret this.\n  Reading: at a production level of 200 widgets, the cost is increasing at a rate of $4.50 per additional widget. (This is the 'marginal cost' of the 201st widget — roughly what it costs to make one more.)\n\nExample 2: A cup of coffee cools according to H(t) degrees Fahrenheit, t minutes after being poured, and H'(10) = −2.3. Interpret this.\n  Reading: at t = 10 minutes, the coffee's temperature is decreasing at a rate of 2.3 °F per minute. The negative sign signals cooling.\n\nExample 3: The depth of water in a reservoir is D(t) feet, t days into a drought, and D'(30) = 0. Interpret this.\n  Reading: at day 30, the water depth is momentarily not changing — it is neither rising nor falling at that instant. A zero derivative is a moment of leveling off, often a maximum or minimum of the quantity.\n\nIn each case the sentence names a rate, states the sign's meaning, and carries units built from output-per-input."
+    },
+    {
+      "type": "callout",
+      "variant": "warning",
+      "heading": "f(a) Is an Amount; f'(a) Is a Rate",
+      "content": "The most penalized error in contextual interpretation is confusing the function value with its derivative. If V(t) is volume in liters and t in seconds, then V(3) = 50 means 'there are 50 liters at 3 seconds,' while V'(3) = 50 means 'the volume is increasing at 50 liters per second at 3 seconds.' Same number, completely different meaning and different units (liters vs liters per second). On free response, omitting units or describing f'(a) as an amount instead of a rate loses the interpretation point even when your number is correct."
+    },
+    {
+      "type": "quiz",
+      "question": "Let G(t) be the number of gallons of gas in a tank, with t in minutes. If G'(8) = −0.5, what is the best interpretation?",
+      "options": ["At 8 minutes there are 0.5 gallons in the tank", "At 8 minutes the gas is decreasing at a rate of 0.5 gallons per minute", "Over 8 minutes the tank lost 0.5 gallons", "The tank empties after 0.5 minutes"],
+      "correctIndex": 1,
+      "explanation": "G'(8) is an instantaneous rate of change at t = 8, with units gallons per minute, and the negative sign means the amount is decreasing. The option about 0.5 gallons confuses the rate with an amount (that would be G(8)), and 'over 8 minutes' describes a total change rather than an instantaneous rate."
+    },
+    {
+      "type": "explanation",
+      "heading": "Average Rate vs. Instantaneous Rate",
+      "content": "Context problems live at the boundary between two closely related ideas, and the AP exam loves to test whether you can tell them apart.\n\nThe *average rate of change* of f over an interval [a, b] is [f(b) − f(a)]/(b − a) — the slope of the secant line connecting the two endpoints. It answers 'on average, how fast did the quantity change across this whole interval?' It needs two data points and no calculus at all.\n\nThe *instantaneous rate of change* at a point is f'(a) — the slope of the tangent line, the limit of average rates as the interval shrinks to zero. It answers 'how fast is the quantity changing at this exact moment?'\n\nThe distinction is the same as the difference between your average speed on a road trip (total distance over total time) and the reading on your speedometer at one instant. They can be very different: you might average 50 mph over three hours while your speedometer hits 70 at one moment and 0 at a rest stop. When a problem says 'average rate of change,' compute a secant slope from two values; when it says 'rate of change at t = a' or 'how fast … at the instant,' you need the derivative."
+    },
+    {
+      "type": "example",
+      "heading": "Estimating a Rate From a Table",
+      "content": "A table gives the temperature T (in °F) of an oven at selected times t (in minutes):\n\n  t:  0    5    10   15\n  T:  70   180  300  340\n\nQuestion A: Estimate the average rate of change of temperature from t = 0 to t = 15.\n  Average rate = [T(15) − T(0)]/(15 − 0) = (340 − 70)/15 = 270/15 = 18 °F per minute.\n\nQuestion B: Estimate T'(10), the instantaneous rate at t = 10.\n  With only a table, approximate the tangent slope using the closest data around t = 10. A good symmetric estimate uses t = 5 and t = 15:\n  T'(10) ≈ [T(15) − T(5)]/(15 − 5) = (340 − 180)/10 = 160/10 = 16 °F per minute.\n  Interpretation: at t = 10 minutes, the oven temperature is rising at about 16 °F per minute.\n\nNotice question A spans the whole interval (a secant slope, exact from the data), while question B estimates a single instant's rate (a tangent slope, approximated from nearby points). Using a symmetric interval around the target point usually gives the best estimate."
+    },
+    {
+      "type": "quiz",
+      "question": "Using the oven table above (T = 70, 180, 300, 340 at t = 0, 5, 10, 15), which calculation gives the AVERAGE rate of change from t = 5 to t = 15?",
+      "options": ["(340 − 180)/(15 − 5) = 16 °F/min", "(340 − 70)/15 = 18 °F/min", "(300 − 180)/5 = 24 °F/min", "300/10 = 30 °F/min"],
+      "correctIndex": 0,
+      "explanation": "Average rate of change over [5, 15] is [T(15) − T(5)]/(15 − 5) = (340 − 180)/10 = 16 °F/min — a secant slope using the two endpoints of that interval. The option (340 − 70)/15 uses the wrong interval [0,15], and the others use mismatched values or intervals."
+    },
+    {
+      "type": "callout",
+      "variant": "tip",
+      "heading": "The AP Interpretation Sentence Template",
+      "content": "On free response, build every interpretation from this frame: 'At [input value with its unit], the [quantity] is increasing/decreasing at a rate of [number] [output unit] per [input unit].' Filling in all the blanks guarantees you mention the time, the sign, the value, and the units — the four things graders check. Always include units even when the prompt doesn't remind you to; missing units is the most common way to lose an otherwise-earned point."
+    },
+    {
+      "type": "deepdive",
+      "heading": "Units as a Built-In Error Detector",
+      "content": "Because a derivative's units are always (output units)/(input units), units can catch mistakes that algebra alone misses — a discipline worth building now and leaning on all year.\n\nSuppose a problem gives a flow rate R(t) in liters per minute and asks for the total liters added over an interval. If you reflexively *differentiate* R, you'd get units of liters per minute per minute — clearly not 'liters.' That nonsensical unit is a flag that you should be *integrating*, not differentiating: integrating a rate (liters/min) over time (min) gives liters, because the minutes cancel. This output-unit reasoning previews the deep relationship between derivatives and integrals you'll meet in Unit 6, where the integral of a rate of change yields a net accumulated amount.\n\nThe same logic explains the differential approximation Δy ≈ f'(a)·Δx, which you'll formalize in the linear-approximation lesson. The units balance perfectly: f'(a) carries (output units per input unit) and Δx carries (input units), so their product carries output units — exactly what Δy should be. Whenever you're unsure whether to multiply, divide, differentiate, or integrate two quantities in an applied problem, write out the units first. If the units of your answer don't match what the question asks for, you've found a mistake before it costs you points."
+    },
+    {
+      "type": "keypoint",
+      "content": "A derivative value f'(a) in context is an instantaneous rate of change: state it with a rate phrase, the correct units (output units per input unit), and the meaning of its sign (increasing if positive, decreasing if negative). Keep f(a) (an amount) distinct from f'(a) (a rate), and distinguish average rate of change (a secant slope over an interval) from instantaneous rate (the derivative at a point)."
+    }
+  ],
+  "aiContext": "AP Calculus AB Unit 4, interpreting the derivative in context. The central skill is translating f'(a) into a sentence with three parts — a rate, correct units (output per input), and the meaning of the sign — and distinguishing it from f(a), which is an amount with different units. A second tested distinction is average rate of change (secant slope over an interval, from two values) versus instantaneous rate (the derivative at a point, often estimated symmetrically from a table). Push students to always state units, since missing units is the most common lost point on free response. This lesson sets up motion interpretation next, and units reasoning foreshadows that integrating a rate yields an accumulated amount in Unit 6."
+}

@@ -1,0 +1,29 @@
+{
+  "id": "ap-calc-ab-optimization-problems",
+  "title": "Optimization Problems",
+  "subject": "AP Calculus AB",
+  "chunks": [
+    { "id": "c1", "text": "Optimization finds the maximum or minimum value of a quantity, and derivatives locate where that best value occurs." },
+    { "id": "c2", "text": "At a maximum or minimum of a smooth function, the derivative f'(x) = 0, because the slope is flat at the top of a hill or bottom of a valley." },
+    { "id": "c3", "text": "The objective function is the quantity to be maximized or minimized, such as area, volume, cost, distance, or profit." },
+    { "id": "c4", "text": "The constraint is a condition that limits choices, such as a fixed amount of fencing, a fixed budget, or a fixed volume." },
+    { "id": "c5", "text": "The constraint is used to express the objective function in terms of a single variable before differentiating." },
+    { "id": "c6", "text": "A common setup error is optimizing the wrong quantity; the objective must be exactly what the problem asks to maximize or minimize." },
+    { "id": "c7", "text": "The optimization procedure: identify the quantity to optimize, write the objective function, reduce to one variable with the constraint, find critical points, then classify and justify the absolute extreme." },
+    { "id": "c8", "text": "Example: with 200 ft of fencing for three sides (2x + y = 200), the area A(x) = x(200 − 2x) is maximized at x = 50, y = 100, giving 5000 ft²." },
+    { "id": "c9", "text": "In the fence example, A''(x) = −4 < 0 confirms the critical point is a maximum." },
+    { "id": "c10", "text": "The First Derivative Test classifies a critical point by the sign change of f': positive to negative is a maximum, negative to positive is a minimum." },
+    { "id": "c11", "text": "The Second Derivative Test classifies a critical point by concavity: f''(c) < 0 is a maximum, f''(c) > 0 is a minimum, and f''(c) = 0 is inconclusive." },
+    { "id": "c12", "text": "Example: an open-top box with square base holding 32 ft³ has surface area S(x) = x² + 128/x, minimized at x = 4, h = 2, with surface area 48 ft²." },
+    { "id": "c13", "text": "In the box example, S''(4) = 6 > 0 confirms a minimum, and the surface area tends to infinity as x approaches 0 or infinity." },
+    { "id": "c14", "text": "Finding a critical point and verifying it is a local extremum is not a complete answer when the problem asks for the absolute extreme." },
+    { "id": "c15", "text": "On a closed interval, the Candidates Test compares f at all critical points and both endpoints to find the absolute extreme." },
+    { "id": "c16", "text": "On an open or unbounded domain like x > 0, justify the absolute extreme by examining the function's behavior at the edges of the domain." },
+    { "id": "c17", "text": "If a function tends to infinity at both ends of an open domain and has a single interior critical point, that point is the absolute minimum." },
+    { "id": "c18", "text": "A one-sentence absolute-extreme justification, such as noting the function goes to infinity at the domain edges, often earns a point on free response." },
+    { "id": "c19", "text": "Example: the point on y = x² closest to (0, 1) is found by minimizing the squared distance f(x) = x⁴ − x² + 1." },
+    { "id": "c20", "text": "Minimizing the square of the distance instead of the distance avoids square roots in the derivative and gives the same minimizing point." },
+    { "id": "c21", "text": "For the closest-point example, the minima occur at x = ±1/√2, at distance √3/2 from the point (0, 1)." },
+    { "id": "c22", "text": "Always state the domain of the reduced objective function and confirm that the optimized answer is physically reasonable." }
+  ]
+}

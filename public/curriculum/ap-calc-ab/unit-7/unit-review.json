@@ -1,0 +1,179 @@
+{
+  "id": "ap-calc-ab-unit7-review",
+  "title": "Unit 7 Review: Differential Equations",
+  "subject": "AP Calculus AB",
+  "unit": "Differential Equations",
+  "type": "unit-review",
+  "questionsPerAttempt": 10,
+  "isAssessment": true,
+  "bank": [
+    {
+      "question": "What is the unknown in a differential equation?",
+      "options": ["a number", "a function", "a constant", "an angle"],
+      "correctIndex": 1,
+      "explanation": "A differential equation relates a function to its derivatives, so its solution is a function, not a single number. This is the key conceptual shift in the unit."
+    },
+    {
+      "question": "How do you verify that a given function is a solution of a differential equation?",
+      "options": ["Plug in a specific x-value", "Differentiate it and substitute into the equation to check both sides are equal for all x", "Integrate it once", "Set it equal to zero"],
+      "correctIndex": 1,
+      "explanation": "Verification means differentiating the candidate, substituting it and its derivatives into the equation, and confirming the equation holds for all x. Checking at a single point is not a verification."
+    },
+    {
+      "question": "What distinguishes a particular solution from a general solution?",
+      "options": ["A particular solution has no constant; the general solution is one specific function", "A general solution contains an arbitrary constant; a particular solution is selected by an initial condition", "They are the same", "A particular solution is always larger"],
+      "correctIndex": 1,
+      "explanation": "The general solution is the whole family with an arbitrary constant +C; an initial condition determines the constant and selects the one particular solution."
+    },
+    {
+      "question": "Which function is a solution of dy/dx = 2y?",
+      "options": ["y = 2x", "y = e^(2x)", "y = x²", "y = 2eˣ"],
+      "correctIndex": 1,
+      "explanation": "For y = e^(2x), dy/dx = 2e^(2x) = 2y, so it satisfies the equation. The others fail: y = 2eˣ gives dy/dx = y (not 2y), and y = x² gives 2x ≠ 2x²."
+    },
+    {
+      "question": "What is the general solution of dy/dx = 6x²?",
+      "options": ["y = 2x³ + C", "y = 12x + C", "y = 6x³ + C", "y = 2x³"],
+      "correctIndex": 0,
+      "explanation": "Integrate both sides: y = ∫6x² dx = 2x³ + C. The +C is required for the general solution, and 12x would be the derivative, not the antiderivative."
+    },
+    {
+      "question": "The general solution of dy/dx = 4x is y = 2x² + C. If y(0) = 5, the particular solution is:",
+      "options": ["y = 2x² + 5", "y = 2x²", "y = 2x² + 4", "y = 4x + 5"],
+      "correctIndex": 0,
+      "explanation": "Apply y(0) = 5: 2(0)² + C = 5, so C = 5. The particular solution is y = 2x² + 5."
+    },
+    {
+      "question": "Which is a solution of dy/dx = 5y?",
+      "options": ["y = 5x", "y = e^(5x)", "y = 5eˣ", "y = x⁵"],
+      "correctIndex": 1,
+      "explanation": "For y = e^(5x), dy/dx = 5e^(5x) = 5y. Equations of the form dy/dx = ky always have exponential solutions Ce^(kx)."
+    },
+    {
+      "question": "A slope field represents a differential equation by drawing, at each grid point, a short segment whose slope equals:",
+      "options": ["the value of y there", "the value of dy/dx there", "the area under the curve", "the second derivative"],
+      "correctIndex": 1,
+      "explanation": "At each point, the segment's slope is the value of dy/dx = f(x, y) there, showing the direction a solution curve would head through that point."
+    },
+    {
+      "question": "For dy/dx = x + y, what is the slope of the field segment at the point (1, 2)?",
+      "options": ["3", "2", "1", "0"],
+      "correctIndex": 0,
+      "explanation": "Substitute into dy/dx = x + y: 1 + 2 = 3. The segment at (1, 2) has slope 3."
+    },
+    {
+      "question": "If a slope field has identical segments all along each vertical line (same slope for a fixed x), the equation depends on:",
+      "options": ["x only", "y only", "neither", "both"],
+      "correctIndex": 0,
+      "explanation": "If the slope is constant along each vertical line (fixed x) but changes with x, then dy/dx depends only on x. Dependence on y only would make horizontal rows identical instead."
+    },
+    {
+      "question": "A solution curve sketched on a slope field should:",
+      "options": ["connect the segments end to end", "stay tangent to the segments as it passes through them", "cross every segment perpendicularly", "be a straight line"],
+      "correctIndex": 1,
+      "explanation": "A solution curve follows the field by remaining tangent to the segments at each point it passes through; the segments show local direction, not pieces to be connected."
+    },
+    {
+      "question": "For dy/dx = x, where are the slope-field segments horizontal?",
+      "options": ["along the line x = 0 (the y-axis)", "along the line y = 0 (the x-axis)", "everywhere", "nowhere"],
+      "correctIndex": 0,
+      "explanation": "The slope is 0 where x = 0, so the segments are horizontal all along the y-axis. Since the slope depends only on x, each vertical line has identical segments."
+    },
+    {
+      "question": "To match an equation to a slope field, a quick first check is whether the slope depends on x only, y only, or both. The next useful step is to:",
+      "options": ["find where segments are horizontal (slope 0) or vertical (undefined)", "measure the lengths of the segments", "count the segments", "find the y-intercept of the field"],
+      "correctIndex": 0,
+      "explanation": "Locating where the slope is zero (horizontal marks) or undefined (vertical marks) and checking signs pins down the equation quickly. Segment lengths carry no information."
+    },
+    {
+      "question": "A differential equation is separable if it can be written as:",
+      "options": ["dy/dx = g(x)·h(y)", "dy/dx = x + y", "d²y/dx² = 0", "y = mx + b"],
+      "correctIndex": 0,
+      "explanation": "A separable equation factors into a function of x times a function of y, dy/dx = g(x)·h(y), so the variables can be moved to opposite sides. dy/dx = x + y does not factor this way and is not separable."
+    },
+    {
+      "question": "After separating dy/dx = x/y, the correct integrated equation is:",
+      "options": ["ln|y| = x²/2 + C", "y²/2 = x²/2 + C", "y²/2 = ln|x| + C", "y = x + C"],
+      "correctIndex": 1,
+      "explanation": "Separate to y dy = x dx, then integrate: y²/2 = x²/2 + C. The y ends up multiplied with dy, so you integrate y, not 1/y."
+    },
+    {
+      "question": "When you separate and integrate both sides of a differential equation, how many constants of integration do you write?",
+      "options": ["one on each side", "one total (combined)", "none", "two on the y-side"],
+      "correctIndex": 1,
+      "explanation": "Combining the constants from both sides gives a single arbitrary constant, conventionally written once on the x-side. Writing one on each side is redundant."
+    },
+    {
+      "question": "The general solution of dy/dt = ky (k constant) is:",
+      "options": ["y = kt + C", "y = Ce^(kt)", "y = Ct^k", "y = e^(kt) + C"],
+      "correctIndex": 1,
+      "explanation": "Separating gives (1/y) dy = k dt, integrating gives ln|y| = kt + C, and exponentiating gives y = Ce^(kt) — always an exponential, never linear."
+    },
+    {
+      "question": "When solving a separable equation, integrating (1/y) dy gives ln|y|. To solve for y you then:",
+      "options": ["divide by ln", "exponentiate both sides, turning the constant into a multiplicative factor", "square both sides", "differentiate again"],
+      "correctIndex": 1,
+      "explanation": "Exponentiating both sides undoes the natural log: |y| = e^(rest), and e^C becomes a multiplicative constant, so y = Ce^(...). The additive constant becomes a factor, not an added term."
+    },
+    {
+      "question": "Solve dy/dx = xy with y(0) = 3. The particular solution is:",
+      "options": ["y = 3e^(x²/2)", "y = 3e^(x²)", "y = 3 + x²/2", "y = e^(x²/2)"],
+      "correctIndex": 0,
+      "explanation": "Separating gives (1/y)dy = x dx, so ln|y| = x²/2 + C. Using y(0)=3: ln 3 = C. Exponentiating, y = 3e^(x²/2), which satisfies dy/dx = xy and y(0) = 3."
+    },
+    {
+      "question": "In a separation-of-variables problem asking for a particular solution, a common way to lose points is to:",
+      "options": ["show the separation step", "forget the +C or fail to apply the initial condition", "integrate both sides", "solve for y"],
+      "correctIndex": 1,
+      "explanation": "Omitting +C or never using the initial condition to find the constant leaves the answer incomplete and loses credit. The exam expects separation, integration with +C, applying the initial condition, and solving for y."
+    },
+    {
+      "question": "The exponential model y = y₀e^(kt) comes from which differential equation?",
+      "options": ["dy/dt = k", "dy/dt = ky", "dy/dt = kt", "dy/dt = k/y"],
+      "correctIndex": 1,
+      "explanation": "y = y₀e^(kt) solves dy/dt = ky — the statement that the rate of change is proportional to the current amount. This is the model for growth and decay."
+    },
+    {
+      "question": "In y = y₀e^(kt), the constant y₀ represents:",
+      "options": ["the rate of change", "the amount at t = 0", "the doubling time", "the value when t = 1"],
+      "correctIndex": 1,
+      "explanation": "At t = 0, e^(k·0) = 1, so y(0) = y₀. The constant y₀ is the initial amount, while k is the proportional rate of change."
+    },
+    {
+      "question": "In y = y₀e^(kt), the quantity is decaying when:",
+      "options": ["k > 0", "k < 0", "k = 0", "y₀ < 0"],
+      "correctIndex": 1,
+      "explanation": "A negative k makes the exponent decrease, so y shrinks toward zero — exponential decay. Positive k gives growth, and k = 0 gives a constant."
+    },
+    {
+      "question": "A population modeled by y = y₀e^(kt) is 100 at t = 0 and 300 at t = 1. What is k?",
+      "options": ["ln 3", "3", "ln(1/3)", "100"],
+      "correctIndex": 0,
+      "explanation": "From 300 = 100e^(k·1), divide to get 3 = e^k, so k = ln 3. Dividing by y₀ = 100 cancels the initial amount and a natural log isolates k."
+    },
+    {
+      "question": "A substance decays with y = y₀e^(kt) and has a half-life of 8 years. Its decay constant k is:",
+      "options": ["(ln 2)/8", "−(ln 2)/8", "8/(ln 2)", "−8 ln 2"],
+      "correctIndex": 1,
+      "explanation": "From y₀/2 = y₀e^(8k), we get 1/2 = e^(8k), so 8k = −ln 2 and k = −(ln 2)/8. The decay constant is negative."
+    },
+    {
+      "question": "For exponential growth y = y₀e^(kt) with k > 0, the doubling time is:",
+      "options": ["(ln 2)/k", "−(ln 2)/k", "k/(ln 2)", "2/k"],
+      "correctIndex": 0,
+      "explanation": "Set 2y₀ = y₀e^(kT): 2 = e^(kT), so kT = ln 2 and T = (ln 2)/k. The doubling time is constant for a given k."
+    },
+    {
+      "question": "A radioactive sample has a half-life of 4 years and currently weighs 60 grams. How much remains after 8 years?",
+      "options": ["15 grams", "30 grams", "20 grams", "7.5 grams"],
+      "correctIndex": 0,
+      "explanation": "8 years is exactly 2 half-lives: 60 → 30 (after 4 years) → 15 (after 8 years). Using y = 60·(1/2)^(8/4) = 60·(1/2)² = 15 grams confirms it."
+    },
+    {
+      "question": "Which phrase signals that the exponential model y = y₀e^(kt) applies?",
+      "options": ["The rate of change is constant", "The rate of change is proportional to the amount present", "The quantity increases by a fixed amount each year", "The second derivative is zero"],
+      "correctIndex": 1,
+      "explanation": "'Rate of change proportional to the amount' is exactly dy/dt = ky, whose solution is y = y₀e^(kt). A constant rate of change would instead give linear behavior."
+    }
+  ]
+}

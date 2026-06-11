@@ -1,0 +1,191 @@
+{
+  "id": "ap-calc-ab-unit5-review",
+  "title": "Unit 5 Review: Analytical Applications of Differentiation",
+  "subject": "AP Calculus AB",
+  "unit": "Analytical Applications of Differentiation",
+  "type": "unit-review",
+  "questionsPerAttempt": 10,
+  "isAssessment": true,
+  "bank": [
+    {
+      "question": "f is continuous on [1, 5] and differentiable on (1, 5), with f(1) = 3 and f(5) = 11. The MVT guarantees a c in (1, 5) where f'(c) equals:",
+      "options": ["8", "2", "4", "11"],
+      "correctIndex": 1,
+      "explanation": "The MVT guarantees f'(c) equals the average rate of change [f(5) − f(1)]/(5 − 1) = (11 − 3)/4 = 2. The value 8 is the numerator alone (forgetting to divide), and 4 is the interval length."
+    },
+    {
+      "question": "Which pair of hypotheses must hold to apply the Mean Value Theorem on [a, b]?",
+      "options": ["f differentiable on [a, b] only", "f continuous on [a, b] and differentiable on (a, b)", "f continuous on (a, b) only", "f(a) = f(b)"],
+      "correctIndex": 1,
+      "explanation": "The MVT requires continuity on the closed interval [a, b] and differentiability on the open interval (a, b). The condition f(a) = f(b) is the extra hypothesis for Rolle's Theorem, a special case."
+    },
+    {
+      "question": "The Extreme Value Theorem guarantees that a function attains an absolute maximum and minimum when:",
+      "options": ["It is continuous on a closed interval [a, b]", "It is differentiable everywhere", "Its derivative is zero somewhere", "It is increasing"],
+      "correctIndex": 0,
+      "explanation": "The EVT states that a function continuous on a closed, bounded interval [a, b] attains both an absolute max and an absolute min on that interval. Continuity and the closed interval are essential; on an open interval the extremes may not be attained."
+    },
+    {
+      "question": "A critical point of f is a value in the domain where:",
+      "options": ["f(x) = 0", "f'(x) = 0 or f'(x) is undefined", "f''(x) = 0", "the graph crosses the x-axis"],
+      "correctIndex": 1,
+      "explanation": "Critical points occur where f'(x) = 0 (horizontal tangent) or where f'(x) does not exist while f is defined (corner or cusp). These are the only interior candidates for local extrema; f(x) = 0 is just an x-intercept."
+    },
+    {
+      "question": "To find the absolute extrema of a continuous function on a closed interval [a, b], you should evaluate f at:",
+      "options": ["only the critical points", "only the endpoints", "the critical points and the endpoints", "only the inflection points"],
+      "correctIndex": 2,
+      "explanation": "The Candidates Test evaluates f at all critical points and at both endpoints, then takes the largest and smallest values. Endpoints can be the absolute extreme, so skipping them is a common error."
+    },
+    {
+      "question": "On which interval is f increasing if f'(x) = x² − 4?",
+      "options": ["(−2, 2)", "(−∞, −2) and (2, ∞)", "(0, ∞) only", "f is never increasing"],
+      "correctIndex": 1,
+      "explanation": "f'(x) = x² − 4 = (x − 2)(x + 2) is positive when x < −2 or x > 2, so f is increasing on (−∞, −2) and (2, ∞). On (−2, 2) the derivative is negative, so f is decreasing there."
+    },
+    {
+      "question": "By the First Derivative Test, a local maximum occurs at a critical point where f' changes from:",
+      "options": ["negative to positive", "positive to negative", "positive to positive", "zero to zero"],
+      "correctIndex": 1,
+      "explanation": "A local maximum is where the function rises then falls, so f' changes from positive (increasing) to negative (decreasing). A change from negative to positive gives a local minimum instead."
+    },
+    {
+      "question": "Why must you check where f'(x) is undefined when finding critical points?",
+      "options": ["You don't — only f'(x) = 0 matters", "An extremum can occur at a cusp or corner where f' is undefined but f is defined", "f'(x) is never undefined", "Those points are always inflection points"],
+      "correctIndex": 1,
+      "explanation": "A function like f(x) = x^(2/3) has a minimum at x = 0, where f'(0) is undefined but f(0) exists. Restricting to f'(x) = 0 would miss such extrema, so undefined-derivative points must also be considered."
+    },
+    {
+      "question": "The function f(x) = x³ has f'(0) = 0, yet x = 0 is not a local extremum because:",
+      "options": ["f'(0) is undefined", "f' does not change sign at x = 0", "f''(0) ≠ 0", "x = 0 is an endpoint"],
+      "correctIndex": 1,
+      "explanation": "f'(x) = 3x² is positive on both sides of 0, so f' does not change sign and f keeps increasing through 0 — no extremum. A local extremum requires a sign change in f', not merely f' = 0."
+    },
+    {
+      "question": "If f'(x) = (x − 2)(x + 4), at which x does f have a local minimum?",
+      "options": ["x = −4", "x = 2", "x = 0", "both x = −4 and x = 2"],
+      "correctIndex": 1,
+      "explanation": "Zeros of f' are x = −4 and x = 2. Testing signs, f' is positive on (−∞, −4), negative on (−4, 2), positive on (2, ∞). At x = 2 the sign changes − to +, a local minimum; at x = −4 it changes + to −, a local maximum."
+    },
+    {
+      "question": "A function is concave up on an interval when:",
+      "options": ["f'(x) > 0 there", "f''(x) > 0 there", "f(x) > 0 there", "f'(x) = 0 there"],
+      "correctIndex": 1,
+      "explanation": "Concave up means the slopes are increasing, which happens exactly where f''(x) > 0. The sign of f' controls increasing/decreasing, not concavity, and the sign of f itself is unrelated to curvature."
+    },
+    {
+      "question": "An inflection point of f occurs where:",
+      "options": ["f''(x) = 0, always", "f''(x) changes sign", "f'(x) = 0", "f(x) = 0"],
+      "correctIndex": 1,
+      "explanation": "An inflection point requires the concavity to actually change, i.e. f'' changes sign. Merely f''(x) = 0 is not enough — f(x) = x⁴ has f''(0) = 0 but no inflection point because f'' stays positive."
+    },
+    {
+      "question": "By the Second Derivative Test, if f'(c) = 0 and f''(c) > 0, then at x = c the function has a:",
+      "options": ["local maximum", "local minimum", "inflection point", "the test is inconclusive"],
+      "correctIndex": 1,
+      "explanation": "f''(c) > 0 means the graph is concave up at the critical point — shaped like a valley — so x = c is a local minimum. A negative f''(c) would indicate a local maximum."
+    },
+    {
+      "question": "The Second Derivative Test is inconclusive at a critical point c when:",
+      "options": ["f''(c) > 0", "f''(c) < 0", "f''(c) = 0", "f'(c) ≠ 0"],
+      "correctIndex": 2,
+      "explanation": "When f''(c) = 0 the concavity at c is not determined, so the Second Derivative Test cannot classify the point; you must use the First Derivative Test instead. (If f'(c) ≠ 0, c isn't a critical point at all.)"
+    },
+    {
+      "question": "If f''(x) = 6x − 6, on which interval is f concave down?",
+      "options": ["x < 1", "x > 1", "all x", "x = 1 only"],
+      "correctIndex": 0,
+      "explanation": "f''(x) = 6x − 6 = 6(x − 1) is negative when x < 1, so f is concave down there and concave up for x > 1. The sign change at x = 1 marks an inflection point."
+    },
+    {
+      "question": "A graph that is decreasing and concave up on an interval looks like:",
+      "options": ["rising and steepening", "falling and steepening downward", "falling but flattening toward a possible valley", "a straight line"],
+      "correctIndex": 2,
+      "explanation": "Decreasing (f' < 0) means falling; concave up (f'' > 0) means the slopes increase toward zero, so the fall flattens out, approaching a possible local minimum. Falling and steepening would be concave down instead."
+    },
+    {
+      "question": "Given the graph of f', the function f is increasing on the intervals where:",
+      "options": ["the graph of f' is rising", "the graph of f' is above the x-axis", "the graph of f' has a maximum", "the graph of f' is below the x-axis"],
+      "correctIndex": 1,
+      "explanation": "f is increasing where f'(x) > 0, i.e. where the f' graph lies above the x-axis. Whether the f' graph itself is rising tells you concavity of f, not whether f increases."
+    },
+    {
+      "question": "If the graph of f' is rising (increasing) on an interval, then on that interval f is:",
+      "options": ["increasing", "decreasing", "concave up", "concave down"],
+      "correctIndex": 2,
+      "explanation": "The slope of f' is f''. If f' is increasing, then f'' > 0, so f is concave up. The rising of f' says nothing directly about whether f increases — that depends on the sign of f', not its slope."
+    },
+    {
+      "question": "On the graph of f', an inflection point of f appears where:",
+      "options": ["f' crosses the x-axis", "f' has a local maximum or minimum", "f' is positive", "f' equals f"],
+      "correctIndex": 1,
+      "explanation": "An inflection point of f occurs where f'' changes sign, which is where f' (whose slope is f'') has a local maximum or minimum. Where f' crosses the x-axis is where f has a local extremum, not an inflection point."
+    },
+    {
+      "question": "If f'(x) = (x − 1)(x − 3), at which x does f have a local maximum?",
+      "options": ["x = 1", "x = 3", "x = 2", "x = 0"],
+      "correctIndex": 0,
+      "explanation": "Zeros of f' are x = 1 and x = 3. f' is positive on (−∞, 1), negative on (1, 3), positive on (3, ∞). At x = 1 the sign changes + to −, giving a local maximum (x = 3 gives a local minimum)."
+    },
+    {
+      "question": "In an optimization problem asking to maximize area using a fixed length of fencing, the objective function is:",
+      "options": ["the fixed fencing length", "the area to be maximized", "the diagonal", "the perimeter, held constant"],
+      "correctIndex": 1,
+      "explanation": "The objective function is the quantity being optimized — here the area. The fixed fencing length is the constraint, used to reduce the area to a single variable before differentiating."
+    },
+    {
+      "question": "A farmer uses 100 ft of fencing for three sides of a rectangle against a barn (2x + y = 100), maximizing area A = xy. The maximum area is:",
+      "options": ["1250 ft²", "2500 ft²", "625 ft²", "1000 ft²"],
+      "correctIndex": 0,
+      "explanation": "A(x) = x(100 − 2x) = 100x − 2x²; A'(x) = 100 − 4x = 0 gives x = 25, y = 50, so A = 25·50 = 1250 ft². A''= −4 < 0 confirms a maximum."
+    },
+    {
+      "question": "On an open domain x > 0 with a single critical point where f''(c) > 0, how do you justify it is the ABSOLUTE minimum?",
+      "options": ["Check the endpoint x = 0", "Argue f → ∞ at the edges of the domain", "Compute f'''", "No justification is needed"],
+      "correctIndex": 1,
+      "explanation": "With no endpoints to test on an open domain, you justify the absolute minimum by showing f tends to infinity toward the edges of its domain, leaving the lone critical point as the global minimum. A second-derivative test alone shows only a local minimum."
+    },
+    {
+      "question": "When finding the absolute maximum of a continuous function on a closed interval, the Candidates Test compares f at:",
+      "options": ["only interior critical points", "critical points and both endpoints", "only the endpoints", "inflection points only"],
+      "correctIndex": 1,
+      "explanation": "On a closed interval, the absolute extreme can occur at a critical point or at an endpoint, so you compare f at all critical points and both endpoints. The largest value is the absolute maximum."
+    },
+    {
+      "question": "To minimize the distance from a point to a curve, a standard simplification is to:",
+      "options": ["minimize the square of the distance", "maximize the distance instead", "set the distance equal to zero", "minimize only the x-coordinate"],
+      "correctIndex": 0,
+      "explanation": "Minimizing D² instead of D avoids square roots in the derivative and gives the same minimizing point, because squaring is increasing for nonnegative quantities. The minimum of D² occurs at the same x as the minimum of D."
+    },
+    {
+      "question": "On the graph of f', the height of the curve at a point represents which feature of f?",
+      "options": ["the value of f", "the slope of f", "the concavity of f", "the area under f"],
+      "correctIndex": 1,
+      "explanation": "Since f' is the derivative (slope) of f, the height of the f' graph at any x equals the slope of f there. The slope of the f' graph (not its height) gives the concavity of f."
+    },
+    {
+      "question": "Where the graph of f' crosses the x-axis from positive to negative, the function f has a:",
+      "options": ["local minimum", "local maximum", "inflection point", "vertical asymptote"],
+      "correctIndex": 1,
+      "explanation": "f' crossing zero from positive to negative means f changes from increasing to decreasing — a local maximum of f. A crossing from negative to positive would give a local minimum."
+    },
+    {
+      "question": "To identify which of three unlabeled graphs is f, f', and f'', the most reliable check is that:",
+      "options": ["the tallest graph is f", "each derivative's zeros align with the previous graph's extrema or horizontal tangents", "f'' must be a straight line", "all three have the same zeros"],
+      "correctIndex": 1,
+      "explanation": "A derivative is zero exactly where the original has a horizontal tangent (extremum or flat spot), so aligning a graph's zeros with another's extrema reveals the derivative relationship. Height and shape alone are not reliable indicators."
+    },
+    {
+      "question": "On the graph of f', a local maximum of f' corresponds to which feature of f?",
+      "options": ["a local maximum of f", "a local minimum of f", "an inflection point of f", "a zero of f"],
+      "correctIndex": 2,
+      "explanation": "A local maximum of f' is where f' stops increasing and starts decreasing, so f'' changes sign there — that is an inflection point of f. Extrema of f instead correspond to where f' crosses zero."
+    },
+    {
+      "question": "If f''(x) < 0 on an interval, the graph of f on that interval is:",
+      "options": ["concave up", "concave down", "increasing", "decreasing"],
+      "correctIndex": 1,
+      "explanation": "Negative second derivative means the slopes are decreasing, so the graph is concave down (curving like a cap). The sign of f'' governs concavity, while the sign of f' would govern increasing/decreasing."
+    }
+  ]
+}

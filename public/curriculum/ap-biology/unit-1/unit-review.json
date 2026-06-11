@@ -1,0 +1,167 @@
+{
+  "id": "ap-bio-unit1-review",
+  "title": "Unit 1 Review: Chemistry of Life",
+  "subject": "AP Biology",
+  "unit": "Chemistry of Life",
+  "type": "unit-review",
+  "questionsPerAttempt": 10,
+  "isAssessment": true,
+  "bank": [
+    {
+      "question": "Which property of water is directly responsible for water rising through the xylem of a tall tree without a pump?",
+      "options": ["High specific heat", "Cohesion combined with adhesion", "Low density of ice", "Hydrophobic exclusion"],
+      "correctIndex": 1,
+      "explanation": "Cohesion holds water molecules in a continuous column while adhesion keeps that column clinging to the xylem walls, allowing transpiration to pull water upward. High specific heat governs temperature change, and ice density and hydrophobic exclusion are unrelated to capillary transport."
+    },
+    {
+      "question": "A student claims that hydrogen bonds hold the two hydrogen atoms to the oxygen atom within a single water molecule. Why is this incorrect?",
+      "options": ["The atoms in a water molecule are held by covalent bonds; hydrogen bonds form between separate molecules", "Water molecules have no hydrogen bonds at all", "Hydrogen bonds are stronger than the bonds within a molecule", "The hydrogen atoms are held by ionic bonds"],
+      "correctIndex": 0,
+      "explanation": "The H and O atoms within one water molecule are joined by polar covalent bonds, while hydrogen bonds form between the partial charges of separate molecules. Hydrogen bonds are about twenty times weaker than the internal covalent bonds, so the claim reverses both the location and the strength."
+    },
+    {
+      "question": "Equal masses of water and sand are left in sunlight. The sand becomes much hotter than the water. This is best explained by water's...",
+      "options": ["lower density", "higher specific heat", "polarity", "surface tension"],
+      "correctIndex": 1,
+      "explanation": "Water's high specific heat means it absorbs a great deal of energy (used to break hydrogen bonds) before its temperature rises, so it heats more slowly than sand. Density, polarity, and surface tension do not determine how much temperature changes for a given input of heat."
+    },
+    {
+      "question": "Carbon is the central element in biological macromolecules primarily because it...",
+      "options": ["forms ionic bonds readily", "has four valence electrons and can form four covalent bonds", "is the most abundant element on Earth", "is highly electronegative"],
+      "correctIndex": 1,
+      "explanation": "Carbon's four valence electrons let it form four stable covalent bonds, enabling long chains, branches, and rings that build large, diverse organic molecules. Carbon does not bond ionically here, is not the most abundant element, and its bonding versatility, not electronegativity, is what matters."
+    },
+    {
+      "question": "A molecule contains a carboxyl group (−COOH). Based on this functional group, the molecule will most likely behave as a(n)...",
+      "options": ["base, accepting H⁺", "acid, donating H⁺", "nonpolar, hydrophobic region", "energy-storage tag"],
+      "correctIndex": 1,
+      "explanation": "Carboxyl groups act as acids because they tend to donate a hydrogen ion (H⁺). Amino groups act as bases by accepting H⁺, methyl groups are nonpolar, and phosphate groups are associated with energy transfer."
+    },
+    {
+      "question": "Ice floating on a pond in winter benefits aquatic organisms because...",
+      "options": ["the ice sinks and traps heat at the bottom", "the surface ice insulates the liquid water below, allowing organisms to survive", "ice is denser than liquid water", "freezing releases oxygen into the water"],
+      "correctIndex": 1,
+      "explanation": "Ice is less dense than liquid water, so it forms an insulating layer on top that keeps the water beneath near 4°C and survivable. If ice were denser it would sink and freeze ponds from the bottom up, killing most aquatic life."
+    },
+    {
+      "question": "Which observation provides the best evidence that table salt (NaCl) is hydrophilic?",
+      "options": ["It forms a solid crystal", "It dissolves readily in water as the ions become surrounded by water molecules", "It floats on water", "It does not conduct electricity when dissolved"],
+      "correctIndex": 1,
+      "explanation": "Hydrophilic substances dissolve in water; NaCl dissolves because polar water molecules surround and separate the Na⁺ and Cl⁻ ions (hydration). Forming a crystal and floating do not indicate solubility, and dissolved salt actually does conduct electricity."
+    },
+    {
+      "question": "Two glucose molecules combine to form maltose. What is released in this reaction, and what type of reaction is it?",
+      "options": ["A molecule of CO₂; hydrolysis", "A molecule of water; dehydration synthesis", "A molecule of water; hydrolysis", "A phosphate group; dehydration synthesis"],
+      "correctIndex": 1,
+      "explanation": "Joining monomers into a polymer is dehydration synthesis, which removes a water molecule as the glycosidic bond forms. Hydrolysis is the reverse reaction (adding water to break a bond), and neither CO₂ nor a phosphate is released here."
+    },
+    {
+      "question": "Starch and cellulose are both polymers of glucose, yet humans can digest starch but not cellulose. The best explanation is that...",
+      "options": ["cellulose is made of a different monomer", "the glycosidic bonds are oriented differently and humans lack the enzyme to hydrolyze cellulose's bonds", "starch is a lipid", "cellulose contains nitrogen"],
+      "correctIndex": 1,
+      "explanation": "Both are glucose polymers, but the bond orientation differs, and humans have no enzyme to hydrolyze cellulose's linkages. The monomers are identical, starch is a carbohydrate (not a lipid), and neither polysaccharide contains nitrogen."
+    },
+    {
+      "question": "A fatty acid is described as unsaturated. Compared to a saturated fatty acid of the same length, it will most likely be...",
+      "options": ["solid at room temperature because its chains pack tightly", "liquid at room temperature because double bonds create kinks that prevent tight packing", "unable to form ester bonds with glycerol", "more hydrophilic"],
+      "correctIndex": 1,
+      "explanation": "Unsaturated fatty acids contain double bonds that kink the chains so they cannot pack tightly, making them liquid at room temperature. Saturated fats pack tightly and are solid, and unsaturation does not prevent ester bonds or make the molecule hydrophilic."
+    },
+    {
+      "question": "Which statement about lipids is correct?",
+      "options": ["Lipids are polymers of fatty acid monomers", "Lipids are united by being hydrophobic and are not true polymers", "All lipids contain a phosphate group", "Lipids dissolve readily in water"],
+      "correctIndex": 1,
+      "explanation": "Lipids are defined by their hydrophobic (water-insoluble) nature and are not true polymers, since they are not long chains of repeating identical monomers. Only phospholipids contain phosphate, and lipids do not dissolve in water."
+    },
+    {
+      "question": "A phospholipid placed in water spontaneously forms a bilayer. This occurs because the phospholipid is amphipathic, meaning it...",
+      "options": ["is entirely hydrophobic", "is entirely hydrophilic", "has a hydrophilic head and hydrophobic tails", "carries no charge anywhere"],
+      "correctIndex": 2,
+      "explanation": "Amphipathic means having both a hydrophilic region (the phosphate head) and a hydrophobic region (the fatty acid tails). In water the heads face outward and the tails hide inward, forming a bilayer with no energy input."
+    },
+    {
+      "question": "Cholesterol embedded in an animal cell membrane functions to...",
+      "options": ["transport ions across the membrane", "buffer membrane fluidity across a range of temperatures", "catalyze membrane reactions", "store genetic information"],
+      "correctIndex": 1,
+      "explanation": "Cholesterol acts as a fluidity buffer: it reduces fluidity at high temperatures and prevents excessive rigidity at low temperatures. It is not a transporter, an enzyme, or an information molecule."
+    },
+    {
+      "question": "If a polysaccharide is built from 50 glucose monomers, how many water molecules were removed to assemble it?",
+      "options": ["50", "49", "51", "100"],
+      "correctIndex": 1,
+      "explanation": "Each glycosidic bond forms by removing one water molecule, and a chain of n monomers has (n − 1) bonds. For 50 monomers, 49 water molecules were removed during dehydration synthesis."
+    },
+    {
+      "question": "Which functional group is most directly associated with energy transfer in molecules such as ATP?",
+      "options": ["Hydroxyl (−OH)", "Methyl (−CH₃)", "Phosphate (−PO₄)", "Carboxyl (−COOH)"],
+      "correctIndex": 2,
+      "explanation": "Phosphate groups carry negative charge and store transferable energy, which is why ATP uses phosphate bonds to power cellular work. Hydroxyl groups confer polarity, methyl groups are nonpolar tags, and carboxyl groups act as acids."
+    },
+    {
+      "question": "Amino acids are linked into a polypeptide by which type of bond, formed by which reaction?",
+      "options": ["Glycosidic bond by hydrolysis", "Peptide bond by dehydration synthesis", "Phosphodiester bond by dehydration synthesis", "Hydrogen bond by condensation"],
+      "correctIndex": 1,
+      "explanation": "Amino acids join by peptide bonds formed through dehydration synthesis between a carboxyl group and an amino group, releasing water. Glycosidic bonds link sugars and phosphodiester bonds link nucleotides, while hydrogen bonds are weak intermolecular attractions, not the covalent links of a polypeptide."
+    },
+    {
+      "question": "The four levels of protein structure are correctly matched with their stabilizing interactions in which option?",
+      "options": ["Secondary structure is held by peptide bonds", "Primary structure is held by hydrogen bonds between R groups", "Secondary structure is held by hydrogen bonds between backbone atoms", "Quaternary structure exists in all proteins"],
+      "correctIndex": 2,
+      "explanation": "Secondary structure (alpha helices and beta sheets) is stabilized by hydrogen bonds between backbone atoms. Primary structure is held by peptide bonds, R-group interactions stabilize tertiary structure, and quaternary structure exists only in proteins with multiple subunits."
+    },
+    {
+      "question": "An enzyme is heated until it permanently loses activity, but chemical analysis shows its amino acid sequence is unchanged. What has happened?",
+      "options": ["The enzyme's primary structure was destroyed", "The enzyme was denatured, losing its 3-D shape while keeping its sequence", "The gene encoding the enzyme mutated", "The enzyme was hydrolyzed into amino acids"],
+      "correctIndex": 1,
+      "explanation": "Denaturation disrupts the weaker bonds maintaining secondary, tertiary, and quaternary structure, destroying shape and function while leaving the covalently bonded primary sequence intact. No peptide bonds are broken and no gene is changed when a protein is denatured."
+    },
+    {
+      "question": "In sickle cell disease, a single amino acid substitution replaces a hydrophilic glutamate with a hydrophobic valine. This illustrates that...",
+      "options": ["primary sequence has no effect on protein shape", "a change in one amino acid can alter shape and therefore function", "denaturation causes sickle cell disease", "quaternary structure is unaffected by R groups"],
+      "correctIndex": 1,
+      "explanation": "The substitution changes one R group's chemistry, which alters hemoglobin's folding and causes cells to sickle, showing that sequence determines shape and shape determines function. The disease results from a genetic substitution, not denaturation, and R groups absolutely influence higher-order structure."
+    },
+    {
+      "question": "A nucleotide consists of which three components?",
+      "options": ["Glycerol, a fatty acid, and phosphate", "A five-carbon sugar, a phosphate group, and a nitrogenous base", "An amino group, a carboxyl group, and an R group", "Two monosaccharides and a phosphate"],
+      "correctIndex": 1,
+      "explanation": "Every nucleotide has a five-carbon sugar, a phosphate group, and a nitrogenous base. The glycerol/fatty acid description fits a lipid, the amino/carboxyl/R group description fits an amino acid, and two sugars describe a disaccharide."
+    },
+    {
+      "question": "One strand of DNA reads 5'-A G C T-3'. What is its complementary strand, written with correct antiparallel orientation?",
+      "options": ["5'-T C G A-3'", "3'-T C G A-5'", "3'-A G C T-5'", "5'-U C G A-3'"],
+      "correctIndex": 1,
+      "explanation": "Pairing A-T, G-C, C-G, T-A gives the bases T C G A, and because strands are antiparallel the complementary strand runs 3' to 5' opposite the original. DNA uses thymine, not uracil, so the uracil-containing option is incorrect."
+    },
+    {
+      "question": "In a sample of double-stranded DNA, 20% of the bases are cytosine. What percentage are adenine?",
+      "options": ["20%", "30%", "40%", "60%"],
+      "correctIndex": 1,
+      "explanation": "If cytosine is 20%, then guanine is also 20% (G pairs with C), accounting for 40% of the bases. The remaining 60% is split equally between adenine and thymine, so adenine is 30%."
+    },
+    {
+      "question": "Which feature explains why guanine-cytosine (G-C) base pairs make a region of DNA more resistant to separation than adenine-thymine (A-T) pairs?",
+      "options": ["G-C pairs are joined by three hydrogen bonds versus two for A-T", "G-C pairs are covalently bonded", "G-C pairs contain ribose", "G-C pairs are larger purine-purine pairs"],
+      "correctIndex": 0,
+      "explanation": "G-C pairs are held by three hydrogen bonds while A-T pairs have only two, so G-C-rich regions are harder to pull apart and melt at higher temperatures. Base pairs are held by hydrogen bonds (not covalent bonds), contain deoxyribose in DNA, and always join one purine with one pyrimidine."
+    },
+    {
+      "question": "Which of the following correctly distinguishes RNA from DNA?",
+      "options": ["RNA contains deoxyribose and thymine", "RNA contains ribose and uracil and is usually single-stranded", "RNA is more stable than DNA and stores genetic information long-term", "RNA is always double-stranded"],
+      "correctIndex": 1,
+      "explanation": "RNA contains ribose (with a 2' hydroxyl) and uracil instead of thymine, and it is usually single-stranded. DNA contains deoxyribose and thymine, is more stable, and serves as the long-term archive, while RNA is the less stable, temporary copy."
+    },
+    {
+      "question": "A researcher finds an organism whose DNA is unusually rich in G-C base pairs. This organism most likely lives in...",
+      "options": ["a very cold environment", "a high-temperature environment such as a hot spring", "a freshwater lake at 4°C", "an oxygen-free environment"],
+      "correctIndex": 1,
+      "explanation": "G-C pairs have three hydrogen bonds and resist separation at high temperatures, so high G-C content is advantageous where heat would otherwise melt the helix. The other environments do not impose the heat stress that selects for extra hydrogen bonding."
+    },
+    {
+      "question": "Which sequence correctly traces the flow of genetic information described by the central dogma?",
+      "options": ["Protein → RNA → DNA", "RNA → DNA → protein", "DNA → RNA → protein", "DNA → protein → RNA"],
+      "correctIndex": 2,
+      "explanation": "The central dogma describes information flowing from DNA to RNA (transcription) to protein (translation). The other orders reverse or scramble these steps, which the standard pathway does not follow."
+    }
+  ]
+}

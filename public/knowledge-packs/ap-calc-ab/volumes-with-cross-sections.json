@@ -1,0 +1,29 @@
+{
+  "id": "ap-calc-ab-volumes-with-cross-sections",
+  "title": "Volumes with Known Cross Sections",
+  "subject": "AP Calculus AB",
+  "chunks": [
+    { "id": "c1", "text": "A solid can be viewed as a stack of thin slabs, each a cross section with some area extended through a small thickness." },
+    { "id": "c2", "text": "The volume of one slab is the cross-sectional area times the thickness, A(x)·dx." },
+    { "id": "c3", "text": "The volume of a solid with known cross sections is V = ∫ from a to b of A(x) dx." },
+    { "id": "c4", "text": "The formula works for any solid as long as the cross-sectional area can be written as a function of position." },
+    { "id": "c5", "text": "Finding A(x) requires the shape of the cross section (given) and its size (read from the base region)." },
+    { "id": "c6", "text": "For slices perpendicular to the x-axis, the key length at position x is the height of the base, top − bottom = f(x) − g(x)." },
+    { "id": "c7", "text": "This key length is the side of a square, the base of a triangle, or the diameter of a semicircle, depending on the stated shape." },
+    { "id": "c8", "text": "A square cross section of side s has area s²." },
+    { "id": "c9", "text": "An equilateral triangle of side s has area (√3/4)s²." },
+    { "id": "c10", "text": "A semicircle of diameter s has radius s/2 and area (1/2)π(s/2)² = πs²/8." },
+    { "id": "c11", "text": "A semicircle of radius s has area (1/2)πs², used only when s is the radius rather than the diameter." },
+    { "id": "c12", "text": "For a semicircle, the base length is usually the diameter, so the radius is half of it; treating s as the radius quadruples the area." },
+    { "id": "c13", "text": "Example: a base under y = √x from 0 to 4 with square cross sections has side √x, area x, and volume ∫₀⁴ x dx = 8." },
+    { "id": "c14", "text": "For cross sections perpendicular to the x-axis, the slabs stack along x and you integrate V = ∫ A(x) dx." },
+    { "id": "c15", "text": "For cross sections perpendicular to the y-axis, the slabs stack along y, the length is right − left, and you integrate V = ∫ A(y) dy." },
+    { "id": "c16", "text": "The phrase 'cross sections perpendicular to the x-axis (or y-axis)' tells you which variable to integrate with respect to." },
+    { "id": "c17", "text": "Example: with base between y = x and y = x², the length is s = x − x², and semicircular cross sections give volume π/240." },
+    { "id": "c18", "text": "The same base with equilateral-triangle cross sections gives volume √3/120, differing only by the area formula." },
+    { "id": "c19", "text": "The volume formula is a Riemann sum of slab volumes A(xᵢ)·Δx that converges to ∫ A(x) dx as the slabs get thinner." },
+    { "id": "c20", "text": "Common errors are using a function value instead of top − bottom, using the wrong shape area formula, and confusing a semicircle's diameter with its radius." },
+    { "id": "c21", "text": "The cross-section method generalizes to volumes of revolution, where the cross sections are circles (discs) or rings (washers)." },
+    { "id": "c22", "text": "The unifying technique of the integration unit is to slice an accumulated quantity into measurable pieces, write the measure of a generic piece, and integrate." }
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "id": "ap-calc-ab-linear-approximation-and-differentials",
+  "title": "Linear Approximation and Differentials",
+  "subject": "AP Calculus AB",
+  "chunks": [
+    { "id": "c1", "text": "Local linearity means that zooming in on a smooth curve near a point makes it look indistinguishable from its tangent line at that point." },
+    { "id": "c2", "text": "Linear approximation replaces a curve with its tangent line near a point to estimate function values that are hard to compute directly." },
+    { "id": "c3", "text": "The linearization of f at x = a is L(x) = f(a) + f'(a)(x − a), the equation of the tangent line at that point." },
+    { "id": "c4", "text": "The linearization works by starting at the known height f(a) and adding the slope f'(a) times the horizontal change (x − a)." },
+    { "id": "c5", "text": "For x near a, L(x) approximates f(x), and the approximation is better the closer x is to the base point a." },
+    { "id": "c6", "text": "Choose the base point a where f(a) and f'(a) are easy to compute exactly, such as a perfect square, a known angle, or a whole number." },
+    { "id": "c7", "text": "To estimate √4.1, use f(x) = √x at a = 4: f(4) = 2, f'(4) = 1/4, so L(4.1) = 2 + (1/4)(0.1) = 2.025." },
+    { "id": "c8", "text": "The estimate √4.1 ≈ 2.025 is slightly high because the square-root function is concave down, putting the tangent line above the curve." },
+    { "id": "c9", "text": "A linear approximation gives an estimate, not an exact value, so it should be written with ≈ rather than =." },
+    { "id": "c10", "text": "The accuracy of a linear approximation degrades as x moves farther from the base point, because the curve bends away from the tangent line." },
+    { "id": "c11", "text": "The change (x − a) is target minus base point, so its sign matters; for a = 4 and x = 3.9 the change is −0.1, making the linear term negative." },
+    { "id": "c12", "text": "A tangent-line approximation overestimates where the function is concave down (f'' < 0) and underestimates where it is concave up (f'' > 0)." },
+    { "id": "c13", "text": "The differential of y = f(x) is dy = f'(x) dx, which estimates the change in y produced by a small change dx in x." },
+    { "id": "c14", "text": "The true change Δy = f(x + dx) − f(x) is the change along the curve, while the differential dy is the change along the tangent line; they are close for small dx." },
+    { "id": "c15", "text": "Differentials are the natural tool for error propagation: a measurement uncertainty dx in x propagates to dy = f'(x) dx in a computed quantity y = f(x)." },
+    { "id": "c16", "text": "Example: for a cube edge measured as 5 cm with error 0.1 cm, V = s³ gives dV = 3s² ds = 3(25)(0.1) = 7.5 cm³." },
+    { "id": "c17", "text": "For a power-law quantity, the relative error multiplies by the exponent; a cube's relative volume error is three times the relative edge error." },
+    { "id": "c18", "text": "Example: for a circle of radius 10 cm measured with error 0.2 cm, dA = 2πr dr = 2π(10)(0.2) = 4π cm²." },
+    { "id": "c19", "text": "The tangent line is the unique line through (a, f(a)) that matches the function in both value and slope at a, making it the best linear approximation." },
+    { "id": "c20", "text": "The error f(x) − L(x) shrinks faster than the distance (x − a) as x approaches a, which is what makes the tangent line a first-order approximation." },
+    { "id": "c21", "text": "The second derivative measures how fast the curve bends away from its tangent line, so the size of the approximation error grows with |f''| and the square of (x − a)." },
+    { "id": "c22", "text": "Linear approximation is the first case of Taylor approximation, where matching additional derivatives produces even better polynomial approximations in later courses." }
+  ]
+}

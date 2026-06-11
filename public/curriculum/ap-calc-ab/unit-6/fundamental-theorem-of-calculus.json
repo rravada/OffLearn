@@ -1,0 +1,99 @@
+{
+  "id": "ap-calc-ab-u6-fundamental-theorem-of-calculus",
+  "title": "The Fundamental Theorem of Calculus",
+  "subject": "AP Calculus AB",
+  "unit": "Integration and Accumulation of Change",
+  "track": "ap",
+  "difficulty": "ap",
+  "duration": "50 min",
+  "objectives": [
+    "State and apply FTC Part 1: d/dx ∫ from a to x of f(t) dt = f(x), including composite upper limits via the chain rule.",
+    "State and apply FTC Part 2: ∫ from a to b of f(x) dx = F(b) − F(a) for any antiderivative F.",
+    "Explain how the FTC links accumulated area with antidifferentiation, making them inverse processes.",
+    "Use the FTC to interpret the integral of a rate as the net change in a quantity."
+  ],
+  "sections": [
+    {
+      "type": "explanation",
+      "heading": "The Big Picture — Why This Theorem Matters",
+      "content": "The Fundamental Theorem of Calculus (FTC) is arguably the most important theorem in all of calculus. It's the bridge between two ideas that, on the surface, seem unrelated: derivatives (rates of change) and integrals (accumulated area).\n\nThink about how strange that connection is. On one hand you have the slope of a tangent line — an instantaneous rate. On the other you have the area under a curve — a total accumulation. Why should they be related at all? It's like discovering multiplication and division are inverses. The FTC says exactly that for calculus: differentiation and integration undo each other.\n\nBefore Newton and Leibniz, computing areas was brutally hard. People used 'exhaustion,' breaking a region into countless tiny pieces and summing — a fresh ordeal for every problem. The FTC changed everything: if you can find an antiderivative, you can compute exact areas almost instantly, bypassing the limit of Riemann sums entirely.\n\nThe theorem has two parts, both essential. Part 1 says that integrating and then differentiating returns the original function — the accumulation function's derivative is the integrand. Part 2 says you can evaluate a definite integral by plugging the endpoints into any antiderivative and subtracting. Together they unify calculus into one coherent theory."
+    },
+    {
+      "type": "explanation",
+      "heading": "FTC Part 1: Differentiating an Integral",
+      "content": "FTC Part 1 says: if f is continuous on [a, b] and you define F(x) = ∫ from a to x of f(t) dt, then F'(x) = f(x).\n\nUnpack it. The function F has a variable upper limit x, so F(x) is the area under f from a fixed start a up to x — an accumulation function, sweeping out more area as x moves right. The theorem says the *rate* at which that area grows equals the *height* of f at the leading edge. That's deeply intuitive: filling a bathtub at a varying flow rate, the total water F(t) grows at exactly the current flow rate f(t).\n\nGraphically, where f is large and positive, area piles up fast, so F'(x) is large; where f is near zero, F barely changes; where f is negative, area is being subtracted, so F'(x) is negative. The derivative of the accumulation function IS the original function.\n\nThere's a crucial extension. If the upper limit is not x but a function g(x), the chain rule kicks in: d/dx ∫ from a to g(x) of f(t) dt = f(g(x))·g'(x). You evaluate f at the upper limit, then multiply by the derivative of that upper limit. The AP exam tests this constantly, so make the chain-rule factor automatic whenever the upper limit is anything more complicated than a bare x."
+    },
+    {
+      "type": "example",
+      "heading": "FTC Part 1 in Action",
+      "content": "Example 1: F(x) = ∫ from 2 to x of (t³ + 1) dt. Then F'(x) = x³ + 1 — just replace t with x in the integrand.\n\nExample 2: G(x) = ∫ from 0 to x² of sin t dt. The upper limit is x², so use the chain rule: G'(x) = sin(x²)·d/dx[x²] = sin(x²)·2x = 2x·sin(x²).\n\nExample 3: H(x) = ∫ from x to 5 of eᵗ dt. The variable is in the LOWER limit. Flip the integral (which negates it): H(x) = −∫ from 5 to x of eᵗ dt, so H'(x) = −eˣ.\n\nExample 4: F(x) = ∫ from 1 to x of (1/t) dt. By Part 1, F'(x) = 1/x, and F(1) = ∫ from 1 to 1 = 0. The function with derivative 1/x that is 0 at x = 1 is ln x — which is precisely how the natural logarithm is rigorously defined in many textbooks: as an accumulation function."
+    },
+    {
+      "type": "callout",
+      "variant": "warning",
+      "heading": "Watch the Upper Limit and the Lower Limit",
+      "content": "Two FTC Part 1 traps. First, when the upper limit is a function like x², x³, or sin x, you MUST multiply by its derivative (the chain rule): d/dx ∫ from a to x² of f(t) dt = f(x²)·2x, not just f(x²). Forgetting this factor is the most common error. Second, when the variable sits in the LOWER limit, the integral must be flipped first, introducing a negative sign: d/dx ∫ from x to b of f(t) dt = −f(x). If the variable appears in both limits, split the integral at a constant and apply the rule to each piece."
+    },
+    {
+      "type": "quiz",
+      "question": "If G(x) = ∫ from 1 to x³ of cos(t) dt, what is G'(x)?",
+      "options": ["cos(x³)", "3x²·cos(x³)", "cos(x³) − cos(1)", "sin(x³)·3x²"],
+      "correctIndex": 1,
+      "explanation": "By FTC Part 1 with a composite upper limit, G'(x) = cos(x³)·d/dx[x³] = cos(x³)·3x² = 3x²·cos(x³). The answer cos(x³) forgets the chain-rule factor 3x², the single most common mistake on these problems."
+    },
+    {
+      "type": "explanation",
+      "heading": "FTC Part 2: Evaluating Definite Integrals",
+      "content": "FTC Part 2 is the workhorse of calculus. It says: if f is continuous on [a, b] and F is any antiderivative of f, then ∫ from a to b of f(x) dx = F(b) − F(a).\n\nThis is revolutionary. To get the exact area under a curve from a to b, you don't sum infinitely many rectangles — you find any antiderivative, plug in the two endpoints, and subtract. We write this as F(x) evaluated from a to b, meaning F(b) − F(a): always top limit minus bottom limit.\n\nNotice it says 'any antiderivative.' You don't include +C here because it cancels: (F(b) + C) − (F(a) + C) = F(b) − F(a). This is a key difference between the two kinds of integral. Indefinite integrals need +C because they represent a family of functions; definite integrals are single numbers (net signed areas), so no +C.\n\nPhysically, if f(t) is velocity, then ∫ from a to b of f(t) dt = F(b) − F(a) is the displacement — final position minus initial position. The area under a velocity curve is the net change in position. FTC Part 2 makes this precise and is the reason the integral of a rate of change recovers the net change in the underlying quantity."
+    },
+    {
+      "type": "steps",
+      "heading": "Evaluating a Definite Integral With FTC Part 2",
+      "steps": [
+        { "title": "Find any antiderivative F", "content": "Antidifferentiate the integrand using the power rule and basic rules. You may omit +C, since it cancels in the subtraction." },
+        { "title": "Evaluate at the upper limit", "content": "Compute F(b), substituting the top limit b into the antiderivative." },
+        { "title": "Evaluate at the lower limit", "content": "Compute F(a), substituting the bottom limit a." },
+        { "title": "Subtract: F(b) − F(a)", "content": "The result is the exact value of the definite integral (the net signed area). Keep the order top minus bottom to avoid a sign error." }
+      ]
+    },
+    {
+      "type": "example",
+      "heading": "Evaluating Definite Integrals",
+      "content": "Example 1: ∫ from 1 to 3 of x² dx. Antiderivative F(x) = x³/3. Then F(3) − F(1) = 27/3 − 1/3 = 26/3.\n\nExample 2: ∫ from 0 to π of sin x dx. Antiderivative F(x) = −cos x. Then F(π) − F(0) = −cos π − (−cos 0) = −(−1) + 1 = 2. The area under one arch of the sine curve is exactly 2.\n\nExample 3: ∫ from 0 to 1 of eˣ dx. Antiderivative F(x) = eˣ. Then F(1) − F(0) = e − 1 ≈ 1.718.\n\nExample 4: ∫ from 1 to e of (1/x) dx. Antiderivative F(x) = ln|x| = ln x on [1, e]. Then F(e) − F(1) = ln e − ln 1 = 1 − 0 = 1. The area under 1/x from 1 to e is exactly 1 — essentially the defining property of the number e."
+    },
+    {
+      "type": "table",
+      "heading": "The Two Parts at a Glance",
+      "headers": ["", "FTC Part 1", "FTC Part 2"],
+      "rows": [
+        ["Statement", "d/dx ∫ₐˣ f(t) dt = f(x)", "∫ₐᵇ f(x) dx = F(b) − F(a)"],
+        ["Used to", "differentiate an accumulation function", "evaluate a definite integral"],
+        ["Key feature", "chain rule if upper limit is g(x)", "use any antiderivative; +C cancels"],
+        ["Result type", "a function, f(x)", "a number (net signed area)"]
+      ]
+    },
+    {
+      "type": "quiz",
+      "question": "What is ∫ from 0 to 2 of 3x² dx?",
+      "options": ["8", "12", "6", "4"],
+      "correctIndex": 0,
+      "explanation": "An antiderivative of 3x² is x³. By FTC Part 2, F(2) − F(0) = 2³ − 0³ = 8 − 0 = 8. The value 12 would come from evaluating the integrand 3x² at x = 2 instead of using an antiderivative."
+    },
+    {
+      "type": "callout",
+      "variant": "tip",
+      "heading": "No +C for Definite Integrals; Read It as Net Change",
+      "content": "Definite integrals produce a number, so never attach +C — the constant cancels in F(b) − F(a). This is the core indefinite-vs-definite distinction the exam probes: indefinite integrals are families of functions (need +C); definite integrals are single values (no +C). The most powerful reading of Part 2 is the Net Change Theorem: ∫ₐᵇ f'(x) dx = f(b) − f(a), i.e. integrating a rate of change gives the net change in the quantity. So given a rate and a starting value, f(b) = f(a) + ∫ₐᵇ f'(x) dx — exactly how AP rate problems ask you to find a final amount."
+    },
+    {
+      "type": "deepdive",
+      "heading": "Connecting the Two Parts — What the FTC Really Says",
+      "content": "Step back and see both parts as one unified idea. Part 1 says: integrate a function, then differentiate, and you return to the original — integration followed by differentiation is a round trip. Part 2 says: differentiate a function to get f, then integrate f over [a, b], and you recover the net change F(b) − F(a) — differentiation followed by integration gives net change. Together: differentiation and integration undo each other, like squaring and square-rooting. That mutual inverse relationship is why the theorem is 'fundamental.'\n\nOne tank analogy ties it all together. Let f(x) be the rate water flows into a tank (gallons per minute). The integral ∫ from a to b of f(x) dx is the total gallons added between times a and b — the area under the rate curve. If F(x) is the total water in the tank at time x, then F'(x) = f(x) (the flow rate is the derivative of total water, which is Part 1), and the total added is F(b) − F(a) (which is Part 2). Both parts are just the same obvious statement about the tank seen from two directions: the rate is the derivative of the total, and the accumulated total is the integral of the rate.\n\nThis is not merely elegant — it's what makes calculus practical. Without the FTC, every area would require a limit of Riemann sums. With it, area becomes a subtraction of antiderivative values, and rate-to-quantity problems become routine. It also explains why the accumulation functions of the previous lesson behave as they do: F(x) = ∫ from a to x of f(t) dt has F'(x) = f(x) by Part 1, so f is literally F's derivative — which is why the sign of f controls whether F rises or falls. Every thread of this unit, from Riemann sums to accumulation to evaluation, is the FTC viewed from a different angle."
+    },
+    {
+      "type": "keypoint",
+      "content": "FTC Part 1: d/dx ∫ from a to x of f(t) dt = f(x); if the upper limit is g(x), multiply by g'(x) (chain rule), and flip the sign if the variable is in the lower limit. FTC Part 2: ∫ from a to b of f(x) dx = F(b) − F(a) for any antiderivative F, with no +C since it cancels. The two parts show differentiation and integration are inverse processes, and integrating a rate gives net change."
+    }
+  ],
+  "aiContext": "AP Calculus AB Unit 6, the Fundamental Theorem of Calculus. Part 1: the derivative of an accumulation function ∫ₐˣ f(t)dt is f(x); stress the chain-rule factor when the upper limit is g(x) (the top error is forgetting it) and the sign flip when the variable is in the lower limit. Part 2: evaluate ∫ₐᵇ f dx as F(b) − F(a) for any antiderivative, with NO +C because it cancels — reinforce the indefinite (family, needs +C) vs definite (number, no +C) distinction. Emphasize the unifying idea that differentiation and integration are inverse processes, and the Net Change Theorem reading ∫ₐᵇ f'(x)dx = f(b) − f(a), so a final amount equals the initial amount plus the integral of the rate — the standard AP rate-problem setup. Connect back to accumulation functions (Part 1 explains why f acts as F's derivative)."
+}

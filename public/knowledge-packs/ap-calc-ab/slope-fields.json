@@ -1,0 +1,29 @@
+{
+  "id": "ap-calc-ab-slope-fields",
+  "title": "Slope Fields",
+  "subject": "AP Calculus AB",
+  "chunks": [
+    { "id": "c1", "text": "A slope field is a picture of a differential equation dy/dx = f(x, y), drawing the slope at each grid point as a short tangent segment." },
+    { "id": "c2", "text": "Each segment in a slope field shows the direction a solution curve would head through that point." },
+    { "id": "c3", "text": "A solution of the differential equation is a curve that stays tangent to the field segments at every point it passes through." },
+    { "id": "c4", "text": "Slope fields give a qualitative understanding of solutions even when the equation cannot be solved with a formula." },
+    { "id": "c5", "text": "To build a slope field, evaluate dy/dx = f(x, y) at each grid point and draw a short segment with that slope." },
+    { "id": "c6", "text": "The length of a slope-field segment carries no information; only its direction (slope) matters." },
+    { "id": "c7", "text": "A slope of 0 gives a horizontal segment, a large slope gives a steep segment, and an undefined slope gives a vertical segment." },
+    { "id": "c8", "text": "If dy/dx depends only on x, the slope is constant along each vertical line, so every column of segments looks identical." },
+    { "id": "c9", "text": "If dy/dx depends only on y, the slope is constant along each horizontal line, so every row of segments looks identical." },
+    { "id": "c10", "text": "If dy/dx depends on both x and y, the slopes vary throughout the plane with no simple row or column repetition." },
+    { "id": "c11", "text": "Example: for dy/dx = x + y, the slope at (1, 0) is 1, at (1, 1) is 2, and at (−1, 1) is 0." },
+    { "id": "c12", "text": "For dy/dx = x + y, horizontal segments occur along the line y = −x, where x + y = 0." },
+    { "id": "c13", "text": "A slope-field segment is a piece of the tangent line, not the solution curve; the curve does not jump from segment to segment." },
+    { "id": "c14", "text": "Because the slope usually depends on both x and y, it must be re-evaluated at each grid point rather than assumed constant." },
+    { "id": "c15", "text": "To sketch a particular solution, start at the given point and trace a curve that follows the segments, staying tangent to the field." },
+    { "id": "c16", "text": "Tracing a solution is like steering with a current: always head the direction the field points at your current position." },
+    { "id": "c17", "text": "For well-behaved equations exactly one solution passes through each point, so solution curves never cross." },
+    { "id": "c18", "text": "To match a differential equation to a slope field, first check whether the slope depends on x only, y only, or both." },
+    { "id": "c19", "text": "Then locate where segments are horizontal (slope zero) and vertical (undefined) and check where slopes are positive or negative." },
+    { "id": "c20", "text": "Example: dy/dx = x has horizontal segments along the y-axis (x = 0), while dy/dx = y has horizontal segments along the x-axis (y = 0)." },
+    { "id": "c21", "text": "Slope fields require no solving yet reveal where solutions increase, decrease, level off, or blow up." },
+    { "id": "c22", "text": "Following a slope field in small steps is the geometric idea behind Euler's method, the numerical technique for approximating solutions." }
+  ]
+}

@@ -1,0 +1,108 @@
+{
+  "id": "ap-calc-ab-u3-chain-rule",
+  "title": "The Chain Rule",
+  "subject": "AP Calculus AB",
+  "unit": "Differentiation: Composite, Implicit, and Inverse Functions",
+  "track": "ap",
+  "difficulty": "ap",
+  "duration": "45 min",
+  "objectives": [
+    "Recognize a composite function by identifying its outer and inner functions, and explain why the power rule alone cannot differentiate it.",
+    "Apply the chain rule, d/dx[f(g(x))] = f'(g(x))·g'(x), to differentiate composite functions involving powers, roots, trigonometric, exponential, and logarithmic expressions.",
+    "Apply the chain rule repeatedly to compositions nested three or more layers deep.",
+    "Combine the chain rule with the product and quotient rules, always working from the outermost structure inward."
+  ],
+  "sections": [
+    {
+      "type": "explanation",
+      "heading": "Why You Need a New Rule",
+      "content": "You already know how to differentiate x⁵ (the power rule gives 5x⁴) and you know how to differentiate 3x + 7 (it's just 3). But what about (3x + 7)⁵?\n\nYour first instinct might be to use the power rule: bring down the 5, reduce the exponent, and get 5(3x + 7)⁴. But that's incomplete. Think about it — if you changed the inside from (3x + 7) to (100x + 7), the function should change much faster, because x now has a much larger multiplier. Yet 5(100x + 7)⁴ wouldn't account for that speed difference at all.\n\nThe issue is that (3x + 7)⁵ is a **composite function** — a function tucked inside another function. The outer function is 'raise to the 5th power' and the inner function is '3x + 7.' When you differentiate, you must account for how fast *both* functions are changing. That's exactly what the **chain rule** does.\n\nHere's a real-world analogy. Suppose the temperature outside is rising at 2 degrees per hour, and a metal rod expands at 0.01 inches per degree. How fast is the rod expanding per hour? You multiply: 0.01 inches/degree × 2 degrees/hour = 0.02 inches/hour. You 'chained' two rates together. The chain rule in calculus does precisely this — it multiplies the rate of the outer function by the rate of the inner function."
+    },
+    {
+      "type": "explanation",
+      "heading": "The Chain Rule Formula",
+      "content": "If y = f(g(x)) — meaning you first apply g to x, then apply f to the result — the chain rule says:\n\n  dy/dx = f'(g(x)) · g'(x)\n\nIn words: take the derivative of the outer function, evaluated at the inner function (leave the inside untouched), then multiply by the derivative of the inner function.\n\nIn Leibniz notation, if y = f(u) and u = g(x), then:\n\n  dy/dx = (dy/du) · (du/dx)\n\nThis version looks like fraction cancellation — the du's appear to 'cancel.' They don't literally cancel (these are limits, not fractions), but the notation is engineered to suggest the right answer, which is one reason Leibniz notation is so powerful.\n\nThe single most common chain-rule mistake is *forgetting to multiply by the derivative of the inner function*. Students differentiate the outer function correctly and then stop. Build a reflex: every time, ask yourself, 'Did I multiply by the derivative of what's inside?'"
+    },
+    {
+      "type": "table",
+      "heading": "Common Composite Derivatives at a Glance",
+      "headers": ["Function", "Outer derivative", "× Inner derivative", "Result"],
+      "rows": [
+        ["[g(x)]ⁿ", "n[g(x)]ⁿ⁻¹", "g'(x)", "n[g(x)]ⁿ⁻¹·g'(x)"],
+        ["sin(g(x))", "cos(g(x))", "g'(x)", "cos(g(x))·g'(x)"],
+        ["cos(g(x))", "−sin(g(x))", "g'(x)", "−sin(g(x))·g'(x)"],
+        ["e^{g(x)}", "e^{g(x)}", "g'(x)", "e^{g(x)}·g'(x)"],
+        ["ln(g(x))", "1/g(x)", "g'(x)", "g'(x)/g(x)"],
+        ["√(g(x))", "1/(2√(g(x)))", "g'(x)", "g'(x)/(2√(g(x)))"]
+      ]
+    },
+    {
+      "type": "example",
+      "heading": "Basic Chain Rule Examples",
+      "content": "Example 1: Differentiate y = (3x + 7)⁵.\n  Outer function: u⁵, so dy/du = 5u⁴.\n  Inner function: u = 3x + 7, so du/dx = 3.\n  Chain rule: dy/dx = 5(3x + 7)⁴ · 3 = 15(3x + 7)⁴.\n\nExample 2: Differentiate y = √(x² + 9).\n  Rewrite: y = (x² + 9)^(1/2).\n  Outer: u^(1/2), derivative (1/2)u^(−1/2).\n  Inner: u = x² + 9, derivative 2x.\n  Chain rule: dy/dx = (1/2)(x² + 9)^(−1/2) · 2x = x / √(x² + 9).\n\nExample 3: Differentiate y = sin(4x²).\n  Outer: sin(u), derivative cos(u).\n  Inner: u = 4x², derivative 8x.\n  Chain rule: dy/dx = cos(4x²) · 8x = 8x cos(4x²).\n\nIn every case the pattern is identical: differentiate the outside, leave the inside unchanged, then multiply by the derivative of the inside."
+    },
+    {
+      "type": "callout",
+      "variant": "warning",
+      "heading": "The #1 Chain Rule Error: Forgetting the Inside",
+      "content": "Writing d/dx[sin(4x²)] = cos(4x²) is wrong — it forgets the factor 8x from the inner derivative. On the AP exam this single omission converts an otherwise-correct multi-step problem into a wrong answer, and graders see it constantly. Whenever the 'thing inside' is anything more complicated than a bare x, you owe a factor for its derivative. If the inside were just x (e.g., sin x), that factor is 1 and disappears — which is exactly why the simple rules looked like they had no chain step."
+    },
+    {
+      "type": "quiz",
+      "question": "Which is the correct derivative of y = cos(x³)?",
+      "options": ["−sin(x³)", "−sin(3x²)", "−3x²·sin(x³)", "3x²·cos(x³)"],
+      "correctIndex": 2,
+      "explanation": "Outer is cos(u) → derivative −sin(u), evaluated at the inner x³ gives −sin(x³). Then multiply by the inner derivative, d/dx[x³] = 3x², giving −3x²·sin(x³). The option −sin(x³) forgets the inside; −sin(3x²) wrongly differentiates inside the sine argument."
+    },
+    {
+      "type": "explanation",
+      "heading": "Identifying Inner and Outer Functions",
+      "content": "The hardest part of the chain rule isn't the formula — it's recognizing *when* to use it and correctly identifying which part is inner and which is outer.\n\nHere's a reliable method: ask yourself, 'If I were to evaluate this function at a specific number, what's the *last* operation I would perform?' That last operation is the outer function.\n\nFor (3x + 7)⁵: you'd first compute 3x + 7, then raise to the 5th power. The last operation — raising to the 5th power — is the outer function. The first operation — 3x + 7 — is the inner function.\n\nFor √(x² + 9): you'd first compute x² + 9, then take the square root. Outer = square root, inner = x² + 9.\n\nFor 1/(2x + 1)³: rewrite as (2x + 1)⁻³. Last operation = raise to the −3 power (outer); first operation = 2x + 1 (inner).\n\nThis 'last operation' test works every time. On the AP exam, compositions won't always be neatly nested in parentheses — sometimes you must *see* the composition hiding in the notation. Train yourself to ask: what is the last thing happening here?"
+    },
+    {
+      "type": "steps",
+      "heading": "A Reliable Procedure for the Chain Rule",
+      "steps": [
+        { "title": "Spot the composition", "content": "Ask 'what is the last operation I'd perform if I plugged in a number?' That operation is the outer function; everything it acts on is the inner function." },
+        { "title": "Differentiate the outer function", "content": "Apply the rule for the outer function, but leave the inner function completely untouched inside it. For [g(x)]⁵ this gives 5[g(x)]⁴." },
+        { "title": "Multiply by the inner derivative", "content": "Compute g'(x) separately and multiply. This is the step students forget — make it automatic." },
+        { "title": "Repeat for deeper layers", "content": "If the inner function is itself a composition, apply steps 2–3 again to it, generating one more factor for each layer." },
+        { "title": "Simplify", "content": "Collect constants and factor common terms. The AP exam often rewards a cleanly factored final form." }
+      ]
+    },
+    {
+      "type": "example",
+      "heading": "Chains Within Chains: Multiple Applications",
+      "content": "Differentiate y = ((2x + 1)³ + 5)⁴.\n\nThis is a three-layer composition. From outside to inside:\n  Layer 1 (outermost): ( · )⁴\n  Layer 2 (middle): ( · )³ + 5\n  Layer 3 (innermost): 2x + 1\n\nApply the chain rule layer by layer, from the outside in.\n\nStep 1: Differentiate the outermost function.\n  dy/dx = 4·((2x + 1)³ + 5)³ · d/dx[(2x + 1)³ + 5]\n\nStep 2: Differentiate (2x + 1)³ + 5. The +5 has derivative 0, so focus on (2x + 1)³.\n  d/dx[(2x + 1)³] = 3(2x + 1)² · d/dx[2x + 1] = 3(2x + 1)² · 2 = 6(2x + 1)²\n\nStep 3: Combine.\n  dy/dx = 4·((2x + 1)³ + 5)³ · 6(2x + 1)²\n  dy/dx = 24·(2x + 1)² · ((2x + 1)³ + 5)³\n\nNotice the pattern: each layer of composition produces another factor in the derivative. Three layers deep means three factors multiplied together. If you ever feel lost, peel the function like an onion — start at the outermost layer and work inward, applying the chain rule at each step."
+    },
+    {
+      "type": "quiz",
+      "question": "For y = e^(sin x), what is dy/dx?",
+      "options": ["e^(sin x)", "cos x · e^(sin x)", "e^(cos x)", "sin x · e^(sin x)"],
+      "correctIndex": 1,
+      "explanation": "The outer function eᵘ is its own derivative, giving e^(sin x). Multiply by the inner derivative d/dx[sin x] = cos x, producing cos x · e^(sin x). The answer e^(sin x) forgets the inside, and e^(cos x) wrongly differentiates inside the exponent."
+    },
+    {
+      "type": "callout",
+      "variant": "tip",
+      "heading": "Use Leibniz Notation to Stay Organized",
+      "content": "For nested functions, naming intermediate variables prevents errors. Write y = f(u), u = g(v), v = h(x); then dy/dx = (dy/du)(du/dv)(dv/dx). Computing each small derivative separately and multiplying is far more reliable than trying to do the whole chain in your head — especially under exam time pressure. The students who lose points are the ones rushing three operations at once."
+    },
+    {
+      "type": "deepdive",
+      "heading": "The Chain Rule Meets the Product and Quotient Rules",
+      "content": "In real AP problems, you'll often need the chain rule *together with* the product or quotient rule. The key is to stay organized and ask: what is the outermost structure?\n\nConsider y = x² · (5x − 1)⁴.\n\nThe outermost structure is a *product*: x² times (5x − 1)⁴. So start with the product rule:\n  dy/dx = (d/dx[x²]) · (5x − 1)⁴ + x² · (d/dx[(5x − 1)⁴])\n\nNow d/dx[x²] = 2x (power rule, no chain rule needed). And d/dx[(5x − 1)⁴] requires the chain rule: 4(5x − 1)³ · 5 = 20(5x − 1)³.\n\nPutting it together:\n  dy/dx = 2x(5x − 1)⁴ + 20x²(5x − 1)³\n\nFactor out the common 2x(5x − 1)³:\n  dy/dx = 2x(5x − 1)³ [(5x − 1) + 10x] = 2x(5x − 1)³ (15x − 1)\n\nFactoring isn't always required, but it's often expected on the AP exam for simplification and is essential when the next step is solving the derivative equal to zero.\n\nHere's the principle that saves you on complicated problems: **never try to apply two rules simultaneously.** Identify the outermost structure, apply its rule, then handle the inner derivatives one at a time. Write every step. The errors come from doing three things at once in your head."
+    },
+    {
+      "type": "callout",
+      "variant": "remember",
+      "heading": "The Chain Rule in One Breath",
+      "content": "Differentiate the outside, keep the inside, multiply by the derivative of the inside — and repeat for every layer. If your answer to a composite-function derivative has no factor coming from the inner function, you have almost certainly made the classic mistake."
+    },
+    {
+      "type": "keypoint",
+      "content": "Chain rule: d/dx[f(g(x))] = f'(g(x))·g'(x). Differentiate the outer function leaving the inner intact, then MULTIPLY by the derivative of the inner function; for nested compositions, peel one layer at a time and pick up one factor per layer."
+    }
+  ],
+  "aiContext": "AP Calculus AB Unit 3, the chain rule. Emphasize that the chain rule is the engine behind implicit differentiation, related rates, and the FTC with a variable upper limit, so mastery here pays off all year. The dominant error to watch for is forgetting the inner-function factor (e.g., writing cos(x³) instead of −3x²·sin(x³)); a second is mis-identifying the inner vs outer function, fixed by the 'last operation' test. Push students to combine the chain rule cleanly with the product and quotient rules by always attacking the outermost structure first. On the exam this appears as MCQs on single- and multi-layer compositions and as FRQ steps inside related-rates and accumulation problems, frequently asking for a slope at a point after differentiating."
+}

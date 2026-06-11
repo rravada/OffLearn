@@ -1,0 +1,99 @@
+{
+  "id": "ap-calc-ab-u8-average-value-and-net-change",
+  "title": "Average Value of a Function and Net Change",
+  "subject": "AP Calculus AB",
+  "unit": "Applications of Integration",
+  "track": "ap",
+  "difficulty": "ap",
+  "duration": "45 min",
+  "objectives": [
+    "Compute the average value of a function on [a, b] using (1/(b − a))∫ from a to b of f(x) dx.",
+    "Interpret average value geometrically as the height of an equal-area rectangle.",
+    "Apply the Net Change Theorem: the integral of a rate of change gives the net change in the quantity.",
+    "Distinguish average value of a function from average rate of change, and find a final amount from a rate and an initial value."
+  ],
+  "sections": [
+    {
+      "type": "explanation",
+      "heading": "Averaging Infinitely Many Values",
+      "content": "You know how to average a finite list of numbers: add them up and divide by how many there are. The average of 4, 6, and 8 is (4 + 6 + 8)/3 = 6. But what is the *average value* of a continuous function f(x) over an interval [a, b]? The function takes infinitely many values — one at every point — so you can't just add them and divide by a count.\n\nIntegration solves exactly this problem, because an integral is a continuous sum. To average a function, you 'add up' all its values with ∫ from a to b of f(x) dx, then divide by the length of the interval, b − a, which plays the role of 'how many.' That gives the average value:\n\n  f_avg = (1/(b − a)) ∫ from a to b of f(x) dx.\n\nThe formula is the continuous version of 'sum divided by count': the integral is the continuous sum of the function's values, and (b − a) is the continuous analog of the number of values.\n\nThis matters in any setting where a quantity varies continuously and you want a single representative number: the average temperature over a day, the average velocity over a trip, the average concentration of a drug over an hour. You couldn't get these by averaging a handful of readings — the true average accounts for every instant, and that's precisely what the integral delivers."
+    },
+    {
+      "type": "explanation",
+      "heading": "The Equal-Area Rectangle",
+      "content": "The average value has a clean geometric meaning that makes the formula intuitive. Rearrange it: f_avg·(b − a) = ∫ from a to b of f(x) dx. The right side is the (signed) area under the curve; the left side is the area of a rectangle with width (b − a) and height f_avg. So the average value is the height of the rectangle that has the *same area* as the region under the curve.\n\nPicture the graph of f over [a, b] with its hills and valleys. The average value is the single horizontal line such that the area of the rectangle beneath it exactly equals the area under the wavy curve. The parts of the curve poking above that line contribute exactly enough extra area to fill in the parts that dip below it — the average level at which the area balances.\n\nThis is why average value is a 'height,' carrying the units of f itself, not a rate. The average value of a velocity is a velocity; the average value of a temperature is a temperature. Keeping that straight is important, because it's easy to confuse this with average rate of change, which is a slope with different units. The equal-area rectangle picture is the antidote: average value is a representative *height* of the function, and the rectangle makes that concrete."
+    },
+    {
+      "type": "steps",
+      "heading": "Computing an Average Value",
+      "steps": [
+        { "title": "Set up the formula", "content": "Write f_avg = (1/(b − a))∫ from a to b of f(x) dx for the given function and interval." },
+        { "title": "Evaluate the definite integral", "content": "Find an antiderivative and apply the FTC to compute ∫ from a to b of f(x) dx." },
+        { "title": "Divide by the interval length", "content": "Multiply the integral by 1/(b − a) — the most-forgotten step." },
+        { "title": "Interpret with units", "content": "State the result as a value (height) of f with f's units, not as a rate." }
+      ]
+    },
+    {
+      "type": "example",
+      "heading": "Average Value of f(x) = x²",
+      "content": "Find the average value of f(x) = x² on the interval [0, 3].\n\nStep 1: f_avg = (1/(3 − 0)) ∫ from 0 to 3 of x² dx.\n\nStep 2: Evaluate the integral. An antiderivative is x³/3, so\n  ∫ from 0 to 3 of x² dx = [x³/3] from 0 to 3 = 27/3 − 0 = 9.\n\nStep 3: Divide by the interval length:\n  f_avg = (1/3)(9) = 3.\n\nSo the average value of x² on [0, 3] is 3. Sanity check with the equal-area picture: a rectangle of width 3 and height 3 has area 9, exactly matching the area under the parabola. Note the average value 3 is the function's height at x = √3 ≈ 1.73 (since (√3)² = 3), an interior point — a fact the Mean Value Theorem for Integrals guarantees and the deep-dive explains. The most common slip here is computing the integral (9) and forgetting to divide by 3."
+    },
+    {
+      "type": "callout",
+      "variant": "warning",
+      "heading": "Average Value ≠ Average Rate of Change",
+      "content": "These two 'averages' are different and carry different units. Average VALUE of f on [a, b] is (1/(b−a))∫ₐᵇ f(x) dx — a representative height of the function, in f's units. Average RATE OF CHANGE of f on [a, b] is [f(b) − f(a)]/(b − a) — a secant slope, in (f-units)/(x-units). If f is a position, its average value is an average position (a distance), while its average rate of change is an average velocity. Read the question carefully: 'average value of the function' means integrate and divide by (b−a); 'average rate of change' means the secant slope. And don't forget the 1/(b−a) factor on the average value."
+    },
+    {
+      "type": "quiz",
+      "question": "What is the average value of f(x) = 6x on the interval [0, 2]?",
+      "options": ["6", "12", "3", "24"],
+      "correctIndex": 0,
+      "explanation": "f_avg = (1/(2−0))∫₀² 6x dx = (1/2)[3x²]₀² = (1/2)(12) = 6. The integral alone is 12; forgetting to divide by the interval length 2 gives the wrong answer 12."
+    },
+    {
+      "type": "explanation",
+      "heading": "The Net Change Theorem",
+      "content": "The second big idea of this lesson connects integration to accumulation in context. The Net Change Theorem says that the integral of a rate of change gives the net change in the quantity:\n\n  ∫ from a to b of f'(x) dx = f(b) − f(a).\n\nThis is just the Fundamental Theorem of Calculus read in the language of rates. If f'(x) is how fast a quantity is changing, then accumulating that rate from a to b yields the total (net) change in the quantity over that interval.\n\nThe consequence used constantly on the AP exam: a final amount equals the initial amount plus the accumulated change. If a quantity starts at f(a) and changes at rate f'(x), then\n\n  f(b) = f(a) + ∫ from a to b of f'(x) dx.\n\nGiven a rate function (often a flow rate, a rate of consumption, or a rate of production) and a starting value, you integrate the rate to find how much was added or removed, then add it to the start to get the final amount. Because the integral is *net* (signed), inflows count positive and outflows negative, so it automatically handles a rate that is sometimes positive and sometimes negative — the net change is what comes out. This is the precise, quantitative form of the accumulation idea from the integration unit, and it's the engine behind nearly every applied integral problem in this unit."
+    },
+    {
+      "type": "example",
+      "heading": "Net Change From a Rate",
+      "content": "Water flows into a tank at a rate of r(t) = 3t liters per minute, for 0 ≤ t ≤ 4 minutes. The tank starts with 10 liters. (a) How much water is added during the 4 minutes? (b) How much is in the tank at t = 4?\n\nPart (a) — the net change is the integral of the rate:\n  ∫ from 0 to 4 of 3t dt = [3t²/2] from 0 to 4 = (3·16/2) − 0 = 24 liters added.\n\nPart (b) — final amount equals initial plus net change:\n  Amount(4) = 10 + ∫ from 0 to 4 of 3t dt = 10 + 24 = 34 liters.\n\nNotice the units behave correctly: the rate is in liters/minute and dt is in minutes, so the integral carries liters — an amount, not a rate. This 'integrate the rate, add to the start' pattern is exactly how AP problems ask you to find a total from a rate. If the rate were sometimes negative (water also draining), the same integral would give the *net* change automatically, since outflow contributes negative area."
+    },
+    {
+      "type": "table",
+      "heading": "Three 'Averages and Changes' Compared",
+      "headers": ["Quantity", "Formula", "Units / meaning"],
+      "rows": [
+        ["Average value of f", "(1/(b−a))∫ₐᵇ f(x) dx", "a height of f (f's units)"],
+        ["Average rate of change of f", "[f(b) − f(a)]/(b − a)", "a slope ((f-units)/(x-units))"],
+        ["Net change of f", "∫ₐᵇ f'(x) dx = f(b) − f(a)", "total change in f (f's units)"],
+        ["Final amount", "f(a) + ∫ₐᵇ f'(x) dx", "initial value plus accumulated change"]
+      ]
+    },
+    {
+      "type": "quiz",
+      "question": "A population changes at a rate of P'(t) people per year. If P(0) = 500 and ∫ from 0 to 10 of P'(t) dt = 320, what is P(10)?",
+      "options": ["320", "820", "500", "180"],
+      "correctIndex": 1,
+      "explanation": "By the Net Change Theorem, P(10) = P(0) + ∫₀¹⁰ P'(t) dt = 500 + 320 = 820. The integral of the rate gives the net change (320), which is added to the initial value, not used by itself."
+    },
+    {
+      "type": "callout",
+      "variant": "tip",
+      "heading": "Rate In, Amount Out",
+      "content": "On AP free response, when you're given a RATE (flow rate, rate of sales, rate of water use) and asked for a total or a final amount, the move is to INTEGRATE the rate over the interval, then add the initial value if a final amount is wanted. State units: integrating (units/time)·(time) yields units. Watch the wording: 'how much was added/used' is the net-change integral by itself; 'how much is there at the end' is initial plus that integral. For average value, never forget the 1/(b−a) factor — the single most common error in this whole topic."
+    },
+    {
+      "type": "deepdive",
+      "heading": "The Mean Value Theorem for Integrals",
+      "content": "The average value of a function isn't just a computed number — there's a theorem guaranteeing the function actually *attains* that average somewhere, which both justifies the 'average' name and connects this lesson to the theorems of Unit 5.\n\nThe Mean Value Theorem for Integrals states: if f is continuous on [a, b], then there exists at least one c in [a, b] such that f(c) = f_avg = (1/(b − a))∫ from a to b of f(x) dx. In words, a continuous function must hit its own average value at some point in the interval. In the equal-area picture, this is the x-value where the curve crosses the horizontal 'average' line — the place where the curve's height exactly equals the rectangle's height. In the x² example, that point was x = √3, where f(√3) = 3 = f_avg.\n\nThe theorem is the integral analog of the ordinary Mean Value Theorem (which guaranteed a point where the instantaneous rate equals the average rate). In fact the two are siblings: the MVT for derivatives says the tangent slope equals the average slope somewhere; the MVT for integrals says the function value equals the average value somewhere. Both are existence guarantees that a continuous (or differentiable) process can't stay entirely above or entirely below its average — it must pass through it.\n\nWhy it matters conceptually: it confirms that 'average value' deserves its name. An average that the quantity never actually achieves would be suspect, but the theorem assures us the function genuinely reaches its average level, so f_avg is a true representative value, not just an artifact of the formula. The same continuity that makes the integral well-defined is what forces the curve to cross its average. This tidy link — between averaging, area, and the mean-value theorems — is a small but satisfying piece of the unity of calculus, and it's the kind of conceptual connection AP free-response questions reward when they ask you to interpret an average value in context."
+    },
+    {
+      "type": "keypoint",
+      "content": "Average value of f on [a, b] is f_avg = (1/(b − a))∫ from a to b of f(x) dx — a representative height of f (remember to divide by b − a), distinct from average rate of change (a secant slope). The Net Change Theorem gives ∫ from a to b of f'(x) dx = f(b) − f(a), so integrating a rate yields net change and final amount = initial + ∫(rate). The Mean Value Theorem for Integrals guarantees f attains its average value at some c."
+    }
+  ],
+  "aiContext": "AP Calculus AB Unit 8, average value of a function and net change. Average value is f_avg = (1/(b−a))∫ₐᵇ f dx — a representative HEIGHT of f (same units as f), interpreted as the equal-area rectangle; the top errors are forgetting the 1/(b−a) factor and confusing it with average RATE of change [f(b)−f(a)]/(b−a), a slope. The Net Change Theorem ∫ₐᵇ f'(x) dx = f(b) − f(a) means integrating a rate gives net change, so final amount = initial + ∫(rate); this is the standard 'given a rate, find the total/final amount' free-response setup, where stating units and reading 'amount added' vs 'amount present' matters. Note the Mean Value Theorem for Integrals guarantees f(c) = f_avg for some c, the integral analog of the ordinary MVT. The net integral handles sign automatically (inflow positive, outflow negative)."
+}

@@ -1,0 +1,31 @@
+{
+  "id": "ap-bio-carbohydrates-and-lipids",
+  "title": "Carbohydrates and Lipids",
+  "subject": "AP Biology",
+  "chunks": [
+    { "id": "c1", "text": "A monomer is a small molecular subunit, and a polymer is a large molecule built from many monomers linked together. Carbohydrates, proteins, and nucleic acids are polymers built from repeating monomers." },
+    { "id": "c2", "text": "Dehydration synthesis, also called condensation, is the reaction that joins two monomers into a polymer by removing a water molecule. A hydroxyl group from one monomer and a hydrogen from the other combine and leave as H2O, forming a new covalent bond in their place." },
+    { "id": "c3", "text": "Hydrolysis is the reaction that breaks a polymer into monomers by adding a water molecule across a bond. One fragment receives a hydroxyl group and the other receives a hydrogen. Digestion of food is hydrolysis of polymers into absorbable monomers." },
+    { "id": "c4", "text": "To build a polymer of n monomers, the cell carries out (n minus 1) dehydration synthesis reactions and removes (n minus 1) water molecules. To fully hydrolyze that same polymer, the cell adds (n minus 1) water molecules." },
+    { "id": "c5", "text": "Carbohydrates are made of carbon, hydrogen, and oxygen, usually in an approximate ratio of 1:2:1. The name carbohydrate means hydrated carbon." },
+    { "id": "c6", "text": "A monosaccharide is a single sugar unit and the simplest carbohydrate. Glucose, with the formula C6H12O6, is the most important monosaccharide because it is the primary fuel for cellular respiration and the product of photosynthesis." },
+    { "id": "c7", "text": "A disaccharide is two monosaccharides joined by a glycosidic bond. Sucrose is glucose plus fructose, lactose is glucose plus galactose, and maltose is glucose plus glucose." },
+    { "id": "c8", "text": "A polysaccharide is a long chain of many monosaccharides. Starch, glycogen, and cellulose are the three major polysaccharides, and all three are built entirely from glucose monomers." },
+    { "id": "c9", "text": "Starch is the energy-storage polysaccharide of plants, found in roots, seeds, and tubers. Its lightly branched, helical glucose chains are easily hydrolyzed to release glucose." },
+    { "id": "c10", "text": "Glycogen is the energy-storage polysaccharide of animals, stored mainly in the liver and muscles. It consists of highly branched glucose chains that can be mobilized quickly when energy is needed." },
+    { "id": "c11", "text": "Cellulose is a structural polysaccharide found in plant cell walls. Its straight, unbranched glucose chains hydrogen-bond into tough fibers that give plants support and resist digestion." },
+    { "id": "c12", "text": "Humans can digest starch and glycogen but cannot digest cellulose, even though all three are glucose polymers. The glycosidic bonds in cellulose are oriented differently, and humans lack the enzyme needed to hydrolyze them." },
+    { "id": "c13", "text": "Starch, glycogen, and cellulose illustrate that structure determines function: the same glucose monomer produces an energy store or a structural fiber depending on how the glucose units are bonded and arranged." },
+    { "id": "c14", "text": "Lipids are hydrophobic biological molecules that do not dissolve in water. Unlike carbohydrates and proteins, lipids are not true polymers because they are not built from long chains of repeating identical monomers." },
+    { "id": "c15", "text": "A triglyceride, or fat, consists of one glycerol molecule bonded to three fatty acid chains by ester bonds formed through dehydration synthesis. The long hydrocarbon tails make fats energy-dense, storing about 9 kilocalories per gram, more than double the roughly 4 kilocalories per gram of carbohydrates." },
+    { "id": "c16", "text": "A saturated fatty acid has no carbon-carbon double bonds; every carbon holds as many hydrogens as possible. Its straight chains pack tightly, so saturated fats such as butter and lard are solid at room temperature." },
+    { "id": "c17", "text": "An unsaturated fatty acid has one or more carbon-carbon double bonds, and each double bond creates a kink in the chain. Kinked chains cannot pack tightly, so unsaturated fats such as olive oil and fish oil are liquid at room temperature." },
+    { "id": "c18", "text": "Hydrogenation removes double bonds by adding hydrogen, straightening unsaturated fatty acid tails so they pack tightly and the fat becomes solid. This process can create trans fats, which behave like saturated fats and are linked to heart disease." },
+    { "id": "c19", "text": "A phospholipid resembles a triglyceride but has one fatty acid tail replaced by a phosphate group attached to a small polar molecule. This makes it amphipathic, with a hydrophilic phosphate head and two hydrophobic fatty acid tails." },
+    { "id": "c20", "text": "In water, phospholipids spontaneously arrange into a bilayer with hydrophilic heads facing the water on both sides and hydrophobic tails facing inward. This phospholipid bilayer is the fundamental structure of every cell membrane and forms without any energy input due to the hydrophobic effect." },
+    { "id": "c21", "text": "Steroids are lipids made of four fused carbon rings. Cholesterol is the most important steroid in animal cells and is embedded within the phospholipid bilayer of membranes." },
+    { "id": "c22", "text": "Cholesterol acts as a fluidity buffer in animal cell membranes: at high temperatures it restrains phospholipid movement and reduces fluidity, and at low temperatures it spaces phospholipids apart and prevents the membrane from becoming too rigid." },
+    { "id": "c23", "text": "Cholesterol is the precursor for steroid hormones such as estrogen, testosterone, and cortisol. Because these hormones are lipid-soluble, they pass directly through cell membranes and bind to receptors inside the cell, unlike water-soluble hormones that bind surface receptors." },
+    { "id": "c24", "text": "On AP Biology free-response questions, the command word matters: DESCRIBE asks for a structural fact, while EXPLAIN or JUSTIFY requires linking the structure to its functional or physical consequence, such as connecting double bonds in fatty acids to a fat being liquid at room temperature." }
+  ]
+}

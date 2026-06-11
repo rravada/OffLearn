@@ -1,0 +1,101 @@
+{
+  "id": "ap-calc-ab-u6-the-definite-integral",
+  "title": "The Definite Integral and Its Properties",
+  "subject": "AP Calculus AB",
+  "unit": "Integration and Accumulation of Change",
+  "track": "ap",
+  "difficulty": "ap",
+  "duration": "45 min",
+  "objectives": [
+    "Interpret the definite integral as the limit of Riemann sums and as signed (net) area.",
+    "Evaluate definite integrals geometrically using known areas of rectangles, triangles, and semicircles.",
+    "Apply the properties of definite integrals: linearity, interval additivity, reversed limits, and zero-width.",
+    "Distinguish net signed area from total area and interpret the integral of a rate."
+  ],
+  "sections": [
+    {
+      "type": "explanation",
+      "heading": "The Definite Integral as Signed Area",
+      "content": "In the last lesson you saw that adding up thinner and thinner rectangles converges to the exact area under a curve, and that this limit is written ∫ from a to b of f(x) dx — the definite integral. Now we sharpen what that number actually measures, because there's a crucial subtlety: the definite integral computes *signed* area, not just area.\n\nWhen f(x) is positive, its graph is above the x-axis, the rectangles have positive height, and the integral accumulates positive area — the ordinary area between the curve and the axis. But when f(x) is negative, the graph dips below the axis, the rectangle heights are negative, and the integral accumulates *negative* area. The definite integral adds these signed contributions together. So a region below the axis counts against a region above it.\n\nThis is why ∫ from a to b of f(x) dx is called the *net signed area*: it's the area above the axis minus the area below it. For example, the integral of sin x over a full period from 0 to 2π is exactly 0, because the positive arch from 0 to π is perfectly canceled by the negative arch from π to 2π. The geometric area is 4, but the net signed area is 0. Keeping the distinction between signed area (what the integral gives) and total area (always positive) straight is one of the most important habits in integration, and it's tested constantly."
+    },
+    {
+      "type": "explanation",
+      "heading": "Properties of the Definite Integral",
+      "content": "Because the definite integral is built from sums, it inherits the algebra of sums. These properties let you manipulate integrals without ever computing an antiderivative, and the AP exam relies on them heavily.\n\nLinearity comes in two pieces. The constant multiple rule says ∫ k·f(x) dx = k·∫ f(x) dx — you can pull a constant outside. The sum/difference rule says ∫ [f(x) ± g(x)] dx = ∫ f(x) dx ± ∫ g(x) dx — you can split across addition and subtraction. Together these mean an integral of a linear combination is the same linear combination of the integrals.\n\nInterval additivity says ∫ from a to b + ∫ from b to c = ∫ from a to c. If you accumulate from a to b and then from b to c, you've accumulated from a to c — area is additive over adjacent intervals. This holds even if b is outside [a, c], thanks to the next rule.\n\nReversing the limits flips the sign: ∫ from a to b of f(x) dx = −∫ from b to a of f(x) dx. Integrating 'backward' negates the result, which makes sense because every Δx becomes negative. And the zero-width rule: ∫ from a to a of f(x) dx = 0, since there's no interval to accumulate over. These four properties, combined, turn given integral values into many new ones."
+    },
+    {
+      "type": "table",
+      "heading": "Definite Integral Properties",
+      "headers": ["Property", "Statement"],
+      "rows": [
+        ["Constant multiple", "∫ₐᵇ k·f(x) dx = k·∫ₐᵇ f(x) dx"],
+        ["Sum/difference", "∫ₐᵇ [f ± g] dx = ∫ₐᵇ f dx ± ∫ₐᵇ g dx"],
+        ["Interval additivity", "∫ₐᵇ f dx + ∫_b^c f dx = ∫_a^c f dx"],
+        ["Reversed limits", "∫ₐᵇ f dx = −∫_b^a f dx"],
+        ["Zero width", "∫ₐ^a f dx = 0"],
+        ["Comparison", "if f(x) ≥ g(x) on [a, b], then ∫ₐᵇ f dx ≥ ∫ₐᵇ g dx"]
+      ]
+    },
+    {
+      "type": "example",
+      "heading": "Evaluating Integrals With Geometry",
+      "content": "When the integrand graphs as a familiar shape, you can find the definite integral by computing geometric area — no antiderivative needed.\n\nExample 1: ∫ from 0 to 4 of (1/2 x) dx. The graph of y = (1/2)x from x = 0 to 4 is a line forming a right triangle with base 4 and height 2 (since y = 2 at x = 4). Area = (1/2)(4)(2) = 4. Since the region is above the axis, the integral is +4.\n\nExample 2: ∫ from −2 to 2 of √(4 − x²) dx. The graph y = √(4 − x²) is the upper half of the circle x² + y² = 4 (radius 2). The region is a semicircle of radius 2, so its area is (1/2)π(2)² = 2π. The integral equals 2π ≈ 6.283.\n\nExample 3: ∫ from 0 to 3 of (x − 2) dx. The line y = x − 2 is below the axis on [0, 2] (a triangle of area (1/2)(2)(2) = 2, counted as −2) and above on [2, 3] (a triangle of area (1/2)(1)(1) = 0.5, counted as +0.5). The net signed area is −2 + 0.5 = −1.5. The total (geometric) area would instead be 2 + 0.5 = 2.5."
+    },
+    {
+      "type": "steps",
+      "heading": "Evaluating a Definite Integral by Geometry",
+      "steps": [
+        { "title": "Sketch the region", "content": "Graph the integrand over [a, b] and identify the regions between the curve and the x-axis." },
+        { "title": "Break it into known shapes", "content": "Split the region into triangles, rectangles, and semicircles whose areas you can compute, dividing at the x-intercepts." },
+        { "title": "Attach signs", "content": "Count area above the x-axis as positive and area below as negative." },
+        { "title": "Add the signed areas", "content": "Sum the signed pieces to get the value of the definite integral (net signed area); for total area instead, add the absolute values." }
+      ]
+    },
+    {
+      "type": "callout",
+      "variant": "warning",
+      "heading": "The Integral Is Net Signed Area, Not Total Area",
+      "content": "A definite integral counts area below the x-axis as negative, so it generally does NOT equal the total geometric area. If a problem asks for the value of ∫ₐᵇ f dx, include the negative contributions; if it asks for the total area between the curve and the axis, you must split at the x-intercepts and add the absolute values of each piece. Confusing these is a top exam error: ∫ from 0 to 2π of sin x dx = 0 (net), but the total area enclosed is 4. Read whether the question wants the signed integral or the total area."
+    },
+    {
+      "type": "quiz",
+      "question": "Given that ∫ from 0 to 3 of f(x) dx = 10 and the region from x = 3 to x = 5 lies entirely below the x-axis with geometric area 4, what is ∫ from 0 to 5 of f(x) dx?",
+      "options": ["14", "6", "40", "−6"],
+      "correctIndex": 1,
+      "explanation": "The piece from 3 to 5 is below the axis, contributing −4 to the integral. By interval additivity, ∫₀⁵ f = ∫₀³ f + ∫₃⁵ f = 10 + (−4) = 6. The answer 14 wrongly adds the area as positive, ignoring that below-axis area is negative."
+    },
+    {
+      "type": "explanation",
+      "heading": "Combining Integrals With the Properties",
+      "content": "A signature AP question gives you a few definite integral values and asks you to assemble others using the properties — no formula for f is ever provided. The skill is recognizing which property bridges what you're given to what you want.\n\nSuppose you know ∫ from 0 to 3 of f(x) dx = 5 and ∫ from 3 to 7 of f(x) dx = 2. Interval additivity immediately gives ∫ from 0 to 7 of f(x) dx = 5 + 2 = 7. Reversing limits gives ∫ from 7 to 0 of f(x) dx = −7. The constant multiple rule gives ∫ from 0 to 3 of 4f(x) dx = 4·5 = 20. And if you also knew ∫ from 0 to 3 of g(x) dx = 1, the sum rule would give ∫ from 0 to 3 of [f(x) + g(x)] dx = 5 + 1 = 6, or ∫ from 0 to 3 of [2f(x) − 3g(x)] dx = 2·5 − 3·1 = 7.\n\nThe strategy is always the same: write the target integral, then use additivity to adjust the limits and linearity to adjust the integrand until it's expressed entirely in terms of the quantities you were given. These problems test whether you truly understand the integral as an accumulating, sign-sensitive, additive quantity rather than just a computation to crank through."
+    },
+    {
+      "type": "example",
+      "heading": "Working With Given Integral Values",
+      "content": "Suppose ∫ from 1 to 4 of f(x) dx = 8 and ∫ from 1 to 6 of f(x) dx = 3. Find ∫ from 4 to 6 of f(x) dx.\n\nUse interval additivity: ∫ from 1 to 4 + ∫ from 4 to 6 = ∫ from 1 to 6.\n  8 + ∫ from 4 to 6 of f(x) dx = 3\n  ∫ from 4 to 6 of f(x) dx = 3 − 8 = −5.\n\nThe negative value tells you the net signed area from 4 to 6 is below the axis on balance.\n\nNow find ∫ from 6 to 1 of 3f(x) dx. First the constant multiple: ∫ from 1 to 6 of 3f(x) dx = 3·3 = 9. Then reverse the limits, which flips the sign: ∫ from 6 to 1 of 3f(x) dx = −9.\n\nEvery step used a property — additivity to isolate the unknown interval, then the constant multiple and reversed-limit rules — without ever knowing the formula for f. This is exactly how the AP exam expects you to reason with definite integrals."
+    },
+    {
+      "type": "quiz",
+      "question": "If ∫ from 2 to 5 of f(x) dx = 9, what is ∫ from 5 to 2 of 2f(x) dx?",
+      "options": ["18", "−18", "9", "−9"],
+      "correctIndex": 1,
+      "explanation": "First the constant multiple rule: ∫ from 2 to 5 of 2f dx = 2·9 = 18. Reversing the limits flips the sign, so ∫ from 5 to 2 of 2f dx = −18. Both properties must be applied: the factor of 2 and the sign flip from swapping the limits."
+    },
+    {
+      "type": "callout",
+      "variant": "tip",
+      "heading": "Let the Properties Do the Work",
+      "content": "When an AP problem gives integral values and asks for a combination, resist the urge to find f. Instead: use interval additivity to get the limits you need, the reversed-limit rule to flip a sign, and linearity (constant multiple and sum/difference) to handle coefficients and combinations. Watch the order of the limits carefully — a swapped interval is the most common sign error. Also recall the comparison property: if one function stays above another on the interval, its integral is at least as large, which lets you bound an integral you can't evaluate exactly."
+    },
+    {
+      "type": "deepdive",
+      "heading": "Net Signed Area and the Meaning of Integrating a Rate",
+      "content": "The signed nature of the definite integral isn't a technicality — it's exactly what makes integrals describe the real world correctly, especially when the integrand is a rate of change.\n\nSuppose v(t) is the velocity of a particle, with positive meaning rightward motion and negative meaning leftward. Then ∫ from a to b of v(t) dt is the *displacement* — the net change in position. The signed area handles direction automatically: time spent moving right contributes positive area, time spent moving left contributes negative area, and the integral nets them, giving where the particle ended up relative to where it started. If instead you want the *total distance traveled*, you must integrate the speed |v(t)|, which makes every contribution positive — this is the net-vs-total distinction in motion form, and you'll formalize it in the applications unit.\n\nThe same logic governs any rate. If r(t) is the rate water flows into a tank (positive) or out (negative), then ∫ from a to b of r(t) dt is the *net change* in the amount of water — inflow minus outflow. This is the seed of the accumulation idea: the integral of a rate of change over an interval equals the net change in the underlying quantity. That single sentence, made precise, is the Fundamental Theorem of Calculus, which the next lessons develop.\n\nSo the properties you learned aren't arbitrary rules. Interval additivity reflects that net changes over adjacent time spans add up. The reversed-limit sign flip reflects that running time backward reverses the net change. Linearity reflects that doubling a rate doubles the accumulation. Each property is a true statement about how accumulated quantities behave — which is why understanding the definite integral as signed, additive accumulation, rather than as a mechanical area computation, pays off through the entire rest of calculus."
+    },
+    {
+      "type": "keypoint",
+      "content": "The definite integral ∫ₐᵇ f(x) dx is the limit of Riemann sums and equals net signed area — area above the axis minus area below. It can be found geometrically for familiar shapes. Key properties: linearity (constant multiple and sum/difference), interval additivity, reversed limits flip the sign, and zero width gives 0. The integral of a rate over an interval is the net change in the quantity."
+    }
+  ],
+  "aiContext": "AP Calculus AB Unit 6, the definite integral and its properties. Emphasize that the definite integral is the limit of Riemann sums and computes NET SIGNED area (above minus below the axis), so it generally differs from total geometric area — a top exam pitfall (∫sin over a period is 0, total area is 4). Students should evaluate integrals geometrically (triangles, rectangles, semicircles) and fluently apply the properties: linearity, interval additivity, reversed limits (sign flip), and zero width, especially in the common free-response setup that gives integral values and asks for combinations without any formula for f. Stress watching the order of limits to avoid sign errors. Connect the signed nature to integrating a rate (velocity gives displacement, |velocity| gives distance), foreshadowing accumulation and the FTC."
+}

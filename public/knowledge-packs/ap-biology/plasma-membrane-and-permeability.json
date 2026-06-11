@@ -1,0 +1,29 @@
+{
+  "id": "ap-bio-plasma-membrane-and-permeability",
+  "title": "The Plasma Membrane and Permeability",
+  "subject": "AP Biology",
+  "chunks": [
+    { "id": "c1", "text": "The fluid mosaic model describes the plasma membrane as a fluid phospholipid bilayer with an embedded mosaic of proteins, cholesterol, and surface carbohydrates. The membrane is fluid because its molecules move, and it is a mosaic because it is a patchwork of different molecules." },
+    { "id": "c2", "text": "The foundation of the membrane is the phospholipid bilayer. Each phospholipid is amphipathic, with a hydrophilic phosphate head facing the watery environments inside and outside the cell and two hydrophobic fatty acid tails tucked into the oily middle." },
+    { "id": "c3", "text": "The membrane is fluid because individual phospholipids slide sideways past their neighbors very rapidly. Fluidity lets the membrane bend, self-seal when punctured, and allow embedded proteins to move." },
+    { "id": "c4", "text": "Integral, or transmembrane, proteins span the entire bilayer and often act as channels, carriers, or pumps that move materials across the membrane, as well as receptors." },
+    { "id": "c5", "text": "Peripheral proteins sit loosely on one surface of the membrane, often anchoring the cytoskeleton or assisting other proteins, rather than spanning the bilayer." },
+    { "id": "c6", "text": "Cholesterol is found between the phospholipids in animal cell membranes and acts as a fluidity buffer. At warm temperatures it restrains phospholipids and reduces fluidity; at cold temperatures it spaces them apart and prevents the membrane from solidifying." },
+    { "id": "c7", "text": "Membrane carbohydrates attach to proteins to form glycoproteins or to lipids to form glycolipids, and they are located on the outer surface of the membrane. They serve as recognition tags that let cells identify one another." },
+    { "id": "c8", "text": "Cell-surface carbohydrate tags allow the immune system to distinguish a body's own cells from invaders, and they determine human blood types A, B, AB, and O based on which carbohydrates are present on red blood cells." },
+    { "id": "c9", "text": "Selective permeability means the membrane lets some substances cross freely while blocking others. Whether a molecule can cross the bilayer unaided depends on its size and its polarity relative to the hydrophobic core." },
+    { "id": "c10", "text": "Small nonpolar molecules such as oxygen and carbon dioxide cross the phospholipid bilayer freely by simple diffusion because they dissolve into the hydrophobic core of fatty acid tails." },
+    { "id": "c11", "text": "Large or polar and charged molecules cannot cross the bare phospholipid bilayer because the hydrophobic core repels them. Ions such as sodium and potassium, and large polar molecules such as glucose and amino acids, require transport proteins." },
+    { "id": "c12", "text": "Water is polar, so it crosses the membrane slowly on its own because its molecules are small, but it mostly moves quickly through channel proteins called aquaporins. Water is a common exception students mislabel as nonpolar." },
+    { "id": "c13", "text": "To predict whether a molecule crosses the bilayer unaided, check its polarity and its size: small and nonpolar molecules cross freely, while large or charged molecules require a transport protein." },
+    { "id": "c14", "text": "Membrane fluidity must be carefully regulated: a membrane that is too rigid cracks and cannot transport materials, while a membrane that is too fluid leaks and falls apart." },
+    { "id": "c15", "text": "Fatty acid saturation regulates membrane fluidity. Unsaturated fatty acids have kinks that prevent tight packing and keep the membrane fluid at low temperatures, while saturated fatty acids pack tightly and make membranes more rigid." },
+    { "id": "c16", "text": "Many organisms, including bacteria, fish, and plants, remodel their membranes to include more unsaturated fatty acids in cold conditions so that the membrane does not solidify and lose function." },
+    { "id": "c17", "text": "Membrane proteins perform several jobs: transport proteins move substances across, receptor proteins bind signaling molecules, enzymatic proteins catalyze reactions, recognition proteins serve as identity tags, and attachment proteins anchor the membrane to the cytoskeleton and to other cells." },
+    { "id": "c18", "text": "Transport proteins include channels that form selective tunnels, carriers that change shape to ferry molecules, and pumps that use energy to move substances against their concentration gradients." },
+    { "id": "c19", "text": "Receptor proteins in the membrane bind signaling molecules such as hormones on the outside of the cell and trigger responses inside the cell, which is the basis of cell signaling." },
+    { "id": "c20", "text": "The plasma membrane is not a static rigid wall but a dynamic, fluid structure. Its selective permeability and embedded proteins make it the cell's controlled border for transport, signaling, and recognition." },
+    { "id": "c21", "text": "On AP Biology free-response questions about permeability, full credit requires justifying whether a molecule can cross in terms of both size and polarity relative to the hydrophobic core, and naming the type of protein needed, such as a channel, carrier, or pump." },
+    { "id": "c22", "text": "Selective permeability creates the cell's need for controlled membrane transport, and receptor proteins create the cell's ability to respond to its environment, linking membrane structure to transport and signaling functions." }
+  ]
+}

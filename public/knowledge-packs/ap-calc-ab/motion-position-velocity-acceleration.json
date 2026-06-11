@@ -1,0 +1,29 @@
+{
+  "id": "ap-calc-ab-motion-position-velocity-acceleration",
+  "title": "Straight-Line Motion: Position, Velocity, and Acceleration",
+  "subject": "AP Calculus AB",
+  "chunks": [
+    { "id": "c1", "text": "For a particle moving along a line, position s(t) is its signed location, velocity is v(t) = s'(t), and acceleration is a(t) = v'(t) = s''(t)." },
+    { "id": "c2", "text": "Velocity is the derivative of position and acceleration is the derivative of velocity, so acceleration is the second derivative of position." },
+    { "id": "c3", "text": "Velocity is signed: v(t) > 0 means the particle moves in the positive direction and v(t) < 0 means it moves in the negative direction." },
+    { "id": "c4", "text": "When v(t) = 0 the particle is instantaneously at rest, and these are the only times it can change direction." },
+    { "id": "c5", "text": "A particle changes direction at a time where v(t) = 0 only if v actually changes sign there; a velocity that touches zero without changing sign means a momentary pause, not a reversal." },
+    { "id": "c6", "text": "Speed is the absolute value of velocity, |v(t)|, and is never negative; it measures how fast the particle moves regardless of direction." },
+    { "id": "c7", "text": "Velocity and speed are different: a velocity of −8 has a higher speed than a velocity of −5, even though −8 is the smaller number." },
+    { "id": "c8", "text": "A particle is speeding up when velocity and acceleration have the same sign, and slowing down when they have opposite signs." },
+    { "id": "c9", "text": "Equivalently, a particle speeds up when the product v·a is positive and slows down when v·a is negative." },
+    { "id": "c10", "text": "A negative acceleration does not by itself mean slowing down; a particle moving in the negative direction with negative acceleration is speeding up." },
+    { "id": "c11", "text": "Driving analogy: moving forward and pressing the gas (same signs) speeds you up; moving forward and braking (opposite signs) slows you down." },
+    { "id": "c12", "text": "To analyze motion, build sign charts of v(t) and a(t) on the time line, splitting at every zero of both, then read off direction and speeding-up behavior." },
+    { "id": "c13", "text": "Example: for s(t) = t³ − 6t² + 9t, velocity is v(t) = 3(t − 1)(t − 3) and acceleration is a(t) = 6(t − 2)." },
+    { "id": "c14", "text": "For that particle, v = 0 at t = 1 and t = 3, where the particle is at rest and changes direction because v changes sign at each." },
+    { "id": "c15", "text": "For that particle, the velocity is positive on (0,1), negative on (1,3), and positive on (3,∞), giving the direction of motion on each interval." },
+    { "id": "c16", "text": "For that particle, comparing signs of v and a shows it speeds up on (1,2) and (3,4) and slows down on (0,1) and (2,3)." },
+    { "id": "c17", "text": "The zeros of acceleration correspond to inflection points of the position function, where the concavity of s(t) changes." },
+    { "id": "c18", "text": "On free response, 'find the velocity' means differentiate position once and 'find the acceleration' means differentiate twice." },
+    { "id": "c19", "text": "To justify whether speed is increasing, compare the signs of v and a at that instant rather than relying on a single value." },
+    { "id": "c20", "text": "The rate of change of speed equals a when v > 0 and equals −a when v < 0, which is why speed increases exactly when a shares the sign of v." },
+    { "id": "c21", "text": "Integrating velocity over an interval gives displacement (net change in position), a connection developed in the integration applications unit." },
+    { "id": "c22", "text": "Integrating speed |v(t)| over an interval gives total distance traveled, which differs from displacement whenever the particle changes direction." }
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "id": "ap-calc-ab-lhopitals-rule",
+  "title": "L'Hôpital's Rule",
+  "subject": "AP Calculus AB",
+  "chunks": [
+    { "id": "c1", "text": "An indeterminate form such as 0/0 or ∞/∞ is not a number; it signals that a limit is not yet determined and requires further analysis." },
+    { "id": "c2", "text": "The form 0/0 represents a race between two quantities approaching zero, where the outcome depends on how fast each one shrinks." },
+    { "id": "c3", "text": "Comparing the rates at which the numerator and denominator change is exactly what derivatives do, which is the intuition behind L'Hôpital's Rule." },
+    { "id": "c4", "text": "L'Hôpital's Rule states that if lim f(x)/g(x) is the indeterminate form 0/0 or ∞/∞, then it equals lim f'(x)/g'(x), provided the latter limit exists." },
+    { "id": "c5", "text": "When applying L'Hôpital's Rule, differentiate the numerator and denominator separately; do not use the quotient rule on the whole fraction." },
+    { "id": "c6", "text": "The new expression after applying the rule is (derivative of top)/(derivative of bottom), which is f'/g', not the derivative of f/g." },
+    { "id": "c7", "text": "Before applying L'Hôpital's Rule, verify that substitution gives an indeterminate form 0/0 or ∞/∞; otherwise the rule does not apply." },
+    { "id": "c8", "text": "Applying L'Hôpital's Rule to a determinate form such as 5/0 or 2/7 gives a wrong answer, since those limits are not indeterminate." },
+    { "id": "c9", "text": "The limiting point c in L'Hôpital's Rule can be a finite number or positive or negative infinity." },
+    { "id": "c10", "text": "If applying the rule once still yields 0/0 or ∞/∞, apply it again, repeating until the form resolves to a determinate value or ±∞." },
+    { "id": "c11", "text": "The procedure is: substitute to check the form, differentiate top and bottom separately, re-evaluate, and repeat if still indeterminate." },
+    { "id": "c12", "text": "Example: lim(x→0) sin(x)/x is 0/0, and L'Hôpital gives lim cos(x)/1 = 1." },
+    { "id": "c13", "text": "Example: lim(x→0) (eˣ − 1)/x is 0/0, and L'Hôpital gives lim eˣ/1 = 1." },
+    { "id": "c14", "text": "Example: lim(x→∞) (3x² + 2)/(x² + 5x) is ∞/∞; two applications give 6x/(2x + 5) then 6/2 = 3." },
+    { "id": "c15", "text": "Example: lim(x→∞) x/eˣ is ∞/∞, and one application gives 1/eˣ → 0, showing eˣ grows faster than any power of x." },
+    { "id": "c16", "text": "Example: lim(x→0) (1 − cos x)/x² requires two applications, giving sin(x)/(2x) then cos(x)/2 = 1/2." },
+    { "id": "c17", "text": "The form (nonzero)/0 is not indeterminate; the limit diverges to ±∞, and L'Hôpital's Rule must not be applied." },
+    { "id": "c18", "text": "Some limits that look like candidates for L'Hôpital's Rule are actually the definition of a derivative and can be evaluated directly." },
+    { "id": "c19", "text": "On free response, state explicitly that the form is 0/0 or ∞/∞ before differentiating, since justifying the indeterminate form is part of a complete answer." },
+    { "id": "c20", "text": "L'Hôpital's Rule works because near c each function is approximated by its tangent line, and when f(c) = g(c) = 0 the common factor (x − c) cancels, leaving f'(c)/g'(c)." },
+    { "id": "c21", "text": "The cancellation of the (x − c) factor is why the rule fails for non-indeterminate forms, where no such common factor exists." },
+    { "id": "c22", "text": "A rigorous proof of L'Hôpital's Rule uses the Cauchy Mean Value Theorem, which generalizes the Mean Value Theorem to a pair of functions." }
+  ]
+}

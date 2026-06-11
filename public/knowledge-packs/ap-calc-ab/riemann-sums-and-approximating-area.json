@@ -1,0 +1,29 @@
+{
+  "id": "ap-calc-ab-riemann-sums-and-approximating-area",
+  "title": "Riemann Sums and Approximating Area",
+  "subject": "AP Calculus AB",
+  "chunks": [
+    { "id": "c1", "text": "Finding the area under a curve is one of the two great problems of calculus, since curved boundaries have no elementary area formula." },
+    { "id": "c2", "text": "Riemann sums approximate the area under a curve by slicing the region into vertical strips and replacing each with a rectangle whose area can be computed." },
+    { "id": "c3", "text": "For n equal subintervals on [a, b], each rectangle has width Δx = (b − a)/n." },
+    { "id": "c4", "text": "A left Riemann sum uses the function value at the left endpoint of each subinterval as the rectangle height." },
+    { "id": "c5", "text": "A right Riemann sum uses the right endpoint, and a midpoint Riemann sum uses the midpoint of each subinterval." },
+    { "id": "c6", "text": "A Riemann sum is computed as the width times the sum of the heights: Δx times the sum of f at the chosen sample points." },
+    { "id": "c7", "text": "For an increasing function, the left Riemann sum underestimates the area and the right Riemann sum overestimates it." },
+    { "id": "c8", "text": "For a decreasing function, the left Riemann sum overestimates the area and the right Riemann sum underestimates it." },
+    { "id": "c9", "text": "Over- or under-estimation can be determined by sketching the rectangles against the curve: rectangles poking above the curve overestimate, and those falling short underestimate." },
+    { "id": "c10", "text": "Example: for f(x) = x² on [0, 2] with n = 4, the left sum is 1.75 and the right sum is 3.75, bracketing the exact area 8/3 ≈ 2.667." },
+    { "id": "c11", "text": "The Trapezoidal Rule connects consecutive points with straight segments, approximating each strip as a trapezoid for a closer estimate." },
+    { "id": "c12", "text": "The area of one trapezoid is its width times the average of its two endpoint heights: width × (f(left) + f(right))/2." },
+    { "id": "c13", "text": "The trapezoidal estimate equals the average of the left and right Riemann sums." },
+    { "id": "c14", "text": "A trapezoid overestimates where the curve is concave up and underestimates where the curve is concave down." },
+    { "id": "c15", "text": "The Trapezoidal Rule works even when subintervals have unequal widths, making it the natural tool for tables of data measured at irregular intervals." },
+    { "id": "c16", "text": "Example: with f at t = 0, 2, 5 equal to 4, 6, 10, the trapezoidal estimate is 2·(4+6)/2 + 3·(6+10)/2 = 10 + 24 = 34." },
+    { "id": "c17", "text": "For n data points there are n − 1 subintervals when forming a Riemann sum or trapezoidal estimate." },
+    { "id": "c18", "text": "When the integrand is a rate, the Riemann sum approximates the total accumulated quantity, with units of (rate units) times (input units)." },
+    { "id": "c19", "text": "As the number of rectangles approaches infinity and Δx approaches zero, the Riemann sum converges to the exact area under the curve." },
+    { "id": "c20", "text": "The definite integral is defined as the limit of Riemann sums: ∫ from a to b of f(x) dx = lim (n→∞) of the sum of f(xᵢ)Δx." },
+    { "id": "c21", "text": "The integral sign is an elongated S for 'sum,' and f(x) dx represents the area of an infinitely thin rectangle of height f(x) and width dx." },
+    { "id": "c22", "text": "For a continuous function, left, right, and midpoint Riemann sums all converge to the same limit, the exact area." }
+  ]
+}

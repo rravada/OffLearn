@@ -1,0 +1,99 @@
+{
+  "id": "ap-calc-ab-u5-curve-sketching",
+  "title": "Curve Sketching: Connecting f, f′, and f″",
+  "subject": "AP Calculus AB",
+  "unit": "Analytical Applications of Differentiation",
+  "track": "ap",
+  "difficulty": "ap",
+  "duration": "50 min",
+  "objectives": [
+    "Combine information from f, f', and f'' to determine the complete shape of a graph.",
+    "Follow a systematic checklist (domain, intercepts, asymptotes, increase/decrease, concavity) to sketch a function.",
+    "Sketch the graph of f given only the graph or formula of f', reading features backward.",
+    "Identify intervals of increase/decrease and concavity simultaneously to describe local behavior."
+  ],
+  "sections": [
+    {
+      "type": "explanation",
+      "heading": "Reading the Story Two Derivatives Tell",
+      "content": "Before you plot a single point, the first and second derivatives can tell you almost the entire shape of a graph. Think of f'(x) as the function's speedometer and f''(x) as its accelerometer; together they narrate the whole journey of the curve.\n\nThe first derivative tells you direction: f'(x) > 0 means the graph is climbing (increasing), f'(x) < 0 means it's falling (decreasing), and f'(x) = 0 means a momentary horizontal tangent. The second derivative tells you curvature: f''(x) > 0 means concave up (curving like a cup), f''(x) < 0 means concave down (curving like a cap). You learned each of these tests on its own in the last two lessons; curve sketching is where you run them *together* to pin down the shape.\n\nThe payoff is that direction and concavity combine into four basic local shapes, and every smooth curve is stitched together from them. A graph can be increasing while concave down (rising but leveling toward a peak), increasing while concave up (rising and steepening), decreasing while concave down (falling and steepening downward), or decreasing while concave up (falling but flattening toward a valley). Knowing both signs at once on every interval tells you not just where the curve goes, but how it bends getting there."
+    },
+    {
+      "type": "table",
+      "heading": "The Four Local Shapes",
+      "headers": ["f' sign", "f'' sign", "Behavior", "Looks like"],
+      "rows": [
+        ["+", "+", "increasing, concave up", "rising and steepening (bottom-left of a U)"],
+        ["+", "−", "increasing, concave down", "rising but leveling off (approaching a peak)"],
+        ["−", "−", "decreasing, concave down", "falling and steepening downward"],
+        ["−", "+", "decreasing, concave up", "falling but flattening (approaching a valley)"]
+      ]
+    },
+    {
+      "type": "explanation",
+      "heading": "The Curve-Sketching Checklist",
+      "content": "When the exam asks you to sketch a curve or fully describe a function's behavior, a systematic checklist keeps you from missing features. It works for any function.\n\nDomain: where is f defined? Watch for division by zero, even roots of negatives, and logs of non-positive numbers. Intercepts: set x = 0 for the y-intercept, and solve f(x) = 0 for x-intercepts when feasible. Symmetry: even functions (f(−x) = f(x)) are symmetric about the y-axis, odd functions (f(−x) = −f(x)) about the origin — either can halve your work. Asymptotes: for rational functions, check horizontal behavior as x → ±∞ and vertical asymptotes where the denominator is zero but the numerator isn't.\n\nThen the derivative analysis you already know. First derivative: find f', locate critical points, build a sign chart, and record intervals of increase/decrease and the local extrema. Second derivative: find f'', locate candidates, build a sign chart, and record intervals of concavity and the inflection points.\n\nFinally, plot the key points — extrema, inflection points, and intercepts — and connect them with a smooth curve that honors every sign you found. The goal is not to plot dozens of points but to capture the structure from a handful of calculations: the few places where direction or concavity changes determine everything in between."
+    },
+    {
+      "type": "steps",
+      "heading": "A Systematic Sketching Procedure",
+      "steps": [
+        { "title": "Domain, intercepts, asymptotes", "content": "Find where f is defined, its x- and y-intercepts, and any horizontal or vertical asymptotes (for rational and similar functions)." },
+        { "title": "First derivative analysis", "content": "Compute f', find critical points, build a sign chart, and record where f increases/decreases and its local maxima and minima." },
+        { "title": "Second derivative analysis", "content": "Compute f'', find candidates, build a sign chart, and record concavity intervals and inflection points." },
+        { "title": "Assemble the sketch", "content": "Plot extrema, inflection points, and intercepts; connect them with a smooth curve matching the recorded direction and concavity on every interval." }
+      ]
+    },
+    {
+      "type": "example",
+      "heading": "A Complete Sketch From the Formula",
+      "content": "Sketch f(x) = x³ − 6x² + 9x + 1.\n\nDomain: all reals (polynomial). y-intercept: f(0) = 1.\n\nFirst derivative: f'(x) = 3x² − 12x + 9 = 3(x − 1)(x − 3). Critical points x = 1, 3.\n  Sign chart: f' > 0 on (−∞, 1), f' < 0 on (1, 3), f' > 0 on (3, ∞).\n  So increasing, then decreasing, then increasing. Local max at x = 1: f(1) = 5. Local min at x = 3: f(3) = 1.\n\nSecond derivative: f''(x) = 6x − 12 = 6(x − 2). Candidate x = 2.\n  Sign chart: f'' < 0 on (−∞, 2) (concave down), f'' > 0 on (2, ∞) (concave up).\n  f'' changes sign at x = 2, so (2, 3) is an inflection point [f(2) = 8 − 24 + 18 + 1 = 3].\n\nNow combine direction and concavity interval by interval:\n  (−∞, 1): increasing, concave down → rising toward the peak.\n  At x = 1: local max (1, 5).\n  (1, 2): decreasing, concave down.\n  At x = 2: inflection (2, 3) — concavity flips.\n  (2, 3): decreasing, concave up — the fall is flattening toward the valley.\n  At x = 3: local min (3, 1).\n  (3, ∞): increasing, concave up.\n\nPlot (1, 5), (2, 3), (3, 1), and (0, 1), then connect with a smooth curve respecting each interval's signs."
+    },
+    {
+      "type": "callout",
+      "variant": "warning",
+      "heading": "Use Sign Changes, and Use Both Derivatives",
+      "content": "Two sketching pitfalls. First, a zero of f' or f'' is only a candidate — a local extremum needs f' to change sign, and an inflection point needs f'' to change sign. Listing zeros without checking sign changes produces phantom features. Second, don't sketch from f' alone: a graph that is increasing can still be bending either way, so concavity from f'' is what makes your curve the right shape rather than just the right direction. A correct sketch reflects BOTH the sign of f' and the sign of f'' on every interval."
+    },
+    {
+      "type": "quiz",
+      "question": "On an interval a function is decreasing and concave up. Which describes its graph there?",
+      "options": ["Falling and steepening downward", "Rising and leveling off", "Falling but flattening toward a possible valley", "Rising and steepening"],
+      "correctIndex": 2,
+      "explanation": "Decreasing (f' < 0) means the graph falls; concave up (f'' > 0) means the slopes are increasing toward zero, so the fall flattens out — heading toward a possible local minimum. 'Falling and steepening downward' would be decreasing and concave DOWN."
+    },
+    {
+      "type": "explanation",
+      "heading": "Sketching f From the Graph of f′",
+      "content": "A favorite AP question gives you the graph (or formula) of f' and asks about f itself — reading the relationship *backward*. The translation rules are exactly the increasing/decreasing and concavity tests, applied in reverse:\n\n• Where f'(x) > 0 (the f' graph is above the x-axis), f is increasing. Where f'(x) < 0 (f' below the axis), f is decreasing.\n• Where the f' graph crosses the x-axis changing from positive to negative, f has a local maximum; crossing from negative to positive, f has a local minimum.\n• Where f' is increasing (its graph slopes upward), f'' > 0, so f is concave up. Where f' is decreasing, f'' < 0, so f is concave down.\n• Where the f' graph has a local max or min (its slope changes sign), f'' changes sign, so f has an inflection point.\n\nThe key mental shift is that *heights* on the f' graph are *slopes* of f, and *slopes* on the f' graph are *concavity* of f. Students who try to read the f' graph as if it were f get everything wrong; students who consistently translate 'height of f' → direction of f' and 'slope of f' → concavity of f' get these problems right every time. Practicing this backward reading is among the highest-value things you can do for the exam."
+    },
+    {
+      "type": "example",
+      "heading": "Describing f Given f′",
+      "content": "Suppose f'(x) = x(x − 2)(x + 1) and f(0) = 3. Describe the graph of f.\n\nCritical points (f' = 0): x = −1, 0, 2.\n\nSign chart for f':\n  x < −1 (try x = −2): (−2)(−4)(−1) = −8 < 0 → f decreasing\n  −1 < x < 0 (try x = −0.5): (−0.5)(−2.5)(0.5) = 0.625 > 0 → f increasing\n  0 < x < 2 (try x = 1): (1)(−1)(2) = −2 < 0 → f decreasing\n  x > 2 (try x = 3): (3)(1)(4) = 12 > 0 → f increasing\n\nClassification (by sign change of f'):\n  x = −1: − to + → local minimum.\n  x = 0: + to − → local maximum at (0, 3).\n  x = 2: − to + → local minimum.\n\nConcavity comes from f''(x) = 3x² − 2x − 2; setting it to 0 gives x = (1 ± √7)/3 ≈ −0.55 and 1.22, the inflection points where concavity switches.\n\nThe sketch of f: it falls from the upper left to a local min at x = −1, rises to a local max at (0, 3), falls again to a local min at x = 2, then rises forever — with concavity changing at the two inflection points found from f''."
+    },
+    {
+      "type": "callout",
+      "variant": "tip",
+      "heading": "Don't Forget Asymptotes and Endpoint Behavior",
+      "content": "For rational functions, the sketch is incomplete without asymptotes: a vertical asymptote where the denominator is zero (numerator nonzero), and a horizontal asymptote from the limit as x → ±∞ (compare degrees of numerator and denominator). On the exam, also describe end behavior — what the curve does as x → ±∞ — and, on a restricted domain, the values at the endpoints. A sketch that nails the interior extrema but ignores asymptotes or end behavior loses easy points."
+    },
+    {
+      "type": "quiz",
+      "question": "The graph of f' is positive on (1, 5) and negative elsewhere nearby, crossing zero at x = 1 and x = 5. What happens to f at x = 5?",
+      "options": ["Local minimum", "Local maximum", "Inflection point", "Nothing notable"],
+      "correctIndex": 1,
+      "explanation": "At x = 5 the f' graph crosses from positive to negative, so f changes from increasing to decreasing — a local maximum of f. (At x = 1, where f' goes negative to positive, f would have a local minimum.) Remember: heights on the f' graph are slopes of f."
+    },
+    {
+      "type": "deepdive",
+      "heading": "Why Reading Backward Is the Real Skill",
+      "content": "Curve sketching looks like a graphing exercise, but its deeper purpose is fluency in moving among f, f', and f'' in *both* directions — and that fluency is what the AP exam, and later mathematics, actually rewards.\n\nGoing forward (from f to its derivatives) is mechanical: differentiate, build sign charts, read off features. Going backward (from f' or f'' to f) forces genuine understanding, because you can't just compute — you have to interpret what a height or a slope on one graph means for another. This is why free-response problems so often hand you the graph of f' and ask for the behavior of f: it can't be faked by memorized procedures. The student who internalizes 'height of f' = slope of f, and slope of f' = concavity of f' answers instantly; the student who memorized only the forward direction stalls.\n\nThe practical reach is large. In many real settings you measure a rate, not the quantity itself — velocity from a speed sensor, marginal cost from accounting data, the rate of a chemical reaction — and you must reconstruct the underlying quantity's behavior. That is exactly the f'-to-f translation. Engineers reading a velocity trace to understand position, economists reading marginal cost to find where total cost turns, and epidemiologists reading daily-case curves to understand cumulative spread are all doing curve sketching in reverse.\n\nThere's also a forward look here: reconstructing f from f' is qualitative now, but in the integration unit it becomes quantitative — the integral of f' literally recovers f up to a constant (the Fundamental Theorem of Calculus). The sketching intuition you build here, that the sign and size of f' dictate how f rises and falls, is the same intuition that will make accumulation and the FTC feel natural rather than abstract."
+    },
+    {
+      "type": "keypoint",
+      "content": "To sketch a curve, combine f, f', and f'': use f' for increasing/decreasing and local extrema, f'' for concavity and inflection points, and add domain, intercepts, asymptotes, and end behavior. Confirm features with sign CHANGES, not just zeros. Reading backward, heights on the f' graph are the slopes of f and the slope of the f' graph is the concavity of f."
+    }
+  ],
+  "aiContext": "AP Calculus AB Unit 5, curve sketching — synthesizing f, f', and f''. Emphasize running the first- and second-derivative tests together so the sketch reflects both direction (f') and concavity (f'') on every interval, plus domain, intercepts, asymptotes, and end behavior. The highest-value skill is reading backward from the graph of f' to features of f: heights on the f' graph are slopes of f (direction and extrema where f' crosses zero with a sign change), and the slope of the f' graph is the concavity of f (inflection points where f' has a local max/min). The common error is treating the f' graph as if it were f. Reinforce sign-change justification for extrema and inflection points, and foreshadow that integration will quantitatively recover f from f' via the FTC."
+}

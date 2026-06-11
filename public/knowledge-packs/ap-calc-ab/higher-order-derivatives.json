@@ -1,0 +1,30 @@
+{
+  "id": "ap-calc-ab-higher-order-derivatives",
+  "title": "Higher-Order Derivatives and Selecting Procedures",
+  "subject": "AP Calculus AB",
+  "chunks": [
+    { "id": "c1", "text": "A second derivative is the derivative of the first derivative; it measures the rate of change of the rate of change." },
+    { "id": "c2", "text": "Second derivative notations include f''(x), d²y/dx², and y''; the superscript 2's in d²y/dx² indicate differentiating twice and are not exponents." },
+    { "id": "c3", "text": "Higher orders continue as f'''(x) for the third derivative and f⁽⁴⁾(x), f⁽⁵⁾(x), and so on for fourth and beyond, where stacking prime marks becomes impractical." },
+    { "id": "c4", "text": "Velocity is the first derivative of position s(t), and acceleration is the second derivative: a(t) = v'(t) = s''(t)." },
+    { "id": "c5", "text": "The third derivative of position is called jerk, the rate of change of acceleration." },
+    { "id": "c6", "text": "To compute a higher-order derivative, differentiate repeatedly, treating each simplified result as a new differentiation problem." },
+    { "id": "c7", "text": "For f(x) = x⁴ − 3x² + 2x: f'(x) = 4x³ − 6x + 2, f''(x) = 12x² − 6, f'''(x) = 24x, f⁽⁴⁾(x) = 24, and f⁽⁵⁾(x) = 0." },
+    { "id": "c8", "text": "Each derivative of a polynomial lowers its degree by one, so a degree-n polynomial has zero as its (n+1)th derivative." },
+    { "id": "c9", "text": "Because eˣ is its own derivative, every higher-order derivative of eˣ is again eˣ." },
+    { "id": "c10", "text": "For e^(kx), each derivative multiplies by another factor of k, so the nth derivative is kⁿ·e^(kx)." },
+    { "id": "c11", "text": "The derivatives of sine cycle with period four: sin x → cos x → −sin x → −cos x → sin x, returning to the start every four derivatives." },
+    { "id": "c12", "text": "Because the sine derivatives repeat every four steps, a high-order derivative can be found using the remainder when the order is divided by 4; for example, the 50th derivative of sin x equals the 2nd derivative, −sin x." },
+    { "id": "c13", "text": "When the first derivative is a product, quotient, or composition, computing the second derivative requires re-applying those rules." },
+    { "id": "c14", "text": "For f(x) = x²eˣ, the first derivative is eˣ(x² + 2x) and the second derivative is eˣ(x² + 4x + 2), found by applying the product rule twice." },
+    { "id": "c15", "text": "Simplifying the first derivative before computing the second reduces arithmetic errors and often makes the next step a single line." },
+    { "id": "c16", "text": "The differentiation toolbox includes the power, product, quotient, and chain rules plus special derivatives for trig, exponential, log, and inverse functions; choosing the correct one is the 'selecting procedures' skill tested on the AP exam." },
+    { "id": "c17", "text": "To select a differentiation procedure, identify the outermost operation of the expression, because the last operation performed when evaluating is the first rule applied when differentiating." },
+    { "id": "c18", "text": "Decision order: split sums and differences first, then identify whether each term is a quotient, product, or composition to choose the first rule, then differentiate inner pieces with their own rules." },
+    { "id": "c19", "text": "For y = (x² + 1)/sin(3x), the outermost structure is a quotient, so the quotient rule is applied first, with the chain rule used afterward on sin(3x)." },
+    { "id": "c20", "text": "A second derivative can be found implicitly by differentiating dy/dx again with respect to x and substituting the known expression for dy/dx." },
+    { "id": "c21", "text": "The sign of the second derivative determines concavity: positive f'' means the graph curves upward and negative f'' means it curves downward, a connection developed in curve analysis." },
+    { "id": "c22", "text": "Newton's second law F = ma involves acceleration, a second derivative, so the fundamental law of motion is a statement about second derivatives." },
+    { "id": "c23", "text": "The first derivative answers how fast and in which direction a quantity changes, while the second derivative answers whether that trend is strengthening or weakening." }
+  ]
+}

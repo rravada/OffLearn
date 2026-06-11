@@ -1,0 +1,29 @@
+{
+  "id": "ap-calc-ab-analyzing-graphs-of-f-and-f-prime",
+  "title": "Analyzing Graphs of f, f', and f''",
+  "subject": "AP Calculus AB",
+  "chunks": [
+    { "id": "c1", "text": "A function and its derivatives are three views of one object; every feature of one appears as a specific feature of the others." },
+    { "id": "c2", "text": "The height of the graph of f' at a point equals the slope of the graph of f at that point, because f' is the slope of f." },
+    { "id": "c3", "text": "The slope of the graph of f' equals f'', which gives the concavity of f." },
+    { "id": "c4", "text": "Where the f' graph is above the x-axis, f is increasing; where it is below, f is decreasing." },
+    { "id": "c5", "text": "Where the f' graph crosses zero from positive to negative, f has a local maximum; from negative to positive, f has a local minimum." },
+    { "id": "c6", "text": "Where the f' graph is rising (increasing), f is concave up; where it is falling, f is concave down." },
+    { "id": "c7", "text": "Where the f' graph has a local maximum or minimum, f has an inflection point, because f'' changes sign there." },
+    { "id": "c8", "text": "Questions about direction and extrema of f read the height and zeros of f'; questions about concavity and inflection of f read the slope and turning points of f'." },
+    { "id": "c9", "text": "Example: if f' decreases from 2 to −2 on [0, 2] crossing zero at x = 1, then f increases on (0, 1), decreases after, and has a local maximum at x = 1." },
+    { "id": "c10", "text": "In that example, f is concave down on (0, 2) because f' is decreasing, and an inflection point occurs where f' reaches its minimum." },
+    { "id": "c11", "text": "The deadliest error is treating the graph of f' as if it were the graph of f, which reverses conclusions about increase and concavity." },
+    { "id": "c12", "text": "A rising f' graph does NOT mean f is increasing; it means f is concave up, since the increase/decrease of f depends on the sign of f', not its slope." },
+    { "id": "c13", "text": "A maximum point on the f' graph is not a maximum of f; it is an inflection point of f." },
+    { "id": "c14", "text": "To match unlabeled graphs as f, f', and f'', align each derivative's zeros with the previous graph's extrema or horizontal tangents." },
+    { "id": "c15", "text": "The extrema of f' line up with the inflection points of f and with the zeros of f''." },
+    { "id": "c16", "text": "The sine family is a clean anchor: if f = sin x then f' = cos x and f'' = −sin x." },
+    { "id": "c17", "text": "For sin x, the maximum at x = π/2 lines up with cos x crossing zero from positive to negative, matching the rule that a max of f is a downward zero crossing of f'." },
+    { "id": "c18", "text": "Height and overall shape are not reliable for matching graphs; the alignment of zeros with extrema is the dependable check." },
+    { "id": "c19", "text": "On free response with an f' graph, the absolute extrema of f on a closed interval come from the Candidates Test using f' = 0 points and the endpoints." },
+    { "id": "c20", "text": "Conclusions about f from an f' graph must be justified by explicit reference to f', such as 'f' changes from positive to negative.'" },
+    { "id": "c21", "text": "Reconstructing f from f' is qualitative here, but the Fundamental Theorem of Calculus later makes it quantitative: net change in f equals the signed area under the f' graph." },
+    { "id": "c22", "text": "Fluency in translating among f, f', and f'' is the conceptual bridge between differentiation, which breaks a function into rate information, and integration, which builds it back up." }
+  ]
+}

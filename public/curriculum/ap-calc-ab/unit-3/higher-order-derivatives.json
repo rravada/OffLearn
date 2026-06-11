@@ -1,0 +1,100 @@
+{
+  "id": "ap-calc-ab-u3-higher-order-derivatives",
+  "title": "Higher-Order Derivatives and Selecting Procedures",
+  "subject": "AP Calculus AB",
+  "unit": "Differentiation: Composite, Implicit, and Inverse Functions",
+  "track": "ap",
+  "difficulty": "ap",
+  "duration": "40 min",
+  "objectives": [
+    "Compute second and higher-order derivatives and use the notations f''(x), d²y/dx², and y''.",
+    "Interpret the second derivative as the rate of change of the rate of change, including acceleration as the second derivative of position.",
+    "Recognize patterns produced by repeated differentiation of polynomials, exponentials, and sinusoids.",
+    "Select and correctly sequence the appropriate differentiation rules (power, product, quotient, chain) for a given function."
+  ],
+  "sections": [
+    {
+      "type": "explanation",
+      "heading": "The Rate of Change of the Rate of Change",
+      "content": "A derivative measures how fast something is changing. But the rate of change can itself be changing — and measuring *that* is the job of the second derivative.\n\nThe cleanest example is motion. If s(t) is your position along a road, then s'(t) = v(t) is your velocity (how fast position changes). But your velocity also changes — you speed up and slow down — and the rate at which velocity changes is acceleration, a(t) = v'(t) = s''(t). When you press the gas pedal, your speedometer needle climbs: position is changing, *and* the rate at which it changes is itself changing. Acceleration is the second derivative of position.\n\nThe same layering happens everywhere. If P(t) is a population, P'(t) tells you whether it's growing, and P''(t) tells you whether that growth is speeding up or tapering off — exactly the kind of distinction news headlines mangle when they confuse 'cases are rising' with 'cases are rising faster.'\n\nComputing a higher-order derivative is mechanically simple: just differentiate, then differentiate the result again. The skill that takes practice is staying organized — and, when functions get complicated, choosing the right rule in the right order. This lesson covers both."
+    },
+    {
+      "type": "explanation",
+      "heading": "Notation and How to Compute Them",
+      "content": "The second derivative is the derivative of the first derivative. The common notations are:\n\n  f''(x)   (read 'f double prime')\n  d²y/dx²  (Leibniz notation — the 2's are not exponents; they signal 'differentiate twice')\n  y''\n\nHigher orders continue the pattern: f'''(x) is the third derivative, and beyond third we usually switch to f⁽⁴⁾(x), f⁽⁵⁾(x), and so on, since stacking prime marks becomes unreadable.\n\nTo compute them, you differentiate repeatedly. For f(x) = x⁴ − 3x² + 2x:\n  f'(x) = 4x³ − 6x + 2\n  f''(x) = 12x² − 6\n  f'''(x) = 24x\n  f⁽⁴⁾(x) = 24\n  f⁽⁵⁾(x) = 0\n\nEvery derivative of a polynomial lowers its degree by one, so eventually you hit a constant and then zero. The only subtlety with higher-order derivatives is that each new derivative must be taken of the *entire* previous result — and if that result is a product, quotient, or composition, you re-apply those rules. Simplifying after each step makes the next step far easier."
+    },
+    {
+      "type": "table",
+      "heading": "Notation and the Motion Interpretation",
+      "headers": ["Order", "Prime notation", "Leibniz notation", "Meaning for position s(t)"],
+      "rows": [
+        ["1st", "s'(t)", "ds/dt", "velocity"],
+        ["2nd", "s''(t)", "d²s/dt²", "acceleration"],
+        ["3rd", "s'''(t)", "d³s/dt³", "jerk (rate of change of acceleration)"],
+        ["nth", "s⁽ⁿ⁾(t)", "dⁿs/dtⁿ", "nth-order rate"]
+      ]
+    },
+    {
+      "type": "quiz",
+      "question": "If f(x) = x³, what is f''(x)?",
+      "options": ["3x²", "6x", "6", "x"],
+      "correctIndex": 1,
+      "explanation": "Differentiate once: f'(x) = 3x². Differentiate again: f''(x) = 6x. The answer 3x² stops after one derivative, and 6 would be the third derivative f'''(x), one step too far."
+    },
+    {
+      "type": "explanation",
+      "heading": "Patterns Under Repeated Differentiation",
+      "content": "Some functions reveal striking patterns when you differentiate them over and over, and recognizing these saves time on the exam.\n\nPolynomials march down in degree and eventually die: each derivative reduces the degree by 1, so a degree-n polynomial has zero as its (n+1)th derivative.\n\nThe exponential eˣ is its own derivative, so *every* higher-order derivative of eˣ is again eˣ. It never changes. (For e^{kx}, each derivative multiplies by another factor of k: the nth derivative is kⁿe^{kx}.)\n\nSine and cosine cycle with period four: starting from sin x, the derivatives run sin x → cos x → −sin x → −cos x → sin x, returning to the start every four steps. This means the 4th, 8th, 12th… derivatives of sin x are just sin x again, so you can reduce any high order by dividing by 4 and using the remainder.\n\nThese patterns aren't just curiosities — they let you answer a question like 'what is the 50th derivative of sin x?' without computing 50 derivatives. (Since 50 = 4·12 + 2, it's the same as the 2nd derivative, which is −sin x.)"
+    },
+    {
+      "type": "example",
+      "heading": "A Second Derivative That Needs the Product Rule Twice",
+      "content": "Find f''(x) for f(x) = x²eˣ.\n\nStep 1: First derivative — product rule with u = x², v = eˣ.\n  f'(x) = (2x)(eˣ) + (x²)(eˣ) = eˣ(x² + 2x)\n\nStep 2: Simplify before going further. We've written f'(x) = eˣ(x² + 2x) — a clean product, which makes the next step easier.\n\nStep 3: Second derivative — product rule again on eˣ and (x² + 2x).\n  f''(x) = (eˣ)(x² + 2x) + (eˣ)(2x + 2)\n  f''(x) = eˣ[(x² + 2x) + (2x + 2)]\n  f''(x) = eˣ(x² + 4x + 2)\n\nThe lesson: the first derivative was a product, so the second derivative required the product rule a second time. Each higher-order derivative is a brand-new differentiation problem on whatever the previous step produced — you must re-examine its structure every time, not assume it's simpler."
+    },
+    {
+      "type": "callout",
+      "variant": "warning",
+      "heading": "Re-Examine the Structure at Every Order",
+      "content": "A frequent error is differentiating the first derivative as if it were a simple power, ignoring that it became a product, quotient, or composition. After computing f'(x), pause and ask 'what kind of expression is this now?' before differentiating again. Equally important: simplify f'(x) before taking f''(x). A messy unsimplified first derivative is the single biggest source of arithmetic mistakes in higher-order problems — clean it up first and the second derivative often falls out in one line."
+    },
+    {
+      "type": "explanation",
+      "heading": "Selecting the Right Procedure",
+      "content": "By now you have a whole toolbox: the power rule, the product rule, the quotient rule, the chain rule, and special derivatives for trig, exponential, log, and inverse functions. The AP exam explicitly tests whether you can *choose* the right tool — the skill it calls 'selecting procedures for derivatives.' The wrong choice (say, using the power rule on eˣ, or skipping the chain rule on a composite) leads straight to a wrong answer.\n\nThe decision always starts at the *outermost structure* of the expression, because that determines the first rule you apply. Ask, in order: Is the whole thing a sum or difference? Then differentiate term by term. Is it a quotient? Start with the quotient rule. Is it a product? Start with the product rule. Is it a composition (a function inside another)? Start with the chain rule. Only once you've identified the outermost operation do you drill into the pieces, each of which may need its own rule.\n\nThe reason 'outermost first' works is the same reason the 'last operation' test works for the chain rule: the last operation you'd perform when evaluating the function is the first rule you apply when differentiating it. Get that ordering right and even an intimidating expression decomposes into a sequence of small, routine steps."
+    },
+    {
+      "type": "steps",
+      "heading": "Choosing and Sequencing Differentiation Rules",
+      "steps": [
+        { "title": "Strip sums and differences first", "content": "If the function is a sum or difference of terms, split it and differentiate each term separately — this simplifies everything that follows." },
+        { "title": "Identify the outermost operation of each term", "content": "Decide whether the term is a quotient, a product, or a composition. That outermost operation names the first rule you apply." },
+        { "title": "Apply that rule, leaving inner pieces symbolic", "content": "Write the product/quotient/chain rule template, holding the inner derivatives as 'to be computed.'" },
+        { "title": "Differentiate each inner piece with its own rule", "content": "Now handle the smaller parts — a composite piece needs the chain rule, an eˣ needs its own rule, and so on." },
+        { "title": "Simplify, then repeat if a higher order is needed", "content": "Clean up the result; if the problem asks for f'' or beyond, treat the simplified derivative as a fresh problem and start again at step 1." }
+      ]
+    },
+    {
+      "type": "quiz",
+      "question": "Which rule should you apply FIRST to differentiate y = (x² + 1)/sin(3x)?",
+      "options": ["The chain rule", "The product rule", "The quotient rule", "The power rule"],
+      "correctIndex": 2,
+      "explanation": "The outermost structure is a quotient (top divided by bottom), so the quotient rule comes first. The chain rule is still needed afterward, but only when differentiating the bottom, sin(3x), as an inner step. Starting with the wrong outer rule scrambles the whole computation."
+    },
+    {
+      "type": "callout",
+      "variant": "tip",
+      "heading": "Implicit Second Derivatives and the f'' Preview",
+      "content": "You can take a second derivative implicitly too: differentiate dy/dx again with respect to x (remembering dy/dx itself contains y, so the chain rule reappears), then substitute the known dy/dx expression. AP free-response questions occasionally ask for d²y/dx² of an implicit curve. Also keep this lesson in mind for Unit 5: the sign of f'' tells you concavity — positive f'' means the graph curves upward, negative means it curves downward — so today's mechanics become tomorrow's curve-analysis tools."
+    },
+    {
+      "type": "deepdive",
+      "heading": "Why the Second Derivative Deserves Its Own Spotlight",
+      "content": "The first derivative answers 'which way and how fast?' The second derivative answers a subtler question: 'is the trend strengthening or weakening?' That distinction drives an astonishing amount of real reasoning.\n\nIn physics, Newton's second law is F = ma, and acceleration is a second derivative — so the fundamental law of motion is a statement about second derivatives. The entire subject of differential equations, which you'll glimpse in Unit 7, is largely about relationships involving f' and f''.\n\nIn economics, if cost is rising (positive first derivative) but the increases are getting smaller (negative second derivative), a firm is approaching efficient scale. The headline 'inflation is still rising but the rate of increase is slowing' is precisely the claim that the first derivative is positive while the second derivative is negative.\n\nIn graphing, which you'll formalize in Unit 5, the second derivative determines concavity and locates inflection points — the moments where a curve switches from bending one way to bending the other. A population growth curve's inflection point is exactly where growth stops accelerating and starts decelerating, often the most important moment in the whole story.\n\nSo while computing f'' is mechanically just 'differentiate twice,' the quantity you produce is one of the most interpretively rich objects in all of calculus. Treat it with the respect it earns."
+    },
+    {
+      "type": "keypoint",
+      "content": "A higher-order derivative is found by differentiating repeatedly — each time treating the previous (simplified) result as a fresh problem and re-checking its structure. To select procedures, identify the outermost operation first (sum, quotient, product, or composition); that names the first rule, and inner pieces get their own rules afterward."
+    }
+  ],
+  "aiContext": "AP Calculus AB Unit 3, higher-order derivatives and selecting procedures. Stress that each higher derivative is a new differentiation problem on the simplified previous result, so the structure (product, quotient, composition) must be re-examined every time — the common error is treating f' as a simple power. The 'selecting procedures' skill is tested directly: students must choose the correct first rule based on the outermost operation, mirroring the chain rule's 'last operation' test. Reinforce the motion interpretation (acceleration = second derivative of position) and the period-four cycle of sine/cosine derivatives for fast high-order questions. Foreshadow Unit 5, where the sign of f'' gives concavity and inflection points, so this mechanical lesson sets up later graph analysis; also note implicit second derivatives can appear on free response."
+}

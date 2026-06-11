@@ -1,0 +1,29 @@
+{
+  "id": "ap-calc-ab-area-between-curves",
+  "title": "Area Between Curves",
+  "subject": "AP Calculus AB",
+  "chunks": [
+    { "id": "c1", "text": "The area between two curves is found by slicing the region into thin strips and summing their areas with an integral." },
+    { "id": "c2", "text": "With vertical slices, each strip has width dx and height (top function − bottom function), so the area is ∫ from a to b of (top − bottom) dx." },
+    { "id": "c3", "text": "The integrand is always upper curve minus lower curve, which keeps each strip's height positive regardless of sign." },
+    { "id": "c4", "text": "Even if both curves are below the x-axis, the area between them is still ∫ (top − bottom) dx and comes out positive." },
+    { "id": "c5", "text": "Intersection points are found by setting f(x) = g(x) and solving; they become the limits of integration." },
+    { "id": "c6", "text": "To determine which curve is on top, test a point between the intersection points and compare the function values." },
+    { "id": "c7", "text": "Example: y = x and y = x² intersect at x = 0 and x = 1, with y = x on top." },
+    { "id": "c8", "text": "Example: the area between y = x and y = x² on [0, 1] is ∫₀¹ (x − x²) dx = 1/6." },
+    { "id": "c9", "text": "If the curves cross inside the interval and switch which is on top, the integral must be split at each crossing." },
+    { "id": "c10", "text": "On each sub-interval between crossings, use the correct top − bottom order, then add the areas." },
+    { "id": "c11", "text": "Example: between y = sin x and y = cos x on [0, π], split at x = π/4, giving total area 2√2." },
+    { "id": "c12", "text": "A negative area result means the subtraction was done in the wrong order (bottom − top instead of top − bottom)." },
+    { "id": "c13", "text": "With horizontal slices, each strip has height dy and width (right function − left function), so the area is ∫ from c to d of (right − left) dy." },
+    { "id": "c14", "text": "Integrating with respect to y is better when the region is bounded by curves written as x = g(y), or when using dx would require multiple integrals." },
+    { "id": "c15", "text": "Example: the area between x = y² and x = y + 2 is ∫ from −1 to 2 of [(y + 2) − y²] dy = 9/2." },
+    { "id": "c16", "text": "Choosing dy can turn a problem that would require splitting in dx into a single clean integral." },
+    { "id": "c17", "text": "Always sketch the region before computing to identify intersections, the top/bottom order, where to split, and whether dx or dy is simpler." },
+    { "id": "c18", "text": "A sketch prevents the common errors of wrong limits and reversed subtraction order." },
+    { "id": "c19", "text": "A signed integral can be zero while the geometric area is not, as for an odd function over a symmetric interval, which a sketch reveals." },
+    { "id": "c20", "text": "Integration is geometric: the notation ∫ (top − bottom) dx encodes a picture of stacked rectangular strips." },
+    { "id": "c21", "text": "Vertical slices pair with dx and 'top − bottom'; horizontal slices pair with dy and 'right − left.'" },
+    { "id": "c22", "text": "The slice-and-sum thinking used for area between curves carries directly into computing volumes." }
+  ]
+}

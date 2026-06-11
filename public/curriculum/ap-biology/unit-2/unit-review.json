@@ -1,0 +1,173 @@
+{
+  "id": "ap-bio-unit2-review",
+  "title": "Unit 2 Review: Cell Structure and Function",
+  "subject": "AP Biology",
+  "unit": "Cell Structure and Function",
+  "type": "unit-review",
+  "questionsPerAttempt": 10,
+  "isAssessment": true,
+  "bank": [
+    {
+      "question": "Which feature is found in eukaryotic cells but NOT in prokaryotic cells?",
+      "options": ["Ribosomes", "A plasma membrane", "A membrane-bound nucleus", "DNA"],
+      "correctIndex": 2,
+      "explanation": "A membrane-bound nucleus is the defining eukaryotic feature; prokaryotes keep their DNA in an unenclosed nucleoid region. Ribosomes, a plasma membrane, and DNA are shared by all cells, pointing to a common ancestor."
+    },
+    {
+      "question": "A cell specialized for secreting protein hormones would contain a large amount of rough ER and Golgi apparatus because these organelles...",
+      "options": ["generate ATP for the cell", "synthesize, modify, and package proteins for export", "digest worn-out organelles", "store genetic information"],
+      "correctIndex": 1,
+      "explanation": "The rough ER synthesizes secretory proteins and the Golgi modifies and packages them for export, so a secretory cell needs abundant amounts of both. ATP generation is mitochondrial, digestion is lysosomal, and information storage is nuclear."
+    },
+    {
+      "question": "Which statement about ribosomes is correct?",
+      "options": ["Ribosomes are membrane-bound organelles found only in eukaryotes", "Ribosomes are made of rRNA and protein and are found in all cells", "Ribosomes synthesize lipids", "Ribosomes are located only inside the nucleus"],
+      "correctIndex": 1,
+      "explanation": "Ribosomes are composed of ribosomal RNA and protein and occur in both prokaryotes and eukaryotes. They are not membrane-bound, they synthesize proteins rather than lipids, and they are found in the cytoplasm and on the rough ER, not only in the nucleus."
+    },
+    {
+      "question": "The inner membrane of a mitochondrion is folded into cristae. What is the functional advantage of this folding?",
+      "options": ["It stores the cell's DNA more compactly", "It increases surface area for the electron transport chain, allowing more ATP production", "It allows the mitochondrion to photosynthesize", "It decreases the mitochondrion's metabolic rate"],
+      "correctIndex": 1,
+      "explanation": "Cristae increase the surface area of the inner membrane, providing more room for the electron transport chain and boosting ATP output. Mitochondria do not photosynthesize, and the folding raises, not lowers, capacity for energy production."
+    },
+    {
+      "question": "A student views a cell with a rigid cell wall, a large central vacuole, and chloroplasts. The cell is most likely a...",
+      "options": ["prokaryotic cell", "plant cell", "animal cell", "virus"],
+      "correctIndex": 1,
+      "explanation": "A cell wall, central vacuole, and chloroplasts together are hallmark features of a plant cell. Animal cells lack these structures, prokaryotes lack membrane-bound organelles, and viruses are not cells."
+    },
+    {
+      "question": "As a spherical cell increases in radius, which change occurs?",
+      "options": ["Its surface-area-to-volume ratio increases", "Its surface-area-to-volume ratio decreases", "Its surface area and volume increase at the same rate", "Its volume stays constant"],
+      "correctIndex": 1,
+      "explanation": "Volume increases with the cube of size while surface area increases only with the square, so the surface-area-to-volume ratio decreases as a cell grows. This is why large cells exchange materials less efficiently and why most cells stay small."
+    },
+    {
+      "question": "A cube-shaped cell has 3 µm sides. What is its surface-area-to-volume ratio?",
+      "options": ["6:1", "3:1", "2:1", "1:1"],
+      "correctIndex": 2,
+      "explanation": "Surface area = 6 × 3² = 54 µm² and volume = 3³ = 27 µm³, giving a ratio of 54/27 = 2:1. Recomputing both values rather than assuming a fixed ratio is essential."
+    },
+    {
+      "question": "Microvilli on intestinal cells and cristae in mitochondria are similar in that both...",
+      "options": ["store genetic material", "increase surface area to enhance a function", "produce ATP directly", "are found only in plant cells"],
+      "correctIndex": 1,
+      "explanation": "Both structures are folds that increase surface area, microvilli for absorption and cristae for the electron transport chain. Neither stores genetic material or is plant-specific, and microvilli themselves do not produce ATP."
+    },
+    {
+      "question": "The fluid mosaic model describes the plasma membrane as...",
+      "options": ["a rigid, static double layer of protein", "a fluid phospholipid bilayer with embedded proteins, cholesterol, and surface carbohydrates", "a solid sheet of cholesterol", "a single layer of phospholipids"],
+      "correctIndex": 1,
+      "explanation": "The fluid mosaic model depicts a fluid phospholipid bilayer studded with a mosaic of proteins, cholesterol, and carbohydrates. The membrane is not static, not made mainly of protein or cholesterol, and is a bilayer rather than a single layer."
+    },
+    {
+      "question": "Which molecule can diffuse directly through the phospholipid bilayer most easily, without a transport protein?",
+      "options": ["Sodium ion (Na⁺)", "Glucose", "Oxygen (O₂)", "A large protein"],
+      "correctIndex": 2,
+      "explanation": "Oxygen is small and nonpolar, so it dissolves into the hydrophobic core and diffuses across freely. Charged ions, large polar glucose, and proteins are blocked by the hydrophobic interior and need transport proteins or vesicles."
+    },
+    {
+      "question": "Why does water, despite being a polar molecule, still cross cell membranes relatively quickly?",
+      "options": ["Water is actually nonpolar", "Water is small and moves rapidly through aquaporin channel proteins", "Water dissolves easily in the hydrophobic core", "Water is actively pumped using ATP"],
+      "correctIndex": 1,
+      "explanation": "Water is small and moves quickly through aquaporin channels, and also slowly on its own. It is polar (not nonpolar), it does not dissolve well in the hydrophobic core, and osmosis is passive, requiring no ATP."
+    },
+    {
+      "question": "A cell membrane from an organism living in a cold environment would be expected to contain a high proportion of unsaturated fatty acids because they...",
+      "options": ["pack tightly and solidify the membrane", "have kinks that keep the membrane fluid at low temperatures", "carry recognition tags", "form the cell wall"],
+      "correctIndex": 1,
+      "explanation": "Unsaturated fatty acids have kinks that prevent tight packing, keeping the membrane fluid even when cold. Saturated fatty acids would make the cold membrane too rigid, and fluidity, not recognition or wall formation, is the relevant function here."
+    },
+    {
+      "question": "Carbohydrates attached to the outer surface of the plasma membrane function primarily in...",
+      "options": ["energy storage", "cell-cell recognition", "active transport of ions", "DNA replication"],
+      "correctIndex": 1,
+      "explanation": "Surface carbohydrates form glycoproteins and glycolipids that act as identity tags for cell-cell recognition, such as determining blood type. They are not the cell's main energy store and do not perform transport or replication."
+    },
+    {
+      "question": "In facilitated diffusion, a substance moves...",
+      "options": ["against its gradient using ATP", "down its gradient through a transport protein without ATP", "down its gradient directly through the lipid bilayer", "into the cell only by vesicles"],
+      "correctIndex": 1,
+      "explanation": "Facilitated diffusion moves a substance down its concentration gradient through a channel or carrier protein and requires no ATP. Active transport uses ATP against the gradient, simple diffusion needs no protein, and vesicle transport is bulk transport."
+    },
+    {
+      "question": "A plant cell is placed in a hypertonic solution. What will happen?",
+      "options": ["The cell will become turgid as water enters", "Water will leave the cell, causing plasmolysis and wilting", "Nothing, because plant cells are unaffected by tonicity", "The cell will lyse because it has no wall"],
+      "correctIndex": 1,
+      "explanation": "A hypertonic solution has more solute outside, so water leaves the cell and the membrane pulls away from the wall in plasmolysis, causing wilting. Water entering would require a hypotonic solution, plant cells are affected by tonicity, and they do have a wall."
+    },
+    {
+      "question": "A red blood cell placed in a concentrated salt solution shrivels. The solution is ___ to the cell, and water moved ___.",
+      "options": ["hypotonic; into the cell", "hypertonic; out of the cell", "isotonic; in both directions equally", "hypertonic; into the cell"],
+      "correctIndex": 1,
+      "explanation": "A concentrated salt solution is hypertonic (more solute outside), so water moves out of the cell toward the higher solute, causing the cell to shrivel. Water always moves toward the higher solute concentration, ruling out the other options."
+    },
+    {
+      "question": "Using water potential, water will move from a region where Ψ = −0.2 MPa to a region where Ψ = −0.7 MPa. This is because water moves...",
+      "options": ["from low to high water potential", "from high to low (more negative) water potential", "toward lower solute concentration", "only when ATP is supplied"],
+      "correctIndex": 1,
+      "explanation": "Water moves from higher water potential (−0.2 MPa) to lower, more negative water potential (−0.7 MPa). Adding solute lowers water potential, so water moves toward higher solute, and osmosis is passive."
+    },
+    {
+      "question": "The sodium-potassium pump moves 3 Na⁺ out and 2 K⁺ in per ATP. This is an example of active transport because it...",
+      "options": ["moves ions down their concentration gradients", "moves ions against their gradients using energy from ATP", "requires no transport protein", "moves only water"],
+      "correctIndex": 1,
+      "explanation": "Active transport moves substances against their gradients using energy, and the Na⁺/K⁺ pump uses ATP to do exactly that, building an electrochemical gradient. It moves ions (not water) against, not down, their gradients and requires a pump protein."
+    },
+    {
+      "question": "A white blood cell engulfs an entire bacterium by surrounding it with membrane and forming a vesicle. This process is...",
+      "options": ["exocytosis", "phagocytosis", "facilitated diffusion", "osmosis"],
+      "correctIndex": 1,
+      "explanation": "Engulfing a large particle such as a whole bacterium into a vesicle is phagocytosis, a form of endocytosis. Exocytosis releases material outward, while facilitated diffusion and osmosis move small molecules and water, not whole cells."
+    },
+    {
+      "question": "Which is the best example of why compartmentalization benefits a eukaryotic cell?",
+      "options": ["It allows the cell to be exactly the same size as a prokaryote", "It lets a lysosome maintain acidic pH for digestion separate from the neutral cytoplasm", "It prevents the cell from making proteins", "It eliminates the need for a plasma membrane"],
+      "correctIndex": 1,
+      "explanation": "Compartmentalization allows different local conditions, such as an acidic lysosome operating safely next to the neutral cytoplasm. It does not constrain cell size to that of prokaryotes, block protein synthesis, or remove the need for a plasma membrane."
+    },
+    {
+      "question": "Separating transcription (in the nucleus) from translation (in the cytoplasm) gives eukaryotes the advantage of being able to...",
+      "options": ["translate mRNA faster than prokaryotes", "process and edit mRNA before it is translated", "avoid making proteins entirely", "replicate DNA without enzymes"],
+      "correctIndex": 1,
+      "explanation": "Because translation does not begin until the mRNA leaves the nucleus, eukaryotes can process the mRNA first, including capping, adding a tail, and splicing out introns. This processing increases regulation and protein variety rather than speeding translation or eliminating protein synthesis."
+    },
+    {
+      "question": "Which observation is direct evidence supporting the endosymbiotic origin of chloroplasts?",
+      "options": ["Chloroplasts are green", "Chloroplasts have their own circular DNA and resemble cyanobacteria", "Chloroplasts are found in all cells", "Chloroplasts have a single membrane"],
+      "correctIndex": 1,
+      "explanation": "Chloroplasts possess their own circular DNA and are genetically similar to cyanobacteria, directly supporting a free-living prokaryotic ancestor. Being green is not evidence of ancestry, chloroplasts are not in all cells, and they actually have a double membrane."
+    },
+    {
+      "question": "The double membrane of a mitochondrion is explained by endosymbiosis as follows:",
+      "options": ["both membranes came from the host cell", "the inner membrane came from the engulfed prokaryote and the outer from the host's engulfing membrane", "both membranes came from the engulfed prokaryote", "the membranes formed by infolding of the nucleus"],
+      "correctIndex": 1,
+      "explanation": "In endosymbiosis the inner membrane traces to the original engulfed prokaryote and the outer membrane comes from the host membrane that wrapped around it. The membranes do not both come from one source, and infolding explains the endomembrane system, not mitochondria."
+    },
+    {
+      "question": "Which eukaryotic structure is thought to have arisen by infolding of the plasma membrane rather than by endosymbiosis?",
+      "options": ["Mitochondrion", "Chloroplast", "Nuclear envelope and endoplasmic reticulum", "Both mitochondria and chloroplasts"],
+      "correctIndex": 2,
+      "explanation": "The nuclear envelope and endoplasmic reticulum are thought to have formed by infolding of the plasma membrane, which is why they have single membranes and no DNA. Mitochondria and chloroplasts, with double membranes and their own DNA, arose by endosymbiosis."
+    },
+    {
+      "question": "Two cube-shaped cells differ only in size: Cell P is 1 µm per side and Cell Q is 5 µm per side. Which cell can exchange materials with its environment more efficiently relative to its volume, and why?",
+      "options": ["Cell Q, because it has more total surface area", "Cell P, because it has a higher surface-area-to-volume ratio", "Both equally, because they are the same shape", "Cell Q, because larger cells always exchange faster"],
+      "correctIndex": 1,
+      "explanation": "Cell P has a SA:V ratio of 6 while Cell Q has a ratio of 1.2, so the smaller cell exchanges materials more efficiently relative to its volume. Total surface area alone is misleading because volume rises faster, and identical shape does not mean identical ratio."
+    },
+    {
+      "question": "A molecule is large and carries a negative charge. Based on membrane structure, how will it most likely cross the membrane?",
+      "options": ["By simple diffusion through the bilayer", "Through a transport protein, because its size and charge block direct diffusion", "It cannot cross by any means", "By dissolving into the hydrophobic core"],
+      "correctIndex": 1,
+      "explanation": "A large, charged molecule is repelled by the hydrophobic core and is too big to slip through, so it requires a transport protein such as a channel, carrier, or pump. It cannot diffuse directly or dissolve into the core, but it can still cross with protein help."
+    },
+    {
+      "question": "Which experimental result would best demonstrate that a dialysis bag membrane is selectively permeable?",
+      "options": ["Both starch and water pass through freely", "Small water molecules pass through but large starch molecules do not", "Nothing passes through at all", "Only starch passes through but water does not"],
+      "correctIndex": 1,
+      "explanation": "Selective permeability means some substances cross while others are blocked, so water passing while large starch is retained demonstrates it directly. If everything or nothing crossed, the membrane would not be selective, and blocking small water while passing large starch is physically backwards."
+    }
+  ]
+}

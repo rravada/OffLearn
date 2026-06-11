@@ -1,0 +1,29 @@
+{
+  "id": "ap-calc-ab-intro-to-differential-equations",
+  "title": "Introduction to Differential Equations and Verifying Solutions",
+  "subject": "AP Calculus AB",
+  "chunks": [
+    { "id": "c1", "text": "A differential equation is an equation relating an unknown function to one or more of its derivatives." },
+    { "id": "c2", "text": "Unlike an algebraic equation whose unknown is a number, the unknown in a differential equation is an entire function." },
+    { "id": "c3", "text": "Many laws of nature are naturally written as differential equations because they describe rates of change rather than quantities directly." },
+    { "id": "c4", "text": "Examples include dP/dt = kP for population growth and Newton's law of cooling for temperature change." },
+    { "id": "c5", "text": "A solution of a differential equation is a function that makes the equation true when it and its derivatives are substituted in." },
+    { "id": "c6", "text": "For example, y = e^(2x) is a solution of dy/dx = 2y because its derivative 2e^(2x) equals 2 times the function." },
+    { "id": "c7", "text": "Differential equations usually have infinitely many solutions forming a family, called the general solution, which contains an arbitrary constant." },
+    { "id": "c8", "text": "A particular solution is one specific member of the family, selected by an initial condition such as y(0) = 5." },
+    { "id": "c9", "text": "A differential equation together with an initial condition is called an initial value problem." },
+    { "id": "c10", "text": "To verify a proposed solution, differentiate it, substitute it and its derivatives into the equation, and check that both sides are equal for all x." },
+    { "id": "c11", "text": "Verifying a solution does not require solving; you only differentiate the candidate and confirm the equation becomes a true statement." },
+    { "id": "c12", "text": "Example: y = sin x solves y'' + y = 0 because y'' = −sin x and −sin x + sin x = 0." },
+    { "id": "c13", "text": "Example: y = Ce^(kx) solves dy/dx = ky because its derivative Cke^(kx) equals k times the function." },
+    { "id": "c14", "text": "A solution of a differential equation is a function, not a number, so verifying at a single x-value is not a valid check." },
+    { "id": "c15", "text": "The equation must hold for all x where the solution is defined, not just at one point." },
+    { "id": "c16", "text": "A simple initial value problem dy/dx = g(x) is solved by antidifferentiating both sides to get the general solution y = G(x) + C." },
+    { "id": "c17", "text": "After finding the general solution, substitute the initial condition to solve for the constant C and obtain the particular solution." },
+    { "id": "c18", "text": "Example: dy/dx = 6x² with y(1) = 5 gives y = 2x³ + C, and applying y(1) = 5 yields C = 3, so y = 2x³ + 3." },
+    { "id": "c19", "text": "Common errors include dropping the +C, plugging in a specific x when verifying, and forgetting to apply the initial condition." },
+    { "id": "c20", "text": "A differential equation captures a universal law of change, while an initial condition captures the specific situation, together making a concrete prediction." },
+    { "id": "c21", "text": "Differential equations are the language of the quantitative sciences, modeling motion, decay, populations, cooling, and many other processes." },
+    { "id": "c22", "text": "The conceptual leap of the unit is to think of an unknown function as defined by how it changes and to reconstruct it from that rule." }
+  ]
+}

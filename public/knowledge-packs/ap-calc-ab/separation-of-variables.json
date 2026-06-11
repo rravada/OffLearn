@@ -1,0 +1,29 @@
+{
+  "id": "ap-calc-ab-separation-of-variables",
+  "title": "Solving Separable Differential Equations",
+  "subject": "AP Calculus AB",
+  "chunks": [
+    { "id": "c1", "text": "Separation of variables is the main algebraic technique for solving differential equations in AP Calculus AB." },
+    { "id": "c2", "text": "A differential equation is separable if it can be written as dy/dx = g(x)·h(y), a function of x times a function of y." },
+    { "id": "c3", "text": "To separate, rearrange the equation so all y's and dy are on one side and all x's and dx are on the other." },
+    { "id": "c4", "text": "From dy/dx = g(x)·h(y), divide by h(y) and multiply by dx to get (1/h(y)) dy = g(x) dx." },
+    { "id": "c5", "text": "After separating, integrate both sides: the left with respect to y and the right with respect to x." },
+    { "id": "c6", "text": "Write only one constant of integration, conventionally on the x-side, since combining both constants gives a single arbitrary constant." },
+    { "id": "c7", "text": "After integrating, solve for y explicitly when possible, though some solutions remain in implicit form." },
+    { "id": "c8", "text": "Integrating 1/y gives ln|y|, so solving for y requires exponentiating both sides." },
+    { "id": "c9", "text": "When exponentiating, the additive constant becomes a multiplicative factor: y = Ce^(...) rather than e^(...) + C." },
+    { "id": "c10", "text": "If given an initial condition, apply it to determine the constant; solving for C right after integrating is often cleanest." },
+    { "id": "c11", "text": "Example: dy/dx = xy separates to (1/y) dy = x dx, giving ln|y| = x²/2 + C." },
+    { "id": "c12", "text": "With y(0) = 3, the example dy/dx = xy yields C = ln 3 and the particular solution y = 3e^(x²/2)." },
+    { "id": "c13", "text": "Example: dy/dx = x/y separates to y dy = x dx, giving y²/2 = x²/2 + C, an implicit solution." },
+    { "id": "c14", "text": "The most important separable equation is dy/dt = ky, which separates to (1/y) dy = k dt." },
+    { "id": "c15", "text": "Solving dy/dt = ky gives ln|y| = kt + C, and exponentiating yields the general solution y = Ce^(kt)." },
+    { "id": "c16", "text": "Applying y(0) = y₀ to y = Ce^(kt) gives C = y₀, so the particular solution is y = y₀e^(kt)." },
+    { "id": "c17", "text": "Common errors include writing a constant on both sides, forgetting to apply the initial condition, and mishandling the exponentiation." },
+    { "id": "c18", "text": "On free response, show each step: separate, integrate with +C, apply the initial condition, and solve for y." },
+    { "id": "c19", "text": "Separation of variables is justified by reverse u-substitution, so treating dy/dx as a fraction is rigorous shorthand for the chain rule." },
+    { "id": "c20", "text": "The manipulation (1/h(y))(dy/dx) dx = (1/h(y)) dy is exactly a u-substitution with u = y." },
+    { "id": "c21", "text": "Not all differential equations are separable; for example dy/dx = x + y cannot be factored into a function of x times a function of y." },
+    { "id": "c22", "text": "Non-separable equations may require other techniques or are studied qualitatively with slope fields and numerically with Euler's method." }
+  ]
+}

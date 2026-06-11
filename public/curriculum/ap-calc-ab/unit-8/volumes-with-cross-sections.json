@@ -1,0 +1,101 @@
+{
+  "id": "ap-calc-ab-u8-volumes-with-cross-sections",
+  "title": "Volumes with Known Cross Sections",
+  "subject": "AP Calculus AB",
+  "unit": "Applications of Integration",
+  "track": "ap",
+  "difficulty": "ap",
+  "duration": "45 min",
+  "objectives": [
+    "Find the volume of a solid by integrating the area of its cross sections: V = ∫ A(x) dx.",
+    "Determine the cross-sectional area A(x) from the shape (square, semicircle, equilateral triangle, etc.) and the base region.",
+    "Express the side or diameter of a cross section as (top − bottom) of the base region.",
+    "Set up cross-section volume integrals for slices perpendicular to the x-axis or the y-axis."
+  ],
+  "sections": [
+    {
+      "type": "explanation",
+      "heading": "Building a Solid From Slices",
+      "content": "Picture a loaf of bread. It's a three-dimensional solid, but you can think of it as a stack of thin slices, each a flat shape with some area. If you knew the area of every slice and how thick each one was, you could find the loaf's total volume by adding up slice-area × thickness for all the slices. That's the entire idea behind volumes by cross sections.\n\nTo make it precise, set the solid along an axis — say the x-axis — and slice it perpendicular to that axis. Each slice is a thin slab: its face is some two-dimensional cross section with area A(x), and its thickness is dx. The volume of one slab is A(x)·dx, the cross-sectional area times the infinitesimal thickness. Adding up all the slabs from x = a to x = b gives the volume:\n\n  V = ∫ from a to b of A(x) dx.\n\nThis is a strikingly general and powerful formula. It says you can find the volume of *any* solid — no matter how irregular — as long as you can describe the area of its cross sections as a function of position. The cross sections might be squares, semicircles, equilateral triangles, rectangles, or anything else; whatever their shape, you express their area A(x), then integrate.\n\nThe one new skill compared to area problems is the geometry of finding A(x): you must figure out, at each x, the dimensions of the cross section from the region the solid sits on, then plug into the appropriate area formula. Master that, and volume becomes just another 'sum up the slices' integral."
+    },
+    {
+      "type": "explanation",
+      "heading": "Finding the Cross-Sectional Area A(x)",
+      "content": "The heart of these problems is determining A(x), the area of the slice at position x. This breaks into two parts: knowing the *shape* of the cross section (given in the problem) and knowing its *size* (read from the base region).\n\nThe size almost always comes from the base. A typical problem describes a two-dimensional base region in the xy-plane and says the solid has cross sections of a certain shape standing perpendicular to an axis. For slices perpendicular to the x-axis, the key length at position x is the vertical extent of the base there — the *height of the region*, which is (top curve − bottom curve) = f(x) − g(x). That length is the side of a square cross section, the base of a triangle, or the diameter of a semicircle, depending on the shape specified.\n\nOnce you have the relevant length s (often s = top − bottom), plug it into the area formula for the stated shape. A square has area s²; an equilateral triangle has area (√3/4)s²; a semicircle of diameter s has radius s/2 and area (1/2)π(s/2)² = πs²/8; a semicircle of *radius* s has area (1/2)πs². The most common stumble is the semicircle, where you must decide whether the given length is the diameter or the radius — almost always the base length is the diameter, so the radius is half of it. Get A(x) right and the integral is routine; get it wrong and the whole answer is off, so this geometry step deserves your careful attention."
+    },
+    {
+      "type": "table",
+      "heading": "Cross-Section Area Formulas (side or diameter = s)",
+      "headers": ["Cross-section shape", "Area A in terms of s", "Note"],
+      "rows": [
+        ["Square (side s)", "s²", "s = top − bottom"],
+        ["Rectangle (base s, height h)", "s·h", "h often given as a multiple of s"],
+        ["Semicircle (diameter s)", "πs²/8", "radius = s/2, area = (1/2)π(s/2)²"],
+        ["Semicircle (radius s)", "(1/2)πs²", "only if s is the radius"],
+        ["Equilateral triangle (side s)", "(√3/4)s²", "standard equilateral-triangle area"],
+        ["Isosceles right triangle (legs s)", "(1/2)s²", "if s is a leg"]
+      ]
+    },
+    {
+      "type": "steps",
+      "heading": "Setting Up a Cross-Section Volume",
+      "steps": [
+        { "title": "Identify the base and the slicing axis", "content": "Read which region is the base and whether cross sections are perpendicular to the x-axis (slices in dx) or the y-axis (slices in dy)." },
+        { "title": "Find the key length", "content": "At a general position, find the side/diameter of the cross section — usually top − bottom of the base (for ⊥ x-axis) or right − left (for ⊥ y-axis)." },
+        { "title": "Write the area A in terms of that length", "content": "Plug the length into the area formula for the given shape (square s², semicircle πs²/8, equilateral triangle (√3/4)s², etc.)." },
+        { "title": "Integrate A over the interval", "content": "Compute V = ∫ A(x) dx (or ∫ A(y) dy) over the base's extent." }
+      ]
+    },
+    {
+      "type": "example",
+      "heading": "Square Cross Sections",
+      "content": "A solid has a base bounded by y = √x, the x-axis, and the line x = 4. Cross sections perpendicular to the x-axis are squares. Find the volume.\n\nStep 1 — base and axis: the base lies in the xy-plane; slices are perpendicular to the x-axis, so we integrate in dx with x from 0 to 4.\n\nStep 2 — key length: at position x, the vertical extent of the base is from y = 0 up to y = √x, so the height is √x − 0 = √x. Since the cross section is a square, this height is the side: s = √x.\n\nStep 3 — area: A(x) = s² = (√x)² = x.\n\nStep 4 — integrate:\n  V = ∫ from 0 to 4 of x dx = [x²/2] from 0 to 4 = 16/2 − 0 = 8.\n\nThe volume is 8 cubic units. Notice how the square's side came directly from the height of the base region (√x), and squaring it gave the slice area. Every cross-section problem follows this arc: length from the base, area from the shape, then integrate."
+    },
+    {
+      "type": "callout",
+      "variant": "warning",
+      "heading": "Get the Side, the Shape Formula, and the Diameter Right",
+      "content": "Three precise points decide these problems. First, the cross section's key length comes from the BASE: for slices ⊥ the x-axis it's (top − bottom) = f(x) − g(x), not the function value alone unless the bottom is y = 0. Second, use the AREA formula matching the stated shape — squares are s², equilateral triangles are (√3/4)s², and these are easy to mix up. Third, for a semicircle the base length is usually the DIAMETER, so the radius is s/2 and the area is (1/2)π(s/2)² = πs²/8 — using s directly as the radius doubles the linear size and quadruples the area. When in doubt, write s = top − bottom explicitly, then substitute into the correct formula."
+    },
+    {
+      "type": "quiz",
+      "question": "A solid's base is the region under y = 2x from x = 0 to x = 3, above the x-axis. Cross sections perpendicular to the x-axis are squares. What is A(x)?",
+      "options": ["2x", "(2x)² = 4x²", "πx²", "(1/2)(2x)²"],
+      "correctIndex": 1,
+      "explanation": "The square's side is the height of the base, top − bottom = 2x − 0 = 2x. The area of a square is side², so A(x) = (2x)² = 4x². The side is the height of the region; you then square it for a square cross section."
+    },
+    {
+      "type": "explanation",
+      "heading": "Slicing Perpendicular to the x-Axis vs. the y-Axis",
+      "content": "Whether you slice perpendicular to the x-axis or the y-axis determines the variable of integration and how you measure the cross section. The problem tells you which, and you must match your setup to it.\n\nFor cross sections perpendicular to the *x-axis*, the slabs are stacked along x, each with thickness dx. The relevant cross-section length is measured vertically — the height of the base, (top − bottom) as a function of x — and you integrate V = ∫ A(x) dx over the x-interval. This is the most common case.\n\nFor cross sections perpendicular to the *y-axis*, the slabs are stacked along y with thickness dy. Now the relevant length is measured horizontally — the width of the base, (right − left) as a function of y — and you integrate V = ∫ A(y) dy over the y-interval. You'll need the boundary curves written as x in terms of y to express the width.\n\nThe logic is identical to choosing dx versus dy for area between curves: slices perpendicular to the x-axis pair with dx and 'top − bottom'; slices perpendicular to the y-axis pair with dy and 'right − left.' The phrase 'cross sections perpendicular to the [x or y]-axis' is your instruction for which variable to use — read it carefully, because using the wrong axis is a common and costly setup error. Everything else — choosing the shape's area formula and integrating — stays the same."
+    },
+    {
+      "type": "example",
+      "heading": "Semicircular and Triangular Cross Sections",
+      "content": "A solid has a base bounded by y = x and y = x² (which enclose a region on [0, 1], with y = x on top). Find the volume for two different cross-section shapes perpendicular to the x-axis.\n\nThe key length at position x is the height of the base: s = (top − bottom) = x − x².\n\nCase A — semicircular cross sections with diameter s:\n  Radius = s/2, so A(x) = (1/2)π(s/2)² = πs²/8 = (π/8)(x − x²)².\n  V = ∫ from 0 to 1 of (π/8)(x − x²)² dx = (π/8)∫ from 0 to 1 of (x² − 2x³ + x⁴) dx\n    = (π/8)[x³/3 − x⁴/2 + x⁵/5] from 0 to 1 = (π/8)(1/3 − 1/2 + 1/5) = (π/8)(10/30 − 15/30 + 6/30) = (π/8)(1/30) = π/240.\n\nCase B — equilateral-triangle cross sections with side s:\n  A(x) = (√3/4)s² = (√3/4)(x − x²)².\n  V = ∫ from 0 to 1 of (√3/4)(x − x²)² dx = (√3/4)(1/30) = √3/120.\n\nSame base, same length s = x − x², but different area formulas give different volumes. Identifying s once and then applying the correct shape formula is the whole method."
+    },
+    {
+      "type": "quiz",
+      "question": "For cross sections that are semicircles whose DIAMETER equals s = (top − bottom), the cross-sectional area is:",
+      "options": ["(1/2)πs²", "πs²", "πs²/8", "s²"],
+      "correctIndex": 2,
+      "explanation": "If s is the diameter, the radius is s/2, so the semicircle area is (1/2)π(s/2)² = (1/2)π·s²/4 = πs²/8. Using (1/2)πs² would incorrectly treat s as the radius, quadrupling the area."
+    },
+    {
+      "type": "callout",
+      "variant": "tip",
+      "heading": "Read the Shape and the Axis Off the Problem",
+      "content": "Cross-section problems hand you everything you need in the wording: the BASE region (gives the length s, usually top − bottom), the SHAPE of the cross section (gives the area formula), and the AXIS the slices are perpendicular to (gives dx or dy and whether to use top − bottom or right − left). Underline those three pieces before setting up. On the AP exam these are often calculator-active, so once you write A(x) correctly the integral can be evaluated numerically — meaning the geometry of A(x) is where the points are won or lost. Always state s = top − bottom explicitly to avoid the radius/diameter trap."
+    },
+    {
+      "type": "deepdive",
+      "heading": "Why Slicing Works — and Why It's So General",
+      "content": "The formula V = ∫ A(x) dx looks almost too simple for how much it accomplishes, so it's worth seeing exactly why it's valid and why it applies to essentially any solid.\n\nThe justification is a Riemann sum in three dimensions. Cut the solid into n thin slabs perpendicular to the x-axis, each of thickness Δx. A single slab is approximately a prism: a cross section of area A(xᵢ) extended through a small thickness Δx, so its volume is approximately A(xᵢ)·Δx. The total volume is approximately the sum of A(xᵢ)·Δx over all slabs — exactly a Riemann sum for the function A(x). As the slabs get thinner (n → ∞, Δx → 0), the prism approximation becomes exact and the Riemann sum converges to the integral ∫ A(x) dx. So the volume formula is the limit-of-Riemann-sums definition of the integral applied to slice areas, the same machinery that defined area in the first place — just one dimension higher.\n\nWhat makes it so general is that it asks almost nothing of the solid: only that you can describe the area of its cross sections as a function of position. The cross sections needn't be related by any nice rule; they can change shape if you can still write A(x). This is why the method handles squares, semicircles, triangles, and exotic shapes with equal ease, and it's the foundation for the volumes of revolution in the next lesson, where the cross sections happen to be circles (discs) or annuli (washers), making A(x) = πr² or π(R² − r²). Those are not new ideas — they are this same V = ∫ A(x) dx with a particular cross-section shape plugged in.\n\nThe broader lesson is the one running through this entire unit: to measure an accumulated quantity — area, distance, volume — slice it into infinitesimal pieces you *can* measure, write the measure of a generic piece, and integrate. Mastering 'find A(x), then integrate' means you've internalized the central technique of integral calculus, and it transfers far beyond the AP exam to physics (mass from density, work from force), engineering, and statistics. The slice is the unit of thought; the integral is the sum."
+    },
+    {
+      "type": "keypoint",
+      "content": "The volume of a solid with known cross sections is V = ∫ A(x) dx (slices ⊥ x-axis, thickness dx) or ∫ A(y) dy (slices ⊥ y-axis). Find the cross-section's key length from the base — usually s = top − bottom (or right − left) — then apply the area formula for the stated shape: square s², equilateral triangle (√3/4)s², semicircle of diameter s is πs²/8. Match the variable to the axis the slices are perpendicular to."
+    }
+  ],
+  "aiContext": "AP Calculus AB Unit 8, volumes with known cross sections. The master formula is V = ∫ A(x) dx (slices ⊥ x-axis) or ∫ A(y) dy (⊥ y-axis), the limit of a Riemann sum of slab volumes A·Δx. The core skill is finding A: the cross-section's key length comes from the BASE region, usually s = top − bottom (⊥ x) or right − left (⊥ y), then plug s into the shape's area formula — square s², equilateral triangle (√3/4)s², semicircle of DIAMETER s is πs²/8 (radius s/2). Top errors: using a function value instead of top − bottom, using the wrong shape formula, and treating the semicircle's base length as the radius instead of the diameter. Stress reading the problem for the base, the shape, and the perpendicular axis (which sets dx vs dy). Note this generalizes to volumes of revolution next, where cross sections are discs/washers (A = πr² or π(R²−r²))."
+}

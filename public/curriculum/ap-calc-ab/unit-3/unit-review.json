@@ -1,0 +1,173 @@
+{
+  "id": "ap-calc-ab-unit3-review",
+  "title": "Unit 3 Review: Composite, Implicit, and Inverse Functions",
+  "subject": "AP Calculus AB",
+  "unit": "Differentiation: Composite, Implicit, and Inverse Functions",
+  "type": "unit-review",
+  "questionsPerAttempt": 10,
+  "isAssessment": true,
+  "bank": [
+    {
+      "question": "What is d/dx[(5x − 2)⁴]?",
+      "options": ["20(5x − 2)³", "4(5x − 2)³", "20(5x − 2)⁴", "5(5x − 2)³"],
+      "correctIndex": 0,
+      "explanation": "Differentiate the outer power: 4(5x − 2)³, then multiply by the inner derivative d/dx[5x − 2] = 5, giving 20(5x − 2)³. The option 4(5x − 2)³ forgets the inner factor of 5, the single most common chain-rule omission."
+    },
+    {
+      "question": "What is d/dx[sin(x²)]?",
+      "options": ["cos(x²)", "2x cos(x²)", "−2x cos(x²)", "2x sin(x²)"],
+      "correctIndex": 1,
+      "explanation": "The outer derivative of sin(u) is cos(u), evaluated at x² gives cos(x²); multiply by the inner derivative 2x to get 2x cos(x²). The answer cos(x²) drops the inner factor, and 2x sin(x²) wrongly fails to differentiate the sine."
+    },
+    {
+      "question": "In the function √(3x + 1), what is the inner function for the chain rule?",
+      "options": ["√x", "3x + 1", "the square root operation", "3"],
+      "correctIndex": 1,
+      "explanation": "Using the 'last operation' test, you first compute 3x + 1, then take the square root last, so the square root is the outer function and 3x + 1 is the inner function. Mislabeling these reverses the whole computation."
+    },
+    {
+      "question": "What is d/dx[e^(2x)]?",
+      "options": ["e^(2x)", "2e^(2x)", "2x·e^(2x−1)", "2e^x"],
+      "correctIndex": 1,
+      "explanation": "The outer function eᵘ is its own derivative, e^(2x); multiply by the inner derivative d/dx[2x] = 2, giving 2e^(2x). The option 2x·e^(2x−1) wrongly applies the power rule to an exponential, where the variable sits in the exponent, not the base."
+    },
+    {
+      "question": "What is d/dx[ln(x² + 1)]?",
+      "options": ["1/(x² + 1)", "2x/(x² + 1)", "2x·ln(x² + 1)", "1/(2x)"],
+      "correctIndex": 1,
+      "explanation": "For ln(u), the derivative is u'/u; here u = x² + 1 and u' = 2x, so the result is 2x/(x² + 1). The option 1/(x² + 1) forgets the inner derivative 2x in the numerator."
+    },
+    {
+      "question": "What is d/dx[(x² + 1)³]?",
+      "options": ["3(x² + 1)²", "6x(x² + 1)²", "3(x² + 1)³", "2x(x² + 1)³"],
+      "correctIndex": 1,
+      "explanation": "Outer derivative 3(x² + 1)², times inner derivative 2x, equals 6x(x² + 1)². The option 3(x² + 1)² stops before multiplying by the inner derivative."
+    },
+    {
+      "question": "What is d/dx[x(2x + 1)⁵]?",
+      "options": ["(2x + 1)⁵", "(2x + 1)⁵ + 10x(2x + 1)⁴", "5x(2x + 1)⁴", "(2x + 1)⁵ + 5x(2x + 1)⁴"],
+      "correctIndex": 1,
+      "explanation": "Product rule: (1)(2x + 1)⁵ + x·d/dx[(2x + 1)⁵]. The chain rule gives d/dx[(2x + 1)⁵] = 5(2x + 1)⁴·2 = 10(2x + 1)⁴, so the result is (2x + 1)⁵ + 10x(2x + 1)⁴. The option ending in 5x(2x+1)⁴ forgets the inner factor of 2."
+    },
+    {
+      "question": "When is the chain rule the correct tool to use?",
+      "options": ["When two functions are added", "When one function is composed inside another", "When two functions are multiplied", "When one function is divided by another"],
+      "correctIndex": 1,
+      "explanation": "The chain rule applies to composite functions — a function nested inside another, such as f(g(x)). Sums use term-by-term differentiation, products use the product rule, and quotients use the quotient rule."
+    },
+    {
+      "question": "Treating y as a function of x, what is d/dx[y³]?",
+      "options": ["3y²", "3y²·(dy/dx)", "3x²", "y³·(dy/dx)"],
+      "correctIndex": 1,
+      "explanation": "Because y depends on x, the chain rule applies: d/dx[y³] = 3y²·(dy/dx). Writing 3y² drops the required dy/dx factor, and 3x² mistakenly treats y as if it were x."
+    },
+    {
+      "question": "For the circle x² + y² = 16, what is dy/dx by implicit differentiation?",
+      "options": ["x/y", "−x/y", "−y/x", "−2x"],
+      "correctIndex": 1,
+      "explanation": "Differentiating gives 2x + 2y(dy/dx) = 0, so dy/dx = −x/y. The slope depends on both coordinates, which is typical for implicit curves and reflects the two y-values at most x."
+    },
+    {
+      "question": "For xy = 4, what is dy/dx?",
+      "options": ["−y/x", "y/x", "−x/y", "−1"],
+      "correctIndex": 0,
+      "explanation": "Product rule on xy: y + x(dy/dx) = 0, so dy/dx = −y/x. Forgetting the product rule (treating xy as a single power) is the usual error here."
+    },
+    {
+      "question": "If dy/dx = (x − 1)/(y + 2), where does the curve have a horizontal tangent?",
+      "options": ["Where y = −2", "Where x = 1", "Where x = −1", "Where y = 2"],
+      "correctIndex": 1,
+      "explanation": "A horizontal tangent occurs where the slope is 0, i.e. where the numerator is 0 (and the denominator is not): x − 1 = 0, so x = 1. Setting the denominator y + 2 = 0 instead gives a vertical tangent."
+    },
+    {
+      "question": "Treating y as a function of x, what is d/dx[x²y]?",
+      "options": ["2xy", "2x·(dy/dx)", "2xy + x²·(dy/dx)", "x²·(dy/dx)"],
+      "correctIndex": 2,
+      "explanation": "Use the product rule on x²·y: (2x)(y) + (x²)(dy/dx) = 2xy + x²(dy/dx). Dropping either the 2xy term or the dy/dx factor is the common mistake."
+    },
+    {
+      "question": "On x² + y² = 25, what is the slope of the tangent line at the point (3, 4)?",
+      "options": ["3/4", "−3/4", "−4/3", "4/3"],
+      "correctIndex": 1,
+      "explanation": "Since dy/dx = −x/y, at (3, 4) the slope is −3/4. At the mirror point (3, −4) the slope would be +3/4, reflecting the circle's symmetry."
+    },
+    {
+      "question": "If dy/dx = 2x/(3y² − 1), where does the curve have a vertical tangent?",
+      "options": ["Where x = 0", "Where 3y² − 1 = 0", "Where y = 0", "Where the numerator equals the denominator"],
+      "correctIndex": 1,
+      "explanation": "A vertical tangent occurs where the slope is undefined, i.e. where the denominator is 0: 3y² − 1 = 0. Setting the numerator 2x = 0 instead would give a horizontal tangent (x = 0)."
+    },
+    {
+      "question": "A table gives f(1) = 4 and f'(1) = 2. If f is invertible, what is (f⁻¹)'(4)?",
+      "options": ["2", "1/2", "4", "1/4"],
+      "correctIndex": 1,
+      "explanation": "Since f(1) = 4, we have f⁻¹(4) = 1, so (f⁻¹)'(4) = 1/f'(1) = 1/2. The answer 2 forgets to take the reciprocal; the rule evaluates f' at the matching input, then flips it."
+    },
+    {
+      "question": "What is d/dx[arctan x]?",
+      "options": ["1/√(1 − x²)", "1/(1 + x²)", "−1/(1 + x²)", "1/x"],
+      "correctIndex": 1,
+      "explanation": "The derivative of arctan x is 1/(1 + x²), defined for all real x and always positive (arctan is increasing). The form 1/√(1 − x²) is the derivative of arcsin x, a common mix-up."
+    },
+    {
+      "question": "What is d/dx[arcsin x]?",
+      "options": ["1/(1 + x²)", "1/√(1 − x²)", "−1/√(1 − x²)", "√(1 − x²)"],
+      "correctIndex": 1,
+      "explanation": "The derivative of arcsin x is 1/√(1 − x²). The negative version −1/√(1 − x²) is the derivative of arccos x, and 1/(1 + x²) belongs to arctan x."
+    },
+    {
+      "question": "What is d/dx[arctan(x²)]?",
+      "options": ["1/(1 + x⁴)", "2x/(1 + x⁴)", "2x/(1 + x²)", "1/(1 + x²)"],
+      "correctIndex": 1,
+      "explanation": "Apply the chain rule: u'/(1 + u²) with u = x² and u' = 2x gives 2x/(1 + (x²)²) = 2x/(1 + x⁴). The option 1/(1 + x⁴) forgets the inner factor 2x."
+    },
+    {
+      "question": "For f(x) = x⁵ + 2x + 1 (which is invertible), what is (f⁻¹)'(1)?",
+      "options": ["1/2", "2", "1/3", "3"],
+      "correctIndex": 0,
+      "explanation": "Find the input mapping to 1: x⁵ + 2x + 1 = 1 → x⁵ + 2x = 0 → x = 0, so f⁻¹(1) = 0. Then f'(x) = 5x⁴ + 2 gives f'(0) = 2, so (f⁻¹)'(1) = 1/2."
+    },
+    {
+      "question": "Why is the slope of an inverse function the reciprocal of the original's slope at the corresponding point?",
+      "options": ["Inverse functions always have the same slope", "Reflecting across y = x swaps rise and run, so the slopes are reciprocals", "Inverse functions are always linear", "Derivatives of inverses are always negatives"],
+      "correctIndex": 1,
+      "explanation": "The graph of f⁻¹ is the reflection of f across y = x, which swaps the x- and y-axes and hence swaps rise and run, turning a slope m into 1/m. This is the geometric source of (f⁻¹)'(a) = 1/f'(f⁻¹(a))."
+    },
+    {
+      "question": "What is d/dx[arccos x]?",
+      "options": ["1/√(1 − x²)", "−1/√(1 − x²)", "−1/(1 + x²)", "1/(1 + x²)"],
+      "correctIndex": 1,
+      "explanation": "The derivative of arccos x is −1/√(1 − x²) — the same magnitude as arcsin's derivative but with a negative sign, since arccos is decreasing. Forgetting the negative sign is the usual error."
+    },
+    {
+      "question": "If f(x) = x⁴, what is f''(x)?",
+      "options": ["4x³", "12x²", "24x", "12x³"],
+      "correctIndex": 1,
+      "explanation": "First derivative f'(x) = 4x³; differentiate again to get f''(x) = 12x². The answer 4x³ stops after one derivative, and 24x is the third derivative."
+    },
+    {
+      "question": "Acceleration is which derivative of position?",
+      "options": ["The first derivative", "The second derivative", "The antiderivative", "The third derivative"],
+      "correctIndex": 1,
+      "explanation": "Velocity is the first derivative of position and acceleration is the derivative of velocity, making acceleration the second derivative of position: a(t) = s''(t). The third derivative is jerk."
+    },
+    {
+      "question": "What does the notation d²y/dx² represent?",
+      "options": ["The square of dy/dx", "The second derivative of y with respect to x", "y squared", "dy/dx multiplied by 2"],
+      "correctIndex": 1,
+      "explanation": "d²y/dx² is the second derivative — the derivative of dy/dx. The superscript 2's are notation for 'differentiate twice,' not literal exponents, so it is not the square of the first derivative."
+    },
+    {
+      "question": "Which rule should you apply FIRST to differentiate y = (x² + 1)/(x³ − 2)?",
+      "options": ["The chain rule", "The quotient rule", "The product rule", "The power rule"],
+      "correctIndex": 1,
+      "explanation": "The outermost structure is a quotient (numerator divided by denominator), so the quotient rule comes first; the power rule then handles the individual pieces. Identifying the outermost operation determines the correct first rule."
+    },
+    {
+      "question": "Every higher-order derivative of eˣ equals what?",
+      "options": ["0", "eˣ", "x·eˣ", "1"],
+      "correctIndex": 1,
+      "explanation": "Because eˣ is its own derivative, differentiating it any number of times returns eˣ. This self-derivative property is unique to eˣ (and its constant multiples)."
+    }
+  ]
+}

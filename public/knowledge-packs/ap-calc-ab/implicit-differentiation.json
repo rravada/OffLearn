@@ -1,0 +1,29 @@
+{
+  "id": "ap-calc-ab-implicit-differentiation",
+  "title": "Implicit Differentiation",
+  "subject": "AP Calculus AB",
+  "chunks": [
+    { "id": "c1", "text": "An explicit function is written as y = f(x), with y isolated and expressed purely in terms of x." },
+    { "id": "c2", "text": "An implicit equation relates x and y without solving for y, such as x² + y² = 25 or x³ + y³ = 6xy." },
+    { "id": "c3", "text": "Implicit differentiation finds dy/dx by differentiating both sides of an equation as it stands, treating y as an unknown function of x, then solving algebraically for dy/dx." },
+    { "id": "c4", "text": "The key idea is that y depends on x, so differentiating any term containing y requires the chain rule and produces a factor of dy/dx." },
+    { "id": "c5", "text": "d/dx[y²] = 2y·(dy/dx) and d/dx[y³] = 3y²·(dy/dx), with the dy/dx factor coming from the chain rule." },
+    { "id": "c6", "text": "d/dx[xy] = x·(dy/dx) + y, using the product rule because both x and y vary with x." },
+    { "id": "c7", "text": "d/dx[x²y] = x²·(dy/dx) + 2xy, combining the product rule with the chain rule on the y-term." },
+    { "id": "c8", "text": "The implicit differentiation procedure: differentiate both sides with respect to x, attach dy/dx to every differentiated y-term, collect dy/dx terms on one side, factor out dy/dx, and solve." },
+    { "id": "c9", "text": "For x² + y² = 25, differentiating gives 2x + 2y(dy/dx) = 0, so dy/dx = −x/y." },
+    { "id": "c10", "text": "The derivative of an implicit curve typically depends on both x and y, so a specific point (both coordinates) is needed to evaluate a slope." },
+    { "id": "c11", "text": "On the circle x² + y² = 25, the slope at (3, 4) is −3/4, the slope at the top point (0, 5) is 0 (horizontal tangent), and at (5, 0) the slope is undefined (vertical tangent)." },
+    { "id": "c12", "text": "For the folium of Descartes x³ + y³ = 6xy, implicit differentiation gives dy/dx = (2y − x²)/(y² − 2x)." },
+    { "id": "c13", "text": "A horizontal tangent on an implicit curve occurs where the numerator of dy/dx is zero while the denominator is nonzero, giving slope zero." },
+    { "id": "c14", "text": "A vertical tangent on an implicit curve occurs where the denominator of dy/dx is zero, making the slope undefined." },
+    { "id": "c15", "text": "To find a tangent line to an implicit curve: verify the point satisfies the equation, find dy/dx implicitly, substitute the point's coordinates for the slope, then use point-slope form." },
+    { "id": "c16", "text": "For x² + y² = 25, the tangent line at (3, −4) has slope 3/4 and equation y = (3/4)x − 25/4." },
+    { "id": "c17", "text": "For x²y + y³ = 8, implicit differentiation gives dy/dx = −2xy/(x² + 3y²)." },
+    { "id": "c18", "text": "The most common implicit differentiation error is dropping the dy/dx factor on a y-term or treating y like x; after differentiating, every term that contained a y should carry a dy/dx." },
+    { "id": "c19", "text": "Implicit differentiation is justified by the fact that differentiating both sides of a true equation preserves equality, since equal quantities have equal rates of change." },
+    { "id": "c20", "text": "The Implicit Function Theorem guarantees that, near most points, an implicit curve can locally be written as y = f(x), which is why implicit differentiation produces a valid local derivative." },
+    { "id": "c21", "text": "Implicit differentiation can fail at points where the curve has a vertical tangent or crosses itself, because y cannot be expressed locally as a single function of x there." },
+    { "id": "c22", "text": "Implicit differentiation is essentially the chain rule applied to y, and it directly enables related-rates problems where multiple quantities change with time." }
+  ]
+}

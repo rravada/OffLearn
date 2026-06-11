@@ -1,0 +1,103 @@
+{
+  "id": "ap-calc-ab-u6-accumulation-functions",
+  "title": "Accumulation Functions",
+  "subject": "AP Calculus AB",
+  "unit": "Integration and Accumulation of Change",
+  "track": "ap",
+  "difficulty": "ap",
+  "duration": "45 min",
+  "objectives": [
+    "Interpret F(x) = ∫ from a to x of f(t) dt as an accumulation function and compute its values using area.",
+    "Use F'(x) = f(x) to determine where the accumulation function is increasing, decreasing, and has extrema.",
+    "Use the behavior of f to determine the concavity and inflection points of F.",
+    "Analyze an accumulation function when f is given only as a graph."
+  ],
+  "sections": [
+    {
+      "type": "explanation",
+      "heading": "A Function Built From Area",
+      "content": "So far a definite integral has been a single number — the net signed area over a fixed interval. But what if we let the upper limit move? Fix a starting point a and define\n\n  F(x) = ∫ from a to x of f(t) dt.\n\nNow F is a *function* of x: for each value of x, it returns the net signed area accumulated from a up to x. As x slides to the right, F sweeps out more area; this is called an *accumulation function*, because it tracks how much has piled up so far.\n\nThe bathtub picture makes it concrete. Let f(t) be the rate water flows into a tub at time t. Then F(x) = ∫ from a to x of f(t) dt is the total water added between time a and time x. When the flow rate f is large and positive, the total climbs quickly; when f is small, the total barely changes; when f is negative (water draining), the total actually decreases. The accumulation function records the running total at every moment.\n\nNotice one immediate fact: F(a) = ∫ from a to a of f(t) dt = 0, because no area has accumulated yet at the very start. The accumulation function always begins at zero at its lower limit. Everything else about F's behavior — where it rises, peaks, or bends — is dictated by f, and the rest of this lesson makes those connections precise."
+    },
+    {
+      "type": "explanation",
+      "heading": "f Is the Derivative of F",
+      "content": "The single most important fact about an accumulation function is that differentiating it returns the integrand. This is the Fundamental Theorem of Calculus (Part 1): if F(x) = ∫ from a to x of f(t) dt, then F'(x) = f(x).\n\nThis flips your perspective. In the analytical-applications unit, you analyzed a function f using its derivative f'. Now you analyze the accumulation function F using f — because *f plays the role of F's derivative*. Every tool you built for going from f' to f applies here, with the names shifted up by one: f tells you about F exactly as f' told you about f.\n\nConcretely: where f(x) > 0, F is increasing (positive rate means the running total climbs); where f(x) < 0, F is decreasing; where f(x) = 0 and changes sign, F has a local extremum. And going one level deeper, F''(x) = f'(x), so the *slope* of f controls the concavity of F: where f is increasing, F is concave up; where f is decreasing, F is concave down; where f has a local max or min, F has an inflection point.\n\nThis correspondence is why accumulation functions feel familiar yet new. You're not learning a brand-new analysis — you're reapplying the f'-to-f reasoning from curve sketching, with f now in the derivative seat and F as the function being reconstructed. The graph of f is, in effect, the graph of F's derivative."
+    },
+    {
+      "type": "table",
+      "heading": "How f Controls the Accumulation Function F",
+      "headers": ["Behavior of f at/near x", "Conclusion about F(x) = ∫ₐˣ f(t) dt"],
+      "rows": [
+        ["f(x) > 0", "F is increasing"],
+        ["f(x) < 0", "F is decreasing"],
+        ["f crosses zero, + to −", "F has a local maximum"],
+        ["f crosses zero, − to +", "F has a local minimum"],
+        ["f is increasing", "F is concave up"],
+        ["f is decreasing", "F is concave down"],
+        ["f has a local max or min", "F has an inflection point"],
+        ["x = a (lower limit)", "F(a) = 0"]
+      ]
+    },
+    {
+      "type": "steps",
+      "heading": "Analyzing F From the Graph of f",
+      "steps": [
+        { "title": "Compute values by accumulating area", "content": "F(x) is the net signed area of f from a to x. Add area above the axis, subtract area below, working interval by interval from the starting point a." },
+        { "title": "Find where F increases or decreases", "content": "F increases where f is above the axis (f > 0) and decreases where f is below (f < 0)." },
+        { "title": "Locate extrema of F", "content": "F has a local max where f crosses zero from positive to negative, and a local min where f crosses from negative to positive." },
+        { "title": "Determine concavity and inflection of F", "content": "F is concave up where f is increasing and concave down where f is decreasing; F has an inflection point where f turns around." }
+      ]
+    },
+    {
+      "type": "example",
+      "heading": "Computing F From a Graph of f",
+      "content": "Let F(x) = ∫ from 0 to x of f(t) dt, where the graph of f on [0, 6] is made of straight pieces: from (0,0) up to (2,2), then constant at 2 until (4,2), then a line down to (6,−2) crossing the axis at t = 5.\n\nCompute values by accumulating signed area:\n  F(0) = 0 (lower limit).\n  F(2) = area of the triangle on [0,2] = (1/2)(2)(2) = 2.\n  F(4) = F(2) + rectangle on [2,4] = 2 + (2)(2) = 6.\n  F(5) = F(4) + triangle above axis on [4,5] = 6 + (1/2)(1)(2) = 7.\n  F(6) = F(5) + triangle below axis on [5,6] = 7 − (1/2)(1)(2) = 6.\n\nNow read off behavior. f > 0 on (0,5), so F is increasing there; f < 0 on (5,6), so F is decreasing there. f crosses zero at t = 5 going + to −, so F has its maximum at x = 5, with F(5) = 7. For concavity: f increases on (0,2) so F is concave up there; f is constant on (2,4) so F is linear; f decreases on (4,6) so F is concave down there. Every conclusion came from reading the graph of f as the derivative of F."
+    },
+    {
+      "type": "callout",
+      "variant": "warning",
+      "heading": "Extrema of F Are Where f Crosses Zero, Not Where f Peaks",
+      "content": "Because F'(x) = f(x), a local maximum or minimum of F occurs where f (its derivative) CROSSES the x-axis with a sign change — not where the graph of f reaches its own highest point. A common error is to mark F's maximum at the peak of the f graph; that peak is actually where f is largest, meaning F is increasing fastest, and it corresponds to an INFLECTION point of F (where F'' = f' = 0). Keep the roles straight: zeros of f ↔ extrema of F; peaks/valleys of f ↔ inflection points of F."
+    },
+    {
+      "type": "quiz",
+      "question": "Let F(x) = ∫ from 0 to x of f(t) dt. If f(x) > 0 on (0, 3) and f(x) < 0 on (3, 5), what happens to F at x = 3?",
+      "options": ["F has a local minimum", "F has a local maximum", "F has an inflection point", "F equals zero"],
+      "correctIndex": 1,
+      "explanation": "Since F'(x) = f(x), F is increasing where f > 0 (on (0,3)) and decreasing where f < 0 (on (3,5)). f changes from positive to negative at x = 3, so F changes from increasing to decreasing — a local maximum of F."
+    },
+    {
+      "type": "explanation",
+      "heading": "Increasing, Decreasing, and Concavity of F in Practice",
+      "content": "Pulling the pieces together, analyzing an accumulation function F(x) = ∫ from a to x of f(t) dt is exactly the 'reading backward' skill from curve sketching, applied one level up. The graph of f is the graph of F', so you answer questions about F the same way you'd answer questions about a function given its derivative's graph.\n\nFor *increasing/decreasing and extrema of F*, read the *sign* of f and its zero crossings: F rises where f is above the axis, falls where f is below, and turns around where f crosses zero (with a sign change). For *concavity and inflection points of F*, read whether the graph of f is *rising or falling*: F is concave up where f slopes upward, concave down where f slopes downward, and inflects where f has a local max or min.\n\nThe absolute extrema of F on a closed interval [a, b] follow the Candidates Test, with F's critical points being the zeros of f plus the endpoints. To compare F-values there, you accumulate area — F at any point is the running net area from a to that point. This is why these problems demand careful, signed area bookkeeping: a region below the axis subtracts from the running total, possibly turning a tall accumulation back downward. The whole topic rewards treating f consistently as the derivative of F."
+    },
+    {
+      "type": "example",
+      "heading": "Reasoning About F's Features",
+      "content": "Using the same f from before (up to (2,2), flat to (4,2), down to (6,−2) crossing zero at t = 5) and F(x) = ∫ from 0 to x of f(t) dt:\n\nWhere is F increasing? Where f > 0, i.e. on (0, 5). Where is F decreasing? Where f < 0, i.e. on (5, 6).\n\nWhere is the absolute maximum of F on [0, 6]? Candidates are the zero of f (x = 5) and the endpoints (x = 0 and x = 6). Values: F(0) = 0, F(5) = 7, F(6) = 6. The absolute maximum is F(5) = 7, and the absolute minimum is F(0) = 0.\n\nWhere is F concave up? Where f is increasing, i.e. on (0, 2). Where is F concave down? Where f is decreasing, i.e. on (4, 6). On (2, 4), f is constant, so F'' = 0 and F is linear there (a straight segment of slope 2).\n\nWhere does F have an inflection point? Where f changes from increasing to decreasing or constant-to-decreasing — the concavity of F switches around x = 4, where f stops being flat and starts decreasing. Each answer is the curve-sketching logic with f serving as F's derivative."
+    },
+    {
+      "type": "quiz",
+      "question": "For F(x) = ∫ from 0 to x of f(t) dt, where is F concave up?",
+      "options": ["Where f(x) > 0", "Where f is increasing", "Where f(x) < 0", "Where f crosses the x-axis"],
+      "correctIndex": 1,
+      "explanation": "Since F''(x) = f'(x), F is concave up exactly where f' > 0, i.e. where f is increasing. The sign of f itself (positive or negative) controls whether F increases or decreases, not its concavity."
+    },
+    {
+      "type": "callout",
+      "variant": "tip",
+      "heading": "The Graph-of-f Accumulation Problem",
+      "content": "A classic AP free-response gives the graph of f (often segments and a semicircle) and defines g(x) = ∫ from a to x of f(t) dt, then asks for g at several points, where g is increasing, its extrema, and its concavity. Strategy: compute g-values by adding and subtracting geometric areas (areas below the axis are negative); answer increasing/decreasing and extrema from the SIGN and zeros of f; answer concavity and inflection from whether f is RISING or FALLING. Justify each conclusion by citing f (e.g., 'g has a max at x = 5 because f changes from positive to negative there'). State g(a) = 0 when the lower limit is reached."
+    },
+    {
+      "type": "deepdive",
+      "heading": "Accumulation as the Heart of Integration",
+      "content": "The accumulation function is where the two big ideas of calculus visibly merge, and seeing why makes the Fundamental Theorem feel inevitable rather than mysterious.\n\nOn one side, F(x) = ∫ from a to x of f(t) dt is built entirely from area — it's the limit-of-Riemann-sums accumulation you met two lessons ago, now with a moving endpoint. On the other side, F'(x) = f(x) says this area-built function has the integrand as its derivative. So the operation 'accumulate the area of f' produces a function whose rate of change is f itself. Accumulation and differentiation are inverse processes, and the accumulation function is the object that displays this directly: integrate f to build F, differentiate F to recover f.\n\nThis also reframes every rate problem you'll meet. If f(t) is a rate of change — velocity, flow rate, rate of sales — then F(x) = ∫ from a to x of f(t) dt is the *net change* in the underlying quantity from time a to time x. The accumulation function literally rebuilds the original quantity (up to its starting value) from its rate. Knowing F(a) = 0 means F measures change *relative to the start*; if you also know the actual starting amount, say Q(a), then the true quantity is Q(x) = Q(a) + ∫ from a to x of f(t) dt. This is the form the FTC takes in applications, and it answers questions like 'given the flow rate and the initial volume, how much is in the tank at time x?'\n\nThe units reinforce the meaning: f carries (quantity per unit input), the dt carries (input units), so F accumulates plain (quantity units) — the same units as the original quantity, never the rate. Recognizing accumulation as 'rebuild the quantity from its rate' is the conceptual key that unlocks the applications unit, where you'll use it for displacement, total distance, average value, and total amounts of all kinds."
+    },
+    {
+      "type": "keypoint",
+      "content": "An accumulation function F(x) = ∫ from a to x of f(t) dt has F(a) = 0 and, by the FTC, F'(x) = f(x) — so f acts as the derivative of F. F increases where f > 0, decreases where f < 0, and has extrema where f crosses zero; F is concave up where f is increasing and concave down where f is decreasing. Compute F's values by accumulating signed area, and the integral of a rate gives the net change in the quantity."
+    }
+  ],
+  "aiContext": "AP Calculus AB Unit 6, accumulation functions. The core object is F(x) = ∫ from a to x of f(t) dt, with F(a) = 0 and F'(x) = f(x) by the FTC, so f plays the role of F's derivative — analyzing F is the curve-sketching 'reading backward from the derivative' skill one level up. Stress that F increases/decreases with the SIGN of f, has extrema where f crosses zero (NOT where f peaks), and gets its concavity from whether f is increasing/decreasing (peaks of f are inflection points of F). The signature free-response gives the graph of f (segments, semicircles) and asks for values of g(x) = ∫ₐˣ f via signed-area bookkeeping, plus increasing/decreasing, extrema, and concavity with justification citing f. Reinforce that integrating a rate yields net change, and Q(x) = Q(a) + ∫ₐˣ f gives the actual quantity, setting up the applications unit."
+}

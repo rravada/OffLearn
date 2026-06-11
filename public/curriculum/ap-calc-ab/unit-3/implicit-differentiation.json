@@ -1,0 +1,107 @@
+{
+  "id": "ap-calc-ab-u3-implicit-differentiation",
+  "title": "Implicit Differentiation",
+  "subject": "AP Calculus AB",
+  "unit": "Differentiation: Composite, Implicit, and Inverse Functions",
+  "track": "ap",
+  "difficulty": "ap",
+  "duration": "45 min",
+  "objectives": [
+    "Explain why some equations relating x and y cannot be solved for y explicitly, and why dy/dx is still meaningful for those curves.",
+    "Apply implicit differentiation by differentiating both sides with respect to x, using the chain rule on every y-term and the product rule on mixed xy-terms, then solving for dy/dx.",
+    "Find the slope and the equation of a tangent line to a curve defined implicitly, such as a circle, ellipse, or the folium of Descartes, at a specified point.",
+    "Identify points where the tangent line is horizontal (numerator zero) or vertical (denominator zero)."
+  ],
+  "sections": [
+    {
+      "type": "explanation",
+      "heading": "When You Can't Solve for y — And That's Okay",
+      "content": "Up to now, every function you've differentiated has been in the form y = f(x) — y isolated on one side, expressed purely in terms of x. This is called an **explicit** function: y is explicitly written as a formula involving x.\n\nBut many important curves aren't written that way. Consider the equation of a circle centered at the origin:\n\n  x² + y² = 25\n\nCan you solve for y? Technically yes: y = ±√(25 − x²). But that ± means you don't get a single function — you get two, one for the top half and one for the bottom. And for many equations, solving for y is far worse or outright impossible. Try solving for y in:\n\n  x³ + y³ = 6xy\n\nThis is the famous **folium of Descartes**, a beautiful looping curve. There is no clean way to write y = (something in x alone). Yet the curve is perfectly real — you can graph it, draw tangent lines, and certainly ask for its slope at various points.\n\nThis is where **implicit differentiation** comes in. Instead of solving for y first, you differentiate the equation *as it stands*, treating y as an unknown function of x, then solve for dy/dx algebraically. It's a powerful technique that unlocks an entire world of curves the notation 'y = f(x)' can't easily capture."
+    },
+    {
+      "type": "explanation",
+      "heading": "The Key Insight: y Is a Function of x in Disguise",
+      "content": "Here's the central idea. Even when y isn't written as a formula in x, you can still assume y *depends on* x. When you see y in an equation, think of it as y(x) — some function of x whose formula you may not know, but which still obeys the rules of differentiation.\n\nWhy does this matter? Because when you differentiate a term involving y *with respect to x*, you must use the **chain rule**. The variable y is the inner function (it depends on x), so every time you differentiate a y-term you pick up a factor of dy/dx.\n\nThe crucial patterns:\n\n• d/dx[y²] = 2y · (dy/dx) — power rule outside, chain rule multiplies by dy/dx.\n• d/dx[y³] = 3y² · (dy/dx) — same pattern.\n• d/dx[xy] = x · (dy/dx) + y · 1 — product rule, since x and y are both functions of x.\n• d/dx[x²y³] = x² · 3y²(dy/dx) + 2x · y³ — product rule combined with chain rule.\n\nThe rule in one sentence: **differentiate normally, but every time you differentiate y, attach a dy/dx.** Then collect terms and solve for dy/dx. That's the whole method."
+    },
+    {
+      "type": "table",
+      "heading": "Differentiating Terms That Contain y",
+      "headers": ["Term", "Rule used", "d/dx of the term"],
+      "rows": [
+        ["x³", "power rule (x only)", "3x²"],
+        ["y³", "chain rule on y", "3y²·(dy/dx)"],
+        ["5y", "constant × y", "5·(dy/dx)"],
+        ["xy", "product rule", "x·(dy/dx) + y"],
+        ["x²y", "product + chain", "x²·(dy/dx) + 2xy"],
+        ["sin y", "chain rule on y", "cos y·(dy/dx)"]
+      ]
+    },
+    {
+      "type": "example",
+      "heading": "Implicit Differentiation: The Circle x² + y² = 25",
+      "content": "Find dy/dx for the circle x² + y² = 25.\n\nStep 1: Differentiate both sides with respect to x.\n  d/dx[x²] + d/dx[y²] = d/dx[25]\n  2x + 2y · (dy/dx) = 0\n\nStep 2: Solve for dy/dx.\n  2y · (dy/dx) = −2x\n  dy/dx = −2x / (2y) = −x/y\n\nThat's it: dy/dx = −x/y.\n\nInterpret it. At (3, 4) on the circle (check: 3² + 4² = 25 ✓), the slope is −3/4. At (0, 5) — the top of the circle — the slope is −0/5 = 0, a horizontal tangent, exactly as expected. At (5, 0) — the rightmost point — the slope is −5/0, undefined: the tangent there is vertical.\n\nNotice that dy/dx depends on *both* x and y. This is typical for implicit differentiation, and it makes sense geometrically: a circle has two y-values for most x-values (top and bottom), and the slopes at those two points differ. You need both coordinates to pin down which point you're at."
+    },
+    {
+      "type": "callout",
+      "variant": "warning",
+      "heading": "Every y-Term Needs Its dy/dx",
+      "content": "The defining mistake of implicit differentiation is differentiating a y-term as if y were a constant or as if it were x. Writing d/dx[y²] = 2y is wrong — it must be 2y·(dy/dx). Treating y like x (so d/dx[y³] = 3x²) is also wrong. On the AP exam, the dy/dx factors are precisely what graders check for; drop one and the entire solve-for-dy/dx step collapses. After differentiating, scan your work: every term that contained a y should now carry a dy/dx."
+    },
+    {
+      "type": "quiz",
+      "question": "What is d/dx[xy²], treating y as a function of x?",
+      "options": ["2xy", "y² + 2xy·(dy/dx)", "y²·(dy/dx)", "2y·(dy/dx)"],
+      "correctIndex": 1,
+      "explanation": "Use the product rule on x·y²: d/dx[x]·y² + x·d/dx[y²] = 1·y² + x·2y(dy/dx) = y² + 2xy(dy/dx). The y² term keeps no dy/dx because it came from differentiating x, while the y²-term differentiated does require the chain-rule factor. The option 2xy forgets both the product rule and the dy/dx factor."
+    },
+    {
+      "type": "steps",
+      "heading": "The Implicit Differentiation Procedure",
+      "steps": [
+        { "title": "Differentiate both sides with respect to x", "content": "Apply d/dx term by term to the entire equation, including any constant on the right (whose derivative is 0)." },
+        { "title": "Attach dy/dx to every y-term", "content": "Use the chain rule on powers of y and the product rule on mixed xy-terms. Each differentiated y produces a dy/dx factor." },
+        { "title": "Gather the dy/dx terms", "content": "Move every term containing dy/dx to one side of the equation and everything else to the other side." },
+        { "title": "Factor and solve", "content": "Factor dy/dx out of its side, then divide. The result generally involves both x and y." },
+        { "title": "Evaluate at a point if asked", "content": "First confirm the point satisfies the original equation, then substitute both coordinates to get a numerical slope." }
+      ]
+    },
+    {
+      "type": "example",
+      "heading": "A Harder Example: x³ + y³ = 6xy",
+      "content": "Find dy/dx for the folium of Descartes: x³ + y³ = 6xy.\n\nStep 1: Differentiate both sides with respect to x.\n  Left: d/dx[x³] + d/dx[y³] = 3x² + 3y²(dy/dx)\n  Right: d/dx[6xy] = 6[x·(dy/dx) + y] = 6x(dy/dx) + 6y   (product rule on x·y)\n\nStep 2: Set them equal.\n  3x² + 3y²(dy/dx) = 6x(dy/dx) + 6y\n\nStep 3: Collect dy/dx terms on one side.\n  3y²(dy/dx) − 6x(dy/dx) = 6y − 3x²\n\nStep 4: Factor out dy/dx.\n  (dy/dx)(3y² − 6x) = 6y − 3x²\n\nStep 5: Solve and simplify.\n  dy/dx = (6y − 3x²)/(3y² − 6x) = (2y − x²)/(y² − 2x)\n\nThe derivative is undefined when y² − 2x = 0, which marks points on the curve with a vertical tangent — a real geometric feature of the folium."
+    },
+    {
+      "type": "quiz",
+      "question": "After implicitly differentiating a curve you obtain dy/dx = (4 − x²)/(2y − 6). At which kind of point is the tangent line horizontal?",
+      "options": ["Where 2y − 6 = 0", "Where 4 − x² = 0", "Where x = y", "Horizontal tangents are impossible here"],
+      "correctIndex": 1,
+      "explanation": "A tangent is horizontal when the slope equals 0, which happens when the numerator is 0 (and the denominator is not): 4 − x² = 0. Setting the denominator 2y − 6 = 0 instead gives an undefined slope — that's where the tangent is vertical."
+    },
+    {
+      "type": "explanation",
+      "heading": "Finding Tangent Lines to Implicit Curves",
+      "content": "Once you have dy/dx in terms of x and y, finding a tangent line at a specific point is straightforward: plug in the coordinates to get the numerical slope, then use point-slope form.\n\nFind the tangent line to x² + y² = 25 at (3, −4).\n\nFirst verify the point is on the curve: 3² + (−4)² = 9 + 16 = 25 ✓.\n\nWe found dy/dx = −x/y. At (3, −4):\n  dy/dx = −3/(−4) = 3/4\n\nTangent line in point-slope form:\n  y − (−4) = (3/4)(x − 3)\n  y + 4 = (3/4)(x − 3)\n  y = (3/4)x − 25/4\n\nCompare to the tangent at (3, 4), which had slope −3/4. The point (3, −4) lies on the bottom half of the circle and (3, 4) on the top; their tangent slopes are negatives of each other, matching the circle's symmetry.\n\nThis is a very common AP question type: given an implicit equation and a point, find the tangent line. The steps never change — (1) verify the point satisfies the equation, (2) find dy/dx implicitly, (3) plug in the point, (4) write the line."
+    },
+    {
+      "type": "callout",
+      "variant": "tip",
+      "heading": "Read Horizontal and Vertical Tangents Off the Fraction",
+      "content": "When dy/dx is a fraction, a horizontal tangent occurs where the numerator is 0 (slope 0) and a vertical tangent where the denominator is 0 (slope undefined). AP free-response questions love to ask for these points, and combining 'numerator = 0' or 'denominator = 0' with the original curve equation is the standard solution path. Always check that the candidate point actually lies on the curve before reporting it."
+    },
+    {
+      "type": "deepdive",
+      "heading": "Why Implicit Differentiation Works — A Deeper Look",
+      "content": "Implicit differentiation can feel like magic. You're differentiating an equation that doesn't define a function — x² + y² = 25 fails the vertical line test, so it isn't a function at all. How can you take its derivative?\n\nThe rigorous justification is the **Implicit Function Theorem**, which you'll meet fully in multivariable calculus. The idea: *locally* — in a small neighborhood around most points — you *can* solve for y as a function of x. Near (3, 4) the circle looks like a small arc that passes the vertical line test perfectly. Some function y = f(x) traces that arc even if no simple formula exists, and implicit differentiation finds the derivative of that local function.\n\nThe method breaks down only where the curve has a vertical tangent (dy/dx undefined) or crosses itself (multiple y-values converge). That's also why dy/dx involves both x and y: different parts of the curve give different local functions, so you need both coordinates to know which piece you're on.\n\nThere's an even simpler way to see the validity: you're applying d/dx to both sides of a true equation. If two expressions are always equal, their rates of change must be equal too. That's a basic property of equality — and it's all the justification the technique needs."
+    },
+    {
+      "type": "example",
+      "heading": "Implicit Differentiation with Products and Higher Powers",
+      "content": "Find dy/dx for x²y + y³ = 8.\n\nStep 1: Differentiate each term with respect to x.\n  d/dx[x²y]: product rule with u = x², v = y → (2x)(y) + (x²)(dy/dx) = 2xy + x²(dy/dx)\n  d/dx[y³]: chain rule → 3y²(dy/dx)\n  d/dx[8] = 0\n\nStep 2: Assemble.\n  2xy + x²(dy/dx) + 3y²(dy/dx) = 0\n\nStep 3: Isolate dy/dx.\n  x²(dy/dx) + 3y²(dy/dx) = −2xy\n  (dy/dx)(x² + 3y²) = −2xy\n  dy/dx = −2xy / (x² + 3y²)\n\nEvaluate at a point on the curve. If x = 0, then 0 + y³ = 8, so y = 2; the point (0, 2) is on the curve. There:\n  dy/dx = −2(0)(2) / (0² + 3·4) = 0/12 = 0\n\nThe tangent at (0, 2) is horizontal, which is geometrically reasonable for the point near the top of the curve on the y-axis."
+    },
+    {
+      "type": "keypoint",
+      "content": "Implicit differentiation is the chain rule in disguise: every y-term gains a dy/dx factor because y depends on x. Solve for dy/dx algebraically; the result usually involves both x and y, so a specific point (both coordinates) is needed to evaluate a slope. Numerator = 0 gives horizontal tangents, denominator = 0 gives vertical ones."
+    }
+  ],
+  "aiContext": "AP Calculus AB Unit 3, implicit differentiation. The make-or-break idea is that y is a function of x, so every y-term differentiated picks up a dy/dx factor (chain rule), and mixed xy-terms also need the product rule. Watch for two classic errors: dropping the dy/dx factor on y-terms, and forgetting the product rule on terms like xy or x²y. Stress the workflow of collecting dy/dx terms, factoring, and solving, then evaluating only after verifying the point lies on the curve. On the exam this shows up as MCQs computing dy/dx and as FRQs asking for a tangent line, or for where tangents are horizontal (numerator 0) or vertical (denominator 0); it also feeds directly into related rates in the next unit."
+}

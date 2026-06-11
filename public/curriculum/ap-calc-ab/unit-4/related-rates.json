@@ -1,0 +1,95 @@
+{
+  "id": "ap-calc-ab-u4-related-rates",
+  "title": "Related Rates",
+  "subject": "AP Calculus AB",
+  "unit": "Contextual Applications of Differentiation",
+  "track": "ap",
+  "difficulty": "ap",
+  "duration": "50 min",
+  "objectives": [
+    "Identify quantities that change with respect to time and write an equation relating them that holds at every instant.",
+    "Differentiate both sides of a relating equation with respect to time using implicit differentiation and the chain rule.",
+    "Use geometry such as similar triangles to reduce the number of variables before differentiating.",
+    "Solve for an unknown rate at a specific instant and interpret its sign and units."
+  ],
+  "sections": [
+    {
+      "type": "explanation",
+      "heading": "The Big Idea: Quantities That Change Together",
+      "content": "Imagine you're blowing up a balloon. As time passes, the air you push in increases the volume — and as the volume increases, the radius increases too. Volume and radius are both changing over time, and they're linked by a geometric formula. That's the essence of related rates: two or more quantities change simultaneously, tied together by an equation, and you want to know how fast one is changing when you know how fast another is.\n\nHere's the critical insight you already have: a derivative measures a rate of change. When you write dr/dt, you're asking 'how fast is the radius changing with respect to time?' When you write dV/dt, you're asking 'how fast is the volume changing with respect to time?' Related rates problems hand you a known rate (like dV/dt) and ask for an unknown rate (like dr/dt), using the equation that connects the quantities.\n\nThis is one of the most powerful applications of the chain rule. Recall that when you differentiate a composition, you multiply by the derivative of the inner function. In related rates the 'inner function' is almost always time — every variable is secretly a function of t, even when the original equation doesn't show it. That hidden dependence on t is exactly why each variable picks up a dx/dt or dr/dt factor when you differentiate."
+    },
+    {
+      "type": "steps",
+      "heading": "The Four-Step Strategy",
+      "steps": [
+        { "title": "Draw a picture and label variables", "content": "Identify every quantity that changes over time and assign it a variable. Do NOT plug in specific numbers yet — variables must stay variables so they can be differentiated. Mark which rate is known and which is unknown." },
+        { "title": "Write an equation relating the variables", "content": "Use geometry or physics: Pythagorean theorem for sliding ladders, V = (4/3)πr³ for spheres, V = (1/3)πr²h for cones, similar triangles, or trig ratios. The equation must hold at every instant, not just the one in question." },
+        { "title": "Differentiate both sides with respect to time", "content": "Apply d/dt throughout. The chain rule attaches a rate to each variable: d/dt[x²] = 2x(dx/dt), d/dt[r³] = 3r²(dr/dt). Constants differentiate to 0." },
+        { "title": "Substitute known values and solve", "content": "Only NOW plug in the specific quantities and rates for the instant in question, then solve for the unknown rate. Interpret the sign (increasing vs decreasing) and attach correct units." }
+      ]
+    },
+    {
+      "type": "table",
+      "heading": "Equations That Power Most Related-Rates Problems",
+      "headers": ["Situation", "Relating equation", "Differentiated with respect to t"],
+      "rows": [
+        ["Sliding ladder / right triangle", "x² + y² = L²", "2x(dx/dt) + 2y(dy/dt) = 0"],
+        ["Expanding sphere", "V = (4/3)πr³", "dV/dt = 4πr²(dr/dt)"],
+        ["Filling cone", "V = (1/3)πr²h", "use similar triangles first, then differentiate"],
+        ["Area of a circle", "A = πr²", "dA/dt = 2πr(dr/dt)"],
+        ["Moving shadow / similar triangles", "a/b = c/d", "differentiate the proportion in t"]
+      ]
+    },
+    {
+      "type": "example",
+      "heading": "The Classic Ladder Problem",
+      "content": "A 10-foot ladder leans against a wall. The base slides away from the wall at 2 ft/s. How fast is the top sliding down when the base is 6 feet from the wall?\n\nStep 1: Let x = distance from wall to base, y = height of top. Known: dx/dt = 2 ft/s. Want: dy/dt when x = 6.\n\nStep 2: Pythagorean theorem: x² + y² = 10² = 100.\n\nStep 3: Differentiate both sides with respect to t:\n  2x(dx/dt) + 2y(dy/dt) = 0\nThe right side is 0 because 100 is constant — the ladder's length doesn't change.\n\nStep 4: When x = 6: 36 + y² = 100, so y² = 64, y = 8.\n  Substitute: 2(6)(2) + 2(8)(dy/dt) = 0\n  24 + 16(dy/dt) = 0\n  dy/dt = −24/16 = −3/2 ft/s\n\nThe negative sign means the top is moving downward (y decreasing). The top slides down at 1.5 ft/s."
+    },
+    {
+      "type": "callout",
+      "variant": "warning",
+      "heading": "Never Substitute Numbers Before Differentiating",
+      "content": "The single most common related-rates mistake is plugging in the instant's values too early. If you substitute x = 6 into x² + y² = 100 before differentiating, x becomes a constant, its derivative is 0, and you destroy the very rate dx/dt you need. Keep every changing quantity symbolic through the differentiation step; substitute the specific numbers only in Step 4. A constant like a fixed ladder length may be substituted early, but anything that varies must wait."
+    },
+    {
+      "type": "quiz",
+      "question": "In a related-rates problem, at what point should you substitute the specific numerical values for the instant in question?",
+      "options": ["Before writing the relating equation", "After differentiating both sides with respect to time", "Immediately after drawing the picture", "Never — keep everything symbolic"],
+      "correctIndex": 1,
+      "explanation": "Substitute only after differentiating with respect to t. Plugging in a changing quantity earlier turns it into a constant whose derivative is 0, which eliminates the rate you are trying to find. Constants (like a fixed length) are the only exception."
+    },
+    {
+      "type": "example",
+      "heading": "Expanding Balloon: Connecting Volume and Radius",
+      "content": "Air is pumped into a spherical balloon at 100 cm³/s. How fast is the radius increasing when the radius is 5 cm?\n\nStep 1: Let V = volume, r = radius. Known: dV/dt = 100 cm³/s. Want: dr/dt when r = 5.\n\nStep 2: V = (4/3)πr³.\n\nStep 3: Differentiate with respect to t:\n  dV/dt = (4/3)π·3r²(dr/dt) = 4πr²(dr/dt)\nThe chain rule produced the dr/dt factor; the 3 from the power rule cancels the 1/3.\n\nStep 4: Substitute dV/dt = 100 and r = 5:\n  100 = 4π(25)(dr/dt) = 100π(dr/dt)\n  dr/dt = 1/π ≈ 0.318 cm/s\n\nNotice: as the balloon grows, 4πr² gets larger, so the same airflow produces a slower radius increase — a bigger balloon needs more air to expand the same amount."
+    },
+    {
+      "type": "quiz",
+      "question": "For a circle whose radius grows at dr/dt = 3 cm/s, how fast is the area changing when r = 4 cm? (A = πr²)",
+      "options": ["12π cm²/s", "24π cm²/s", "16π cm²/s", "6π cm²/s"],
+      "correctIndex": 1,
+      "explanation": "Differentiate A = πr² to get dA/dt = 2πr(dr/dt). Substituting r = 4 and dr/dt = 3 gives 2π(4)(3) = 24π cm²/s. The answer 12π forgets to double from the power rule, and 16π wrongly uses r² without the rate."
+    },
+    {
+      "type": "deepdive",
+      "heading": "Why the Chain Rule Is the Engine of Related Rates",
+      "content": "Let's really understand what happens when you differentiate both sides with respect to t. Take V = (4/3)πr³. Why can't you just compute dV/dr = 4πr² and stop?\n\nBecause dV/dr tells you how volume changes per unit change in radius — but that isn't the question. You want how volume changes per unit of TIME and how radius changes per unit of TIME: dV/dt and dr/dt.\n\nThe chain rule bridges the gap: dV/dt = (dV/dr)(dr/dt) = 4πr²·(dr/dt). In words, the rate volume changes over time equals the rate volume changes per unit radius times the rate radius changes over time.\n\nThis is the chain rule's universal role — converting between rates with respect to different variables. It's like unit conversion: knowing miles per gallon and gallons per hour, you multiply to get miles per hour. Here, (ΔV per Δr)·(Δr per Δt) = (ΔV per Δt).\n\nOn the AP exam, related-rates problems almost always involve the Pythagorean theorem, sphere/cone/cylinder volume formulas, similar triangles, or trig relationships. Get comfortable differentiating these core equations with respect to t and you'll be ready for any version."
+    },
+    {
+      "type": "example",
+      "heading": "The Filling Cone: Using Similar Triangles",
+      "content": "Water pours into a conical tank at 3 ft³/min. The tank is 10 ft tall and 4 ft in radius at the top. How fast is the water level rising when the water is 5 ft deep?\n\nStep 1: Let V = volume of water, h = depth, r = surface radius. Known: dV/dt = 3 ft³/min. Want: dh/dt when h = 5.\n\nStep 2: V = (1/3)πr²h has two changing variables. Eliminate r using similar triangles: the cone keeps radius/height = 4/10 = 2/5 at every level, so r = (2/5)h.\n  Substitute: V = (1/3)π(2h/5)²h = (1/3)π(4h²/25)h = (4π/75)h³.\n\nStep 3: Differentiate: dV/dt = (4π/75)·3h²(dh/dt) = (4πh²/25)(dh/dt).\n\nStep 4: Plug in dV/dt = 3 and h = 5:\n  3 = (4π·25/25)(dh/dt) = 4π(dh/dt)\n  dh/dt = 3/(4π) ≈ 0.239 ft/min\n\nKey technique: when you have too many variables, use geometry (similar triangles) to write one in terms of another before differentiating."
+    },
+    {
+      "type": "callout",
+      "variant": "tip",
+      "heading": "Mind the Sign, the Units, and the Extra Variable",
+      "content": "Three exam habits earn easy points. First, interpret the sign: a negative rate means a decreasing quantity (the ladder top falling, water draining). Second, always attach units built from the quantities — cm³/s, ft/min, etc. — since AP free-response rubrics award points for them. Third, when your relating equation has more variables than you have rates for (like the cone's r and h), reduce it with similar triangles or another relationship before differentiating, or you'll be stuck with an unknown extra rate."
+    },
+    {
+      "type": "keypoint",
+      "content": "Related rates is a four-step process: draw and label changing quantities, write an equation always true relating them, differentiate both sides with respect to time using the chain rule, then substitute known values and solve. Keep variables symbolic until after differentiating, reduce extra variables with geometry, and interpret the sign and units of the answer."
+    }
+  ],
+  "aiContext": "AP Calculus AB Unit 4, related rates. This is implicit differentiation applied with time as the hidden variable, so every changing quantity gains a d/dt factor via the chain rule. The dominant error is substituting an instant's numerical values before differentiating, which zeroes out the rate being sought — stress keeping variables symbolic until the final step. Common setups are the sliding ladder (Pythagorean theorem), expanding sphere or circle, and the filling cone, which requires similar triangles to eliminate a second variable. On free response, students must define variables, show the differentiated equation, solve at the given instant, and report a signed answer with correct units; emphasize all four."
+}

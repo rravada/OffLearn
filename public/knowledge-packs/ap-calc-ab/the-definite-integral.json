@@ -1,0 +1,29 @@
+{
+  "id": "ap-calc-ab-the-definite-integral",
+  "title": "The Definite Integral and Its Properties",
+  "subject": "AP Calculus AB",
+  "chunks": [
+    { "id": "c1", "text": "The definite integral ∫ from a to b of f(x) dx is the limit of Riemann sums and represents net signed area." },
+    { "id": "c2", "text": "Net signed area means area above the x-axis counts positive and area below the x-axis counts negative." },
+    { "id": "c3", "text": "When f(x) is negative, the rectangle heights are negative, so the integral subtracts that region's area." },
+    { "id": "c4", "text": "The definite integral generally does not equal total geometric area, which counts all regions positively." },
+    { "id": "c5", "text": "Example: ∫ from 0 to 2π of sin x dx = 0 because the positive arch cancels the negative arch, even though the total area is 4." },
+    { "id": "c6", "text": "The constant multiple rule: ∫ from a to b of k·f(x) dx = k·∫ from a to b of f(x) dx." },
+    { "id": "c7", "text": "The sum and difference rule: ∫ from a to b of [f(x) ± g(x)] dx = ∫ f dx ± ∫ g dx over the same interval." },
+    { "id": "c8", "text": "Interval additivity: ∫ from a to b of f dx + ∫ from b to c of f dx = ∫ from a to c of f dx." },
+    { "id": "c9", "text": "Reversing the limits flips the sign: ∫ from a to b of f dx = −∫ from b to a of f dx." },
+    { "id": "c10", "text": "The zero-width rule: ∫ from a to a of f(x) dx = 0, since there is no interval to accumulate over." },
+    { "id": "c11", "text": "The comparison property: if f(x) ≥ g(x) on [a, b], then ∫ from a to b of f dx ≥ ∫ from a to b of g dx." },
+    { "id": "c12", "text": "A definite integral can be evaluated geometrically when the integrand graphs as a triangle, rectangle, or semicircle." },
+    { "id": "c13", "text": "Example: ∫ from 0 to 4 of (1/2 x) dx is a right triangle of base 4 and height 2, giving area 4." },
+    { "id": "c14", "text": "Example: ∫ from −2 to 2 of √(4 − x²) dx is a semicircle of radius 2, giving area 2π." },
+    { "id": "c15", "text": "When a region lies partly below the axis, the definite integral is the net of positive and negative areas, while total area requires splitting at the x-intercepts and summing absolute values." },
+    { "id": "c16", "text": "A common AP task gives integral values and asks for combinations using the properties, without any formula for f." },
+    { "id": "c17", "text": "Example: if ∫ from 0 to 3 of f = 5 and ∫ from 3 to 7 of f = 2, then by additivity ∫ from 0 to 7 of f = 7." },
+    { "id": "c18", "text": "Example: if ∫ from 1 to 4 of f = 8 and ∫ from 1 to 6 of f = 3, then ∫ from 4 to 6 of f = 3 − 8 = −5." },
+    { "id": "c19", "text": "The order of the limits is the most common source of sign errors; a swapped interval negates the integral." },
+    { "id": "c20", "text": "If v(t) is velocity, ∫ from a to b of v(t) dt is the displacement (net change in position), with direction handled by the sign." },
+    { "id": "c21", "text": "Total distance traveled requires integrating speed |v(t)|, which makes every contribution positive." },
+    { "id": "c22", "text": "The integral of a rate of change over an interval equals the net change in the underlying quantity, the seed of the Fundamental Theorem of Calculus." }
+  ]
+}

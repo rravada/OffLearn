@@ -1,0 +1,29 @@
+{
+  "id": "ap-calc-ab-interpreting-the-derivative-in-context",
+  "title": "Interpreting the Derivative in Context",
+  "subject": "AP Calculus AB",
+  "chunks": [
+    { "id": "c1", "text": "A derivative in an applied context is an instantaneous rate of change: how fast the output quantity changes per unit of the input quantity." },
+    { "id": "c2", "text": "A complete interpretation of f'(a) states three things: that it is a rate of change, its units, and the meaning of its sign." },
+    { "id": "c3", "text": "The units of a derivative are the output units divided by the input units, coming directly from the difference quotient that defines the derivative." },
+    { "id": "c4", "text": "A positive derivative means the quantity is increasing at that instant; a negative derivative means it is decreasing; a zero derivative means it is momentarily neither rising nor falling." },
+    { "id": "c5", "text": "If P(t) is population in thousands and t is in years, then P'(4) = 7 means that at year 4 the population is increasing at a rate of 7 thousand people per year." },
+    { "id": "c6", "text": "The function value f(a) is an amount, while the derivative f'(a) is a rate of change; they carry different units and must not be confused." },
+    { "id": "c7", "text": "For V(t) in liters and t in seconds, V(3) = 50 means there are 50 liters at 3 seconds, whereas V'(3) = 50 means the volume is increasing at 50 liters per second at 3 seconds." },
+    { "id": "c8", "text": "A reliable AP interpretation template is: 'At [input value with unit], the [quantity] is increasing or decreasing at a rate of [number] [output unit] per [input unit].'" },
+    { "id": "c9", "text": "Omitting units or describing f'(a) as an amount rather than a rate loses the interpretation point on free response, even when the numerical value is correct." },
+    { "id": "c10", "text": "For a cost function C(x) in dollars for x items, C'(x) is the marginal cost in dollars per item, approximately the cost of producing one more item." },
+    { "id": "c11", "text": "The average rate of change of f over [a, b] is [f(b) − f(a)]/(b − a), the slope of the secant line connecting the endpoints." },
+    { "id": "c12", "text": "The instantaneous rate of change at a point is f'(a), the slope of the tangent line and the limit of average rates as the interval shrinks to zero." },
+    { "id": "c13", "text": "Average rate of change is like average speed over a trip, while instantaneous rate is like the speedometer reading at one moment; the two can differ greatly." },
+    { "id": "c14", "text": "When a problem says 'average rate of change,' compute a secant slope from two values; when it says 'rate of change at t = a,' compute or estimate the derivative." },
+    { "id": "c15", "text": "To estimate a derivative f'(a) from a table, use a symmetric difference quotient with the data points on either side of a for the best accuracy." },
+    { "id": "c16", "text": "Example: for oven temperatures T = 70, 180, 300, 340 at t = 0, 5, 10, 15, the average rate of change over [0, 15] is (340 − 70)/15 = 18 degrees per minute." },
+    { "id": "c17", "text": "Example: from the same table, T'(10) is estimated by the symmetric difference (340 − 180)/(15 − 5) = 16 degrees per minute." },
+    { "id": "c18", "text": "Units serve as an error detector: if a computed quantity's units do not match what the question asks for, a mistake has been made in choosing the operation." },
+    { "id": "c19", "text": "If a rate is given in liters per minute and the question asks for total liters, integrating (not differentiating) the rate over time produces liters, because the minutes cancel." },
+    { "id": "c20", "text": "The differential approximation Δy ≈ f'(a)·Δx is unit-consistent because f'(a) carries output-per-input units and Δx carries input units, leaving output units for Δy." },
+    { "id": "c21", "text": "A zero derivative often marks a maximum or minimum of the quantity, since the rate of change is momentarily zero where a curve levels off." },
+    { "id": "c22", "text": "Interpreting derivatives in context is a frequent AP free-response task that rewards a sentence containing a rate, a sign meaning, and correct units." }
+  ]
+}

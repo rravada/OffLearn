@@ -1,0 +1,29 @@
+{
+  "id": "ap-calc-ab-accumulation-functions",
+  "title": "Accumulation Functions",
+  "subject": "AP Calculus AB",
+  "chunks": [
+    { "id": "c1", "text": "An accumulation function F(x) = ∫ from a to x of f(t) dt returns the net signed area from a fixed start a up to a variable upper limit x." },
+    { "id": "c2", "text": "As x increases, the accumulation function sweeps out more area, tracking the running total of the integrand." },
+    { "id": "c3", "text": "An accumulation function always satisfies F(a) = 0, since no area has accumulated at the starting point." },
+    { "id": "c4", "text": "By the Fundamental Theorem of Calculus, F'(x) = f(x), so the integrand f acts as the derivative of the accumulation function F." },
+    { "id": "c5", "text": "Analyzing an accumulation function reuses the skill of reading a function from its derivative's graph, with f in the derivative role." },
+    { "id": "c6", "text": "F is increasing where f(x) > 0 and decreasing where f(x) < 0." },
+    { "id": "c7", "text": "F has a local maximum where f crosses zero from positive to negative, and a local minimum where f crosses from negative to positive." },
+    { "id": "c8", "text": "Because F''(x) = f'(x), F is concave up where f is increasing and concave down where f is decreasing." },
+    { "id": "c9", "text": "F has an inflection point where f has a local maximum or minimum, since that is where f' changes sign." },
+    { "id": "c10", "text": "A common error is marking F's maximum at the peak of the f graph; the peak of f is actually an inflection point of F." },
+    { "id": "c11", "text": "The extrema of F occur where f (its derivative) crosses zero, not where f reaches its highest value." },
+    { "id": "c12", "text": "To compute values of F from a graph of f, accumulate signed area: add area above the axis and subtract area below, interval by interval." },
+    { "id": "c13", "text": "Example: if the area of f from 0 to 2 is +5 and from 2 to 3 is −1, then F(3) = 5 − 1 = 4." },
+    { "id": "c14", "text": "The absolute extrema of F on a closed interval follow the Candidates Test, with F's critical points being the zeros of f plus the endpoints." },
+    { "id": "c15", "text": "A signature AP free-response problem gives the graph of f and defines g(x) = ∫ from a to x of f(t) dt, asking for values, increase/decrease, extrema, and concavity of g." },
+    { "id": "c16", "text": "Conclusions about g should be justified by citing f, such as 'g has a maximum at x = 5 because f changes from positive to negative there.'" },
+    { "id": "c17", "text": "When the integrand f is a rate of change, the accumulation function gives the net change in the underlying quantity from a to x." },
+    { "id": "c18", "text": "The actual quantity is Q(x) = Q(a) + ∫ from a to x of f(t) dt, the starting amount plus the accumulated change." },
+    { "id": "c19", "text": "The units of an accumulation function are the original quantity's units, since the rate units multiply by the input units and cancel the rate." },
+    { "id": "c20", "text": "Accumulation functions display directly that integration and differentiation are inverse: integrate f to build F, differentiate F to recover f." },
+    { "id": "c21", "text": "On an interval where f is constant, the accumulation function F is linear, since its slope F' = f does not change." },
+    { "id": "c22", "text": "Accumulation is the conceptual key to the applications of integration, including displacement, total distance, average value, and total amounts." }
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "id": "ap-calc-ab-exponential-growth-and-decay",
+  "title": "Exponential Growth and Decay Models",
+  "subject": "AP Calculus AB",
+  "chunks": [
+    { "id": "c1", "text": "Many processes have a rate of change proportional to the amount present, modeled by the differential equation dy/dt = ky." },
+    { "id": "c2", "text": "The solution of dy/dt = ky is y = y₀e^(kt), where y₀ is the amount at t = 0 and k is the proportional rate constant." },
+    { "id": "c3", "text": "Because the solution is exponential, proportional-rate processes always produce exponential curves." },
+    { "id": "c4", "text": "If k > 0 the quantity grows without bound (exponential growth); if k < 0 it shrinks toward zero (exponential decay)." },
+    { "id": "c5", "text": "The constant y₀ is the initial amount, since e^(k·0) = 1 makes y(0) = y₀." },
+    { "id": "c6", "text": "The constant k is the relative rate of change, and a larger absolute value of k means faster growth or decay." },
+    { "id": "c7", "text": "To find k from data, substitute a known (time, amount) pair into y = y₀e^(kt), divide out y₀, and take a natural log." },
+    { "id": "c8", "text": "Example: a culture starting at 500 cells reaching 2000 after 2 hours gives 4 = e^(2k), so k = (ln 4)/2 = ln 2 per hour." },
+    { "id": "c9", "text": "Once y₀ and k are known, the model predicts the amount at any time or, by solving for t with a logarithm, the time to reach a target." },
+    { "id": "c10", "text": "A common error is using a number other than the t = 0 value as y₀; y₀ must be the amount at the starting time." },
+    { "id": "c11", "text": "For a decaying quantity, k should be negative; obtaining a positive k for decay signals an algebra error." },
+    { "id": "c12", "text": "The half-life is the time for a decaying quantity to fall to half its value." },
+    { "id": "c13", "text": "Setting y₀/2 = y₀e^(kT) gives 1/2 = e^(kT), so the half-life is T = −(ln 2)/k." },
+    { "id": "c14", "text": "Given a half-life T, the decay constant is k = −(ln 2)/T." },
+    { "id": "c15", "text": "The doubling time for growth solves 2 = e^(kT), giving T = (ln 2)/k." },
+    { "id": "c16", "text": "The number ln 2 ≈ 0.693 appears in both half-life and doubling-time formulas because they are the factor-of-2 events of exponential change." },
+    { "id": "c17", "text": "A decay model can be written y = y₀(1/2)^(t/T) using half-life T, which often simplifies arithmetic." },
+    { "id": "c18", "text": "Example: a substance with a 10-year half-life and 80 grams now leaves 80·(1/2)^(25/10) ≈ 14.1 grams after 25 years." },
+    { "id": "c19", "text": "The phrase 'rate of change is proportional to the amount' should immediately trigger the model y = y₀e^(kt)." },
+    { "id": "c20", "text": "Newton's law of cooling, dT/dt = k(T − Ts), becomes dy/dt = ky by substituting u = T − Ts, so temperature decays exponentially toward the ambient Ts, not toward zero." },
+    { "id": "c21", "text": "Pure exponential growth assumes unlimited resources; real growth often levels off at a carrying capacity, described by the logistic model (a BC topic)." },
+    { "id": "c22", "text": "The exponential model is the foundational case from which cooling models (shift by a constant) and logistic models (multiply by a saturating factor) are built." }
+  ]
+}

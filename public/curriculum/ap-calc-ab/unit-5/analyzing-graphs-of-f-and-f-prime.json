@@ -1,0 +1,102 @@
+{
+  "id": "ap-calc-ab-u5-analyzing-graphs-of-f-and-f-prime",
+  "title": "Analyzing Graphs of f, f′, and f″",
+  "subject": "AP Calculus AB",
+  "unit": "Analytical Applications of Differentiation",
+  "track": "ap",
+  "difficulty": "ap",
+  "duration": "45 min",
+  "objectives": [
+    "Translate features between the graphs of f, f', and f'' (heights, zeros, and slopes).",
+    "Given the graph of f', determine where f is increasing/decreasing, its local extrema, and its concavity.",
+    "Match graphs of a function with the graphs of its first and second derivatives.",
+    "Justify conclusions about f using explicit references to the behavior of f' or f''."
+  ],
+  "sections": [
+    {
+      "type": "explanation",
+      "heading": "Three Graphs, One Story",
+      "content": "A function and its derivatives are not three unrelated pictures — they are three views of a single object, and every feature of one shows up as a specific feature of the others. Once you can move fluently among the graphs of f, f', and f'', a whole category of AP problems becomes routine: you'll be handed one of the three graphs and asked to deduce the behavior of the others.\n\nThe connections all come from two facts you already know. First, f' is the slope of f. So the *height* of the f' graph at a point equals the *slope* of the f graph there. When f' is above the x-axis, f is climbing; when f' is below, f is falling; where f' touches the axis, f has a horizontal tangent. Second, f'' is the slope of f'. So the *slope* of the f' graph tells you the concavity of f, and the *height* of the f'' graph also reports that concavity.\n\nThe most important habit to build is keeping straight which feature maps to which. A height on the f' graph is a slope on the f graph — never a height on the f graph. Students who blur this read the f' graph as though it were f and get every answer backward. Students who consistently translate 'height of f' → slope of f' and 'slope of f' → concavity of f' answer these questions almost mechanically. This lesson makes those translations explicit and gives you practice in both directions."
+    },
+    {
+      "type": "table",
+      "heading": "Master Correspondence Table",
+      "headers": ["Feature of f", "On the graph of f'", "On the graph of f''"],
+      "rows": [
+        ["f increasing", "f' is above the x-axis (positive)", "—"],
+        ["f decreasing", "f' is below the x-axis (negative)", "—"],
+        ["local max of f", "f' crosses zero, + to −", "f'' is negative"],
+        ["local min of f", "f' crosses zero, − to +", "f'' is positive"],
+        ["f concave up", "f' is increasing (sloping up)", "f'' is above the axis (positive)"],
+        ["f concave down", "f' is decreasing (sloping down)", "f'' is below the axis (negative)"],
+        ["inflection point of f", "f' has a local max or min", "f'' crosses zero with a sign change"]
+      ]
+    },
+    {
+      "type": "explanation",
+      "heading": "Reading the Graph of f′ to Analyze f",
+      "content": "The signature AP problem gives you the graph of f' — often a curve or a set of straight segments — and asks about f. Translate every question into the correspondence rules.\n\nWhere is f increasing or decreasing? Look at the *sign* (height) of f': positive means f increasing, negative means f decreasing. Where are the local extrema of f? At the x-values where the f' graph *crosses* the x-axis, classified by the direction of crossing: + to − gives a local max of f, − to + gives a local min. (An f' graph that touches the axis without crossing gives no extremum, mirroring x³.)\n\nWhere is f concave up or down? Look at whether the f' graph is *rising or falling* (its slope): f' increasing means f concave up, f' decreasing means f concave down. Where are the inflection points of f? At the x-values where the f' graph has a *local maximum or minimum*, because that's where f' switches from increasing to decreasing or vice versa — i.e., where f'' changes sign.\n\nNotice the recurring theme: questions about *direction and extrema* of f read the height and zeros of f'; questions about *concavity and inflection* of f read the slope and turning points of f'. Sorting each question into one of those two buckets is most of the battle."
+    },
+    {
+      "type": "steps",
+      "heading": "Analyzing f From the Graph of f′",
+      "steps": [
+        { "title": "For increase/decrease, read the sign of f'", "content": "Where the f' graph is above the axis, f increases; where below, f decreases." },
+        { "title": "For local extrema, find zeros of f' with sign changes", "content": "An x-intercept of f' where f' goes + to − is a local max of f; − to + is a local min. No crossing means no extremum." },
+        { "title": "For concavity, read the slope of f'", "content": "Where the f' graph rises, f is concave up; where it falls, f is concave down." },
+        { "title": "For inflection points, find local extrema of f'", "content": "Where f' has a local max or min (its slope changes sign), f has an inflection point." }
+      ]
+    },
+    {
+      "type": "example",
+      "heading": "An FRQ-Style f′ Graph",
+      "content": "The graph of f' on the interval [0, 4] consists of two line segments. On [0, 2], f' decreases linearly from f'(0) = 2 down to f'(2) = −2, crossing zero at x = 1. On [2, 4], f' increases linearly from f'(2) = −2 up to f'(4) = 2, crossing zero at x = 3.\n\nIncreasing/decreasing of f (sign of f'):\n  f' > 0 on (0, 1) and (3, 4) → f is increasing there.\n  f' < 0 on (1, 3) → f is decreasing there.\n\nLocal extrema of f (zeros of f' with sign change):\n  At x = 1, f' goes + to − → f has a local MAXIMUM.\n  At x = 3, f' goes − to + → f has a local MINIMUM.\n\nConcavity of f (slope of f'):\n  On (0, 2), f' is decreasing (sloping down) → f is concave DOWN.\n  On (2, 4), f' is increasing (sloping up) → f is concave UP.\n\nInflection point of f (local extremum of f'):\n  At x = 2, f' reaches its minimum and its slope switches from negative to positive → f has an inflection point.\n\nEvery answer came straight from reading heights and slopes off the f' graph — no formula for f needed."
+    },
+    {
+      "type": "callout",
+      "variant": "warning",
+      "heading": "The f′ Graph Is Not the f Graph",
+      "content": "The deadliest mistake on these problems is treating the graph of f' as if it were the graph of f. If the f' graph is going UP, that does NOT mean f is increasing — it means f is concave up; f's increasing/decreasing is determined by whether f' is positive or negative, not by whether f' rises or falls. Likewise, a maximum POINT on the f' graph is not a maximum of f; it's an inflection point of f. Before answering, label clearly which graph you're looking at and translate: height of f' = slope of f, slope of f' = concavity of f."
+    },
+    {
+      "type": "quiz",
+      "question": "The graph of f' is positive everywhere on (0, 5) but is decreasing on that interval. What is true about f on (0, 5)?",
+      "options": ["f is decreasing and concave up", "f is increasing and concave down", "f is increasing and concave up", "f has a local maximum"],
+      "correctIndex": 1,
+      "explanation": "f' positive means f is increasing; f' decreasing (the f' graph slopes down) means f'' < 0, so f is concave down. Increasing and concave down describes a graph rising but leveling off. Since f' never reaches zero, f has no local extremum here."
+    },
+    {
+      "type": "explanation",
+      "heading": "Matching f, f′, and f″",
+      "content": "A second common task shows three graphs and asks which is f, which is f', and which is f''. The strategy is to find features that pin down the derivative relationship between them, since each graph should be the derivative of the one before it.\n\nThe most reliable anchors are zeros and extrema. The derivative is zero exactly where the original has a horizontal tangent — so the *zeros* of the candidate-for-f' should line up with the *extrema (and horizontal-tangent points)* of the candidate-for-f. Likewise, the extrema of f' (where f' turns around) should line up with the *inflection points* of f, and with the *zeros* of f''. Walk the chain: pick a feature on one graph and verify the next graph behaves as its derivative must.\n\nA clean way to build intuition is the sine family. If f(x) = sin x, then f'(x) = cos x and f''(x) = −sin x. Check the correspondences: sin x has a maximum at x = π/2, and exactly there cos x crosses zero from positive to negative — matching 'local max of f ↔ f' crosses zero + to −.' And sin x has an inflection point at x = π (where it switches concavity), where cos x has a minimum and −sin x crosses zero — matching 'inflection of f ↔ extremum of f' ↔ zero of f''.' Verifying a known trio like this trains your eye for the unknown ones."
+    },
+    {
+      "type": "example",
+      "heading": "Reasoning Through a Match",
+      "content": "Three graphs A, B, C are each the derivative of the previous in the order f, f', f'' — but unlabeled. You observe: Graph A has a local maximum at x = π/2 and a local minimum at x = 3π/2 on [0, 2π]. Graph B is positive on (0, π/2), zero at π/2, negative on (π/2, 3π/2), zero at 3π/2, positive after. Graph C is negative where A is at its peak and positive where A is at its valley.\n\nIdentify f: Graph A, because B's zeros at x = π/2 and 3π/2 line up exactly with A's local max and min — B is behaving as the derivative of A (zero at A's horizontal tangents, positive where A rises, negative where A falls). So A = f and B = f'.\n\nConfirm with concavity: at A's peak (x = π/2) the curve is concave down, and indeed Graph C is negative there; at A's valley (x = 3π/2) A is concave up and C is positive. Since C reports the concavity of A, C = f''. \n\nThis trio is exactly the sin x, cos x, −sin x relationship: A = sin x (f), B = cos x (f'), C = −sin x (f''). Matching reduces to checking that each graph's zeros sit at the previous graph's extrema and that signs of one graph match the slope/concavity of the previous."
+    },
+    {
+      "type": "callout",
+      "variant": "tip",
+      "heading": "Absolute Extrema and Justification on f′-Graph Problems",
+      "content": "Free-response f'-graph problems often ask for the ABSOLUTE max or min of f on a closed interval and give one value such as f(0). Use the Candidates Test: f's candidates are the x-values where f' = 0 (or is undefined) plus the endpoints; compare f-values there. (On the AP exam the comparison can use areas under the f' graph to get net change, which you'll formalize with the FTC in integration.) Always justify with the sign behavior of f': e.g., 'f has a local max at x = 1 because f' changes from positive to negative there.' A bare assertion without the f' justification typically loses the reasoning point."
+    },
+    {
+      "type": "quiz",
+      "question": "To match an unlabeled trio as f, f', f'', the most reliable check is that:",
+      "options": ["The graphs all have the same shape", "The zeros of each derivative line up with the extrema/horizontal tangents of the graph it differentiates", "The tallest graph is f", "f'' is always a straight line"],
+      "correctIndex": 1,
+      "explanation": "A derivative is zero exactly where the original function has a horizontal tangent (an extremum or flat spot), so lining up the zeros of one graph with the extrema of another identifies the derivative relationship. Height and overall shape are not reliable indicators, and f'' need not be linear."
+    },
+    {
+      "type": "deepdive",
+      "heading": "The Whole Chain — and a Glimpse of Integration",
+      "content": "Connecting f, f', and f'' is the capstone of differential calculus because it forces you to hold the entire derivative chain in mind at once and move along it in any direction. Going forward, you differentiate: f gives f' gives f''. Each step trades a function for the slope-information about it. Going backward — from f'' to f' to f — is harder and richer, because you must reconstruct a function from information about its rates.\n\nThe backward direction is exactly where the next big idea of the course lives. In this unit you reconstruct f from f' *qualitatively*: you can say where f rises, falls, peaks, and bends, but you can't yet pin down its exact values without an anchor like f(0). The integration unit makes this reconstruction *quantitative*. The Fundamental Theorem of Calculus will say that the net change in f over an interval equals the (signed) area under the graph of f' on that interval — so given f(0) and the f' graph, you can compute f at any other point by adding accumulated area. The very f'-graph problems you're practicing now will reappear there with a numerical twist: 'using the graph of f', find f(4).'\n\nThat is why this skill is worth real investment. Reading heights as slopes and slopes as concavity is not a one-off graphing trick — it's the conceptual bridge between the two halves of calculus. Differentiation breaks a function down into its rate information; integration builds it back up. Fluency in translating among f, f', and f'' is what lets you cross that bridge in either direction with confidence, and it's tested relentlessly on the AP exam precisely because it certifies genuine understanding rather than memorized procedure."
+    },
+    {
+      "type": "keypoint",
+      "content": "f, f', and f'' are one story: a height on the f' graph is a slope of f, and a slope on the f' graph is the concavity of f. Read the SIGN of f' for increase/decrease and its zeros (with sign change) for extrema; read the SLOPE of f' (or the sign of f'') for concavity and its turning points for inflection. To match a trio, align each derivative's zeros with the previous graph's extrema, and justify every claim by citing f' or f''."
+    }
+  ],
+  "aiContext": "AP Calculus AB Unit 5, connecting the graphs of f, f', and f'' — a top free-response skill. The core translations: the height of f' is the slope of f (sign gives increase/decrease, zeros with sign changes give extrema), and the slope of f' is the concavity of f (f' rising = concave up, f' turning points = inflection points). The dominant error is reading the f' graph as if it were f — e.g., thinking f' rising means f increasing (it means concave up), or that a peak of f' is a max of f (it's an inflection point of f). For matching trios, align each derivative's zeros with the previous graph's horizontal tangents/extrema; the sin/cos/−sin trio is a clean anchor. Stress justification by explicit reference to f' or f'', and foreshadow that the FTC will turn qualitative reconstruction of f from f' into quantitative area-based computation."
+}

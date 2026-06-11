@@ -1,0 +1,31 @@
+{
+  "id": "ap-bio-cell-structure-and-organelles",
+  "title": "Cell Structure and Organelles",
+  "subject": "AP Biology",
+  "chunks": [
+    { "id": "c1", "text": "Prokaryotic cells lack a membrane-bound nucleus and membrane-bound organelles. Their DNA floats in a region called the nucleoid, and they are typically small, about 0.1 to 5 micrometers. Bacteria and archaea are prokaryotes." },
+    { "id": "c2", "text": "Eukaryotic cells have a true nucleus enclosed by a double membrane called the nuclear envelope, and they contain membrane-bound organelles. They are typically larger, about 10 to 100 micrometers. Protists, fungi, plants, and animals are eukaryotes." },
+    { "id": "c3", "text": "All cells, prokaryotic and eukaryotic, share four features: a plasma membrane, ribosomes, DNA as genetic material, and cytoplasm. These shared features point to a common ancestor." },
+    { "id": "c4", "text": "Compartmentalization is the separation of cellular processes into membrane-bound compartments. It allows a eukaryotic cell to run many different reactions at once under different conditions without interference, such as keeping acidic lysosomes separate from the neutral cytoplasm." },
+    { "id": "c5", "text": "The nucleus stores the cell's DNA and is the site of transcription. Its nuclear envelope has nuclear pores that regulate transport: messenger RNA and ribosomal subunits exit while proteins needed for replication and transcription enter." },
+    { "id": "c6", "text": "The nucleolus is a dense region inside the nucleus where ribosomal RNA is synthesized and ribosomal subunits are partially assembled. The nucleolus is not the same as the nucleus and is not its own organelle." },
+    { "id": "c7", "text": "Ribosomes are the sites of protein synthesis and are made of ribosomal RNA and protein. Ribosomes are not membrane-bound organelles, and they are found in both prokaryotic and eukaryotic cells." },
+    { "id": "c8", "text": "Free ribosomes in the cytoplasm make proteins that function in the cytoplasm, while ribosomes bound to the rough endoplasmic reticulum make proteins destined for secretion, membranes, or organelles. The ribosome itself is the same in both locations." },
+    { "id": "c9", "text": "The endomembrane system is a network of connected membranes including the nuclear envelope, endoplasmic reticulum, Golgi apparatus, lysosomes, and vesicles. It produces, modifies, packages, and transports proteins and lipids." },
+    { "id": "c10", "text": "The rough endoplasmic reticulum is studded with ribosomes and synthesizes proteins destined for secretion, the plasma membrane, or organelles. New polypeptides enter the ER lumen where they fold and are often glycosylated." },
+    { "id": "c11", "text": "The smooth endoplasmic reticulum lacks ribosomes and synthesizes lipids, detoxifies drugs and poisons (especially in liver cells), and stores calcium ions (especially in muscle cells)." },
+    { "id": "c12", "text": "The Golgi apparatus receives transport vesicles from the ER at its cis face, modifies and sorts proteins and lipids as they pass through its stacked membranes, and ships finished products from its trans face to their destinations." },
+    { "id": "c13", "text": "Lysosomes are membrane-bound sacs of digestive enzymes that work best at an acidic pH of about 5, more acidic than the cytoplasm at pH 7.2. They break down worn-out organelles, engulfed food, and invading bacteria." },
+    { "id": "c14", "text": "The secretory pathway moves a protein from gene to export: the gene is transcribed in the nucleus, the mRNA is translated by a ribosome that docks on the rough ER, the protein is processed in the ER and Golgi, and it is released outside the cell by exocytosis." },
+    { "id": "c15", "text": "Exocytosis is the process in which a vesicle fuses with the plasma membrane and releases its contents outside the cell. It is used to secrete proteins such as hormones, neurotransmitters, and digestive enzymes." },
+    { "id": "c16", "text": "Mitochondria carry out aerobic cellular respiration, using oxygen to convert energy from glucose-derived molecules into ATP. They have a double membrane, and the inner membrane is folded into cristae that increase surface area for the electron transport chain." },
+    { "id": "c17", "text": "Chloroplasts are found only in plant cells and some protists and carry out photosynthesis, capturing light energy and storing it as chemical energy in sugars. They have a double membrane and internal thylakoid membranes stacked into grana." },
+    { "id": "c18", "text": "Both plant and animal cells contain mitochondria. Plants both photosynthesize and respire, so they have chloroplasts and mitochondria." },
+    { "id": "c19", "text": "The cytoskeleton is a network of protein fibers that gives a cell shape, anchors organelles, and transports materials. It includes microfilaments of actin, intermediate filaments for structural reinforcement, and microtubules of tubulin." },
+    { "id": "c20", "text": "Microtubules made of tubulin serve as tracks for vesicle transport and pull chromosomes apart during cell division. Microfilaments made of actin are involved in cell shape and muscle contraction." },
+    { "id": "c21", "text": "Plant cells have three structures that animal cells lack: a rigid cellulose cell wall outside the plasma membrane, a large central vacuole that can fill up to 90 percent of the cell volume, and chloroplasts." },
+    { "id": "c22", "text": "The plant cell wall provides support and prevents the cell from bursting when water enters; instead the cell becomes turgid as it presses against the wall, creating turgor pressure. The central vacuole stores water and ions and helps maintain turgor." },
+    { "id": "c23", "text": "Animal cells typically contain centrioles that help organize the spindle during cell division. A practical identification rule is that a cell with a cell wall and chloroplasts is a plant cell." },
+    { "id": "c24", "text": "On AP Biology structure-function questions, full credit requires naming a structural feature and its functional payoff, such as stating that mitochondrial cristae increase surface area for the electron transport chain, allowing more ATP to be produced." }
+  ]
+}
