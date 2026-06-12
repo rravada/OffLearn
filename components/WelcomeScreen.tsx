@@ -12,13 +12,13 @@ const FEATURES = [
     icon: WifiOff,
     title: "Runs 100% Offline",
     description:
-      "Courses and practice run entirely in your browser with WebGPU — no API keys, no servers.",
+      "Courses and practice run entirely in your browser with WebGPU. No API keys, no servers.",
   },
   {
     icon: BookOpen,
     title: "Structured Curriculum",
     description:
-      "Lessons across 6 subjects, sequenced like a real course. Not a search engine — a teacher.",
+      "Lessons across 6 subjects, sequenced like a real course. Not a search engine, a teacher.",
   },
   {
     icon: Target,
@@ -40,7 +40,7 @@ export function WelcomeScreen({ onStart }: WelcomeScreenProps) {
           </h1>
           <p className="max-w-lg text-base leading-relaxed text-le-text-secondary">
             OffLearn is an offline-first school in your browser: structured
-            courses and SAT/ACT-style prep — no internet required after setup, no
+            courses and SAT/ACT-style prep. No internet required after setup, no
             cost, and no data leaving this device. Optional lesson help is there
             when you want to work through something step by step.
           </p>
@@ -72,7 +72,7 @@ export function WelcomeScreen({ onStart }: WelcomeScreenProps) {
         </button>
 
         <p className="text-xs text-le-text-hint">
-          Desktop browsers only — mobile is not supported. Offline-first; your
+          Desktop browsers only. Mobile is not supported. Offline-first; your
           study sessions stay on this device.
         </p>
       </div>

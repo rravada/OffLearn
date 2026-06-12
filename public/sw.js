@@ -1,4 +1,4 @@
-const CACHE_NAME = "offlearn-v22";
+const CACHE_NAME = "offlearn-v26";
 
 /**
  * Production: replaced in `out/sw.js` by scripts/bake-sw-remote-model.js from

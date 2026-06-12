@@ -23,13 +23,23 @@ import {
   X,
   ClipboardList,
 } from "lucide-react";
+import { CheckCircle2, Check } from "lucide-react";
 import { AssessmentView } from "@/components/views/AssessmentView";
 import { cn } from "@/lib/utils";
 import { getSubjectIcon } from "@/lib/subjectIcons";
+import {
+  recordActivity,
+  markLessonComplete,
+  isLessonComplete,
+  getProgressForProfile,
+} from "@/lib/db/indexeddb";
 
 interface LearnViewProps {
   curriculum: CurriculumIndex;
   selectedSubject: string | null;
+  /** When set, open this exact lesson on mount (dashboard "resume"). */
+  resumeTarget?: { subjectId: string; unitId: string; lessonId: string } | null;
+  onResumeConsumed?: () => void;
 }
 
 type ViewState =
@@ -53,7 +63,12 @@ function safeLessons(unit: CurriculumUnit): CurriculumLesson[] {
   return Array.isArray(unit.lessons) ? unit.lessons : [];
 }
 
-export function LearnView({ curriculum, selectedSubject }: LearnViewProps) {
+export function LearnView({
+  curriculum,
+  selectedSubject,
+  resumeTarget,
+  onResumeConsumed,
+}: LearnViewProps) {
   const [viewState, setViewState] = useState<ViewState>({ mode: "browse" });
   const [openingKey, setOpeningKey] = useState<string | null>(null);
   /** Bumps when entering a lesson so the main panel scroll resets (incl. reopening same lesson). */
@@ -67,7 +82,36 @@ export function LearnView({ curriculum, selectedSubject }: LearnViewProps) {
     setTutorSystemPrompt,
     clearTutorMessages,
     tutorOpen,
+    activeProfileId,
+    bumpProgress,
+    progressVersion,
   } = useAppStore();
+  const [lessonComplete, setLessonComplete] = useState(false);
+  const [completedSet, setCompletedSet] = useState<Set<string>>(new Set());
+
+  // Load this profile's completed lessons so the browse list can show status.
+  useEffect(() => {
+    if (!activeProfileId) {
+      setCompletedSet(new Set());
+      return;
+    }
+    let cancelled = false;
+    void getProgressForProfile(activeProfileId).then((rows) => {
+      if (cancelled) return;
+      setCompletedSet(
+        new Set(rows.map((e) => `${e.subjectId}/${e.unitId}/${e.lessonId}`))
+      );
+    });
+    return () => {
+      cancelled = true;
+    };
+  }, [activeProfileId, progressVersion]);
+
+  const isDone = useCallback(
+    (subjectId: string, unitId: string, lessonId: string) =>
+      completedSet.has(`${subjectId}/${unitId}/${lessonId}`),
+    [completedSet]
+  );
 
   const subjectsList = useMemo(
     () => (Array.isArray(curriculum.subjects) ? curriculum.subjects : []),
@@ -308,6 +352,64 @@ Rules:
   useEffect(() => {
     setQuizAnswers({});
   }, [lessonScrollEpoch]);
+
+  // On entering a lesson: record activity (streak + resume) and load whether
+  // this profile has already completed it. Namespaced by the active profile.
+  useEffect(() => {
+    if (viewState.mode !== "lesson" || !activeProfileId) {
+      setLessonComplete(false);
+      return;
+    }
+    const { subject, unit, lessonIdx, data } = viewState;
+    // Use the curriculum index id (canonical across standard + AP tracks); the
+    // lesson JSON's own `data.id` is namespaced differently for AP courses.
+    const lessonId = safeLessons(unit)[lessonIdx]?.id ?? data.id;
+    let cancelled = false;
+    // Persist last-lesson + streak, then bump so the dashboard/profile re-read
+    // the fresh values (the resume button + streak depend on this).
+    void recordActivity(activeProfileId, {
+      subjectId: subject.id,
+      unitId: unit.id,
+      lessonId,
+      title: data.title,
+      at: Date.now(),
+    }).then(() => {
+      if (!cancelled) bumpProgress();
+    });
+    void isLessonComplete(activeProfileId, subject.id, unit.id, lessonId).then(
+      (done) => {
+        if (!cancelled) setLessonComplete(done);
+      }
+    );
+    return () => {
+      cancelled = true;
+    };
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [viewState.mode, lessonScrollEpoch, activeProfileId]);
+
+  const handleMarkComplete = useCallback(async () => {
+    if (viewState.mode !== "lesson" || !activeProfileId) return;
+    const { subject, unit, lessonIdx, data } = viewState;
+    const lessonId = safeLessons(unit)[lessonIdx]?.id ?? data.id;
+    await markLessonComplete(activeProfileId, subject.id, unit.id, lessonId);
+    setLessonComplete(true);
+    bumpProgress();
+  }, [viewState, activeProfileId, bumpProgress]);
+
+  // "Resume" from the dashboard: open the exact lesson once it's available.
+  const resumeHandledRef = useRef(false);
+  useEffect(() => {
+    if (!resumeTarget || resumeHandledRef.current) return;
+    const subject = subjectsList.find((s) => s.id === resumeTarget.subjectId);
+    if (!subject) return;
+    const unit = safeUnits(subject).find((u) => u.id === resumeTarget.unitId);
+    if (!unit) return;
+    const idx = safeLessons(unit).findIndex((l) => l.id === resumeTarget.lessonId);
+    if (idx < 0) return;
+    resumeHandledRef.current = true;
+    void openLesson(subject, unit, idx);
+    onResumeConsumed?.();
+  }, [resumeTarget, subjectsList, openLesson, onResumeConsumed]);
 
   useLayoutEffect(() => {
     if (viewState.mode !== "lesson") return;
@@ -617,7 +719,35 @@ Rules:
               })}
             </div>
 
-            <div className="mt-12 flex flex-col gap-4 border-t border-le-border pt-8 pb-16 sm:flex-row sm:items-center sm:justify-between">
+            {activeProfileId && (
+              <div className="mt-12 flex justify-center border-t border-le-border pt-8">
+                <button
+                  type="button"
+                  onClick={() => void handleMarkComplete()}
+                  disabled={lessonComplete}
+                  className={cn(
+                    "flex items-center gap-2 rounded-xl px-6 py-3 text-sm font-semibold transition-all",
+                    lessonComplete
+                      ? "cursor-default border border-le-green/40 bg-le-green/10 text-le-green"
+                      : "border border-le-border bg-le-surface text-le-text hover:border-le-mint/40 hover:bg-le-elevated"
+                  )}
+                >
+                  {lessonComplete ? (
+                    <>
+                      <CheckCircle2 className="h-4 w-4" />
+                      Completed
+                    </>
+                  ) : (
+                    <>
+                      <Check className="h-4 w-4" />
+                      Mark lesson complete
+                    </>
+                  )}
+                </button>
+              </div>
+            )}
+
+            <div className="mt-8 flex flex-col gap-4 pb-16 sm:flex-row sm:items-center sm:justify-between">
               <div>
                 {lessonIdx > 0 ? (
                   <button
@@ -743,9 +873,31 @@ Rules:
                     const isOpeningStart = openingKey === startRowKey;
                     const total = ul.length;
                     const moreCount = total - 1;
+                    const realLessons = ul.filter((l) => !isAssessmentId(l.id));
+                    const unitDone = realLessons.filter((l) =>
+                      isDone(subject.id, unit.id, l.id)
+                    ).length;
+                    const unitComplete =
+                      realLessons.length > 0 && unitDone === realLessons.length;
+                    const firstDone =
+                      !isAssessmentId(firstLesson.id) &&
+                      isDone(subject.id, unit.id, firstLesson.id);
                     return (
                       <div key={unit.id} className="mb-6">
-                        <h3 className="label-badge mb-3 text-le-text-hint">{unit.title}</h3>
+                        <div className="mb-3 flex items-center justify-between gap-2">
+                          <h3 className="label-badge text-le-text-hint">{unit.title}</h3>
+                          {realLessons.length > 0 &&
+                            (unitComplete ? (
+                              <span className="flex items-center gap-1 text-[11px] font-medium text-le-green">
+                                <CheckCircle2 className="h-3.5 w-3.5" />
+                                Complete
+                              </span>
+                            ) : unitDone > 0 ? (
+                              <span className="text-[11px] font-medium tabular-nums text-le-text-hint">
+                                {unitDone}/{realLessons.length}
+                              </span>
+                            ) : null)}
+                        </div>
                         <div className="space-y-2">
                           <button
                             type="button"
@@ -788,6 +940,9 @@ Rules:
                                 {firstLesson.duration}
                               </p>
                             </div>
+                            {firstDone && (
+                              <CheckCircle2 className="h-4 w-4 flex-shrink-0 text-le-green" />
+                            )}
                             <ChevronRight className="h-4 w-4 text-le-text-hint group-hover:text-le-accent transition-colors" />
                           </button>
 
@@ -809,6 +964,9 @@ Rules:
                                     const lessonIdx = idx + 1;
                                     const rowKey = lessonCacheKey(subject, unit, lesson.id);
                                     const isOpening = openingKey === rowKey;
+                                    const rowDone =
+                                      !isAssessmentId(lesson.id) &&
+                                      isDone(subject.id, unit.id, lesson.id);
                                     return (
                                       <li key={lesson.id}>
                                         <button
@@ -822,8 +980,19 @@ Rules:
                                             openingKey && !isOpening && "pointer-events-none opacity-50"
                                           )}
                                         >
-                                          <span className="flex h-7 w-7 flex-shrink-0 items-center justify-center rounded-md bg-le-elevated text-xs font-semibold tabular-nums text-le-text-secondary">
-                                            {lessonIdx + 1}
+                                          <span
+                                            className={cn(
+                                              "flex h-7 w-7 flex-shrink-0 items-center justify-center rounded-md text-xs font-semibold tabular-nums",
+                                              rowDone
+                                                ? "bg-le-green/15 text-le-green"
+                                                : "bg-le-elevated text-le-text-secondary"
+                                            )}
+                                          >
+                                            {rowDone ? (
+                                              <Check className="h-3.5 w-3.5" />
+                                            ) : (
+                                              lessonIdx + 1
+                                            )}
                                           </span>
                                           <span className="min-w-0 flex-1">
                                             <span className="flex items-center gap-1.5 truncate font-medium text-le-text">

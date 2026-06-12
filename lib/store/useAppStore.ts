@@ -16,6 +16,11 @@ interface AppState {
   appMode: AppMode;
   selectedSubject: string | null;
 
+  // Local profiles (per-device, no auth)
+  activeProfileId: string | null;
+  /** Bumped whenever progress/profile data changes so views re-read from IndexedDB. */
+  progressVersion: number;
+
   // Lesson state
   currentLesson: LessonData | null;
 
@@ -47,6 +52,9 @@ interface AppState {
   setAppMode: (mode: AppMode) => void;
   setSelectedSubject: (subject: string | null) => void;
 
+  setActiveProfileId: (id: string | null) => void;
+  bumpProgress: () => void;
+
   setCurrentLesson: (lesson: LessonData | null) => void;
 
   setCurrentTestBank: (questions: TestQuestion[]) => void;
@@ -76,8 +84,11 @@ export const useAppStore = create<AppState>((set) => ({
   modelError: null,
 
   hasVisited: false,
-  appMode: "learn",
+  appMode: "dashboard",
   selectedSubject: null,
+
+  activeProfileId: null,
+  progressVersion: 0,
 
   currentLesson: null,
 
@@ -104,6 +115,9 @@ export const useAppStore = create<AppState>((set) => ({
   setHasVisited: (v) => set({ hasVisited: v }),
   setAppMode: (mode) => set({ appMode: mode }),
   setSelectedSubject: (subject) => set({ selectedSubject: subject }),
+
+  setActiveProfileId: (id) => set({ activeProfileId: id }),
+  bumpProgress: () => set((state) => ({ progressVersion: state.progressVersion + 1 })),
 
   setCurrentLesson: (lesson) => set({ currentLesson: lesson }),
 

@@ -41,6 +41,7 @@ export function TutorPanel({ onSendOverride }: TutorPanelProps = {}) {
     modelError,
     selectedSubject,
     currentLesson,
+    activeProfileId,
   } = useAppStore();
 
   const [input, setInput] = useState("");
@@ -76,8 +77,8 @@ export function TutorPanel({ onSendOverride }: TutorPanelProps = {}) {
   // Derive a stable context key from the current subject + lesson.
   // vaultId on Session is repurposed to store this key for lookup.
   const contextKey = useMemo(
-    () => `${selectedSubject || ""}:${currentLesson?.id || ""}`,
-    [selectedSubject, currentLesson?.id]
+    () => `${activeProfileId || ""}:${selectedSubject || ""}:${currentLesson?.id || ""}`,
+    [activeProfileId, selectedSubject, currentLesson?.id]
   );
 
   // Load or create session whenever the lesson / subject context changes.

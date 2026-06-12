@@ -173,6 +173,38 @@ export interface TeacherModule {
   embeddings: TeacherModuleEmbedding[];
 }
 
+// Profiles & progress (local-first, per-device — no auth/network)
+
+export interface Profile {
+  id: string;
+  name: string;
+  /** Hex color used for the avatar tile. */
+  color: string;
+  /** Optional 4-digit PIN for light privacy on shared devices. */
+  pin?: string;
+  createdAt: number;
+  /** ISO 'YYYY-MM-DD' strings for each day this profile was active (for streaks). */
+  activeDays?: string[];
+  /** Last lesson opened, used for the "resume" button on the dashboard. */
+  lastLesson?: {
+    subjectId: string;
+    unitId: string;
+    lessonId: string;
+    title: string;
+    at: number;
+  };
+}
+
+export interface ProgressEntry {
+  /** Composite key: `${profileId}:${subjectId}/${unitId}/${lessonId}`. */
+  id: string;
+  profileId: string;
+  subjectId: string;
+  unitId: string;
+  lessonId: string;
+  completedAt: number;
+}
+
 // Navigation
 
-export type AppMode = "learn" | "testprep";
+export type AppMode = "dashboard" | "learn" | "testprep";

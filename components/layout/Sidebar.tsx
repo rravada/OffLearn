@@ -2,9 +2,9 @@
 
 import { useMemo, useState, useEffect } from "react";
 import { createPortal } from "react-dom";
-import { BookOpen, ClipboardList, Download, X } from "lucide-react";
+import { BookOpen, ClipboardList, Download, X, LayoutDashboard, ChevronsUpDown } from "lucide-react";
 import { cn } from "@/lib/utils";
-import type { AppMode, CurriculumIndex, CurriculumSubject } from "@/types";
+import type { AppMode, CurriculumIndex, CurriculumSubject, Profile } from "@/types";
 import { getSubjectIcon } from "@/lib/subjectIcons";
 import { BrandLogo } from "@/components/BrandLogo";
 
@@ -17,18 +17,24 @@ interface SidebarProps {
   curriculum: CurriculumIndex | null;
   appMode: AppMode;
   selectedSubject: string | null;
+  activeProfile: Profile | null;
   onModeChange: (mode: AppMode) => void;
   onLearnHome: () => void;
   onSubjectChange: (subject: string) => void;
+  onDashboard: () => void;
+  onSwitchProfile: () => void;
 }
 
 export function Sidebar({
   curriculum,
   appMode,
   selectedSubject,
+  activeProfile,
   onModeChange,
   onLearnHome,
   onSubjectChange,
+  onDashboard,
+  onSwitchProfile,
 }: SidebarProps) {
   const [showExportModal, setShowExportModal] = useState(false);
   const [mounted, setMounted] = useState(false);
@@ -68,7 +74,40 @@ export function Sidebar({
         </span>
       </div>
 
+      {activeProfile && (
+        <button
+          type="button"
+          onClick={onSwitchProfile}
+          title="Switch profile"
+          className="mx-3 mb-3 flex items-center gap-2.5 rounded-lg border border-le-border bg-le-bg px-3 py-2 text-left transition-colors hover:bg-le-hover"
+        >
+          <span
+            className="flex h-7 w-7 flex-shrink-0 items-center justify-center rounded-full text-xs font-bold text-le-bg"
+            style={{ backgroundColor: activeProfile.color }}
+          >
+            {activeProfile.name.charAt(0).toUpperCase()}
+          </span>
+          <span className="min-w-0 flex-1 truncate text-sm font-medium text-le-text">
+            {activeProfile.name}
+          </span>
+          <ChevronsUpDown className="h-3.5 w-3.5 flex-shrink-0 text-le-text-hint" />
+        </button>
+      )}
+
       <nav className="flex flex-col gap-1 px-3">
+        <button
+          type="button"
+          onClick={onDashboard}
+          className={cn(
+            "flex items-center gap-3 rounded-lg px-3 py-2.5 text-sm font-medium transition-colors",
+            appMode === "dashboard"
+              ? "bg-le-accent-soft text-le-accent"
+              : "text-le-text-secondary hover:bg-le-hover hover:text-le-text"
+          )}
+        >
+          <LayoutDashboard className="h-4 w-4" />
+          My Progress
+        </button>
         <button
           type="button"
           onClick={onLearnHome}

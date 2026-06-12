@@ -3,14 +3,16 @@
 import { useEffect, useRef, useState, useCallback } from "react";
 import { useAppStore } from "@/lib/store/useAppStore";
 import { LLMSession, checkWebGPUSupport } from "@/lib/inference/mediapipe";
-import { getMeta, setMeta } from "@/lib/db/indexeddb";
+import { getMeta, setMeta, getAllProfiles } from "@/lib/db/indexeddb";
 import { LoadingScreen } from "@/components/LoadingScreen";
 import { WelcomeScreen } from "@/components/WelcomeScreen";
+import { ProfilePicker } from "@/components/ProfilePicker";
 import { Sidebar } from "@/components/layout/Sidebar";
 import { TutorPanel } from "@/components/layout/TutorPanel";
 import { LearnView } from "@/components/views/LearnView";
 import { TestPrepView } from "@/components/views/TestPrepView";
-import type { CurriculumIndex } from "@/types";
+import { DashboardView } from "@/components/views/DashboardView";
+import type { AppMode, CurriculumIndex, Profile } from "@/types";
 import { normalizeCurriculumIndex } from "@/lib/curriculum/normalizeCurriculumIndex";
 import { waitUntilSwControlling } from "@/lib/offline/waitUntilSwControlling";
 import { primeRemoteGemmaModelCacheIfNeeded } from "@/lib/offline/primeRemoteGemmaCache";
@@ -28,6 +30,9 @@ export default function Home() {
     setAppMode,
     selectedSubject,
     setSelectedSubject,
+    activeProfileId,
+    setActiveProfileId,
+    progressVersion,
   } = useAppStore();
 
   const modelInitStarted = useRef(false);
@@ -35,13 +40,55 @@ export default function Home() {
   const [showWelcome, setShowWelcome] = useState(false);
   const [curriculum, setCurriculum] = useState<CurriculumIndex | null>(null);
   const [learnHomeNonce, setLearnHomeNonce] = useState(0);
+  const [profiles, setProfiles] = useState<Profile[]>([]);
+  const [showProfilePicker, setShowProfilePicker] = useState(false);
+  const [resumeTarget, setResumeTarget] = useState<{
+    subjectId: string;
+    unitId: string;
+    lessonId: string;
+  } | null>(null);
+
+  const activeProfile =
+    profiles.find((p) => p.id === activeProfileId) ?? null;
+
+  const loadProfiles = useCallback(async () => {
+    const list = await getAllProfiles();
+    setProfiles(list);
+    // If the active profile was deleted, drop it so the picker re-appears.
+    const currentId = useAppStore.getState().activeProfileId;
+    if (currentId && !list.some((p) => p.id === currentId)) {
+      setActiveProfileId(null);
+      void setMeta("activeProfileId", "");
+    }
+    return list;
+  }, [setActiveProfileId]);
+
+  const handleSelectProfile = useCallback(
+    (id: string) => {
+      setActiveProfileId(id);
+      void setMeta("activeProfileId", id);
+      setShowProfilePicker(false);
+      setAppMode("dashboard");
+      setSelectedSubject(null);
+    },
+    [setActiveProfileId, setAppMode, setSelectedSubject]
+  );
+
+  // Re-read profiles from IndexedDB whenever progress changes (a lesson opened
+  // or marked complete) so the active profile's streak + last-lesson stay fresh.
+  useEffect(() => {
+    if (progressVersion === 0) return;
+    void loadProfiles();
+  }, [progressVersion, loadProfiles]);
 
   useEffect(() => {
     let cancelled = false;
     async function init() {
       try {
-        const [visited, res] = await Promise.all([
+        const [visited, storedProfileId, profileList, res] = await Promise.all([
           getMeta("hasVisited"),
+          getMeta("activeProfileId"),
+          getAllProfiles(),
           fetch("/curriculum/index.json"),
         ]);
         if (cancelled) return;
@@ -55,6 +102,11 @@ export default function Home() {
           throw new Error("Invalid or empty curriculum index");
         }
         setCurriculum(curriculumData);
+
+        setProfiles(profileList);
+        if (storedProfileId && profileList.some((p) => p.id === storedProfileId)) {
+          setActiveProfileId(storedProfileId);
+        }
 
         if (!visited) {
           setShowWelcome(true);
@@ -71,7 +123,7 @@ export default function Home() {
     return () => {
       cancelled = true;
     };
-  }, [setHasVisited]);
+  }, [setHasVisited, setActiveProfileId]);
 
   useEffect(() => {
     if (!curriculum?.subjects?.length) return;
@@ -205,7 +257,7 @@ export default function Home() {
   };
 
   const handleModeChange = useCallback(
-    (mode: "learn" | "testprep") => {
+    (mode: AppMode) => {
       setAppMode(mode);
     },
     [setAppMode]
@@ -217,19 +269,58 @@ export default function Home() {
     setLearnHomeNonce((n) => n + 1);
   }, [setAppMode, setSelectedSubject]);
 
+  const goDashboard = useCallback(() => {
+    setAppMode("dashboard");
+  }, [setAppMode]);
+
+  const openSubjectFromDashboard = useCallback(
+    (subjectId: string) => {
+      setResumeTarget(null);
+      setSelectedSubject(subjectId);
+      setAppMode("learn");
+      setLearnHomeNonce((n) => n + 1);
+    },
+    [setAppMode, setSelectedSubject]
+  );
+
+  const resumeLesson = useCallback(
+    (target: { subjectId: string; unitId: string; lessonId: string }) => {
+      setSelectedSubject(target.subjectId);
+      setResumeTarget(target);
+      setAppMode("learn");
+      setLearnHomeNonce((n) => n + 1);
+    },
+    [setAppMode, setSelectedSubject]
+  );
+
   if (!initChecked) {
     return <div className="h-dvh bg-le-bg" />;
   }
 
   const showLoading = modelStatus === "loading" && !showWelcome;
+  // Gate the app behind profile selection once the welcome screen is past.
+  const needsProfile = !showWelcome && !activeProfile;
+  const profilePickerVisible = needsProfile || showProfilePicker;
 
   const renderMainContent = () => {
+    if (appMode === "dashboard" && activeProfile) {
+      return (
+        <DashboardView
+          curriculum={curriculum}
+          profile={activeProfile}
+          onOpenSubject={openSubjectFromDashboard}
+          onResume={resumeLesson}
+        />
+      );
+    }
     if (appMode === "learn" && curriculum) {
       return (
         <LearnView
           key={learnHomeNonce}
           curriculum={curriculum}
           selectedSubject={selectedSubject}
+          resumeTarget={resumeTarget}
+          onResumeConsumed={() => setResumeTarget(null)}
         />
       );
     }
@@ -252,6 +343,15 @@ export default function Home() {
   return (
     <>
       {showWelcome && <WelcomeScreen onStart={handleWelcomeDismiss} />}
+      {profilePickerVisible && (
+        <ProfilePicker
+          profiles={profiles}
+          onSelect={handleSelectProfile}
+          onProfilesChanged={() => void loadProfiles()}
+          dismissable={!!activeProfile}
+          onClose={() => setShowProfilePicker(false)}
+        />
+      )}
       <LoadingScreen progress={modelProgress} visible={showLoading} />
 
       <div className="le-app-shell flex h-dvh">
@@ -259,6 +359,7 @@ export default function Home() {
           curriculum={curriculum}
           appMode={appMode}
           selectedSubject={selectedSubject}
+          activeProfile={activeProfile}
           onModeChange={handleModeChange}
           onLearnHome={goLearnHome}
           onSubjectChange={(subject: string) => {
@@ -267,6 +368,8 @@ export default function Home() {
               handleModeChange("learn");
             }
           }}
+          onDashboard={goDashboard}
+          onSwitchProfile={() => setShowProfilePicker(true)}
         />
 
         <main className="main-scroll-panel flex min-h-0 min-w-0 flex-1 flex-col overflow-y-auto [overflow-anchor:none]">
