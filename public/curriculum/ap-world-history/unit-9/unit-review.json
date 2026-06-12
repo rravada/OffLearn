@@ -1,0 +1,297 @@
+{
+  "id": "ap-world-history-unit9-review",
+  "title": "Unit 9 Review: Globalization",
+  "subject": "AP World History",
+  "unit": "Globalization",
+  "type": "unit-review",
+  "questionsPerAttempt": 10,
+  "isAssessment": true,
+  "bank": [
+    {
+      "question": "What is globalization?",
+      "options": [
+        "The complete isolation of national economies from one another",
+        "The accelerating integration of the world's economies, societies, and cultures through the increasingly rapid movement of goods, people, money, information, and ideas across borders",
+        "A military alliance of the world's nations",
+        "The return to pre-modern trade routes only"
+      ],
+      "correctIndex": 1,
+      "explanation": "Globalization is the accelerating integration of the world's economies, societies, and cultures through the rapid movement of goods, people, money, information, and ideas across national borders. It is the deepening and speeding-up of interconnection that has existed since the Silk Roads and Columbian Exchange."
+    },
+    {
+      "question": "Why is technology described as the 'enabler' of modern globalization?",
+      "options": [
+        "Because technology alone caused every change with no other factors",
+        "Because advances in transportation, communication, and information technology created the infrastructure allowing goods, people, money, and ideas to move faster, cheaper, and in greater volume than ever before",
+        "Because technology stopped the movement of goods and people",
+        "Because globalization existed in identical form before any modern technology"
+      ],
+      "correctIndex": 1,
+      "explanation": "Technology was the enabler because innovations like the shipping container, jet airliner, computers, satellites, and the internet built the infrastructure of modern globalization, radically lowering the cost and time of moving goods, people, money, and information. It did not cause every change alone but made the dense modern web of exchange possible."
+    },
+    {
+      "question": "The standardized shipping container was significant because it...",
+      "options": [
+        "made ocean travel impossible",
+        "dramatically lowered the cost and time of moving goods between ships, trucks, and trains, helping enable modern global trade",
+        "was used only for passenger travel",
+        "replaced the internet"
+      ],
+      "correctIndex": 1,
+      "explanation": "The shipping container, a steel box of fixed dimensions movable between ships, trucks, and trains, slashed the cost and time of moving goods. Before containers, loading a ship took days; after them, hours — a quiet but world-changing driver of global trade."
+    },
+    {
+      "question": "The Green Revolution refers to...",
+      "options": [
+        "a movement to ban all agriculture",
+        "mid-twentieth-century agricultural innovations (high-yield crops, fertilizers, pesticides, irrigation) that dramatically increased food production, especially in the developing world",
+        "the rise of environmental political parties",
+        "the spread of communism in Asia"
+      ],
+      "correctIndex": 1,
+      "explanation": "The Green Revolution was a set of agricultural innovations — high-yield wheat and rice combined with chemical fertilizers, pesticides, irrigation, and mechanization — that greatly increased food production from the 1940s–70s, helping food keep pace with population growth and avert predicted mass famines."
+    },
+    {
+      "question": "The Green Revolution best illustrates a technology that...",
+      "options": [
+        "had only positive effects",
+        "brought enormous benefits (greatly increased food production) alongside real costs (dependence on expensive inputs, environmental damage, and rural inequality)",
+        "decreased global food production",
+        "had no connection to population growth"
+      ],
+      "correctIndex": 1,
+      "explanation": "The Green Revolution dramatically raised food production and helped avert famine, but it also brought costs: reliance on expensive chemical inputs that favored wealthier farmers, environmental damage from chemicals and irrigation, and reduced crop diversity — a classic case of benefits and costs together."
+    },
+    {
+      "question": "The 1918 influenza pandemic and COVID-19 together show that...",
+      "options": [
+        "disease never spreads across borders",
+        "global interconnection makes humanity vulnerable to fast-spreading pandemics — a continuity — even as the speed of spread and the power of the medical response dramatically increased over the century",
+        "pandemics only affect poor countries",
+        "modern medicine eliminated all infectious disease"
+      ],
+      "correctIndex": 1,
+      "explanation": "Both were fast-spreading global pandemics, showing the continuity that interconnection makes humanity vulnerable to disease (as since the Silk Roads). The changes: COVID-19 spread far faster via air travel (deeper globalization) and met a far more powerful response (rapid virus identification and vaccines) — a model of continuity and change."
+    },
+    {
+      "question": "The eradication of smallpox, declared in 1980, demonstrated that...",
+      "options": [
+        "globalization only spreads disease and never helps fight it",
+        "the same global networks that spread disease could also spread the medicine, knowledge, and coordinated effort to combat it, here through a WHO-led worldwide vaccination campaign",
+        "smallpox was never a serious disease",
+        "vaccines do not work"
+      ],
+      "correctIndex": 1,
+      "explanation": "Smallpox, which had killed hundreds of millions, was eradicated through a worldwide vaccination campaign coordinated by the World Health Organization — proof that global cooperation and medical science could defeat an ancient killer. It shows globalization's double edge: new dangers and new powers together."
+    },
+    {
+      "question": "What is the primary human cause of modern climate change?",
+      "options": [
+        "Natural solar variation with no human contribution",
+        "The burning of fossil fuels (coal, oil, natural gas), which releases carbon dioxide and other greenhouse gases that trap heat in the atmosphere",
+        "The eradication of smallpox",
+        "A decrease in world population"
+      ],
+      "correctIndex": 1,
+      "explanation": "Modern climate change is driven mainly by burning fossil fuels — coal, oil, and natural gas — the energy base of industrial civilization, which releases greenhouse gases that trap heat and warm the planet. The Keeling Curve (from 1958) gave the first clear evidence of rising atmospheric carbon dioxide from human activity."
+    },
+    {
+      "question": "Climate change reveals a global injustice in that...",
+      "options": [
+        "poor nations caused most emissions but rich nations suffer most",
+        "wealthy industrialized nations produced most historical greenhouse emissions, yet many of the worst consequences fall on poorer nations least able to cope and least responsible",
+        "it affects no one",
+        "only one country is affected"
+      ],
+      "correctIndex": 1,
+      "explanation": "The wealthy industrialized nations produced the great majority of historical greenhouse emissions, but many of the worst consequences of climate change fall on poorer nations that contributed least and can least afford to adapt — a central inequality of the global age."
+    },
+    {
+      "question": "Which best describes the global economy that emerged especially after the Cold War ended around 1991?",
+      "options": [
+        "A world sharply divided into separate capitalist and communist economies",
+        "A single, increasingly integrated economy in which free-market capitalism spread worldwide, driven by free trade, multinational corporations, and global institutions like the WTO",
+        "A return to isolated economies that did not trade",
+        "An economy controlled entirely by the United Nations"
+      ],
+      "correctIndex": 1,
+      "explanation": "After the Cold War, the dominant trend was integration: free-market capitalism spread worldwide (including to China and former communist states), driven by expanding free trade, powerful multinational corporations, and global institutions (World Bank, IMF, WTO), replacing the Cold War's divided economic order."
+    },
+    {
+      "question": "Multinational corporations (MNCs) are significant in the global economy because they...",
+      "options": [
+        "operate only within a single country",
+        "operate across many countries, build global supply chains, shift production to where costs are lowest, and can be richer than entire nations",
+        "are controlled by the United Nations",
+        "refuse to engage in international trade"
+      ],
+      "correctIndex": 1,
+      "explanation": "Multinational corporations operate across many countries, building the global supply chains that source, manufacture, and sell worldwide and shifting production to wherever labor and costs are most favorable. Some are richer than entire nations, making them powerful global actors."
+    },
+    {
+      "question": "China's economic transformation under Deng Xiaoping (from 1978) involved...",
+      "options": [
+        "abandoning communism for full democracy",
+        "opening the economy to markets, foreign investment, and trade while keeping Communist Party political control, turning China into a manufacturing powerhouse",
+        "rejecting all foreign trade and investment",
+        "returning to Maoist collectivization"
+      ],
+      "correctIndex": 1,
+      "explanation": "After Mao's death, Deng Xiaoping opened China's economy to markets, foreign investment, and trade while keeping firm Communist Party political control. This transformed China into the world's manufacturing powerhouse and lifted hundreds of millions out of poverty — economic opening without political democratization."
+    },
+    {
+      "question": "A balanced, exam-worthy evaluation of economic globalization recognizes that it...",
+      "options": [
+        "was purely beneficial with no costs",
+        "reduced absolute poverty for hundreds of millions (especially in China and East Asia) while also widening inequality and imposing human and environmental costs — benefiting some regions and groups far more than others",
+        "was purely harmful with no benefits",
+        "had no measurable effects"
+      ],
+      "correctIndex": 1,
+      "explanation": "Economic globalization both lifted hundreds of millions out of extreme poverty (especially in China and East Asia) and widened certain inequalities while imposing sweatshop conditions and environmental costs. The sophisticated view weighs genuine benefits against genuine costs and notes its uneven, double-edged effects."
+    },
+    {
+      "question": "The Universal Declaration of Human Rights (1948) was significant because it...",
+      "options": [
+        "created a world government",
+        "proclaimed for the first time in an international document that all human beings possess fundamental rights simply by being human, announcing that human rights are universal",
+        "applied only to citizens of the United States",
+        "abolished all national governments"
+      ],
+      "correctIndex": 1,
+      "explanation": "Adopted by the UN in 1948 after WWII and the Holocaust, the Universal Declaration of Human Rights proclaimed that every human being possesses fundamental rights regardless of nation, race, religion, or sex. Though unenforceable, it announced the powerful global idea that human rights are universal."
+    },
+    {
+      "question": "What did movements like decolonization, civil rights, anti-apartheid, and women's rights share?",
+      "options": [
+        "They all rejected human equality",
+        "They drew on shared ideals of equality, dignity, and universal human rights, and inspired and borrowed tactics from one another across borders",
+        "They were each confined to one country with no outside influence",
+        "They were directed by multinational corporations"
+      ],
+      "correctIndex": 1,
+      "explanation": "These reform movements shared a common logic — appealing to equality, dignity, self-determination, and universal human rights — and an interconnected history, inspiring and borrowing tactics across borders (Gandhi influenced the U.S. civil rights movement). Globalization's networks helped spread their ideals worldwide."
+    },
+    {
+      "question": "Why is 'cultural homogenization' an incomplete description of globalization's effect on culture?",
+      "options": [
+        "Because no culture ever crossed borders",
+        "Because alongside the spread of global culture, people blended global and local elements into new hybrid forms and often resisted global culture by reasserting local identities",
+        "Because all local cultures vanished instantly",
+        "Because culture is unrelated to globalization"
+      ],
+      "correctIndex": 1,
+      "explanation": "Homogenization (one global monoculture erasing diversity) is incomplete because globalization also produced cultural blending/hybridization — combining global and local into new forms — and provoked resistance, as people reasserted local, religious, and national identities. The real dynamic is a tension among spread, blending, and backlash."
+    },
+    {
+      "question": "Religious fundamentalism in the age of globalization is best analyzed as...",
+      "options": [
+        "an irrational relic confined to a single religion",
+        "a global phenomenon across many religions and a distinctly modern reaction to destabilizing change, offering identity, community, and certainty against secular and Western-associated globalizing pressures",
+        "a movement with no connection to globalization",
+        "a purely economic policy"
+      ],
+      "correctIndex": 1,
+      "explanation": "Religious fundamentalism arose across many of the world's religions as a response to the destabilizing effects of globalization — loss of identity, community, and meaning, plus economic disruption and resentment of Western dominance. It is a distinctly modern reaction offering clear identity and certainty, a major form of resistance to globalization."
+    },
+    {
+      "question": "The defining cultural dynamic of the global age is best described as...",
+      "options": [
+        "the total and instant erasure of all local cultures",
+        "a constant tension between the global and the local — between cultural integration and the determined defense of particular identities and traditions",
+        "the complete absence of any shared global culture",
+        "a single religion replacing all others"
+      ],
+      "correctIndex": 1,
+      "explanation": "The global age is defined not by simple homogenization but by a tension between the global (integration, shared culture, universal ideals) and the local (defense of particular identities, religions, nations, and traditions), expressed through the spread, blending, and resistance of culture."
+    },
+    {
+      "question": "What broad development do the United Nations, the WHO, the European Union, and NGOs like Amnesty International represent?",
+      "options": [
+        "The complete disappearance of the nation-state",
+        "The rise of international institutions and organizations attempting to foster cooperation and govern shared global challenges that no single nation can solve alone",
+        "A return to isolated countries",
+        "The end of all global problems"
+      ],
+      "correctIndex": 1,
+      "explanation": "These institutions represent the rise of global governance — the attempt to build cooperation and shared rules for an interconnected world facing cross-border problems (war, disease, economic crises, environmental damage). They extend globalization into politics, though they remain limited by national sovereignty."
+    },
+    {
+      "question": "The United Nations (1945) is connected to the earlier League of Nations in that it was...",
+      "options": [
+        "completely unrelated to any earlier organization",
+        "a second, stronger attempt to build global governance after the League of Nations failed, while still being limited by the sovereignty of powerful states",
+        "a military alliance against the League",
+        "a branch of the European Union"
+      ],
+      "correctIndex": 1,
+      "explanation": "The UN was a second attempt at the dream of the failed League of Nations (Unit 7), created after WWII to keep the peace, defend human rights, and address common problems. It learned from the League's weaknesses but, like the League, remains limited by the sovereignty and rivalries of powerful member states."
+    },
+    {
+      "question": "What is the central, unresolved tension that defines the contemporary globalized world?",
+      "options": [
+        "A rivalry between two Cold War superpowers",
+        "Between the pull toward global integration and cooperation and the enduring power of sovereign nation-states pursuing their own interests",
+        "Between feudal lords and peasants",
+        "Between two rival religions only"
+      ],
+      "correctIndex": 1,
+      "explanation": "The defining tension of the global age is between global integration and cooperation — demanded by the interconnected economy and shared problems like climate change — and the enduring power of the sovereign nation-state, which guards its sovereignty and pursues its own interests, with no world government to compel cooperation."
+    },
+    {
+      "question": "Which statement about the nation-state in the global age is accurate?",
+      "options": [
+        "The nation-state has disappeared and been replaced by a world government",
+        "Despite global integration, the nation-state endures and nationalism has even resurged, limiting the power of international institutions",
+        "Nation-states no longer pursue their own interests",
+        "International institutions can always override national sovereignty"
+      ],
+      "correctIndex": 1,
+      "explanation": "Despite deep global integration, the nation-state has not withered away: nations guard their sovereignty, pursue their interests, and often refuse to be bound by international institutions, while nationalism has resurged as a backlash against globalization. There is no world government, and global institutions remain limited by national sovereignty."
+    },
+    {
+      "question": "Tracing 'networks of exchange' from the Silk Roads to modern global supply chains is an example of which capstone skill?",
+      "options": [
+        "Memorizing isolated dates",
+        "Synthesis and continuity-and-change reasoning — connecting developments across regions and eras to show both a deep continuity and dramatic change over time",
+        "Comparing only two adjacent years",
+        "Ignoring change to focus on a single moment"
+      ],
+      "correctIndex": 1,
+      "explanation": "Tracing a theme like networks of exchange across the whole course — Silk Roads to Columbian Exchange to global supply chains — is synthesis and continuity-and-change reasoning: it connects regions and eras to reveal a deep continuity (growing connection) and dramatic change (in scale and speed). This is the capstone skill the LEQ rewards."
+    },
+    {
+      "question": "Which is the strongest approach to a continuity-and-change-over-time Long Essay Question spanning the whole course?",
+      "options": [
+        "List as many unrelated facts as possible from different eras",
+        "Choose one theme, name the deep continuity that persisted, trace the dramatic changes across eras with specific cross-regional evidence, and build a thesis holding both together",
+        "Discuss only continuity and ignore change",
+        "Discuss only one moment in time"
+      ],
+      "correctIndex": 1,
+      "explanation": "The strongest CCOT/synthesis approach is to pick one course theme (exchange, state-building, technology, etc.), name the fundamental continuity, trace the major changes with specific evidence from multiple eras and regions, and craft a thesis that captures both continuity and change. A pile of unrelated facts, or addressing only one side, scores poorly."
+    },
+    {
+      "question": "Why do the deepest challenges of the global age (climate change, pandemics) pose such a difficult problem?",
+      "options": [
+        "They are easily solved by any single country acting alone",
+        "They are global problems that demand global cooperation, yet the world remains organized into roughly two hundred sovereign nation-states pursuing their own interests, with no world government to compel cooperation",
+        "They affect no one and require no response",
+        "They were already solved in the nineteenth century"
+      ],
+      "correctIndex": 1,
+      "explanation": "Challenges like climate change and pandemics are inherently global and cannot be solved by any single nation, yet the world is organized into about two hundred sovereign states pursuing their own interests, with no world government to enforce cooperation. This mismatch between global problems and a nation-state world is a defining dilemma of our era."
+    },
+    {
+      "question": "How does modern globalization relate to earlier networks like the Silk Roads and Columbian Exchange?",
+      "options": [
+        "It is entirely new and unrelated to any earlier exchange",
+        "It is the acceleration and deepening of very old patterns of exchange, now operating at unprecedented scale, speed, and intensity",
+        "It reversed and ended all earlier trade",
+        "It was less connected than ancient trade routes"
+      ],
+      "correctIndex": 1,
+      "explanation": "Modern globalization is not wholly new; it is the acceleration and deepening of patterns of exchange that stretch back to the Silk Roads and the Columbian Exchange, now operating at a vastly greater scale, speed, and intensity. Recognizing this continuity — an old pattern at a new scale — is a key synthesis insight."
+    }
+  ]
+}

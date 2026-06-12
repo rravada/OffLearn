@@ -1,0 +1,308 @@
+{
+  "id": "ap-world-history-unit8-review",
+  "title": "Unit 8 Review: Cold War and Decolonization",
+  "subject": "AP World History",
+  "unit": "Cold War and Decolonization",
+  "type": "unit-review",
+  "questionsPerAttempt": 10,
+  "isAssessment": true,
+  "bank": [
+    {
+      "question": "What does it mean that the United States and the Soviet Union were 'superpowers' with opposing ideologies?",
+      "options": [
+        "They were small states with identical political systems",
+        "They were states of overwhelming global power, one championing capitalism and democracy, the other communism, each believing its system was destined to triumph",
+        "They were close allies who agreed on how to run the world",
+        "They had no military or economic strength after the war"
+      ],
+      "correctIndex": 1,
+      "explanation": "Superpowers were states of overwhelming military, economic, and political power. The U.S. championed capitalism and liberal democracy; the USSR championed communism. Each believed its system was superior, producing the ideological rivalry that defined the Cold War."
+    },
+    {
+      "question": "The 'Iron Curtain,' a phrase popularized by Winston Churchill in 1946, referred to...",
+      "options": [
+        "a literal wall built across all of Europe",
+        "the division between the Soviet-dominated communist countries of Eastern Europe and the democratic, capitalist West",
+        "the border between the U.S. and Mexico",
+        "an alliance between Germany and the USSR"
+      ],
+      "correctIndex": 1,
+      "explanation": "The Iron Curtain was Churchill's metaphor for the division between Soviet-controlled communist Eastern Europe and the capitalist, democratic West, as the wartime alliance hardened into Cold War hostility."
+    },
+    {
+      "question": "The U.S. policy of 'containment,' expressed through the Truman Doctrine and the Marshall Plan, aimed to...",
+      "options": [
+        "conquer and occupy the Soviet Union",
+        "resist and limit the spread of communism wherever it threatened, rather than directly attacking the USSR",
+        "spread communism to Western Europe",
+        "withdraw the U.S. from all involvement in Europe"
+      ],
+      "correctIndex": 1,
+      "explanation": "Containment sought to halt the spread of communism — not invade the USSR — believing a contained Soviet system would eventually collapse. The Truman Doctrine and Marshall Plan (rebuilding Western Europe so democracies would resist communism) were early expressions."
+    },
+    {
+      "question": "The Marshall Plan (1948) is best understood as...",
+      "options": [
+        "a military alliance against the USSR",
+        "American economic aid to rebuild Western Europe, used as a tool of containment to make democracies resist communism's appeal",
+        "a plan to spread communism",
+        "a nuclear weapons treaty"
+      ],
+      "correctIndex": 1,
+      "explanation": "The Marshall Plan poured billions into rebuilding war-shattered Western Europe, on the reasoning that prosperous, stable democracies would resist communism. It was economic aid as a weapon of containment, not a military alliance."
+    },
+    {
+      "question": "NATO and the Warsaw Pact were...",
+      "options": [
+        "economic trade agreements",
+        "rival military alliances — NATO led by the U.S. (Western bloc) and the Warsaw Pact led by the USSR (Eastern bloc)",
+        "branches of the United Nations",
+        "decolonization movements"
+      ],
+      "correctIndex": 1,
+      "explanation": "NATO (1949) was the U.S.-led Western military alliance; the Warsaw Pact (1955) was the Soviet-led Eastern alliance. They embodied the two armed blocs into which the Cold War divided Europe."
+    },
+    {
+      "question": "The Berlin Airlift (1948–49) demonstrated the Cold War pattern of...",
+      "options": [
+        "direct military war between U.S. and Soviet armies",
+        "both sides pursuing their aims SHORT of direct war, here by supplying blockaded West Berlin entirely by air rather than forcing the roads open",
+        "the U.S. abandoning Western Europe",
+        "the USSR winning control of all Berlin"
+      ],
+      "correctIndex": 1,
+      "explanation": "When Stalin blockaded West Berlin, the U.S. and Britain supplied it by air for nearly a year rather than risk war by forcing the roads. It exemplified containment and the era's pattern of competing without direct combat, given the nuclear danger."
+    },
+    {
+      "question": "Why was the Chinese Communist Revolution of 1949 so significant in the Cold War?",
+      "options": [
+        "It ended the Cold War immediately",
+        "It brought the world's most populous nation into the communist camp, roughly doubling the population under communism and shifting the Cold War's center of gravity toward Asia",
+        "It made China an ally of the United States",
+        "It had no effect outside China"
+      ],
+      "correctIndex": 1,
+      "explanation": "Mao Zedong's 1949 victory brought China, the world's most populous country, into the communist camp, roughly doubling the population under communism, alarming the U.S. (domino theory), and transforming the Cold War into a truly global contest."
+    },
+    {
+      "question": "What is a 'proxy war,' and why were proxy wars central to the Cold War?",
+      "options": [
+        "A direct war between U.S. and Soviet armies",
+        "A conflict in which the superpowers backed opposing local sides with money, weapons, and advisers instead of fighting each other directly, letting them wage their rivalry while avoiding a catastrophic nuclear war",
+        "A war with no outside involvement",
+        "A peaceful negotiation"
+      ],
+      "correctIndex": 1,
+      "explanation": "A proxy war is one in which the superpowers supported opposing local sides rather than fighting directly. Proxy wars (Korea, Vietnam, Afghanistan) let the U.S. and USSR wage their rivalry, often bloodily and mostly in the decolonizing world, while avoiding direct nuclear war."
+    },
+    {
+      "question": "The Korean War (1950–53) ended with...",
+      "options": [
+        "a complete communist victory uniting Korea",
+        "a stalemate near the original border, leaving Korea divided into North and South to this day",
+        "the U.S. conquering all of Korea",
+        "a peaceful unification of Korea"
+      ],
+      "correctIndex": 1,
+      "explanation": "After communist North Korea (backed by the USSR and China) invaded the U.S./UN-backed South and China entered the war, three years of fighting ended in stalemate near the original border. Korea remains divided, a lasting legacy of the Cold War."
+    },
+    {
+      "question": "The Cuban Missile Crisis (1962) is significant because it...",
+      "options": [
+        "started World War III",
+        "was the closest the world came to nuclear war, when the superpowers confronted each other over Soviet missiles in Cuba before pulling back",
+        "ended the Cold War",
+        "was a proxy war in Africa"
+      ],
+      "correctIndex": 1,
+      "explanation": "When the U.S. discovered Soviet nuclear missiles in Cuba, a tense thirteen-day standoff brought the superpowers to the brink before the Soviets withdrew the missiles in exchange for U.S. concessions. It was the closest the world has come to nuclear war."
+    },
+    {
+      "question": "The doctrine of Mutually Assured Destruction (MAD) held that...",
+      "options": [
+        "nuclear war was winnable and should be pursued",
+        "because each side could annihilate the other even after being attacked, neither could 'win' a nuclear war, which deterred either from starting one",
+        "only one side had nuclear weapons",
+        "nuclear weapons should be used in every conflict"
+      ],
+      "correctIndex": 1,
+      "explanation": "MAD held that since each superpower could destroy the other even after absorbing a first strike, neither could win a nuclear war — paradoxically deterring either from launching one. It helps explain why the Cold War stayed 'cold.'"
+    },
+    {
+      "question": "The 'domino theory' that shaped U.S. policy in Vietnam held that...",
+      "options": [
+        "communism would collapse on its own everywhere",
+        "if one country fell to communism, its neighbors would topple one after another, making even small countries seem vital to contain",
+        "the U.S. should never intervene abroad",
+        "all wars are unwinnable"
+      ],
+      "correctIndex": 1,
+      "explanation": "The domino theory held that if one country fell to communism, neighboring countries would fall in turn like a row of dominoes. It made distant nations like Vietnam seem critical to containment and helped justify U.S. escalation there."
+    },
+    {
+      "question": "A sophisticated analysis of the Vietnam War recognizes that the Vietnamese were primarily fighting for...",
+      "options": [
+        "the spread of global communism as Cold War pawns",
+        "their long anti-colonial nationalist struggle for independence and unity, which the U.S. domino-theory framework largely misread",
+        "an alliance with the United States",
+        "the restoration of French colonial rule"
+      ],
+      "correctIndex": 1,
+      "explanation": "While the U.S. saw Vietnam through containment and the domino theory, the Vietnamese saw their struggle as a continuation of their anti-colonial nationalist fight for independence and unity. Recognizing the gap between superpower framing and local motives is key analysis."
+    },
+    {
+      "question": "Which factor was the most important ACCELERANT of decolonization after 1945?",
+      "options": [
+        "European powers freely gave up colonies with no pressure",
+        "World War II devastated and bankrupted the colonial powers, shattered the myth of European invincibility, and sharpened the contradiction of a 'war for freedom' fought by subjugated peoples",
+        "Colonized peoples lost interest in independence",
+        "The League of Nations ordered all empires to dissolve"
+      ],
+      "correctIndex": 1,
+      "explanation": "WWII was the key accelerant: it left the colonial powers too exhausted and bankrupt to hold their empires, destroyed the myth of European invincibility (especially after Japan's conquests), and sharpened the contradiction of empires fighting for 'freedom' while denying it to colonies. Nationalism was the deeper engine."
+    },
+    {
+      "question": "Mohandas Gandhi's strategy of satyagraha in the Indian independence movement was...",
+      "options": [
+        "armed guerrilla warfare",
+        "nonviolent resistance — mass civil disobedience, boycotts, and refusal to cooperate with unjust laws, as in the Salt March",
+        "negotiation conducted only by elites in private",
+        "an alliance with the Soviet Union"
+      ],
+      "correctIndex": 1,
+      "explanation": "Satyagraha was Gandhi's method of nonviolent resistance: mass civil disobedience, boycotts of British goods, and refusal to obey unjust laws, exemplified by the Salt March. It showed an unarmed mass movement could make an empire ungovernable and inspired later movements worldwide."
+    },
+    {
+      "question": "Why is it important to recognize that decolonization followed different PATHS?",
+      "options": [
+        "Because every colony became independent in the same way",
+        "Because outcomes ranged from largely negotiated, relatively peaceful transfers (India, Ghana) to long violent wars of independence (Algeria, Vietnam), often depending on factors like settler populations",
+        "Because no colonies became independent",
+        "Because all decolonization was peaceful"
+      ],
+      "correctIndex": 1,
+      "explanation": "Decolonization was not uniform: some colonies (India, Ghana) gained independence mostly through negotiation, while others (Algeria, Vietnam, Kenya) won it only through violent struggle, often where large settler populations resisted. Comparing and explaining these paths is a key skill."
+    },
+    {
+      "question": "The 1947 Partition of India illustrates which challenge of decolonization?",
+      "options": [
+        "that independence always brought immediate prosperity",
+        "that the legacies of colonial rule (here, sharpened religious divisions and hastily drawn borders) could turn independence into tragedy, with mass displacement and intercommunal violence",
+        "that no violence ever accompanied independence",
+        "that Britain refused to leave India"
+      ],
+      "correctIndex": 1,
+      "explanation": "Partition split British India into India and Pakistan, triggering the displacement of as many as 15 million people and the deaths of one to two million in intercommunal violence. It shows how colonial-era divisions and arbitrary borders shaped the new nations' births and conflicts."
+    },
+    {
+      "question": "'Neo-colonialism' refers to the idea that...",
+      "options": [
+        "former colonies recolonized Europe",
+        "former colonies remained economically dependent on their old rulers even after gaining political independence",
+        "all colonies achieved full economic independence",
+        "colonialism never ended legally"
+      ],
+      "correctIndex": 1,
+      "explanation": "Neo-colonialism describes the continued economic dependence of former colonies on their old rulers after political independence. Colonial economies had been structured to export raw materials and import goods, leaving new nations economically vulnerable — political independence without economic independence."
+    },
+    {
+      "question": "The Non-Aligned Movement represented...",
+      "options": [
+        "a military alliance with the United States",
+        "newly independent and developing nations' effort to refuse to join either Cold War bloc and chart an independent course",
+        "the Soviet bloc of Eastern Europe",
+        "a return to colonial rule"
+      ],
+      "correctIndex": 1,
+      "explanation": "The Non-Aligned Movement was an effort by leaders of newly independent and developing nations to avoid joining either superpower camp, seeking an independent path and solidarity among the developing world in a bipolar Cold War world."
+    },
+    {
+      "question": "What did movements like the U.S. Civil Rights Movement, the South African anti-apartheid struggle, and Indian independence have in common?",
+      "options": [
+        "They all relied entirely on violent armed revolution",
+        "They were popular movements asserting human agency against oppression, often sharing nonviolent strategies and ideals and inspiring one another across borders",
+        "They were all directed by the superpowers",
+        "They all failed to achieve their goals"
+      ],
+      "correctIndex": 1,
+      "explanation": "These were popular movements in which ordinary people organized to resist oppression, frequently sharing nonviolent strategies (Gandhi's methods influenced King) and inspiring one another across borders. They illustrate human agency challenging powerful states and systems."
+    },
+    {
+      "question": "Apartheid in South Africa, overturned in the early 1990s, was...",
+      "options": [
+        "a system of free and equal democracy",
+        "a brutal system of legalized racial separation and white-minority rule, opposed by the African National Congress and figures like Nelson Mandela",
+        "a Cold War military alliance",
+        "an economic development program"
+      ],
+      "correctIndex": 1,
+      "explanation": "Apartheid was South Africa's system of legalized racial separation and white-minority rule. The anti-apartheid movement, led by the ANC and figures like Nelson Mandela, struggled for decades and finally triumphed in the early 1990s."
+    },
+    {
+      "question": "Which combination BEST explains why the Cold War ended around 1989–1991?",
+      "options": [
+        "A direct military defeat of the USSR by NATO armies",
+        "Soviet economic stagnation and the costs of the arms race and Afghanistan, combined with Gorbachev's reforms (perestroika and glasnost) and a surge of popular resistance in Eastern Europe",
+        "A sudden Soviet victory over the U.S.",
+        "The discovery of new resources in Russia"
+      ],
+      "correctIndex": 1,
+      "explanation": "The Cold War ended through interacting causes: the planned Soviet economy stagnated and could not sustain the arms race or the Afghan war; Gorbachev's perestroika and glasnost opened the system and he declined to use force in Eastern Europe; and popular resistance then toppled communist governments — all without a direct NATO-Soviet war."
+    },
+    {
+      "question": "Gorbachev's reforms of perestroika and glasnost were, respectively...",
+      "options": [
+        "military buildup and censorship",
+        "economic 'restructuring' and 'openness' (relaxing censorship and allowing criticism)",
+        "two new alliances",
+        "nuclear weapons programs"
+      ],
+      "correctIndex": 1,
+      "explanation": "Perestroika meant 'restructuring' the stagnant Soviet economy, and glasnost meant 'openness' — relaxing censorship and allowing public criticism. Together they aimed to save the failing system but ultimately unleashed forces that brought it down."
+    },
+    {
+      "question": "Poland's Solidarity movement of the 1980s was...",
+      "options": [
+        "a Soviet-controlled government agency",
+        "a massive independent trade union that defied the communist government, becoming the most successful popular challenge to communist rule in Eastern Europe before 1989",
+        "a NATO military unit",
+        "a U.S. corporation"
+      ],
+      "correctIndex": 1,
+      "explanation": "Solidarity was a massive independent trade union in Poland, led by Lech Walesa, that openly defied the communist government throughout the 1980s. It became the most successful popular challenge to communist rule before the 1989 revolutions."
+    },
+    {
+      "question": "A key reason the Cold War's end is considered remarkable is that...",
+      "options": [
+        "it involved the largest nuclear war in history",
+        "a superpower (the USSR) collapsed and the bipolar order ended without a direct great-power war",
+        "the U.S. conquered the Soviet Union militarily",
+        "communism spread to the entire world"
+      ],
+      "correctIndex": 1,
+      "explanation": "The Cold War ended without a great-power war: the Soviet Union collapsed from within through economic crisis, reform, nationalism, and popular resistance, and Eastern Europe's communist regimes fell largely peacefully in 1989. The USSR dissolved into 15 states in 1991."
+    },
+    {
+      "question": "Which is an accurate CONTINUITY (something that stayed the same) across the era of decolonization?",
+      "options": [
+        "European empires continued to rule most of Asia and Africa",
+        "Despite gaining political independence, many former colonies remained economically dependent on their former rulers (neo-colonialism)",
+        "The world remained a multipolar system of many equal great powers",
+        "Nationalism disappeared after independence"
+      ],
+      "correctIndex": 1,
+      "explanation": "A key continuity is that political independence did not bring economic independence: many former colonies remained dependent on their old rulers for trade, capital, and manufactured goods (neo-colonialism). Major changes included empires giving way to nation-states."
+    },
+    {
+      "question": "How can a student tell whether an AP prompt calls for COMPARISON or CONTINUITY AND CHANGE reasoning?",
+      "options": [
+        "There is no way to tell",
+        "Words like 'compare' or 'similarities and differences' signal comparison, while 'extent of change,' 'changed and stayed the same,' or a span of dates signals continuity and change over time",
+        "Both skills are always required in every prompt equally",
+        "Only the length of the prompt matters"
+      ],
+      "correctIndex": 1,
+      "explanation": "AP prompts signal their reasoning skill: 'compare' or 'similarities and differences' calls for comparison; 'extent of change,' 'how X changed and stayed the same,' or a date span calls for continuity and change over time. Identifying the skill first shapes the whole essay structure."
+    }
+  ]
+}

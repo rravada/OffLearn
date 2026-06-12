@@ -370,54 +370,6 @@
       ]
     },
     {
-      "id": "ap-chemistry",
-      "title": "AP Chemistry",
-      "icon": "flask",
-      "track": "ap",
-      "units": [
-        {
-          "id": "unit-1",
-          "title": "Atomic Structure and Properties",
-          "lessons": [
-            { "id": "atomic-theory-subatomic", "title": "Atomic Theory and Subatomic Particles", "duration": "25 min" },
-            { "id": "electron-configuration", "title": "Electron Configuration and Orbital Notation", "duration": "30 min" },
-            { "id": "periodic-trends", "title": "Periodic Trends: Atomic Radius, Ionization Energy", "duration": "25 min" },
-            { "id": "bonding-vsepr", "title": "Chemical Bonding and VSEPR Theory", "duration": "30 min" }
-          ]
-        },
-        {
-          "id": "unit-2",
-          "title": "Chemical Reactions and Stoichiometry",
-          "lessons": [
-            { "id": "types-of-reactions", "title": "Types of Chemical Reactions", "duration": "25 min" },
-            { "id": "mole-stoichiometry", "title": "The Mole and Stoichiometry", "duration": "30 min" },
-            { "id": "limiting-reagents", "title": "Limiting Reagents and Percent Yield", "duration": "25 min" },
-            { "id": "solution-chemistry", "title": "Solution Chemistry and Molarity", "duration": "25 min" }
-          ]
-        },
-        {
-          "id": "unit-3",
-          "title": "Thermodynamics",
-          "lessons": [
-            { "id": "enthalpy-calorimetry", "title": "Enthalpy and Calorimetry", "duration": "30 min" },
-            { "id": "hess-law", "title": "Hess's Law", "duration": "25 min" },
-            { "id": "entropy-gibbs", "title": "Entropy and Gibbs Free Energy", "duration": "30 min" },
-            { "id": "spontaneity", "title": "Spontaneity and Thermodynamic Favorability", "duration": "25 min" }
-          ]
-        },
-        {
-          "id": "unit-4",
-          "title": "Kinetics and Equilibrium",
-          "lessons": [
-            { "id": "reaction-rates", "title": "Reaction Rates and Rate Laws", "duration": "30 min" },
-            { "id": "activation-energy-catalysts", "title": "Activation Energy and Catalysts", "duration": "25 min" },
-            { "id": "equilibrium-le-chatelier", "title": "Chemical Equilibrium and Le Chatelier's Principle", "duration": "30 min" },
-            { "id": "acid-base-ph", "title": "Acid-Base Chemistry and pH", "duration": "30 min" }
-          ]
-        }
-      ]
-    },
-    {
       "id": "ap-world-history",
       "title": "AP World History",
       "icon": "globe",
@@ -489,6 +441,47 @@
             { "id": "global-economy-and-economic-imperialism", "title": "The Global Economy and Economic Imperialism", "duration": "45 min" },
             { "id": "migration-causes-and-effects", "title": "Causes and Effects of Migration", "duration": "45 min" },
             { "id": "unit-review", "title": "Unit 6 Review", "duration": "20 min" }
+          ]
+        },
+        {
+          "id": "unit-7",
+          "title": "Global Conflict",
+          "lessons": [
+            { "id": "shifting-power-and-causes-of-wwi", "title": "Shifting Power and the Causes of World War I", "duration": "45 min" },
+            { "id": "conducting-world-war-i", "title": "Total War: Conducting World War I", "duration": "45 min" },
+            { "id": "interwar-period", "title": "The Interwar Period and Unresolved Tensions", "duration": "45 min" },
+            { "id": "causes-and-conduct-of-wwii", "title": "Causes and Conduct of World War II", "duration": "50 min" },
+            { "id": "mass-atrocities-and-causation", "title": "Mass Atrocities and Causation in Global Conflict", "duration": "45 min" },
+            { "id": "unit-review", "title": "Unit 7 Review", "duration": "20 min" }
+          ]
+        },
+        {
+          "id": "unit-8",
+          "title": "Cold War and Decolonization",
+          "lessons": [
+            { "id": "origins-of-the-cold-war", "title": "Setting the Stage and the Cold War", "duration": "50 min" },
+            { "id": "effects-of-the-cold-war", "title": "Effects of the Cold War and the Spread of Communism", "duration": "45 min" },
+            { "id": "decolonization", "title": "Decolonization and Newly Independent States", "duration": "50 min" },
+            { "id": "resistance-and-end-of-cold-war", "title": "Global Resistance and the End of the Cold War", "duration": "45 min" },
+            { "id": "unit-review", "title": "Unit 8 Review", "duration": "20 min" }
+          ]
+        },
+        {
+          "id": "unit-9",
+          "title": "Globalization",
+          "lessons": [
+            { "id": "technology-exchange-and-disease", "title": "Technology, Exchange, and Disease After 1900", "duration": "45 min" },
+            { "id": "environment-and-global-economy", "title": "The Environment and Economics in the Global Age", "duration": "45 min" },
+            { "id": "culture-reform-and-resistance", "title": "Calls for Reform, Global Culture, and Resistance", "duration": "45 min" },
+            { "id": "institutions-and-continuity-and-change", "title": "Global Institutions and Continuity and Change", "duration": "45 min" },
+            { "id": "unit-review", "title": "Unit 9 Review", "duration": "20 min" }
+          ]
+        },
+        {
+          "id": "final",
+          "title": "Course Final Exam",
+          "lessons": [
+            { "id": "course-final", "title": "AP World History: Modern Course Final", "duration": "90 min" }
           ]
         }
       ]

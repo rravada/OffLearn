@@ -9,7 +9,6 @@ import {
   Code2,
   Sigma,
   Dna,
-  Atom,
   Globe,
 } from "lucide-react";
 
@@ -23,7 +22,6 @@ export const SUBJECT_ICON_MAP: Record<string, LucideIcon> = {
   cs: Code2,
   "ap-calc-ab": Sigma,
   "ap-biology": Dna,
-  "ap-chemistry": Atom,
   "ap-world-history": Globe,
 };
 

@@ -1,0 +1,319 @@
+{
+  "id": "ap-world-history-unit7-review",
+  "title": "Unit 7 Review: Global Conflict",
+  "subject": "AP World History",
+  "unit": "Global Conflict",
+  "type": "unit-review",
+  "questionsPerAttempt": 10,
+  "isAssessment": true,
+  "bank": [
+    {
+      "question": "Why is the period around 1900 best described as a time of 'shifting global power'?",
+      "options": [
+        "Every empire in the world grew stronger at the same rate",
+        "Older land-based empires (Ottoman, Qing, Russian, Austro-Hungarian) were weakening while industrialized states like Germany, the U.S., and Japan rose rapidly",
+        "Europe lost all of its colonies before 1900",
+        "The global balance of power had not changed since 1750"
+      ],
+      "correctIndex": 1,
+      "explanation": "Around 1900 the balance of power shifted fast: the old land-based and Islamic empires (Ottoman, Qing, Russian, Austro-Hungarian) weakened or fragmented while newly industrialized states — Germany, the U.S., and Meiji Japan — rose. Japan's 1905 defeat of Russia symbolized the shift."
+    },
+    {
+      "question": "The acronym M.A.I.N. summarizes the long-term causes of World War I as...",
+      "options": [
+        "Money, Asia, Italy, Nationalism",
+        "Militarism, Alliances, Imperialism, Nationalism",
+        "Monarchy, Armies, Industry, Navies",
+        "Mobilization, Assassination, Invasion, Negotiation"
+      ],
+      "correctIndex": 1,
+      "explanation": "M.A.I.N. stands for Militarism, Alliances, Imperialism, and Nationalism — the four long-term causes that turned Europe into a 'powder keg.' None alone caused the war, but together they made a general war possible once a spark appeared."
+    },
+    {
+      "question": "What is the BEST description of the role of the assassination of Archduke Franz Ferdinand in causing World War I?",
+      "options": [
+        "It was the single underlying cause of the war",
+        "It was the immediate trigger that set off a war made possible by deeper causes like militarism, alliances, imperialism, and nationalism",
+        "It had no connection to the war's outbreak",
+        "It caused the war entirely on its own"
+      ],
+      "correctIndex": 1,
+      "explanation": "The assassination (June 1914) was the immediate trigger, not an underlying cause. It led to a world war only because of the long-term M.A.I.N. pressures. Distinguishing the spark from the underlying 'gunpowder' is a core causation skill."
+    },
+    {
+      "question": "The two main alliance blocs at the start of World War I were the...",
+      "options": [
+        "Axis and the Allies",
+        "Triple Alliance (Germany, Austria-Hungary, Italy) and the Triple Entente (France, Russia, Britain)",
+        "Warsaw Pact and NATO",
+        "Union and the Confederacy"
+      ],
+      "correctIndex": 1,
+      "explanation": "WWI's alliances were the Triple Alliance (Germany, Austria-Hungary, Italy) and the Triple Entente (France, Russia, Britain). The Axis/Allies belong to WWII, and the Warsaw Pact/NATO to the Cold War."
+    },
+    {
+      "question": "Why did the Western Front of World War I settle into a years-long stalemate of trench warfare?",
+      "options": [
+        "Soldiers refused to fight",
+        "Industrial defensive weapons — machine guns, massed artillery, and barbed wire — made attacking across open ground suicidal, forcing both sides to dig in",
+        "There were not enough soldiers",
+        "Both sides agreed to a truce for most of the war"
+      ],
+      "correctIndex": 1,
+      "explanation": "Industrial weapons gave the defense an overwhelming advantage. Machine guns, massed artillery, and barbed wire slaughtered attackers in the open, so both sides dug trenches. Enormous casualties bought almost no ground — the essence of trench warfare."
+    },
+    {
+      "question": "The concept of 'total war' refers to...",
+      "options": [
+        "a war fought only by professional soldiers",
+        "the mobilization of an entire society's population, economy, and resources for the war effort, blurring the line between soldier and civilian",
+        "a war that ends in total victory for one side",
+        "a war fought entirely with nuclear weapons"
+      ],
+      "correctIndex": 1,
+      "explanation": "Total war mobilizes a whole society — its economy, labor, and population — for victory, blurring the soldier/civilian line. In WWI this meant rationing, conscription, women entering the workforce, propaganda, censorship, and drawing on colonial empires."
+    },
+    {
+      "question": "Which statement best explains why World War I deserves to be called a 'world' war?",
+      "options": [
+        "All fighting took place in France and Belgium",
+        "The combatants were imperial powers that drew troops, labor, and resources from colonies in Africa and Asia, with fighting across the Middle East, Africa, and the Pacific",
+        "Only European soldiers were involved",
+        "It was fought entirely at sea"
+      ],
+      "correctIndex": 1,
+      "explanation": "WWI was global because its combatants were empires that mobilized colonial troops and laborers (Indian, African, Vietnamese, and others) and resources worldwide, with fighting across the Middle East (Gallipoli), Africa, and the Pacific."
+    },
+    {
+      "question": "Which four empires collapsed as a result of World War I?",
+      "options": [
+        "British, French, Spanish, and Dutch",
+        "German, Austro-Hungarian, Russian, and Ottoman",
+        "Roman, Byzantine, Mongol, and Mughal",
+        "American, Japanese, Italian, and Chinese"
+      ],
+      "correctIndex": 1,
+      "explanation": "World War I destroyed four empires: the German, Austro-Hungarian, Russian, and Ottoman. They were replaced by new states and redrawn borders, especially in Eastern Europe and the Middle East."
+    },
+    {
+      "question": "The Treaty of Versailles (1919) is best understood as...",
+      "options": [
+        "a cause of World War I",
+        "the peace settlement ending WWI that punished Germany (war guilt, reparations, lost territory) and helped create resentment that fueled WWII",
+        "an alliance between Germany and Russia",
+        "the treaty that created the United Nations"
+      ],
+      "correctIndex": 1,
+      "explanation": "Versailles ended WWI and forced Germany to accept 'war guilt,' pay reparations, and lose territory and military strength. German resentment of this 'dictated' peace became a key long-term cause of WWII — a consequence of WWI and a cause of the next war."
+    },
+    {
+      "question": "Self-determination, associated with Woodrow Wilson's Fourteen Points, became a source of anti-colonial frustration because...",
+      "options": [
+        "it was applied generously to all colonized peoples",
+        "it was applied in Europe but largely denied to colonized peoples, who had hoped it would bring them independence",
+        "it had nothing to do with colonies",
+        "it forced all empires to free their colonies immediately"
+      ],
+      "correctIndex": 1,
+      "explanation": "Wilson's principle that peoples should choose their own government was applied to parts of Europe but denied to colonized peoples in Africa and Asia, whose hopes were dashed. That disappointment helped fuel the anti-colonial nationalism of later decades."
+    },
+    {
+      "question": "The interwar period (1919–1939) is best characterized by...",
+      "options": [
+        "global peace and prosperity",
+        "political and economic instability, including the failed peace and the Great Depression, which fueled the rise of totalitarian regimes",
+        "the complete absence of dictatorship",
+        "rapid decolonization of all empires"
+      ],
+      "correctIndex": 1,
+      "explanation": "The interwar years were defined by instability: Versailles resentment, a weak League of Nations, and the Great Depression discredited democracy and capitalism, opening the door to fascist, militarist, and communist totalitarian regimes."
+    },
+    {
+      "question": "How did the Great Depression contribute to the rise of authoritarian regimes?",
+      "options": [
+        "It made everyone wealthy",
+        "Mass unemployment and economic collapse discredited the democratic, capitalist order and made desperate populations receptive to radical movements promising order, jobs, and national pride",
+        "It only affected the United States",
+        "It strengthened the League of Nations"
+      ],
+      "correctIndex": 1,
+      "explanation": "The Depression spread worldwide, causing mass unemployment (about a quarter of U.S. and a third of German workers) and discrediting democracy. Desperate populations turned to radical movements promising bread, order, and national glory — fueling fascism and militarism."
+    },
+    {
+      "question": "Fascism is best described as...",
+      "options": [
+        "a radical-left ideology aiming at a classless society",
+        "a radical-right, ultranationalist ideology that glorified the state, nation, and leader above the individual and opposed both democracy and communism",
+        "a form of liberal democracy",
+        "an economic theory of free markets"
+      ],
+      "correctIndex": 1,
+      "explanation": "Fascism was a radical-right, ultranationalist ideology that exalted the state, nation, and leader over the individual, celebrated military strength, and defined itself against both democracy and communism. Mussolini's Italy and Hitler's Germany were its main examples."
+    },
+    {
+      "question": "Although bitter ideological enemies, fascist and communist states shared which key feature as FORMS of government?",
+      "options": [
+        "Free elections and a free press",
+        "One-party dictatorship, state control of society, secret police, propaganda, and suppression of individual freedom",
+        "Commitment to liberal democracy",
+        "Complete government non-involvement in the economy"
+      ],
+      "correctIndex": 1,
+      "explanation": "Despite being ideological opposites (radical right vs. radical left), fascist and communist states were both totalitarian: one-party dictatorships controlling the economy and society through secret police and propaganda, crushing individual freedom. The exam frequently tests this structural comparison."
+    },
+    {
+      "question": "Which leader transformed the USSR through Five-Year Plans, collectivization, and the Great Purges?",
+      "options": [
+        "Benito Mussolini",
+        "Joseph Stalin",
+        "Adolf Hitler",
+        "Woodrow Wilson"
+      ],
+      "correctIndex": 1,
+      "explanation": "Joseph Stalin built a communist totalitarian state through forced industrialization (Five-Year Plans), agricultural collectivization (causing famines that killed millions), and the Great Purges, which executed or imprisoned millions of supposed enemies."
+    },
+    {
+      "question": "Why did the policy of appeasement (seen at the 1938 Munich Conference) fail to prevent World War II?",
+      "options": [
+        "It provoked Hitler into making peace",
+        "By giving in to Hitler's demands, it convinced him the democracies were weak and would not fight, encouraging further aggression",
+        "It successfully stopped all German expansion",
+        "It had no effect on Hitler's decisions"
+      ],
+      "correctIndex": 1,
+      "explanation": "Appeasement — conceding to Hitler's demands to avoid war — failed because it signaled weakness. The Munich concessions emboldened Hitler; within a year he seized the rest of Czechoslovakia and invaded Poland. Yielding to an aggressor invited more aggression."
+    },
+    {
+      "question": "World War II in Europe began with which event?",
+      "options": [
+        "The attack on Pearl Harbor",
+        "Germany's invasion of Poland on September 1, 1939",
+        "The Battle of Stalingrad",
+        "The Munich Conference"
+      ],
+      "correctIndex": 1,
+      "explanation": "WWII in Europe began when Germany invaded Poland on September 1, 1939, prompting Britain and France to declare war. (In Asia, the war is often dated to Japan's invasion of China in 1937 or Manchuria in 1931.)"
+    },
+    {
+      "question": "Which event brought the United States fully into World War II?",
+      "options": [
+        "The German invasion of Poland",
+        "The Japanese surprise attack on Pearl Harbor in December 1941",
+        "The Munich Conference",
+        "The Battle of Stalingrad"
+      ],
+      "correctIndex": 1,
+      "explanation": "Japan's surprise attack on Pearl Harbor on December 7, 1941, brought the U.S. fully into the war. The invasion of Poland began the war in Europe; Munich was appeasement; Stalingrad was an Eastern Front turning point."
+    },
+    {
+      "question": "The Battle of Stalingrad (1942–43) is significant because it...",
+      "options": [
+        "was the first battle of World War I",
+        "was the turning point of the war in Europe, halting and reversing the German advance into the Soviet Union",
+        "ended the war in the Pacific",
+        "was a naval battle between Britain and Germany"
+      ],
+      "correctIndex": 1,
+      "explanation": "Stalingrad was the turning point on the Eastern Front, where the bulk of WWII's fighting and dying occurred. The Soviet victory halted and reversed the German invasion, beginning the long Soviet push toward Berlin. The USSR suffered about 27 million dead."
+    },
+    {
+      "question": "What distinguishes the conduct of World War II from World War I in terms of who died?",
+      "options": [
+        "Far fewer people died in WWII",
+        "In WWII the majority of the dead were civilians, deliberately targeted through bombing, brutal occupation, and genocide, whereas WWI deaths were mostly soldiers",
+        "Only soldiers died in WWII",
+        "No civilians were affected in either war"
+      ],
+      "correctIndex": 1,
+      "explanation": "WWII took total war to an extreme: most of the roughly 60–80 million dead were civilians, killed by strategic bombing (Dresden, Tokyo), brutal occupation (Rape of Nanjing), and genocide (the Holocaust). In WWI, most of the dead had been soldiers."
+    },
+    {
+      "question": "The Holocaust is best defined as...",
+      "options": [
+        "the general civilian death toll of World War II",
+        "Nazi Germany's deliberate, industrialized genocide of six million Jews, along with millions of Roma, disabled people, Soviet POWs, and others",
+        "the bombing of Hiroshima and Nagasaki",
+        "the Soviet Great Purges"
+      ],
+      "correctIndex": 1,
+      "explanation": "The Holocaust was the Nazis' deliberate, bureaucratically organized, industrialized extermination of six million Jews and millions of others (Roma, disabled people, Soviet POWs, political prisoners). It is distinct from the general civilian death toll — a specific program of genocide."
+    },
+    {
+      "question": "The United States dropped atomic bombs on Hiroshima and Nagasaki (August 1945) in order to...",
+      "options": [
+        "defeat Nazi Germany",
+        "force Japan's surrender and avoid a costly invasion of the Japanese home islands",
+        "start the Cold War",
+        "test the bombs on an uninhabited area"
+      ],
+      "correctIndex": 1,
+      "explanation": "The U.S. dropped atomic bombs on Hiroshima and Nagasaki to force Japan's surrender and avoid a costly invasion. Over a hundred thousand people, mostly civilians, were killed; Japan surrendered days later. The nuclear age cast a shadow over the entire Cold War."
+    },
+    {
+      "question": "Who coined the term 'genocide,' and when was it made a crime under international law?",
+      "options": [
+        "Woodrow Wilson; 1919",
+        "Raphael Lemkin coined it in 1944; the UN made it an international crime in 1948",
+        "Joseph Stalin; 1936",
+        "Winston Churchill; 1945"
+      ],
+      "correctIndex": 1,
+      "explanation": "Raphael Lemkin, a Polish-Jewish lawyer, coined 'genocide' in 1944 by combining Greek 'genos' (people) and Latin 'cide' (killing). The United Nations made genocide a crime under international law in 1948."
+    },
+    {
+      "question": "The Armenian Genocide (from 1915) is significant as...",
+      "options": [
+        "a peaceful resettlement program",
+        "the first modern, systematically organized genocide, carried out by the Ottoman government against the Armenian minority during World War I",
+        "an event of World War II",
+        "a famine caused by drought"
+      ],
+      "correctIndex": 1,
+      "explanation": "The Armenian Genocide, carried out by the Ottoman government under a 'Turkification' ideology during WWI, killed an estimated one million or more Armenians and is widely regarded as the first modern, systematically organized genocide of the twentieth century."
+    },
+    {
+      "question": "Which combination of conditions BEST explains why modern genocides like the Holocaust became possible?",
+      "options": [
+        "Peace, democracy, and free markets",
+        "The cover of war, a powerful totalitarian state, a scapegoating ideology, dehumanizing propaganda, and modern technology and bureaucracy",
+        "A weak central government and no ideology",
+        "Pre-industrial weapons and small populations"
+      ],
+      "correctIndex": 1,
+      "explanation": "Modern genocide arose from a lethal combination: the cover of war, a powerful totalitarian state with bureaucratic reach, a scapegoating ultranationalist/racist ideology, dehumanization, and modern technology and organization. No single factor was sufficient — the combination was decisive."
+    },
+    {
+      "question": "What is the strongest type of thesis for a causation Long Essay Question?",
+      "options": [
+        "A restatement of the prompt with no position",
+        "A defensible, specific claim that takes a position and prioritizes among causes",
+        "A vague statement that 'there were many causes'",
+        "A list of names and dates"
+      ],
+      "correctIndex": 1,
+      "explanation": "A strong causation thesis takes a defensible, arguable position and prioritizes among causes (e.g., that ideology created the potential but war and the totalitarian state were decisive). Vague theses ('there were many causes') and prompt-restatements earn no thesis point."
+    },
+    {
+      "question": "Which is the BEST example of the kind of SPECIFIC evidence a strong causation essay requires?",
+      "options": [
+        "'Lots of people died in the war'",
+        "'The Ottoman government deported and killed over a million Armenians in 1915'",
+        "'The government was bad'",
+        "'Things changed because of many factors'"
+      ],
+      "correctIndex": 1,
+      "explanation": "Specific evidence uses precise facts — names, numbers, dates, and policies — such as 'the Ottoman government deported and killed over a million Armenians in 1915.' Generic statements like 'lots of people died' fail to earn the evidence points."
+    },
+    {
+      "question": "In comparing WWI and WWII, which is an accurate CONTINUITY (similarity)?",
+      "options": [
+        "Both were small, regional conflicts",
+        "Both were global total wars that mobilized whole societies and colonial empires and were driven by nationalism and industrial technology",
+        "Both were fought entirely with nuclear weapons",
+        "Neither involved any colonial troops"
+      ],
+      "correctIndex": 1,
+      "explanation": "A key continuity is that both world wars were global, total wars mobilizing entire societies and colonial empires, driven by nationalism and industrial technology. Key changes include WWII's far higher death toll, civilian majority of deaths, deliberate genocide, and atomic weapons."
+    }
+  ]
+}

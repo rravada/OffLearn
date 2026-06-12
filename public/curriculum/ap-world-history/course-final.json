@@ -1,0 +1,494 @@
+{
+  "id": "ap-world-history-course-final",
+  "title": "AP World History: Modern Course Final",
+  "subject": "AP World History",
+  "type": "course-final",
+  "questionsPerAttempt": 15,
+  "isAssessment": true,
+  "bank": [
+    {
+      "question": "Which Chinese dynasty (c. 1200–1450) is associated with a commercial revolution, the spread of Neo-Confucianism, and innovations like paper money and the use of the compass for navigation?",
+      "options": [
+        "The Qing dynasty",
+        "The Song dynasty",
+        "The Yuan dynasty",
+        "The Han dynasty"
+      ],
+      "correctIndex": 1,
+      "explanation": "Song China (c. 960–1279) saw a commercial revolution, a flourishing of Neo-Confucianism, and technological innovations including paper money, gunpowder, and improved navigation. It was among the most advanced societies in the world during this period."
+    },
+    {
+      "question": "The spread of Islam across Afro-Eurasia (c. 1200–1450) was facilitated primarily by...",
+      "options": [
+        "forced conversion at the point of a sword everywhere",
+        "trade networks, the travels of merchants and scholars, and the work of Sufi missionaries",
+        "European colonization",
+        "the printing press"
+      ],
+      "correctIndex": 1,
+      "explanation": "Dar al-Islam expanded largely through trade across the Indian Ocean, trans-Saharan, and Silk Road networks, carried by merchants and scholars, with Sufi mystics playing a key role in winning converts by blending Islam with local traditions."
+    },
+    {
+      "question": "The Mongol Empire's most important long-term effect on world history was that it...",
+      "options": [
+        "permanently isolated Asia from Europe",
+        "facilitated unprecedented exchange of goods, ideas, technologies, and diseases across Eurasia by uniting much of the continent under one rule (the Pax Mongolica)",
+        "ended all trade along the Silk Roads",
+        "introduced Christianity to all of Asia"
+      ],
+      "correctIndex": 1,
+      "explanation": "By uniting much of Eurasia, the Mongols created the Pax Mongolica, which made the Silk Roads safer and dramatically increased the exchange of goods, ideas, and technologies (and diseases, like the Black Death) between East and West."
+    },
+    {
+      "question": "The trans-Saharan trade routes are most associated with the exchange of...",
+      "options": [
+        "tobacco and potatoes",
+        "West African gold and enslaved people for North African salt and goods, fostering the rise of empires like Mali",
+        "tea and porcelain only",
+        "Andean silver for Chinese silk"
+      ],
+      "correctIndex": 1,
+      "explanation": "Trans-Saharan trade exchanged West African gold (and enslaved people) for salt and other North African goods, enriching empires like Mali. Mansa Musa's famous pilgrimage displayed Mali's wealth and connected West Africa to the wider Islamic world."
+    },
+    {
+      "question": "The 'gunpowder empires' (Ottoman, Safavid, and Mughal) shared which key characteristic?",
+      "options": [
+        "They were all maritime trading empires with no land army",
+        "They were large land-based empires that used gunpowder weapons to expand and consolidate power and legitimized their rule through religion and imperial art",
+        "They were all Christian kingdoms",
+        "They rejected all use of firearms"
+      ],
+      "correctIndex": 1,
+      "explanation": "The Ottoman, Safavid, and Mughal empires were land-based 'gunpowder empires' that used cannon and firearms to expand, administered diverse populations, and legitimized their rule through religion (Islam) and monumental art and architecture."
+    },
+    {
+      "question": "Which best explains why the Columbian Exchange was a turning point in world history?",
+      "options": [
+        "It ended all contact between the hemispheres",
+        "It connected the Eastern and Western Hemispheres for the first time, transferring crops, animals, people, and diseases that transformed populations, diets, and economies worldwide",
+        "It involved only the exchange of gold",
+        "It had no demographic effects"
+      ],
+      "correctIndex": 1,
+      "explanation": "The Columbian Exchange linked the hemispheres after 1492, transferring crops (potatoes, maize), animals (horses), and people — but also diseases like smallpox that devastated Indigenous American populations. It reshaped diets, demographics, and economies across the globe."
+    },
+    {
+      "question": "The Atlantic slave trade and the encomienda system were both primarily means of...",
+      "options": [
+        "promoting free wage labor",
+        "obtaining coerced labor to produce cash crops and extract wealth in the Americas",
+        "spreading Buddhism",
+        "building the Silk Roads"
+      ],
+      "correctIndex": 1,
+      "explanation": "Both were coerced-labor systems used to extract wealth from the Americas: the encomienda forced Indigenous labor, and the Atlantic slave trade brought millions of enslaved Africans to work plantations and mines producing sugar, silver, and other commodities for the global economy."
+    },
+    {
+      "question": "The Enlightenment contributed to the Atlantic Revolutions by...",
+      "options": [
+        "defending the divine right of kings",
+        "spreading ideas of natural rights, popular sovereignty, the social contract, and liberty that challenged absolute monarchy and inspired revolutionaries",
+        "rejecting all forms of reason",
+        "promoting the expansion of slavery"
+      ],
+      "correctIndex": 1,
+      "explanation": "Enlightenment thinkers advanced ideas of natural rights, popular sovereignty, the social contract, and liberty. These ideas inspired the American, French, Haitian, and Latin American revolutions, which challenged monarchy and colonial rule (though their ideals were applied unevenly)."
+    },
+    {
+      "question": "The Haitian Revolution is historically significant because it...",
+      "options": [
+        "restored slavery in the Caribbean",
+        "was the only successful large-scale slave revolt, creating the first independent nation led by formerly enslaved people",
+        "was led by European monarchs",
+        "had no connection to Enlightenment ideas"
+      ],
+      "correctIndex": 1,
+      "explanation": "The Haitian Revolution (1791–1804) was the only successful large-scale slave revolt in history, producing the first nation founded by formerly enslaved people. It pushed Enlightenment ideals of liberty and equality further than the American or French revolutions had."
+    },
+    {
+      "question": "Why did the Industrial Revolution begin in Britain?",
+      "options": [
+        "Britain had no access to coal or markets",
+        "Britain combined access to coal and iron, capital, colonial markets and raw materials, a workforce, and useful innovations like the steam engine",
+        "Britain banned all new technology",
+        "Britain had the smallest population in Europe"
+      ],
+      "correctIndex": 1,
+      "explanation": "Britain industrialized first due to a combination of factors: abundant coal and iron, accumulated capital, access to colonial markets and raw materials (like cotton), available labor, favorable institutions, and key innovations such as the steam engine."
+    },
+    {
+      "question": "The factory system and industrialization most directly led to which social change?",
+      "options": [
+        "the disappearance of all social classes",
+        "the growth of cities and the rise of a new industrial working class and middle class, with often harsh urban working and living conditions",
+        "a return to feudal manorialism",
+        "the end of all wage labor"
+      ],
+      "correctIndex": 1,
+      "explanation": "Industrialization drove rapid urbanization and created a new industrial working class (proletariat) and an expanding middle class (bourgeoisie). Early factory and city conditions were often harsh, prompting reform movements, labor unions, and ideologies like socialism."
+    },
+    {
+      "question": "Which underlying factor most enabled the 'new imperialism' of c. 1870–1914?",
+      "options": [
+        "Africans and Asians welcomed European rule",
+        "Industrialization gave a few nations an overwhelming advantage in military technology, transportation, communication, and medicine",
+        "Europe had ruled Africa and Asia continuously since the 1500s",
+        "Europe had a far larger population than the rest of the world"
+      ],
+      "correctIndex": 1,
+      "explanation": "The new imperialism rested on the technological gap opened by industrialization: machine guns, steam gunboats, railroads, the telegraph, and quinine against malaria. These tools allowed a few industrial powers to conquer and administer most of Africa and Asia."
+    },
+    {
+      "question": "Japan's Meiji Restoration (1868) is best described as...",
+      "options": [
+        "a rejection of all modernization that left Japan colonized",
+        "a thorough, centralized, state-led modernization that transformed Japan into an industrial and imperial power",
+        "a peasant rebellion against industry",
+        "a return to isolation and feudalism"
+      ],
+      "correctIndex": 1,
+      "explanation": "The Meiji Restoration abolished feudalism, built railroads, factories, schools, and a modern military, and selectively borrowed Western methods under Japanese control. Japan became an industrial and imperial power, defeating China (1895) and Russia (1905)."
+    },
+    {
+      "question": "Industrial-era migration (c. 1840–1914) was the largest in history largely because industrialization...",
+      "options": [
+        "forced everyone to stay home",
+        "created both the push/pull forces driving migration and the steamship and railroad technology that made mass movement possible",
+        "ended all poverty",
+        "eliminated the demand for labor"
+      ],
+      "correctIndex": 1,
+      "explanation": "Industrialization created the push factors (displacement, overpopulation) and pull factors (labor demand) driving migration, plus the enabling technology — steamships and railroads — that made mass movement of people across and within continents possible."
+    },
+    {
+      "question": "What is the BEST description of the role of the assassination of Archduke Franz Ferdinand in causing World War I?",
+      "options": [
+        "It was the single underlying cause of the war",
+        "It was the immediate trigger that set off a war made possible by deeper causes like militarism, alliances, imperialism, and nationalism",
+        "It had no connection to the war",
+        "It caused the war entirely on its own"
+      ],
+      "correctIndex": 1,
+      "explanation": "The assassination was the immediate trigger, not an underlying cause. It led to world war only because of the long-term M.A.I.N. pressures (militarism, alliances, imperialism, nationalism). Distinguishing the spark from the underlying causes is a core causation skill."
+    },
+    {
+      "question": "The concept of 'total war' in the world wars refers to...",
+      "options": [
+        "a war fought only by professional soldiers",
+        "the mobilization of an entire society's population, economy, and resources for the war effort, blurring the line between soldier and civilian",
+        "a war that achieves total victory",
+        "a war fought only with nuclear weapons"
+      ],
+      "correctIndex": 1,
+      "explanation": "Total war mobilizes a whole society — economy, labor, and population — for victory, blurring the soldier/civilian line through rationing, conscription, women entering the workforce, propaganda, and the use of colonial empires. It vastly expanded the power of the modern state."
+    },
+    {
+      "question": "Which combination best explains the rise of fascism and the outbreak of World War II?",
+      "options": [
+        "Global peace and prosperity in the 1920s and 1930s",
+        "The bitter legacy of the Treaty of Versailles, the Great Depression, and the failure of appeasement to stop aggressive totalitarian regimes",
+        "The success of the League of Nations",
+        "The absence of any economic crisis"
+      ],
+      "correctIndex": 1,
+      "explanation": "WWII grew from the unresolved tensions of WWI (Versailles resentment), the Great Depression (which discredited democracy and fueled extremism), the rise of expansionist totalitarian regimes, and the failure of appeasement to stop Axis aggression — culminating in the 1939 invasion of Poland."
+    },
+    {
+      "question": "What distinguished the conduct of World War II from World War I?",
+      "options": [
+        "Far fewer people died in WWII",
+        "In WWII the majority of the dead were civilians, deliberately targeted through strategic bombing, brutal occupation, and genocide, and the war ended with atomic weapons",
+        "Only soldiers died in WWII",
+        "No new technology was used"
+      ],
+      "correctIndex": 1,
+      "explanation": "WWII took total war to an extreme: most of the roughly 60–80 million dead were civilians, targeted by strategic bombing (Dresden, Tokyo), brutal occupation (Rape of Nanjing), and genocide (the Holocaust). It ended with the atomic bombings of Hiroshima and Nagasaki."
+    },
+    {
+      "question": "Which combination of conditions best explains how modern genocides like the Holocaust became possible?",
+      "options": [
+        "peace, democracy, and free markets",
+        "the cover of war, a powerful totalitarian state, a scapegoating ideology, dehumanizing propaganda, and modern technology and bureaucracy",
+        "a weak government with no ideology",
+        "pre-industrial weapons and small populations"
+      ],
+      "correctIndex": 1,
+      "explanation": "Modern genocide arose from a lethal combination: the cover of war, a powerful totalitarian state with bureaucratic reach, a scapegoating ultranationalist/racist ideology, dehumanization, and modern technology. No single factor was sufficient — the combination was decisive."
+    },
+    {
+      "question": "The Cold War (c. 1945–1991) was 'cold' largely because...",
+      "options": [
+        "the two superpowers were close allies",
+        "the superpowers' possession of nuclear weapons made a direct 'hot' war between them too catastrophic to risk, so they competed through proxy wars and other indirect means",
+        "no fighting occurred anywhere in the world",
+        "the conflict took place only in cold climates"
+      ],
+      "correctIndex": 1,
+      "explanation": "The Cold War was 'cold' because the U.S. and USSR never fought each other directly — nuclear weapons (and the doctrine of mutually assured destruction) made direct war suicidal. Instead they waged the rivalry through proxy wars, an arms race, a space race, and propaganda."
+    },
+    {
+      "question": "The U.S. policy of 'containment' aimed to...",
+      "options": [
+        "conquer and occupy the Soviet Union",
+        "resist and limit the spread of communism wherever it threatened, rather than directly attacking the USSR",
+        "spread communism worldwide",
+        "withdraw from all global involvement"
+      ],
+      "correctIndex": 1,
+      "explanation": "Containment, articulated by George Kennan, sought to halt the spread of communism — not invade the USSR — in the belief a contained Soviet system would eventually collapse. It guided U.S. actions worldwide, from the Marshall Plan to Korea and Vietnam."
+    },
+    {
+      "question": "The Chinese Communist Revolution of 1949 was significant in the Cold War because it...",
+      "options": [
+        "ended the Cold War immediately",
+        "brought the world's most populous nation into the communist camp, roughly doubling the population under communism and shifting the conflict's focus toward Asia",
+        "made China an ally of the United States",
+        "had no effect outside China"
+      ],
+      "correctIndex": 1,
+      "explanation": "Mao Zedong's 1949 victory brought China, the world's most populous country, into the communist camp, roughly doubling the global population under communism, alarming the U.S. (domino theory), and transforming the Cold War into a truly global contest."
+    },
+    {
+      "question": "Which factor was the most important accelerant of decolonization after 1945?",
+      "options": [
+        "European powers freely gave up colonies with no pressure",
+        "World War II devastated and bankrupted the colonial powers, shattered the myth of European invincibility, and sharpened the contradiction of a 'war for freedom' fought by subjugated peoples",
+        "Colonized peoples lost interest in independence",
+        "The League of Nations ordered empires to dissolve"
+      ],
+      "correctIndex": 1,
+      "explanation": "WWII was the key accelerant: it left the colonial powers too exhausted and bankrupt to hold their empires, destroyed the myth of European invincibility (especially after Japan's conquests), and sharpened the contradiction of fighting for freedom while denying it to colonies. Nationalism was the deeper engine."
+    },
+    {
+      "question": "Decolonization followed different paths in different colonies; for example...",
+      "options": [
+        "every colony became independent through identical peaceful negotiations",
+        "some colonies gained independence through largely negotiated transfers (India, Ghana) while others required long, violent armed struggle (Algeria, Vietnam), often depending on factors like settler populations",
+        "no colonies ever became independent",
+        "all decolonization was violent"
+      ],
+      "correctIndex": 1,
+      "explanation": "Decolonization ranged from mostly negotiated transfers (India 1947, Ghana 1957) to violent wars of independence (Algeria, Vietnam, Kenya). The difference often hinged on factors like large European settler populations and the colonial power's willingness to let go."
+    },
+    {
+      "question": "The Cold War ended (1989–1991) primarily because...",
+      "options": [
+        "NATO armies militarily defeated the USSR",
+        "Soviet economic stagnation and the costs of the arms race and Afghanistan combined with Gorbachev's reforms and a surge of popular resistance to topple communism without a great-power war",
+        "the United States surrendered",
+        "communism spread to the entire world"
+      ],
+      "correctIndex": 1,
+      "explanation": "The Cold War ended through interacting causes: a stagnant Soviet economy that could not sustain the arms race or the Afghan war, Gorbachev's reforms (perestroika and glasnost) and his refusal to use force in Eastern Europe, and a surge of popular resistance — all without a direct great-power war."
+    },
+    {
+      "question": "Which best describes the global economy that emerged especially after the Cold War ended around 1991?",
+      "options": [
+        "a world divided into separate capitalist and communist economies",
+        "a single, increasingly integrated economy in which free-market capitalism spread worldwide, driven by free trade, multinational corporations, and institutions like the WTO",
+        "a return to isolated economies that did not trade",
+        "an economy run entirely by the United Nations"
+      ],
+      "correctIndex": 1,
+      "explanation": "After the Cold War, the dominant trend was integration: free-market capitalism spread worldwide (including to China and former communist states), driven by expanding free trade, multinational corporations, and global institutions (World Bank, IMF, WTO)."
+    },
+    {
+      "question": "What is the primary human cause of modern climate change?",
+      "options": [
+        "natural solar variation with no human role",
+        "the burning of fossil fuels (coal, oil, natural gas), which releases greenhouse gases that trap heat in the atmosphere",
+        "the eradication of smallpox",
+        "a decrease in world population"
+      ],
+      "correctIndex": 1,
+      "explanation": "Modern climate change is driven mainly by burning fossil fuels — the energy base of industrial civilization — which releases carbon dioxide and other greenhouse gases that trap heat and warm the planet. The Keeling Curve provided early evidence of rising atmospheric CO2."
+    },
+    {
+      "question": "A balanced evaluation of economic globalization recognizes that it...",
+      "options": [
+        "was purely beneficial with no costs",
+        "reduced absolute poverty for hundreds of millions (especially in China and East Asia) while also widening inequality and imposing human and environmental costs, with uneven effects",
+        "was purely harmful with no benefits",
+        "had no measurable effects"
+      ],
+      "correctIndex": 1,
+      "explanation": "Economic globalization both lifted hundreds of millions out of extreme poverty (especially in China and East Asia) and widened inequalities while imposing sweatshop conditions and environmental costs. The sophisticated view weighs genuine benefits against genuine costs — its double-edged, uneven effects."
+    },
+    {
+      "question": "The Universal Declaration of Human Rights (1948) was significant because it...",
+      "options": [
+        "created a world government",
+        "proclaimed for the first time in an international document that all human beings possess fundamental rights simply by being human",
+        "applied only to one country",
+        "abolished all national governments"
+      ],
+      "correctIndex": 1,
+      "explanation": "Adopted by the UN after WWII and the Holocaust, the Universal Declaration of Human Rights proclaimed that every human being possesses fundamental rights regardless of nation, race, religion, or sex — announcing the powerful global idea that human rights are universal."
+    },
+    {
+      "question": "Why is 'cultural homogenization' an incomplete description of globalization's effect on culture?",
+      "options": [
+        "because no culture ever crossed borders",
+        "because alongside the spread of global culture, people blended global and local elements into new hybrid forms and often resisted by reasserting local identities",
+        "because all local cultures vanished instantly",
+        "because culture is unrelated to globalization"
+      ],
+      "correctIndex": 1,
+      "explanation": "Homogenization is incomplete because globalization also produced cultural blending/hybridization (combining global and local into new forms) and provoked resistance (religious fundamentalism, nationalism). The real dynamic is a tension among spread, blending, and backlash."
+    },
+    {
+      "question": "What is the central, unresolved tension that defines the contemporary globalized world?",
+      "options": [
+        "a rivalry between two Cold War superpowers",
+        "between the pull toward global integration and cooperation and the enduring power of sovereign nation-states pursuing their own interests",
+        "between feudal lords and peasants",
+        "between two rival religions only"
+      ],
+      "correctIndex": 1,
+      "explanation": "The defining tension of the global age is between global integration and cooperation (demanded by the interconnected economy and shared problems like climate change) and the enduring power of the sovereign nation-state, with no world government to compel cooperation."
+    },
+    {
+      "question": "Tracing 'networks of exchange' from the Silk Roads to the Columbian Exchange to modern global supply chains best illustrates which idea?",
+      "options": [
+        "that the world has become less connected over time",
+        "a deep continuity of growing human interconnection across the whole course, transformed dramatically in scale and speed by technology",
+        "that exchange networks never changed",
+        "that trade existed only in the modern era"
+      ],
+      "correctIndex": 1,
+      "explanation": "This synthesis reveals a deep continuity — humanity growing ever more connected by expanding exchange networks — alongside dramatic change in scale and speed (from years to cross Eurasia to milliseconds today; from regional to planetary). It is the kind of cross-era argument the LEQ rewards."
+    },
+    {
+      "question": "Both the Black Death (14th century), smallpox in the Columbian Exchange, and COVID-19 demonstrate which long-term pattern?",
+      "options": [
+        "that disease never travels along trade routes",
+        "that expanding networks of human interconnection have repeatedly spread disease across the world, a continuity now operating at unprecedented speed",
+        "that pandemics are a purely modern invention",
+        "that disease only affected isolated communities"
+      ],
+      "correctIndex": 1,
+      "explanation": "From the Black Death traveling Mongol-era trade routes, to smallpox in the Columbian Exchange, to COVID-19 spreading by air travel, expanding interconnection has repeatedly spread disease worldwide — a striking continuity now accelerated to a global scale within weeks."
+    },
+    {
+      "question": "How does modern globalization relate to earlier networks like the Silk Roads and Indian Ocean trade?",
+      "options": [
+        "it is entirely new and unrelated to earlier exchange",
+        "it is the acceleration and deepening of very old patterns of exchange, now operating at unprecedented scale, speed, and intensity",
+        "it reversed and ended all earlier trade",
+        "it was less connected than ancient trade routes"
+      ],
+      "correctIndex": 1,
+      "explanation": "Modern globalization is not wholly new; it is the acceleration of patterns of exchange stretching back to the Silk Roads, Indian Ocean, and trans-Saharan routes, now operating at vastly greater scale and speed. Recognizing this continuity — an old pattern at a new scale — is a key synthesis insight."
+    },
+    {
+      "question": "Which sequence correctly orders these forms of labor by their main historical period, earliest to latest?",
+      "options": [
+        "industrial wage labor → Atlantic slavery → feudal serfdom",
+        "feudal/tributary labor (pre-1450) → Atlantic chattel slavery (1500s–1800s) → industrial wage labor (1800s+)",
+        "industrial wage labor → feudal serfdom → Atlantic slavery",
+        "Atlantic slavery → feudal labor → industrial wage labor"
+      ],
+      "correctIndex": 1,
+      "explanation": "Labor systems evolved over the course: tributary and feudal/coerced labor dominated before 1450; Atlantic chattel slavery and other coerced systems powered the early-modern plantation economy (1500s–1800s); and industrial wage labor expanded with industrialization from the 1800s. Tracing this is continuity-and-change analysis."
+    },
+    {
+      "question": "Nationalism appears as a powerful force across multiple units. Which sequence shows its evolving role correctly?",
+      "options": [
+        "It only mattered in the twenty-first century",
+        "It fueled the Atlantic Revolutions and unifications (1800s), contributed to the world wars (early 1900s), drove decolonization (mid-1900s), and reappears as a backlash against globalization (today)",
+        "It disappeared after the French Revolution",
+        "It existed only during the Cold War"
+      ],
+      "correctIndex": 1,
+      "explanation": "Nationalism is a recurring through-line: it powered the Atlantic Revolutions and 19th-century unifications, helped cause WWI and WWII, drove anti-colonial decolonization, and has resurged today as a backlash against globalization. Tracing such themes across eras is the synthesis skill the course rewards."
+    },
+    {
+      "question": "The shift from large land-based empires (Ottoman, Qing, Russian) toward nation-states over the modern period was driven in part by...",
+      "options": [
+        "a complete absence of nationalism",
+        "the rise of nationalism and the strains of industrialization and world war, which fragmented multi-ethnic empires into nation-states",
+        "the strengthening of all empires",
+        "the expansion of the Mongol Empire"
+      ],
+      "correctIndex": 1,
+      "explanation": "Over the modern period, rising nationalism and the strains of industrialization and the world wars caused the great multi-ethnic land empires (Ottoman, Austro-Hungarian, Russian, Qing) to weaken and fragment, giving way to nation-states — a major change-over-time in political organization."
+    },
+    {
+      "question": "Scientific racism and social Darwinism, used to justify 19th-century imperialism, also...",
+      "options": [
+        "promoted human equality",
+        "fed directly into the racial ideologies that justified 20th-century atrocities, including the Holocaust",
+        "had no later consequences",
+        "ended all forms of discrimination"
+      ],
+      "correctIndex": 1,
+      "explanation": "The scientific racism and social Darwinism that normalized ranking human groups during the age of imperialism (Unit 6) fed directly into the racial pseudo-science that helped justify segregation, eugenics, and ultimately the Nazi genocide — a continuity of ideology with horrific consequences."
+    },
+    {
+      "question": "Which is the strongest approach to a continuity-and-change Long Essay Question spanning the course?",
+      "options": [
+        "list as many unrelated facts as possible",
+        "choose one theme, name the deep continuity, trace the dramatic changes across eras with specific cross-regional evidence, and build a thesis holding both together",
+        "discuss only continuity and ignore change",
+        "discuss only a single moment in time"
+      ],
+      "correctIndex": 1,
+      "explanation": "The strongest CCOT/synthesis approach is to pick one course theme (exchange, state-building, technology, etc.), name the fundamental continuity, trace the major changes with specific evidence from multiple eras and regions, and craft a thesis that captures both continuity and change."
+    },
+    {
+      "question": "Which best demonstrates sophisticated causation analysis (rewarded on the AP exam)?",
+      "options": [
+        "listing as many causes as possible without explaining any",
+        "distinguishing long-term underlying causes from immediate triggers, explaining how they interact, and arguing which mattered most",
+        "describing only the effects of an event",
+        "reciting dates in order"
+      ],
+      "correctIndex": 1,
+      "explanation": "Sophisticated causation distinguishes underlying/long-term causes from immediate triggers, explains how they interact to produce the outcome, and prioritizes them in a defensible argument — rather than listing causes, describing effects, or reciting dates."
+    },
+    {
+      "question": "An 'export-commodity economy,' created by imperialism and persisting in neo-colonialism, is one that...",
+      "options": [
+        "produces a diverse range of goods for its own people",
+        "is reshaped to produce one or a few products for the world market, leaving it dependent on prices it does not control",
+        "manufactures advanced machinery for export",
+        "refuses all global trade"
+      ],
+      "correctIndex": 1,
+      "explanation": "An export-commodity economy is reshaped to produce one or a few commodities (rubber, coffee, copper) for the world market rather than diverse goods for itself. Created under imperialism, this dependency persisted as 'neo-colonialism' after political independence."
+    },
+    {
+      "question": "Which pairing correctly matches a reform/resistance leader with their movement?",
+      "options": [
+        "Mao Zedong — Indian independence",
+        "Gandhi — Indian independence (nonviolent resistance); Nelson Mandela — South African anti-apartheid",
+        "Cecil Rhodes — anti-imperial resistance",
+        "Joseph Stalin — civil rights"
+      ],
+      "correctIndex": 1,
+      "explanation": "Gandhi led the Indian independence movement through nonviolent resistance (satyagraha), and Nelson Mandela led the South African anti-apartheid struggle. Both became global symbols of resistance, and Gandhi's methods influenced movements worldwide, including the U.S. civil rights movement."
+    },
+    {
+      "question": "The role of women changed significantly across the modern period as...",
+      "options": [
+        "their status remained completely unchanged everywhere",
+        "world wars drew women into the workforce, suffrage movements won the vote, and a global women's-rights movement expanded equality in education, work, and politics — though unevenly across regions",
+        "women lost all rights during industrialization",
+        "women were never involved in any historical change"
+      ],
+      "correctIndex": 1,
+      "explanation": "Women's roles changed dramatically: the world wars pulled women into industrial workforces, suffrage movements won voting rights in many countries, and a global women's-rights movement expanded equality in education, work, politics, and law — though progress varied widely by region."
+    },
+    {
+      "question": "Why do global challenges like climate change and pandemics pose such a difficult problem today?",
+      "options": [
+        "they are easily solved by any single country alone",
+        "they are global problems demanding cooperation, yet the world remains organized into roughly two hundred sovereign nation-states pursuing their own interests, with no world government to compel it",
+        "they affect no one and need no response",
+        "they were already solved in the nineteenth century"
+      ],
+      "correctIndex": 1,
+      "explanation": "Challenges like climate change and pandemics are inherently global and cannot be solved by any single nation, yet the world is organized into about two hundred sovereign states with no world government to enforce cooperation. This mismatch is a defining dilemma of the contemporary era."
+    }
+  ]
+}

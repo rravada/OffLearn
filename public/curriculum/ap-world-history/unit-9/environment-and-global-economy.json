@@ -1,0 +1,124 @@
+{
+  "id": "ap-world-history-u9-environment-and-global-economy",
+  "title": "The Environment and Economics in the Global Age",
+  "subject": "AP World History",
+  "track": "ap",
+  "difficulty": "ap",
+  "duration": "45 min",
+  "unit": "Globalization",
+  "objectives": [
+    "Analyze the environmental consequences of industrialization, population growth, and globalization, including climate change",
+    "Explain the rise of a globalized economy, including free-market capitalism, multinational corporations, and free trade",
+    "Describe new global economic institutions and trade organizations and the debates over their effects",
+    "Evaluate how economic globalization both reduced and reshaped global poverty and inequality"
+  ],
+  "sections": [
+    {
+      "type": "explanation",
+      "heading": "A Curve That Changed the Conversation",
+      "content": "Starting in 1958, a scientist named Charles Keeling began carefully measuring the amount of carbon dioxide in the air at an observatory high on a Hawaiian volcano, far from cities and factories. Year after year, his instruments recorded the same unsettling trend: the concentration of carbon dioxide in Earth's atmosphere was steadily, relentlessly rising. The jagged upward line he produced, now called the Keeling Curve, became one of the most important graphs in human history — the first clear, continuous evidence that human activity was changing the chemistry of the entire planet's atmosphere. For the first time, humanity could see, in a single line, that it had become a force capable of altering the Earth itself.\n\nThat curve captures the central paradox of this lesson. The same global economy that, after 1900, generated unprecedented wealth, lifted billions out of poverty, and connected the world also placed unprecedented strain on the natural environment — to the point of altering the climate of the whole planet. The economy and the environment are two sides of one story: the story of how an industrializing, globalizing, exploding human population transformed both human society and the Earth that sustains it.\n\nThis lesson examines both sides. First, the ENVIRONMENTAL consequences of modern economic growth and globalization, above all climate change, the defining global challenge of our time. Second, the rise of the modern GLOBAL ECONOMY — the spread of free-market capitalism, the rise of multinational corporations and free trade, and the new institutions built to manage a single world economy. As always in this unit, the theme is the double edge: extraordinary benefits and extraordinary costs, tightly bound together and distributed unequally across the globe."
+    },
+    {
+      "type": "explanation",
+      "heading": "Humans as a Planetary Force: The Environment",
+      "content": "The environmental story of the modern age begins with two explosive curves: human POPULATION and human CONSUMPTION. The world's population, roughly 1.6 billion in 1900, surged past 6 billion by 2000 and approached 8 billion in the following decades — the fastest growth in human history, made possible by industrial food production (the Green Revolution), modern medicine, and sanitation. At the same time, average consumption of energy, goods, and resources soared, especially in the wealthy industrialized world. More people consuming far more each placed enormous and growing pressure on the planet's land, water, forests, and atmosphere.\n\nThe consequences have been profound. DEFORESTATION cleared vast areas of forest, especially tropical rainforests, for farming, ranching, and timber. POLLUTION of air, water, and soil spread with industry and cities. Many resources — fresh water, fisheries, fossil fuels, biodiversity — came under severe strain, and species extinction accelerated dramatically. But the single most consequential environmental change is CLIMATE CHANGE (global warming). The burning of FOSSIL FUELS (coal, oil, and natural gas) — the energy foundation of industrial civilization since Unit 5 — releases carbon dioxide and other greenhouse gases that trap heat in the atmosphere, gradually warming the planet. The effects, increasingly visible, include rising temperatures and sea levels, melting ice, more extreme weather, and disruptions to agriculture and ecosystems.\n\nClimate change is the ultimate GLOBAL problem, and it reveals a deep injustice the AP exam expects you to recognize: the wealthy industrialized nations produced the great majority of historical greenhouse emissions, yet many of the worst consequences fall on poorer nations least able to cope and least responsible for the problem. It is also a problem no single country can solve alone, which is why it has driven new forms of international cooperation — and conflict — as the world struggles to respond. Humanity, the Keeling Curve announced, has become a planetary force; learning to live within the planet's limits is the great challenge the modern economy has created."
+    },
+    {
+      "type": "quiz",
+      "question": "What is the primary human cause of modern climate change (global warming)?",
+      "options": [
+        "Natural variations in the sun with no human contribution",
+        "The burning of fossil fuels (coal, oil, natural gas), which releases carbon dioxide and other greenhouse gases that trap heat in the atmosphere",
+        "The eradication of smallpox",
+        "A decrease in the world's population"
+      ],
+      "correctIndex": 1,
+      "explanation": "Modern climate change is driven mainly by the burning of fossil fuels — coal, oil, and natural gas — the energy foundation of industrial civilization. This releases carbon dioxide and other greenhouse gases that trap heat, warming the planet. The Keeling Curve provided the first clear evidence of rising atmospheric CO2 from human activity."
+    },
+    {
+      "type": "explanation",
+      "heading": "The Rise of the Global Economy",
+      "content": "Alongside the environmental transformation came an economic one: the emergence of a single, integrated GLOBAL ECONOMY. For much of the twentieth century, the world's economies were divided — by the Great Depression's protectionism, by World War II, and by the Cold War split between capitalist and communist systems (Unit 8). After 1945, and especially after the Cold War ended around 1991, the dominant trend was toward INTEGRATION and the worldwide spread of FREE-MARKET CAPITALISM.\n\nSeveral developments drove this. FREE TRADE — the reduction of tariffs and barriers to the movement of goods and money across borders — expanded dramatically, on the theory that open markets make everyone richer. MULTINATIONAL CORPORATIONS (MNCs) — huge companies operating across many countries, some richer than entire nations — became central players, building the global supply chains (Unit's previous lesson) that source, manufacture, and sell around the world, and shifting production to wherever labor and costs were most favorable. New global economic INSTITUTIONS were created to manage and promote this system: the WORLD BANK and the INTERNATIONAL MONETARY FUND (IMF), established after WWII, lent money and shaped economic policy in developing nations, and the WORLD TRADE ORGANIZATION (WTO, founded 1995) worked to lower trade barriers and set the rules of global commerce. Regional blocs like the European Union and trade agreements like NAFTA further knit economies together.\n\nA pivotal moment was the embrace of global capitalism by formerly communist or state-controlled economies. After Mao's death, CHINA under Deng Xiaoping began, from 1978, to open its economy to markets, foreign investment, and trade while keeping Communist Party political control — a transformation that turned China into the world's manufacturing powerhouse and lifted hundreds of millions out of poverty. The collapse of the USSR (Unit 8) opened Eastern Europe and Russia to capitalism. By the early twenty-first century, nearly the entire world participated in a single capitalist global economy — a dramatic change from the divided world of the Cold War, and the economic core of globalization."
+    },
+    {
+      "type": "table",
+      "heading": "Engines and Institutions of the Global Economy",
+      "headers": ["Element", "What it is", "Significance"],
+      "rows": [
+        ["Free trade", "Reduction of tariffs and barriers to trade", "Expanded global flows of goods and capital"],
+        ["Multinational corporations", "Companies operating across many countries", "Build global supply chains; some richer than nations"],
+        ["World Bank / IMF", "Postwar institutions that lend and shape policy", "Influence economic policy in developing nations"],
+        ["World Trade Organization", "Body that lowers trade barriers (founded 1995)", "Sets the rules of global commerce"],
+        ["China's market reforms", "Deng Xiaoping's opening from 1978", "Made China a manufacturing powerhouse; cut poverty"]
+      ]
+    },
+    {
+      "type": "keypoint",
+      "content": "Modern economic growth and globalization spread free-market capitalism, multinational corporations, free trade, and global institutions (World Bank, IMF, WTO) worldwide — generating enormous wealth and reducing poverty, while placing unprecedented strain on the environment, above all through fossil-fuel-driven climate change.",
+      "heading": "Core Takeaway"
+    },
+    {
+      "type": "quiz",
+      "question": "Which best describes the global economy that emerged especially after the Cold War ended around 1991?",
+      "options": [
+        "A world sharply divided between separate capitalist and communist economies",
+        "A single, increasingly integrated economy in which free-market capitalism spread worldwide, driven by free trade, multinational corporations, and global institutions like the WTO",
+        "A return to isolated economies that did not trade with one another",
+        "An economy controlled entirely by the United Nations"
+      ],
+      "correctIndex": 1,
+      "explanation": "After the Cold War, the dominant trend was integration: free-market capitalism spread worldwide (including to China and former communist states), driven by expanding free trade, powerful multinational corporations building global supply chains, and global economic institutions (World Bank, IMF, WTO). This replaced the Cold War's divided economic order with a single global capitalist economy."
+    },
+    {
+      "type": "example",
+      "heading": "Reading the Debate Over Economic Globalization",
+      "content": "Economic globalization is one of the most fiercely debated topics of our time, and the AP exam rewards students who can analyze BOTH sides of the argument rather than simply praising or condemning it. Let's lay out the debate the way a historian weighs evidence. Imagine a factory in a developing country making clothes or electronics for export to wealthy nations.\n\nThe case FOR economic globalization, made by its supporters: this factory provides jobs and wages that, however low by Western standards, may exceed local alternatives; it brings investment, technology, and skills; and the export-driven growth it represents has, across recent decades, lifted hundreds of millions of people — especially in China and East Asia — out of extreme poverty, arguably the greatest reduction in poverty in human history. Free trade gives consumers everywhere cheaper goods and connects the world. The case AGAINST, made by critics: the same factory may pay 'sweatshop' wages, impose harsh conditions, and exploit weak labor and environmental laws; multinational corporations can wield more power than the governments regulating them; globalization can devastate communities when factories move away in search of cheaper labor (including in the deindustrializing West); and the benefits are distributed with stark INEQUALITY — global wealth has soared, but so has the gap between the richest and the rest, both between and within nations.\n\nThe analytical lesson is to hold BOTH truths together. Economic globalization genuinely reduced absolute poverty for hundreds of millions AND increased certain inequalities and imposed real human and environmental costs — and crucially, it did both UNEVENLY, helping some regions and groups while hurting others. When the exam asks you to evaluate economic globalization, do not pick a side and ignore the evidence for the other; the sophisticated answer weighs the genuine benefits against the genuine costs and notes WHO won and who lost. That balanced, evidence-based judgment is exactly the complexity the LEQ rewards."
+    },
+    {
+      "type": "steps",
+      "heading": "Evaluating a Historical Debate (Argumentation)",
+      "steps": [
+        {
+          "title": "Define the debate clearly",
+          "content": "State the question precisely — e.g., 'Did economic globalization help or harm the developing world?' A sharp question prevents a vague answer and frames the two (or more) positions you will weigh."
+        },
+        {
+          "title": "Present the strongest evidence for each side",
+          "content": "Steelman both positions with specifics: FOR globalization — hundreds of millions lifted from poverty (China, East Asia), cheaper goods, technology transfer; AGAINST — sweatshop conditions, rising inequality, corporate power, environmental harm. Representing each side fairly is the mark of genuine analysis."
+        },
+        {
+          "title": "Take a defensible, nuanced position",
+          "content": "Stake out a thesis that does justice to the evidence, often a qualified one: 'Economic globalization reduced absolute poverty for hundreds of millions while simultaneously widening inequality and imposing environmental costs, benefiting some regions and groups far more than others.' Nuance is strength, not weakness."
+        },
+        {
+          "title": "Acknowledge complexity and counter-arguments",
+          "content": "Address the other side directly and note complications — that effects varied by region, time, and group, and that the same process produced winners and losers. Engaging counter-arguments and showing the issue's complexity earns the top argumentation and complexity points."
+        }
+      ]
+    },
+    {
+      "type": "callout",
+      "variant": "warning",
+      "heading": "Environment and Economy Pitfalls",
+      "content": "Avoid these. (1) Do NOT treat economic globalization as simply good (lifting people from poverty) OR simply bad (exploitation) — the exam wants you to weigh BOTH and note unequal effects. (2) Do NOT confuse the institutions: the WORLD BANK and IMF (postwar lending/policy) vs. the WTO (trade rules, 1995) vs. the UN (political). (3) On climate change, be precise: it is driven mainly by FOSSIL-FUEL burning releasing greenhouse gases, and its causes and consequences are distributed UNEQUALLY (rich nations caused most emissions; poor nations often suffer most). (4) Remember China's reforms (from 1978, Deng Xiaoping) kept COMMUNIST POLITICAL control while adopting markets — do not call it a turn to democracy. (5) Don't ignore CONTINUITY: the environmental costs of growth and the global economy extend the industrialization of Unit 5 and the world economy of Unit 6 to a planetary scale."
+    },
+    {
+      "type": "callout",
+      "variant": "tip",
+      "heading": "Frame Globalization's Effects as 'Uneven and Double-Edged'",
+      "content": "The single most valuable analytical frame for Unit 9 essays is that globalization's effects were DOUBLE-EDGED and UNEVENLY DISTRIBUTED. For economics: it reduced absolute poverty AND widened inequality, helped some regions (East Asia) while hurting others (deindustrializing communities). For the environment: economic growth brought prosperity AND climate change, with the wealthy causing most emissions and the poor often bearing the worst effects. Whenever a prompt asks you to evaluate globalization, deploy this frame with specific evidence (China's poverty reduction, multinational supply chains, fossil fuels and the Keeling Curve, the WTO). Pairing genuine benefits with genuine costs, and naming winners and losers, is the reliable path to the complexity point."
+    },
+    {
+      "type": "callout",
+      "variant": "remember",
+      "heading": "Environment and Global Economy Essentials",
+      "content": "ENVIRONMENT: explosive POPULATION growth (~1.6B in 1900 → ~8B) + rising CONSUMPTION → DEFORESTATION, POLLUTION, resource strain, extinction. CLIMATE CHANGE (global warming) = burning FOSSIL FUELS (coal/oil/gas) releases greenhouse gases; KEELING CURVE (rising CO2 from 1958); effects: rising temps/seas, extreme weather; UNEQUAL — rich nations caused most emissions, poor nations often suffer most. GLOBAL ECONOMY: post-Cold-War spread of FREE-MARKET CAPITALISM; FREE TRADE (lower tariffs); MULTINATIONAL CORPORATIONS (global supply chains); institutions — WORLD BANK & IMF (postwar lending/policy), WTO (trade rules, 1995); regional blocs (EU, NAFTA). CHINA: Deng Xiaoping's market reforms from 1978 (markets + Communist political control) → manufacturing powerhouse, huge poverty reduction. DEBATE: globalization reduced absolute POVERTY (hundreds of millions, esp. China/East Asia) BUT widened INEQUALITY + sweatshops + environmental costs — DOUBLE-EDGED and UNEVEN."
+    },
+    {
+      "type": "deepdive",
+      "heading": "Prosperity and Peril on a Finite Planet",
+      "content": "This lesson sits at the heart of the most consequential tension of the contemporary world, and it sharpens the double-edged theme of the entire unit into its starkest form. On one hand, the modern global economy has been an engine of almost miraculous material progress. In the span of a few generations, the share of humanity living in extreme poverty fell from the overwhelming majority to a small minority; life expectancy, literacy, and access to goods and technology soared across much of the planet; and billions of people gained comforts and opportunities their ancestors could not have imagined. By many measures, the era of globalization has been the most prosperous in human history. On the other hand, this prosperity has been purchased at a profound environmental cost and distributed with deep inequality. The same fossil-fueled growth that lifted billions is destabilizing the planet's climate, and the same global markets that created vast wealth have concentrated much of it in few hands while leaving others behind.\n\nThis tension connects directly to the deepest themes of the whole course. The environmental crisis is the ultimate consequence of the Industrial Revolution (Unit 5) and the fossil-fuel economy it launched, now scaled up to a planetary level. The global economy's patterns of a wealthy 'core' and a dependent 'periphery' extend the economic relationships of imperialism (Unit 6) into the present, even as countries like China have dramatically risen within the system. And the question of how humanity can cooperate to manage shared global problems — climate above all — leads directly into the next lessons on global culture, resistance, and institutions. Climate change, in particular, poses a challenge unlike any in prior history: a threat to the entire species that no nation can solve alone, demanding exactly the kind of global cooperation that the fragmented, competitive world of nation-states finds so difficult.\n\nFor the exam, this lesson develops the unit's core skill of weighing BENEFITS AND COSTS and the broader skill of ARGUMENTATION — taking a defensible, nuanced position in a genuine historical debate. It also reinforces the continuity-and-change framing: the global economy and its environmental consequences are the culmination of trends running through the whole course, now operating at an unprecedented scale. Carry forward the central insight — that modern globalization is simultaneously humanity's greatest engine of prosperity and the source of its most dangerous shared crises — into the rest of the unit, the course final, and, frankly, into your understanding of the world you are about to inherit."
+    }
+  ],
+  "aiContext": "This is the second lesson of AP World History Unit 9 (Globalization) and covers CED Topics 9.4–9.6 on the environment and the global economy. It pairs two sides of one story and sharpens the unit's DOUBLE-EDGED, UNEVENLY DISTRIBUTED theme. ENVIRONMENT: explosive POPULATION growth (~1.6 billion in 1900 to ~8 billion) plus rising CONSUMPTION (enabled by the Green Revolution, medicine, sanitation) drove DEFORESTATION, POLLUTION, resource strain, and accelerating extinction. The defining issue is CLIMATE CHANGE / global warming, caused mainly by burning FOSSIL FUELS (coal, oil, natural gas — the energy base of industrial civilization since Unit 5) releasing greenhouse gases; the KEELING CURVE (Charles Keeling's CO2 measurements from 1958) gave the first clear evidence; effects include rising temperatures and sea levels, melting ice, and extreme weather. Stress the INJUSTICE/inequality the exam expects: wealthy industrialized nations produced most historical emissions, but poorer nations often suffer the worst consequences, and no single country can solve it alone. GLOBAL ECONOMY: after WWII and especially after the Cold War (~1991), the dominant trend was INTEGRATION and the worldwide spread of FREE-MARKET CAPITALISM — via FREE TRADE (lower tariffs/barriers), MULTINATIONAL CORPORATIONS (MNCs building global supply chains, some richer than nations), and global INSTITUTIONS: the WORLD BANK and IMF (postwar, lend/shape policy in developing nations) and the WORLD TRADE ORGANIZATION (WTO, 1995, trade rules), plus regional blocs (EU, NAFTA). PIVOTAL: CHINA under Deng Xiaoping opened to markets, foreign investment, and trade from 1978 while keeping COMMUNIST POLITICAL control (NOT a turn to democracy), becoming the world's manufacturing powerhouse and lifting hundreds of millions from poverty; the USSR's collapse opened more of the world to capitalism. CENTRAL DEBATE (the lesson's reasoning focus — ARGUMENTATION): economic globalization reduced absolute POVERTY for hundreds of millions (esp. China/East Asia, arguably history's greatest poverty reduction) AND widened INEQUALITY, enabled sweatshop conditions and corporate power, devastated some communities (deindustrializing West), and imposed environmental costs — it did BOTH, UNEVENLY (winners and losers). The example and steps sections teach evaluating a HISTORICAL DEBATE / argumentation: define the debate, steelman both sides with specific evidence, take a defensible NUANCED position, and engage counter-arguments/complexity. Common student errors to correct: one-sided good/bad framing of economic globalization; confusing World Bank/IMF (lending/policy) with the WTO (trade rules) and the UN (political); imprecision on climate causes (fossil fuels/greenhouse gases) and its unequal distribution; calling China's reforms a turn to democracy; and ignoring CONTINUITY (environmental costs extend Unit 5 industrialization; core-periphery extends Unit 6 imperialism to the present). Connect to the previous lesson's technology/Green Revolution, and forward to global culture/resistance and global institutions (climate as the ultimate problem requiring cooperation). High-value for argumentation and continuity-and-change LEQ/SAQ and for MCQ on climate change, global economic institutions, and China's reforms."
+}

@@ -1,0 +1,128 @@
+{
+  "id": "ap-world-history-u7-conducting-world-war-i",
+  "title": "Total War: Conducting World War I",
+  "subject": "AP World History",
+  "track": "ap",
+  "difficulty": "ap",
+  "unit": "Global Conflict",
+  "duration": "45 min",
+  "objectives": [
+    "Explain how new industrial technologies produced the stalemate and mass casualties of trench warfare",
+    "Define 'total war' and analyze how states mobilized entire societies, economies, and empires for the war effort",
+    "Describe the global scope of World War I, including the role of colonies and colonial troops from Africa, Asia, and elsewhere",
+    "Analyze the consequences of World War I, including the collapse of empires, the Russian Revolution, and the Treaty of Versailles"
+  ],
+  "sections": [
+    {
+      "type": "explanation",
+      "heading": "The Christmas That Was Supposed to End the War",
+      "content": "When the soldiers of Europe marched off to war in August 1914, crowds cheered them in the streets and almost everyone — generals, politicians, and the young men themselves — believed they would be home by Christmas. Wars between modern European states had been short. Few imagined that the conflict would grind on for more than four years, swallow an entire generation of young men, and reach into nearly every corner of the globe. That confident prediction is one of the great miscalculations in history, and understanding why it was so wrong is the key to understanding what World War I actually was.\n\nThe reason the war did not end by Christmas was that the technology of Unit 5 — the industrial revolution's machine guns, artillery, barbed wire, and railroads — had made DEFENSE vastly more powerful than offense. Soldiers who charged across open ground were mowed down by the thousands; the only way to survive was to dig into the earth. By the end of 1914, two continuous lines of trenches stretched some 450 miles across France and Belgium, from the English Channel to the Swiss border. Between them lay a churned, corpse-strewn wasteland of mud, craters, and barbed wire that soldiers called 'no man's land.' For the next four years, men would die by the hundreds of thousands trying, and failing, to cross it.\n\nThis lesson is about how World War I was actually FOUGHT, and why the manner of fighting transformed the world. The war introduced a terrible new model of conflict — TOTAL WAR — in which entire societies and economies, not just armies, were mobilized for victory. It was also a genuinely GLOBAL war, drawing in the colonies and peoples of Africa and Asia. And it ended by shattering four empires and producing a peace settlement so flawed that it helped set the stage for an even greater catastrophe two decades later."
+    },
+    {
+      "type": "explanation",
+      "heading": "Trench Warfare and the Stalemate",
+      "content": "The defining experience of World War I on its main front was TRENCH WARFARE, and it produced a horrifying stalemate. The defensive power of industrial weapons explains why. The MACHINE GUN could cut down hundreds of attacking soldiers a minute. Massed ARTILLERY churned the battlefield and killed more men than any other weapon in the war. BARBED WIRE entangled and slowed attackers, leaving them exposed. Against these, a soldier's best protection was to be below ground level, so both sides dug elaborate trench systems and settled into a deadly deadlock in which neither side could advance without suffering catastrophic losses.\n\nBattles in these conditions reached an almost unimaginable scale of slaughter for tiny gains. At the Battle of the Somme in 1916, the British suffered about 57,000 casualties — including roughly 19,000 dead — on the FIRST DAY alone; the months-long battle produced more than a million casualties on all sides and moved the front only a few miles. At Verdun the same year, the French and Germans together suffered an estimated 700,000 casualties over ten months. This was industrialized killing on a scale the world had never seen.\n\nNew technologies meant to break the stalemate mostly added to the horror. POISON GAS (chlorine, then mustard gas) blinded and choked men but rarely produced a breakthrough. TANKS, introduced by the British in 1916, were slow and unreliable at first, though they hinted at the future of warfare. AIRPLANES, used at first for scouting, began to bomb and dogfight. SUBMARINES (German U-boats) waged war on shipping beneath the waves — and Germany's unrestricted submarine warfare, which sank neutral and passenger ships such as the Lusitania, helped draw the UNITED STATES into the war in 1917, tipping the balance toward the Allies. The point to carry forward is that industrial technology made this war uniquely lethal and uniquely hard to win, which is exactly why it dragged on and demanded everything from the societies that fought it."
+    },
+    {
+      "type": "quiz",
+      "question": "Why did World War I on the Western Front settle into a years-long stalemate of trench warfare instead of the quick victory both sides expected?",
+      "options": [
+        "Soldiers refused to fight, so little happened",
+        "Industrial defensive weapons — machine guns, massed artillery, and barbed wire — made attacking across open ground suicidal, forcing both sides to dig in",
+        "There were not enough soldiers to fight a real war",
+        "Both sides agreed to a truce for most of the war"
+      ],
+      "correctIndex": 1,
+      "explanation": "Industrial weapons gave the defense an overwhelming advantage. Machine guns, massed artillery, and barbed wire slaughtered attackers in the open, so soldiers dug trenches for protection. The result was a deadlocked front where enormous casualties bought almost no ground — the essence of trench warfare."
+    },
+    {
+      "type": "explanation",
+      "heading": "Total War: Mobilizing Entire Societies",
+      "content": "Because the war demanded such staggering quantities of soldiers, shells, food, and equipment, the powers could not win by mobilizing only their armies — they had to mobilize their ENTIRE SOCIETIES. This is the concept of TOTAL WAR, one of the most important ideas in this unit. In a total war, the line between soldier and civilian blurs, and the whole nation's population, economy, and resources are directed toward victory.\n\nGovernments took unprecedented control of their economies. They directed factories to produce war materials, RATIONED food and goods, set prices and wages, and managed labor. Many introduced or expanded military CONSCRIPTION (the draft) to fill the endless demand for soldiers. With millions of men at the front, WOMEN entered the industrial workforce in huge numbers, building shells in munitions factories, running transport, and keeping economies functioning — an experience that fed directly into the postwar expansion of women's voting rights in several countries. Governments also waged war on the home front through PROPAGANDA, using posters, films, and a controlled press to sustain morale, demonize the enemy, and encourage sacrifice, and through CENSORSHIP and new restrictions on civil liberties to suppress dissent.\n\nTotal war is a crucial analytical category for the exam because it marks a genuine turning point in the relationship between states, economies, and ordinary people. The same industrial and bureaucratic capacity that built railroads and factories in Unit 5 could now be turned to organizing an entire society for slaughter. This vastly expanded the power and reach of the modern state — a development that would intensify in World War II and shape the powerful, interventionist governments of the twentieth century."
+    },
+    {
+      "type": "table",
+      "heading": "Features of Total War in World War I",
+      "headers": ["Dimension", "How states mobilized", "Example / consequence"],
+      "rows": [
+        ["Economy", "Government control of industry, rationing, price/wage controls", "Factories converted to making shells and weapons"],
+        ["Manpower", "Mass conscription (the draft)", "Millions of men called up across all combatants"],
+        ["Women", "Entered industrial and support workforce", "Munitions work; helped drive postwar women's suffrage"],
+        ["Morale", "Propaganda, censorship, restricted civil liberties", "Posters and films to sustain support and demonize the enemy"],
+        ["Empire", "Colonies supplied troops, labor, and raw materials", "Indian, African, Vietnamese, and other colonial troops"]
+      ]
+    },
+    {
+      "type": "keypoint",
+      "content": "World War I was an industrialized 'total war': new weapons created a deadly trench stalemate, and victory required mobilizing entire societies, economies, and colonial empires — blurring the line between soldier and civilian and vastly expanding state power."
+    },
+    {
+      "type": "explanation",
+      "heading": "A Truly Global War",
+      "content": "It is called a WORLD war for good reason, and the AP exam expects you to see past a narrow focus on the trenches of France. The major combatants were imperial powers (Unit 6), and they drew on their global EMPIRES to fight. Britain and France mobilized hundreds of thousands of COLONIAL TROOPS and laborers — soldiers from India fought in Europe and the Middle East, troops from French West and North Africa and from Senegal fought on the Western Front, and Vietnamese, Chinese, and African workers dug trenches and labored behind the lines. These colonial subjects served and died in a European war, and many returned home with a sharpened sense that the promises of their imperial rulers — and the ideals those rulers claimed to fight for — should apply to them too. This experience helped fuel the nationalist and anti-colonial movements you will study in Unit 8.\n\nThe fighting itself was global. The Ottoman Empire, allied with Germany, fought campaigns across the Middle East (including the disastrous Allied landing at Gallipoli and the Arab Revolt that the British encouraged against the Ottomans). German colonies in Africa and the Pacific were attacked and seized by the Allies. Japan, on the Allied side, took German holdings in China and the Pacific. Battles raged in East Africa for the entire war. And the war's effects reached neutral and distant economies everywhere, reshaping global trade and finance.\n\nThe global scope had global consequences. Within the Ottoman Empire, the war became the context for the ARMENIAN GENOCIDE, in which the Ottoman government deported and killed an estimated one million or more Armenians — an atrocity you will examine more closely in the unit's synthesis lesson. And by drawing colonized peoples into the conflict and exposing them to the rhetoric of self-determination, the war planted seeds that would help bring down the very empires that fought it."
+    },
+    {
+      "type": "quiz",
+      "question": "Which statement best captures why World War I deserves to be called a 'global' or 'world' war?",
+      "options": [
+        "All the fighting took place in France and Belgium",
+        "The major combatants were imperial powers that drew troops, labor, and resources from their colonies in Africa and Asia, and fighting and effects spread across the Middle East, Africa, the Pacific, and the global economy",
+        "Only European soldiers were involved",
+        "It was fought entirely at sea"
+      ],
+      "correctIndex": 1,
+      "explanation": "WWI was global because its combatants were empires that mobilized colonial troops and laborers (Indian, African, Vietnamese, and others) and resources worldwide, with fighting across the Middle East (Gallipoli), Africa, and the Pacific, plus worldwide economic effects. The colonial war experience also helped fuel later anti-colonial movements."
+    },
+    {
+      "type": "example",
+      "heading": "Reading a Recruitment Poster as a Historian",
+      "content": "Total war was fought on the home front as much as the battlefield, and propaganda posters are some of the richest primary sources for seeing how. Imagine a typical 1915 British recruitment poster: a child sits on her father's knee and asks, 'Daddy, what did YOU do in the Great War?' — the father looking uneasy, ashamed he has no answer. No machine guns, no trenches, just a quiet domestic scene. How does this win a war?\n\nRead it the way an AP student sources a document. First, PURPOSE: the poster's goal is to drive voluntary enlistment by making the viewer imagine a future of shame if he does not serve. Second, METHOD: it works through emotion and social pressure — guilt, masculinity, family honor — rather than facts about the war. Third, AUDIENCE: civilian men of military age, and implicitly the women and families who would pressure them. This is the machinery of total war operating on the mind: the state is mobilizing not just bodies but feelings, turning private identity into a weapon of national policy.\n\nNow connect it to the bigger concept. A poster like this is evidence that total war erased the line between soldier and civilian — the home front was a front, and ordinary people's emotions, labor, and loyalty were war resources to be managed through propaganda and censorship. When a document like this appears on the exam, do not just summarize what it shows; analyze its PURPOSE and how it reveals the total-war mobilization of an entire society. That move — from describing a source to using it as evidence of a larger development — is exactly what earns points on the DBQ."
+    },
+    {
+      "type": "steps",
+      "heading": "Tracing the Consequences of a Major Event",
+      "steps": [
+        {
+          "title": "Identify the immediate political consequences",
+          "content": "Start with what changed politically and right away. WWI destroyed FOUR empires — the German, Austro-Hungarian, Russian, and Ottoman — replacing them with new states and redrawn borders, especially in Eastern Europe and the Middle East. Naming concrete outcomes beats vague claims that the war 'changed everything.'"
+        },
+        {
+          "title": "Trace economic and social consequences",
+          "content": "The war killed about 17 million people, devastated economies, accelerated women's entry into the workforce and suffrage, and left a traumatized 'lost generation.' Distinguishing political, economic, and social effects shows the multidimensional impact graders look for."
+        },
+        {
+          "title": "Distinguish short-term from long-term effects",
+          "content": "Some effects were immediate (the Russian Revolution of 1917; the Treaty of Versailles in 1919); others unfolded over decades (the resentment in Germany and the colonial nationalism that fed WWII and decolonization). Separating short- from long-term effects is the mirror image of separating triggers from underlying causes."
+        },
+        {
+          "title": "Show causation chains across time",
+          "content": "The strongest answers link effects forward: the harsh Treaty of Versailles + economic ruin → German resentment → the rise of Hitler → WWII. Demonstrating these chains — how one event becomes the cause of the next — is exactly the causation reasoning this unit is built to teach."
+        }
+      ]
+    },
+    {
+      "type": "callout",
+      "variant": "warning",
+      "heading": "Common Errors on WWI's Conduct and Consequences",
+      "content": "Avoid these traps. (1) Do NOT treat WWI as a purely European war fought only by Europeans — colonial troops and labor from India, Africa, and Indochina were essential, and the war was global in scope and effect. The exam rewards this multi-regional framing. (2) Do NOT forget that the war's manner of fighting was driven by INDUSTRIAL technology (the machine gun, artillery, barbed wire) creating defensive stalemate — chronology and causation errors here are common. (3) Do NOT confuse the Treaty of Versailles (the 1919 settlement, which punished Germany) with the causes of WWI; Versailles is a CONSEQUENCE of WWI and a CAUSE of WWII. (4) When asked about 'total war,' do NOT just describe battles — the concept is about mobilizing the whole SOCIETY and ECONOMY, including women, propaganda, rationing, and empire."
+    },
+    {
+      "type": "callout",
+      "variant": "tip",
+      "heading": "Deploy 'Total War' and 'Self-Determination' Precisely",
+      "content": "Two terms earn points when used precisely. TOTAL WAR = the mobilization of an entire society's population, economy, and resources for the war effort, blurring the soldier/civilian line (use it for questions on the war's social/economic effects and the growth of state power). SELF-DETERMINATION = the principle (associated with U.S. President Woodrow Wilson's Fourteen Points and his postwar vision) that peoples should choose their own government; note the irony that it was applied in Europe but largely DENIED to colonized peoples — a contradiction that fueled anti-colonial nationalism (Unit 8). Connecting WWI's mobilization of colonial troops to postwar self-determination demands is a high-value cross-unit link."
+    },
+    {
+      "type": "callout",
+      "variant": "remember",
+      "heading": "Conducting WWI Essentials",
+      "content": "STALEMATE: industrial weapons (MACHINE GUNS, massed ARTILLERY, BARBED WIRE) made defense dominant → TRENCH WARFARE across ~450 miles of the Western Front and 'no man's land.' SCALE: the SOMME (1916, ~57,000 British casualties on day one) and VERDUN (~700,000 casualties). NEW TECH: POISON GAS, TANKS, AIRPLANES, SUBMARINES (U-boats; unrestricted submarine warfare + the Lusitania helped bring the U.S. in, 1917). TOTAL WAR: government control of the economy, RATIONING, CONSCRIPTION, WOMEN in the workforce (→ suffrage), PROPAGANDA + CENSORSHIP. GLOBAL: COLONIAL TROOPS/labor (India, Africa, Indochina); fighting in the Middle East (GALLIPOLI, Arab Revolt), Africa, the Pacific; the ARMENIAN GENOCIDE. CONSEQUENCES: collapse of FOUR EMPIRES (German, Austro-Hungarian, Russian, Ottoman); RUSSIAN REVOLUTION (1917); ~17 million dead; TREATY OF VERSAILLES (1919, punished Germany → set up WWII); WILSON's self-determination (denied to colonies)."
+    },
+    {
+      "type": "deepdive",
+      "heading": "How One War Remade the World",
+      "content": "Step back and take in the scale of what this war destroyed and created, because World War I is the great hinge of the modern period. When the guns finally fell silent on November 11, 1918, four empires that had existed for centuries were simply gone. The German Empire became a fragile republic; the Austro-Hungarian Empire shattered into a cluster of new nation-states; the Russian Empire had already collapsed into revolution and would become the Soviet Union, the first communist state, which dominates Unit 8; and the Ottoman Empire dissolved, with Britain and France carving its Middle Eastern territories into new mandates whose artificial borders still shape the conflicts of that region today. A single war redrew the political map of half the planet.\n\nThe peace was as consequential as the war. The Treaty of Versailles (1919) forced Germany to accept sole 'war guilt,' pay enormous reparations, give up territory and colonies, and drastically reduce its military. Many Germans experienced this as a humiliating, unjust dictate, and that bitterness — combined with economic ruin — became the fuel that a man named Adolf Hitler would later exploit. In one of history's grimmest causation chains, the way World War I ended helped guarantee World War II. Meanwhile, President Woodrow Wilson's soaring rhetoric of 'self-determination' raised hopes among colonized peoples from Vietnam to Egypt to India, only to see those hopes denied as the victorious empires kept and even expanded their colonies. That bitter disappointment helped ignite the anti-colonial nationalism that would, after a second world war, finally bring the empires down (Unit 8).\n\nFor the exam, this lesson is rich in the unit's core reasoning skill, CAUSATION, but now running forward: WWI as the CAUSE of an extraordinary cascade of consequences — the Russian Revolution, the collapse of empires, the rise of fascism, the redrawing of the Middle East, and the awakening of anti-colonial movements. It also delivers the unit's two most powerful analytical concepts, TOTAL WAR and the global mobilization of empire, both of which return, magnified, in World War II. If World War I was the seminal catastrophe of the century, this lesson shows you exactly how the catastrophe propagated — and sets up everything still to come."
+    }
+  ],
+  "aiContext": "This is the second lesson of AP World History Unit 7 (Global Conflict) and covers CED Topics 7.3–7.4 on how WWI was conducted and its global scope and consequences. THREE concepts to emphasize. FIRST, the industrial STALEMATE: machine guns, massed artillery, and barbed wire made defense dominant, producing TRENCH WARFARE on the ~450-mile Western Front and catastrophic casualties for tiny gains (the SOMME — ~57,000 British casualties on the first day; VERDUN — ~700,000 total). New tech (POISON GAS, TANKS, AIRPLANES, SUBMARINES/U-boats; unrestricted submarine warfare and the Lusitania helped bring the U.S. in by 1917) added horror without quickly breaking the deadlock. SECOND, the crucial concept of TOTAL WAR — mobilizing an entire society's population, economy, and resources, blurring the soldier/civilian line: government control of the economy, RATIONING, CONSCRIPTION, WOMEN entering the workforce (feeding postwar suffrage), and PROPAGANDA + CENSORSHIP. This vastly expanded modern state power. THIRD, the GLOBAL scope (push students past a France-only view): the combatants were empires that mobilized COLONIAL TROOPS and labor (Indian, African, Senegalese, Vietnamese, Chinese), fought across the Middle East (GALLIPOLI, the Arab Revolt), Africa, and the Pacific (Japan seized German holdings), and the colonial war experience + Wilson's SELF-DETERMINATION rhetoric (applied in Europe but DENIED to colonies) helped ignite the anti-colonial nationalism of Unit 8. CONSEQUENCES to stress: the collapse of FOUR EMPIRES (German, Austro-Hungarian, Russian, Ottoman), the RUSSIAN REVOLUTION (1917), ~17 million dead, and the TREATY OF VERSAILLES (1919) — a CONSEQUENCE of WWI that, by punishing Germany (war guilt, reparations), became a CAUSE of WWII. The ARMENIAN GENOCIDE occurred in this context (developed in the synthesis lesson). Common student errors to correct: treating WWI as purely European/European-fought; forgetting the industrial-technology basis of the stalemate; confusing Versailles (a consequence/cause of WWII) with the causes of WWI; and describing 'total war' only as battles rather than whole-society mobilization. The steps section teaches tracing CONSEQUENCES and short- vs. long-term effects (the unit's causation skill, run forward). High-value for MCQ on total war, trench warfare, and colonial participation, and for causation/CCOT SAQ and LEQ prompts."
+}
