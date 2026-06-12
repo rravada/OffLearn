@@ -230,31 +230,26 @@ export function Sidebar({
               <div className="mb-4 flex items-center gap-2.5">
                 <Download className="h-5 w-5 flex-shrink-0 text-le-accent" />
                 <h2 className="text-base font-semibold text-le-text">
-                  Export for Offline Use
+                  Portable and Offline-Ready
                 </h2>
               </div>
 
               <p className="mb-3 text-sm text-le-text-secondary">
-                Package the entire app — including the AI tutor model — into a
-                single zip file. Copy it to a USB drive, share it with students,
-                and they can run OffLearn with zero internet connection, even on
-                first launch.
+                OffLearn can be packaged into a single portable file containing
+                the entire application and the on-device AI tutor model,
+                everything needed to run completely offline.
               </p>
 
-              <p className="mb-2 text-sm text-le-text-secondary">
-                In your terminal, run:
+              <p className="mb-3 text-sm text-le-text-secondary">
+                This makes OffLearn deployable to schools with no internet
+                access. The package can be distributed via USB drives and run on
+                any school computer with zero setup beyond unzipping and
+                double-clicking.
               </p>
-              <pre className="mb-4 overflow-x-auto rounded-lg border border-le-border bg-le-bg px-4 py-3 text-sm font-mono text-le-mint">
-                npm run export:portable
-              </pre>
 
-              <p className="text-xs text-le-text-hint">
-                The script downloads the Gemma model (~1.6 GB), patches the
-                build for offline use, and creates{" "}
-                <span className="font-mono">offlearn-portable.zip</span> in the
-                project root. Students unzip it and run{" "}
-                <span className="font-mono">run.sh</span> (macOS/Linux) or{" "}
-                <span className="font-mono">run.bat</span> (Windows).
+              <p className="text-sm text-le-text-secondary">
+                Built for districts where reliable connectivity can&apos;t be
+                assumed.
               </p>
 
               <button
