@@ -416,6 +416,82 @@
           ]
         }
       ]
+    },
+    {
+      "id": "ap-world-history",
+      "title": "AP World History",
+      "icon": "globe",
+      "track": "ap",
+      "units": [
+        {
+          "id": "unit-1",
+          "title": "The Global Tapestry",
+          "lessons": [
+            { "id": "east-asia-song-china", "title": "East Asia: Song China and Its Neighbors", "duration": "45 min" },
+            { "id": "dar-al-islam", "title": "The Islamic World: Dar al-Islam", "duration": "45 min" },
+            { "id": "south-and-southeast-asia", "title": "South and Southeast Asia", "duration": "40 min" },
+            { "id": "states-in-the-americas-and-africa", "title": "State-Building in the Americas and Africa", "duration": "45 min" },
+            { "id": "europe-and-comparison", "title": "Europe and Comparing States, c. 1200–1450", "duration": "45 min" },
+            { "id": "unit-review", "title": "Unit 1 Review", "duration": "20 min" }
+          ]
+        },
+        {
+          "id": "unit-2",
+          "title": "Networks of Exchange",
+          "lessons": [
+            { "id": "the-silk-roads", "title": "The Silk Roads", "duration": "45 min" },
+            { "id": "the-mongol-empire", "title": "The Mongol Empire and the Making of the Modern World", "duration": "50 min" },
+            { "id": "indian-ocean-trade", "title": "Exchange in the Indian Ocean", "duration": "45 min" },
+            { "id": "trans-saharan-trade", "title": "Trans-Saharan Trade Routes", "duration": "40 min" },
+            { "id": "consequences-of-connectivity", "title": "Cultural and Environmental Consequences of Connectivity", "duration": "45 min" },
+            { "id": "unit-review", "title": "Unit 2 Review", "duration": "20 min" }
+          ]
+        },
+        {
+          "id": "unit-3",
+          "title": "Land-Based Empires",
+          "lessons": [
+            { "id": "gunpowder-empires-expand", "title": "The Gunpowder Empires Expand", "duration": "50 min" },
+            { "id": "administering-empires", "title": "Administering the Land-Based Empires", "duration": "45 min" },
+            { "id": "belief-systems-and-legitimacy", "title": "Belief Systems, Art, and Imperial Legitimacy", "duration": "45 min" },
+            { "id": "unit-review", "title": "Unit 3 Review", "duration": "20 min" }
+          ]
+        },
+        {
+          "id": "unit-4",
+          "title": "Transoceanic Interconnections",
+          "lessons": [
+            { "id": "technology-and-exploration", "title": "Technology and the Causes of Exploration", "duration": "45 min" },
+            { "id": "the-columbian-exchange", "title": "The Columbian Exchange", "duration": "50 min" },
+            { "id": "maritime-empires", "title": "Maritime Empires Established and Maintained", "duration": "50 min" },
+            { "id": "social-hierarchies-and-resistance", "title": "Changing Social Hierarchies and Challenges to State Power", "duration": "45 min" },
+            { "id": "unit-review", "title": "Unit 4 Review", "duration": "20 min" }
+          ]
+        },
+        {
+          "id": "unit-5",
+          "title": "Revolutions",
+          "lessons": [
+            { "id": "the-enlightenment", "title": "The Enlightenment", "duration": "45 min" },
+            { "id": "atlantic-revolutions-and-nationalism", "title": "Atlantic Revolutions and the Rise of Nationalism", "duration": "50 min" },
+            { "id": "the-industrial-revolution", "title": "The Industrial Revolution Begins and Spreads", "duration": "50 min" },
+            { "id": "industrial-economy-and-government", "title": "Government, Economy, and Technology in the Industrial Age", "duration": "45 min" },
+            { "id": "reactions-and-society", "title": "Reactions to Industrialization and Industrial Society", "duration": "45 min" },
+            { "id": "unit-review", "title": "Unit 5 Review", "duration": "20 min" }
+          ]
+        },
+        {
+          "id": "unit-6",
+          "title": "Consequences of Industrialization",
+          "lessons": [
+            { "id": "rationales-for-imperialism", "title": "Rationales for Imperialism and State Expansion", "duration": "50 min" },
+            { "id": "indigenous-responses", "title": "Indigenous Responses to Imperialism", "duration": "45 min" },
+            { "id": "global-economy-and-economic-imperialism", "title": "The Global Economy and Economic Imperialism", "duration": "45 min" },
+            { "id": "migration-causes-and-effects", "title": "Causes and Effects of Migration", "duration": "45 min" },
+            { "id": "unit-review", "title": "Unit 6 Review", "duration": "20 min" }
+          ]
+        }
+      ]
     }
   ]
 }

@@ -1,0 +1,330 @@
+{
+  "id": "ap-world-history-unit4-review",
+  "title": "Unit 4 Review: Transoceanic Interconnections",
+  "subject": "AP World History",
+  "unit": "Transoceanic Interconnections",
+  "type": "unit-review",
+  "questionsPerAttempt": 10,
+  "isAssessment": true,
+  "bank": [
+    {
+      "question": "Which best describes the navigational technology behind European transoceanic exploration?",
+      "options": [
+        "Tools invented entirely in Europe with no outside influence",
+        "A toolkit largely borrowed and combined from across Afro-Eurasia, including the Chinese compass, the Muslim-refined astrolabe, and the Indian Ocean lateen sail",
+        "Steam-powered engines developed in the 1400s",
+        "Only the courage of sailors, with no special technology"
+      ],
+      "correctIndex": 1,
+      "explanation": "The navigational toolkit was assembled from across Afro-Eurasia — the magnetic compass (China), the astrolabe (refined by Muslim astronomers), and the lateen sail (Indian Ocean) — combined with European ship designs. It was not purely European, the steam engine is centuries later, and technology (not courage alone) was essential."
+    },
+    {
+      "question": "The lateen sail was important to ocean exploration because it...",
+      "options": [
+        "could only catch wind from directly behind the ship",
+        "was a triangular sail that let ships sail closer to the wind and tack against headwinds, improving maneuverability",
+        "required no wind at all to move a ship",
+        "was used exclusively for river travel"
+      ],
+      "correctIndex": 1,
+      "explanation": "The triangular lateen sail, from the Indian Ocean and Mediterranean, could catch wind from the side, letting ships sail closer to the wind's direction and tack against headwinds — unlike a square sail that only runs before the wind. It needed wind and was used at sea."
+    },
+    {
+      "question": "European monarchs were motivated to sponsor exploration partly to bypass which group?",
+      "options": [
+        "Native American traders in the Pacific",
+        "the Muslim and Italian middlemen who controlled the overland and Mediterranean trade in Asian spices",
+        "rival European explorers who had already reached the Americas",
+        "Chinese merchants in the Atlantic"
+      ],
+      "correctIndex": 1,
+      "explanation": "The core economic motive was to bypass the chain of Muslim and Italian intermediaries (and Ottoman-controlled crossroads) who marked up Asian spices, so Europeans could reach the sources directly by sea and capture the profits."
+    },
+    {
+      "question": "The phrase 'gold, God, and glory' summarizes the motives for exploration as...",
+      "options": [
+        "economic gain, spreading Christianity, and political prestige/competition",
+        "farming, fishing, and hunting",
+        "art, music, and literature",
+        "three different navigational instruments"
+      ],
+      "correctIndex": 0,
+      "explanation": "'Gold' = economic motives (Asian wealth, bypassing middlemen), 'God' = religious motives (post-Reconquista crusading and spreading Christianity), and 'glory' = political motives (monarchical competition for prestige and routes)."
+    },
+    {
+      "question": "Why did Atlantic-facing states like Portugal and Spain lead in overseas exploration?",
+      "options": [
+        "They had the largest land armies in the world",
+        "They sat on the edge of Eurasia, shut out of Mediterranean trade routes, and had centralizing monarchies willing to sponsor voyages",
+        "They had invented gunpowder",
+        "They were the wealthiest empires on earth and had no need for trade"
+      ],
+      "correctIndex": 1,
+      "explanation": "Portugal and Spain faced the Atlantic, far from the Mediterranean and overland routes the Ottomans and Italians controlled, so the ocean was their best path to Asian wealth, and their centralizing monarchies sponsored the expensive voyages."
+    },
+    {
+      "question": "The Columbian Exchange is best defined as...",
+      "options": [
+        "a trade agreement between European nations",
+        "the two-way transfer of plants, animals, and diseases between the Americas and Afro-Eurasia after 1492",
+        "the exchange of gold for silver in Spanish colonies",
+        "a system of joint-stock companies"
+      ],
+      "correctIndex": 1,
+      "explanation": "The Columbian Exchange was the two-way transfer of plants, animals, and diseases between the Americas and Afro-Eurasia, set in motion by Columbus's 1492 voyage, linking two long-separated hemispheres."
+    },
+    {
+      "question": "The single deadliest feature of the Columbian Exchange was...",
+      "options": [
+        "the transfer of new food crops",
+        "the spread of Old World diseases such as smallpox, which killed an estimated 80–90% of Native Americans",
+        "the introduction of horses to the Americas",
+        "the loss of European population to American diseases"
+      ],
+      "correctIndex": 1,
+      "explanation": "Old World diseases like smallpox, against which isolated Native Americans had no inherited immunity, caused the 'Great Dying' — an estimated 80–90% died — the largest demographic catastrophe in recorded history. American diseases did not devastate Europe in return."
+    },
+    {
+      "question": "Which crops traveled FROM the Americas TO Afro-Eurasia in the Columbian Exchange?",
+      "options": [
+        "Wheat, rice, and sugarcane",
+        "Maize, potatoes, tomatoes, and chili peppers",
+        "Coffee, bananas, and grapes",
+        "Barley, oats, and rye"
+      ],
+      "correctIndex": 1,
+      "explanation": "Maize, potatoes, sweet potatoes, tomatoes, chili peppers, cacao, and tobacco are American crops that traveled to Afro-Eurasia. Wheat, rice, sugarcane, coffee, bananas, and grapes went the other way, from the Old World to the Americas."
+    },
+    {
+      "question": "American crops like the potato and maize affected Afro-Eurasia by...",
+      "options": [
+        "causing widespread famine",
+        "providing nutritious, high-yield calories that fueled significant population growth in Europe, China, and Africa",
+        "being rejected and never adopted",
+        "replacing all native Old World crops within a decade"
+      ],
+      "correctIndex": 1,
+      "explanation": "Highly nutritious, high-yield American crops could grow on marginal land where Old World staples could not, contributing to major population growth across Europe, China, and Africa — a paradox, since the same exchange devastated the Americas."
+    },
+    {
+      "question": "How did the demographic collapse of Native Americans contribute to the Atlantic slave trade?",
+      "options": [
+        "It had no connection to slavery",
+        "The loss of indigenous labor led European colonizers to forcibly import enslaved Africans to work plantations and mines",
+        "It caused Europeans to abandon the Americas entirely",
+        "It led Native Americans to enslave Europeans"
+      ],
+      "correctIndex": 1,
+      "explanation": "The Great Dying destroyed much of the indigenous workforce, creating a labor vacuum that European colonizers filled by importing roughly 12 million enslaved Africans across the Atlantic — directly linking disease to the expansion of slavery."
+    },
+    {
+      "question": "How did a few hundred Spaniards manage to topple the Aztec and Inca empires?",
+      "options": [
+        "through overwhelming numerical superiority",
+        "through a combination of devastating epidemics, steel weapons and horses, and alliances with indigenous peoples who resented Aztec and Inca rule",
+        "because the Aztecs and Inca had no military forces",
+        "by using steamships and machine guns"
+      ],
+      "correctIndex": 1,
+      "explanation": "Smallpox epidemics gutted Native populations and leadership, Spanish steel, horses, and gunpowder gave a military edge, and large numbers of indigenous allies who resented Aztec or Inca domination joined the Spanish — not Spanish numbers, which were tiny."
+    },
+    {
+      "question": "What is the key difference between the European empires in the Americas and those in maritime Asia (c. 1450–1750)?",
+      "options": [
+        "There was no difference; both were identical",
+        "In the Americas, Europeans built territorial empires controlling land, while in Asia they built trading-post empires controlling coastal ports",
+        "In Asia, Europeans conquered vast territories, while in the Americas they only had trading posts",
+        "Both regions resisted all European presence equally"
+      ],
+      "correctIndex": 1,
+      "explanation": "In the Americas, disease and weaker indigenous military technology allowed Europeans to conquer territory; in Asia, the powerful Mughal, Ottoman, and Ming/Qing empires forced Europeans to control only fortified coastal ports and trade routes."
+    },
+    {
+      "question": "Mercantilism held that a nation's wealth and power depended on...",
+      "options": [
+        "free trade with all rival nations",
+        "accumulating precious metals and maintaining a favorable balance of trade, with colonies serving the mother country",
+        "giving colonies full economic independence",
+        "abolishing all colonial trade"
+      ],
+      "correctIndex": 1,
+      "explanation": "Mercantilists believed national wealth came from accumulating gold and silver and exporting more than importing. Colonies existed to supply cheap raw materials and buy the mother country's manufactured goods, often barred from trading with rivals."
+    },
+    {
+      "question": "The Dutch VOC and English EIC were significant because they were joint-stock companies that...",
+      "options": [
+        "had no power beyond simple trading",
+        "pooled investors' capital and were chartered to wage war, build forts, and govern territory",
+        "were owned entirely by Asian rulers",
+        "refused to engage in overseas trade"
+      ],
+      "correctIndex": 1,
+      "explanation": "The Dutch (VOC, 1602) and English (EIC, 1600) East India Companies pooled many investors' capital and were chartered by their governments with powers to wage war, build forts, negotiate treaties, and govern — far more than ordinary trading firms."
+    },
+    {
+      "question": "Why did American silver become the center of the first truly global economy?",
+      "options": [
+        "Europeans kept all of it and never traded it",
+        "China, where the Ming and Qing required taxes in silver, created enormous demand that drew silver across the Atlantic and Pacific in exchange for Chinese goods",
+        "silver was only used within Spanish America",
+        "Africa was the only market for silver"
+      ],
+      "correctIndex": 1,
+      "explanation": "China's requirement that taxes be paid in silver created vast demand, pulling American silver (from Potosí) across the Atlantic via Europe and across the Pacific via the Manila galleons in exchange for silk, porcelain, and tea — linking four continents."
+    },
+    {
+      "question": "The Manila galleons were significant because they...",
+      "options": [
+        "carried enslaved Africans to Europe",
+        "shipped American silver directly across the Pacific from Mexico to the Philippines to trade for Asian goods bound for China",
+        "were Chinese ships that explored the Americas",
+        "transported potatoes from Ireland to the Andes"
+      ],
+      "correctIndex": 1,
+      "explanation": "The Spanish Manila galleons carried American silver across the Pacific from Mexico to Manila in the Philippines, where it entered the China-centered trade for silk and porcelain — a key link in the first global economy."
+    },
+    {
+      "question": "The encomienda system in Spanish America was...",
+      "options": [
+        "a system granting colonists the right to demand labor and tribute from indigenous people",
+        "a joint-stock company for the silver trade",
+        "a fixed-term contract for European laborers",
+        "a network of trading posts in Asia"
+      ],
+      "correctIndex": 0,
+      "explanation": "The encomienda granted Spanish colonists the right to extract labor and tribute from indigenous people in a given area — slavery in all but name — and was a major driver of indigenous death in early Spanish America."
+    },
+    {
+      "question": "Which feature distinguished Atlantic chattel slavery from indentured servitude?",
+      "options": [
+        "Chattel slavery was temporary and ended after a fixed term",
+        "Chattel slavery made the enslaved person legal property, was inherited by children, and became tied to race, while indentured servitude was temporary and fixed-term",
+        "Indentured servitude was hereditary and racialized",
+        "There was no difference between the two"
+      ],
+      "correctIndex": 1,
+      "explanation": "Atlantic chattel slavery made the person legal property, was hereditary, and was racialized, whereas indentured servitude was a temporary, fixed-term arrangement after which the laborer became free. Confusing the two is a common error."
+    },
+    {
+      "question": "The Atlantic system (triangular trade) connected three continents by...",
+      "options": [
+        "shipping European goods to Africa, enslaved Africans to the Americas, and American commodities and silver back to Europe",
+        "trading only between Europe and Asia",
+        "moving goods exclusively within the Americas",
+        "linking China and Africa directly"
+      ],
+      "correctIndex": 0,
+      "explanation": "The Atlantic/triangular trade carried European manufactured goods and guns to Africa, enslaved Africans across the Middle Passage to the Americas, and American plantation commodities (sugar, tobacco, cotton) and silver back to Europe."
+    },
+    {
+      "question": "The casta system of Spanish colonial America ranked people primarily according to...",
+      "options": [
+        "their wealth alone, regardless of ancestry",
+        "their European, Indigenous, and African ancestry, with peninsulares at the top",
+        "their religion only",
+        "the region of the Americas they lived in"
+      ],
+      "correctIndex": 1,
+      "explanation": "The casta system ranked colonial society by ancestry/race: peninsulares (Spain-born) and creoles at the top, mixed-ancestry groups (mestizos, mulattoes) in the middle, and Indigenous people and enslaved Africans at the bottom."
+    },
+    {
+      "question": "Why were creoles (criollos) increasingly resentful of colonial rule?",
+      "options": [
+        "They were enslaved and forced to labor",
+        "Though often wealthy and American-born of European descent, they were ranked below the Spain-born peninsulares and barred from the highest offices",
+        "They were forbidden from owning any property",
+        "They were recent immigrants from Africa"
+      ],
+      "correctIndex": 1,
+      "explanation": "Creoles were wealthy, educated, American-born people of European descent, but they sat below the peninsulares and were shut out of top offices reserved for those born in Spain — resentment that later helped spark Latin American independence movements."
+    },
+    {
+      "question": "Maroon communities were...",
+      "options": [
+        "Spanish military forts in the Caribbean",
+        "independent settlements formed by escaped enslaved people, such as Palmares in Brazil",
+        "trading posts run by the Dutch VOC",
+        "councils of indigenous nobles"
+      ],
+      "correctIndex": 1,
+      "explanation": "Maroon communities were self-governing settlements of escaped enslaved people in remote regions like the mountains and jungles of Brazil, Jamaica, and Suriname; Palmares in Brazil survived for most of a century, evidence of active resistance to slavery."
+    },
+    {
+      "question": "The Pueblo Revolt of 1680 is an example of...",
+      "options": [
+        "a European war over colonial trade",
+        "a successful Indigenous revolt that temporarily drove the Spanish out of New Mexico",
+        "a peasant uprising in China",
+        "an enslaved Africans' rebellion in Brazil"
+      ],
+      "correctIndex": 1,
+      "explanation": "In the Pueblo Revolt of 1680, Indigenous peoples in New Mexico temporarily expelled the Spanish and reclaimed their land and religion — one of the most successful Indigenous revolts against a European empire in North American history."
+    },
+    {
+      "question": "Queen Nzinga is best remembered for...",
+      "options": [
+        "founding the Dutch East India Company",
+        "skillfully fighting and negotiating against Portuguese expansion and the slave trade in present-day Angola",
+        "conquering the Inca Empire",
+        "leading a Cossack uprising against Russia"
+      ],
+      "correctIndex": 1,
+      "explanation": "Queen Nzinga of Ndongo and Matamba resisted Portuguese expansion and the slave trade in present-day Angola for decades through both warfare and diplomacy — a notable example of African resistance to European encroachment."
+    },
+    {
+      "question": "A strong Continuity and Change Over Time (CCOT) answer for social hierarchies from c. 1450 to 1750 would argue that...",
+      "options": [
+        "only change occurred, with no continuities",
+        "the bases and forms of hierarchy changed (new race-based and creole categories) even as steep inequality, elite dominance, and coerced labor persisted",
+        "nothing changed at all during the period",
+        "hierarchy disappeared entirely by 1750"
+      ],
+      "correctIndex": 1,
+      "explanation": "The best CCOT claim holds change and continuity together: new race-based hierarchies (the casta system) and creole/merchant elites emerged from global contact, while the underlying patterns of steep inequality, elite dominance, and coerced labor continued — the 'form changed, pattern persisted' structure."
+    },
+    {
+      "question": "The most common mistake students make on Continuity and Change Over Time prompts is...",
+      "options": [
+        "writing too much about continuity",
+        "writing only about change and forgetting to state specific continuities (or vice versa)",
+        "using too many specific examples",
+        "staying within the assigned time period"
+      ],
+      "correctIndex": 1,
+      "explanation": "CCOT prompts explicitly require BOTH continuity and change, but students often describe only how things changed and never name what stayed the same, leaving half the prompt unanswered and capping their score."
+    },
+    {
+      "question": "American silver flooding into Europe caused which unintended effect?",
+      "options": [
+        "a sharp drop in all prices",
+        "inflation known as the 'price revolution,' which raised prices across Europe",
+        "the collapse of the Chinese economy",
+        "the end of mercantilism"
+      ],
+      "correctIndex": 1,
+      "explanation": "So much American silver poured into Europe that it caused widespread inflation, the 'price revolution,' raising prices across Europe during the 1500s and 1600s — an unintended consequence of the silver trade."
+    },
+    {
+      "question": "Which comparison correctly contrasts Ming China and Portugal in the 1400s?",
+      "options": [
+        "Both launched permanent overseas empires at the same time",
+        "China launched the massive Zheng He treasure-fleet voyages but then halted them and turned inward, while small Portugal pressed relentlessly outward",
+        "Portugal had larger ships than China",
+        "Neither engaged in any maritime activity"
+      ],
+      "correctIndex": 1,
+      "explanation": "Between 1405 and 1433 Ming China sent Admiral Zheng He's enormous treasure fleets across the Indian Ocean, then deliberately ended the voyages and turned inward, while tiny Portugal pushed outward — the famous 'why Europe?' comparison rooted in choice and incentive, not technology."
+    },
+    {
+      "question": "Which statement about the global balance of power around 1700 is most accurate?",
+      "options": [
+        "Europe already dominated and surpassed all of Asia",
+        "The great Asian land empires were still among the richest and most powerful states, and Europeans often paid for Asian goods with American silver",
+        "The Americas were the wealthiest region on earth",
+        "Africa controlled global trade entirely"
+      ],
+      "correctIndex": 1,
+      "explanation": "For most of c. 1450–1750, Asia's land empires (Mughal, Qing, Ottoman) remained among the world's richest and most populous, and Europeans were junior partners paying for Asian goods largely in American silver. Europe had not yet 'risen' to dominance."
+    }
+  ]
+}

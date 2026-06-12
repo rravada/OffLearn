@@ -1,0 +1,126 @@
+{
+  "id": "ap-world-history-u5-the-enlightenment",
+  "title": "The Enlightenment",
+  "subject": "AP World History",
+  "unit": "Revolutions",
+  "track": "ap",
+  "difficulty": "ap",
+  "duration": "45 min",
+  "objectives": [
+    "Explain how Enlightenment ideas about reason, natural rights, and government developed from the Scientific Revolution (c. 1750–1900)",
+    "Describe the major Enlightenment thinkers and their core ideas, including the social contract, natural rights, separation of powers, and popular sovereignty",
+    "Analyze how Enlightenment ideas challenged existing political and social orders and inspired calls for reform and revolution",
+    "Explain how Enlightenment ideals influenced movements for political equality, the end of slavery, and expanded rights"
+  ],
+  "sections": [
+    {
+      "type": "explanation",
+      "heading": "The Cafés Where Kings Were Quietly Overthrown",
+      "content": "In the Paris of the 1750s, the most dangerous place in France was not a battlefield or a fortress — it was a coffeehouse. In smoky rooms across the city, and in the elegant Parisian salons hosted by educated women, people gathered to drink coffee, read smuggled pamphlets, and argue. And the things they argued about were genuinely explosive: Where does a king's right to rule actually come from? Are all people born with rights that no government can take away? Should ordinary people, not monarchs, hold the ultimate power in a state? These were not idle questions. To even ask them was to chip, conversation by conversation, at the foundations of a social order that had stood for a thousand years.\n\nThe king of France ruled as an 'absolute' monarch who claimed his authority came directly from God. The Catholic Church taught that this order was divinely ordained. Society was a rigid pyramid of inherited privilege — nobles and clergy at the top, everyone else below. And yet here were writers and readers calmly suggesting that reason, not tradition or divine right, should decide how humans organize their societies. Within a few decades, those café arguments would help topple a king, spark revolutions on both sides of the Atlantic, and supply the vocabulary — 'rights,' 'liberty,' 'consent of the governed,' 'equality' — that the modern world still speaks today.\n\nThis intellectual movement is called the Enlightenment, and it is the engine of Unit 5. The revolutions, the new nations, the demands for the end of slavery and for women's rights, even the ideologies that would shape industrial society — nearly all of it traces back to the ideas worked out by Enlightenment thinkers in the 1600s and 1700s. This lesson is about those ideas: where they came from, what they actually claimed, and why they were so revolutionary. Master this lesson and the rest of the unit clicks into place, because everything that follows is, in large part, the world trying to live out — or violently resist — what the Enlightenment proposed."
+    },
+    {
+      "type": "explanation",
+      "heading": "From the Heavens to Human Society: Reason Takes Over",
+      "content": "The Enlightenment did not appear from nowhere. It grew directly out of the Scientific Revolution of the 1500s and 1600s, when thinkers like Copernicus, Galileo, and Isaac Newton showed that the physical universe ran not on mystery or divine whim but on consistent natural laws that human beings could discover through observation and reason. Newton explained the motion of the planets with a few elegant mathematical laws. If reason could unlock the secrets of the heavens, Enlightenment thinkers asked, why not turn that same reason on human society — on government, law, religion, and economics?\n\nThat is the core move of the Enlightenment: applying the methods of reason and scientific inquiry to human affairs. Enlightenment thinkers (often called philosophes in France) believed that just as there were natural laws governing physics, there were natural laws governing society and politics — and that by using reason, humans could discover them, sweep away ignorance and superstition, and reform the world to be more just, free, and rational. They championed reason over tradition, evidence over superstition, and progress over the blind acceptance of inherited authority. Many were deeply critical of the Catholic Church's power and of 'superstition,' favoring religious toleration and, for some, a stripped-down 'natural' religion (deism).\n\nThis was a profound shift in the source of authority. For most of history, the answer to 'why are things this way?' had been tradition, religion, or the will of God as interpreted by kings and priests. The Enlightenment proposed a startling alternative: things should be the way reason says they should be, and any institution — even a monarchy or a church — must justify itself at the bar of reason. An idea that simple, and that corrosive to inherited power, is what makes the Enlightenment one of the great turning points in the history of human thought."
+    },
+    {
+      "type": "quiz",
+      "question": "The Enlightenment is best understood as a movement that...",
+      "options": [
+        "rejected reason in favor of tradition and religious authority",
+        "applied reason and scientific methods to human society, government, and law, growing out of the Scientific Revolution",
+        "was concerned only with astronomy and physics, not politics",
+        "sought to strengthen the divine right of kings"
+      ],
+      "correctIndex": 1,
+      "explanation": "The Enlightenment took the reason-based methods of the Scientific Revolution and applied them to human affairs — government, law, religion, economics — to discover 'natural laws' of society and reform the world. It championed reason over tradition, extended far beyond physics into politics, and challenged (not strengthened) divine-right monarchy."
+    },
+    {
+      "type": "explanation",
+      "heading": "The Big Ideas: Natural Rights, the Social Contract, and Popular Sovereignty",
+      "content": "A handful of powerful political ideas form the heart of the Enlightenment, and you must be able to name them and the thinkers behind them. Together they amounted to a new theory of where government comes from and what it is for.\n\nThe first is natural rights — the idea, argued most influentially by the English philosopher John Locke, that all people are born with certain fundamental rights simply by being human: Locke named 'life, liberty, and property.' These rights are not granted by kings; they exist before government and cannot legitimately be taken away. The second is the social contract — the idea that government is not divinely ordained but is an agreement among people, who consent to be governed in exchange for the protection of their rights. Thinkers from Thomas Hobbes to Locke to Jean-Jacques Rousseau debated its terms, but the radical common thread is that legitimate government rests on the consent of the governed, not the will of God. Rousseau pushed this furthest with popular sovereignty — the principle that ultimate political authority belongs to the people themselves.\n\nLocke added a detonating corollary: if a government violates the people's natural rights and breaks the social contract, the people have the right to overthrow it. That single idea — the right of revolution — is the philosophical gunpowder beneath every revolution in this unit. Another Frenchman, the Baron de Montesquieu, contributed the idea of separation of powers — dividing government into branches (such as legislative, executive, and judicial) that check one another to prevent tyranny, an idea written directly into later constitutions like that of the United States. And Voltaire became the era's fierce champion of freedom of speech, freedom of religion, and toleration. Reason, natural rights, the social contract, consent of the governed, popular sovereignty, separation of powers, the right of revolution — this is the toolkit revolutionaries would soon pick up and use."
+    },
+    {
+      "type": "table",
+      "heading": "Key Enlightenment Thinkers and Ideas",
+      "headers": ["Thinker", "Core idea", "Why it mattered"],
+      "rows": [
+        ["John Locke", "Natural rights (life, liberty, property); right of revolution", "Justified overthrowing governments that violate rights; shaped Declaration of Independence"],
+        ["Montesquieu", "Separation of powers / checks and balances", "Model for dividing government to prevent tyranny (e.g., U.S. Constitution)"],
+        ["Rousseau", "Social contract; popular sovereignty", "Ultimate authority belongs to the people; the 'general will'"],
+        ["Voltaire", "Freedom of speech and religion; toleration", "Attacked censorship and Church power; civil liberties"],
+        ["Mary Wollstonecraft", "Rights and education for women", "Extended Enlightenment equality to women's rights"],
+        ["Adam Smith", "Free markets; laissez-faire economics", "Economic liberty; basis of modern capitalism"]
+      ]
+    },
+    {
+      "type": "keypoint",
+      "content": "The Enlightenment (1600s–1700s) applied reason to human society, producing the ideas of natural rights (Locke), the social contract and consent of the governed, popular sovereignty (Rousseau), separation of powers (Montesquieu), and the right of revolution — the intellectual foundation for the revolutions, new nations, and reform movements of c. 1750–1900."
+    },
+    {
+      "type": "example",
+      "heading": "Worked Example: Tracing an Idea From a Book to a Revolution",
+      "content": "Let's follow a single Enlightenment idea — Locke's natural rights and right of revolution — from a philosopher's page to the real world, because the exam loves to test the LINK between Enlightenment thought and political action.\n\nStart with the idea, stated precisely. In his 'Two Treatises of Government' (1689), John Locke argued that people are born with natural rights to life, liberty, and property; that government exists by a social contract to protect those rights; and that if a government becomes tyrannical and violates them, the people may rightfully alter or abolish it. That is the abstract principle.\n\nNow watch it become a weapon. In 1776, Thomas Jefferson sat down to write the American Declaration of Independence and produced lines that are almost pure Locke: that all men are 'endowed... with certain unalienable Rights,' among them 'Life, Liberty and the pursuit of Happiness'; that governments derive 'their just powers from the consent of the governed'; and that when a government becomes destructive of these ends, 'it is the Right of the People to alter or to abolish it.' Locke's philosophy, written nearly a century earlier, became the legal and moral justification for thirteen colonies to overthrow their king.\n\nNow reason about significance. You can now make a sophisticated causal claim: Enlightenment ideas did not just describe the world, they CHANGED it by giving people a language and a justification for revolution. 'The Declaration of Independence was influenced by the Enlightenment' is a weak, vague statement. The strong version names the specific idea and traces the line: 'Locke's theory of natural rights and the right to overthrow a government that violates them gave the American revolutionaries their core justification, which Jefferson encoded almost verbatim in the Declaration of Independence.' That is how to turn 'the Enlightenment influenced revolutions' into a precise, evidence-rich argument — and it is the exact skill the next lesson will demand."
+    },
+    {
+      "type": "quiz",
+      "question": "John Locke's idea that people may overthrow a government that violates their natural rights was historically significant because it...",
+      "options": [
+        "discouraged all political change",
+        "provided a justification used by revolutionaries, such as in the American Declaration of Independence",
+        "supported the absolute power of monarchs",
+        "applied only to economic policy, not government"
+      ],
+      "correctIndex": 1,
+      "explanation": "Locke's 'right of revolution' gave revolutionaries a moral and legal justification to overthrow tyrannical governments, and it was encoded almost directly into the U.S. Declaration of Independence. It encouraged (not discouraged) political change and challenged, rather than supported, absolute monarchy."
+    },
+    {
+      "type": "explanation",
+      "heading": "The Ideas Spread — and Stretch Beyond Their Authors",
+      "content": "Ideas only change history if they spread, and Enlightenment ideas spread with remarkable speed and reach. They circulated through printed books, pamphlets, and newspapers; through the famous 'Encyclopédie' edited by Diderot, which tried to gather all human knowledge in one rational reference work; and through the social spaces of the era — coffeehouses, lending libraries, and the salons hosted by elite women, where thinkers met and debated. Literacy was rising, and the printing press meant a banned book in one country could be smuggled and reprinted across borders. The Enlightenment was, in effect, an early information network carrying subversive ideas across Europe and across the Atlantic to the colonies.\n\nCrucially, the ideas often stretched far beyond what their original authors intended. The Enlightenment proclaimed that 'all men' had natural rights and were equal — but most male philosophers meant propertied European men. Others took the logic further than the philosophes dared. Mary Wollstonecraft, in her 'Vindication of the Rights of Woman' (1792), argued that if rights and reason were natural to humans, then women — being human — must possess them too, and demanded education and equality for women. Enslaved and free people of African descent, and colonized peoples, would seize the same logic: if all people are born with natural rights, how can slavery or colonial subjugation possibly be justified? This is one of the most important dynamics in the whole period — the gap between the Enlightenment's universal promises ('all men are created equal') and the narrow reality of who actually held rights.\n\nThat gap became a lever. Throughout the period c. 1750–1900, reformers and revolutionaries pried at it relentlessly: abolitionists demanding the end of slavery, women demanding the vote and education, colonized and enslaved peoples demanding freedom, all turning the Enlightenment's own words back on the societies that had produced them. The Enlightenment thus did something its authors only partly intended: it handed everyone — not just propertied European men — a powerful, principled language for demanding their rights. The next lessons show that language exploding into revolution."
+    },
+    {
+      "type": "steps",
+      "heading": "Connecting Enlightenment Ideas to Their Effects (Causation)",
+      "steps": [
+        {
+          "title": "Name the specific idea, not just 'the Enlightenment'",
+          "content": "Don't write 'Enlightenment ideas caused the revolution.' Name the actual idea and its thinker: Locke's natural rights and right of revolution, Rousseau's popular sovereignty, Montesquieu's separation of powers. Specificity is repeatedly cited as the difference between average and top FRQ responses."
+        },
+        {
+          "title": "Show the mechanism — how the idea translated into action",
+          "content": "Explain HOW the idea produced an effect: it gave revolutionaries a justification (overthrow a tyrant), a blueprint for new governments (separation of powers, constitutions), or a language of equality that reformers used. A cause needs a mechanism, not just a label."
+        },
+        {
+          "title": "Use the 'gap' between promise and reality as analysis",
+          "content": "The tension between universal claims ('all men are created equal') and the exclusion of women, the enslaved, and the colonized is gold for sophisticated answers. Showing that groups used the Enlightenment's own logic against their exclusion demonstrates the nuanced reasoning that earns complexity points."
+        },
+        {
+          "title": "Connect across the unit and to global spread",
+          "content": "Tie Enlightenment ideas forward to the Atlantic Revolutions, nationalism, abolition, and women's movements, and note their spread via print, the Encyclopédie, and salons across Europe and the Atlantic. Linking causes to wider developments demonstrates the synthesis graders reward."
+        }
+      ]
+    },
+    {
+      "type": "callout",
+      "variant": "warning",
+      "heading": "Don't Confuse the Thinkers — and Don't Treat 'Equality' as Already Universal",
+      "content": "Two common errors. First, keep the philosophes straight: Locke = natural rights + right of revolution; Montesquieu = separation of powers; Rousseau = social contract + popular sovereignty; Voltaire = free speech/religion; Wollstonecraft = women's rights; Adam Smith = free-market economics. Swapping these (e.g., crediting Rousseau with separation of powers) costs easy points. Second, do NOT assume Enlightenment 'equality' included everyone — in practice it mostly meant propertied European men. The POWER of the period comes precisely from women, enslaved people, and the colonized using that rhetoric of equality to demand the rights they were being denied. An answer that treats the Enlightenment as already universal misses the central tension graders reward you for seeing." },
+    {
+      "type": "callout",
+      "variant": "tip",
+      "heading": "The Enlightenment Is the 'Cause' for Half the Unit's Prompts",
+      "content": "When a prompt asks about the CAUSES of the Atlantic Revolutions, the rise of nationalism, abolition, calls for women's rights, or new political ideologies, Enlightenment ideas are almost always a top piece of evidence. Keep a ready package: 'Enlightenment ideas — Locke's natural rights and right of revolution, Rousseau's popular sovereignty, Montesquieu's separation of powers — provided the ideology that justified revolution and inspired demands for expanded rights.' Deploying that, with a named thinker, instantly upgrades a causation answer." },
+    {
+      "type": "callout",
+      "variant": "remember",
+      "heading": "Enlightenment Essentials",
+      "content": "ENLIGHTENMENT = applying reason (from the Scientific Revolution — Newton) to human society. CORE IDEAS & THINKERS: natural rights — life, liberty, property (Locke); right of revolution (Locke); social contract + consent of the governed (Locke, Rousseau); popular sovereignty (Rousseau); separation of powers / checks and balances (Montesquieu); free speech and religious toleration (Voltaire); women's rights (Wollstonecraft); free-market economics (Adam Smith). SPREAD: print, the Encyclopédie (Diderot), coffeehouses and salons. KEY TENSION: universal claims ('all men are equal') vs. exclusion of women, the enslaved, and the colonized — who used the same logic to demand rights. EFFECTS: Atlantic Revolutions, nationalism, abolition, women's movements." },
+    {
+      "type": "deepdive",
+      "heading": "Why the Enlightenment Is the Master Key to the Modern World",
+      "content": "It is worth pausing to appreciate just how much of the modern world was conceived in those coffeehouses and salons. Almost every political idea we now treat as obvious — that governments should answer to the people, that individuals have rights no ruler can erase, that power should be limited and divided, that authority must justify itself by reason rather than tradition — was, in the 1700s, radical and dangerous. The Enlightenment is where the modern vocabulary of politics was forged. When you read the rest of this unit, and indeed the rest of the course, you are largely watching the world try to implement, resist, pervert, or extend Enlightenment ideas.\n\nBut hold onto two complications that make the story richer than 'good ideas spread and liberated everyone.' First, the Enlightenment was not a clean break invented by lone European geniuses; it drew on a long human conversation, including knowledge preserved and developed in the Islamic world and elsewhere, and it unfolded against the backdrop of the very global connections (and the wealth from colonialism and slavery) that earlier units described. The cafés themselves ran on coffee and sugar produced by enslaved labor — a sharp irony for a movement preaching liberty. Second, Enlightenment ideas were genuinely double-edged. The same reverence for reason and 'natural law' that justified human rights and democracy could also be twisted to justify domination: later in the century, pseudo-scientific 'reasoning' about human difference would be marshaled to justify racism, imperialism, and the very hierarchies the Enlightenment claimed to oppose (a dark turn you'll meet in Unit 6). Reason is a tool, and tools can build or destroy.\n\nKeep both the promise and the contradictions in view. The Enlightenment handed humanity the most powerful language of freedom and equality ever devised — and the people who had been excluded from that promise would spend the next two centuries forcing the world to take its own words seriously. That long struggle to close the gap between 'all men are created equal' and the messy reality is, in a sense, the story of modern history. The revolutions you are about to study are its opening chapter."
+    }
+  ],
+  "aiContext": "This opens AP World History Unit 5 (Revolutions, c. 1750–1900), a high-leverage unit, covering CED Topic 5.1 (the Enlightenment). The Enlightenment is the intellectual engine of the whole unit, so emphasize it grew out of the Scientific Revolution (Newton's natural laws) by applying REASON to human society/government/law to discover 'natural laws' of society. Students must master the core ideas and the thinkers attached to each (a frequent confusion point): natural rights — life, liberty, property — and the right of revolution (John Locke); the social contract and consent of the governed (Locke, Hobbes, Rousseau); popular sovereignty (Rousseau); separation of powers/checks and balances (Montesquieu); freedom of speech and religious toleration (Voltaire); women's rights (Mary Wollstonecraft, Vindication of the Rights of Woman 1792); free-market/laissez-faire economics (Adam Smith). Stress the causal LINK from idea to action — e.g., Locke's natural rights and right of revolution encoded almost verbatim in the 1776 Declaration of Independence (Jefferson). Stress the SPREAD via print, the Encyclopédie (Diderot), coffeehouses, and salons (often hosted by women) across Europe and the Atlantic. The CENTRAL TENSION to highlight: universal claims ('all men are created equal') vs. the reality that rights were mostly limited to propertied European men — women, enslaved people, and colonized peoples then used the Enlightenment's OWN logic to demand inclusion (abolition, women's rights, anti-colonial movements). Note the double-edged nature: reason later twisted to justify scientific racism and imperialism (Unit 6). Common errors to flag: mismatching thinkers to ideas, and treating Enlightenment equality as already universal. On the exam this is the top 'cause' evidence for prompts on the Atlantic Revolutions, nationalism, abolition, and women's movements; appears in MCQ stimulus on Enlightenment texts, causation SAQ/LEQ, and DBQ documents. Connect forward to the Atlantic Revolutions (next lesson)."
+}

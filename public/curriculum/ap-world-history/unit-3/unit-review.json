@@ -1,0 +1,285 @@
+{
+  "id": "ap-world-history-unit3-review",
+  "title": "Unit 3 Review: Land-Based Empires",
+  "subject": "AP World History",
+  "unit": "Land-Based Empires",
+  "type": "unit-review",
+  "questionsPerAttempt": 10,
+  "isAssessment": true,
+  "bank": [
+    {
+      "question": "The term 'gunpowder empires' refers to large land-based states that expanded by...",
+      "options": [
+        "rejecting all firearms in favor of cavalry",
+        "using cannons and firearms to smash fortifications and field professional gun-armed armies",
+        "relying solely on naval power",
+        "avoiding all military conflict"
+      ],
+      "correctIndex": 1,
+      "explanation": "Gunpowder empires used cannons to batter down walls and firearms wielded by professional infantry to expand, which favored wealthy, centralized states. They embraced rather than rejected firearms, were land-based rather than naval, and grew through conquest."
+    },
+    {
+      "question": "The Ottoman conquest of Constantinople in 1453 was significant because it...",
+      "options": [
+        "founded the Ottoman state",
+        "used massive cannons to break the city's walls, ending the Byzantine Empire",
+        "proved walls were stronger than gunpowder",
+        "converted the Ottomans to Christianity"
+      ],
+      "correctIndex": 1,
+      "explanation": "Mehmed II's huge cannons breached Constantinople's legendary walls, ending the thousand-year Byzantine Empire and showing how artillery favored attackers. The Ottoman state was founded around 1300, the walls fell to gunpowder, and the Ottomans remained Muslim."
+    },
+    {
+      "question": "Which correctly matches a gunpowder empire with its religion?",
+      "options": [
+        "Ottoman — Shia Islam; Safavid — Sunni Islam",
+        "Ottoman — Sunni Islam; Safavid — Shia Islam; Mughal — Muslim rule over a Hindu majority",
+        "Mughal — Christianity; Ottoman — Hinduism",
+        "Safavid — Buddhism; Mughal — Shia Islam"
+      ],
+      "correctIndex": 1,
+      "explanation": "The Ottomans were Sunni, the Safavids were Shia, and the Mughals were a Muslim dynasty ruling a Hindu-majority India. The other options scramble or invert these religious identities."
+    },
+    {
+      "question": "Shah Ismail's decision to make Twelver Shia Islam the Safavid state religion in 1501 was significant because it...",
+      "options": [
+        "united all Muslims under one ruler",
+        "set the Shia Safavids in lasting conflict with the surrounding Sunni world, especially the Ottomans",
+        "ended the Safavid Empire",
+        "made the Safavids allies of the Mughals against China"
+      ],
+      "correctIndex": 1,
+      "explanation": "Establishing Shia Islam as the state religion positioned the Safavids against the surrounding Sunni world, especially the neighboring Ottomans, producing lasting sectarian conflict such as the Battle of Chaldiran. It divided rather than united Muslims and did not end the empire."
+    },
+    {
+      "question": "The Mughal Empire was founded in 1526 when Babur won the Battle of Panipat partly by using...",
+      "options": [
+        "naval cannons from warships",
+        "field artillery and firearms his Indian opponents lacked",
+        "war elephants alone",
+        "the Ottoman Janissary corps"
+      ],
+      "correctIndex": 1,
+      "explanation": "Babur's use of field artillery and firearms helped him defeat a much larger Indian army at Panipat, founding the Mughal Empire — a clear case of gunpowder enabling conquest. The battle was on land, not naval, and Babur did not command Ottoman Janissaries."
+    },
+    {
+      "question": "Gunpowder, the technology central to these empires, originally came from...",
+      "options": [
+        "Europe, spread by the Crusades",
+        "China, spread westward across Eurasia along Mongol-era networks",
+        "the Aztec Empire",
+        "the Swahili coast"
+      ],
+      "correctIndex": 1,
+      "explanation": "Gunpowder was a Chinese invention that diffused westward along the Mongol networks of the previous era, connecting Unit 3 back to Unit 2's theme of connectivity. It did not originate in Europe, the Americas, or East Africa."
+    },
+    {
+      "question": "The Ottoman devshirme system produced officials and Janissaries who were intensely loyal to the sultan because they...",
+      "options": [
+        "came from powerful hereditary noble families",
+        "were taken from Christian families, converted, and owed their entire status to the sultan, with no independent power base",
+        "were elected by the Ottoman people",
+        "were foreign mercenaries free to leave at any time"
+      ],
+      "correctIndex": 1,
+      "explanation": "Devshirme recruits were severed from their families and owed everything to the sultan, leaving them without an independent power base and therefore loyal. They were deliberately drawn from outside the nobility, not elected, and not free mercenaries."
+    },
+    {
+      "question": "The Ottoman millet system is best described as a way to...",
+      "options": [
+        "force all subjects to convert to Islam",
+        "govern a diverse empire by letting non-Muslim religious communities run their own internal affairs under Muslim authority",
+        "collect taxes through private financiers",
+        "recruit boys for the Janissary corps"
+      ],
+      "correctIndex": 1,
+      "explanation": "The millet system organized non-Muslim communities (Orthodox Christians, Jews, Armenians) into self-governing units under their own religious leaders, blending tolerance with control. It did not force conversion (that's the opposite), tax farming was a separate fiscal practice, and recruitment was the devshirme."
+    },
+    {
+      "question": "A historian notes that the devshirme was both a form of bondage and a path to great power. This dual nature is an example of...",
+      "options": [
+        "a factual error that should be corrected",
+        "historical complexity — an institution that was simultaneously coercive and a ladder of social mobility",
+        "proof that the Ottomans had no government",
+        "the Mandate of Heaven"
+      ],
+      "correctIndex": 1,
+      "explanation": "The devshirme genuinely took children by force (bondage) yet allowed a peasant's son to rise to Grand Vizier (mobility), and holding both truths together is historical complexity. It is not an error or a sign of weak government, and it is unrelated to the Mandate of Heaven."
+    },
+    {
+      "question": "The Mughal emperor Akbar helped stabilize his Hindu-majority empire by...",
+      "options": [
+        "reimposing the jizya and destroying Hindu temples",
+        "abolishing the jizya tax on non-Muslims and bringing Hindus into his government",
+        "expelling all Hindus from India",
+        "converting the empire to Shia Islam"
+      ],
+      "correctIndex": 1,
+      "explanation": "Akbar pursued tolerance, abolishing the jizya, including Hindus like the Rajputs in his administration, and promoting 'peace with all' to bind a diverse empire together. Reimposing the jizya describes Aurangzeb, and Akbar neither expelled Hindus nor converted the empire to Shiism."
+    },
+    {
+      "question": "The Mughal mansabdari system was a method of...",
+      "options": [
+        "organizing officials into ranks with salaries or land assignments and military obligations",
+        "auctioning tax collection to private financiers",
+        "recruiting Christian boys into the army",
+        "selecting officials by civil service examination"
+      ],
+      "correctIndex": 0,
+      "explanation": "The mansabdari system ranked imperial officials (mansabdars), each given a salary or land revenue and expected to supply soldiers, organizing the Mughal military and bureaucracy under central control. Tax farming, the devshirme, and the exam system describe other empires' methods."
+    },
+    {
+      "question": "Louis XIV's palace of Versailles functioned as a tool of absolutism because it...",
+      "options": [
+        "served as a fortress against foreign invasion",
+        "kept the great nobles at court, dependent on the king's favor rather than building power in their provinces",
+        "was a center for civil service examinations",
+        "housed the Janissary corps"
+      ],
+      "correctIndex": 1,
+      "explanation": "By requiring nobles to attend his court, Louis XIV kept them occupied and dependent on royal favor, weakening their independent power — a centralizing tactic of absolutism. Versailles was a palace of control, not a fortress, exam center, or barracks for Ottoman troops."
+    },
+    {
+      "question": "Despite ruling different regions, the Ottomans, Mughals, Safavids, and Louis XIV's France all pursued the common goal of...",
+      "options": [
+        "abolishing all taxation",
+        "centralizing power by reducing the independence of the hereditary nobility",
+        "spreading Buddhism",
+        "ending all warfare"
+      ],
+      "correctIndex": 1,
+      "explanation": "Across these empires, rulers used loyal bureaucrats, recruited or enslaved elite corps, and direct tax systems to pull power away from the old nobility and concentrate it in themselves. They expanded rather than abolished taxation, did not spread Buddhism, and remained militarily active."
+    },
+    {
+      "question": "Why did the Qing (Manchu) rulers of China keep the Confucian civil service examination system in place?",
+      "options": [
+        "because they were ethnically Han Chinese",
+        "because it provided a professional, merit-based bureaucracy to govern the Han Chinese majority",
+        "because it recruited soldiers like the devshirme",
+        "because Confucianism required them to abandon their Manchu identity"
+      ],
+      "correctIndex": 1,
+      "explanation": "The foreign Manchu rulers retained the exam-based scholar-official bureaucracy because it was an effective, professional system for governing the vast Han Chinese population. The Manchus were not Han, the exams were not military recruitment, and they retained their own Manchu identity." },
+    {
+      "question": "Rulers across the land-based empires used grand mosques, tombs, and palaces such as the Taj Mahal and Versailles primarily to...",
+      "options": [
+        "provide housing for peasants",
+        "display their wealth, power, and divine favor and thereby legitimize their rule",
+        "store gunpowder and weapons",
+        "serve as neutral meeting places for rival empires"
+      ],
+      "correctIndex": 1,
+      "explanation": "Monumental architecture was propaganda in stone, broadcasting a ruler's wealth, faith, and divine favor to awe subjects and legitimize authority. These were not peasant housing, arsenals, or diplomatic neutral grounds."
+    },
+    {
+      "question": "The Battle of Chaldiran (1514) is significant because it...",
+      "options": [
+        "united the Sunni and Shia branches of Islam",
+        "saw the gunpowder-equipped Sunni Ottomans defeat the Shia Safavids, hardening the Sunni-Shia divide",
+        "ended the Mughal Empire",
+        "was a naval battle in the Indian Ocean"
+      ],
+      "correctIndex": 1,
+      "explanation": "At Chaldiran the Ottomans used cannons and firearms to crush the Safavids, demonstrating gunpowder's importance and deepening the lasting Sunni-Shia frontier. It divided rather than united the sects, did not involve the Mughals, and was a land battle."
+    },
+    {
+      "question": "The contrast between Akbar and Aurangzeb best demonstrates that...",
+      "options": [
+        "religious policy had no effect on the Mughal Empire",
+        "tolerance tended to stabilize a diverse empire while enforced uniformity tended to provoke resistance",
+        "all Mughal emperors were religiously identical",
+        "the Mughals ruled no non-Muslims"
+      ],
+      "correctIndex": 1,
+      "explanation": "Akbar's tolerance helped hold the diverse empire together, while Aurangzeb's stricter orthodoxy and reimposed jizya sparked Hindu, Sikh, and Maratha rebellions — showing religious policy's real effects. The emperors clearly differed, and the empire ruled a large Hindu majority."
+    },
+    {
+      "question": "Sikhism, founded by Guru Nanak around 1500, is an example of...",
+      "options": [
+        "a gunpowder weapon",
+        "religious syncretism, blending Hindu and Islamic ideas into a new faith",
+        "an Ottoman administrative system",
+        "a European Protestant denomination"
+      ],
+      "correctIndex": 1,
+      "explanation": "Sikhism drew on both Hindu and Islamic ideas to form a distinct new religion emphasizing one God and equality, making it a classic case of syncretism. It is not a weapon, an Ottoman institution, or a Protestant church."
+    },
+    {
+      "question": "The Protestant Reformation, launched by Martin Luther in 1517, is relevant to this unit because it...",
+      "options": [
+        "was an Islamic reform movement in Persia",
+        "shows that religion was dividing societies across the early-modern world, not only in the Islamic empires",
+        "founded the Mughal Empire",
+        "united all of Christian Europe"
+      ],
+      "correctIndex": 1,
+      "explanation": "The Reformation split Western Christianity and triggered religious wars, paralleling how the Sunni-Shia divide and Mughal religious policy divided other societies — religion was a global source of conflict in this era. It was Christian, not Persian or Islamic, did not found the Mughals, and fractured rather than united Europe."
+    },
+    {
+      "question": "A strong comparison of the Ottoman, Safavid, and Mughal empires would compare them across which set of dimensions?",
+      "options": [
+        "only their capital cities",
+        "military (gunpowder), administrative (elite corps and taxation), and religious (legitimacy and tolerance)",
+        "only the names of their rulers",
+        "only their modern-day populations"
+      ],
+      "correctIndex": 1,
+      "explanation": "Comparing across military, administrative, and religious axes captures the empires' deep similarities and meaningful differences, the structure that earns analysis points. Comparing only capitals, ruler names, or modern populations would be far too narrow."
+    },
+    {
+      "question": "Which statement is the strongest example of explaining WHY the empires differed, rather than just describing differences?",
+      "options": [
+        "The Ottomans were Sunni and the Safavids were Shia",
+        "Mughal rulers like Akbar emphasized tolerance because they governed a large Hindu majority, while more uniform realms faced less pressure to accommodate",
+        "The empires had different rulers",
+        "The empires built different buildings"
+      ],
+      "correctIndex": 1,
+      "explanation": "Explaining that Mughal tolerance arose from the need to govern a Hindu majority gives a reason behind a difference, turning description into causal argument. The other options merely state differences without explaining their causes."
+    },
+    {
+      "question": "Which best captures a key similarity among the land-based empires AND a key difference?",
+      "options": [
+        "All used gunpowder and religious legitimacy, but they differed in sect and religious tolerance (Sunni, Shia, Hindu-majority rule)",
+        "All were Shia Muslim empires that never fought one another",
+        "All relied entirely on naval power and shared one ruler",
+        "All rejected religion and monumental architecture"
+      ],
+      "correctIndex": 0,
+      "explanation": "The empires shared gunpowder expansion and religious legitimacy but differed in sect (Sunni, Shia) and in tolerance (Akbar vs. Aurangzeb) and majority populations. They were not all Shia, not naval, did not share a ruler, and made heavy use of religion and architecture."
+    },
+    {
+      "question": "The Safavid use of ghulams (military slaves) under Shah Abbas was most similar to which Ottoman institution?",
+      "options": [
+        "the millet system",
+        "the devshirme, which created an elite force loyal directly to the ruler",
+        "tax farming",
+        "the Mandate of Heaven"
+      ],
+      "correctIndex": 1,
+      "explanation": "Like the Ottoman devshirme, the Safavid ghulam corps created soldiers loyal directly to the ruler to counterbalance the tribal nobility. The millet system handled religious diversity, tax farming raised revenue, and the Mandate of Heaven was a Chinese concept."
+    },
+    {
+      "question": "Why are the religious decisions of these empires still relevant today?",
+      "options": [
+        "They have no connection to the modern world",
+        "Shah Ismail's choice made Iran the heartland of Shia Islam, and Mughal Hindu-Muslim tensions echo into the modern India-Pakistan divide",
+        "They caused the fall of the Roman Empire",
+        "They prevented all later religious conflict"
+      ],
+      "correctIndex": 1,
+      "explanation": "The Safavid establishment of Shia Islam shaped Iran's enduring religious identity, and Mughal Hindu-Muslim tensions foreshadowed the 1947 partition — these early-modern decisions still structure today's world. They postdate Rome and clearly did not end later religious conflict."
+    },
+    {
+      "question": "In 1600, which statement about global power would have been most accurate?",
+      "options": [
+        "Small European kingdoms already dominated the entire globe",
+        "The Ottoman, Safavid, and Mughal land empires were among the wealthiest and most powerful states in the world, while Europe had not yet risen to dominance",
+        "The Americas controlled most of Eurasia",
+        "The Mongol Empire still ruled all of Asia"
+      ],
+      "correctIndex": 1,
+      "explanation": "Around 1600 the great Islamic land empires ruled vast shares of the world's people and wealth, and the 'rise of the West' had not yet occurred. Europe did not yet dominate, the Americas did not control Eurasia, and the unified Mongol Empire was long gone."
+    }
+  ]
+}

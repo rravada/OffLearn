@@ -1,0 +1,341 @@
+{
+  "id": "ap-world-history-unit6-review",
+  "title": "Unit 6 Review: Consequences of Industrialization",
+  "subject": "AP World History",
+  "unit": "Consequences of Industrialization",
+  "type": "unit-review",
+  "questionsPerAttempt": 10,
+  "isAssessment": true,
+  "bank": [
+    {
+      "question": "What was the single most important underlying reason a few European powers could conquer most of Africa and Asia between about 1870 and 1914?",
+      "options": [
+        "Colonized peoples welcomed European rule and rarely resisted",
+        "Industrialization gave the imperial powers an overwhelming advantage in military technology, transportation, communication, and medicine",
+        "Europe had a far larger population than Africa and Asia combined",
+        "European powers had ruled these regions continuously since the 1500s"
+      ],
+      "correctIndex": 1,
+      "explanation": "The 'new imperialism' rested on the technological gap opened by industrialization — machine guns, steam gunboats, railroads, the telegraph, and quinine. This is why the conquests came after industrialization. Resistance was widespread, Europe was not more populous, and inland conquest was new."
+    },
+    {
+      "question": "Quinine was important to the new imperialism because it...",
+      "options": [
+        "was a valuable cash crop exported from Africa",
+        "protected Europeans against malaria, allowing them to survive in the African interior",
+        "was a weapon used to defeat African armies",
+        "powered the new steamships"
+      ],
+      "correctIndex": 1,
+      "explanation": "Quinine protected against malaria, finally allowing Europeans to survive in the African interior, which had been nicknamed 'the white man's grave.' It was a key medical enabler of inland conquest, not a crop, weapon, or fuel."
+    },
+    {
+      "question": "Social Darwinism, as used to justify imperialism, claimed that...",
+      "options": [
+        "all races and nations were fundamentally equal",
+        "'survival of the fittest' applied to human societies, so 'stronger' races and nations were destined to dominate 'weaker' ones",
+        "imperialism harmed both colonizer and colonized",
+        "economic motives were the only reason for empire"
+      ],
+      "correctIndex": 1,
+      "explanation": "Social Darwinism misapplied Darwin's biological natural selection to human societies, asserting that 'fitter' races and nations were naturally destined to dominate weaker ones — recasting conquest as the strong rightfully prevailing."
+    },
+    {
+      "question": "The 'civilizing mission' or 'white man's burden' refers to the idea that...",
+      "options": [
+        "Europeans had a duty to bring their religion, education, and 'civilization' to supposedly 'backward' peoples",
+        "colonized peoples should govern themselves immediately",
+        "imperialism was purely about economic profit with no moral claims",
+        "Europeans should avoid contact with non-European cultures"
+      ],
+      "correctIndex": 0,
+      "explanation": "The civilizing mission (Kipling's 'white man's burden,' the French mission civilisatrice) held that Europeans had a duty to spread Christianity, education, medicine, and 'civilization,' recasting conquest as a generous gift. It masked economic and strategic self-interest."
+    },
+    {
+      "question": "At the Berlin Conference (1884–1885), European powers...",
+      "options": [
+        "granted independence to most African colonies",
+        "set the ground rules for claiming African territory, including 'effective occupation,' with no Africans present",
+        "agreed to end all imperialism in Africa",
+        "divided up China into spheres of influence"
+      ],
+      "correctIndex": 1,
+      "explanation": "The Berlin Conference set the rules for claiming African territory (notably 'effective occupation') with no African representation, accelerating the Scramble for Africa. It concerned Africa, not China, and promoted partition, not independence."
+    },
+    {
+      "question": "Which two African states remained independent during the Scramble for Africa?",
+      "options": [
+        "Egypt and Sudan",
+        "Ethiopia and Liberia",
+        "Congo and Algeria",
+        "South Africa and Nigeria"
+      ],
+      "correctIndex": 1,
+      "explanation": "Ethiopia (which defeated Italy at Adwa in 1896 under Menelik II) and Liberia remained independent. Egypt was occupied by Britain, the Congo was Leopold II's possession, and Algeria was a French settler colony."
+    },
+    {
+      "question": "A 'sphere of influence' in late-1800s China refers to...",
+      "options": [
+        "a directly annexed colony ruled by a European governor",
+        "a region where a foreign power claimed exclusive economic rights and privileges without formal annexation",
+        "an area settled by large numbers of European migrants",
+        "an independent region that resisted all foreign contact"
+      ],
+      "correctIndex": 1,
+      "explanation": "A sphere of influence was a region — classically in China — where a foreign power claimed special economic privileges without formally annexing or directly ruling it. This shows imperialism took indirect economic forms, not only outright annexation."
+    },
+    {
+      "question": "Which statement about the new imperialism is accurate?",
+      "options": [
+        "It was carried out only by European powers",
+        "The United States and an industrializing Japan also became imperial powers",
+        "It relied entirely on direct military conquest, never on economic or indirect control",
+        "It occurred mainly before the Industrial Revolution"
+      ],
+      "correctIndex": 1,
+      "explanation": "Imperialism was not only European — the U.S. (e.g., the Philippines) and Meiji Japan (Taiwan, Korea) became imperial powers too. It used many methods beyond direct conquest (protectorates, spheres of influence) and was a consequence of industrialization."
+    },
+    {
+      "question": "Emperor Menelik II's victory at the Battle of Adwa (1896) is significant because it...",
+      "options": [
+        "was the only time a European army used machine guns",
+        "was the most dramatic defeat of a European power by an African state, keeping Ethiopia independent",
+        "led directly to the Berlin Conference",
+        "ended all European imperialism in Africa"
+      ],
+      "correctIndex": 1,
+      "explanation": "At Adwa, Menelik II's Ethiopian army shattered an invading Italian force, keeping Ethiopia independent — the most dramatic defeat of a European power by an African state in the age of imperialism, and powerful evidence of colonized peoples' agency."
+    },
+    {
+      "question": "Responses to imperialism are best understood as...",
+      "options": [
+        "uniform passive acceptance everywhere",
+        "a spectrum ranging from armed resistance and rebellion, to state-led reform and modernization, to accommodation",
+        "always successful in preventing European conquest",
+        "limited to religious conversion"
+      ],
+      "correctIndex": 1,
+      "explanation": "Responses spanned a spectrum: direct armed resistance and rebellion, reform and modernization to strengthen states, and accommodation/adaptation. Treating colonized peoples as passive denies their agency; most armed resistance was ultimately crushed by the power gap."
+    },
+    {
+      "question": "The immediate spark of the Indian Rebellion of 1857 (Sepoy Mutiny) was...",
+      "options": [
+        "the abolition of the caste system by Britain",
+        "a rumor that rifle cartridges, which soldiers bit open, were greased with cow and pig fat, offending Hindu and Muslim sepoys",
+        "the Opium Wars in neighboring China",
+        "the construction of the Suez Canal"
+      ],
+      "correctIndex": 1,
+      "explanation": "The immediate spark was the greased-cartridge rumor, offensive to both Hindu and Muslim soldiers. Deeper causes included resentment of British exploitation, cultural interference, and annexations. The rebellion's defeat led to direct Crown rule (the Raj)."
+    },
+    {
+      "question": "A key consequence of the 1857 Indian Rebellion was that...",
+      "options": [
+        "India gained immediate independence",
+        "Britain ended East India Company rule and placed India directly under the British Crown (the Raj), tightening control",
+        "the Mughal Empire was restored to full power",
+        "Britain withdrew entirely from India"
+      ],
+      "correctIndex": 1,
+      "explanation": "After crushing the rebellion, Britain abolished Company rule and imposed direct Crown rule (the British Raj), tightening its grip. In this case, resistance led to MORE direct imperial control rather than independence."
+    },
+    {
+      "question": "The Boxer Rebellion (1899–1901) in China was...",
+      "options": [
+        "a successful movement that expelled all foreigners from China",
+        "an anti-foreign uprising that was crushed by an eight-nation foreign coalition, further weakening the Qing",
+        "a reform movement that modernized the Chinese army",
+        "a peaceful protest against British opium"
+      ],
+      "correctIndex": 1,
+      "explanation": "The Boxers, anti-foreign fighters, attacked foreigners and Chinese Christians and besieged Beijing's legations. The Qing court backed them, but an eight-nation coalition crushed the rebellion and imposed a punishing settlement, leaving China weaker."
+    },
+    {
+      "question": "Japan's Meiji Restoration (1868) is best described as...",
+      "options": [
+        "a failed attempt at modernization that left Japan colonized",
+        "a thorough, centralized, state-led modernization that transformed Japan into an industrial and imperial power",
+        "a rejection of all Western technology and institutions",
+        "a peasant rebellion against industrialization"
+      ],
+      "correctIndex": 1,
+      "explanation": "The Meiji Restoration abolished feudalism and the samurai, built railroads, factories, schools, and a modern army, and deliberately borrowed Western methods under Japanese control. Japan became an industrial and imperial power, defeating China (1895) and Russia (1905)."
+    },
+    {
+      "question": "Why did Japan's Meiji reforms succeed while Ottoman (Tanzimat) and Qing (Self-Strengthening) reforms largely failed?",
+      "options": [
+        "Japan adopted no Western technology, so it faced no disruption",
+        "Japan's reforms were more thorough, centralized, and backed by committed leadership, while Ottoman and Qing reforms were partial and resisted by entrenched conservative interests",
+        "Japan faced no foreign pressure at all",
+        "The Ottomans and Qing refused to attempt any reform"
+      ],
+      "correctIndex": 1,
+      "explanation": "All three pursued state-led modernization, but Japan's reforms were sweeping, centralized, and backed by unified, committed leadership. Ottoman and Qing reforms were real but partial and obstructed by conservative elites, vast diverse empires, and foreign pressure."
+    },
+    {
+      "question": "The Ottoman Empire's nickname as the 'sick man of Europe' reflected...",
+      "options": [
+        "its rapid industrialization outpacing Europe",
+        "its perceived decline despite the partial modernizing Tanzimat reforms",
+        "an epidemic that swept the empire",
+        "its refusal to trade with Europe"
+      ],
+      "correctIndex": 1,
+      "explanation": "Despite the partial modernizing Tanzimat reforms (1839–1876) to its army, law, education, and administration, the Ottoman Empire continued to decline relative to the industrial powers, earning the dismissive label 'the sick man of Europe.'"
+    },
+    {
+      "question": "The new global division of labor created by industrialization meant that...",
+      "options": [
+        "all regions industrialized equally",
+        "industrialized nations manufactured goods and controlled finance while colonized and dominated regions supplied raw materials and bought finished goods",
+        "colonized regions became the world's main manufacturers",
+        "global trade halted as nations became self-sufficient"
+      ],
+      "correctIndex": 1,
+      "explanation": "Industrialization organized the world into an industrial 'core' (manufacturing, finance, capital) and a 'periphery' of colonized/dominated regions reshaped to export raw materials and cash crops and import finished goods — concentrating wealth in the core."
+    },
+    {
+      "question": "An 'export-commodity economy' is one that...",
+      "options": [
+        "produces a diverse range of goods for its own population",
+        "is reshaped to produce one or a few products for the world market, making it dependent on prices it does not control",
+        "manufactures advanced industrial machinery for export",
+        "refuses to participate in global trade"
+      ],
+      "correctIndex": 1,
+      "explanation": "An export-commodity economy is reshaped to produce one or a few commodities (e.g., rubber, cotton, coffee) for the world market rather than diverse goods for itself, leaving it dependent on a single crop's price and often reliant on imported food."
+    },
+    {
+      "question": "The Opium Wars resulted in...",
+      "options": [
+        "China expelling all foreign merchants permanently",
+        "'unequal treaties' that opened Chinese ports, ceded Hong Kong, and granted foreigners special privileges including extraterritoriality",
+        "Britain banning the opium trade worldwide",
+        "the immediate fall of the Qing dynasty"
+      ],
+      "correctIndex": 1,
+      "explanation": "Britain's victory forced China into 'unequal treaties' opening treaty ports, ceding Hong Kong, and granting foreigners privileges like extraterritoriality (exemption from Chinese law). China kept its flag but lost much economic independence."
+    },
+    {
+      "question": "How could industrial powers economically dominate China or Latin America WITHOUT formally colonizing them?",
+      "options": [
+        "They could not — economic control always required colonial rule",
+        "Through unequal treaties, spheres of influence, control of trade and tariffs, loans, and financial leverage such as debt",
+        "By giving them unconditional gifts of money",
+        "Only by sending missionaries"
+      ],
+      "correctIndex": 1,
+      "explanation": "Economic imperialism dominated nominally independent regions through unequal treaties and treaty ports (China), spheres of influence, control of trade and tariffs, and financial leverage — lending money and seizing assets when debts went unpaid (Egypt, Latin America)."
+    },
+    {
+      "question": "The British occupation of Egypt (1882) grew out of...",
+      "options": [
+        "a religious crusade",
+        "Egypt's heavy borrowing and bankruptcy, which let Britain buy its Suez Canal shares (1875) and seize control before occupying it",
+        "an Egyptian invasion of Britain",
+        "the discovery of gold in Egypt"
+      ],
+      "correctIndex": 1,
+      "explanation": "Egypt borrowed heavily (including for the Suez Canal), went bankrupt, sold its canal shares to Britain in 1875, and lost control of its finances. When a nationalist revolt erupted in 1882, Britain used it as a pretext to occupy Egypt — debt as a path to domination."
+    },
+    {
+      "question": "Latin America's economic relationship with industrial powers in the 1800s is best described as...",
+      "options": [
+        "full economic independence and self-sufficiency",
+        "political independence but economic dependence (informal empire / neo-colonialism), with Britain dominating trade, loans, and railroads",
+        "formal colonial rule by Spain throughout the century",
+        "complete isolation from the global economy"
+      ],
+      "correctIndex": 1,
+      "explanation": "Latin American nations won political independence in the early 1800s but fell into economic dependence — Britain and later the U.S. dominated their trade, lent them money, owned their railroads, and bought their exports. This informal empire is called neo-colonialism."
+    },
+    {
+      "question": "The 'Great Divergence' refers to...",
+      "options": [
+        "the splitting of Africa at the Berlin Conference",
+        "the widening gap in wealth and industrial power between a few industrialized nations and the rest of the world during the industrial era",
+        "the division of China into spheres of influence",
+        "the separation of church and state in Europe"
+      ],
+      "correctIndex": 1,
+      "explanation": "The Great Divergence is the dramatic gap in wealth and power that opened between industrialized nations and the rest of the world in the industrial century, even though Asian economies like Qing China and Mughal India had been among the richest as late as 1750."
+    },
+    {
+      "question": "The industrial-era migration (c. 1840–1914) was the largest in history largely because industrialization...",
+      "options": [
+        "ended all warfare, making travel safe",
+        "created both the forces driving migration AND the steamship and railroad technology that made mass movement possible",
+        "forced everyone to stay in their home countries",
+        "eliminated poverty everywhere"
+      ],
+      "correctIndex": 1,
+      "explanation": "Industrialization created the push/pull forces (overpopulation, displacement, labor demand) AND the enabling technology (steamships turning months-long crossings into weeks; railroads into interiors). Both the motive and the means came from industrialization."
+    },
+    {
+      "question": "In migration analysis, the Irish Potato Famine (1845–1852) is an example of a...",
+      "options": [
+        "pull factor attracting migrants to Ireland",
+        "push factor driving over a million Irish to emigrate",
+        "transportation technology",
+        "nativist immigration restriction"
+      ],
+      "correctIndex": 1,
+      "explanation": "The Irish Potato Famine was a push factor — a catastrophe that drove over a million Irish to emigrate (and killed roughly a million more). Pull factors are attractions at the destination; the famine repelled people from home."
+    },
+    {
+      "question": "Indentured (contract) labor migration expanded in the 1800s largely because...",
+      "options": [
+        "industrial factories no longer needed any workers",
+        "the abolition of slavery created a labor shortage on plantations and in mines that was filled mainly by Asian workers",
+        "European governments banned all emigration",
+        "plantations switched entirely to machines"
+      ],
+      "correctIndex": 1,
+      "explanation": "As slavery was abolished across the 1800s, plantations and mines still needed cheap labor. The gap was filled largely by indentured workers, overwhelmingly from India and China, under harsh, semi-coercive contracts sometimes called 'a new system of slavery.'"
+    },
+    {
+      "question": "The U.S. Chinese Exclusion Act (1882) and the 'White Australia' policy are examples of...",
+      "options": [
+        "pull factors attracting migrants",
+        "nativist backlash — discriminatory laws restricting migration by race or ethnicity",
+        "indentured labor contracts",
+        "free-trade agreements"
+      ],
+      "correctIndex": 1,
+      "explanation": "These were nativist responses — discriminatory laws restricting immigration by race/ethnicity — a major effect of the era's mass migration as receiving societies reacted against immigrants. They illustrate migration's social and political consequences."
+    },
+    {
+      "question": "Which of the following best demonstrates sophisticated CAUSATION analysis?",
+      "options": [
+        "Listing as many causes as possible without explaining any",
+        "Distinguishing underlying causes (e.g., the global economy's labor demand) from immediate triggers (e.g., the abolition of slavery) and explaining how they connect to the outcome",
+        "Describing what migrant communities looked like after arriving",
+        "Reciting the dates of major migrations in order"
+      ],
+      "correctIndex": 1,
+      "explanation": "Sophisticated causation distinguishes types of cause — underlying/long-term vs. immediate/triggering — and explains how they link to the outcome, rather than listing causes, describing effects, or reciting dates."
+    },
+    {
+      "question": "A strong causation thesis on the AP exam should...",
+      "options": [
+        "state vaguely that 'there were many causes'",
+        "take a clear, arguable position and categorize or prioritize the causes",
+        "avoid taking any position to stay neutral",
+        "list only dates and names"
+      ],
+      "correctIndex": 1,
+      "explanation": "Chief Reader reports repeatedly penalize the vague thesis ('there were many causes'). A strong causation thesis takes a defensible position and categorizes or prioritizes causes (e.g., economic vs. technological), previewing an argument rather than a list."
+    },
+    {
+      "question": "Industrial-era migration was 'gendered' in that...",
+      "options": [
+        "only women were permitted to migrate",
+        "the majority of migrant laborers were young men, which skewed populations in home villages and shifted gender roles",
+        "migration had no effect on gender roles",
+        "men and women always migrated together in equal numbers"
+      ],
+      "correctIndex": 1,
+      "explanation": "Most migrant laborers were young men, leaving many home villages with more women, children, and elderly, and shifting gender roles as women took on new responsibilities. Recognizing this gendered pattern is a frequently tested effect of migration."
+    }
+  ]
+}

@@ -10,6 +10,7 @@ import {
   Sigma,
   Dna,
   Atom,
+  Globe,
 } from "lucide-react";
 
 /** Distinct icons per course id (Learn + sidebar). */
@@ -23,6 +24,7 @@ export const SUBJECT_ICON_MAP: Record<string, LucideIcon> = {
   "ap-calc-ab": Sigma,
   "ap-biology": Dna,
   "ap-chemistry": Atom,
+  "ap-world-history": Globe,
 };
 
 export function getSubjectIcon(subjectId: string): LucideIcon {

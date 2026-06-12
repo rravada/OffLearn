@@ -1,0 +1,284 @@
+{
+  "id": "ap-world-history-unit2-review",
+  "title": "Unit 2 Review: Networks of Exchange",
+  "subject": "AP World History",
+  "unit": "Networks of Exchange",
+  "type": "unit-review",
+  "questionsPerAttempt": 10,
+  "isAssessment": true,
+  "bank": [
+    {
+      "question": "Goods carried along the Silk Roads were overwhelmingly high-value luxuries such as silk and spices rather than bulk staples. The best explanation is that...",
+      "options": [
+        "bulk goods were banned by Silk Roads merchants",
+        "slow, costly overland transport made only high-value, low-weight goods worth carrying long distances",
+        "no one along the Silk Roads needed staple goods",
+        "luxury goods were heavier than staples and easier to move"
+      ],
+      "correctIndex": 1,
+      "explanation": "Because overland caravan transport was slow and expensive, only goods whose high value justified the cost — silk, porcelain, gems, spices — were worth carrying across the continent. Bulk goods were not banned, staples were certainly needed, and luxuries were valued for being compact, not heavy."
+    },
+    {
+      "question": "Which of the following is a commercial innovation that helped INTENSIFY Silk Roads trade between 1200 and 1450?",
+      "options": [
+        "The lateen sail and the magnetic compass",
+        "Caravanserai, bills of exchange, and improved camel saddles",
+        "The mit'a labor system",
+        "Monsoon winds"
+      ],
+      "correctIndex": 1,
+      "explanation": "Caravanserai (roadside inns), bills of exchange and other forms of credit, and better camel saddles were innovations that made overland trade safer and larger in scale. The lateen sail, compass, and monsoon winds belong to Indian Ocean maritime trade, and the mit'a was an Inca labor system."
+    },
+    {
+      "question": "Besides goods, the Silk Roads were historically significant chiefly because they spread...",
+      "options": [
+        "only the Chinese language",
+        "religions (Buddhism, Islam), technologies (paper, gunpowder, the compass), and disease across Eurasia",
+        "nothing beyond silk itself",
+        "the Inca road network westward"
+      ],
+      "correctIndex": 1,
+      "explanation": "The Silk Roads' deepest impact was the 'invisible cargo' — the diffusion of religions like Buddhism and Islam, technologies such as paper and gunpowder, and disease like the plague across Afro-Eurasia. They spread far more than silk, and they had no connection to the Inca." },
+    {
+      "question": "The 'Pax Mongolica' refers to...",
+      "options": [
+        "the period of stability under Mongol rule that secured trade routes across Eurasia",
+        "a peace treaty ending the Crusades",
+        "the Mongol writing system",
+        "a Chinese dynasty that preceded the Song"
+      ],
+      "correctIndex": 0,
+      "explanation": "The Pax Mongolica, or 'Mongol Peace,' was the era when Mongol-secured stability protected the overland trade routes, supercharging Silk Roads commerce. It was not a Crusades treaty, a writing system, or a pre-Song dynasty."
+    },
+    {
+      "question": "Which correctly pairs a Mongol khanate with its region?",
+      "options": [
+        "Yuan Dynasty — Russia",
+        "Ilkhanate — Persia and the Middle East",
+        "Golden Horde — China",
+        "Chagatai Khanate — Egypt"
+      ],
+      "correctIndex": 1,
+      "explanation": "The Ilkhanate ruled Persia and the Middle East, where Hulegu sacked Baghdad in 1258. The Yuan ruled China, the Golden Horde ruled Russia, and the Chagatai Khanate ruled Central Asia, so the other pairings are wrong."
+    },
+    {
+      "question": "How did the Mongol conquest of Baghdad in 1258 connect to Unit 1's study of the Islamic world?",
+      "options": [
+        "It founded the Abbasid Caliphate",
+        "It ended the Abbasid Caliphate, killing the caliph",
+        "It converted the Mongols to Christianity",
+        "It established the Delhi Sultanate"
+      ],
+      "correctIndex": 1,
+      "explanation": "Hulegu's sack of Baghdad in 1258 destroyed the Abbasid Caliphate after roughly 500 years, a dramatic political change in the Islamic world. It did not found the Abbasids, convert the Mongols to Christianity, or establish the Delhi Sultanate."
+    },
+    {
+      "question": "A sophisticated essay argues that the Mongols were both destructive AND integrative. The strongest version of this argument would...",
+      "options": [
+        "ignore the destruction and praise only the trade they enabled",
+        "explain that the same violent conquests that destroyed cities also created the unified space in which exchange could flourish",
+        "claim the Mongols had no lasting impact at all",
+        "argue the Mongols were purely peaceful traders"
+      ],
+      "correctIndex": 1,
+      "explanation": "The most sophisticated argument shows how the two seemingly contradictory truths connect: violently unifying vast territory produced the stability (Pax Mongolica) that protected trade. Ignoring the destruction, denying their impact, or calling them peaceful all oversimplify the evidence."
+    },
+    {
+      "question": "The journeys of Marco Polo to China and Rabban Bar Sauma from China to Europe were possible mainly because...",
+      "options": [
+        "Europeans had conquered all of Asia",
+        "the connected, relatively secure Mongol world allowed long-distance travel across Eurasia",
+        "there were no political borders anywhere",
+        "the Black Death had made travel safer"
+      ],
+      "correctIndex": 1,
+      "explanation": "The Mongol Empire's secured routes and openness made it possible for individuals to travel across Eurasia in this era. Europeans had not conquered Asia, borders certainly existed, and the plague made travel more dangerous, not safer."
+    },
+    {
+      "question": "What environmental knowledge was the essential foundation of Indian Ocean trade?",
+      "options": [
+        "the location of Saharan salt mines",
+        "the predictable seasonal reversal of the monsoon winds",
+        "the path of the Silk Roads",
+        "the migration routes of camels"
+      ],
+      "correctIndex": 1,
+      "explanation": "The monsoon winds reversed direction predictably with the seasons, allowing sailors to plan round-trip voyages — the foundational knowledge powering Indian Ocean trade. Salt mines, the Silk Roads, and camels relate to other networks."
+    },
+    {
+      "question": "Compared with the Silk Roads, the Indian Ocean network was able to carry bulkier, heavier goods because...",
+      "options": [
+        "camels can carry more than ships",
+        "ships carry far more cargo at a lower cost per pound than overland caravans",
+        "the Indian Ocean traded no luxury goods",
+        "monsoon winds reduced the weight of cargo"
+      ],
+      "correctIndex": 1,
+      "explanation": "Ships could carry many tons cheaply compared with a camel's small load, so maritime trade could profitably move bulkier, cheaper goods like textiles and timber. The Indian Ocean also traded luxuries, and winds do not reduce cargo weight."
+    },
+    {
+      "question": "Diasporic merchant communities around the Indian Ocean were significant because they...",
+      "options": [
+        "prevented any cultural exchange between regions",
+        "settled in foreign ports, facilitated trade, and spread Islam and culture through intermarriage and conversion",
+        "were composed entirely of European colonists",
+        "refused to interact with local populations"
+      ],
+      "correctIndex": 1,
+      "explanation": "Diaspora merchants who settled in distant ports provided trusted trading partners and spread their language and religion (especially Islam) by intermarrying and converting locals, as in the Swahili civilization. They promoted exchange, were not European in this era, and interacted closely with local people."
+    },
+    {
+      "question": "The Ming treasure voyages of Zheng He (1405–1433) were primarily intended to...",
+      "options": [
+        "conquer and colonize the Indian Ocean rim",
+        "display Ming power and bring foreign rulers into China's tributary system",
+        "discover trade routes no one had ever used",
+        "find a sea route to the Americas"
+      ],
+      "correctIndex": 1,
+      "explanation": "Zheng He's voyages projected Ming power and drew foreign rulers into the Chinese tributary system, collecting tribute and exotic gifts rather than conquering. The Indian Ocean routes were already well known, and the Americas were not a goal."
+    },
+    {
+      "question": "China's decision to end the treasure voyages after 1433 is historically significant because it...",
+      "options": [
+        "had no effect on later world history",
+        "left the Indian Ocean without a dominant power, a vacuum later filled by European arrivals around 1500",
+        "led directly to the Mongol conquest of China",
+        "caused the Black Death"
+      ],
+      "correctIndex": 1,
+      "explanation": "By withdrawing, China gave up the chance to dominate the Indian Ocean, leaving a vacuum that the Portuguese and other Europeans would begin to fill around 1500. It did not cause the Mongol conquest or the plague."
+    },
+    {
+      "question": "In the West African trans-Saharan trade, salt and gold were exchanged at nearly equal value because...",
+      "options": [
+        "both were equally useless",
+        "West Africa had abundant gold but lacked salt (a biological necessity), while the Sahara had salt but no gold",
+        "they weighed the same",
+        "salt was only used for decoration"
+      ],
+      "correctIndex": 1,
+      "explanation": "Each region had in surplus exactly what the other desperately needed: West Africa's gold for the Sahara's salt, a vital necessity for health and food preservation. The near-equal exchange reflected scarcity and need, not weight or uselessness."
+    },
+    {
+      "question": "Which technology was most essential to making trade across the Sahara possible?",
+      "options": [
+        "the lateen sail",
+        "the camel and the camel saddle",
+        "paper money",
+        "the magnetic compass"
+      ],
+      "correctIndex": 1,
+      "explanation": "The camel, able to endure the desert, combined with an effective camel saddle to carry heavy loads, unlocked large-scale trans-Saharan caravan trade. The lateen sail and compass were maritime tools, and paper money was a commercial, not transport, innovation."
+    },
+    {
+      "question": "The city of Timbuktu is best used as evidence that the trans-Saharan trade...",
+      "options": [
+        "left West Africa poor and illiterate",
+        "brought wealth, Islam, and learning, making West African cities centers of scholarship",
+        "was controlled by Europeans",
+        "carried only enslaved people"
+      ],
+      "correctIndex": 1,
+      "explanation": "Timbuktu's mosques, schools, and vast manuscript libraries show that trans-Saharan trade brought wealth, Islam, and scholarship to West Africa. The region was prosperous and literate, not European-controlled, and the trade carried gold, salt, and many goods, not only enslaved people."
+    },
+    {
+      "question": "Which sequence correctly orders the major West African empires built on the trans-Saharan trade?",
+      "options": [
+        "Songhai → Mali → Ghana",
+        "Ghana → Mali → Songhai",
+        "Mali → Ghana → Songhai",
+        "Ghana → Songhai → Mali"
+      ],
+      "correctIndex": 1,
+      "explanation": "Ghana was the earliest great gold-trading empire, followed by Mali (Sundiata, Mansa Musa), and then Songhai (Sunni Ali, Askia Muhammad), the largest of the three. The other orderings reverse or scramble this sequence."
+    },
+    {
+      "question": "Islam spread into West Africa primarily because...",
+      "options": [
+        "a Muslim army conquered the entire region in 1200",
+        "the merchants crossing the Sahara were Muslim, and adopting Islam eased trade and lent prestige to rulers",
+        "the Mongols forced West Africans to convert",
+        "European missionaries traveled there"
+      ],
+      "correctIndex": 1,
+      "explanation": "Trans-Saharan trade connected West Africa to the Muslim world, and because the merchants were Muslim, rulers had strong incentives to adopt Islam to ease commerce and gain prestige. There was no single conquest in 1200, the Mongols were absent from West Africa, and European missionaries did not drive this." },
+    {
+      "question": "Which is an example of an ENVIRONMENTAL consequence of Afro-Eurasian connectivity?",
+      "options": [
+        "the spread of Islam along the Indian Ocean",
+        "the spread of bananas into Africa and the spread of the Black Death",
+        "the writing of Marco Polo's travel account",
+        "the use of bills of exchange"
+      ],
+      "correctIndex": 1,
+      "explanation": "Environmental consequences include the spread of crops (such as bananas into Africa) and the spread of disease (the Black Death). The spread of Islam and travel writing are cultural consequences, and bills of exchange were a commercial innovation."
+    },
+    {
+      "question": "The Black Death is best described as...",
+      "options": [
+        "a purely European epidemic with no connection to trade",
+        "an Afro-Eurasian pandemic that spread along trade and conquest routes, killing about a third of Europe's population",
+        "a disease confined to the Mongol army",
+        "a crop disease that reduced food supplies"
+      ],
+      "correctIndex": 1,
+      "explanation": "The Black Death originated in Asia and spread along trade and conquest routes across Afro-Eurasia, killing roughly a third of Europe's population and devastating the Middle East and Asia. It was a human pandemic spread by connectivity, not a purely European or crop disease confined to one army."
+    },
+    {
+      "question": "Which statement captures a key SIMILARITY among the Silk Roads, Indian Ocean, and trans-Saharan networks?",
+      "options": [
+        "All three used ships powered by monsoon winds",
+        "All three spread Islam and built wealthy crossroads cities while carrying goods, ideas, and disease",
+        "All three were dominated by European merchants",
+        "All three carried only gold and salt"
+      ],
+      "correctIndex": 1,
+      "explanation": "Despite different environments, all three networks spread Islam, enriched cosmopolitan crossroads cities, and carried the 'invisible cargo' of ideas and disease along with goods. Only the trans-Saharan and Silk Roads used camels (the Indian Ocean used ships), Europeans did not dominate them, and only the trans-Saharan trade centered on gold and salt."
+    },
+    {
+      "question": "A key DIFFERENCE among the three trade networks is best explained by...",
+      "options": [
+        "the religion of the merchants, which was entirely different on each",
+        "environment and transport — overland camel caravans versus monsoon-driven ships versus desert camel caravans",
+        "the century in which each operated, since they existed in different eras",
+        "the fact that only one of them spread disease"
+      ],
+      "correctIndex": 1,
+      "explanation": "The networks' main differences flowed from environment and transport: the overland Silk Roads, the maritime Indian Ocean, and the desert trans-Saharan routes each used different vehicles and carried different signature goods. Islam spread on all three, they overlapped in time, and all could spread disease."
+    },
+    {
+      "question": "On the AP exam, a short-answer question (SAQ) differs from an essay in that it...",
+      "options": [
+        "requires a long thesis and introduction",
+        "requires no thesis and is answered directly in brief parts using specific evidence",
+        "is graded only on handwriting",
+        "may use evidence from any time period regardless of the prompt"
+      ],
+      "correctIndex": 1,
+      "explanation": "An SAQ needs no thesis or introduction; you answer each part (a, b, c) directly in a sentence or two with specific evidence, using the Answer-Cite-Explain approach. It must stay within the prompt's time period, and content, not handwriting, is scored."
+    },
+    {
+      "question": "Long-distance travelers such as Ibn Battuta, Marco Polo, and Margery Kempe are valuable to historians because their accounts...",
+      "options": [
+        "prove that no cross-cultural contact occurred",
+        "document cross-cultural interaction and show the world had become connected enough for individuals to cross great distances",
+        "were all written by Chinese officials",
+        "describe only their home countries"
+      ],
+      "correctIndex": 1,
+      "explanation": "These travelers' accounts record cross-cultural contact and demonstrate that individuals could journey across vast cultural and geographic distances in the connected world. They came from different backgrounds (Moroccan, Venetian, English) and wrote about distant lands, not just home."
+    },
+    {
+      "question": "The fact that the Americas remained biologically separate from Afro-Eurasia in this period is significant because it...",
+      "options": [
+        "means the Americas had no trade networks of their own",
+        "set up the Columbian Exchange of Unit 4, when linking the hemispheres unleashed a massive exchange of crops and disease",
+        "proves the Black Death began in the Americas",
+        "shows the Mongols conquered the Americas"
+      ],
+      "correctIndex": 1,
+      "explanation": "Because the Americas developed separately, the later linking of the hemispheres in Unit 4 (the Columbian Exchange) produced an unprecedented biological exchange of crops, animals, and disease. The Americas had their own networks, the plague began in Asia, and the Mongols never reached the Americas."
+    }
+  ]
+}

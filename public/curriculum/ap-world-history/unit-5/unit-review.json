@@ -1,0 +1,330 @@
+{
+  "id": "ap-world-history-unit5-review",
+  "title": "Unit 5 Review: Revolutions",
+  "subject": "AP World History",
+  "unit": "Revolutions",
+  "type": "unit-review",
+  "questionsPerAttempt": 10,
+  "isAssessment": true,
+  "bank": [
+    {
+      "question": "The Enlightenment is best described as a movement that...",
+      "options": [
+        "rejected reason in favor of tradition and divine right",
+        "applied reason and scientific methods to human society, government, and law",
+        "focused only on astronomy and ignored politics",
+        "sought to strengthen absolute monarchy"
+      ],
+      "correctIndex": 1,
+      "explanation": "The Enlightenment took the reason-based methods of the Scientific Revolution and applied them to human affairs to discover 'natural laws' of society, championing reason over tradition and challenging divine-right monarchy."
+    },
+    {
+      "question": "John Locke's most influential political ideas were...",
+      "options": [
+        "the divine right of kings and absolute power",
+        "natural rights (life, liberty, property) and the right to overthrow a government that violates them",
+        "separation of powers into three branches",
+        "the abolition of all private property"
+      ],
+      "correctIndex": 1,
+      "explanation": "Locke argued that people are born with natural rights to life, liberty, and property, and that they may rightfully overthrow a government that violates them — ideas encoded almost verbatim in the U.S. Declaration of Independence. Separation of powers was Montesquieu's idea."
+    },
+    {
+      "question": "Which thinker is correctly matched with their core idea?",
+      "options": [
+        "Montesquieu — abolition of private property",
+        "Montesquieu — separation of powers / checks and balances",
+        "Rousseau — free-market economics",
+        "Voltaire — popular sovereignty"
+      ],
+      "correctIndex": 1,
+      "explanation": "Montesquieu developed separation of powers (dividing government into branches that check one another). Rousseau is associated with the social contract and popular sovereignty, Voltaire with free speech and religious toleration, and Adam Smith with free-market economics."
+    },
+    {
+      "question": "A central tension of the Enlightenment was that its universal language of equality...",
+      "options": [
+        "was immediately applied to everyone equally",
+        "in practice mostly meant propertied European men, which women, enslaved people, and colonized peoples then used to demand their own rights",
+        "applied only to monarchs",
+        "had no effect on later movements"
+      ],
+      "correctIndex": 1,
+      "explanation": "Enlightenment claims that 'all men are equal' mostly meant propertied European men in practice, but the excluded — women, the enslaved, and the colonized — seized that same logic to demand inclusion, fueling abolition, women's rights, and anti-colonial movements."
+    },
+    {
+      "question": "Why are the American, French, Haitian, and Latin American revolutions grouped as the 'Atlantic Revolutions'?",
+      "options": [
+        "They all occurred in the same year and place",
+        "They formed a connected wave sharing Enlightenment ideas, discontent with existing rulers, and mutual inspiration",
+        "They were all led by the same general",
+        "They all failed"
+      ],
+      "correctIndex": 1,
+      "explanation": "The Atlantic Revolutions were an interconnected wave across the Atlantic world, sharing Enlightenment ideology and discontent and inspiring one another — the American inspired the French, which helped ignite Haiti, all inspiring Latin America."
+    },
+    {
+      "question": "The Haitian Revolution (1791–1804) was uniquely significant because it...",
+      "options": [
+        "was led by creole elites who preserved slavery",
+        "was the only successful large-scale slave revolt to abolish slavery and found a nation governed by formerly enslaved people",
+        "restored French colonial rule",
+        "had no effect on other societies"
+      ],
+      "correctIndex": 1,
+      "explanation": "Led by figures like Toussaint Louverture, enslaved people in Saint-Domingue abolished slavery and founded independent Haiti in 1804 — the only successful large-scale slave revolt to create a free state, terrifying slaveholders and inspiring the enslaved across the Americas."
+    },
+    {
+      "question": "Why did the Latin American wars of independence generally NOT overturn the social hierarchy?",
+      "options": [
+        "They were led by enslaved people seeking abolition",
+        "They were led mainly by creole elites who sought independence to gain power for themselves, leaving Indigenous and African-descended people near the bottom",
+        "Spain granted full equality to all groups",
+        "They failed to win independence"
+      ],
+      "correctIndex": 1,
+      "explanation": "Creole elites (American-born, European-descended) led these revolutions to replace peninsular rule with their own, so independence largely swapped rulers while preserving the racial and social hierarchy — unlike Haiti, where the enslaved seized power."
+    },
+    {
+      "question": "Nationalism is the belief that...",
+      "options": [
+        "all empires should be preserved regardless of their peoples",
+        "people who share a common identity (language, culture, history) form a nation that deserves its own self-governing state",
+        "monarchs rule by divine right",
+        "economies should be controlled by the state"
+      ],
+      "correctIndex": 1,
+      "explanation": "Nationalism holds that a people sharing a common identity forms a nation that should govern itself. It both unified divided peoples (Italy, Germany, 1871) and fractured multi-ethnic empires (Austrian, Ottoman)."
+    },
+    {
+      "question": "Nationalism in the 1800s had which two opposite effects?",
+      "options": [
+        "It only unified states and never divided any",
+        "It unified divided peoples into nation-states (Italy and Germany, 1871) and fractured multi-ethnic empires (Austrian and Ottoman) from within",
+        "It strengthened all empires equally",
+        "It eliminated all political loyalty"
+      ],
+      "correctIndex": 1,
+      "explanation": "Nationalism unified the patchwork states of Italy and the German states into nation-states (both 1871) while simultaneously straining and fracturing multi-ethnic empires like the Austrian (Habsburg) and Ottoman, whose subject nationalities demanded their own states."
+    },
+    {
+      "question": "Which combination best explains why the Industrial Revolution began in Britain?",
+      "options": [
+        "A single factor: Britain simply had the best inventors",
+        "Coal and iron, capital from trade and colonies, agricultural change that freed up labor, and imperial access to raw materials and markets",
+        "Britain had no overseas empire and relied only on local resources",
+        "The government banned new technology"
+      ],
+      "correctIndex": 1,
+      "explanation": "Britain's industrialization resulted from a combination: coal and iron deposits, capital from trade/colonies/the slave economy, agricultural improvements and enclosure that created a labor supply, and imperial raw materials (cotton) and markets — a multi-causal, not single-cause, explanation."
+    },
+    {
+      "question": "The single most important new energy source and technology of the early Industrial Revolution was...",
+      "options": [
+        "electricity and the light bulb",
+        "the coal-fired steam engine (improved by James Watt)",
+        "the internal combustion engine and oil",
+        "wind and waterwheels"
+      ],
+      "correctIndex": 1,
+      "explanation": "The coal-fired steam engine, improved by James Watt, gave humans a powerful, reliable energy source independent of muscle, wind, or rivers, and could be located anywhere coal was delivered. Electricity and the internal combustion engine belong to the LATER Second Industrial Revolution."
+    },
+    {
+      "question": "The shift from organic energy (muscle, wood, wind, water) to coal was fundamentally important because it...",
+      "options": [
+        "made energy scarcer and more expensive",
+        "tapped a concentrated, abundant fossil-fuel energy source, breaking the age-old muscle ceiling on production",
+        "had no effect on factory location",
+        "applied only to textile manufacturing"
+      ],
+      "correctIndex": 1,
+      "explanation": "Coal gave humans access to the concentrated, abundant energy of fossil fuels, shattering the muscle/wind/water ceiling that had limited production for millennia, and freeing factories from rivers. Its impact extended across all of industry, not just textiles."
+    },
+    {
+      "question": "Japan's Meiji Restoration (from 1868) is the standout example of...",
+      "options": [
+        "a country that refused to industrialize",
+        "state-sponsored industrialization, in which the government rapidly industrialized to avoid Western domination",
+        "the first Industrial Revolution",
+        "a purely private, laissez-faire industrialization"
+      ],
+      "correctIndex": 1,
+      "explanation": "In the Meiji Restoration, the Japanese government deliberately and rapidly industrialized the country top-down — building industries, railroads, and a modern military — to avoid Western domination, becoming a major industrial and imperial power within decades."
+    },
+    {
+      "question": "The 'Great Divergence' refers to...",
+      "options": [
+        "the splitting of the Catholic Church",
+        "the dramatic gap in wealth and power that opened between industrialized regions (West and Japan) and non-industrialized ones",
+        "the separation of the American colonies from Britain",
+        "the division between socialism and capitalism"
+      ],
+      "correctIndex": 1,
+      "explanation": "The Great Divergence is the dramatic gap in wealth and power that industrialization opened between the industrialized 'haves' (Western Europe, North America, Japan) and the non-industrialized 'have-nots,' enabling the industrial states to dominate the rest of the world."
+    },
+    {
+      "question": "The Second Industrial Revolution (c. 1850–1900) was characterized by...",
+      "options": [
+        "the spinning jenny and the first steam engines",
+        "steel, electricity, chemicals, and the internal combustion engine",
+        "the printing press and gunpowder",
+        "sailing ships and windmills"
+      ],
+      "correctIndex": 1,
+      "explanation": "The Second Industrial Revolution was built on steel (Bessemer process), electricity (lighting, motors, telegraph/telephone), chemicals, and the internal combustion engine (oil/automobile). The spinning jenny and early steam engine belong to the FIRST phase."
+    },
+    {
+      "question": "The feature of 'limited liability' helped the modern corporation by...",
+      "options": [
+        "guaranteeing investors a profit",
+        "capping an investor's potential loss at the amount invested, encouraging people to buy shares and pool huge amounts of capital",
+        "allowing companies to avoid all regulation",
+        "preventing companies from growing"
+      ],
+      "correctIndex": 1,
+      "explanation": "Limited liability meant investors could lose only what they invested, not their entire fortune, making them far more willing to buy shares. This let corporations pool the vast capital needed for giant industrial projects like railroads."
+    },
+    {
+      "question": "Laissez-faire capitalism, associated with Adam Smith, holds that...",
+      "options": [
+        "the government should own all industry",
+        "the economy works best when government interferes as little as possible, letting free markets and competition operate",
+        "trade should be tightly controlled by the state for national power",
+        "private property should be abolished"
+      ],
+      "correctIndex": 1,
+      "explanation": "Laissez-faire ('leave alone'), associated with Adam Smith's Wealth of Nations (1776), holds that the economy works best with minimal government interference, letting the 'invisible hand' of competition produce prosperity. State control of trade describes the older mercantilism."
+    },
+    {
+      "question": "How did the role of government in industrial economies change over the course of the 1800s?",
+      "options": [
+        "Governments completely withdrew from all economic activity",
+        "Even market-oriented states gradually expanded intervention — factory acts, public health, and monopoly regulation — in response to industrialization's harms",
+        "All governments adopted pure laissez-faire by 1900",
+        "Governments banned all private business"
+      ],
+      "correctIndex": 1,
+      "explanation": "The trend was a gradual, contested expansion of government's role: prodded by reformers, even laissez-faire-leaning states passed laws limiting hours, banning child labor, improving public health, and regulating monopolies."
+    },
+    {
+      "question": "The two defining classes of industrial society were the...",
+      "options": [
+        "nobility and the peasantry",
+        "industrial middle class (bourgeoisie) and the industrial working class (proletariat)",
+        "clergy and the merchants",
+        "enslaved people and plantation owners"
+      ],
+      "correctIndex": 1,
+      "explanation": "Industrial society was defined by the bourgeoisie (factory owners, bankers, professionals) and the much larger proletariat (wage laborers), whose unequal relationship became the central social tension and the focus of socialism and Marxism."
+    },
+    {
+      "question": "Labor unions sought to improve workers' conditions primarily by...",
+      "options": [
+        "overthrowing capitalism entirely",
+        "organizing workers to bargain collectively and strike for higher wages, shorter hours, and safer conditions",
+        "abolishing all private property",
+        "preventing workers from voting"
+      ],
+      "correctIndex": 1,
+      "explanation": "Labor unions banded workers together to bargain collectively and use strikes to win higher wages, shorter hours, and safer conditions — seeking better terms WITHIN capitalism, unlike Marx, who sought to overthrow the system itself."
+    },
+    {
+      "question": "Karl Marx argued that history is fundamentally driven by...",
+      "options": [
+        "the will of monarchs",
+        "class struggle between those who own the means of production and those who labor for them",
+        "religious conflict",
+        "the spread of free markets"
+      ],
+      "correctIndex": 1,
+      "explanation": "Marx argued that all history is a story of class struggle. In the industrial age this was the conflict between the bourgeoisie (owners) and the proletariat (workers), which he saw as inherently exploitative."
+    },
+    {
+      "question": "In The Communist Manifesto (1848), Marx and Engels predicted that...",
+      "options": [
+        "capitalism would last forever unchanged",
+        "the proletariat would overthrow the bourgeoisie, abolish private ownership of industry, and create a classless communist society",
+        "monarchs would regain absolute power",
+        "labor unions would make revolution unnecessary"
+      ],
+      "correctIndex": 1,
+      "explanation": "Marx predicted that capitalism's inequalities would drive the proletariat to rise up, overthrow the bourgeoisie, abolish private ownership of the means of production, and build a classless, communist society — a revolution, not gradual reform."
+    },
+    {
+      "question": "Which correctly distinguishes the economic ideologies?",
+      "options": [
+        "Capitalism and communism are identical systems",
+        "Capitalism = private ownership and free markets; socialism = collective/public ownership to reduce inequality; communism/Marxism = revolutionary socialism abolishing private property",
+        "Socialism means the divine right of kings",
+        "Communism supports unlimited private monopolies"
+      ],
+      "correctIndex": 1,
+      "explanation": "Capitalism rests on private ownership and free markets; socialism advocates collective or public ownership of the means of production to reduce inequality; communism/Marxism is Marx's revolutionary form, in which the proletariat overthrows the owners and abolishes private property."
+    },
+    {
+      "question": "On a DBQ, 'sourcing' a document means...",
+      "options": [
+        "summarizing exactly what it says",
+        "analyzing who created it, for what purpose and audience, and in what situation (HIPP), and using that to interpret it as evidence",
+        "ignoring the author entirely",
+        "counting the number of documents used"
+      ],
+      "correctIndex": 1,
+      "explanation": "Sourcing means analyzing a document's Historical situation, Intended audience, Purpose, and Point of view, and using that analysis to interpret it as evidence for an argument — not merely restating its content."
+    },
+    {
+      "question": "The most common mistake students make on the DBQ is...",
+      "options": [
+        "using too many outside facts",
+        "summarizing documents instead of sourcing them and using them as evidence for an argument",
+        "writing a thesis that is too specific",
+        "analyzing point of view too deeply"
+      ],
+      "correctIndex": 1,
+      "explanation": "The number-one DBQ error, flagged repeatedly in Chief Reader reports, is summarizing what documents say rather than sourcing them (who made them and why) and deploying them as evidence for a defensible argument."
+    },
+    {
+      "question": "How did the early demand for raw cotton by British textile factories affect the Americas?",
+      "options": [
+        "It ended slavery in the American South",
+        "It massively intensified slavery in the American South, where enslaved people grew the cotton",
+        "It had no connection to slavery",
+        "It caused factories to relocate to Africa"
+      ],
+      "correctIndex": 1,
+      "explanation": "Industrial demand for raw cotton intensified slavery in the American South, where enslaved people produced the cotton that fed British mills — a key example of how industrialization and slavery grew together in this period."
+    },
+    {
+      "question": "A strong CCOT analysis of the period c. 1750–1900 would emphasize that...",
+      "options": [
+        "nothing of importance changed",
+        "while politics, energy, and society were transformed (popular sovereignty, fossil fuels, industrial classes), steep inequality and the exclusion of many groups persisted in new forms",
+        "the changes were entirely positive with no continuities",
+        "society reverted to its medieval form"
+      ],
+      "correctIndex": 1,
+      "explanation": "The era saw enormous change (popular sovereignty replacing divine right, fossil fuels replacing muscle, industrial classes replacing the old order), but continuities persisted: steep inequality took new forms (bourgeoisie over proletariat), and women, the colonized, and the poor remained largely excluded from the Enlightenment's universal promises."
+    },
+    {
+      "question": "How did middle-class gender roles tend to change with industrialization?",
+      "options": [
+        "Men and women shared all work equally",
+        "An ideal of 'separate spheres' developed — men in the public world of work and politics, women in the private domestic sphere",
+        "Women took over all factory ownership",
+        "Gender roles disappeared entirely"
+      ],
+      "correctIndex": 1,
+      "explanation": "As industrialization separated the workplace from the home, the middle class developed the ideal of 'separate spheres': men in the public sphere of work and politics, women in the private domestic sphere — an ideal of domesticity affordable mainly to the middle and upper classes, while working-class women labored in factories."
+    },
+    {
+      "question": "Which statement best captures the link between Unit 5's industrialization and later world history?",
+      "options": [
+        "Industrialization had no lasting global effects",
+        "Industrial power enabled the new imperialism of the next era, while the ideologies born here (nationalism, Marxism, liberalism) drove the conflicts of the twentieth century",
+        "Industrialization ended all warfare",
+        "It caused societies to abandon technology"
+      ],
+      "correctIndex": 1,
+      "explanation": "Industrialization gave a few states the power to conquer much of the world in the new imperialism (Unit 6), while the ideologies it generated — nationalism, socialism/Marxism, liberalism — became the warring forces behind the World Wars and the Cold War (Units 7–8)."
+    }
+  ]
+}

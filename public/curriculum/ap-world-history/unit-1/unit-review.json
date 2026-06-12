@@ -1,0 +1,297 @@
+{
+  "id": "ap-world-history-unit1-review",
+  "title": "Unit 1 Review: The Global Tapestry",
+  "subject": "AP World History",
+  "unit": "The Global Tapestry",
+  "type": "unit-review",
+  "questionsPerAttempt": 10,
+  "isAssessment": true,
+  "bank": [
+    {
+      "question": "The Song Dynasty expanded the civil service examination to staff its bureaucracy with scholar-officials. This system is best described as a 'partial meritocracy' because...",
+      "options": [
+        "only the emperor's relatives could take the exams",
+        "advancement depended on learning rather than birth, but years of costly study favored wealthier families",
+        "the exams tested military rather than scholarly skill",
+        "officials were chosen entirely at random"
+      ],
+      "correctIndex": 1,
+      "explanation": "The exams opened government to ability rather than noble birth, but the years of tutoring and study they required were affordable mainly to wealthier families, so merit operated within an advantaged group. The exams were open in principle, tested Confucian learning, and were not random or limited to the imperial family."
+    },
+    {
+      "question": "Champa rice contributed most directly to which development in Song China?",
+      "options": [
+        "The invention of the civil service examination",
+        "A doubling of the population to over 100 million",
+        "The split between Catholic and Orthodox Christianity",
+        "The decline of Buddhism in East Asia"
+      ],
+      "correctIndex": 1,
+      "explanation": "Champa rice was fast-ripening and drought-resistant, allowing multiple harvests per year, which drove a population boom past 100 million. The exam system predated it, the Christian schism was a European matter, and Buddhism remained influential in Song China."
+    },
+    {
+      "question": "A document describes Song Neo-Confucian scholars discussing the nature of reality and moral self-cultivation in terms borrowed from Buddhism and Daoism. This best illustrates that Neo-Confucianism...",
+      "options": [
+        "completely rejected earlier Confucian teachings",
+        "was a revival that fused Confucian ethics with Buddhist and Daoist ideas",
+        "was invented by Confucius himself around 500 BCE",
+        "originated in feudal Japan and spread to China"
+      ],
+      "correctIndex": 1,
+      "explanation": "Neo-Confucianism revived Confucian ethics while incorporating metaphysical questions from Buddhism and Daoism, becoming the Song state ideology. It built on rather than rejected Confucius (who lived around 500 BCE), and it originated in China, not Japan."
+    },
+    {
+      "question": "Japan during this era is considered the LEAST politically similar to China among China's neighbors because Japan...",
+      "options": [
+        "refused to adopt Buddhism or Chinese writing",
+        "developed a decentralized feudal order of shoguns and samurai instead of a centralized exam-based bureaucracy",
+        "was ruled directly by the Chinese emperor",
+        "had no contact with Chinese culture at all"
+      ],
+      "correctIndex": 1,
+      "explanation": "Japan absorbed Chinese religion, writing, and art but built a decentralized, militarized feudal system under shoguns and samurai, unlike China's centralized civilian bureaucracy. Japan did adopt Buddhism and Chinese culture and was never ruled by China."
+    },
+    {
+      "question": "Which pairing correctly matches a Song-era innovation with its effect?",
+      "options": [
+        "Paper money — caused the fall of the Abbasid Caliphate",
+        "Expanded Grand Canal — cheaply linked southern and northern China into an integrated market",
+        "Foot binding — increased women's political power",
+        "Coal-fired iron production — ended long-distance trade"
+      ],
+      "correctIndex": 1,
+      "explanation": "The expanded Grand Canal connected the rice-rich south to the populous north, integrating a national market. Paper money was a Chinese commercial tool unrelated to the Abbasids, foot binding restricted women, and iron production supported, not ended, trade."
+    },
+    {
+      "question": "By the year 1200, the Abbasid caliph in Baghdad was best described as...",
+      "options": [
+        "the supreme military and political ruler of a unified Islamic empire",
+        "a religious figurehead while real power was held by Turkic sultans such as the Seljuks",
+        "a Christian monarch ruling over Muslim subjects",
+        "the elected leader of a merchant republic"
+      ],
+      "correctIndex": 1,
+      "explanation": "By 1200 the caliph retained religious prestige but real political and military power had passed to Turkic groups like the Seljuk Turks, whose leaders held the title sultan. The caliph was neither a unifying ruler, a Christian, nor an elected merchant leader."
+    },
+    {
+      "question": "The Mamluks of Egypt are historically significant in part because they...",
+      "options": [
+        "were enslaved soldiers who seized power and halted the Mongols at Ain Jalut in 1260",
+        "were Christian crusaders who conquered Baghdad",
+        "invented the civil service examination",
+        "spread Buddhism across North Africa"
+      ],
+      "correctIndex": 0,
+      "explanation": "The Mamluks were originally enslaved soldiers who took power in Egypt and stopped the Mongol advance at the Battle of Ain Jalut in 1260. They were Muslim, not Christian crusaders, and had nothing to do with the Chinese exam system or spreading Buddhism."
+    },
+    {
+      "question": "A West African ruler converts to Islam in the 1300s generations before any Muslim army reaches the region. This pattern best supports the conclusion that Islam often spread through...",
+      "options": [
+        "forced conversion by conquering armies",
+        "trade networks and adaptive Sufi missionaries",
+        "the Chinese tributary system",
+        "the Catholic Church's missionary orders"
+      ],
+      "correctIndex": 1,
+      "explanation": "Islam frequently spread peacefully through commerce and the flexible preaching of Sufi missionaries, often well before any army arrived, especially in trading regions like West Africa. Conquest was only one mechanism, and the tributary system and Catholic Church were unrelated."
+    },
+    {
+      "question": "Muslim scholars such as al-Khwarizmi adopted the Indian decimal place-value system and transmitted it westward, where Europeans called the digits 'Arabic numerals.' This best illustrates that Dar al-Islam...",
+      "options": [
+        "invented mathematics independently of all other cultures",
+        "served as a bridge that preserved, synthesized, and transferred knowledge across Afro-Eurasia",
+        "rejected foreign learning in favor of purely Arab traditions",
+        "had no contact with India or Europe"
+      ],
+      "correctIndex": 1,
+      "explanation": "The numerals' Indian origin, Islamic-world transmission, and European reception show Dar al-Islam acting as a crossroads that gathered, advanced, and passed on knowledge. The Islamic world synthesized ideas from many cultures rather than inventing in isolation or rejecting foreign learning."
+    },
+    {
+      "question": "Which statement best captures the central paradox of Dar al-Islam from c. 1200 to 1450?",
+      "options": [
+        "It was politically unified under one ruler but culturally fragmented",
+        "It was politically fragmented into many states yet culturally and religiously unified",
+        "It abandoned Islam while keeping Arab political control",
+        "It was conquered entirely by European crusaders"
+      ],
+      "correctIndex": 1,
+      "explanation": "Although the Abbasid Caliphate fragmented and power passed to various Turkic states, the Islamic world remained one civilization bound by shared faith, the Arabic language, law, pilgrimage, and trade. It did not abandon Islam, was never politically unified in this era, and was not conquered by Europeans."
+    },
+    {
+      "question": "The Delhi Sultanate is best described as...",
+      "options": [
+        "a Hindu empire that expelled all Muslims from India",
+        "a Muslim ruling elite governing a Hindu-majority population, often through pragmatic accommodation",
+        "a Buddhist state in Southeast Asia",
+        "a Christian kingdom in the Andes"
+      ],
+      "correctIndex": 1,
+      "explanation": "The Delhi Sultanate was a Turkic-Afghan Muslim state ruling over a Hindu-majority northern India, where most sultans accommodated Hindu institutions and taxed non-Muslims rather than forcing conversion. It did not make India Muslim-majority, and it was neither Buddhist, Christian, nor located in the Andes."
+    },
+    {
+      "question": "The Hindu bhakti movement and Islamic Sufism are frequently discussed together because both...",
+      "options": [
+        "required strict caste separation and elaborate priestly ritual",
+        "emphasized direct, personal devotion over rigid hierarchy and reached across social boundaries",
+        "were spread mainly by conquering armies",
+        "rejected belief in any divine being"
+      ],
+      "correctIndex": 1,
+      "explanation": "Both bhakti and Sufism stressed personal, emotional devotion to the divine rather than priestly ritual and rigid hierarchy, allowing them to appeal across caste and class and encouraging syncretism. Neither demanded strict hierarchy, relied on conquest, nor rejected the divine."
+    },
+    {
+      "question": "Majapahit grew wealthy by controlling Indian Ocean trade routes, while the Khmer Empire grew powerful through rice agriculture and water management. This contrast illustrates the distinction between...",
+      "options": [
+        "Muslim and Christian states",
+        "sea-based (trade) states and land-based (agricultural) states",
+        "ancient and medieval empires",
+        "democratic and monarchical governments"
+      ],
+      "correctIndex": 1,
+      "explanation": "Majapahit was a sea-based state enriched by controlling maritime trade, while the Khmer were a land-based state enriched by agriculture and territory — the key framework for Southeast Asian states. The other options misidentify the contrast."
+    },
+    {
+      "question": "The conversion of Angkor Wat from a Hindu temple into a Buddhist temple over time is best used as evidence of...",
+      "options": [
+        "the complete disappearance of Hinduism from Asia",
+        "religious diffusion and syncretism in Southeast Asia",
+        "European colonization of Cambodia",
+        "the Inca road network"
+      ],
+      "correctIndex": 1,
+      "explanation": "Angkor Wat's shift from Hindu to Buddhist worship shows both the earlier diffusion of Indian religions into Southeast Asia and the syncretic layering of faiths. Hinduism did not vanish from Asia, and the example has nothing to do with European colonization or the Inca."
+    },
+    {
+      "question": "Islam arrived in Southeast Asia primarily through which mechanism?",
+      "options": [
+        "Conquest by the Delhi Sultanate's armies",
+        "Muslim merchants and Sufis traveling Indian Ocean trade routes, as at the port of Malacca",
+        "Migration of Aztec traders across the Pacific",
+        "The Crusades launched from western Europe"
+      ],
+      "correctIndex": 1,
+      "explanation": "Islam reached Southeast Asia largely through Muslim merchants and Sufis traveling the Indian Ocean trade network, with ports like Malacca (founded around 1400) adopting Islam and spreading it through the islands. It was not brought by Delhi's armies, the Aztecs, or the Crusades."
+    },
+    {
+      "question": "A historian contrasts the Aztec and Inca empires. Which contrast is accurate?",
+      "options": [
+        "The Aztecs used a centralized command economy; the Inca used loose tribute",
+        "The Aztecs extracted tribute in goods through a loosely held empire; the Inca extracted compulsory labor (mit'a) through a centralized state",
+        "Both relied entirely on market trade and coined money",
+        "The Aztecs lived in the Andes; the Inca lived in Mexico"
+      ],
+      "correctIndex": 1,
+      "explanation": "The Aztec tribute empire demanded goods from conquered peoples who kept local rulers, while the centralized Inca state required rotating mit'a labor and redistributed stored goods. Neither used coined money or a market economy, and their geographic locations are reversed in the wrong options."
+    },
+    {
+      "question": "The Inca governed an empire of perhaps ten million people across 2,500 miles of mountainous terrain. Remarkably, they did so...",
+      "options": [
+        "using a phonetic alphabet borrowed from Europe",
+        "without a writing system, keeping records on knotted cords called khipu",
+        "by relying entirely on private merchants",
+        "with no roads or communication network"
+      ],
+      "correctIndex": 1,
+      "explanation": "The Inca had no writing system and instead recorded information on khipu, knotted and colored cords, while moving people and messages along an extensive stone road network. They did not use a European alphabet, depend on merchants, or lack roads."
+    },
+    {
+      "question": "Mansa Musa's 1324 pilgrimage, during which he distributed so much gold that he disrupted Cairo's market, is strong evidence that...",
+      "options": [
+        "the Mali Empire was poor and isolated from the wider world",
+        "West Africa produced immense wealth and was deeply connected to the Afro-Eurasian economy",
+        "Islam had no presence in West Africa",
+        "the Aztecs controlled the trans-Saharan trade"
+      ],
+      "correctIndex": 1,
+      "explanation": "A West African king affecting the price of gold in a major Mediterranean city demonstrates both Mali's enormous wealth and its deep integration into the Afro-Eurasian economy. Mali was wealthy, not isolated; Islam was central to its elite; and the Aztecs were in Mexico, not the Sahara."
+    },
+    {
+      "question": "The Swahili language is a Bantu African language containing many Arabic loanwords, and the Swahili city-state elites practiced Islam. This best reveals that East African coastal society...",
+      "options": [
+        "was conquered and entirely replaced by Arab settlers",
+        "experienced cultural and religious blending from Indian Ocean trade while remaining fundamentally African",
+        "had no contact with the African interior",
+        "was predominantly Christian"
+      ],
+      "correctIndex": 1,
+      "explanation": "A Bantu language with Arabic loanwords and a Muslim elite reflects centuries of Indian Ocean trade producing syncretic blending in a society that stayed fundamentally African. The coast was not replaced by Arabs, it linked to the interior's gold and ivory, and its elite religion was Islam, not Christianity."
+    },
+    {
+      "question": "Which African state is correctly matched with its description?",
+      "options": [
+        "Great Zimbabwe — a Christian kingdom in the highlands ruled by the Solomonic dynasty",
+        "Ethiopia — a Christian kingdom that carved rock churches at Lalibela",
+        "Mali — a Swahili city-state on the Indian Ocean coast",
+        "Kilwa — a stone-walled gold-trading capital in southern Africa"
+      ],
+      "correctIndex": 1,
+      "explanation": "Ethiopia was a long-standing Christian kingdom ruled by the Solomonic dynasty, famous for the rock-hewn churches of Lalibela. Great Zimbabwe was a southern African stone city tied to the gold trade, Mali was a West African trans-Saharan empire, and Kilwa was a Swahili coastal city-state."
+    },
+    {
+      "question": "Feudalism and manorialism in medieval Europe are best understood as...",
+      "options": [
+        "a highly centralized bureaucracy funded by paper money",
+        "a decentralized system in which power and economic life were organized through land, personal loyalty, and serf labor",
+        "a market economy dominated by merchant guilds and banks",
+        "a religious movement that rejected the authority of the Pope"
+      ],
+      "correctIndex": 1,
+      "explanation": "Feudalism distributed political-military power among lords and vassals through grants of land, while manorialism organized the economy around self-sufficient estates worked by serfs — a decentralized order. It was not a centralized bureaucracy, a market economy, or an anti-papal movement."
+    },
+    {
+      "question": "In politically fragmented western Europe, the Roman Catholic Church functioned in a way most similar to...",
+      "options": [
+        "the Inca mit'a labor system",
+        "Confucianism in East Asia and Islam in Dar al-Islam as a unifying cultural framework",
+        "the Aztec tribute system",
+        "the Strait of Malacca's trade chokepoint"
+      ],
+      "correctIndex": 1,
+      "explanation": "Like Confucianism in East Asia and Islam in Dar al-Islam, the Catholic Church provided a shared identity, scholarly language, and moral framework that unified a region lacking a single political ruler. The mit'a, Aztec tribute, and a trade strait are economic or geographic features, not unifying cultural frameworks."
+    },
+    {
+      "question": "Which development most directly weakened serfdom and the manorial system in late medieval western Europe?",
+      "options": [
+        "The founding of the Mali Empire",
+        "The Black Death, which killed about a third of the population and made surviving laborers able to demand wages and freedom",
+        "The Mongol conquest of Baghdad",
+        "The construction of Angkor Wat"
+      ],
+      "correctIndex": 1,
+      "explanation": "By killing roughly a third of Europe's population, the Black Death (1347–1351) created severe labor shortages that let surviving peasants demand wages and freedom, undermining serfdom. The founding of Mali, the sack of Baghdad, and Angkor Wat were unrelated to European labor systems."
+    },
+    {
+      "question": "A strong AP World comparison essay comparing Song China and feudal Europe would be distinguished above all by...",
+      "options": [
+        "describing each society in a separate paragraph without connecting them",
+        "explaining WHY the two societies differed, such as China's unbroken imperial tradition versus Europe's post-Roman fragmentation",
+        "discussing only China in detail",
+        "using evidence from the twentieth century"
+      ],
+      "correctIndex": 1,
+      "explanation": "The highest-scoring comparisons explain the reasons behind similarities and differences, such as why China centralized while Europe decentralized, rather than merely describing each side. Parallel description, neglecting one society, and out-of-period evidence are all scoring errors."
+    },
+    {
+      "question": "Which of the following correctly identifies a major similarity across several societies in this period (Song China, Dar al-Islam, and Catholic Europe)?",
+      "options": [
+        "All three were governed by democratically elected assemblies",
+        "Each was held together in part by a shared belief system or ideology that crossed political boundaries",
+        "All three relied on the Inca mit'a labor system",
+        "Each was a sea-based trading empire centered on the Strait of Malacca"
+      ],
+      "correctIndex": 1,
+      "explanation": "Confucianism in China, Islam in Dar al-Islam, and Catholic Christianity in Europe each supplied a unifying belief system that bound people together across political divisions. None were democracies, used the Andean mit'a, or were Malaccan sea empires."
+    },
+    {
+      "question": "The fact that the Black Death spread from Asia into the Middle East and Europe along established trade routes best demonstrates that...",
+      "options": [
+        "trade networks could carry disease as well as goods and ideas",
+        "Europe had no contact with Asia in this period",
+        "the plague was confined to a single region",
+        "the Inca Empire caused the epidemic"
+      ],
+      "correctIndex": 0,
+      "explanation": "The Black Death traveled along the same Afro-Eurasian trade networks that carried commerce and ideas, showing that increased connectivity also spread disease. Europe was clearly connected to Asia, the plague was widespread, and the Inca had no role in it."
+    }
+  ]
+}
