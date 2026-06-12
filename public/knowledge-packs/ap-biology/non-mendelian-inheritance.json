@@ -1,0 +1,30 @@
+{
+  "id": "ap-bio-non-mendelian-inheritance",
+  "title": "Non-Mendelian Inheritance and Environmental Effects",
+  "subject": "AP Biology",
+  "chunks": [
+    { "id": "c1", "text": "Mendel chose pea traits that behaved simply: one gene, two alleles, clean dominance, and a 3:1 ratio. Many real traits are more complex, with patterns called non-Mendelian inheritance. These do not break segregation or assortment; they enrich how genotype maps to phenotype." },
+    { "id": "c2", "text": "Simple dominance is a special case, not the whole rule. Sometimes neither allele fully dominates, both alleles show up, one gene affects many traits, many genes affect one trait, one gene masks another, and the environment shapes expression." },
+    { "id": "c3", "text": "In incomplete dominance, the heterozygote shows a blended, intermediate phenotype between the two homozygotes. Crossing red (RR) and white snapdragons gives pink (RW) heterozygotes." },
+    { "id": "c4", "text": "Incomplete dominance is not the old blending theory: the alleles stay intact. Crossing two pink snapdragons recovers red, pink, and white in a 1:2:1 ratio, showing the alleles segregated rather than merging." },
+    { "id": "c5", "text": "In codominance, both alleles are fully and separately expressed in the heterozygote, not blended. A person with both A and B alleles (I^A I^B) has type AB blood, displaying both the A and B antigens." },
+    { "id": "c6", "text": "Roan cattle are another codominance example: the heterozygote has a coat of both distinct red hairs and white hairs interspersed, not a blended pink color." },
+    { "id": "c7", "text": "The key distinction: incomplete dominance gives a single intermediate, blended phenotype (red + white → pink), while codominance shows both phenotypes fully and simultaneously (A + B → AB). 'In between' is incomplete; 'both at once' is codominant." },
+    { "id": "c8", "text": "Both incomplete dominance and codominance give a 1:2:1 phenotype ratio in a heterozygote-by-heterozygote cross, because each genotype now has its own distinct phenotype, unlike the 3:1 ratio of simple dominance." },
+    { "id": "c9", "text": "Multiple alleles means a gene has more than two alleles in the population, even though any one diploid individual still carries only two. Human ABO blood type has three alleles: I^A, I^B, and i." },
+    { "id": "c10", "text": "In the ABO system, I^A and I^B are codominant to each other, and both are dominant to i. The combinations produce four blood types: A, B, AB, and O. This combines multiple alleles and codominance." },
+    { "id": "c11", "text": "Pleiotropy is when one gene influences many seemingly unrelated traits. The sickle-cell allele affects red blood cell shape, oxygen delivery, pain, organ damage, and malaria resistance, all from one gene." },
+    { "id": "c12", "text": "Epistasis is when one gene masks or modifies the expression of a different gene (a gene-gene interaction). It often produces modified dihybrid ratios such as 9:3:4 instead of 9:3:3:1." },
+    { "id": "c13", "text": "In Labrador retrievers, one gene determines pigment color (black or brown) but a second gene controls whether any pigment is deposited. A dog that is 'ee' at the second gene is yellow regardless of its color gene, because the second gene is epistatic to the first." },
+    { "id": "c14", "text": "Polygenic inheritance is when many genes each contribute a small additive effect to one trait, producing a continuous range of phenotypes rather than a few categories. Human height, skin color, and eye color work this way." },
+    { "id": "c15", "text": "Polygenic traits show a smooth bell-curve distribution across a population because dozens of genes, plus environment, each nudge the value up or down. A continuously varying trait suggests polygenic inheritance." },
+    { "id": "c16", "text": "Pleiotropy and polygenic inheritance are opposites: pleiotropy is one gene affecting many traits, while polygenic inheritance is many genes affecting one trait. Confusing them is a common error." },
+    { "id": "c17", "text": "Phenotype results from the interaction of genotype and environment, not genes alone. The same genotype can produce different phenotypes under different conditions because the environment influences how genes are expressed." },
+    { "id": "c18", "text": "A Himalayan rabbit or Siamese cat carries a temperature-sensitive pigment allele: the enzyme that makes dark pigment works only in cooler body areas, so the cold extremities (ears, nose, paws, tail) are dark while the warm body is light." },
+    { "id": "c19", "text": "Other environmental effects include hydrangea flowers that are blue or pink depending on soil pH, and human height and skin color that are set by genes but strongly modified by nutrition and sun exposure." },
+    { "id": "c20", "text": "The 'nature vs. nurture' debate is better stated as 'nature and nurture': genes set a range of possibilities (a reaction norm), and the environment determines where within that range an individual lands. Most polygenic traits are multifactorial." },
+    { "id": "c21", "text": "To identify an inheritance pattern: check whether the heterozygote is intermediate (incomplete dominance) or shows both traits (codominance), whether there are more than two alleles (multiple alleles), whether one gene affects many traits (pleiotropy) or many genes affect one trait (polygenic), and whether one gene masks another (epistasis)." },
+    { "id": "c22", "text": "Most traits people care about, such as height, disease risk, and athletic ability, are multifactorial, shaped by many genes interacting with each other and with the environment. There is no single 'gene for' most complex traits." },
+    { "id": "c23", "text": "Because the environment shapes phenotype by altering gene expression, non-Mendelian inheritance connects to gene regulation (Unit 6). The continuous variation of polygenic traits is the substrate natural selection acts on (Unit 7), and pleiotropy explains evolutionary trade-offs like the sickle-cell allele." }
+  ]
+}

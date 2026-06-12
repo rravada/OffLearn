@@ -1,0 +1,126 @@
+{
+  "id": "ap-bio-u5-non-mendelian-inheritance",
+  "title": "Non-Mendelian Inheritance and Environmental Effects",
+  "subject": "AP Biology",
+  "unit": "Heredity",
+  "track": "ap",
+  "difficulty": "ap",
+  "duration": "45 min",
+  "objectives": [
+    "Explain incomplete dominance and codominance and how they differ from simple dominance",
+    "Describe multiple alleles, pleiotropy, epistasis, and polygenic inheritance",
+    "Explain how the environment interacts with genotype to shape phenotype",
+    "Recognize patterns produced by inheritance more complex than single-gene dominance"
+  ],
+  "sections": [
+    {
+      "type": "explanation",
+      "heading": "When the Peas Don't Cooperate",
+      "content": "Mendel was lucky — or rather, careful — in choosing pea traits that behaved simply: one gene, two alleles, clean dominance, a tidy 3:1 ratio. But if you cross a red snapdragon with a white one, you don't get red or white offspring. You get PINK. If you study human blood types, you find not two alleles but three, and two of them are both fully expressed at once. If you look at human height or skin color, you see not two or three categories but a smooth continuous range. None of these breaks Mendel's underlying logic — alleles still segregate, genes still assort — but the relationship between genotype and phenotype is richer than 'one dominant allele wins.' These richer patterns are called non-Mendelian inheritance, and they're heavily tested because they show whether you truly understand genetics or just memorized 3:1.\n\nThe key reframing for this lesson: Mendel's simple dominance is a SPECIAL CASE, not the whole rule. In reality, the path from gene to trait can be far more interesting. Sometimes neither allele fully dominates. Sometimes both show up completely. Sometimes one gene affects many traits, or many genes affect one trait, or one gene masks another. And always, the environment is whispering to the genes, shaping how they're expressed.\n\nWe'll work through the main patterns — incomplete dominance, codominance, multiple alleles, pleiotropy, epistasis, and polygenic inheritance — and then the crucial idea that phenotype is genotype PLUS environment. Throughout, keep Mendel's machinery in mind: these aren't violations of segregation and assortment; they're elaborations of how alleles translate into traits."
+    },
+    {
+      "type": "explanation",
+      "heading": "Incomplete Dominance and Codominance",
+      "content": "The first two patterns both involve heterozygotes that DON'T just look like the dominant parent — but in opposite ways, and the AP exam loves to test whether you can tell them apart.\n\nIncomplete dominance: the heterozygote shows a BLENDED, intermediate phenotype — something in between the two homozygotes. The classic example is snapdragon flower color: red (RR) × white (R'R' or WW) gives PINK heterozygotes (RW). The pink isn't a mix of red and white pigment in patches; it's a uniform intermediate shade, because one functional red allele makes only enough pigment for pink. Notice this looks like the old 'blending' idea — but it's not, because the alleles haven't actually merged: cross two pink plants and you recover red, pink, and white in a 1:2:1 ratio. The alleles segregate intact; only their combined EXPRESSION looks blended.\n\nCodominance: BOTH alleles are fully and separately expressed in the heterozygote — not blended, but both visible at once. The example is the human ABO blood group's A and B alleles: a person with both (genotype I^A I^B) has type AB blood, displaying BOTH the A antigen AND the B antigen on their red blood cells, fully and separately. Another example is roan cattle, where a heterozygote has a coat of BOTH distinct red hairs AND white hairs interspersed (not a blended pink). \n\nThe distinction to lock in: incomplete dominance = a single intermediate, BLENDED phenotype (red + white → pink); codominance = BOTH phenotypes shown fully and simultaneously (A + B → AB; red hairs + white hairs together). If the heterozygote is 'in between,' it's incomplete dominance; if the heterozygote shows 'both at once,' it's codominance. In both cases the heterozygote-by-heterozygote cross gives a 1:2:1 phenotype ratio (because every genotype now has its own distinct phenotype), unlike the 3:1 of simple dominance."
+    },
+    {
+      "type": "table",
+      "heading": "Patterns of Non-Mendelian Inheritance",
+      "headers": ["Pattern", "What happens", "Example"],
+      "rows": [
+        ["Incomplete dominance", "Heterozygote shows a blended, intermediate trait", "Red × white snapdragon → pink"],
+        ["Codominance", "Both alleles fully and separately expressed", "Blood type AB; roan cattle"],
+        ["Multiple alleles", "A gene has more than two alleles in the population", "ABO blood type (I^A, I^B, i)"],
+        ["Pleiotropy", "One gene affects many traits", "Sickle-cell allele; many effects"],
+        ["Epistasis", "One gene masks/affects another gene's expression", "Coat color (a gene that blocks pigment)"],
+        ["Polygenic", "Many genes contribute to one trait (continuous range)", "Human height, skin color"]
+      ]
+    },
+    {
+      "type": "quiz",
+      "question": "A red-flowered plant is crossed with a white-flowered plant, and ALL offspring have pink flowers. When two pink offspring are crossed, the result is red, pink, and white in a 1:2:1 ratio. What pattern of inheritance is this?",
+      "options": [
+        "Simple Mendelian dominance, with pink being dominant",
+        "Incomplete dominance, where the heterozygote shows an intermediate phenotype",
+        "Codominance, where both alleles are fully expressed",
+        "Epistasis, where one gene masks another"
+      ],
+      "correctIndex": 1,
+      "explanation": "An intermediate (blended) heterozygote phenotype — pink between red and white — is incomplete dominance. The reappearance of red and white in the offspring (1:2:1) proves the alleles never truly blended; they segregated intact. Codominance would show both colors fully at once (not an intermediate), and there is no second gene masking a first, so it is not epistasis."
+    },
+    {
+      "type": "explanation",
+      "heading": "Multiple Alleles, Pleiotropy, Epistasis, and Polygenic Traits",
+      "content": "Four more patterns round out the picture, each loosening a different assumption of Mendel's simple model.\n\nMultiple alleles: Mendel's genes had two alleles, but a gene can have MANY alleles in a population — though any one diploid individual still carries only two. Human ABO blood type is the model: three alleles exist (I^A, I^B, and i), where I^A and I^B are codominant to each other and both are dominant to i. The combinations produce four blood types (A, B, AB, O), a favorite AP problem that combines multiple alleles AND codominance at once.\n\nPleiotropy: ONE gene influences MANY, seemingly unrelated traits. The sickle-cell allele is the classic case — a single change in the hemoglobin gene affects red blood cell shape, oxygen delivery, pain, organ damage, AND malaria resistance, all from one gene. Pleiotropy reminds us that one gene rarely maps to exactly one tidy trait.\n\nEpistasis: one gene MASKS or modifies the expression of a DIFFERENT gene (gene-gene interaction). In Labrador retrievers, one gene determines pigment color (black or brown), but a SECOND gene controls whether any pigment is deposited at all — a dog that's 'ee' at the second gene is yellow regardless of its color gene, because the second gene shuts off pigment deposition. The second gene is 'epistatic to' the first. Epistasis often produces modified ratios (like 9:3:4 instead of 9:3:3:1).\n\nPolygenic inheritance: MANY genes each contribute a small additive effect to ONE trait, producing a CONTINUOUS range of phenotypes rather than a few categories. Human height, skin color, and eye color work this way. Instead of 'tall vs. short,' you get a smooth bell-curve distribution from very short to very tall, because dozens of genes (plus environment) each nudge the value up or down. Whenever you see a trait that varies continuously across a population, think polygenic."
+    },
+    {
+      "type": "example",
+      "heading": "Working an ABO Blood-Type Cross",
+      "content": "Let's combine multiple alleles AND codominance in one worked problem — a classic AP item. Recall the three alleles: I^A and I^B are codominant to each other, and both are dominant to i. The genotypes map to phenotypes like this: I^A I^A or I^A i = type A; I^B I^B or I^B i = type B; I^A I^B = type AB; ii = type O.\n\nPROBLEM: A type A mother and a type B father have a child with type O blood. How is this possible, and what are the chances of each blood type in their children?\n\nSTEP 1 — Deduce the parent genotypes from the type-O child. A type O child is ii, meaning the child received an i allele from EACH parent. So both parents must CARRY i. The type A mother must therefore be I^A i (not I^A I^A), and the type B father must be I^B i (not I^B I^B). The recessive i was hidden in each parent.\n\nSTEP 2 — Cross I^A i × I^B i with a Punnett square:\n  I^A × I^B = I^A I^B (type AB)\n  I^A × i = I^A i (type A)\n  i × I^B = I^B i (type B)\n  i × i = ii (type O)\n\nSTEP 3 — Read the result: 1/4 AB : 1/4 A : 1/4 B : 1/4 O. All four blood types are equally likely (25% each)!\n\nThe takeaway: two parents can produce a child with a blood type neither of them has — the type-O child of an A and a B parent — because each parent secretly carried the recessive i. This is why blood type can be used in (older) parentage questions and why you must reason backward from a recessive child to identify hidden carrier alleles, exactly as in simple Mendelian genetics but now with three alleles and codominance in play."
+    },
+    {
+      "type": "steps",
+      "heading": "How to Identify the Inheritance Pattern",
+      "steps": [
+        {
+          "title": "Is the heterozygote intermediate or showing both traits?",
+          "content": "If the heterozygote is a blend/intermediate (pink), it's INCOMPLETE DOMINANCE. If both alleles appear fully and separately (type AB, roan coat), it's CODOMINANCE."
+        },
+        {
+          "title": "Are there more than two alleles in the population?",
+          "content": "If a gene has three or more alleles (like ABO blood type's I^A, I^B, i), it involves MULTIPLE ALLELES, even though each individual still has only two."
+        },
+        {
+          "title": "Does one gene affect many traits, or do many genes affect one trait?",
+          "content": "One gene → many traits is PLEIOTROPY (sickle-cell). Many genes → one continuously varying trait is POLYGENIC inheritance (height, skin color)."
+        },
+        {
+          "title": "Does one gene hide another gene's effect?",
+          "content": "If the phenotype of one gene depends on (is masked by) a second gene, it's EPISTASIS (Labrador coat color). Look for modified dihybrid ratios."
+        },
+        {
+          "title": "Could the environment be involved?",
+          "content": "If genetically identical individuals show different phenotypes depending on conditions (temperature, diet, sunlight), the ENVIRONMENT is shaping the phenotype along with the genotype."
+        }
+      ]
+    },
+    {
+      "type": "keypoint",
+      "content": "Simple dominance is one special case. Incomplete dominance gives a blended heterozygote; codominance shows both alleles fully; multiple alleles, pleiotropy, epistasis, and polygenic inheritance further enrich the genotype-to-phenotype map — and the environment interacts with genotype to determine the final phenotype."
+    },
+    {
+      "type": "explanation",
+      "heading": "Phenotype = Genotype + Environment",
+      "content": "Here is a principle that ties this whole lesson together and is increasingly emphasized on the AP exam: an organism's phenotype is not dictated by its genes alone. Phenotype results from the interaction of genotype AND environment. The same genotype can produce different phenotypes under different conditions, because the environment influences how genes are expressed (a direct link to gene regulation in Unit 6).\n\nThe examples are vivid. A Himalayan rabbit (or Siamese cat) carries a temperature-sensitive allele for fur pigment: the enzyme that makes dark pigment works only in cooler areas of the body, so the animal develops dark ears, nose, paws, and tail (the cold extremities) but a light body — a single genotype producing a patterned phenotype entirely because of temperature. Hydrangea flowers can be blue or pink from the SAME plant depending on soil pH. In humans, height and skin color are set by genes but strongly modified by nutrition and sun exposure; identical twins (genetically identical) grow slightly different over a lifetime of different environments.\n\nThis principle reframes the old 'nature vs. nurture' debate as 'nature AND nurture': genes set a range of possibilities (a reaction norm), and the environment determines where within that range an individual lands. It's also why polygenic traits are usually 'multifactorial' — many genes PLUS environment. The takeaway for genetics problems and FRQs: don't assume genotype fully predicts phenotype. When genetically identical organisms differ, or when a trait shifts with conditions, the environment is acting on gene expression. Genotype loads the dice; the environment rolls them."
+    },
+    {
+      "type": "quiz",
+      "question": "A man with type AB blood (I^A I^B) has children with a woman who has type O blood (ii). Which blood types are possible in their children?",
+      "options": [
+        "Only type AB",
+        "Type A or type B (each 50%), but not AB or O",
+        "Type AB or type O only",
+        "All four types: A, B, AB, and O"
+      ],
+      "correctIndex": 1,
+      "explanation": "The father passes either I^A or I^B; the mother passes only i. So children are I^A i (type A) or I^B i (type B), each 50%. None are AB (would need both I^A and I^B) or O (would need two i alleles). This combines multiple alleles and codominance."
+    },
+    {
+      "type": "callout",
+      "variant": "warning",
+      "heading": "Incomplete Dominance vs. Codominance — Don't Blend Them Up",
+      "content": "The most-tested confusions in this lesson: (1) INCOMPLETE dominance = ONE intermediate, blended phenotype (red + white → PINK). CODOMINANCE = BOTH phenotypes shown fully and at the same time (A + B → AB; red AND white hairs together, not pink). 'In between' = incomplete; 'both at once' = codominant. (2) Both give a 1:2:1 phenotype ratio in a heterozygote cross (not 3:1), because each genotype has its own phenotype. (3) Incomplete dominance is NOT the old blending theory — the alleles stay intact and re-emerge in offspring. (4) Multiple alleles means many alleles in the POPULATION, but still only TWO per individual. (5) Pleiotropy (one gene → many traits) and polygenic (many genes → one trait) are OPPOSITES — don't swap them. (6) Phenotype is genotype PLUS environment; identical genotypes can look different."
+    },
+    {
+      "type": "callout",
+      "variant": "tip",
+      "heading": "How AP Tests Non-Mendelian Inheritance",
+      "content": "Score-maximizing moves: (1) For ABO blood-type problems, remember three alleles with I^A and I^B codominant and both dominant to i — and be able to do crosses (e.g., I^A i × I^B i can give A, B, AB, and O children). (2) Diagnose the pattern from the data: intermediate heterozygote → incomplete dominance; both traits at once → codominance; continuous bell-curve trait → polygenic; modified dihybrid ratio (9:3:4) → epistasis; one gene many effects → pleiotropy. (3) For 'genetically identical organisms look different' or 'trait changes with conditions,' invoke environment + gene expression. (4) Expect 1:2:1 (not 3:1) ratios for incomplete/codominance crosses. (5) Connect to Unit 6 (environment affects gene EXPRESSION) and Unit 7 (continuous variation is the substrate for selection)."
+    },
+    {
+      "type": "deepdive",
+      "heading": "Why 'One Gene, One Trait' Is a Useful Lie",
+      "content": "The simple Mendelian picture — one gene, one trait, clean dominance — is how genetics is taught first, and for good reason: it's the foundational grammar. But it's also, strictly speaking, a useful lie, and seeing past it is what separates surface understanding from real biological insight. The truth this lesson reveals is that the genotype-to-phenotype map is a tangled web, not a set of straight wires. One gene can touch many traits (pleiotropy); one trait can draw on hundreds of genes (polygenic); genes mask, modify, and interact with one another (epistasis); and the environment edits the whole performance in real time. Most of the traits people actually care about — height, intelligence, disease risk, athletic ability, susceptibility to diabetes or heart disease — are multifactorial, shaped by many genes interacting with each other and with a lifetime of environment. There is no single 'gene for' most of them.\n\nThis has enormous real-world stakes. It's why personalized medicine is so hard and so promising at once: predicting a person's disease risk usually means weighing many gene variants (a 'polygenic risk score') together with diet, exercise, and exposures — not reading one decisive gene. It's why the history of trying to reduce complex human traits to single genes has so often been not just wrong but harmful, fueling pseudoscientific and discredited ideas like eugenics that ignored the messy reality of polygenic, environmentally-shaped inheritance. And it reframes the tired 'nature vs. nurture' argument: the honest answer is almost always 'both, interacting,' because genotype sets a range and environment determines the outcome within it.\n\nThe connections run through the whole course. That the environment shapes phenotype by altering gene EXPRESSION leads straight into Unit 6, where you'll see HOW genes are switched on and off — the temperature-sensitive rabbit's dark ears are really an enzyme being expressed only in the cold. The continuous variation that polygenic traits produce is exactly the smooth, heritable variation that natural selection acts on in Unit 7 — Darwin needed this kind of variation, and the polygenic, non-Mendelian patterns here are what supply it. And pleiotropy explains why evolution involves trade-offs: because one gene affects many traits, improving one can harm another, as with the sickle-cell allele that protects against malaria but causes anemia. Mendel gave us the clean starting rules; this lesson gives us the rich, realistic biology — and reality, as usual, is more interesting than the textbook's first approximation." }
+  ],
+  "aiContext": "This AP Biology Unit 5 lesson covers non-Mendelian inheritance and gene-environment interaction (CED topics 5.4-5.6): incomplete dominance, codominance, multiple alleles, pleiotropy, epistasis, polygenic inheritance, and the principle that phenotype = genotype + environment. Frame simple dominance as a special case, not the whole rule. The single most-tested confusion is incomplete dominance vs. codominance: incomplete = ONE intermediate/blended heterozygote phenotype (red+white→pink), codominance = BOTH alleles fully and separately expressed at once (blood type AB; roan cattle red AND white hairs). Both give a 1:2:1 phenotype ratio (not 3:1) in a heterozygote cross because each genotype has its own phenotype; stress that incomplete dominance is NOT old-style blending (alleles stay intact and re-emerge). Keep opposites straight: multiple alleles = many alleles in the population but still two per individual (ABO with I^A/I^B codominant, both dominant to i); pleiotropy = one gene → many traits (sickle-cell); polygenic = many genes → one continuously varying trait (height, skin color); epistasis = one gene masks another (Lab coat color, modified ratios like 9:3:4). Emphasize phenotype = genotype + environment (temperature-sensitive Himalayan rabbit/Siamese cat, hydrangea pH, identical twins) and that the environment acts by influencing gene EXPRESSION (link to Unit 6). Connect continuous polygenic variation as the substrate for natural selection (Unit 7) and pleiotropy to evolutionary trade-offs. On the exam expect: pattern-diagnosis from data, ABO blood-type crosses, 1:2:1 ratios, and genotype-plus-environment reasoning."
+}

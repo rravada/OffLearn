@@ -1,0 +1,31 @@
+{
+  "id": "ap-bio-signaling-changes-and-feedback",
+  "title": "Changes in Signaling and Feedback Mechanisms",
+  "subject": "AP Biology",
+  "chunks": [
+    { "id": "c1", "text": "Turning a signal off is as important as turning it on. A cell that could switch a response on but never off would be stuck in a permanent state, like an alarm that never stops, and would be unable to respond to new signals." },
+    { "id": "c2", "text": "Signal termination shuts a signal down once its job is done, returning the cell to its resting state so it is ready to respond to the next signal. A healthy signal is a transient pulse, not a permanent switch." },
+    { "id": "c3", "text": "Every activating step in a transduction pathway has a matching reversal. This reversibility is what makes a signal transient and lets the cell sense and respond to a changing environment." },
+    { "id": "c4", "text": "Phosphorylation by a kinase is reversed by dephosphorylation by a phosphatase, which removes phosphate groups and switches the target protein off. Kinases and phosphatases act as an on/off pair." },
+    { "id": "c5", "text": "The second messenger cAMP is broken down by the enzyme phosphodiesterase, ending the message. Caffeine slows this breakdown, prolonging the cAMP signal." },
+    { "id": "c6", "text": "A G protein switched on by binding GTP has a built-in timer: it slowly hydrolyzes its own GTP back to GDP, shutting itself off. A mutation that blocks this hydrolysis leaves the G protein locked on." },
+    { "id": "c7", "text": "When the ligand leaves the receptor or is degraded, the pathway is no longer triggered, and the reversal enzymes return everything to baseline." },
+    { "id": "c8", "text": "Negative feedback is a loop in which the output of a pathway inhibits an earlier step, slowing or stopping the process once enough product is made. 'Negative' means it pushes back against the change, not that it is bad." },
+    { "id": "c9", "text": "Negative feedback is like a thermostat: when a room reaches its set temperature, the heater shuts off; when it cools, the heater turns back on. The output feeds back to hold the variable near a set point." },
+    { "id": "c10", "text": "Negative feedback is the master mechanism of homeostasis, the maintenance of stable internal conditions despite a changing environment. It controls body temperature, blood pH, water balance, and blood glucose." },
+    { "id": "c11", "text": "Blood glucose control is a negative-feedback example: after a meal, rising glucose triggers insulin, which makes cells take up glucose, lowering blood glucose; when glucose drops too low, glucagon raises it. The opposing hormones keep glucose in a narrow range." },
+    { "id": "c12", "text": "The signature of negative feedback is that it is self-limiting and stabilizing: it resists change and returns the system toward a set point. A process that shuts itself down as its product accumulates is negative feedback." },
+    { "id": "c13", "text": "Positive feedback is a loop in which the output amplifies the same process, pushing the change further in the same direction instead of opposing it. 'Positive' means it reinforces the change, not that it is good." },
+    { "id": "c14", "text": "Childbirth is the classic positive-feedback example: the baby's head stretches the cervix, triggering oxytocin, which causes contractions, which push harder on the cervix, releasing more oxytocin, escalating until delivery." },
+    { "id": "c15", "text": "Other positive-feedback examples include blood clotting (activated platelets recruit more platelets), the firing of a nerve impulse (opening some sodium channels opens more), and hormone surges during ovulation." },
+    { "id": "c16", "text": "The signature of positive feedback is that it is self-amplifying and destabilizing: it accelerates a change rather than opposing it and needs an outside event, such as the baby being born or the wound being sealed, to stop it." },
+    { "id": "c17", "text": "To classify a feedback loop, identify the stimulus and the response, then ask whether the output opposes the original change (negative feedback) or amplifies it (positive feedback), and predict whether it stabilizes or drives the process to completion." },
+    { "id": "c18", "text": "A common misconception is that 'negative' feedback is harmful and 'positive' feedback is beneficial. The terms describe direction only: negative opposes the change (the common, stabilizing case), positive reinforces it (the rare special case)." },
+    { "id": "c19", "text": "Most body systems use negative feedback; positive feedback is the rare special case. If a scenario describes maintaining a stable level, it is almost always negative feedback." },
+    { "id": "c20", "text": "A receptor locked permanently on (active even without a ligand) makes the cell behave as if it constantly receives the signal. If the signal says 'divide,' the cell divides continuously, a common route to cancer." },
+    { "id": "c21", "text": "A G protein that cannot hydrolyze its GTP stays active and keeps the pathway on long after the ligand is gone. Cholera toxin works this way, locking a G protein on and causing massive fluid loss." },
+    { "id": "c22", "text": "A nonfunctional receptor or a missing signal molecule means the pathway never starts, so there is no response even if the hormone is present. Insulin resistance in type 2 diabetes is an example where cells cannot respond to insulin." },
+    { "id": "c23", "text": "To predict the effect of a mutation or drug, find where it acts in the reception-transduction-response chain and ask whether it forces the pathway permanently on (over-response, a lost off-switch) or breaks it (no response, a lost on-step)." },
+    { "id": "c24", "text": "Feedback operates at every scale: feedback inhibition in metabolic pathways, homeostatic loops for pH and glucose in the body, and predator-prey regulation in ecosystems. Cancer is a failure of the off-switches that limit cell division, and diabetes is a breakdown of the glucose negative-feedback loop." }
+  ]
+}

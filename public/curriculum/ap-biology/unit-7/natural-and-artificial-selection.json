@@ -1,0 +1,115 @@
+{
+  "id": "ap-bio-u7-natural-and-artificial-selection",
+  "title": "Natural Selection and Artificial Selection",
+  "subject": "AP Biology",
+  "unit": "Natural Selection",
+  "track": "ap",
+  "difficulty": "ap",
+  "duration": "50 min",
+  "objectives": [
+    "Explain Darwin's theory of evolution by natural selection and its required conditions",
+    "Distinguish fitness as reproductive success from everyday notions of 'strength'",
+    "Compare natural, artificial, and sexual selection and the patterns of directional, stabilizing, and disruptive selection",
+    "Use real examples (antibiotic resistance, peppered moths, beak depth) to explain selection acting on populations over time"
+  ],
+  "sections": [
+    {
+      "type": "explanation",
+      "heading": "The Idea That Organized All of Biology",
+      "content": "Imagine you're a dog breeder who wants floppier ears. Each generation you let only the floppiest-eared dogs reproduce, and over many generations the whole line drifts toward floppy ears. You acted as a selective filter, deciding who got to breed. Darwin's revolutionary insight was that NATURE does the same thing — without any goal or chooser. The environment itself acts as the filter, and over enough generations it reshapes whole populations. This single idea, natural selection, is the thread that ties together every other topic in biology, which is why the geneticist Dobzhansky famously said, 'Nothing in biology makes sense except in the light of evolution.'\n\nEvolution simply means a change in the heritable characteristics (the allele frequencies) of a POPULATION over generations. Notice that word: population. Individuals do not evolve — a single moth cannot change its own genes to become darker. Populations evolve, as the proportions of different alleles shift from one generation to the next. This is the single most important and most-tested conceptual point in the entire unit, and we'll return to it repeatedly.\n\nDarwin's mechanism, natural selection, explains HOW populations change to become better suited to their environments. It does not require foresight, effort, or a goal. It emerges automatically whenever a few simple conditions are met — conditions that are almost always true in the real world. The next section lays out exactly what those conditions are."
+    },
+    {
+      "type": "explanation",
+      "heading": "The Logic of Natural Selection",
+      "content": "Natural selection follows from four observations that, taken together, make evolutionary change almost inevitable. First, VARIATION: individuals in a population differ in their traits (some finches have deeper beaks, some bacteria tolerate a drug better). This variation ultimately traces back to mutation and to the recombination of meiosis (Units 5 and 6). Second, HERITABILITY: some of that variation is genetic and is passed from parents to offspring. Traits that aren't heritable — a scar, a suntan — can't drive evolution because they aren't inherited.\n\nThird, OVERPRODUCTION and the struggle to survive: organisms produce far more offspring than the environment can support, so not all survive and reproduce. Resources are limited, and there is competition. Fourth, DIFFERENTIAL REPRODUCTIVE SUCCESS: because individuals vary and resources are limited, those whose inherited traits give them an edge in the current environment tend to survive and reproduce MORE, passing on more copies of their advantageous alleles.\n\nPut these together and the consequence is automatic: advantageous heritable traits become more common in the population over generations, while disadvantageous ones become rarer. The population becomes better matched (adapted) to its environment. Crucially, the environment does not CREATE the helpful variation — mutation already produced it randomly (Unit 6). Selection simply edits an existing menu, favoring whichever variants happen to work best right now. An adaptation is any heritable trait that, having been favored by selection, increases an organism's survival and reproduction in its environment."
+    },
+    {
+      "type": "callout",
+      "variant": "warning",
+      "heading": "'Fittest' Does NOT Mean Strongest or Biggest",
+      "content": "The single biggest misconception in this unit: in biology, FITNESS means reproductive success — how many surviving, fertile offspring an organism leaves — NOT strength, size, speed, or health. A small, drab, 'weak'-looking organism that leaves many offspring has HIGHER fitness than a large, impressive one that leaves few. Also avoid these traps: (1) Individuals do NOT evolve; POPULATIONS evolve (allele frequencies change). (2) Organisms do not evolve traits because they 'need' or 'want' them — mutation supplies variation RANDOMLY, before any need, and selection then filters it. (3) Selection has no goal, no foresight, and no progress toward 'higher' forms. (4) Don't say an individual 'adapts' to its environment over its lifetime in the evolutionary sense — populations adapt across generations. (5) Acquired traits (muscles from exercise) are not heritable and don't drive evolution."
+    },
+    {
+      "type": "quiz",
+      "question": "In evolutionary biology, an organism with high 'fitness' is best described as one that...",
+      "options": [
+        "is the strongest and largest in its population",
+        "lives the longest regardless of offspring",
+        "produces the most surviving, fertile offspring in its environment",
+        "has the most mutations"
+      ],
+      "correctIndex": 2,
+      "explanation": "Fitness is reproductive success — the number of surviving, fertile offspring an organism contributes to the next generation — not strength, size, or lifespan. An organism that survives but never reproduces has zero fitness. This is the most commonly tested misconception in the evolution unit."
+    },
+    {
+      "type": "explanation",
+      "heading": "Artificial and Sexual Selection",
+      "content": "Natural selection has close cousins that work by the same logic but with a different 'selector.' In artificial selection (selective breeding), HUMANS choose which individuals reproduce, deliberately favoring traits we find useful or attractive. Every breed of dog, every crop variety, and the wild mustard plant transformed into broccoli, cauliflower, kale, and cabbage are products of artificial selection. Darwin used artificial selection as his opening argument: if humans can reshape species so dramatically in a few centuries of breeding, then nature, acting over millions of years, can do far more. The mechanism is identical — differential reproduction of heritable variation — only the selecting agent differs (a breeder instead of the environment).\n\nSexual selection is a special form of natural selection driven by success in obtaining MATES rather than mere survival. It explains traits that seem to hurt survival — a peacock's enormous tail, a stag's heavy antlers, elaborate birdsong. These traits persist because they boost mating success enough to outweigh their survival cost: a peacock with a spectacular tail may be more visible to predators, but if peahens strongly prefer big tails, the genes for big tails spread anyway. Sexual selection often produces sexual dimorphism (males and females looking different) and can favor either flashy ornaments (to attract mates) or weapons (to compete with rivals).\n\nThe unifying message: whenever heritable variation leads to differential reproduction — whether the filter is the environment, a human breeder, or mate choice — allele frequencies shift and the population evolves."
+    },
+    {
+      "type": "table",
+      "heading": "Three Patterns of Natural Selection",
+      "headers": ["Pattern", "What is favored", "Effect on the trait distribution", "Example"],
+      "rows": [
+        ["Directional", "One extreme of the range", "The whole curve shifts toward that extreme", "Beak depth increasing in a drought; antibiotic resistance"],
+        ["Stabilizing", "The intermediate (average) phenotype", "Extremes are selected against; variation narrows", "Human birth weight (very small and very large babies fare worse)"],
+        ["Disruptive", "Both extremes, against the middle", "The curve splits toward both ends", "Beak sizes splitting where only large and small seeds exist"]
+      ]
+    },
+    {
+      "type": "example",
+      "heading": "Watching Selection Happen: Antibiotic Resistance",
+      "content": "Antibiotic resistance is evolution by natural selection unfolding fast enough to observe — and a perfect case to reason through carefully, because students so often phrase it wrong.\n\nStep 1 — Variation already exists. In a large bacterial population, random mutations (Unit 6) have produced a few cells that happen to carry an allele making them resistant to a particular antibiotic. These mutations arose BEFORE the antibiotic was ever applied — they were not created by the drug. This is the crux.\n\nStep 2 — The environment changes (selection pressure applied). A patient takes the antibiotic. Now the environment kills susceptible bacteria, while the rare pre-existing resistant cells survive. The drug is the selective filter.\n\nStep 3 — Differential reproduction. The susceptible cells die; the resistant survivors reproduce, passing the resistance allele to their offspring (and, in bacteria, sometimes to neighbors via plasmid transfer). The frequency of the resistance allele in the population rises sharply.\n\nStep 4 — The population has evolved. After several rounds, most of the population is resistant — the allele frequency shifted across generations. Notice the correct framing the exam demands: the antibiotic did NOT cause bacteria to 'become' resistant or 'learn' resistance; it SELECTED among variation that mutation had already produced. Saying 'the bacteria mutated in order to survive' or 'the antibiotic made them resistant' loses credit. The right sentence is: 'Pre-existing resistant variants survived and reproduced, so the resistance allele increased in frequency.' This is directional selection, it's why finishing prescriptions and limiting antibiotic overuse matters, and it kills tens of thousands of people a year — evolution with direct public-health stakes."
+    },
+    {
+      "type": "steps",
+      "heading": "How a Population Evolves by Natural Selection",
+      "steps": [
+        {
+          "title": "Heritable variation exists",
+          "content": "Within the population, individuals differ in traits, and some of that variation is genetic (heritable). The variation arises from mutation and the recombination of sexual reproduction — randomly, with respect to need."
+        },
+        {
+          "title": "A selection pressure acts",
+          "content": "Some feature of the environment (a predator, a drought, a drug, limited food, mate preference) means not all individuals survive and reproduce equally. The environment 'tests' the existing variation."
+        },
+        {
+          "title": "Differential reproductive success",
+          "content": "Individuals whose heritable traits suit the current environment leave more surviving, fertile offspring than others. They pass more copies of their advantageous alleles to the next generation."
+        },
+        {
+          "title": "Allele frequencies shift over generations",
+          "content": "Because the favored alleles are passed on more, they become more common in the population over time, while disfavored alleles become rarer. The population becomes better adapted — it has evolved."
+        }
+      ]
+    },
+    {
+      "type": "quiz",
+      "question": "A population of beetles lives on tree bark. After a sooty pollutant darkens the bark, the proportion of dark beetles rises over several generations. Which statement describes this correctly?",
+      "options": [
+        "Individual beetles changed their color to match the darker bark",
+        "The beetles mutated because they needed camouflage",
+        "Dark beetles were better camouflaged, survived and reproduced more, so the dark allele increased in frequency in the population",
+        "The pollutant directly caused the beetles' genes to become dark"
+      ],
+      "correctIndex": 2,
+      "explanation": "Selection acts on pre-existing heritable variation: dark beetles were already present, and after the bark darkened they were better camouflaged from predators, so they survived and reproduced more, raising the dark allele's frequency in the POPULATION over generations. Individuals don't change their own genes, and mutation isn't directed by need — this is directional selection (echoing the classic peppered moth case)."
+    },
+    {
+      "type": "keypoint",
+      "content": "Evolution is a change in a population's allele frequencies over generations, and natural selection drives it whenever there is heritable variation, overproduction of offspring, and differential reproductive success. Fitness means reproductive success (not strength); selection edits pre-existing random variation rather than creating traits on demand; and artificial and sexual selection work by the same logic with a different selecting agent."
+    },
+    {
+      "type": "callout",
+      "variant": "tip",
+      "heading": "How AP Tests Natural Selection",
+      "content": "Point-winners: (1) Define fitness as REPRODUCTIVE SUCCESS and avoid 'strength' language. (2) Always describe selection at the POPULATION level over generations (allele-frequency change), never as an individual changing its own genes. (3) State that mutation supplies variation RANDOMLY, before any need — the environment selects, it does not direct. (4) For data on beak depth, moth color, or resistance, identify the selection pattern (directional/stabilizing/disruptive) and explain the cause-and-effect: variation → selection pressure → differential reproduction → allele-frequency change. (5) Use precise verbs: 'selected for/against,' 'increased in frequency,' not 'tried to,' 'wanted to,' or 'learned.' (6) Command words: 'explain'/'justify' want the full causal chain, not just naming natural selection."
+    },
+    {
+      "type": "deepdive",
+      "heading": "Evolution You Can See — and Why It Matters to You",
+      "content": "Natural selection is sometimes wrongly imagined as too slow to witness, but some of the most powerful evidence is happening right now, on human timescales. On the Galápagos, biologists Peter and Rosemary Grant measured beak depth in a finch population through a severe drought: when only large, tough seeds remained, birds with deeper, stronger beaks survived and reproduced, and average beak depth in the population measurably increased within a single generation — then partly reversed when wetter years brought small seeds back. They watched directional selection oscillate in the wild, trait distributions shifting in real time. The peppered moth tells the same story across the Industrial Revolution: soot-darkened trees favored dark moths, then clean-air laws reversed the trend as lichens returned and pale moths were again better camouflaged.\n\nThe stakes are intensely practical. Antibiotic resistance — a textbook case of directional selection — is a slow-motion global health crisis: drug-resistant infections already kill over a million people a year, and every unnecessary prescription applies a selection pressure that favors resistant strains. Pesticide resistance in insects and herbicide resistance in weeds threaten the food supply by the identical mechanism. Cancer itself is an evolutionary process: a tumor is a population of cells with heritable variation, and chemotherapy selects for resistant cancer cells, which is why tumors so often return resistant to the first drug. Even the rapid evolution of viruses — new flu strains each year, new variants of SARS-CoV-2 — is natural selection acting on populations with heritable variation, which is why vaccines must be updated.\n\nThis is why evolution is the organizing framework of biology and medicine, not an abstract historical claim. Understanding that populations carry standing variation, that environments select among that variation, and that allele frequencies shift across generations lets doctors steward antibiotics wisely, lets farmers rotate strategies to slow resistance, and lets epidemiologists anticipate the next viral variant. The same four conditions — variation, heritability, overproduction, differential reproduction — that shaped finch beaks over millennia are reshaping bacteria, tumors, and viruses on the timescale of a hospital stay. Darwin's idea isn't just history; it's a tool you'll use to read the living world."
+    }
+  ],
+  "aiContext": "This AP Biology Unit 7 lesson introduces evolution by natural selection (CED topics 7.1-7.3, 7.10), the highest-weighted unit on the exam and the organizing framework for all of biology. The absolute core, and the most-tested misconception set: EVOLUTION is a change in a POPULATION's allele frequencies over generations — individuals do NOT evolve; populations do. FITNESS means reproductive success (number of surviving, fertile offspring), NOT strength, size, speed, or health. Natural selection follows automatically from four conditions: heritable variation, overproduction of offspring (struggle for limited resources), and differential reproductive success, producing adaptation. Stress that mutation/recombination supply variation RANDOMLY and BEFORE any need (links to Unit 6) — the environment SELECTS among existing variation; it does not create or direct it. Students must phrase antibiotic/pesticide resistance correctly: pre-existing resistant variants survived and reproduced, raising the allele's frequency — NOT 'bacteria mutated in order to survive' or 'the drug made them resistant.' Artificial selection (humans choose who breeds; dog breeds, crops from wild mustard) and sexual selection (mate-choice driving traits like the peacock's tail, producing sexual dimorphism) work by the same logic with a different selecting agent. Three patterns: directional (one extreme favored, curve shifts — drought beak depth, resistance), stabilizing (intermediate favored, extremes selected against — human birth weight), disruptive (both extremes favored, middle disfavored). Real cases to use: Grants' Galápagos finch beak measurements, peppered moths, antibiotic/pesticide/herbicide resistance, cancer as an evolutionary process, viral evolution requiring updated vaccines. Key misconceptions to counter: 'survival of the fittest = strongest,' individuals evolving/adapting in their lifetime, need-directed mutation, evolution having a goal or progress, and acquired (non-heritable) traits driving evolution. Insist on precise verbs ('selected for/against,' 'increased in frequency'). On the exam expect data-interpretation of selection patterns, correct causal explanations of resistance, and population-level allele-frequency reasoning — setting up Hardy-Weinberg next."
+}

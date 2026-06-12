@@ -1,0 +1,30 @@
+{
+  "id": "ap-bio-population-ecology",
+  "title": "Population Ecology and Growth Models",
+  "subject": "AP Biology",
+  "chunks": [
+    { "id": "c1", "text": "A population is a group of individuals of the same species living in the same area and able to interbreed. Population ecology asks how and why a population's size changes over time." },
+    { "id": "c2", "text": "Population size increases through births and immigration (individuals moving in) and decreases through deaths and emigration (individuals moving out). The population grows when births plus immigration exceed deaths plus emigration." },
+    { "id": "c3", "text": "The central tension in population growth is between biotic potential (the maximum growth rate under ideal conditions) and environmental resistance (factors like limited food, predators, disease, and space that slow growth)." },
+    { "id": "c4", "text": "Exponential growth occurs when resources are unlimited: the population grows faster and faster, producing a J-shaped curve. The per-individual growth rate stays constant, so more individuals means more added each period." },
+    { "id": "c5", "text": "Exponential growth is real but temporary, seen in bacteria in fresh broth or a species colonizing a new empty habitat, because no environment offers unlimited resources for long." },
+    { "id": "c6", "text": "Logistic growth starts fast but slows as the population gets crowded and resources become scarce, eventually leveling off. This produces an S-shaped (sigmoidal) curve." },
+    { "id": "c7", "text": "Carrying capacity, symbolized K, is the maximum population size the environment can sustainably support. At K, births roughly equal deaths and the population stops growing; above K, deaths exceed births and the population falls back toward K." },
+    { "id": "c8", "text": "As a population approaches K, the per-individual growth rate decreases because each individual gets a smaller share of limited resources. Growth is fastest in the middle of the S-curve, not when the population is largest." },
+    { "id": "c9", "text": "Exponential growth is J-shaped with unlimited resources and accelerates without limit; logistic growth is S-shaped with limited resources and levels off at carrying capacity K. This is the most-tested distinction in population ecology." },
+    { "id": "c10", "text": "Density-dependent limiting factors have a stronger effect as population density increases. They include competition for food, water, and space, the spread of disease and parasites, increased predation, and the buildup of waste and stress." },
+    { "id": "c11", "text": "Density-dependent factors create negative feedback that brings a population toward K: the denser it gets, the harder these brakes press, until growth halts. They produce the leveling-off of logistic growth." },
+    { "id": "c12", "text": "Density-independent factors affect a population regardless of its density, hitting a sparse population as hard as a crowded one. These are typically abiotic catastrophes like hurricanes, floods, wildfires, hard freezes, and droughts." },
+    { "id": "c13", "text": "A killing frost wipes out the same fraction of insects whether the population is large or small, because it does not depend on how many there are. Density-independent factors often cause sudden, sharp crashes unrelated to carrying capacity." },
+    { "id": "c14", "text": "To classify a limiting factor, ask whether its impact depends on crowding. If yes (competition, disease, predation) it is density-dependent; if no (a storm or freeze) it is density-independent." },
+    { "id": "c15", "text": "On a population growth graph, a curve that levels off is logistic (S-shaped) and the plateau is the carrying capacity K. Slight oscillation around the plateau shows the population overshooting and dipping around K." },
+    { "id": "c16", "text": "The steepest part of an S-curve, in the middle, is where the population grows fastest — not at the top — because early on there are few reproducers and near K resources are scarce." },
+    { "id": "c17", "text": "r-selected species maximize the growth rate r: they reproduce early, fast, and in huge numbers with little parental care, producing many small cheap offspring of which few survive. They are typically small, short-lived, and live in unstable environments." },
+    { "id": "c18", "text": "K-selected species live near carrying capacity: they reproduce later and slowly, produce few large offspring, and invest heavily in parental care so most offspring survive. They are typically larger, longer-lived, and favor stable environments." },
+    { "id": "c19", "text": "Survivorship curves plot the fraction of a cohort still alive across the lifespan. Type I (late loss) stays high through early and middle life and drops in old age, typical of K-selected species like humans and large mammals." },
+    { "id": "c20", "text": "Type III (early loss) survivorship plummets early as most offspring die young, then flattens for the few survivors. It is typical of r-selected species producing many neglected offspring, like oysters and many fish and plants." },
+    { "id": "c21", "text": "Type II (constant loss) survivorship is a straight diagonal showing a roughly constant death rate at every age regardless of how old the individual is, seen in some birds, rodents, and lizards." },
+    { "id": "c22", "text": "The snowshoe hare and lynx cycle shows density dependence: hares boom, well-fed lynx rise, predation and crowding crash the hares, then the lynx crash, repeating roughly every ten years around shifting carrying capacities." },
+    { "id": "c23", "text": "The human population grew slowly for most of history, then advances in agriculture, sanitation, and medicine lowered death rates and sent it into near-exponential growth from 1 billion around 1800 to 8 billion today, raising the question of Earth's carrying capacity." }
+  ]
+}

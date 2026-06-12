@@ -1,0 +1,179 @@
+{
+  "id": "ap-bio-unit7-review",
+  "title": "Unit 7 Review: Natural Selection",
+  "subject": "AP Biology",
+  "unit": "Natural Selection",
+  "type": "unit-review",
+  "questionsPerAttempt": 10,
+  "isAssessment": true,
+  "bank": [
+    {
+      "question": "In evolutionary biology, an organism's 'fitness' is best defined as its...",
+      "options": ["physical strength and size", "lifespan", "number of surviving, fertile offspring", "number of mutations it carries"],
+      "correctIndex": 2,
+      "explanation": "Fitness is reproductive success — the number of surviving, fertile offspring contributed to the next generation — not strength, size, or lifespan. An organism that survives but never reproduces has zero fitness. This is the most commonly tested misconception in the unit."
+    },
+    {
+      "question": "Which statement about evolution is correct?",
+      "options": ["Individuals evolve during their lifetimes", "Populations evolve as allele frequencies change over generations", "Organisms mutate because they need a trait", "Natural selection has a goal of producing higher forms"],
+      "correctIndex": 1,
+      "explanation": "Evolution is a change in a population's allele frequencies over generations — populations evolve, not individuals. Mutation supplies variation randomly (not because it is needed), and natural selection has no goal or foresight; it simply favors whatever variants reproduce most in the current environment."
+    },
+    {
+      "question": "A population of bacteria is exposed to an antibiotic, and over several generations the population becomes mostly resistant. What is the correct explanation?",
+      "options": ["The antibiotic caused the bacteria to mutate into resistant forms", "The bacteria developed resistance because they needed it", "Pre-existing resistant variants survived and reproduced, raising the resistance allele's frequency", "Individual bacteria learned to resist the drug"],
+      "correctIndex": 2,
+      "explanation": "Resistance evolves by natural selection acting on pre-existing variation: random mutations had already produced a few resistant cells before the drug was applied. The antibiotic killed susceptible cells while resistant survivors reproduced, increasing the resistance allele's frequency. The drug selected among existing variation; it did not create or direct it."
+    },
+    {
+      "question": "Over generations, the average beak depth in a finch population increases during a drought when only large, tough seeds are available. This is an example of...",
+      "options": ["stabilizing selection", "directional selection", "disruptive selection", "genetic drift"],
+      "correctIndex": 1,
+      "explanation": "Directional selection favors one extreme of a trait, shifting the whole distribution toward it — here, deeper beaks that can crack tough seeds. Stabilizing selection favors the average, disruptive favors both extremes, and drift is random change unrelated to the trait's usefulness."
+    },
+    {
+      "question": "Human birth weight historically showed higher infant mortality at both very low and very high weights, favoring intermediate weights. This illustrates...",
+      "options": ["directional selection", "disruptive selection", "stabilizing selection", "artificial selection"],
+      "correctIndex": 2,
+      "explanation": "Stabilizing selection favors the intermediate phenotype and selects against both extremes, narrowing variation. Very small and very large babies historically fared worse, so intermediate birth weights were favored — the classic example of stabilizing selection."
+    },
+    {
+      "question": "A peacock's large, showy tail makes it more visible to predators, yet the trait persists. What best explains this?",
+      "options": ["Genetic drift", "Sexual selection, because the tail increases mating success enough to outweigh its survival cost", "Stabilizing selection", "Gene flow"],
+      "correctIndex": 1,
+      "explanation": "Sexual selection is natural selection driven by success in obtaining mates. Even though a large tail hurts survival, if peahens prefer big tails, the genes for them spread because they boost reproductive success. This explains many costly ornaments and weapons and often produces sexual dimorphism."
+    },
+    {
+      "question": "The Hardy-Weinberg principle describes a population that is NOT evolving. Which is one of its required conditions?",
+      "options": ["Strong natural selection", "Frequent gene flow", "A very large population (no genetic drift)", "Frequent mutation"],
+      "correctIndex": 2,
+      "explanation": "Hardy-Weinberg equilibrium requires no mutation, no natural selection, no gene flow, random mating, and a very large population (so drift is negligible). These are the conditions for NO evolution. Real populations violate them, so deviations from Hardy-Weinberg reveal that evolution is occurring."
+    },
+    {
+      "question": "In a population at Hardy-Weinberg equilibrium, 9% of individuals show a recessive trait (q² = 0.09). What is the frequency of the recessive allele, q?",
+      "options": ["0.09", "0.30", "0.81", "0.18"],
+      "correctIndex": 1,
+      "explanation": "q is the square root of q²: q = √0.09 = 0.30. A common error is to report 0.09 (that's q², the homozygous recessive frequency) as the allele frequency. Taking the square root is essential."
+    },
+    {
+      "question": "In a Hardy-Weinberg population, q = 0.2. What fraction of the population is expected to be heterozygous (carriers)?",
+      "options": ["0.04", "0.16", "0.32", "0.64"],
+      "correctIndex": 2,
+      "explanation": "First p = 1 − q = 0.8. Heterozygotes are 2pq = 2(0.8)(0.2) = 0.32. (For reference p² = 0.64 and q² = 0.04, and 0.64 + 0.32 + 0.04 = 1.) Don't confuse 2pq (carriers) with q² (affected)."
+    },
+    {
+      "question": "A small island population's allele frequencies change unpredictably from generation to generation, with no selective advantage to the changes. This is most likely due to...",
+      "options": ["directional selection", "genetic drift", "gene flow", "stabilizing selection"],
+      "correctIndex": 1,
+      "explanation": "Genetic drift is random change in allele frequencies due to chance, and it is strongest in small populations. Unlike natural selection, drift is not adaptive — frequencies change by luck, not fitness. Founder effects and bottlenecks are special cases of drift in small populations."
+    },
+    {
+      "question": "After a flood kills most of a population at random, the survivors carry only a fraction of the original genetic variation. This is an example of...",
+      "options": ["the founder effect", "a population bottleneck", "gene flow", "stabilizing selection"],
+      "correctIndex": 1,
+      "explanation": "A population bottleneck occurs when a disaster drastically and randomly reduces population size, so survivors carry only a sample of the original gene pool and variation is lost. It is a form of genetic drift; cheetahs show classic bottleneck effects with very low diversity."
+    },
+    {
+      "question": "Migration of individuals between two populations introduces alleles and tends to make the populations more genetically similar. This mechanism is called...",
+      "options": ["genetic drift", "gene flow", "natural selection", "nonrandom mating"],
+      "correctIndex": 1,
+      "explanation": "Gene flow is the movement of alleles between populations via migrating individuals or dispersing gametes/pollen. It tends to make separate populations more genetically similar and can counteract divergence — which is why reduced gene flow is important for speciation."
+    },
+    {
+      "question": "A human arm, a whale flipper, and a bat wing all contain the same arrangement of bones despite different functions. These are...",
+      "options": ["analogous structures", "homologous structures showing common ancestry", "vestigial structures", "convergent structures"],
+      "correctIndex": 1,
+      "explanation": "Same underlying structure with different functions, inherited from a common ancestor, defines homologous structures — strong evidence of common ancestry (divergent evolution). Analogous structures, by contrast, have similar function but different structure and arise by convergent evolution."
+    },
+    {
+      "question": "A bird's wing and an insect's wing both enable flight but are built completely differently and share no winged common ancestor. They are...",
+      "options": ["homologous, showing close relatedness", "analogous, resulting from convergent evolution", "vestigial structures", "evidence the bird evolved from the insect"],
+      "correctIndex": 1,
+      "explanation": "Analogous structures have similar function but different underlying structure and evolved independently in unrelated lineages — the product of convergent evolution under similar selection pressures (flight). They reflect similar environments, not close relatedness."
+    },
+    {
+      "question": "Comparing a protein, humans differ from chimpanzees at 1 amino acid, from mice at 27, and from frogs at 67. What does this indicate?",
+      "options": ["Frogs are the most closely related to humans", "Humans share the most recent common ancestor with chimpanzees", "Mice are more 'evolved' than frogs", "Chimpanzees evolved from humans"],
+      "correctIndex": 1,
+      "explanation": "Fewer molecular differences indicate a more recent common ancestor and closer relatedness. With the fewest differences (1), chimpanzees share the most recent common ancestor with humans; frogs, with the most differences, are the most distantly related. More differences means more time since divergence, not 'more evolved.'"
+    },
+    {
+      "question": "The human appendix and the reduced hip bones of whales are examples of...",
+      "options": ["analogous structures", "vestigial structures, remnants of features used by ancestors", "homologous structures with new functions", "transitional fossils"],
+      "correctIndex": 1,
+      "explanation": "Vestigial structures are reduced, seemingly functionless remnants of features that were useful in an ancestor. They make sense only as evolutionary leftovers (descent with modification) — there would be no reason to 'design' an organism with the useless remains of a relative's working structure."
+    },
+    {
+      "question": "On a phylogenetic tree, how do you determine which two species are most closely related?",
+      "options": ["The two tips drawn closest together on the page", "The two tips that share the most recent common ancestor", "The tip farthest to the right", "The species with the longest branch"],
+      "correctIndex": 1,
+      "explanation": "Relatedness is read by the most recent common ancestor — the two tips whose branches meet most recently when traced backward. Tip position on the page is meaningless because branches rotate freely at nodes, and no tip is 'higher' or a goal of evolution."
+    },
+    {
+      "question": "Why do biologists use an outgroup when constructing a cladogram?",
+      "options": ["To make the tree larger", "To identify which character states are ancestral versus derived", "Because the outgroup is the most advanced taxon", "To measure the exact age of each branch"],
+      "correctIndex": 1,
+      "explanation": "An outgroup branched off earliest, so its trait states are taken as ancestral. This lets biologists identify shared DERIVED characters (new traits) in the ingroup, and those derived characters define clades and reveal the branching order."
+    },
+    {
+      "question": "A clade (monophyletic group) is defined as...",
+      "options": ["any group of similar-looking species", "an ancestor plus all of its descendants", "the two species closest together on a tree", "all species living in the same habitat"],
+      "correctIndex": 1,
+      "explanation": "A clade is an ancestor together with ALL of its descendants — a complete branch that could be snipped off at a single cut. Leaving out some descendants does not make a valid clade. Mammals and birds are examples of clades."
+    },
+    {
+      "question": "Which statement about reading phylogenetic trees is correct?",
+      "options": ["The species on the far right is the most evolved", "Living species at the tips evolved from the other living tip species", "Branches can be rotated at nodes without changing the relationships shown", "Tip adjacency always indicates closest relatives"],
+      "correctIndex": 2,
+      "explanation": "Branches can rotate freely at any node like a hanging mobile without changing the tree's meaning, so tip order and adjacency carry no information. No tip is 'most evolved,' and living tips share common ancestors (internal nodes) rather than evolving from one another."
+    },
+    {
+      "question": "Under the biological species concept, why are a horse and a donkey considered separate species even though they can mate?",
+      "options": ["They live in different countries", "Their offspring (mules) are sterile, so they cannot produce fertile offspring together", "They look different", "Horses are larger"],
+      "correctIndex": 1,
+      "explanation": "The biological species concept requires the production of FERTILE, viable offspring. A horse and donkey produce a mule, but mules are sterile, so the two cannot mix their gene pools across generations — they remain separate species. The key word is 'fertile.'"
+    },
+    {
+      "question": "A mountain range rises and splits a population, which then diverges into two species that can no longer interbreed. This is...",
+      "options": ["sympatric speciation", "allopatric speciation", "convergent evolution", "gene flow"],
+      "correctIndex": 1,
+      "explanation": "Allopatric speciation occurs when a geographic barrier (here, a mountain range) physically separates populations and stops gene flow, after which each evolves independently until reproductively isolated. Sympatric speciation occurs without geographic separation."
+    },
+    {
+      "question": "Two populations occasionally mate, but the hybrid offspring are always sterile. This isolating barrier is...",
+      "options": ["prezygotic (temporal isolation)", "prezygotic (gametic isolation)", "postzygotic (reduced hybrid fertility)", "not an isolating barrier at all"],
+      "correctIndex": 2,
+      "explanation": "A hybrid zygote formed and grew into an adult, so the barrier acts AFTER the zygote — it is postzygotic. Because the hybrid is sterile, it is specifically reduced hybrid fertility (like the mule). Prezygotic barriers would have prevented fertilization in the first place."
+    },
+    {
+      "question": "Two frog populations live in the same area but breed at different times of year, so they never mate. This is...",
+      "options": ["a postzygotic barrier", "temporal isolation, a prezygotic barrier", "reduced hybrid viability", "gene flow"],
+      "correctIndex": 1,
+      "explanation": "Breeding at different times prevents the groups from ever mating, so no zygote forms — a prezygotic barrier, specifically temporal isolation. Because no hybrid is ever produced, it cannot be a postzygotic barrier."
+    },
+    {
+      "question": "Punctuated equilibrium differs from gradualism in that it proposes...",
+      "options": ["a different mechanism than natural selection", "long periods of little change interrupted by rapid bursts of speciation", "that species never change", "that evolution always proceeds at a constant slow rate"],
+      "correctIndex": 1,
+      "explanation": "Punctuated equilibrium describes a TEMPO: long periods of stasis interrupted by rapid bursts of change, fitting the fossil record's pattern of sudden appearances. Gradualism describes slow, steady change. Both describe the RATE of evolution, not a different mechanism."
+    },
+    {
+      "question": "After a mass extinction empties many ecological niches, surviving lineages rapidly diversify to fill them. This burst of speciation is called...",
+      "options": ["convergent evolution", "adaptive radiation", "genetic drift", "coevolution"],
+      "correctIndex": 1,
+      "explanation": "Adaptive radiation is the rapid diversification of a lineage into many species that fill newly available niches, often following a mass extinction. The diversification of mammals after the dinosaurs went extinct is the classic example."
+    },
+    {
+      "question": "What did the Miller-Urey experiment demonstrate about the origin of life?",
+      "options": ["That living cells can form from gas within days", "That organic monomers like amino acids can form abiotically from inorganic molecules with an energy source", "That natural selection produced the first cells", "That life came from another planet"],
+      "correctIndex": 1,
+      "explanation": "Miller and Urey produced amino acids — protein monomers — from simple inorganic gases and water using electric sparks for energy, showing a plausible first step: the abiotic synthesis of life's building blocks. It did not create living cells, and it concerns the origin of life's chemistry, not natural selection."
+    },
+    {
+      "question": "Why is RNA, rather than DNA or protein, hypothesized to have been the first self-replicating molecule of life?",
+      "options": ["RNA is more stable than DNA", "RNA can both store information and act as an enzyme (ribozyme), including catalyzing its own replication", "RNA exists only inside modern cells", "RNA cannot carry genetic information"],
+      "correctIndex": 1,
+      "explanation": "The RNA world hypothesis favors RNA because it uniquely does both jobs life needs: it stores information in its base sequence (like DNA) and certain RNAs (ribozymes) catalyze reactions, including copying RNA (like an enzyme). This solves the chicken-and-egg problem of needing genes to make catalysts and catalysts to copy genes; DNA is actually more stable but cannot self-catalyze."
+    }
+  ]
+}

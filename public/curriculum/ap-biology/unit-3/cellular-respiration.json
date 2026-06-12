@@ -1,0 +1,129 @@
+{
+  "id": "ap-bio-u3-cellular-respiration",
+  "title": "Cellular Respiration",
+  "subject": "AP Biology",
+  "unit": "Cellular Energetics",
+  "track": "ap",
+  "difficulty": "ap",
+  "duration": "50 min",
+  "objectives": [
+    "Write the overall equation for aerobic cellular respiration and locate its stages in the cell and mitochondrion",
+    "Summarize glycolysis, pyruvate oxidation, the Krebs cycle, and oxidative phosphorylation, including where ATP and NADH are made",
+    "Explain chemiosmosis and the central role of oxygen as the final electron acceptor",
+    "Compare aerobic respiration with fermentation and connect respiration to photosynthesis"
+  ],
+  "sections": [
+    {
+      "type": "explanation",
+      "heading": "Unlocking the Energy in Food, Controllably",
+      "content": "You could release the energy stored in a spoonful of sugar in a fraction of a second by setting it on fire — one bright, hot, useless flash. Your cells contain exactly that much energy in their food, but they can't afford to burn it; a cell that released all its fuel's energy at once would cook itself. Instead, cells unlock the energy in food the way you'd ease a heavy object down a long staircase rather than dropping it off a roof: in many small, controlled steps, capturing usable energy at each one. That controlled, stepwise 'burning' of food is cellular respiration.\n\nCellular respiration is how cells harvest the chemical energy stored in glucose and other fuels and repackage it into ATP, the currency from the last lesson. Every cell in your body does it, every second, which is the ultimate reason you must breathe and eat: to supply the glucose and oxygen this process consumes.\n\nThe overall reaction is essentially photosynthesis run backward: C₆H₁₂O₆ + 6 O₂ → 6 CO₂ + 6 H₂O + energy (ATP + heat). Glucose and oxygen yield carbon dioxide, water, and energy. This is exergonic — it RELEASES the free energy that was stored by photosynthesis — and that released energy is captured to make ATP. Notice the beautiful symmetry: photosynthesis builds glucose and releases O₂; respiration breaks glucose down and consumes O₂. The two processes are the opposite ends of one global energy cycle. This lesson breaks respiration into its four stages and shows where the ATP actually comes from."
+    },
+    {
+      "type": "explanation",
+      "heading": "The Big Picture: Four Stages and a Clever Strategy",
+      "content": "Cellular respiration is not one reaction but a sequence of four stages, and it helps enormously to see the overall strategy before the details. The trick the cell uses is this: rather than capturing energy from glucose directly as ATP, it mostly captures energy by stripping high-energy electrons off the fuel and loading them onto carrier molecules — NADH and FADH₂. These loaded carriers then deliver their electrons to a final stage that uses them to make the bulk of the ATP. So most of the early stages are about harvesting electrons; most of the ATP is made at the very end.\n\nThe four stages, in order, are: (1) Glycolysis — splitting glucose, in the cytoplasm; (2) Pyruvate oxidation — a short prep step, in the mitochondrion; (3) the Krebs cycle (citric acid cycle) — finishing the breakdown and harvesting electrons, in the mitochondrial matrix; and (4) Oxidative phosphorylation — the electron transport chain plus chemiosmosis, in the inner mitochondrial membrane, which produces most of the ATP.\n\nThe location matters and connects to Unit 2: only glycolysis happens in the cytoplasm; the energy-rich later stages happen inside the mitochondrion, the 'powerhouse' organelle whose folded inner membrane (the cristae) provides huge surface area for the final stage. (By endosymbiotic theory, the mitochondrion is a descendant of an ancient aerobic bacterium — which is why it runs the oxygen-using machinery.) The grand total from one glucose is roughly 30–32 ATP when oxygen is present."
+    },
+    {
+      "type": "table",
+      "heading": "The Four Stages of Aerobic Respiration",
+      "headers": ["Stage", "Location", "Key inputs", "Key outputs"],
+      "rows": [
+        ["Glycolysis", "Cytoplasm", "Glucose, 2 ATP", "2 Pyruvate, 2 ATP (net), 2 NADH"],
+        ["Pyruvate oxidation", "Mitochondrial matrix", "2 Pyruvate", "2 Acetyl-CoA, 2 NADH, 2 CO₂"],
+        ["Krebs (citric acid) cycle", "Mitochondrial matrix", "2 Acetyl-CoA", "2 ATP, 6 NADH, 2 FADH₂, 4 CO₂"],
+        ["Oxidative phosphorylation", "Inner mitochondrial membrane", "NADH, FADH₂, O₂", "~26–28 ATP, H₂O"]
+      ]
+    },
+    {
+      "type": "explanation",
+      "heading": "Stages 1–3: Splitting Glucose and Harvesting Electrons",
+      "content": "Glycolysis ('sugar-splitting') happens in the cytoplasm and is ancient — every living thing does it, and it requires no oxygen. One six-carbon glucose is split into two three-carbon molecules called pyruvate. The cell spends 2 ATP to get the process going but produces 4, for a NET gain of 2 ATP, plus 2 NADH (electron carriers loaded with high-energy electrons). Because it needs no oxygen and no mitochondrion, glycolysis is the universal starting point.\n\nIf oxygen is available, each pyruvate moves into the mitochondrion for pyruvate oxidation, a short link step: each pyruvate is stripped of a carbon (released as CO₂), and the rest is attached to a carrier to form acetyl-CoA, generating 1 NADH per pyruvate. This is where some of the carbon you exhale first comes off.\n\nThen the Krebs cycle (citric acid cycle) runs in the mitochondrial matrix. Acetyl-CoA enters and its carbons are fully broken down, released as CO₂ — this is the source of the rest of the carbon dioxide you breathe out. Per turn the cycle makes a little ATP directly, but its real product is a large haul of electron carriers: lots of NADH and some FADH₂. Because each glucose yields two pyruvate (and thus two acetyl-CoA), the cycle turns twice per glucose. After these three stages, glucose is completely dismantled into CO₂, the cell has made only a small amount of ATP directly — but it now holds a big stack of NADH and FADH₂ loaded with high-energy electrons, ready to cash in."
+    },
+    {
+      "type": "explanation",
+      "heading": "Stage 4: Oxidative Phosphorylation — Where the ATP Really Comes From",
+      "content": "Now the payoff. All those NADH and FADH₂ carriers deliver their high-energy electrons to the electron transport chain (ETC), a series of proteins embedded in the inner mitochondrial membrane. The electrons are passed from protein to protein, and at each handoff they release a bit of energy — the controlled staircase, not the cliff.\n\nThat released energy is used to pump H⁺ (protons) across the inner membrane, building up a steep proton gradient (high H⁺ on one side). This is exactly the same chemiosmosis machinery you met in photosynthesis. The protons then rush back across the membrane through the enzyme ATP synthase, and that flow — like water turning a turbine — drives the synthesis of the bulk of the cell's ATP (about 26–28 of the ~30–32 total).\n\nHere is the role of oxygen, and why you die within minutes without it: oxygen is the FINAL electron acceptor at the end of the chain. After the electrons have given up their energy, something must collect them, or the whole chain backs up and stops, like a clogged drain. O₂ picks up the spent electrons (and H⁺) to form water (H₂O) — the water in the overall equation. No oxygen means no final acceptor, the ETC jams, no proton gradient is built, and ATP production by this stage halts. That is why oxygen is essential to aerobic life: not to 'burn' the food directly, but to keep the electron line moving so chemiosmosis can make ATP."
+    },
+    {
+      "type": "example",
+      "heading": "Why Aerobic Respiration Crushes Fermentation: An ATP Audit",
+      "content": "Let's account for the ATP from one glucose to see exactly where the energy comes from and why oxygen matters so much.\n\nWITH OXYGEN (aerobic): Glycolysis nets 2 ATP and 2 NADH. Pyruvate oxidation adds 2 NADH. The Krebs cycle adds 2 ATP, 6 NADH, and 2 FADH₂. So before the final stage the cell has captured only 4 ATP directly — but it now holds 10 NADH and 2 FADH₂ stuffed with high-energy electrons. In oxidative phosphorylation those carriers feed the electron transport chain, which builds the proton gradient that ATP synthase uses to make about 26–28 more ATP. Grand total: roughly 30–32 ATP per glucose. Notice that over 80% of the yield depends on the final, oxygen-requiring stage.\n\nWITHOUT OXYGEN (fermentation): The electron transport chain can't run (no final acceptor), so all 10 NADH and 2 FADH₂ are worthless for making ATP. The cell is left with only the 2 ATP from glycolysis. Fermentation recycles NADH to NAD⁺ just to keep that trickle of glycolysis going.\n\nTHE INTERPRETATION: aerobic respiration yields about 15 times more ATP per glucose than fermentation (≈32 vs. 2). This is why obligate anaerobes and fermenting cells must consume glucose so rapidly, and why your muscles fatigue fast once they outrun their oxygen supply and drop to fermentation. If an exam gives you yield data, the takeaway is always the same: the electron carriers, cashed in only when oxygen is present, are where the real energy payoff lives."
+    },
+    {
+      "type": "steps",
+      "heading": "Tracing One Glucose Through Respiration",
+      "steps": [
+        {
+          "title": "Glycolysis (cytoplasm)",
+          "content": "Glucose (6C) is split into 2 pyruvate (3C each). Net gain: 2 ATP and 2 NADH. No oxygen required. This happens in every organism."
+        },
+        {
+          "title": "Pyruvate oxidation (mitochondrial matrix)",
+          "content": "Each pyruvate loses a carbon as CO₂ and becomes acetyl-CoA, producing 2 NADH total. This links glycolysis to the Krebs cycle."
+        },
+        {
+          "title": "Krebs / citric acid cycle (matrix)",
+          "content": "Acetyl-CoA is fully broken down, releasing the remaining carbons as CO₂. The cycle turns twice per glucose, yielding 2 ATP, 6 NADH, and 2 FADH₂. Glucose is now completely dismantled."
+        },
+        {
+          "title": "Electron transport chain (inner membrane)",
+          "content": "NADH and FADH₂ drop their high-energy electrons into the chain. Energy released pumps H⁺ across the inner membrane, building a proton gradient. Oxygen accepts the spent electrons at the end, forming water."
+        },
+        {
+          "title": "Chemiosmosis makes most of the ATP",
+          "content": "H⁺ flows back through ATP synthase, driving synthesis of about 26–28 ATP. Total yield per glucose is roughly 30–32 ATP when oxygen is present."
+        }
+      ]
+    },
+    {
+      "type": "quiz",
+      "question": "A poison blocks the final step of the electron transport chain so that oxygen can no longer accept electrons. What is the most direct consequence?",
+      "options": [
+        "Glycolysis immediately stops in the cytoplasm",
+        "The ETC backs up and the proton gradient collapses, so ATP production by oxidative phosphorylation halts",
+        "The cell makes more ATP to compensate",
+        "CO₂ production by the Krebs cycle increases sharply"
+      ],
+      "correctIndex": 1,
+      "explanation": "Oxygen is the final electron acceptor. If it cannot accept electrons, the whole transport chain backs up (electrons have nowhere to go), so no more H⁺ is pumped, the proton gradient collapses, and ATP synthase stops making ATP. This is why oxygen is essential. Glycolysis can briefly continue, but the large oxidative-phosphorylation ATP yield is lost."
+    },
+    {
+      "type": "keypoint",
+      "content": "Cellular respiration breaks glucose down in four stages (glycolysis, pyruvate oxidation, Krebs cycle, oxidative phosphorylation), harvesting electrons onto NADH and FADH₂; their electrons drive chemiosmosis in the inner mitochondrial membrane, with oxygen as the final electron acceptor, to make most of the ~30–32 ATP per glucose."
+    },
+    {
+      "type": "callout",
+      "variant": "warning",
+      "heading": "Oxygen's Job Is to ACCEPT Electrons at the End",
+      "content": "Frequent AP misconceptions: (1) Oxygen does NOT 'burn' glucose or appear in the early stages — its only job is to be the FINAL electron acceptor at the end of the ETC, forming water. Glycolysis and the Krebs cycle don't use O₂ directly. (2) Most ATP is made in oxidative phosphorylation (the ETC + chemiosmosis), NOT in glycolysis or the Krebs cycle, which yield only a little ATP directly. (3) The CO₂ you exhale comes from pyruvate oxidation and the Krebs cycle, NOT from the oxygen you inhale — the inhaled O₂ leaves as water. (4) NADH/FADH₂ are electron carriers, not ATP; they must hand electrons to the ETC for ATP to be made. (5) Glycolysis occurs in the cytoplasm, not the mitochondrion."
+    },
+    {
+      "type": "explanation",
+      "heading": "When Oxygen Runs Out: Fermentation",
+      "content": "What happens when a cell needs ATP but oxygen isn't available — a sprinting muscle outrunning its oxygen supply, or yeast in a sealed bottle? Without O₂ as the final acceptor, the electron transport chain shuts down, and with it the big ATP payoff. The cell falls back on fermentation.\n\nHere's the key insight: fermentation is NOT a way to make extra ATP. The only ATP comes from glycolysis (still just 2 per glucose). The actual purpose of fermentation is to recycle NADH back into NAD⁺. Remember, glycolysis needs NAD⁺ to load electrons onto; without oxygen the ETC isn't there to unload NADH, so NAD⁺ would run out and even glycolysis would stop. Fermentation solves this by dumping the electrons from NADH onto pyruvate, regenerating NAD⁺ so glycolysis can keep limping along and producing its small 2-ATP yield.\n\nThere are two common types. In lactic acid fermentation, pyruvate is converted to lactate (lactic acid) — this happens in your muscles during intense exercise and is why they burn and fatigue. In alcoholic fermentation, pyruvate becomes ethanol and CO₂ — this is how yeast makes bread rise and beverages ferment. Both are far less efficient than aerobic respiration: 2 ATP per glucose versus ~30–32. Fermentation is the cell's emergency generator — enough to survive a power outage, nowhere near enough to run at full capacity."
+    },
+    {
+      "type": "quiz",
+      "question": "During intense exercise, a sprinter's leg muscles switch to lactic acid fermentation. Compared with aerobic respiration, what is the consequence?",
+      "options": [
+        "The muscle makes much more ATP per glucose",
+        "The muscle makes far less ATP per glucose (about 2 instead of ~30–32), so fuel is used up quickly",
+        "The muscle stops using glucose entirely",
+        "The muscle produces oxygen as a by-product"
+      ],
+      "correctIndex": 1,
+      "explanation": "Fermentation yields only the 2 ATP from glycolysis, versus roughly 30–32 from aerobic respiration, because the electron carriers can't be cashed in without oxygen. The low yield forces rapid glucose use, and the lactate produced contributes to muscle burn and fatigue."
+    },
+    {
+      "type": "callout",
+      "variant": "tip",
+      "heading": "How AP Tests Cellular Respiration",
+      "content": "What scores points: (1) Know each stage's LOCATION (glycolysis = cytoplasm; everything else = mitochondrion) and its outputs of ATP vs. NADH/FADH₂. (2) Be able to explain chemiosmosis: electrons → proton pumping → gradient → ATP synthase → ATP, with O₂ as final acceptor. (3) For 'a poison/uncoupler blocks step X' questions, trace the backup: block the ETC or O₂ → gradient collapses → no oxidative-phosphorylation ATP. (4) For fermentation, state that its purpose is to regenerate NAD⁺ so glycolysis continues, NOT to make extra ATP. (5) Compare to photosynthesis: both use an ETC, a proton gradient, and ATP synthase (chemiosmosis); the mitochondrion's cristae (like the chloroplast's thylakoids) provide surface area. Watch the command word — 'explain' wants the mechanism, not just a label."
+    },
+    {
+      "type": "deepdive",
+      "heading": "One Energy Cycle: How Respiration and Photosynthesis Run the Living World",
+      "content": "Step back and notice that photosynthesis and cellular respiration are two halves of a single planetary loop, and the symmetry is almost too perfect. Photosynthesis takes in CO₂ and H₂O, uses light energy, and produces glucose and O₂. Respiration takes in glucose and O₂ and produces CO₂ and H₂O, releasing the energy. The outputs of one are the inputs of the other. Plants do BOTH — they photosynthesize to store energy in sugar and respire to spend it — while animals only respire, which is why we depend utterly on photosynthesizers for both our food and the oxygen we breathe. Carbon and oxygen atoms cycle endlessly between the two processes, but energy flows one way: in as sunlight, out as heat, exactly as the second law (last lesson) demands.\n\nThe shared machinery is no coincidence. Both processes build a proton gradient across a membrane and use ATP synthase and chemiosmosis to make ATP — strong evidence that this energy-harvesting strategy evolved very early and was inherited by both the chloroplast and mitochondrion (each an endosymbiotic bacterium, Unit 2). This is why a single mechanism, chemiosmosis, underlies almost all energy capture in life.\n\nThe ideas reach into medicine and daily experience. Cyanide and carbon monoxide kill by blocking the electron transport chain — your cells suffocate at the molecular level even if your lungs are full of air, because the final stage can't run. Mitochondrial diseases, which damage oxidative phosphorylation, strike the most energy-hungry tissues first — muscles, brain, heart. Your 'second wind' and muscle burn during exercise are glycolysis and lactic acid fermentation in action. Even brown fat in babies deliberately 'uncouples' the proton gradient to make heat instead of ATP, keeping infants warm. From a global carbon cycle to the ache in a sprinter's legs, it all runs on the same two-way energy economy — built, in the end, from the thermodynamics and ATP of this unit." }
+  ],
+  "aiContext": "This AP Biology Unit 3 lesson covers aerobic cellular respiration and fermentation (CED topic 3.6 and related energetics): the overall equation, the four stages (glycolysis, pyruvate oxidation, Krebs cycle, oxidative phosphorylation), chemiosmosis, and anaerobic fermentation. The organizing idea to reinforce is that early stages mainly harvest high-energy electrons onto NADH and FADH₂, and most ATP (~26–28 of ~30–32 total) is made at the end by the electron transport chain plus chemiosmosis. The highest-yield misconceptions to correct: oxygen's only role is as the FINAL electron acceptor (forming water), not to 'burn' glucose or participate in early stages; the exhaled CO₂ comes from pyruvate oxidation and the Krebs cycle, not from inhaled O₂; NADH/FADH₂ are electron carriers, not ATP; glycolysis is in the cytoplasm while all other stages are in the mitochondrion; and fermentation's purpose is to regenerate NAD⁺ so glycolysis continues, not to make extra ATP. Stress the photosynthesis parallel (shared ETC, proton gradient, ATP synthase = chemiosmosis) and the global energy cycle, linking to thermodynamics (prior lesson), the mitochondrion's endosymbiotic origin (Unit 2), and ecosystem energy flow (Unit 8). On the exam, expect stage/location/output questions, ETC-poison and uncoupler reasoning, chemiosmosis 'explain' FRQs, and respiration-vs-photosynthesis comparisons."
+}

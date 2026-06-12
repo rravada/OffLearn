@@ -1,0 +1,31 @@
+{
+  "id": "ap-bio-cell-cycle-regulation-and-cancer",
+  "title": "Regulation of the Cell Cycle and Cancer",
+  "subject": "AP Biology",
+  "chunks": [
+    { "id": "c1", "text": "The cell cycle is tightly regulated so cells do not divide before their DNA is finished copying, do not divide with damaged chromosomes, and do not multiply when the body has no need for more cells." },
+    { "id": "c2", "text": "Checkpoints are control points where the cell pauses, inspects internal and external conditions, and proceeds only if everything is right. The three main checkpoints are the G1, G2, and M (spindle) checkpoints." },
+    { "id": "c3", "text": "The G1 checkpoint, or restriction point, is the main decision point. The cell checks whether it is big enough, has nutrients, has undamaged DNA, and is receiving external signals to divide. If conditions fail, it pauses or exits into the resting G0 state." },
+    { "id": "c4", "text": "The G2 checkpoint verifies that all DNA was completely and correctly replicated and is not damaged, blocking entry into mitosis until the genome is fully and correctly copied." },
+    { "id": "c5", "text": "The M (spindle) checkpoint occurs at metaphase and verifies that all chromosomes are properly attached to spindle fibers and aligned, preventing anaphase until attachment is complete so chromatids split evenly." },
+    { "id": "c6", "text": "Cyclins are regulatory proteins whose levels rise and fall through the cell cycle. Cyclin-dependent kinases (Cdks) are enzymes that must bind a cyclin to become active; the active cyclin-Cdk complex phosphorylates targets that push the cell into the next phase." },
+    { "id": "c7", "text": "Because cyclin levels oscillate, cyclin-Cdk complexes drive the cell forward in a controlled, repeating rhythm, a molecular clock that ticks forward only when the checkpoints allow it." },
+    { "id": "c8", "text": "Internal signals report on the cell's own status, such as whether DNA is damaged or whether all chromosomes are attached to the spindle." },
+    { "id": "c9", "text": "The protein p53 is a key internal signal that responds to DNA damage at the G1 checkpoint. It halts the cycle to allow repair, and if damage is too severe it triggers apoptosis so the broken cell destroys itself." },
+    { "id": "c10", "text": "Apoptosis is programmed cell death, a normal controlled 'cellular suicide.' It removes damaged cells and sculpts development, such as removing the webbing between fingers before birth." },
+    { "id": "c11", "text": "External signals come from outside the cell. The most important are growth factors: proteins released by other cells that bind surface receptors and stimulate a target cell to divide, such as platelet-derived growth factor during wound healing." },
+    { "id": "c12", "text": "In density-dependent inhibition, cells stop dividing once they crowd together and cover a surface, sensing their neighbors and quitting. In anchorage dependence, normal cells must be attached to a surface or other cells to divide." },
+    { "id": "c13", "text": "Cancer is fundamentally a disease of cell-cycle regulation: a cell that divides uncontrollably because its checkpoints and growth controls have failed." },
+    { "id": "c14", "text": "Cancer is genetic at the cell level, caused by mutations in the genes that normally regulate division. These mutations are usually acquired in body (somatic) cells over a lifetime from UV light, tobacco, chemicals, viruses, or random copying errors, so most cancers are not inherited." },
+    { "id": "c15", "text": "Cancer typically requires several mutations accumulating in the same cell lineage, which is why cancer risk rises with age. A single mutation is rarely enough." },
+    { "id": "c16", "text": "Proto-oncogenes are normal genes that promote cell division, coding for growth factor receptors and signaling proteins, like the gas pedal of the cell cycle." },
+    { "id": "c17", "text": "A mutation can turn a proto-oncogene into an oncogene, a hyperactive version stuck on that floors the gas pedal so the cell is constantly told to divide even without a growth signal. A single overactive copy is enough (dominant at the cell level)." },
+    { "id": "c18", "text": "Tumor suppressor genes normally restrain division or trigger repair and apoptosis; p53 is the most famous. They are the brakes of the cell cycle, and a mutation that disables a tumor suppressor cuts the brakes, removing a check on division." },
+    { "id": "c19", "text": "An oncogene results from a mutation that makes a growth-promoting gene overactive (gain of function), while a tumor suppressor causes cancer when a mutation inactivates it (loss of function). p53 is a tumor suppressor, not an oncogene." },
+    { "id": "c20", "text": "Cancer generally needs the gas pedal stuck down (activated oncogenes) AND the brakes cut (disabled tumor suppressors). p53 is mutated in roughly half of all human cancers." },
+    { "id": "c21", "text": "Uncontrolled division produces a mass of cells called a tumor. A benign tumor stays in one place, while a malignant tumor is cancerous, with abnormal cells capable of spreading." },
+    { "id": "c22", "text": "Metastasis is when cells from a malignant tumor break away, enter the blood or lymph, and start new tumors in distant tissues. This spread is what makes cancer so dangerous and hard to treat." },
+    { "id": "c23", "text": "Chemotherapy disrupts DNA replication or mitosis and radiation damages DNA, killing rapidly dividing cells. Because they also harm the body's normally fast-dividing cells (hair follicles, gut lining, bone marrow), they cause side effects like hair loss and nausea." },
+    { "id": "c24", "text": "Targeted therapies block a specific overactive signaling protein driving a cancer, sparing normal cells; the leukemia drug imatinib (Gleevec) inhibits one abnormal kinase. Within a tumor, cells with helpful mutations outcompete others, so cancers evolve drug resistance under the selective pressure of treatment." }
+  ]
+}

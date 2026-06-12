@@ -1,0 +1,30 @@
+{
+  "id": "ap-bio-origin-of-life",
+  "title": "The Origin of Life on Earth",
+  "subject": "AP Biology",
+  "chunks": [
+    { "id": "c1", "text": "Earth formed about 4.6 billion years ago, and the oldest fossil evidence of life dates to roughly 3.5 billion years ago, so living cells existed within about a billion years of a molten, hostile young planet." },
+    { "id": "c2", "text": "The scientific question of the origin of life is not whether life arose but how non-living chemistry could have produced the first living things, studied as a sequence of testable chemical and physical steps." },
+    { "id": "c3", "text": "The origin of life (abiogenesis, life from non-life) is a separate question from evolution by natural selection. Natural selection explains how life diversifies once self-replicating organisms exist; it does not by itself explain the very first origin." },
+    { "id": "c4", "text": "Scientists hypothesize four broad stages: abiotic synthesis of organic monomers, polymerization into macromolecules, packaging into membrane-bound protocells, and the origin of self-replicating information-carrying molecules." },
+    { "id": "c5", "text": "The first hurdle is producing life's building blocks — amino acids, nucleotides, sugars — without any living thing to make them, using only simple chemistry and an energy source." },
+    { "id": "c6", "text": "In 1953 Stanley Miller and Harold Urey put water and a mix of gases in a sealed apparatus and supplied energy with electric sparks simulating lightning; within days the apparatus produced several amino acids from inorganic starting materials." },
+    { "id": "c7", "text": "The Miller-Urey experiment showed that organic monomers can form abiotically under plausible early-Earth conditions given energy. It produced monomers, not living cells, so its result should not be overstated." },
+    { "id": "c8", "text": "Modern thinking adds other sources of organic molecules: deep-sea hydrothermal vents that provide energy and catalytic surfaces, and delivery from space, since amino acids have been found in meteorites." },
+    { "id": "c9", "text": "Joining monomers into polymers by dehydration is unfavorable in open water, but experiments show mineral surfaces like clay and hot, drying environments can concentrate monomers and promote polymerization." },
+    { "id": "c10", "text": "Protocells (protobionts) are membrane-bound droplets that form spontaneously when certain lipids are added to water, since phospholipids self-assemble into bilayer spheres. They are not alive but create an inside versus outside." },
+    { "id": "c11", "text": "Protocells concentrate molecules, maintain different internal chemistry, and can grow and split — primitive versions of the cell membrane's compartmentalization — showing a key property of cells can emerge from simple physical chemistry." },
+    { "id": "c12", "text": "For natural selection to begin, life needs molecules that can both store information and be copied. In modern cells DNA stores information and proteins do catalysis, but neither can be made without the other — a chicken-and-egg problem." },
+    { "id": "c13", "text": "The RNA world hypothesis proposes RNA was the first molecule of life because it can do both jobs: it carries information in its base sequence like DNA, and certain RNAs called ribozymes act as enzymes that catalyze reactions, including copying RNA." },
+    { "id": "c14", "text": "RNA could have stored information and catalyzed its own replication before DNA, the more stable archive, and proteins, the more efficient catalysts, later took over those roles. The ribosome's catalytic core being RNA supports this idea." },
+    { "id": "c15", "text": "Once a self-replicating RNA existed inside a protocell, copying errors produced variation (mutation), and variation plus limited resources meant differential success — so natural selection switched on and life could evolve." },
+    { "id": "c16", "text": "Self-replication plus heritable variation is the switch that turns on natural selection, making the origin of a self-replicating molecule the pivotal step — the boundary between chemistry and biology." },
+    { "id": "c17", "text": "The stages occur in a logical order: monomers must exist before polymers, compartmentalization concentrates reactions to make polymerization and replication more likely, and heredity (self-replication) must precede natural selection." },
+    { "id": "c18", "text": "RNA is favored over DNA or protein as the first replicator not because it is more stable (DNA is more stable) but because it uniquely both stores information and catalyzes reactions, solving the gene-and-catalyst chicken-and-egg problem." },
+    { "id": "c19", "text": "All living things share fundamental features — the same DNA-based genetic code, ATP energy currency, RNA-based ribosomes, core metabolic pathways, and phospholipid membranes — best explained by descent from a single common ancestral population." },
+    { "id": "c20", "text": "That ancestral population is often called LUCA, the Last Universal Common Ancestor. The RNA world bridges chemistry to LUCA, explaining how its machinery could have bootstrapped from chemistry." },
+    { "id": "c21", "text": "Because life's building blocks form readily from common chemistry plus energy and water, origin-of-life research motivates the search for life on Mars, on icy moons like Europa and Enceladus with subsurface oceans, and around other stars." },
+    { "id": "c22", "text": "The stages of the origin of life are evidence-supported scientific hypotheses and an active research area, not a finished, fully proven account." },
+    { "id": "c23", "text": "The origin of life unifies the course: simple chemistry under energy produced self-replicating molecules, self-replication with variation switched on natural selection, and from that single origin four billion years of descent with modification produced the whole tree of life." }
+  ]
+}

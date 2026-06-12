@@ -1,0 +1,29 @@
+{
+  "id": "ap-bio-cellular-energy-and-atp",
+  "title": "Cellular Energy and ATP",
+  "subject": "AP Biology",
+  "chunks": [
+    { "id": "c1", "text": "Living things require a continuous input of energy to build and maintain their internal order. Unlike a non-living object, a cell falls apart when energy flow stops, because maintaining order runs against the universe's tendency toward disorder." },
+    { "id": "c2", "text": "The first law of thermodynamics states that energy cannot be created or destroyed, only transformed from one form to another. A cell converts the chemical energy of food or the light energy of the sun into other usable forms." },
+    { "id": "c3", "text": "The second law of thermodynamics states that every energy transformation increases the entropy (disorder) of the universe and loses some energy as unusable heat. No energy transfer is 100 percent efficient." },
+    { "id": "c4", "text": "Free energy (Gibbs free energy, G) is the portion of a system's energy that is available to do work. Biology focuses on the change in free energy during a reaction, written ΔG (delta G)." },
+    { "id": "c5", "text": "A negative ΔG marks an exergonic reaction: free energy is released, the products have less free energy than the reactants, and the reaction is spontaneous (it can proceed without an added energy input)." },
+    { "id": "c6", "text": "A positive ΔG marks an endergonic reaction: free energy is required, the products have more free energy than the reactants, and the reaction is not spontaneous and needs an energy input to occur." },
+    { "id": "c7", "text": "In thermodynamics, 'spontaneous' means energetically favorable, not necessarily fast. A spontaneous (exergonic) reaction can still be very slow, which is why enzymes are needed to control reaction rate." },
+    { "id": "c8", "text": "Cellular respiration is exergonic (releases energy) and photosynthesis is endergonic (requires energy). Building macromolecules is endergonic, while breaking them down is generally exergonic." },
+    { "id": "c9", "text": "ATP (adenosine triphosphate) is the cell's energy currency: a standard, spendable form of energy that nearly any cellular process can use, produced from the energy of food." },
+    { "id": "c10", "text": "An ATP molecule has three parts: the nitrogenous base adenine, the five-carbon sugar ribose, and a chain of three phosphate groups. The energy is associated with the bonds linking the phosphates." },
+    { "id": "c11", "text": "Each phosphate group in ATP carries a negative charge, and like charges repel. Crowding three negative phosphates together stores tension, like a compressed spring, that is released when the chain breaks." },
+    { "id": "c12", "text": "ATP hydrolysis adds water to break the bond to the terminal phosphate, producing ADP (adenosine diphosphate) plus an inorganic phosphate (Pi) and releasing about 7.3 kcal/mol of free energy. It is exergonic, with a negative ΔG." },
+    { "id": "c13", "text": "The energy released by ATP hydrolysis powers cellular work: mechanical work like muscle contraction, transport work like the sodium-potassium pump, and chemical work like building macromolecules." },
+    { "id": "c14", "text": "Recharging ADP back to ATP by reattaching a phosphate is called phosphorylation. It is endergonic (requires energy), and that energy is supplied by cellular respiration in all cells, or by photosynthesis in plant cells." },
+    { "id": "c15", "text": "ATP is constantly recycled rather than stockpiled. It cycles rapidly between ATP and ADP, and a person regenerates roughly their own body weight in ATP each day because each molecule is reused thousands of times." },
+    { "id": "c16", "text": "Energy coupling is using the energy released by an exergonic reaction to drive an endergonic reaction. ATP hydrolysis is the cell's universal exergonic partner for powering uphill work." },
+    { "id": "c17", "text": "Coupling usually works by phosphorylation: the phosphate from ATP is transferred onto the target molecule, making it less stable and more reactive (energized), so an otherwise unfavorable reaction proceeds." },
+    { "id": "c18", "text": "A coupled process proceeds when the energy released by ATP hydrolysis exceeds the energy the endergonic reaction needs, so the two reactions added together have a net negative ΔG." },
+    { "id": "c19", "text": "Enzymes lower activation energy and speed reactions but do not change ΔG. An endergonic reaction never becomes spontaneous just by waiting or by adding an enzyme; it must be coupled to an energy source." },
+    { "id": "c20", "text": "A living thing is an open system: it can build internal order as long as it exports even more disorder to its surroundings, releasing heat and breaking food into simpler, more disordered waste like CO₂, water, and urea. This honors the second law rather than breaking it." },
+    { "id": "c21", "text": "Energy flows one way through ecosystems: it enters as sunlight, passes through organisms, and exits as heat, because energy degrades to unusable heat at every transfer. Matter cycles, but energy must be continuously resupplied." },
+    { "id": "c22", "text": "A common AP misconception is that a negative ΔG is unfavorable; in fact negative ΔG is the energy-releasing, favorable, spontaneous case. Students often flip the signs because 'negative' sounds bad." }
+  ]
+}

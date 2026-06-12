@@ -1,0 +1,30 @@
+{
+  "id": "ap-bio-cell-communication-and-signaling",
+  "title": "Cell Communication and Signal Transduction",
+  "subject": "AP Biology",
+  "chunks": [
+    { "id": "c1", "text": "Cell communication lets the cells of a multicellular organism coordinate their activities. Without signaling, cells could not act together, and a coordinated organism would fall apart into an uncooperative pile of cells." },
+    { "id": "c2", "text": "A signaling (sending) cell releases a signaling molecule called a ligand, and a target (receiving) cell detects it using a receptor protein built to recognize that specific molecule. The ligand is the message; the receptor is the detector." },
+    { "id": "c3", "text": "Cell signaling occurs in three stages: reception (the ligand binds the receptor), transduction (the signal is relayed and amplified inside the cell), and response (the cell changes its activity)." },
+    { "id": "c4", "text": "In direct-contact signaling, neighboring cells exchange small molecules and ions through gap junctions (animal cells) or plasmodesmata (plant cells), or they signal by surface molecules that touch and are read by an adjacent cell, as in the immune system." },
+    { "id": "c5", "text": "In paracrine signaling, a cell secretes a local signal that diffuses through extracellular fluid to nearby target cells, such as growth factors coordinating wound healing. Synaptic signaling is a very short-range form using neurotransmitters across a synapse." },
+    { "id": "c6", "text": "In endocrine signaling, specialized cells release hormones into the bloodstream, which carries them throughout the body to distant target cells. Insulin from the pancreas reaching muscle and fat cells is an example." },
+    { "id": "c7", "text": "In autocrine signaling, a cell releases a signal that binds receptors on its own surface, effectively talking to itself. Some cancer cells use autocrine signaling to stimulate their own division and bypass normal controls." },
+    { "id": "c8", "text": "The type of signaling is defined by how far the ligand travels and how it reaches the target, not by the chemistry of the response. Distance ranges from direct contact, to local paracrine, to long-range endocrine signaling." },
+    { "id": "c9", "text": "Target specificity comes from receptors: a cell responds to a signal only if it has the matching receptor protein. A hormone washes over many cells, but only cells with the correct receptor respond, while others ignore it." },
+    { "id": "c10", "text": "Ligand and receptor fit together with shape-based specificity, like a lock and key, the same principle seen with enzymes and their substrates." },
+    { "id": "c11", "text": "Water-soluble (hydrophilic) ligands, such as most proteins and peptides, cannot cross the hydrophobic plasma membrane. They bind a receptor on the cell surface, which relays the message inward without the ligand entering the cell." },
+    { "id": "c12", "text": "Three major classes of membrane receptors are G protein-coupled receptors (GPCRs), receptor tyrosine kinases, and ligand-gated ion channels, which open to let ions flow when the ligand binds." },
+    { "id": "c13", "text": "Lipid-soluble (hydrophobic) ligands, such as steroid hormones like estrogen and testosterone, pass directly through the plasma membrane and bind intracellular receptors in the cytoplasm or nucleus." },
+    { "id": "c14", "text": "An intracellular receptor bound to its hormone often acts as a transcription factor, directly turning specific genes on or off. This is a more direct route to changing gene expression than surface-receptor pathways." },
+    { "id": "c15", "text": "A simple rule predicts receptor location from solubility: water-soluble signal binds a surface receptor and is relayed indirectly; lipid-soluble signal enters the cell and binds an internal receptor that often acts directly on genes." },
+    { "id": "c16", "text": "Transduction relays the signal inward through a signal transduction pathway, a chain of proteins that each activate the next, like falling dominoes, often using phosphorylation." },
+    { "id": "c17", "text": "Protein kinases are enzymes that activate or inactivate target proteins by attaching phosphate groups, usually from ATP. A phosphorylation cascade occurs when one kinase activates many of the next kinase, step after step." },
+    { "id": "c18", "text": "Second messengers are small non-protein molecules or ions that rapidly spread a signal through the cytoplasm. Cyclic AMP (cAMP), made from ATP by adenylyl cyclase, and calcium ions (Ca²⁺) are common examples." },
+    { "id": "c19", "text": "Amplification is the key reason for multi-step pathways: at each step one activated molecule switches on many of the next, so the numbers multiply and one ligand can trigger millions of molecular changes. A tiny amount of hormone produces a body-wide effect." },
+    { "id": "c20", "text": "In the epinephrine pathway, epinephrine binds a GPCR, which activates a G protein (GDP swaps for GTP), which activates adenylyl cyclase to make cAMP, which activates protein kinase A (PKA), which triggers a cascade that breaks glycogen into glucose for fight-or-flight." },
+    { "id": "c21", "text": "A common misconception is that water-soluble signal molecules enter the cell; they do not. They bind surface receptors, and the message is relayed inward. Only lipid-soluble signals actually cross the membrane." },
+    { "id": "c22", "text": "Signal transduction pathways are evolutionarily conserved: similar kinases, G proteins, and second messengers appear in yeast, plants, worms, and humans, which is strong evidence of common ancestry and lets discoveries in one organism inform human medicine." },
+    { "id": "c23", "text": "Many drugs target signaling: beta-blockers block the GPCRs epinephrine uses, diabetes often involves faulty insulin signaling or insulin resistance, and caffeine prolongs cAMP effects. When growth-controlling signaling gets stuck on, the result can be cancer." }
+  ]
+}

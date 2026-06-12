@@ -1,0 +1,30 @@
+{
+  "id": "ap-bio-responses-to-the-environment",
+  "title": "Behavior and Responses to the Environment",
+  "subject": "AP Biology",
+  "chunks": [
+    { "id": "c1", "text": "Ecology is the study of how organisms interact with each other and their environment. Behavior — everything an organism does in response to stimuli — is the front line of those interactions." },
+    { "id": "c2", "text": "Behaviors are traits shaped by natural selection: behaviors that help an organism survive and reproduce tend to spread because the genes influencing them get passed on. Behaviors are adaptive responses to environmental challenges." },
+    { "id": "c3", "text": "A behavior that helps an animal find food, avoid predators, attract mates, or care for offspring increases fitness (reproductive success), so the underlying genetic tendencies are favored. We can ask what a behavior is 'for' in terms of survival and reproduction." },
+    { "id": "c4", "text": "Innate behaviors are genetically programmed: they appear in fully functional form without prior experience and are performed the same way by all members of a species, like a spider spinning a web the first time." },
+    { "id": "c5", "text": "A fixed action pattern is an innate, unchangeable sequence triggered by a specific sign stimulus that, once started, runs to completion even if the cue is removed — for example, a goose continuing to roll a nonexistent egg back to its nest." },
+    { "id": "c6", "text": "Innate behaviors are advantageous when there is no time or opportunity to learn, such as a sea turtle hatchling crawling toward the ocean, which cannot afford trial and error." },
+    { "id": "c7", "text": "Learned behaviors are modified by experience, giving flexibility in changing environments. Major types include habituation, imprinting, associative learning, and cognition/problem-solving." },
+    { "id": "c8", "text": "Habituation is learning to ignore a repeated, harmless stimulus, such as a bird that stops fleeing a scarecrow. It saves energy by filtering out meaningless signals." },
+    { "id": "c9", "text": "Imprinting is a rapid, irreversible attachment formed during a brief critical period early in life. Goslings imprint on and follow the first moving object they see, normally their mother." },
+    { "id": "c10", "text": "Associative learning links two events. Classical conditioning (Pavlov's dogs salivating at a bell) links a stimulus with an outcome, while operant conditioning is learning by reward or punishment." },
+    { "id": "c11", "text": "Innate behavior is reliable and needs no learning time but is inflexible; learned behavior is adaptable to local changing conditions but requires time, experience, and often a bigger brain. Many behaviors blend both, like birdsong with an innate template tuned by hearing adults." },
+    { "id": "c12", "text": "A taxis is a directed movement toward or away from a stimulus, such as a moth flying toward light (positive phototaxis) or bacteria swimming toward food (chemotaxis)." },
+    { "id": "c13", "text": "A kinesis is a change in the speed or amount of movement that is not directed toward anything, such as pillbugs moving more in dry air and less in moist air, which keeps them in moist areas without aiming at them." },
+    { "id": "c14", "text": "Plants respond by directional growth called a tropism. Phototropism is growth toward light (driven by auxin redistributing to the shaded side), gravitropism is growth relative to gravity (roots down, shoots up), and thigmotropism is growth in response to touch." },
+    { "id": "c15", "text": "A circadian rhythm is a roughly 24-hour internal cycle, such as sleep/wake patterns or leaves opening and closing, that persists in constant conditions but is normally entrained (set) by the light/dark cycle." },
+    { "id": "c16", "text": "Seasonal cues like changing day length (photoperiod) trigger migration, hibernation, flowering, and breeding. Responding to reliable environmental signals lets organisms anticipate and prepare for predictable change, a fitness advantage." },
+    { "id": "c17", "text": "Communication is the transmission of a signal that changes another organism's behavior, using visual (displays), auditory (songs, calls), chemical (pheromones), and tactile (grooming) channels." },
+    { "id": "c18", "text": "The honeybee waggle dance encodes food location: the angle of the straight waggle run relative to vertical indicates direction relative to the sun, and the duration of the waggle indicates distance." },
+    { "id": "c19", "text": "Cooperative behavior, such as wolves hunting in packs, meerkat sentinels, and social insects dividing labor among castes, can dramatically boost survival but raises the puzzle of why an individual would help others at its own expense." },
+    { "id": "c20", "text": "Altruism is behavior that reduces the helper's own fitness while increasing another's. It appears to contradict natural selection because it seems to lower the helper's survival or reproduction." },
+    { "id": "c21", "text": "Kin selection explains altruism: helping relatives, who share many of your alleles, can spread your genes indirectly. A ground squirrel giving an alarm call protects nearby kin who carry copies of its genes." },
+    { "id": "c22", "text": "Inclusive fitness is an individual's total genetic contribution, including its own offspring plus the extra relatives it helps survive and reproduce. Sterile worker bees propagate shared genes by helping their mother produce siblings." },
+    { "id": "c23", "text": "Behaviors should be explained in terms of propagating the individual's genes (including via kin), not vaguely 'for the good of the species,' which is a common misconception. Natural selection favors what gets an individual's alleles into the next generation." }
+  ]
+}

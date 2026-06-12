@@ -1,0 +1,123 @@
+{
+  "id": "ap-bio-u6-gene-regulation-and-specialization",
+  "title": "Regulation of Gene Expression and Cell Specialization",
+  "subject": "AP Biology",
+  "unit": "Gene Expression and Regulation",
+  "track": "ap",
+  "difficulty": "ap",
+  "duration": "45 min",
+  "objectives": [
+    "Explain why cells regulate gene expression and how regulation produces different cell types from one genome",
+    "Describe prokaryotic gene regulation using the lac and trp operon models",
+    "Identify points at which eukaryotic gene expression can be controlled, including the roles of transcription factors and epigenetics",
+    "Explain how differential gene expression leads to cell differentiation and is guided by signals during development"
+  ],
+  "sections": [
+    {
+      "type": "explanation",
+      "heading": "Same Cookbook, Different Meals",
+      "content": "Every cell in your body — a neuron firing in your brain, a beta cell making insulin in your pancreas, a muscle cell contracting in your bicep — carries the exact same DNA, the same complete cookbook. So why are they so wildly different? The answer is the central idea of this lesson: cells differ not because they have different genes, but because they EXPRESS different genes. The neuron and the muscle cell are reading different pages of the same cookbook. Gene regulation is how a cell decides which recipes to cook and which to leave closed.\n\nThis makes sense even for a single-celled organism. A bacterium floating in your gut shouldn't waste energy and materials building the enzymes to digest lactose when there's no lactose around. It should make those enzymes only when lactose is present. Turning genes ON only when their products are needed, and OFF when they're not, saves enormous resources and lets a cell respond to its environment. Regulation is efficiency.\n\nFor a multicellular organism, regulation does something even more profound: it builds the body. A fertilized egg divides into trillions of cells that must become hundreds of distinct cell types, each switching on its own subset of genes. This selective use of the genome — differential gene expression — is what turns one genome into a brain, a heart, and a hand. Get gene regulation, and you understand how a single cell becomes you."
+    },
+    {
+      "type": "explanation",
+      "heading": "Prokaryotic Regulation: The lac Operon",
+      "content": "Bacteria solved the 'only-when-needed' problem with an elegant arrangement called an operon: a cluster of related genes controlled together as a single unit, with shared regulatory DNA. The classic example is the lac operon, which contains the genes for digesting lactose. Upstream of those genes sit a promoter (where RNA polymerase binds) and an operator (a switch sequence that controls access).\n\nThe lac operon is normally OFF. A repressor protein sits on the operator, physically blocking RNA polymerase from transcribing the lactose-digesting genes — sensible, because there's usually no lactose to digest. When lactose IS present, a form of it binds the repressor and changes its shape (an allosteric change, echoing enzyme regulation from Unit 3), causing the repressor to fall off the operator. Now RNA polymerase can transcribe the genes, and the cell makes the lactose-digesting enzymes. Lactose effectively turns its own digestion genes ON. Because the lac operon is normally off and gets switched on by its substrate, it's called an inducible operon, and its control is negative (a repressor blocks transcription).\n\nContrast this with the trp operon, which makes the enzymes to BUILD the amino acid tryptophan. This operon is normally ON (the cell usually needs to make tryptophan). But when tryptophan is abundant in the environment, tryptophan itself binds the repressor and activates it, switching the operon OFF — why build something you already have? A normally-on operon shut off by its product is a repressible operon. The two operons together teach a beautiful logic: bacteria sense molecules in their environment and adjust transcription to match — making digestive enzymes when food appears, and halting biosynthesis when the product is already supplied."
+    },
+    {
+      "type": "quiz",
+      "question": "In the lac operon, what happens when lactose is present in the cell?",
+      "options": [
+        "Lactose binds the promoter and recruits RNA polymerase directly",
+        "Lactose binds the repressor, changing its shape so it releases the operator, allowing transcription of the lactose genes",
+        "Lactose activates the repressor so it binds the operator more tightly",
+        "Lactose is transcribed into the enzymes that digest it"
+      ],
+      "correctIndex": 1,
+      "explanation": "The lac operon is inducible and under negative control: a repressor normally sits on the operator and blocks transcription. When lactose is present, it binds the repressor and changes its shape (allosterically), so the repressor releases the operator and RNA polymerase can transcribe the lactose-digesting genes. The operon turns ON only when its substrate is available — efficient resource use."
+    },
+    {
+      "type": "table",
+      "heading": "lac vs. trp Operon",
+      "headers": ["Feature", "lac operon", "trp operon"],
+      "rows": [
+        ["Genes' job", "Break DOWN lactose (catabolic)", "BUILD tryptophan (anabolic)"],
+        ["Default state", "OFF (no lactose usually present)", "ON (cell usually needs tryptophan)"],
+        ["Type", "Inducible", "Repressible"],
+        ["Signal molecule", "Lactose (an inducer)", "Tryptophan (a corepressor)"],
+        ["Effect of the signal", "Inactivates repressor → operon ON", "Activates repressor → operon OFF"],
+        ["Logic", "Make the enzyme when the food is there", "Stop making it when the product is plentiful"]
+      ]
+    },
+    {
+      "type": "explanation",
+      "heading": "Eukaryotic Regulation: Many Control Points",
+      "content": "Eukaryotes don't use operons (their related genes are usually scattered, not clustered). Instead, they regulate gene expression at MANY points along the path from DNA to functional protein — which gives them exquisite, layered control. You should be able to name several of these control points.\n\nThe biggest lever is at transcription, controlled by proteins called transcription factors. These proteins bind specific DNA sequences and either help RNA polymerase start transcribing a gene (activators, often binding distant DNA called enhancers) or block it (repressors). Which transcription factors a cell makes largely determines which genes it expresses — so transcription factors are master controllers of cell identity. Regulation also happens at the DNA-packaging level: DNA wound tightly around histone proteins into condensed chromatin is physically inaccessible and silenced, while loosely packed DNA is open for transcription.\n\nControl continues even after transcription. RNA processing can be regulated (alternative splicing makes different proteins, as you saw last lesson). mRNA can be marked for quick destruction or for stability, changing how much protein gets made. Small RNAs (like microRNAs) can bind mRNAs and block their translation or trigger their degradation. And after translation, proteins can be activated, modified, or tagged for destruction. The big-picture message: a eukaryotic gene's output can be tuned up or down at the chromatin, transcription, RNA-processing, mRNA-stability, translation, and protein levels — many dials, not one switch."
+    },
+    {
+      "type": "explanation",
+      "heading": "Epigenetics: Marks Without Changing the Sequence",
+      "content": "Some of the most important eukaryotic regulation works WITHOUT changing the DNA sequence at all — this is epigenetics. Think of it as sticky notes and highlighting added on top of the cookbook text: the words are unchanged, but some recipes are flagged 'do not use' and others 'use often.' Two main marks do this. DNA methylation adds methyl (–CH₃) groups to the DNA, typically SILENCING the genes there by making the chromatin condense and keeping transcription machinery out. Histone modification chemically tags the histone proteins DNA wraps around — some tags loosen the packing (turning genes ON), others tighten it (turning genes OFF).\n\nThe striking thing about epigenetic marks is that they can be HERITABLE through cell division: when a cell divides, it can pass its methylation pattern to its daughters, so a liver cell's daughters stay liver cells. This is exactly how differentiation 'sticks.' Even more surprising, some epigenetic marks can be influenced by the environment — diet, stress, toxins — and in some cases passed to offspring, which is an active and tested frontier (e.g., studies linking prenatal famine to gene-expression changes in later generations).\n\nThe payoff connects the whole unit: a cell becomes specialized (differentiates) by stably turning certain genes on and others off, and epigenetic marks lock that pattern in. Identical twins have identical DNA but accumulate different epigenetic marks over a lifetime, which is part of why they grow subtly more different over time. Same genome, different annotation, different cell — different person."
+    },
+    {
+      "type": "example",
+      "heading": "Tracing How One Genome Builds Two Cell Types",
+      "content": "Let's reason through how a developing embryo turns identical-DNA cells into a muscle cell and a nerve cell — the kind of cause-and-effect chain AP loves.\n\nStep 1 — Start identical. A cluster of embryonic cells all carry the same complete genome; none has 'used up' or lost any genes. So whatever makes them differ must be differential gene EXPRESSION, not different DNA.\n\nStep 2 — A signal arrives. Cells sit in different positions and receive different signals from neighbors and from chemical gradients (morphogens) — this is cell-to-cell signaling from Unit 4 doing developmental work. A cell in one location receives signal A; a cell elsewhere receives signal B.\n\nStep 3 — Signals switch on master transcription factors. Signal A triggers the cell to make muscle-determining transcription factors (such as the MyoD family), which bind DNA and turn ON the suite of muscle genes (actin, myosin) while leaving nerve genes off. Signal B turns on neural transcription factors that activate nerve genes instead. One signal → one set of master regulators → one cell-type-specific gene program.\n\nStep 4 — Lock it in epigenetically. As each cell commits, epigenetic marks (DNA methylation, histone modification) silence the unused genes and keep the active ones open. When the cell divides, it passes these marks on, so its descendants stay muscle (or nerve). \n\nResult: two cells with identical DNA but different expression profiles — different proteins, different shapes, different jobs. This is differentiation, and on the exam you should be able to explain it as: same genome → different signals → different transcription factors → differential gene expression → epigenetic lock-in → distinct cell types."
+    },
+    {
+      "type": "steps",
+      "heading": "Where a Eukaryotic Cell Can Control a Gene",
+      "steps": [
+        {
+          "title": "Chromatin / epigenetic level",
+          "content": "Before a gene can even be read, its DNA must be accessible. Tight chromatin and DNA methylation keep genes OFF; loosening the packaging and removing methylation lets transcription begin. This is often the first, most stable layer of control."
+        },
+        {
+          "title": "Transcriptional level",
+          "content": "Transcription factors (activators and repressors) bind promoters and enhancers to switch transcription up or down. This is the major control point and the main determinant of which genes define a cell's identity."
+        },
+        {
+          "title": "RNA processing and stability",
+          "content": "Alternative splicing chooses which exons are kept (different proteins from one gene), and the cell can stabilize an mRNA or mark it for rapid destruction, controlling how much protein is made. MicroRNAs can block or degrade specific mRNAs."
+        },
+        {
+          "title": "Translational and post-translational level",
+          "content": "The cell can speed up or block translation of an mRNA, and after the protein is made it can be folded, chemically modified, activated, or tagged for destruction. Each step is another opportunity to fine-tune the final amount of active protein."
+        }
+      ]
+    },
+    {
+      "type": "quiz",
+      "question": "Every cell in a human body contains the same complete genome, yet a liver cell and a skin cell are very different. What is the fundamental explanation?",
+      "options": [
+        "Liver and skin cells contain different genes",
+        "The cells express different subsets of their shared genes (differential gene expression)",
+        "Skin cells have lost the genes they don't use",
+        "The cells have different genetic codes"
+      ],
+      "correctIndex": 1,
+      "explanation": "All body cells share the same DNA; they differ because they express different subsets of that DNA. Transcription factors and epigenetic marks turn certain genes on and others off, producing different proteins and therefore different cell types. Cells do not lose unused genes, and they all use the same genetic code."
+    },
+    {
+      "type": "keypoint",
+      "content": "Cells regulate which genes are expressed to save resources and to build different cell types from one genome. Prokaryotes use operons (inducible lac, repressible trp); eukaryotes control expression at many points — chromatin/epigenetics, transcription factors, RNA processing, mRNA stability, translation, and protein modification — and differential gene expression, locked in by epigenetic marks, drives cell differentiation."
+    },
+    {
+      "type": "callout",
+      "variant": "warning",
+      "heading": "Regulation Misconceptions to Avoid",
+      "content": "(1) Specialized cells have the SAME DNA — they do not lose or gain genes; they express different genes. (2) The lac operon is INDUCIBLE (off until lactose turns it on); the trp operon is REPRESSIBLE (on until tryptophan turns it off). Don't swap them. (3) A repressor binds the OPERATOR, not the promoter; RNA polymerase binds the promoter. (4) Epigenetic marks (DNA methylation, histone modification) change gene EXPRESSION without changing the DNA SEQUENCE — they are not mutations. (5) Eukaryotes generally do NOT use operons. (6) Methylation usually SILENCES genes; tightly packed chromatin is OFF, loosely packed chromatin is available for transcription."
+    },
+    {
+      "type": "deepdive",
+      "heading": "From Stem Cells to Cancer to Reprogramming Life",
+      "content": "Gene regulation is where development, medicine, and biotechnology all converge. Because differentiation is driven by reversible patterns of gene expression rather than permanent DNA changes, scientists wondered: could you ERASE the marks and turn a specialized cell back into a flexible one? The answer, which won a Nobel Prize, is yes. Shinya Yamanaka showed that introducing just four transcription factors can reprogram an ordinary skin cell into an induced pluripotent stem cell (iPSC) — a cell that can become almost any type. This is regenerative medicine's holy grail: grow a patient's own replacement neurons, heart cells, or insulin-producing cells from their skin, with no immune rejection. It works precisely because cell identity is gene expression, and expression can be rewritten.\n\nThe same logic explains disease. Cancer is, at its core, a disease of broken gene regulation: mutations or epigenetic changes that switch ON genes driving division (oncogenes) or switch OFF the brakes (tumor suppressors) — connecting straight back to the cell-cycle and cancer lesson in Unit 4. Many cancers silence tumor-suppressor genes by abnormal DNA methylation, and a whole class of new drugs (epigenetic therapies) aims to reverse those marks and reawaken the genes. Understanding regulation turns cancer from a mystery into a set of identifiable, sometimes reversible, switches.\n\nThis lesson also reframes a big evolutionary idea you'll meet in Unit 7. The dramatic differences between species often come less from having different genes than from regulating SHARED genes differently — when and where a gene turns on. Humans and chimpanzees share ~99% of their protein-coding genes; much of what makes us different is regulatory. The same Hox genes pattern the body plans of flies and mammals; tweaking when and where they fire reshapes anatomy over evolutionary time. So the humble operator and transcription factor scale all the way up to the diversity of life — same toolkit, different instructions, endless forms."
+    },
+    {
+      "type": "callout",
+      "variant": "tip",
+      "heading": "How AP Tests Gene Regulation",
+      "content": "Point-winners: (1) Explain WHY a bacterium regulates the lac operon (efficiency — make the enzyme only when lactose is present) and predict operon behavior given the presence/absence of lactose, glucose, or tryptophan. (2) State the difference between inducible (lac) and repressible (trp) operons and identify the roles of promoter, operator, and repressor. (3) For eukaryotes, name multiple control points (chromatin/epigenetic, transcriptional via transcription factors, RNA processing, translational, post-translational). (4) Explain differentiation as differential gene expression driven by signals → transcription factors → epigenetic lock-in (connect to Unit 4 signaling and Unit 7 evolution of development). (5) Distinguish epigenetic changes (no sequence change) from mutations. (6) Command words: 'explain' and 'justify' want the mechanism and the WHY, not just naming parts."
+    }
+  ],
+  "aiContext": "This AP Biology Unit 6 lesson covers regulation of gene expression and cell specialization (CED topics 6.5-6.7), following transcription/translation and building toward mutations and biotechnology. The unifying idea: all cells of an organism share the same genome, so differences between cell types arise from DIFFERENTIAL GENE EXPRESSION, not different genes — and regulation also conserves resources by making products only when needed. Prokaryotic regulation uses operons: the lac operon is inducible and under negative control (a repressor on the operator blocks transcription until lactose binds and inactivates the repressor, turning catabolic lactose-digesting genes ON); the trp operon is repressible (normally on to build tryptophan, switched OFF when tryptophan binds and activates the repressor). Students must distinguish inducible vs. repressible and know the roles of promoter (RNA polymerase binds), operator (repressor binds), and repressor. Eukaryotes do not use operons and instead regulate at many points: chromatin/epigenetic accessibility, transcription (transcription factors — activators at enhancers, repressors — are the master determinants of cell identity), RNA processing (alternative splicing), mRNA stability and microRNAs, translation, and post-translational modification. Epigenetics (DNA methylation usually silences; histone modification can open or close chromatin) changes expression WITHOUT changing the DNA sequence, is heritable through cell division, can be environmentally influenced, and locks in differentiation. Differentiation = same genome → positional signals (Unit 4 signaling) → master transcription factors → cell-type-specific gene programs → epigenetic lock-in. Key misconceptions to counter: that specialized cells lose unused genes, swapping inducible/repressible or operator/promoter, and confusing epigenetic marks with mutations. Connect to iPSCs/Yamanaka reprogramming, cancer as dysregulation (oncogenes/tumor suppressors, links to Unit 4), and evo-devo (regulatory differences and Hox genes explain much species diversity, links to Unit 7). On the exam expect operon prediction problems, naming eukaryotic control points, and explaining differentiation via differential gene expression."
+}

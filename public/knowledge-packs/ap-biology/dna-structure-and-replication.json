@@ -1,0 +1,30 @@
+{
+  "id": "ap-bio-dna-structure-and-replication",
+  "title": "DNA Structure and Replication",
+  "subject": "AP Biology",
+  "chunks": [
+    { "id": "c1", "text": "DNA replication copies a cell's entire genome before cell division so each daughter cell inherits a complete, nearly error-free set of instructions. A human cell copies about 6 billion base pairs each time it divides." },
+    { "id": "c2", "text": "DNA's antiparallel, complementary double-helix structure makes copying possible: because A pairs with T and G pairs with C, each strand carries the information needed to rebuild the other, so either strand can serve as a template." },
+    { "id": "c3", "text": "Replication is semiconservative: each new double helix consists of one original parental strand and one newly synthesized strand. Every daughter molecule is therefore half old and half new." },
+    { "id": "c4", "text": "Three models were once proposed for replication: conservative (old helix intact, new helix entirely new), semiconservative (each helix half old/half new), and dispersive (old and new DNA scattered in patches)." },
+    { "id": "c5", "text": "The Meselson-Stahl experiment (1958) grew bacteria in heavy ¹⁵N, then switched them to light ¹⁴N and used density-gradient centrifugation. After one round of replication all DNA was a single intermediate density, ruling out the conservative model." },
+    { "id": "c6", "text": "After a second round of replication, Meselson and Stahl saw two bands (intermediate and light), which ruled out the dispersive model and confirmed that DNA replication is semiconservative." },
+    { "id": "c7", "text": "Replication begins at specific sequences called origins of replication, where the helix opens into a bubble. A bacterial circular chromosome has one origin; large eukaryotic chromosomes have many origins firing at once to copy DNA fast enough." },
+    { "id": "c8", "text": "A replication fork is the Y-shaped junction where the double helix is being actively unwound and copied. Each replication bubble has two forks moving in opposite directions." },
+    { "id": "c9", "text": "Helicase is the enzyme that unzips the double helix by breaking the hydrogen bonds between complementary base pairs, separating the two strands so they can act as templates." },
+    { "id": "c10", "text": "Single-strand binding proteins coat the separated single strands to keep them from re-annealing, and topoisomerase relieves the twisting strain (supercoiling) ahead of the fork by nicking and resealing the DNA." },
+    { "id": "c11", "text": "DNA polymerase cannot start a new strand from scratch; it can only add nucleotides to an existing 3' end. Primase first lays down a short RNA primer to provide that starting 3' end." },
+    { "id": "c12", "text": "DNA polymerase adds complementary DNA nucleotides one at a time and always builds in the 5'-to-3' direction, attaching each new nucleotide to the 3' end of the growing strand." },
+    { "id": "c13", "text": "DNA polymerase proofreads as it synthesizes: it can remove a mismatched base with exonuclease activity and insert the correct one. This proofreading leaves only about one error per billion nucleotides." },
+    { "id": "c14", "text": "Because DNA polymerase builds only 5'→3' and the two template strands are antiparallel, the new strands are made differently on the two templates." },
+    { "id": "c15", "text": "The leading strand is synthesized continuously in the 5'→3' direction toward the moving replication fork, requiring essentially one primer." },
+    { "id": "c16", "text": "The lagging strand is synthesized away from the fork in short pieces called Okazaki fragments, each requiring its own RNA primer, because the polymerase cannot run continuously away from the fork." },
+    { "id": "c17", "text": "After synthesis, the RNA primers are removed and replaced with DNA (by DNA polymerase I in bacteria), and DNA ligase seals the remaining gaps in the sugar-phosphate backbone, joining Okazaki fragments into a continuous strand." },
+    { "id": "c18", "text": "Both new strands are built 5'→3'; the difference between leading and lagging strands is continuity (continuous vs. discontinuous), which arises purely from the antiparallel arrangement of the template strands." },
+    { "id": "c19", "text": "Because each Okazaki fragment needs an RNA primer, the very end of a linear chromosome cannot be fully copied after the last primer is removed. This 'end-replication problem' makes linear chromosomes shorten slightly with each division." },
+    { "id": "c20", "text": "Telomeres are repetitive non-coding DNA caps at chromosome ends (in humans, TTAGGG repeated thousands of times) that protect genes from being lost to shortening, acting like the plastic tips on shoelaces." },
+    { "id": "c21", "text": "Telomeres shorten with each cell division in most body cells, eventually triggering senescence, which is linked to aging. Stem cells, germ cells, and most cancer cells express telomerase, which rebuilds telomeres and grants unlimited division potential." },
+    { "id": "c22", "text": "PCR (polymerase chain reaction) harnesses replication in a tube, using a heat-stable DNA polymerase to copy DNA millions of times. It powers DNA fingerprinting, paternity testing, and disease diagnostics such as COVID tests." },
+    { "id": "c23", "text": "Replication is extremely accurate because of two features: complementary base pairing ensures each new base matches its template, and DNA polymerase proofreading corrects most of the rare mistakes that slip through." }
+  ]
+}

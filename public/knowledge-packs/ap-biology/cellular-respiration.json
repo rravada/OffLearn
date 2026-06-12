@@ -1,0 +1,31 @@
+{
+  "id": "ap-bio-cellular-respiration",
+  "title": "Cellular Respiration",
+  "subject": "AP Biology",
+  "chunks": [
+    { "id": "c1", "text": "Cellular respiration is how cells harvest the chemical energy stored in glucose and other fuels and repackage it into ATP. It releases energy in many small, controlled steps rather than all at once." },
+    { "id": "c2", "text": "The overall equation for aerobic respiration is C₆H₁₂O₆ + 6 O₂ → 6 CO₂ + 6 H₂O + energy (ATP + heat). It is exergonic, releasing the free energy that photosynthesis stored in glucose." },
+    { "id": "c3", "text": "Respiration is essentially photosynthesis run backward: photosynthesis builds glucose and releases O₂, while respiration breaks glucose down and consumes O₂. They are opposite ends of one global energy cycle." },
+    { "id": "c4", "text": "Respiration's strategy is to strip high-energy electrons off the fuel and load them onto carrier molecules NADH and FADH₂. These carriers later deliver electrons to a final stage that makes most of the ATP." },
+    { "id": "c5", "text": "The four stages of aerobic respiration are glycolysis, pyruvate oxidation, the Krebs (citric acid) cycle, and oxidative phosphorylation (the electron transport chain plus chemiosmosis)." },
+    { "id": "c6", "text": "Only glycolysis occurs in the cytoplasm; pyruvate oxidation, the Krebs cycle, and oxidative phosphorylation occur in the mitochondrion. The mitochondrion's folded inner membrane (cristae) gives surface area for the final stage." },
+    { "id": "c7", "text": "By the endosymbiotic theory, the mitochondrion descended from an ancient aerobic bacterium, which is why it runs the oxygen-using machinery of respiration. The total ATP yield per glucose is roughly 30–32 when oxygen is present." },
+    { "id": "c8", "text": "Glycolysis splits one six-carbon glucose into two three-carbon pyruvate molecules in the cytoplasm. It spends 2 ATP and makes 4, for a net gain of 2 ATP, plus 2 NADH. It requires no oxygen and occurs in every organism." },
+    { "id": "c9", "text": "In pyruvate oxidation, each pyruvate enters the mitochondrial matrix, loses a carbon as CO₂, and becomes acetyl-CoA, generating NADH. This short step links glycolysis to the Krebs cycle." },
+    { "id": "c10", "text": "The Krebs (citric acid) cycle runs in the mitochondrial matrix and turns twice per glucose. It fully breaks down the carbons (released as CO₂) and yields 2 ATP, 6 NADH, and 2 FADH₂ per glucose. Its main product is electron carriers, not ATP." },
+    { "id": "c11", "text": "The CO₂ you exhale comes from pyruvate oxidation and the Krebs cycle, where the carbons of glucose are released. It does not come from the oxygen you inhale." },
+    { "id": "c12", "text": "In oxidative phosphorylation, NADH and FADH₂ deliver high-energy electrons to the electron transport chain (ETC), a series of proteins in the inner mitochondrial membrane. Electrons pass from protein to protein, releasing energy at each handoff." },
+    { "id": "c13", "text": "The energy released by the ETC pumps H⁺ (protons) across the inner mitochondrial membrane, building a steep proton gradient. This is the same chemiosmosis machinery used in photosynthesis." },
+    { "id": "c14", "text": "Protons rush back across the membrane through the enzyme ATP synthase, and that flow drives synthesis of most of the cell's ATP, about 26–28 of the roughly 30–32 total per glucose." },
+    { "id": "c15", "text": "Oxygen is the final electron acceptor at the end of the electron transport chain. It picks up spent electrons and H⁺ to form water (H₂O). This is oxygen's only direct role in respiration." },
+    { "id": "c16", "text": "If oxygen is unavailable or the ETC is blocked, electrons have nowhere to go, the chain backs up, the proton gradient collapses, and ATP production by oxidative phosphorylation halts. This is why oxygen is essential to aerobic life." },
+    { "id": "c17", "text": "A common misconception is that oxygen 'burns' glucose or is used in the early stages. Oxygen is not used in glycolysis or the Krebs cycle; it only accepts electrons at the very end to form water." },
+    { "id": "c18", "text": "Most ATP is made in oxidative phosphorylation (the ETC plus chemiosmosis), not in glycolysis or the Krebs cycle, which make only a small amount of ATP directly. NADH and FADH₂ are electron carriers, not ATP." },
+    { "id": "c19", "text": "Fermentation occurs when oxygen is unavailable. Its purpose is to regenerate NAD⁺ from NADH so that glycolysis can continue; it does not make extra ATP. The only ATP still comes from glycolysis (2 per glucose)." },
+    { "id": "c20", "text": "In lactic acid fermentation, pyruvate is converted to lactate, which occurs in muscles during intense exercise and causes burning and fatigue. In alcoholic fermentation, pyruvate becomes ethanol and CO₂, as in yeast making bread rise and beverages ferment." },
+    { "id": "c21", "text": "Fermentation is far less efficient than aerobic respiration, yielding only 2 ATP per glucose versus roughly 30–32. It serves as the cell's emergency energy source during oxygen shortage." },
+    { "id": "c22", "text": "Photosynthesis and respiration form one planetary loop: the outputs of one are the inputs of the other. Carbon and oxygen atoms cycle between them, but energy flows one way, in as sunlight and out as heat, as the second law requires." },
+    { "id": "c23", "text": "Both photosynthesis and respiration build a proton gradient and use ATP synthase and chemiosmosis to make ATP, evidence that this energy-harvesting mechanism evolved early and was inherited by both the chloroplast and the mitochondrion." },
+    { "id": "c24", "text": "Cyanide and carbon monoxide kill by blocking the electron transport chain, so cells suffocate at the molecular level even with full lungs because the final stage cannot run. Mitochondrial diseases strike energy-hungry tissues like muscle, brain, and heart first." }
+  ]
+}

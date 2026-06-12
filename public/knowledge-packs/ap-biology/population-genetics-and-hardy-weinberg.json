@@ -1,0 +1,30 @@
+{
+  "id": "ap-bio-population-genetics-and-hardy-weinberg",
+  "title": "Population Genetics and Hardy-Weinberg Equilibrium",
+  "subject": "AP Biology",
+  "chunks": [
+    { "id": "c1", "text": "Population genetics studies the gene pool — all the alleles of all the individuals in a population — and asks what fraction of alleles are of each type and whether that fraction is changing over generations." },
+    { "id": "c2", "text": "If a population is not evolving, its allele frequencies stay constant generation after generation. The Hardy-Weinberg principle is the mathematical description of this 'nothing is happening' baseline, used as a null model." },
+    { "id": "c3", "text": "If a real population's genotype numbers match the Hardy-Weinberg prediction, no evolution is detected at that gene; if they deviate, some force (selection, drift, gene flow, mutation, or nonrandom mating) is changing the population." },
+    { "id": "c4", "text": "Hardy-Weinberg equilibrium holds only if five conditions are met: no mutation, no natural selection, no gene flow, random mating, and a very large population. These are exactly the conditions under which evolution does not occur." },
+    { "id": "c5", "text": "In the real world the five conditions are essentially never all true, which is the point: because the conditions are almost always violated, populations almost always evolve. Hardy-Weinberg is an idealized comparison, not a claim that populations don't change." },
+    { "id": "c6", "text": "The allele-frequency equation is p + q = 1, where p is the frequency of the dominant allele and q the frequency of the recessive allele. They sum to 1 because together they are all the alleles at the locus." },
+    { "id": "c7", "text": "The genotype-frequency equation is p² + 2pq + q² = 1, where p² is the frequency of homozygous dominant individuals, 2pq is heterozygotes, and q² is homozygous recessive individuals." },
+    { "id": "c8", "text": "Homozygous recessive (aa) is the only genotype identifiable by phenotype alone, so Hardy-Weinberg problems usually start from q² (the fraction showing the recessive trait)." },
+    { "id": "c9", "text": "The standard workflow: find q² from the recessive phenotype, take its square root to get q, use p = 1 − q, then compute p² (homozygous dominant) and 2pq (heterozygotes). Check that the three genotype frequencies sum to 1." },
+    { "id": "c10", "text": "A frequent error is using the recessive phenotype fraction as q directly. You must take the square root of q² to get q; the phenotype fraction equals q², not q." },
+    { "id": "c11", "text": "Example: if 160 of 1,000 people show a recessive condition, q² = 0.16, so q = 0.4, p = 0.6, p² = 0.36, and 2pq = 0.48, giving 480 carriers." },
+    { "id": "c12", "text": "Carriers (2pq) usually vastly outnumber affected individuals (q²). Because a recessive allele hides in heterozygotes, a harmful recessive allele is not quickly eliminated from a population." },
+    { "id": "c13", "text": "Genetic drift is random change in allele frequencies due to chance, and it matters most in small populations, where which individuals survive and breed is partly luck, so frequencies can swing dramatically and alleles can be lost." },
+    { "id": "c14", "text": "Unlike natural selection, genetic drift is not adaptive: it can make a population worse-suited to its environment just as easily as better, because it acts by chance rather than fitness." },
+    { "id": "c15", "text": "In a population bottleneck, a disaster drastically and randomly reduces population size, so the survivors carry only a sample of the original gene pool and variation is lost. Cheetahs show classic bottleneck effects with very low genetic diversity." },
+    { "id": "c16", "text": "In the founder effect, a few individuals colonize a new area and the new population's gene pool reflects only those founders' alleles, which may differ from the source population, making certain genetic conditions unusually common in isolated communities." },
+    { "id": "c17", "text": "Gene flow is the movement of alleles between populations by migrating individuals or dispersing gametes or pollen. It tends to make separate populations more genetically similar and can introduce new alleles." },
+    { "id": "c18", "text": "Gene flow can counteract the differences that selection or drift build up. Reduced gene flow (isolation) is therefore important for forming new species." },
+    { "id": "c19", "text": "Deviation of a population's genotype frequencies from Hardy-Weinberg predictions is a fingerprint pointing to a specific evolutionary force, and researchers use it to find genes under selection across the genome." },
+    { "id": "c20", "text": "Knowing how many people are born with a recessive disorder (q²) lets geneticists estimate the carrier frequency (2pq) in the whole population, which is essential for genetic counseling and screening programs." },
+    { "id": "c21", "text": "The five forces that violate Hardy-Weinberg — mutation, natural selection, gene flow, nonrandom mating, and genetic drift — are exactly the mechanisms of evolution. Selection is the adaptive force and drift is the random one." },
+    { "id": "c22", "text": "Conservation biologists manage drift and inbreeding in endangered species by deliberately introducing individuals from other populations (engineered gene flow) to restore genetic diversity, a tactic that rescued the Florida panther." },
+    { "id": "c23", "text": "The Hardy-Weinberg principle, derived independently in 1908 by G. H. Hardy and Wilhelm Weinberg, remains central to biology because turning evolution into arithmetic lets scientists detect and measure it in real populations." }
+  ]
+}

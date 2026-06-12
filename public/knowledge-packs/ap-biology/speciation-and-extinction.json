@@ -1,0 +1,30 @@
+{
+  "id": "ap-bio-speciation-and-extinction",
+  "title": "Speciation, Extinction, and Continuing Evolution",
+  "subject": "AP Biology",
+  "chunks": [
+    { "id": "c1", "text": "Speciation is the process by which one species splits into two, the branching of lineages that has produced the millions of species alive today. It answers where biodiversity comes from." },
+    { "id": "c2", "text": "The biological species concept defines a species as a group of organisms that can interbreed in nature to produce fertile, viable offspring. The key word is fertile." },
+    { "id": "c3", "text": "A horse and a donkey can mate and produce a mule, but mules are sterile, so horses and donkeys are still different species under the biological species concept." },
+    { "id": "c4", "text": "Reproductive isolation — barriers that prevent two groups from successfully interbreeding and mixing genes — is what ultimately separates species. Speciation is, at its heart, the evolution of reproductive isolation." },
+    { "id": "c5", "text": "Once gene flow between two populations is cut off, they evolve independently, accumulating different mutations and undergoing different selection and drift, until they can no longer interbreed even if reunited." },
+    { "id": "c6", "text": "Allopatric speciation occurs when a population is physically split by a geographic barrier such as a river, mountain range, canyon, or rising sea level that stops gene flow. It is the most common route, exemplified by the Galápagos finches." },
+    { "id": "c7", "text": "In allopatric speciation, each isolated group evolves on its own under its own mutations, selection pressures, and drift until they become so different they can no longer interbreed even if the barrier later disappears." },
+    { "id": "c8", "text": "Sympatric speciation is the rarer case where new species arise without geographic separation, requiring another barrier to gene flow such as a habitat or food-preference shift, differences in mating signals, or polyploidy." },
+    { "id": "c9", "text": "Polyploidy is an error in cell division that doubles the chromosome number, instantly making polyploid individuals unable to breed with the parent type. Many crop plants, such as wheat, arose through polyploid sympatric speciation." },
+    { "id": "c10", "text": "The shared principle of speciation is that gene flow must be interrupted, followed by independent divergence. Allopatric uses a geographic barrier; sympatric uses a behavioral, ecological, or chromosomal barrier without geography." },
+    { "id": "c11", "text": "Prezygotic barriers act before a zygote forms, preventing mating or fertilization. They include temporal, habitat, behavioral, mechanical, and gametic isolation." },
+    { "id": "c12", "text": "Temporal isolation means groups breed at different times; behavioral isolation means different courtship rituals or signals; mechanical isolation means physically incompatible reproductive structures; gametic isolation means sperm and egg are chemically incompatible." },
+    { "id": "c13", "text": "Postzygotic barriers act after a zygote forms: a hybrid is produced but fails to become a successful reproducing adult. They include reduced hybrid viability, reduced hybrid fertility, and hybrid breakdown." },
+    { "id": "c14", "text": "Reduced hybrid viability means the hybrid dies or is unhealthy; reduced hybrid fertility means the hybrid is healthy but sterile (the mule); hybrid breakdown means first-generation hybrids are fine but their offspring are weak or sterile." },
+    { "id": "c15", "text": "To classify an isolating barrier, ask whether a zygote or hybrid formed: if no, the barrier is prezygotic; if yes, it is postzygotic. Then name the specific type from its cause." },
+    { "id": "c16", "text": "Gradualism pictures species diverging slowly and steadily through many small changes over long spans of time." },
+    { "id": "c17", "text": "Punctuated equilibrium pictures long periods of little change (stasis) interrupted by rapid bursts of speciation, fitting the fossil record's pattern of species appearing relatively suddenly and persisting largely unchanged. Both models describe rate, not different mechanisms." },
+    { "id": "c18", "text": "Divergent evolution is when related lineages become increasingly different (producing homologous structures), while convergent evolution is unrelated lineages independently evolving similar traits (producing analogous structures)." },
+    { "id": "c19", "text": "Coevolution is two interacting species reciprocally driving each other's evolution — predators and prey, flowers and pollinators, parasites and hosts — each adapting in response to the other in an ongoing arms race." },
+    { "id": "c20", "text": "Extinction is the permanent loss of a species and is the normal fate of most species that ever lived; over 99% are extinct. Mass extinctions, like the asteroid impact ~66 million years ago that ended the dinosaurs, wipe out huge swaths of life rapidly." },
+    { "id": "c21", "text": "Extinction opens opportunity: when many species vanish, ecological niches empty out and surviving lineages can rapidly diversify to fill them, a burst of speciation called adaptive radiation. Mammals radiated after the dinosaurs disappeared." },
+    { "id": "c22", "text": "Evolution is ongoing: Galápagos finches are still speciating and hybridizing, and ring species (chains of populations that interbreed with neighbors but not across the ends) show speciation literally in progress." },
+    { "id": "c23", "text": "Humans are now a major evolutionary force, moving species, fragmenting habitats, changing climate, and applying intense selection — driving both speciation and a possible sixth mass extinction that prunes the tree of life faster than speciation can refill it." }
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "id": "ap-bio-photosynthesis",
+  "title": "Photosynthesis",
+  "subject": "AP Biology",
+  "chunks": [
+    { "id": "c1", "text": "Photosynthesis is the process by which plants, algae, and some bacteria convert light energy into chemical energy stored in sugar. It is the entry point for almost all the energy in the living world." },
+    { "id": "c2", "text": "Organisms that make their own food by photosynthesis are called autotrophs (self-feeders). Organisms that must consume other organisms for food are heterotrophs." },
+    { "id": "c3", "text": "The overall equation for photosynthesis is 6 CO₂ + 6 H₂O + light energy → C₆H₁₂O₆ + 6 O₂. Carbon dioxide and water, powered by light, become glucose and oxygen. The reaction is endergonic, storing energy in glucose." },
+    { "id": "c4", "text": "Most of a plant's solid mass comes from carbon dioxide pulled out of the air, not from the soil. A plant is essentially sunlight and air made solid." },
+    { "id": "c5", "text": "Photosynthesis occurs in the chloroplast, an organelle in plant and algal cells that, by the endosymbiotic theory, descended from an ancient free-living cyanobacterium." },
+    { "id": "c6", "text": "Inside the chloroplast are stacks of flattened membrane sacs called thylakoids (a stack is a granum). The green pigment chlorophyll, which absorbs light, is embedded in the thylakoid membranes." },
+    { "id": "c7", "text": "The stroma is the thick fluid surrounding the thylakoids. The Calvin cycle, where sugar is built, takes place in the stroma, while the light-dependent reactions take place in the thylakoid membranes." },
+    { "id": "c8", "text": "The light-dependent reactions convert light energy into chemical energy carried by ATP and NADPH, and they release oxygen. They occur in the thylakoid membrane." },
+    { "id": "c9", "text": "Light absorbed by chlorophyll in photosystem II excites electrons to a high energy level. These electrons travel down an electron transport chain, a series of proteins in the thylakoid membrane." },
+    { "id": "c10", "text": "Water is split (photolysis) to replace the electrons lost by photosystem II. This releases O₂ as a by-product and provides H⁺ ions. The oxygen released by photosynthesis comes from water, not from carbon dioxide." },
+    { "id": "c11", "text": "As electrons move down the chain, the released energy pumps H⁺ into the thylakoid interior, building a proton gradient. H⁺ then flows back out through ATP synthase, driving ATP synthesis — a process called chemiosmosis." },
+    { "id": "c12", "text": "Photosystem I re-energizes electrons with light and uses them to make NADPH by loading NADP⁺ with high-energy electrons and an H⁺. ATP and NADPH then move into the stroma for the Calvin cycle." },
+    { "id": "c13", "text": "The Calvin cycle runs in the stroma and is called light-independent because it does not directly use light, but it depends completely on the ATP and NADPH made by the light reactions, so it effectively runs in daylight." },
+    { "id": "c14", "text": "Carbon fixation is the incorporation of inorganic CO₂ from the air into an organic molecule. The enzyme rubisco attaches CO₂ to the five-carbon molecule RuBP, beginning the conversion of CO₂ into sugar." },
+    { "id": "c15", "text": "The Calvin cycle uses ATP and NADPH to produce the three-carbon sugar G3P (glyceraldehyde-3-phosphate). Two G3P combine to make one glucose; the remaining G3P regenerates RuBP so the cycle continues." },
+    { "id": "c16", "text": "The Calvin cycle is a loop that must turn multiple times, fixing one CO₂ per turn, to net enough G3P for a sugar. Spent ADP and NADP⁺ return to the thylakoid to be recharged by the light reactions." },
+    { "id": "c17", "text": "A common misconception is that the released oxygen comes from CO₂; it comes from splitting water. Another is that the 'light-independent' Calvin cycle happens at night; it depends on the light reactions' products and runs in the light." },
+    { "id": "c18", "text": "Glucose is built in the Calvin cycle in the stroma, not in the light reactions. The light reactions make ATP and NADPH, not sugar. The carbon in the sugar comes from CO₂ in the air." },
+    { "id": "c19", "text": "NADPH is the electron carrier used in photosynthesis, while NADH is used in cellular respiration. Keeping the 'P' straight distinguishes the two carriers." },
+    { "id": "c20", "text": "Photosynthesis rate is constrained by limiting factors: light intensity, CO₂ concentration, and temperature. On a rate graph, the output rises and then plateaus when one factor becomes limiting, similar to enzyme saturation." },
+    { "id": "c21", "text": "When a photosynthesis rate plateaus, increasing the current limiting factor (and only it) raises the plateau. Raising light and CO₂ together lifts the plateau higher than changing either alone." },
+    { "id": "c22", "text": "Rubisco sometimes binds O₂ instead of CO₂, starting a wasteful process called photorespiration that consumes energy and releases CO₂ without making sugar. This worsens on hot, dry days when stomata close." },
+    { "id": "c23", "text": "C4 plants (like corn and sugarcane) and CAM plants (like cacti and pineapples) have evolved ways to concentrate CO₂ around rubisco or collect it at night, reducing photorespiration in hot, dry climates — an example of convergent evolution." },
+    { "id": "c24", "text": "Photosynthesis and cellular respiration share machinery: both use an electron transport chain, build a proton gradient, and make ATP via ATP synthase (chemiosmosis). Photosynthesis stores energy in glucose; respiration releases it." }
+  ]
+}

@@ -1,0 +1,118 @@
+{
+  "id": "ap-bio-u6-mutations",
+  "title": "Mutations and Their Consequences",
+  "subject": "AP Biology",
+  "unit": "Gene Expression and Regulation",
+  "track": "ap",
+  "difficulty": "ap",
+  "duration": "40 min",
+  "objectives": [
+    "Define mutation and distinguish point mutations from chromosomal mutations",
+    "Predict the effect of substitutions (silent, missense, nonsense) and of insertions/deletions (frameshifts) on a protein",
+    "Explain why some mutations have large effects and others have none, using the structure of the genetic code",
+    "Connect mutation to genetic variation, evolution, and disease"
+  ],
+  "sections": [
+    {
+      "type": "explanation",
+      "heading": "Typos in the Instructions",
+      "content": "Imagine retyping a long recipe by hand. Most of the time you copy it perfectly, but occasionally a typo slips in — you swap a letter, drop one, or add an extra. Some typos don't matter ('flavour' vs. 'flavor' — same meaning). Some change a word into a different word that still kind of works. And some are catastrophic: drop one letter early and every word after it becomes gibberish. DNA copying is exactly like this. A mutation is a change in the DNA sequence — a typo in the instructions for building proteins — and just like recipe typos, mutations range from utterly harmless to completely disabling.\n\nMutations arise in two main ways. Some are spontaneous errors during DNA replication that slip past the polymerase's proofreading (which you saw is good but not perfect). Others are caused by mutagens — environmental agents that damage DNA, such as UV light, X-rays, tobacco smoke, and certain chemicals. The cell has repair systems that catch and fix most damage, but some changes persist.\n\nOne distinction matters enormously for inheritance. A mutation in a body (somatic) cell affects only that cell and its descendants — it might cause a skin cancer, but it is NOT passed to offspring. A mutation in a germ-line cell (one that makes gametes) CAN be inherited by the next generation and is the kind that fuels evolution. Keep that split in mind: somatic mutations matter for the individual's health; germ-line mutations matter for heredity and evolution."
+    },
+    {
+      "type": "explanation",
+      "heading": "Point Mutations: Substitutions",
+      "content": "The smallest mutations are point mutations — changes at a single base. The simplest is a substitution, where one base is swapped for another (say an A becomes a G). Because the genetic code is read in triplet codons, the effect of a substitution depends entirely on how it changes the codon — and here the redundancy of the code (most amino acids have more than one codon) produces three very different outcomes.\n\nA silent mutation changes the codon but NOT the amino acid, thanks to redundancy: for example, if GAA and GAG both code for glutamate, a substitution that turns GAA into GAG changes nothing about the protein. The typo lands on a 'synonym.' A missense mutation changes the codon so it now codes for a DIFFERENT amino acid. The effect ranges from trivial (if the new amino acid is chemically similar and far from the active site) to severe (sickle-cell disease comes from a single missense mutation that swaps one amino acid in hemoglobin). A nonsense mutation changes an amino-acid codon into a STOP codon, cutting the protein short. Premature stops usually produce a truncated, nonfunctional protein, so nonsense mutations are often serious.\n\nThe key intuition the exam rewards: a single base change can do nothing (silent), change one amino acid (missense), or abruptly end the protein (nonsense) — and which one happens depends on how the codon table responds to the swap. That's why you must be able to take a DNA change, transcribe it, and translate it to predict the consequence."
+    },
+    {
+      "type": "quiz",
+      "question": "A substitution mutation changes a single DNA base, but the resulting codon still specifies the same amino acid as before. What kind of mutation is this, and why does it have no effect on the protein?",
+      "options": [
+        "A nonsense mutation, because it creates a stop codon",
+        "A frameshift mutation, because the reading frame shifts",
+        "A silent mutation, because the genetic code is redundant and the new codon is a synonym for the same amino acid",
+        "A missense mutation, because it changes the amino acid"
+      ],
+      "correctIndex": 2,
+      "explanation": "This is a silent mutation. Because the genetic code is redundant (most amino acids are specified by more than one codon), a base change can produce a different codon that still codes for the same amino acid. The protein's amino acid sequence is unchanged, so its structure and function are unaffected. Nonsense creates a stop, missense changes the amino acid, and frameshift involves insertions/deletions."
+    },
+    {
+      "type": "explanation",
+      "heading": "Insertions, Deletions, and Frameshifts",
+      "content": "The other class of point mutations adds or removes bases: an insertion adds one or more nucleotides, and a deletion removes one or more. Whether these are catastrophic depends on a single question: is the number of bases added or removed a multiple of three?\n\nRemember that the ribosome reads the mRNA in non-overlapping triplets from a fixed start. If you insert or delete a number of bases that is NOT a multiple of three, you shift the reading frame — every codon downstream of the mutation is regrouped and misread. This is a frameshift mutation, and it is usually devastating: not only is the amino acid sequence garbled from the mutation point onward, but a stop codon often appears prematurely in the new frame, truncating the protein. Think of removing one letter from a sentence read three letters at a time: 'THE-CAT-ATE' with the 'C' deleted becomes 'THE-ATA-TE...' — nonsense from that point on.\n\nIf, however, you insert or delete bases in multiples of three, the reading frame is preserved — you simply add or remove whole amino acids without scrambling the rest. The protein may still be affected (an extra or missing amino acid can matter), but it's usually far less damaging than a frameshift. This is exactly why a three-base deletion causes cystic fibrosis (one missing amino acid in a channel protein) rather than total gibberish. The exam loves to test this: a single-base insertion or deletion → frameshift → likely nonfunctional protein; a three-base change → reading frame intact → milder effect."
+    },
+    {
+      "type": "table",
+      "heading": "Types of Mutations and Their Effects",
+      "headers": ["Mutation", "What changes", "Typical effect on protein"],
+      "rows": [
+        ["Silent (substitution)", "Codon changes but codes for the same amino acid", "None (code redundancy)"],
+        ["Missense (substitution)", "Codon now codes for a different amino acid", "Varies: trivial to severe (e.g., sickle cell)"],
+        ["Nonsense (substitution)", "Codon becomes a premature stop codon", "Truncated, usually nonfunctional protein"],
+        ["Insertion/deletion NOT multiple of 3", "Reading frame shifts (frameshift)", "Usually severe; everything downstream garbled"],
+        ["Insertion/deletion multiple of 3", "Whole codons added/removed; frame preserved", "Milder; extra/missing amino acid(s)"],
+        ["Chromosomal (e.g., duplication, inversion)", "Large segments or whole chromosomes change", "Often large-scale effects; can drive evolution"]
+      ]
+    },
+    {
+      "type": "example",
+      "heading": "Predicting a Mutation's Effect",
+      "content": "Let's work a typical exam problem. Start with an mRNA: 5'-AUG ACA GGU UGA-3', which translates (using a codon chart) to Met–Thr–Gly–STOP, so the protein is Met-Thr-Gly.\n\nCase 1 — Substitution. Suppose the second codon ACA mutates to ACG. Look it up: ACA and ACG BOTH code for threonine. The protein is still Met-Thr-Gly. This is a SILENT mutation — no effect, courtesy of code redundancy.\n\nCase 2 — Substitution creating a stop. Suppose the second codon ACA mutates to UGA. UGA is a STOP codon. Now the mRNA reads AUG–UGA, and translation stops after methionine: the protein is just Met. This is a NONSENSE mutation — a drastically truncated, almost certainly nonfunctional protein.\n\nCase 3 — Single-base insertion. Suppose we insert one base (a G) right after the start codon: 5'-AUG GAC AGG UUG A...-3'. Re-group into triplets from AUG: AUG | GAC | AGG | UUG | A... Now the codons are Met–Asp–Arg–Leu–... — completely different from Met-Thr-Gly. Every codon after the insertion is misread because the reading FRAME shifted. This is a FRAMESHIFT, and it typically wrecks the protein and often introduces an early stop downstream.\n\nThe method to carry into the exam: (1) write the original mRNA and protein; (2) apply the DNA/mRNA change; (3) RE-READ the codons in triplets from the start; (4) compare the new protein to the original. Substitutions affect at most one codon; insertions/deletions that aren't multiples of three shift the frame and affect everything downstream."
+    },
+    {
+      "type": "steps",
+      "heading": "How to Classify Any Mutation",
+      "steps": [
+        {
+          "title": "Write the original mRNA and protein",
+          "content": "Start from the unmutated sequence. Transcribe the DNA to mRNA if needed (U for T, antiparallel), find the start codon AUG, and translate in non-overlapping triplets to record the original amino acid sequence as your reference."
+        },
+        {
+          "title": "Apply the change and re-read in triplets",
+          "content": "Make the stated change to the DNA or mRNA, then RE-GROUP the bases into codons from the start. This re-reading step is essential: an insertion or deletion regroups every codon downstream, so you cannot just inspect the single changed base."
+        },
+        {
+          "title": "Decide substitution vs. insertion/deletion",
+          "content": "If one base was swapped (a substitution), only one codon can change — classify it as silent (same amino acid), missense (different amino acid), or nonsense (new stop codon). If bases were added or removed, check whether the number is a multiple of three."
+        },
+        {
+          "title": "For indels, check the reading frame",
+          "content": "An insertion or deletion that is NOT a multiple of three causes a frameshift — everything downstream is garbled, usually with a premature stop. A change that IS a multiple of three preserves the frame, simply adding or removing whole amino acids (a milder effect)."
+        }
+      ]
+    },
+    {
+      "type": "quiz",
+      "question": "A single nucleotide is inserted near the beginning of a gene's coding sequence. Why is this likely to be far more damaging than a single-base substitution at the same spot?",
+      "options": [
+        "Insertions always create stop codons, but substitutions never do",
+        "The insertion shifts the reading frame, so every codon downstream is regrouped and misread, whereas a substitution changes at most one codon",
+        "Substitutions cannot change the amino acid sequence at all",
+        "Insertions damage the DNA backbone permanently"
+      ],
+      "correctIndex": 1,
+      "explanation": "A single-base insertion (not a multiple of three) causes a frameshift: because the ribosome reads non-overlapping triplets from a fixed start, every codon after the insertion is regrouped and misread, usually garbling the rest of the protein and often producing a premature stop. A substitution alters only the one codon it falls in, so its effect is local and often minor (silent or a single amino-acid change)."
+    },
+    {
+      "type": "keypoint",
+      "content": "A mutation is a change in the DNA sequence. Substitutions affect a single codon and may be silent (no change, due to code redundancy), missense (different amino acid), or nonsense (premature stop). Insertions or deletions not in multiples of three cause frameshifts that garble everything downstream. Germ-line mutations are heritable and supply the variation for evolution; somatic mutations affect only the individual."
+    },
+    {
+      "type": "callout",
+      "variant": "warning",
+      "heading": "Mutation Traps to Sidestep",
+      "content": "(1) Not all mutations change the protein — silent mutations exist because the code is REDUNDANT. (2) A frameshift requires an insertion/deletion that is NOT a multiple of three; adding/removing three bases keeps the frame. (3) Mutations are not 'good' or 'bad' in the abstract — their effect depends on the protein and environment; the same mutation can be harmful, neutral, or beneficial. (4) Only GERM-LINE mutations are inherited; somatic mutations are not passed to offspring. (5) Mutation is RANDOM with respect to need — environments do not direct helpful mutations to appear (a key evolution point for Unit 7). (6) To predict an effect, RE-READ the codons in triplets after the change; don't just inspect the single base."
+    },
+    {
+      "type": "deepdive",
+      "heading": "The Double-Edged Sword: Disease, Variation, and the Fuel of Evolution",
+      "content": "Mutation is the ultimate paradox of biology: the same process that causes devastating disease is also the sole original source of all genetic novelty. Every allele you studied in heredity — every version of every gene that natural selection acts on — traces back to a mutation. Without mutation there would be no variation; without variation, evolution would have nothing to work with and life would never have diversified beyond the first cell. Sexual reproduction (meiosis, Unit 5) reshuffles existing alleles into new combinations, but mutation is what CREATES new alleles in the first place. This is the through-line into Unit 7: mutation generates variation, and natural selection sorts it.\n\nThe sickle-cell story captures the double edge perfectly. A single missense mutation changes one amino acid in hemoglobin, causing red blood cells to sickle — painful and dangerous. Yet in regions with endemic malaria, carrying ONE copy of that same allele confers resistance to malaria, so the 'harmful' mutation is actively favored there (heterozygote advantage). Whether a mutation is good or bad is not a property of the mutation alone — it depends on the environment. The same logic explains antibiotic resistance: a random mutation that lets a bacterium survive a drug is lethal-to-us and lifesaving-to-the-bacterium, and overusing antibiotics selects for exactly those mutants. Evolution in real time, driven by mutation, in your local hospital.\n\nMutation is also where this unit's threads converge into modern medicine. Cancer is fundamentally an accumulation of mutations in genes controlling the cell cycle (Unit 4) — mutagens like UV and tobacco smoke raise cancer risk precisely because they raise mutation rate. And the newest medicine turns mutation into a tool: CRISPR gene editing can DELIBERATELY introduce or correct specific DNA changes, offering hope of fixing the very mutations that cause inherited disease — sickle-cell among the first to be treated. From a single typo that sickles a cell to the engine of three billion years of evolution to a Nobel-winning editing tool, mutation is the place where information, variation, and life's capacity to change all meet."
+    },
+    {
+      "type": "callout",
+      "variant": "tip",
+      "heading": "How AP Tests Mutations",
+      "content": "Point-winners: (1) Given a DNA or mRNA change, transcribe/translate and classify it (silent, missense, nonsense, frameshift) and predict the protein effect — always RE-READ the codons after the change. (2) Explain WHY silent mutations occur (code redundancy) and why frameshifts are usually worse than substitutions (reading-frame disruption). (3) Distinguish somatic vs. germ-line mutations and state which is heritable. (4) Argue that mutation is the original source of genetic variation and is random with respect to need (sets up Unit 7 natural selection). (5) Connect specific mutations to disease (sickle cell = missense; cystic fibrosis = 3-base deletion) and to malaria/heterozygote advantage. (6) Command words: 'predict' the effect, 'explain' the mechanism, 'justify' using the genetic code's properties."
+    }
+  ],
+  "aiContext": "This AP Biology Unit 6 lesson covers mutations and their consequences (CED topic 6.7), following gene expression/regulation and connecting forward to evolution (Unit 7). A mutation is a change in DNA sequence; emphasize the link from DNA change → mRNA change → codon change → protein effect, which students must be able to trace using a codon chart. Causes: spontaneous replication errors that escape proofreading, and mutagens (UV, X-rays, tobacco smoke, chemicals). Crucial inheritance distinction: somatic mutations affect only the individual (e.g., cancers) and are NOT inherited; germ-line mutations are heritable and fuel evolution. Point mutations: substitutions can be silent (codon changes but same amino acid, due to code REDUNDANCY — the key reason some mutations have no effect), missense (different amino acid, effect ranges from trivial to severe like sickle cell), or nonsense (premature stop → truncated protein). Insertions/deletions: if NOT a multiple of three they cause a FRAMESHIFT that regroups and garbles every downstream codon (usually severe, often a premature stop); if a multiple of three the reading frame is preserved (milder, e.g., the 3-base deletion causing cystic fibrosis). Larger chromosomal mutations (duplications, inversions, etc.) affect big segments. Method students must master: write original mRNA/protein, apply the change, RE-READ codons in triplets from the start, compare. Key misconceptions to counter: that all mutations change the protein (silent exist), that all indels cause frameshifts (multiples of three don't), that mutations are inherently good/bad (effect depends on environment — sickle cell + malaria heterozygote advantage), and that mutations arise because they're needed (mutation is RANDOM with respect to need — vital for Unit 7). Connect to evolution (mutation is the original source of all new alleles/variation; meiosis only reshuffles), antibiotic resistance, cancer (accumulated mutations in cell-cycle genes, Unit 4), and CRISPR gene editing. On the exam expect transcribe/translate-then-classify problems, frameshift-vs-substitution reasoning, and mutation-as-source-of-variation arguments."
+}

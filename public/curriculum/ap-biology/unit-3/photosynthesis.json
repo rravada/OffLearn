@@ -1,0 +1,126 @@
+{
+  "id": "ap-bio-u3-photosynthesis",
+  "title": "Photosynthesis",
+  "subject": "AP Biology",
+  "unit": "Cellular Energetics",
+  "track": "ap",
+  "difficulty": "ap",
+  "duration": "50 min",
+  "objectives": [
+    "Write and interpret the overall equation for photosynthesis and locate its stages in the chloroplast",
+    "Explain how the light-dependent reactions capture light energy to make ATP and NADPH and release O2",
+    "Describe how the Calvin cycle uses ATP and NADPH to fix CO2 into sugar",
+    "Trace the source of the oxygen released and connect photosynthesis to cellular respiration"
+  ],
+  "sections": [
+    {
+      "type": "explanation",
+      "heading": "Building a Sugar Out of Thin Air",
+      "content": "Stand a small seed next to the towering tree it can become and ask a simple question: where did all that wood come from? It feels like it must come from the soil, but it doesn't — a famous experiment centuries ago showed the soil in a pot barely loses any mass while a tree gains hundreds of pounds. The overwhelming majority of a tree's solid body is built from an invisible gas, carbon dioxide, pulled out of the air, using the energy of sunlight. A plant is, quite literally, sunlight and air made solid. That astonishing trick is photosynthesis.\n\nPhotosynthesis is how plants, algae, and some bacteria convert light energy into chemical energy stored in sugar. It is the entry point for almost all the energy in the living world: the energy in your lunch, in a deer's muscle, in gasoline and coal, traces back to sunlight captured by a photosynthetic organism. Organisms that make their own food this way are called autotrophs ('self-feeders'); the rest of us are heterotrophs that must eat them.\n\nThe overall reaction summarizes the whole process: 6 CO₂ + 6 H₂O + light energy → C₆H₁₂O₆ + 6 O₂. In words: carbon dioxide and water, powered by light, become glucose and oxygen. Notice two things. First, this is endergonic — it stores energy in glucose, exactly the kind of uphill reaction the last lesson said requires an energy input (here, light). Second, the oxygen you breathe is a by-product of this reaction. This lesson opens up that summary equation into its two connected stages."
+    },
+    {
+      "type": "explanation",
+      "heading": "Where It Happens: Inside the Chloroplast",
+      "content": "Photosynthesis takes place in the chloroplast, an organelle found in plant and algal cells (and, by the endosymbiotic theory from Unit 2, a descendant of an ancient free-living cyanobacterium). The chloroplast's structure maps directly onto the two stages of photosynthesis, so learning the anatomy makes the chemistry easy.\n\nInside the chloroplast are stacks of flattened membrane sacs called thylakoids; a stack is a granum (plural grana). Embedded in the thylakoid membranes is the green pigment chlorophyll, which absorbs light. The first stage — the light-dependent reactions — happens IN the thylakoid membranes, because that's where the light-catching pigments and the machinery live.\n\nSurrounding the thylakoids is a thick fluid called the stroma. The second stage — the Calvin cycle, where sugar is actually built — happens in the stroma.\n\nSo the geography is: light reactions in the thylakoid membrane, Calvin cycle in the stroma. The two stages are linked by the products the light reactions hand off to the Calvin cycle: the energy carrier ATP and the electron carrier NADPH. Keep that handoff in mind — it's the thread that connects the two halves of photosynthesis."
+    },
+    {
+      "type": "table",
+      "heading": "The Two Stages of Photosynthesis",
+      "headers": ["Feature", "Light-Dependent Reactions", "Calvin Cycle (Light-Independent)"],
+      "rows": [
+        ["Location", "Thylakoid membrane", "Stroma"],
+        ["Needs light directly?", "Yes", "No (but needs the products of the light reactions)"],
+        ["Inputs", "Light, H₂O, ADP+Pi, NADP⁺", "CO₂, ATP, NADPH"],
+        ["Outputs", "O₂, ATP, NADPH", "Sugar (G3P → glucose), ADP, NADP⁺"],
+        ["Key event", "Split water, make ATP & NADPH, release O₂", "Fix CO₂ into organic sugar"]
+      ]
+    },
+    {
+      "type": "quiz",
+      "question": "In which part of the chloroplast is glucose actually built, and using what energy source?",
+      "options": [
+        "In the thylakoid membrane, directly using light energy",
+        "In the stroma (Calvin cycle), using ATP and NADPH from the light reactions",
+        "In the thylakoid membrane, using ATP and NADPH",
+        "In the stroma, directly using light energy"
+      ],
+      "correctIndex": 1,
+      "explanation": "Sugar is built in the Calvin cycle, which runs in the stroma and is powered by the ATP and NADPH made earlier by the light reactions — not by light directly. The light reactions (in the thylakoid membrane) make ATP and NADPH, not sugar."
+    },
+    {
+      "type": "explanation",
+      "heading": "Stage 1: The Light-Dependent Reactions",
+      "content": "The job of the light reactions is to turn light energy into chemical energy in two carriers — ATP and NADPH — and to release oxygen along the way. It happens in the thylakoid membrane in a few connected moves.\n\nFirst, light strikes chlorophyll in a cluster called photosystem II, exciting its electrons to a higher energy level. These energized electrons are passed off and travel down an electron transport chain — a series of proteins in the thylakoid membrane that hand the electron from one to the next, like a bucket brigade.\n\nWhere do replacement electrons come from? From splitting water. The enzyme complex pulls electrons from H₂O, breaking it apart. This photolysis ('splitting by light') of water does two crucial things: it supplies the electrons to refill photosystem II, and it releases O₂ as a by-product. This is the source of every oxygen molecule you have ever breathed — and the oxygen comes from WATER, not from carbon dioxide.\n\nAs the energized electrons travel down the chain, the released energy is used to pump hydrogen ions (H⁺, protons) into the thylakoid interior, building up a steep concentration gradient. The trapped protons then rush back out through an enzyme called ATP synthase, and that flow drives the synthesis of ATP — a process called chemiosmosis. Meanwhile a second cluster, photosystem I, re-energizes the electrons one more time and uses them to make NADPH (it loads NADP⁺ with the high-energy electrons and an H⁺). The light reactions thus deliver their two products — ATP and NADPH — into the stroma for the next stage."
+    },
+    {
+      "type": "explanation",
+      "heading": "Stage 2: The Calvin Cycle",
+      "content": "Now the cell has energy (ATP) and reducing power (NADPH) but still no sugar. Building the sugar is the job of the Calvin cycle, which runs in the stroma and does NOT directly need light — though it depends completely on the ATP and NADPH the light reactions just made, so in practice it runs in daylight. (For this reason 'light-independent' is more accurate than the old term 'dark reactions.')\n\nThe Calvin cycle takes carbon dioxide from the air and incorporates it into an organic molecule — a step called carbon fixation, turning inorganic CO₂ into the carbon skeleton of life. The enzyme that grabs CO₂ is rubisco, often called the most abundant protein on Earth. CO₂ is attached to a five-carbon molecule (RuBP), and after a series of steps powered by spending the ATP and NADPH, the cycle produces a three-carbon sugar called G3P (glyceraldehyde-3-phosphate). Two G3P molecules can be combined to make one glucose; the rest of the G3P is recycled to regenerate RuBP so the cycle can keep turning.\n\nThe cycle is a loop, not a one-shot reaction: it must turn multiple times, fixing one CO₂ each turn, to net enough G3P for a sugar. The spent carriers — ADP and NADP⁺ — return to the thylakoid to be recharged by the light reactions. That return trip closes the partnership: light reactions charge the carriers, the Calvin cycle spends them to build sugar, and the empties go back for another charge. Photosynthesis is this two-stage relay running over and over in the light."
+    },
+    {
+      "type": "steps",
+      "heading": "Following the Energy and Carbon Through Photosynthesis",
+      "steps": [
+        {
+          "title": "Light hits chlorophyll, exciting electrons",
+          "content": "In the thylakoid membrane, light energy is absorbed by chlorophyll in photosystem II, boosting electrons to a high energy level. These electrons enter an electron transport chain."
+        },
+        {
+          "title": "Water is split, releasing O₂",
+          "content": "Water (H₂O) is split to replace the lost electrons. This photolysis releases oxygen gas (O₂) as a by-product — the oxygen comes from water — and provides H⁺ ions."
+        },
+        {
+          "title": "ATP and NADPH are made (chemiosmosis)",
+          "content": "Energy from electrons moving down the chain pumps H⁺ into the thylakoid. As H⁺ flows back out through ATP synthase, ATP is made. Photosystem I uses re-energized electrons to make NADPH. Both products move into the stroma."
+        },
+        {
+          "title": "CO₂ is fixed in the Calvin cycle",
+          "content": "In the stroma, the enzyme rubisco attaches CO₂ from the air to RuBP (carbon fixation). This begins converting inorganic carbon into an organic molecule."
+        },
+        {
+          "title": "ATP and NADPH build sugar",
+          "content": "The ATP and NADPH from the light reactions power the conversion of the fixed carbon into G3P, a three-carbon sugar. Two G3P make one glucose; the rest regenerates RuBP so the cycle continues. Spent ADP and NADP⁺ return to the light reactions."
+        }
+      ]
+    },
+    {
+      "type": "quiz",
+      "question": "A plant is given water containing a heavy oxygen isotope (H₂¹⁸O), while its CO₂ contains normal oxygen. In which product will the labeled ¹⁸O appear?",
+      "options": [
+        "In the glucose (C₆H₁₂O₆)",
+        "In the oxygen gas (O₂) released",
+        "In the carbon dioxide taken in",
+        "In the NADPH made during the light reactions"
+      ],
+      "correctIndex": 1,
+      "explanation": "The oxygen gas released in photosynthesis comes from the splitting of WATER (photolysis), not from CO₂. So a heavy-oxygen label placed in water shows up in the O₂ released. This classic experiment proved that water, not carbon dioxide, is the source of photosynthetic oxygen."
+    },
+    {
+      "type": "keypoint",
+      "content": "Photosynthesis runs in two linked stages: the light-dependent reactions in the thylakoid membrane split water (releasing O₂) and use light energy to make ATP and NADPH, which the Calvin cycle in the stroma then spends to fix CO₂ into sugar."
+    },
+    {
+      "type": "callout",
+      "variant": "warning",
+      "heading": "The Oxygen Comes From Water, Not CO₂",
+      "content": "High-frequency AP traps: (1) The O₂ released comes from splitting WATER, not from carbon dioxide — say this confidently. (2) The Calvin cycle is 'light-independent,' but that does NOT mean it happens at night; it depends on the ATP and NADPH made by the light reactions, so it effectively runs in the light. Avoid the outdated term 'dark reactions.' (3) Glucose is built in the Calvin cycle (the stroma), NOT in the light reactions; the light reactions make ATP and NADPH, not sugar. (4) Carbon for the sugar comes from CO₂ in the air, not from the soil or from water. (5) NADPH (photosynthesis) is different from NADH (respiration) — keep the 'P' straight."
+    },
+    {
+      "type": "example",
+      "heading": "Interpreting a Photosynthesis-Rate Experiment",
+      "content": "AP loves data on what limits photosynthesis. Imagine measuring O₂ production (a proxy for photosynthesis rate) from a water plant as you change conditions.\n\nEXPERIMENT A — Increasing light intensity: As light intensity rises from darkness, O₂ output climbs steeply, then bends over and plateaus at high light. Interpretation: at low light, light is the limiting factor, so more light means more photosynthesis. At the plateau, something ELSE has become limiting (often CO₂ availability or temperature), so adding more light no longer helps. This 'rise then plateau' shape is the signature of a limiting factor — the same logic as enzyme saturation, because rubisco and the light machinery can only work so fast.\n\nEXPERIMENT B — Increasing CO₂ at constant bright light: O₂ output again rises and then plateaus, showing that once CO₂ is abundant, CO₂ is no longer limiting and the rate is capped by another factor. If you raise the light AND the CO₂ together, the plateau climbs higher than changing either alone — evidence that you removed two limits at once.\n\nThe reasoning skill the exam wants: a process is constrained by whichever required factor is in shortest supply (the limiting factor). When a rate plateaus, name what is now limiting and predict that increasing it (and only it) will raise the plateau. Temperature matters too, because the Calvin cycle and electron transport rely on enzymes that have an optimal temperature and denature if it gets too hot."
+    },
+    {
+      "type": "callout",
+      "variant": "tip",
+      "heading": "How AP Tests Photosynthesis",
+      "content": "Score-boosting moves: (1) Be able to write 6 CO₂ + 6 H₂O + light → C₆H₁₂O₆ + 6 O₂ and label each stage's location (thylakoid vs. stroma). (2) For 'trace the atom' questions, remember O₂ comes from water and the sugar's carbon comes from CO₂. (3) For limiting-factor graphs, identify the plateau and name the new limiting factor (light, CO₂, or temperature). (4) Connect the two stages by their handoff molecules: light reactions MAKE ATP + NADPH; Calvin cycle USES ATP + NADPH and returns ADP + NADP⁺. (5) Note the parallels to respiration — both use electron transport chains, a proton gradient, and ATP synthase (chemiosmosis); the next lesson runs that machinery in reverse direction of purpose."
+    },
+    {
+      "type": "deepdive",
+      "heading": "Rubisco's Flaw, Photorespiration, and Why It Matters for a Warming Planet",
+      "content": "Rubisco, the enzyme that fixes carbon, is the gateway for nearly all the organic carbon in the biosphere — and yet it is famously flawed. Rubisco can't perfectly tell CO₂ apart from O₂, and sometimes it grabs O₂ instead. When it does, it starts a wasteful process called photorespiration that consumes energy and releases CO₂ without making sugar — essentially undoing photosynthesis. On a hot, dry day this problem gets worse: to conserve water, a plant closes the pores in its leaves (stomata), but that traps the O₂ it's producing and shuts out fresh CO₂, raising the O₂-to-CO₂ ratio exactly when rubisco is most likely to make the costly mistake.\n\nEvolution has answered this with elegant workarounds that are a favorite higher-level AP topic. C4 plants (like corn and sugarcane) and CAM plants (like cacti and pineapples) have evolved ways to concentrate CO₂ around rubisco or to collect CO₂ at night, so rubisco stays productive even in heat and drought. This is a beautiful example of different lineages independently solving the same environmental problem (convergent evolution), and it explains why certain crops thrive in hot climates while others wilt.\n\nThe stakes are planetary. Photosynthesis sets the base of essentially every food web and, over geologic time, created the oxygen atmosphere that made complex life possible — the 'Great Oxidation Event' was caused by ancient cyanobacteria doing exactly the light reactions you just learned. Today, photosynthesis is the main process pulling human-released CO₂ back out of the air, so how plants respond to rising temperature and CO₂ is central to climate science and food security. Understanding rubisco's quirk isn't trivia — scientists are actively trying to engineer a better version to feed a growing world. The enzyme in a blade of grass connects directly to the future of the planet."
+    }
+  ],
+  "aiContext": "This AP Biology Unit 3 lesson covers photosynthesis (CED topics 3.5 and related energetics): the overall equation, chloroplast structure, the light-dependent reactions, and the Calvin cycle. Anchor everything on the two-stage relay: light reactions in the thylakoid membrane split water (releasing O₂) and use light to make ATP and NADPH; the Calvin cycle in the stroma spends ATP and NADPH to fix CO₂ (via rubisco) into G3P/glucose, returning ADP and NADP⁺. The most-tested misconceptions: the released O₂ comes from WATER not CO₂ (the heavy-isotope experiment), 'light-independent' does not mean it occurs at night, glucose is built in the Calvin cycle not the light reactions, and NADPH (photosynthesis) is distinct from NADH (respiration). Emphasize limiting-factor graph interpretation (light, CO₂, temperature; rise-then-plateau like enzyme saturation) and the chemiosmosis parallel to respiration (electron transport chain, proton gradient, ATP synthase). Connect back to enzymes (rubisco, optimal temperature) and the chloroplast's endosymbiotic origin (Unit 2), and forward to ecosystems and climate (Unit 8). On the exam, expect the equation, location/atom-tracing questions, limiting-factor data analysis, and comparisons with cellular respiration."
+}

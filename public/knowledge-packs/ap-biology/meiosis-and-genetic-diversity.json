@@ -1,0 +1,30 @@
+{
+  "id": "ap-bio-meiosis-and-genetic-diversity",
+  "title": "Meiosis and Genetic Diversity",
+  "subject": "AP Biology",
+  "chunks": [
+    { "id": "c1", "text": "Sexual reproduction must solve a halving problem: if each parent's reproductive cell carried the full chromosome set, offspring would double the chromosome number each generation. Meiosis solves this by producing cells with half the normal chromosome number." },
+    { "id": "c2", "text": "Meiosis is a special cell division that produces gametes (sperm and egg cells), each with half the chromosome number of the parent. A diploid cell (2n = 46 in humans) produces haploid gametes (n = 23)." },
+    { "id": "c3", "text": "When a haploid sperm (23) fertilizes a haploid egg (23), the zygote is diploid again (46). Halving the chromosome number during meiosis and then combining gametes at fertilization keeps the chromosome number constant across generations." },
+    { "id": "c4", "text": "Homologous chromosomes (homologs) are the two members of a chromosome pair, one inherited from each parent. They are the same length, have the same centromere position, and carry the same genes in the same order." },
+    { "id": "c5", "text": "Alleles are different versions of a gene. Homologous chromosomes carry the same genes but not necessarily the same alleles, so they are similar but not identical, like two editions of the same textbook with some different words." },
+    { "id": "c6", "text": "Sister chromatids are two identical copies of a single chromosome, made by replication and joined at the centromere. Homologous chromosomes are two different (maternal vs. paternal) chromosomes carrying the same genes. Confusing these causes most heredity errors." },
+    { "id": "c7", "text": "After DNA replication, each homolog consists of two sister chromatids, so a homologous pair contains four chromatids total. Meiosis brings homologs together and then separates them, something mitosis never does." },
+    { "id": "c8", "text": "In meiosis, after a single round of DNA replication, the cell divides twice, so one diploid cell yields four haploid cells. This is a fundamental difference from mitosis, which divides once." },
+    { "id": "c9", "text": "Meiosis I is the reduction division, where the chromosome number is halved. Homologous chromosomes pair up and then are separated, one homolog going to each new cell, making the cells haploid." },
+    { "id": "c10", "text": "In Meiosis I the paired homologs form a structure of four chromatids called a tetrad (or bivalent). What separates in Meiosis I is whole homologous chromosomes, each still made of two sister chromatids, not sister chromatids." },
+    { "id": "c11", "text": "Meiosis II is essentially like mitosis but on haploid cells: the sister chromatids of each chromosome are pulled apart. No further reduction in chromosome number occurs because the cells are already haploid." },
+    { "id": "c12", "text": "The mantra is: Meiosis I separates homologs (reduction to haploid); Meiosis II separates sister chromatids. The result is four genetically distinct haploid gametes from one diploid starting cell." },
+    { "id": "c13", "text": "Compared with mitosis, meiosis has two divisions, produces four daughter cells, reduces diploid to haploid, yields genetically different cells, pairs homologs, and includes crossing over. Meiosis makes gametes; mitosis is for growth, repair, and asexual reproduction." },
+    { "id": "c14", "text": "Crossing over (recombination) occurs in Meiosis I when paired homologs physically swap matching segments at points called chiasmata. This creates recombinant chromosomes with new allele combinations that neither parent's chromosome had." },
+    { "id": "c15", "text": "Independent assortment occurs in Meiosis I: when homologous pairs line up at the cell's middle, the orientation of each pair is random and independent of every other pair, so each gamete gets a random mix of maternal and paternal chromosomes." },
+    { "id": "c16", "text": "With 23 pairs, independent assortment alone gives 2^23 (over 8 million) possible chromosome combinations in human gametes. For an organism with n chromosome pairs, the number of combinations is 2^n." },
+    { "id": "c17", "text": "Random fertilization adds more variation: any one of millions of possible eggs can combine with any one of millions of possible sperm, producing over 70 trillion combinations per couple before crossing over is even counted." },
+    { "id": "c18", "text": "The three sources of genetic variation in sexual reproduction are crossing over and independent assortment (both in Meiosis I) and random fertilization. Together they ensure that, barring identical twins, no two people are genetically identical." },
+    { "id": "c19", "text": "The genetic variation produced by meiosis is the raw material that natural selection acts on, linking heredity to evolution. Without heritable variation, evolution by natural selection cannot occur." },
+    { "id": "c20", "text": "Nondisjunction is the failure of chromosomes to separate properly: homologs failing to split in Meiosis I, or sister chromatids failing to split in Meiosis II. It produces gametes with the wrong chromosome number, one with an extra (n+1) and one missing one (n-1)." },
+    { "id": "c21", "text": "If a gamete with the wrong chromosome number is fertilized, the zygote has an abnormal count (aneuploidy). Down syndrome (trisomy 21) results from three copies of chromosome 21, giving 47 chromosomes total." },
+    { "id": "c22", "text": "Other aneuploidy disorders include Turner syndrome (a single X, written XO) and Klinefelter syndrome (XXY). The chance of nondisjunction errors rises with parental age, giving meiosis real medical significance." },
+    { "id": "c23", "text": "Sexual reproduction is costly (each parent passes only 50% of its genes and must find a mate), but it persists because the genetic variation from meiosis lets populations adapt to changing environments and resist evolving parasites and diseases, a moving target rather than identical clones." }
+  ]
+}

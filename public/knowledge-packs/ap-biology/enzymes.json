@@ -1,0 +1,32 @@
+{
+  "id": "ap-bio-enzymes",
+  "title": "Enzymes: Structure, Catalysis, and Regulation",
+  "subject": "AP Biology",
+  "chunks": [
+    { "id": "c1", "text": "An enzyme is a biological catalyst: a substance that speeds up a chemical reaction without being consumed or permanently changed by it. Because one enzyme molecule is reused over and over, a cell needs only tiny amounts of it." },
+    { "id": "c2", "text": "Almost all enzymes are proteins, so their function depends directly on their folded three-dimensional shape. A few enzymes are RNA molecules called ribozymes." },
+    { "id": "c3", "text": "The molecule an enzyme acts on is called its substrate, and the resulting molecules are called products. Enzyme names usually end in '-ase' and describe the job, such as lactase, DNA polymerase, and ATP synthase." },
+    { "id": "c4", "text": "Activation energy (Ea) is the energy barrier that reactants must overcome before they can become products. It corresponds to forming an unstable, strained arrangement called the transition state. The higher the barrier, the slower the reaction." },
+    { "id": "c5", "text": "Enzymes work by lowering the activation energy of a reaction, providing an easier pathway so that a far greater fraction of molecules have enough energy to react at body temperature." },
+    { "id": "c6", "text": "Enzymes do NOT add energy to a reaction, do NOT change whether the reaction releases or absorbs energy overall, and do NOT change the final equilibrium. They only make the reaction reach equilibrium faster, and they speed the reaction in both directions." },
+    { "id": "c7", "text": "The active site is a pocket or groove in the enzyme's folded shape where the substrate binds and the reaction occurs. It is formed by a few specific amino acids brought together by the way the protein folds." },
+    { "id": "c8", "text": "Enzyme specificity means each enzyme generally acts on only one substrate or one type of bond, because only a correctly shaped and charged molecule fits the active site well." },
+    { "id": "c9", "text": "The lock-and-key model pictures the substrate (key) fitting a rigid active site (lock). The more accurate induced-fit model says the active site changes shape slightly to grip the substrate snugly when it binds." },
+    { "id": "c10", "text": "Induced fit is physically how an enzyme lowers activation energy: the snug grip strains and bends the substrate's bonds, aligns reacting groups, and creates a favorable microenvironment that makes the reaction easier." },
+    { "id": "c11", "text": "The catalytic cycle: the substrate binds the active site, induced fit forms the enzyme-substrate complex, the reaction occurs, products are released, and the enzyme returns to its original shape unchanged, ready to catalyze again." },
+    { "id": "c12", "text": "Raising temperature speeds an enzyme reaction up to an optimal temperature because molecules collide with the active site more often. Past the optimum, heat denatures the enzyme, destroying the active site and crashing the rate. Human enzymes typically peak near 37°C." },
+    { "id": "c13", "text": "Denaturation is the loss of an enzyme's three-dimensional shape, which deforms the active site and abolishes function. It is caused by high temperature or extreme pH and is usually permanent." },
+    { "id": "c14", "text": "Each enzyme has an optimal pH where its active site holds the correct shape and charge. Most human enzymes prefer near pH 7, but pepsin in the stomach works best at pH 2 and trypsin in the small intestine prefers pH 8." },
+    { "id": "c15", "text": "Increasing substrate concentration raises the reaction rate only until the enzymes become saturated, meaning every active site is occupied. At saturation the rate plateaus at its maximum and adding more substrate has no effect." },
+    { "id": "c16", "text": "Saturation (a plateau as substrate concentration increases) is NOT denaturation. The enzyme is healthy but maxed out; the rate can only be raised by adding more enzyme. Denaturation is a peak-then-drop caused by temperature or pH." },
+    { "id": "c17", "text": "Increasing enzyme concentration raises the reaction rate when substrate is plentiful, because more active sites work in parallel." },
+    { "id": "c18", "text": "A competitive inhibitor resembles the substrate and binds the active site itself, blocking the real substrate. Adding excess substrate can outcompete it and restore the normal rate." },
+    { "id": "c19", "text": "A noncompetitive inhibitor binds a separate allosteric site, not the active site, changing the enzyme's shape so the active site no longer fits the substrate. Adding more substrate does NOT reverse noncompetitive inhibition." },
+    { "id": "c20", "text": "The test that distinguishes the two inhibitor types is whether excess substrate restores activity: yes means competitive (active-site binding), no means noncompetitive (allosteric binding)." },
+    { "id": "c21", "text": "In feedback inhibition (end-product inhibition), the final product of a metabolic pathway acts as an allosteric inhibitor of an enzyme early in the same pathway, switching off its own production once enough accumulates and preventing wasteful overproduction." },
+    { "id": "c22", "text": "Cofactors are non-protein helpers required for some enzymes to work; they are often metal ions such as Mg²⁺ or Zn²⁺. Coenzymes are organic cofactors, often derived from vitamins, such as NAD⁺." },
+    { "id": "c23", "text": "Many drugs are enzyme inhibitors: statins competitively inhibit the cholesterol-building enzyme HMG-CoA reductase, penicillin inhibits enzymes bacteria use to build cell walls, and aspirin blocks the inflammation enzyme cyclooxygenase." },
+    { "id": "c24", "text": "Enzyme defects cause disease. In phenylketonuria (PKU) a missing enzyme cannot break down phenylalanine, which builds to toxic levels; lactose intolerance results from low levels of the enzyme lactase. Because an enzyme is a protein encoded by a gene, a mutation can produce an enzyme with a broken active site." },
+    { "id": "c25", "text": "On AP enzyme graphs, always read the x-axis first: substrate concentration implies saturation, while temperature or pH implies an optimum and denaturation. When asked to 'explain' an effect, connect it to the enzyme's shape and active site." }
+  ]
+}

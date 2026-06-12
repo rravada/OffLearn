@@ -1,0 +1,173 @@
+{
+  "id": "ap-bio-unit8-review",
+  "title": "Unit 8 Review: Ecology",
+  "subject": "AP Biology",
+  "unit": "Ecology",
+  "type": "unit-review",
+  "questionsPerAttempt": 10,
+  "isAssessment": true,
+  "bank": [
+    {
+      "question": "Newly hatched goslings follow the first large moving object they see during a brief early period and form an essentially permanent attachment. This is...",
+      "options": ["habituation", "imprinting", "a fixed action pattern", "operant conditioning"],
+      "correctIndex": 1,
+      "explanation": "Imprinting is a rapid, irreversible learning that occurs during a brief critical period early in life. Habituation is learning to ignore a harmless stimulus, a fixed action pattern is an innate behavior, and operant conditioning is learning through reward and punishment."
+    },
+    {
+      "question": "A moth flying directly toward a light source is exhibiting...",
+      "options": ["a kinesis", "a taxis (directed movement toward a stimulus)", "a tropism", "habituation"],
+      "correctIndex": 1,
+      "explanation": "A taxis is a directed movement toward or away from a stimulus — here, positive phototaxis. A kinesis is a change in the speed or amount of undirected movement; a tropism is a directional growth response in plants; habituation is a form of learning."
+    },
+    {
+      "question": "A ground squirrel gives an alarm call that endangers itself but warns nearby relatives. How does natural selection best explain this?",
+      "options": ["The squirrel sacrifices itself for the good of the species", "Kin selection: warning relatives who share its alleles raises the caller's inclusive fitness", "The behavior is purely learned with no genetic basis", "Alarm calling directly increases the caller's own offspring"],
+      "correctIndex": 1,
+      "explanation": "Kin selection explains altruism: relatives share many of the caller's alleles, so helping them survive and reproduce propagates copies of those alleles (inclusive fitness). Selection acts on shared genes, not vaguely 'for the good of the species.'"
+    },
+    {
+      "question": "Which statement correctly contrasts the movement of energy and matter in an ecosystem?",
+      "options": ["Both energy and matter cycle endlessly", "Energy flows one-way (in as light, out as heat) while matter cycles and is reused", "Matter flows one-way while energy cycles", "Neither is conserved"],
+      "correctIndex": 1,
+      "explanation": "Energy flows through an ecosystem one-way — entering as sunlight and leaving as heat — so it must be continuously resupplied. Matter (carbon, nitrogen, etc.) cycles: the same atoms are reused repeatedly, with decomposers recycling them. 'Energy flows, matter cycles' is the key idea."
+    },
+    {
+      "question": "Producers in an ecosystem store 40,000 kcal. Using the 10% rule, about how much energy reaches the secondary consumers (third trophic level)?",
+      "options": ["4,000 kcal", "400 kcal", "40 kcal", "36,000 kcal"],
+      "correctIndex": 1,
+      "explanation": "About 10% transfers at each step. Producers (40,000) → primary consumers (4,000) → secondary consumers (400). Each transfer loses ~90%, mostly to cellular respiration as heat, which is why energy at higher levels is so small and food chains are short."
+    },
+    {
+      "question": "Why are food chains usually limited to only 3–5 trophic levels?",
+      "options": ["Predators run out of prey by chance", "Only about 10% of energy passes to each higher level, so after a few steps too little energy remains to support another level", "Decomposers eat all the energy", "Matter cannot be recycled"],
+      "correctIndex": 1,
+      "explanation": "Because only ~10% of energy transfers between trophic levels (the rest lost mainly as respiration heat), the energy available shrinks rapidly with each step. After a few 90% losses there simply isn't enough energy to support another level, limiting food-chain length."
+    },
+    {
+      "question": "Why can most organisms NOT use the abundant nitrogen gas (N₂) in the atmosphere directly?",
+      "options": ["N₂ is too rare", "They need nitrogen in fixed forms (like ammonium or nitrate); nitrogen-fixing bacteria convert N₂ into usable forms", "N₂ is toxic to all life", "Nitrogen is not needed by living things"],
+      "correctIndex": 1,
+      "explanation": "Although the atmosphere is ~78% N₂, most organisms cannot use N₂ directly. Nitrogen-fixing bacteria (many in legume root nodules) convert atmospheric N₂ into usable ammonium — the entry point of nitrogen into living systems, where it builds proteins and nucleic acids."
+    },
+    {
+      "question": "A population grows rapidly at first, then slows and levels off at a stable maximum as resources become limited. This is...",
+      "options": ["exponential growth (J-shaped)", "logistic growth (S-shaped), leveling at carrying capacity (K)", "a population with unlimited resources", "density-independent regulation"],
+      "correctIndex": 1,
+      "explanation": "Leveling off at a stable maximum as resources become limited is logistic growth, producing an S-shaped curve that plateaus at carrying capacity (K). Exponential (J-shaped) growth assumes unlimited resources and accelerates without limit."
+    },
+    {
+      "question": "In a logistically growing population, when is the population growing fastest?",
+      "options": ["When it is at carrying capacity", "In the steep middle of the S-curve, where there are many reproducers but resources are still adequate", "When the population is smallest", "Growth rate is constant throughout"],
+      "correctIndex": 1,
+      "explanation": "Growth is fastest in the steep middle of the S-curve — large enough to have many reproducing individuals, but not yet so crowded that resources are scarce. At carrying capacity, growth is near zero (births ≈ deaths); when very small, there are too few reproducers."
+    },
+    {
+      "question": "A severe drought kills the same fraction of a beetle population regardless of how crowded the population is. This is a...",
+      "options": ["density-dependent factor", "density-independent factor", "factor that sets carrying capacity", "form of logistic regulation"],
+      "correctIndex": 1,
+      "explanation": "A drought affects the population regardless of its density — the same fraction dies whether sparse or crowded — so it is density-independent. Density-dependent factors (competition, disease, predation) intensify with crowding and regulate populations around carrying capacity."
+    },
+    {
+      "question": "Which set of traits describes an r-selected species?",
+      "options": ["Few large offspring, much parental care, long lifespan", "Many small offspring, little parental care, rapid reproduction, often Type III survivorship", "Reproduces only at carrying capacity", "Always larger than K-selected species"],
+      "correctIndex": 1,
+      "explanation": "r-selected species maximize growth rate: many small offspring, little or no parental care, early and rapid reproduction, typically small and short-lived, and often Type III survivorship (most offspring die young). K-selected species have few well-cared-for offspring and Type I survivorship."
+    },
+    {
+      "question": "A Type III survivorship curve (e.g., oysters, many fish) indicates that...",
+      "options": ["most individuals survive to old age", "death rate is constant at all ages", "most offspring die young, with few surviving to adulthood", "the species is K-selected"],
+      "correctIndex": 2,
+      "explanation": "A Type III (early loss) curve plummets early — most offspring die young — then flattens for the few survivors that reach adulthood, typical of r-selected species producing many neglected offspring. Type I = die old (K-selected); Type II = constant death rate at all ages."
+    },
+    {
+      "question": "Two species of warbler feed in the same trees but in different zones (treetop vs. lower branches), reducing competition. This is an example of...",
+      "options": ["competitive exclusion", "resource partitioning", "mutualism", "commensalism"],
+      "correctIndex": 1,
+      "explanation": "Resource partitioning is when competing species divide up resources or niche space so they aren't using the exact same thing, allowing coexistence. MacArthur's warblers feeding in different parts of the same trees is the classic example, and it lets species avoid competitive exclusion."
+    },
+    {
+      "question": "Two species compete for the exact same limiting resource in the same place. According to the competitive exclusion principle...",
+      "options": ["both will coexist indefinitely with no change", "one will outcompete the other, driving it to local extinction (they can't occupy the identical niche)", "they will form a mutualism", "the resource will double"],
+      "correctIndex": 1,
+      "explanation": "The competitive exclusion principle states that two species using the exact same limiting resource cannot coexist indefinitely — one is slightly better and drives the other to local extinction. Coexistence requires that they differ in their niches (resource partitioning)."
+    },
+    {
+      "question": "A clownfish gains protection living among a sea anemone's tentacles, and the anemone is cleaned and defended by the clownfish. This relationship is...",
+      "options": ["commensalism (+/0)", "mutualism (+/+)", "parasitism (+/−)", "competition (−/−)"],
+      "correctIndex": 1,
+      "explanation": "Both species benefit — the clownfish gets protection and the anemone gets cleaning and defense — so this is mutualism (+/+). Commensalism would benefit one and leave the other unaffected; parasitism would harm one partner."
+    },
+    {
+      "question": "A barnacle attaches to a whale's skin, gaining a place to live and access to food-rich water, while the whale is essentially unaffected. This is...",
+      "options": ["mutualism", "parasitism", "commensalism (+/0)", "predation"],
+      "correctIndex": 2,
+      "explanation": "The barnacle benefits (+) while the whale is essentially unaffected (0), making this commensalism (+/0). In mutualism both benefit; in parasitism the host is harmed; in predation the prey is killed/harmed."
+    },
+    {
+      "question": "Removing sea otters causes sea urchins to boom, which then overgraze and destroy kelp forests, collapsing the community's biodiversity. The sea otter is best described as a...",
+      "options": ["invasive species", "keystone species whose removal triggers a trophic cascade", "primary producer", "density-independent factor"],
+      "correctIndex": 1,
+      "explanation": "A keystone species has an effect far larger than its abundance suggests. Sea otters control urchins, which protects kelp forests; removing the otters unleashes urchins and collapses the kelp ecosystem — a trophic cascade. Losing keystone species causes disproportionate, community-wide change."
+    },
+    {
+      "question": "In Batesian mimicry, a...",
+      "options": ["harmful species mimics another harmful species", "harmless species evolves to resemble a harmful or toxic one, gaining protection", "predator mimics its prey", "plant mimics an animal"],
+      "correctIndex": 1,
+      "explanation": "In Batesian mimicry a harmless species evolves to look like a harmful or toxic one (e.g., a harmless fly resembling a wasp), so predators that learned to avoid the dangerous model also avoid the mimic. In Müllerian mimicry, two or more genuinely harmful species resemble each other."
+    },
+    {
+      "question": "Which scenario describes PRIMARY succession?",
+      "options": ["A forest regrowing after a fire that left the soil intact", "Lichens and mosses colonizing bare rock left by a retreating glacier, slowly building soil", "An abandoned farm field being recolonized by weeds and shrubs", "A pond gradually filling with sediment that already contains seeds"],
+      "correctIndex": 1,
+      "explanation": "Primary succession begins on bare substrate with NO soil, such as cooled lava or rock exposed by a retreating glacier. Pioneer species like lichens and mosses build the first soil. The other options retain soil (and often seeds/roots), making them secondary succession, which is faster."
+    },
+    {
+      "question": "Why does a biodiverse ecosystem tend to be more stable and resilient than a monoculture?",
+      "options": ["More species always eliminates competition", "If one species is lost, others can fill its role, so ecosystem functions continue despite disturbance", "Diverse ecosystems never experience disturbances", "Biodiversity guarantees no species ever goes extinct"],
+      "correctIndex": 1,
+      "explanation": "High biodiversity provides functional 'backups': if a disturbance removes one species, others can compensate, so processes like nutrient cycling and energy capture continue. A monoculture lacks these backups, so a single pest or disease can devastate it. Diversity buffers ecosystem functions against change."
+    },
+    {
+      "question": "Why are invasive species often so damaging to the ecosystems they enter?",
+      "options": ["They are always larger than native species", "They arrive without natural predators or competitors, and native species lack evolved defenses against them", "They cannot reproduce", "They only eat decomposers"],
+      "correctIndex": 1,
+      "explanation": "Invasive species frequently arrive without the predators, parasites, or competitors that controlled them at home, so nothing checks their growth, and native species never evolved defenses against these novel organisms. This lets invasives outcompete or prey on natives and reduce biodiversity."
+    },
+    {
+      "question": "Fertilizer runoff causes a lake's algae to bloom, then die and decompose, leading to a 'dead zone.' Why do fish die?",
+      "options": ["The algae directly poison the fish", "Decomposers consuming the dead algae deplete the water's dissolved oxygen", "The fertilizer removes all nitrogen from the water", "The bloom freezes the lake"],
+      "correctIndex": 1,
+      "explanation": "In eutrophication, excess nutrients trigger an algal bloom; when the algae die, decomposing bacteria multiply and consume oxygen through respiration, dropping dissolved oxygen to hypoxic levels so fish suffocate. The killer is oxygen depletion, not direct algal poisoning."
+    },
+    {
+      "question": "The pesticide DDT becomes more concentrated at each higher trophic level, harming top predators most. This process is called...",
+      "options": ["eutrophication", "biomagnification", "the 10% rule", "succession"],
+      "correctIndex": 1,
+      "explanation": "Biomagnification is the increasing concentration of a persistent toxin up the food chain: each predator accumulates the poison from all its contaminated prey, so top predators end up with the highest levels. It runs opposite to energy, which decreases up trophic levels."
+    },
+    {
+      "question": "Human-caused climate change is driven primarily by...",
+      "options": ["the natural greenhouse effect disappearing", "increased atmospheric CO₂ from burning fossil fuels, intensifying the greenhouse effect", "a decrease in atmospheric carbon dioxide", "ocean acidification cooling the planet"],
+      "correctIndex": 1,
+      "explanation": "Burning fossil fuels rapidly adds CO₂ (carbon stored for hundreds of millions of years) to the atmosphere, intensifying the natural greenhouse effect and warming the planet. The greenhouse effect itself is natural and necessary; the problem is the human-driven increase in greenhouse gases."
+    },
+    {
+      "question": "Ocean acidification, a consequence of rising atmospheric CO₂, harms coral reefs and shellfish because...",
+      "options": ["the warmer water boils the organisms", "dissolved CO₂ forms carbonic acid, which dissolves their calcium carbonate shells and skeletons", "acid adds excess oxygen", "it increases the salt content"],
+      "correctIndex": 1,
+      "explanation": "As oceans absorb excess CO₂, it forms carbonic acid, lowering pH. This acidity dissolves the calcium carbonate shells and skeletons of corals and shellfish, bleaching and destroying coral reefs — among the most biodiverse ecosystems on Earth."
+    },
+    {
+      "question": "Which is considered the single largest cause of biodiversity loss worldwide?",
+      "options": ["Invasive species", "Habitat loss and fragmentation", "Biomagnification", "Overhunting of top predators"],
+      "correctIndex": 1,
+      "explanation": "Habitat loss and fragmentation — from deforestation, agriculture, and urbanization — is the single largest driver of biodiversity decline. It removes the habitat species need and isolates populations into small patches that are more vulnerable to genetic drift and extinction."
+    },
+    {
+      "question": "Which best describes an 'ecosystem service'?",
+      "options": ["A fee humans pay to protect nature", "A benefit humans obtain from functioning natural systems, such as crop pollination, water purification, or climate regulation", "The energy lost between trophic levels", "A type of invasive species"],
+      "correctIndex": 1,
+      "explanation": "Ecosystem services are the benefits humans draw from functioning natural systems — pollination of crops, water purification, flood protection, climate regulation, fisheries, and sources of medicines. Biodiversity underpins these services by keeping ecosystems stable and resilient, so biodiversity loss threatens them."
+    }
+  ]
+}

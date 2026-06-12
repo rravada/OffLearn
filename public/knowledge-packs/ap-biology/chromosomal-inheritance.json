@@ -1,0 +1,30 @@
+{
+  "id": "ap-bio-chromosomal-inheritance",
+  "title": "The Chromosomal Basis of Inheritance",
+  "subject": "AP Biology",
+  "chunks": [
+    { "id": "c1", "text": "The chromosome theory of inheritance states that genes are located on chromosomes and that the behavior of chromosomes during meiosis produces Mendel's patterns. This unites abstract genetics with the physical chromosome." },
+    { "id": "c2", "text": "Thomas Hunt Morgan found a male fruit fly with white eyes instead of red, and its inheritance was tied to the fly's sex. This showed the eye-color gene resides on a sex chromosome, nailing down that specific genes live on specific chromosomes." },
+    { "id": "c3", "text": "In humans, 22 of the 23 chromosome pairs are autosomes (non-sex chromosomes) and one pair is the sex chromosomes, X and Y. Females are XX and males are XY." },
+    { "id": "c4", "text": "Because a mother (XX) can only give an X while a father (XY) gives either an X (producing a daughter) or a Y (producing a son), the father's gamete determines a child's sex. The Y carries the master gene for male development and few other genes." },
+    { "id": "c5", "text": "The X chromosome is large and carries over a thousand genes unrelated to sex, such as genes for color vision and blood clotting. A gene on the X chromosome is called X-linked or sex-linked." },
+    { "id": "c6", "text": "A female has two X chromosomes, so she needs two copies of an X-linked recessive allele to show the trait; one bad copy is masked by her other X. A male has only one X and no matching gene on the Y, so a single recessive allele on his X is expressed." },
+    { "id": "c7", "text": "X-linked recessive disorders such as red-green color blindness, hemophilia, and Duchenne muscular dystrophy are far more common in males, because a male needs only one recessive allele while a female needs two." },
+    { "id": "c8", "text": "A female with one copy of an X-linked recessive allele is an unaffected carrier who can pass it to her sons. X-linked alleles are written as superscripts on the X, such as XᴴXʰ for a carrier female and XʰY for an affected male." },
+    { "id": "c9", "text": "A son inherits his single X from his mother and his Y from his father. Therefore an affected son's X-linked allele came from his mother, never from his father, a key reasoning step in sex-linked problems." },
+    { "id": "c10", "text": "Crossing a carrier mother (XᴺXⁿ) with a normal-vision father (XᴺY) for color blindness gives daughters who all have normal vision (half carriers) and sons who are half normal and half color-blind. The color-blind sons got the recessive X from their mother." },
+    { "id": "c11", "text": "An X-linked recessive trait often appears in sons of carrier mothers, skips generations, and shows up far more in males. A daughter is affected only if she receives a recessive X from both parents." },
+    { "id": "c12", "text": "An affected father passes his X-linked allele to all of his daughters (making them carriers or affected) and to none of his sons, because sons receive his Y. This is a strong signal of X-linked inheritance." },
+    { "id": "c13", "text": "Mendel's law of independent assortment applies to genes on different chromosomes. Genes on the same chromosome tend to be inherited together because they ride on the same physical DNA into the same gamete; these are called linked genes." },
+    { "id": "c14", "text": "Linked genes violate independent assortment, so a dihybrid cross of linked genes does not give the expected 9:3:3:1 ratio. Parental allele combinations appear far more often than predicted." },
+    { "id": "c15", "text": "Crossing over during Meiosis I can separate linked genes onto different chromosomes, producing recombinant gametes with new allele combinations. Linkage is therefore not absolute." },
+    { "id": "c16", "text": "Recombination frequency depends on distance: the farther apart two genes are on a chromosome, the more likely a crossover occurs between them and the more recombinants appear. Genes very close together are almost always inherited together." },
+    { "id": "c17", "text": "Recombination frequency is used to map genes: 1% recombination equals 1 map unit (centimorgan). Comparing recombination frequencies among genes reveals their order and relative spacing along a chromosome." },
+    { "id": "c18", "text": "A low recombination frequency means genes are close together; a high frequency approaching the 50% maximum means they are far apart or on different chromosomes, which looks like independent assortment." },
+    { "id": "c19", "text": "In a pedigree, squares are males and circles are females, filled symbols show affected individuals, horizontal lines connect mates, and vertical lines connect parents to offspring." },
+    { "id": "c20", "text": "If two unaffected parents have an affected child, the trait is recessive (the parents are carriers). If every affected child has at least one affected parent and the trait never skips, it is likely dominant." },
+    { "id": "c21", "text": "If a trait affects males and females about equally it is likely autosomal. If it appears mostly in males and passes through unaffected carrier mothers it is likely X-linked recessive." },
+    { "id": "c22", "text": "Because females have two X chromosomes but males one, female cells randomly silence one X in each cell (X-inactivation). This is why calico cats have color patches, each patch expressing a different X-linked coat-color allele." },
+    { "id": "c23", "text": "Morgan's work and Sturtevant's first gene map, built from recombination frequencies, scaled up into genetic linkage maps and ultimately the Human Genome Project, which located all roughly 20,000 human genes. Heredity is the behavior of chromosomes made visible." }
+  ]
+}

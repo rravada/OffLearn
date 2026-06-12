@@ -1,0 +1,167 @@
+{
+  "id": "ap-bio-unit4-review",
+  "title": "Unit 4 Review: Cell Communication and Cell Cycle",
+  "subject": "AP Biology",
+  "unit": "Cell Communication and Cell Cycle",
+  "type": "unit-review",
+  "questionsPerAttempt": 10,
+  "isAssessment": true,
+  "bank": [
+    {
+      "question": "What are the three stages of cell signaling, in order?",
+      "options": ["Transduction, reception, response", "Reception, transduction, response", "Response, reception, transduction", "Reception, response, transduction"],
+      "correctIndex": 1,
+      "explanation": "Signaling proceeds as reception (ligand binds receptor), transduction (the signal is relayed and amplified inside the cell), and response (the cell changes its activity). The signal is detected, converted, and then acted upon."
+    },
+    {
+      "question": "A water-soluble (hydrophilic) protein hormone reaches a target cell. Where does it bind?",
+      "options": ["An intracellular receptor in the cytoplasm", "A receptor on the cell surface, because it cannot cross the membrane", "Directly to the DNA in the nucleus", "Anywhere inside the cell after diffusing through the membrane"],
+      "correctIndex": 1,
+      "explanation": "Water-soluble signals cannot cross the hydrophobic plasma membrane, so they bind a surface receptor that relays the message inward. Only lipid-soluble (hydrophobic) signals like steroids cross the membrane to bind intracellular receptors."
+    },
+    {
+      "question": "A steroid hormone binds a receptor inside the cell, and the receptor-hormone complex then turns specific genes on. This is possible because steroids are...",
+      "options": ["Water-soluble and bind surface receptors", "Lipid-soluble and can cross the plasma membrane", "Too large to enter cells", "Broken down before reaching the nucleus"],
+      "correctIndex": 1,
+      "explanation": "Steroid hormones are lipid-soluble (hydrophobic), so they pass through the plasma membrane and bind intracellular receptors. The hormone-receptor complex often acts as a transcription factor, directly regulating gene expression."
+    },
+    {
+      "question": "Why does a multi-step transduction pathway amplify a signal?",
+      "options": ["Each step destroys the signal molecule", "At each step, one activated molecule activates many of the next, so the numbers multiply", "The signal molecule enters the cell and copies itself", "The receptor produces more hormone"],
+      "correctIndex": 1,
+      "explanation": "In a cascade, each activated protein switches on many copies of the next, multiplying the effect at every step. This is why a single hormone molecule can ultimately cause millions of molecular changes — a chemical megaphone."
+    },
+    {
+      "question": "In the epinephrine pathway, cyclic AMP (cAMP) functions as a...",
+      "options": ["receptor on the cell surface", "second messenger that relays the signal inside the cell", "hormone released into the blood", "transcription factor that enters the nucleus"],
+      "correctIndex": 1,
+      "explanation": "cAMP is a second messenger: a small molecule (made from ATP by adenylyl cyclase) that rapidly spreads the signal through the cytoplasm and activates protein kinase A. It is not the receptor, the original hormone, or a transcription factor."
+    },
+    {
+      "question": "An enzyme that adds phosphate groups to activate target proteins is a kinase. Which enzyme reverses this to help terminate the signal?",
+      "options": ["Adenylyl cyclase", "A phosphatase, which removes phosphate groups", "A G protein", "DNA polymerase"],
+      "correctIndex": 1,
+      "explanation": "Phosphatases remove phosphate groups, reversing the action of kinases and switching target proteins off. Kinases and phosphatases act as an on/off pair, allowing signals to be terminated so the cell can respond again."
+    },
+    {
+      "question": "Which scenario describes negative feedback?",
+      "options": ["Oxytocin release intensifies labor contractions until birth", "Rising blood glucose triggers insulin, which lowers glucose back toward a set point", "Activated platelets recruit more platelets to seal a wound", "A nerve impulse opens more sodium channels"],
+      "correctIndex": 1,
+      "explanation": "Negative feedback opposes the original change to stabilize the system at a set point — here, insulin lowers the elevated glucose. The other options are positive feedback, in which the output amplifies the change and drives a process to completion."
+    },
+    {
+      "question": "A student says positive feedback is 'good' and negative feedback is 'bad.' What is the correct understanding?",
+      "options": ["The student is correct", "The terms describe direction: negative opposes a change (stabilizing), positive amplifies it (driving to completion)", "Both types always maintain homeostasis", "Positive feedback is more common in the body than negative feedback"],
+      "correctIndex": 1,
+      "explanation": "'Negative' and 'positive' describe whether the loop opposes or reinforces a change, not whether it is harmful or helpful. Negative feedback stabilizes (the common case for homeostasis); positive feedback amplifies (the rare special case, like childbirth)."
+    },
+    {
+      "question": "A mutation leaves a G protein unable to hydrolyze its GTP. What is the most likely effect on the signaling pathway?",
+      "options": ["The pathway never turns on", "The pathway stays switched on because the G protein cannot shut itself off", "The receptor stops binding the ligand", "The cell becomes more responsive to new signals"],
+      "correctIndex": 1,
+      "explanation": "A G protein normally turns itself off by hydrolyzing GTP to GDP. If it cannot, it stays active and keeps the pathway on even after the ligand is gone — a stuck 'on' signal. Cholera toxin causes exactly this, leading to massive fluid loss."
+    },
+    {
+      "question": "Which signaling type involves a cell responding to a signal it released itself?",
+      "options": ["Endocrine", "Paracrine", "Autocrine", "Direct contact"],
+      "correctIndex": 2,
+      "explanation": "In autocrine signaling, a cell releases a signal that binds receptors on its own surface. Some cancer cells use autocrine signaling to stimulate their own division. Endocrine acts long-range via blood, and paracrine acts on nearby cells."
+    },
+    {
+      "question": "In what order do the phases of the cell cycle occur?",
+      "options": ["S → G1 → G2 → M", "G1 → S → G2 → M", "M → G1 → G2 → S", "G1 → G2 → S → M"],
+      "correctIndex": 1,
+      "explanation": "The cell cycle runs G1 (growth) → S (DNA synthesis) → G2 (growth and preparation) → M (mitosis and cytokinesis). Interphase comprises G1, S, and G2, where the cell spends most of its life."
+    },
+    {
+      "question": "During which phase of the cell cycle is DNA replicated?",
+      "options": ["G1 phase", "S (synthesis) phase", "G2 phase", "M phase"],
+      "correctIndex": 1,
+      "explanation": "DNA is copied during S (synthesis) phase. Afterward, each chromosome consists of two identical sister chromatids joined at the centromere, doubling the DNA amount while keeping the chromosome number the same."
+    },
+    {
+      "question": "A human cell in G2 (after S phase) has how many chromosomes?",
+      "options": ["23 chromosomes", "46 chromosomes, each with two sister chromatids", "92 chromosomes", "46 sister chromatids and 46 chromosomes counted separately"],
+      "correctIndex": 1,
+      "explanation": "After replication, a human cell still has 46 chromosomes — each now made of two sister chromatids. The DNA amount has doubled, but a chromosome with two joined chromatids is still counted as ONE chromosome, so the number stays 46, not 92."
+    },
+    {
+      "question": "During which phase of mitosis do sister chromatids separate and move to opposite poles?",
+      "options": ["Prophase", "Metaphase", "Anaphase", "Telophase"],
+      "correctIndex": 2,
+      "explanation": "In anaphase, sister chromatids are pulled apart toward opposite poles (Anaphase = Apart). Metaphase is when chromosomes line up in the middle; prophase condenses chromosomes; telophase reforms the nuclei."
+    },
+    {
+      "question": "How do the two daughter cells produced by mitosis compare to the parent cell?",
+      "options": ["Genetically identical and diploid, like the parent", "Genetically different and haploid", "Genetically identical but haploid", "Genetically different but diploid"],
+      "correctIndex": 0,
+      "explanation": "Mitosis produces two genetically identical diploid cells, each with a complete copy of the parent's genome. Halving the chromosome number and generating genetic variation are features of meiosis, not mitosis."
+    },
+    {
+      "question": "On a graph of DNA content per cell versus time, which segment corresponds to S phase?",
+      "options": ["The flat segment at the baseline level", "The upward-sloping segment where DNA content rises from x to 2x", "The flat segment at the doubled level", "The sudden drop back to the baseline"],
+      "correctIndex": 1,
+      "explanation": "S phase is the rising segment, where DNA is being replicated and content climbs from x to 2x. The flat low segment is G1, the flat high segment is G2, and the sharp drop is the moment of cell division."
+    },
+    {
+      "question": "What is the main function of the G1 checkpoint (restriction point)?",
+      "options": ["To check whether chromosomes are attached to the spindle", "To decide whether the cell should commit to dividing, based on size, nutrients, DNA condition, and external signals", "To replicate the DNA", "To divide the cytoplasm"],
+      "correctIndex": 1,
+      "explanation": "The G1 checkpoint is the main decision point: the cell evaluates its size, nutrients, DNA integrity, and external growth signals before committing to S phase. Spindle attachment is checked at the M checkpoint; DNA is replicated in S phase."
+    },
+    {
+      "question": "Which proteins drive the cell forward through the phases of the cell cycle?",
+      "options": ["Growth factors and hormones", "Cyclins binding cyclin-dependent kinases (Cdks)", "Phosphodiesterases", "Tumor suppressors only"],
+      "correctIndex": 1,
+      "explanation": "Cyclin-Cdk complexes drive cell-cycle progression: a cyclin must bind and activate its Cdk, which then phosphorylates targets that push the cell into the next phase. Cyclin levels oscillate, creating a controlled rhythm."
+    },
+    {
+      "question": "The protein p53 detects DNA damage at the G1 checkpoint and can halt the cycle or trigger apoptosis. p53 is therefore a...",
+      "options": ["proto-oncogene", "tumor suppressor gene", "growth factor", "second messenger"],
+      "correctIndex": 1,
+      "explanation": "p53 restrains division and triggers repair or programmed cell death when DNA is damaged, making it a tumor suppressor (a 'brake'). When p53 is inactivated by mutation, damaged cells divide unchecked — it is mutated in about half of human cancers."
+    },
+    {
+      "question": "An oncogene contributes to cancer because it is...",
+      "options": ["an inactivated brake on cell division", "an overactive version of a growth-promoting gene (a stuck gas pedal)", "a gene that triggers apoptosis", "a receptor that no longer binds its ligand"],
+      "correctIndex": 1,
+      "explanation": "An oncogene is a mutated, overactive form of a proto-oncogene — a gain of function that constantly stimulates division (gas pedal floored). In contrast, a tumor suppressor causes cancer when it is inactivated (brakes cut)."
+    },
+    {
+      "question": "Why does cancer usually develop only after a person has accumulated several mutations in the same cell lineage?",
+      "options": ["A single mutation cannot affect the cell cycle", "Multiple controls (oncogene activation and tumor-suppressor loss) must fail before division becomes fully uncontrolled", "Mutations always cancel each other out", "Cells repair every mutation perfectly"],
+      "correctIndex": 1,
+      "explanation": "Normal cells have several layers of control, so cancer typically requires both activating oncogenes (gas pedal) and disabling tumor suppressors (brakes). Because multiple mutations must accumulate in one lineage, cancer risk increases with age."
+    },
+    {
+      "question": "Normal cells stop dividing when they become crowded and cover a surface. This control is called...",
+      "options": ["metastasis", "density-dependent inhibition", "apoptosis", "amplification"],
+      "correctIndex": 1,
+      "explanation": "Density-dependent inhibition stops division when cells crowd together. Cancer cells ignore this control and keep dividing, piling up into a tumor. Metastasis is the spread of cancer cells, and apoptosis is programmed cell death."
+    },
+    {
+      "question": "What is metastasis?",
+      "options": ["The formation of a benign tumor that stays in one place", "The spread of cancer cells from a malignant tumor to distant tissues via blood or lymph", "The repair of damaged DNA", "The normal division of a stem cell"],
+      "correctIndex": 1,
+      "explanation": "Metastasis is when cells break away from a malignant tumor, travel through the blood or lymph, and start new tumors elsewhere in the body. This spread is what makes cancer especially dangerous and difficult to treat."
+    },
+    {
+      "question": "Why does chemotherapy, which targets rapidly dividing cells, often cause hair loss and nausea?",
+      "options": ["It only affects cancer cells", "It also harms the body's normally fast-dividing cells, such as hair follicles and the gut lining", "It increases growth factor levels", "It permanently activates p53"],
+      "correctIndex": 1,
+      "explanation": "Chemotherapy disrupts DNA replication or mitosis, so it kills rapidly dividing cells. Because some normal tissues (hair follicles, gut lining, bone marrow) also divide quickly, they suffer collateral damage, causing the familiar side effects."
+    },
+    {
+      "question": "A receptor that promotes cell division becomes permanently active due to a mutation, so the cell divides without any growth signal. This best illustrates...",
+      "options": ["a tumor suppressor being activated", "an oncogene driving uncontrolled division, linking signaling to cancer", "normal density-dependent inhibition", "negative feedback restoring homeostasis"],
+      "correctIndex": 1,
+      "explanation": "A growth-promoting receptor locked 'on' is an oncogenic driver: it continuously signals the cell to divide, just like the stuck-on pathways from the signaling lessons. This directly connects faulty cell communication to the uncontrolled division of cancer."
+    },
+    {
+      "question": "Apoptosis is best described as...",
+      "options": ["uncontrolled cell division", "programmed, controlled cell death that removes damaged cells and shapes development", "the replication of DNA", "the spread of cancer cells"],
+      "correctIndex": 1,
+      "explanation": "Apoptosis is programmed cell death — a normal, controlled process that destroys damaged or unneeded cells (for example, removing the webbing between fingers during development). When apoptosis fails, damaged cells can survive and contribute to cancer."
+    }
+  ]
+}

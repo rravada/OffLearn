@@ -1,0 +1,30 @@
+{
+  "id": "ap-bio-gene-regulation-and-specialization",
+  "title": "Regulation of Gene Expression and Cell Specialization",
+  "subject": "AP Biology",
+  "chunks": [
+    { "id": "c1", "text": "Every cell in a multicellular organism carries the same complete genome. Cells differ not because they have different genes but because they express different subsets of those genes — this is differential gene expression." },
+    { "id": "c2", "text": "Gene regulation lets cells turn genes ON only when their products are needed and OFF when they are not, saving energy and materials and allowing the cell to respond to its environment." },
+    { "id": "c3", "text": "In multicellular organisms, differential gene expression turns one genome into many cell types, building a brain, heart, and hand from the same DNA. Selective use of the genome creates the body." },
+    { "id": "c4", "text": "An operon is a cluster of related bacterial genes controlled together as a single unit with shared regulatory DNA, including a promoter (where RNA polymerase binds) and an operator (a switch sequence)." },
+    { "id": "c5", "text": "The lac operon contains genes for digesting lactose and is normally OFF: a repressor protein sits on the operator and blocks RNA polymerase from transcribing the genes." },
+    { "id": "c6", "text": "When lactose is present, it binds the lac repressor and changes its shape (an allosteric change), so the repressor falls off the operator and RNA polymerase transcribes the lactose-digesting genes. The lac operon is inducible and under negative control." },
+    { "id": "c7", "text": "The trp operon makes enzymes that build the amino acid tryptophan and is normally ON. When tryptophan is abundant, it binds and activates the repressor, switching the operon OFF. This makes trp a repressible operon." },
+    { "id": "c8", "text": "The lac and trp operons show a shared logic: bacteria sense molecules in their environment and adjust transcription, making digestive enzymes when food appears and halting biosynthesis when the product is already supplied." },
+    { "id": "c9", "text": "Eukaryotes generally do not use operons; their related genes are scattered. Instead they regulate gene expression at many points along the path from DNA to functional protein, giving layered control." },
+    { "id": "c10", "text": "Transcription factors are proteins that bind specific DNA sequences to control transcription: activators (often binding distant enhancers) help RNA polymerase start, and repressors block it. Which transcription factors a cell makes largely determines its identity." },
+    { "id": "c11", "text": "DNA packaging regulates expression: DNA wound tightly around histones into condensed chromatin is inaccessible and silenced, while loosely packed DNA is open for transcription." },
+    { "id": "c12", "text": "Eukaryotic control continues after transcription through regulated RNA processing (alternative splicing), control of mRNA stability and destruction, microRNAs that block or degrade specific mRNAs, regulated translation, and post-translational protein modification." },
+    { "id": "c13", "text": "Epigenetics regulates gene expression without changing the DNA sequence, like sticky notes added on top of the cookbook text that flag some recipes 'do not use' and others 'use often.'" },
+    { "id": "c14", "text": "DNA methylation adds methyl (–CH₃) groups to DNA and typically silences the genes there by condensing chromatin. Histone modification chemically tags histones to loosen (genes ON) or tighten (genes OFF) the packing." },
+    { "id": "c15", "text": "Epigenetic marks can be heritable through cell division: a cell passes its methylation pattern to its daughters, so a liver cell's daughters stay liver cells. This is how differentiation 'sticks.'" },
+    { "id": "c16", "text": "Some epigenetic marks can be influenced by the environment such as diet, stress, or toxins, and in some cases passed to offspring, an active research frontier (for example, prenatal famine linked to later gene-expression changes)." },
+    { "id": "c17", "text": "Cell differentiation occurs when positional signals (cell-to-cell signaling and morphogen gradients) trigger master transcription factors that switch on a cell-type-specific gene program, which is then locked in by epigenetic marks." },
+    { "id": "c18", "text": "Differentiation can be summarized as: same genome → different signals → different transcription factors → differential gene expression → epigenetic lock-in → distinct cell types." },
+    { "id": "c19", "text": "Eukaryotic gene control points, in order along the pathway, include the chromatin/epigenetic level, the transcriptional level (transcription factors), RNA processing and mRNA stability, and the translational/post-translational level." },
+    { "id": "c20", "text": "Induced pluripotent stem cells (iPSCs) are made by introducing a few transcription factors into an ordinary specialized cell, reprogramming it back into a flexible cell that can become almost any type. This works because cell identity is gene expression and expression can be rewritten." },
+    { "id": "c21", "text": "Cancer is at its core a disease of broken gene regulation: mutations or epigenetic changes switch ON genes that drive division (oncogenes) or switch OFF the brakes (tumor suppressors), connecting gene regulation to the cell cycle." },
+    { "id": "c22", "text": "Much of the difference between species comes from regulating shared genes differently rather than having different genes. Humans and chimpanzees share about 99% of protein-coding genes, and much of what differs is regulatory." },
+    { "id": "c23", "text": "Hox genes pattern the body plans of animals as different as flies and mammals; changing when and where these regulatory genes fire reshapes anatomy over evolutionary time, linking gene regulation to the diversity of life." }
+  ]
+}

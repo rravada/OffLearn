@@ -1,0 +1,127 @@
+{
+  "id": "ap-bio-u5-mendelian-genetics",
+  "title": "Mendelian Genetics and Probability",
+  "subject": "AP Biology",
+  "unit": "Heredity",
+  "track": "ap",
+  "difficulty": "ap",
+  "duration": "50 min",
+  "objectives": [
+    "Apply Mendel's laws of segregation and independent assortment to predict inheritance",
+    "Use Punnett squares and probability rules to predict genotype and phenotype ratios",
+    "Distinguish genotype from phenotype and dominant from recessive alleles",
+    "Solve monohybrid and dihybrid crosses, including test crosses, using probability"
+  ],
+  "sections": [
+    {
+      "type": "explanation",
+      "heading": "A Monk, Some Pea Plants, and the Rules of Inheritance",
+      "content": "Before the 1860s, people thought inheritance worked like mixing paint: a tall parent and a short parent should blend into a medium child, and traits should smear together a little more with each generation until everyone looked average. But that's not what happens. A child can have a trait neither parent shows; a feature can skip a generation and reappear; siblings differ sharply. Blending couldn't explain any of it. The person who cracked the real rules was Gregor Mendel, a monk who spent years breeding tens of thousands of pea plants in a monastery garden, counting offspring with the patience of an accountant.\n\nMendel's genius was treating inheritance as MATH. By tracking simple either/or traits — purple vs. white flowers, tall vs. short plants — across generations and counting the ratios precisely, he discovered that inheritance follows predictable numerical patterns. He realized traits are passed as discrete 'particles' (which we now call genes) that don't blend but stay intact, getting separated and recombined according to rules of chance. He worked this out decades before anyone knew DNA, chromosomes, or meiosis existed — and astonishingly, his rules map perfectly onto the meiosis you just learned.\n\nThis lesson translates Mendel's discoveries into the tools you'll use constantly on the AP exam: the vocabulary of alleles, genotypes, and phenotypes; Punnett squares; and the probability rules that let you predict offspring ratios. The single most important mindset: genetics is probability. Once you see crosses as probability problems, the whole topic becomes a set of reliable calculations rather than memorization."
+    },
+    {
+      "type": "explanation",
+      "heading": "The Essential Vocabulary",
+      "content": "Genetics has a precise vocabulary, and using it correctly is half the battle on the exam. Build these terms carefully.\n\nA gene is a unit of heredity that codes for a trait (e.g., the gene for pea flower color). Most genes come in different versions called alleles (e.g., a purple allele and a white allele). Because you're diploid, you carry TWO alleles for each gene — one on each homologous chromosome (this is the direct link to meiosis).\n\nAlleles are written as letters. A dominant allele (capital letter, e.g., P) masks the effect of a recessive allele (lowercase, e.g., p) when both are present. The dominant trait shows up whenever at least one dominant allele is there; the recessive trait appears ONLY when both alleles are recessive.\n\nYour genotype is the pair of alleles you actually have (PP, Pp, or pp). Your phenotype is the physical trait that results (purple or white flowers). This genotype/phenotype distinction is critical: two different genotypes (PP and Pp) can produce the SAME phenotype (purple).\n\nIf your two alleles are the SAME, you are homozygous (PP = homozygous dominant; pp = homozygous recessive). If they're DIFFERENT, you are heterozygous (Pp). A heterozygous individual shows the dominant phenotype but secretly 'carries' the recessive allele — which is why a recessive trait can hide for generations and then reappear when two carriers have offspring. Master these eight terms — gene, allele, dominant, recessive, genotype, phenotype, homozygous, heterozygous — and the rest of genetics is arithmetic."
+    },
+    {
+      "type": "table",
+      "heading": "Genetics Vocabulary",
+      "headers": ["Term", "Meaning", "Example"],
+      "rows": [
+        ["Allele", "A version of a gene", "P (purple) or p (white)"],
+        ["Genotype", "The pair of alleles present", "PP, Pp, or pp"],
+        ["Phenotype", "The physical trait expressed", "Purple or white flowers"],
+        ["Dominant", "Allele that masks the other; shown in capital", "P (purple)"],
+        ["Recessive", "Allele masked unless homozygous; lowercase", "p (white)"],
+        ["Homozygous", "Two identical alleles", "PP or pp"],
+        ["Heterozygous", "Two different alleles (a 'carrier')", "Pp"]
+      ]
+    },
+    {
+      "type": "explanation",
+      "heading": "Mendel's Two Laws — and Why Meiosis Explains Them",
+      "content": "Mendel summarized his results in two laws. The beautiful part, which AP loves to test, is that each law is simply a consequence of how chromosomes behave in meiosis.\n\nThe LAW OF SEGREGATION states that the two alleles for a gene separate (segregate) during gamete formation, so each gamete carries only ONE allele for each gene. A Pp parent makes gametes that are 50% P and 50% P... wait — 50% P and 50% p. Why? Because the two alleles sit on homologous chromosomes, and Meiosis I separates the homologs — so each gamete ends up with just one. Segregation IS the separation of homologs in Meiosis I.\n\nThe LAW OF INDEPENDENT ASSORTMENT states that alleles for DIFFERENT genes are distributed to gametes independently of one another — getting the P allele doesn't influence whether you get the T (tall) allele. Why? Because genes on different chromosomes are sorted independently when the homologous pairs line up randomly at the middle of Meiosis I — exactly the independent assortment you learned last lesson. (Caveat for later: genes very close together on the SAME chromosome are 'linked' and tend to be inherited together, an exception covered in the chromosomal inheritance lesson.)\n\nThe takeaway is profound: Mendel deduced these rules purely from counting pea offspring, with no knowledge of chromosomes — yet they are direct readouts of meiosis. When you set up a Punnett square, you are really modeling how homologs and alleles separate and recombine during the production of gametes and their union at fertilization. Genetics and cell division are the same story told at two levels."
+    },
+    {
+      "type": "example",
+      "heading": "The Monohybrid Cross, Step by Step",
+      "content": "A monohybrid cross follows ONE gene. Let's do the classic and extract the famous ratios. Purple (P) is dominant to white (p). We cross two heterozygous purple plants: Pp × Pp.\n\nSTEP 1 — Find the gametes each parent can make. By segregation, each Pp parent makes two kinds of gametes: P and p (50% each).\n\nSTEP 2 — Build the Punnett square. Put one parent's gametes (P, p) across the top and the other's (P, p) down the side. Fill each box by combining the row and column allele:\n  P×P = PP | P×p = Pp\n  p×P = Pp | p×p = pp\n\nSTEP 3 — Read the GENOTYPE ratio: 1 PP : 2 Pp : 1 pp (written 1:2:1).\n\nSTEP 4 — Read the PHENOTYPE ratio: PP, Pp, and Pp are all purple (3 plants); pp is white (1 plant). So 3 purple : 1 white — the famous 3:1 ratio of a heterozygous cross.\n\nNow translate to probability: any offspring has a 3/4 (75%) chance of being purple and a 1/4 (25%) chance of being white; a 1/4 chance of PP, 1/2 chance of Pp, 1/4 chance of pp. Two other crosses worth knowing: Pp × pp (a 'carrier' × recessive) gives 1 Pp : 1 pp = 1:1 phenotype ratio (50% purple, 50% white); PP × pp gives all Pp (100% purple, but all carriers). The skill to internalize: identify the parent genotypes, list each parent's gametes by segregation, combine them, then count genotypes and phenotypes."
+    },
+    {
+      "type": "quiz",
+      "question": "Two heterozygous tall pea plants (Tt) are crossed, where tall (T) is dominant to short (t). What fraction of the offspring are expected to be SHORT?",
+      "options": [
+        "3/4 (75%)",
+        "1/2 (50%)",
+        "1/4 (25%)",
+        "0 (none can be short)"
+      ],
+      "correctIndex": 2,
+      "explanation": "A Tt × Tt cross gives genotypes 1 TT : 2 Tt : 1 tt. Short is the recessive phenotype, requiring two recessive alleles (tt), which is 1 out of 4 boxes = 1/4 (25%). Three-fourths are tall (TT or Tt). This 3:1 phenotype ratio is the signature of a heterozygous monohybrid cross."
+    },
+    {
+      "type": "explanation",
+      "heading": "Probability Rules: Faster Than Big Punnett Squares",
+      "content": "Punnett squares are great for one or two genes, but for multiple genes they explode in size (a three-gene cross needs a 64-box square). The exam rewards using probability rules instead, which are faster and less error-prone. Two rules do all the work.\n\nThe MULTIPLICATION RULE (the 'AND' rule): the probability that two independent events BOTH happen is the product of their individual probabilities. To find the chance an offspring is, say, tall AND yellow AND round, find the probability of each trait separately and MULTIPLY them. This works because of independent assortment — separate genes are inherited independently.\n\nThe ADDITION RULE (the 'OR' rule): the probability that EITHER of two mutually exclusive events happens is the SUM of their probabilities. For example, the chance an offspring of Pp × Pp is heterozygous can be reached as the chance of getting P-from-mom-and-p-from-dad OR p-from-mom-and-P-from-dad: (1/2 × 1/2) + (1/2 × 1/2) = 1/4 + 1/4 = 1/2.\n\nHere's the power move for dihybrid (two-gene) crosses: treat each gene as its OWN monohybrid cross, then multiply. For TtYy × TtYy, the chance of an offspring being tall is 3/4 (from Tt × Tt) and the chance of being yellow is 3/4 (from Yy × Yy). The chance of tall AND yellow is 3/4 × 3/4 = 9/16. Do this for all four phenotype combinations and you get the classic dihybrid ratio 9:3:3:1 — without ever drawing a 16-box square. The strategy to carry into every multi-gene problem: break it into separate single-gene probabilities, then use AND (multiply) and OR (add)."
+    },
+    {
+      "type": "steps",
+      "heading": "Solving Any Genetics Problem",
+      "steps": [
+        {
+          "title": "Define alleles and assign symbols",
+          "content": "Identify the gene(s) and which allele is dominant (capital) vs. recessive (lowercase). For example, P = purple (dominant), p = white (recessive)."
+        },
+        {
+          "title": "Determine the parent genotypes",
+          "content": "Use the information given (phenotypes, known carriers, cross results) to write each parent's genotype. A recessive phenotype must be homozygous recessive; a dominant phenotype is homozygous dominant or heterozygous."
+        },
+        {
+          "title": "List each parent's possible gametes",
+          "content": "By the law of segregation, each gamete gets one allele per gene. A heterozygote (Pp) makes P and p gametes; a homozygote (PP) makes only P."
+        },
+        {
+          "title": "Combine gametes (Punnett square or probability)",
+          "content": "For one or two genes, fill a Punnett square. For multiple genes, treat each gene as a separate cross and use the multiplication (AND) and addition (OR) rules."
+        },
+        {
+          "title": "Count genotype and phenotype ratios",
+          "content": "Tally the offspring genotypes and the resulting phenotypes. Express results as ratios (e.g., 3:1, 9:3:3:1) or probabilities (e.g., 3/4)."
+        }
+      ]
+    },
+    {
+      "type": "quiz",
+      "question": "A purple-flowered plant of unknown genotype is crossed with a white-flowered plant (pp). About half the offspring are white. What was the purple parent's genotype?",
+      "options": [
+        "PP (homozygous dominant)",
+        "Pp (heterozygous)",
+        "pp (homozygous recessive)",
+        "It cannot be determined"
+      ],
+      "correctIndex": 1,
+      "explanation": "This is a test cross. Because white (recessive) offspring appeared, the purple parent must carry a recessive allele, so it is Pp. A Pp × pp cross gives a 1:1 ratio (half purple, half white), matching the data. A PP parent would have produced all purple offspring."
+    },
+    {
+      "type": "keypoint",
+      "content": "Mendel's law of segregation (alleles separate into gametes) reflects homolog separation in Meiosis I, and independent assortment reflects random alignment of chromosome pairs. A heterozygous monohybrid cross (Aa × Aa) gives a 3:1 phenotype ratio; a dihybrid cross gives 9:3:3:1, solvable by multiplying single-gene probabilities."
+    },
+    {
+      "type": "callout",
+      "variant": "warning",
+      "heading": "Genotype Is Not Phenotype — and Dominant Is Not 'More Common'",
+      "content": "High-frequency Mendelian mistakes: (1) GENOTYPE (alleles, e.g., Pp) is not PHENOTYPE (trait, e.g., purple) — two genotypes (PP and Pp) can give the same phenotype, so a purple plant could be PP or Pp. (2) 'Dominant' does NOT mean more common or stronger or 'better' — it just means its allele's trait shows when present; recessive traits can be far more common in a population. (3) A recessive phenotype must be homozygous recessive (pp), but a dominant phenotype's genotype is uncertain (PP or Pp) without more information — that's what a test cross resolves. (4) Each gamete gets ONE allele per gene (segregation), not both. (5) For multi-gene crosses, multiply separate single-gene probabilities — don't try to brute-force a giant square under time pressure."
+    },
+    {
+      "type": "callout",
+      "variant": "tip",
+      "heading": "How AP Tests Mendelian Genetics",
+      "content": "Point-winners: (1) Memorize the signature ratios: 3:1 (Aa × Aa monohybrid phenotype), 1:2:1 (its genotype), 1:1 (Aa × aa test cross), 9:3:3:1 (dihybrid phenotype). (2) Use the test cross — crossing a dominant-phenotype individual with a homozygous recessive (aa) — to determine an unknown genotype: any recessive offspring proves the parent was heterozygous. (3) For 'probability that an offspring is X' questions, convert ratios to fractions and use multiply (AND) / add (OR). (4) Tie Mendel's laws to meiosis explicitly when asked to explain. (5) Watch command words: 'predict the ratio' wants numbers; 'explain' wants the segregation/meiosis reasoning. Always assign clear allele symbols before solving."
+    },
+    {
+      "type": "deepdive",
+      "heading": "From Pea Plants to Genetic Counseling",
+      "content": "Mendel counted flowers in a monastery garden, but the rules he found are the daily working tools of modern medicine, agriculture, and personal decision-making. Every time a genetic counselor tells a couple their chance of having a child with a particular inherited condition, they are running a Mendelian probability calculation — often the exact monohybrid logic of this lesson. Consider cystic fibrosis, a recessive disorder: if both parents are unaffected carriers (Cc), a Punnett square predicts a 1/4 chance each child is affected (cc), 1/2 a carrier, 1/4 unaffected non-carrier. That 25% figure, derived from a Pp × Pp cross, can shape one of the most important decisions a family ever makes. The same math underlies counseling for sickle-cell anemia, Tay-Sachs, and many other single-gene conditions.\n\nMendel's principles also feed agriculture and conservation. Selective breeding of crops and livestock for desirable traits — disease-resistant wheat, higher-yield corn, dairy cows that produce more milk — relies on tracking dominant and recessive alleles across generations exactly as Mendel did. Conservation biologists use the same logic in reverse, worrying about recessive disorders that surface when small or inbred populations force carriers to mate, reducing genetic health. The pedigree charts you'll meet next lesson are simply Mendelian probability applied to real human family trees.\n\nThere's also a powerful lesson about science itself here. Mendel published in 1866, and his work was almost completely ignored for 34 years — it was 'rediscovered' around 1900, after his death, once chromosomes had been seen and scientists were finally ready to understand it. His ideas were correct but premature, lacking the meiosis you now know to explain WHY alleles segregate. That reunion — Mendel's abstract counting and the physical reality of chromosomes — created the modern science of genetics. And it's worth remembering that real inheritance is often messier than Mendel's tidy peas: most traits involve many genes, environmental effects, and non-Mendelian twists, which is exactly where the next lesson goes. Mendel gave us the foundational grammar; the rest of genetics is learning the exceptions and elaborations built on top of it." }
+  ],
+  "aiContext": "This AP Biology Unit 5 lesson covers Mendelian genetics and probability (CED topics 5.3-5.5): Mendel's laws of segregation and independent assortment, the genotype/phenotype and dominant/recessive vocabulary, Punnett squares, and probability-based problem solving. The two most important conceptual moves: (1) tie Mendel's laws directly to meiosis — segregation IS the separation of homologs in Meiosis I, and independent assortment IS the random alignment of chromosome pairs (a frequent 'explain' FRQ); and (2) treat genetics as probability, breaking multi-gene crosses into separate single-gene crosses and combining with the multiplication (AND) and addition (OR) rules rather than brute-forcing large Punnett squares. Drill the signature ratios: 3:1 (Aa×Aa monohybrid phenotype), 1:2:1 (genotype), 1:1 (test cross Aa×aa), 9:3:3:1 (dihybrid). Aggressively correct the top misconceptions: genotype ≠ phenotype (PP and Pp both look dominant); 'dominant' does NOT mean common/stronger/better; a recessive phenotype must be homozygous (aa) while a dominant phenotype's genotype is ambiguous without a test cross. Define allele symbols before solving. Connect to meiosis (prior lesson), forward to non-Mendelian inheritance and pedigrees (next lessons), to genetic counseling and selective breeding (real applications), and note that real traits are often polygenic/multifactorial. On the exam expect: predict-the-ratio crosses, probability fractions, test-cross genotype determination, and explain-via-meiosis questions."
+}

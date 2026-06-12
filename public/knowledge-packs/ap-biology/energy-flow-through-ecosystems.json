@@ -1,0 +1,30 @@
+{
+  "id": "ap-bio-energy-flow-through-ecosystems",
+  "title": "Energy Flow Through Ecosystems",
+  "subject": "AP Biology",
+  "chunks": [
+    { "id": "c1", "text": "An ecosystem is all the living organisms in an area plus the nonliving (abiotic) environment they interact with. Ecosystems run on energy that ultimately comes from the sun." },
+    { "id": "c2", "text": "The master principle of ecosystems is that energy FLOWS through one-way (entering as sunlight and ultimately leaving as heat) while matter CYCLES (the same atoms are used over and over). Energy flows; matter cycles." },
+    { "id": "c3", "text": "Producers (autotrophs) such as plants, algae, and cyanobacteria capture sunlight and convert it to chemical energy through photosynthesis, building organic molecules. They form the base that powers everything else." },
+    { "id": "c4", "text": "Consumers (heterotrophs) get energy by eating other organisms: primary consumers (herbivores) eat producers, secondary consumers eat primary consumers, and tertiary consumers eat secondary consumers." },
+    { "id": "c5", "text": "Decomposers (bacteria and fungi) break down dead organisms and wastes, releasing matter back into the soil, water, and air to be reused. They are essential to recycling matter." },
+    { "id": "c6", "text": "Each feeding level is a trophic level, the path of energy from one level to the next is a food chain, and the many interconnected feeding relationships of a real ecosystem form a food web." },
+    { "id": "c7", "text": "Energy transfer between trophic levels is inefficient: on average only about 10% of the energy stored in one trophic level passes to the next, and roughly 90% is lost at each transfer. This is the 10% rule." },
+    { "id": "c8", "text": "Most of the lost 90% is used by organisms for life processes, with cellular respiration releasing energy as heat (the second law of thermodynamics). Energy is also lost as undigested material (feces) and in organisms that are never eaten." },
+    { "id": "c9", "text": "The 10% rule explains the shape of an energy pyramid: producers form a huge base and each higher trophic level is a much smaller tier, because each level has only about 10% of the energy below it." },
+    { "id": "c10", "text": "The 10% rule explains why food chains are short, usually 3–5 levels: after a few 90% losses there is not enough energy left to support another level. Starting from 10,000 units gives roughly 1,000, then 100, then 10." },
+    { "id": "c11", "text": "Because top predators have the least available energy, they are naturally rare and need large territories, while producers and herbivores are abundant. This makes apex predators vulnerable to extinction." },
+    { "id": "c12", "text": "Eating at a lower trophic level is more energy-efficient: far more people can be fed on grain directly than on the meat of animals fed that same grain, because feeding grain to livestock first throws away about 90% of its energy." },
+    { "id": "c13", "text": "To find energy at a higher trophic level, multiply by about 0.10 for each step up. From 100,000 kJ in producers: 10,000 in primary consumers, 1,000 in secondary consumers, 100 in tertiary consumers." },
+    { "id": "c14", "text": "To calculate actual transfer efficiency from data, divide the energy at the higher level by the energy at the lower level and multiply by 100. Real ecosystems range roughly 5–20%, near the 10% rule of thumb." },
+    { "id": "c15", "text": "Unlike energy, matter is conserved and recycled. Atoms of carbon, nitrogen, phosphorus, oxygen, and water move repeatedly between organisms and the abiotic environment in biogeochemical cycles." },
+    { "id": "c16", "text": "In the carbon cycle, photosynthesis pulls CO₂ out of the atmosphere and fixes carbon into organic molecules, while cellular respiration by all organisms breaks those molecules down and releases CO₂ back." },
+    { "id": "c17", "text": "Carbon is stored long-term in fossil fuels, rocks, and the ocean. Burning fossil fuels (combustion) rapidly transfers vast amounts of stored carbon into the atmosphere as CO₂, the root of human-caused climate change." },
+    { "id": "c18", "text": "The atmosphere is about 78% nitrogen gas (N₂), but most organisms cannot use N₂ directly; they need fixed forms like ammonium or nitrate." },
+    { "id": "c19", "text": "Nitrogen-fixing bacteria, many living in the root nodules of legumes, convert atmospheric N₂ into usable ammonium, the crucial entry point of nitrogen into living systems." },
+    { "id": "c20", "text": "In the nitrogen cycle, bacteria convert nitrogen forms (nitrification), plants absorb nitrogen to build proteins and nucleic acids, animals get it by eating plants, decomposers return it to the soil, and denitrifying bacteria release N₂ back to the air." },
+    { "id": "c21", "text": "Nitrogen is often the limiting nutrient for plant growth, which is why farmers add nitrogen fertilizer. Excess nitrogen runoff causes disruptions like algal blooms and dead zones." },
+    { "id": "c22", "text": "Energy must be continuously resupplied by the sun because it is not recycled; it enters as light and ultimately exits the ecosystem as heat. Decomposers recycle matter but do not return energy to producers." },
+    { "id": "c23", "text": "Human activity has overwhelmed the matter cycles: burning fossil fuels adds carbon faster than natural processes reabsorb it, and industrial fertilizer now fixes more nitrogen than all natural processes combined." }
+  ]
+}

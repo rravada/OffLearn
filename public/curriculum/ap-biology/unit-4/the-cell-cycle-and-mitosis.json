@@ -1,0 +1,120 @@
+{
+  "id": "ap-bio-u4-the-cell-cycle-and-mitosis",
+  "title": "The Cell Cycle and Mitosis",
+  "subject": "AP Biology",
+  "unit": "Cell Communication and Cell Cycle",
+  "track": "ap",
+  "difficulty": "ap",
+  "duration": "45 min",
+  "objectives": [
+    "Describe the phases of the cell cycle (G1, S, G2, and M) and what happens in each",
+    "Explain the events of mitosis (prophase, metaphase, anaphase, telophase) and cytokinesis",
+    "Explain how mitosis produces two genetically identical diploid daughter cells",
+    "Interpret diagrams and data about chromosome number, DNA content, and cell-cycle timing"
+  ],
+  "sections": [
+    {
+      "type": "explanation",
+      "heading": "From One Cell to Trillions — Faithfully",
+      "content": "You began as a single fertilized cell. The roughly thirty trillion cells in your body today are its descendants, produced by that one cell dividing again and again. But here's the staggering part: with very few exceptions, every one of those trillions of cells carries the exact same complete set of genetic instructions as the original. Dividing is easy; dividing while making a perfect copy every single time is the hard, beautiful trick. Imagine photocopying a 3-billion-letter book trillions of times with essentially no typos — that is what cell division accomplishes.\n\nThis faithful copying is the job of the cell cycle and mitosis. Cell division isn't only for building an embryo. Throughout your life you constantly replace worn-out cells — you make millions of new blood cells every second, reline your gut every few days, and heal wounds — all by cells dividing. Single-celled organisms use the same machinery simply to reproduce.\n\nThe central requirement is genetic fidelity: each new cell must receive a complete and identical copy of the DNA. To pull this off, the cell can't just rip itself in half — it must first duplicate every chromosome, then sort the copies so precisely that each daughter cell ends up with exactly one full set. The cell cycle is the ordered sequence of events that makes this happen, and mitosis is the carefully choreographed division step at its heart. This lesson walks through that cycle and shows how the cell guarantees that one becomes two, identically, every time."
+    },
+    {
+      "type": "explanation",
+      "heading": "The Cell Cycle: Interphase and the Mitotic Phase",
+      "content": "The cell cycle is the full life of a cell from its 'birth' (when it forms) to the moment it finishes dividing into two. It has two broad parts: a long preparation period called interphase, and a short division period called the M (mitotic) phase. A common misconception is that cells spend most of their time dividing — in fact a cell spends the vast majority of its life (often about 90%) in interphase, growing and getting ready.\n\nInterphase is not idle 'resting'; it's intense preparation, and it has three sub-phases:\n\nG1 (first gap): The cell grows in size, makes proteins and organelles, and carries out its normal jobs. A cell that will never divide again (like most neurons) exits here into a non-dividing state called G0.\n\nS (synthesis): The cell copies ALL of its DNA — this is DNA replication (covered in detail in Unit 6). After S phase, every chromosome consists of two identical copies, called sister chromatids, joined together. This is the crucial duplication step: the genetic material is now doubled.\n\nG2 (second gap): The cell keeps growing and produces the proteins and structures it will need to divide, double-checking that DNA replication finished correctly.\n\nThen comes the M phase, the actual division, which has two parts: mitosis (the precise separation of the duplicated chromosomes into two nuclei) and cytokinesis (the splitting of the cytoplasm into two separate cells). The order to remember is G1 → S → G2 → M, with interphase = G1 + S + G2."
+    },
+    {
+      "type": "table",
+      "heading": "The Phases of the Cell Cycle",
+      "headers": ["Phase", "Part", "Key event"],
+      "rows": [
+        ["G1 (first gap)", "Interphase", "Cell grows, makes proteins/organelles, does its normal job"],
+        ["S (synthesis)", "Interphase", "DNA is replicated; each chromosome becomes two sister chromatids"],
+        ["G2 (second gap)", "Interphase", "Further growth; prepares structures for division; checks DNA"],
+        ["Mitosis (M)", "Mitotic phase", "Duplicated chromosomes are separated into two identical nuclei"],
+        ["Cytokinesis", "Mitotic phase", "Cytoplasm divides, producing two separate daughter cells"]
+      ]
+    },
+    {
+      "type": "explanation",
+      "heading": "Chromosomes: The Vocabulary You Must Nail",
+      "content": "Mitosis is impossible to understand without precise chromosome vocabulary, and this is where students most often get tangled, so slow down here. \n\nA chromosome is a single long molecule of DNA wrapped around proteins. Humans have 46 chromosomes (23 pairs) in each body cell. Because we have pairs, we are diploid (abbreviated 2n) — one chromosome of each pair came from each parent.\n\nHere's the key subtlety. Before S phase, each chromosome is a single DNA molecule. After S phase (DNA replication), each chromosome has been copied and now consists of TWO identical halves called sister chromatids, joined at a constricted region called the centromere. Critically, the cell still has 46 CHROMOSOMES, not 92 — a chromosome with two sister chromatids is still counted as ONE chromosome, because the chromatids are joined and are identical copies. The amount of DNA has doubled, but the chromosome NUMBER has not changed.\n\nDuring mitosis, the sister chromatids of each chromosome are pulled apart. Once separated, each chromatid is now considered its own full chromosome. This is the heart of mitosis: it duplicates each chromosome into two sister chromatids (in S phase), then splits those chromatids so each daughter cell gets one — restoring a complete set in each. Getting this right — distinguishing 'chromosome number' from 'DNA amount,' and 'chromatid' from 'chromosome' — is the single most tested idea in this lesson and a frequent source of lost points."
+    },
+    {
+      "type": "steps",
+      "heading": "The Phases of Mitosis (PMAT) + Cytokinesis",
+      "steps": [
+        {
+          "title": "Prophase",
+          "content": "The duplicated chromatin condenses into visible, compact chromosomes (each made of two sister chromatids). The nuclear envelope begins to break down, and the spindle apparatus (made of microtubules) starts to form from opposite poles of the cell."
+        },
+        {
+          "title": "Metaphase",
+          "content": "The chromosomes line up single-file along the middle of the cell, called the metaphase plate. Spindle fibers from opposite poles attach to the centromere of each chromosome. ('M' for metaphase, 'M' for middle.)"
+        },
+        {
+          "title": "Anaphase",
+          "content": "The sister chromatids are pulled APART, dragged by the shortening spindle fibers toward opposite poles. Once separated, each chromatid is now its own chromosome. This ensures each pole receives an identical, complete set. ('A' for anaphase, 'A' for apart.)"
+        },
+        {
+          "title": "Telophase",
+          "content": "The chromosomes arrive at the two poles and begin to de-condense. A new nuclear envelope forms around each set, producing two nuclei. The spindle breaks down. Mitosis (nuclear division) is now complete."
+        },
+        {
+          "title": "Cytokinesis",
+          "content": "The cytoplasm divides, yielding two separate cells. Animal cells pinch in two via a cleavage furrow; plant cells (which have a wall) build a new cell plate down the middle. The result is two genetically identical daughter cells."
+        }
+      ]
+    },
+    {
+      "type": "quiz",
+      "question": "A human cell completes mitosis and cytokinesis. How do the two daughter cells compare to the original parent cell in chromosome number and genetic content?",
+      "options": [
+        "Each daughter has half the chromosomes (23) and is genetically different",
+        "Each daughter has the same 46 chromosomes and is genetically identical to the parent",
+        "Each daughter has 92 chromosomes because DNA was replicated",
+        "Each daughter has 46 chromosomes but is genetically different due to crossing over"
+      ],
+      "correctIndex": 1,
+      "explanation": "Mitosis produces two daughter cells that are genetically IDENTICAL to each other and to the parent, each with the full diploid number (46 in humans). DNA is replicated in S phase, but the sister chromatids are then separated so each daughter receives one complete set. Halving the chromosome number and creating genetic variation (crossing over) are features of meiosis, not mitosis."
+    },
+    {
+      "type": "keypoint",
+      "content": "The cell cycle runs G1 → S (DNA replicated into sister chromatids) → G2 → M (mitosis + cytokinesis). Mitosis separates sister chromatids to produce two diploid daughter cells genetically identical to the parent, used for growth, repair, and asexual reproduction."
+    },
+    {
+      "type": "callout",
+      "variant": "warning",
+      "heading": "Sister Chromatids Are Not Extra Chromosomes",
+      "content": "The highest-frequency cell-cycle errors: (1) After S phase a duplicated chromosome has TWO sister chromatids but is still counted as ONE chromosome — DNA amount doubles, chromosome NUMBER does not (a human cell in G2 has 46 chromosomes, not 92). (2) Sister chromatids are IDENTICAL copies; do not confuse them with homologous chromosomes (the maternal/paternal pair, which are similar but not identical — that distinction matters for meiosis next unit). (3) Mitosis makes genetically IDENTICAL diploid cells — there is NO crossing over and NO halving of chromosome number in mitosis; those belong to meiosis. (4) Cells spend most of their time in interphase, not dividing. (5) Anaphase separates sister CHROMATIDS (in mitosis), not homologous pairs."
+    },
+    {
+      "type": "example",
+      "heading": "Reading DNA-Content and Cell-Cycle Graphs",
+      "content": "AP loves graphs of DNA amount per cell over time, and the shape tells the whole story. Picture a graph of relative DNA content (y-axis) versus time across one cell cycle.\n\nDuring G1, the line is FLAT at a baseline level (call it 'x') — the cell is growing but has not yet copied its DNA.\n\nDuring S phase, the line RISES steadily as DNA is replicated, climbing from x to 2x — this doubling is the visual signature of S phase. If a question asks 'where is DNA being synthesized?', point to the upward-sloping segment.\n\nDuring G2, the line is FLAT again, now at the doubled level 2x — the DNA stays doubled while the cell prepares to divide.\n\nDuring M phase (at anaphase/cytokinesis), the line DROPS sharply back to x, because the duplicated DNA has been split between two daughter cells.\n\nReasoning skills the exam wants: (1) The rising segment = S phase. (2) A cell with DNA content '2x' relative to a G1 cell is in G2 or M (it has replicated but not yet divided). (3) The sudden drop = the moment of division. A related data type is a 'cell-cycle pie chart' showing the fraction of cells in each phase in a tissue sample — the proportion in a phase is proportional to how long that phase lasts, so the biggest slice (usually G1/interphase) is the longest phase. If a drug traps cells in S phase, you'd see the S-phase slice grow because cells pile up there, unable to proceed."
+    },
+    {
+      "type": "quiz",
+      "question": "In a sample of dividing tissue, a researcher counts 800 cells in interphase and 200 cells in mitosis out of 1000 total. What can be concluded?",
+      "options": [
+        "Mitosis lasts longer than interphase",
+        "Cells spend most of their time in interphase, so interphase is the longest part of the cell cycle",
+        "The cells are not actually dividing",
+        "Each cell divides 800 times"
+      ],
+      "correctIndex": 1,
+      "explanation": "The proportion of cells in a phase reflects how long that phase lasts. With 80% of cells in interphase, interphase is by far the longest part of the cycle — consistent with the fact that cells spend most of their life growing and preparing, not dividing."
+    },
+    {
+      "type": "callout",
+      "variant": "tip",
+      "heading": "How AP Tests the Cell Cycle and Mitosis",
+      "content": "Point-winners: (1) Know the order G1 → S → G2 → M cold, and that DNA replicates in S. (2) For PMAT, anchor the mnemonics: Metaphase = Middle, Anaphase = Apart (sister chromatids separate). (3) Track chromosome number vs. DNA amount carefully — duplicated chromosomes are still the same NUMBER of chromosomes. (4) On DNA-content graphs, the rising part is S phase and the drop is division; on phase-proportion data, a longer phase has more cells in it. (5) State the outcome precisely: two genetically IDENTICAL DIPLOID cells (contrast with meiosis's four genetically different haploid cells). (6) Connect to function: mitosis = growth, repair, replacement, and asexual reproduction."
+    },
+    {
+      "type": "deepdive",
+      "heading": "Stem Cells, Regeneration, and the Limits of Division",
+      "content": "Mitosis is far more than a textbook diagram — it is the engine of healing, the basis of regenerative medicine, and a process whose limits shape aging and disease. Some of your cells divide constantly: skin, blood-forming cells in your bone marrow, and the lining of your gut are renewed throughout life, which is why a cut heals and why you replace your entire skin surface roughly every month. Other cells, like most neurons and heart muscle, largely exit the cycle into G0 and rarely divide — which is exactly why nerve and heart damage is so hard to repair, and why a spinal-cord injury or heart attack can cause lasting harm.\n\nThis is where stem cells become so important. Stem cells are unspecialized cells that retain the ability to divide by mitosis and to differentiate into specialized cell types. Each division can produce another stem cell (self-renewal) plus a cell that goes on to specialize — a balance of mitotic copying and commitment. Embryonic stem cells can become virtually any cell type; adult stem cells are more limited. Medicine is racing to harness them: bone-marrow transplants already rely on blood stem cells, and researchers aim to grow replacement tissues for damaged hearts, spinal cords, and organs. Remarkably, scientists can now reprogram ordinary adult cells back into stem-like cells (induced pluripotent stem cells), reopening their capacity to divide and specialize.\n\nThe limits of mitosis matter too. Most normal human cells can divide only a finite number of times before stopping, partly because the protective tips of chromosomes (telomeres) shorten with each division — a built-in counter linked to aging. Cancer cells, ominously, escape this limit and divide endlessly, a connection that leads directly into the next lesson. The picture to hold onto: mitosis is the cell's way of building, maintaining, and repairing a body, exquisitely controlled — and both its loss (in non-dividing damaged tissue) and its escape from control (in cancer) are central to human health." }
+  ],
+  "aiContext": "This AP Biology Unit 4 lesson covers the cell cycle and mitosis (CED topics 4.6-4.7): the phases (G1, S, G2, M), the events of mitosis (PMAT) and cytokinesis, and the outcome of two genetically identical diploid daughter cells. The most heavily tested and most-confused idea is chromosome bookkeeping: after S-phase replication a duplicated chromosome has two IDENTICAL sister chromatids joined at the centromere but is still counted as ONE chromosome — DNA amount doubles while chromosome NUMBER does not (a human G2 cell has 46 chromosomes, not 92). Repeatedly distinguish sister chromatids (identical copies) from homologous chromosomes (the maternal/paternal pair), and stress that mitosis has NO crossing over and NO reduction in chromosome number — those belong to meiosis (next unit). Use PMAT mnemonics (Metaphase = Middle, Anaphase = chromatids Apart) and emphasize that cells spend most of their life in interphase. The key data skills are reading DNA-content-vs-time graphs (rising segment = S phase, sudden drop = division, flat-at-2x = G2) and phase-proportion data (a longer phase contains more cells). State outcomes precisely: two genetically identical diploid cells for growth, repair, replacement, and asexual reproduction. Connect to DNA replication (Unit 6, the S-phase detail), to stem cells/telomeres/regeneration, and forward to cell-cycle checkpoints and cancer (next lesson) and to meiosis (Unit 5). On the exam expect phase-ordering, chromosome-number/DNA-amount questions, PMAT identification from diagrams, and graph interpretation."
+}

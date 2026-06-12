@@ -1,0 +1,123 @@
+{
+  "id": "ap-bio-u8-population-ecology",
+  "title": "Population Ecology and Growth Models",
+  "subject": "AP Biology",
+  "unit": "Ecology",
+  "track": "ap",
+  "difficulty": "ap",
+  "duration": "50 min",
+  "objectives": [
+    "Describe how populations grow and distinguish exponential from logistic growth",
+    "Explain carrying capacity (K) and the role of density-dependent and density-independent factors",
+    "Compare r-selected and K-selected life history strategies",
+    "Interpret population growth graphs and survivorship curves"
+  ],
+  "sections": [
+    {
+      "type": "explanation",
+      "heading": "Why Populations Don't Grow Forever",
+      "content": "Put a few bacteria in a flask of fresh nutrient broth and come back a day later: there are billions. Yet the planet isn't buried in bacteria, and it never has been. Every population has the potential to explode, but no population grows without limit forever. Understanding the tug-of-war between a population's drive to grow and the forces that hold it back is the heart of population ecology — and it's where ecology gets quantitative, with two growth models the AP exam expects you to know cold.\n\nA population is a group of individuals of the SAME species living in the same area and able to interbreed (a concept you met in Unit 7's gene pool). Population ecology asks how and why a population's SIZE changes over time. Size goes UP through births and immigration (individuals moving in) and DOWN through deaths and emigration (individuals moving out). When births + immigration exceed deaths + emigration, the population grows; when the reverse is true, it shrinks.\n\nThe central tension is between biotic potential (the maximum rate at which a population COULD grow under ideal conditions) and environmental resistance (all the factors — limited food, predators, disease, space — that slow growth). The two classic models capture the two extremes: EXPONENTIAL growth, what happens when resources are unlimited, and LOGISTIC growth, what happens when resources run out. Real populations live in the interplay between them."
+    },
+    {
+      "type": "explanation",
+      "heading": "Exponential vs. Logistic Growth",
+      "content": "Exponential growth occurs when resources are unlimited: the population grows faster and faster, producing a J-SHAPED curve. The key feature is that the growth RATE per individual stays constant, so the more individuals there are, the more are added each time period — growth accelerates. This is the bacteria-in-fresh-broth scenario, or a species colonizing a new, empty habitat. Exponential growth is real but TEMPORARY; no environment offers unlimited resources for long.\n\nLogistic growth is more realistic for established populations: growth starts out fast (nearly exponential when the population is small and resources are ample) but then SLOWS as the population gets crowded and resources become scarce, eventually LEVELING OFF. This produces an S-SHAPED (sigmoidal) curve. The level where it plateaus is the carrying capacity, symbolized K — the maximum population size the environment can sustainably support given its resources. At K, births ≈ deaths and the population stops growing. Above K (an overshoot), deaths exceed births and the population falls back toward K.\n\nThe conceptual heart of logistic growth: as a population approaches K, the per-individual growth rate DECREASES, because each individual gets a smaller share of limited resources. Growth is fastest not when the population is largest, but in the MIDDLE of the S-curve — large enough to have many reproducers but not yet so crowded that resources are scarce. Populations often don't sit perfectly at K but oscillate around it, overshooting and dipping as conditions and lags play out. The single most-tested idea here: exponential = J-shaped, unlimited resources; logistic = S-shaped, leveling at carrying capacity K because resources are limited."
+    },
+    {
+      "type": "quiz",
+      "question": "A population grows rapidly at first, then slows and levels off at a stable maximum size as resources become limited. This pattern is...",
+      "options": [
+        "exponential growth, producing a J-shaped curve",
+        "logistic growth, producing an S-shaped curve that levels off at carrying capacity (K)",
+        "a population with unlimited resources",
+        "a population that has gone extinct"
+      ],
+      "correctIndex": 1,
+      "explanation": "Leveling off at a stable maximum as resources become limited is logistic growth, which produces an S-shaped (sigmoidal) curve plateauing at the carrying capacity (K) — the maximum population the environment can sustainably support. Exponential growth (J-shaped) assumes unlimited resources and keeps accelerating, which can't continue indefinitely in a real environment."
+    },
+    {
+      "type": "table",
+      "headers": ["Feature", "Exponential growth", "Logistic growth"],
+      "heading": "Two Growth Models",
+      "rows": [
+        ["Curve shape", "J-shaped", "S-shaped (sigmoidal)"],
+        ["Resources", "Unlimited", "Limited"],
+        ["Growth over time", "Accelerates without limit", "Fast, then slows, then levels off"],
+        ["Carrying capacity (K)", "Ignored / not reached", "Population plateaus at K"],
+        ["When it occurs", "Small populations, new/empty habitats, ideal conditions", "Established populations in a real environment"],
+        ["Per-individual growth rate", "Constant", "Decreases as population nears K"]
+      ]
+    },
+    {
+      "type": "explanation",
+      "heading": "What Limits Populations: Density-Dependent vs. Density-Independent",
+      "content": "What actually slows a growing population and sets carrying capacity? Limiting factors come in two flavors, and distinguishing them is a core exam skill. DENSITY-DEPENDENT factors have a STRONGER effect as population density increases — they intensify when individuals are crowded. Competition for food, water, and space gets fiercer as numbers rise; disease and parasites spread more easily through dense populations; predators are attracted to and find abundant prey more readily; and the buildup of waste and stress worsens with crowding. These factors create the negative feedback that brings a population toward K: the denser it gets, the harder these brakes press, until growth halts. Density-dependent factors are what produce the leveling-off of logistic growth.\n\nDENSITY-INDEPENDENT factors affect a population REGARDLESS of its density — they hit a sparse population as hard as a crowded one. These are typically abiotic catastrophes: a hurricane, a flood, a wildfire, a hard freeze, a drought. A killing frost wipes out the same FRACTION of insects whether the population is large or small, because it doesn't care how many there are. Density-independent factors often cause sudden, sharp population crashes unrelated to carrying capacity.\n\nA quick test for the exam: ask 'does this factor's impact depend on how crowded the population is?' If YES (competition, disease, predation) → density-dependent. If NO (a storm, a freeze) → density-independent. Real populations are shaped by both: density-independent events can knock a population down abruptly, while density-dependent factors regulate it around carrying capacity over the longer term."
+    },
+    {
+      "type": "example",
+      "heading": "Reading a Population Growth Graph",
+      "content": "AP questions love to give you a graph of population size over time and ask you to interpret it. Here's how to reason through a typical S-curve with labeled regions.\n\nScenario: A deer population is introduced to an island. The graph rises slowly, then steeply, then bends over and flattens at 2,000 deer, after which it wiggles slightly up and down around 2,000.\n\nStep 1 — Identify the overall model. Because the curve LEVELS OFF rather than rising forever, this is LOGISTIC growth (S-shaped), not exponential (J-shaped).\n\nStep 2 — Identify carrying capacity. The plateau at 2,000 is the carrying capacity, K — the maximum the island can sustainably support. The slight oscillation around 2,000 means the population overshoots and dips around K as births and deaths rebalance.\n\nStep 3 — Locate fastest growth. The steepest part of the curve (the middle of the S) is where the population grows FASTEST — counterintuitively NOT at the top. Early on there are few reproducers; near K, resources are scarce and growth slows. The middle balances many reproducers with still-adequate resources.\n\nStep 4 — Reason about limiting factors. As the deer approach K, what slows them? DENSITY-DEPENDENT factors: competition for food/space, disease spreading through the crowd, more predation. If instead a harsh winter suddenly cut the population to 800 regardless of crowding, that would be a DENSITY-INDEPENDENT event (abiotic), shown as a sharp drop. The exam reward: name the model from the curve's shape, identify K at the plateau, mark fastest growth at the steepest middle region, and attribute the leveling-off to density-dependent limiting factors."
+    },
+    {
+      "type": "explanation",
+      "heading": "Life History Strategies and Survivorship Curves",
+      "content": "Species differ in how they 'invest' in reproduction, and these life history strategies fall along a spectrum captured by two idealized types. r-SELECTED species (r-strategists) maximize the growth rate (r): they reproduce early, fast, and in huge numbers, with little or no parental care, producing many small, cheap offspring of which few survive. They thrive in unstable, unpredictable environments and tend to be small-bodied and short-lived — insects, weeds, many fish and frogs, bacteria. Their populations often show exponential-like booms and busts. K-SELECTED species (K-strategists) live near carrying capacity (K): they reproduce later and slowly, produce FEW large offspring, and invest heavily in parental care so that most offspring survive. They favor stable environments and tend to be larger and longer-lived — elephants, whales, humans, large trees. Most real species are somewhere between these extremes.\n\nThis trade-off is visualized in survivorship curves, which plot the fraction of a cohort still alive across the lifespan. Type I (late loss) curves stay high through early and middle life and drop steeply in old age — typical of K-selected species with few offspring and lots of care (humans, large mammals). Type III (early loss) curves plummet early — most offspring die young — then flatten for the few survivors that reach adulthood; typical of r-selected species producing many neglected offspring (oysters, many fish, plants releasing thousands of seeds). Type II (constant loss) is a straight diagonal: a roughly constant DEATH RATE at every age, regardless of how old the individual is (some birds, rodents, lizards).\n\nThe pattern to recognize: Type I = die old (high investment, few young), Type III = die young (low investment, many young), Type II = steady risk throughout life. These connect life history to the growth models — r-strategists (Type III) ride exponential booms; K-strategists (Type I) hover near carrying capacity."
+    },
+    {
+      "type": "steps",
+      "heading": "Analyzing a Population's Growth and Limits",
+      "steps": [
+        {
+          "title": "Determine births, deaths, and migration",
+          "content": "A population grows when births + immigration exceed deaths + emigration. Establish whether the population is increasing, stable, or declining from these inputs and outputs."
+        },
+        {
+          "title": "Identify the growth model from the curve",
+          "content": "A J-shaped curve that keeps accelerating is exponential growth (unlimited resources). An S-shaped curve that levels off is logistic growth, plateauing at carrying capacity (K) because resources are limited."
+        },
+        {
+          "title": "Find K and the fastest-growth region",
+          "content": "Locate carrying capacity at the plateau of the S-curve. Remember growth is fastest in the steep MIDDLE of the curve, not at the top, because the population there has many reproducers but still-adequate resources."
+        },
+        {
+          "title": "Classify limiting factors",
+          "content": "Ask whether a factor's impact depends on crowding. Density-dependent factors (competition, disease, predation) intensify with density and regulate the population around K; density-independent factors (storms, freezes, fires) hit regardless of density and cause abrupt crashes."
+        }
+      ]
+    },
+    {
+      "type": "quiz",
+      "question": "An unusually severe drought kills the same large fraction of a beetle population whether the population is sparse or dense. This is an example of a...",
+      "options": [
+        "density-dependent factor",
+        "density-independent factor",
+        "factor that sets the carrying capacity",
+        "form of logistic regulation"
+      ],
+      "correctIndex": 1,
+      "explanation": "A drought (an abiotic catastrophe) affects the population regardless of how crowded it is — it kills the same fraction whether the beetles are sparse or dense — so it is density-INDEPENDENT. Density-DEPENDENT factors (competition, disease, predation) intensify as density rises and are what regulate a population around its carrying capacity; a one-off drought is not tied to K."
+    },
+    {
+      "type": "keypoint",
+      "content": "Populations grow exponentially (J-shaped) only when resources are unlimited; in real environments they follow logistic growth (S-shaped), leveling off at carrying capacity (K) as density-dependent factors (competition, disease, predation) intensify, while density-independent factors (storms, freezes) cut populations regardless of density. Life history strategies range from r-selected (many cheap offspring, Type III survivorship) to K-selected (few well-cared-for offspring, Type I survivorship)."
+    },
+    {
+      "type": "callout",
+      "variant": "warning",
+      "heading": "Population Ecology Traps to Avoid",
+      "content": "(1) Exponential = J-shaped, UNLIMITED resources, accelerating; logistic = S-shaped, LIMITED resources, leveling at K. Don't mix the curve shapes. (2) In logistic growth, the population grows FASTEST in the steep MIDDLE of the S-curve, NOT at carrying capacity (where growth ≈ 0). (3) DENSITY-DEPENDENT factors intensify with crowding (competition, disease, predation); DENSITY-INDEPENDENT factors (weather, fire) hit regardless of density — test by asking 'does crowding change its impact?' (4) Carrying capacity K is set by resources/density-dependent factors, not by one-off weather events. (5) r-selected = many small offspring, little care, Type III (die young); K-selected = few large offspring, much care, Type I (die old) — don't reverse them. (6) Type II survivorship = CONSTANT death rate at all ages (a straight diagonal), not 'average.'"
+    },
+    {
+      "type": "deepdive",
+      "heading": "From Lemmings to 8 Billion Humans: Population Ecology in the Real World",
+      "content": "Population ecology isn't an abstract set of curves — it governs predator-prey cycles, pest outbreaks, fisheries, conservation, and the future of our own species. The classic snowshoe hare and lynx cycle shows density dependence in motion: hare numbers boom, the well-fed lynx population rises in response, the abundant predators and crowding crash the hares, then the starving lynx crash too, and the cycle repeats roughly every ten years — a coupled oscillation around shifting carrying capacities driven by food and predation. Fisheries management lives and dies by these ideas: harvesting a fish stock fastest is best done by keeping the population near the steep middle of its logistic curve (maximum sustainable yield), and overfishing that pushes a stock too low can collapse it past recovery — exactly what happened to the Atlantic cod fishery, a density-dependent system pushed beyond its limits. Conservation biologists use carrying capacity and minimum viable population size to decide how much habitat an endangered species needs and when a population is too small to escape extinction by drift (linking back to Unit 7).\n\nThe human population is the most consequential case of all. For most of history we grew slowly, but advances in agriculture, sanitation, and medicine lifted environmental resistance (fewer deaths) and sent us into a near-exponential J-curve: from 1 billion around 1800 to 8 billion today. The defining question of this century is whether — and at what level — the human population will encounter its carrying capacity, set by food, water, energy, space, and the planet's capacity to absorb our waste (the carbon and nitrogen cycles of the last lesson). Growth is now slowing in many regions as birth rates fall, hinting at a logistic leveling, but we have also raised K artificially through technology while straining the very biogeochemical cycles that sustain us. Whether humanity achieves a stable plateau or overshoots and crashes is, in the language of this lesson, a question about density-dependent limits and carrying capacity at planetary scale.\n\nThese ideas tie the unit together. The growth that population ecology models is fueled by the energy flow of the previous lesson — carrying capacity ultimately reflects how much energy producers can capture and pass up. The limiting factors here (competition, predation, disease) are the very interactions that structure communities in the next lesson. The r/K strategies are life-history adaptations shaped by natural selection (Unit 7), and survivorship curves are evolution's answer to the question of how to allocate finite reproductive effort. And the human population's collision with carrying capacity is the driver behind the ecosystem disruptions — habitat loss, climate change, biodiversity collapse — that close the course. Learning to read a growth curve is learning to read the trajectory of every species, including the one reading this sentence."
+    },
+    {
+      "type": "callout",
+      "variant": "tip",
+      "heading": "How AP Tests Population Ecology",
+      "content": "Point-winners: (1) Identify exponential (J, unlimited resources) vs. logistic (S, levels at K) growth from a graph, label carrying capacity at the plateau, and mark fastest growth at the steep MIDDLE. (2) Classify limiting factors as density-dependent (competition, disease, predation — intensify with crowding) vs. density-independent (weather, fire — regardless of density). (3) Compare r-selected (many small offspring, little care, Type III survivorship) and K-selected (few offspring, much care, Type I) strategies. (4) Interpret survivorship curves: Type I (die old), Type II (constant death rate), Type III (die young). (5) Explain population change via births/deaths/immigration/emigration. (6) Connect carrying capacity to resources and to energy flow (prior lesson). Command words: 'explain'/'justify' want the mechanism (why growth slows near K)."
+    }
+  ],
+  "aiContext": "This AP Biology Unit 8 lesson covers population ecology and growth models (CED topics 8.6-8.8). A population is a group of the same species in one area able to interbreed; size rises with births + immigration and falls with deaths + emigration. Two growth models students must know cold: EXPONENTIAL growth (unlimited resources) produces a J-SHAPED curve that accelerates without limit (the per-individual growth rate stays constant); it's real but temporary (bacteria in fresh broth, species colonizing empty habitat). LOGISTIC growth (limited resources) produces an S-SHAPED (sigmoidal) curve that starts fast then slows and LEVELS OFF at CARRYING CAPACITY (K) — the max population the environment can sustainably support, where births ≈ deaths. KEY counterintuitive point: in logistic growth the population grows FASTEST in the steep MIDDLE of the S-curve (many reproducers, still-adequate resources), NOT at K (where growth ≈ 0); per-individual growth rate DECREASES as the population nears K. Populations often oscillate around K. Limiting factors — a core classification skill: DENSITY-DEPENDENT factors intensify with crowding (competition for food/space/water, disease/parasite spread, predation, waste/stress) and regulate the population around K (they cause logistic leveling); DENSITY-INDEPENDENT factors hit regardless of density (storms, floods, fires, freezes, droughts — usually abiotic) and cause abrupt crashes unrelated to K. Test: 'does the factor's impact depend on crowding?' YES = density-dependent, NO = density-independent. Life history strategies: r-SELECTED (maximize growth rate r; many small cheap offspring, little/no parental care, early/fast reproduction, small-bodied, short-lived, unstable environments — insects, weeds, many fish; boom-bust) vs. K-SELECTED (live near K; few large offspring, much parental care, late/slow reproduction, larger, longer-lived, stable environments — elephants, whales, humans, large trees). Survivorship curves: Type I (late loss — high survival until old age, K-selected, humans/large mammals), Type II (constant death rate at all ages — straight diagonal — some birds/rodents/lizards), Type III (early loss — most offspring die young then survivors persist, r-selected, oysters/many fish/plants). Memory: Type I = die old, Type III = die young, Type II = steady risk. Key misconceptions to counter: mixing J/S curve shapes and their resource conditions, thinking growth is fastest at K (it's the middle), reversing density-dependent/independent, reversing r/K traits, and misreading Type II as 'average' rather than constant death rate. Connect to energy flow (K reflects energy producers capture; prior lesson), community interactions (limiting factors = competition/predation/disease; next lesson), natural selection (r/K and survivorship are life-history adaptations; Unit 7), genetic drift in small populations (Unit 7 conservation), and the human population's collision with carrying capacity (drives ecosystem disruptions; final lesson). On the exam expect growth-curve interpretation, K identification, density-dependent vs independent classification, r/K comparison, and survivorship-curve reading."
+}

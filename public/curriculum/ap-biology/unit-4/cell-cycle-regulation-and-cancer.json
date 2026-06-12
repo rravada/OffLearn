@@ -1,0 +1,120 @@
+{
+  "id": "ap-bio-u4-cell-cycle-regulation-and-cancer",
+  "title": "Regulation of the Cell Cycle and Cancer",
+  "subject": "AP Biology",
+  "unit": "Cell Communication and Cell Cycle",
+  "track": "ap",
+  "difficulty": "ap",
+  "duration": "40 min",
+  "objectives": [
+    "Explain how checkpoints and regulatory proteins control progression through the cell cycle",
+    "Describe the roles of internal and external signals, including growth factors, in regulating division",
+    "Explain how mutations in proto-oncogenes and tumor suppressor genes lead to cancer",
+    "Connect uncontrolled cell division to tumor formation, metastasis, and cancer treatment"
+  ],
+  "sections": [
+    {
+      "type": "explanation",
+      "heading": "The Cell Cycle Needs a Quality-Control Department",
+      "content": "Picture a factory assembly line copying something as important as the master blueprint for an entire organism. You would never let each station blindly hand its work to the next — you'd station inspectors who STOP the line if something is wrong: a missing part, a flawed copy, the wrong moment to proceed. The cell cycle has exactly this kind of quality control. Left completely unchecked, a cell might try to divide before its DNA is finished copying, or split with damaged chromosomes, or multiply when the body has no need for more cells. Any of these is a disaster. So the cell cycle is tightly regulated by a system of checkpoints — control points where the cell pauses, runs an internal inspection, and proceeds only if conditions are right.\n\nThis lesson is the payoff of the whole unit. You learned how cells receive signals (lesson 1) and how those signals are turned on, off, and balanced by feedback (lesson 2). You learned the steps of the cell cycle and mitosis (lesson 3). Now you'll see how signaling CONTROLS the cell cycle — telling a cell when to divide and, just as importantly, when NOT to. And you'll see what happens when that control breaks down: cancer, a disease of the cell cycle escaping its regulation.\n\nThe big idea is that cell division is not automatic — it is a decision, made by integrating internal status checks ('is my DNA okay?') with external signals ('does the body want more of me?'). Healthy tissue depends on cells making that decision correctly. Cancer is what happens when they don't."
+    },
+    {
+      "type": "explanation",
+      "heading": "Checkpoints: Where the Cell Decides to Proceed",
+      "content": "At a checkpoint, the cell evaluates internal and external conditions and either advances to the next phase or halts. There are three main checkpoints, and knowing what each one verifies makes the logic easy.\n\nThe G1 checkpoint (sometimes called the 'restriction point') is the most important decision point. Here the cell asks: Am I big enough? Are nutrients available? Is my DNA undamaged? Are there external signals telling me to divide? If everything checks out, the cell commits to dividing and proceeds into S phase. If not, it pauses, or exits into the resting G0 state. Most of the decision to divide is made here.\n\nThe G2 checkpoint checks: Has all the DNA been completely and correctly replicated? Is any DNA damaged? It blocks entry into mitosis until the genome is fully and correctly copied, so the cell doesn't divide with incomplete or broken DNA.\n\nThe M (spindle) checkpoint occurs during mitosis, at metaphase. It verifies: Are all chromosomes properly attached to spindle fibers and aligned? It prevents anaphase from starting until every chromosome is correctly attached, ensuring the sister chromatids are split evenly. Errors here would give daughter cells the wrong number of chromosomes.\n\nDriving the cell PAST these checkpoints are internal regulatory proteins. The key players are cyclins (proteins whose levels rise and fall — cycle — through the phases) and cyclin-dependent kinases (Cdks, the enzymes from the signaling lessons). A cyclin must bind its Cdk to activate it; the active cyclin-Cdk complex then phosphorylates target proteins that push the cell into the next phase. Because cyclin levels oscillate, the cell advances in a controlled, repeating rhythm — a molecular clock that only ticks forward when the checkpoints say 'go.'"
+    },
+    {
+      "type": "table",
+      "heading": "The Three Cell-Cycle Checkpoints",
+      "headers": ["Checkpoint", "When", "Main question it answers"],
+      "rows": [
+        ["G1 (restriction point)", "End of G1, before S", "Big enough? Nutrients? DNA undamaged? Signal to divide?"],
+        ["G2", "End of G2, before mitosis", "Was all DNA replicated completely and correctly?"],
+        ["M (spindle)", "Metaphase, during mitosis", "Are all chromosomes attached to the spindle and aligned?"],
+        ["Drivers (push forward)", "Throughout", "Cyclin-Cdk complexes phosphorylate targets to advance the cycle"]
+      ]
+    },
+    {
+      "type": "explanation",
+      "heading": "Internal and External Signals: Permission to Divide",
+      "content": "A cell integrates two kinds of information at its checkpoints, and AP wants you to distinguish them.\n\nInternal signals come from inside the cell and report on its own status — for example, whether DNA is damaged or whether all chromosomes are attached to the spindle. A crucial internal signal is the protein p53, a 'guardian' that responds to DNA damage: if it detects damaged DNA at the G1 checkpoint, it halts the cycle to allow repair, and if the damage is too severe to fix, it can trigger apoptosis — programmed cell death — so the broken cell destroys itself rather than passing on its errors. Apoptosis is a normal, controlled 'cellular suicide' that also sculpts development (it's how the webbing between your fingers was removed before birth).\n\nExternal signals come from outside the cell, often as the chemical messages from lesson 1. The most important are growth factors: proteins released by other cells that bind surface receptors and stimulate a target cell to divide. Growth factors are why cells generally divide only when the body signals a need — for instance, platelet-derived growth factor triggers nearby cells to multiply and heal a wound, then the signal stops and division stops.\n\nTwo other external controls shape normal division. In density-dependent inhibition, cells stop dividing once they crowd together and cover a surface (they sense their neighbors and quit) — which is why a layer of cells in a dish grows until it forms a single sheet and then halts. In anchorage dependence, normal cells must be attached to a surface or other cells to divide at all. Both are brakes that keep growth orderly. Hold onto these normal controls — growth-factor dependence, density-dependent inhibition, anchorage dependence, and the p53/checkpoint system — because cancer cells violate every one of them."
+    },
+    {
+      "type": "quiz",
+      "question": "At the G2 checkpoint, a cell detects that its DNA was not completely replicated during S phase. What is the appropriate regulatory response?",
+      "options": [
+        "Proceed into mitosis immediately to save time",
+        "Halt the cycle at the G2 checkpoint until replication is completed and any damage is addressed",
+        "Skip mitosis and divide the cytoplasm only",
+        "Permanently increase cyclin levels to force division"
+      ],
+      "correctIndex": 1,
+      "explanation": "The G2 checkpoint blocks entry into mitosis until DNA replication is complete and correct, so the cell halts to finish/repair before dividing. Forcing the cell forward with incomplete DNA would pass damaged or missing genetic material to the daughter cells — exactly the kind of failure that checkpoints exist to prevent and that, when checkpoints are lost, contributes to cancer."
+    },
+    {
+      "type": "keypoint",
+      "content": "The cell cycle is controlled by checkpoints (G1, G2, M) that verify internal conditions (DNA intact and replicated, chromosomes attached) and external signals (growth factors), driven forward by cyclin-Cdk complexes. Cancer arises when mutations break this regulation, causing uncontrolled division."
+    },
+    {
+      "type": "explanation",
+      "heading": "Cancer: The Cell Cycle Out of Control",
+      "content": "Cancer is fundamentally a disease of cell-cycle regulation: a cell that divides uncontrollably because its checkpoints and growth controls have failed. Crucially, cancer is genetic at the cell level — it is caused by mutations in the very genes that normally regulate division. (These mutations are usually acquired in body cells over a lifetime, from things like UV light, tobacco, certain chemicals, viruses, or random copying errors; most cancers are not inherited.) It typically takes SEVERAL mutations accumulating in the same cell line, which is why cancer risk rises with age. Two categories of genes are the usual culprits, and the AP exam tests the distinction with a memorable analogy.\n\nProto-oncogenes are normal genes that promote cell division — they code for things like growth factor receptors and signaling proteins, the 'gas pedal' of the cell cycle. A mutation can turn a proto-oncogene into an oncogene: a hyperactive version stuck 'on,' flooring the gas pedal so the cell is constantly told to divide even with no growth signal. This connects straight back to lesson 2 — a receptor locked active, or a G protein that can't switch off, drives endless division. Importantly, a single overactive copy is enough to push division (dominant at the cell level).\n\nTumor suppressor genes do the opposite — they normally restrain division or trigger repair and apoptosis (p53 is the most famous). They are the 'brakes.' A mutation that DISABLES a tumor suppressor cuts the brake lines, removing a check on division. With p53 broken, damaged DNA isn't caught or destroyed, so mutations pile up and division proceeds unchecked — p53 is mutated in roughly half of all human cancers.\n\nThe unifying picture: cancer needs the gas pedal stuck down (activated oncogenes) AND the brakes cut (disabled tumor suppressors). One mutation is rarely enough; cancer is the cumulative failure of multiple controls in one cell lineage."
+    },
+    {
+      "type": "steps",
+      "heading": "How a Normal Cell Becomes a Tumor",
+      "steps": [
+        {
+          "title": "Mutations accumulate in regulatory genes",
+          "content": "Over time, DNA damage produces mutations. Activating a proto-oncogene (gas pedal stuck on) and/or disabling a tumor suppressor like p53 (brakes cut) removes the normal limits on division. Usually several such mutations must accumulate in the same cell lineage."
+        },
+        {
+          "title": "The cell ignores checkpoints and grows-without-signal",
+          "content": "The altered cell divides without proper growth-factor signals, ignores density-dependent inhibition and anchorage dependence, and bypasses checkpoints — dividing even with damaged DNA. It no longer responds to the body's normal 'stop' messages."
+        },
+        {
+          "title": "A tumor forms",
+          "content": "Uncontrolled division produces a mass of cells called a tumor. A benign tumor stays in one place. A malignant tumor is cancerous: its cells are abnormal and capable of spreading."
+        },
+        {
+          "title": "Metastasis spreads the cancer",
+          "content": "Cells from a malignant tumor can break away, enter the blood or lymph, and start new tumors in distant tissues — a process called metastasis. This spread is what makes cancer so dangerous and hard to treat."
+        }
+      ]
+    },
+    {
+      "type": "example",
+      "heading": "Diagnosing Two Mutations: Predict the Effect on Division",
+      "content": "AP often hands you a mutation and asks you to predict whether it promotes cancer and how. The reasoning rule: figure out whether the mutation FLOORS a gas pedal (activates a growth promoter) or CUTS a brake (disables a growth restrainer). Work two cases.\n\nCASE 1 — A growth-factor receptor is mutated so it signals 'divide' even with NO growth factor bound. Reasoning: this is a normally growth-PROMOTING protein that has become OVERACTIVE — a gain of function. The proto-oncogene has become an oncogene (gas pedal stuck down). Prediction: the cell divides continuously without waiting for the body's signal, promoting cancer. Note that just one overactive copy is enough to drive division.\n\nCASE 2 — Both copies of the p53 gene are inactivated so the protein no longer works. Reasoning: p53 is a tumor suppressor (a brake) that normally halts the cycle to repair DNA or triggers apoptosis. Inactivating it is a LOSS of function — the brake is cut. Prediction: cells with damaged DNA are no longer stopped or destroyed, so mutations accumulate and division proceeds unchecked, strongly promoting cancer.\n\nNow combine the logic: a cell that has BOTH an activated oncogene (Case 1) AND a disabled tumor suppressor (Case 2) has its gas pedal floored and its brakes cut simultaneously — the classic recipe for cancer. This is why cancer normally requires multiple mutations in the same lineage rather than a single change. When you see 'overactive / always on / gain of function,' think oncogene; when you see 'inactivated / lost / can't function,' think tumor suppressor."
+    },
+    {
+      "type": "quiz",
+      "question": "A cell line has a mutation that makes a growth-promoting signaling protein permanently active. Independently, another cell line has a mutation that completely inactivates the tumor suppressor p53. How should these be classified?",
+      "options": [
+        "Both created oncogenes",
+        "The permanently active growth protein is an oncogene (gain of function); the inactivated p53 is a disabled tumor suppressor (loss of function)",
+        "Both disabled tumor suppressors",
+        "The active growth protein is a tumor suppressor; the inactivated p53 is an oncogene"
+      ],
+      "correctIndex": 1,
+      "explanation": "An overactive growth-promoting protein is an oncogene — a gain of function ('gas pedal stuck on'). Inactivating p53, a tumor suppressor, is a loss of function ('brakes cut'). Both push toward uncontrolled division but by opposite mechanisms, and students must not reverse which gene is activated versus disabled."
+    },
+    {
+      "type": "callout",
+      "variant": "warning",
+      "heading": "Oncogene = Gas Pedal Stuck ON; Tumor Suppressor = Brakes CUT",
+      "content": "The most-tested cancer distinctions: (1) An ONCOGENE results from a mutation that makes a growth-promoting gene OVERACTIVE (gain of function — gas pedal floored). A TUMOR SUPPRESSOR causes cancer when a mutation INACTIVATES it (loss of function — brakes cut). Students mix up which one is activated vs. inactivated. (2) p53 is a TUMOR SUPPRESSOR (a brake), not an oncogene. (3) Cancer usually requires MULTIPLE mutations accumulating in one cell line — a single mutation is rarely enough, which is why cancer risk rises with age. (4) Most cancer mutations are acquired in body (somatic) cells during life, not inherited. (5) A tumor is the RESULT of uncontrolled division; metastasis (spreading) is what distinguishes dangerous malignant tumors."
+    },
+    {
+      "type": "callout",
+      "variant": "tip",
+      "heading": "How AP Tests Cell-Cycle Regulation and Cancer",
+      "content": "What earns points: (1) Name the checkpoints and what each verifies (G1 = should we start? G2 = is DNA fully/correctly replicated? M = are chromosomes attached?). (2) Distinguish internal signals (DNA damage, spindle attachment, p53) from external signals (growth factors). (3) Nail the oncogene vs. tumor-suppressor logic: oncogene = activated gas pedal; tumor suppressor = disabled brake. (4) Explain cancer as MULTIPLE failures of regulation, and link it back to signaling (a receptor stuck 'on' = an oncogenic driver). (5) Connect mechanism to treatment: chemo and radiation target rapidly dividing cells, and newer 'targeted therapies' block specific overactive signaling proteins. (6) Use command words: 'explain how a mutation leads to cancer' wants the chain mutation → lost control → uncontrolled division, not just 'it causes cancer.'"
+    },
+    {
+      "type": "deepdive",
+      "heading": "Why Understanding the Cell Cycle Is Beating Cancer",
+      "content": "Everything in this unit converges on one of the great projects of modern medicine: turning knowledge of cell-cycle regulation into ways to defeat cancer. Because cancer is uncontrolled division, the oldest treatments simply attack cells that divide rapidly. Chemotherapy uses drugs that disrupt DNA replication or mitosis (some jam the spindle so the M checkpoint stalls division); radiation damages DNA so badly that dividing cells die. These work because cancer cells divide more than most normal cells — but they also harm the body's normally fast-dividing cells, which is why chemo causes hair loss, nausea, and low blood counts (hair follicles, gut lining, and bone marrow are collateral damage). Understanding the cell cycle explains both why these treatments work and why their side effects happen.\n\nThe deeper understanding has launched something far more precise: targeted therapy. If a particular cancer is driven by one specific overactive signaling protein — an oncogene product stuck 'on,' exactly like the locked receptors and G proteins from lesson 2 — a drug can be designed to block just that protein, sparing normal cells. The leukemia drug imatinib (Gleevec) does precisely this, inhibiting a single abnormal kinase and transforming a once-fatal cancer into a manageable condition; HER2-targeted drugs do the same for certain breast cancers. Newer immunotherapies take yet another angle, releasing the brakes on the patient's own immune cells so they attack the tumor. Each advance came directly from understanding the molecular controls you just learned.\n\nFinally, this connects to the rest of biology in ways worth seeing. Cancer is evolution in miniature and in fast-forward (Unit 7): within a tumor, cells with mutations that help them divide and survive outcompete others, and treatment itself acts as a selective pressure — which is exactly why cancers evolve drug resistance, the central challenge of oncology. The genes involved (p53, proto-oncogenes) tie to gene expression and mutation (Unit 6). And the fact that the same checkpoint proteins, cyclins, and Cdks operate in yeast and humans alike — work that won a Nobel Prize — is one more piece of evidence for the deep common ancestry of life. The cell cycle is where molecular biology, medicine, and evolution meet, and reading it correctly is, increasingly, how we save lives." }
+  ],
+  "aiContext": "This AP Biology Unit 4 lesson covers regulation of the cell cycle and cancer (CED topic 4.7 and its disruptions): checkpoints (G1/restriction, G2, M/spindle), cyclins and Cdks as drivers, internal vs. external signals (DNA-damage sensing, p53, growth factors, density-dependent inhibition, anchorage dependence), and how mutations cause cancer. The most-tested distinction is oncogene vs. tumor suppressor: an oncogene comes from a mutation that makes a growth-PROMOTING gene OVERACTIVE (gain of function — 'gas pedal stuck on'), while a tumor suppressor (e.g., p53) causes cancer when a mutation INACTIVATES it (loss of function — 'brakes cut'); students frequently reverse which is activated vs. disabled. Reinforce that cancer requires MULTIPLE accumulated mutations in one cell lineage (risk rises with age), that most are somatic/acquired not inherited, and that a tumor is the result of uncontrolled division while metastasis distinguishes dangerous malignant tumors. Explicitly tie cancer back to signaling lessons (a receptor or G protein stuck 'on' is an oncogenic driver; lost off-switches from lesson 2) and to the cell-cycle/checkpoint machinery (lesson 3). Connect to treatment (chemo/radiation target fast-dividing cells, explaining side effects; targeted therapy blocks specific overactive proteins; imatinib) and to evolution (tumor cells evolve drug resistance under selection, Unit 7) and gene mutation (Unit 6). On the exam expect: identify-the-checkpoint questions, internal-vs-external signal sorting, oncogene/tumor-suppressor reasoning, and 'explain how a mutation leads to uncontrolled division' FRQs requiring the full mechanistic chain."
+}

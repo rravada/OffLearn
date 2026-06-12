@@ -1,0 +1,120 @@
+{
+  "id": "ap-bio-u7-phylogeny",
+  "title": "Phylogeny and Building Evolutionary Trees",
+  "subject": "AP Biology",
+  "unit": "Natural Selection",
+  "track": "ap",
+  "difficulty": "ap",
+  "duration": "45 min",
+  "objectives": [
+    "Interpret a phylogenetic tree, including nodes, branches, common ancestors, and clades",
+    "Use shared derived characters to determine relationships and build a cladogram",
+    "Avoid common tree-reading errors (tip order, 'higher' species, branch-tip relatedness)",
+    "Explain how molecular data and the principle of parsimony are used to construct phylogenies"
+  ],
+  "sections": [
+    {
+      "type": "explanation",
+      "heading": "Drawing the Family Tree of Life",
+      "content": "Your family tree shows how you, your siblings, your cousins, and your grandparents are related — who shares a recent ancestor and who connects only further back. Biologists draw the same kind of diagram for species. A phylogenetic tree (or phylogeny) is a branching diagram that represents the evolutionary relationships among organisms — a hypothesis about who is related to whom and how recently they shared a common ancestor. The previous lesson gathered the EVIDENCE of relatedness; this lesson turns that evidence into the actual tree.\n\nThe logic builds directly on common ancestry. If species share an ancestor, their history is literally branch-shaped: one lineage splits into two, each of those may split again, and so on, producing the nested, tree-like pattern of life. Reading these trees correctly is a core AP skill — and a surprisingly error-prone one, because trees can be drawn in many visual styles (sideways, upside down, rotated) that all mean the same thing.\n\nThe single most important habit: a tree's meaning is in its BRANCHING ORDER (its topology) — which lineages share more recent common ancestors — NOT in the left-to-right order of the tips, and NOT in any sense of one tip being 'higher' or 'more advanced.' Get that habit, and the rest of tree-reading falls into place."
+    },
+    {
+      "type": "explanation",
+      "heading": "Anatomy of a Phylogenetic Tree",
+      "content": "Every phylogenetic tree has the same parts. The TIPS (the ends of the branches) are the taxa being compared — the species or groups, usually living today. A NODE (a branch point) represents a common ancestor from which two or more lineages diverged. The BRANCHES are the lineages themselves through time. The ROOT is the base of the tree, the common ancestor of everything on it. Trace any two tips back until their branches meet: that meeting node is their MOST RECENT COMMON ANCESTOR (MRCA). The deeper (further back) you have to go to find two tips' MRCA, the more distantly related they are.\n\nA clade (or monophyletic group) is an ancestor PLUS all of its descendants — a complete branch you could 'snip off' the tree at a single cut. Clades are how biologists define natural groups: mammals form a clade, birds form a clade. Recognizing clades and identifying the MRCA of a set of tips are the two operations most exam questions require.\n\nHere is the error that trips up the most students: relatedness is read by SHARED ANCESTORS (how recently branches meet), NOT by how close two tips sit along the row of tips. Branches can be rotated at any node like a mobile hanging from the ceiling without changing the tree's meaning — so two tips printed next to each other may actually be distant relatives, and two tips far apart on the page may be close kin. Always trace back to the common ancestor; never judge relatedness by tip adjacency."
+    },
+    {
+      "type": "callout",
+      "variant": "warning",
+      "heading": "The Tree-Reading Traps Examiners Set",
+      "content": "(1) Relatedness = recency of COMMON ANCESTOR (where branches meet), NOT how close two tips are on the page. Adjacent tips are not necessarily closest relatives. (2) Branches can ROTATE freely at any node — the left-to-right order of tips carries no meaning; the same tree can be drawn many ways. (3) No tip is 'higher,' 'more advanced,' or 'more evolved' — every living tip has been evolving for the same amount of time. The tip on the far right is not the 'goal' of evolution. (4) Species at the tips did NOT evolve FROM other living tip species; they share common ancestors (the internal nodes). Humans did not evolve from chimps — they share an ancestor. (5) A clade must include the ancestor AND all its descendants; leaving some out is not a valid clade. (6) Longer branches don't necessarily mean 'more change' unless the tree is explicitly scaled."
+    },
+    {
+      "type": "explanation",
+      "heading": "Building Trees From Shared Derived Characters",
+      "content": "How do biologists decide the branching order? They group organisms by shared derived characters — traits that are NEW in a lineage and inherited by its descendants, marking a branch. The key is distinguishing a derived (new) character from an ancestral (old) one. A character shared because it's NEW to a group defines that group; a character shared just because it's ancient and widespread doesn't tell you about finer relationships within the group.\n\nTo tell derived from ancestral, biologists use an outgroup — a taxon known to have branched off earlier than the others being studied. Characters present in the outgroup are taken as ancestral (the starting condition); characters that appear only in the 'ingroup' are derived. For example, comparing several land vertebrates with a fish (the outgroup), having four limbs is a shared derived character that groups the land vertebrates together, while having a backbone is ancestral (the fish has it too) and so doesn't distinguish among them.\n\nThe diagram that results — built purely from shared derived characters — is called a cladogram. Each shared derived character marks a branch point: organisms above that point share the trait because they inherited it from the ancestor at that node. The more shared derived characters two groups have, the more recently they share an ancestor. A reliable method: tally which taxa share which derived traits, and nest the groups so that each derived character is gained once and then inherited by everything descended from that node."
+    },
+    {
+      "type": "table",
+      "heading": "Phylogenetic Tree Vocabulary",
+      "headers": ["Term", "Meaning on the tree"],
+      "rows": [
+        ["Tip (taxon)", "An end of a branch — the species or group being compared"],
+        ["Node", "A branch point representing a common ancestor where a lineage split"],
+        ["Most recent common ancestor (MRCA)", "The node where two tips' branches first meet, tracing backward"],
+        ["Branch", "A lineage through time connecting nodes/tips"],
+        ["Root", "The base of the tree; the common ancestor of all taxa shown"],
+        ["Clade (monophyletic group)", "An ancestor plus ALL of its descendants — a complete branch"],
+        ["Shared derived character", "A new trait that defines a clade (e.g., feathers, four limbs)"],
+        ["Outgroup", "A taxon that branched off earliest; used to identify ancestral vs. derived traits"]
+      ]
+    },
+    {
+      "type": "example",
+      "heading": "Building a Cladogram From a Character Table",
+      "content": "Suppose you have four animals and a table of traits (a check means the trait is present), with a lancelet as the OUTGROUP (it branched off earliest):\n\n  Trait:        Backbone | Four limbs | Amniotic egg | Hair\n  Lancelet:        –           –            –          –\n  Lamprey:         ✓           –            –          –\n  Lizard:          ✓           ✓            ✓          –\n  Mouse:           ✓           ✓            ✓          ✓\n\nStep 1 — Use the outgroup to set the ancestral state. The lancelet lacks all four traits, so 'absent' is ancestral; each trait's presence is a DERIVED character.\n\nStep 2 — Order the traits by how many taxa share them. Backbone is shared by lamprey, lizard, and mouse (3 taxa). Four limbs and amniotic egg are shared by lizard and mouse (2 taxa). Hair is unique to the mouse (1 taxon). More widely shared derived traits mark DEEPER (earlier) branch points.\n\nStep 3 — Nest the groups. The first branch separates the lancelet (no derived traits) from the rest. Next, 'backbone' marks the node uniting lamprey + lizard + mouse, so the lamprey branches off there. Then 'four limbs' and 'amniotic egg' mark the node uniting lizard + mouse, so the lizard branches off. Finally 'hair' is on the mouse's own branch.\n\nStep 4 — Read the result. The tree, from base to tip, branches: lancelet, then lamprey, then lizard, then mouse — with lizard and mouse as the most closely related pair (they share the most derived characters and the most recent common ancestor). The reusable method: identify derived traits with an outgroup, then nest taxa so each derived character is gained ONCE at a node and inherited by all descendants above it. Exam questions often ask you to place a new taxon, identify the MRCA of two taxa, or name the character that defines a clade."
+    },
+    {
+      "type": "quiz",
+      "question": "On a phylogenetic tree, what is the correct way to determine which two species are most closely related?",
+      "options": [
+        "See which two tips are printed closest together on the page",
+        "Find which two tips share the most recent common ancestor (whose branches meet most recently when traced backward)",
+        "Identify which tip is farthest to the right",
+        "Count which species has the longest branch"
+      ],
+      "correctIndex": 1,
+      "explanation": "Relatedness is determined by the most recent common ancestor: the two tips whose branches meet most recently (closest to the tips when traced backward) are most closely related. Tip adjacency on the page is meaningless because branches can be rotated at any node, and no tip is 'higher' or a goal of evolution. This is the single most-tested tree-reading skill."
+    },
+    {
+      "type": "steps",
+      "heading": "How to Read or Build a Phylogeny",
+      "steps": [
+        {
+          "title": "Identify the parts",
+          "content": "Locate the tips (taxa), the nodes (common ancestors), the branches, and the root. Remember a clade is an ancestor plus all its descendants."
+        },
+        {
+          "title": "Judge relatedness by common ancestors",
+          "content": "To compare two taxa, trace their branches backward to the node where they meet — their most recent common ancestor. A more recent meeting point means closer relatedness. Ignore tip order and any sense of 'higher.'"
+        },
+        {
+          "title": "Use an outgroup to polarize traits",
+          "content": "When building a tree, include an outgroup that branched off earliest. Traits present in the outgroup are ancestral; traits appearing only in the ingroup are shared derived characters that define clades."
+        },
+        {
+          "title": "Nest groups by shared derived characters (parsimony)",
+          "content": "Group taxa so that each derived character is gained once at a node and inherited by all descendants. When several trees are possible, prefer the simplest one requiring the fewest evolutionary changes — the principle of parsimony."
+        }
+      ]
+    },
+    {
+      "type": "quiz",
+      "question": "Why do biologists use an OUTGROUP when constructing a cladogram?",
+      "options": [
+        "To add more species to make the tree bigger",
+        "To identify which character states are ancestral versus derived, since traits in the outgroup represent the ancestral condition",
+        "Because the outgroup is the most evolved species",
+        "To determine the exact ages of each branch"
+      ],
+      "correctIndex": 1,
+      "explanation": "An outgroup is a taxon known to have branched off earlier than the group being studied. Its trait states are taken as ancestral, which lets biologists identify shared DERIVED characters (new traits) in the ingroup — and those derived characters are what define clades and reveal branching order. The outgroup isn't 'most evolved,' and it doesn't date branches."
+    },
+    {
+      "type": "keypoint",
+      "content": "A phylogenetic tree represents evolutionary relationships through branching order: relatedness is read by the most recent common ancestor (where branches meet), not by tip position or any notion of 'higher.' Trees are built from shared derived characters (new traits defining clades), using an outgroup to distinguish derived from ancestral traits and the principle of parsimony to choose the simplest tree; a clade is an ancestor plus all its descendants."
+    },
+    {
+      "type": "callout",
+      "variant": "tip",
+      "heading": "How AP Tests Phylogeny",
+      "content": "Point-winners: (1) Identify the MRCA of two taxa and rank relatedness by branching order, NOT tip adjacency. (2) Build or complete a cladogram from a character table — use the outgroup to find derived traits and nest groups so each derived character arises once. (3) Define and recognize a clade (ancestor + all descendants). (4) Explain that the same tree can be rotated/redrawn without changing relationships, and that no tip is 'more evolved.' (5) Explain why molecular data and parsimony (fewest changes) are used to build trees, and that 'humans share an ancestor with chimps' (not 'evolved from chimps'). (6) Place a new taxon on a tree given its traits, and name the shared derived character defining a given clade."
+    },
+    {
+      "type": "deepdive",
+      "heading": "From Morphology to Molecules: Rebuilding the Tree of Life",
+      "content": "For most of history, biologists built trees from anatomy — counting limbs, comparing skulls, noting which animals had feathers or hair. That worked, but it had a weakness: convergent evolution (last lesson) can make unrelated species look alike, and analogous traits can mislead a tree-builder into grouping a dolphin with a shark. The molecular revolution changed everything. Today phylogenies are built largely from DNA and protein SEQUENCES, comparing the actual genetic letters across species. Because there are so many independent positions in a genome, molecular data provide enormous numbers of characters and are much harder to fool than a handful of anatomical traits — though biologists still must watch for cases where the same base change happens independently. Computers sift millions of possible trees and, guided by the principle of parsimony (the tree requiring the fewest evolutionary changes is preferred) and related statistical methods, find the best-supported phylogeny.\n\nThis molecular approach has rewritten parts of the tree of life and revealed relationships no anatomist could have guessed. It showed that the living world divides into three great domains — Bacteria, Archaea, and Eukarya — and, surprisingly, that Archaea (microbes once lumped with bacteria) are actually more closely related to US, the eukaryotes, than to bacteria. It revealed that whales' closest living relatives are hippos, that fungi are closer to animals than to plants, and that birds are living dinosaurs nested within the reptile clade. Each of these was a molecular prediction later corroborated by fossils or anatomy — the same convergence-of-evidence theme from the last lesson, now producing the tree itself.\n\nPhylogenies are not just academic. They guide real decisions: tracking how a virus spreads and mutates (phylogenetic trees of SARS-CoV-2 genomes let epidemiologists trace transmission and spot new variants in real time), choosing which species to prioritize in conservation (a lineage with no close relatives represents unique evolutionary history worth saving), identifying the source of a foodborne outbreak, and even guiding drug discovery by finding organisms related to known producers of useful compounds. The branching diagram you learn to read in this lesson is, in modern biology, a working tool — built from the molecular evidence of common ancestry, refined by parsimony, and applied from the hospital to the rainforest. It is Darwin's 'tree of life' made quantitative and put to work."
+    }
+  ],
+  "aiContext": "This AP Biology Unit 7 lesson covers phylogeny and tree-building (CED topics 7.8-7.9), turning the evidence for common ancestry (prior lesson) into actual evolutionary trees. A phylogenetic tree is a branching hypothesis of evolutionary relationships. Tree anatomy students must know: tips (taxa), nodes (common ancestors/branch points), branches (lineages), root (ancestor of all shown), most recent common ancestor (MRCA = where two tips' branches meet when traced back), and clade/monophyletic group (an ancestor PLUS all its descendants). THE central, most-tested skill and misconception: relatedness is read by the recency of the COMMON ANCESTOR (where branches meet), NOT by how close two tips sit on the page — branches rotate freely at any node, so tip order is meaningless, and the same tree can be drawn many ways. No tip is 'higher,' 'more advanced,' or 'more evolved'; all living tips have evolved for equal time. Species at tips did not evolve FROM other living tips (humans did not evolve from chimps — they share an ancestor). Tree construction: group by SHARED DERIVED CHARACTERS (new traits inherited by descendants, which define clades), distinguished from ancestral traits using an OUTGROUP (a taxon that branched off earliest; its states are ancestral, so traits unique to the ingroup are derived). The resulting diagram is a cladogram. Method for character-table problems: use the outgroup to polarize traits, order derived traits by how many taxa share them (more widely shared = deeper/earlier node), and nest taxa so each derived character is gained ONCE at a node and inherited above it. The principle of PARSIMONY selects the simplest tree (fewest evolutionary changes). Modern phylogenies are built mainly from DNA/protein sequences (many characters, harder to fool than anatomy, which convergent evolution can mislead). Key misconceptions to counter: judging relatedness by tip adjacency, reading 'higher/more evolved' into tip position, thinking living species evolved from other living species, and invalid (incomplete) clades. Applications: viral phylogenies (SARS-CoV-2 transmission/variants), conservation prioritization, three domains (Archaea closer to eukaryotes than to bacteria), whales-hippos, birds as dinosaurs. On the exam expect MRCA identification, cladogram construction/completion from character tables, clade recognition, taxon placement, and parsimony/outgroup reasoning."
+}

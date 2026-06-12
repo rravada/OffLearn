@@ -1,0 +1,30 @@
+{
+  "id": "ap-bio-transcription-and-translation",
+  "title": "Transcription, RNA Processing, and Translation",
+  "subject": "AP Biology",
+  "chunks": [
+    { "id": "c1", "text": "The central dogma of molecular biology describes the flow of genetic information: DNA is transcribed into RNA, and RNA is translated into protein (DNA → RNA → protein). Gene expression is the overall process of turning a gene's information into a functional product." },
+    { "id": "c2", "text": "DNA stays safely in the nucleus while disposable messenger RNA (mRNA) copies carry instructions out to the cytoplasm, where proteins are built. This protects the master information from damage." },
+    { "id": "c3", "text": "Transcription keeps information in the same nucleic-acid 'language' (DNA → RNA), while translation switches languages (nucleic acid → amino acids/protein). This vocabulary distinction prevents confusing the two processes." },
+    { "id": "c4", "text": "Transcription is carried out by RNA polymerase, which binds a DNA sequence called the promoter near the start of a gene. The promoter marks where to begin and which strand to read." },
+    { "id": "c5", "text": "Only one DNA strand, the template (antisense) strand, is read for a given gene. RNA polymerase builds the RNA using complementary base pairing but inserts uracil (U) wherever the template has adenine, because RNA uses U instead of thymine." },
+    { "id": "c6", "text": "RNA polymerase builds RNA only in the 5'→3' direction but, unlike DNA polymerase, needs no primer to start. Transcription has three phases: initiation (binding the promoter), elongation (building RNA), and termination (releasing the finished RNA)." },
+    { "id": "c7", "text": "The mRNA produced is complementary to the template strand and therefore identical (except U for T) to the other DNA strand, called the coding (sense) strand." },
+    { "id": "c8", "text": "In eukaryotes, pre-mRNA is processed before leaving the nucleus: a modified guanine 5' cap is added to the front and a poly-A tail (many adenines) to the back. Both protect the mRNA and help the ribosome recognize and bind it." },
+    { "id": "c9", "text": "Splicing removes non-coding introns and joins the coding exons together, carried out by the spliceosome. Exons are EXpressed (kept); introns are INtervening sequences that are removed." },
+    { "id": "c10", "text": "Alternative splicing lets a cell keep or skip different exons from the same pre-mRNA, producing several different proteins from one gene. This is a major reason humans make far more proteins than they have genes." },
+    { "id": "c11", "text": "Prokaryotes do not cap, tail, or splice their mRNA and have no nucleus, so transcription and translation occur together in the cytoplasm at the same time. This contrasts with the separated, processed eukaryotic pathway." },
+    { "id": "c12", "text": "The genetic code is read in triplets called codons; each codon of three mRNA bases specifies one amino acid. With four bases in three positions there are 4³ = 64 possible codons." },
+    { "id": "c13", "text": "The genetic code is redundant (most amino acids have more than one codon), unambiguous (each codon specifies only one amino acid), and read in a fixed 5'→3' direction in non-overlapping triplets." },
+    { "id": "c14", "text": "AUG is the start codon; it signals the beginning of translation and codes for methionine, so most proteins begin with methionine. UAA, UAG, and UGA are stop codons that code for no amino acid and end translation." },
+    { "id": "c15", "text": "The genetic code is nearly universal: almost every organism uses the same codon dictionary. This is strong evidence of common ancestry and is why a human gene can function when inserted into bacteria." },
+    { "id": "c16", "text": "Translation occurs at the ribosome, which has A, P, and E sites. The ribosome reads mRNA codons and joins amino acids into a polypeptide in the cytoplasm (on free ribosomes or on the rough ER)." },
+    { "id": "c17", "text": "tRNA is a molecular adapter: one end carries a specific amino acid, and the other end has a three-base anticodon that base-pairs with the complementary mRNA codon, ensuring the correct amino acid is added." },
+    { "id": "c18", "text": "Translation initiation: the small ribosomal subunit binds the mRNA and scans to AUG, an initiator tRNA carrying methionine (anticodon UAC) pairs with it, and the large subunit joins to complete the ribosome." },
+    { "id": "c19", "text": "Translation elongation: an incoming tRNA whose anticodon matches the next codon enters the A site, a peptide bond forms between the new amino acid and the growing chain, and the ribosome translocates one codon while the empty tRNA exits the E site." },
+    { "id": "c20", "text": "Translation termination: at a stop codon no tRNA matches, so a release factor binds, the finished polypeptide is freed, and the ribosomal subunits separate. The new protein then folds into its functional shape." },
+    { "id": "c21", "text": "Reading frame is critical: codons are read three at a time from a fixed start, so inserting or deleting a base shifts the frame (a frameshift) and garbles every codon downstream." },
+    { "id": "c22", "text": "Retroviruses such as HIV reverse the usual flow, using reverse transcriptase to copy RNA into DNA (RNA → DNA), which inserts into the host genome. This also gives researchers a tool to make cDNA from mRNA." },
+    { "id": "c23", "text": "mRNA COVID-19 vaccines deliver a capped, tailed mRNA into cells so the body's own ribosomes translate a viral protein and train the immune system, a direct application of transcription and translation principles." }
+  ]
+}

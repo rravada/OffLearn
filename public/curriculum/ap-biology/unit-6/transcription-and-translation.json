@@ -1,0 +1,123 @@
+{
+  "id": "ap-bio-u6-transcription-and-translation",
+  "title": "Transcription, RNA Processing, and Translation",
+  "subject": "AP Biology",
+  "unit": "Gene Expression and Regulation",
+  "track": "ap",
+  "difficulty": "ap",
+  "duration": "50 min",
+  "objectives": [
+    "Explain the central dogma (DNA → RNA → protein) and the flow of genetic information",
+    "Describe transcription and the RNA processing steps that convert pre-mRNA into mature mRNA",
+    "Use the genetic code and codon table to translate an mRNA sequence into an amino acid sequence",
+    "Describe the roles of mRNA, tRNA, and the ribosome during the stages of translation"
+  ],
+  "sections": [
+    {
+      "type": "explanation",
+      "heading": "From Stored Information to Working Machine",
+      "content": "Think of DNA as a priceless master cookbook locked in a library vault — it can never leave. But the kitchen, where the actual cooking happens, is somewhere else entirely. To cook a recipe, you don't carry the whole cookbook to the kitchen; you photocopy the one page you need and carry the copy. The copy can get splattered and tossed without harming the master. That, in a sentence, is why cells use RNA: DNA stays safely in the nucleus while disposable RNA copies carry instructions out to the cytoplasm where proteins are built.\n\nThis flow of information has a name: the central dogma of molecular biology — DNA → RNA → protein. Information stored in DNA is first transcribed into messenger RNA (mRNA), and that mRNA is then translated into a protein, the working molecule that actually does jobs in the cell. 'Gene expression' is this whole process of turning a gene's information into a functional product. Notice the two-word vocabulary trick that prevents endless confusion: transcription stays in the same 'language' (nucleic acid → nucleic acid, like transcribing speech into written words of the same language), while translation switches 'languages' (nucleic acid → protein, like translating English to French).\n\nA single gene, expressed this way, can produce thousands of copies of a protein. The sequence of DNA bases specifies the sequence of RNA bases, which specifies the sequence of amino acids, which determines the protein's folded shape — and shape determines function (echoing the protein lesson from Unit 1). Get the information flow right and you understand how a genotype becomes a phenotype."
+    },
+    {
+      "type": "explanation",
+      "heading": "Transcription: Writing the RNA Copy",
+      "content": "Transcription is the synthesis of an RNA copy of a gene, and it happens in the nucleus (in eukaryotes). The enzyme in charge is RNA polymerase. It binds to a specific DNA sequence near the start of a gene called the promoter, which tells the polymerase WHERE to start and which of the two DNA strands to read. Only one strand — the template (antisense) strand — is read for any given gene.\n\nOnce bound, RNA polymerase unzips a short stretch of DNA and begins building an RNA strand using complementary base pairing, with one crucial swap: RNA uses uracil (U) instead of thymine (T). So where the DNA template reads A, the RNA gets U; where the template reads T, the RNA gets A; G pairs with C and C with G as usual. Like DNA polymerase, RNA polymerase builds only in the 5'→3' direction — but unlike DNA polymerase, it needs NO primer to start. The growing RNA is called the pre-mRNA (the unprocessed first draft). Transcription proceeds through three phases: initiation (polymerase binds the promoter), elongation (RNA is built base by base), and termination (the polymerase reaches a stop signal and releases the finished RNA).\n\nThe RNA strand that results is complementary to the template strand — which means it is identical (except U for T) to the OTHER DNA strand, called the coding (sense) strand. That's a handy check: the mRNA reads just like the coding strand of the gene, with U replacing T."
+    },
+    {
+      "type": "quiz",
+      "question": "A DNA template strand reads 3'-TACGGT-5'. What is the sequence of the mRNA transcribed from it?",
+      "options": [
+        "5'-ATGCCA-3'",
+        "5'-AUGCCA-3'",
+        "5'-UACGGU-3'",
+        "5'-TACGGT-3'"
+      ],
+      "correctIndex": 1,
+      "explanation": "Transcription uses complementary base pairing with U replacing T. Pairing each template base (3'-T A C G G T-5') gives A-U-G-C-C-A, and the new RNA runs antiparallel (5'→3'), so the mRNA is 5'-AUGCCA-3'. Option A wrongly keeps thymine (RNA uses uracil); option C incorrectly copies the template directly instead of pairing."
+    },
+    {
+      "type": "explanation",
+      "heading": "RNA Processing: Editing the First Draft",
+      "content": "In eukaryotes, the pre-mRNA isn't ready to use straight off the press. Before it can leave the nucleus, it goes through RNA processing — three edits that protect the message and finish it. Prokaryotes skip all of this (they have no nucleus, so transcription and translation happen together in the cytoplasm), which is itself a tested contrast.\n\nFirst, a modified guanine 5' cap is added to the front end. Second, a poly-A tail — a long string of adenine nucleotides — is added to the back end. Both the cap and tail protect the mRNA from being chewed up by enzymes and help the ribosome recognize and bind the mRNA later. Think of them as protective caps on both ends of the message, plus a 'ready to be read' flag.\n\nThird, and most conceptually important, is splicing. A eukaryotic gene contains coding regions called exons (EXpressed) interrupted by non-coding regions called introns (INtervening / IN-the-way). A molecular machine called the spliceosome cuts out the introns and stitches the exons together into the mature mRNA. Here's the powerful payoff: a cell can splice the SAME pre-mRNA in different ways — keeping some exons and skipping others — to make several different proteins from one gene. This is called alternative splicing, and it's a major reason humans make far more proteins than we have genes. Once capped, tailed, and spliced, the mature mRNA exits the nucleus through a nuclear pore to the cytoplasm."
+    },
+    {
+      "type": "table",
+      "heading": "Transcription vs. Translation",
+      "headers": ["Feature", "Transcription", "Translation"],
+      "rows": [
+        ["Product made", "RNA (mRNA)", "Protein (polypeptide)"],
+        ["Template used", "DNA template strand", "mRNA codons"],
+        ["Key enzyme/machine", "RNA polymerase", "Ribosome (with tRNA)"],
+        ["Location (eukaryotes)", "Nucleus", "Cytoplasm (free or rough ER ribosomes)"],
+        ["'Language' change", "Same language (nucleic acid → nucleic acid)", "New language (nucleic acid → amino acids)"],
+        ["Reading unit", "Single bases (complementary pairing)", "Codons (three bases at a time)"]
+      ]
+    },
+    {
+      "type": "explanation",
+      "heading": "The Genetic Code: Reading in Triplets",
+      "content": "How does a four-letter nucleotide code spell out twenty different amino acids? The answer is to read the mRNA in groups of three bases called codons. Each codon (e.g., AUG, GCA, UUU) specifies one amino acid. With four possible bases in three positions, there are 4³ = 64 possible codons — more than enough to encode the 20 amino acids, which is why the code is redundant: most amino acids are specified by more than one codon (for example, both GAA and GAG code for glutamate).\n\nThe code has special punctuation. AUG is the start codon — it signals 'begin translation here' and also codes for the amino acid methionine, so nearly every new protein starts with methionine. Three codons (UAA, UAG, UGA) are stop codons; they code for no amino acid and signal the ribosome to end the protein. Reading frame matters enormously: because codons are read three-at-a-time from a fixed starting point, inserting or deleting a base shifts the frame and garbles everything downstream (a frameshift, which you'll meet in the mutations lesson).\n\nThree more features make the code remarkable. It is nearly UNIVERSAL — almost every organism on Earth, from bacteria to blue whales, uses the same codon dictionary, which is powerful evidence of common ancestry (connecting forward to Unit 7) and is also why we can put a human gene into a bacterium and have it work. It is unambiguous (each codon specifies only one amino acid). And it is read in a fixed direction, 5'→3' along the mRNA."
+    },
+    {
+      "type": "example",
+      "heading": "Translating an mRNA Sequence",
+      "content": "Let's translate a short mRNA into its amino acid chain using codon-table logic. Suppose the mRNA reads:\n\n  5'-AUG GCA UUU UAA-3'\n\nStep 1 — Find the start codon and set the reading frame. Scanning 5'→3', the first AUG is the start. Reading frame is locked from there in non-overlapping triplets: AUG | GCA | UUU | UAA.\n\nStep 2 — Translate each codon to its amino acid using the genetic code:\n  AUG → Methionine (Met) — also the start signal\n  GCA → Alanine (Ala)\n  UUU → Phenylalanine (Phe)\n  UAA → STOP (codes for no amino acid)\n\nStep 3 — Build the polypeptide and stop at the stop codon. The protein is: Met – Ala – Phe. The UAA does not add an amino acid; it tells the ribosome to release the finished chain.\n\nStep 4 — Sanity checks the exam rewards: (a) the chain begins with methionine because translation starts at AUG; (b) a stop codon ends the protein and is NOT translated into an amino acid; (c) if you were given the DNA instead, you'd transcribe to mRNA first (template → mRNA, T→A, A→U, etc.) before translating. A favorite FRQ move is to give you a DNA template, have you transcribe it, then translate it — and then ask how a single base change would alter the protein, which sets up the mutations lesson."
+    },
+    {
+      "type": "steps",
+      "heading": "The Three Stages of Translation",
+      "steps": [
+        {
+          "title": "Initiation",
+          "content": "The small ribosomal subunit binds the mRNA (helped by the 5' cap) and scans to the start codon AUG. A tRNA carrying methionine, with the complementary anticodon UAC, base-pairs with AUG. The large ribosomal subunit then joins, completing the ribosome with its A, P, and E sites ready."
+        },
+        {
+          "title": "Elongation — codon recognition",
+          "content": "An incoming tRNA whose anticodon is complementary to the next mRNA codon enters the A site, delivering its specific amino acid. Each tRNA is a molecular adapter: its anticodon reads the codon, and its other end carries the matching amino acid."
+        },
+        {
+          "title": "Elongation — peptide bond and translocation",
+          "content": "The ribosome catalyzes a peptide bond between the amino acid in the A site and the growing chain in the P site, then translocates (shifts) one codon down the mRNA. The now-empty tRNA exits through the E site, the chain moves to the P site, and the A site opens for the next tRNA."
+        },
+        {
+          "title": "Termination",
+          "content": "When the ribosome reaches a stop codon (UAA, UAG, or UGA), no tRNA matches it. A release factor binds instead, the finished polypeptide is freed, and the ribosome subunits separate. The new protein then folds (often with chaperones) into its functional 3-D shape."
+        }
+      ]
+    },
+    {
+      "type": "quiz",
+      "question": "During translation, a tRNA molecule physically connects the mRNA codon to the correct amino acid. Which feature of the tRNA reads the mRNA codon?",
+      "options": [
+        "Its attached amino acid",
+        "Its anticodon, which base-pairs with the codon",
+        "Its poly-A tail",
+        "Its 5' cap"
+      ],
+      "correctIndex": 1,
+      "explanation": "tRNA is an adapter: one end carries a specific amino acid, and the other end has a three-base anticodon that base-pairs with the complementary mRNA codon. This pairing is how the ribosome ensures the correct amino acid is added for each codon. Caps and poly-A tails are features of mRNA, not tRNA."
+    },
+    {
+      "type": "keypoint",
+      "content": "Gene expression follows the central dogma: RNA polymerase transcribes DNA into mRNA (which is capped, tailed, and spliced in eukaryotes), then ribosomes translate the mRNA codons — read three bases at a time — into a polypeptide, using tRNA adapters whose anticodons match each codon. Translation begins at AUG (methionine) and ends at a stop codon."
+    },
+    {
+      "type": "callout",
+      "variant": "warning",
+      "heading": "The Central-Dogma Mix-Ups Examiners Love",
+      "content": "(1) Transcription vs. translation: transcription makes RNA in the nucleus (same nucleic-acid 'language'); translation makes protein at the ribosome (new 'language'). Don't swap them. (2) RNA uses URACIL, not thymine — never write T in an mRNA. (3) Codons are read on the mRNA; ANTICODONS are on the tRNA. They are complementary, not identical. (4) The START codon AUG codes for methionine; STOP codons (UAA, UAG, UGA) code for NO amino acid and are not translated. (5) Exons are EXpressed (kept); introns are removed. Don't reverse them. (6) Prokaryotes do NOT cap, tail, or splice, and they transcribe and translate at the same time and place; eukaryotes process mRNA in the nucleus first. (7) Translate in the 5'→3' direction starting at AUG, three bases at a time."
+    },
+    {
+      "type": "deepdive",
+      "heading": "One Gene, Many Proteins — and One Letter, Big Consequences",
+      "content": "The central dogma looks like a tidy one-way street, but real biology layers astonishing complexity onto it — and that complexity is where medicine lives. Alternative splicing alone means the ~20,000 human genes can produce well over 100,000 different proteins: by mixing and matching exons, one gene becomes a library of related proteins, different versions made in different tissues or at different times. This is a major reason a humble roundworm and a human have similar gene counts yet vastly different complexity — it's not just how many genes you have, but how creatively you read them.\n\nThe precision of this system also explains a whole class of diseases. Because translation reads codons in a fixed frame, a single misread or mis-splice can be catastrophic. In beta-thalassemia, mutations that disrupt splicing produce faulty hemoglobin mRNA and severe anemia. Many cancers arise partly from mis-spliced or mistranslated proteins. And the universality of the code is what makes modern biotechnology possible: because a bacterium reads AUG as 'start' and the same codons for the same amino acids as we do, we can insert the human insulin gene into bacteria and harvest functional human insulin — the basis of recombinant-protein medicine you'll study in the biotechnology lesson.\n\nFinally, the central dogma isn't quite absolute. Retroviruses like HIV carry RNA and use reverse transcriptase to run information BACKWARD, RNA → DNA, inserting themselves into our genome — the discovery that reverse transcription exists reshaped molecular biology and gave researchers a key lab tool (making cDNA from mRNA). And mRNA itself became a frontline medicine: the mRNA COVID-19 vaccines deliver a capped, tailed mRNA into your cells so your own ribosomes translate a viral protein and train your immune system — a direct, real-world application of every step in this lesson. Information flow from DNA to RNA to protein isn't abstract; it's the logic behind vaccines, cancer, and the unity of all life."
+    },
+    {
+      "type": "callout",
+      "variant": "tip",
+      "heading": "How AP Tests Gene Expression",
+      "content": "Point-winners: (1) Transcribe a given DNA template to mRNA (remember U for T, antiparallel, 5'→3'), then translate it using a provided codon chart — show the reading frame and start at AUG. (2) Identify codon vs. anticodon and match tRNAs to codons. (3) Explain WHY the genetic code's universality is evidence of common ancestry (connects to Unit 7) and why it enables genetic engineering. (4) Contrast eukaryotic vs. prokaryotic gene expression (processing, compartmentalization, simultaneous transcription/translation). (5) Predict how a base change alters the mRNA, codon, and amino acid (bridge to the mutations lesson). (6) Command words: 'describe' the steps in order, but 'explain/justify' wants the WHY — e.g., why alternative splicing increases protein diversity."
+    }
+  ],
+  "aiContext": "This AP Biology Unit 6 lesson covers the central dogma — transcription, RNA processing, and translation (CED topics 6.2-6.4) — building on DNA replication (prior lesson) and protein structure (Unit 1). Frame everything around DNA → RNA → protein and the genotype-to-phenotype connection. Transcription: RNA polymerase binds the promoter, reads the template (antisense) strand 5'→3' with NO primer, building mRNA using complementary pairing with U replacing T; the mRNA matches the coding (sense) strand except U-for-T. RNA processing (eukaryotes only): 5' cap, poly-A tail (both protect the mRNA and aid ribosome binding), and splicing (spliceosome removes introns, joins exons; alternative splicing makes multiple proteins from one gene). Emphasize the prokaryote contrast: no nucleus, no processing, transcription and translation occur together. The genetic code: read in non-overlapping triplet codons (4³=64 codons), redundant, nearly universal (evidence of common ancestry, connects to Unit 7), AUG = start = methionine, UAA/UAG/UGA = stop (no amino acid). Translation stages: initiation (small subunit + mRNA + initiator tRNA at AUG, then large subunit), elongation (codon recognition in A site, peptide bond, translocation, tRNA exits E site), termination (release factor at stop codon). tRNA is an adapter: anticodon reads the codon, other end carries the amino acid. Key misconceptions to counter: confusing transcription with translation, putting thymine in RNA, confusing codon (mRNA) with anticodon (tRNA), thinking stop codons code for an amino acid, reversing exons and introns, and applying eukaryotic processing to prokaryotes. Connect forward to mutations (a single base change altering the protein), gene regulation, and biotechnology (universality enables recombinant insulin; mRNA vaccines). On the exam expect transcribe-then-translate problems with a codon chart, codon/anticodon identification, eukaryote-vs-prokaryote contrasts, and splicing/protein-diversity reasoning."
+}

@@ -1,0 +1,125 @@
+{
+  "id": "ap-bio-u7-speciation-and-extinction",
+  "title": "Speciation, Extinction, and Continuing Evolution",
+  "subject": "AP Biology",
+  "unit": "Natural Selection",
+  "track": "ap",
+  "difficulty": "ap",
+  "duration": "50 min",
+  "objectives": [
+    "Define a species using the biological species concept and explain the role of reproductive isolation",
+    "Distinguish allopatric from sympatric speciation and prezygotic from postzygotic barriers",
+    "Compare gradualism with punctuated equilibrium and explain divergent, convergent, and coevolution",
+    "Explain extinction, adaptive radiation, and why evolution is ongoing"
+  ],
+  "sections": [
+    {
+      "type": "explanation",
+      "heading": "How One Species Becomes Two",
+      "content": "The previous lessons explained how a single population changes over time (allele frequencies shifting). But the tree of life isn't just lineages changing — it's lineages SPLITTING, one species becoming two, again and again, branching into the millions of species alive today. That splitting process is speciation, and understanding it answers the biggest question of all: where does biodiversity come from?\n\nFirst we need to be clear about what a species IS. The most common definition on the AP exam is the biological species concept: a species is a group of organisms that can interbreed in nature to produce fertile, viable offspring. The key phrase is FERTILE offspring. A horse and a donkey can mate and produce a mule, but mules are sterile — so horses and donkeys are still different species. What ultimately separates species, by this definition, is reproductive isolation: barriers that prevent two groups from successfully interbreeding and mixing their genes.\n\nSo the question 'how does one species become two?' becomes 'how do two populations become reproductively isolated?' Once gene flow between two populations is cut off (recall gene flow from the Hardy-Weinberg lesson — it's the force that keeps populations genetically similar), the two populations evolve independently, accumulating different mutations and undergoing different selection and drift. Given enough time apart, they diverge so much that even if reunited they can no longer interbreed — and now they are two species. Speciation is, at its heart, the evolution of reproductive isolation."
+    },
+    {
+      "type": "explanation",
+      "heading": "Allopatric and Sympatric Speciation",
+      "content": "There are two broad geographic routes to reproductive isolation. Allopatric speciation ('allo' = different, 'patric' = homeland) happens when a population is physically split by a geographic barrier — a new river, a mountain range, a canyon, rising sea levels separating islands. The barrier stops gene flow between the two groups. Now isolated, each group evolves on its own under its own mutations, selection pressures, and drift, until they become so different that they can no longer interbreed even if the barrier later disappears. Allopatric speciation is the most common route, and the Galápagos finches are the textbook case: an ancestral finch population spread across islands, each island population adapted to its own food sources in isolation, and they diverged into many distinct species.\n\nSympatric speciation ('sym' = same) is the rarer case where new species arise WITHOUT geographic separation — the diverging groups live in the same area. This requires some other barrier to gene flow to arise within the population: a shift in habitat or food preference (insects that specialize on different host plants and mate there), differences in mating signals, or — common in plants — polyploidy, where an error in cell division doubles the chromosome number, instantly making the polyploid individuals unable to breed with the parent type. Many crop plants (wheat, for instance) arose through polyploid sympatric speciation.\n\nThe shared principle to carry into the exam: speciation requires the interruption of gene flow followed by independent divergence. Allopatric = a geographic barrier interrupts gene flow; sympatric = some other (behavioral, ecological, or chromosomal) barrier interrupts gene flow without geography. Either way, no gene flow → independent evolution → eventual reproductive isolation."
+    },
+    {
+      "type": "quiz",
+      "question": "A rising mountain range splits a population of squirrels into two groups that can no longer reach each other. Over many generations they diverge until they can no longer interbreed. What type of speciation is this?",
+      "options": [
+        "Sympatric speciation",
+        "Allopatric speciation",
+        "Polyploidy",
+        "Convergent evolution"
+      ],
+      "correctIndex": 1,
+      "explanation": "A geographic barrier (the mountain range) physically separates the populations and stops gene flow, after which each evolves independently until reproductively isolated — this is allopatric speciation ('different homeland'). Sympatric speciation occurs without geographic separation; polyploidy is one sympatric mechanism (mainly in plants); convergent evolution is unrelated lineages evolving similar traits, not speciation."
+    },
+    {
+      "type": "explanation",
+      "heading": "Reproductive Isolating Barriers",
+      "content": "Reproductive isolation is maintained by barriers that fall into two timing categories, and the AP exam expects you to classify them. PREZYGOTIC barriers act BEFORE a zygote forms — they prevent mating or fertilization in the first place. Examples: temporal isolation (groups breed at different times of day or year, so they never meet to mate), habitat isolation (they live in different microhabitats), behavioral isolation (different courtship rituals or mating signals — a key one, like firefly flash patterns or bird songs that don't match), mechanical isolation (physical incompatibility of reproductive structures), and gametic isolation (sperm and egg are chemically incompatible and can't fuse).\n\nPOSTZYGOTIC barriers act AFTER a zygote forms — a hybrid is produced, but it fails to become a successful reproducing adult. Examples: reduced hybrid viability (the hybrid embryo dies or is weak/unhealthy), reduced hybrid fertility (the hybrid is healthy but sterile — the mule again), and hybrid breakdown (first-generation hybrids are fine, but their offspring are weak or sterile). The simple memory hook: PRE-zygotic = before the zygote (no zygote forms at all); POST-zygotic = after the zygote (a hybrid forms but is a dead end genetically).\n\nWhy do these barriers matter? Because they are precisely what keeps two species separate. As long as effective isolating barriers exist, two groups can't merge their gene pools, so they remain distinct species and continue to evolve independently. When biologists ask whether two similar-looking populations are one species or two, they're really asking whether reproductive isolating barriers exist between them."
+    },
+    {
+      "type": "table",
+      "heading": "Reproductive Isolating Barriers",
+      "headers": ["Barrier", "Timing", "How it prevents gene mixing"],
+      "rows": [
+        ["Temporal isolation", "Prezygotic", "Groups breed at different times (day/season), so they never mate"],
+        ["Habitat isolation", "Prezygotic", "Groups live in different microhabitats and rarely encounter each other"],
+        ["Behavioral isolation", "Prezygotic", "Different courtship signals/rituals fail to attract each other"],
+        ["Mechanical isolation", "Prezygotic", "Reproductive structures are physically incompatible"],
+        ["Gametic isolation", "Prezygotic", "Sperm and egg are chemically incompatible; no fertilization"],
+        ["Reduced hybrid viability", "Postzygotic", "Hybrid offspring die or are unhealthy"],
+        ["Reduced hybrid fertility", "Postzygotic", "Hybrid is healthy but sterile (e.g., the mule)"],
+        ["Hybrid breakdown", "Postzygotic", "Hybrids are fine, but their offspring are weak or sterile"]
+      ]
+    },
+    {
+      "type": "example",
+      "heading": "Classifying Isolation and Reasoning About Species Status",
+      "content": "A classic free-response scenario: two populations of frogs live near the same pond, and you're given observations. Let's classify each barrier and reach a conclusion.\n\nObservation 1 — Population A males call and mate in early spring; population B mates in midsummer. They are active at different times, so they never encounter each other while ready to breed. This is TEMPORAL isolation, a PREZYGOTIC barrier (no zygote can form because they don't meet to mate).\n\nObservation 2 — Suppose instead the two populations DO occasionally mate and produce tadpoles, but those hybrid tadpoles always die before maturing. Here a zygote DID form, so this is a POSTZYGOTIC barrier — specifically reduced hybrid viability (the hybrid isn't viable).\n\nObservation 3 — Suppose hybrids survive and look healthy but are completely sterile. A zygote formed and grew into an adult, so again POSTZYGOTIC — reduced hybrid fertility (like the mule).\n\nStep-by-step reasoning method: (1) Ask whether a zygote/hybrid formed. If NO → prezygotic; if YES → postzygotic. (2) Then name the specific barrier from the cause (different timing = temporal; wrong courtship = behavioral; sterile hybrid = reduced hybrid fertility, etc.). (3) Conclude about species status: if effective reproductive barriers prevent gene flow, the two populations are (or are becoming) separate species under the biological species concept. The exam rewards you for citing the BEFORE/AFTER-zygote logic explicitly and for tying it back to 'no gene flow → reproductive isolation → distinct species.'"
+    },
+    {
+      "type": "steps",
+      "heading": "The Process of Speciation",
+      "steps": [
+        {
+          "title": "Gene flow is interrupted",
+          "content": "Something stops the two populations from interbreeding freely — a geographic barrier (allopatric) or an ecological, behavioral, or chromosomal barrier within the same area (sympatric). Gene flow, which normally keeps populations similar, is cut off."
+        },
+        {
+          "title": "Populations evolve independently",
+          "content": "With no gene exchange, each population accumulates its own mutations and experiences its own natural selection and genetic drift. Their gene pools drift apart over generations."
+        },
+        {
+          "title": "Reproductive isolating barriers arise",
+          "content": "As the populations diverge, differences accumulate that act as prezygotic or postzygotic barriers — different mating times or signals, incompatible gametes, or inviable/sterile hybrids."
+        },
+        {
+          "title": "Reproductive isolation is complete",
+          "content": "Eventually the two populations can no longer produce fertile, viable offspring together even if they come back into contact. By the biological species concept, they are now two separate species — the lineage has branched."
+        }
+      ]
+    },
+    {
+      "type": "quiz",
+      "question": "Two plant species occasionally cross-pollinate and form hybrid seeds, but the hybrid plants that grow are always sterile. How should this isolating barrier be classified?",
+      "options": [
+        "Prezygotic, because pollination is prevented",
+        "Postzygotic, because a hybrid zygote forms but the resulting hybrid is sterile (reduced hybrid fertility)",
+        "Temporal isolation",
+        "Gametic isolation"
+      ],
+      "correctIndex": 1,
+      "explanation": "A hybrid zygote DID form and grew into a plant, so the barrier acts AFTER the zygote — it is postzygotic. Because the hybrid is healthy but sterile, it is specifically reduced hybrid fertility (the same category as the sterile mule). Prezygotic barriers (temporal, gametic, etc.) would have prevented fertilization in the first place, but here fertilization succeeded."
+    },
+    {
+      "type": "explanation",
+      "heading": "Tempo, Patterns, Extinction, and Adaptive Radiation",
+      "content": "Speciation doesn't always proceed at one pace. Two models describe its tempo. Gradualism pictures species diverging slowly and steadily through many small changes over long spans. Punctuated equilibrium pictures long periods of little change (stasis) interrupted by rapid bursts of speciation (often triggered by environmental change), which fits the fossil record's pattern of species appearing relatively suddenly and then persisting largely unchanged. Both occur; they describe the RATE of evolutionary change, not different mechanisms.\n\nEvolution also produces recurring PATTERNS. Divergent evolution is when related lineages become increasingly different (the finches diverging from one ancestor; homologous structures result from this). Convergent evolution, met earlier, is unrelated lineages independently evolving similar traits under similar pressures (analogous structures). Coevolution is two interacting species reciprocally driving each other's evolution — predators and prey, flowers and their pollinators, parasites and hosts — each adapting in response to the other in an ongoing 'arms race.'\n\nExtinction — the permanent loss of a species — is the other side of biodiversity, and it's the normal fate of MOST species that have ever lived (over 99% are extinct). Mass extinctions, like the asteroid impact that ended the dinosaurs ~66 million years ago, wipe out huge swaths of life rapidly. But extinction also OPENS opportunity: when many species vanish, ecological niches empty out, and surviving lineages can rapidly diversify to fill them — a burst of speciation called adaptive radiation. The mammals' explosive diversification after the dinosaurs disappeared is the classic example. Extinction and speciation together, over billions of years, have shaped the ever-branching, ever-pruned tree of life — and that process is still running today."
+    },
+    {
+      "type": "keypoint",
+      "content": "Speciation is the evolution of reproductive isolation: gene flow is interrupted (allopatric, by geography; or sympatric, e.g., by polyploidy or behavior), populations diverge independently, and prezygotic (before-zygote) or postzygotic (after-zygote) barriers complete the split into species that can't produce fertile, viable offspring. Evolution's tempo varies (gradualism vs. punctuated equilibrium), its patterns include divergent/convergent/coevolution, and extinction (the fate of >99% of species) clears niches that drive adaptive radiation."
+    },
+    {
+      "type": "callout",
+      "variant": "warning",
+      "heading": "Speciation Misconceptions to Avoid",
+      "content": "(1) The biological species concept hinges on FERTILE, viable offspring — horse × donkey makes a (sterile) mule, so they're still separate species. (2) PREzygotic barriers prevent a zygote from forming at all (temporal, behavioral, mechanical, gametic, habitat); POSTzygotic barriers act after a hybrid forms (inviable, sterile, or breaking down). Classify by asking 'did a zygote/hybrid form?' (3) Allopatric REQUIRES geographic separation; sympatric does NOT. (4) Speciation is about interrupting GENE FLOW — connect it to the Hardy-Weinberg lesson. (5) Punctuated equilibrium vs. gradualism is about RATE, not different mechanisms; neither means a population changes 'in order to' do anything. (6) Extinction is normal and common, not a failure; it can ENABLE adaptive radiation of survivors."
+    },
+    {
+      "type": "deepdive",
+      "heading": "Evolution Is Not Finished — and We Are Now a Force in It",
+      "content": "It's tempting to think of evolution as something that happened in the past, producing the species we see and then stopping. Nothing could be more wrong: evolution is a continuous, ongoing process, and the same forces that built the tree of life are actively reshaping it right now — increasingly with humans as a major driver. The Galápagos finches the Grants studied are still speciating and hybridizing; in just the last few decades researchers documented the apparent origin of a new finch lineage from a hybridization event, evolution caught essentially in real time. Ring species — chains of populations that can each interbreed with their neighbors but not across the two ends of the ring — show speciation literally in progress, frozen midway. The boundary between 'one species' and 'two' is often blurry precisely because speciation is a process we are watching unfold, not a finished event.\n\nHumans have become an extraordinary evolutionary force. By moving species around the globe, fragmenting habitats (creating new geographic barriers and isolating populations), changing climates, and applying intense selection pressures, we are driving both speciation and — far more dramatically — extinction. Many biologists argue we are in the midst of a sixth mass extinction, with species disappearing at rates far above the background level, this time caused not by an asteroid but by us. Every extinction prunes the tree of life permanently, erasing branches and the unique evolutionary history they carry, and unlike a niche emptied by ancient catastrophe, today's losses outpace the speciation that might refill them. The conservation tools from earlier lessons — managing gene flow, preserving genetic diversity against drift — are responses to this human-driven acceleration.\n\nThis lesson also completes Unit 7's grand synthesis. Mutation (Unit 6) supplies variation; selection, drift, and gene flow (earlier lessons) change allele frequencies within populations; the interruption of gene flow plus independent divergence (this lesson) splits populations into new species; and the evidence of common ancestry (homology, molecules, fossils) plus phylogenetic methods let us reconstruct the branching, pruning history that resulted. Speciation and extinction are the branching and pruning of the tree of life, powered by all the mechanisms you've learned, operating over four billion years — and continuing in every population on Earth, including our own. Understanding it is not just understanding the past; it's understanding a living process we are now steering, for better or worse."
+    },
+    {
+      "type": "callout",
+      "variant": "tip",
+      "heading": "How AP Tests Speciation and Extinction",
+      "content": "Point-winners: (1) Apply the biological species concept (FERTILE, viable offspring) and define speciation as the evolution of reproductive isolation via interrupted gene flow. (2) Distinguish allopatric (geographic barrier) from sympatric (no geography; polyploidy, behavior) speciation. (3) Classify isolating barriers as prezygotic vs. postzygotic by asking whether a zygote/hybrid formed, then name the specific type. (4) Compare gradualism and punctuated equilibrium as RATES, and identify divergent/convergent/coevolution patterns. (5) Explain how extinction clears niches enabling adaptive radiation, and that >99% of species are extinct. (6) Argue that evolution is ongoing and that humans drive current speciation/extinction. Command words: 'explain'/'justify' want the gene-flow → isolation → distinct-species chain."
+    }
+  ],
+  "aiContext": "This AP Biology Unit 7 lesson covers speciation, the tempo and patterns of evolution, extinction, and continuing evolution (CED topics 7.11-7.13). Core framing: speciation is the EVOLUTION OF REPRODUCTIVE ISOLATION — the process by which one lineage splits into two, generating biodiversity. Species are defined by the biological species concept: a group that can interbreed in nature to produce FERTILE, viable offspring (horse × donkey → sterile mule, so they remain separate species). Speciation requires the INTERRUPTION OF GENE FLOW (connect to the Hardy-Weinberg lesson: gene flow normally keeps populations similar) followed by independent divergence via mutation, selection, and drift. Two geographic modes: ALLOPATRIC (a geographic barrier — river, mountains, islands — physically separates populations; most common; Galápagos finches) and SYMPATRIC (no geographic separation; arises via polyploidy — common in plants/crops like wheat — habitat/host shifts, or mating-signal differences). Reproductive isolating barriers, which students must CLASSIFY: PREzygotic act before a zygote forms (temporal, habitat, behavioral, mechanical, gametic isolation); POSTzygotic act after a hybrid forms (reduced hybrid viability, reduced hybrid fertility like the mule, hybrid breakdown). The classification method: ask 'did a zygote/hybrid form?' — NO = prezygotic, YES = postzygotic — then name the specific barrier from its cause. Tempo: gradualism (slow steady change) vs. punctuated equilibrium (long stasis interrupted by rapid bursts) — these describe RATE, not different mechanisms. Patterns: divergent evolution (lineages becoming different; homology), convergent evolution (unrelated lineages evolving similar traits; analogy), coevolution (interacting species reciprocally driving each other — predator/prey, pollinator/flower arms races). Extinction is the normal fate of >99% of species; mass extinctions (e.g., the dinosaur-ending asteroid ~66 mya) rapidly clear niches, enabling ADAPTIVE RADIATION (rapid diversification of survivors — mammals after dinosaurs). Key misconceptions to counter: forgetting 'fertile' in the species concept, mis-timing pre/postzygotic barriers, thinking allopatric and sympatric differ in anything but geography, treating tempo models as mechanisms, and viewing extinction as failure rather than normal/niche-clearing. Stress that evolution is ONGOING (ring species, finches still speciating) and humans now drive speciation and a possible sixth mass extinction. This lesson synthesizes Unit 7: mutation→variation, selection/drift/gene flow→allele change, interrupted gene flow→speciation, evidence/phylogeny→reconstructing the tree. On the exam expect barrier-classification scenarios, allopatric/sympatric identification, species-status reasoning, and adaptive-radiation/extinction questions."
+}

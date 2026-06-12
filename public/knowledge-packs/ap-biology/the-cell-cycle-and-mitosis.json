@@ -1,0 +1,31 @@
+{
+  "id": "ap-bio-the-cell-cycle-and-mitosis",
+  "title": "The Cell Cycle and Mitosis",
+  "subject": "AP Biology",
+  "chunks": [
+    { "id": "c1", "text": "A multicellular organism develops from a single fertilized cell that divides repeatedly. With few exceptions, every resulting cell carries the same complete set of genetic instructions, so cell division must copy the DNA faithfully each time." },
+    { "id": "c2", "text": "Cell division is used for development, for replacing worn-out cells (such as making millions of new blood cells per second and renewing the gut lining), for healing wounds, and for asexual reproduction in single-celled organisms." },
+    { "id": "c3", "text": "The cell cycle is the full sequence of events from a cell's formation to its division into two. It has two broad parts: a long preparation period called interphase and a short division period called the M (mitotic) phase." },
+    { "id": "c4", "text": "Cells spend the vast majority of their life (often about 90%) in interphase, growing and preparing, not dividing. A common misconception is that cells spend most of their time dividing." },
+    { "id": "c5", "text": "Interphase has three sub-phases: G1 (the cell grows and does its normal job), S (DNA is replicated), and G2 (further growth and preparation for division). The cell cycle order is G1 → S → G2 → M." },
+    { "id": "c6", "text": "In S (synthesis) phase the cell copies all of its DNA. Afterward, each chromosome consists of two identical copies called sister chromatids joined together. The genetic material is now doubled." },
+    { "id": "c7", "text": "A cell that will not divide again, such as most neurons, exits the cycle from G1 into a non-dividing state called G0." },
+    { "id": "c8", "text": "The M phase has two parts: mitosis, the precise separation of duplicated chromosomes into two nuclei, and cytokinesis, the division of the cytoplasm into two separate cells." },
+    { "id": "c9", "text": "A chromosome is a long molecule of DNA wrapped around proteins. Humans have 46 chromosomes (23 pairs) per body cell. Because the chromosomes come in pairs, body cells are diploid, abbreviated 2n." },
+    { "id": "c10", "text": "After S phase, each chromosome has two sister chromatids joined at a constricted region called the centromere. The cell still has 46 chromosomes, not 92, because a chromosome with two joined identical chromatids is counted as one chromosome." },
+    { "id": "c11", "text": "DNA amount doubles during S phase but chromosome number does not change. Distinguishing chromosome number from DNA amount, and chromatid from chromosome, is the most tested idea in this topic." },
+    { "id": "c12", "text": "During mitosis the sister chromatids of each chromosome are pulled apart. Once separated, each chromatid becomes its own full chromosome, so each daughter cell receives a complete set." },
+    { "id": "c13", "text": "Sister chromatids are identical copies of one chromosome, while homologous chromosomes are the maternal and paternal members of a pair, which are similar but not identical. Confusing the two causes errors, especially when comparing mitosis and meiosis." },
+    { "id": "c14", "text": "In prophase, chromatin condenses into visible chromosomes (each with two sister chromatids), the nuclear envelope breaks down, and the spindle apparatus of microtubules forms from opposite poles." },
+    { "id": "c15", "text": "In metaphase, chromosomes line up single file along the middle of the cell (the metaphase plate), with spindle fibers from opposite poles attached to each chromosome's centromere. Metaphase = middle." },
+    { "id": "c16", "text": "In anaphase, sister chromatids are pulled apart toward opposite poles by shortening spindle fibers. Once separated, each chromatid is now its own chromosome, ensuring each pole gets an identical complete set. Anaphase = apart." },
+    { "id": "c17", "text": "In telophase, chromosomes arrive at the poles and de-condense, a new nuclear envelope forms around each set to make two nuclei, and the spindle breaks down. Mitosis (nuclear division) is then complete." },
+    { "id": "c18", "text": "In cytokinesis the cytoplasm divides into two cells: animal cells pinch apart with a cleavage furrow, while plant cells build a new cell plate down the middle. The result is two genetically identical daughter cells." },
+    { "id": "c19", "text": "Mitosis produces two daughter cells that are genetically identical to each other and to the parent, each with the full diploid number (46 in humans). There is no crossing over and no halving of chromosome number in mitosis." },
+    { "id": "c20", "text": "On a graph of DNA content per cell over time, the line is flat during G1, rises during S phase as DNA replicates (from x to 2x), is flat at 2x during G2, and drops sharply at division. The rising segment marks S phase and the drop marks division." },
+    { "id": "c21", "text": "In data showing the fraction of cells in each phase of a tissue, the proportion in a phase is proportional to how long that phase lasts. The longest phase (usually interphase) contains the most cells, and a drug that traps cells in a phase makes that phase's slice grow." },
+    { "id": "c22", "text": "Some cells divide constantly (skin, bone marrow, gut lining), while others such as most neurons and heart muscle stay in G0 and rarely divide, which is why nerve and heart damage is hard to repair." },
+    { "id": "c23", "text": "Stem cells are unspecialized cells that retain the ability to divide by mitosis and to differentiate into specialized types. Each division can self-renew a stem cell and produce a cell that specializes; embryonic stem cells can become almost any type." },
+    { "id": "c24", "text": "Most normal human cells can divide only a finite number of times, partly because protective chromosome tips called telomeres shorten with each division, linking cell division to aging. Cancer cells escape this limit and divide endlessly." }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "id": "ap-bio-phylogeny",
+  "title": "Phylogeny and Building Evolutionary Trees",
+  "subject": "AP Biology",
+  "chunks": [
+    { "id": "c1", "text": "A phylogenetic tree (phylogeny) is a branching diagram representing the evolutionary relationships among organisms — a hypothesis about who is related to whom and how recently they shared a common ancestor." },
+    { "id": "c2", "text": "Because species that share an ancestor have a branch-shaped history (one lineage splits into two, which may split again), the relationships of life form a nested, tree-like pattern." },
+    { "id": "c3", "text": "A tree's meaning is in its branching order (topology) — which lineages share more recent common ancestors — not in the left-to-right order of the tips or any sense of one tip being higher or more advanced." },
+    { "id": "c4", "text": "The tips of a tree are the taxa being compared, usually living species. A node (branch point) represents a common ancestor from which two or more lineages diverged." },
+    { "id": "c5", "text": "Branches are the lineages through time, and the root is the base of the tree, the common ancestor of everything shown on it." },
+    { "id": "c6", "text": "To find how two tips are related, trace their branches backward until they meet; that meeting node is their most recent common ancestor (MRCA). The deeper you must go to find the MRCA, the more distantly related they are." },
+    { "id": "c7", "text": "A clade (monophyletic group) is an ancestor plus all of its descendants — a complete branch that could be snipped off the tree at a single cut. Mammals form a clade and birds form a clade." },
+    { "id": "c8", "text": "Relatedness is read by shared ancestors (how recently branches meet), not by how close two tips sit in the row of tips. Adjacent tips are not necessarily closest relatives." },
+    { "id": "c9", "text": "Branches can be rotated freely at any node like a hanging mobile without changing a tree's meaning, so two tips printed next to each other may be distant relatives and two far apart may be close kin. Always trace back to the common ancestor." },
+    { "id": "c10", "text": "No tip is higher, more advanced, or more evolved than another; every living tip has been evolving for the same amount of time. The far-right tip is not the goal of evolution." },
+    { "id": "c11", "text": "Species at the tips did not evolve from other living tip species; they share common ancestors at the internal nodes. For example, humans did not evolve from chimpanzees — they share a common ancestor." },
+    { "id": "c12", "text": "Trees are built by grouping organisms with shared derived characters — traits that are new in a lineage and inherited by its descendants, marking a branch. A character shared because it is new to a group defines that group." },
+    { "id": "c13", "text": "A derived (new) character defines a clade, while an ancestral (old, widespread) character does not reveal finer relationships within a group because too many taxa share it." },
+    { "id": "c14", "text": "An outgroup is a taxon known to have branched off earlier than the others studied. Characters present in the outgroup are treated as ancestral, so characters appearing only in the ingroup are identified as derived." },
+    { "id": "c15", "text": "For example, comparing land vertebrates with a fish outgroup, four limbs is a shared derived character grouping the land vertebrates, while a backbone is ancestral (the fish has it too) and does not distinguish among them." },
+    { "id": "c16", "text": "A cladogram is a tree built purely from shared derived characters. Each shared derived character marks a branch point, and the more derived characters two groups share, the more recently they share an ancestor." },
+    { "id": "c17", "text": "To build a cladogram, use an outgroup to identify derived traits, order them by how many taxa share them (more widely shared = deeper, earlier branch points), and nest groups so each derived character is gained once and inherited by all descendants above that node." },
+    { "id": "c18", "text": "The principle of parsimony states that when several trees are possible, the simplest one — requiring the fewest evolutionary changes — is preferred as the best-supported hypothesis." },
+    { "id": "c19", "text": "Modern phylogenies are built largely from DNA and protein sequences, which provide enormous numbers of independent characters and are much harder to mislead than a few anatomical traits, though convergent changes must still be watched for." },
+    { "id": "c20", "text": "Anatomy-based trees can be misled by convergent evolution, which makes unrelated species look alike (for example grouping a dolphin with a shark by streamlined shape). Molecular data help avoid this error." },
+    { "id": "c21", "text": "Molecular phylogenies revealed that life divides into three domains — Bacteria, Archaea, and Eukarya — and that Archaea are more closely related to eukaryotes than to bacteria, a relationship anatomy could not have shown." },
+    { "id": "c22", "text": "Molecular trees showed that whales' closest living relatives are hippos, that fungi are closer to animals than to plants, and that birds are living dinosaurs nested within the reptile clade." },
+    { "id": "c23", "text": "Phylogenies are working tools: trees of SARS-CoV-2 genomes let epidemiologists trace transmission and spot variants in real time, and trees guide conservation prioritization, outbreak tracing, and drug discovery." }
+  ]
+}

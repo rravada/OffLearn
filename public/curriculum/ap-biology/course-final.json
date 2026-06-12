@@ -1,0 +1,484 @@
+{
+  "id": "ap-bio-course-final",
+  "title": "AP Biology Course Final",
+  "subject": "AP Biology",
+  "unit": "Course Final",
+  "type": "course-final",
+  "questionsPerAttempt": 15,
+  "isAssessment": true,
+  "bank": [
+    {
+      "question": "A scientist places red blood cells into three solutions and finds that the cells shrivel in solution A, stay the same in solution B, and burst in solution C. Which sequence correctly ranks the solute concentrations of the solutions from highest to lowest?",
+      "options": [
+        "A > B > C",
+        "C > B > A",
+        "B > A > C",
+        "A > C > B"
+      ],
+      "correctIndex": 0,
+      "explanation": "Cells shrivel (crenate) in a hypertonic solution, where the outside solute concentration is higher than inside, so water leaves the cell (solution A). They burst (lyse) in a hypotonic solution, where outside solute is lower and water rushes in (solution C). Solution B is isotonic, in between. Therefore solute concentration is A > B > C."
+    },
+    {
+      "question": "Many properties of water — high specific heat, cohesion, and its ability to dissolve salts — all trace back to a single underlying feature of the water molecule. What is that feature?",
+      "options": [
+        "Water molecules are nonpolar and form weak van der Waals contacts",
+        "Water's polarity allows it to form hydrogen bonds between molecules",
+        "Water molecules are held together by covalent bonds between separate molecules",
+        "Water can ionize completely into hydrogen and oxygen gas"
+      ],
+      "correctIndex": 1,
+      "explanation": "Oxygen is more electronegative than hydrogen, making water polar with partial charges. This polarity lets neighboring water molecules form hydrogen bonds, which underlie cohesion, high specific heat, and water's role as a solvent for polar and ionic substances. The covalent bonds are within a molecule, not between molecules."
+    },
+    {
+      "question": "A protein is heated until it loses its three-dimensional shape and its function, but the sequence of amino acids remains intact. Which level(s) of protein structure were disrupted?",
+      "options": [
+        "Only the primary structure",
+        "The primary structure, which determines all others",
+        "Secondary, tertiary, and quaternary structure, but not primary",
+        "Quaternary structure only, since heat cannot affect folding"
+      ],
+      "correctIndex": 2,
+      "explanation": "Denaturation breaks the hydrogen bonds, ionic bonds, and hydrophobic interactions that hold the higher-order folds (secondary, tertiary, quaternary) together. The primary structure — the peptide-bonded sequence of amino acids — is held by stronger covalent bonds and remains intact. Because shape determines function, the denatured protein loses activity."
+    },
+    {
+      "question": "Two cells are cubes; cell X is 1 µm on a side and cell Y is 4 µm on a side. Which statement about their exchange with the environment is correct?",
+      "options": [
+        "Cell Y exchanges materials more efficiently because it has more surface area",
+        "Cell X exchanges materials more efficiently because it has a higher surface-area-to-volume ratio",
+        "Both exchange equally efficiently because they are the same shape",
+        "Cell Y is more efficient because volume increases faster than surface area"
+      ],
+      "correctIndex": 1,
+      "explanation": "As a cell grows, volume increases with the cube of length while surface area increases only with the square, so the surface-area-to-volume ratio falls. The smaller cell X has a higher ratio, giving it relatively more membrane per unit of cytoplasm and therefore more efficient exchange. This constraint helps explain why cells stay small."
+    },
+    {
+      "question": "Mitochondria and chloroplasts both contain their own circular DNA, ribosomes resembling those of bacteria, and double membranes. This evidence most directly supports which hypothesis?",
+      "options": [
+        "These organelles arose by infolding of the eukaryotic plasma membrane",
+        "These organelles originated from free-living prokaryotes engulfed by an ancestral host cell (endosymbiosis)",
+        "These organelles are assembled fresh from cytoplasmic proteins each cell cycle",
+        "These organelles evolved after the nucleus from rough endoplasmic reticulum"
+      ],
+      "correctIndex": 1,
+      "explanation": "The endosymbiotic theory holds that mitochondria and chloroplasts descend from once free-living prokaryotes engulfed by a host cell. Their own circular DNA, bacterial-type ribosomes, and double membranes (the inner from the original prokaryote, the outer from the host's engulfing membrane) are the classic lines of supporting evidence."
+    },
+    {
+      "question": "An enzyme-catalyzed reaction is run at increasing substrate concentrations. The reaction rate rises and then levels off at a plateau. The plateau is best explained by the fact that:",
+      "options": [
+        "The enzyme has been denatured by the substrate",
+        "All available enzyme active sites are saturated with substrate",
+        "The reaction has reached chemical equilibrium",
+        "The activation energy has increased at high substrate levels"
+      ],
+      "correctIndex": 1,
+      "explanation": "At low substrate concentrations, adding substrate increases the rate because more active sites are occupied. Once substrate is high enough that essentially all active sites are continuously occupied, the enzymes are saturated and rate is limited by how fast enzymes can turn over — adding more substrate cannot speed it up, producing the plateau."
+    },
+    {
+      "question": "A noncompetitive inhibitor binds to an enzyme at a site other than the active site. Compared with a competitive inhibitor, a noncompetitive inhibitor's effect:",
+      "options": [
+        "Can be overcome by adding more substrate, just like a competitive inhibitor",
+        "Cannot be overcome simply by adding more substrate, because the inhibitor changes the enzyme's shape",
+        "Permanently destroys the primary structure of the enzyme",
+        "Increases the enzyme's affinity for its substrate"
+      ],
+      "correctIndex": 1,
+      "explanation": "A competitive inhibitor competes for the active site, so flooding the system with substrate can outcompete it. A noncompetitive inhibitor binds elsewhere (an allosteric site) and changes the enzyme's shape, lowering activity regardless of substrate concentration — so adding more substrate does not reverse it."
+    },
+    {
+      "question": "In the light-dependent reactions of photosynthesis, water is split. Which products of this splitting are correctly matched to their immediate fates?",
+      "options": [
+        "Oxygen is released; electrons replace those lost by chlorophyll; protons contribute to the gradient",
+        "Oxygen is used to make glucose; electrons go to the Calvin cycle directly",
+        "Oxygen replaces chlorophyll's electrons; protons are released as a waste gas",
+        "Carbon dioxide is released; electrons reduce NADP+ in the stroma"
+      ],
+      "correctIndex": 0,
+      "explanation": "Photolysis of water (in photosystem II) yields O2, which is released as a byproduct; electrons that replace those excited and lost from chlorophyll; and protons (H+) that build up the thylakoid gradient driving ATP synthase. Carbon dioxide is fixed in the Calvin cycle, not split in the light reactions."
+    },
+    {
+      "question": "A poison blocks the electron transport chain in mitochondria so that electrons can no longer be passed to oxygen. Which immediate consequence best explains why ATP production by oxidative phosphorylation stops?",
+      "options": [
+        "Glycolysis can no longer occur in the cytoplasm",
+        "The proton gradient across the inner membrane can no longer be built, so ATP synthase stops",
+        "Carbon dioxide can no longer be produced by the Krebs cycle",
+        "Oxygen is converted directly into ATP by the chain"
+      ],
+      "correctIndex": 1,
+      "explanation": "The electron transport chain uses energy from passing electrons to pump protons and build a gradient across the inner mitochondrial membrane. ATP synthase uses that gradient to make ATP. If electrons cannot flow to the final acceptor (oxygen), pumping stops, the gradient collapses, and ATP synthase can no longer produce ATP. Oxygen is not turned into ATP itself."
+    },
+    {
+      "question": "A signaling molecule cannot cross the plasma membrane, yet it triggers a response inside the cell. Which mechanism best accounts for this?",
+      "options": [
+        "The molecule diffuses through the lipid bilayer and binds DNA directly",
+        "The molecule binds a cell-surface receptor that activates an intracellular signal transduction pathway",
+        "The molecule is a steroid that binds an intracellular receptor",
+        "The molecule is destroyed at the membrane and has no effect"
+      ],
+      "correctIndex": 1,
+      "explanation": "Hydrophilic signaling molecules cannot pass through the hydrophobic membrane interior, so they bind receptors embedded in the plasma membrane. The bound receptor then triggers an intracellular signal transduction cascade (often involving relay proteins and second messengers) that produces the cellular response. Steroids, by contrast, are hydrophobic and can cross to bind internal receptors."
+    },
+    {
+      "question": "Negative feedback is the dominant homeostatic mechanism in the body. Which of the following is the best example of negative feedback?",
+      "options": [
+        "Oxytocin release intensifying uterine contractions during childbirth",
+        "Insulin lowering blood glucose after a meal, which then reduces insulin release",
+        "The cascade of clotting factors amplifying a blood clot",
+        "Action potentials triggering more sodium channels to open"
+      ],
+      "correctIndex": 1,
+      "explanation": "Negative feedback counteracts a change to restore a set point: rising blood glucose triggers insulin, glucose falls, and the stimulus for insulin is reduced. The other examples are positive feedback, in which the response amplifies the original stimulus (childbirth, clotting, and the upstroke of an action potential)."
+    },
+    {
+      "question": "A cell is arrested at the G1 checkpoint and does not proceed into S phase. Which condition would most plausibly cause this arrest?",
+      "options": [
+        "The cell has detected DNA damage that must be repaired before replication",
+        "The cell has too many copies of every chromosome",
+        "The spindle fibers have failed to attach to kinetochores",
+        "Sister chromatids have already separated prematurely"
+      ],
+      "correctIndex": 0,
+      "explanation": "The G1 checkpoint assesses cell size, nutrients, growth signals, and especially DNA integrity before committing to DNA replication in S phase. Detecting DNA damage halts the cycle so repairs can be made, preventing replication of damaged DNA. Spindle and kinetochore problems are monitored at the later M (spindle) checkpoint."
+    },
+    {
+      "question": "Most cancers require multiple mutations rather than a single one. Which combination of mutations best fits the typical pattern seen in cancer cells?",
+      "options": [
+        "Loss of function in proto-oncogenes and gain of function in tumor suppressor genes",
+        "Gain of function in proto-oncogenes (creating oncogenes) and loss of function in tumor suppressor genes",
+        "Mutations only in genes unrelated to the cell cycle",
+        "A single mutation that simultaneously fixes all checkpoints"
+      ],
+      "correctIndex": 1,
+      "explanation": "Proto-oncogenes promote cell division; a gain-of-function mutation turns them into hyperactive oncogenes that push the cycle forward. Tumor suppressor genes (like p53) normally restrain division or trigger repair/apoptosis; loss-of-function mutations remove those brakes. Cancer typically requires both an accelerator stuck on and brakes that fail, which is why multiple mutations accumulate."
+    },
+    {
+      "question": "During meiosis, two processes generate enormous genetic variation among gametes. Which pair correctly identifies them?",
+      "options": [
+        "Crossing over in prophase I and independent assortment in metaphase I",
+        "DNA replication in S phase and cytokinesis in telophase",
+        "Sister chromatid separation in anaphase II and DNA repair in G2",
+        "Binary fission and budding"
+      ],
+      "correctIndex": 0,
+      "explanation": "Crossing over during prophase I exchanges segments between homologous chromosomes, creating new allele combinations. Independent assortment in metaphase I randomly orients each homologous pair, producing many possible combinations of maternal and paternal chromosomes. Together with random fertilization, these are the major sources of genetic variation from meiosis."
+    },
+    {
+      "question": "In pea plants, purple flower color (P) is dominant to white (p). A purple-flowered plant of unknown genotype is crossed with a white-flowered plant, and the offspring are about half purple and half white. What was the genotype of the purple parent?",
+      "options": [
+        "PP",
+        "Pp",
+        "pp",
+        "It cannot be determined from this cross"
+      ],
+      "correctIndex": 1,
+      "explanation": "A white plant must be pp. Crossing Pp × pp yields a 1:1 ratio of purple (Pp) to white (pp), matching the observed roughly 50:50 split. A PP × pp cross would yield all purple offspring, so the purple parent must be heterozygous Pp. This is the logic of a testcross."
+    },
+    {
+      "question": "A man with blood type AB and a woman with blood type O have children. Which blood types are possible among their offspring, and what does this illustrate?",
+      "options": [
+        "Types A and B; codominance of the I^A and I^B alleles",
+        "Types AB and O; complete dominance",
+        "Only type O; recessive epistasis",
+        "Types A, B, AB, and O; incomplete dominance"
+      ],
+      "correctIndex": 0,
+      "explanation": "The AB father is I^A I^B and the O mother is ii. Each child receives I^A or I^B from the father and i from the mother, giving I^A i (type A) or I^B i (type B). The simultaneous full expression of both A and B antigens in the AB father illustrates codominance, where two alleles are both fully expressed."
+    },
+    {
+      "question": "Hemophilia is an X-linked recessive disorder. A carrier mother (X^H X^h) and an unaffected father (X^H Y) have children. What is the probability that any given son is affected?",
+      "options": [
+        "0",
+        "1/4",
+        "1/2",
+        "All sons are affected"
+      ],
+      "correctIndex": 2,
+      "explanation": "Sons receive their single X from the mother and a Y from the father. The carrier mother passes X^H or X^h with equal probability, so half of her sons receive X^h and are affected (1/2), while half receive X^H and are unaffected. Daughters all receive the father's X^H and so are unaffected, though half are carriers."
+    },
+    {
+      "question": "The Meselson-Stahl experiment grew bacteria in heavy nitrogen, then shifted them to light nitrogen and tracked DNA density over generations. The result — one intermediate-density band after the first replication — ruled out which model of replication?",
+      "options": [
+        "The semiconservative model",
+        "The conservative model",
+        "Both the semiconservative and dispersive models",
+        "The dispersive model only"
+      ],
+      "correctIndex": 1,
+      "explanation": "A single intermediate-density band after one round means every new molecule contained one old (heavy) and one new (light) strand. The conservative model predicted two separate bands (one fully heavy, one fully light) after one round, so it was ruled out. The semiconservative model, confirmed by the later separation into intermediate and light bands, was supported."
+    },
+    {
+      "question": "A mutation deletes a single nucleotide in the middle of a gene's coding sequence. Compared with a single-nucleotide substitution, this deletion is likely to be far more damaging because it:",
+      "options": [
+        "Always changes only one amino acid",
+        "Shifts the reading frame, altering every codon downstream",
+        "Occurs only in non-coding introns",
+        "Cannot affect the protein at all"
+      ],
+      "correctIndex": 1,
+      "explanation": "Because codons are read in non-overlapping triplets, inserting or deleting a number of nucleotides not divisible by three causes a frameshift. Every codon downstream of the deletion is misread, usually producing a completely different, nonfunctional protein and often a premature stop codon. A substitution typically alters at most one codon."
+    },
+    {
+      "question": "Two unrelated bacterial species and a human cell can all read the same mRNA codon, AUG, as methionine. This near-universality of the genetic code is most often cited as evidence for:",
+      "options": [
+        "Convergent evolution of unrelated genetic systems",
+        "Common ancestry of all life from a shared origin",
+        "The recent independent origin of each species",
+        "Lamarckian inheritance of acquired traits"
+      ],
+      "correctIndex": 1,
+      "explanation": "The fact that nearly all organisms use the same codon-to-amino-acid dictionary is powerful evidence that all life descends from a common ancestor that already used this code. It also underlies biotechnology: a human gene placed in bacteria is translated correctly because the code is shared. Convergence would not produce an identical arbitrary code."
+    },
+    {
+      "question": "A biotechnologist inserts the human insulin gene into a bacterial plasmid, and the bacteria produce functional human insulin. This is possible primarily because:",
+      "options": [
+        "Bacteria and humans use the same universal genetic code and transcription/translation machinery",
+        "Bacteria reverse-transcribe the insulin gene into a human cell",
+        "Human and bacterial insulin genes are identical in sequence",
+        "Restriction enzymes translate the gene directly into protein"
+      ],
+      "correctIndex": 0,
+      "explanation": "Because the genetic code is essentially universal, a human gene transcribed and translated in bacteria yields the correct amino acid sequence. Restriction enzymes and DNA ligase are used to splice the gene into a plasmid vector, and the bacterial machinery then expresses it. The genes are not identical across species; rather, the shared code makes cross-species expression possible."
+    },
+    {
+      "question": "The lac operon in E. coli is normally off but turns on when lactose is present. This arrangement is advantageous because it:",
+      "options": [
+        "Permanently produces lactose-digesting enzymes regardless of conditions",
+        "Allows the cell to conserve energy by making lactose-digesting enzymes only when lactose is available",
+        "Prevents the cell from ever digesting lactose",
+        "Causes mutations that help the cell adapt"
+      ],
+      "correctIndex": 1,
+      "explanation": "Inducible operons like lac let bacteria produce enzymes only when their substrate is present, avoiding the waste of synthesizing proteins that are not needed. When lactose is absent a repressor blocks transcription; when lactose is present it inactivates the repressor and the genes are transcribed. This is efficient regulation of gene expression in response to the environment."
+    },
+    {
+      "question": "Which statement best captures why natural selection acts on populations rather than on individuals?",
+      "options": [
+        "Individuals evolve during their lifetimes to become better adapted",
+        "Individuals are selected, but only populations change in allele frequency across generations",
+        "Selection randomly changes allele frequencies with no relation to fitness",
+        "Populations cannot change once they are formed"
+      ],
+      "correctIndex": 1,
+      "explanation": "Natural selection acts on individuals' phenotypes (some survive and reproduce better), but evolution is the resulting change in allele frequencies of the population across generations. An individual's genotype does not change to become fitter during life; rather, the proportion of favorable alleles in the population shifts over time. This is a frequently tested distinction."
+    },
+    {
+      "question": "A population of beetles is in Hardy-Weinberg equilibrium. The recessive phenotype (homozygous recessive) makes up 16% of the population. What fraction of the population is heterozygous?",
+      "options": [
+        "0.16",
+        "0.36",
+        "0.48",
+        "0.64"
+      ],
+      "correctIndex": 2,
+      "explanation": "If q^2 = 0.16, then q = 0.4 and p = 0.6. Heterozygotes are 2pq = 2(0.6)(0.4) = 0.48, or 48%. (Homozygous dominant p^2 = 0.36.) This is the standard application of the Hardy-Weinberg equations p + q = 1 and p^2 + 2pq + q^2 = 1."
+    },
+    {
+      "question": "Which of the following observations would indicate that a population is NOT in Hardy-Weinberg equilibrium for a given gene?",
+      "options": [
+        "The population is very large and mating is random",
+        "There is no migration, mutation, or natural selection at the locus",
+        "Heterozygotes consistently survive and reproduce better than either homozygote",
+        "Allele frequencies remain constant across many generations"
+      ],
+      "correctIndex": 2,
+      "explanation": "Hardy-Weinberg equilibrium requires no selection, among other conditions (large population, random mating, no mutation, no gene flow). If heterozygotes have higher fitness (heterozygote advantage), selection is acting on the locus, allele frequencies will be maintained at non-Hardy-Weinberg values, and the population is not in equilibrium for that gene."
+    },
+    {
+      "question": "The forelimbs of humans, whales, bats, and cats all contain the same arrangement of bones despite serving very different functions. These homologous structures are best explained by:",
+      "options": [
+        "Convergent evolution from unrelated ancestors",
+        "Descent with modification from a common ancestor",
+        "Identical environmental pressures producing identical bones",
+        "Random chance with no evolutionary relationship"
+      ],
+      "correctIndex": 1,
+      "explanation": "Homologous structures share underlying anatomy because they were inherited from a common ancestor and then modified for different uses (grasping, swimming, flying, walking). This is evidence of descent with modification. Convergent evolution instead produces analogous structures that look similar but arise from different ancestral structures under similar selection."
+    },
+    {
+      "question": "A student builds a cladogram and groups organisms based on shared derived characters (synapomorphies). Which principle should guide where each branch point (node) is placed?",
+      "options": [
+        "Organisms that look most similar overall are always most closely related",
+        "A node represents the most recent common ancestor of the organisms beyond it, defined by shared derived traits",
+        "The organism with the most traits is always placed at the root",
+        "Branch length always equals the exact time since divergence"
+      ],
+      "correctIndex": 1,
+      "explanation": "In cladistics, each node marks the most recent common ancestor of all the organisms that branch from it, and clades are defined by shared derived characters inherited from that ancestor. Overall similarity can be misleading because of convergence or retained ancestral traits, and in most cladograms branch length does not directly represent time."
+    },
+    {
+      "question": "Two populations of the same species become separated by a new mountain range and, over many generations, can no longer interbreed even when brought back together. This is an example of:",
+      "options": [
+        "Sympatric speciation through polyploidy",
+        "Allopatric speciation following geographic isolation",
+        "Gene flow increasing between the populations",
+        "Artificial selection by humans"
+      ],
+      "correctIndex": 1,
+      "explanation": "Allopatric speciation occurs when a physical barrier geographically isolates populations, preventing gene flow. Independent mutation, drift, and selection then drive them apart until reproductive isolation evolves and they can no longer interbreed. Sympatric speciation, by contrast, occurs without geographic separation, often via mechanisms like polyploidy in plants."
+    },
+    {
+      "question": "Antibiotic resistance spreading rapidly through a bacterial population is a textbook case of natural selection in action. Which statement correctly describes how it arises?",
+      "options": [
+        "Antibiotics cause bacteria to mutate so they become resistant on demand",
+        "Resistance mutations already present by chance survive antibiotic exposure and increase in frequency",
+        "All bacteria become resistant equally because they share a plasmid instantly",
+        "Bacteria choose to develop resistance to survive"
+      ],
+      "correctIndex": 1,
+      "explanation": "Resistance arises from pre-existing genetic variation: random mutations (or acquired resistance genes) make a few bacteria resistant before exposure. The antibiotic then acts as a selective agent, killing susceptible cells while resistant ones survive and reproduce, raising the frequency of resistance. The antibiotic does not direct or induce the beneficial mutation."
+    },
+    {
+      "question": "Models of the early Earth and experiments like Miller-Urey are used to investigate the origin of life. Which sequence reflects the generally hypothesized order of events?",
+      "options": [
+        "Cells → organic monomers → polymers → protocells",
+        "Organic monomers → polymers → protocells → cellular life",
+        "DNA → RNA → proteins → monomers",
+        "Photosynthesis → oxygen atmosphere → first monomers"
+      ],
+      "correctIndex": 1,
+      "explanation": "The leading hypothesis proposes abiotic synthesis of organic monomers (amino acids, nucleotides), their assembly into polymers, the formation of membrane-bounded protocells (protobionts) with some self-replicating molecules — RNA in the 'RNA world' — and eventually true cellular life. Oxygenic photosynthesis and an oxygen atmosphere came much later."
+    },
+    {
+      "question": "In a food chain, only about 10% of the energy at one trophic level is passed to the next. Which consequence follows most directly from this 10% rule?",
+      "options": [
+        "Top predators are usually the most numerous organisms in an ecosystem",
+        "Ecosystems can support far less biomass of top predators than of producers, limiting food-chain length",
+        "Energy is recycled endlessly through the ecosystem",
+        "Decomposers receive 90% of the energy at each level"
+      ],
+      "correctIndex": 1,
+      "explanation": "Because roughly 90% of energy is lost as heat and through metabolism at each transfer, much less energy is available at higher trophic levels. This limits the biomass that top predators can sustain and restricts food chains to only a few links. Energy flows one way through ecosystems and is not recycled, unlike matter."
+    },
+    {
+      "question": "DDT, a persistent pesticide, is found at much higher concentrations in fish-eating birds than in the water or in small fish. This pattern, biomagnification, is essentially the mirror image of which other ecological principle?",
+      "options": [
+        "The 10% rule of energy transfer, since energy decreases up the chain while toxins increase",
+        "The competitive exclusion principle",
+        "Logistic population growth",
+        "Primary succession"
+      ],
+      "correctIndex": 0,
+      "explanation": "In biomagnification, a persistent toxin becomes more concentrated at each higher trophic level because predators accumulate it from all the contaminated prey they consume. This mirrors the 10% rule: usable energy decreases as you move up trophic levels, while the concentration of persistent toxins increases, hitting top predators hardest."
+    },
+    {
+      "question": "A population shows rapid exponential growth, then slows and levels off near a stable size. Which factor best explains the leveling off?",
+      "options": [
+        "The intrinsic rate of increase suddenly became negative",
+        "The population approached the carrying capacity (K) as density-dependent limits intensified",
+        "Resources became unlimited",
+        "All individuals stopped reproducing simultaneously"
+      ],
+      "correctIndex": 1,
+      "explanation": "Logistic growth slows as a population nears its carrying capacity (K), the maximum the environment can sustain. As density rises, density-dependent factors — competition for food, predation, disease, accumulating waste — increase mortality and reduce reproduction, bringing the growth rate toward zero. Resources become more limiting, not unlimited, near K."
+    },
+    {
+      "question": "Removing a single predator from a community caused a cascade in which its prey exploded, overgrazed the dominant plants, and overall species diversity collapsed. The removed predator was most likely:",
+      "options": [
+        "A keystone species",
+        "An invasive species",
+        "A primary producer",
+        "A decomposer"
+      ],
+      "correctIndex": 0,
+      "explanation": "A keystone species exerts an effect on community structure far larger than its abundance would suggest; removing it triggers a trophic cascade that can collapse biodiversity, exactly as described. Classic examples include sea stars and sea otters. An invasive species is a non-native that spreads and harms communities, which is a different scenario."
+    },
+    {
+      "question": "Which scenario best illustrates how a disruption at the molecular level can scale up to affect an entire organism, as emphasized across AP Biology?",
+      "options": [
+        "A single base substitution in hemoglobin causes sickle-cell disease, altering red blood cells and the whole circulatory system",
+        "A predator eats prey, transferring energy up a food chain",
+        "Two populations are separated by a river and stop interbreeding",
+        "A cell increases its surface-area-to-volume ratio by dividing"
+      ],
+      "correctIndex": 0,
+      "explanation": "A single nucleotide change in the beta-globin gene replaces one amino acid (glutamate with valine), causing hemoglobin to polymerize and red blood cells to sickle, which in turn impairs oxygen delivery and circulation throughout the body. This shows how a point mutation in DNA propagates through protein structure to cell shape to organism-level physiology."
+    },
+    {
+      "question": "Cyanobacteria evolving oxygen-producing photosynthesis billions of years ago is often called one of the most transformative events in evolutionary history because it:",
+      "options": [
+        "Caused a rapid loss of all photosynthetic organisms",
+        "Oxygenated the atmosphere, driving the evolution of aerobic respiration and reshaping life",
+        "Eliminated the need for the Calvin cycle",
+        "Immediately produced complex animals"
+      ],
+      "correctIndex": 1,
+      "explanation": "Oxygenic photosynthesis by early cyanobacteria gradually filled the atmosphere with O2 (the 'Great Oxidation Event'). This was lethal to many anaerobes but set the stage for aerobic respiration, which extracts far more energy from glucose, and ultimately for the diversification of complex life. It connects photosynthesis, respiration, and evolutionary history."
+    },
+    {
+      "question": "A cell needs to import glucose against its concentration gradient. Which feature must the transport process have, and what does it require?",
+      "options": [
+        "It is passive diffusion and requires no energy",
+        "It is active transport using a protein pump and requires energy (often ATP)",
+        "It is osmosis and moves water instead of glucose",
+        "It is facilitated diffusion down the gradient and requires no energy"
+      ],
+      "correctIndex": 1,
+      "explanation": "Moving a solute against its concentration gradient (from low to high concentration) requires active transport, which uses a membrane protein pump and an energy source, typically ATP. Passive processes — simple diffusion, osmosis, and facilitated diffusion — only move substances down their gradients and require no energy input."
+    },
+    {
+      "question": "tRNA molecules are central to translation. Which description correctly states their role?",
+      "options": [
+        "tRNA carries the genetic message from the nucleus to the ribosome",
+        "Each tRNA matches its anticodon to an mRNA codon and delivers the corresponding amino acid",
+        "tRNA forms the catalytic core of the ribosome",
+        "tRNA copies DNA into a complementary strand"
+      ],
+      "correctIndex": 1,
+      "explanation": "Each tRNA has an anticodon that base-pairs with a specific mRNA codon and carries the amino acid specified by that codon. By matching codons to amino acids, tRNAs translate the nucleotide sequence into the correct amino acid sequence. mRNA carries the message; rRNA forms the ribosome's catalytic core; DNA polymerase and RNA polymerase handle copying and transcription."
+    },
+    {
+      "question": "A researcher finds that a particular gene is transcribed in nerve cells but not in skin cells of the same organism, even though both cell types carry identical DNA. This difference is best explained by:",
+      "options": [
+        "The skin cells have permanently deleted the gene",
+        "Differential gene expression, in which different genes are turned on or off in different cell types",
+        "Skin cells contain a different genome than nerve cells",
+        "Random mutation in the skin cells"
+      ],
+      "correctIndex": 1,
+      "explanation": "Cells in a multicellular organism share the same genome but differentiate by expressing different subsets of genes — differential gene expression controlled by regulatory proteins, signaling, and epigenetic factors. This is why a nerve cell and a skin cell, with identical DNA, perform different functions; the genes are regulated, not deleted or mutated away."
+    },
+    {
+      "question": "Which of the following correctly pairs a cellular process with where its energy currency or reducing power is used?",
+      "options": [
+        "ATP from cellular respiration powers endergonic reactions like active transport and biosynthesis",
+        "NADH directly builds the proton gradient in the Calvin cycle",
+        "ATP is consumed only to store energy as fat",
+        "Oxygen is the energy currency that powers all cellular work"
+      ],
+      "correctIndex": 0,
+      "explanation": "ATP is the cell's main energy currency: hydrolysis of its terminal phosphate releases energy that is coupled to endergonic reactions such as active transport, muscle contraction, and biosynthesis. Cellular respiration regenerates ATP from ADP. Oxygen is the final electron acceptor in respiration, not an energy currency, and the Calvin cycle uses ATP and NADPH from the light reactions."
+    },
+    {
+      "question": "Genetic drift has a stronger effect on small populations than on large ones. Why does population size matter so much for drift?",
+      "options": [
+        "Large populations mutate faster, overwhelming drift",
+        "In small populations, chance events can dramatically change allele frequencies, whereas large populations buffer random fluctuations",
+        "Drift only occurs when migration is high",
+        "Small populations always have more genetic diversity"
+      ],
+      "correctIndex": 1,
+      "explanation": "Genetic drift is random change in allele frequencies from sampling chance during reproduction. In a small population, a few chance deaths or matings can swing allele frequencies wildly and even fix or lose alleles, while in a large population these random effects largely average out. Bottlenecks and founder effects are extreme examples of drift in small populations."
+    },
+    {
+      "question": "A graph shows that as elevation increases on a mountain, the number of plant species first rises and then falls, peaking at mid-elevations. Drawing on multiple units, which explanation is most consistent with ecological and evolutionary principles?",
+      "options": [
+        "Species number must always increase with elevation",
+        "Intermediate elevations may offer a favorable combination of conditions and disturbance, supporting higher biodiversity",
+        "Elevation has no effect on the distribution of species",
+        "Only abiotic factors, never biotic interactions, shape these patterns"
+      ],
+      "correctIndex": 1,
+      "explanation": "Biodiversity patterns reflect both abiotic conditions (temperature, moisture, which vary with elevation) and biotic interactions (competition, the intermediate disturbance hypothesis). Mid-elevations can combine moderate conditions with intermediate disturbance, allowing many species to coexist. Extreme high or low elevations impose harsher limits, reducing richness, producing the observed hump-shaped curve."
+    },
+    {
+      "question": "Across AP Biology, organisms maintain dynamic homeostasis by sensing change and responding. Which set of examples all illustrate this same overarching principle at different scales?",
+      "options": [
+        "Insulin/glucagon regulating blood glucose, the lac operon responding to lactose, and stomata adjusting to water availability",
+        "Crossing over, independent assortment, and random fertilization",
+        "Homologous structures, vestigial organs, and the fossil record",
+        "Glycolysis, the Krebs cycle, and the electron transport chain"
+      ],
+      "correctIndex": 0,
+      "explanation": "Sensing and responding to change to maintain stable internal conditions is the principle of homeostasis/regulation, seen at many scales: hormonal control of blood glucose (organism), the lac operon switching genes on in response to lactose (molecular/cellular), and guard cells opening or closing stomata in response to water status (tissue). The other lists are sources of variation, evidence for evolution, and stages of respiration."
+    }
+  ]
+}

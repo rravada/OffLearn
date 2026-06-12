@@ -1,0 +1,119 @@
+{
+  "id": "ap-bio-u6-biotechnology",
+  "title": "Biotechnology",
+  "subject": "AP Biology",
+  "unit": "Gene Expression and Regulation",
+  "track": "ap",
+  "difficulty": "ap",
+  "duration": "45 min",
+  "objectives": [
+    "Explain how PCR amplifies DNA and how gel electrophoresis separates DNA fragments by size",
+    "Describe how restriction enzymes, plasmids, and ligase are used to make recombinant DNA",
+    "Explain how bacteria are transformed to express a useful protein and how genetic engineering applications work",
+    "Describe how CRISPR and DNA sequencing/profiling are used, and evaluate their applications"
+  ],
+  "sections": [
+    {
+      "type": "explanation",
+      "heading": "Reading and Rewriting the Code of Life",
+      "content": "For most of history, DNA was a sealed book — we knew life ran on it, but we could neither read it nor write in it. Over the last 50 years, biologists built a toolkit that changed everything: we can now copy a single DNA molecule into billions, cut and paste genes between organisms, read the exact letter sequence of a genome, and even precisely edit individual genes in a living cell. This is biotechnology, and it works by harnessing the SAME molecular machinery you've spent this unit studying — the very enzymes cells use to replicate, cut, and join DNA, now repurposed as laboratory tools.\n\nThe reason any of this is possible comes back to two unifying facts from earlier lessons. First, DNA's structure is universal: every organism uses the same A-T, G-C base-pairing and the same antiparallel double helix, so a tool that works on one organism's DNA works on all. Second, the genetic code is nearly universal: AUG means 'start' and the same codons specify the same amino acids in a bacterium and in a human, which is exactly why you can move a human gene into a bacterium and have it produce a functional human protein.\n\nThis lesson surveys the core techniques — PCR, gel electrophoresis, restriction enzymes, recombinant plasmids, bacterial transformation, CRISPR, and DNA sequencing/profiling — and their real applications, from making insulin to convicting criminals to editing out genetic disease. Think of it as the practical payoff of everything you've learned about DNA."
+    },
+    {
+      "type": "explanation",
+      "heading": "Copying and Sorting DNA: PCR and Gel Electrophoresis",
+      "content": "Two foundational techniques let us make many copies of DNA and then sort the pieces. PCR (polymerase chain reaction) is essentially DNA replication in a test tube, used to AMPLIFY a tiny DNA sample into billions of copies. It cycles through three temperature steps: heating to ~95°C to DENATURE (separate the strands), cooling so short primers ANNEAL to the target sequence, and warming so a heat-stable DNA polymerase (Taq, from a hot-spring bacterium) EXTENDS new strands. Each cycle doubles the DNA, so after about 30 cycles a single molecule becomes over a billion. PCR is why a trace of DNA from a crime scene, a fossil, or a nasal swab is enough to analyze.\n\nGel electrophoresis then SEPARATES DNA fragments by size. DNA samples are loaded into wells in a gel, and an electric current is applied. Because DNA's phosphate backbone is negatively charged, all the fragments migrate toward the positive electrode. The gel acts like a molecular sieve: small fragments slip through easily and travel FAR, while large fragments are held back and stay NEAR the wells. The result is a pattern of bands sorted by length, which you can compare to a known size 'ladder.' \n\nTogether these tools are powerful: PCR makes enough DNA to work with, and electrophoresis reveals the sizes of the pieces. A classic exam task gives you a gel image and asks you to rank fragments by size (remember: farther = smaller) or to interpret a DNA profile by comparing band patterns between samples."
+    },
+    {
+      "type": "quiz",
+      "question": "In gel electrophoresis, two DNA fragments are loaded and a current is applied. After running the gel, fragment X has traveled much farther from the well than fragment Y. What can you conclude?",
+      "options": [
+        "Fragment X is larger than fragment Y",
+        "Fragment X is smaller than fragment Y",
+        "Fragment X carries a positive charge and Y a negative charge",
+        "Fragment Y has more cytosine than fragment X"
+      ],
+      "correctIndex": 1,
+      "explanation": "All DNA fragments are negatively charged (phosphate backbone) and move toward the positive electrode. The gel sieves them by size: smaller fragments move through more easily and travel farther, while larger fragments lag behind near the wells. Since fragment X traveled farther, it is the smaller fragment. Charge is the same for all DNA, so it isn't what separates them."
+    },
+    {
+      "type": "steps",
+      "heading": "Making Recombinant DNA and a Transgenic Bacterium",
+      "steps": [
+        {
+          "title": "Cut the DNA with restriction enzymes",
+          "content": "Restriction enzymes are 'molecular scissors' that cut DNA at specific recognition sequences. Many cut in a staggered way that leaves short single-stranded overhangs called 'sticky ends.' Cutting both the gene of interest and a bacterial plasmid (a small circular DNA) with the SAME enzyme gives them matching, complementary sticky ends."
+        },
+        {
+          "title": "Paste the gene into a plasmid with ligase",
+          "content": "Because the sticky ends are complementary, the target gene base-pairs with the opened plasmid. DNA ligase (the same backbone-sealing enzyme from replication) seals them together, producing recombinant DNA — a plasmid now carrying a gene from another organism."
+        },
+        {
+          "title": "Transform bacteria with the recombinant plasmid",
+          "content": "The recombinant plasmid is taken up by bacteria in a process called transformation (bacteria can be induced to absorb foreign DNA). The plasmid often carries a selectable marker, such as an antibiotic-resistance gene, so that only successfully transformed cells survive on a selective plate."
+        },
+        {
+          "title": "Let the bacteria express the gene",
+          "content": "Because the genetic code is universal, the bacterium transcribes and translates the inserted gene, producing the desired protein. As the bacteria multiply, they become a living factory — this is exactly how human insulin, growth hormone, and clotting factors are mass-produced."
+        }
+      ]
+    },
+    {
+      "type": "table",
+      "heading": "The Biotechnology Toolkit",
+      "headers": ["Tool / technique", "What it does", "Example use"],
+      "rows": [
+        ["PCR", "Amplifies a DNA sample into billions of copies", "Diagnostics, forensics, research"],
+        ["Gel electrophoresis", "Separates DNA fragments by size", "DNA profiling, checking PCR products"],
+        ["Restriction enzymes", "Cut DNA at specific sequences (sticky ends)", "Making recombinant DNA"],
+        ["Plasmids", "Small circular DNA vectors to carry genes into bacteria", "Cloning and protein production"],
+        ["DNA ligase", "Seals DNA fragments together", "Joining a gene into a plasmid"],
+        ["CRISPR-Cas9", "Precisely cuts and edits DNA at a chosen sequence", "Gene therapy, crop and disease research"],
+        ["DNA sequencing", "Reads the exact base order of DNA", "Genomes, ancestry, personalized medicine"]
+      ]
+    },
+    {
+      "type": "explanation",
+      "heading": "Editing Genes: CRISPR and DNA Sequencing",
+      "content": "Older genetic engineering could move whole genes around but couldn't easily edit a precise spot. CRISPR-Cas9 changed that. Borrowed from a bacterial immune system that chops up invading viral DNA, CRISPR uses a short 'guide RNA' programmed to match a target DNA sequence; the guide leads the Cas9 protein (a precise molecular scissor) to that exact site, where it cuts. The cell's repair machinery then either disables the gene or, if a template is supplied, pastes in a corrected sequence. Because the guide RNA can be designed to match almost any sequence, CRISPR is fast, cheap, and astonishingly precise — it has revolutionized research and opened the door to correcting disease-causing mutations directly (the first CRISPR therapy, for sickle-cell disease, was approved in 2023).\n\nDNA sequencing reads the actual order of bases — the letters themselves — in a stretch of DNA or an entire genome. The Human Genome Project first read all ~3 billion human base pairs over more than a decade; today a genome can be sequenced in about a day for a tiny fraction of the original cost. Sequencing powers personalized medicine (tailoring treatment to a patient's genome), evolutionary biology (comparing genomes reveals relatedness — connecting to Unit 7 phylogeny), and the identification of disease genes.\n\nA related, hugely consequential application is DNA profiling (fingerprinting). Because individuals differ in repetitive non-coding regions (the number of short tandem repeats varies from person to person), running someone's DNA on a gel produces a band pattern as individual as a fingerprint. PCR amplifies the regions, electrophoresis separates them, and the pattern is compared — the basis of forensic identification, paternity testing, and exonerating the wrongly convicted."
+    },
+    {
+      "type": "example",
+      "heading": "Reading a DNA Profiling Gel",
+      "content": "A common exam scenario: a forensic lab runs DNA from a crime scene alongside DNA from three suspects on a gel, and you must interpret it. Here's the reasoning.\n\nStep 1 — Understand what's on the gel. Each lane shows the band pattern (DNA fragments separated by size) for one DNA sample. Because people vary in the number of short tandem repeats at several locations, each person produces a characteristic set of bands at different heights.\n\nStep 2 — Recall the size rule. Bands that traveled FARTHER from the wells are SMALLER fragments; bands nearer the wells are larger. Two samples from the same person produce bands at the SAME positions (same fragment sizes).\n\nStep 3 — Compare lanes. Line up the crime-scene lane against each suspect lane. The suspect whose bands match the crime-scene bands at every position — same number of bands, same heights — is the genetic match. A suspect with even one clearly different band is excluded.\n\nStep 4 — Reason carefully about what a match means. A matching profile is strong evidence the samples came from the same source, and the more independent regions tested, the more confident the conclusion (the probability of two unrelated people matching at many regions is vanishingly small). The same logic underlies paternity tests: a child's bands must each be traceable to a parent — half from the mother, the rest must match the true father. AP questions reward you for citing the FARTHER = SMALLER rule and for justifying a match by precise band-position comparison, not just 'they look similar.'"
+    },
+    {
+      "type": "quiz",
+      "question": "A biotech company inserts the human insulin gene into a bacterial plasmid and transforms bacteria, which then produce functional human insulin. Which property of biology makes this possible?",
+      "options": [
+        "Bacteria and humans have identical genomes",
+        "The genetic code is nearly universal, so bacteria read the human gene's codons the same way humans do",
+        "Bacteria naturally produce insulin already",
+        "Restriction enzymes translate the gene into protein"
+      ],
+      "correctIndex": 1,
+      "explanation": "Recombinant protein production works because the genetic code is nearly universal: the same codons specify the same amino acids in bacteria and humans, so a bacterium transcribes and translates the inserted human gene to make functional human insulin. Bacteria do not naturally make insulin and do not share the human genome; restriction enzymes cut DNA, they do not translate it."
+    },
+    {
+      "type": "keypoint",
+      "content": "Biotechnology repurposes natural DNA machinery: PCR amplifies DNA, gel electrophoresis separates fragments by size (smaller travel farther), restriction enzymes and ligase build recombinant plasmids, and bacterial transformation lets cells express a foreign gene because the genetic code is universal. CRISPR precisely edits DNA, and sequencing/DNA profiling read and compare genomes for medicine, evolution, and forensics."
+    },
+    {
+      "type": "callout",
+      "variant": "warning",
+      "heading": "Biotechnology Mix-Ups to Avoid",
+      "content": "(1) In gel electrophoresis, SMALLER fragments travel FARTHER (and DNA moves toward the POSITIVE electrode because it's negatively charged) — don't reverse these. (2) PCR COPIES DNA; it does not sequence or separate it. Sequencing reads the base order; electrophoresis sorts by size — three different jobs. (3) Restriction enzymes CUT DNA; ligase JOINS it. (4) A 'sticky end' is a short single-stranded overhang that base-pairs with a complementary overhang — that's why the same restriction enzyme is used on gene and plasmid. (5) Recombinant-protein production works because the genetic code is UNIVERSAL, not because organisms share genomes. (6) CRISPR edits a SPECIFIC targeted sequence using a guide RNA — it is not random mutagenesis."
+    },
+    {
+      "type": "deepdive",
+      "heading": "Power, Promise, and the Ethics of Rewriting Life",
+      "content": "Biotechnology has already transformed medicine, agriculture, and justice — and it forces genuinely hard questions about how far we should go. On the promise side: before recombinant DNA, diabetics relied on insulin extracted from pig and cow pancreases, which was scarce and could trigger allergic reactions; today bacteria and yeast produce unlimited, identical-to-human insulin, a direct result of the cut-paste-transform pipeline in this lesson. Genetically modified crops engineered for pest resistance or drought tolerance or enhanced nutrition (like vitamin-A-fortified 'golden rice') can increase yields and fight malnutrition — while raising debates about ecological effects, corporate control of seed, and labeling. Gene therapy now treats once-untreatable inherited diseases by delivering working gene copies, and CRISPR has moved from lab curiosity to approved therapy for sickle-cell disease in just over a decade.\n\nBut the same precision that lets us cure disease lets us alter heritable DNA, and that's where ethics becomes urgent. Editing a person's body (somatic) cells affects only that patient; editing germ-line cells (embryos, eggs, sperm) would change every future descendant and the human gene pool itself. In 2018 a scientist announced he had edited the genomes of babies — an act condemned worldwide as reckless and unethical, leading to his imprisonment, because the long-term and heritable consequences are unknown and the consent of future generations is impossible. Forensic DNA databases raise privacy concerns; genetic testing raises questions about discrimination by insurers or employers; and the ability to engineer organisms raises biosafety and ecological worries.\n\nThe AP exam expects you not only to know how these tools work but to reason about their applications and trade-offs — to weigh benefit against risk and to distinguish what we CAN do from what we SHOULD do. That's the deepest lesson of this entire unit: understanding DNA gives us extraordinary power over life itself, and with that power comes the responsibility to use it wisely. Everything from Unit 6 — replication, the central dogma, the universal code, mutation — culminates here, in our new and still-growing ability to read and rewrite the molecule that makes us who we are."
+    },
+    {
+      "type": "callout",
+      "variant": "tip",
+      "heading": "How AP Tests Biotechnology",
+      "content": "Point-winners: (1) Interpret a gel — rank fragments by size (farther = smaller) and justify a DNA-profile match or paternity result by precise band comparison. (2) Describe the recombinant-DNA pipeline in order: cut with restriction enzymes (sticky ends) → ligate gene into plasmid → transform bacteria → express the protein, and explain WHY it works (universal genetic code). (3) Match each tool to its job (PCR amplifies, electrophoresis separates, sequencing reads, CRISPR edits). (4) Explain how PCR's three steps (denature, anneal, extend) amplify DNA exponentially. (5) Evaluate applications and ethics, distinguishing somatic vs. germ-line editing. (6) Connect sequencing to evolutionary relatedness (Unit 7) and recombinant proteins/CRISPR to the central dogma and mutations from this unit."
+    }
+  ],
+  "aiContext": "This AP Biology Unit 6 lesson covers biotechnology (CED topic 6.8), the practical payoff of the unit's DNA/gene-expression content. Frame it around two unifying ideas: DNA structure is universal (same base-pairing/antiparallel helix in all organisms) and the genetic code is nearly universal (same codons → same amino acids), which together make cross-species tools and recombinant-protein production possible. Core techniques students must understand: PCR amplifies DNA exponentially via three temperature steps — denature (~95°C, separate strands), anneal (primers bind target), extend (heat-stable Taq polymerase builds new strands); it COPIES DNA (not sequence/separate). Gel electrophoresis separates fragments by size — DNA is negatively charged (phosphate backbone) and moves toward the POSITIVE electrode, and SMALLER fragments travel FARTHER (the single most-tested rule). Recombinant DNA pipeline: restriction enzymes cut DNA at specific sequences leaving complementary 'sticky ends'; using the same enzyme on gene and plasmid gives matching ends; DNA ligase joins them into a recombinant plasmid; bacterial transformation takes up the plasmid (often with an antibiotic-resistance selectable marker); the bacterium expresses the gene because the code is universal (how insulin, growth hormone, clotting factors are made). CRISPR-Cas9 uses a programmable guide RNA to direct the Cas9 'scissors' to a specific sequence for precise editing (first approved therapy: sickle-cell, 2023) — it is targeted, not random. DNA sequencing reads the base order (Human Genome Project; personalized medicine; phylogeny links to Unit 7). DNA profiling/fingerprinting uses variation in short tandem repeats: PCR amplifies, electrophoresis separates, band patterns are compared for forensics and paternity. Key misconceptions to counter: reversing the gel size rule or DNA's charge/direction, confusing PCR (copy) with sequencing (read) with electrophoresis (sort), confusing restriction enzymes (cut) with ligase (join), and thinking recombinant production needs shared genomes rather than a shared code. Include ethics: somatic vs. germ-line (heritable) editing, the 2018 edited-babies controversy, GMO and privacy debates — the exam expects students to evaluate applications and trade-offs, not just mechanisms. On the exam expect gel/profile interpretation, ordering the recombinant-DNA steps with justification, tool-to-job matching, and ethics reasoning."
+}

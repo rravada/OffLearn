@@ -1,0 +1,31 @@
+{
+  "id": "ap-bio-mendelian-genetics",
+  "title": "Mendelian Genetics and Probability",
+  "subject": "AP Biology",
+  "chunks": [
+    { "id": "c1", "text": "Before Mendel, inheritance was thought to work like blending paint, with parental traits smearing together. This could not explain traits that skip generations or appear in a child but neither parent. Mendel showed inheritance follows predictable mathematical rules." },
+    { "id": "c2", "text": "Gregor Mendel bred tens of thousands of pea plants, tracking simple either/or traits like purple vs. white flowers and counting offspring ratios precisely. He treated inheritance as math and deduced its rules decades before DNA, chromosomes, or meiosis were known." },
+    { "id": "c3", "text": "A gene is a unit of heredity that codes for a trait. Most genes come in different versions called alleles. Because organisms are diploid, each individual carries two alleles for each gene, one on each homologous chromosome." },
+    { "id": "c4", "text": "A dominant allele (written as a capital letter) masks the effect of a recessive allele (lowercase) when both are present. The dominant trait shows whenever at least one dominant allele is present; the recessive trait appears only when both alleles are recessive." },
+    { "id": "c5", "text": "Genotype is the pair of alleles an individual has (PP, Pp, or pp). Phenotype is the physical trait that results (purple or white). Two different genotypes (PP and Pp) can produce the same phenotype (purple)." },
+    { "id": "c6", "text": "An individual is homozygous if its two alleles are the same (PP homozygous dominant, pp homozygous recessive) and heterozygous if they differ (Pp). A heterozygote shows the dominant phenotype but carries the recessive allele." },
+    { "id": "c7", "text": "Because a heterozygote carries a hidden recessive allele, a recessive trait can disappear for generations and reappear when two carriers have offspring." },
+    { "id": "c8", "text": "The law of segregation states that the two alleles for a gene separate during gamete formation, so each gamete carries only one allele for each gene. This reflects the separation of homologous chromosomes in Meiosis I." },
+    { "id": "c9", "text": "The law of independent assortment states that alleles for different genes are distributed to gametes independently. This reflects the random alignment of homologous pairs at the middle of Meiosis I, for genes on different chromosomes." },
+    { "id": "c10", "text": "Mendel's laws are direct readouts of meiosis even though he had no knowledge of chromosomes. A Punnett square models how homologs and alleles separate during gamete formation and recombine at fertilization." },
+    { "id": "c11", "text": "A monohybrid cross follows one gene. Crossing two heterozygotes (Pp × Pp) gives a genotype ratio of 1 PP : 2 Pp : 1 pp and a phenotype ratio of 3 dominant : 1 recessive." },
+    { "id": "c12", "text": "To build a Punnett square, list each parent's gametes (by segregation) along the top and side, then fill each box by combining the row and column alleles. Count the resulting genotypes and phenotypes." },
+    { "id": "c13", "text": "In a Pp × Pp cross, each offspring has a 3/4 chance of the dominant phenotype and 1/4 chance of the recessive phenotype, and genotype probabilities of 1/4 PP, 1/2 Pp, and 1/4 pp." },
+    { "id": "c14", "text": "A Pp × pp cross (carrier by recessive) gives a 1:1 phenotype ratio (50% dominant, 50% recessive). A PP × pp cross gives all heterozygous offspring, all showing the dominant phenotype but all carriers." },
+    { "id": "c15", "text": "The multiplication rule (AND) states that the probability of two independent events both happening is the product of their probabilities. It works for separate genes because of independent assortment." },
+    { "id": "c16", "text": "The addition rule (OR) states that the probability of either of two mutually exclusive events is the sum of their probabilities. For example, the chance of a heterozygote from Pp × Pp is (1/2 × 1/2) + (1/2 × 1/2) = 1/2." },
+    { "id": "c17", "text": "For dihybrid crosses, treat each gene as its own monohybrid cross and multiply. For TtYy × TtYy, tall is 3/4 and yellow is 3/4, so tall and yellow is 3/4 × 3/4 = 9/16, giving the classic 9:3:3:1 ratio without a 16-box square." },
+    { "id": "c18", "text": "To solve any genetics problem: assign allele symbols, determine parent genotypes, list each parent's gametes, combine them with a Punnett square or probability rules, and count genotype and phenotype ratios." },
+    { "id": "c19", "text": "A common misconception is confusing genotype with phenotype. Two genotypes (PP and Pp) can give the same phenotype, so a dominant-looking individual may be homozygous or heterozygous." },
+    { "id": "c20", "text": "'Dominant' does not mean more common, stronger, or better; it only means the allele's trait shows when present. Recessive traits can be far more common in a population than dominant ones." },
+    { "id": "c21", "text": "A recessive phenotype must be homozygous recessive (pp), but a dominant phenotype could be homozygous dominant or heterozygous. A test cross resolves this ambiguity." },
+    { "id": "c22", "text": "A test cross mates an individual showing the dominant phenotype with a homozygous recessive (aa). If any offspring show the recessive phenotype, the unknown parent was heterozygous." },
+    { "id": "c23", "text": "The signature ratios to know are 3:1 (heterozygous monohybrid phenotype), 1:2:1 (its genotype), 1:1 (test cross), and 9:3:3:1 (dihybrid phenotype)." },
+    { "id": "c24", "text": "Mendelian probability underlies genetic counseling: if both parents are carriers (Cc) of a recessive disorder like cystic fibrosis, each child has a 1/4 chance of being affected (cc), 1/2 a carrier, and 1/4 unaffected non-carrier. The same logic supports selective breeding in agriculture." }
+  ]
+}

@@ -1,0 +1,173 @@
+{
+  "id": "ap-bio-unit6-review",
+  "title": "Unit 6 Review: Gene Expression and Regulation",
+  "subject": "AP Biology",
+  "unit": "Gene Expression and Regulation",
+  "type": "unit-review",
+  "questionsPerAttempt": 10,
+  "isAssessment": true,
+  "bank": [
+    {
+      "question": "DNA replication is described as semiconservative. What does this mean?",
+      "options": ["Each new helix is entirely newly made", "Each new helix consists of one original strand and one newly made strand", "Half the DNA is conserved and half is destroyed", "Old and new DNA are scattered in patches along both strands"],
+      "correctIndex": 1,
+      "explanation": "Semiconservative replication means each daughter double helix keeps one original (parental) strand and gains one newly synthesized strand. The Meselson-Stahl experiment confirmed this, ruling out the conservative (fully new helix) and dispersive (scattered patches) models."
+    },
+    {
+      "question": "In the Meselson-Stahl experiment, after one round of replication in light (¹⁴N) medium, all DNA was a single intermediate density. Which model did this immediately rule out?",
+      "options": ["The semiconservative model", "The conservative model", "The dispersive model", "All three models"],
+      "correctIndex": 1,
+      "explanation": "A single intermediate band means every molecule is half heavy/half light — one old strand and one new strand. The conservative model predicted two separate bands after one round (an intact heavy helix and a fully light one), so it is ruled out. The dispersive model is excluded later, after the second round."
+    },
+    {
+      "question": "Why is the lagging strand synthesized discontinuously as Okazaki fragments?",
+      "options": ["DNA ligase requires short fragments to work", "DNA polymerase builds only 5'→3', so on the antiparallel strand pointing away from the fork, synthesis occurs in backward bursts", "The lagging strand template is made of RNA", "Helicase keeps stopping on that strand"],
+      "correctIndex": 1,
+      "explanation": "DNA polymerase can only add to a 3' end, building 5'→3'. Because the templates are antiparallel, on one of them the 5'→3' direction points away from the advancing fork, so the polymerase makes short fragments (Okazaki fragments) as template is exposed. Ligase later joins them."
+    },
+    {
+      "question": "Which enzyme lays down the short RNA primer that DNA polymerase needs to begin synthesis?",
+      "options": ["Helicase", "Ligase", "Primase", "Topoisomerase"],
+      "correctIndex": 2,
+      "explanation": "Primase synthesizes the short RNA primer that provides a free 3' end for DNA polymerase to extend, since DNA polymerase cannot start a strand from scratch. Helicase unzips the helix, topoisomerase relieves strain, and ligase seals gaps."
+    },
+    {
+      "question": "Telomeres are repetitive DNA caps at the ends of chromosomes. What problem do they help solve?",
+      "options": ["They speed up replication", "They protect coding genes from being lost as linear chromosomes shorten with each replication", "They prevent mutations from occurring", "They make the DNA double-stranded"],
+      "correctIndex": 1,
+      "explanation": "Because the lagging strand can't be fully completed at a chromosome's end (the end-replication problem), linear chromosomes shorten slightly each division. Telomeres are non-coding buffer caps, so the shortening eats into disposable sequence rather than important genes. Telomerase can rebuild them in stem, germ, and many cancer cells."
+    },
+    {
+      "question": "What is the correct sequence of information flow in the central dogma?",
+      "options": ["Protein → RNA → DNA", "DNA → protein → RNA", "DNA → RNA → protein", "RNA → DNA → protein"],
+      "correctIndex": 2,
+      "explanation": "The central dogma is DNA → RNA → protein: DNA is transcribed into mRNA, which is translated into protein. (Retroviruses can run RNA → DNA via reverse transcriptase, but the standard flow is DNA → RNA → protein.)"
+    },
+    {
+      "question": "A DNA template strand reads 3'-TACGGT-5'. What mRNA is transcribed from it?",
+      "options": ["5'-AUGCCA-3'", "5'-ATGCCA-3'", "5'-UACGGU-3'", "5'-TACGGT-3'"],
+      "correctIndex": 0,
+      "explanation": "Transcription uses complementary base pairing with uracil replacing thymine: T→A, A→U, C→G, G→C, G→C, T→A gives AUGCCA, antiparallel and read 5'→3'. RNA never contains thymine, which eliminates the options with T."
+    },
+    {
+      "question": "What is the key difference between transcription and translation?",
+      "options": ["Transcription makes protein; translation makes RNA", "Transcription makes RNA from DNA; translation makes protein from mRNA", "Both make protein but in different locations", "Transcription occurs at the ribosome; translation occurs in the nucleus"],
+      "correctIndex": 1,
+      "explanation": "Transcription synthesizes RNA from a DNA template (same nucleic-acid 'language', in the nucleus), while translation builds a protein from mRNA codons (a new 'language', at the ribosome). Confusing the two is one of the most common AP Biology errors."
+    },
+    {
+      "question": "During RNA processing in eukaryotes, the spliceosome removes introns and joins exons. Which statement is correct?",
+      "options": ["Introns are the expressed coding regions", "Exons are removed and discarded", "Exons are the coding regions that are kept in the mature mRNA", "Splicing occurs in the cytoplasm"],
+      "correctIndex": 2,
+      "explanation": "Exons are EXpressed and kept in the mature mRNA; introns are intervening sequences that are removed. Splicing happens in the nucleus before the mRNA exits. Alternative splicing can keep different exons to make several proteins from one gene."
+    },
+    {
+      "question": "How many bases make up a codon, and what does each codon specify?",
+      "options": ["Two bases; one nucleotide", "Three bases; one amino acid", "Four bases; one protein", "One base; one amino acid"],
+      "correctIndex": 1,
+      "explanation": "A codon is three mRNA bases that specify one amino acid. With four bases in three positions there are 4³ = 64 codons, more than enough for the 20 amino acids, which is why the code is redundant."
+    },
+    {
+      "question": "What role does the anticodon of a tRNA play during translation?",
+      "options": ["It carries the amino acid", "It base-pairs with the complementary mRNA codon to ensure the correct amino acid is added", "It signals the start of transcription", "It caps the 5' end of the mRNA"],
+      "correctIndex": 1,
+      "explanation": "tRNA is an adapter: its anticodon base-pairs with the complementary mRNA codon, while its other end carries the specific amino acid. This pairing ensures the ribosome adds the right amino acid for each codon. Codons are on mRNA; anticodons are on tRNA."
+    },
+    {
+      "question": "The mRNA codon AUG is special because it...",
+      "options": ["is a stop codon", "signals the start of translation and codes for methionine", "codes for no amino acid", "is found only in prokaryotes"],
+      "correctIndex": 1,
+      "explanation": "AUG is the start codon: it marks where translation begins and also codes for methionine, so most new proteins start with methionine. Stop codons (UAA, UAG, UGA), by contrast, code for no amino acid and end translation."
+    },
+    {
+      "question": "An mRNA reads 5'-AUG GCA UUU UAA-3'. Using the genetic code, what polypeptide does it produce?",
+      "options": ["Met-Ala-Phe", "Met-Ala-Phe-Stop (four amino acids)", "Ala-Phe", "Met-Gly-Phe"],
+      "correctIndex": 0,
+      "explanation": "AUG = Met (start), GCA = Ala, UUU = Phe, UAA = stop. The protein is Met-Ala-Phe; the stop codon adds no amino acid but ends translation. The polypeptide therefore has three amino acids."
+    },
+    {
+      "question": "Why do prokaryotes lack the RNA processing steps (capping, tailing, splicing) seen in eukaryotes?",
+      "options": ["They have no DNA", "They have no nucleus, so transcription and translation occur together in the cytoplasm without a processing step", "Their mRNA is more stable", "They do not make proteins"],
+      "correctIndex": 1,
+      "explanation": "Prokaryotes have no nucleus, so there is no separation between transcription and translation — ribosomes can begin translating an mRNA while it is still being transcribed. Without a nuclear compartment and processing machinery, they do not cap, tail, or splice their mRNA."
+    },
+    {
+      "question": "Every cell in your body has the same DNA, yet a muscle cell and a nerve cell are very different. What explains this?",
+      "options": ["The cells contain different genes", "Differential gene expression: the cells express different subsets of the same genes", "Nerve cells have lost their muscle genes", "The cells use different genetic codes"],
+      "correctIndex": 1,
+      "explanation": "All body cells share the same genome; they differ because they express different subsets of their genes. Transcription factors and epigenetic marks turn certain genes on and others off, producing different proteins and cell types. Cells do not lose unused genes."
+    },
+    {
+      "question": "In the lac operon, what happens when lactose is present?",
+      "options": ["Lactose activates the repressor so it binds the operator tightly", "Lactose binds the repressor and changes its shape so it releases the operator, allowing transcription", "Lactose binds RNA polymerase directly", "Lactose is translated into digestive enzymes"],
+      "correctIndex": 1,
+      "explanation": "The lac operon is inducible and under negative control. Normally a repressor blocks the operator. Lactose binds the repressor, changing its shape so it falls off the operator, allowing RNA polymerase to transcribe the lactose-digesting genes — the operon turns on only when its substrate is present."
+    },
+    {
+      "question": "Which statement correctly contrasts the lac and trp operons?",
+      "options": ["Both are inducible", "The lac operon is inducible (off until lactose turns it on); the trp operon is repressible (on until tryptophan turns it off)", "The trp operon is inducible; the lac operon is repressible", "Neither responds to environmental molecules"],
+      "correctIndex": 1,
+      "explanation": "The lac operon (lactose breakdown) is inducible — normally off, switched on when lactose inactivates the repressor. The trp operon (tryptophan synthesis) is repressible — normally on, switched off when tryptophan activates the repressor. Both let bacteria match transcription to environmental molecules."
+    },
+    {
+      "question": "Epigenetic modifications such as DNA methylation change gene expression by...",
+      "options": ["mutating the DNA sequence", "altering which genes are accessible/expressed without changing the DNA sequence", "deleting whole chromosomes", "changing the genetic code"],
+      "correctIndex": 1,
+      "explanation": "Epigenetic marks (DNA methylation, histone modification) regulate which genes are turned on or off without altering the underlying DNA sequence. Methylation typically silences genes by condensing chromatin. These marks can be heritable through cell division and help lock in cell differentiation — they are not mutations."
+    },
+    {
+      "question": "In eukaryotes, which proteins are the major controllers of which genes get transcribed?",
+      "options": ["Restriction enzymes", "Transcription factors (activators and repressors)", "Telomerase", "Ribosomes"],
+      "correctIndex": 1,
+      "explanation": "Transcription factors bind specific DNA sequences (promoters and enhancers) to activate or repress transcription, making them the major determinants of which genes a cell expresses — and therefore of cell identity. This is the main control point of eukaryotic gene expression."
+    },
+    {
+      "question": "A single base substitution changes a codon, but it still codes for the same amino acid. This is a...",
+      "options": ["nonsense mutation", "missense mutation", "silent mutation", "frameshift mutation"],
+      "correctIndex": 2,
+      "explanation": "A silent mutation changes the codon but not the amino acid, made possible by the redundancy of the genetic code (the new codon is a synonym). The protein is unchanged. Missense changes the amino acid, nonsense creates a stop, and frameshift comes from insertions/deletions."
+    },
+    {
+      "question": "A single nucleotide is deleted near the start of a gene's coding sequence. Why is this usually more damaging than a substitution?",
+      "options": ["Deletions always create stop codons", "The deletion shifts the reading frame, so every codon downstream is regrouped and misread", "Substitutions never change the protein", "Deletions break the DNA backbone permanently"],
+      "correctIndex": 1,
+      "explanation": "A single-base deletion (not a multiple of three) causes a frameshift: because codons are read in non-overlapping triplets from a fixed start, every codon after the deletion is regrouped and misread, usually garbling the protein and often adding a premature stop. A substitution changes at most one codon."
+    },
+    {
+      "question": "A mutation changes an amino-acid codon into a stop codon, ending the protein early. This is a...",
+      "options": ["silent mutation", "missense mutation", "nonsense mutation", "synonymous mutation"],
+      "correctIndex": 2,
+      "explanation": "A nonsense mutation converts an amino-acid codon into a premature stop codon, truncating the protein. The shortened product is usually nonfunctional, so nonsense mutations are often severe."
+    },
+    {
+      "question": "Which type of mutation can be passed on to offspring and contribute to evolution?",
+      "options": ["Only somatic mutations", "Only mutations in skin cells", "Germ-line mutations (in cells that produce gametes)", "No mutations are heritable"],
+      "correctIndex": 2,
+      "explanation": "Only germ-line mutations — those in cells that produce eggs or sperm — are inherited by offspring and can fuel evolution. Somatic (body-cell) mutations affect only the individual and are not passed on. Mutation is the original source of new alleles."
+    },
+    {
+      "question": "In gel electrophoresis, which DNA fragments travel farthest from the wells?",
+      "options": ["The largest fragments", "The smallest fragments", "Positively charged fragments", "Fragments with the most guanine"],
+      "correctIndex": 1,
+      "explanation": "DNA is negatively charged and moves toward the positive electrode; the gel sieves fragments by size, so the smallest fragments travel farthest and the largest stay near the wells. 'Farther = smaller' is the key rule for reading a gel."
+    },
+    {
+      "question": "A biotech company inserts the human insulin gene into bacteria, which then produce functional human insulin. Why does this work?",
+      "options": ["Bacteria and humans have identical genomes", "The genetic code is nearly universal, so bacteria read the human codons the same way humans do", "Bacteria naturally make insulin", "Restriction enzymes translate the gene"],
+      "correctIndex": 1,
+      "explanation": "Recombinant protein production works because the genetic code is nearly universal: the same codons specify the same amino acids in bacteria and humans, so a transformed bacterium transcribes and translates the human gene to make functional insulin. Bacteria don't share the human genome or naturally make insulin."
+    },
+    {
+      "question": "Which pair correctly matches a biotechnology tool to its function?",
+      "options": ["PCR — separates DNA fragments by size", "Restriction enzymes — join DNA fragments together", "CRISPR-Cas9 — precisely cuts and edits DNA at a targeted sequence", "Gel electrophoresis — amplifies DNA"],
+      "correctIndex": 2,
+      "explanation": "CRISPR-Cas9 uses a guide RNA to direct the Cas9 'scissors' to a specific DNA sequence for precise editing. PCR amplifies DNA (not separates), restriction enzymes cut DNA (ligase joins it), and gel electrophoresis separates by size (it doesn't amplify). Keeping these jobs straight is frequently tested."
+    },
+    {
+      "question": "Restriction enzymes are useful for making recombinant DNA because they...",
+      "options": ["translate genes into proteins", "cut DNA at specific sequences, often leaving complementary 'sticky ends'", "copy DNA millions of times", "seal gaps in the DNA backbone"],
+      "correctIndex": 1,
+      "explanation": "Restriction enzymes cut DNA at specific recognition sequences, frequently leaving short single-stranded 'sticky ends.' Cutting a gene and a plasmid with the same enzyme creates matching sticky ends so they can base-pair, after which DNA ligase seals them into recombinant DNA."
+    }
+  ]
+}

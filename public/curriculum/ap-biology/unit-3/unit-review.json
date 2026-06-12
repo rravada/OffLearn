@@ -1,0 +1,167 @@
+{
+  "id": "ap-bio-unit3-review",
+  "title": "Unit 3 Review: Cellular Energetics",
+  "subject": "AP Biology",
+  "unit": "Cellular Energetics",
+  "type": "unit-review",
+  "questionsPerAttempt": 10,
+  "isAssessment": true,
+  "bank": [
+    {
+      "question": "Which statement best describes how an enzyme speeds up a reaction?",
+      "options": ["It adds energy to the reactants to push the reaction forward", "It lowers the activation energy, providing an easier pathway", "It raises the temperature of the surrounding solution", "It increases the total free energy released by the reaction"],
+      "correctIndex": 1,
+      "explanation": "Enzymes lower the activation energy so a greater fraction of molecules can react. They do not add energy, do not change the net energy of the reaction, and do not change the final equilibrium — only how fast it is reached."
+    },
+    {
+      "question": "An enzyme's reaction rate rises as substrate concentration increases, then levels off at a plateau even though the enzyme is undamaged. What explains the plateau?",
+      "options": ["The enzyme has denatured", "All active sites are occupied (the enzyme is saturated)", "The activation energy has increased", "The substrate has become a competitive inhibitor"],
+      "correctIndex": 1,
+      "explanation": "When every active site is busy, the enzyme is saturated and the rate maxes out; adding more substrate cannot help. This is not denaturation (the enzyme is fine) — only adding more enzyme would raise the rate."
+    },
+    {
+      "question": "An inhibitor slows an enzyme, but adding excess substrate fully restores the rate. This inhibitor is most likely...",
+      "options": ["A noncompetitive inhibitor binding an allosteric site", "A competitive inhibitor binding the active site", "A cofactor", "A denaturing agent"],
+      "correctIndex": 1,
+      "explanation": "If excess substrate reverses the inhibition, the inhibitor and substrate compete for the same place — the active site — so it is competitive. A noncompetitive inhibitor binds elsewhere and cannot be outcompeted by added substrate."
+    },
+    {
+      "question": "In feedback (end-product) inhibition of a metabolic pathway, the final product typically...",
+      "options": ["Activates the last enzyme in the pathway", "Binds an allosteric site on an early enzyme, shutting the pathway off", "Permanently denatures every enzyme in the pathway", "Is converted back into the starting reactant"],
+      "correctIndex": 1,
+      "explanation": "Feedback inhibition uses the pathway's end product as an allosteric inhibitor of an enzyme early in the same pathway. When enough product accumulates, it switches off its own production, preventing wasteful overproduction."
+    },
+    {
+      "question": "A human enzyme shows maximum activity at 37°C, with activity dropping sharply at 50°C. The sharp drop at high temperature is best explained by...",
+      "options": ["Saturation of the active sites", "Denaturation that distorts the active site", "An increase in substrate concentration", "A decrease in activation energy"],
+      "correctIndex": 1,
+      "explanation": "Past the optimal temperature, heat disrupts the enzyme's 3D shape (denaturation), deforming the active site so substrate can no longer bind. The steep drop on a temperature graph is the signature of denaturation, not saturation."
+    },
+    {
+      "question": "A reaction has ΔG = −5.1 kcal/mol. This reaction is...",
+      "options": ["Endergonic and nonspontaneous", "Exergonic and spontaneous", "At equilibrium", "Impossible without an enzyme"],
+      "correctIndex": 1,
+      "explanation": "A negative ΔG means the reaction releases free energy and is exergonic and spontaneous (energetically favorable). 'Spontaneous' refers to favorability, not speed — it may still need an enzyme to go quickly."
+    },
+    {
+      "question": "Which pairing is correct?",
+      "options": ["Endergonic = releases energy = negative ΔG", "Exergonic = requires energy = positive ΔG", "Exergonic = releases energy = negative ΔG", "Endergonic = spontaneous = negative ΔG"],
+      "correctIndex": 2,
+      "explanation": "Exergonic reactions release free energy and have a negative ΔG (spontaneous). Endergonic reactions require energy and have a positive ΔG (nonspontaneous). Students often flip the signs because 'negative' sounds bad."
+    },
+    {
+      "question": "The hydrolysis of ATP to ADP + Pi releases energy. Where is this energy stored before hydrolysis?",
+      "options": ["In the adenine base", "In the ribose sugar", "In the bonds between the phosphate groups", "In the hydrogen atoms of water"],
+      "correctIndex": 2,
+      "explanation": "ATP's energy is associated with the bonds linking its three negatively charged phosphate groups, which repel one another. Breaking the bond to the terminal phosphate by adding water releases usable free energy."
+    },
+    {
+      "question": "How does a cell drive an endergonic reaction such as building a macromolecule?",
+      "options": ["By waiting until it becomes spontaneous", "By coupling it to the exergonic hydrolysis of ATP", "By using an enzyme to make ΔG negative", "By lowering the temperature"],
+      "correctIndex": 1,
+      "explanation": "Energy coupling pairs an endergonic reaction with the exergonic hydrolysis of ATP. Because ATP releases more energy than the reaction needs, the combined ΔG is negative and the process proceeds. Enzymes change rate, not ΔG."
+    },
+    {
+      "question": "According to the second law of thermodynamics, every energy transformation in a cell...",
+      "options": ["Creates new energy", "Is 100% efficient", "Increases the entropy of the universe and loses some energy as heat", "Decreases the disorder of the universe"],
+      "correctIndex": 2,
+      "explanation": "The second law says each energy transfer increases the universe's entropy and loses some usable energy as heat. This is why a cell needs a continuous input of energy and cannot recycle the same energy forever."
+    },
+    {
+      "question": "A living organism builds and maintains internal order without violating the second law because it...",
+      "options": ["Is a closed system that recycles all its energy", "Creates energy from nothing", "Is an open system that exports even more disorder to its surroundings", "Does not actually increase in order"],
+      "correctIndex": 2,
+      "explanation": "Organisms are open systems: they build internal order while releasing heat and breaking food into simpler, more disordered waste, increasing the disorder of the surroundings more than they decrease their own. The second law is honored."
+    },
+    {
+      "question": "What is the overall equation for photosynthesis?",
+      "options": ["C₆H₁₂O₆ + 6 O₂ → 6 CO₂ + 6 H₂O + energy", "6 CO₂ + 6 H₂O + light → C₆H₁₂O₆ + 6 O₂", "6 O₂ + 6 H₂O → C₆H₁₂O₆ + light", "C₆H₁₂O₆ → 6 CO₂ + energy"],
+      "correctIndex": 1,
+      "explanation": "Photosynthesis uses light energy to convert carbon dioxide and water into glucose and oxygen: 6 CO₂ + 6 H₂O + light → C₆H₁₂O₆ + 6 O₂. It is endergonic, storing energy in glucose. The first option is the equation for respiration."
+    },
+    {
+      "question": "In a chloroplast, the light-dependent reactions occur in the ___ and the Calvin cycle occurs in the ___.",
+      "options": ["stroma; thylakoid membrane", "thylakoid membrane; stroma", "matrix; cristae", "cytoplasm; stroma"],
+      "correctIndex": 1,
+      "explanation": "The light reactions happen in the thylakoid membranes, where chlorophyll and the electron transport machinery sit. The Calvin cycle happens in the surrounding fluid, the stroma."
+    },
+    {
+      "question": "A plant is supplied with water labeled with heavy oxygen (H₂¹⁸O). The labeled ¹⁸O will appear in...",
+      "options": ["the glucose produced", "the oxygen gas (O₂) released", "the carbon dioxide taken in", "the ATP made in the light reactions"],
+      "correctIndex": 1,
+      "explanation": "The O₂ released in photosynthesis comes from splitting water (photolysis), not from CO₂. A heavy-oxygen label in water therefore appears in the released oxygen gas — the classic experiment proving water is the oxygen source."
+    },
+    {
+      "question": "Which products of the light-dependent reactions are used to power the Calvin cycle?",
+      "options": ["Glucose and O₂", "ATP and NADPH", "CO₂ and H₂O", "ADP and NADP⁺"],
+      "correctIndex": 1,
+      "explanation": "The light reactions make ATP and NADPH, which the Calvin cycle then spends to fix CO₂ into sugar. The spent carriers (ADP and NADP⁺) return to the thylakoid to be recharged."
+    },
+    {
+      "question": "Why is the Calvin cycle called 'light-independent' even though it normally occurs during the day?",
+      "options": ["It releases light as a by-product", "It does not directly use light but depends on the ATP and NADPH made by the light reactions", "It only runs in complete darkness", "It uses moonlight instead of sunlight"],
+      "correctIndex": 1,
+      "explanation": "The Calvin cycle does not use light directly, but it requires the ATP and NADPH produced by the light reactions, so in practice it runs in daylight. It does not happen at night, despite the outdated term 'dark reactions.'"
+    },
+    {
+      "question": "The enzyme rubisco performs which key step of the Calvin cycle?",
+      "options": ["Splitting water to release oxygen", "Pumping protons across the thylakoid membrane", "Fixing CO₂ by attaching it to RuBP", "Making NADPH from NADP⁺"],
+      "correctIndex": 2,
+      "explanation": "Rubisco catalyzes carbon fixation, attaching atmospheric CO₂ to the five-carbon molecule RuBP. Water-splitting and NADPH formation occur in the light reactions, not the Calvin cycle."
+    },
+    {
+      "question": "On a graph, photosynthesis rate rises with increasing light intensity and then plateaus. The plateau most likely means...",
+      "options": ["The plant has died", "Some other factor, such as CO₂ or temperature, has become limiting", "Light has become toxic", "Chlorophyll has been destroyed"],
+      "correctIndex": 1,
+      "explanation": "A rate that rises then plateaus indicates a limiting factor: at the plateau, light is no longer limiting and another required factor (often CO₂ concentration or temperature) now caps the rate. Increasing that factor would raise the plateau."
+    },
+    {
+      "question": "What is the overall equation for aerobic cellular respiration?",
+      "options": ["6 CO₂ + 6 H₂O + light → C₆H₁₂O₆ + 6 O₂", "C₆H₁₂O₆ + 6 O₂ → 6 CO₂ + 6 H₂O + energy", "C₆H₁₂O₆ → 2 lactate + energy", "6 CO₂ + 6 O₂ → C₆H₁₂O₆ + 6 H₂O"],
+      "correctIndex": 1,
+      "explanation": "Aerobic respiration breaks glucose down using oxygen to produce carbon dioxide, water, and energy: C₆H₁₂O₆ + 6 O₂ → 6 CO₂ + 6 H₂O + energy. It is essentially photosynthesis run in reverse and is exergonic."
+    },
+    {
+      "question": "Which stage of cellular respiration occurs in the cytoplasm and does not require oxygen?",
+      "options": ["Glycolysis", "Pyruvate oxidation", "The Krebs cycle", "Oxidative phosphorylation"],
+      "correctIndex": 0,
+      "explanation": "Glycolysis occurs in the cytoplasm, requires no oxygen, and splits glucose into two pyruvate, netting 2 ATP and 2 NADH. The other three stages occur inside the mitochondrion."
+    },
+    {
+      "question": "Most of the ATP from aerobic respiration is produced during...",
+      "options": ["Glycolysis", "Pyruvate oxidation", "The Krebs cycle", "Oxidative phosphorylation (the electron transport chain and chemiosmosis)"],
+      "correctIndex": 3,
+      "explanation": "Glycolysis and the Krebs cycle make only a small amount of ATP directly; their main products are the electron carriers NADH and FADH₂. About 26–28 of the ~30–32 ATP per glucose come from oxidative phosphorylation."
+    },
+    {
+      "question": "What is the role of oxygen in cellular respiration?",
+      "options": ["It is the final electron acceptor at the end of the electron transport chain", "It directly burns glucose in the cytoplasm", "It is split to release energy in glycolysis", "It carries electrons through the Krebs cycle"],
+      "correctIndex": 0,
+      "explanation": "Oxygen's only direct role is to accept electrons at the end of the electron transport chain, forming water. Without it the chain backs up, the proton gradient collapses, and oxidative phosphorylation stops."
+    },
+    {
+      "question": "The carbon dioxide you exhale is produced mainly during which stages?",
+      "options": ["Glycolysis and the electron transport chain", "Pyruvate oxidation and the Krebs cycle", "Only oxidative phosphorylation", "Only glycolysis"],
+      "correctIndex": 1,
+      "explanation": "The carbons of glucose are released as CO₂ during pyruvate oxidation and the Krebs cycle. The exhaled CO₂ does not come from the inhaled oxygen, which instead leaves the body as water."
+    },
+    {
+      "question": "A toxin blocks the electron transport chain so oxygen can no longer accept electrons. The most direct result is that...",
+      "options": ["Glycolysis instantly stops", "The proton gradient collapses and ATP synthase stops making ATP", "The cell makes far more ATP", "Photosynthesis begins in the mitochondrion"],
+      "correctIndex": 1,
+      "explanation": "If oxygen cannot accept electrons, the chain backs up, no more H⁺ is pumped, the proton gradient collapses, and ATP synthase halts — so oxidative phosphorylation stops. This is why ETC poisons like cyanide are lethal."
+    },
+    {
+      "question": "What is the main purpose of fermentation?",
+      "options": ["To make large amounts of extra ATP", "To regenerate NAD⁺ so glycolysis can continue without oxygen", "To produce oxygen for the cell", "To build glucose from pyruvate"],
+      "correctIndex": 1,
+      "explanation": "Fermentation does not make extra ATP (the only ATP is the 2 from glycolysis). Its purpose is to recycle NADH back to NAD⁺ so that glycolysis can keep running when oxygen is unavailable."
+    },
+    {
+      "question": "Photosynthesis and cellular respiration both make ATP using which shared mechanism?",
+      "options": ["Splitting water with rubisco", "Chemiosmosis: a proton gradient driving ATP synthase", "Lactic acid fermentation", "Direct phosphorylation by sunlight"],
+      "correctIndex": 1,
+      "explanation": "Both processes build a proton gradient across a membrane and let H⁺ flow back through ATP synthase to make ATP — chemiosmosis. This shared machinery reflects a common evolutionary origin of the chloroplast and mitochondrion."
+    }
+  ]
+}

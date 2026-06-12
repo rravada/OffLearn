@@ -1,0 +1,115 @@
+{
+  "id": "ap-bio-u5-chromosomal-inheritance",
+  "title": "The Chromosomal Basis of Inheritance",
+  "subject": "AP Biology",
+  "unit": "Heredity",
+  "track": "ap",
+  "difficulty": "ap",
+  "duration": "40 min",
+  "objectives": [
+    "Explain how sex chromosomes determine sex and how X-linked genes are inherited",
+    "Predict inheritance patterns and ratios for sex-linked traits",
+    "Explain gene linkage and how recombination frequency reveals gene order",
+    "Interpret pedigrees and connect inheritance patterns to the behavior of chromosomes"
+  ],
+  "sections": [
+    {
+      "type": "explanation",
+      "heading": "Genes Ride on Chromosomes",
+      "content": "Mendel talked about abstract 'factors' separating and assorting, but he never knew what they physically WERE or where they lived. The answer, worked out in the early 1900s, is the chromosome theory of inheritance: genes are located on chromosomes, and it is the behavior of chromosomes during meiosis that produces Mendel's patterns. This lesson is where genetics and the physical chromosome finally fuse — and where you'll see inheritance patterns that LOOK like exceptions to Mendel but are really just consequences of which chromosome a gene sits on.\n\nThe decisive evidence came from fruit flies. Thomas Hunt Morgan found a male fly with white eyes instead of the normal red, and when he tracked the trait through crosses, it didn't follow simple Mendelian ratios — instead, the trait's inheritance was tied to the fly's SEX. The only way to explain it was that the eye-color gene physically resides on a sex chromosome. That single white-eyed fly nailed down the idea that specific genes live on specific chromosomes.\n\nTwo big consequences follow from genes being physically on chromosomes, and both are heavily tested. First, genes on the SEX chromosomes are inherited differently in males and females (sex-linked inheritance), producing lopsided patterns Mendel never saw in peas. Second, genes that sit CLOSE together on the same chromosome tend to travel together into gametes (linkage), violating independent assortment — and the rare cases where they separate (via crossing over) actually let us MAP where genes are. We'll take each in turn, then use pedigrees to read inheritance in real families."
+    },
+    {
+      "type": "explanation",
+      "heading": "Sex Chromosomes and Sex-Linked Inheritance",
+      "content": "In humans, 22 of the 23 chromosome pairs are autosomes (non-sex chromosomes), and one pair is the sex chromosomes, X and Y. Females are XX; males are XY. Because a mother (XX) can only give an X, while a father (XY) gives either his X (→ daughter) or his Y (→ son), the FATHER's gamete determines a child's sex. The Y chromosome carries the master gene that triggers male development; it is small and carries few other genes.\n\nThe X chromosome, by contrast, is large and carries over a thousand genes that have nothing to do with sex — genes for things like color vision and blood clotting. A gene on the X chromosome is called X-linked (or sex-linked), and X-linked genes follow a distinctive inheritance pattern because of the XX/XY difference.\n\nHere's the crux: a female has TWO X chromosomes, so for an X-linked recessive trait she needs TWO copies of the recessive allele to show it — one bad copy is masked by her other X. But a male has only ONE X (and the Y has no matching gene to mask it), so a single recessive allele on his lone X is automatically expressed. This is why X-linked recessive disorders — red-green color blindness, hemophilia, Duchenne muscular dystrophy — are far MORE COMMON IN MALES. A male needs only one recessive allele; a female needs two. A female with one copy is an unaffected 'carrier' who can pass it to her sons.\n\nNotation matters: write X-linked alleles as superscripts on the X, e.g., XᴴXʰ (carrier female), Xʰ Y (affected male). A son gets his single X from his MOTHER (never his father, who gives him the Y), so an affected son inherited the allele from his mother — a key reasoning step on the exam."
+    },
+    {
+      "type": "example",
+      "heading": "A Sex-Linked Cross: Color Blindness",
+      "content": "Red-green color blindness is X-linked recessive. Let Xᴺ = normal vision allele, Xⁿ = color-blind allele. Let's cross a carrier mother (XᴺXⁿ — normal vision, but carries the allele) with a normal-vision father (XᴺY).\n\nSet up the cross. Mother's gametes: Xᴺ and Xⁿ. Father's gametes: Xᴺ and Y. Build the Punnett square:\n  Xᴺ (mom) × Xᴺ (dad) = XᴺXᴺ — normal daughter\n  Xⁿ (mom) × Xᴺ (dad) = XᴺXⁿ — carrier daughter (normal vision)\n  Xᴺ (mom) × Y (dad) = XᴺY — normal son\n  Xⁿ (mom) × Y (dad) = XⁿY — COLOR-BLIND son\n\nNow read the results by sex, which is the whole point of sex-linkage:\n  DAUGHTERS: all have normal vision (half are carriers). NONE are color-blind, because each daughter got a normal Xᴺ from her father.\n  SONS: half are normal (XᴺY), half are color-blind (XⁿY). The color-blind sons got their lone X — carrying the recessive allele — from their carrier mother.\n\nThe pattern to recognize: an X-linked recessive trait often appears in SONS of carrier mothers, skips generations, and shows up far more in males. A color-blind son cannot have gotten the allele from his father (dad gave him the Y), so trace it to the mother's side. Also notice the daughters: a daughter is affected only if she gets a recessive X from BOTH parents — so for a daughter to be color-blind, her father must be color-blind AND her mother at least a carrier. This sex-specific reasoning — analyzing sons and daughters separately — is exactly what sex-linked AP questions demand."
+    },
+    {
+      "type": "quiz",
+      "question": "Hemophilia is X-linked recessive. A man with hemophilia (XʰY) has children with a woman who is not a carrier (XᴴXᴴ). What is expected in their children?",
+      "options": [
+        "All sons will have hemophilia",
+        "All daughters will have hemophilia",
+        "No children will have hemophilia, but all daughters will be carriers",
+        "Half of all children will have hemophilia regardless of sex"
+      ],
+      "correctIndex": 2,
+      "explanation": "The father passes his Xʰ only to daughters (sons get his Y), so every daughter becomes a carrier (XᴴXʰ) but is unaffected because she has a normal Xᴴ from her mother. Sons receive the father's Y and the mother's normal Xᴴ, so no sons are affected. None of the children have hemophilia. This shows that affected fathers pass X-linked alleles to daughters, not sons."
+    },
+    {
+      "type": "explanation",
+      "heading": "Gene Linkage and Recombination Mapping",
+      "content": "Mendel's law of independent assortment works for genes on DIFFERENT chromosomes. But what about two genes on the SAME chromosome? They tend to be inherited TOGETHER, because they ride on the same physical piece of DNA into the same gamete. These are called linked genes, and they violate independent assortment — a dihybrid cross of linked genes does NOT give the expected 9:3:3:1, because the parental combinations show up far more often than predicted.\n\nBut linkage isn't absolute, and the reason is crossing over (from the meiosis lesson). During Meiosis I, homologs swap segments, which can separate two linked genes onto different chromosomes, producing 'recombinant' gametes with new allele combinations. The frequency of recombination depends on DISTANCE: the FARTHER apart two genes are on a chromosome, the MORE likely a crossover happens somewhere between them, and the more recombinants appear. Genes very close together are almost always inherited together (few recombinants); genes far apart recombine often.\n\nThis distance-dependence is wonderfully useful: recombination frequency lets us MAP genes. Geneticists measure the percentage of recombinant offspring and use it as a measure of distance — 1% recombination = 1 map unit (centimorgan). By comparing recombination frequencies among several genes, you can deduce their ORDER and relative spacing along the chromosome. For example, if genes A and B recombine 5% of the time, and B and C recombine 12% of the time, the genes are arranged in a line with B between A and C at those relative distances. The key insight the AP exam tests: a LOW recombination frequency means genes are CLOSE together; a HIGH frequency (approaching the 50% maximum, which looks like independent assortment) means they're FAR apart or on different chromosomes."
+    },
+    {
+      "type": "table",
+      "heading": "Linkage and Recombination",
+      "headers": ["Situation", "Recombination frequency", "Interpretation"],
+      "rows": [
+        ["Genes very close on same chromosome", "Low (e.g., 2%)", "Tightly linked; usually inherited together"],
+        ["Genes far apart on same chromosome", "Higher (e.g., 30%)", "Linked but often separated by crossing over"],
+        ["Genes on different chromosomes", "50% (maximum)", "Independent assortment (Mendel's law)"],
+        ["1% recombination", "= 1 map unit (centimorgan)", "Used to map gene order and distance"]
+      ]
+    },
+    {
+      "type": "quiz",
+      "question": "A dihybrid cross of two linked genes produces far more parental-type offspring and far fewer recombinant types than the 9:3:3:1 ratio predicts. What is the best explanation?",
+      "options": [
+        "The genes are on different chromosomes and assort independently",
+        "The two genes are linked (on the same chromosome), so they tend to be inherited together",
+        "One gene is epistatic to the other",
+        "A nondisjunction event occurred"
+      ],
+      "correctIndex": 1,
+      "explanation": "An excess of parental types and a shortage of recombinants is the signature of linked genes — genes on the same chromosome travel together into gametes, violating independent assortment. The few recombinants that do appear result from crossing over, and their frequency reflects the distance between the genes."
+    },
+    {
+      "type": "steps",
+      "heading": "Reading a Pedigree",
+      "steps": [
+        {
+          "title": "Learn the symbols",
+          "content": "Squares are males, circles are females. Shaded/filled symbols show individuals expressing the trait; unshaded are unaffected. Horizontal lines connect mates; vertical lines connect parents to offspring."
+        },
+        {
+          "title": "Decide dominant vs. recessive",
+          "content": "If two unaffected parents have an affected child, the trait is RECESSIVE (the parents are carriers hiding it). If every affected child has at least one affected parent (trait never skips), it is likely DOMINANT."
+        },
+        {
+          "title": "Decide autosomal vs. X-linked",
+          "content": "If the trait affects males and females about equally, suspect AUTOSOMAL. If it appears mostly in males and passes through unaffected carrier mothers, suspect X-LINKED recessive. An affected father passing to ALL daughters but NO sons is a strong X-linked signal."
+        },
+        {
+          "title": "Assign genotypes and test your hypothesis",
+          "content": "Work out genotypes consistent with the pattern (e.g., affected recessive = aa; carriers = Aa). Check that every individual fits, and use the pattern to predict probabilities for future offspring."
+        }
+      ]
+    },
+    {
+      "type": "keypoint",
+      "content": "Genes reside on chromosomes, so X-linked recessive traits appear more often in males (who have a single X), and genes close together on the same chromosome are linked (inherited together). Recombination frequency measures the distance between linked genes, and pedigrees reveal inheritance patterns in families."
+    },
+    {
+      "type": "callout",
+      "variant": "warning",
+      "heading": "Sons Get Their X From Mom; Linkage Breaks Independent Assortment",
+      "content": "The most-tested chromosomal-inheritance traps: (1) A son inherits his single X from his MOTHER and his Y from his father — so an affected son's X-linked allele came from his MOTHER, never his father. (2) X-linked recessive traits are more common in MALES because one recessive allele on their lone X is expressed (no second X to mask it). (3) An affected father passes his X-linked allele to ALL his daughters (making them carriers/affected) and NONE of his sons. (4) Linked genes (same chromosome) do NOT show independent assortment — expect more parental types than 9:3:3:1 predicts. (5) Recombination frequency: LOW = genes CLOSE together; ~50% = far apart or on different chromosomes (looks like independent assortment). Don't reverse this. (6) In pedigrees, two unaffected parents with an affected child means the trait is RECESSIVE."
+    },
+    {
+      "type": "callout",
+      "variant": "tip",
+      "heading": "How AP Tests Chromosomal Inheritance",
+      "content": "Point-winners: (1) For sex-linked crosses, ALWAYS analyze sons and daughters separately and write alleles as superscripts on the X (e.g., XᴴXʰ, XʰY). (2) Trace an affected son's X-linked allele to his mother. (3) For linkage, recognize that fewer recombinants than expected means genes are linked, and use recombination % as map distance (1% = 1 map unit) to order genes. (4) For pedigrees, apply the two-question method: dominant vs. recessive (does it skip generations / appear from unaffected parents?), then autosomal vs. X-linked (is it sex-biased?). (5) Connect every pattern back to chromosome behavior in meiosis — that's the unifying theme. (6) Watch command words: 'predict the ratio,' 'determine the mode of inheritance,' and 'justify' all want explicit chromosomal reasoning."
+    },
+    {
+      "type": "deepdive",
+      "heading": "From Fly Eyes to the Human Genome",
+      "content": "The chromosome theory of inheritance — that genes live at specific places on specific chromosomes — launched a century of discovery that runs straight to the genetic medicine of today. Morgan's white-eyed fly and his student Alfred Sturtevant's realization that recombination frequencies could be turned into the first-ever 'gene map' (drawn by an undergraduate in a single night, the story goes) gave biologists their first tool to locate genes physically. That basic logic — using how often genes are inherited together to figure out where they sit — scaled up over decades into the genetic linkage maps that helped researchers hunt down disease genes, and ultimately into the Human Genome Project, which read out the location of all roughly 20,000 human genes. Every genetic test that pinpoints a mutation builds on the idea that genes have addresses on chromosomes.\n\nThe sex-linkage you learned has profound human consequences. Because males have a single X, X-linked recessive disorders like hemophilia and color blindness fall disproportionately on boys and men, and these conditions famously threaded through royal families — hemophilia spread through Queen Victoria's descendants across the thrones of Europe, a pedigree puzzle with real historical weight. Understanding sex-linkage also led to one of biology's most elegant findings: because females have two X chromosomes but males only one, female cells silence one X at random in each cell (X-inactivation), which is literally why calico cats have patches — each patch is a clone of cells expressing a different X-linked coat-color allele. A calico cat is a living pedigree of X-inactivation.\n\nThis lesson ties the whole heredity unit together and points forward. Chromosomal inheritance is the physical fulfillment of Mendel (his abstract factors are real genes on real chromosomes), it depends entirely on the meiosis you learned first (segregation, independent assortment, and crossing over are chromosome movements), and it sets up Unit 6, where you'll zoom in to the molecular level and ask what a gene actually IS and how it's expressed. It even reaches into Unit 7: the recombination that lets us map genes is also a powerful generator of the genetic variation evolution requires, and linked gene complexes can be inherited and selected as units. From a single odd-eyed fruit fly to mapping the entire human genome, the through-line is one idea you now own: heredity is the behavior of chromosomes, made visible." }
+  ],
+  "aiContext": "This AP Biology Unit 5 lesson covers the chromosomal basis of inheritance (CED topics 5.5-5.7): the chromosome theory, sex chromosomes and sex-linked (X-linked) inheritance, gene linkage and recombination mapping, and pedigree analysis. The central unifying idea is that genes reside on chromosomes, so Mendel's patterns and their 'exceptions' both follow from chromosome behavior in meiosis. For sex linkage, the must-know logic: females are XX, males XY; a son inherits his single X from his MOTHER and his Y from his father, so an affected son's X-linked allele always came from his mother; X-linked recessive traits (color blindness, hemophilia, Duchenne MD) are more common in males because one recessive allele on the lone X is expressed with no second X to mask it; an affected father passes his X-linked allele to ALL daughters and NO sons. Always analyze sons and daughters separately and use superscript notation (XᴴXʰ, XʰY). For linkage: genes on the same chromosome are inherited together and violate independent assortment (fewer recombinants/more parental types than 9:3:3:1); crossing over separates them at a frequency proportional to distance, so recombination frequency maps genes (1% = 1 map unit; LOW% = close together; ~50% = far apart or different chromosomes, resembling independent assortment). For pedigrees, teach the two-question method: dominant vs recessive (recessive if two unaffected parents have an affected child / trait skips generations) then autosomal vs X-linked (X-linked if male-biased and passing through carrier mothers). Connect to meiosis (the physical basis), to Mendel (chromosomes fulfill his abstract factors), forward to molecular gene expression (Unit 6) and to recombination as a source of evolutionary variation (Unit 7); mention X-inactivation (calico cats) and the Human Genome Project. On the exam expect sex-linked crosses analyzed by sex, recombination-frequency gene mapping, and pedigree mode-of-inheritance determination."
+}

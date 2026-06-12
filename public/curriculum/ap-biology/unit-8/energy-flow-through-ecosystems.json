@@ -1,0 +1,117 @@
+{
+  "id": "ap-bio-u8-energy-flow-through-ecosystems",
+  "title": "Energy Flow Through Ecosystems",
+  "subject": "AP Biology",
+  "unit": "Ecology",
+  "track": "ap",
+  "difficulty": "ap",
+  "duration": "45 min",
+  "objectives": [
+    "Trace energy flow from producers through trophic levels in food chains and food webs",
+    "Apply the 10% rule to explain energy loss between trophic levels and the shape of energy pyramids",
+    "Distinguish energy flow (one-way) from the cycling of matter in ecosystems",
+    "Explain how biogeochemical cycles (carbon, nitrogen) move matter and how humans disrupt them"
+  ],
+  "sections": [
+    {
+      "type": "explanation",
+      "heading": "Following the Energy",
+      "content": "Every meal you eat, every move you make, traces back to a single source: the sun. Ecosystems run on energy, and following that energy as it enters, moves through, and leaves an ecosystem is one of the most powerful ways to understand how life is organized. An ecosystem is all the living organisms in an area PLUS the nonliving (abiotic) environment they interact with — and it operates on two grand principles you already know from thermodynamics (Unit 3): energy FLOWS through (one-way, entering as sunlight and ultimately leaving as heat), while matter CYCLES (the same atoms are used over and over). Keeping those two ideas distinct is the master key to this entire lesson.\n\nEnergy enters most ecosystems when producers (autotrophs) — plants, algae, cyanobacteria — capture sunlight and convert it to chemical energy through photosynthesis (Unit 3), building organic molecules like glucose. Producers are the foundation: they make the food that powers everything else. Consumers (heterotrophs) get energy by eating other organisms: primary consumers (herbivores) eat producers, secondary consumers eat primary consumers, and so on. Decomposers (bacteria and fungi) break down dead organisms and wastes, releasing matter back to be reused.\n\nEach feeding level is a trophic level, and the path of energy from one to the next is a food chain. Real ecosystems, with their many interconnected feeding relationships, form food webs. As we trace energy up these levels, one stark fact emerges that explains the structure of every ecosystem on Earth: energy is LOST at every step."
+    },
+    {
+      "type": "explanation",
+      "heading": "Trophic Levels and the 10% Rule",
+      "content": "Here is the single most important quantitative idea in ecosystem ecology: energy transfer between trophic levels is INEFFICIENT. On average, only about 10% of the energy stored in one trophic level is passed on to the next; roughly 90% is LOST at each transfer. This is the '10% rule.' Where does the missing 90% go? Most is used by organisms for their own life processes — cellular respiration releases energy as heat (the second law of thermodynamics from Unit 3 in action) — and energy is also lost as undigested material (feces), and not every organism at a level is eaten. Only the energy stored in an organism's body and actually consumed and assimilated by the next level moves up.\n\nThis 10% efficiency has profound consequences. It explains the shape of an energy pyramid — a diagram with producers forming a huge base and each higher trophic level a much smaller tier, because each level has only ~10% of the energy below it. It explains why food chains are SHORT (usually 3–5 levels): after a few 90% losses, there simply isn't enough energy left to support another level. (Start with 10,000 units in producers → ~1,000 in herbivores → ~100 in secondary consumers → ~10 in tertiary consumers — you run out fast.) And it explains why top predators are rare and need huge territories, while producers and herbivores are abundant.\n\nIt also has a direct human lesson: eating at a LOWER trophic level is more energy-efficient. Far more people can be fed on grain directly than on the meat of animals fed that same grain, because feeding grain to livestock first throws away ~90% of its energy. This is why plant-based diets have a smaller ecological footprint — a straight application of the 10% rule to the human food system."
+    },
+    {
+      "type": "quiz",
+      "question": "If the producers in an ecosystem store 50,000 kcal of energy, approximately how much energy is available to the secondary consumers (the third trophic level), according to the 10% rule?",
+      "options": [
+        "5,000 kcal",
+        "500 kcal",
+        "50 kcal",
+        "45,000 kcal"
+      ],
+      "correctIndex": 1,
+      "explanation": "About 10% transfers between each trophic level. From producers (50,000 kcal) to primary consumers: 10% = 5,000 kcal. From primary to secondary consumers: 10% of 5,000 = 500 kcal. Each step loses ~90% (mostly to respiration as heat), which is why only 500 kcal reaches the secondary consumers and why food chains are short."
+    },
+    {
+      "type": "table",
+      "heading": "Trophic Levels and Energy",
+      "headers": ["Trophic level", "What it is", "Example", "Approx. energy (if producers = 10,000)"],
+      "rows": [
+        ["Producers (autotrophs)", "Capture sunlight via photosynthesis", "Grass, algae, trees", "10,000 units"],
+        ["Primary consumers", "Herbivores that eat producers", "Grasshopper, deer, zooplankton", "~1,000 units"],
+        ["Secondary consumers", "Eat primary consumers", "Frog, small fish", "~100 units"],
+        ["Tertiary consumers", "Eat secondary consumers (top predators)", "Hawk, large fish", "~10 units"],
+        ["Decomposers", "Break down dead matter and wastes", "Bacteria, fungi", "Recycle matter from all levels"]
+      ]
+    },
+    {
+      "type": "example",
+      "heading": "Calculating Energy Flow and Efficiency",
+      "content": "AP questions frequently give you energy values and ask you to compute transfer or efficiency. Let's work both directions.\n\nProblem A — Find energy at a higher level. A grassland's producers fix 100,000 kJ of energy. How much reaches the tertiary consumers (4th trophic level)? Apply ~10% per transfer, three transfers up from producers: producers 100,000 → primary consumers 10,000 → secondary consumers 1,000 → tertiary consumers 100 kJ. Each arrow multiplies by 0.10. Answer: ~100 kJ.\n\nProblem B — Calculate the actual efficiency from data. Suppose a trophic level contains 8,000 kJ and the next level up contains 720 kJ. Efficiency = (energy at higher level ÷ energy at lower level) × 100 = (720 ÷ 8,000) × 100 = 9%. So this transfer is about 9% efficient — close to the 10% rule of thumb, as real ecosystems range roughly 5–20%.\n\nProblem C — Reason about consequences. Because each step keeps only ~10%, ask 'why can't this food chain have ten levels?' Starting from 100,000 kJ, after just five transfers you'd have 100,000 × (0.1)⁵ = 1 kJ — not enough to support a population. The method to carry into the exam: multiply by ~0.10 for each step UP a level, divide to find efficiency from raw data [(higher ÷ lower) × 100], and use the rapid energy loss to explain short food chains, pyramid shape, and why lower-trophic-level eating feeds more people. Always show the per-step arithmetic for partial credit."
+    },
+    {
+      "type": "explanation",
+      "heading": "Matter Cycles: The Carbon and Nitrogen Cycles",
+      "content": "Unlike energy, which flows through and is lost as heat, MATTER is conserved and recycled. Atoms of carbon, nitrogen, phosphorus, oxygen, and water move repeatedly between organisms and the abiotic environment in biogeochemical cycles. The same carbon atom might be in the air today, in a leaf next week, in a deer next month, and back in the air after the deer exhales. Decomposers are essential to these cycles: by breaking down dead organisms and wastes, they release locked-up matter back into the soil, water, and air for reuse.\n\nThe CARBON cycle revolves around two opposite processes you know from Unit 3. Photosynthesis pulls CO₂ out of the atmosphere and fixes carbon into organic molecules (producers); cellular respiration (by all organisms) breaks those molecules down and releases CO₂ back. Carbon is also stored long-term in fossil fuels, rocks, and the ocean. Burning fossil fuels (combustion) transfers vast amounts of stored carbon into the atmosphere as CO₂ very rapidly — the root of human-caused climate change, an ecosystem disruption we'll examine next lesson.\n\nThe NITROGEN cycle is trickier because, although the atmosphere is ~78% nitrogen gas (N₂), most organisms CAN'T use N₂ directly — they need it in 'fixed' forms like ammonium or nitrate. Nitrogen-fixing bacteria (many living in the root nodules of legumes) convert atmospheric N₂ into usable ammonium, the crucial entry point of nitrogen into living systems. Other bacteria convert these forms (nitrification), plants absorb nitrogen to build proteins and nucleic acids, animals get it by eating plants, decomposers return it to the soil, and denitrifying bacteria release N₂ back to the air. Nitrogen is often the LIMITING nutrient for plant growth, which is why farmers add nitrogen fertilizer — and that excess nitrogen runoff causes its own disruptions, again previewing the next lesson."
+    },
+    {
+      "type": "steps",
+      "heading": "Tracing Energy and Matter Through an Ecosystem",
+      "steps": [
+        {
+          "title": "Start with the energy source and producers",
+          "content": "Most ecosystems begin with sunlight captured by producers via photosynthesis, converting light energy into chemical energy stored in organic molecules. Producers form the base of the energy pyramid."
+        },
+        {
+          "title": "Follow energy up trophic levels, losing ~90% each step",
+          "content": "Trace energy from producers to primary, secondary, and tertiary consumers, multiplying by ~10% at each transfer. The 90% lost (mostly as respiration heat, plus feces and uneaten matter) explains short food chains and the pyramid shape."
+        },
+        {
+          "title": "Recognize energy leaves as heat (one-way flow)",
+          "content": "Energy is not recycled. It enters as light and ultimately exits the ecosystem as heat (second law of thermodynamics), so ecosystems require a continuous energy input from the sun."
+        },
+        {
+          "title": "Follow matter as it cycles (not lost)",
+          "content": "Unlike energy, atoms of carbon, nitrogen, and other elements are conserved and cycle repeatedly between organisms and the abiotic environment, with decomposers returning matter for reuse. Matter cycles; energy flows."
+        }
+      ]
+    },
+    {
+      "type": "quiz",
+      "question": "Which statement correctly contrasts how energy and matter move through an ecosystem?",
+      "options": [
+        "Both energy and matter are recycled indefinitely",
+        "Energy flows one-way (entering as light, leaving as heat) while matter cycles and is reused",
+        "Matter flows one-way while energy is recycled",
+        "Neither energy nor matter is conserved"
+      ],
+      "correctIndex": 1,
+      "explanation": "Energy FLOWS through an ecosystem in one direction — it enters as sunlight, passes up trophic levels with ~90% lost as heat at each step, and ultimately leaves as heat, so it must be continuously resupplied. MATTER (carbon, nitrogen, etc.) CYCLES: the same atoms are reused repeatedly between organisms and the environment, with decomposers recycling them. 'Energy flows, matter cycles' is the key distinction."
+    },
+    {
+      "type": "keypoint",
+      "content": "Energy flows one-way through ecosystems — entering as sunlight captured by producers, passing up trophic levels with only ~10% transferred at each step (the rest lost mainly as respiration heat), and leaving as heat — which explains energy pyramids and short food chains. Matter, by contrast, cycles: carbon and nitrogen move repeatedly between organisms and the environment through biogeochemical cycles, with decomposers and specific bacteria recycling it. Energy flows; matter cycles."
+    },
+    {
+      "type": "callout",
+      "variant": "warning",
+      "heading": "Energy-Flow Misconceptions to Avoid",
+      "content": "(1) ENERGY flows one-way and is LOST as heat at each step; MATTER cycles and is conserved. Don't say energy is 'recycled.' (2) Only ~10% of energy passes to the next trophic level; ~90% is lost (mostly to RESPIRATION/heat, also feces and uneaten organisms). (3) Food chains are SHORT because of these repeated 90% losses, not because predators run out of prey by chance. (4) An energy PYRAMID is wide at the producer base and narrow at the top — top predators have the LEAST available energy, so they're rare. (5) Most organisms CANNOT use atmospheric N₂ directly; nitrogen-FIXING bacteria must convert it to usable forms. (6) Decomposers recycle MATTER, but they don't return ENERGY to the producers — energy still ultimately leaves as heat."
+    },
+    {
+      "type": "deepdive",
+      "heading": "From the 10% Rule to Climate Change: Why Energy Flow Runs the Planet",
+      "content": "The simple fact that only ~10% of energy moves up each trophic level quietly governs the structure of the entire living world — and human civilization's relationship to it. It dictates that producers must vastly outweigh herbivores, which must outweigh carnivores; it's why the African savanna holds tons of grass, fewer antelope, and only a handful of lions per square mile; it's why apex predators like tigers, sharks, and eagles are naturally rare and so vulnerable to extinction (a small population spread over a large territory, easily pushed past the brink). It even shapes global food security: with 8 billion people to feed, the energy thrown away by routing crops through livestock matters enormously. Producing a calorie of beef requires far more land, water, and energy than a calorie of grain, because of the 90% loss at the grain→cattle transfer. Understanding energy flow turns 'eat lower on the food chain' from a slogan into thermodynamic arithmetic.\n\nThe matter cycles, meanwhile, are where human impact has become a planetary force — the theme of the next lesson. For most of Earth's history the carbon cycle was roughly balanced: photosynthesis removed CO₂ and respiration/decomposition returned it. By burning fossil fuels — carbon that took hundreds of millions of years to bury — we are returning that ancient carbon to the atmosphere in mere centuries, faster than any natural process can reabsorb it, driving the rise in atmospheric CO₂ behind global climate change. We've similarly overwhelmed the nitrogen cycle: industrial fertilizer now fixes more nitrogen than all natural processes combined, and the runoff triggers algal blooms and dead zones in lakes and coastal waters (eutrophication, also next lesson). These aren't separate problems; they are the same biogeochemical cycles you just learned, pushed out of balance by human activity.\n\nThis lesson is also where the whole course converges on the ecosystem scale. The photosynthesis and respiration of Unit 3 are literally the engines of the carbon cycle and the entry and exit points of energy flow. The thermodynamics of Unit 3 — energy disperses as heat, the second law — is exactly why only 10% moves up and why ecosystems need constant solar input. The molecules of Unit 1 (proteins and nucleic acids needing nitrogen) explain why nitrogen is a limiting nutrient. And the populations and communities of the next lessons are structured by who captures and passes on this energy. Energy flow and matter cycling are the circulatory system of the biosphere — and learning to follow them is learning to read how the living planet actually works, and how human choices ripple through it."
+    },
+    {
+      "type": "callout",
+      "variant": "tip",
+      "heading": "How AP Tests Energy Flow",
+      "content": "Point-winners: (1) Calculate energy at higher trophic levels (×0.10 per step up) and efficiency from data [(higher ÷ lower) × 100] — show the per-step arithmetic. (2) Use the 10% rule to explain short food chains, energy-pyramid shape, and why top predators are rare. (3) State clearly that ENERGY FLOWS (one-way, lost as heat) while MATTER CYCLES — and that energy is lost mainly to respiration. (4) Trace carbon (photosynthesis fixes, respiration/combustion release) and nitrogen (N₂ → fixed forms by nitrogen-fixing bacteria; nitrogen often limiting). (5) Explain how burning fossil fuels and fertilizer runoff disrupt these cycles (bridge to next lesson). (6) Identify producers/consumers/decomposers and trophic levels in a food web. Command words: 'calculate' wants the math shown; 'explain' wants the energy-loss mechanism."
+    }
+  ],
+  "aiContext": "This AP Biology Unit 8 lesson covers energy flow and the cycling of matter through ecosystems (CED topics 8.3-8.5). THE master distinction students must master: ENERGY FLOWS one-way through an ecosystem (enters as sunlight, lost as heat at each step, ultimately leaves — so it must be continuously resupplied), while MATTER CYCLES (the same atoms are reused repeatedly). An ecosystem is all the organisms in an area plus the abiotic environment. Energy enters via PRODUCERS (autotrophs — plants, algae, cyanobacteria) capturing sunlight through photosynthesis (Unit 3); CONSUMERS (heterotrophs) eat others (primary = herbivores, secondary, tertiary); DECOMPOSERS (bacteria, fungi) break down dead matter and recycle it. Each feeding level is a trophic level; food chains link them; food webs are the interconnected reality. THE key quantitative idea — the 10% RULE: only ~10% of energy at one trophic level passes to the next; ~90% is LOST, mostly to cellular RESPIRATION as heat (second law of thermodynamics, Unit 3), plus feces and uneaten organisms. Consequences students must derive: energy-pyramid shape (huge producer base, tiny top), SHORT food chains (3-5 levels, because repeated 90% losses run out of energy), top predators rare and vulnerable, and the human lesson that eating at LOWER trophic levels feeds more people (routing grain through livestock wastes ~90%). Calculations: multiply by 0.10 per step UP; compute efficiency from data as (higher ÷ lower) × 100 (real range ~5-20%) — show per-step arithmetic for partial credit. Matter cycling via biogeochemical cycles: CARBON cycle — photosynthesis fixes atmospheric CO₂ into organic molecules, cellular respiration and combustion release it; burning fossil fuels rapidly adds stored carbon (climate change). NITROGEN cycle — atmosphere is ~78% N₂ but most organisms can't use N₂ directly; NITROGEN-FIXING bacteria (e.g., in legume root nodules) convert N₂ to usable ammonium (the entry point), then nitrification, plant uptake, decomposition, and denitrification return N₂; nitrogen is often the LIMITING nutrient (hence fertilizer). Decomposers recycle MATTER but do not return energy. Key misconceptions to counter: saying energy is 'recycled' (it's matter that cycles), forgetting respiration/heat as the main energy loss, thinking organisms use atmospheric N₂ directly, and reversing the energy-pyramid shape. Connect to Unit 3 (photosynthesis/respiration drive the carbon cycle; thermodynamics drives the 10% loss), Unit 1 (nitrogen for proteins/nucleic acids), and forward to ecosystem disruptions (fossil-fuel CO₂, fertilizer runoff/eutrophication). On the exam expect energy-transfer and efficiency calculations, energy-vs-matter contrasts, food-web trophic identification, and carbon/nitrogen cycle tracing."
+}

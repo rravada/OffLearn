@@ -1,0 +1,122 @@
+{
+  "id": "ap-bio-u3-cellular-energy-and-atp",
+  "title": "Cellular Energy and ATP",
+  "subject": "AP Biology",
+  "unit": "Cellular Energetics",
+  "track": "ap",
+  "difficulty": "ap",
+  "duration": "40 min",
+  "objectives": [
+    "Apply the laws of thermodynamics and the concept of free energy to living systems",
+    "Distinguish exergonic (energy-releasing) from endergonic (energy-requiring) reactions",
+    "Explain how ATP stores and releases energy through hydrolysis of its phosphate bonds",
+    "Describe energy coupling and why a continuous input of energy is required to maintain order"
+  ],
+  "sections": [
+    {
+      "type": "explanation",
+      "heading": "Why a Living Thing Is Like a Fountain, Not a Statue",
+      "content": "A stone statue can sit unchanged for a thousand years, doing nothing and needing nothing. A fountain looks just as fixed — the same arch of water hanging in the air, hour after hour — but it only holds that shape because a pump is pushing energy through it every second. Cut the power and the shape collapses instantly. Living things are fountains, not statues. Your body looks stable, but it is maintained only by a relentless flow of energy. Stop that flow and you don't freeze in place; you fall apart.\n\nThe reason comes from physics. The universe constantly tends toward disorder, and building or even maintaining the exquisite order of a cell — its membranes, its proteins, its gradients — runs against that tendency. To stay ordered, a cell must continuously capture energy from its surroundings and spend it. This is why you must eat, why plants must capture sunlight, and why death, at the cellular level, is the moment energy flow stops and order dissolves.\n\nThis lesson is about the energy economy of the cell: the rules that govern energy (thermodynamics), the 'currency' the cell trades in (ATP), and the clever trick — energy coupling — that lets a cell use energy-releasing reactions to drive the energy-requiring work of staying alive. Everything in the next two lessons, photosynthesis and respiration, is ultimately about making and spending this currency."
+    },
+    {
+      "type": "explanation",
+      "heading": "Two Laws and the Idea of Free Energy",
+      "content": "Thermodynamics gives us two laws that apply to cells just as much as to engines. The first law (conservation of energy) says energy cannot be created or destroyed, only transformed from one form to another. A cell never makes energy from nothing; it converts the chemical energy of food, or the light energy of the sun, into other usable forms.\n\nThe second law says that every energy transformation increases the entropy (disorder) of the universe, and that some energy is always lost as unusable heat. No transfer is 100% efficient. This is why a cell can't just recycle the same energy forever — at each step usable energy leaks away as heat, so fresh energy must keep coming in.\n\nThese laws raise a practical question: of the energy in a reaction, how much is actually available to do work? That portion is called free energy (Gibbs free energy, symbol G). What matters for biology is the CHANGE in free energy during a reaction, written ΔG (delta G). The sign of ΔG tells you everything about whether a reaction will proceed on its own and whether it can power the cell.\n\nDon't let a negative number confuse you: a NEGATIVE ΔG is the GOOD, energy-releasing case. It means the products have less free energy than the reactants, so energy was released and is available to do work."
+    },
+    {
+      "type": "table",
+      "heading": "Exergonic vs. Endergonic Reactions",
+      "headers": ["Feature", "Exergonic", "Endergonic"],
+      "rows": [
+        ["Sign of ΔG", "Negative (−)", "Positive (+)"],
+        ["Energy", "Releases free energy", "Requires/absorbs free energy"],
+        ["Products vs. reactants", "Products have LESS free energy", "Products have MORE free energy"],
+        ["Spontaneous?", "Yes (proceeds on its own)", "No (needs an energy input)"],
+        ["Biological example", "Cellular respiration; ATP hydrolysis", "Photosynthesis; building macromolecules"]
+      ]
+    },
+    {
+      "type": "quiz",
+      "question": "A reaction has a ΔG of −7.3 kcal/mol. What does this tell you?",
+      "options": [
+        "The reaction absorbs energy and cannot occur without an input",
+        "The reaction releases free energy and can proceed spontaneously",
+        "The reaction is at equilibrium and will not change",
+        "The reaction increases the free energy of its products"
+      ],
+      "correctIndex": 1,
+      "explanation": "A negative ΔG marks an exergonic reaction: free energy is released and the reaction is spontaneous (it can proceed without an added energy input). 'Spontaneous' in thermodynamics means energetically favorable, not necessarily fast. ATP hydrolysis has a ΔG near −7.3 kcal/mol."
+    },
+    {
+      "type": "explanation",
+      "heading": "ATP: The Cell's Energy Currency",
+      "content": "Cells don't burn food directly to power each task — that would be like trying to buy groceries by handing over a gold bar and asking for change in cattle. Instead the cell converts the energy of food into a standard, spendable currency that any process can use: adenosine triphosphate, or ATP.\n\nAn ATP molecule has three parts: the nitrogen base adenine, the five-carbon sugar ribose, and a chain of three phosphate groups. The energy is stored in the bonds linking those phosphates. Here's the key: each phosphate group carries a negative charge, and like charges repel. Crowding three negative phosphates together is like compressing a spring — it stores tension that is released when the chain is allowed to break.\n\nWhen the cell needs energy, it breaks the bond to the last phosphate by adding water — a hydrolysis reaction. ATP becomes ADP (adenosine DIphosphate) plus a free inorganic phosphate group (Pi), and this releases a usable burst of free energy (ΔG ≈ −7.3 kcal/mol — exergonic). That released energy powers cellular work.\n\nThe system is rechargeable, which is its genius. Cellular respiration uses the energy from food to reattach a phosphate to ADP, rebuilding ATP. This regeneration (phosphorylation) is endergonic — it costs energy — but respiration supplies it. ATP is constantly cycled: built up, spent, and rebuilt. A single cell can turn over its entire ATP supply many times per minute; you regenerate roughly your own body weight in ATP every day, because each molecule is reused thousands of times rather than stockpiled."
+    },
+    {
+      "type": "steps",
+      "heading": "The ATP Cycle",
+      "steps": [
+        {
+          "title": "ATP hydrolysis releases energy",
+          "content": "Water is added to ATP, breaking the bond to the terminal phosphate. ATP becomes ADP + Pi and releases about 7.3 kcal/mol of free energy. This is exergonic (ΔG is negative)."
+        },
+        {
+          "title": "The released energy does cellular work",
+          "content": "The energy (often transferred by attaching the phosphate to another molecule, called phosphorylation) powers mechanical work like muscle contraction, transport work like the sodium-potassium pump, and chemical work like building macromolecules."
+        },
+        {
+          "title": "ADP is recharged back to ATP",
+          "content": "Energy from cellular respiration (or photosynthesis in plants) is used to reattach a phosphate group to ADP, reforming ATP. This is endergonic — it requires an energy input."
+        },
+        {
+          "title": "The cycle repeats continuously",
+          "content": "ATP is not stockpiled in large amounts; it is constantly regenerated and re-spent, cycling between ATP and ADP many times. This continuous turnover is the cell's moment-to-moment energy economy."
+        }
+      ]
+    },
+    {
+      "type": "example",
+      "heading": "Does a Coupled Reaction Actually Go? Do the Energy Math",
+      "content": "AP questions often hand you two ΔG values and ask whether a coupled reaction will proceed. The rule is simple: add the ΔG values, and if the total is negative, the coupled reaction goes. Let's work two cases.\n\nCASE 1 — Building a peptide bond. Forming a bond between two amino acids is endergonic, with ΔG = +5.0 kcal/mol on its own, so it will NOT happen by itself. The cell couples it to ATP hydrolysis, ΔG = −7.3 kcal/mol. Add them: (+5.0) + (−7.3) = −2.3 kcal/mol. The total is negative, so the coupled reaction is exergonic overall and DOES proceed. The cell 'paid' 7.3 to buy a 5.0 reaction and pocketed the difference as the driving force.\n\nCASE 2 — A reaction that costs too much. Suppose an endergonic reaction needs +9.0 kcal/mol. Coupled to one ATP (−7.3): (+9.0) + (−7.3) = +1.7 kcal/mol. The total is still POSITIVE, so a single ATP is NOT enough — the reaction won't go. The cell's solution is to spend MORE energy: couple it to the hydrolysis of two ATP (or hydrolyze ATP all the way to AMP, releasing more), so the summed ΔG finally turns negative.\n\nThe reasoning skill: don't ask whether the target reaction is favorable by itself — ask whether the SUM of the coupled reactions is negative. A positive target reaction can be driven only if it's paired with enough exergonic 'fuel' to make the total downhill. This is exactly how the cell powers nearly all of its uphill construction work."
+    },
+    {
+      "type": "keypoint",
+      "content": "ATP stores energy in the bonds between its three phosphate groups. Hydrolyzing ATP to ADP + Pi is exergonic and releases usable free energy to do cellular work, while cellular respiration supplies the energy to recharge ADP back to ATP."
+    },
+    {
+      "type": "explanation",
+      "heading": "Energy Coupling: Paying for the Uphill Work",
+      "content": "Most of the work a cell must do — building proteins, pumping ions uphill, contracting a muscle — is endergonic, meaning it requires energy and won't happen on its own. So how does the cell make an unfavorable reaction go? It pairs it with a favorable one. This is energy coupling: using the energy released by an exergonic reaction to drive an endergonic reaction. ATP hydrolysis is the cell's universal exergonic partner.\n\nThe mechanism is usually phosphorylation. The phosphate released from ATP doesn't just float away — it is transferred onto the molecule that needs energizing. That target molecule, now carrying a phosphate, becomes less stable and more reactive (it's 'energized'), so a reaction that was unfavorable now proceeds. You saw a preview of this with the sodium-potassium pump: ATP phosphorylates the pump protein, changing its shape so it can move ions against their gradient.\n\nThe accounting works as long as the energy released by ATP hydrolysis is greater than the energy the endergonic reaction needs, so the two reactions added together still have a net negative ΔG. The cell essentially spends a favorable reaction to buy an unfavorable one, and as long as the total is downhill, the coupled process goes. Coupling is the central trick that lets the orderly, uphill business of being alive run on the steady downhill cash flow of ATP."
+    },
+    {
+      "type": "callout",
+      "variant": "warning",
+      "heading": "Negative ΔG Is the Energy-RELEASING One",
+      "content": "The most common thermodynamics mistakes on the AP exam: (1) A NEGATIVE ΔG means energy is RELEASED (exergonic, spontaneous, favorable). A POSITIVE ΔG means energy is REQUIRED (endergonic, not spontaneous). Students flip these because 'negative' sounds bad. (2) 'Spontaneous' means energetically favorable, NOT instant or fast — a spontaneous reaction can still be slow (that's why enzymes matter). (3) ATP does not 'contain' energy like a battery cell you can store indefinitely; energy is released by the REACTION of hydrolysis, and ATP is constantly recycled, not hoarded. (4) The energy comes from breaking ATP's bond by hydrolysis and forming new, more stable bonds — don't say energy is stored 'in' a single bond like a magic packet without the hydrolysis context."
+    },
+    {
+      "type": "quiz",
+      "question": "A cell needs to drive an endergonic reaction (ΔG = +3.4 kcal/mol) such as building a small molecule. How does the cell make this happen?",
+      "options": [
+        "It waits, because endergonic reactions become spontaneous over time",
+        "It couples the reaction to ATP hydrolysis, whose larger energy release makes the combined ΔG negative",
+        "It lowers the activation energy with an enzyme, which makes ΔG negative",
+        "It raises the temperature until the reaction becomes exergonic"
+      ],
+      "correctIndex": 1,
+      "explanation": "Endergonic reactions are driven by energy coupling: pairing them with the exergonic hydrolysis of ATP (ΔG ≈ −7.3 kcal/mol). Because the energy released exceeds the energy required, the combined reaction has a net negative ΔG and proceeds. Enzymes lower activation energy (speed) but do not change ΔG; endergonic reactions never become spontaneous just by waiting."
+    },
+    {
+      "type": "callout",
+      "variant": "remember",
+      "heading": "The Energy Toolkit",
+      "content": "1st law: energy is conserved (transformed, never created/destroyed). 2nd law: every transfer increases entropy and loses some energy as heat. ΔG negative = EXERGONIC = releases energy = spontaneous (respiration, ATP hydrolysis). ΔG positive = ENDERGONIC = requires energy = nonspontaneous (photosynthesis, building macromolecules). ATP = adenine + ribose + 3 phosphates; hydrolysis to ADP + Pi releases ~7.3 kcal/mol. Energy coupling: ATP hydrolysis (exergonic) drives endergonic work, usually by phosphorylation. ATP is constantly recycled between ATP and ADP."
+    },
+    {
+      "type": "deepdive",
+      "heading": "Order, Life, and the Energy Bill of Being Alive",
+      "content": "The second law of thermodynamics seems, at first, to forbid life. If the universe must always move toward disorder, how can a single fertilized egg organize itself into a trillion-celled human, an astonishing increase in order? The resolution is one of the most important ideas in biology: a living thing is an open system, not a closed one. It can build internal order as long as it exports even more disorder to its surroundings. You become more ordered, but in doing so you release heat and break down complex food molecules into simpler, more disordered waste (CO₂, water, urea) that you dump into the environment. The order of YOUR body is purchased by increasing the disorder of the universe around you — so the second law is honored, not broken. Life doesn't defeat entropy; it surfs on the flow of energy that entropy drives.\n\nThis is why energy flow, not energy recycling, defines ecosystems (a major theme you'll meet again in Unit 8). Energy enters as sunlight, flows through living things, and exits as heat — a one-way street, because the second law guarantees energy degrades to unusable heat at every transfer. Matter (carbon, nitrogen) cycles round and round, but energy must be continuously resupplied from the sun. It's also why metabolism never truly rests: even asleep, you spend a huge amount of ATP every second just maintaining ion gradients, repairing molecules, and holding your structures together against the constant pull toward disorder. The price of being a fountain instead of a statue is an energy bill that comes due every single second of your life — and ATP is how the cell pays it."
+    }
+  ],
+  "aiContext": "This AP Biology Unit 3 lesson covers cellular energetics fundamentals (CED topics around 3.4-3.5 and the energy concepts underpinning the unit): thermodynamics, free energy (ΔG), exergonic vs. endergonic reactions, ATP structure and hydrolysis, and energy coupling. The most important and most-missed idea is the sign convention: a NEGATIVE ΔG is exergonic, energy-releasing, and spontaneous, while a POSITIVE ΔG is endergonic and requires energy — students reliably flip these because 'negative' sounds bad. Reinforce that 'spontaneous' means energetically favorable, not fast (which is why enzymes, the previous lesson, control rate without changing ΔG). Emphasize ATP as a constantly recycled currency: hydrolysis of ATP to ADP + Pi releases ~7.3 kcal/mol that, through coupling and phosphorylation, drives endergonic cellular work. Connect the second law to why life requires continuous energy input and why ecosystems depend on one-way energy flow (Unit 8). On the exam, expect ΔG sign interpretation, ATP-cycle diagrams, energy-coupling reasoning, and questions linking thermodynamics to respiration and photosynthesis, the next two lessons."
+}

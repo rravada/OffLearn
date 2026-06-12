@@ -289,6 +289,83 @@
             { "id": "compartmentalization-and-endosymbiosis", "title": "Compartmentalization and the Origin of Eukaryotes", "duration": "40 min" },
             { "id": "unit-review", "title": "Unit 2 Review", "duration": "20 min" }
           ]
+        },
+        {
+          "id": "unit-3",
+          "title": "Cellular Energetics",
+          "lessons": [
+            { "id": "enzymes", "title": "Enzymes: Structure, Catalysis, and Regulation", "duration": "50 min" },
+            { "id": "cellular-energy-and-atp", "title": "Cellular Energy and ATP", "duration": "40 min" },
+            { "id": "photosynthesis", "title": "Photosynthesis", "duration": "50 min" },
+            { "id": "cellular-respiration", "title": "Cellular Respiration", "duration": "50 min" },
+            { "id": "unit-review", "title": "Unit 3 Review", "duration": "20 min" }
+          ]
+        },
+        {
+          "id": "unit-4",
+          "title": "Cell Communication and Cell Cycle",
+          "lessons": [
+            { "id": "cell-communication-and-signaling", "title": "Cell Communication and Signal Transduction", "duration": "50 min" },
+            { "id": "signaling-changes-and-feedback", "title": "Changes in Signaling and Feedback Mechanisms", "duration": "40 min" },
+            { "id": "the-cell-cycle-and-mitosis", "title": "The Cell Cycle and Mitosis", "duration": "45 min" },
+            { "id": "cell-cycle-regulation-and-cancer", "title": "Regulation of the Cell Cycle and Cancer", "duration": "40 min" },
+            { "id": "unit-review", "title": "Unit 4 Review", "duration": "20 min" }
+          ]
+        },
+        {
+          "id": "unit-5",
+          "title": "Heredity",
+          "lessons": [
+            { "id": "meiosis-and-genetic-diversity", "title": "Meiosis and Genetic Diversity", "duration": "50 min" },
+            { "id": "mendelian-genetics", "title": "Mendelian Genetics and Probability", "duration": "50 min" },
+            { "id": "non-mendelian-inheritance", "title": "Non-Mendelian Inheritance and Environmental Effects", "duration": "45 min" },
+            { "id": "chromosomal-inheritance", "title": "The Chromosomal Basis of Inheritance", "duration": "40 min" },
+            { "id": "unit-review", "title": "Unit 5 Review", "duration": "20 min" }
+          ]
+        },
+        {
+          "id": "unit-6",
+          "title": "Gene Expression and Regulation",
+          "lessons": [
+            { "id": "dna-structure-and-replication", "title": "DNA Structure and Replication", "duration": "50 min" },
+            { "id": "transcription-and-translation", "title": "Transcription, RNA Processing, and Translation", "duration": "50 min" },
+            { "id": "gene-regulation-and-specialization", "title": "Regulation of Gene Expression and Cell Specialization", "duration": "45 min" },
+            { "id": "mutations", "title": "Mutations and Their Consequences", "duration": "40 min" },
+            { "id": "biotechnology", "title": "Biotechnology", "duration": "45 min" },
+            { "id": "unit-review", "title": "Unit 6 Review", "duration": "20 min" }
+          ]
+        },
+        {
+          "id": "unit-7",
+          "title": "Natural Selection",
+          "lessons": [
+            { "id": "natural-and-artificial-selection", "title": "Natural Selection and Artificial Selection", "duration": "50 min" },
+            { "id": "population-genetics-and-hardy-weinberg", "title": "Population Genetics and Hardy-Weinberg Equilibrium", "duration": "50 min" },
+            { "id": "evidence-for-evolution", "title": "Evidence of Evolution and Common Ancestry", "duration": "45 min" },
+            { "id": "phylogeny", "title": "Phylogeny and Building Evolutionary Trees", "duration": "45 min" },
+            { "id": "speciation-and-extinction", "title": "Speciation, Extinction, and Continuing Evolution", "duration": "50 min" },
+            { "id": "origin-of-life", "title": "The Origin of Life on Earth", "duration": "35 min" },
+            { "id": "unit-review", "title": "Unit 7 Review", "duration": "20 min" }
+          ]
+        },
+        {
+          "id": "unit-8",
+          "title": "Ecology",
+          "lessons": [
+            { "id": "responses-to-the-environment", "title": "Behavior and Responses to the Environment", "duration": "40 min" },
+            { "id": "energy-flow-through-ecosystems", "title": "Energy Flow Through Ecosystems", "duration": "45 min" },
+            { "id": "population-ecology", "title": "Population Ecology and Growth Models", "duration": "50 min" },
+            { "id": "community-ecology-and-biodiversity", "title": "Community Ecology and Biodiversity", "duration": "45 min" },
+            { "id": "ecosystem-disruptions", "title": "Disruptions to Ecosystems", "duration": "40 min" },
+            { "id": "unit-review", "title": "Unit 8 Review", "duration": "20 min" }
+          ]
+        },
+        {
+          "id": "final",
+          "title": "Course Final Exam",
+          "lessons": [
+            { "id": "course-final", "title": "AP Biology Course Final", "duration": "90 min" }
+          ]
         }
       ]
     },

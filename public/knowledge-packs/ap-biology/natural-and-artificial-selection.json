@@ -1,0 +1,30 @@
+{
+  "id": "ap-bio-natural-and-artificial-selection",
+  "title": "Natural Selection and Artificial Selection",
+  "subject": "AP Biology",
+  "chunks": [
+    { "id": "c1", "text": "Evolution is a change in the heritable characteristics (allele frequencies) of a population over generations. Individuals do not evolve; populations evolve as the proportions of alleles shift from one generation to the next." },
+    { "id": "c2", "text": "Natural selection is the mechanism Darwin proposed for how populations change to become better suited to their environment. It requires no goal, foresight, or effort and emerges automatically when a few simple conditions are met." },
+    { "id": "c3", "text": "Natural selection follows from four observations: heritable variation among individuals, overproduction of offspring with limited resources, a resulting struggle to survive and reproduce, and differential reproductive success of individuals with advantageous traits." },
+    { "id": "c4", "text": "Variation in a population ultimately comes from mutation and the recombination of meiosis. Only heritable (genetic) variation can drive evolution; non-heritable differences such as scars or suntans cannot." },
+    { "id": "c5", "text": "Because individuals vary and resources are limited, those whose inherited traits give an edge in the current environment tend to survive and reproduce more, passing on more copies of their advantageous alleles." },
+    { "id": "c6", "text": "Over generations, advantageous heritable traits become more common and disadvantageous ones become rarer, so the population becomes better matched (adapted) to its environment." },
+    { "id": "c7", "text": "An adaptation is a heritable trait that, having been favored by selection, increases an organism's survival and reproduction in its environment." },
+    { "id": "c8", "text": "The environment does not create helpful variation. Mutation produces variation randomly, before any need; natural selection simply edits an existing menu of variants, favoring whichever works best in the current environment." },
+    { "id": "c9", "text": "In biology, fitness means reproductive success — the number of surviving, fertile offspring an organism leaves — not strength, size, speed, or health. An organism that survives but never reproduces has zero fitness." },
+    { "id": "c10", "text": "A common misconception is that 'survival of the fittest' means the strongest or biggest survive. In reality a small, plain organism that leaves many offspring has higher fitness than a large, impressive one that leaves few." },
+    { "id": "c11", "text": "Natural selection has no goal, no foresight, and no progress toward higher forms. Organisms do not evolve traits because they need or want them." },
+    { "id": "c12", "text": "In artificial selection (selective breeding), humans choose which individuals reproduce, favoring useful or attractive traits. Dog breeds, crop varieties, and broccoli, cauliflower, kale, and cabbage (all from wild mustard) are products of artificial selection." },
+    { "id": "c13", "text": "Darwin used artificial selection as evidence: if humans can reshape species dramatically in a few centuries of breeding, nature acting over millions of years can do far more. The mechanism is identical, only the selecting agent differs." },
+    { "id": "c14", "text": "Sexual selection is a form of natural selection driven by success in obtaining mates rather than survival. It explains traits like the peacock's tail or a stag's antlers that persist because they boost mating success enough to outweigh their survival cost." },
+    { "id": "c15", "text": "Sexual selection often produces sexual dimorphism (males and females looking different) and can favor flashy ornaments to attract mates or weapons to compete with rivals." },
+    { "id": "c16", "text": "Directional selection favors one extreme of a trait, shifting the whole distribution toward it. Examples include increasing beak depth in a drought and the spread of antibiotic resistance." },
+    { "id": "c17", "text": "Stabilizing selection favors the intermediate phenotype and selects against both extremes, narrowing variation. Human birth weight is a classic example, since very small and very large babies historically fared worse." },
+    { "id": "c18", "text": "Disruptive selection favors both extremes against the middle, splitting the distribution. It can occur where only large and small seeds are available, favoring both large and small beaks." },
+    { "id": "c19", "text": "Antibiotic resistance evolves when random mutations that arose before the drug was applied make a few bacteria resistant; the antibiotic then kills susceptible cells while resistant survivors reproduce, raising the resistance allele's frequency." },
+    { "id": "c20", "text": "The correct framing of resistance is that pre-existing resistant variants survived and reproduced, increasing the allele's frequency. Saying the bacteria 'mutated in order to survive' or 'the antibiotic made them resistant' is incorrect." },
+    { "id": "c21", "text": "Peter and Rosemary Grant measured Galápagos finch beak depth through a drought: when only large tough seeds remained, deeper-beaked birds survived and reproduced and average beak depth rose within a single generation, then partly reversed in wetter years." },
+    { "id": "c22", "text": "Cancer is an evolutionary process: a tumor is a population of cells with heritable variation, and chemotherapy selects for resistant cancer cells, which is why tumors often return resistant to the first drug." },
+    { "id": "c23", "text": "Rapid viral evolution, such as new flu strains each year and new SARS-CoV-2 variants, is natural selection acting on populations with heritable variation, which is why vaccines must be regularly updated." }
+  ]
+}

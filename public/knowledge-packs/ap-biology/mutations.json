@@ -1,0 +1,30 @@
+{
+  "id": "ap-bio-mutations",
+  "title": "Mutations and Their Consequences",
+  "subject": "AP Biology",
+  "chunks": [
+    { "id": "c1", "text": "A mutation is a change in the DNA sequence — a typo in the instructions for building proteins. Mutations range from utterly harmless to completely disabling, depending on how they change the resulting protein." },
+    { "id": "c2", "text": "Mutations arise in two main ways: spontaneous errors during DNA replication that slip past the polymerase's proofreading, and damage caused by mutagens such as UV light, X-rays, tobacco smoke, and certain chemicals." },
+    { "id": "c3", "text": "A somatic mutation occurs in a body cell and affects only that cell and its descendants (it may cause cancer) but is NOT passed to offspring. A germ-line mutation occurs in cells that make gametes and CAN be inherited." },
+    { "id": "c4", "text": "Germ-line mutations matter for heredity and evolution because they are passed to the next generation, while somatic mutations matter for the individual's own health." },
+    { "id": "c5", "text": "A point mutation is a change at a single base. The simplest point mutation is a substitution, in which one base is swapped for another." },
+    { "id": "c6", "text": "A silent mutation changes a codon but not the amino acid, because the genetic code is redundant: the new codon is a synonym (for example, GAA and GAG both code for glutamate). The protein is unchanged." },
+    { "id": "c7", "text": "A missense mutation changes a codon so it codes for a different amino acid. Its effect ranges from trivial (a similar amino acid far from the active site) to severe (sickle-cell disease results from a single missense mutation in hemoglobin)." },
+    { "id": "c8", "text": "A nonsense mutation changes an amino-acid codon into a stop codon, cutting the protein short. The resulting truncated protein is usually nonfunctional, so nonsense mutations are often serious." },
+    { "id": "c9", "text": "An insertion adds one or more nucleotides and a deletion removes one or more. Whether these are catastrophic depends on whether the number of bases added or removed is a multiple of three." },
+    { "id": "c10", "text": "If an insertion or deletion is NOT a multiple of three, it shifts the reading frame so every codon downstream is regrouped and misread. This frameshift mutation is usually devastating and often introduces a premature stop codon." },
+    { "id": "c11", "text": "If an insertion or deletion is a multiple of three, the reading frame is preserved and only whole amino acids are added or removed. The effect is usually milder, such as the three-base deletion that causes cystic fibrosis (one missing amino acid)." },
+    { "id": "c12", "text": "Because the ribosome reads non-overlapping triplets from a fixed start, deleting one letter from 'THE-CAT-ATE' shifts everything: removing the C gives 'THE-ATA-TE...', nonsense from that point on — the essence of a frameshift." },
+    { "id": "c13", "text": "Chromosomal mutations are large-scale changes such as duplications, deletions, inversions, and translocations of big DNA segments or whole chromosomes. They often have large effects and can drive evolution." },
+    { "id": "c14", "text": "To predict a mutation's effect: write the original mRNA and protein, apply the change, re-read the codons in triplets from the start, and compare the new protein to the original." },
+    { "id": "c15", "text": "Substitutions affect at most one codon, so their effect is local (silent, missense, or nonsense). Insertions or deletions that are not multiples of three shift the frame and affect every codon downstream." },
+    { "id": "c16", "text": "Mutations are not inherently good or bad; their effect depends on the protein and the environment. The same mutation can be harmful, neutral, or beneficial under different conditions." },
+    { "id": "c17", "text": "Mutation is random with respect to need: environments do not direct helpful mutations to appear. Mutations occur regardless of whether they would benefit the organism, a key principle for understanding natural selection." },
+    { "id": "c18", "text": "Mutation is the original source of all genetic variation and new alleles. Sexual reproduction reshuffles existing alleles into new combinations, but only mutation creates genuinely new alleles." },
+    { "id": "c19", "text": "Without mutation there would be no variation, and without variation natural selection would have nothing to act on. Mutation generates variation and natural selection sorts it." },
+    { "id": "c20", "text": "The sickle-cell allele, caused by a single missense mutation, harms red blood cells but also gives malaria resistance to carriers in malaria-endemic regions (heterozygote advantage), showing a mutation's value depends on the environment." },
+    { "id": "c21", "text": "Antibiotic resistance arises when a random mutation lets a bacterium survive a drug; overusing antibiotics selects for those mutants. This is evolution by mutation and selection happening in real time." },
+    { "id": "c22", "text": "Cancer is fundamentally an accumulation of mutations in genes that control the cell cycle. Mutagens like UV light and tobacco smoke raise cancer risk because they raise the mutation rate." },
+    { "id": "c23", "text": "CRISPR gene editing can deliberately introduce or correct specific DNA changes, offering the possibility of fixing disease-causing mutations such as the sickle-cell allele, turning mutation into a medical tool." }
+  ]
+}

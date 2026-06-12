@@ -1,0 +1,30 @@
+{
+  "id": "ap-bio-biotechnology",
+  "title": "Biotechnology",
+  "subject": "AP Biology",
+  "chunks": [
+    { "id": "c1", "text": "Biotechnology lets scientists copy a single DNA molecule into billions, cut and paste genes between organisms, read the exact sequence of a genome, and precisely edit individual genes. It works by repurposing the cell's own DNA machinery as laboratory tools." },
+    { "id": "c2", "text": "Two unifying facts make biotechnology possible: DNA's structure is universal (the same A-T, G-C base pairing in all organisms), and the genetic code is nearly universal (the same codons specify the same amino acids), so tools and genes transfer across species." },
+    { "id": "c3", "text": "PCR (polymerase chain reaction) is DNA replication in a test tube, used to amplify a tiny DNA sample into billions of copies for diagnostics, forensics, and research." },
+    { "id": "c4", "text": "PCR cycles through three temperature steps: denature (~95°C to separate the strands), anneal (cool so short primers bind the target sequence), and extend (heat-stable Taq polymerase builds new strands). Each cycle doubles the DNA, so ~30 cycles make over a billion copies." },
+    { "id": "c5", "text": "Gel electrophoresis separates DNA fragments by size. Samples are loaded into wells and an electric current is applied; because DNA's phosphate backbone is negatively charged, all fragments migrate toward the positive electrode." },
+    { "id": "c6", "text": "In a gel, smaller DNA fragments slip through the sieve-like gel easily and travel farther from the wells, while larger fragments are held back and stay near the wells. Farther = smaller." },
+    { "id": "c7", "text": "Restriction enzymes are molecular scissors that cut DNA at specific recognition sequences. Many cut in a staggered way that leaves short single-stranded overhangs called sticky ends." },
+    { "id": "c8", "text": "Cutting both a gene of interest and a plasmid with the same restriction enzyme gives them matching, complementary sticky ends, so the gene can base-pair with the opened plasmid." },
+    { "id": "c9", "text": "DNA ligase (the same backbone-sealing enzyme used in replication) joins the gene and plasmid together, producing recombinant DNA — a plasmid carrying a gene from another organism." },
+    { "id": "c10", "text": "A plasmid is a small circular DNA molecule used as a vector to carry genes into bacteria. Recombinant plasmids often include a selectable marker such as an antibiotic-resistance gene." },
+    { "id": "c11", "text": "Transformation is the uptake of foreign DNA by bacteria. A selectable marker lets only successfully transformed cells survive on a selective plate, identifying which bacteria took up the recombinant plasmid." },
+    { "id": "c12", "text": "Because the genetic code is universal, a transformed bacterium transcribes and translates the inserted gene to produce the desired protein. Multiplying bacteria become living factories that mass-produce human insulin, growth hormone, and clotting factors." },
+    { "id": "c13", "text": "CRISPR-Cas9, borrowed from a bacterial antiviral immune system, uses a short guide RNA programmed to match a target DNA sequence; the guide leads the Cas9 protein to that exact site, where it cuts the DNA." },
+    { "id": "c14", "text": "After CRISPR cuts, the cell's repair machinery either disables the gene or, if a template is supplied, pastes in a corrected sequence. Because the guide RNA can match almost any sequence, CRISPR is fast, cheap, and precise." },
+    { "id": "c15", "text": "The first CRISPR therapy, for sickle-cell disease, was approved in 2023, showing how gene editing has moved from a research tool to an approved treatment in about a decade." },
+    { "id": "c16", "text": "DNA sequencing reads the actual order of bases in DNA. The Human Genome Project first read all ~3 billion human base pairs over more than a decade; today a genome can be sequenced in about a day at a tiny fraction of the original cost." },
+    { "id": "c17", "text": "Sequencing powers personalized medicine, the identification of disease genes, and evolutionary biology, since comparing genomes reveals how closely organisms are related (connecting to phylogeny)." },
+    { "id": "c18", "text": "DNA profiling (fingerprinting) uses the fact that individuals vary in the number of short tandem repeats in non-coding DNA. PCR amplifies these regions, electrophoresis separates them, and the resulting band pattern is as individual as a fingerprint." },
+    { "id": "c19", "text": "To interpret a profiling gel, compare band positions between lanes: samples from the same person produce bands at the same positions. A suspect whose bands match the crime-scene bands at every position is a genetic match; one different band excludes a suspect." },
+    { "id": "c20", "text": "Common biotechnology mix-ups: PCR copies DNA, sequencing reads its base order, and electrophoresis sorts by size — three different jobs. Restriction enzymes cut DNA while ligase joins it." },
+    { "id": "c21", "text": "Recombinant DNA replaced insulin extracted from pig and cow pancreases with unlimited, identical-to-human insulin made by bacteria or yeast, eliminating scarcity and allergic reactions." },
+    { "id": "c22", "text": "Genetically modified crops engineered for pest resistance, drought tolerance, or enhanced nutrition (such as vitamin-A 'golden rice') can raise yields and fight malnutrition, while raising debates about ecological effects, seed control, and labeling." },
+    { "id": "c23", "text": "Editing somatic (body) cells affects only the treated patient, but editing germ-line cells (embryos, eggs, sperm) would change every descendant and the human gene pool. The 2018 announcement of gene-edited babies was condemned worldwide as unethical and reckless." }
+  ]
+}

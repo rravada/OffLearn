@@ -1,0 +1,30 @@
+{
+  "id": "ap-bio-ecosystem-disruptions",
+  "title": "Disruptions to Ecosystems",
+  "subject": "AP Biology",
+  "chunks": [
+    { "id": "c1", "text": "A disruption is any change that alters an ecosystem's structure or function. Some are natural, such as volcanic eruptions, lightning fires, hurricanes, disease outbreaks, and the slow climate swings of ice ages." },
+    { "id": "c2", "text": "A healthy, biodiverse ecosystem is often resilient and can recover from disruption, sometimes through ecological succession. The key is the scale and speed of the disruption versus the ecosystem's capacity to bounce back." },
+    { "id": "c3", "text": "Human-caused disruptions are now the most powerful force on the biosphere. By transforming land, moving species globally, releasing pollutants, and rapidly changing the climate, humans alter ecosystems faster than many can adapt or recover." },
+    { "id": "c4", "text": "The global decline in biodiversity is so severe that scientists describe it as a potential sixth mass extinction — but unlike the five natural mass extinctions, this one is driven by a single species, humans." },
+    { "id": "c5", "text": "Invasive species are non-native organisms, usually introduced by humans, that spread aggressively in a new area and harm the native community." },
+    { "id": "c6", "text": "Invasive species are so damaging because they often arrive without their natural predators, parasites, or competitors, so nothing keeps them in check, and native species never evolved defenses against them." },
+    { "id": "c7", "text": "Classic invasive species include zebra mussels clogging the Great Lakes, cane toads poisoning Australian predators, the brown tree snake wiping out Guam's birds, and kudzu smothering forests in the U.S. Southeast." },
+    { "id": "c8", "text": "Habitat loss and fragmentation is the single largest cause of biodiversity decline worldwide. Clearing forests for farmland, draining wetlands, and building cities makes the places species need simply vanish." },
+    { "id": "c9", "text": "Fragmentation breaks habitat into small isolated patches that support smaller populations (more vulnerable to genetic drift and extinction), cut off gene flow, and create more edge where conditions differ." },
+    { "id": "c10", "text": "Eutrophication occurs when excess nutrients, especially nitrogen and phosphorus from fertilizer runoff and sewage, flood a body of water and trigger an explosive algal bloom." },
+    { "id": "c11", "text": "In eutrophication the algae die, and decomposers consuming them deplete the water's oxygen through cellular respiration, creating a hypoxic dead zone where fish and other organisms suffocate. The killer is oxygen depletion, not direct algal poisoning." },
+    { "id": "c12", "text": "Biomagnification is the increasing concentration of a persistent toxin (like DDT or mercury) at each higher trophic level, because each predator accumulates the poison from all the contaminated prey it eats." },
+    { "id": "c13", "text": "Because of biomagnification, top predators such as eagles, large fish, and humans suffer the worst toxin exposure. It is the 10% rule's mirror image: energy decreases up the chain, but persistent toxins increase." },
+    { "id": "c14", "text": "Greenhouse gases such as carbon dioxide, methane, and water vapor let sunlight in but trap outgoing heat, warming the planet. The natural greenhouse effect keeps Earth habitable." },
+    { "id": "c15", "text": "Human activities, above all burning fossil fuels, have rapidly increased atmospheric CO₂ by moving carbon locked away for hundreds of millions of years into the air in just a couple of centuries, intensifying the greenhouse effect and driving rapid warming." },
+    { "id": "c16", "text": "Deforestation worsens climate change twice over: it releases stored carbon and removes the trees that would absorb CO₂. Slowing climate change means reducing fossil-fuel emissions and protecting carbon-absorbing forests and oceans." },
+    { "id": "c17", "text": "As climate warms, species' ranges shift toward the poles and to higher elevations, and those that cannot move fast enough or have nowhere cooler to go, like mountaintop and polar species, face extinction." },
+    { "id": "c18", "text": "Climate change disrupts timing (phenology): warming can make flowers bloom or insects emerge before their pollinators or food are available, breaking the mutualisms and predator-prey timings that communities depend on." },
+    { "id": "c19", "text": "Ocean acidification occurs when absorbed CO₂ forms carbonic acid in seawater, dissolving the shells and skeletons of corals and shellfish and bleaching and destroying coral reefs, among the most biodiverse ecosystems on Earth." },
+    { "id": "c20", "text": "Conservation biologists summarize biodiversity threats as HIPPO: Habitat loss, Invasive species, Pollution, human Population growth, and Overharvesting, now turbocharged by climate change." },
+    { "id": "c21", "text": "Ecosystem services are the benefits humans draw from functioning natural systems: pollination of crops (roughly a third of our food), water purification, flood and storm protection, climate regulation, fertile soil, fisheries, and the raw material for many medicines." },
+    { "id": "c22", "text": "Biodiversity keeps ecosystem services running because diverse ecosystems are more stable and resilient. As humans fray the web of life, they degrade the very systems that feed, water, shelter, and heal us." },
+    { "id": "c23", "text": "Conservation is applied biology: protecting and restoring habitat, establishing reserves and corridors that maintain gene flow and population size, controlling invasive species, reducing emissions, managing fisheries at sustainable yields, and restoring keystone species like the Yellowstone wolves." }
+  ]
+}

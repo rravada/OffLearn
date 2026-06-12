@@ -1,0 +1,30 @@
+{
+  "id": "ap-bio-evidence-for-evolution",
+  "title": "Evidence of Evolution and Common Ancestry",
+  "subject": "AP Biology",
+  "chunks": [
+    { "id": "c1", "text": "Evolution is supported by many independent lines of evidence — fossils, anatomy, molecules, embryos, and observed change — gathered by different scientists using different methods, all converging on the conclusion that living things share common ancestors and have changed over time." },
+    { "id": "c2", "text": "Common ancestry is the idea that different species descend from shared ancestors, like cousins tracing back to the same grandparents. The more recently two species shared an ancestor, the more features they tend to share." },
+    { "id": "c3", "text": "Fossils are the preserved remains or traces of past organisms. Because sedimentary rock forms in layers, deeper strata are generally older and shallower strata younger, so fossils can be ordered in time." },
+    { "id": "c4", "text": "Radiometric dating measures the predictable decay of radioactive isotopes to assign absolute ages to rocks and fossils. The fossil record shows change over time, with simpler forms generally appearing before complex ones and many species now extinct." },
+    { "id": "c5", "text": "Transitional fossils show intermediate features linking major groups. Tiktaalik (375 million years old) has fish features like gills and scales plus tetrapod features like a flat head, neck, and sturdy limb-like fin bones." },
+    { "id": "c6", "text": "Other transitional fossils include Archaeopteryx, which blends reptilian features (teeth, bony tail, clawed fingers) with bird features (feathers, wings), and a whale fossil series tracing sea-dwelling whales back to four-legged land mammals." },
+    { "id": "c7", "text": "The fossil record is incomplete because fossilization is rare and requires special conditions, so most organisms never fossilized. Gaps reflect this rarity, not a failure of evolution, and new fossils continue to fill them." },
+    { "id": "c8", "text": "Homologous structures share the same underlying structure and developmental origin because they were inherited from a common ancestor, even if they now perform different functions. They indicate relatedness (divergent evolution)." },
+    { "id": "c9", "text": "The vertebrate forelimb is the classic homology: a human arm, whale flipper, bat wing, and cat leg all contain the same bones in the same arrangement despite being used for grasping, swimming, flying, and walking." },
+    { "id": "c10", "text": "Analogous structures look similar and do similar jobs but evolved independently in unrelated lineages and have different underlying structure. A bird's wing and an insect's wing both enable flight but share no winged common ancestor." },
+    { "id": "c11", "text": "Analogy arises from convergent evolution, where different lineages independently evolve similar solutions to similar environmental challenges, such as the streamlined bodies of sharks, dolphins, and ichthyosaurs." },
+    { "id": "c12", "text": "Homology (shared ancestry, similar structure) reveals relatedness, while analogy (similar function, different structure) does not — it reflects similar selection pressures rather than a recent common ancestor." },
+    { "id": "c13", "text": "Vestigial structures are reduced, seemingly functionless remnants of features useful in an ancestor, such as the human appendix and tailbone, the hip and leg bones buried in whales and some snakes, and eyes in blind cave fish." },
+    { "id": "c14", "text": "Vestigial structures make sense only as evolutionary leftovers: there is no reason an organism would be designed with the useless remains of a structure its relatives use fully. They are homologous structures in the act of being lost." },
+    { "id": "c15", "text": "Because all life uses the same DNA-based genetic code and many of the same core proteins, genetic sequences can be compared across species. Closely related species have very similar DNA and protein sequences; distantly related species differ more." },
+    { "id": "c16", "text": "Humans and chimpanzees share roughly 98–99% of their DNA, humans and mice less, and humans and yeast less still, yet we share with yeast the genes for basic processes like respiration, inherited from a very ancient common ancestor." },
+    { "id": "c17", "text": "Molecular differences act as a clock: because mutations accumulate at a roughly steady rate, the number of sequence differences between two species estimates how long ago they diverged. More differences mean more time since their common ancestor." },
+    { "id": "c18", "text": "The rule for molecular data is that fewer differences mean a more recent common ancestor and closer relatedness. More differences do not mean 'more evolved' or 'more primitive,' only more time since the lineages split." },
+    { "id": "c19", "text": "Developmental evidence: vertebrate embryos of fish, chicken, and human look strikingly similar early on, all showing features like pharyngeal (gill) pouches and tails, because they share ancient developmental genes including Hox genes." },
+    { "id": "c20", "text": "Universal features such as the same genetic code, the same ATP energy currency, and ribosomes in every cell point to a single common origin of life." },
+    { "id": "c21", "text": "Molecular trees built from DNA independently agree with trees built from fossils and anatomy. When different methods that could have contradicted each other converge on the same relationships, the conclusion becomes very robust." },
+    { "id": "c22", "text": "Tiktaalik was found by prediction: scientists reasoned an intermediate should exist in rocks about 375 million years old from a shallow-water environment, searched rocks of exactly that age in Arctic Canada, and found it — a theory powerful enough to predict where to dig." },
+    { "id": "c23", "text": "All living species have been evolving for the same amount of time, so no living species is 'more evolved,' 'higher,' or 'more primitive' than another. Relatedness is described by the recency of a common ancestor, not by a ranking." }
+  ]
+}

@@ -1,0 +1,167 @@
+{
+  "id": "ap-bio-unit5-review",
+  "title": "Unit 5 Review: Heredity",
+  "subject": "AP Biology",
+  "unit": "Heredity",
+  "type": "unit-review",
+  "questionsPerAttempt": 10,
+  "isAssessment": true,
+  "bank": [
+    {
+      "question": "What is separated during Meiosis I?",
+      "options": ["Sister chromatids", "Homologous chromosomes", "Individual genes", "Centromeres only"],
+      "correctIndex": 1,
+      "explanation": "Meiosis I is the reduction division: homologous chromosomes are separated, making the cells haploid. Sister chromatids are separated later, in Meiosis II. Reversing these two is the most common meiosis error."
+    },
+    {
+      "question": "How do homologous chromosomes differ from sister chromatids?",
+      "options": ["They are identical copies of one chromosome", "They are a maternal and paternal pair carrying the same genes but possibly different alleles", "They are always genetically identical", "They are found only in haploid cells"],
+      "correctIndex": 1,
+      "explanation": "Homologous chromosomes are the maternal and paternal members of a pair — same genes in the same order, but possibly different alleles. Sister chromatids, by contrast, are two identical copies of a single chromosome joined at the centromere."
+    },
+    {
+      "question": "Which two processes occurring in Meiosis I generate genetic variation?",
+      "options": ["DNA replication and cytokinesis", "Crossing over and independent assortment", "Mitosis and binary fission", "Transcription and translation"],
+      "correctIndex": 1,
+      "explanation": "Crossing over (homologs swap segments) and independent assortment (random orientation of homologous pairs) both occur in Meiosis I and shuffle alleles. Together with random fertilization, they make each gamete genetically unique."
+    },
+    {
+      "question": "An organism has a diploid number of 2n = 8. How many genetically different gametes can independent assortment alone produce?",
+      "options": ["8", "16", "4", "2"],
+      "correctIndex": 1,
+      "explanation": "Independent assortment produces 2^n combinations, where n is the number of chromosome pairs. With 2n = 8, n = 4 pairs, so 2^4 = 16 combinations. Crossing over makes the true number of distinct gametes even larger."
+    },
+    {
+      "question": "Down syndrome (trisomy 21) results from nondisjunction. What does nondisjunction mean?",
+      "options": ["Chromosomes replicate twice", "Chromosomes fail to separate properly during meiosis, producing gametes with an abnormal chromosome number", "DNA is not replicated", "Crossing over occurs too frequently"],
+      "correctIndex": 1,
+      "explanation": "Nondisjunction is the failure of homologs (Meiosis I) or sister chromatids (Meiosis II) to separate, yielding gametes with an extra or missing chromosome. A gamete with two copies of chromosome 21 produces a zygote with three copies (trisomy 21)."
+    },
+    {
+      "question": "How does meiosis differ from mitosis in its outcome?",
+      "options": ["Meiosis produces two identical diploid cells", "Meiosis produces four genetically different haploid cells", "Meiosis produces two haploid identical cells", "Meiosis produces four identical diploid cells"],
+      "correctIndex": 1,
+      "explanation": "Meiosis produces four genetically different haploid cells (gametes) through two divisions, while mitosis produces two genetically identical diploid cells through one division. The differences arise from homolog pairing, crossing over, and the reduction division."
+    },
+    {
+      "question": "In a cross of two heterozygous purple plants (Pp × Pp), where purple is dominant, what phenotype ratio is expected?",
+      "options": ["1 purple : 1 white", "3 purple : 1 white", "9 purple : 3 white", "All purple"],
+      "correctIndex": 1,
+      "explanation": "A heterozygous monohybrid cross (Pp × Pp) gives genotypes 1 PP : 2 Pp : 1 pp, so 3/4 show the dominant purple phenotype and 1/4 show the recessive white. The 3:1 phenotype ratio is the signature of this cross."
+    },
+    {
+      "question": "Mendel's law of segregation states that the two alleles for a gene separate during gamete formation. This corresponds to which event in meiosis?",
+      "options": ["The replication of DNA in S phase", "The separation of homologous chromosomes in Meiosis I", "The separation of sister chromatids in mitosis", "Fertilization"],
+      "correctIndex": 1,
+      "explanation": "Segregation reflects the separation of homologous chromosomes during Meiosis I: because the two alleles of a gene sit on homologs, separating the homologs sends one allele to each gamete. Mendel's laws are direct readouts of chromosome behavior."
+    },
+    {
+      "question": "What is the difference between an organism's genotype and its phenotype?",
+      "options": ["They are the same thing", "Genotype is the alleles present; phenotype is the physical trait expressed", "Genotype is the trait; phenotype is the alleles", "Genotype applies only to dominant traits"],
+      "correctIndex": 1,
+      "explanation": "Genotype is the combination of alleles an organism carries (e.g., Pp), while phenotype is the observable trait that results (e.g., purple). Two different genotypes (PP and Pp) can produce the same phenotype, so phenotype does not always reveal genotype."
+    },
+    {
+      "question": "A plant shows the dominant phenotype, but its genotype is unknown (PP or Pp). What cross determines which it is?",
+      "options": ["Crossing it with another dominant plant", "A test cross with a homozygous recessive (pp) individual", "Self-pollinating it twice", "Crossing it with a heterozygote"],
+      "correctIndex": 1,
+      "explanation": "A test cross mates the unknown with a homozygous recessive (pp). If any offspring show the recessive phenotype, the unknown parent must have carried a recessive allele (Pp). If all offspring are dominant, the parent was likely PP."
+    },
+    {
+      "question": "In a dihybrid cross between two TtYy individuals, what is the probability that an offspring is both tall (T_) and yellow (Y_)?",
+      "options": ["1/16", "3/16", "9/16", "1/4"],
+      "correctIndex": 2,
+      "explanation": "Treat each gene separately: tall is 3/4 (from Tt × Tt) and yellow is 3/4 (from Yy × Yy). By the multiplication rule, tall AND yellow is 3/4 × 3/4 = 9/16. This shortcut avoids drawing a 16-box Punnett square and gives the 9:3:3:1 ratio."
+    },
+    {
+      "question": "Crossing a red snapdragon (RR) with a white one (R'R') produces all pink offspring. This is an example of...",
+      "options": ["codominance", "incomplete dominance", "simple Mendelian dominance", "epistasis"],
+      "correctIndex": 1,
+      "explanation": "An intermediate, blended heterozygote (pink between red and white) indicates incomplete dominance. The alleles do not truly blend — crossing two pinks recovers red, pink, and white in a 1:2:1 ratio, proving the alleles segregate intact."
+    },
+    {
+      "question": "A person with genotype I^A I^B has type AB blood, showing BOTH A and B antigens. This illustrates...",
+      "options": ["incomplete dominance", "codominance", "polygenic inheritance", "pleiotropy"],
+      "correctIndex": 1,
+      "explanation": "Codominance is when both alleles are fully and separately expressed in the heterozygote — type AB blood shows both the A and B antigens at once, not a blend. The ABO system also illustrates multiple alleles (I^A, I^B, and i)."
+    },
+    {
+      "question": "Human height varies continuously across a smooth range rather than falling into a few categories. This pattern indicates...",
+      "options": ["a single gene with two alleles", "polygenic inheritance, where many genes contribute to one trait", "pleiotropy", "codominance"],
+      "correctIndex": 1,
+      "explanation": "A continuously varying trait with a bell-curve distribution indicates polygenic inheritance: many genes each add a small effect, plus environmental influence. This contrasts with single-gene traits that produce a few discrete categories."
+    },
+    {
+      "question": "The single sickle-cell allele affects red blood cell shape, oxygen transport, pain, organ damage, and malaria resistance. One gene influencing many traits is called...",
+      "options": ["polygenic inheritance", "pleiotropy", "epistasis", "incomplete dominance"],
+      "correctIndex": 1,
+      "explanation": "Pleiotropy is when one gene affects many, often unrelated, traits. It is the opposite of polygenic inheritance (many genes → one trait). The sickle-cell allele is the classic example, and its malaria-resistance effect connects to evolution."
+    },
+    {
+      "question": "A Himalayan rabbit develops dark fur on its cooler extremities (ears, nose, paws) but light fur on its warm body, all from one genotype. This best illustrates...",
+      "options": ["codominance", "the influence of the environment on gene expression and phenotype", "nondisjunction", "a sex-linked trait"],
+      "correctIndex": 1,
+      "explanation": "A single genotype producing different phenotypes in different conditions shows that phenotype = genotype + environment. Here a temperature-sensitive enzyme makes dark pigment only in cooler body regions, so the environment shapes how the gene is expressed."
+    },
+    {
+      "question": "Why are X-linked recessive disorders such as color blindness more common in males than females?",
+      "options": ["Males inherit two X chromosomes", "Males have only one X, so a single recessive allele is expressed with no second X to mask it", "The Y chromosome carries the recessive allele", "Females cannot carry the allele"],
+      "correctIndex": 1,
+      "explanation": "Males are XY, so their single X has no homologous partner to mask a recessive allele — one copy is enough to show the trait. Females (XX) need two copies, making them far less likely to be affected; a female with one copy is an unaffected carrier."
+    },
+    {
+      "question": "A boy has an X-linked recessive disorder. From which parent did he inherit the recessive allele?",
+      "options": ["His father, who gave him the X", "His mother, because a son receives his single X from his mother", "Both parents equally", "Neither; it arose only by new mutation"],
+      "correctIndex": 1,
+      "explanation": "A son inherits his single X from his mother and his Y from his father. Therefore the X-linked recessive allele in an affected son must have come from his mother (typically a carrier), never from his father."
+    },
+    {
+      "question": "A man with hemophilia (X-linked recessive, XʰY) has children with a woman who is homozygous unaffected (XᴴXᴴ). What is expected?",
+      "options": ["All sons affected", "All daughters affected", "No children affected, but all daughters are carriers", "Half of all children affected"],
+      "correctIndex": 2,
+      "explanation": "The father passes his Xʰ only to daughters (sons get his Y), so all daughters become unaffected carriers (XᴴXʰ). Sons get the mother's normal Xᴴ and the father's Y, so no children are affected. Affected fathers pass X-linked alleles to daughters, not sons."
+    },
+    {
+      "question": "Two genes located close together on the same chromosome tend to be inherited together. These are called...",
+      "options": ["homologous genes", "linked genes", "codominant genes", "polygenic genes"],
+      "correctIndex": 1,
+      "explanation": "Genes close together on the same chromosome are linked and tend to travel into the same gamete, violating independent assortment. Crossing over can occasionally separate them, and the closer they are, the less often this happens."
+    },
+    {
+      "question": "Two linked genes show a recombination frequency of 3%, while another pair shows 25%. What can you conclude?",
+      "options": ["The 3% pair is farther apart than the 25% pair", "The 3% pair is closer together than the 25% pair", "Both pairs are on different chromosomes", "Recombination frequency is unrelated to distance"],
+      "correctIndex": 1,
+      "explanation": "Recombination frequency increases with distance: a low frequency (3%) means the genes are close together, while a higher frequency (25%) means they are farther apart. This relationship lets geneticists map gene order (1% recombination = 1 map unit)."
+    },
+    {
+      "question": "In a pedigree, two unaffected parents have a child who shows the trait. What does this indicate about the trait?",
+      "options": ["It must be dominant", "It is recessive, and the parents are carriers", "It is X-linked dominant", "It cannot be inherited"],
+      "correctIndex": 1,
+      "explanation": "If two unaffected parents produce an affected child, the trait must be recessive: both parents carry a hidden recessive allele (they are carriers) that combined in the child. A dominant trait would require at least one affected parent."
+    },
+    {
+      "question": "Mendel's law of independent assortment applies to genes that are...",
+      "options": ["close together on the same chromosome", "on different chromosomes (or far apart)", "always X-linked", "identical alleles"],
+      "correctIndex": 1,
+      "explanation": "Independent assortment applies to genes on different chromosomes, which are distributed to gametes independently because homologous pairs line up randomly in Meiosis I. Genes close together on the same chromosome are linked and violate this law."
+    },
+    {
+      "question": "In Labrador retrievers, a second gene can prevent any pigment from being deposited, making a dog yellow regardless of its black/brown color gene. This gene interaction is called...",
+      "options": ["pleiotropy", "epistasis", "incomplete dominance", "codominance"],
+      "correctIndex": 1,
+      "explanation": "Epistasis is when one gene masks or modifies the expression of another gene. Here the second gene controls whether pigment is deposited at all, overriding the color gene. Epistasis often produces modified dihybrid ratios such as 9:3:4."
+    },
+    {
+      "question": "Why does sexual reproduction persist despite being less efficient than asexual reproduction?",
+      "options": ["It produces more offspring per parent", "It generates genetic variation that helps populations adapt to changing environments and resist disease", "It requires no mate", "It passes 100% of a parent's genes to offspring"],
+      "correctIndex": 1,
+      "explanation": "Sexual reproduction is costly (each parent passes only half its genes and must find a mate), but the genetic variation it generates through meiosis makes populations a moving target for parasites and lets them adapt to change. This variation is the raw material of evolution."
+    },
+    {
+      "question": "Both incomplete dominance and codominance produce what phenotype ratio in a cross between two heterozygotes?",
+      "options": ["3:1", "1:2:1", "9:3:3:1", "1:1"],
+      "correctIndex": 1,
+      "explanation": "In both incomplete dominance and codominance, the heterozygote has its own distinct phenotype, so a heterozygote × heterozygote cross gives a 1:2:1 phenotype ratio (matching the genotype ratio) rather than the 3:1 of simple dominance."
+    }
+  ]
+}

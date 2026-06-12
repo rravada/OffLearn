@@ -1,0 +1,30 @@
+{
+  "id": "ap-bio-community-ecology-and-biodiversity",
+  "title": "Community Ecology and Biodiversity",
+  "subject": "AP Biology",
+  "chunks": [
+    { "id": "c1", "text": "A community is all the different populations of different species living and interacting in the same area. Community ecology studies how species affect each other and how those interactions shape who lives where and in what abundance." },
+    { "id": "c2", "text": "Species interactions can be classified by assigning each partner a + (helped), − (harmed), or 0 (unaffected). This +/−/0 framework organizes competition, predation, and the symbioses." },
+    { "id": "c3", "text": "Competition is (−/−): both species are harmed by fighting over the same limited resource. Predation, herbivory, and parasitism are (+/−): one benefits and the other is harmed." },
+    { "id": "c4", "text": "The symbioses are long-term close relationships: mutualism (+/+, both benefit), commensalism (+/0, one benefits and the other is unaffected), and parasitism (+/−, one benefits and the host is harmed)." },
+    { "id": "c5", "text": "The competitive exclusion principle states that two species competing for the exact same limiting resource cannot coexist indefinitely in the same place; one will be slightly better and drive the other to local extinction." },
+    { "id": "c6", "text": "An ecological niche is the full role a species plays in its community — all the resources it uses and conditions it needs. The niche is a species' 'occupation,' as opposed to its habitat, which is its 'address.'" },
+    { "id": "c7", "text": "The fundamental niche is the full range of conditions a species could use; the realized niche is the usually smaller range it actually uses once competitors and other limits are accounted for." },
+    { "id": "c8", "text": "Resource partitioning lets similar species coexist by dividing up resources or niche space so they are not using the exact same thing. MacArthur's warblers feed in different zones of the same spruce trees." },
+    { "id": "c9", "text": "Competition can select for slight differences (character displacement) that let species specialize and coexist, connecting community ecology directly to natural selection." },
+    { "id": "c10", "text": "Predation drives a coevolutionary arms race between predators and prey. Prey evolve defenses including camouflage, mechanical defenses like spines and shells, and chemical defenses like toxins." },
+    { "id": "c11", "text": "Aposematic (warning) coloration is bright coloring that advertises that a prey species is toxic or dangerous, like a poison dart frog's vivid hues, so predators learn to avoid it." },
+    { "id": "c12", "text": "In Batesian mimicry a harmless species evolves to look like a harmful one, gaining protection it does not 'deserve.' In Müllerian mimicry two or more genuinely harmful species evolve to resemble each other so predators learn one warning pattern." },
+    { "id": "c13", "text": "A keystone species has an effect on its community far larger than its abundance would suggest, like the keystone of a stone arch: remove it and the whole structure collapses." },
+    { "id": "c14", "text": "When Robert Paine removed sea stars (Pisaster) from tidal zones, the mussels they preyed on exploded and crowded out other species, and biodiversity crashed — showing the sea star held the community's diversity together despite being uncommon." },
+    { "id": "c15", "text": "Sea otters are a keystone species: by eating sea urchins, which devour kelp, they protect kelp forests and indirectly sustain an entire ecosystem. Losing a keystone triggers disproportionate, cascading change." },
+    { "id": "c16", "text": "A trophic cascade occurs when removing a top predator ripples through multiple links: for example, removing sea otters lets urchins boom, urchins overgraze kelp forests, and the loss of kelp habitat collapses biodiversity." },
+    { "id": "c17", "text": "Ecological succession is the predictable sequence of communities that replace one another in an area over time as each stage modifies the environment and enables the next." },
+    { "id": "c18", "text": "Primary succession begins on bare substrate with no soil, such as cooled lava or bare rock left by a glacier. Pioneer species like lichens and mosses break down rock and build the first thin soil, allowing later plants to move in." },
+    { "id": "c19", "text": "Secondary succession occurs where a disturbance like fire, flood, or an abandoned farm field destroyed a community but the soil remains. It proceeds much faster because soil, seeds, and roots are already present." },
+    { "id": "c20", "text": "Biodiversity is the variety of life, measured as the number of different species (species richness) and their relative abundance (evenness) in a community." },
+    { "id": "c21", "text": "Biodiversity makes ecosystems more stable and resilient — better able to withstand and recover from disturbances. Like a diversified portfolio, a diverse community has functional backups: if one species is lost, others can fill its role." },
+    { "id": "c22", "text": "A low-diversity ecosystem like a single-crop monoculture is fragile, because one pest or disease can devastate the whole thing. Greater genetic diversity within species similarly buffers populations against change." },
+    { "id": "c23", "text": "The 1995 reintroduction of gray wolves to Yellowstone is a classic keystone cascade: wolves reduced and changed the behavior of overgrazing elk, allowing willows and aspens to regrow, beavers and wetlands to return, and biodiversity to rise." }
+  ]
+}
