@@ -1,0 +1,286 @@
+{
+  "id": "algebra-u4-unit-review",
+  "title": "Unit 4 Review: Introduction to Functions",
+  "subject": "Algebra",
+  "unit": "Introduction to Functions",
+  "type": "unit-review",
+  "questionsPerAttempt": 10,
+  "isAssessment": true,
+  "bank": [
+    {
+      "question": "Which set of ordered pairs is a function?",
+      "options": [
+        "{(2, 3), (2, 5), (4, 7)}",
+        "{(1, 4), (3, 4), (5, 9)}",
+        "{(0, 1), (0, 2), (1, 3)}",
+        "{(6, 1), (6, 2), (6, 3)}"
+      ],
+      "correctIndex": 1,
+      "explanation": "In {(1, 4), (3, 4), (5, 9)}, every input (1, 3, 5) is different, so each input has one output — it is a function. The repeated output 4 is allowed. The others repeat an input with different outputs, which breaks the function rule."
+    },
+    {
+      "question": "Why is {(3, 1), (3, 8), (5, 2)} NOT a function?",
+      "options": [
+        "Because the output 1 is small",
+        "Because the input 3 is paired with two different outputs, 1 and 8",
+        "Because it has only three pairs",
+        "Because 5 appears as an input"
+      ],
+      "correctIndex": 1,
+      "explanation": "The input 3 is paired with both 1 and 8, so one input has two different outputs, which violates the definition of a function. A function requires each input to have exactly one output."
+    },
+    {
+      "question": "A relation has a repeated OUTPUT but all different inputs. Is it a function?",
+      "options": [
+        "No, repeated outputs are never allowed",
+        "Yes, repeated outputs are allowed as long as each input has one output",
+        "Only if the outputs are positive",
+        "It cannot be determined"
+      ],
+      "correctIndex": 1,
+      "explanation": "Repeated outputs are perfectly allowed in a function; different inputs may share the same output. A function is only broken when one input has two different outputs."
+    },
+    {
+      "question": "What does the vertical line test tell you?",
+      "options": [
+        "If a horizontal line crosses twice, it is not a function",
+        "If any vertical line crosses the graph more than once, it is not a function",
+        "If the graph is curved, it is not a function",
+        "If the line is steep, it is a function"
+      ],
+      "correctIndex": 1,
+      "explanation": "The vertical line test says that if any vertical line crosses a graph more than once, the graph fails to be a function, because that would mean one input has two outputs."
+    },
+    {
+      "question": "Which graph is NOT a function?",
+      "options": [
+        "A slanted straight line, y = 3x",
+        "An upward parabola, y = x²",
+        "A circle centered at the origin",
+        "A horizontal line, y = 4"
+      ],
+      "correctIndex": 2,
+      "explanation": "A vertical line through a circle hits it twice (top and bottom), so a circle fails the vertical line test and is not a function. Slanted lines, parabolas, and horizontal lines all pass."
+    },
+    {
+      "question": "Is a vertical line, such as x = 5, a function?",
+      "options": [
+        "Yes, it is a straight line",
+        "No, a vertical line fails the vertical line test",
+        "Yes, because it has one x-value",
+        "Only if it passes through the origin"
+      ],
+      "correctIndex": 1,
+      "explanation": "A vertical line like x = 5 has one input (x = 5) paired with infinitely many outputs, so it fails the vertical line test and is not a function."
+    },
+    {
+      "question": "If f(x) = 5x - 2, what is f(4)?",
+      "options": [
+        "f(4) = 18, from 5(4) - 2 = 20 - 2",
+        "f(4) = 3, from 5 - 2 then times 4",
+        "f(4) = 20, ignoring the -2",
+        "f(4) = 52 - 2, reading it as f times 4"
+      ],
+      "correctIndex": 0,
+      "explanation": "Substitute the input 4: f(4) = 5(4) - 2 = 20 - 2 = 18. The notation means evaluate f at 4, not f times 4, and multiplication comes before subtraction."
+    },
+    {
+      "question": "If g(x) = x² + 1, what is g(-3)?",
+      "options": [
+        "g(-3) = -8, using -3² = -9",
+        "g(-3) = 10, using (-3)² = 9, then 9 + 1",
+        "g(-3) = 7, from -9 + 1 then sign error",
+        "g(-3) = -3"
+      ],
+      "correctIndex": 1,
+      "explanation": "Substitute with parentheses: g(-3) = (-3)² + 1. Since (-3)² = 9, the result is 9 + 1 = 10. Forgetting the parentheses gives -9 and a wrong answer."
+    },
+    {
+      "question": "The notation f(2) is best read as which of the following?",
+      "options": [
+        "f multiplied by 2",
+        "The output of function f when the input is 2",
+        "2 divided by f",
+        "The slope of f"
+      ],
+      "correctIndex": 1,
+      "explanation": "f(2) means the output of f when the input is 2. The parentheses hold the input; they do not indicate multiplication."
+    },
+    {
+      "question": "For f(x) = 2x + 1, which input gives f(x) = 11?",
+      "options": [
+        "x = 5, by solving 2x + 1 = 11",
+        "x = 23, by computing 2(11) + 1",
+        "x = 11",
+        "x = 6, by subtracting 1 then forgetting to divide"
+      ],
+      "correctIndex": 0,
+      "explanation": "Set the rule equal to the output: 2x + 1 = 11. Subtract 1 to get 2x = 10, then divide by 2 to get x = 5. Plugging 11 into the function answers the wrong question."
+    },
+    {
+      "question": "A function C(g) = 3g gives the cost of g gallons of gas at $3 each. What does C(8) represent?",
+      "options": [
+        "The number of gallons that cost $8",
+        "The cost of 8 gallons, which is $24",
+        "8 gallons times the cost",
+        "The price per gallon"
+      ],
+      "correctIndex": 1,
+      "explanation": "C(8) means the output when the input is 8 gallons: C(8) = 3(8) = 24, the cost of 8 gallons, which is $24. The input is gallons and the output is dollars."
+    },
+    {
+      "question": "What is the domain of {(1, 5), (3, 7), (6, 2)}?",
+      "options": [
+        "{5, 7, 2}",
+        "{1, 3, 6}",
+        "{1, 2, 3, 5, 6, 7}",
+        "{2, 5, 7}"
+      ],
+      "correctIndex": 1,
+      "explanation": "The domain is the set of inputs (the first numbers of each pair): {1, 3, 6}. The set {5, 7, 2} would be the range (the outputs)."
+    },
+    {
+      "question": "What is the range of {(0, 4), (2, 4), (5, 9)}?",
+      "options": [
+        "{0, 2, 5}",
+        "{4, 9}",
+        "{4, 4, 9}",
+        "{0, 2, 4, 5, 9}"
+      ],
+      "correctIndex": 1,
+      "explanation": "The range is the set of outputs (second numbers), listing the repeated 4 only once: {4, 9}. The set {0, 2, 5} would be the domain."
+    },
+    {
+      "question": "On a graph, the domain is found by reading the graph in which direction?",
+      "options": [
+        "Bottom to top (vertical extent)",
+        "Left to right (horizontal extent of x-values)",
+        "Diagonally",
+        "Only at the origin"
+      ],
+      "correctIndex": 1,
+      "explanation": "The domain is the set of inputs (x-values), found by scanning the graph left to right to see its horizontal extent. The range is read bottom to top."
+    },
+    {
+      "question": "An upward parabola has its lowest point at (0, -3) and opens upward forever. What is its range?",
+      "options": [
+        "All real numbers",
+        "y ≥ -3",
+        "y ≤ -3",
+        "x ≥ -3"
+      ],
+      "correctIndex": 1,
+      "explanation": "The lowest output is -3 at the vertex, and the parabola rises forever from there, so the range is y ≥ -3. The domain (read left-right) would be all real numbers, but the range is bounded below."
+    },
+    {
+      "question": "Which feature of a graph is the y-intercept, and what does it often represent?",
+      "options": [
+        "Where y = 0; the break-even point",
+        "Where x = 0; the starting value",
+        "The highest point; the maximum",
+        "Where the graph is steepest"
+      ],
+      "correctIndex": 1,
+      "explanation": "The y-intercept is where the graph crosses the y-axis, which happens when x = 0. It often represents a starting value, like an initial amount or base fee."
+    },
+    {
+      "question": "A graph is described as 'increasing' on an interval. What does that mean?",
+      "options": [
+        "The graph falls as you move right",
+        "The graph rises as you move right (output grows as input grows)",
+        "The graph is a horizontal line",
+        "The graph is below the x-axis"
+      ],
+      "correctIndex": 1,
+      "explanation": "A graph is increasing where it rises as you move from left to right, meaning the output gets larger as the input gets larger. A falling graph would be decreasing."
+    },
+    {
+      "question": "On a distance-versus-time graph, a flat (horizontal) segment means what?",
+      "options": [
+        "Moving away quickly",
+        "The object is standing still (distance is not changing)",
+        "Moving back toward the start",
+        "Speeding up"
+      ],
+      "correctIndex": 1,
+      "explanation": "A flat segment means the output (distance) is not changing as time increases, so the object is standing still. Rising means moving away; falling means moving back."
+    },
+    {
+      "question": "A function models the number of students in a class as a function of desks. Why must its domain be whole numbers?",
+      "options": [
+        "Because desks can be any decimal",
+        "Because you cannot have a fraction of a student or desk in this context",
+        "Because the range is negative",
+        "Domain is always whole numbers"
+      ],
+      "correctIndex": 1,
+      "explanation": "In this real context, the inputs must be whole numbers because you cannot have a fractional number of students or desks. Real situations often restrict the domain to values that make sense."
+    },
+    {
+      "question": "If h(x) = -2x + 10, what is h(0)?",
+      "options": [
+        "h(0) = 10, the y-intercept",
+        "h(0) = 0",
+        "h(0) = -2",
+        "h(0) = 8"
+      ],
+      "correctIndex": 0,
+      "explanation": "Substitute 0: h(0) = -2(0) + 10 = 0 + 10 = 10. This output at x = 0 is also the y-intercept of the function's graph."
+    },
+    {
+      "question": "A mapping diagram shows inputs 1, 2, 3 each with exactly one arrow to an output. Is it a function?",
+      "options": [
+        "No, because there are three inputs",
+        "Yes, because each input has exactly one output",
+        "Only if the outputs are different",
+        "No, because mappings are never functions"
+      ],
+      "correctIndex": 1,
+      "explanation": "If every input has exactly one arrow leaving it, then each input has exactly one output, which is the definition of a function. The number of inputs and whether outputs repeat do not matter."
+    },
+    {
+      "question": "Which statement correctly distinguishes domain and range?",
+      "options": [
+        "Domain is the outputs (y); range is the inputs (x)",
+        "Domain is the inputs (x); range is the outputs (y)",
+        "Domain and range are always equal",
+        "Domain is the highest value; range is the lowest"
+      ],
+      "correctIndex": 1,
+      "explanation": "Domain is the set of inputs (x-values) and range is the set of outputs (y-values), matching the order of an ordered pair (x, y). Swapping them is a common error."
+    },
+    {
+      "question": "For f(x) = x - 7, what is f(7), and what point does it give?",
+      "options": [
+        "f(7) = 0, the point (7, 0), an x-intercept",
+        "f(7) = 14, the point (7, 14)",
+        "f(7) = -7, the point (7, -7)",
+        "f(7) = 7"
+      ],
+      "correctIndex": 0,
+      "explanation": "f(7) = 7 - 7 = 0, giving the point (7, 0). Because the output is 0, this point lies on the x-axis and is an x-intercept of the function."
+    },
+    {
+      "question": "A line segment on a graph runs from (-2, 1) to (3, 1). What are its domain and range?",
+      "options": [
+        "Domain -2 to 3; range just y = 1",
+        "Domain y = 1; range -2 to 3",
+        "Domain 1 to 1; range -2 to 3",
+        "Domain all real numbers; range all real numbers"
+      ],
+      "correctIndex": 0,
+      "explanation": "Reading left to right, x runs from -2 to 3, so the domain is -2 to 3. Reading vertically, the segment stays at y = 1, so the range is just the single value 1 (it is a horizontal segment)."
+    },
+    {
+      "question": "Evaluating a function uses the input to find the output. What does solving f(x) = 20 do?",
+      "options": [
+        "Uses the input to find the output",
+        "Uses a known output (20) to find the input by solving an equation",
+        "Multiplies f by 20",
+        "Finds the domain"
+      ],
+      "correctIndex": 1,
+      "explanation": "Solving f(x) = 20 means you know the output is 20 and you set the function's rule equal to 20 to find the input that produces it. Evaluating, by contrast, starts from a known input."
+    }
+  ]
+}

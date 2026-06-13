@@ -1,0 +1,123 @@
+{
+  "id": "algebra-u2-variables-on-both-sides",
+  "title": "Variables on Both Sides & Special Solutions",
+  "subject": "Algebra",
+  "unit": "Solving Linear Equations",
+  "duration": "30 min",
+  "objectives": [
+    "Solve linear equations that have variable terms on both sides by collecting them on one side",
+    "Use the full simplify-then-solve strategy on equations with variables on both sides",
+    "Recognize equations that have no solution and equations that have infinitely many solutions",
+    "Interpret what a special solution means about the original equation"
+  ],
+  "sections": [
+    {
+      "type": "explanation",
+      "heading": "Get All the Variables on One Team",
+      "content": "Up to now, the variable has lived on only one side of the equals sign. But plenty of equations have variables on both sides, like 5x + 2 = 3x + 10. At first this feels like a new kind of problem, but it isn't really — there's just one extra move at the start, and after that it becomes an ordinary equation you already know how to solve.\n\nThink of a tug-of-war. You've got players (variable terms) on both ends of the rope, and you want them all pulling from the same side so you can count them as one team. In algebra, we use inverse operations to move all the variable terms to one side of the equals sign and all the plain numbers to the other side. Once the x's are gathered together, you can combine them into a single term, and the equation deflates back into a familiar two-step form.\n\nHere's the key insight that makes this work: a variable term can be moved across the equals sign using the same balance principle as anything else. If you have 3x on the right side, you can subtract 3x from BOTH sides to make it disappear from the right and reduce the left. The scale stays balanced because you did the same thing to both trays. Variable terms aren't special — they obey the exact same rules as numbers.\n\nSo the new skill in this lesson is just step zero: collect the variable terms onto one side first. After that, distribute and combine, then undo operations, exactly as you've been doing. One new move, layered on top of everything you already know."
+    },
+    {
+      "type": "steps",
+      "heading": "How to Solve When Variables Are on Both Sides",
+      "steps": [
+        {
+          "title": "Simplify each side first",
+          "content": "If either side has parentheses or like terms, distribute and combine to tidy it up before doing anything else. Each side should be as simple as possible before you start moving terms across the equals sign."
+        },
+        {
+          "title": "Move the variable terms to one side",
+          "content": "Choose a side to keep the variables on, then add or subtract one of the variable terms from BOTH sides to eliminate it from the other side. For 5x + 2 = 3x + 10, subtract 3x from both sides so the x's collect on the left."
+        },
+        {
+          "title": "Move the constants to the other side",
+          "content": "Now add or subtract to gather all the plain numbers on the side opposite the variable. This leaves a simple equation with the variable term on one side and a number on the other."
+        },
+        {
+          "title": "Isolate the variable and check",
+          "content": "Divide by the coefficient (or multiply if needed) to get the variable alone, then substitute your answer into the original equation to confirm both sides are equal."
+        }
+      ]
+    },
+    {
+      "type": "example",
+      "heading": "Variables on Both Sides",
+      "content": "Solve 5x + 2 = 3x + 10.\n\nStep 1 — Each side is already simple (no parentheses, no like terms to combine), so move to collecting variables.\n\nStep 2 — Eliminate the smaller variable term. The right side has 3x, so subtract 3x from both sides:\n  5x + 2 - 3x = 3x + 10 - 3x\n  2x + 2 = 10\n  (On the left, 5x - 3x = 2x; on the right, 3x - 3x = 0, so the x is gone from the right.)\n\nStep 3 — Move the constant. Subtract 2 from both sides:\n  2x = 8\n\nStep 4 — Isolate x. Divide both sides by 2:\n  x = 4\n\nStep 5 — Check in the original: left side 5(4) + 2 = 22; right side 3(4) + 10 = 22. Both sides equal 22, so x = 4 is correct.\n\nThe one new move was Step 2: subtracting 3x from both sides to gather the variables. After that, the problem became the two-step equation 2x + 2 = 10, which you can solve in your sleep. Notice we chose to subtract the smaller variable term (3x) rather than the larger one — that kept the remaining x-term positive, which is easier to work with."
+    },
+    {
+      "type": "quiz",
+      "question": "To solve 7x - 1 = 2x + 14, what is a good first step?",
+      "options": [
+        "Add 1 to both sides before touching the variables",
+        "Subtract 2x from both sides to collect the variable terms on the left",
+        "Divide both sides by 7",
+        "Subtract 7x from both sides"
+      ],
+      "correctIndex": 1,
+      "explanation": "Subtracting 2x (the smaller variable term) from both sides collects the variables on the left and keeps the x-coefficient positive: 5x - 1 = 14. Subtracting the larger 7x would leave a negative variable term on the right, which works but is more error-prone, and dividing by 7 too early ignores the other terms."
+    },
+    {
+      "type": "example",
+      "heading": "Distribute, Then Collect Variables",
+      "content": "Solve 2(x + 4) = 6x - 4. This one combines distributing with variables on both sides.\n\nStep 1 — Simplify each side. Distribute the 2 on the left:\n  2x + 8 = 6x - 4\n\nStep 2 — Collect the variables. The smaller variable term is 2x, so subtract 2x from both sides:\n  2x + 8 - 2x = 6x - 4 - 2x\n  8 = 4x - 4\n\nStep 3 — Move the constant. Add 4 to both sides:\n  8 + 4 = 4x - 4 + 4\n  12 = 4x\n\nStep 4 — Isolate x. Divide both sides by 4:\n  12 / 4 = 4x / 4\n  3 = x,  so  x = 3\n\nStep 5 — Check in the original: left side 2(3 + 4) = 2(7) = 14; right side 6(3) - 4 = 18 - 4 = 14. Both equal 14, so x = 3.\n\nNotice the variable ended up on the right this time (4x), and that's completely fine — '3 = x' means the same thing as 'x = 3.' Don't be thrown if the variable lands on the right side; the equals sign works both directions."
+    },
+    {
+      "type": "callout",
+      "variant": "warning",
+      "heading": "Subtracting a Variable Term Changes Its Sign",
+      "content": "When you move a variable term across the equals sign, watch the sign carefully. Subtracting 3x from a side that has 5x leaves 2x (5x - 3x), and subtracting 3x from the side that HAS the 3x leaves zero. Students often subtract from only one side, or mishandle the subtraction and write 8x instead of 2x. Do the subtraction on both sides and combine carefully. Tip: moving the smaller variable term keeps the surviving coefficient positive and reduces sign errors."
+    },
+    {
+      "type": "explanation",
+      "heading": "When Equations Have No Solution or Infinitely Many",
+      "content": "Most equations have exactly one solution — one value of x that makes them true. But two surprising things can happen, and you need to recognize them, because they look like 'mistakes' when they're actually the answer.\n\nSometimes, as you solve, all the variable terms cancel out and you're left with a statement that is simply false, like 5 = 9. There's no x in it at all, and it's not true. This means the original equation has NO solution — there is no value of x that could ever make it work. It's like an equation insisting that two different numbers are equal; nothing you plug in can fix that. We write 'no solution.'\n\nOther times, the variables cancel and you're left with a statement that is always true, like 7 = 7 or 0 = 0. Again there's no x, but this time the leftover statement is true no matter what. This means the original equation has INFINITELY many solutions — every possible value of x makes it true. The two sides were secretly the same expression all along. We write 'infinitely many solutions' (or 'all real numbers').\n\nThe way to tell them apart is simple: solve as usual, and if the variable disappears, look at the number statement that remains. If it's false (like 3 = 8), there's no solution. If it's true (like 4 = 4), there are infinitely many solutions. The variable vanishing isn't an error — it's a signal that you've hit one of these special cases."
+    },
+    {
+      "type": "example",
+      "heading": "Spotting No Solution and Infinite Solutions",
+      "content": "No solution — Solve 2x + 5 = 2x + 9.\n  Subtract 2x from both sides:\n  2x + 5 - 2x = 2x + 9 - 2x\n  5 = 9\n  The variable is gone, and 5 = 9 is false. So this equation has NO solution. It makes sense: the two sides are the same thing (2x) plus different numbers, so they can never be equal.\n\nInfinitely many solutions — Solve 3(x + 2) = 3x + 6.\n  Distribute the left side:\n  3x + 6 = 3x + 6\n  Subtract 3x from both sides:\n  6 = 6\n  The variable is gone, and 6 = 6 is always true. So this equation has INFINITELY many solutions — any value of x works. It makes sense: after distributing, both sides are literally the identical expression 3x + 6.\n\nThe tell-tale sign in both cases is the variable disappearing. Then you just read the leftover statement: false means no solution, true means infinitely many. Don't panic when the x's cancel — interpret what's left."
+    },
+    {
+      "type": "table",
+      "heading": "Three Possible Outcomes When Solving",
+      "headers": ["What happens", "What it looks like", "What it means"],
+      "rows": [
+        ["Variable survives", "You get x = a single number (like x = 4)", "Exactly one solution"],
+        ["Variable cancels, false statement", "You get something untrue (like 5 = 9)", "No solution"],
+        ["Variable cancels, true statement", "You get something always true (like 6 = 6)", "Infinitely many solutions (all real numbers)"]
+      ]
+    },
+    {
+      "type": "callout",
+      "variant": "tip",
+      "heading": "Move the Smaller Variable Term",
+      "content": "When variables are on both sides, eliminate the SMALLER variable term to keep the remaining coefficient positive. For 5x + 2 = 3x + 10, subtract 3x (not 5x), leaving a friendly 2x on the left instead of a -2x on the right. Working with positive coefficients cuts down on sign errors and makes the final division cleaner. It's a small choice that makes the whole problem smoother."
+    },
+    {
+      "type": "quiz",
+      "question": "While solving an equation, you correctly simplify it to 8 = 8. What does this tell you?",
+      "options": [
+        "The solution is x = 8",
+        "The equation has no solution",
+        "The equation has infinitely many solutions, because the statement is always true",
+        "You made a mistake and must start over"
+      ],
+      "correctIndex": 2,
+      "explanation": "When the variable cancels and you are left with a true statement like 8 = 8, the equation is true for every value of x, so it has infinitely many solutions. It is not x = 8 (there is no x left), and a true leftover statement is not a mistake — it is the signature of infinitely many solutions."
+    },
+    {
+      "type": "callout",
+      "variant": "remember",
+      "heading": "When the Variable Vanishes, Read the Leftover",
+      "content": "If solving makes the variable cancel out, do not panic — read the number statement that remains. A FALSE statement (like 3 = 7) means NO solution. A TRUE statement (like 5 = 5) means INFINITELY many solutions. Only when the variable survives do you get a single numerical answer. These three outcomes — one solution, no solution, infinitely many — are the complete set of possibilities for a linear equation." },
+    {
+      "type": "keypoint",
+      "content": "Solve equations with variables on both sides by collecting variable terms on one side and constants on the other; if the variable cancels, a false leftover statement means no solution and a true one means infinitely many solutions."
+    },
+    {
+      "type": "deepdive",
+      "heading": "What 'No Solution' Really Tells You",
+      "content": "It might seem strange that an equation could have no solution or infinitely many, but these outcomes carry real meaning, and recognizing them is genuinely useful beyond the classroom.\n\nThink about two phone plans. Plan A costs $40 plus $10 per gigabyte; Plan B costs $40 plus $10 per gigabyte from a different company. Setting their costs equal gives an equation that simplifies to something always true — infinitely many solutions — which is the math's way of telling you the plans cost the same no matter how much data you use. Now imagine Plan A costs $40 plus $10 per gigabyte and Plan B costs $50 plus $10 per gigabyte. Setting them equal leads to a false statement like 40 = 50 — no solution — because Plan B is always $10 more, so there's no usage level where they cost the same. The 'no solution' result is real information: it says these two will never break even.\n\nThis is a glimpse of something powerful: math doesn't just compute answers, it tells you about the structure of a situation. When you'll later study systems of equations and graphing, 'no solution' will correspond to parallel lines that never meet, and 'infinitely many solutions' will correspond to two equations describing the very same line. The arithmetic you're doing now is quietly describing geometry you'll see soon.\n\nAnd there's a confidence-building lesson here too. The first time the variable cancels, it feels like you broke the problem. You didn't. Learning to stay calm, read the leftover statement, and correctly say 'no solution' or 'infinitely many' is a sign you understand what equations actually mean — not just how to push symbols around. That deeper understanding is what makes the rest of algebra click."
+    }
+  ],
+  "aiContext": "This is the third lesson of Algebra Unit 2 (Solving Linear Equations). Emphasize the one new move — collecting variable terms on one side using inverse operations (the balance principle applies to variable terms too) — and the recommendation to eliminate the smaller variable term to keep coefficients positive. The crucial conceptual content is the special cases: when the variable cancels, a FALSE leftover statement means no solution and a TRUE one means infinitely many solutions; students often think the variable canceling is an error. Connect forward: these special cases reappear as parallel lines (no solution) and identical lines (infinitely many) in graphing and systems. After this lesson a student should solve equations with variables on both sides and correctly identify and interpret no-solution and infinite-solution cases."
+}

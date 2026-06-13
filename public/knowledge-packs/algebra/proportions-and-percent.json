@@ -1,0 +1,28 @@
+{
+  "id": "proportions-and-percent",
+  "title": "Ratios, Proportions & Percent Problems",
+  "subject": "Algebra",
+  "chunks": [
+    { "id": "pp-1", "text": "A ratio is a comparison of two quantities, such as 2 cups of flour to 1 cup of sugar, written 2:1 or as the fraction 2/1. A proportion is a statement that two ratios are equal." },
+    { "id": "pp-2", "text": "A proportion keeps a relationship the same at different sizes. For example, 2 cups flour / 1 cup sugar = 4 cups flour / 2 cups sugar is a proportion, because both ratios describe the same flour-to-sugar relationship." },
+    { "id": "pp-3", "text": "Solving a proportion is the same as solving an equation. A proportion like 3/4 = x/12 is an equation with an unknown that can be solved using the balance principle." },
+    { "id": "pp-4", "text": "Cross-multiplication solves a proportion: for a/b = c/d, multiply diagonally to get a times d equals b times c. The two diagonal products are equal whenever the two fractions are equal." },
+    { "id": "pp-5", "text": "To solve a proportion, write it as two equal fractions with matching quantities lined up, cross-multiply to form an equation, solve for the variable, and check that the answer is reasonable." },
+    { "id": "pp-6", "text": "To solve 3/4 = x/12, cross-multiply to get 3 times 12 = 4 times x, which is 36 = 4x. Divide both sides by 4 to get x = 9. Check: 9/12 simplifies to 3/4." },
+    { "id": "pp-7", "text": "To solve x/5 = 6/10, cross-multiply to get 10x = 30, then divide both sides by 10 to get x = 3. Check: 3/5 equals 6/10 because both equal 0.6." },
+    { "id": "pp-8", "text": "Cross-multiplication works because if two fractions are equal, their diagonal products must be equal. It turns a proportion into a simple linear equation that can be solved by isolating the variable." },
+    { "id": "pp-9", "text": "To solve a real-world proportion, keep matching units in the same positions. For a car that travels 150 miles on 5 gallons, the distance on 8 gallons is found from 150/5 = x/8." },
+    { "id": "pp-10", "text": "Solving 150/5 = x/8 by cross-multiplication gives 150 times 8 = 5 times x, so 1200 = 5x, and dividing by 5 gives x = 240 miles on 8 gallons." },
+    { "id": "pp-11", "text": "When setting up a proportion, whatever quantity is on top of the first fraction must be on top of the second fraction. Mixing the order, such as miles/gallons on one side and gallons/miles on the other, produces a wrong answer." },
+    { "id": "pp-12", "text": "A percent is a ratio with a denominator of 100. The word percent means per hundred, so 25 percent means 25 out of 100, or the fraction 25/100." },
+    { "id": "pp-13", "text": "The percent proportion is part/whole = percent/100. The whole is the total amount, the part is the piece, and the percent is the rate over 100. This single setup solves every percent problem." },
+    { "id": "pp-14", "text": "In percent word problems, the word 'of' usually marks the whole (the number right after 'of'), and the word 'is' usually marks the part. In 'what is 20% of 50,' the 50 is the whole." },
+    { "id": "pp-15", "text": "The three types of percent problems are finding the part, finding the whole, and finding the percent. All three use the same setup, part/whole = percent/100, with the unknown placed in the missing position." },
+    { "id": "pp-16", "text": "To find a part: 'What is 20% of 50?' gives part/50 = 20/100. Cross-multiply to get 100 times part = 1000, so part = 10. Thus 20% of 50 is 10." },
+    { "id": "pp-17", "text": "To find the whole: '15 is 30% of what number?' gives 15/whole = 30/100. Cross-multiply to get 1500 = 30 times whole, so whole = 50. Thus 15 is 30% of 50." },
+    { "id": "pp-18", "text": "To find the percent: '12 is what percent of 48?' gives 12/48 = percent/100. Cross-multiply to get 1200 = 48 times percent, so percent = 25%." },
+    { "id": "pp-19", "text": "For a $40 shirt at 25% off, the savings is 25% of 40: part/40 = 25/100, giving part = $10 saved. The sale price is 40 - 10 = $30, which is different from the amount saved." },
+    { "id": "pp-20", "text": "Percents appear everywhere in daily life: discounts, restaurant tips, sales tax, and loan interest are all a percent of an amount. Two successive discounts of 40% then 10% are not the same as 50% off." },
+    { "id": "pp-21", "text": "Two reliable tools cover proportions and percents: cross-multiplication for any proportion a/b = c/d, and part/whole = percent/100 for any percent problem. These replace many special-case formulas with one method each." }
+  ]
+}

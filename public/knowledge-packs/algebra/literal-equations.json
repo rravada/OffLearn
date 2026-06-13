@@ -1,0 +1,28 @@
+{
+  "id": "literal-equations",
+  "title": "Literal Equations & Rearranging Formulas",
+  "subject": "Algebra",
+  "chunks": [
+    { "id": "le-1", "text": "A literal equation is an equation with several variables, such as d = rt. The word literal comes from letter, because these equations are made mostly of letters rather than numbers." },
+    { "id": "le-2", "text": "Solving a literal equation for one variable means rearranging the equation so that the chosen variable sits alone on one side. The answer is an expression made of the other letters, not a single number." },
+    { "id": "le-3", "text": "Solving a literal equation uses the same rules as solving a numerical equation: inverse operations, doing the same thing to both sides, and isolating the target variable. Only the form of the answer differs." },
+    { "id": "le-4", "text": "The key technique for literal equations is to treat every letter you are not solving for as if it were a fixed number. In d = rt, when solving for t, treat r like the 3 in 3t." },
+    { "id": "le-5", "text": "To solve d = rt for t, divide both sides by r, giving t = d / r. This is the same move as solving 3t = 12 by dividing by 3; the multiplier is just a letter instead of a number." },
+    { "id": "le-6", "text": "The distance formula d = rt rearranged for time is t = d / r. For example, driving 300 miles at 60 miles per hour gives t = 300 / 60 = 5 hours." },
+    { "id": "le-7", "text": "To solve a literal equation: identify the target variable, see what operations are attached to it, undo those operations with inverses on both sides, and continue until the target variable is alone." },
+    { "id": "le-8", "text": "When undoing operations in a literal equation, undo addition and subtraction before multiplication and division, the same reverse order used for numerical equations." },
+    { "id": "le-9", "text": "To solve the perimeter formula P = 2l + 2w for w, first subtract 2l from both sides to get P - 2l = 2w, then divide both sides by 2 to get w = (P - 2l) / 2." },
+    { "id": "le-10", "text": "When dividing to isolate a variable, divide the entire other side, not just one term. If P - 2l = 2w and you divide by 2, the result is (P - 2l) / 2 = w, with the whole numerator divided." },
+    { "id": "le-11", "text": "To solve A = lw for l, divide both sides by w, giving l = A / w. Division is the inverse of the multiplication between l and w." },
+    { "id": "le-12", "text": "To solve the triangle area formula A = (1/2)bh for b, first multiply both sides by 2 to clear the fraction, getting 2A = bh, then divide both sides by h to get b = 2A / h." },
+    { "id": "le-13", "text": "Multiplying both sides by 2 is a useful first move whenever a formula contains a factor of one-half, because 2 times one-half equals 1, which clears the fraction." },
+    { "id": "le-14", "text": "The triangle area formula rearranged for the base is b = 2A / h. For a triangle with area 24 square feet and height 6 feet, b = 2(24) / 6 = 48 / 6 = 8 feet." },
+    { "id": "le-15", "text": "To solve y = mx + b for x, subtract b from both sides to get y - b = mx, then divide both sides by m to get x = (y - b) / m. The whole expression y - b is divided by m." },
+    { "id": "le-16", "text": "Common rearranged formulas include t = d / r from d = rt, w = A / l from A = lw, l = (P - 2w) / 2 from P = 2l + 2w, and h = 2A / b from A = (1/2)bh." },
+    { "id": "le-17", "text": "If a literal equation is confusing, replace the other letters with easy numbers, solve that numerical version to see which operations are used, then repeat the same steps with the letters." },
+    { "id": "le-18", "text": "A common mistake in literal equations is dividing only one term of a side instead of the whole side. When P - 2l is divided by 2, the result is (P - 2l)/2, not P - l." },
+    { "id": "le-19", "text": "One formula can answer many questions depending on which variable is isolated. The formula d = rt can be solved for t = d/r to find time or for r = d/t to find speed." },
+    { "id": "le-20", "text": "Rearranging formulas is essential in science, engineering, finance, and trades, where formulas rarely come pre-arranged for the quantity you need. Solving for any variable lets you use one relationship from any direction." },
+    { "id": "le-21", "text": "Treating other letters as constants is the core mindset of literal equations. Once you can isolate any variable in a formula, you are no longer dependent on the formula being given in convenient form." }
+  ]
+}

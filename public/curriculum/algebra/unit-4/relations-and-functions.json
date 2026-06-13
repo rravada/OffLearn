@@ -1,0 +1,124 @@
+{
+  "id": "algebra-u4-relations-and-functions",
+  "title": "Relations, Functions & the Vertical Line Test",
+  "subject": "Algebra",
+  "unit": "Introduction to Functions",
+  "duration": "25 min",
+  "objectives": [
+    "Describe a relation as a set of inputs paired with outputs",
+    "Define a function as a relation in which each input has exactly one output",
+    "Determine whether a relation given as ordered pairs, a table, or a mapping is a function",
+    "Use the vertical line test to decide whether a graph represents a function"
+  ],
+  "sections": [
+    {
+      "type": "explanation",
+      "heading": "A Function Is a Reliable Machine",
+      "content": "Picture a vending machine. You press B4 and out comes a bag of pretzels. Every single time you press B4, you get those same pretzels — not pretzels sometimes and a soda other times. That predictability is exactly what makes a vending machine useful: one button gives one result, reliably. This is the heart of one of the most important ideas in all of mathematics — the function.\n\nBefore we define a function, we need a slightly bigger idea called a relation. A relation is just any pairing of inputs with outputs. Think of inputs as the buttons you press and outputs as what comes out. We often write these pairings as ordered pairs (input, output), like (B4, pretzels) or, with numbers, (2, 5). A relation can be any collection of such pairs — it's a very general idea, like a list of 'this goes with that.'\n\nA function is a special, well-behaved kind of relation. A relation is a function when every input has EXACTLY ONE output. Press B4, get pretzels — always the same one thing. A function never gives you two different outputs for the same input. If pressing B4 sometimes gave pretzels and sometimes gave gum, the machine would be unpredictable, and that relation would NOT be a function.\n\nThe set of all the inputs is called the domain, and the set of all the outputs is called the range — we'll explore those more in a later lesson. For now, hold onto the one rule that defines a function: each input leads to one and only one output. That single rule is what we'll test for in every form a relation can take."
+    },
+    {
+      "type": "explanation",
+      "heading": "Inputs, Outputs, and Why One Output Matters",
+      "content": "Let's make the function rule precise, because the wording matters. A function requires that each input has exactly one output. Notice what this does and doesn't forbid.\n\nIt forbids one input having two different outputs. If the input 3 is paired with both 5 and 9, that breaks the rule — the same input gave two answers, so it's not a function. An input is never allowed to be 'undecided.'\n\nBut it absolutely ALLOWS two different inputs to share the same output. Imagine a function that gives each person their birth month: lots of different people (inputs) can map to the same month (output), and that's perfectly fine. Many inputs pointing to one output is allowed; one input pointing to many outputs is not. Students mix this up constantly, so say it to yourself: repeated outputs are okay, repeated inputs with different partners are not.\n\nA helpful way to picture this is a mapping diagram: a column of inputs on the left, a column of outputs on the right, and arrows connecting each input to its output. For a function, every input on the left has exactly ONE arrow leaving it. It's fine if two arrows land on the same output, and it's fine if some outputs have no arrows — what matters is that no input has two arrows shooting off to different outputs.\n\nThis 'one arrow out of each input' image is the cleanest test there is. Whenever you're unsure, picture the arrows: if any single input sends out two arrows to different outputs, it's not a function."
+    },
+    {
+      "type": "table",
+      "heading": "Four Ways to Show a Relation",
+      "headers": ["Form", "What it looks like", "Function check"],
+      "rows": [
+        ["Ordered pairs", "{(1, 3), (2, 5), (4, 5)}", "No input (first number) repeats with a different output → function"],
+        ["Table", "Two columns: input x and output y", "No x-value appears twice with different y-values → function"],
+        ["Mapping diagram", "Inputs on left, arrows to outputs on right", "Each input has exactly one arrow leaving it → function"],
+        ["Graph", "Points plotted on the coordinate plane", "Passes the vertical line test → function"]
+      ]
+    },
+    {
+      "type": "example",
+      "heading": "Are These Ordered Pairs a Function?",
+      "content": "Set A: {(1, 2), (3, 4), (5, 6)}\n  Look at the inputs (the first number of each pair): 1, 3, 5. They are all different — no input repeats. So each input has exactly one output, and Set A IS a function.\n\nSet B: {(2, 7), (4, 9), (2, 1)}\n  Look at the inputs: 2, 4, 2. The input 2 appears twice — once paired with 7 and once paired with 1. That's the same input giving two different outputs, which breaks the rule. So Set B is NOT a function.\n\nSet C: {(1, 5), (2, 5), (3, 5)}\n  Look at the inputs: 1, 2, 3 — all different. The OUTPUT 5 repeats, but that's allowed! Different inputs can share an output. Every input still has exactly one output, so Set C IS a function.\n\nThe whole test came down to one question: does any input (first number) show up more than once with different outputs? In Set B it did, so it failed. In Sets A and C every input had a single output, so they passed. Repeated outputs, as in Set C, never disqualify a relation — only repeated inputs with conflicting outputs do."
+    },
+    {
+      "type": "quiz",
+      "question": "Which set of ordered pairs is NOT a function?",
+      "options": [
+        "{(0, 1), (1, 2), (2, 3)}",
+        "{(5, 8), (6, 8), (7, 8)}",
+        "{(4, 2), (4, 9), (5, 1)}",
+        "{(-1, 0), (0, 1), (1, 2)}"
+      ],
+      "correctIndex": 2,
+      "explanation": "In {(4, 2), (4, 9), (5, 1)}, the input 4 is paired with both 2 and 9 — one input giving two outputs — so it is not a function. The set with repeated output 8 is still a function, because different inputs may share an output."
+    },
+    {
+      "type": "explanation",
+      "heading": "The Vertical Line Test for Graphs",
+      "content": "When a relation is shown as a graph, checking every pair by hand would be slow, so we use a quick visual trick called the vertical line test. It works because of what 'one output per input' means in graph terms.\n\nOn a graph, the input is the x-coordinate (horizontal position) and the output is the y-coordinate (vertical position). A single input having two outputs would mean two points stacked directly above each other at the same x — same horizontal spot, different heights. That's exactly what a vertical line detects.\n\nThe vertical line test says: if any vertical line you could draw crosses the graph more than once, the graph is NOT a function. If every possible vertical line hits the graph at most once, it IS a function. Imagine sweeping a vertical ruler across the graph from left to right; if it ever touches two points of the graph at the same time, you've found an input with two outputs, and the relation fails.\n\nThis is why a straight line that isn't vertical (like y = 2x + 1) is a function — any vertical line crosses it exactly once. A parabola opening up or down is a function too. But a full circle is NOT a function, because a vertical line through its middle hits it twice (top and bottom). And a perfectly vertical line, like x = 3, is the worst case — it IS the vertical line, overlapping a vertical test line at infinitely many points, so it's not a function. The vertical line test turns the abstract 'one output per input' rule into something you can literally see."
+    },
+    {
+      "type": "example",
+      "heading": "Applying the Vertical Line Test",
+      "content": "Let's reason through a few graphs using the vertical line test.\n\nA slanted straight line, like the graph of y = 2x + 1: Pick any vertical position and draw a vertical line there. It crosses the slanted line exactly once. No matter where you put the vertical line, it only ever touches one point. So this graph IS a function.\n\nA U-shaped parabola opening upward, like y = x²: A vertical line crosses it once on the way down or up — at any x, there's exactly one point. So a parabola IS a function. (Don't be fooled because it 'curves back up'; that's a change in direction, not two points at the same x.)\n\nA circle, like one centered at the origin: Draw a vertical line through the middle of the circle. It enters at the bottom and exits at the top — two points at the same x. So a circle is NOT a function; that single input has two outputs.\n\nA sideways parabola opening to the right: A vertical line through it also hits two points (upper branch and lower branch), so it is NOT a function either.\n\nThe procedure never changes: imagine vertical lines sweeping across, and ask whether any of them ever touch the graph twice. One touch or fewer everywhere means function; two or more touches anywhere means not a function."
+    },
+    {
+      "type": "callout",
+      "variant": "warning",
+      "heading": "Repeated Outputs Are Fine — Repeated Inputs Are Not",
+      "content": "The most common function mistake is disqualifying a relation because an OUTPUT repeats. That's backwards. A function may pair many different inputs with the same output — like {(1, 5), (2, 5)} — and still be a perfectly good function. What breaks a function is a single INPUT paired with two different outputs, like {(4, 2), (4, 9)}. Always check the inputs (the x-values / first coordinates) for repeats with conflicting partners, not the outputs."
+    },
+    {
+      "type": "steps",
+      "heading": "How to Decide If a Relation Is a Function",
+      "steps": [
+        {
+          "title": "Identify the inputs and outputs",
+          "content": "Find which value is the input and which is the output. In ordered pairs, the input is the first number; in a table, it's usually the x-column; on a graph, it's the x-coordinate (horizontal position)."
+        },
+        {
+          "title": "Look for any input that repeats",
+          "content": "Scan the inputs. If no input value appears more than once, every input automatically has a single output, and the relation is a function. If an input does repeat, go to the next step."
+        },
+        {
+          "title": "Check the repeated input's outputs",
+          "content": "For any input that appears more than once, compare its outputs. If they're all the same, it still behaves like one output. If a repeated input has two DIFFERENT outputs, the relation is NOT a function."
+        },
+        {
+          "title": "For graphs, use the vertical line test",
+          "content": "Imagine vertical lines sweeping across the graph. If any vertical line touches the graph more than once, it's not a function. If every vertical line touches at most once, it is a function."
+        }
+      ]
+    },
+    {
+      "type": "callout",
+      "variant": "tip",
+      "heading": "Ask: 'Does Any Input Have Two Outputs?'",
+      "content": "Boil the whole concept down to one question you can ask about any relation: does any single input lead to two different outputs? If yes, it's not a function. If no, it is. Whether you're staring at ordered pairs, a table, a mapping diagram, or a graph, that one question — checked via repeated inputs or the vertical line test — gives you the answer every time."
+    },
+    {
+      "type": "quiz",
+      "question": "A graph is a perfect circle centered at the origin. Is it a function?",
+      "options": [
+        "Yes, because it is a smooth curve",
+        "No, because a vertical line through it crosses the circle twice",
+        "Yes, because every output appears once",
+        "It cannot be determined from a graph"
+      ],
+      "correctIndex": 1,
+      "explanation": "A vertical line drawn through the middle of a circle hits it at two points (top and bottom), meaning one input has two outputs, so a circle fails the vertical line test and is not a function. Being a smooth curve does not make something a function."
+    },
+    {
+      "type": "callout",
+      "variant": "remember",
+      "heading": "One Input, One Output",
+      "content": "A relation is any set of input-output pairs. A function is a relation where every input has EXACTLY ONE output. Repeated outputs are allowed; a repeated input with different outputs is not. For graphs, the vertical line test confirms it: if any vertical line crosses the graph more than once, it is not a function. This 'one input, one output' rule is the definition you will use all year." },
+    {
+      "type": "keypoint",
+      "content": "A function is a relation in which each input is paired with exactly one output — check ordered pairs and tables for a repeated input with different outputs, and check graphs with the vertical line test."
+    },
+    {
+      "type": "deepdive",
+      "heading": "Why Functions Run the Modern World",
+      "content": "The idea that one input produces one predictable output sounds simple, but it is the foundation of how we describe almost every relationship in science, technology, and daily life. Functions are the mathematics of cause and dependable effect.\n\nThink about all the things that depend on something else in a reliable way. The cost of filling your gas tank depends on the number of gallons — one amount of gas, one price. The distance a car travels depends on time at a steady speed. The amount you earn depends on hours worked. Your phone bill depends on data used. In each case, one input determines one output, which is exactly a function. Because the relationship is predictable, you can plan, budget, and make decisions — that predictability is precisely what functions guarantee and what makes them so useful.\n\nFunctions are also the literal backbone of computer programming. When a programmer writes a 'function' in code, it takes an input and returns one output, named and built on the very concept you're learning now. Every app, game, and website is a tower of functions passing inputs and outputs to each other. Spreadsheets are giant collections of functions; scientific models are functions linking causes to effects; graphics on a screen are functions turning positions into colors.\n\nThis lesson is the doorway into the rest of algebra and well beyond. From here you'll learn to write functions with special notation, evaluate them, graph them, and analyze how their outputs change — and every one of those skills rests on the simple, powerful rule you just met. One input, one output: master that idea, and you've grasped the single most important concept that connects algebra to the real, predictable, describable world."
+    }
+  ],
+  "aiContext": "This is the first lesson of Algebra Unit 4 (Introduction to Functions). Anchor the definition: a function is a relation where each input has exactly one output (the vending-machine / 'one arrow out of each input' image). The single most common student error is disqualifying a relation because an OUTPUT repeats — emphasize that repeated outputs are allowed, only a repeated INPUT with different outputs breaks it. Teach the vertical line test as the graphical version of this rule (a vertical line crossing twice means one input with two outputs). Note that vertical lines (x = 3) and circles are not functions. This lesson sets up function notation and domain/range in the next two lessons. After this lesson a student should classify relations given as ordered pairs, tables, mappings, or graphs as functions or not."
+}

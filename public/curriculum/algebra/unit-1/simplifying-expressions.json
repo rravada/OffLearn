@@ -1,0 +1,127 @@
+{
+  "id": "algebra-u1-simplifying-expressions",
+  "title": "Like Terms & the Distributive Property",
+  "subject": "Algebra",
+  "unit": "Foundations & Expressions",
+  "duration": "30 min",
+  "objectives": [
+    "Identify like terms by comparing their variables and exponents",
+    "Combine like terms to simplify an algebraic expression",
+    "Apply the distributive property to multiply a value across a sum or difference",
+    "Distribute (including a negative) and then combine like terms to fully simplify an expression"
+  ],
+  "sections": [
+    {
+      "type": "explanation",
+      "heading": "You Can Only Combine Things of the Same Kind",
+      "content": "Imagine you're cleaning up after a party and sorting what's left on the table: 3 apples, 2 oranges, and 4 more apples. How many pieces of fruit of each kind do you have? You naturally group the same things together — 3 apples and 4 apples make 7 apples — but you'd never say '7 apples plus 2 oranges equals 9 apple-oranges.' Apples and oranges are different things; you can count each kind, but you can't merge them into one.\n\nAlgebra works on this exact common-sense idea. In the expression 3x + 2y + 4x, the 'x' terms are like the apples and the 'y' term is like the oranges. You can combine 3x and 4x into 7x, but the 2y stays separate because it's a different kind of term. The simplified result is 7x + 2y. You didn't lose anything — you just grouped the same kinds together, which is what 'simplifying' means.\n\nTerms that can be combined this way are called like terms. Like terms have the exact same variable raised to the exact same power. So 3x and 4x are like terms (both are 'x to the first power'). But 3x and 3x² are NOT like terms, because one is x and the other is x squared — different kinds, like apples and apple pies. And 5x and 5y are not like terms either, because the letters differ.\n\nLearning to spot like terms and combine them is one of the most-used skills in all of algebra. You'll do it inside almost every equation you solve for the rest of the year, so let's get it solid."
+    },
+    {
+      "type": "table",
+      "heading": "Like Terms vs. Unlike Terms",
+      "headers": ["Pair of terms", "Like or unlike?", "Why"],
+      "rows": [
+        ["7x and 2x", "Like", "Same variable x, same power (first)"],
+        ["4y and -9y", "Like", "Same variable y, same power; signs don't matter for matching"],
+        ["3x and 3y", "Unlike", "Different variables (x vs y)"],
+        ["5x and 5x²", "Unlike", "Same letter but different powers (x vs x squared)"],
+        ["8 and -2", "Like", "Both are constants (numbers with no variable)"],
+        ["6 and 6n", "Unlike", "One is a constant, the other has a variable"]
+      ]
+    },
+    {
+      "type": "example",
+      "heading": "Combining Like Terms",
+      "content": "Let's simplify 5a + 3 - 2a + 8 by combining like terms. The trick is to group the matching kinds together, keeping each sign with its term.\n\nStart:  5a + 3 - 2a + 8\n\nFirst, identify the terms and their signs: +5a, +3, -2a, +8. The variable terms are 5a and -2a; the constants are 3 and 8.\n\nGroup the like terms (you can rearrange, just carry the signs):\n  (5a - 2a) + (3 + 8)\n\nNow combine each group. For the a-terms, 5a - 2a = 3a (just like 5 apples minus 2 apples is 3 apples — combine the coefficients, keep the variable). For the constants, 3 + 8 = 11:\n  3a + 11\n\nThe simplified expression is 3a + 11. We can't combine 3a and 11 any further, because one has a variable and the other doesn't — they're unlike terms. A key thing to notice: when we combined 5a and -2a, we added the coefficients (5 and -2) but the variable 'a' stayed exactly as it was. The variable doesn't change; only the count in front of it does."
+    },
+    {
+      "type": "quiz",
+      "question": "Simplify 6m - 4 + m + 9. What is the result?",
+      "options": [
+        "7m + 5, combining 6m + m = 7m and -4 + 9 = 5",
+        "6m + 5, because the lone m has no coefficient to add",
+        "7m + 13, by adding -4 and 9 as 13",
+        "12, by combining everything into one number"
+      ],
+      "correctIndex": 0,
+      "explanation": "The m-terms are 6m and m (which is 1m), and 6m + 1m = 7m. The constants are -4 and 9, and -4 + 9 = 5, giving 7m + 5. Forgetting that a lone m means 1m, mishandling the negative constant, or trying to merge unlike terms are the common mistakes."
+    },
+    {
+      "type": "explanation",
+      "heading": "The Distributive Property: Sharing With Everyone Inside",
+      "content": "Sometimes a number is multiplied by a whole group of terms wrapped in parentheses, like 3(x + 4). The distributive property tells us how to handle this, and it's based on a very fair idea: if you multiply by a group, you have to multiply by every member of the group.\n\nPicture buying party bags. Each bag contains 1 toy and 4 stickers, and you buy 3 bags. How many toys and stickers do you have? You get 3 toys and 3 × 4 = 12 stickers. You multiplied the 3 by BOTH things in the bag — not just the toys. That's exactly the distributive property: 3(x + 4) = 3·x + 3·4 = 3x + 12. The 3 gets 'distributed' (handed out) to each term inside the parentheses.\n\nWritten as a rule, the distributive property says a(b + c) = ab + ac, and it works the same with subtraction: a(b - c) = ab - ac. The number outside multiplies each term inside, and you keep the operation (plus or minus) between them.\n\nThe most important word here is 'every.' The single biggest mistake students make is multiplying the outside number by only the first term inside and forgetting the rest. In 3(x + 4), if you only do 3·x and write 3x + 4, you've shortchanged the 4 — it never got multiplied. Distribute to every term, no exceptions."
+    },
+    {
+      "type": "steps",
+      "heading": "How to Apply the Distributive Property",
+      "steps": [
+        {
+          "title": "Identify the multiplier and the group",
+          "content": "Find the factor sitting outside the parentheses (the multiplier) and the list of terms inside the parentheses (the group). For example, in -2(3x - 5), the multiplier is -2 and the group is 3x - 5."
+        },
+        {
+          "title": "Multiply the outside factor by the FIRST term inside",
+          "content": "Multiply the outside number, including its sign, by the first term in the group. For -2(3x - 5), that's -2 times 3x, which equals -6x. Keep careful track of the sign of the multiplier."
+        },
+        {
+          "title": "Multiply the outside factor by EVERY remaining term",
+          "content": "Continue multiplying the outside factor by each other term inside, one at a time. For -2(3x - 5), the second term is -5, and -2 times -5 = +10 (negative times negative is positive). Don't skip any term inside."
+        },
+        {
+          "title": "Write the results in a row with their signs",
+          "content": "String the products together with their signs to get the expanded expression. For -2(3x - 5), the result is -6x + 10. The parentheses are now gone because the multiplication has been carried out."
+        }
+      ]
+    },
+    {
+      "type": "callout",
+      "variant": "warning",
+      "heading": "Distributing a Negative Flips Every Sign",
+      "content": "The number one distribution error is mishandling a negative out front. When you distribute a negative, it changes the sign of EVERY term inside, not just the first. For example, -(3x + 5) means -1 times (3x + 5), which gives -3x - 5, NOT -3x + 5. The hidden -1 hits both terms. Whenever you see a minus sign in front of parentheses, slow down and flip the sign of every single term inside."
+    },
+    {
+      "type": "explanation",
+      "heading": "Putting It Together: Distribute, Then Combine",
+      "content": "Most real simplifying problems ask you to do both skills in sequence: first distribute to clear any parentheses, then combine like terms. The order matters — you usually can't combine like terms while they're still trapped inside parentheses, so distribution comes first.\n\nHere's the mindset. When you look at an expression like 2(3x + 4) - 5x + 1, your eyes should immediately spot the parentheses and think 'distribute first.' Once the parentheses are gone, the whole expression becomes a flat list of terms, and then you sweep through grouping the like ones together. Think of it as two phases: Phase 1 clears the parentheses, Phase 2 tidies up by combining.\n\nA word of encouragement: this two-step process feels like a lot the first few times, but it quickly becomes automatic. The students who get fast at it are the ones who don't rush — they distribute carefully (watching signs), rewrite the expression with no parentheses, and only then start combining. Trying to do everything in one mental leap is where errors sneak in. Write out each phase.\n\nThe payoff is big. Almost every multi-step equation you'll solve in the next unit begins with exactly this: distribute to clear parentheses, then combine like terms to tidy each side. The skill you're practicing here is the opening move of countless future problems."
+    },
+    {
+      "type": "example",
+      "heading": "Fully Simplifying an Expression",
+      "content": "Simplify 2(3x + 4) - 5x + 1 completely.\n\nPhase 1 — Distribute to clear the parentheses. Multiply the 2 by each term inside: 2 · 3x = 6x and 2 · 4 = 8. So 2(3x + 4) becomes 6x + 8. Rewrite the whole expression with the parentheses gone:\n  6x + 8 - 5x + 1\n\nPhase 2 — Combine like terms. Identify the terms with their signs: +6x, +8, -5x, +1. The x-terms are 6x and -5x; the constants are 8 and 1.\n  x-terms: 6x - 5x = 1x = x\n  constants: 8 + 1 = 9\n\nPut them together:\n  x + 9\n\nThe fully simplified expression is x + 9. Look how much shorter that is than what we started with! Two quick checks: we distributed the 2 to BOTH terms inside (6x and 8, not just 6x), and we kept the minus sign attached to the 5x when combining. Those two habits — distribute to everything, keep signs with terms — are what make the difference between a right answer and a near miss."
+    },
+    {
+      "type": "callout",
+      "variant": "tip",
+      "heading": "Mark Your Like Terms Before Combining",
+      "content": "On a longer expression, underline or circle each group of like terms with a matching mark — one shape for the x-terms, another for the constants, another for the y-terms. This visual sorting makes sure you don't miss a term or accidentally combine unlike ones. It takes five seconds and catches the careless errors that cost the most points."
+    },
+    {
+      "type": "quiz",
+      "question": "Simplify 4(2x - 3) - (x - 5). What is the fully simplified expression?",
+      "options": [
+        "8x - 12 - x - 5 = 7x - 17, distributing the minus as -x - 5",
+        "7x - 7, from 8x - 12 - x + 5",
+        "8x - 3 - x + 5, leaving it unfinished",
+        "9x - 7, by combining 8x and x as 9x"
+      ],
+      "correctIndex": 1,
+      "explanation": "First distribute: 4(2x - 3) = 8x - 12, and -(x - 5) = -x + 5 (the negative flips both signs). That gives 8x - 12 - x + 5. Combining like terms: 8x - x = 7x and -12 + 5 = -7, so the answer is 7x - 7. The most common error is writing -(x - 5) as -x - 5, forgetting to flip the -5 to +5."
+    },
+    {
+      "type": "callout",
+      "variant": "remember",
+      "heading": "Only Like Terms Combine; Distribute to Every Term",
+      "content": "You may only add or subtract terms that have the identical variable and exponent — to combine them, add the coefficients and keep the variable unchanged. When a factor multiplies a group in parentheses, it multiplies every term inside, and a negative out front flips the sign of every term. These two rules drive almost all expression simplification in Algebra."
+    },
+    {
+      "type": "keypoint",
+      "content": "To simplify an expression, first use the distributive property to clear parentheses (flipping every sign when a negative is distributed), then combine like terms by adding their coefficients while keeping the variable and exponent the same."
+    },
+    {
+      "type": "deepdive",
+      "heading": "Why Simplifying Is the Quiet Engine of Algebra",
+      "content": "Simplifying expressions can feel like tidying for its own sake, but it's actually the move that makes hard problems solvable. A messy expression hides its meaning; a simplified one reveals it. That's true in the classroom and far beyond it.\n\nConsider solving equations, which is the heart of the next unit. An equation like 2(3x + 4) - 5x + 1 = 14 looks intimidating until you simplify the left side to x + 9 = 14 — and suddenly the answer x = 5 is almost obvious. Every multi-step equation, every word problem, every formula you rearrange starts by simplifying. The skill isn't a side quest; it's the on-ramp to everything.\n\nIt matters in the working world too. Engineers and physicists routinely take a long, ugly formula describing a bridge's load or a circuit's behavior and simplify it into something they can actually compute and reason about. Financial analysts collapse a tangle of fees and rates into a single clean expression. Computer programmers simplify the logic in their code so it runs faster and breaks less. In every one of these jobs, the ability to take something complicated and reduce it to its essential form — without changing its value — is prized.\n\nAnd notice the bigger habit you're building: distribute carefully, group what belongs together, keep your signs honest. That disciplined, step-by-step style is exactly what separates people who find algebra frustrating from people who find it powerful. Combining like terms today is small practice for a way of thinking you'll use for years."
+    }
+  ],
+  "aiContext": "This is the fourth lesson of Algebra Unit 1 (Foundations & Expressions) and a load-bearing skill for the rest of the course. Emphasize two ideas: like terms require identical variable AND exponent (use the apples/oranges analogy), and the distributive property multiplies the outside factor by EVERY term inside. The most common errors to watch for are distributing a negative to only the first term (-(3x+5) wrongly written as -3x+5 instead of -3x-5), forgetting a lone variable's coefficient is 1, and dropping signs when combining. Stress the two-phase workflow: distribute to clear parentheses first, then combine like terms. This directly sets up solving multi-step equations in Unit 2, where nearly every problem opens with distributing and combining. After this lesson a student should fully simplify expressions like 4(2x - 3) - (x - 5)."
+}

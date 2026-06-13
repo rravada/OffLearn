@@ -1,0 +1,28 @@
+{
+  "id": "variables-on-both-sides",
+  "title": "Variables on Both Sides & Special Solutions",
+  "subject": "Algebra",
+  "chunks": [
+    { "id": "vbs-1", "text": "Some equations have variable terms on both sides of the equals sign, such as 5x + 2 = 3x + 10. To solve them, first collect all the variable terms on one side and all the constants on the other side." },
+    { "id": "vbs-2", "text": "A variable term can be moved across the equals sign using the balance principle, just like a number. Subtracting 3x from both sides removes 3x from one side and reduces the other, keeping the equation balanced." },
+    { "id": "vbs-3", "text": "The strategy for variables on both sides: simplify each side first, move the variable terms to one side, move the constants to the other side, then isolate the variable and check." },
+    { "id": "vbs-4", "text": "To solve 5x + 2 = 3x + 10, subtract 3x from both sides to get 2x + 2 = 10, subtract 2 to get 2x = 8, then divide by 2 to get x = 4." },
+    { "id": "vbs-5", "text": "When choosing which variable term to eliminate, subtract the smaller one so the remaining coefficient stays positive. In 5x + 2 = 3x + 10, subtracting 3x leaves a positive 2x, which is easier to work with than a negative term." },
+    { "id": "vbs-6", "text": "To solve 7x - 1 = 2x + 14, a good first step is to subtract 2x from both sides, collecting the variables on the left as 5x - 1 = 14 and keeping the coefficient positive." },
+    { "id": "vbs-7", "text": "When an equation with variables on both sides also has parentheses, distribute first. To solve 2(x + 4) = 6x - 4, distribute to get 2x + 8 = 6x - 4 before collecting variable terms." },
+    { "id": "vbs-8", "text": "To solve 2(x + 4) = 6x - 4: distribute to 2x + 8 = 6x - 4, subtract 2x to get 8 = 4x - 4, add 4 to get 12 = 4x, and divide by 4 to get x = 3." },
+    { "id": "vbs-9", "text": "If the variable ends up on the right side, such as 3 = x, it means the same as x = 3. The equals sign works in both directions, so the variable landing on the right is not a problem." },
+    { "id": "vbs-10", "text": "When moving a variable term across the equals sign, subtract it from both sides and combine carefully. Subtracting 3x from a side with 5x leaves 2x, and subtracting 3x from the side that has the 3x leaves zero." },
+    { "id": "vbs-11", "text": "Most linear equations have exactly one solution, a single value of the variable that makes the equation true. But an equation can also have no solution or infinitely many solutions." },
+    { "id": "vbs-12", "text": "An equation has no solution when solving causes the variable to cancel and leaves a false statement, such as 5 = 9. No value of the variable can make the equation true." },
+    { "id": "vbs-13", "text": "An equation has infinitely many solutions when solving causes the variable to cancel and leaves a statement that is always true, such as 6 = 6. Every value of the variable makes the equation true." },
+    { "id": "vbs-14", "text": "To solve 2x + 5 = 2x + 9, subtract 2x from both sides to get 5 = 9, which is false. Therefore the equation has no solution." },
+    { "id": "vbs-15", "text": "To solve 3(x + 2) = 3x + 6, distribute to get 3x + 6 = 3x + 6, then subtract 3x to get 6 = 6, which is always true. Therefore the equation has infinitely many solutions." },
+    { "id": "vbs-16", "text": "The three possible outcomes when solving a linear equation are: the variable survives and gives one numerical solution; the variable cancels and leaves a false statement, meaning no solution; or the variable cancels and leaves a true statement, meaning infinitely many solutions." },
+    { "id": "vbs-17", "text": "When the variable cancels out during solving, it is not a mistake. Read the leftover number statement: a false statement means no solution, and a true statement means infinitely many solutions." },
+    { "id": "vbs-18", "text": "Being left with a true statement like 8 = 8 means the equation has infinitely many solutions, not that x equals 8. There is no variable remaining, so the equation holds for every value of x." },
+    { "id": "vbs-19", "text": "Checking a solution to an equation with variables on both sides means substituting into the original. For x = 4 in 5x + 2 = 3x + 10, both sides equal 22, confirming the solution." },
+    { "id": "vbs-20", "text": "No solution and infinitely many solutions have real meaning. Two phone plans that cost the same regardless of usage produce an always-true equation (infinitely many solutions), while two plans that differ by a fixed amount produce a false statement (no solution), meaning they never cost the same." },
+    { "id": "vbs-21", "text": "In later topics, no solution corresponds to parallel lines that never meet, and infinitely many solutions corresponds to two equations describing the same line. The special cases of solving connect to the geometry of graphs." }
+  ]
+}

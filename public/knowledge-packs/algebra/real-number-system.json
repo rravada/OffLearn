@@ -1,0 +1,28 @@
+{
+  "id": "real-number-system",
+  "title": "The Real Number System & Classifying Numbers",
+  "subject": "Algebra",
+  "chunks": [
+    { "id": "rns-1", "text": "The real number system is organized into nested families of numbers: natural numbers, whole numbers, integers, rational numbers, and irrational numbers. The smaller families sit inside the larger ones, and together the rationals and irrationals make up all the real numbers." },
+    { "id": "rns-2", "text": "Natural numbers are the counting numbers: 1, 2, 3, 4, and so on. They start at 1 and do not include zero, negative numbers, or fractions." },
+    { "id": "rns-3", "text": "Whole numbers are the natural numbers together with zero: 0, 1, 2, 3, 4, and so on. The only difference between whole numbers and natural numbers is that whole numbers include 0." },
+    { "id": "rns-4", "text": "Integers are the whole numbers together with their negatives: ..., -3, -2, -1, 0, 1, 2, 3, .... Integers have no fraction or decimal part. Examples include -200, -5, 0, and 47." },
+    { "id": "rns-5", "text": "A rational number is any number that can be written as a fraction (ratio) of two integers. Its decimal form either ends or repeats a pattern forever. Examples: -3, 0, 1/2, 0.75, and 0.3333... (which equals 1/3)." },
+    { "id": "rns-6", "text": "An irrational number cannot be written as a fraction of two integers. Its decimal goes on forever with no repeating pattern. Examples include pi (3.14159...), the square root of 2 (1.41421...), the square root of 7, and 0.1010010001...." },
+    { "id": "rns-7", "text": "Real numbers include every rational number and every irrational number. Any number that can be placed as a point on a number line is a real number." },
+    { "id": "rns-8", "text": "The number families are nested like boxes inside boxes: every natural number is also whole, every whole number is also an integer, and every integer is also rational. A single number such as 4 belongs to all of these families at once." },
+    { "id": "rns-9", "text": "Rational and irrational are two separate groups that never overlap. A real number is either rational or irrational, but never both at the same time." },
+    { "id": "rns-10", "text": "The word rational comes from ratio. A rational number is any number that can be written as a ratio, or fraction, of two integers. For example, the integer 4 is rational because it equals 4/1, and 0.75 is rational because it equals 3/4." },
+    { "id": "rns-11", "text": "Every integer is a rational number, because any integer n can be written as the fraction n/1. For instance, -7 equals -7/1, so -7 is rational." },
+    { "id": "rns-12", "text": "Zero is a whole number, an integer, and a rational number, but zero is NOT a natural number. The natural (counting) numbers start at 1, so zero is the classic exception to watch for." },
+    { "id": "rns-13", "text": "Negative numbers such as -6 cannot be natural or whole numbers, because those families contain no negatives. A negative number with no fraction part, like -6, is an integer and is rational since -6 equals -6/1." },
+    { "id": "rns-14", "text": "A perfect square is a number formed by squaring a whole number, such as 1, 4, 9, 16, 25, 36, 49, 64, 81, and 100. The square root of a perfect square is a rational number." },
+    { "id": "rns-15", "text": "The square root of a perfect square comes out clean as a whole number. For example, the square root of 9 is 3, the square root of 16 is 4, the square root of 25 is 5, and the square root of 100 is 10. These results are rational." },
+    { "id": "rns-16", "text": "The square root of a number that is not a perfect square is irrational. For example, the square root of 2 is about 1.41421356..., with a decimal that never ends or repeats, so it is irrational. The same is true for the square roots of 3, 5, 7, and 10." },
+    { "id": "rns-17", "text": "A common mistake is assuming every square root is irrational. Before classifying a square root, check whether the number underneath is a perfect square. If it is, the square root is rational; if it is not, the square root is irrational." },
+    { "id": "rns-18", "text": "To classify a real number, first check whether it has a fraction or decimal part. Integers (no fraction part) are classified by sign: a positive integer is natural, whole, integer, and rational; zero is whole, integer, and rational; a negative integer is integer and rational." },
+    { "id": "rns-19", "text": "To decide whether a non-integer is rational or irrational, write it as a decimal. If the decimal ends or repeats a pattern, the number is rational. If the decimal continues forever with no repeating pattern, the number is irrational." },
+    { "id": "rns-20", "text": "On a number line, numbers increase from left to right, with negatives on the left and positives on the right. For negative numbers, the one closer to zero is greater: -2 is greater than -5 because -2 lies to the right of -5. For example, -2 degrees is warmer than -5 degrees." },
+    { "id": "rns-21", "text": "To compare or order numbers that mix fractions, decimals, and square roots, convert each one to a decimal first. For example, 3/4 becomes 0.75, the square root of 2 becomes about 1.41, and 5/8 becomes 0.625. Comparing them in decimal form makes ordering them straightforward." }
+  ]
+}

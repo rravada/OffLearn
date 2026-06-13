@@ -1,0 +1,28 @@
+{
+  "id": "compound-inequalities",
+  "title": "Compound Inequalities (AND / OR)",
+  "subject": "Algebra",
+  "chunks": [
+    { "id": "ci-1", "text": "A compound inequality joins two inequalities together. It models situations with two limits, such as a temperature being between 68 and 72 degrees or a height being above one value and below another." },
+    { "id": "ci-2", "text": "An AND compound inequality is satisfied only when both conditions are true at the same time. 'Between 68 and 72' means above 68 and below 72, so the solution is the overlap of the two conditions." },
+    { "id": "ci-3", "text": "An OR compound inequality is satisfied when at least one condition is true. Like a refund given if an item is defective or returned within 30 days, only one condition needs to hold." },
+    { "id": "ci-4", "text": "An AND inequality is often written in three-part form, such as 68 < t < 72, which reads 't is between 68 and 72.' This form means the variable expression in the middle satisfies both ends at once." },
+    { "id": "ci-5", "text": "The graph of an AND inequality is the overlap of the two pieces, usually a single bounded segment between two points. The graph of an OR inequality is the union of the two pieces, usually two rays, often pointing in opposite directions." },
+    { "id": "ci-6", "text": "To solve a three-part AND inequality, perform the same operation on all three parts at once while keeping the variable in the middle. This extends the balance principle to three pieces instead of two." },
+    { "id": "ci-7", "text": "To solve -3 < 2x + 1 ≤ 7, subtract 1 from all three parts to get -4 < 2x ≤ 6, then divide all three parts by 2 to get -2 < x ≤ 3." },
+    { "id": "ci-8", "text": "The solution -2 < x ≤ 3 graphs as an open circle at -2, a filled circle at 3, and shading on the segment between them. It is a bounded segment because the variable must satisfy both ends at once." },
+    { "id": "ci-9", "text": "If you multiply or divide all three parts of an AND inequality by a negative number, you flip both inequality signs in the chain. The flip rule from basic inequalities still applies, to both symbols at once." },
+    { "id": "ci-10", "text": "To solve 4 ≤ x + 2 < 9, subtract 2 from all three parts to get 2 ≤ x < 7. The operation must be applied to all three parts, not just one." },
+    { "id": "ci-11", "text": "An OR compound inequality is written as two separate inequalities connected by the word OR, such as x - 1 < -3 OR 2x > 10. Solve each inequality separately, then combine their solutions." },
+    { "id": "ci-12", "text": "To solve x - 1 < -3 OR 2x > 10: the first gives x < -2 and the second gives x > 5, so the combined solution is x < -2 OR x > 5." },
+    { "id": "ci-13", "text": "The solution x < -2 OR x > 5 graphs as an open circle at -2 shaded left and an open circle at 5 shaded right, with the region between -2 and 5 left unshaded. The unshaded gap is where neither condition is true." },
+    { "id": "ci-14", "text": "OR inequalities cannot be written in three-part form because their solutions often point in opposite directions and do not overlap. They are kept as two separate inequalities." },
+    { "id": "ci-15", "text": "The main difference between AND and OR is how solutions combine: AND gives the overlap (where both conditions agree), and OR gives the union (where at least one condition is met). The individual solving steps are the same." },
+    { "id": "ci-16", "text": "A common mistake is graphing AND and OR backwards. AND should be the overlap, usually a bounded segment, and OR should be the union, usually two spreading rays. Decide AND or OR before graphing." },
+    { "id": "ci-17", "text": "Word clues for AND include 'between' and 'at least ___ and at most ___,' which signal a single range. Word clues for OR include 'either' and conditions pointing to opposite extremes, which signal combining two pieces." },
+    { "id": "ci-18", "text": "A ride requiring riders at least 48 inches and no more than 78 inches is an AND inequality, written 48 ≤ h ≤ 78. Both endpoints are filled circles because 'at least' and 'no more than' include the boundary values." },
+    { "id": "ci-19", "text": "'All numbers less than 1 or greater than 6' is the OR inequality x < 1 OR x > 6, graphed as two rays pointing outward with an unshaded gap between 1 and 6." },
+    { "id": "ci-20", "text": "AND inequalities describe acceptable ranges like safe storage temperatures, target heart rates, and manufacturing tolerances, all expressed as a value between a minimum and a maximum." },
+    { "id": "ci-21", "text": "AND and OR are also the building blocks of computer logic. Programs check compound conditions such as 'old enough AND agreed to terms' or 'too short OR missing a number,' using the same AND/OR reasoning as compound inequalities." }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "id": "relations-and-functions",
+  "title": "Relations, Functions & the Vertical Line Test",
+  "subject": "Algebra",
+  "chunks": [
+    { "id": "rf-1", "text": "A relation is any pairing of inputs with outputs, often written as ordered pairs in the form (input, output). It is a general collection of 'this goes with that' pairings." },
+    { "id": "rf-2", "text": "A function is a special relation in which every input has exactly one output. Like a vending machine where one button always gives the same item, a function gives one predictable output for each input." },
+    { "id": "rf-3", "text": "The defining rule of a function is that each input has exactly one output. A function never pairs the same input with two different outputs." },
+    { "id": "rf-4", "text": "In a relation, the set of all inputs is called the domain, and the set of all outputs is called the range." },
+    { "id": "rf-5", "text": "A function forbids one input from having two different outputs, but it allows two different inputs to share the same output. Repeated outputs are fine; a repeated input with different outputs is not." },
+    { "id": "rf-6", "text": "A mapping diagram shows inputs on the left and outputs on the right, with arrows connecting each input to its output. For a function, every input has exactly one arrow leaving it." },
+    { "id": "rf-7", "text": "A relation can be shown four ways: as ordered pairs, as a table of x and y values, as a mapping diagram, or as a graph. Each form has a way to check whether it is a function." },
+    { "id": "rf-8", "text": "For ordered pairs, a relation is a function if no input (the first number) repeats with a different output. The set {(1, 2), (3, 4), (5, 6)} is a function because all inputs are different." },
+    { "id": "rf-9", "text": "The set {(2, 7), (4, 9), (2, 1)} is not a function because the input 2 is paired with both 7 and 1, giving one input two different outputs." },
+    { "id": "rf-10", "text": "The set {(1, 5), (2, 5), (3, 5)} is a function even though the output 5 repeats, because each input has exactly one output and different inputs may share an output." },
+    { "id": "rf-11", "text": "On a graph, the input is the x-coordinate (horizontal position) and the output is the y-coordinate (vertical position). One input having two outputs means two points stacked at the same x-value." },
+    { "id": "rf-12", "text": "The vertical line test states that if any vertical line crosses a graph more than once, the graph is not a function. If every vertical line crosses at most once, the graph is a function." },
+    { "id": "rf-13", "text": "A slanted straight line such as y = 2x + 1 is a function, because any vertical line crosses it exactly once." },
+    { "id": "rf-14", "text": "A U-shaped parabola such as y = x squared is a function, because a vertical line crosses it at exactly one point for each x-value." },
+    { "id": "rf-15", "text": "A circle is not a function, because a vertical line through its middle crosses it twice, at the top and the bottom, meaning one input has two outputs." },
+    { "id": "rf-16", "text": "A vertical line such as x = 3 is not a function, because it overlaps a vertical test line at infinitely many points, giving one input many outputs." },
+    { "id": "rf-17", "text": "The most common mistake is calling a relation 'not a function' because an output repeats. Repeated outputs are allowed; only a repeated input paired with different outputs breaks the function rule." },
+    { "id": "rf-18", "text": "To decide if a relation is a function: identify the inputs and outputs, check whether any input repeats, and if one does, check whether it has two different outputs. A repeated input with different outputs means it is not a function." },
+    { "id": "rf-19", "text": "The single question that settles any function check is: does any input lead to two different outputs? If yes, it is not a function; if no, it is a function." },
+    { "id": "rf-20", "text": "Functions describe predictable cause-and-effect relationships, such as gas cost depending on gallons, earnings depending on hours worked, or distance depending on time at steady speed, where one input determines one output." },
+    { "id": "rf-21", "text": "Functions are the backbone of computer programming, where a function takes an input and returns one output. Apps, spreadsheets, and scientific models are built from functions, all using the one-input-one-output idea." }
+  ]
+}

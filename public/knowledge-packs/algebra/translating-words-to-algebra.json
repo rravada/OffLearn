@@ -1,0 +1,28 @@
+{
+  "id": "translating-words-to-algebra",
+  "title": "Translating Words into Algebra",
+  "subject": "Algebra",
+  "chunks": [
+    { "id": "twa-1", "text": "Translating words into algebra means rewriting an English phrase or sentence as an algebraic expression or equation. Word problems are sentences in English that must be rewritten in the language of math before they can be solved." },
+    { "id": "twa-2", "text": "Most translation relies on a small dictionary of keywords. Certain words signal addition, others subtraction, multiplication, or division, and the word 'is' usually signals equals." },
+    { "id": "twa-3", "text": "Addition keywords include sum, plus, more than, increased by, total, and added to. For example, '8 more than n' translates to n + 8." },
+    { "id": "twa-4", "text": "Subtraction keywords include difference, minus, less than, decreased by, fewer than, and subtracted from. For example, 'a number decreased by 6' translates to x - 6." },
+    { "id": "twa-5", "text": "Multiplication keywords include product, times, of, twice, double, triple, each, and per. For example, 'twice a number' translates to 2x and 'the product of 6 and a number' translates to 6x." },
+    { "id": "twa-6", "text": "Division keywords include quotient, divided by, per, ratio, and split equally. For example, 'a number divided by 5' translates to x / 5." },
+    { "id": "twa-7", "text": "Equals keywords include is, equals, is equal to, results in, gives, and will be. For example, 'a number is 12' translates to x = 12." },
+    { "id": "twa-8", "text": "The phrase 'five less than a number' translates to x - 5, not 5 - x. 'Less than' means subtraction and reverses the order, because you start with the number and take 5 away." },
+    { "id": "twa-9", "text": "The phrase 'subtracted from' also reverses the order. '4 subtracted from a number' means start with the number and remove 4, giving x - 4, not 4 - x." },
+    { "id": "twa-10", "text": "The order-reversing subtraction phrases to watch for are 'less than,' 'subtracted from,' and 'fewer than.' In each, the amount mentioned first in the words is written second in the algebra." },
+    { "id": "twa-11", "text": "Addition and multiplication are commutative, meaning order does not change the result: 3 + 5 equals 5 + 3, and 3 times 5 equals 5 times 3. So 'the sum of x and 7' can be written x + 7 or 7 + x." },
+    { "id": "twa-12", "text": "Subtraction and division are not commutative, so order changes the answer: 8 - 3 = 5 but 3 - 8 = -5, and 8 divided by 2 = 4 but 2 divided by 8 = 0.25. Translating these phrases requires getting the order exactly right." },
+    { "id": "twa-13", "text": "Most subtraction phrases read in natural order: 'a number minus 6' and 'a number decreased by 6' both translate to x - 6. Only the reversing phrases (less than, subtracted from, fewer than) flip the order." },
+    { "id": "twa-14", "text": "For division order, 'a number divided by 5' is x / 5 with the number on top, while 'the quotient of 5 and a number' is 5 / x with 5 on top. Read carefully which quantity is divided by which." },
+    { "id": "twa-15", "text": "The phrase 'five more than twice a number' translates to 2x + 5. Build the inner operation first ('twice a number' is 2x), then apply the outer operation ('five more than' adds 5)." },
+    { "id": "twa-16", "text": "The expressions 2x + 5 and 2(x + 5) are different. 'Five more than twice a number' is 2x + 5, while 2(x + 5) would mean twice the quantity five more than a number. Build the inner operation before wrapping the outer one." },
+    { "id": "twa-17", "text": "A complete sentence usually becomes an equation, with the equals sign placed where the relationship word (is, equals, gives, results in) appears. 'Three times a number is twenty-one' translates to 3x = 21." },
+    { "id": "twa-18", "text": "To translate a word problem, define the variable in writing first, then translate the quantities and relationships, then place the equals sign at the word 'is' or 'was.' For a $25 fee plus $4 per class with a total of $61, the equation is 25 + 4c = 61, where c is the number of classes." },
+    { "id": "twa-19", "text": "The sentence 'a number tripled, then increased by 2, gives 17' translates to 3x + 2 = 17. 'Tripled' gives 3x, 'increased by 2' adds 2, and 'gives' is the equals sign." },
+    { "id": "twa-20", "text": "Defining the variable in writing before translating, such as 'let c = number of classes,' prevents losing track of what the letter represents and keeps the work organized and readable." },
+    { "id": "twa-21", "text": "In real-world math, the hardest part is usually setting up the correct equation, not solving it. Translating a real situation into precise math is a key human skill used by nurses, contractors, and software developers, and it is the foundation for every word problem in later algebra units." }
+  ]
+}

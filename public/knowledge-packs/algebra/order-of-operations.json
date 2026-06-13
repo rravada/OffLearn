@@ -1,0 +1,28 @@
+{
+  "id": "order-of-operations",
+  "title": "Order of Operations & Evaluating Expressions",
+  "subject": "Algebra",
+  "chunks": [
+    { "id": "ooo-1", "text": "The order of operations is the universally agreed-upon order for evaluating a math expression so that everyone gets the same answer. Changing the order in which operations are performed can change the result, so the order is fixed, not optional." },
+    { "id": "ooo-2", "text": "The order of operations is often remembered as PEMDAS: Parentheses, Exponents, Multiplication and Division, Addition and Subtraction. A common memory phrase is 'Please Excuse My Dear Aunt Sally.'" },
+    { "id": "ooo-3", "text": "The order of operations has four ranked levels: first parentheses and other grouping symbols, then exponents and roots, then multiplication and division, and finally addition and subtraction." },
+    { "id": "ooo-4", "text": "Multiplication and division share the same rank in the order of operations. When both appear, they are performed left to right in the order they appear, not all multiplication before all division." },
+    { "id": "ooo-5", "text": "Addition and subtraction share the same rank in the order of operations. When both appear, they are performed left to right in the order they appear, not all addition before all subtraction." },
+    { "id": "ooo-6", "text": "In the expression 12 divided by 3 times 2, you work left to right: 12 divided by 3 equals 4, then 4 times 2 equals 8. Doing the multiplication first would give a wrong answer because division appears first when reading left to right." },
+    { "id": "ooo-7", "text": "In the expression 10 minus 4 plus 3, you work left to right: 10 minus 4 equals 6, then 6 plus 3 equals 9. Adding before subtracting would give the wrong result of 3." },
+    { "id": "ooo-8", "text": "Grouping symbols include parentheses ( ), brackets [ ], and the top and bottom of a fraction bar. Everything inside a grouping symbol is simplified completely before operations outside it." },
+    { "id": "ooo-9", "text": "When grouping symbols are nested one inside another, simplify the innermost group first and work outward." },
+    { "id": "ooo-10", "text": "Some teachers use GEMS — Grouping, Exponents, Multiply/divide, Subtract/add — instead of PEMDAS, specifically to make clear that multiply and divide are tied and add and subtract are tied." },
+    { "id": "ooo-11", "text": "To evaluate 5 + 2 times (8 - 3) squared: first the parentheses give 8 - 3 = 5, then the exponent gives 5 squared = 25, then multiply 2 times 25 = 50, then add 5 + 50 = 55. The answer is 55." },
+    { "id": "ooo-12", "text": "The expression -3 squared equals -9, because without parentheses the exponent attaches only to the 3: -(3 times 3) = -9. The exponent does not apply to the negative sign unless parentheses are present." },
+    { "id": "ooo-13", "text": "The expression (-3) squared equals 9, because the parentheses make the exponent apply to the entire -3: (-3)(-3) = 9. Parentheses around a negative number change the result of squaring it." },
+    { "id": "ooo-14", "text": "A reliable habit when evaluating expressions is to rewrite the entire expression after each step, performing only one operation at a time. This prevents losing a number or performing operations out of order." },
+    { "id": "ooo-15", "text": "An algebraic expression contains variables, which are letters that stand for numbers. To evaluate an algebraic expression, substitute a given value for each variable and then apply the order of operations." },
+    { "id": "ooo-16", "text": "When substituting a value for a variable, always wrap the value in parentheses, especially for negatives and fractions. For example, if x equals -2, write 4(-2) rather than 4-2, because 4(-2) = -8 while 4 - 2 = 2." },
+    { "id": "ooo-17", "text": "To evaluate x squared minus 5x plus 2 when x = -3: substitute to get (-3) squared minus 5(-3) plus 2. The exponent gives 9, the term -5(-3) gives +15, so 9 + 15 + 2 = 26." },
+    { "id": "ooo-18", "text": "A negative number times a negative number is positive. For example, -5 times -3 equals +15. This rule matters when substituting negative values into expressions." },
+    { "id": "ooo-19", "text": "To evaluate 2a + b squared when a = 3 and b = -4: substitute to get 2(3) + (-4) squared. The exponent gives (-4) squared = 16, and 2(3) = 6, so 6 + 16 = 22." },
+    { "id": "ooo-20", "text": "The order of operations is built into calculators, spreadsheets, and computer code. Typing 5 + 2 * 3 returns 11, not 21, because the software multiplies before adding, following the same ranking as PEMDAS." },
+    { "id": "ooo-21", "text": "Professionals often add extra parentheses to expressions and formulas to make their intended order of operations clear, preventing ambiguity and bugs caused by an operation being performed in the wrong order." }
+  ]
+}

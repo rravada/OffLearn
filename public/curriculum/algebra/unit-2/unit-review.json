@@ -1,0 +1,286 @@
+{
+  "id": "algebra-u2-unit-review",
+  "title": "Unit 2 Review: Solving Linear Equations",
+  "subject": "Algebra",
+  "unit": "Solving Linear Equations",
+  "type": "unit-review",
+  "questionsPerAttempt": 10,
+  "isAssessment": true,
+  "bank": [
+    {
+      "question": "Solve: x + 8 = 3.",
+      "options": [
+        "x = 11",
+        "x = -5",
+        "x = 5",
+        "x = -11"
+      ],
+      "correctIndex": 1,
+      "explanation": "Subtract 8 from both sides to undo the addition: x = 3 - 8 = -5. Adding 8 instead of subtracting gives the wrong 11."
+    },
+    {
+      "question": "Solve: x / 4 = 9.",
+      "options": [
+        "x = 36, by multiplying both sides by 4",
+        "x = 2.25, by dividing 9 by 4",
+        "x = 13, by adding 4",
+        "x = 5"
+      ],
+      "correctIndex": 0,
+      "explanation": "Since x is divided by 4, multiply both sides by 4 to isolate x: x = 9 × 4 = 36. Dividing again moves the wrong direction."
+    },
+    {
+      "question": "Solve: 3x + 7 = 22.",
+      "options": [
+        "x = 5, by subtracting 7 then dividing by 3",
+        "x = 9.67, by dividing 29 by 3",
+        "x = 15, by subtracting only",
+        "x = 7"
+      ],
+      "correctIndex": 0,
+      "explanation": "Subtract 7 from both sides to get 3x = 15, then divide by 3 to get x = 5. Undo the addition before the multiplication."
+    },
+    {
+      "question": "Solve: -4x + 10 = 2.",
+      "options": [
+        "x = -2, by mishandling the signs",
+        "x = 2, by getting -4x = -8 then dividing by -4",
+        "x = 3, by subtracting wrong",
+        "x = -3"
+      ],
+      "correctIndex": 1,
+      "explanation": "Subtract 10 from both sides to get -4x = -8, then divide both sides by -4 to get x = 2 (a negative divided by a negative is positive). Sign errors lead to the wrong answers."
+    },
+    {
+      "question": "What is the correct first step to solve 2x - 6 = 14?",
+      "options": [
+        "Divide both sides by 2",
+        "Add 6 to both sides to undo the subtraction",
+        "Subtract 6 from both sides",
+        "Subtract 2x from both sides"
+      ],
+      "correctIndex": 1,
+      "explanation": "In a two-step equation, undo addition/subtraction first: add 6 to both sides to get 2x = 20. Dividing by 2 first is possible but the standard order undoes the constant first."
+    },
+    {
+      "question": "Solve: 6x - 2x + 5 = 21.",
+      "options": [
+        "x = 4, by combining to 4x + 5 = 21, then 4x = 16",
+        "x = 2, by adding 6x and 2x",
+        "x = 6.5, by ignoring the combine step",
+        "x = 26"
+      ],
+      "correctIndex": 0,
+      "explanation": "Combine like terms: 6x - 2x = 4x, giving 4x + 5 = 21. Subtract 5 to get 4x = 16, then divide by 4 to get x = 4. Adding the x-terms instead of subtracting is the common error."
+    },
+    {
+      "question": "Solve: 5(x - 3) = 25.",
+      "options": [
+        "x = 8, by distributing to 5x - 15 = 25, then 5x = 40",
+        "x = 5.6, by distributing only to the first term",
+        "x = 2, by dividing first incorrectly",
+        "x = 10"
+      ],
+      "correctIndex": 0,
+      "explanation": "Distribute: 5(x - 3) = 5x - 15, so 5x - 15 = 25. Add 15 to get 5x = 40, then divide by 5 to get x = 8. Distributing only to the first term (5x - 3) is the typical mistake."
+    },
+    {
+      "question": "Solve: 2(x + 1) + 3x = 17.",
+      "options": [
+        "x = 3, by distributing and combining to 5x + 2 = 17",
+        "x = 3.4, by forgetting to distribute",
+        "x = 15, by subtracting only",
+        "x = 5"
+      ],
+      "correctIndex": 0,
+      "explanation": "Distribute to get 2x + 2 + 3x = 17, combine like terms to 5x + 2 = 17, subtract 2 to get 5x = 15, then divide by 5 to get x = 3."
+    },
+    {
+      "question": "To clear the fractions in x/3 + x/6 = 3, what should you multiply every term by?",
+      "options": [
+        "3, the first denominator",
+        "6, the least common denominator of 3 and 6",
+        "9, by adding the denominators",
+        "18, the product of the denominators"
+      ],
+      "correctIndex": 1,
+      "explanation": "The least common denominator of 3 and 6 is 6, the smallest number both divide into. Multiplying every term by 6 gives 2x + x = 18, so 3x = 18 and x = 6. Using 18 works but is not the least common denominator."
+    },
+    {
+      "question": "Solve: 8x = 5x + 12.",
+      "options": [
+        "x = 4, by subtracting 5x to get 3x = 12",
+        "x = 12, by ignoring the 5x",
+        "x = 0.92, by adding 8x and 5x",
+        "x = -4"
+      ],
+      "correctIndex": 0,
+      "explanation": "Subtract 5x from both sides to collect variables: 8x - 5x = 3x, giving 3x = 12. Divide by 3 to get x = 4."
+    },
+    {
+      "question": "Solve: 7x + 3 = 4x + 18.",
+      "options": [
+        "x = 5, by subtracting 4x to get 3x + 3 = 18",
+        "x = 3, by subtracting wrong",
+        "x = 21, by combining incorrectly",
+        "x = 1.9"
+      ],
+      "correctIndex": 0,
+      "explanation": "Subtract 4x from both sides to get 3x + 3 = 18, subtract 3 to get 3x = 15, then divide by 3 to get x = 5. Collecting the smaller variable term keeps the coefficient positive."
+    },
+    {
+      "question": "Solve: 4(x + 2) = 2x + 14.",
+      "options": [
+        "x = 3, by distributing to 4x + 8 = 2x + 14",
+        "x = 11, by not distributing",
+        "x = -3, by sign error",
+        "x = 1"
+      ],
+      "correctIndex": 0,
+      "explanation": "Distribute the left side: 4x + 8 = 2x + 14. Subtract 2x to get 2x + 8 = 14, subtract 8 to get 2x = 6, then divide by 2 to get x = 3."
+    },
+    {
+      "question": "While solving an equation, you reach the statement 4 = 9. What is the solution?",
+      "options": [
+        "x = 4",
+        "No solution, because the variable canceled and the statement is false",
+        "Infinitely many solutions",
+        "x = 9"
+      ],
+      "correctIndex": 1,
+      "explanation": "When the variable cancels and leaves a false statement like 4 = 9, the equation has no solution. A false leftover statement signals that no value of x can make the equation true."
+    },
+    {
+      "question": "While solving an equation, you reach the statement 6 = 6. What is the solution?",
+      "options": [
+        "x = 6",
+        "No solution",
+        "Infinitely many solutions, because the statement is always true",
+        "x = 0"
+      ],
+      "correctIndex": 2,
+      "explanation": "When the variable cancels and leaves a true statement like 6 = 6, every value of x works, so the equation has infinitely many solutions. It is not x = 6 because no variable remains."
+    },
+    {
+      "question": "How many solutions does 3x + 5 = 3x + 5 have?",
+      "options": [
+        "Exactly one",
+        "No solution",
+        "Infinitely many solutions, because both sides are identical",
+        "Exactly two"
+      ],
+      "correctIndex": 2,
+      "explanation": "Both sides are the same expression, so subtracting 3x leaves 5 = 5, which is always true. The equation has infinitely many solutions; every value of x satisfies it."
+    },
+    {
+      "question": "Solve d = rt for r.",
+      "options": [
+        "r = d - t",
+        "r = d / t, by dividing both sides by t",
+        "r = dt",
+        "r = t / d"
+      ],
+      "correctIndex": 1,
+      "explanation": "In d = rt, the variable r is multiplied by t, so divide both sides by t to get r = d / t. Subtracting t is the wrong inverse for a multiplication."
+    },
+    {
+      "question": "Solve A = lw for w.",
+      "options": [
+        "w = A - l",
+        "w = A / l, by dividing both sides by l",
+        "w = Al",
+        "w = l / A"
+      ],
+      "correctIndex": 1,
+      "explanation": "Since w is multiplied by l, divide both sides by l to isolate w: w = A / l. Dividing the other way (l / A) gives a different, incorrect expression."
+    },
+    {
+      "question": "Solve P = 2l + 2w for l.",
+      "options": [
+        "l = (P - 2w) / 2, by subtracting 2w then dividing by 2",
+        "l = P - 2w, by subtracting only",
+        "l = P / 2 - 2w, by dividing only the P",
+        "l = P - w"
+      ],
+      "correctIndex": 0,
+      "explanation": "Subtract 2w from both sides to get P - 2w = 2l, then divide the entire left side by 2 to get l = (P - 2w) / 2. Dividing only the P, not the whole side, is the common mistake."
+    },
+    {
+      "question": "Solve y = mx + b for x.",
+      "options": [
+        "x = y - b - m",
+        "x = (y - b) / m, by subtracting b then dividing by m",
+        "x = y / m - b",
+        "x = (y + b) / m"
+      ],
+      "correctIndex": 1,
+      "explanation": "Subtract b from both sides to get y - b = mx, then divide both sides by m to get x = (y - b) / m. The whole expression y - b must be divided by m, not just the y."
+    },
+    {
+      "question": "Solve the proportion 4/6 = x/9.",
+      "options": [
+        "x = 6, by cross-multiplying to 6x = 36",
+        "x = 13.5, by multiplying 6 and 9",
+        "x = 36, by forgetting to divide",
+        "x = 1.5"
+      ],
+      "correctIndex": 0,
+      "explanation": "Cross-multiply 4/6 = x/9 to get 6x = 36 (since 6·x = 4·9). Divide by 6 to get x = 6. Check: 4/6 = 6/9 because both equal 2/3."
+    },
+    {
+      "question": "A recipe uses 3 eggs for every 12 muffins. How many eggs are needed for 20 muffins?",
+      "options": [
+        "5 eggs, from 3/12 = x/20",
+        "8 eggs, by adding 8 to 12",
+        "60 eggs, by multiplying",
+        "4 eggs"
+      ],
+      "correctIndex": 0,
+      "explanation": "Set up eggs over muffins on both sides: 3/12 = x/20. Cross-multiply to get 12x = 60, so x = 5 eggs. Keeping eggs on top of both fractions ensures a correct setup."
+    },
+    {
+      "question": "What is 15% of 80?",
+      "options": [
+        "12, from part/80 = 15/100",
+        "15, the percent itself",
+        "65, by subtracting",
+        "5.3"
+      ],
+      "correctIndex": 0,
+      "explanation": "Use part/whole = percent/100: part/80 = 15/100. Cross-multiply to get 100·part = 1200, so part = 12. Thus 15% of 80 is 12."
+    },
+    {
+      "question": "18 is 30% of what number?",
+      "options": [
+        "60, from 18/whole = 30/100",
+        "5.4, by taking 30% of 18",
+        "48, by adding 30",
+        "54"
+      ],
+      "correctIndex": 0,
+      "explanation": "Use part/whole = percent/100 with part = 18 and percent = 30: 18/whole = 30/100. Cross-multiply to get 1800 = 30·whole, so whole = 60."
+    },
+    {
+      "question": "A $60 jacket is marked 20% off. What is the sale price?",
+      "options": [
+        "$40, subtracting 20 dollars",
+        "$48, because 20% of 60 is $12 off, and 60 - 12 = 48",
+        "$12, the discount only",
+        "$72, adding the percent"
+      ],
+      "correctIndex": 1,
+      "explanation": "First find 20% of 60: part/60 = 20/100 gives part = $12 off. The sale price is the original minus the discount: 60 - 12 = $48. The $12 is only the discount, not the price."
+    },
+    {
+      "question": "Solve: 9x - 4 = 5x + 12.",
+      "options": [
+        "x = 4, by subtracting 5x to get 4x - 4 = 12",
+        "x = 2, by sign error",
+        "x = 8, by combining wrong",
+        "x = 1.1"
+      ],
+      "correctIndex": 0,
+      "explanation": "Subtract 5x from both sides to get 4x - 4 = 12, add 4 to get 4x = 16, then divide by 4 to get x = 4. Check: 9(4) - 4 = 32 and 5(4) + 12 = 32."
+    }
+  ]
+}

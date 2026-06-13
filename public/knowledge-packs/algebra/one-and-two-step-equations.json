@@ -1,0 +1,28 @@
+{
+  "id": "one-and-two-step-equations",
+  "title": "The Balance Principle, One- & Two-Step Equations",
+  "subject": "Algebra",
+  "chunks": [
+    { "id": "ote-1", "text": "An equation is like a balanced scale, with the equals sign at the center and the two sides as the two trays. The equation states that the left side weighs exactly the same as the right side." },
+    { "id": "ote-2", "text": "Solving an equation means finding the value of the variable that makes the two sides equal. That value is called the solution. For example, the solution of 2x + 3 = 11 is x = 4, because 2(4) + 3 = 11." },
+    { "id": "ote-3", "text": "The golden rule of equation solving is that whatever operation you perform on one side, you must perform the identical operation on the other side. This keeps the scale balanced and the equation true." },
+    { "id": "ote-4", "text": "Isolating the variable means getting the variable by itself on one side of the equation. You isolate the variable by peeling away everything attached to it using inverse operations." },
+    { "id": "ote-5", "text": "An inverse operation is the operation that undoes another. Addition and subtraction are inverses of each other, and multiplication and division are inverses of each other." },
+    { "id": "ote-6", "text": "To isolate a variable in a multi-step equation, undo the operations in the reverse of the order they were applied, just as you remove shoes before socks. The most recently applied operation is the outer layer and is undone first." },
+    { "id": "ote-7", "text": "A one-step equation requires a single inverse operation. For x + 7 = 15, subtract 7 from both sides to get x = 8. For x - 5 = 12, add 5 to both sides to get x = 17." },
+    { "id": "ote-8", "text": "To solve a one-step multiplication equation like 4x = 20, divide both sides by 4 to get x = 5. To solve a one-step division equation like x / 3 = 6, multiply both sides by 3 to get x = 18." },
+    { "id": "ote-9", "text": "If a number is subtracted from the variable, such as in x - 9 = 4, the inverse operation is to add that number to both sides, giving x = 13. Adding undoes subtraction." },
+    { "id": "ote-10", "text": "If the variable is added to a number, undo it by subtracting that number from both sides. If the variable is multiplied by a number, undo it by dividing both sides by that number." },
+    { "id": "ote-11", "text": "A two-step equation involves two operations on the variable. To solve it, first undo addition or subtraction, then undo multiplication or division. This is the reverse of the order of operations." },
+    { "id": "ote-12", "text": "To solve 3x + 5 = 20, first subtract 5 from both sides to get 3x = 15, then divide both sides by 3 to get x = 5. Subtracting comes before dividing because you undo the order of operations in reverse." },
+    { "id": "ote-13", "text": "In a two-step equation, the added or subtracted constant is the outer layer and is removed first, while the coefficient that multiplies the variable is the inner layer and is removed second." },
+    { "id": "ote-14", "text": "To solve 5x - 4 = 16, add 4 to both sides to get 5x = 20, then divide both sides by 5 to get x = 4. Undo the subtraction before the multiplication." },
+    { "id": "ote-15", "text": "To solve an equation with a negative coefficient like -2x + 9 = 1, subtract 9 from both sides to get -2x = -8, then divide both sides by -2 to get x = 4. A negative divided by a negative is positive." },
+    { "id": "ote-16", "text": "When the coefficient is negative, divide both sides by the entire negative number, including its sign. For -2x = -8, dividing by -2 gives x = 4 because -8 divided by -2 equals positive 4." },
+    { "id": "ote-17", "text": "Checking a solution means substituting the answer back into the original equation to confirm both sides are equal. For x = 5 in 3x + 5 = 20, the check is 3(5) + 5 = 20, which is true." },
+    { "id": "ote-18", "text": "A common error is performing an operation on only one side of the equation. If you subtract 5 from the left side, you must also subtract 5 from the right side, or the equation is no longer balanced." },
+    { "id": "ote-19", "text": "Another common error in two-step equations is undoing operations in the wrong order, such as dividing before subtracting. Always remove the added or subtracted constant first, then divide by the coefficient." },
+    { "id": "ote-20", "text": "Operations and their inverses: addition is undone by subtraction, subtraction is undone by addition, multiplication is undone by division, and division is undone by multiplication." },
+    { "id": "ote-21", "text": "Solving equations models real situations, such as a phone plan costing $30 plus $5 per gigabyte with a $55 bill, written 30 + 5g = 55. Solving the two-step equation gives g = 5 gigabytes used." }
+  ]
+}

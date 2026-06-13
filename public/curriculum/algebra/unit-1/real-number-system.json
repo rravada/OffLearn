@@ -1,0 +1,127 @@
+{
+  "id": "algebra-u1-real-number-system",
+  "title": "The Real Number System & Classifying Numbers",
+  "subject": "Algebra",
+  "unit": "Foundations & Expressions",
+  "duration": "25 min",
+  "objectives": [
+    "Classify real numbers as natural, whole, integer, rational, or irrational",
+    "Understand how the number sets nest inside one another to form the real numbers",
+    "Decide whether a number is rational or irrational and justify the choice using its decimal form",
+    "Compare and order real numbers and place them on a number line"
+  ],
+  "sections": [
+    {
+      "type": "explanation",
+      "heading": "Numbers Come in Families",
+      "content": "Think about your school for a second. Every student belongs to a homeroom, every homeroom belongs to a grade, and every grade belongs to the school. Smaller groups sit inside bigger groups. Numbers work exactly the same way. They live in families, and the smaller families sit neatly inside the bigger ones.\n\nWhen you first learned to count — 1, 2, 3, 4 — you were using the smallest family, the natural numbers (sometimes called the counting numbers). Then a teacher showed you zero, and the family grew a little. Later you met negative numbers, then fractions, then weird numbers like π that never seem to end. Each time, the family of numbers you could work with got bigger.\n\nIn Algebra, we give these families names and learn how they fit together. This isn't busywork or vocabulary for its own sake. When you solve an equation and get an answer, you'll often need to say what KIND of number it is — and whether that answer even makes sense for the problem. If a question asks how many buses you need for a field trip and your math gives you 4.5, knowing that 'number of buses' must be a whole number tells you to round up to 5.\n\nThe biggest family we'll work with this year is called the real numbers. Almost every number you can picture on a number line — positive, negative, fractions, decimals, square roots — is a real number. Our job in this lesson is to learn the families inside that big group and how to tell them apart."
+    },
+    {
+      "type": "table",
+      "heading": "The Families of Real Numbers",
+      "headers": ["Set", "What's in it", "Examples"],
+      "rows": [
+        ["Natural numbers", "The counting numbers, starting at 1", "1, 2, 3, 17, 250"],
+        ["Whole numbers", "The natural numbers plus 0", "0, 1, 2, 3, 17"],
+        ["Integers", "Whole numbers plus their negatives (no fractions)", "-5, -1, 0, 4, 200"],
+        ["Rational numbers", "Any number that can be written as a fraction of two integers", "-3, 0, 1/2, 0.75, 0.333..."],
+        ["Irrational numbers", "Numbers that CANNOT be written as a fraction; decimals never repeat or end", "π, √2, √7, 0.1010010001..."],
+        ["Real numbers", "Everything above — all rationals and all irrationals together", "Any point on the number line"]
+      ]
+    },
+    {
+      "type": "explanation",
+      "heading": "Nested Boxes: How the Families Fit Together",
+      "content": "Here's the part that trips a lot of students up, so let's slow down. The number families are nested, like a set of boxes inside boxes, or those Russian dolls that open to reveal a smaller doll inside.\n\nEvery natural number is also a whole number. Every whole number is also an integer. Every integer is also a rational number. So the number 4 isn't just one thing — it's a natural number AND a whole number AND an integer AND a rational number, all at once. It belongs to every box that's big enough to contain it. That feels strange at first, but think back to the school example: a 9th grader is a member of their homeroom, their grade, AND the whole school simultaneously. Belonging to a small group doesn't kick you out of the big group.\n\nThere's one important split at the top level. The real numbers divide into two groups that do NOT overlap: the rationals and the irrationals. A number is either rational (can be written as a fraction) or irrational (cannot) — never both. So while the small boxes nest neatly inside each other, rational and irrational are two separate rooms with no door between them.\n\nWhy does 'rational' contain integers and fractions but not π? Because rational comes from the word 'ratio.' A rational number is any number you can write as a ratio — a fraction — of two integers. The integer 4 is rational because you can write it as 4/1. The decimal 0.75 is rational because it equals 3/4. But π = 3.14159... goes on forever without ever repeating, so no fraction of integers can ever equal it exactly. That's what makes it irrational."
+    },
+    {
+      "type": "example",
+      "heading": "Classifying Numbers Step by Step",
+      "content": "Let's classify a handful of numbers. For each one, we list EVERY family it belongs to, starting from the smallest family that fits.\n\nNumber: 7\n  • It's a counting number, so it's natural.\n  • Naturals are whole, integers, and rational too.\n  • Classification: natural, whole, integer, rational.\n\nNumber: 0\n  • Zero is not a counting number, so NOT natural.\n  • But it is whole, and an integer, and rational (0 = 0/1).\n  • Classification: whole, integer, rational.\n\nNumber: -6\n  • Negative, so it can't be natural or whole.\n  • It is an integer (no fraction part) and rational (-6 = -6/1).\n  • Classification: integer, rational.\n\nNumber: 3/4\n  • A fraction that is not a whole number, so it's not an integer.\n  • It IS rational (it's already a ratio of two integers).\n  • Classification: rational only.\n\nNumber: √2 (the square root of 2)\n  • √2 = 1.41421356... — the decimal never ends and never repeats.\n  • You cannot write it as a fraction of integers.\n  • Classification: irrational (and therefore real).\n\nNotice the pattern: find the SMALLEST box the number fits in, and it automatically belongs to every bigger box too."
+    },
+    {
+      "type": "quiz",
+      "question": "Which list of families does the number -8 belong to?",
+      "options": [
+        "Natural, whole, integer, rational",
+        "Integer and rational only",
+        "Rational and irrational",
+        "Whole and integer only"
+      ],
+      "correctIndex": 1,
+      "explanation": "Because -8 is negative, it cannot be a natural or whole number (those start at 1 and 0 respectively and include no negatives). It has no fraction part, so it is an integer, and every integer is rational since -8 = -8/1. A number is never both rational and irrational, which rules out that option."
+    },
+    {
+      "type": "steps",
+      "heading": "How to Classify Any Real Number",
+      "steps": [
+        {
+          "title": "Check for a decimal or fraction part",
+          "content": "If the number has no fraction or decimal part (like 5, 0, or -12), it's an integer — go to the integer checks. If it does have a fraction or decimal part (like 2/3 or 0.8 or √5), it cannot be an integer, so skip ahead to the rational-vs-irrational check."
+        },
+        {
+          "title": "If it's an integer, check the sign and zero",
+          "content": "Is it positive and not zero (like 4)? Then it's natural, whole, integer, and rational — all four. Is it exactly 0? Then it's whole, integer, and rational, but NOT natural. Is it negative (like -4)? Then it's an integer and rational, but not whole or natural."
+        },
+        {
+          "title": "If it's not an integer, decide rational or irrational",
+          "content": "Write it as a decimal. If the decimal ends (like 0.25) or repeats a pattern forever (like 0.3333... or 0.142857142857...), it's rational — it can be written as a fraction. If the decimal goes on forever with NO repeating pattern (like π or √2), it's irrational."
+        },
+        {
+          "title": "Remember the umbrella",
+          "content": "No matter which family you land in, the number is also a real number. Every number in this lesson — rational or irrational — is real. 'Real' is the biggest umbrella that covers them all."
+        }
+      ]
+    },
+    {
+      "type": "explanation",
+      "heading": "The Square Root Trap",
+      "content": "Square roots cause more classification mistakes than anything else in this topic, so let's clear it up carefully. The key question is always: does the square root come out 'clean'?\n\nSome square roots are secretly whole numbers in disguise. Take √9. The square root of 9 is 3, because 3 × 3 = 9. So √9 is NOT some exotic irrational number — it's just 3, which is a natural number, whole, integer, and rational. The same goes for √16 = 4, √25 = 5, and √100 = 10. These come from perfect squares: numbers like 9, 16, 25, and 100 that are the result of squaring a whole number. The square root of a perfect square is always rational.\n\nBut √2, √3, √5, √7, √10 — these come from numbers that are NOT perfect squares. There's no whole number you can square to get exactly 2. The closest are 1 (1²=1) and 2 (2²=4), and 2 sits between them. So √2 lands somewhere between 1 and 2, at 1.41421356..., with a decimal that never ends or repeats. That makes it irrational.\n\nSo before you label any square root, ask: 'Is the number under the root a perfect square?' If yes (1, 4, 9, 16, 25, 36, 49, 64, 81, 100...), the root is rational. If no, the root is irrational. Don't just see a square-root symbol and assume 'irrational' — check what's underneath first."
+    },
+    {
+      "type": "callout",
+      "variant": "warning",
+      "heading": "Three Classification Mistakes Students Make",
+      "content": "(1) Calling every square root irrational. √36 = 6 is perfectly rational — check whether the inside is a perfect square first. (2) Thinking a negative number can't be rational. -7 is rational; it equals -7/1. Rational just means 'writable as a fraction,' and negatives qualify. (3) Forgetting that 0 is whole, an integer, and rational, but NOT a natural (counting) number. Zero is the classic exception — keep an eye on it."
+    },
+    {
+      "type": "explanation",
+      "heading": "Comparing and Ordering Real Numbers",
+      "content": "Once you know what kind of number you have, you often need to compare it to others — to put a list in order, or to figure out which of two values is bigger. The number line is your best friend here. Picture a horizontal line with 0 in the middle, positive numbers stretching to the right, and negative numbers stretching to the left. The farther right a number sits, the bigger it is.\n\nThis makes one thing very clear that students often get backwards: with negative numbers, the one closer to zero is the bigger one. So -2 is GREATER than -5, because -2 sits to the right of -5 on the line. It might feel odd that '5' looks bigger than '2,' but with the negative signs in front, -5 is further left, which means smaller. Think of temperatures: -2 degrees is warmer (greater) than -5 degrees.\n\nWhen you need to compare numbers that look different — a fraction, a decimal, and a square root all in one list — the trick is to convert them all to decimals first so you're comparing apples to apples. For example, to order 3/4, 0.7, and √0.5, rewrite them as 0.75, 0.70, and about 0.707. Now it's easy: 0.70 < 0.707 < 0.75, so the order from least to greatest is 0.7, √0.5, 3/4. Getting everything into the same form removes the guesswork."
+    },
+    {
+      "type": "callout",
+      "variant": "tip",
+      "heading": "Turn Everything Into Decimals to Compare",
+      "content": "When a list mixes fractions, decimals, and square roots, convert each one to a decimal (rounded to a few places) before comparing. 5/8 becomes 0.625, √2 becomes about 1.41, and 1.3 stays 1.3. Lining them up as decimals makes ordering them almost automatic and prevents the classic mistake of comparing the raw numbers without accounting for their form."
+    },
+    {
+      "type": "quiz",
+      "question": "Order these three numbers from LEAST to greatest: -3, -1/2, and -4.",
+      "options": [
+        "-1/2, -3, -4",
+        "-4, -3, -1/2",
+        "-1/2, -3, -4 are already in order",
+        "-3, -4, -1/2"
+      ],
+      "correctIndex": 1,
+      "explanation": "On a number line, the number farthest to the left is the smallest. -4 sits farthest left, then -3, then -1/2 (which is closest to zero and therefore the greatest of the three). A common mistake is to treat -4 as the largest because 4 is the biggest digit, but the negative sign flips that intuition."
+    },
+    {
+      "type": "callout",
+      "variant": "remember",
+      "heading": "Two Rules Worth Memorizing",
+      "content": "(1) Every integer is also a rational number, because any integer n can be written as n/1. (2) The square root of a perfect square (like √49 = 7) is rational, while the square root of any non-perfect-square (like √5) is irrational. These two facts settle the majority of classification questions you'll ever see."
+    },
+    {
+      "type": "keypoint",
+      "content": "Every real number is either rational (can be written as a fraction of integers, with a decimal that ends or repeats) or irrational (decimal never ends and never repeats) — and the smaller families (natural, whole, integer) all nest inside the rationals."
+    },
+    {
+      "type": "deepdive",
+      "heading": "Why Bother Naming the Families?",
+      "content": "You might be wondering whether any of this matters once you leave the classroom. It does, in ways you'll feel all year and beyond.\n\nFirst, knowing number families keeps your answers honest. Many real-world problems only allow certain kinds of numbers. The number of people in a room, cars in a lot, or chairs you need to buy must be a whole number — you can't have 2.6 chairs. So when an equation hands you 2.6, the number family tells you to interpret it (round up to 3 chairs, say) rather than report a nonsense answer. Engineers, nurses calculating doses, and store managers ordering inventory all make this kind of judgment constantly.\n\nSecond, irrational numbers aren't just math-class curiosities — they show up the moment you measure real shapes. The distance across a square's diagonal, the circumference of any circle (that's where π lives), and the proportions architects and designers use all involve irrational numbers. They're built into the geometry of the physical world.\n\nThird, this vocabulary is the foundation for everything ahead. When you start solving quadratic equations later this year, your answers will sometimes be rational (nice fractions) and sometimes irrational (square roots that don't simplify). Being able to recognize and describe what kind of answer you got — and whether it can be simplified — starts right here. Master the families now, and the rest of Algebra has a solid floor to stand on."
+    }
+  ],
+  "aiContext": "This is the opening lesson of Algebra Unit 1 (Foundations & Expressions). Emphasize the nested structure of the number sets (natural ⊂ whole ⊂ integer ⊂ rational ⊂ real) and the clean rational/irrational split. The two biggest student confusions to watch for: assuming every square root is irrational (perfect squares like √36 = 6 are rational), and forgetting that negatives and zero are rational while zero is not a natural number. Connect forward: classifying answers as rational vs irrational returns when solving quadratics (Unit 9), and the number-line comparison skill underlies inequalities (Unit 3). After this lesson a student should be able to classify any given real number into all the families it belongs to and order a mixed list of fractions, decimals, and simple roots."
+}

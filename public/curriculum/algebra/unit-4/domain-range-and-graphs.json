@@ -1,0 +1,129 @@
+{
+  "id": "algebra-u4-domain-range-and-graphs",
+  "title": "Domain, Range & Interpreting Graphs",
+  "subject": "Algebra",
+  "unit": "Introduction to Functions",
+  "duration": "30 min",
+  "objectives": [
+    "Identify the domain (inputs) and range (outputs) of a function from pairs, tables, and graphs",
+    "Read the domain and range from a graph by scanning left-to-right and bottom-to-top",
+    "Interpret features of a graph such as intercepts and increasing or decreasing behavior",
+    "Determine a reasonable domain and range for a function in a real-world context"
+  ],
+  "sections": [
+    {
+      "type": "explanation",
+      "heading": "The Menu of Inputs and the List of Outputs",
+      "content": "Every function has two important sets of numbers attached to it. The domain is the set of all the inputs the function is allowed to take — think of it as the menu of choices you can put in. The range is the set of all the outputs the function actually produces — the collection of results that can come out. If a function is a machine, the domain is everything you're allowed to feed it, and the range is everything it can hand back.\n\nLet's ground this with the taxi example from last lesson, C(m) = 2m + 3, where m is miles. The domain is the possible inputs: number of miles. You can't drive negative miles, so the domain is miles from 0 upward — that's the menu of allowed inputs. The range is the possible outputs: the fares that result. The smallest fare is the base $3 (for 0 miles), and it climbs from there, so the range is dollar amounts from 3 upward. Domain describes what goes in; range describes what comes out.\n\nKeeping domain and range straight is mostly about remembering which is which: domain = inputs = x-values, range = outputs = y-values. A simple memory aid: 'domain' and 'down the alphabet to x' both come before 'range' and 'y' — or just remember inputs come first (domain) and outputs come second (range), in the same order as an ordered pair (x, y).\n\nIn this lesson we'll find the domain and range from every form a function can take — lists of pairs, tables, and especially graphs — and we'll learn to read the story a graph tells. These reading skills are how functions connect to the real world, so they're worth practicing carefully."
+    },
+    {
+      "type": "table",
+      "heading": "Finding Domain and Range From Each Form",
+      "headers": ["Form", "Domain (inputs) is...", "Range (outputs) is..."],
+      "rows": [
+        ["Ordered pairs", "the set of all first numbers (x)", "the set of all second numbers (y)"],
+        ["Table", "all the values in the input (x) column", "all the values in the output (y) column"],
+        ["Graph", "how far left-to-right the graph extends (x)", "how far bottom-to-top the graph extends (y)"],
+        ["Real context", "the inputs that make sense (e.g., time ≥ 0)", "the outputs that can actually occur"]
+      ]
+    },
+    {
+      "type": "example",
+      "heading": "Domain and Range From Pairs and a Table",
+      "content": "From ordered pairs — Find the domain and range of {(1, 4), (2, 7), (5, 7), (8, 0)}.\n  Domain is all the inputs (first numbers): 1, 2, 5, 8. So domain = {1, 2, 5, 8}.\n  Range is all the outputs (second numbers): 4, 7, 7, 0. We list each distinct value once: {0, 4, 7}. (The 7 appears twice but we only list it once — a set names each value a single time.)\n\nFrom a table — Suppose a table shows inputs x = -3, 0, 2, 6 with outputs y = 5, 5, 1, 9.\n  Domain is the input column: {-3, 0, 2, 6}.\n  Range is the output column, each distinct value once: {1, 5, 9}.\n\nTwo habits to notice. First, list the values in increasing order and write each distinct value only once — that's standard for naming a set. Second, repeated outputs (like 7 in the pairs and 5 in the table) are completely fine and don't change anything; you just don't list a repeat twice. Domain and range are simply 'collect the inputs' and 'collect the outputs.'"
+    },
+    {
+      "type": "quiz",
+      "question": "What are the domain and range of {(0, 3), (1, 5), (4, 3)}?",
+      "options": [
+        "Domain {3, 5, 3}, Range {0, 1, 4}",
+        "Domain {0, 1, 4}, Range {3, 5}",
+        "Domain {0, 1, 4}, Range {3, 5, 3}",
+        "Domain {3, 5}, Range {0, 1, 4}"
+      ],
+      "correctIndex": 1,
+      "explanation": "The domain is the set of inputs (first numbers): {0, 1, 4}. The range is the set of outputs (second numbers), with the repeated 3 listed once: {3, 5}. Swapping domain and range, or listing the repeated output twice, gives the wrong answers."
+    },
+    {
+      "type": "explanation",
+      "heading": "Reading Domain and Range From a Graph",
+      "content": "On a graph, the domain and range are about how far the graph stretches in each direction. Because inputs live on the horizontal x-axis and outputs on the vertical y-axis, you read the domain by scanning left-to-right and the range by scanning bottom-to-top.\n\nTo find the domain, ask: what is the leftmost x-value the graph reaches, and what is the rightmost? The domain is everything in between. Sweep your eyes horizontally across the whole graph and note the span of x-values it covers. To find the range, ask: what is the lowest y-value the graph reaches, and what is the highest? Sweep your eyes vertically and note the span of y-values.\n\nFor example, imagine the graph of a line segment that starts at the point (1, 2) on the left and ends at the point (5, 6) on the right. Reading left-to-right, the x-values run from 1 to 5, so the domain is all x from 1 to 5. Reading bottom-to-top, the y-values run from 2 (the lowest point) to 6 (the highest point), so the range is all y from 2 to 6. The graph's horizontal extent gave the domain; its vertical extent gave the range.\n\nSome graphs go on forever. A straight line like y = 2x + 1 extends infinitely far left and right, so its domain is all real numbers, and it climbs infinitely up and down, so its range is all real numbers too. A U-shaped parabola opening upward extends left and right forever (domain: all real numbers) but has a lowest point and opens upward, so its range starts at that lowest y-value and goes up. The key move is always the same: scan horizontally for domain, vertically for range."
+    },
+    {
+      "type": "steps",
+      "heading": "How to Find Domain and Range",
+      "steps": [
+        {
+          "title": "Decide which values are inputs and which are outputs",
+          "content": "Inputs are x-values (domain); outputs are y-values (range). In ordered pairs the input is the first number; in a table it is the x-column; on a graph it is the horizontal position."
+        },
+        {
+          "title": "Collect the domain (inputs)",
+          "content": "From pairs or a table, list every distinct input once, in increasing order. From a graph, scan left-to-right and note the span of x-values the graph covers."
+        },
+        {
+          "title": "Collect the range (outputs)",
+          "content": "From pairs or a table, list every distinct output once, in increasing order. From a graph, scan bottom-to-top and note the span of y-values the graph reaches."
+        },
+        {
+          "title": "Restrict to what makes sense in context",
+          "content": "If the function models a real situation, keep only inputs and outputs that are possible — for example, time of 0 or more, or whole-number counts of people or items."
+        }
+      ]
+    },
+    {
+      "type": "example",
+      "heading": "Domain and Range of a Graph",
+      "content": "Consider the graph of an upward-opening parabola whose lowest point (the vertex) sits at (0, -4), and which extends upward and outward forever on both sides.\n\nDomain (scan left-to-right): the parabola spreads out endlessly to the left and to the right — for any x you pick, the curve is there. So the domain is all real numbers.\n\nRange (scan bottom-to-top): the lowest the graph ever goes is y = -4 at the vertex, and from there it rises forever upward. It never dips below -4. So the range is all y-values greater than or equal to -4, written y ≥ -4.\n\nNotice how the two directions told different stories. Horizontally, the parabola is unlimited, giving a domain of all real numbers. Vertically, it has a floor at -4 but no ceiling, giving a range of y ≥ -4. This is a classic case where domain and range are NOT the same, which is exactly why we read them separately — one across, one up-and-down. Always check both directions independently; don't assume the range matches the domain."
+    },
+    {
+      "type": "callout",
+      "variant": "warning",
+      "heading": "Domain Is x, Range Is y — Don't Swap Them",
+      "content": "The most common domain/range error is swapping the two. Domain is always the INPUTS, the x-values, read left-to-right (horizontal). Range is always the OUTPUTS, the y-values, read bottom-to-top (vertical). Mixing them up flips your whole answer. Anchor it with the ordered pair (x, y): x comes first and is the domain; y comes second and is the range — same order as the words 'domain, range.'"
+    },
+    {
+      "type": "explanation",
+      "heading": "What a Graph Tells You: Intercepts and Direction",
+      "content": "A graph isn't just a shape — it's a story about how the output changes as the input changes. Two of the most useful features to read are the intercepts and whether the graph is increasing or decreasing.\n\nThe intercepts are where the graph crosses the axes. The y-intercept is the point where the graph crosses the vertical y-axis; it happens when x = 0, and it often represents a 'starting value' in real problems (the fare before any miles, the savings before any deposits). The x-intercept is where the graph crosses the horizontal x-axis; it happens when y = 0, and it often represents a 'break-even' or 'runs out' moment (when a balance hits zero, when a tank empties). Spotting intercepts quickly gives you the key landmarks of a graph.\n\nThe direction of a graph describes how the output moves as you read left to right. A graph is increasing where it rises as you move right — the output is growing as the input grows. It's decreasing where it falls as you move right — the output is shrinking as the input grows. A distance-time graph that rises means you're moving away; one that's flat means you've stopped; one that falls means you're coming back. Reading direction turns a curve into a narrative.\n\nThese reading skills are what make graphs powerful. Instead of a table of numbers, a graph lets you see at a glance where a quantity starts (y-intercept), where it hits zero (x-intercept), and when it's growing or shrinking (increasing/decreasing). Learning to read these features is learning to read the language of data."
+    },
+    {
+      "type": "example",
+      "heading": "Reading the Story of a Graph",
+      "content": "Imagine a graph showing the height of water in a bathtub over time, with time on the horizontal axis and height on the vertical axis. Let's read its story.\n\nThe graph starts at the point (0, 0): at time 0, the height is 0 — the tub is empty. That's the y-intercept, the starting value.\n\nFrom 0 to 5 minutes, the graph rises steadily upward as you move right. This is the increasing part: the water level is climbing, so the tub is filling.\n\nFrom 5 to 8 minutes, the graph is flat — a horizontal segment. The height isn't changing, so the water level is holding steady (maybe the faucet was turned off and no one is using the tub).\n\nFrom 8 to 12 minutes, the graph falls as you move right. This is the decreasing part: the height is dropping, so the tub is draining.\n\nWhere the falling graph finally reaches height 0 again is an x-intercept — the moment the tub is empty once more. Without a single equation, the graph told a complete story: fill, pause, drain, empty. The domain here is the time interval shown (0 to 12 minutes, since negative time makes no sense), and the range is the heights reached (0 up to the maximum height at minute 5). Reading start value, direction changes, and intercepts is how you decode any real-world graph."
+    },
+    {
+      "type": "callout",
+      "variant": "tip",
+      "heading": "Real Contexts Limit the Domain",
+      "content": "In word problems, the domain is often smaller than 'all real numbers' because some inputs don't make sense. Time can't be negative, so a domain might start at 0. You can't have a negative number of people or items, and you can't buy half a car. Before stating a domain in context, ask: 'which input values are actually possible here?' That reasoning is often worth more than the arithmetic, and it's a frequent test question."
+    },
+    {
+      "type": "quiz",
+      "question": "On a distance-from-home versus time graph, a segment that falls (goes down) as you move to the right represents what?",
+      "options": [
+        "Moving farther away from home",
+        "Standing still",
+        "Moving back toward home, because distance is decreasing",
+        "The trip has not started"
+      ],
+      "correctIndex": 2,
+      "explanation": "A decreasing (falling) segment means the output, distance from home, is getting smaller as time increases, so the person is moving back toward home. A rising segment would mean moving away, and a flat segment would mean standing still."
+    },
+    {
+      "type": "callout",
+      "variant": "remember",
+      "heading": "Domain Across, Range Up — and Read the Features",
+      "content": "Domain is the set of inputs (x-values), found by scanning a graph left-to-right; range is the set of outputs (y-values), found by scanning bottom-to-top. The y-intercept (where x = 0) is the starting value; the x-intercept (where y = 0) is the break-even or zero point. A graph is increasing where it rises left-to-right and decreasing where it falls. In real contexts, restrict the domain to inputs that make sense." },
+    {
+      "type": "keypoint",
+      "content": "The domain is the set of inputs (x-values, read left-to-right) and the range is the set of outputs (y-values, read bottom-to-top); reading a graph's intercepts and its increasing/decreasing direction reveals the real-world story it tells."
+    },
+    {
+      "type": "deepdive",
+      "heading": "Reading Graphs Is a Life Skill",
+      "content": "Of all the function skills, reading graphs may be the one you'll use most often as a citizen and a professional, because graphs are how the modern world communicates information. Open any news article, science report, or business dashboard and you'll find graphs — and the people who can read them well understand the world more clearly than those who can't.\n\nThink about the graphs you already encounter. A weather app shows temperature over the day — a curve you read for highs, lows, and when it's warming or cooling. A fitness tracker graphs your heart rate, your steps, your sleep. News stories show unemployment, prices, or case counts rising and falling over time. A stock chart's intercepts and direction tell investors a story about gains and losses. Your phone's battery graph shows how charge drains over hours. Every one of these asks you to do exactly what you practiced in this lesson: identify a starting value, notice where something crosses zero, and tell whether a quantity is increasing or decreasing. Reading graphs well protects you from being misled and helps you make better decisions about health, money, and time.\n\nDomain and range matter in the real world too, because they're about what's possible. An engineer designing a function for a system needs to know the valid range of inputs (you can't run a machine at negative power) and the outputs it can produce (a sensor only reads within certain limits). A business knows its product only sells in whole units within a price range customers will accept. Recognizing the sensible domain and range keeps models honest and answers realistic — which is why 'what's a reasonable domain here?' is a question professionals genuinely ask.\n\nThis lesson closes your introduction to functions, and it's a fitting finish: you started by learning what a function is, then how to name and evaluate it, and now how to read everything a function's graph reveals. Together these skills let you take a real situation, model it as a function, and interpret it — the complete cycle that makes algebra a tool for understanding the world rather than just symbols on a page."
+    }
+  ],
+  "aiContext": "This is the third and final lesson of Algebra Unit 4 (Introduction to Functions) and the course capstone for this build. Emphasize domain = inputs = x-values (scan left-to-right) and range = outputs = y-values (scan bottom-to-top); the most common error is swapping them, so anchor to the ordered pair (x, y). When listing range from pairs/tables, list each distinct value once. For graphs, teach reading horizontal extent for domain and vertical extent for range, plus interpreting intercepts (y-intercept at x=0 is the starting value; x-intercept at y=0 is the zero/break-even) and increasing/decreasing direction as a real-world story. Stress restricting the domain to sensible inputs in context (no negative time/quantities). After this lesson a student should find domain and range from any representation and interpret the key features and story of a function's graph."
+}

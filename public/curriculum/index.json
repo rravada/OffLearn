@@ -1,26 +1,60 @@
 {
   "subjects": [
     {
-      "id": "math",
-      "title": "Mathematics",
+      "id": "algebra",
+      "title": "Algebra",
       "icon": "calculator",
       "track": "standard",
       "units": [
         {
-          "id": "algebra",
-          "title": "Algebra",
+          "id": "unit-1",
+          "title": "Foundations & Expressions",
           "lessons": [
-            { "id": "variables", "title": "Variables & Expressions", "duration": "15 min" },
-            { "id": "equations", "title": "Solving Equations", "duration": "20 min" },
-            { "id": "inequalities", "title": "Inequalities", "duration": "15 min" }
+            { "id": "real-number-system", "title": "The Real Number System & Classifying Numbers", "duration": "25 min" },
+            { "id": "order-of-operations", "title": "Order of Operations & Evaluating Expressions", "duration": "25 min" },
+            { "id": "variables-and-expressions", "title": "Variables & Algebraic Expressions", "duration": "25 min" },
+            { "id": "simplifying-expressions", "title": "Like Terms & the Distributive Property", "duration": "30 min" },
+            { "id": "translating-words-to-algebra", "title": "Translating Words into Algebra", "duration": "25 min" },
+            { "id": "unit-review", "title": "Unit 1 Review", "duration": "20 min" }
           ]
         },
         {
-          "id": "geometry",
-          "title": "Geometry",
+          "id": "unit-2",
+          "title": "Solving Linear Equations",
           "lessons": [
-            { "id": "angles", "title": "Angles & Triangles", "duration": "20 min" },
-            { "id": "area", "title": "Area & Perimeter", "duration": "15 min" }
+            { "id": "one-and-two-step-equations", "title": "The Balance Principle, One- & Two-Step Equations", "duration": "30 min" },
+            { "id": "multi-step-equations", "title": "Multi-Step Equations", "duration": "30 min" },
+            { "id": "variables-on-both-sides", "title": "Variables on Both Sides & Special Solutions", "duration": "30 min" },
+            { "id": "literal-equations", "title": "Literal Equations & Rearranging Formulas", "duration": "25 min" },
+            { "id": "proportions-and-percent", "title": "Ratios, Proportions & Percent Problems", "duration": "30 min" },
+            { "id": "unit-review", "title": "Unit 2 Review", "duration": "20 min" }
+          ]
+        },
+        {
+          "id": "unit-3",
+          "title": "Linear Inequalities",
+          "lessons": [
+            { "id": "solving-inequalities", "title": "Solving One- & Multi-Step Inequalities", "duration": "30 min" },
+            { "id": "compound-inequalities", "title": "Compound Inequalities (AND / OR)", "duration": "25 min" },
+            { "id": "absolute-value-equations-inequalities", "title": "Absolute Value Equations & Inequalities", "duration": "30 min" },
+            { "id": "unit-review", "title": "Unit 3 Review", "duration": "20 min" }
+          ]
+        },
+        {
+          "id": "unit-4",
+          "title": "Introduction to Functions",
+          "lessons": [
+            { "id": "relations-and-functions", "title": "Relations, Functions & the Vertical Line Test", "duration": "25 min" },
+            { "id": "function-notation", "title": "Function Notation & Evaluating Functions", "duration": "25 min" },
+            { "id": "domain-range-and-graphs", "title": "Domain, Range & Interpreting Graphs", "duration": "30 min" },
+            { "id": "unit-review", "title": "Unit 4 Review", "duration": "20 min" }
+          ]
+        },
+        {
+          "id": "final",
+          "title": "Course Final Exam",
+          "lessons": [
+            { "id": "course-final", "title": "Algebra Course Final", "duration": "60 min" }
           ]
         }
       ]

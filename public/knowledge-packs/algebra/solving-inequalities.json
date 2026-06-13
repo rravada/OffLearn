@@ -1,0 +1,28 @@
+{
+  "id": "solving-inequalities",
+  "title": "Solving One- & Multi-Step Inequalities",
+  "subject": "Algebra",
+  "chunks": [
+    { "id": "si-1", "text": "An inequality is a comparison where one side can be greater than or less than the other, rather than exactly equal. It models real situations like minimum heights, spending limits, and required minimums." },
+    { "id": "si-2", "text": "The four inequality symbols are < (less than), > (greater than), ≤ (less than or equal to), and ≥ (greater than or equal to). For example, 'at least 48 inches' is written h ≥ 48." },
+    { "id": "si-3", "text": "Unlike an equation, which usually has one solution, an inequality usually has infinitely many solutions. The solution to x > 3 is every number greater than 3, called the solution set." },
+    { "id": "si-4", "text": "On a number line, the symbols < and > use an open (hollow) circle because the boundary value is not included, while ≤ and ≥ use a closed (filled) circle because the boundary value is included." },
+    { "id": "si-5", "text": "For x > 3, draw an open circle at 3 and shade to the right. For x ≤ -2, draw a filled circle at -2 and shade to the left. The circle shows whether the boundary value counts, and the shading shows the direction of the solution." },
+    { "id": "si-6", "text": "For most inequalities, solve exactly like the matching equation: isolate the variable using inverse operations and do the same thing to both sides. The answer represents a range of values rather than a single number." },
+    { "id": "si-7", "text": "To solve x + 6 < 10, subtract 6 from both sides to get x < 4. Graph it with an open circle at 4 (because of <) shaded to the left." },
+    { "id": "si-8", "text": "To solve 3x - 5 ≥ 7, add 5 to both sides to get 3x ≥ 12, then divide by 3 (a positive number, so no flip) to get x ≥ 4. Graph it with a filled circle at 4 shaded to the right." },
+    { "id": "si-9", "text": "When you multiply or divide both sides of an inequality by a negative number, you must reverse the inequality sign. This is the one rule that makes solving inequalities different from solving equations." },
+    { "id": "si-10", "text": "The flip rule is needed because multiplying by a negative reverses order. Starting from the true statement 2 < 5 and multiplying both sides by -1 gives -2 and -5, and the true relationship is -2 > -5, so the sign flips." },
+    { "id": "si-11", "text": "The inequality sign flips ONLY when you multiply or divide both sides by a negative number. It does not flip when you add or subtract, even a negative number, and it does not flip just because the answer is negative." },
+    { "id": "si-12", "text": "To solve -2x + 1 > 9, subtract 1 to get -2x > 8, then divide both sides by -2 and flip the sign to get x < -4. Graph it with an open circle at -4 shaded to the left." },
+    { "id": "si-13", "text": "Adding or subtracting a number never flips the inequality sign. For example, solving x + 3 < -2 gives x < -5 with no flip, because only subtraction was used; the negative answer did not trigger a flip." },
+    { "id": "si-14", "text": "To check an inequality solution, pick any value from the shaded region and substitute it into the original inequality. If it makes the inequality true, the direction is correct; if false, the sign was probably not flipped." },
+    { "id": "si-15", "text": "To solve the multi-step inequality 3(x - 2) < x + 4, distribute to get 3x - 6 < x + 4, subtract x to get 2x - 6 < 4, add 6 to get 2x < 10, and divide by 2 (positive, no flip) to get x < 5." },
+    { "id": "si-16", "text": "Negatives appearing during the work do not cause a flip. In 3(x - 2) < x + 4, a -6 and a -x appear, but since we never multiply or divide by a negative, the sign never flips. Only the final divide or multiply step's sign matters." },
+    { "id": "si-17", "text": "To solve -5x ≥ 20, divide both sides by -5 and flip the sign to get x ≤ -4. A test value confirms it: -5(-10) = 50 ≥ 20 is true, so x ≤ -4 is correct." },
+    { "id": "si-18", "text": "The steps to solve a linear inequality are: simplify each side, undo addition and subtraction (never flipping), undo multiplication or division (flipping only for a negative), then graph and test a point." },
+    { "id": "si-19", "text": "When graphing an inequality solution, use an open circle for < or >, a filled circle for ≤ or ≥, and shade toward the values that make the inequality true." },
+    { "id": "si-20", "text": "Inequalities model real-world limits: spending $50 on $7 items is 7n ≤ 50, a business avoiding loss needs revenue at least its costs, and a safe dosage must stay below a maximum. Each is solved by isolating the variable and watching for a sign flip." },
+    { "id": "si-21", "text": "Inequalities are the mathematics of 'good enough,' 'within limits,' and 'as many as possible,' covering budgets, safety margins, eligibility requirements, and goals expressed as ranges rather than single values." }
+  ]
+}

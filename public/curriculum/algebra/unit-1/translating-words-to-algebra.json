@@ -1,0 +1,131 @@
+{
+  "id": "algebra-u1-translating-words-to-algebra",
+  "title": "Translating Words into Algebra",
+  "subject": "Algebra",
+  "unit": "Foundations & Expressions",
+  "duration": "25 min",
+  "objectives": [
+    "Translate verbal phrases into algebraic expressions using operation keywords",
+    "Handle order-sensitive phrases such as 'less than' and 'subtracted from' correctly",
+    "Translate complete sentences into equations by identifying the equals relationship",
+    "Define a variable and set up an expression or equation for a real-world situation"
+  ],
+  "sections": [
+    {
+      "type": "explanation",
+      "heading": "Math Is a Language You Can Translate Into",
+      "content": "If you've ever tried to learn a few words of Spanish or another language, you know translation is about matching ideas: 'hello' becomes 'hola,' 'thank you' becomes 'gracias.' Algebra is a language too, and one of the most valuable skills you'll build this year is translating ordinary English into the language of math. Word problems aren't trying to trick you — they're just sentences written in English that need to be rewritten in algebra so you can work with them.\n\nHere's the encouraging part: most of translation comes down to learning a small dictionary of keywords. Certain words almost always mean 'add,' others mean 'subtract,' others 'multiply' or 'divide,' and the word 'is' usually means 'equals.' Once you know the dictionary, a phrase like 'five more than a number' stops looking mysterious and simply becomes x + 5. You're decoding, not guessing.\n\nThink about why this matters. Almost no real problem comes to you as a clean equation. Your boss doesn't say 'solve 2x + 50 = 200.' They say 'we have a $200 budget, there's a $50 setup fee, and each unit costs $2 — how many can we make?' Translation is the bridge from the messy real-world sentence to the math you know how to do. The students who get good at word problems are almost always the ones who got good at translation first.\n\nWe'll start with short phrases (which become expressions), then move to full sentences (which become equations). Take it one keyword at a time, and you'll find this is far more learnable than it looks."
+    },
+    {
+      "type": "table",
+      "heading": "The Translation Dictionary",
+      "headers": ["Operation", "Keywords and phrases", "Example phrase → algebra"],
+      "rows": [
+        ["Addition (+)", "sum, plus, more than, increased by, total, added to", "'8 more than n' → n + 8"],
+        ["Subtraction (-)", "difference, minus, less than, decreased by, fewer than, subtracted from", "'a number decreased by 6' → x - 6"],
+        ["Multiplication (×)", "product, times, of, twice, double, triple, each, per", "'twice a number' → 2x"],
+        ["Division (÷)", "quotient, divided by, per, ratio, split equally", "'a number divided by 5' → x / 5"],
+        ["Equals (=)", "is, equals, is equal to, results in, gives, will be", "'a number is 12' → x = 12"],
+        ["Exponent", "squared, cubed, to the power of", "'a number squared' → x²"]
+      ]
+    },
+    {
+      "type": "example",
+      "heading": "Translating Simple Phrases",
+      "content": "Let's translate several phrases one at a time. For each, we let x stand for 'the number,' find the keyword, and write the matching operation.\n\n'The sum of a number and 9' → the keyword 'sum' means add, so: x + 9.\n\n'Seven times a number' → 'times' means multiply, so: 7x.\n\n'A number divided by 4' → 'divided by' means divide, so: x / 4 (also written as a fraction with x on top and 4 on the bottom).\n\n'A number increased by 10' → 'increased by' means add, so: x + 10.\n\n'The product of 6 and a number' → 'product' means multiply, so: 6x.\n\n'Three more than a number' → 'more than' means add. 'Three more than a number' is the number plus three: x + 3.\n\nDo you see the rhythm? Find the operation word, identify the number(s) involved, and assemble. The vast majority of phrases follow this pattern directly: the keyword tells you the operation, and the words around it tell you what's being operated on. Addition and multiplication are the friendliest, because the order of the pieces doesn't change the meaning — x + 9 and 9 + x are the same. Subtraction and division are where you have to be more careful, which is exactly what we'll look at next."
+    },
+    {
+      "type": "callout",
+      "variant": "warning",
+      "heading": "'Less Than' and 'Subtracted From' Flip the Order",
+      "content": "These two phrases reverse the order you write them in, and they trip up nearly everyone. 'Five less than a number' is NOT 5 - x — it's x - 5. Think about it: if you have a number and you take 5 away, you start with the number. Same with 'subtracted from': '4 subtracted from a number' means start with the number and remove 4, so x - 4, not 4 - x. The phrase mentions the 5 (or the 4) first, but it gets written second. Whenever you see 'less than,' 'subtracted from,' or 'fewer than,' pause and flip the order."
+    },
+    {
+      "type": "quiz",
+      "question": "Translate the phrase 'eight less than a number' into an algebraic expression.",
+      "options": [
+        "8 - x, writing the numbers in the order they appear",
+        "x - 8, because 'less than' means subtract that amount from the number",
+        "8x, treating 'less than' as multiplication",
+        "x + 8, because the phrase mentions both numbers"
+      ],
+      "correctIndex": 1,
+      "explanation": "'Less than' means subtraction, and it reverses the order: 'eight less than a number' starts with the number and removes 8, giving x - 8. Writing 8 - x is the classic order mistake, because the phrase mentions 8 first even though 8 is subtracted second."
+    },
+    {
+      "type": "explanation",
+      "heading": "Why Order Matters for Subtraction and Division",
+      "content": "Addition and multiplication don't care about order: 3 + 5 equals 5 + 3, and 3 × 5 equals 5 × 3. Mathematicians call this the commutative property, and it's why phrases like 'the sum of x and 7' can be written x + 7 or 7 + x with no harm done.\n\nSubtraction and division are different — order changes the answer. 8 - 3 = 5, but 3 - 8 = -5. Those aren't the same. Similarly, 8 ÷ 2 = 4, but 2 ÷ 8 = 0.25. So when you translate a subtraction or division phrase, you have to get the order exactly right, or you'll get a completely different (wrong) result.\n\nMost subtraction phrases read in natural order: 'a number minus 6' is x - 6, and 'a number decreased by 6' is x - 6. These are straightforward — write them as you read them. The exceptions are the reversing phrases we just met: 'less than,' 'subtracted from,' and 'fewer than.' For those, the amount comes first in the words but second in the algebra.\n\nFor division, 'a number divided by 5' is x / 5 (number on top), while 'the quotient of 5 and a number' puts 5 on top: 5 / x. Read carefully which quantity is being divided BY which. A good habit: after you write a subtraction or division expression, test it with easy numbers in your head to make sure the order matches the meaning of the sentence."
+    },
+    {
+      "type": "steps",
+      "heading": "How to Translate a Phrase or Sentence",
+      "steps": [
+        {
+          "title": "Define your variable",
+          "content": "Decide what unknown quantity you're naming and write it down explicitly, like 'let x = the number' or 'let h = hours worked.' Stating what the variable means keeps you from losing track in longer problems."
+        },
+        {
+          "title": "Underline the keywords",
+          "content": "Find the operation words (sum, less than, times, divided by) and the relationship word (is, equals). Underlining them turns a sentence into a clear set of instructions about which operations to use."
+        },
+        {
+          "title": "Watch for order-reversing phrases",
+          "content": "Check specifically for 'less than,' 'subtracted from,' and 'fewer than.' If you see one, remember to flip the order: the amount mentioned gets written after the variable, not before."
+        },
+        {
+          "title": "Assemble the expression, then add the equals if it's a sentence",
+          "content": "Build the algebraic expression from the keywords. If the original was a complete sentence with 'is' or 'equals,' put an equals sign where that word appears, creating an equation rather than just an expression."
+        }
+      ]
+    },
+    {
+      "type": "example",
+      "heading": "Translating a Multi-Step Phrase",
+      "content": "Translate 'five more than twice a number.' This phrase has two operations packed into it, so we build it in pieces.\n\nLet x = the number.\n\nFind the inner part first. 'Twice a number' means 2 times the number: 2x. That's the core the rest builds on.\n\nNow handle 'five more than [that].' 'More than' means add, and 'five more than twice a number' means take 2x and add 5 to it: 2x + 5.\n\nSo 'five more than twice a number' translates to 2x + 5.\n\nLet's double-check the logic by picking a number. If the number is 10: twice 10 is 20, and five more than that is 25. Using our expression: 2(10) + 5 = 20 + 5 = 25. It matches. Notice the order of operations is baked right in — we multiplied by 2 first (twice the number), then added 5, exactly as PEMDAS would require. A common slip would be to write 2x + 5 as 2(x + 5), but those are different: 2(x + 5) would mean 'twice the quantity five more than a number,' which is not what the phrase says. Build the inner operation first, then wrap the outer one around it."
+    },
+    {
+      "type": "explanation",
+      "heading": "From Sentences to Equations",
+      "content": "A phrase becomes an expression; a full sentence usually becomes an equation. The signal is a relationship word — most often 'is,' 'equals,' 'gives,' or 'results in.' That word is where the equals sign goes, splitting the sentence into a left side and a right side.\n\nFor example, take the sentence 'three times a number is twenty-one.' Translate each part: 'three times a number' is 3x, 'is' becomes =, and 'twenty-one' is 21. Put them together and you get the equation 3x = 21. Notice that now you have something solvable — there's a specific value of x that makes the sentence true (in this case x = 7, which we'll learn to find systematically in the next unit). The phrase '3x' alone couldn't be solved; the sentence '3x = 21' can.\n\nWord problems are just longer sentences that hide an equation inside them. The work is the same: define a variable for the unknown, translate the quantities and relationships into algebra, and locate the 'is/equals' that connects the two sides. Once you've turned the words into an equation, you've done the hard part — the solving is mechanical from there.\n\nThe single most helpful habit for word problems is to define your variable in writing before anything else. When a problem says 'a number is 4 more than another number,' you'll be far less confused if you've written down 'let x = the first number' and 'let y = the second number' at the start. Naming your unknowns is like labeling the boxes before you pack — it keeps everything organized."
+    },
+    {
+      "type": "example",
+      "heading": "Turning a Word Problem Into an Equation",
+      "content": "Here's a realistic problem: 'A gym charges a $25 monthly membership fee plus $4 for each fitness class you attend. In one month, your total bill was $61. How many classes did you attend?' Let's translate it into an equation (we'll save the solving for the next unit, but you'll see how the setup works).\n\nStep 1 — Define the variable. The unknown is the number of classes, so let c = the number of classes attended.\n\nStep 2 — Translate the cost. The membership is a flat $25 (a constant). Each class costs $4, and you attended c classes, so the class cost is 4c. The total cost is the membership plus the class cost: 25 + 4c.\n\nStep 3 — Find the equals relationship. The sentence says the total bill 'was $61.' The word 'was' is our equals sign, and $61 is the right side. So:\n  25 + 4c = 61\n\nThat's the equation. We've translated a paragraph of English into one clean algebraic sentence. Notice how each piece of the story mapped to a piece of math: the flat fee became the constant 25, the per-class rate became the coefficient on c, the number of classes became the variable, and 'was $61' became '= 61.' This rate-times-a-variable-plus-a-fixed-amount pattern is one you'll meet again and again."
+    },
+    {
+      "type": "callout",
+      "variant": "tip",
+      "heading": "Always Define Your Variable in Writing",
+      "content": "Before translating any word problem, write a short sentence naming your variable, like 'let c = number of classes.' This one habit prevents the most common word-problem confusion — losing track of what the letter stands for. It also makes your work readable, so if you make a mistake you can find it, and it earns you setup credit on tests even before you solve."
+    },
+    {
+      "type": "quiz",
+      "question": "A number tripled, then increased by 2, gives 17. Which equation matches this sentence?",
+      "options": [
+        "3(x + 2) = 17, grouping the increase inside the tripling",
+        "3x + 2 = 17, tripling the number first, then adding 2",
+        "x + 3 + 2 = 17, adding all the numbers",
+        "2x + 3 = 17, doubling the number"
+      ],
+      "correctIndex": 1,
+      "explanation": "'Tripled' means times 3, giving 3x, and 'increased by 2' adds 2, giving 3x + 2. The word 'gives' is the equals sign, and 17 is the right side, so the equation is 3x + 2 = 17. Writing 3(x + 2) is wrong because it would triple the sum, not triple the number and then add 2."
+    },
+    {
+      "type": "callout",
+      "variant": "remember",
+      "heading": "Keywords and the Two Order Traps",
+      "content": "Sum/plus/more than/increased by mean ADD. Difference/minus/decreased by mean SUBTRACT. Product/times/twice/of mean MULTIPLY. Quotient/divided by/per mean DIVIDE. Is/equals/gives mean EQUALS. The two order traps: 'less than' and 'subtracted from' reverse the order (5 less than x is x - 5), and order matters for all subtraction and division because they are not commutative." },
+    {
+      "type": "keypoint",
+      "content": "Translate words to algebra by matching keywords to operations, reversing the order for 'less than' and 'subtracted from,' and placing an equals sign wherever the sentence says 'is' or 'equals' — and always define your variable first."
+    },
+    {
+      "type": "deepdive",
+      "heading": "Translation Is the Real-World Half of Algebra",
+      "content": "Here's a truth that surprises a lot of students: in the real world, the hardest part of a math problem is almost never the solving — it's the setting up. Computers and calculators can solve equations instantly. What they can't do is read a messy situation and figure out which equation to write. That uniquely human skill is exactly what you're practicing when you translate words into algebra.\n\nThink about the people who use math on the job. A nurse reads a doctor's order in plain language and translates it into a dosage calculation. A contractor hears 'I want a deck twice as long as it is wide, with a total railing of 90 feet' and turns it into an equation about dimensions. An app developer reads a feature request in English and translates it into the logic and formulas the program needs. In every case, the math itself is the easy part once the situation has been correctly translated. The money and the mistakes both live in the translation.\n\nThis is also why word problems get so much attention in school, even though students often wish they'd go away. They're not there to be cruel. They're rehearsal for the thing you'll actually do with algebra: take a real, fuzzy, English-language situation and pin it down into precise math you can solve. Every time you define a variable, hunt for the keywords, and watch out for an order trap, you're building the exact habit that makes algebra useful instead of just academic. Get comfortable here, and the word problems in every future unit — equations, systems, quadratics — become far less intimidating, because the setup is a skill you already own."
+    }
+  ],
+  "aiContext": "This is the fifth and final content lesson of Algebra Unit 1 (Foundations & Expressions). Emphasize the keyword dictionary and especially the two order traps: 'less than' and 'subtracted from' reverse the order (5 less than x is x - 5, not 5 - x), and subtraction/division are not commutative so order matters. Watch for students who translate left-to-right blindly and who write 2(x+5) when they mean 2x+5 (build the inner operation before wrapping the outer). Stress defining the variable in writing before translating. This lesson is the bridge into Unit 2 (solving equations) and every future word problem; setting up the equation is the skill being trained here. After this lesson a student should translate multi-step phrases into expressions and full sentences/word problems into equations like 25 + 4c = 61."
+}

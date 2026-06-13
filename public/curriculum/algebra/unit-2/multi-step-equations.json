@@ -1,0 +1,125 @@
+{
+  "id": "algebra-u2-multi-step-equations",
+  "title": "Multi-Step Equations",
+  "subject": "Algebra",
+  "unit": "Solving Linear Equations",
+  "duration": "30 min",
+  "objectives": [
+    "Simplify each side of an equation by distributing and combining like terms before solving",
+    "Solve multi-step linear equations using the full strategy of simplify, then undo operations",
+    "Clear fractions from an equation by multiplying every term by a common denominator",
+    "Check multi-step solutions by substituting back into the original equation"
+  ],
+  "sections": [
+    {
+      "type": "explanation",
+      "heading": "Tidy Up First, Then Solve",
+      "content": "Imagine you're about to do a jigsaw puzzle, but the table is covered in clutter — old mail, a coffee cup, yesterday's homework. Before you can work, you clear the table. Multi-step equations are the same: before you start undoing operations, you clear away the clutter on each side. Once each side is tidy and simple, the equation collapses into the familiar two-step problem you already know how to solve.\n\nWhat counts as clutter? Two things: parentheses and like terms that haven't been combined. An equation like 2(x + 3) + 4x = 30 looks intimidating, but most of that is just untidiness. The parentheses need distributing, and the 2x (from distributing) and 4x are like terms waiting to be combined. After you clean up the left side, the equation becomes 6x + 6 = 30 — a plain two-step equation.\n\nSo the big idea of this lesson is layering a 'simplify' phase on top of the equation-solving you already know. First, simplify each side on its own: distribute to clear parentheses, then combine like terms. Only after both sides are as simple as possible do you begin undoing operations to isolate the variable.\n\nThis is why Unit 1's simplifying skills mattered so much. Distributing and combining like terms weren't busywork — they were preparation for exactly this moment. Every multi-step equation begins with the simplifying you've already practiced, so you're more ready for this than it might first appear."
+    },
+    {
+      "type": "steps",
+      "heading": "The Multi-Step Equation Strategy",
+      "steps": [
+        {
+          "title": "Distribute to clear any parentheses",
+          "content": "On each side, multiply through any parentheses using the distributive property, remembering to multiply every term inside and to flip signs when distributing a negative. This removes the grouping symbols so the terms can be combined."
+        },
+        {
+          "title": "Combine like terms on each side",
+          "content": "On the left side, combine all the like terms together; do the same on the right side. After this step, each side should be a simple expression of the form 'number times variable, plus a constant' (or simpler)."
+        },
+        {
+          "title": "Undo addition or subtraction",
+          "content": "Now treat it like a two-step equation. Move the constant away from the variable by adding or subtracting it on both sides, getting the variable term alone on one side."
+        },
+        {
+          "title": "Undo multiplication or division, then check",
+          "content": "Divide both sides by the coefficient (or multiply if the variable is divided) to isolate the variable. Finally, substitute your answer into the original equation to confirm it balances."
+        }
+      ]
+    },
+    {
+      "type": "example",
+      "heading": "Combining Like Terms First",
+      "content": "Solve 7x - 2x + 4 = 24.\n\nStep 1 — There are no parentheses, so go straight to combining like terms. On the left, 7x and -2x are like terms: 7x - 2x = 5x. Rewrite:\n  5x + 4 = 24\n\nStep 2 — Now it's a two-step equation. Undo the addition by subtracting 4 from both sides:\n  5x + 4 - 4 = 24 - 4\n  5x = 20\n\nStep 3 — Undo the multiplication by dividing both sides by 5:\n  5x / 5 = 20 / 5\n  x = 4\n\nStep 4 — Check in the original: 7(4) - 2(4) + 4 = 28 - 8 + 4 = 24. It matches.\n\nThe whole problem hinged on that first move: combining 7x - 2x into 5x turned a scary-looking equation into a routine two-step one. Always scan each side for like terms before you start undoing operations."
+    },
+    {
+      "type": "quiz",
+      "question": "After combining like terms, what does the equation 8x + 3 - 5x = 18 become?",
+      "options": [
+        "3x + 3 = 18, by combining 8x - 5x = 3x",
+        "13x + 3 = 18, by adding 8x and 5x",
+        "3x = 18, by removing the 3",
+        "8x - 2 = 18, by combining 3 and -5x"
+      ],
+      "correctIndex": 0,
+      "explanation": "The like terms are 8x and -5x, which combine to 3x (subtracting because of the minus sign), leaving 3x + 3 = 18. Adding 8x and 5x ignores the minus sign, and 3 and -5x are not like terms so they cannot be combined."
+    },
+    {
+      "type": "example",
+      "heading": "Distributing First",
+      "content": "Solve 3(2x - 1) = 21.\n\nStep 1 — Distribute the 3 across the parentheses, multiplying both terms inside:\n  3 · 2x - 3 · 1 = 21\n  6x - 3 = 21\n\nStep 2 — Now undo the subtraction by adding 3 to both sides:\n  6x - 3 + 3 = 21 + 3\n  6x = 24\n\nStep 3 — Undo the multiplication by dividing both sides by 6:\n  6x / 6 = 24 / 6\n  x = 4\n\nStep 4 — Check in the original: 3(2·4 - 1) = 3(8 - 1) = 3(7) = 21. It matches.\n\nThe distributive step is where points are won or lost. We multiplied the 3 by BOTH the 2x and the 1, getting 6x - 3, not 6x - 1. A very common mistake is distributing to only the first term. Multiply across everything inside the parentheses, then proceed as usual."
+    },
+    {
+      "type": "callout",
+      "variant": "warning",
+      "heading": "Distribute to Every Term, and Mind the Signs",
+      "content": "When an equation has parentheses, distribute the outside factor to EVERY term inside — 3(2x - 1) is 6x - 3, not 6x - 1. If the factor is negative, flip the sign of each term: -2(x - 4) is -2x + 8. Skipping a term or losing a sign during distribution is the number one source of wrong answers in multi-step equations. Slow down and write out the distribution before moving on."
+    },
+    {
+      "type": "example",
+      "heading": "Distribute AND Combine, Then Solve",
+      "content": "Solve 2(x + 3) + 4x = 30. This one needs both clean-up moves before solving.\n\nStep 1 — Distribute the 2 across (x + 3):\n  2x + 6 + 4x = 30\n\nStep 2 — Combine like terms on the left. The variable terms 2x and 4x combine to 6x:\n  6x + 6 = 30\n\nStep 3 — Undo the addition; subtract 6 from both sides:\n  6x = 24\n\nStep 4 — Undo the multiplication; divide both sides by 6:\n  x = 4\n\nStep 5 — Check in the original: 2(4 + 3) + 4(4) = 2(7) + 16 = 14 + 16 = 30. It matches.\n\nSee how the first two steps did all the heavy lifting? Distributing turned the parentheses into plain terms, and combining like terms collapsed 2x + 4x into 6x. After that, it was just a two-step equation. The order is what keeps you organized: distribute, combine, then undo."
+    },
+    {
+      "type": "table",
+      "heading": "Multi-Step Solving Checklist",
+      "headers": ["Phase", "What to do", "Result"],
+      "rows": [
+        ["1. Distribute", "Clear all parentheses by multiplying through", "No more grouping symbols"],
+        ["2. Combine", "Combine like terms on each side separately", "Each side is simplified"],
+        ["3. Undo +/-", "Add or subtract to move the constant", "Variable term is alone"],
+        ["4. Undo ×/÷", "Divide by the coefficient (or multiply)", "Variable is isolated"],
+        ["5. Check", "Substitute the answer into the original", "Confirms the solution"]
+      ]
+    },
+    {
+      "type": "callout",
+      "variant": "tip",
+      "heading": "Clear Fractions by Multiplying Through",
+      "content": "If an equation contains fractions, you can wipe them out in one move: multiply EVERY term on both sides by the least common denominator (the smallest number all the denominators divide into). For example, in x/2 + x/3 = 5, multiplying every term by 6 gives 3x + 2x = 30. Working with whole numbers instead of fractions removes a huge source of errors — just be sure to multiply every single term, including those with no fraction."
+    },
+    {
+      "type": "example",
+      "heading": "Clearing Fractions From an Equation",
+      "content": "Solve x/2 + x/3 = 5.\n\nStep 1 — Find the least common denominator of 2 and 3, which is 6. Multiply EVERY term by 6:\n  6 · (x/2) + 6 · (x/3) = 6 · 5\n\nStep 2 — Simplify each product. 6 ÷ 2 = 3, so 6 · (x/2) = 3x. And 6 ÷ 3 = 2, so 6 · (x/3) = 2x. The right side is 6 · 5 = 30:\n  3x + 2x = 30\n\nStep 3 — Combine like terms:\n  5x = 30\n\nStep 4 — Divide both sides by 5:\n  x = 6\n\nStep 5 — Check in the original: 6/2 + 6/3 = 3 + 2 = 5. It matches.\n\nThe magic was Step 1: multiplying through by 6 turned a fraction problem into a clean whole-number problem. The most common slip is forgetting to multiply the term that has no fraction (the 5 became 30 — don't leave it as 5). Multiply every term, no exceptions, and fractions stop being scary."
+    },
+    {
+      "type": "quiz",
+      "question": "Solve 4(x - 2) = 12. What is x?",
+      "options": [
+        "x = 5, by distributing to 4x - 8 = 12, then 4x = 20, then x = 5",
+        "x = 3.5, by distributing to 4x - 2 = 12",
+        "x = 1, by dividing 12 by 4 then subtracting",
+        "x = 14, by adding before dividing"
+      ],
+      "correctIndex": 0,
+      "explanation": "Distribute first: 4(x - 2) = 4x - 8, so the equation is 4x - 8 = 12. Add 8 to both sides to get 4x = 20, then divide by 4 to get x = 5. Distributing only to the first term (getting 4x - 2) is the common mistake."
+    },
+    {
+      "type": "callout",
+      "variant": "remember",
+      "heading": "Simplify Each Side Before You Solve",
+      "content": "The golden order for multi-step equations is: distribute, then combine like terms, then undo operations (addition/subtraction before multiplication/division), then check. Always make each side as simple as possible BEFORE you start isolating the variable. If you try to undo operations while parentheses or uncombined like terms are still present, the work gets tangled and error-prone." },
+    {
+      "type": "keypoint",
+      "content": "To solve a multi-step equation, first simplify each side by distributing and combining like terms, then isolate the variable with inverse operations — undoing addition/subtraction before multiplication/division — and finally check by substitution."
+    },
+    {
+      "type": "deepdive",
+      "heading": "From Messy Reality to a Clean Answer",
+      "content": "Multi-step equations are where algebra starts to mirror real life, because real problems rarely arrive pre-simplified. They come tangled, with several quantities and relationships mixed together, and your job is to organize them into something solvable. The skill you're building — clean up first, then solve — is exactly how problems get handled in technical work.\n\nConsider a small business figuring out its profit. Revenue might be the price times the number of items sold, while costs include a fixed rent plus a per-item expense plus a delivery fee. Setting revenue equal to costs to find the break-even point produces an equation with parentheses and several like terms — a multi-step equation. The owner distributes, combines, and solves to learn exactly how many items they must sell to stop losing money. Engineers do the same when several forces or measurements combine into one relationship; they simplify the tangle and solve for the unknown.\n\nThere's also a transferable life skill hiding in this lesson, and it's worth naming: when a problem looks overwhelming, the move is almost never to panic or to guess. It's to break it into phases and handle one at a time. Distribute. Combine. Undo. Check. That calm, stepwise approach to complexity will serve you in math and far beyond it. The multi-step equation is your training ground for taking something that looks like too much and patiently turning it into something you can solve."
+    }
+  ],
+  "aiContext": "This is the second lesson of Algebra Unit 2 (Solving Linear Equations). Emphasize the simplify-then-solve order: distribute to clear parentheses, combine like terms on each side, THEN undo operations. The biggest errors to watch for are distributing to only the first term inside parentheses, losing a sign when distributing a negative, and (for fraction-clearing) forgetting to multiply the term that has no denominator. Connect back to Unit 1's distributing/combining skills, which are the prerequisites, and forward to variables-on-both-sides next. After this lesson a student should solve equations like 2(x + 3) + 4x = 30 and clear simple fractions by multiplying through by a common denominator."
+}

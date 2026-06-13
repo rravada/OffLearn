@@ -1,0 +1,125 @@
+{
+  "id": "algebra-u1-order-of-operations",
+  "title": "Order of Operations & Evaluating Expressions",
+  "subject": "Algebra",
+  "unit": "Foundations & Expressions",
+  "duration": "25 min",
+  "objectives": [
+    "Apply the order of operations to evaluate numerical expressions correctly",
+    "Recognize that multiplication and division share a rank, and addition and subtraction share a rank, each worked left to right",
+    "Evaluate algebraic expressions by substituting given values for the variables",
+    "Avoid the most common order-of-operations errors, especially with negatives and exponents"
+  ],
+  "sections": [
+    {
+      "type": "explanation",
+      "heading": "Why Order Matters",
+      "content": "Imagine you're following a recipe. The steps say: crack the eggs, then whisk them, then pour them into the hot pan. If you change the order — pour the eggs into the pan before cracking the shells — you get a mess. The order of the steps is part of the instructions, not a suggestion. Math expressions are exactly the same: the order in which you do the operations changes the answer.\n\nTry this with a friend: what is 3 + 4 × 2? One person might add first (3 + 4 = 7, then 7 × 2 = 14). Another might multiply first (4 × 2 = 8, then 3 + 8 = 11). You can't both be right — 14 and 11 are different answers. Mathematicians long ago agreed on one universal order so that every person on Earth gets the same result from the same expression. That agreement is called the order of operations.\n\nThe order is usually remembered with the word PEMDAS: Parentheses, Exponents, Multiplication and Division, Addition and Subtraction. Some people learn it as 'Please Excuse My Dear Aunt Sally.' Whatever phrase helps you, the idea is the same: there's a ranking, and you handle higher-ranked operations before lower-ranked ones.\n\nGetting this right is the single most important habit in all of Algebra. Almost every mistake students make later — in equations, in expressions, in word problems — can be traced back to doing operations in the wrong order. So we're going to build this skill carefully and protect it for the rest of the year."
+    },
+    {
+      "type": "table",
+      "heading": "The Order of Operations (PEMDAS)",
+      "headers": ["Rank", "Step", "What it means"],
+      "rows": [
+        ["1st", "Parentheses (Grouping)", "Do everything inside grouping symbols first: ( ), [ ], and the top/bottom of a fraction bar"],
+        ["2nd", "Exponents", "Apply all powers and roots next, like 3² or √16"],
+        ["3rd", "Multiplication & Division", "Same rank — do them left to right in the order they appear"],
+        ["4th", "Addition & Subtraction", "Same rank — do them left to right in the order they appear"]
+      ]
+    },
+    {
+      "type": "explanation",
+      "heading": "The Trap in 'PEMDAS': M-D and A-S Are Tied",
+      "content": "Here's the part of PEMDAS that fools almost everyone the first time. The letters make it LOOK like multiplication always comes before division, and addition always comes before subtraction. That is not true, and believing it will cost you points.\n\nMultiplication and division are equal partners — they sit on the same rank. When you see both in an expression, you do them left to right, in the order they show up, exactly like reading a sentence. The same goes for addition and subtraction: they're tied, and you work them left to right.\n\nFor example, in 12 ÷ 3 × 2, you do NOT do the multiplication first just because M comes before D in PEMDAS. You read left to right: 12 ÷ 3 = 4 first, then 4 × 2 = 8. If you wrongly multiplied first (3 × 2 = 6, then 12 ÷ 6 = 2) you'd get the wrong answer. Similarly, 10 - 4 + 3 is worked left to right: 10 - 4 = 6, then 6 + 3 = 9. If you added first you'd get 10 - 7 = 3, which is wrong.\n\nSo think of PEMDAS as four levels, not six steps: Parentheses, then Exponents, then the multiply/divide level (left to right), then the add/subtract level (left to right). Some teachers write it as GEMS — Grouping, Exponents, Multiply/divide, Subtract/add — exactly to avoid this trap."
+    },
+    {
+      "type": "example",
+      "heading": "Evaluating a Numerical Expression",
+      "content": "Let's evaluate 5 + 2 × (8 - 3)² step by step. We'll do one operation at a time and rewrite the whole expression each time, so nothing gets lost.\n\nStart:  5 + 2 × (8 - 3)²\n\nStep 1 — Parentheses. Inside the parentheses, 8 - 3 = 5:\n  5 + 2 × (5)²\n\nStep 2 — Exponents. Now apply the power: 5² = 25:\n  5 + 2 × 25\n\nStep 3 — Multiplication (before addition). 2 × 25 = 50:\n  5 + 50\n\nStep 4 — Addition. 5 + 50 = 55:\n  55\n\nThe answer is 55. Notice how we never skipped a step or did two things at once. Rewriting the entire line after each step is the habit that keeps you from losing a number or doing operations out of order. It feels slow at first, but it's how strong math students avoid silly mistakes."
+    },
+    {
+      "type": "quiz",
+      "question": "What is the value of 20 - 6 ÷ 2 × 3?",
+      "options": [
+        "11, because you work multiplication and division left to right: 6 ÷ 2 = 3, then 3 × 3 = 9, then 20 - 9",
+        "21, because you subtract first",
+        "1, because you multiply 2 × 3 first, then 6 ÷ 6, then 20 - 1... wait",
+        "17, because you do 6 ÷ 2 = 3, then 20 - 3 = 17, ignoring the × 3"
+      ],
+      "correctIndex": 0,
+      "explanation": "Division and multiplication share a rank, so you work left to right: 6 ÷ 2 = 3, then 3 × 3 = 9. Subtraction comes last: 20 - 9 = 11. The wrong answers come from subtracting too early or multiplying 2 × 3 before doing the division that appears first."
+    },
+    {
+      "type": "steps",
+      "heading": "How to Evaluate Any Expression",
+      "steps": [
+        {
+          "title": "Scan for grouping symbols",
+          "content": "Look for parentheses ( ), brackets [ ], or a fraction bar. Simplify completely inside each grouping symbol first. If groups are nested (one inside another), start with the innermost one and work outward."
+        },
+        {
+          "title": "Apply exponents and roots",
+          "content": "Once the groups are simplified, handle every power and root. Be careful with signs: -3² means -(3 × 3) = -9, while (-3)² means (-3)(-3) = 9. The parentheses change everything."
+        },
+        {
+          "title": "Multiply and divide, left to right",
+          "content": "Move through the expression from left to right and do each multiplication or division as you reach it. Do not save all multiplication for before all division — they're tied and handled in reading order."
+        },
+        {
+          "title": "Add and subtract, left to right",
+          "content": "Finally, sweep left to right again, doing each addition or subtraction in the order it appears. When you reach the end, you have a single number — that's your answer."
+        }
+      ]
+    },
+    {
+      "type": "callout",
+      "variant": "warning",
+      "heading": "The Negative-Sign and Exponent Mistakes",
+      "content": "Two classic errors: (1) Treating -3² as if it equals 9. Without parentheses, the exponent only attaches to the 3, so -3² = -(3·3) = -9. You need (-3)² to get +9. (2) Doing addition before subtraction (or multiplication before division) just because of the order of letters in PEMDAS. Those pairs are tied — always go left to right. Slow down at minus signs and at any spot where multiply/divide or add/subtract appear together."
+    },
+    {
+      "type": "explanation",
+      "heading": "From Numbers to Variables: Evaluating Expressions",
+      "content": "So far we've evaluated expressions made only of numbers. In Algebra, expressions also contain variables — letters that stand for numbers we'll fill in later. To 'evaluate' an algebraic expression, you substitute a given value for each variable and then use the order of operations exactly as before.\n\nThink of the expression as a machine and the variable as the slot where you drop in a number. The expression 4x + 7 is a machine: whatever number you feed in for x, it multiplies by 4 and then adds 7. Feed in x = 5 and the machine outputs 4(5) + 7 = 27. The expression itself never changes; only the input does.\n\nThe single most important habit when substituting is this: wrap the value you're plugging in inside parentheses. If x = -2 and you're evaluating 4x, write 4(-2), not 4-2. Those look almost the same but mean completely different things — 4(-2) = -8, while '4 - 2' = 2. The parentheses keep the negative attached to the number and remind you to multiply. This one habit prevents a huge share of substitution errors.\n\nAfter you've substituted, you're back to a pure number problem, and PEMDAS takes over. Parentheses first, then exponents, then multiply/divide, then add/subtract — same rules, every time."
+    },
+    {
+      "type": "example",
+      "heading": "Substituting a Negative Value",
+      "content": "Evaluate the expression x² - 5x + 2 when x = -3. We'll substitute carefully, using parentheses around -3 everywhere x appears.\n\nStart by replacing each x with (-3):\n  (-3)² - 5(-3) + 2\n\nStep 1 — Exponents. (-3)² means (-3)(-3) = 9:\n  9 - 5(-3) + 2\n\nStep 2 — Multiplication. -5 times -3: a negative times a negative is positive, so 5(-3) = -15, and subtracting that... let's be careful. The term is -5(-3) = +15:\n  9 + 15 + 2\n\nStep 3 — Addition, left to right. 9 + 15 = 24, then 24 + 2 = 26:\n  26\n\nThe answer is 26. The danger spots were the exponent on a negative (parentheses saved us, giving +9 not -9) and the double negative in -5(-3), which turns into +15. If you had written -3² without parentheses you'd have gotten -9, and the whole answer would be wrong. Parentheses are not optional here — they're what keep the signs correct."
+    },
+    {
+      "type": "callout",
+      "variant": "tip",
+      "heading": "Always Wrap Substituted Values in Parentheses",
+      "content": "Every single time you replace a variable with a number — especially a negative number or a fraction — put it in parentheses. Write 2(-4) instead of 2-4, and (-5)² instead of -5². This tiny habit prevents lost negative signs and accidental subtraction, which are two of the most common reasons correct setups turn into wrong answers."
+    },
+    {
+      "type": "quiz",
+      "question": "Evaluate 2a + b² when a = 3 and b = -4. Which value is correct?",
+      "options": [
+        "-10, by computing 2(3) - 4² = 6 - 16",
+        "22, by computing 2(3) + (-4)² = 6 + 16",
+        "4, by computing 2(3) + (-4·2) = 6 - 2",
+        "100, by computing (2·3 + (-4))² = (2)²"
+      ],
+      "correctIndex": 1,
+      "explanation": "Substitute with parentheses: 2(3) + (-4)². The exponent applies before multiplication and addition, and (-4)² = 16. Then 2(3) = 6, so 6 + 16 = 22. The wrong answers come from forgetting the parentheses on -4 (getting -16 instead of +16) or squaring the wrong part of the expression."
+    },
+    {
+      "type": "callout",
+      "variant": "remember",
+      "heading": "Four Levels, Worked Top to Bottom",
+      "content": "Order of operations is really four levels: (1) Parentheses/grouping, (2) Exponents, (3) Multiplication AND division together, left to right, (4) Addition AND subtraction together, left to right. Multiply is NOT automatically before divide, and add is NOT automatically before subtract — the tied pairs always go in left-to-right reading order."
+    },
+    {
+      "type": "keypoint",
+      "content": "Evaluate any expression by working through four levels in order — parentheses, exponents, multiplication/division left to right, then addition/subtraction left to right — and when a variable is involved, substitute its value in parentheses before you begin."
+    },
+    {
+      "type": "deepdive",
+      "heading": "The Rule That Runs Calculators, Spreadsheets, and Code",
+      "content": "The order of operations isn't just a school rule — it's wired into nearly every piece of technology that does math. When you type 5 + 2 * 3 into a calculator, a spreadsheet cell, or a line of computer code, the machine follows PEMDAS to decide what to compute. That's why a spreadsheet returns 11 for =5+2*3 and not 21: the software is obeying the same ranking you're learning right now.\n\nThis has real consequences. People who build budgets in Excel, scientists analyzing data, and programmers writing software all rely on the order of operations being predictable. A famous category of bugs comes from someone forgetting to add parentheses and the computer doing multiplication before an addition the person intended to happen first. Professionals add parentheses generously — not because the rules require it, but to make their intentions crystal clear and avoid exactly the kind of ambiguity you saw with 3 + 4 × 2.\n\nThere's a deeper lesson here too. Algebra is, at its heart, about following precise rules so that everyone gets the same answer and reasoning can be trusted. The order of operations is your first real taste of that precision. Master it now and two things happen: your arithmetic gets reliable, and you build the careful, step-by-step mindset that every later topic — solving equations, factoring, graphing — quietly depends on."
+    }
+  ],
+  "aiContext": "This is the second lesson of Algebra Unit 1 (Foundations & Expressions). Emphasize that PEMDAS is four LEVELS, not six strict steps — multiplication/division are tied (left to right) and addition/subtraction are tied (left to right); the false belief that multiply always precedes divide is the most common procedural error. Also stress the negative-sign exponent distinction (-3² = -9 versus (-3)² = 9) and the habit of wrapping substituted values in parentheses, which is the biggest source of substitution sign errors. This skill underpins every later unit — evaluating expressions, checking equation solutions, and computing function outputs all depend on it. After this lesson a student should evaluate multi-operation numerical expressions and evaluate algebraic expressions (including with negative inputs) accurately."
+}

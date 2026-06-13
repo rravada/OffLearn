@@ -1,0 +1,286 @@
+{
+  "id": "algebra-u1-unit-review",
+  "title": "Unit 1 Review: Foundations & Expressions",
+  "subject": "Algebra",
+  "unit": "Foundations & Expressions",
+  "type": "unit-review",
+  "questionsPerAttempt": 10,
+  "isAssessment": true,
+  "bank": [
+    {
+      "question": "Which list contains ALL the families that the number -12 belongs to?",
+      "options": [
+        "Natural, whole, integer, rational",
+        "Integer and rational only",
+        "Whole, integer, rational",
+        "Rational and irrational"
+      ],
+      "correctIndex": 1,
+      "explanation": "Because -12 is negative, it cannot be a natural or whole number, which include no negatives. It has no fraction part, so it is an integer, and every integer is rational since -12 = -12/1. No number is both rational and irrational."
+    },
+    {
+      "question": "Which of these numbers is irrational?",
+      "options": [
+        "√49",
+        "0.25",
+        "√7",
+        "-3"
+      ],
+      "correctIndex": 2,
+      "explanation": "√7 is irrational because 7 is not a perfect square, so its decimal never ends or repeats. √49 equals 7 (rational), 0.25 equals 1/4 (rational), and -3 is an integer (rational)."
+    },
+    {
+      "question": "Why is √36 a rational number?",
+      "options": [
+        "Because all square roots are rational",
+        "Because 36 is a perfect square, so √36 = 6, which is an integer",
+        "Because 36 is an even number",
+        "Because its decimal goes on forever"
+      ],
+      "correctIndex": 1,
+      "explanation": "36 is a perfect square (6 × 6 = 36), so √36 = 6, a whole number, which is rational. Not all square roots are rational — only those whose radicand is a perfect square."
+    },
+    {
+      "question": "Order these numbers from LEAST to greatest: -2, -7, -1/2.",
+      "options": [
+        "-1/2, -2, -7",
+        "-7, -2, -1/2",
+        "-2, -7, -1/2",
+        "-7, -1/2, -2"
+      ],
+      "correctIndex": 1,
+      "explanation": "On a number line, the number farthest left is smallest. -7 is farthest left, then -2, then -1/2 (closest to zero, so greatest). Treating -7 as the largest because 7 is the biggest digit is the common error here."
+    },
+    {
+      "question": "Which statement is TRUE?",
+      "options": [
+        "Zero is a natural number",
+        "Every integer is a rational number",
+        "Every square root is irrational",
+        "A negative number cannot be rational"
+      ],
+      "correctIndex": 1,
+      "explanation": "Every integer n can be written as n/1, so every integer is rational. Zero is whole but not natural, square roots of perfect squares are rational, and negatives like -7 are rational, making the other statements false."
+    },
+    {
+      "question": "Evaluate: 4 + 3 × 5.",
+      "options": [
+        "35, by adding first",
+        "19, by multiplying 3 × 5 first, then adding 4",
+        "23, by a different order",
+        "60"
+      ],
+      "correctIndex": 1,
+      "explanation": "Multiplication is done before addition in the order of operations: 3 × 5 = 15, then 4 + 15 = 19. Adding 4 + 3 first to get 35 violates the order of operations."
+    },
+    {
+      "question": "Evaluate: 24 ÷ 4 × 2.",
+      "options": [
+        "3, by multiplying 4 × 2 first",
+        "12, by dividing then multiplying left to right",
+        "48, by doing all operations as multiplication",
+        "6, by dividing only"
+      ],
+      "correctIndex": 1,
+      "explanation": "Multiplication and division share a rank and are done left to right: 24 ÷ 4 = 6, then 6 × 2 = 12. Multiplying 4 × 2 first ignores that division appears first when reading left to right."
+    },
+    {
+      "question": "What is the value of -2²?",
+      "options": [
+        "4, because two negatives make a positive",
+        "-4, because the exponent applies only to the 2, giving -(2 × 2)",
+        "0",
+        "-2"
+      ],
+      "correctIndex": 1,
+      "explanation": "Without parentheses, the exponent attaches only to the 2: -2² = -(2 × 2) = -4. You would need (-2)² to get +4. This sign distinction is a frequent source of errors."
+    },
+    {
+      "question": "Evaluate the expression 3x - 7 when x = -2.",
+      "options": [
+        "-13, by computing 3(-2) - 7 = -6 - 7",
+        "-1, by computing 3(-2) - 7 = -6 + 7",
+        "1, by computing 3 - 2 - 7",
+        "13"
+      ],
+      "correctIndex": 0,
+      "explanation": "Substitute with parentheses: 3(-2) - 7 = -6 - 7 = -13. The common mistake is mishandling the signs and getting -1, or failing to multiply and instead computing 3 - 2."
+    },
+    {
+      "question": "Evaluate a² - 2a when a = 5.",
+      "options": [
+        "15, by computing 25 - 10",
+        "-5, by squaring incorrectly",
+        "35, by computing 25 + 10",
+        "20, by computing 5 × 2 - 2 × 5"
+      ],
+      "correctIndex": 0,
+      "explanation": "Substitute and use order of operations: (5)² - 2(5) = 25 - 10 = 15. Squaring before multiplying is required, and 25 - 10 = 15. Adding instead of subtracting gives the wrong 35."
+    },
+    {
+      "question": "In the expression 5x - y + 8, what is the coefficient of y?",
+      "options": [
+        "1",
+        "-1, because -y means -1y",
+        "8",
+        "There is no coefficient"
+      ],
+      "correctIndex": 1,
+      "explanation": "A variable by itself has an understood coefficient of 1, and the minus sign in front makes the coefficient of y equal to -1. The sign is part of the coefficient, so the answer is -1, not 1."
+    },
+    {
+      "question": "Which of the following is an EQUATION, not an expression?",
+      "options": [
+        "3x + 5",
+        "2a - 7b",
+        "4x - 1 = 11",
+        "x² + 6"
+      ],
+      "correctIndex": 2,
+      "explanation": "An equation contains an equals sign, which 4x - 1 = 11 has. The others are expressions: they represent values but make no equality claim and have no equals sign."
+    },
+    {
+      "question": "A printing service charges a $15 setup fee plus $3 per shirt. If s is the number of shirts, which expression gives the total cost?",
+      "options": [
+        "15s + 3",
+        "3s + 15",
+        "18s",
+        "15 + 3 + s"
+      ],
+      "correctIndex": 1,
+      "explanation": "The per-shirt cost is $3 times s shirts, written 3s, and the $15 setup fee is a constant added once, giving 3s + 15. Swapping the rate and the fee (15s + 3) or adding 15 and 3 together are the common errors."
+    },
+    {
+      "question": "What does the term 4n mean?",
+      "options": [
+        "4 plus n",
+        "4 times n",
+        "4 raised to the power n",
+        "n divided by 4"
+      ],
+      "correctIndex": 1,
+      "explanation": "A number written next to a variable means multiplication, so 4n means 4 times n. It does not mean addition (4 + n) or an exponent; those would be written differently."
+    },
+    {
+      "question": "Simplify: 7x + 4 - 3x + 2.",
+      "options": [
+        "4x + 6",
+        "10x + 6",
+        "4x + 2",
+        "10"
+      ],
+      "correctIndex": 0,
+      "explanation": "Combine like terms: 7x - 3x = 4x and 4 + 2 = 6, giving 4x + 6. Adding 7x and 3x instead of subtracting (because of the minus sign) gives the wrong 10x."
+    },
+    {
+      "question": "Which pair are LIKE terms?",
+      "options": [
+        "5x and 5x²",
+        "3a and 3b",
+        "6y and -2y",
+        "7 and 7m"
+      ],
+      "correctIndex": 2,
+      "explanation": "Like terms have the same variable and the same exponent; 6y and -2y both have y to the first power, so they are like terms. The others differ in exponent, variable, or one being a constant."
+    },
+    {
+      "question": "Distribute: 3(2x + 5).",
+      "options": [
+        "6x + 5",
+        "6x + 15",
+        "5x + 8",
+        "6x + 8"
+      ],
+      "correctIndex": 1,
+      "explanation": "The distributive property multiplies 3 by every term inside: 3 × 2x = 6x and 3 × 5 = 15, giving 6x + 15. Multiplying only the first term and writing 6x + 5 leaves the 5 un-multiplied."
+    },
+    {
+      "question": "Simplify: -(4x - 9).",
+      "options": [
+        "-4x - 9",
+        "-4x + 9",
+        "4x - 9",
+        "-4x - 9x"
+      ],
+      "correctIndex": 1,
+      "explanation": "Distributing the negative flips the sign of every term: -(4x - 9) = -4x + 9. Writing -4x - 9 is the classic mistake of failing to flip the sign of the -9."
+    },
+    {
+      "question": "Fully simplify: 2(x + 3) + 4x.",
+      "options": [
+        "6x + 3",
+        "6x + 6",
+        "2x + 6 + 4x",
+        "8x"
+      ],
+      "correctIndex": 1,
+      "explanation": "Distribute first: 2(x + 3) = 2x + 6, giving 2x + 6 + 4x. Then combine like terms: 2x + 4x = 6x, so the result is 6x + 6. The constant 6 cannot combine with the x-terms."
+    },
+    {
+      "question": "Translate: 'six less than a number.'",
+      "options": [
+        "6 - x",
+        "x - 6",
+        "6x",
+        "x + 6"
+      ],
+      "correctIndex": 1,
+      "explanation": "'Less than' means subtraction and reverses the order, so 'six less than a number' is x - 6. Writing 6 - x is the common order error caused by listing the numbers as they appear."
+    },
+    {
+      "question": "Translate: 'the product of 5 and a number, increased by 8.'",
+      "options": [
+        "5 + x + 8",
+        "5(x + 8)",
+        "5x + 8",
+        "8x + 5"
+      ],
+      "correctIndex": 2,
+      "explanation": "'Product of 5 and a number' is 5x, and 'increased by 8' adds 8, giving 5x + 8. Writing 5(x + 8) would multiply 5 by the sum, which changes the meaning."
+    },
+    {
+      "question": "Translate the sentence: 'twice a number, decreased by 3, is 11.'",
+      "options": [
+        "2x - 3 = 11",
+        "2(x - 3) = 11",
+        "3 - 2x = 11",
+        "2x + 3 = 11"
+      ],
+      "correctIndex": 0,
+      "explanation": "'Twice a number' is 2x, 'decreased by 3' subtracts 3 to give 2x - 3, and 'is' becomes the equals sign before 11. So the equation is 2x - 3 = 11."
+    },
+    {
+      "question": "A taxi charges a $5 base fare plus $2 per mile. Which equation says the total fare for m miles is $19?",
+      "options": [
+        "5m + 2 = 19",
+        "2m + 5 = 19",
+        "7m = 19",
+        "2 + 5 + m = 19"
+      ],
+      "correctIndex": 1,
+      "explanation": "The per-mile cost is $2 times m, written 2m, and the $5 base fare is a constant, giving 2m + 5. Setting that equal to the $19 total gives 2m + 5 = 19. Swapping the rate and base fare gives the wrong 5m + 2."
+    },
+    {
+      "question": "Which expression represents 'the quotient of a number and 4'?",
+      "options": [
+        "4x",
+        "4 / x",
+        "x / 4",
+        "x - 4"
+      ],
+      "correctIndex": 2,
+      "explanation": "'Quotient' means division, and 'a number and 4' puts the number first, so it is x / 4 (the number divided by 4). Writing 4 / x reverses the order and changes the value."
+    },
+    {
+      "question": "Simplify: 5(a - 2) - (3a - 4).",
+      "options": [
+        "2a - 6",
+        "2a - 14",
+        "8a - 14",
+        "2a + 6"
+      ],
+      "correctIndex": 0,
+      "explanation": "Distribute: 5(a - 2) = 5a - 10, and -(3a - 4) = -3a + 4 (the negative flips both signs). That gives 5a - 10 - 3a + 4. Combine: 5a - 3a = 2a and -10 + 4 = -6, so the answer is 2a - 6."
+    }
+  ]
+}

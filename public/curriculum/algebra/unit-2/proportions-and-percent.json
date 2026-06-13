@@ -1,0 +1,123 @@
+{
+  "id": "algebra-u2-proportions-and-percent",
+  "title": "Ratios, Proportions & Percent Problems",
+  "subject": "Algebra",
+  "unit": "Solving Linear Equations",
+  "duration": "30 min",
+  "objectives": [
+    "Write ratios and set up proportions to model real-world relationships",
+    "Solve proportions using cross-multiplication",
+    "Solve the three types of percent problems using a percent proportion",
+    "Apply proportions and percents to scaling, unit rates, tips, discounts, and percent change"
+  ],
+  "sections": [
+    {
+      "type": "explanation",
+      "heading": "Ratios and Proportions: Keeping Things in Proportion",
+      "content": "Think about doubling a recipe. If a batch of cookies needs 2 cups of flour for every 1 cup of sugar, and you want to make twice as much, you use 4 cups of flour and 2 cups of sugar. You kept the relationship between flour and sugar the same — that relationship is a ratio, and keeping it the same as you scale up is what a proportion is all about.\n\nA ratio is a comparison of two quantities, like '2 cups of flour to 1 cup of sugar,' often written 2:1 or as the fraction 2/1. A proportion is a statement that two ratios are equal. When you say 2 cups flour / 1 cup sugar = 4 cups flour / 2 cups sugar, you've written a proportion: two ratios that represent the same relationship at different sizes. Proportions are how we handle scaling, similar shapes, unit conversions, maps, and a huge range of everyday problems.\n\nThe reason proportions belong in this unit is that solving one is really just solving an equation. A proportion like 3/4 = x/12 is an equation with an unknown, and you already have the tools to find x. We'll learn one efficient shortcut — cross-multiplication — but underneath, it's the same balance-principle equation solving you've practiced all unit.\n\nThe everyday power here is enormous. Any time two quantities change together at a fixed rate — miles and gas, hours and pay, ingredients and servings, inches on a map and real miles — a proportion lets you find a missing value. Get comfortable with proportions and a whole category of real problems becomes routine."
+    },
+    {
+      "type": "steps",
+      "heading": "How to Solve a Proportion by Cross-Multiplication",
+      "steps": [
+        {
+          "title": "Write the proportion as two equal fractions",
+          "content": "Set up the problem as one fraction equals another fraction, with the unknown (say x) in one of the four positions. Make sure matching quantities line up: if miles are on top of the left fraction, miles go on top of the right fraction too."
+        },
+        {
+          "title": "Multiply diagonally (cross-multiply)",
+          "content": "Multiply the top of each fraction by the bottom of the other, forming an equation. For a/b = c/d, cross-multiplying gives a·d = b·c. The two diagonal products are equal whenever the fractions are equal."
+        },
+        {
+          "title": "Solve the resulting equation",
+          "content": "Cross-multiplying turns the proportion into a simple linear equation. Isolate the variable using inverse operations, just as you have all unit, usually by dividing both sides by the number multiplying the variable."
+        },
+        {
+          "title": "Check that the answer makes sense",
+          "content": "Substitute your value back in and confirm the two ratios really are equal, and that the answer is reasonable for the situation (a length, a price, or a count should be a sensible size)."
+        }
+      ]
+    },
+    {
+      "type": "example",
+      "heading": "Solving a Proportion",
+      "content": "Solve the proportion 3/4 = x/12.\n\nStep 1 — The proportion is already set up as two equal fractions, with x in the top-right position.\n\nStep 2 — Cross-multiply: multiply each top by the opposite bottom.\n  3 · 12 = 4 · x\n  36 = 4x\n\nStep 3 — Solve the equation. Divide both sides by 4:\n  36 / 4 = 4x / 4\n  9 = x,  so  x = 9\n\nStep 4 — Check: does 3/4 = 9/12? Simplify 9/12 by dividing top and bottom by 3: 9/12 = 3/4. Yes, they're equal, so x = 9 is correct.\n\nThe cross-multiplication step is what makes this fast: instead of fussing with fractions, the diagonal products 3·12 and 4·x gave us the clean equation 36 = 4x. From there it was a one-step solve. Cross-multiplying works because if two fractions are equal, their diagonal products must be equal too — it's a reliable shortcut every time you have a single fraction equal to a single fraction."
+    },
+    {
+      "type": "quiz",
+      "question": "Solve the proportion x/5 = 6/10.",
+      "options": [
+        "x = 3, by cross-multiplying to 10x = 30, then dividing by 10",
+        "x = 12, by multiplying 6 and 10 then dividing by 5",
+        "x = 30, by cross-multiplying and forgetting to divide",
+        "x = 11, by adding across"
+      ],
+      "correctIndex": 0,
+      "explanation": "Cross-multiply x/5 = 6/10 to get 10x = 30 (since 10·x = 5·6). Divide both sides by 10 to get x = 3. Check: 3/5 = 6/10 because both equal 0.6. Forgetting to divide leaves the wrong answer 30."
+    },
+    {
+      "type": "example",
+      "heading": "A Real-World Proportion",
+      "content": "A car travels 150 miles on 5 gallons of gas. At the same rate, how far can it travel on 8 gallons?\n\nStep 1 — Set up a proportion, keeping matching units lined up. Put miles on top and gallons on the bottom in both fractions. Let x = the unknown distance:\n  150 miles / 5 gallons = x miles / 8 gallons\n  150 / 5 = x / 8\n\nStep 2 — Cross-multiply:\n  150 · 8 = 5 · x\n  1200 = 5x\n\nStep 3 — Solve. Divide both sides by 5:\n  1200 / 5 = x\n  240 = x\n\nSo the car can travel 240 miles on 8 gallons. Step 4 — Check that it's reasonable: 8 gallons is more than 5, so the distance should be more than 150 miles, and 240 is. The setup was the most important part: because we put miles over gallons on BOTH sides, the proportion correctly matched up corresponding quantities. If we'd accidentally flipped one fraction (gallons over miles on one side only), the answer would be wrong. Line up your units the same way on both sides, every time."
+    },
+    {
+      "type": "callout",
+      "variant": "warning",
+      "heading": "Line Up Corresponding Quantities",
+      "content": "The most common proportion mistake is setting up the fractions inconsistently — for example, miles/gallons on one side but gallons/miles on the other. Whatever quantity you put on TOP of the first fraction must be on TOP of the second fraction too. Keep units in the same positions on both sides. A quick check: the units should 'match across' the equals sign. Inconsistent setup gives an answer that's often wildly off, so verify your layout before you cross-multiply."
+    },
+    {
+      "type": "explanation",
+      "heading": "Percents Are Just Proportions Out of 100",
+      "content": "A percent is simply a ratio with a denominator of 100. The word 'percent' literally means 'per hundred,' so 25% means 25 out of 100, or the fraction 25/100. That single fact turns every percent problem into a proportion you already know how to solve.\n\nThe tool is the percent proportion: part/whole = percent/100. The 'whole' is the total amount you're taking a percent of, the 'part' is the piece you get, and 'percent' is the rate over 100. For example, 'What is 20% of 50?' fits the pattern with whole = 50, percent = 20, and the part unknown: part/50 = 20/100. Cross-multiply and solve, and you find the part is 10.\n\nA helpful translation habit: in percent word problems, the word 'of' usually signals the whole (the number right after 'of'), and the word 'is' usually points to the part. 'What is 20% of 50?' — the 50 follows 'of,' so it's the whole; 'what is' marks the part we want. Lining the words up with the part/whole proportion keeps you from mixing up which number goes where.\n\nThe beauty of the percent proportion is that it handles all three kinds of percent questions with the same setup. Whether you're missing the part, the whole, or the percent, you fill in the two numbers you know and solve for the one you don't. One method, three question types."
+    },
+    {
+      "type": "table",
+      "heading": "The Three Types of Percent Problems",
+      "headers": ["Question type", "Example", "Proportion setup (part/whole = percent/100)"],
+      "rows": [
+        ["Find the part", "What is 20% of 50?", "part/50 = 20/100 → part = 10"],
+        ["Find the whole", "15 is 30% of what number?", "15/whole = 30/100 → whole = 50"],
+        ["Find the percent", "12 is what percent of 48?", "12/48 = percent/100 → percent = 25%"]
+      ]
+    },
+    {
+      "type": "example",
+      "heading": "Finding a Part and Finding the Whole",
+      "content": "Find the part — What is 20% of 50?\n  Set up part/whole = percent/100 with whole = 50, percent = 20:\n  part / 50 = 20 / 100\n  Cross-multiply: 100 · part = 50 · 20, so 100·part = 1000.\n  Divide both sides by 100: part = 10.\n  So 20% of 50 is 10.\n\nFind the whole — 15 is 30% of what number?\n  Here the part = 15, percent = 30, and the whole is unknown:\n  15 / whole = 30 / 100\n  Cross-multiply: 15 · 100 = 30 · whole, so 1500 = 30·whole.\n  Divide both sides by 30: whole = 50.\n  So 15 is 30% of 50.\n\nBoth problems used the identical setup, part/whole = percent/100; we just put the unknown in a different spot and solved. That's the advantage of the percent proportion — you don't need a separate trick for each kind of question. Identify the part, the whole, and the percent, place the unknown, cross-multiply, and solve."
+    },
+    {
+      "type": "callout",
+      "variant": "tip",
+      "heading": "Use part/whole = percent/100 Every Time",
+      "content": "Memorize one tool — part over whole equals percent over 100 — and you can solve every percent problem. Read the question to fill in the two values you know, put a variable in the third spot, then cross-multiply and solve. The word 'of' points to the whole and 'is' points to the part. This single proportion replaces a pile of half-remembered percent rules with one reliable method."
+    },
+    {
+      "type": "quiz",
+      "question": "A shirt's original price is $40, and it's on sale for 25% off. How much money do you save?",
+      "options": [
+        "$15, by subtracting 25 from 40",
+        "$10, because 25% of 40 is part/40 = 25/100, giving part = 10",
+        "$25, the percent itself",
+        "$30, the sale price"
+      ],
+      "correctIndex": 1,
+      "explanation": "The amount saved is 25% of the $40 whole: part/40 = 25/100. Cross-multiplying gives 100·part = 1000, so part = $10 saved. The $30 in another option is the sale price (40 - 10), not the savings, and subtracting 25 from 40 misuses the percent as a dollar amount."
+    },
+    {
+      "type": "callout",
+      "variant": "remember",
+      "heading": "Cross-Multiply, and Percent Means Out of 100",
+      "content": "To solve any proportion a/b = c/d, cross-multiply to get a·d = b·c, then solve the resulting equation. For percent problems, use part/whole = percent/100, because percent means 'per hundred.' Keep corresponding quantities in matching positions, and remember 'of' marks the whole while 'is' marks the part." },
+    {
+      "type": "keypoint",
+      "content": "A proportion sets two equal ratios; solve it by cross-multiplying into a linear equation — and every percent problem is the proportion part/whole = percent/100 with the unknown placed wherever it belongs."
+    },
+    {
+      "type": "deepdive",
+      "heading": "Percents and Proportions Run Your Daily Life",
+      "content": "Of everything in this unit, proportions and percents may be the math you use most often as an adult, frequently without even noticing. They're woven into shopping, money, health, and work in ways that directly affect your wallet and your decisions.\n\nEvery time you see a sale, you're doing percent math: 30% off a $60 jacket saves $18, making it $42. Tipping at a restaurant is a percent of the bill; sales tax added at the register is a percent of your purchase; the interest on a credit card or a car loan is a percent that decides how much extra you pay. Understanding these isn't just academic — people who can quickly estimate percents make better financial choices and are far harder to mislead. A '40% off, then an extra 10% off' sign isn't 50% off, and knowing why protects your money.\n\nProportions show up just as widely. Cooks scale recipes, nurses calculate medication doses by body weight, builders read scale drawings, travelers convert currencies and units, and scientists mix solutions to exact concentrations — all with proportions. Map reading, model building, and even adjusting a photo's size while keeping it from looking stretched are proportion problems. The 'keep the relationship the same as you scale' idea is one of the most broadly useful concepts in all of math.\n\nHere's the encouraging part: you now hold two simple, reliable tools — cross-multiplication for proportions and part/whole = percent/100 for percents — that cover this entire territory. You don't need to memorize a dozen special formulas for tips, discounts, taxes, and scaling. Set up the proportion, solve the equation, and you can handle the everyday math that genuinely matters, for the rest of your life."
+    }
+  ],
+  "aiContext": "This is the fifth and final lesson of Algebra Unit 2 (Solving Linear Equations). Emphasize that a proportion is just an equation solved by cross-multiplication, and that every percent problem reduces to the single proportion part/whole = percent/100. Watch for two common errors: setting up proportions with inconsistent units (corresponding quantities must occupy matching positions on both sides), and misreading percent word problems — reinforce that 'of' marks the whole and 'is' marks the part. Connect to real life heavily (discounts, tips, tax, unit rates, scaling), since this is among the most-used adult math. After this lesson a student should solve proportions and all three types of percent problems (find the part, the whole, or the percent), including discounts and percent-off situations."
+}

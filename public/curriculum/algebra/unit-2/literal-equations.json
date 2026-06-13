@@ -1,0 +1,120 @@
+{
+  "id": "algebra-u2-literal-equations",
+  "title": "Literal Equations & Rearranging Formulas",
+  "subject": "Algebra",
+  "unit": "Solving Linear Equations",
+  "duration": "25 min",
+  "objectives": [
+    "Solve a literal equation (an equation with several variables) for one specified variable",
+    "Rearrange common real-world formulas to isolate a chosen quantity",
+    "Apply inverse operations while treating the other letters as if they were constants",
+    "Explain why rearranging a formula is useful in science and everyday problem solving"
+  ],
+  "sections": [
+    {
+      "type": "explanation",
+      "heading": "Same Rules, Just More Letters",
+      "content": "You've spent this unit isolating a variable in equations full of numbers. A literal equation is the same job, but with more letters and fewer numbers. ('Literal' comes from the word 'letter.') An equation like d = rt has three variables, and we might be asked to solve it for t — that is, to rearrange it so t sits alone on one side.\n\nHere's the reassuring truth: the rules don't change at all. You still use inverse operations, you still do the same thing to both sides, you still isolate the variable you want. The only difference is that instead of getting a clean number like x = 5, your answer will be an expression made of other letters, like t = d/r. That's not a worse answer — it's just a more general one.\n\nThe trick that makes literal equations click is this: treat every letter you're NOT solving for as if it were a plain number. In d = rt, if you're solving for t, pretend r is just some fixed number sitting in front of t, exactly like the 3 in 3x. To undo 'r times t,' you divide both sides by r, giving t = d/r — the very same move you'd use to solve 3t = d. The unfamiliar part is only that the 'number' is wearing a letter costume.\n\nWhy does this matter? Because formulas are everywhere — in science, in money, in measurement — and they're usually written to solve for one particular quantity. When you need a different quantity, you rearrange. Learning to rearrange a formula means one formula can answer many different questions."
+    },
+    {
+      "type": "example",
+      "heading": "Solving a Simple Literal Equation",
+      "content": "Solve the formula d = rt for t. (This is the distance formula: distance equals rate times time.)\n\nLook at what's happening to t: it's being multiplied by r. To isolate t, undo that multiplication by dividing both sides by r:\n  d / r = rt / r\n\nOn the right, the r's cancel (r divided by r is 1), leaving just t:\n  d / r = t\n\nSo t = d / r. That's the finished answer. It says: to find the time, divide the distance by the rate. If you drove 300 miles at 60 mph, then t = 300/60 = 5 hours — the rearranged formula does exactly what you'd expect.\n\nCompare this to solving 3t = 12, where you'd divide both sides by 3 to get t = 4. The move is identical: divide both sides by whatever is multiplying t. The only difference is that here the multiplier is the letter r instead of the number 3. Treat r like a number, and the problem is one you already know how to do."
+    },
+    {
+      "type": "steps",
+      "heading": "How to Solve a Literal Equation",
+      "steps": [
+        {
+          "title": "Identify the variable you want to isolate",
+          "content": "Read the problem to see which letter you are solving for. Circle it. Every move you make from here is aimed at getting that one letter alone on a side, while every other letter is treated as a fixed number."
+        },
+        {
+          "title": "Locate that variable and see what's attached to it",
+          "content": "Find the target variable in the equation and notice what has been done to it: is it added to something, multiplied by something, inside parentheses? This tells you which inverse operations you'll need, and in what order."
+        },
+        {
+          "title": "Undo operations with inverses, on both sides",
+          "content": "Peel away everything attached to the target variable using inverse operations, doing each step to both sides. Undo addition/subtraction before multiplication/division, just as with numerical equations, treating the other letters as constants."
+        },
+        {
+          "title": "Write the variable alone on one side",
+          "content": "Continue until the target variable stands by itself, equal to an expression made of the other letters. That expression is your answer — it does not need to reduce to a number."
+        }
+      ]
+    },
+    {
+      "type": "example",
+      "heading": "Rearranging the Perimeter Formula",
+      "content": "The perimeter of a rectangle is P = 2l + 2w, where l is length and w is width. Solve this formula for w (so we can find the width when we know the perimeter and length).\n\nOur target is w. Look at what's attached to it: w is multiplied by 2, and the term 2l is added on. We undo in reverse order — addition first, then multiplication.\n\nStep 1 — Undo the addition. Subtract 2l from both sides:\n  P - 2l = 2l + 2w - 2l\n  P - 2l = 2w\n  (The 2l cancels on the right, leaving 2w.)\n\nStep 2 — Undo the multiplication. Divide both sides by 2:\n  (P - 2l) / 2 = 2w / 2\n  (P - 2l) / 2 = w\n\nSo w = (P - 2l) / 2. Notice we had to divide the ENTIRE left side, P - 2l, by 2 — not just one piece of it. The whole expression P - 2l is what equals 2w, so the whole thing gets divided. A common mistake is to divide only the P or only the 2l. When you divide, the whole side comes along. The answer says: to find the width, subtract twice the length from the perimeter, then divide by 2."
+    },
+    {
+      "type": "quiz",
+      "question": "Solve the formula A = lw (area of a rectangle) for l.",
+      "options": [
+        "l = A - w, by subtracting w",
+        "l = A / w, by dividing both sides by w",
+        "l = Aw, by multiplying",
+        "l = w / A, by dividing the other way"
+      ],
+      "correctIndex": 1,
+      "explanation": "In A = lw, the variable l is multiplied by w, so the inverse operation is to divide both sides by w, giving l = A / w. Subtracting w is the wrong inverse for a multiplication, and dividing in the reverse order (w / A) gives a different, incorrect expression."
+    },
+    {
+      "type": "callout",
+      "variant": "warning",
+      "heading": "Treat Other Letters as Numbers — and Divide the WHOLE Side",
+      "content": "Two key cautions. First, when solving for one variable, treat every other letter as a fixed number; don't let the unfamiliar letters make you forget the inverse-operation rules. Second, when you divide to isolate a variable, divide the ENTIRE other side, not just one term. If P - 2l = 2w and you divide by 2, the result is (P - 2l)/2 = w, with the whole numerator divided — not P - l. Keep the full expression together."
+    },
+    {
+      "type": "example",
+      "heading": "A Formula With Division: Solving for the Base",
+      "content": "The area of a triangle is A = (1/2)bh, where b is the base and h is the height. Solve for b.\n\nOur target is b. It's being multiplied by both (1/2) and h. To isolate b, we undo that whole multiplication.\n\nStep 1 — Get rid of the fraction by multiplying both sides by 2:\n  2 · A = 2 · (1/2)bh\n  2A = bh\n  (Multiplying (1/2) by 2 gives 1, so the right side becomes bh.)\n\nStep 2 — Now b is multiplied by h. Undo that by dividing both sides by h:\n  2A / h = bh / h\n  2A / h = b\n\nSo b = 2A / h. The answer says: to find the base, double the area and divide by the height. This formula is genuinely useful — if you know a triangular garden has area 24 square feet and height 6 feet, then b = 2(24)/6 = 48/6 = 8 feet. One rearrangement, and the area formula now solves for the base instead. The first move, multiplying by 2 to clear the fraction, is a common and handy trick whenever a formula has a fraction in it."
+    },
+    {
+      "type": "table",
+      "heading": "Common Formulas, Rearranged",
+      "headers": ["Formula", "Solve for", "Rearranged result"],
+      "rows": [
+        ["d = rt (distance)", "t (time)", "t = d / r"],
+        ["A = lw (rectangle area)", "w (width)", "w = A / l"],
+        ["P = 2l + 2w (perimeter)", "l (length)", "l = (P - 2w) / 2"],
+        ["A = (1/2)bh (triangle area)", "h (height)", "h = 2A / b"],
+        ["y = mx + b (line)", "x", "x = (y - b) / m"]
+      ]
+    },
+    {
+      "type": "callout",
+      "variant": "tip",
+      "heading": "When Stuck, Solve the Number Version First",
+      "content": "If a literal equation looks confusing, temporarily replace the other letters with easy numbers, solve that, and watch which operations you use — then repeat the exact same steps with the letters. For example, to solve d = rt for t, picture 12 = 3t: you'd divide by 3, so for the letters you divide by r. The numerical version reveals the moves; the literal version just keeps them general."
+    },
+    {
+      "type": "quiz",
+      "question": "Solve y = mx + b for x.",
+      "options": [
+        "x = y - b - m, by subtracting everything",
+        "x = (y - b) / m, by subtracting b then dividing by m",
+        "x = y / m - b, by dividing only the y by m",
+        "x = (y + b) / m, by adding b"
+      ],
+      "correctIndex": 1,
+      "explanation": "First undo the addition of b by subtracting b from both sides: y - b = mx. Then undo the multiplication by m by dividing both sides by m, giving x = (y - b) / m. The entire expression y - b must be divided by m, not just the y."
+    },
+    {
+      "type": "callout",
+      "variant": "remember",
+      "heading": "Literal Equations Use the Same Moves",
+      "content": "To solve a literal equation, isolate the target variable using inverse operations, treating all other letters as constants. Undo addition/subtraction before multiplication/division, do every step to both sides, and when you divide, divide the WHOLE other side. The answer is an expression in the other letters, not a single number — and that is exactly what you want." },
+    {
+      "type": "keypoint",
+      "content": "Solving a literal equation means isolating one chosen variable using the same inverse operations as before, treating every other letter as a constant, with the answer expressed in terms of those other letters."
+    },
+    {
+      "type": "deepdive",
+      "heading": "Why Scientists Rearrange Formulas All Day",
+      "content": "Rearranging formulas might be the most practically useful skill in this entire unit, because formulas are the backbone of science, engineering, finance, and trades — and they almost never come pre-arranged for the question you're actually asking.\n\nTake a single famous example. In physics, the formula for distance under constant speed is d = rt. A delivery planner who knows the distance and the truck's speed needs the time, so they rearrange to t = d/r. A different planner who knows the time available and the distance needs the required speed, so they rearrange the same formula to r = d/t. One formula, three different questions, each answered by isolating a different variable. This is exactly what you're learning to do. Scientists rearrange Ohm's law to find current, voltage, or resistance depending on what's known. Bankers rearrange interest formulas to solve for the rate or the time. Builders rearrange area and volume formulas to find a missing dimension.\n\nThe deeper point is that a formula encodes a relationship among quantities, and rearranging lets you enter that relationship from any direction. Once you can solve for any variable in a formula, you're no longer dependent on the formula being handed to you in convenient form — you can bend it to your needs. That independence is a real mark of mathematical maturity. It's also why this skill shows up constantly in chemistry, physics, and every applied field you might study later. Master rearranging now, and every formula you ever meet becomes a tool you can aim wherever you need it."
+    }
+  ],
+  "aiContext": "This is the fourth lesson of Algebra Unit 2 (Solving Linear Equations). Emphasize the central idea that solving a literal equation uses the identical inverse-operation method, with every non-target letter treated as a constant; the answer is an expression, not a number. The most common errors to watch for: dividing only one term of a side instead of the whole side (P - 2l divided by 2 is (P - 2l)/2, not P - l), and being intimidated by letters into abandoning the inverse-operation rules. Suggest the strategy of solving a numerical version first to reveal the moves. This connects to science formulas (d = rt, A = (1/2)bh) and previews rearranging y = mx + b in the linear-functions unit. After this lesson a student should rearrange common formulas to solve for any specified variable."
+}

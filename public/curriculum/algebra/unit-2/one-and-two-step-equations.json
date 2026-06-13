@@ -1,0 +1,124 @@
+{
+  "id": "algebra-u2-one-and-two-step-equations",
+  "title": "The Balance Principle, One- & Two-Step Equations",
+  "subject": "Algebra",
+  "unit": "Solving Linear Equations",
+  "duration": "30 min",
+  "objectives": [
+    "Explain what it means to solve an equation using the idea of keeping a balance",
+    "Use inverse operations to solve one-step equations involving addition, subtraction, multiplication, or division",
+    "Solve two-step equations by undoing operations in the reverse of the order of operations",
+    "Check a solution by substituting it back into the original equation"
+  ],
+  "sections": [
+    {
+      "type": "explanation",
+      "heading": "An Equation Is a Balanced Scale",
+      "content": "Picture an old-fashioned balance scale, the kind with two trays hanging from a bar. When the two trays hold equal weight, the bar sits perfectly level. That image is the single most useful way to understand an equation. The equals sign is the center of the scale, and the two sides of the equation are the two trays. The equation 2x + 3 = 11 is saying, 'whatever is on the left tray weighs exactly the same as whatever is on the right tray.'\n\nSolving an equation means figuring out what value the variable must be to keep the scale balanced. In 2x + 3 = 11, we want to know: what number can x be so that 2x + 3 really does weigh the same as 11? The answer turns out to be x = 4, because 2(4) + 3 = 11. That value is called the solution — it's the number that makes the statement true.\n\nHere's the golden rule that flows from the scale picture: whatever you do to one side, you must do to the other. If you take 3 pounds off the left tray, the scale tips — unless you also take 3 pounds off the right tray. As long as you treat both sides identically, the scale stays balanced and the equation stays true. Add the same thing to both sides, subtract the same thing from both sides, multiply or divide both sides by the same number — all of these keep the balance.\n\nEverything you'll do with equations this year, no matter how complicated, comes back to this one idea: keep the scale balanced by doing the same operation to both sides, working toward getting the variable by itself."
+    },
+    {
+      "type": "explanation",
+      "heading": "Inverse Operations: Undoing What Was Done",
+      "content": "To get the variable by itself — we call this 'isolating the variable' — we peel away everything attached to it using inverse operations. An inverse operation is simply the operation that undoes another one. Addition and subtraction undo each other; multiplication and division undo each other.\n\nThink of it like getting ready in the morning in reverse. If you put on socks and then shoes, to undo it you take off the shoes first, then the socks — you reverse the order. Equations work the same way. In 2x + 3, the variable x first got multiplied by 2, and then 3 was added. To isolate x, we undo those steps in reverse: first subtract the 3 (undoing the addition), then divide by 2 (undoing the multiplication).\n\nWhy reverse order? Because the most recently applied operation sits on the 'outside,' so it's the first one you can peel off. The 3 was added last, so it's the outermost layer and comes off first. The multiplication by 2 happened first, so it's the innermost layer and comes off last. This is exactly the order of operations (PEMDAS) running backwards, and it's the heart of how we solve two-step equations.\n\nSo the strategy for any equation is: look at what's been done to the variable, then undo it piece by piece with inverse operations, always reversing the order and always doing the same thing to both sides to keep the scale balanced."
+    },
+    {
+      "type": "example",
+      "heading": "Solving One-Step Equations",
+      "content": "A one-step equation needs just a single inverse operation. Let's do one of each type.\n\nAddition undone by subtraction:  x + 7 = 15\n  The 7 is added to x, so subtract 7 from both sides:\n  x + 7 - 7 = 15 - 7\n  x = 8\n  Check: 8 + 7 = 15. True.\n\nSubtraction undone by addition:  x - 5 = 12\n  The 5 is subtracted from x, so add 5 to both sides:\n  x - 5 + 5 = 12 + 5\n  x = 17\n  Check: 17 - 5 = 12. True.\n\nMultiplication undone by division:  4x = 20\n  The x is multiplied by 4, so divide both sides by 4:\n  4x / 4 = 20 / 4\n  x = 5\n  Check: 4(5) = 20. True.\n\nDivision undone by multiplication:  x / 3 = 6\n  The x is divided by 3, so multiply both sides by 3:\n  (x / 3) · 3 = 6 · 3\n  x = 18\n  Check: 18 / 3 = 6. True.\n\nNotice the pattern: identify the operation attached to the variable, then apply its inverse to both sides. The variable ends up alone, and the number on the other side is your answer."
+    },
+    {
+      "type": "quiz",
+      "question": "What is the first step to solve the equation x - 9 = 4?",
+      "options": [
+        "Subtract 9 from both sides, because there is a 9 in the equation",
+        "Add 9 to both sides, to undo the subtraction of 9",
+        "Divide both sides by 9",
+        "Add 4 to both sides"
+      ],
+      "correctIndex": 1,
+      "explanation": "Since 9 is being subtracted from x, the inverse operation is to add 9 to both sides, which isolates x and gives x = 13. Subtracting 9 again would move further from the goal, and division is the wrong inverse for a subtraction."
+    },
+    {
+      "type": "table",
+      "heading": "Operations and Their Inverses",
+      "headers": ["If the variable has been...", "Undo it by...", "Example"],
+      "rows": [
+        ["Added to (x + 6)", "Subtracting that number from both sides", "x + 6 = 10 → subtract 6 → x = 4"],
+        ["Subtracted from (x - 6)", "Adding that number to both sides", "x - 6 = 10 → add 6 → x = 16"],
+        ["Multiplied (6x)", "Dividing both sides by that number", "6x = 18 → divide by 6 → x = 3"],
+        ["Divided (x / 6)", "Multiplying both sides by that number", "x / 6 = 2 → multiply by 6 → x = 12"]
+      ]
+    },
+    {
+      "type": "steps",
+      "heading": "How to Solve a Two-Step Equation",
+      "steps": [
+        {
+          "title": "Identify what has been done to the variable",
+          "content": "Read the side with the variable and note the operations. In 3x + 5 = 20, the variable x was multiplied by 3 and then 5 was added. Knowing both operations tells you what you'll need to undo."
+        },
+        {
+          "title": "Undo addition or subtraction first",
+          "content": "Reverse the order of operations: deal with the added or subtracted constant before the multiplication. In 3x + 5 = 20, subtract 5 from both sides to get 3x = 15. The constant is the outer layer, so it comes off first."
+        },
+        {
+          "title": "Undo multiplication or division second",
+          "content": "Now handle the coefficient. In 3x = 15, divide both sides by 3 to get x = 5. With the constant gone, the variable's multiplier is all that's left to peel away."
+        },
+        {
+          "title": "Check by substituting back",
+          "content": "Put your answer into the original equation to confirm it balances. For x = 5: 3(5) + 5 = 15 + 5 = 20, which matches the right side. If both sides come out equal, your solution is correct."
+        }
+      ]
+    },
+    {
+      "type": "example",
+      "heading": "Solving a Two-Step Equation",
+      "content": "Solve 3x + 5 = 20, showing every step.\n\nStart:  3x + 5 = 20\n\nStep 1 — Undo the addition. The +5 is the outer layer, so subtract 5 from both sides:\n  3x + 5 - 5 = 20 - 5\n  3x = 15\n\nStep 2 — Undo the multiplication. The x is multiplied by 3, so divide both sides by 3:\n  3x / 3 = 15 / 3\n  x = 5\n\nStep 3 — Check. Substitute x = 5 into the original equation:\n  3(5) + 5 = 15 + 5 = 20. The left side equals the right side, so x = 5 is correct.\n\nThe key decision was the order: we subtracted before we divided. Why? Because we're undoing the order of operations in reverse. When you build 3x + 5 from x, you multiply first and add last; so to take it apart, you subtract first and divide last. Getting this order right is what makes two-step equations feel natural instead of confusing."
+    },
+    {
+      "type": "callout",
+      "variant": "warning",
+      "heading": "Do the Same Thing to BOTH Sides — Every Time",
+      "content": "The most common equation-solving error is changing one side and forgetting the other. If you subtract 5 from the left, you MUST subtract 5 from the right, or the scale tips and the equation is no longer true. A second frequent mistake is undoing in the wrong order — dividing before subtracting in a two-step equation. Always peel off the added/subtracted constant first, then the multiplier. Reverse the order of operations."
+    },
+    {
+      "type": "example",
+      "heading": "A Two-Step Equation With a Negative Coefficient",
+      "content": "Solve -2x + 9 = 1. Negative coefficients make students nervous, but the method is exactly the same — just track the signs carefully.\n\nStart:  -2x + 9 = 1\n\nStep 1 — Undo the addition. Subtract 9 from both sides:\n  -2x + 9 - 9 = 1 - 9\n  -2x = -8\n\nStep 2 — Undo the multiplication. The x is multiplied by -2, so divide both sides by -2:\n  -2x / -2 = -8 / -2\n  x = 4\n  (A negative divided by a negative is positive, so -8 / -2 = 4.)\n\nStep 3 — Check. Substitute x = 4 into the original:\n  -2(4) + 9 = -8 + 9 = 1. It matches the right side, so x = 4 is correct.\n\nThe one spot to slow down was dividing by -2: both -2x and -8 were negative, and dividing a negative by a negative gave a positive 4. When the coefficient is negative, you divide by the whole negative number, sign included. Keep your signs honest and negative coefficients are no harder than positive ones."
+    },
+    {
+      "type": "callout",
+      "variant": "tip",
+      "heading": "Always Check Your Answer",
+      "content": "After solving, substitute your answer back into the ORIGINAL equation and confirm both sides are equal. This 30-second habit catches almost every arithmetic and sign mistake before it costs you. If the two sides don't match, you know to go back and find the error — checking turns 'I think it's right' into 'I know it's right.'"
+    },
+    {
+      "type": "quiz",
+      "question": "Solve the equation 5x - 4 = 16. What is x?",
+      "options": [
+        "x = 2.4, by dividing by 5 first then handling the 4",
+        "x = 4, by adding 4 to both sides to get 5x = 20, then dividing by 5",
+        "x = 12, by dividing 16 by 5 incorrectly",
+        "x = 60, by multiplying instead of dividing"
+      ],
+      "correctIndex": 1,
+      "explanation": "Undo the subtraction first: add 4 to both sides to get 5x = 20. Then undo the multiplication: divide both sides by 5 to get x = 4. Dividing before adding the 4, or mishandling the order, leads to the wrong answers."
+    },
+    {
+      "type": "callout",
+      "variant": "remember",
+      "heading": "Undo in Reverse, Balance Both Sides",
+      "content": "To solve an equation, isolate the variable using inverse operations: addition undoes subtraction, and multiplication undoes division. In a two-step equation, undo addition/subtraction FIRST and multiplication/division SECOND — the reverse of the order of operations. Whatever you do, do it to both sides to keep the equation balanced." },
+    {
+      "type": "keypoint",
+      "content": "Solving an equation means isolating the variable by applying inverse operations to both sides, undoing addition/subtraction before multiplication/division, and confirming the answer by substituting it back into the original equation."
+    },
+    {
+      "type": "deepdive",
+      "heading": "Why Solving for the Unknown Is Everywhere",
+      "content": "Solving equations is the single most useful skill in all of algebra, because the real world constantly hands you a relationship with one missing piece and asks you to find it. The balance-scale method you just learned is the tool for filling in that missing piece, no matter the situation.\n\nThink about how often life is really a one- or two-step equation in disguise. You have $50 and a concert ticket costs $12 plus a $6 service fee — how is that different from solving 12 + 6 = total, or figuring out how many $4 snacks you can add? A recipe feeds 4 but you need to feed 6 — you're solving for a scaling factor. A phone plan costs $30 plus $5 per gigabyte and your bill was $55 — that's 30 + 5g = 55, a two-step equation, and solving it tells you that you used 5 gigabytes. Nurses solve equations to find correct medication doses. Builders solve them to find missing measurements. Businesses solve them to find break-even prices.\n\nThere's also a bigger mental habit forming here. Each time you isolate a variable, you're practicing a powerful kind of reasoning: 'I don't know this quantity directly, but I know a relationship it must satisfy, so I can work backwards to find it.' That move — using a known relationship to uncover an unknown — is the essence of algebra and a building block of science, engineering, economics, and computer science. Master one- and two-step equations now, and you're not just passing a unit. You're learning to find the unknown, which is what mathematics is for."
+    }
+  ],
+  "aiContext": "This is the first lesson of Algebra Unit 2 (Solving Linear Equations), enriching the legacy equations content. Emphasize the balance-scale mental model (do the same operation to BOTH sides) and the reverse-order strategy for two-step equations (undo addition/subtraction before multiplication/division). The most common errors to watch for: operating on only one side, undoing in the wrong order (dividing before subtracting), and sign mistakes when the coefficient is negative (dividing a negative by a negative). Stress checking by substitution as a built-in habit. This lesson sets up multi-step equations, variables on both sides, and literal equations later in the unit. After this lesson a student should solve any one-step or two-step linear equation and verify the solution."
+}

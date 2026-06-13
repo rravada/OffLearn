@@ -1,0 +1,250 @@
+{
+  "id": "algebra-course-final",
+  "title": "Algebra Course Final",
+  "subject": "Algebra",
+  "type": "course-final",
+  "questionsPerAttempt": 15,
+  "isAssessment": true,
+  "bank": [
+    {
+      "question": "Which number is irrational?",
+      "options": ["√64", "0.5", "√10", "-12"],
+      "correctIndex": 2,
+      "explanation": "√10 is irrational because 10 is not a perfect square, so its decimal never ends or repeats. √64 = 8, 0.5 = 1/2, and -12 are all rational."
+    },
+    {
+      "question": "Classify the number 0.",
+      "options": ["Natural only", "Whole, integer, and rational, but not natural", "Irrational", "Natural and whole only"],
+      "correctIndex": 1,
+      "explanation": "Zero is a whole number, an integer, and rational (0 = 0/1), but it is not a natural (counting) number, since the naturals start at 1."
+    },
+    {
+      "question": "Evaluate: 6 + 2 × 3².",
+      "options": ["72", "24", "144", "30"],
+      "correctIndex": 1,
+      "explanation": "Order of operations: exponent first (3² = 9), then multiply (2 × 9 = 18), then add (6 + 18 = 24)."
+    },
+    {
+      "question": "Evaluate -x² when x = 5.",
+      "options": ["-25, because the exponent applies before the negative", "25", "-10", "10"],
+      "correctIndex": 0,
+      "explanation": "Here -x² means -(x²). With x = 5, that is -(5²) = -(25) = -25. The negative is applied after squaring."
+    },
+    {
+      "question": "Simplify: 3(2x - 4) + 5x.",
+      "options": ["11x - 12", "11x - 4", "6x - 12 + 5x", "11x + 12"],
+      "correctIndex": 0,
+      "explanation": "Distribute: 6x - 12 + 5x. Combine like terms: 6x + 5x = 11x, giving 11x - 12. The 3 must multiply both terms inside the parentheses."
+    },
+    {
+      "question": "Simplify: -(5x - 3) + 2x.",
+      "options": ["-3x - 3", "-3x + 3", "7x - 3", "-3x - 3x"],
+      "correctIndex": 1,
+      "explanation": "Distribute the negative: -5x + 3 (both signs flip). Add 2x: -5x + 2x = -3x, giving -3x + 3."
+    },
+    {
+      "question": "In the expression 7x - y + 4, what is the coefficient of y?",
+      "options": ["1", "-1, because -y means -1y", "4", "7"],
+      "correctIndex": 1,
+      "explanation": "A lone variable has an understood coefficient of 1, and the minus sign makes the coefficient of y equal to -1."
+    },
+    {
+      "question": "Translate: 'four less than twice a number.'",
+      "options": ["4 - 2x", "2x - 4", "2(x - 4)", "4 - 2 - x"],
+      "correctIndex": 1,
+      "explanation": "'Twice a number' is 2x, and 'four less than' subtracts 4 and reverses order, giving 2x - 4. Writing 4 - 2x reverses it incorrectly."
+    },
+    {
+      "question": "Which families does -15 belong to?",
+      "options": ["Natural, whole, integer, rational", "Integer and rational only", "Whole and integer", "Irrational"],
+      "correctIndex": 1,
+      "explanation": "Being negative, -15 cannot be natural or whole. It is an integer and rational (since -15 = -15/1)."
+    },
+    {
+      "question": "Translate the sentence: 'the sum of a number and 6 is 19.'",
+      "options": ["x - 6 = 19", "x + 6 = 19", "6x = 19", "x + 6 + 19"],
+      "correctIndex": 1,
+      "explanation": "'Sum of a number and 6' is x + 6, and 'is' becomes the equals sign before 19, giving x + 6 = 19."
+    },
+    {
+      "question": "Solve: 4x - 9 = 19.",
+      "options": ["x = 7, from 4x = 28", "x = 2.5", "x = 40", "x = 10"],
+      "correctIndex": 0,
+      "explanation": "Add 9 to both sides to get 4x = 28, then divide by 4 to get x = 7."
+    },
+    {
+      "question": "Solve: -3x + 2 = 14.",
+      "options": ["x = 4", "x = -4, from -3x = 12 then dividing by -3", "x = -16", "x = 16"],
+      "correctIndex": 1,
+      "explanation": "Subtract 2 to get -3x = 12, then divide by -3 to get x = -4. A negative divided by a positive (12 / -3) is -4."
+    },
+    {
+      "question": "Solve: 2(x + 5) = 3x + 4.",
+      "options": ["x = 6, from 2x + 10 = 3x + 4", "x = -6", "x = 14", "x = 1"],
+      "correctIndex": 0,
+      "explanation": "Distribute: 2x + 10 = 3x + 4. Subtract 2x to get 10 = x + 4, then subtract 4 to get x = 6."
+    },
+    {
+      "question": "How many solutions does 4x + 1 = 4x + 7 have?",
+      "options": ["One", "No solution, because the variable cancels and 1 = 7 is false", "Infinitely many", "Two"],
+      "correctIndex": 1,
+      "explanation": "Subtracting 4x leaves 1 = 7, which is false. When the variable cancels and the leftover statement is false, there is no solution."
+    },
+    {
+      "question": "How many solutions does 2(x + 3) = 2x + 6 have?",
+      "options": ["One", "No solution", "Infinitely many, because both sides are identical", "Zero"],
+      "correctIndex": 2,
+      "explanation": "Distributing gives 2x + 6 = 2x + 6, so subtracting 2x leaves 6 = 6, always true. The equation has infinitely many solutions."
+    },
+    {
+      "question": "Solve d = rt for t.",
+      "options": ["t = d - r", "t = d / r", "t = dr", "t = r / d"],
+      "correctIndex": 1,
+      "explanation": "Since t is multiplied by r, divide both sides by r to get t = d / r."
+    },
+    {
+      "question": "Solve P = 2l + 2w for w.",
+      "options": ["w = (P - 2l) / 2", "w = P - 2l", "w = P / 2 - 2l", "w = P - l"],
+      "correctIndex": 0,
+      "explanation": "Subtract 2l to get P - 2l = 2w, then divide the entire left side by 2 to get w = (P - 2l) / 2."
+    },
+    {
+      "question": "Solve the proportion 5/8 = x/24.",
+      "options": ["x = 15, from 8x = 120", "x = 3", "x = 120", "x = 12"],
+      "correctIndex": 0,
+      "explanation": "Cross-multiply: 8x = 5 × 24 = 120, then divide by 8 to get x = 15. Check: 5/8 = 15/24."
+    },
+    {
+      "question": "What is 35% of 60?",
+      "options": ["21, from part/60 = 35/100", "35", "25", "1.7"],
+      "correctIndex": 0,
+      "explanation": "Use part/whole = percent/100: part/60 = 35/100, so 100·part = 2100, giving part = 21."
+    },
+    {
+      "question": "A $80 item is 25% off. What is the sale price?",
+      "options": ["$20", "$60, because 25% of 80 is $20 off and 80 - 20 = 60", "$55", "$100"],
+      "correctIndex": 1,
+      "explanation": "25% of 80 is $20 (the discount). The sale price is 80 - 20 = $60. The $20 is only the amount saved."
+    },
+    {
+      "question": "Solve: 3x - 7 > 8.",
+      "options": ["x > 5, from 3x > 15", "x < 5", "x > 1/3", "x > 15"],
+      "correctIndex": 0,
+      "explanation": "Add 7 to get 3x > 15, then divide by 3 (positive, no flip) to get x > 5."
+    },
+    {
+      "question": "Solve: -2x ≤ 10.",
+      "options": ["x ≤ -5", "x ≥ -5, because dividing by -2 flips the sign", "x ≤ 5", "x ≥ 5"],
+      "correctIndex": 1,
+      "explanation": "Divide both sides by -2 and flip ≤ to ≥: x ≥ -5. The flip is required when dividing by a negative."
+    },
+    {
+      "question": "How is x > 2 graphed on a number line?",
+      "options": ["Filled circle at 2, shade right", "Open circle at 2, shade right", "Open circle at 2, shade left", "Filled circle at 2, shade left"],
+      "correctIndex": 1,
+      "explanation": "Because > does not include the boundary, the circle at 2 is open, and 'greater than' shades to the right."
+    },
+    {
+      "question": "Solve the compound inequality -1 ≤ 2x + 3 < 9.",
+      "options": ["-2 ≤ x < 3, by subtracting 3 then dividing all parts by 2", "-2 ≤ x < 6", "1 ≤ x < 3", "x ≤ -2 OR x > 3"],
+      "correctIndex": 0,
+      "explanation": "Subtract 3 from all parts: -4 ≤ 2x < 6. Divide all parts by 2: -2 ≤ x < 3, an AND (between) inequality."
+    },
+    {
+      "question": "Solve: |x| = 9.",
+      "options": ["x = 9 only", "x = 9 or x = -9", "x = -9 only", "No solution"],
+      "correctIndex": 1,
+      "explanation": "Two numbers are 9 units from zero, so x = 9 or x = -9. Both make the absolute value equal 9."
+    },
+    {
+      "question": "Solve: |x - 4| = 6.",
+      "options": ["x = 10 or x = -2", "x = 10 only", "x = 2 or x = -10", "No solution"],
+      "correctIndex": 0,
+      "explanation": "Split into cases: x - 4 = 6 gives x = 10, and x - 4 = -6 gives x = -2."
+    },
+    {
+      "question": "Rewrite |x| < 7 as a compound inequality.",
+      "options": ["-7 < x < 7, an AND inequality", "x < -7 OR x > 7", "x < 7 only", "x > 7"],
+      "correctIndex": 0,
+      "explanation": "A 'less than' absolute value inequality becomes an AND (between) inequality: -7 < x < 7 (remember 'less thAND')."
+    },
+    {
+      "question": "Solve: |2x| ≥ 10.",
+      "options": ["-5 ≤ x ≤ 5", "x ≤ -5 OR x ≥ 5", "x ≥ 5 only", "x ≤ 5"],
+      "correctIndex": 1,
+      "explanation": "A 'greater than or equal' absolute value becomes OR: 2x ≤ -10 OR 2x ≥ 10, giving x ≤ -5 OR x ≥ 5 ('great-OR')."
+    },
+    {
+      "question": "Which set of ordered pairs is a function?",
+      "options": ["{(2, 1), (2, 3), (4, 5)}", "{(1, 6), (3, 6), (5, 8)}", "{(0, 0), (0, 1)}", "{(7, 2), (7, 9)}"],
+      "correctIndex": 1,
+      "explanation": "In {(1, 6), (3, 6), (5, 8)}, all inputs differ, so each input has one output — a function. The repeated output 6 is allowed; the others repeat an input."
+    },
+    {
+      "question": "A circle is graphed on the coordinate plane. Is it a function?",
+      "options": ["Yes, it is smooth", "No, a vertical line crosses it twice (fails the vertical line test)", "Yes, every output appears once", "Cannot tell"],
+      "correctIndex": 1,
+      "explanation": "A vertical line through a circle crosses it at two points, so one input has two outputs and it fails the vertical line test."
+    },
+    {
+      "question": "If f(x) = 3x + 4, what is f(-2)?",
+      "options": ["-2, from 3(-2) + 4 = -6 + 4", "2", "10", "-10"],
+      "correctIndex": 0,
+      "explanation": "f(-2) = 3(-2) + 4 = -6 + 4 = -2. Substitute the input -2 and follow order of operations."
+    },
+    {
+      "question": "For f(x) = 2x - 3, which input gives f(x) = 9?",
+      "options": ["x = 6, by solving 2x - 3 = 9", "x = 15", "x = 9", "x = 3"],
+      "correctIndex": 0,
+      "explanation": "Set 2x - 3 = 9. Add 3 to get 2x = 12, then divide by 2 to get x = 6."
+    },
+    {
+      "question": "What is the domain of {(2, 9), (4, 1), (7, 9)}?",
+      "options": ["{9, 1}", "{2, 4, 7}", "{1, 9}", "{2, 4, 7, 9}"],
+      "correctIndex": 1,
+      "explanation": "The domain is the set of inputs (first numbers): {2, 4, 7}. The outputs {1, 9} form the range."
+    },
+    {
+      "question": "An upward parabola has its vertex (lowest point) at (0, 2). What is its range?",
+      "options": ["All real numbers", "y ≥ 2", "y ≤ 2", "x ≥ 2"],
+      "correctIndex": 1,
+      "explanation": "The lowest output is 2 and the parabola rises forever, so the range is y ≥ 2. The domain would be all real numbers."
+    },
+    {
+      "question": "On a distance-versus-time graph, a rising segment represents what?",
+      "options": ["Standing still", "Moving away (distance increasing)", "Moving back toward the start", "An error"],
+      "correctIndex": 1,
+      "explanation": "A rising segment means distance increases as time increases, so the object is moving away from the starting point."
+    },
+    {
+      "question": "The cost to rent a kayak is C(h) = 8h + 5 dollars for h hours. What does C(3) represent and equal?",
+      "options": ["The hours for $3; 3", "The cost of 3 hours; $29", "3 times the cost; $24", "The base fee; $5"],
+      "correctIndex": 1,
+      "explanation": "C(3) = 8(3) + 5 = 29, the cost of renting for 3 hours, which is $29. The input is hours and the output is dollars."
+    },
+    {
+      "question": "A gym charges $20 plus $5 per visit. Write an inequality for the number of visits v that keeps the total at most $60.",
+      "options": ["5v + 20 ≤ 60, giving v ≤ 8", "20v + 5 ≤ 60", "5v + 20 ≥ 60", "5v ≤ 60"],
+      "correctIndex": 0,
+      "explanation": "The cost is 5v + 20, and 'at most $60' means ≤ 60. Solving 5v + 20 ≤ 60 gives 5v ≤ 40, so v ≤ 8 visits."
+    },
+    {
+      "question": "A function is defined by f(x) = -x + 6. What is its y-intercept?",
+      "options": ["(0, 6), found by evaluating f(0)", "(6, 0)", "(0, -6)", "(0, 1)"],
+      "correctIndex": 0,
+      "explanation": "The y-intercept occurs at x = 0: f(0) = -0 + 6 = 6, giving the point (0, 6)."
+    },
+    {
+      "question": "Simplify and solve: 5(x - 2) + 3 = 2x + 5.",
+      "options": ["x = 4, from 5x - 7 = 2x + 5", "x = -4", "x = 2", "x = 6"],
+      "correctIndex": 0,
+      "explanation": "Distribute and combine the left side: 5x - 10 + 3 = 5x - 7, so 5x - 7 = 2x + 5. Subtract 2x to get 3x - 7 = 5, add 7 to get 3x = 12, then divide by 3 to get x = 4."
+    },
+    {
+      "question": "A rider must be taller than 40 inches and shorter than 75 inches. Which inequality fits?",
+      "options": ["40 < h < 75, an AND inequality with open circles", "h < 40 OR h > 75", "40 ≤ h ≤ 75", "h > 40 OR h < 75"],
+      "correctIndex": 0,
+      "explanation": "'Taller than 40 and shorter than 75' is an AND (between) inequality 40 < h < 75, with open circles since 'taller/shorter than' exclude the boundary values."
+    }
+  ]
+}

@@ -1,0 +1,125 @@
+{
+  "id": "algebra-u4-function-notation",
+  "title": "Function Notation & Evaluating Functions",
+  "subject": "Algebra",
+  "unit": "Introduction to Functions",
+  "duration": "25 min",
+  "objectives": [
+    "Read and interpret function notation such as f(x)",
+    "Evaluate a function for a given input value, including negative inputs",
+    "Interpret the meaning of a function's input and output in a real-world context",
+    "Solve f(x) = a given output to find the input that produces it"
+  ],
+  "sections": [
+    {
+      "type": "explanation",
+      "heading": "A New Name Tag for the Output",
+      "content": "You already know how to evaluate an expression like 2x + 3 by plugging in a value for x. Function notation is just a clearer, more powerful way to write the same idea — one that gives the function a name and makes the input obvious. Instead of writing y = 2x + 3, we write f(x) = 2x + 3, read aloud as 'f of x equals 2x plus 3.'\n\nThink of f as the name of a machine and the x inside the parentheses as the slot where you drop in your input. The whole symbol f(x) stands for the OUTPUT the machine produces from input x. So f(x) = 2x + 3 says: 'the machine named f takes an input, doubles it, and adds 3.' When you write f(5), you're saying 'run the machine f with input 5,' and the answer is the output. It's like a labeled recipe: f is the recipe's name, x is the ingredient you provide, and f(x) is the finished dish.\n\nWhy bother with this new notation when y = 2x + 3 worked fine? Two big reasons. First, it names the function, so when you're juggling several functions at once you can call them f, g, and h and never lose track of which is which. Second, and most usefully, it shows the input right inside the parentheses. The symbol f(5) tells you at a glance both which function you're using (f) and what you put in (5). That clarity becomes priceless as problems get more complex.\n\nThere is one warning that cannot wait, so here it is up front: f(x) does NOT mean f times x. The parentheses here do not mean multiplication — they hold the input. We'll come back to this, because it's the number one source of confusion, but plant it now: f(x) is 'f of x,' the output of function f at input x."
+    },
+    {
+      "type": "example",
+      "heading": "Evaluating f(3)",
+      "content": "Let f(x) = 2x + 3. Find f(3).\n\nThe notation f(3) means 'evaluate the function f when the input x is 3.' So everywhere you see x in the rule, you substitute 3:\n  f(3) = 2(3) + 3\n\nNow it's just order-of-operations arithmetic. Multiply first: 2(3) = 6. Then add: 6 + 3 = 9.\n  f(3) = 9\n\nSo the output of function f at input 3 is 9. In ordered-pair language, this is the point (3, 9): input 3, output 9. That connection is worth noticing — evaluating f(3) = 9 is the same as saying the graph of f passes through the point (3, 9).\n\nThe process is exactly the substitution you practiced back in Unit 1, just dressed in function clothing. The number inside the parentheses is what you plug in for x; everything else is arithmetic you already know. Wrap your substituted value in parentheses — 2(3), not 23 — and the rest follows cleanly."
+    },
+    {
+      "type": "steps",
+      "heading": "How to Evaluate a Function",
+      "steps": [
+        {
+          "title": "Identify the input",
+          "content": "The number inside the parentheses is the input. For f(3), the input is 3; for g(-2), the input is -2. This is the value you will substitute for the variable."
+        },
+        {
+          "title": "Substitute the input for the variable, using parentheses",
+          "content": "Replace every occurrence of the variable in the function's rule with the input value, wrapped in parentheses. For f(x) = 2x + 3, evaluating f(3) gives 2(3) + 3. The parentheses keep signs correct, especially for negative inputs."
+        },
+        {
+          "title": "Simplify using the order of operations",
+          "content": "Carry out the arithmetic following PEMDAS: exponents, then multiplication/division, then addition/subtraction. The single number you get is the output."
+        },
+        {
+          "title": "State the result",
+          "content": "Write the answer in function form, like f(3) = 9, which also corresponds to the ordered pair (input, output) = (3, 9). This output is the value the function produces for that input."
+        }
+      ]
+    },
+    {
+      "type": "quiz",
+      "question": "If g(x) = 4x - 5, what is g(2)?",
+      "options": [
+        "g(2) = 3, by computing 4(2) - 5 = 8 - 5",
+        "g(2) = 8, by multiplying 4 and 2 only",
+        "g(2) = 42 - 5, treating g(2) as g times 2",
+        "g(2) = -1, by subtracting first"
+      ],
+      "correctIndex": 0,
+      "explanation": "Substitute the input 2 for x: g(2) = 4(2) - 5 = 8 - 5 = 3. The notation g(2) means 'evaluate g at 2,' not g times 2, and order of operations requires multiplying before subtracting."
+    },
+    {
+      "type": "callout",
+      "variant": "warning",
+      "heading": "f(x) Does NOT Mean f Times x",
+      "content": "The single biggest function-notation mistake is reading f(x) as multiplication. The parentheses in f(x) hold the INPUT — they do not mean 'f multiplied by x.' So f(3) means 'the output of f when the input is 3,' not 'f times 3.' Likewise, in f(x) = 2x + 3, the left side names the function and its input; only the right side (2x + 3) is the rule you compute. When you see f(2), think 'plug 2 into the function,' never 'multiply.'"
+    },
+    {
+      "type": "example",
+      "heading": "Evaluating With a Negative Input",
+      "content": "Let h(x) = x² - 4x + 1. Find h(-2).\n\nThe input is -2, so substitute -2 for every x, carefully wrapping it in parentheses (this is essential with negatives):\n  h(-2) = (-2)² - 4(-2) + 1\n\nNow simplify with the order of operations.\n  Exponent first: (-2)² = (-2)(-2) = 4.\n  h(-2) = 4 - 4(-2) + 1\n  Multiplication next: -4 times -2 = +8 (negative times negative is positive). The term -4(-2) becomes +8:\n  h(-2) = 4 + 8 + 1\n  Addition: 4 + 8 + 1 = 13.\n  h(-2) = 13\n\nSo h(-2) = 13, which is the point (-2, 13). The two danger spots were the squared negative (parentheses gave +4, not -4) and the double negative in -4(-2), which became +8. Both were handled correctly by wrapping -2 in parentheses everywhere. This is the same careful substitution from Unit 1 — function notation didn't add new arithmetic, just a clearer way to ask for it."
+    },
+    {
+      "type": "explanation",
+      "heading": "Reading Functions in Real Situations",
+      "content": "Function notation really shines when the letters mean something. In real problems, we choose names and inputs that describe the situation, which makes the math much easier to interpret.\n\nSuppose a taxi charges a $3 base fee plus $2 per mile. We can write the cost as a function of miles: C(m) = 2m + 3, where C stands for cost and m stands for miles. Now the notation tells a story. C(10) means 'the cost of a 10-mile ride,' and computing it, C(10) = 2(10) + 3 = 23, tells you that ride costs $23. The input m is the number of miles; the output C(m) is the dollars. Reading f(input) as 'the output for that input' turns notation into plain English.\n\nThis interpretive skill matters as much as the arithmetic. On a test or in real life, you'll be asked questions like 'what does C(10) represent?' and the answer isn't a number — it's a sentence: 'the cost of driving 10 miles.' Conversely, 'C(m) = 23' asks 'for what number of miles does the ride cost $23?' Being able to translate between the symbols and the situation is what makes functions useful rather than just abstract.\n\nA good habit is to always say, in words, what the input and output represent before you compute. For C(m) = 2m + 3: 'input m is miles, output C is dollars.' Then C(10) is unmistakably 'dollars for 10 miles.' Naming the quantities keeps you from mixing up which number is which, especially in multi-part word problems."
+    },
+    {
+      "type": "table",
+      "heading": "Reading Function Notation",
+      "headers": ["Notation", "Means", "Example"],
+      "rows": [
+        ["f(x)", "the output of function f for input x", "the general rule, like f(x) = 2x + 3"],
+        ["f(4)", "the output when the input is 4", "f(4) = 2(4) + 3 = 11"],
+        ["f(x) = y", "the output equals y; same as the y-value", "output and y mean the same thing"],
+        ["C(m) = 23", "find the input m that gives output 23", "solve 2m + 3 = 23 for m"],
+        ["f(input)", "NOT f times the input", "the parentheses hold the input"]
+      ]
+    },
+    {
+      "type": "callout",
+      "variant": "tip",
+      "heading": "f(x) and y Are the Same Output",
+      "content": "Function notation and the y you already know are two names for the same thing: the output. Writing f(x) = 2x + 3 is identical to y = 2x + 3. So the point (3, 9) can be described as 'y = 9 when x = 3' OR as 'f(3) = 9' — same fact, two notations. Whenever f(x) feels unfamiliar, mentally swap it for y and you'll see it's territory you already know."
+    },
+    {
+      "type": "example",
+      "heading": "Working Backwards: Solving f(x) = a Number",
+      "content": "Sometimes you know the OUTPUT and need to find the INPUT that produced it. This flips the question around, and it's just an equation to solve.\n\nLet f(x) = 2x + 3. Find the value of x for which f(x) = 17.\n\nThe statement f(x) = 17 means 'the output is 17.' Set the function's rule equal to 17 and solve for x:\n  2x + 3 = 17\n  Subtract 3 from both sides:  2x = 14\n  Divide both sides by 2:  x = 7\n\nSo f(7) = 17 — the input 7 produces the output 17. Let's confirm: f(7) = 2(7) + 3 = 14 + 3 = 17. Correct.\n\nNotice the difference between the two directions. Evaluating f(7) means 'I have the input, find the output' — you substitute. Solving f(x) = 17 means 'I have the output, find the input' — you set up an equation and solve, using all your Unit 2 skills. Reading the question carefully to see which you're given (input or output) tells you which way to go: substitute or solve."
+    },
+    {
+      "type": "quiz",
+      "question": "For f(x) = 3x - 1, what input x makes f(x) = 14?",
+      "options": [
+        "x = 5, by solving 3x - 1 = 14",
+        "x = 41, by computing 3(14) - 1",
+        "x = 14, the output value",
+        "x = 13, by subtracting 1"
+      ],
+      "correctIndex": 0,
+      "explanation": "Setting f(x) = 14 means 3x - 1 = 14. Add 1 to get 3x = 15, then divide by 3 to get x = 5. Check: f(5) = 3(5) - 1 = 14. Plugging 14 into the function would instead compute an output, answering the wrong question."
+    },
+    {
+      "type": "callout",
+      "variant": "remember",
+      "heading": "f(input) Means 'Plug In and Compute the Output'",
+      "content": "f(x) names a function and its input; it is the OUTPUT for that input, NOT multiplication. To evaluate f(a), substitute a (in parentheses) for the variable and simplify with the order of operations. f(x) and y both mean the output, so f(3) = 9 is the point (3, 9). To find an input from a known output, set the rule equal to that output and solve the equation." },
+    {
+      "type": "keypoint",
+      "content": "Function notation f(x) names a function and its input and stands for the output — evaluate f(a) by substituting a for the variable, and find an input from a known output by setting the rule equal to that output and solving."
+    },
+    {
+      "type": "deepdive",
+      "heading": "Why Notation This Precise Is Worth Learning",
+      "content": "It might seem like function notation just dresses up something you could already do, but the precision it adds is exactly why it's used everywhere from science labs to software. Clear notation lets people communicate complicated ideas without confusion, and that's a genuine superpower.\n\nConsider a scientist tracking how a population of bacteria grows over time. They might write P(t) for the population at time t, T(d) for temperature on day d, and h(t) for the height of a rocket at time t — all in the same report. Function notation lets them keep these straight effortlessly: P(5) is unmistakably 'the population at time 5,' and no one confuses it with the temperature or the rocket. Without named functions, describing several changing quantities at once would be a tangled mess. The notation is a tool for clarity, and clarity is what makes complex science and engineering possible.\n\nThe same notation is built directly into computer programming. When a programmer writes something like cost(miles) or distance(time), they're using function notation almost exactly as you've learned it — a named function, an input in parentheses, an output returned. The habit you're building of reading f(input) as 'run this process on this input' is the same habit that lets people read and write code. Spreadsheets, calculators, graphing tools, and data science all speak this language.\n\nThere's also a thinking skill hidden here: the ability to treat a whole process as a single named object you can reuse, feed different inputs, and reason about. That's a big conceptual leap — from doing one calculation to describing a general rule you can apply again and again. Function notation is your first real tool for that kind of abstraction, and abstraction is what higher mathematics, science, and technology are built on. Learning to read and write f(x) fluently now pays off every time you meet a more advanced idea later."
+    }
+  ],
+  "aiContext": "This is the second lesson of Algebra Unit 4 (Introduction to Functions). The central skill is reading and evaluating function notation f(x). The single most important misconception to correct: f(x) is NOT f times x — the parentheses hold the input. Reinforce that evaluating f(a) is the Unit 1 substitution skill (wrap negatives in parentheses) and that f(x) and y both denote the output, so f(3)=9 is the point (3,9). Distinguish the two directions: given an input, substitute to find the output; given an output, set the rule equal to it and solve (a Unit 2 equation). Emphasize interpreting f(input) in real contexts as a sentence, not just a number. This builds on relations/functions and precedes domain, range, and graph interpretation. After this lesson a student should evaluate functions (including negative inputs) and solve f(x) = a for the input."
+}

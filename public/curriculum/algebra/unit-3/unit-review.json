@@ -1,0 +1,286 @@
+{
+  "id": "algebra-u3-unit-review",
+  "title": "Unit 3 Review: Linear Inequalities",
+  "subject": "Algebra",
+  "unit": "Linear Inequalities",
+  "type": "unit-review",
+  "questionsPerAttempt": 10,
+  "isAssessment": true,
+  "bank": [
+    {
+      "question": "Solve: x - 4 < 6.",
+      "options": [
+        "x < 10, no flip needed",
+        "x < 2",
+        "x > 10",
+        "x < 24"
+      ],
+      "correctIndex": 0,
+      "explanation": "Add 4 to both sides to get x < 10. Adding never flips the inequality sign, so the direction stays the same."
+    },
+    {
+      "question": "Solve: 3x ≥ 12.",
+      "options": [
+        "x ≥ 4, dividing by positive 3 (no flip)",
+        "x ≤ 4",
+        "x ≥ 36",
+        "x ≥ 9"
+      ],
+      "correctIndex": 0,
+      "explanation": "Divide both sides by 3, a positive number, so the sign does not flip: x ≥ 4. The flip only happens when dividing by a negative."
+    },
+    {
+      "question": "Solve: -2x > 8.",
+      "options": [
+        "x > -4, keeping the sign",
+        "x < -4, because dividing by -2 flips the sign",
+        "x > 4",
+        "x < 4"
+      ],
+      "correctIndex": 1,
+      "explanation": "Divide both sides by -2. Because you divide by a negative, flip > to <, and 8 / -2 = -4, giving x < -4. Test x = -10: -2(-10) = 20 > 8 is true."
+    },
+    {
+      "question": "Solve: x + 5 < 1.",
+      "options": [
+        "x < -4, no flip because we only subtracted",
+        "x > -4, flipping because the answer is negative",
+        "x < 6",
+        "x < 4"
+      ],
+      "correctIndex": 0,
+      "explanation": "Subtract 5 from both sides to get x < -4. Adding or subtracting never flips the sign, even when the answer is negative; only multiplying or dividing by a negative flips it."
+    },
+    {
+      "question": "On a number line, how is x ≤ 3 graphed?",
+      "options": [
+        "Open circle at 3, shade right",
+        "Filled circle at 3, shade left",
+        "Open circle at 3, shade left",
+        "Filled circle at 3, shade right"
+      ],
+      "correctIndex": 1,
+      "explanation": "Because ≤ includes the boundary, the circle at 3 is filled, and 'less than or equal to' shades to the left toward smaller values."
+    },
+    {
+      "question": "Solve: 2x + 7 ≤ 1.",
+      "options": [
+        "x ≤ -3, by subtracting 7 then dividing by 2",
+        "x ≤ 3",
+        "x ≥ -3",
+        "x ≤ 4"
+      ],
+      "correctIndex": 0,
+      "explanation": "Subtract 7 to get 2x ≤ -6, then divide by 2 (positive, no flip) to get x ≤ -3. The negative result does not trigger a flip because we divided by a positive."
+    },
+    {
+      "question": "Solve: -4x + 2 < 14.",
+      "options": [
+        "x < -3",
+        "x > -3, because dividing by -4 flips the sign",
+        "x < 3",
+        "x > 3"
+      ],
+      "correctIndex": 1,
+      "explanation": "Subtract 2 to get -4x < 12, then divide by -4 and flip the sign to get x > -3. Test x = 0: -4(0) + 2 = 2 < 14 is true, confirming x > -3."
+    },
+    {
+      "question": "Solve: 5(x - 1) > 2x + 7.",
+      "options": [
+        "x > 4, by distributing then collecting variables",
+        "x < 4",
+        "x > 12",
+        "x > 2"
+      ],
+      "correctIndex": 0,
+      "explanation": "Distribute: 5x - 5 > 2x + 7. Subtract 2x to get 3x - 5 > 7, add 5 to get 3x > 12, then divide by 3 (positive, no flip) to get x > 4."
+    },
+    {
+      "question": "Why must you flip the inequality sign when dividing by a negative?",
+      "options": [
+        "Because dividing always flips the sign",
+        "Because multiplying or dividing by a negative reverses which side is larger",
+        "Because the answer is negative",
+        "You never need to flip the sign"
+      ],
+      "correctIndex": 1,
+      "explanation": "Multiplying or dividing both sides by a negative reverses order on the number line; for example, 2 < 5 becomes -2 > -5. Flipping the sign keeps the inequality true."
+    },
+    {
+      "question": "Solve the compound inequality 1 < x + 3 < 8.",
+      "options": [
+        "-2 < x < 5, by subtracting 3 from all three parts",
+        "4 < x < 11",
+        "-2 < x < 8",
+        "x < -2 OR x > 5"
+      ],
+      "correctIndex": 0,
+      "explanation": "Subtract 3 from all three parts: 1 - 3 < x < 8 - 3, giving -2 < x < 5. The operation applies to all three parts, and this is an AND (between) inequality."
+    },
+    {
+      "question": "Solve: -6 ≤ 2x ≤ 10.",
+      "options": [
+        "-3 ≤ x ≤ 5, dividing all parts by 2",
+        "-12 ≤ x ≤ 20",
+        "-3 ≤ x ≤ 10",
+        "x ≤ -3 OR x ≥ 5"
+      ],
+      "correctIndex": 0,
+      "explanation": "Divide all three parts by 2 (positive, no flip): -3 ≤ x ≤ 5. This AND inequality describes all values between -3 and 5, inclusive."
+    },
+    {
+      "question": "What does the graph of an AND compound inequality typically look like?",
+      "options": [
+        "Two rays pointing in opposite directions",
+        "A single bounded segment between two points (the overlap)",
+        "A single ray",
+        "The entire number line"
+      ],
+      "correctIndex": 1,
+      "explanation": "An AND inequality requires both conditions to hold, so its graph is the overlap of the two pieces, usually a bounded segment between two points. Two opposite rays describe an OR inequality."
+    },
+    {
+      "question": "Solve: x < -1 OR x > 4. How is this graphed?",
+      "options": [
+        "A segment between -1 and 4",
+        "Two rays: shade left of -1 and right of 4, with a gap between them",
+        "A single ray to the right",
+        "The whole number line shaded"
+      ],
+      "correctIndex": 1,
+      "explanation": "This OR inequality is graphed as the union of two rays — left of -1 and right of 4 — with the region between -1 and 4 left unshaded, since neither condition holds there."
+    },
+    {
+      "question": "A store's hiring rule: applicants must be at least 16 and no older than 65. Which inequality fits?",
+      "options": [
+        "16 ≤ a ≤ 65, an AND inequality",
+        "a < 16 OR a > 65, an OR inequality",
+        "16 < a < 65 with open circles",
+        "a ≥ 16 OR a ≤ 65"
+      ],
+      "correctIndex": 0,
+      "explanation": "'At least 16 and no older than 65' is an AND (between) inequality, 16 ≤ a ≤ 65, with both endpoints included (filled circles) because 'at least' and 'no older than' allow the boundary ages."
+    },
+    {
+      "question": "Solve: x/2 + 1 > 4 (a multi-step inequality).",
+      "options": [
+        "x > 6, by subtracting 1 then multiplying by 2",
+        "x > 10",
+        "x > 1.5",
+        "x < 6"
+      ],
+      "correctIndex": 0,
+      "explanation": "Subtract 1 to get x/2 > 3, then multiply both sides by 2 (positive, no flip) to get x > 6."
+    },
+    {
+      "question": "What is the absolute value |-9|?",
+      "options": [
+        "-9",
+        "9, because it is 9 units from zero",
+        "0",
+        "Both 9 and -9"
+      ],
+      "correctIndex": 1,
+      "explanation": "Absolute value is distance from zero, which is never negative, so |-9| = 9. The number -9 is 9 units from zero."
+    },
+    {
+      "question": "Solve: |x| = 7.",
+      "options": [
+        "x = 7 only",
+        "x = 7 or x = -7",
+        "x = -7 only",
+        "No solution"
+      ],
+      "correctIndex": 1,
+      "explanation": "Two numbers are exactly 7 units from zero: 7 and -7. So x = 7 or x = -7. Giving only the positive value misses the second solution."
+    },
+    {
+      "question": "Solve: |x - 3| = 5.",
+      "options": [
+        "x = 8 or x = -2, from x - 3 = 5 and x - 3 = -5",
+        "x = 8 only",
+        "x = 2 or x = -8",
+        "x = 5 or x = -5"
+      ],
+      "correctIndex": 0,
+      "explanation": "Split into two cases: x - 3 = 5 gives x = 8, and x - 3 = -5 gives x = -2. Both make the absolute value equal 5."
+    },
+    {
+      "question": "Solve: |x| = -4.",
+      "options": [
+        "x = 4 or x = -4",
+        "x = -4",
+        "No solution, because absolute value can't be negative",
+        "x = 0"
+      ],
+      "correctIndex": 2,
+      "explanation": "An absolute value is a distance from zero and can never be negative, so |x| = -4 has no solution. No number is a negative distance from zero."
+    },
+    {
+      "question": "To solve 2|x| + 1 = 9, what must you do first?",
+      "options": [
+        "Split into two cases immediately",
+        "Isolate the absolute value by subtracting 1 and dividing by 2 to get |x| = 4",
+        "Set x = 9",
+        "Add 1 to both sides"
+      ],
+      "correctIndex": 1,
+      "explanation": "You must isolate the absolute value before splitting into cases: subtract 1 to get 2|x| = 8, then divide by 2 to get |x| = 4. Splitting too early gives wrong answers."
+    },
+    {
+      "question": "Rewrite |x| < 6 as a compound inequality.",
+      "options": [
+        "-6 < x < 6, an AND inequality (less thAND)",
+        "x < -6 OR x > 6, an OR inequality",
+        "x < 6 only",
+        "x > 6 only"
+      ],
+      "correctIndex": 0,
+      "explanation": "A 'less than' absolute value inequality becomes an AND (between) inequality: -6 < x < 6, the values closer than 6 units to zero. Remember 'less thAND.'"
+    },
+    {
+      "question": "Rewrite |x| > 3 as a compound inequality.",
+      "options": [
+        "-3 < x < 3",
+        "x < -3 OR x > 3, an OR inequality (greatOR)",
+        "x > 3 only",
+        "x < 3 only"
+      ],
+      "correctIndex": 1,
+      "explanation": "A 'greater than' absolute value inequality becomes an OR inequality: x < -3 OR x > 3, the values farther than 3 units from zero. Remember 'great-OR.'"
+    },
+    {
+      "question": "Solve: |x + 2| ≤ 5.",
+      "options": [
+        "-7 ≤ x ≤ 3, by writing -5 ≤ x + 2 ≤ 5 then subtracting 2",
+        "x ≤ -7 OR x ≥ 3",
+        "-3 ≤ x ≤ 7",
+        "x ≤ 3 only"
+      ],
+      "correctIndex": 0,
+      "explanation": "Less-than absolute value gives AND: -5 ≤ x + 2 ≤ 5. Subtract 2 from all parts to get -7 ≤ x ≤ 3, a bounded segment."
+    },
+    {
+      "question": "Solve: |2x| > 8.",
+      "options": [
+        "-4 < x < 4",
+        "x < -4 OR x > 4, by writing 2x < -8 OR 2x > 8 then dividing by 2",
+        "x > 4 only",
+        "x < 4"
+      ],
+      "correctIndex": 1,
+      "explanation": "Greater-than absolute value gives OR: 2x < -8 OR 2x > 8. Divide each by 2 to get x < -4 OR x > 4, two outward rays."
+    },
+    {
+      "question": "A thermostat keeps a room's temperature within 2 degrees of 70°F. Which inequality models the acceptable temperatures?",
+      "options": [
+        "|t - 70| ≤ 2, giving 68 ≤ t ≤ 72",
+        "|t - 70| ≥ 2, giving t ≤ 68 OR t ≥ 72",
+        "t ≤ 2",
+        "t ≥ 70"
+      ],
+      "correctIndex": 0,
+      "explanation": "'Within 2 degrees of 70' means the distance from 70 is at most 2: |t - 70| ≤ 2. This less-than absolute value becomes the AND range 68 ≤ t ≤ 72."
+    }
+  ]
+}

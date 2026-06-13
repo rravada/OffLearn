@@ -1,0 +1,28 @@
+{
+  "id": "multi-step-equations",
+  "title": "Multi-Step Equations",
+  "subject": "Algebra",
+  "chunks": [
+    { "id": "mse-1", "text": "A multi-step equation requires simplifying each side before isolating the variable. The clutter to clear away is parentheses and uncombined like terms; once each side is simplified, the equation becomes a familiar two-step problem." },
+    { "id": "mse-2", "text": "The full strategy for a multi-step equation is: distribute to clear parentheses, combine like terms on each side, undo addition or subtraction, undo multiplication or division, then check by substitution." },
+    { "id": "mse-3", "text": "Always simplify each side of an equation as much as possible before starting to isolate the variable. Undoing operations while parentheses or uncombined like terms remain makes the work tangled and error-prone." },
+    { "id": "mse-4", "text": "To solve 7x - 2x + 4 = 24, first combine the like terms 7x and -2x into 5x, giving 5x + 4 = 24. Then subtract 4 to get 5x = 20, and divide by 5 to get x = 4." },
+    { "id": "mse-5", "text": "When combining like terms in an equation such as 8x + 3 - 5x = 18, the variable terms 8x and -5x combine to 3x, giving 3x + 3 = 18. The constant 3 and the term -5x are not like terms and cannot be combined." },
+    { "id": "mse-6", "text": "To solve 3(2x - 1) = 21, distribute the 3 to both terms inside to get 6x - 3 = 21. Then add 3 to get 6x = 24, and divide by 6 to get x = 4." },
+    { "id": "mse-7", "text": "When distributing in an equation, multiply the outside factor by every term inside the parentheses. For 3(2x - 1), the result is 6x - 3, not 6x - 1. Distributing to only the first term is a common error." },
+    { "id": "mse-8", "text": "When the factor outside parentheses is negative, distributing flips the sign of every term inside. For example, -2(x - 4) becomes -2x + 8." },
+    { "id": "mse-9", "text": "To solve 2(x + 3) + 4x = 30, distribute to get 2x + 6 + 4x = 30, combine like terms to get 6x + 6 = 30, subtract 6 to get 6x = 24, and divide by 6 to get x = 4." },
+    { "id": "mse-10", "text": "When an equation needs both distribution and combining, distribute first to remove parentheses, then combine like terms. Distribution must come before combining because terms inside parentheses generally cannot be combined with terms outside." },
+    { "id": "mse-11", "text": "To solve 4(x - 2) = 12, distribute to get 4x - 8 = 12, add 8 to get 4x = 20, and divide by 4 to get x = 5. The common mistake is distributing only to the first term and writing 4x - 2." },
+    { "id": "mse-12", "text": "Fractions in an equation can be cleared by multiplying every term on both sides by the least common denominator, the smallest number all denominators divide into evenly." },
+    { "id": "mse-13", "text": "To solve x/2 + x/3 = 5, the least common denominator of 2 and 3 is 6. Multiply every term by 6 to get 3x + 2x = 30, combine to get 5x = 30, and divide to get x = 6." },
+    { "id": "mse-14", "text": "When clearing fractions by multiplying through, you must multiply every term, including terms with no fraction. In x/2 + x/3 = 5, the 5 becomes 30 after multiplying by 6; forgetting to multiply that term is a common error." },
+    { "id": "mse-15", "text": "Multiplying a fraction term by the common denominator simplifies it to a whole-number term. For example, 6 times (x/2) equals 3x because 6 divided by 2 is 3, and 6 times (x/3) equals 2x because 6 divided by 3 is 2." },
+    { "id": "mse-16", "text": "Checking a multi-step solution means substituting the answer into the original equation. For x = 4 in 2(x + 3) + 4x = 30, the check is 2(7) + 16 = 14 + 16 = 30, which is true." },
+    { "id": "mse-17", "text": "The order of operations runs in reverse when solving: after simplifying, undo addition and subtraction before undoing multiplication and division to isolate the variable." },
+    { "id": "mse-18", "text": "A multi-step solving checklist: phase 1 distribute to clear parentheses, phase 2 combine like terms on each side, phase 3 undo addition or subtraction, phase 4 undo multiplication or division, phase 5 check by substituting into the original." },
+    { "id": "mse-19", "text": "Losing a sign or skipping a term during distribution is the most frequent cause of wrong answers in multi-step equations. Writing out the full distribution before continuing helps prevent these mistakes." },
+    { "id": "mse-20", "text": "Multi-step equations model real situations such as a business finding its break-even point, where revenue equal to fixed costs plus per-item costs plus a fee produces an equation with parentheses and several like terms to simplify and solve." },
+    { "id": "mse-21", "text": "The general approach to a complicated equation is to break it into phases and handle one at a time: distribute, combine, undo, and check, rather than attempting everything at once." }
+  ]
+}

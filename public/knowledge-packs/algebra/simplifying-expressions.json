@@ -1,0 +1,28 @@
+{
+  "id": "simplifying-expressions",
+  "title": "Like Terms & the Distributive Property",
+  "subject": "Algebra",
+  "chunks": [
+    { "id": "se-1", "text": "Like terms are terms that have the exact same variable raised to the exact same power. For example, 3x and 4x are like terms because both are x to the first power, and 8 and -2 are like terms because both are constants." },
+    { "id": "se-2", "text": "Unlike terms have different variables or different powers and cannot be combined. For example, 3x and 3y are unlike (different variables), and 5x and 5x squared are unlike (different powers)." },
+    { "id": "se-3", "text": "Combining like terms means adding or subtracting terms of the same kind, similar to grouping 3 apples and 4 apples into 7 apples. You cannot merge unlike terms, just as you cannot merge apples and oranges into one count." },
+    { "id": "se-4", "text": "To combine like terms, add or subtract their coefficients and keep the variable and its exponent unchanged. For example, 5a - 2a = 3a: the coefficients 5 and -2 combine to 3, and the variable a stays the same." },
+    { "id": "se-5", "text": "To simplify 5a + 3 - 2a + 8, group like terms: (5a - 2a) + (3 + 8). This gives 3a + 11. The terms 3a and 11 cannot be combined further because one has a variable and the other does not." },
+    { "id": "se-6", "text": "A lone variable has an understood coefficient of 1, so when combining 6m and m, treat m as 1m: 6m + 1m = 7m. Forgetting the hidden coefficient of 1 is a common error when combining like terms." },
+    { "id": "se-7", "text": "When grouping terms to combine them, keep each plus or minus sign attached to its term. In 6m - 4 + m + 9, the constants are -4 and 9, which combine to 5, and the m-terms 6m and m combine to 7m, giving 7m + 5." },
+    { "id": "se-8", "text": "The distributive property states that a(b + c) = ab + ac. A factor outside parentheses must be multiplied by every term inside the parentheses, not just the first one." },
+    { "id": "se-9", "text": "The distributive property works with subtraction as well: a(b - c) = ab - ac. The outside factor multiplies each term inside, and the operation between the terms is kept." },
+    { "id": "se-10", "text": "To distribute 3(x + 4), multiply 3 by each term inside: 3 times x is 3x, and 3 times 4 is 12, giving 3x + 12. A common mistake is multiplying only the first term and writing 3x + 4, which leaves the 4 un-multiplied." },
+    { "id": "se-11", "text": "When distributing a negative factor, the sign of every term inside the parentheses changes. For example, -(3x + 5) equals -3x - 5, because the hidden -1 multiplies both terms. Writing -3x + 5 is incorrect." },
+    { "id": "se-12", "text": "To distribute -2(3x - 5): -2 times 3x is -6x, and -2 times -5 is +10 because a negative times a negative is positive. The result is -6x + 10." },
+    { "id": "se-13", "text": "Distributing -(x - 5) gives -x + 5, because the negative flips the sign of each term: -x and +5. A frequent error is writing -x - 5, which fails to flip the sign of the -5." },
+    { "id": "se-14", "text": "Fully simplifying an expression usually takes two phases: first distribute to clear all parentheses, then combine like terms. Distribution comes first because like terms generally cannot be combined while still inside parentheses." },
+    { "id": "se-15", "text": "To simplify 2(3x + 4) - 5x + 1: distribute to get 6x + 8 - 5x + 1, then combine like terms, 6x - 5x = x and 8 + 1 = 9, giving x + 9." },
+    { "id": "se-16", "text": "To simplify 4(2x - 3) - (x - 5): distribute to get 8x - 12 - x + 5, then combine, 8x - x = 7x and -12 + 5 = -7, giving 7x - 7." },
+    { "id": "se-17", "text": "Marking like terms with matching underlines or circles before combining helps avoid missing a term or combining unlike terms. Sorting terms visually catches careless errors." },
+    { "id": "se-18", "text": "You may only add or subtract terms that have the identical variable and exponent. When combining them, add the coefficients and keep the variable unchanged; the variable itself never changes during combination." },
+    { "id": "se-19", "text": "Simplifying expressions is the opening move of solving multi-step equations. For example, the equation 2(3x + 4) - 5x + 1 = 14 becomes x + 9 = 14 after simplifying the left side, making the solution x = 5 easy to find." },
+    { "id": "se-20", "text": "The simplest form of an expression has all parentheses removed and all like terms combined, while keeping the same value. Reducing a complicated expression to its essential form without changing its value is a core algebra skill used in science, finance, and programming." },
+    { "id": "se-21", "text": "Two habits prevent most simplification errors: distribute the outside factor to every term inside the parentheses, and keep each minus sign attached to its term when combining. These guard against the two most common mistakes in simplifying expressions." }
+  ]
+}

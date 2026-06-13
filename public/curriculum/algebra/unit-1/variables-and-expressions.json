@@ -1,0 +1,126 @@
+{
+  "id": "algebra-u1-variables-and-expressions",
+  "title": "Variables & Algebraic Expressions",
+  "subject": "Algebra",
+  "unit": "Foundations & Expressions",
+  "duration": "25 min",
+  "objectives": [
+    "Explain what a variable represents and use it to describe an unknown or changing quantity",
+    "Read and write algebraic notation, including implied multiplication and the meaning of a coefficient",
+    "Identify the terms, coefficients, and constants in an algebraic expression",
+    "Distinguish an expression from an equation and write expressions for simple real situations"
+  ],
+  "sections": [
+    {
+      "type": "explanation",
+      "heading": "A Variable Is a Labeled Box",
+      "content": "Picture a cardboard box with a label on the side that reads 'x.' You don't know yet what's inside — it could hold 3 things, or 10, or 100. The label x is just a name for 'however many are in there.' That's all a variable is: a name for a quantity whose value we don't know yet, or a quantity that's allowed to change.\n\nYou actually use this idea all the time without calling it algebra. When a recipe says 'bake for the number of minutes on the package,' it's using a variable — the exact number isn't fixed, it depends on the package. When a coach says 'run laps equal to your age,' the number of laps is a variable that changes from person to person. Algebra simply gives that changing quantity a short name, usually a letter like x, y, n, or t.\n\nWhy is this so powerful? Because a variable lets us describe a pattern or a rule that works for ANY number, without having to know the specific number first. Instead of writing separate facts like '2 + 2 = 4' and '5 + 5 = 10' and '7 + 7 = 14,' we can write one rule, 'a number plus itself is twice the number,' as 2x. That single expression captures infinitely many cases at once. Being able to reason about a quantity before you know its value is the core superpower of algebra, and it starts with the humble variable.\n\nA combination of variables, numbers, and operations — like 3x + 7 or x² - 2x — is called an algebraic expression. An expression represents a value; it's a recipe for a number, waiting for you to fill in the variable."
+    },
+    {
+      "type": "explanation",
+      "heading": "How Algebra Writes Multiplication",
+      "content": "Algebra has a few shorthand conventions for writing things, and learning to read them fluently now will save you confusion all year. The most important one is how we write multiplication.\n\nIn arithmetic you wrote multiplication with a times sign: 3 × 4. But in algebra, the × symbol looks too much like the variable x, so we mostly drop it. When a number sits right next to a variable, it means multiply: 3x means '3 times x.' When two variables sit next to each other, like xy, it means 'x times y.' A number next to parentheses, like 4(x + 1), also means multiply: '4 times the quantity x + 1.' This is called implied multiplication — the multiplication is understood even though no symbol is written.\n\nThere are two small conventions worth memorizing. First, when a variable stands alone, like x, there's an invisible 1 in front of it: x means 1x, the same way 'a dollar' means one dollar. Second, an exponent is repeated multiplication of the same base: x² means x · x, and x³ means x · x · x. The little raised number tells you how many times the base is multiplied by itself, not what to multiply it by.\n\nThese conventions aren't there to confuse you — they make expressions shorter and easier to read once your eyes adjust. Practice reading 5n out loud as 'five times n,' and 2(t + 3) as 'two times the quantity t plus three.' Saying them correctly trains you to handle them correctly."
+    },
+    {
+      "type": "table",
+      "heading": "The Vocabulary of Expressions",
+      "headers": ["Word", "What it means", "Example (in 3x + 7y - 5)"],
+      "rows": [
+        ["Term", "A single number, variable, or product separated by + or - signs", "3x, 7y, and -5 are the three terms"],
+        ["Coefficient", "The number multiplied by a variable (including its sign)", "3 is the coefficient of x; 7 is the coefficient of y"],
+        ["Constant", "A term that is just a number, with no variable", "-5 is the constant"],
+        ["Variable", "A letter standing for an unknown or changing value", "x and y are the variables"],
+        ["Factor", "Things being multiplied together within a term", "In 3x, the factors are 3 and x"]
+      ]
+    },
+    {
+      "type": "example",
+      "heading": "Breaking an Expression Into Its Parts",
+      "content": "Let's take the expression 6a - b + 9 and name every part. Identifying parts correctly is a skill you'll use constantly when you combine like terms and solve equations later.\n\nFirst, find the terms. Terms are separated by + and - signs, and each sign belongs to the term that follows it. So the terms are: 6a, -b, and 9. (Notice the middle term is -b, not just b — the minus sign travels with it.)\n\nNow name each one:\n  • 6a is a term with coefficient 6 and variable a.\n  • -b is a term with variable b. Its coefficient is -1, because b alone means 1b, and the minus sign makes it -1b.\n  • 9 is a constant — it's just a number, no variable attached.\n\nA student might glance at -b and say 'there's no coefficient.' But every variable has a coefficient; when none is written, it's understood to be 1 (or -1 if there's a minus sign). Catching the hidden coefficient on -b is exactly the kind of detail that prevents sign errors down the road. So the full breakdown of 6a - b + 9 is: three terms, coefficients 6 and -1, one constant of 9."
+    },
+    {
+      "type": "quiz",
+      "question": "In the expression 8m - x + 4, what is the coefficient of x?",
+      "options": [
+        "There is no coefficient on x",
+        "-1, because -x means -1 times x",
+        "1, because every variable has a coefficient of 1",
+        "4, because it is the number nearest to x"
+      ],
+      "correctIndex": 1,
+      "explanation": "A variable written by itself has an understood coefficient of 1, and the minus sign in front makes the coefficient of x equal to -1. Forgetting that the sign is part of the coefficient (answering 1) or thinking there is no coefficient are the two most common mistakes here."
+    },
+    {
+      "type": "explanation",
+      "heading": "Expressions Versus Equations",
+      "content": "Here's a distinction that sounds small but matters enormously: the difference between an expression and an equation. Mixing them up leads students to 'solve' things that can't be solved and to misread what a problem is asking.\n\nAn algebraic expression is a phrase. It represents a value but makes no claim — it's like the phrase 'three more than a number.' Examples: 3x + 7, 2a - b, x². You can simplify an expression or evaluate it for a given value, but you cannot 'solve' it, because there's no question being asked. An expression has no equals sign.\n\nAn equation, by contrast, is a full sentence. It uses an equals sign to claim that two expressions have the same value, like 3x + 7 = 22. That claim CAN be solved — you can find the value of x that makes the sentence true. The equals sign is the dividing line: no equals sign means expression, an equals sign means equation.\n\nA quick way to feel the difference: '3x + 7' is like saying 'seven more than three times a number' — just a description. '3x + 7 = 22' is like saying 'seven more than three times a number is twenty-two' — now it's a complete statement you can investigate. We'll spend all of the next unit solving equations, but for now, just train yourself to spot the equals sign and know which kind of object you're looking at."
+    },
+    {
+      "type": "steps",
+      "heading": "How to Analyze an Expression",
+      "steps": [
+        {
+          "title": "Split it into terms at the + and - signs",
+          "content": "Move left to right and break the expression apart at every plus or minus sign. Keep each sign attached to the term that comes right after it, so a minus sign becomes part of a negative term."
+        },
+        {
+          "title": "Label each term as variable-term or constant",
+          "content": "For each term, ask: does it contain a variable? If yes, it's a variable term (like 3x or -b). If it's just a number, it's a constant (like 9 or -5)."
+        },
+        {
+          "title": "Read off the coefficient of each variable term",
+          "content": "The coefficient is the number multiplied by the variable, including its sign. If no number is written, the coefficient is 1 (or -1 when there's a leading minus), because a lone variable means one of that variable."
+        },
+        {
+          "title": "Note the variables and any exponents",
+          "content": "Identify which letters are the variables and whether any have exponents. An exponent like the 2 in x² tells you the variable is multiplied by itself that many times, which will matter when you combine and compare terms later."
+        }
+      ]
+    },
+    {
+      "type": "example",
+      "heading": "Writing an Expression for a Real Situation",
+      "content": "Suppose you're buying snacks for a study group. Each granola bar costs $2, and you also pay a flat $3 delivery fee no matter how many bars you buy. Let's write an expression for the total cost.\n\nFirst, decide what's unknown or changing. The number of granola bars can vary, so we name it with a variable: let b = the number of bars.\n\nNow build the cost piece by piece. Each bar is $2, so b bars cost 2 times b, written 2b. The delivery fee is a flat $3 that doesn't depend on how many bars you buy, so it's a constant: + 3. Putting it together, the total cost is:\n  2b + 3\n\nLet's sanity-check it by evaluating. If you buy 4 bars, the cost should be 2(4) + 3 = 8 + 3 = $11. Four bars at $2 is $8, plus the $3 fee, is $11 — it matches. If you buy 0 bars, the cost is 2(0) + 3 = $3, which is just the delivery fee. The expression behaves exactly the way the real situation does. Notice how the changing quantity (bars) became the variable, the per-item rate ($2) became the coefficient, and the fixed fee ($3) became the constant. That pattern — rate times a variable, plus a fixed amount — shows up everywhere in algebra."
+    },
+    {
+      "type": "callout",
+      "variant": "warning",
+      "heading": "Watch These Notation Traps",
+      "content": "(1) A lone variable has a coefficient of 1: x means 1x, and -y means -1y. Don't treat the coefficient as missing. (2) 3x and x³ are completely different: 3x means 3 times x (3 + 3 + 3 worth of x's if x were a count), while x³ means x times x times x. (3) 5x is NOT the same as 5 + x. The number next to a variable means MULTIPLY, not add. These notation slips quietly cause wrong answers, so read every term carefully."
+    },
+    {
+      "type": "callout",
+      "variant": "tip",
+      "heading": "Read Coefficients as 'Groups Of'",
+      "content": "When you see a term like 4n, read it as '4 groups of n.' This phrasing reminds you that the coefficient multiplies the variable and makes it natural to combine like terms later: 4 groups of n plus 3 groups of n is 7 groups of n, so 4n + 3n = 7n. Saying terms out loud this way builds correct instincts."
+    },
+    {
+      "type": "quiz",
+      "question": "A taxi charges a $4 flat fee plus $2 for each mile driven. If m is the number of miles, which expression gives the total fare?",
+      "options": [
+        "4m + 2, treating the flat fee as the per-mile rate",
+        "2m + 4, where 2m is the per-mile cost and 4 is the flat fee",
+        "6m, by adding 4 and 2 first",
+        "4 + 2 + m, adding all the numbers and the variable"
+      ],
+      "correctIndex": 1,
+      "explanation": "The cost that depends on distance is $2 per mile, written 2m, and the $4 flat fee is a constant added once. So the fare is 2m + 4. The wrong answers swap the rate and the fee, or incorrectly add the numbers together instead of keeping the per-mile rate attached to the variable."
+    },
+    {
+      "type": "callout",
+      "variant": "remember",
+      "heading": "Coefficient, Constant, Term",
+      "content": "A term is a single number or variable product separated by + or - signs. A coefficient is the number (with its sign) multiplied by a variable. A constant is a term that is just a number, with no variable. Knowing these three words precisely makes every later topic — combining like terms, solving equations, factoring — far easier to follow."
+    },
+    {
+      "type": "keypoint",
+      "content": "A variable names an unknown or changing quantity, and an algebraic expression combines variables, coefficients, and constants to represent a value — with a number written next to a variable always meaning multiplication."
+    },
+    {
+      "type": "deepdive",
+      "heading": "Variables: The Language That Describes Everything",
+      "content": "Variables might feel abstract right now, but they are quite literally the language that science, technology, and business use to describe the world. Once you can name a changing quantity with a letter, you can write down rules that apply to every possible value at once — and that's where the real power lives.\n\nThink about formulas you may already know. The area of a rectangle is length times width, written A = lw. That single expression works for a rectangle the size of a postage stamp and one the size of a football field. A phone plan that charges a monthly base fee plus a rate per gigabyte is captured by an expression like 30 + 10g. A scientist describing how far a dropped object falls, a banker computing interest, a game designer setting a character's health — all of them reach for variables, because variables let one formula stand in for endless specific cases.\n\nThis is also exactly how computer programming works. When you write code, you store changing information — a score, a username, a temperature — in something called a 'variable,' borrowed straight from algebra. The expression 2b + 3 you wrote for snack costs is the same kind of object a programmer types to calculate a shopping cart total. So the skill you're building here, of naming the unknown and writing a rule around it, isn't just for math class. It's the foundational habit of describing patterns precisely, and it carries you into nearly every technical field there is."
+    }
+  ],
+  "aiContext": "This is the third lesson of Algebra Unit 1 (Foundations & Expressions), enriching basic variable/expression content. Emphasize algebraic notation conventions — implied multiplication (3x means 3 times x), the invisible coefficient of 1 on a lone variable, and that 5x is multiplication not addition — since misreading notation is a root cause of later errors. Watch for students who say a lone variable has 'no coefficient' (it is 1, or -1 with a leading minus) and who confuse an expression (no equals sign, can be evaluated) with an equation (has an equals sign, can be solved). This lesson sets up combining like terms and the distributive property in the next lesson, and writing expressions here previews translating words to algebra later in the unit. After this lesson a student should identify terms, coefficients, and constants and write a simple expression (rate times a variable plus a fixed amount) for a real situation."
+}

@@ -1,0 +1,28 @@
+{
+  "id": "variables-and-expressions",
+  "title": "Variables & Algebraic Expressions",
+  "subject": "Algebra",
+  "chunks": [
+    { "id": "vae-1", "text": "A variable is a symbol, usually a letter such as x, y, n, or t, that stands for a quantity whose value is unknown or allowed to change. It works like a labeled box: the label names the quantity even when you do not yet know what value is inside." },
+    { "id": "vae-2", "text": "Variables let you describe a rule or pattern that works for any number without knowing the specific number first. For example, '2x' captures the idea that a number plus itself is twice the number, for every possible value of x at once." },
+    { "id": "vae-3", "text": "An algebraic expression is a combination of variables, numbers, and operations, such as 3x + 7 or x squared minus 2x. An expression represents a value and acts like a recipe for a number once the variable is filled in." },
+    { "id": "vae-4", "text": "In algebra, multiplication between a number and a variable is written without a times sign, because the times symbol looks like the variable x. The notation 3x means 3 times x, and this is called implied multiplication." },
+    { "id": "vae-5", "text": "Two variables written next to each other, such as xy, mean the variables are multiplied: xy means x times y. A number written next to parentheses, such as 4(x + 1), means 4 times the quantity x + 1." },
+    { "id": "vae-6", "text": "A variable written by itself has an understood coefficient of 1. The expression x means 1x, and -y means -1y, just as 'a dollar' means one dollar." },
+    { "id": "vae-7", "text": "An exponent represents repeated multiplication of the same base. The expression x squared means x times x, and x cubed means x times x times x. The exponent tells how many times the base is multiplied by itself." },
+    { "id": "vae-8", "text": "A term is a single number, variable, or product of numbers and variables, separated from other terms by a plus or minus sign. In 3x + 7y - 5, the three terms are 3x, 7y, and -5." },
+    { "id": "vae-9", "text": "A coefficient is the number multiplied by a variable in a term, including its sign. In 3x + 7y - 5, the coefficient of x is 3 and the coefficient of y is 7." },
+    { "id": "vae-10", "text": "A constant is a term that is just a number, with no variable attached. In the expression 3x + 7y - 5, the constant is -5." },
+    { "id": "vae-11", "text": "A factor is one of the things being multiplied together within a term. In the term 3x, the factors are 3 and x." },
+    { "id": "vae-12", "text": "When splitting an expression into terms, the plus or minus sign belongs to the term that follows it. In 6a - b + 9, the terms are 6a, -b, and 9, where the middle term carries its minus sign." },
+    { "id": "vae-13", "text": "The coefficient of -b is -1, because b by itself means 1b and the minus sign makes it -1b. Every variable term has a coefficient, even when no number is written; the understood coefficient is 1 or -1." },
+    { "id": "vae-14", "text": "An algebraic expression has no equals sign. It represents a value and can be simplified or evaluated, but it cannot be solved because it asks no question. Examples are 3x + 7 and 2a - b." },
+    { "id": "vae-15", "text": "An equation uses an equals sign to state that two expressions are equal, such as 3x + 7 = 22. An equation can be solved, meaning you can find the value of the variable that makes the statement true." },
+    { "id": "vae-16", "text": "The presence of an equals sign is the dividing line between an expression and an equation: no equals sign means it is an expression, while an equals sign means it is an equation." },
+    { "id": "vae-17", "text": "To write an expression for a real situation, name the changing quantity with a variable, multiply it by any per-unit rate to form a coefficient term, and add any fixed amount as a constant. For snacks at $2 each plus a $3 delivery fee, the total cost is 2b + 3, where b is the number of bars." },
+    { "id": "vae-18", "text": "The expression 2b + 3 for a cost of $2 per bar plus a $3 fee can be checked by evaluating: 4 bars give 2(4) + 3 = 11 dollars, and 0 bars give 2(0) + 3 = 3 dollars, which is just the fee. A correct expression matches the real situation." },
+    { "id": "vae-19", "text": "The expressions 3x and x cubed are different: 3x means 3 times x, while x cubed means x times x times x. Also, 5x is not the same as 5 + x, because a number next to a variable means multiply, not add." },
+    { "id": "vae-20", "text": "A term like 4n can be read as '4 groups of n.' This reading makes combining like terms natural: 4 groups of n plus 3 groups of n is 7 groups of n, so 4n + 3n = 7n." },
+    { "id": "vae-21", "text": "Variables are the language of formulas in science, business, and computer programming. The area of a rectangle is A = lw, a phone plan might cost 30 + 10g, and in programming a variable stores changing information such as a score or temperature." }
+  ]
+}

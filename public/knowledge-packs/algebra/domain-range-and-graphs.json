@@ -1,0 +1,28 @@
+{
+  "id": "domain-range-and-graphs",
+  "title": "Domain, Range & Interpreting Graphs",
+  "subject": "Algebra",
+  "chunks": [
+    { "id": "dr-1", "text": "The domain of a function is the set of all inputs the function is allowed to take. It can be pictured as the menu of allowed input choices." },
+    { "id": "dr-2", "text": "The range of a function is the set of all outputs the function actually produces. It is the collection of results that can come out of the function." },
+    { "id": "dr-3", "text": "Domain is the inputs and equals the x-values; range is the outputs and equals the y-values. Inputs come first (domain) and outputs come second (range), in the same order as an ordered pair (x, y)." },
+    { "id": "dr-4", "text": "For the taxi function C(m) = 2m + 3 where m is miles, the domain is miles from 0 upward (you cannot drive negative miles), and the range is fares from $3 upward (the base fare at 0 miles)." },
+    { "id": "dr-5", "text": "From ordered pairs, the domain is the set of all first numbers and the range is the set of all second numbers. For {(1, 4), (2, 7), (5, 7), (8, 0)}, the domain is {1, 2, 5, 8} and the range is {0, 4, 7}." },
+    { "id": "dr-6", "text": "When listing a domain or range, write each distinct value only once and in increasing order. A repeated output, such as 7 appearing twice, is listed a single time in the range." },
+    { "id": "dr-7", "text": "From a table, the domain is the set of values in the input (x) column and the range is the set of values in the output (y) column, each distinct value listed once." },
+    { "id": "dr-8", "text": "For {(0, 3), (1, 5), (4, 3)}, the domain is {0, 1, 4} and the range is {3, 5}. The repeated output 3 is listed only once in the range." },
+    { "id": "dr-9", "text": "On a graph, read the domain by scanning left to right (the horizontal extent of x-values) and read the range by scanning bottom to top (the vertical extent of y-values)." },
+    { "id": "dr-10", "text": "For a line segment from (1, 2) to (5, 6), the domain is all x from 1 to 5 (horizontal extent) and the range is all y from 2 to 6 (vertical extent)." },
+    { "id": "dr-11", "text": "A straight line such as y = 2x + 1 extends infinitely in all directions, so its domain is all real numbers and its range is all real numbers." },
+    { "id": "dr-12", "text": "For an upward-opening parabola with lowest point (vertex) at (0, -4), the domain is all real numbers (it spreads left and right forever) and the range is y greater than or equal to -4 (it has a floor at -4 and rises forever)." },
+    { "id": "dr-13", "text": "Domain and range are often different and must be read separately: scan horizontally for the domain and vertically for the range. A parabola can have a domain of all real numbers but a range bounded below by its vertex." },
+    { "id": "dr-14", "text": "A common error is swapping domain and range. Domain is always the inputs (x-values, horizontal) and range is always the outputs (y-values, vertical). The order matches the ordered pair (x, y)." },
+    { "id": "dr-15", "text": "The y-intercept is where a graph crosses the vertical y-axis, occurring when x = 0. It often represents a starting value, such as a base fare or an initial amount." },
+    { "id": "dr-16", "text": "The x-intercept is where a graph crosses the horizontal x-axis, occurring when y = 0. It often represents a break-even point or the moment a quantity runs out." },
+    { "id": "dr-17", "text": "A graph is increasing where it rises as you move left to right (the output grows as the input grows) and decreasing where it falls as you move left to right (the output shrinks as the input grows)." },
+    { "id": "dr-18", "text": "On a distance-from-home versus time graph, a rising segment means moving away, a flat segment means standing still, and a falling segment means moving back toward home because distance is decreasing." },
+    { "id": "dr-19", "text": "A graph of water height in a tub over time can show filling (rising), holding steady (flat), and draining (falling), telling a complete story without an equation. The point where the height returns to 0 is an x-intercept." },
+    { "id": "dr-20", "text": "In real contexts, the domain is often restricted to inputs that make sense, such as time being 0 or greater, or quantities being whole numbers. Asking which input values are actually possible is part of finding a reasonable domain." },
+    { "id": "dr-21", "text": "Reading graphs is a practical life skill used for weather, fitness trackers, news data, stock charts, and battery levels. Identifying starting values, zero crossings, and increasing or decreasing trends helps interpret real information." }
+  ]
+}

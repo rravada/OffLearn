@@ -1,0 +1,28 @@
+{
+  "id": "absolute-value-equations-inequalities",
+  "title": "Absolute Value Equations & Inequalities",
+  "subject": "Algebra",
+  "chunks": [
+    { "id": "av-1", "text": "Absolute value measures how far a number is from zero on the number line, ignoring direction. It is written with two vertical bars, and the absolute value of a number is never negative." },
+    { "id": "av-2", "text": "Both 5 and -5 have an absolute value of 5, because both are 5 units from zero, just on opposite sides. So |5| = 5 and |-5| = 5." },
+    { "id": "av-3", "text": "Because absolute value is a distance, it is always positive or zero. You cannot be a negative distance from zero, so an expression like |x| can never be negative." },
+    { "id": "av-4", "text": "The equation |x| = 5 asks which numbers are exactly 5 units from zero. The answer is two numbers, x = 5 or x = -5, one on each side of zero." },
+    { "id": "av-5", "text": "Absolute value equations usually have two solutions because the expression inside the bars can be either the positive value or the negative value and still be the same distance from zero." },
+    { "id": "av-6", "text": "An absolute value equation set equal to a negative number, such as |x| = -3, has no solution, because distance from zero can never be negative." },
+    { "id": "av-7", "text": "To solve an absolute value equation, first isolate the absolute value expression so the bars stand alone. For 2|x - 1| + 3 = 11, subtract 3 and divide by 2 to get |x - 1| = 4 before splitting into cases." },
+    { "id": "av-8", "text": "After isolating an absolute value equation, check the other side: if the absolute value equals a negative number, there is no solution. If it equals zero or a positive number, continue solving." },
+    { "id": "av-9", "text": "To split an absolute value equation into cases, write one equation where the inside equals the positive value and one where the inside equals the negative value. For |x - 1| = 4, the cases are x - 1 = 4 and x - 1 = -4." },
+    { "id": "av-10", "text": "To solve |2x - 3| = 7, split into 2x - 3 = 7 and 2x - 3 = -7. The first gives x = 5 and the second gives x = -2, so the solutions are x = 5 or x = -2." },
+    { "id": "av-11", "text": "To solve |x + 4| = 6, split into x + 4 = 6 (giving x = 2) and x + 4 = -6 (giving x = -10). Both x = 2 and x = -10 are valid solutions." },
+    { "id": "av-12", "text": "Two cautions for absolute value equations: isolate the absolute value before splitting into cases, and remember that an absolute value can never equal a negative number, which signals no solution." },
+    { "id": "av-13", "text": "Absolute value inequalities ask about distance ranges. When the absolute value is less than a number, the values are close to zero; when it is greater than a number, the values are far from zero." },
+    { "id": "av-14", "text": "An absolute value inequality of the form |x| < a (less than) becomes the AND compound inequality -a < x < a, a single bounded segment between -a and a." },
+    { "id": "av-15", "text": "An absolute value inequality of the form |x| > a (greater than) becomes the OR compound inequality x < -a OR x > a, two rays pointing outward past -a and a." },
+    { "id": "av-16", "text": "A memory trick for absolute value inequalities is 'less thAND, greatOR': less than gives an AND inequality (between), and greater than gives an OR inequality (outside)." },
+    { "id": "av-17", "text": "To solve |x + 1| < 4, rewrite as -4 < x + 1 < 4, then subtract 1 from all parts to get -5 < x < 3, an AND segment between -5 and 3." },
+    { "id": "av-18", "text": "To solve |2x| ≥ 6, rewrite as 2x ≤ -6 OR 2x ≥ 6, then divide each piece by 2 to get x ≤ -3 OR x ≥ 3, two outward rays with a gap between -3 and 3." },
+    { "id": "av-19", "text": "To rewrite |x - 2| > 5 as a compound inequality, use the OR pattern: x - 2 < -5 OR x - 2 > 5, which solves to x < -3 OR x > 7." },
+    { "id": "av-20", "text": "A manufacturing tolerance such as a bolt width within 0.2 mm of 10 mm is the absolute value inequality |w - 10| ≤ 0.2, which becomes 9.8 ≤ w ≤ 10.2, the acceptable range." },
+    { "id": "av-21", "text": "Absolute value expresses 'how far off, regardless of direction,' which is used for measurement error, GPS accuracy within a distance, and engineering tolerances. These all describe a difference whose size matters but whose sign does not." }
+  ]
+}

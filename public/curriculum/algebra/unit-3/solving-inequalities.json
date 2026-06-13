@@ -1,0 +1,131 @@
+{
+  "id": "algebra-u3-solving-inequalities",
+  "title": "Solving One- & Multi-Step Inequalities",
+  "subject": "Algebra",
+  "unit": "Linear Inequalities",
+  "duration": "30 min",
+  "objectives": [
+    "Interpret inequality symbols and describe the meaning of an inequality's solution set",
+    "Solve one-step and multi-step linear inequalities using inverse operations",
+    "Apply the rule that multiplying or dividing by a negative reverses the inequality sign",
+    "Graph the solution of an inequality on a number line using open and closed circles"
+  ],
+  "sections": [
+    {
+      "type": "explanation",
+      "heading": "When 'Equal' Isn't the Whole Story",
+      "content": "Real life is full of situations that aren't about hitting an exact number — they're about being enough, or not too much. A sign at an amusement park says you must be at least 48 inches tall to ride. A budget says you can spend up to $50. A class needs a minimum of 10 students to run. None of these is a single value; each describes a whole range of acceptable values. That's what an inequality captures: a comparison where one side can be greater than or less than the other, not just equal.\n\nAn inequality looks a lot like an equation, but instead of an equals sign it uses one of four symbols: < (less than), > (greater than), ≤ (less than or equal to), or ≥ (greater than or equal to). For example, the height rule 'at least 48 inches' becomes h ≥ 48, meaning your height h can be 48, 49, 52, or any value 48 and up. The budget 'up to $50' becomes c ≤ 50. The inequality describes every value that works, all at once.\n\nThe big mental shift from equations is this: an equation usually has one solution, but an inequality usually has infinitely many. The solution to x = 3 is just 3. But the solution to x > 3 is every number bigger than 3 — 3.1, 4, 100, a billion. We call this collection the solution set, and because it's a whole range, we picture it on a number line rather than as a single dot.\n\nHere's the good news that should make this unit feel manageable: you already know almost everything you need. Solving an inequality uses the same inverse-operation steps as solving an equation. There's just one new rule to learn, and we'll build up to it carefully."
+    },
+    {
+      "type": "table",
+      "heading": "Inequality Symbols and Their Graphs",
+      "headers": ["Symbol", "Meaning", "Number line mark at the boundary"],
+      "rows": [
+        ["<", "less than (not equal)", "Open circle (boundary NOT included), shade left"],
+        [">", "greater than (not equal)", "Open circle (boundary NOT included), shade right"],
+        ["≤", "less than or equal to", "Closed/filled circle (boundary included), shade left"],
+        ["≥", "greater than or equal to", "Closed/filled circle (boundary included), shade right"],
+        ["x > 3", "all numbers greater than 3", "Open circle at 3, arrow shading to the right"],
+        ["x ≤ -2", "all numbers -2 and below", "Filled circle at -2, arrow shading to the left"]
+      ]
+    },
+    {
+      "type": "explanation",
+      "heading": "Solving Inequalities Like Equations",
+      "content": "For most inequalities, you solve exactly the way you'd solve the matching equation: isolate the variable using inverse operations, doing the same thing to both sides. If you can solve 2x + 1 = 9, you can solve 2x + 1 < 9 with the identical moves — subtract 1 from both sides, then divide by 2 — and you get x < 4 instead of x = 4.\n\nThe meaning of the answer is what's different. The solution x < 4 isn't a single number; it's every number less than 4. To show it, you graph it on a number line: put a circle at 4 and shade everything to the left. Whether that circle is open or filled depends on the symbol. With < or > (strictly less/greater), the boundary itself is NOT included, so you draw an open (hollow) circle. With ≤ or ≥, the boundary IS included, so you draw a closed (filled) circle. For x < 4, the 4 is not part of the solution, so it gets an open circle.\n\nThink of the open/closed circle as answering the question 'is the boundary itself allowed?' For 'you must be at least 48 inches' (h ≥ 48), exactly 48 inches IS allowed, so 48 gets a filled circle. For 'you must be under 18' (a < 18), exactly 18 is NOT allowed, so 18 gets an open circle. The circle records whether the edge value counts.\n\nSo for almost every inequality, the recipe is: solve like an equation, then graph the result with the correct circle and shading direction. Only one situation requires extra care, which we'll meet next."
+    },
+    {
+      "type": "example",
+      "heading": "Solving One-Step and Multi-Step Inequalities",
+      "content": "One-step:  x + 6 < 10\n  Subtract 6 from both sides (just like an equation):\n  x < 4\n  Graph: open circle at 4 (because of <), shade to the left. Solution: all numbers less than 4.\n\nMulti-step:  3x - 5 ≥ 7\n  Step 1 — Undo the subtraction; add 5 to both sides:\n  3x ≥ 12\n  Step 2 — Undo the multiplication; divide both sides by 3 (a positive number, so the sign does NOT flip):\n  x ≥ 4\n  Graph: filled circle at 4 (because of ≥), shade to the right. Solution: all numbers 4 and greater.\n\n  Check with a test value: try x = 5 (which should work). 3(5) - 5 = 10, and 10 ≥ 7 is true. Now try x = 0 (which should NOT work): 3(0) - 5 = -5, and -5 ≥ 7 is false. The test values confirm the solution.\n\nNotice both problems used the same inverse operations as equations, and because we only divided by a positive number (3), the inequality sign stayed the same. The only new work was choosing the right circle (open for <, filled for ≥) and shading the correct direction."
+    },
+    {
+      "type": "quiz",
+      "question": "Solve 2x + 3 ≤ 11 and describe its graph.",
+      "options": [
+        "x ≤ 4, open circle at 4, shade left",
+        "x ≤ 4, filled circle at 4, shade left",
+        "x ≥ 4, filled circle at 4, shade right",
+        "x ≤ 7, filled circle at 7, shade left"
+      ],
+      "correctIndex": 1,
+      "explanation": "Subtract 3 to get 2x ≤ 8, then divide by 2 (positive, no flip) to get x ≤ 4. Because the symbol is ≤, the boundary 4 is included, so the circle is filled, and 'less than' shades to the left. The sign does not flip since we divided by a positive number."
+    },
+    {
+      "type": "explanation",
+      "heading": "The One New Rule: Flip When You Multiply or Divide by a Negative",
+      "content": "Here is the single rule that makes inequalities different from equations, and it's essential: when you multiply or divide both sides of an inequality by a NEGATIVE number, you must reverse (flip) the inequality sign.\n\nWhy? Let's see it with plain numbers. Start with a true statement: 2 < 5. Now multiply both sides by -1. The left becomes -2 and the right becomes -5. But is -2 < -5 true? No! On the number line, -2 sits to the RIGHT of -5, so -2 is actually GREATER than -5. The correct statement is -2 > -5. Multiplying by the negative reversed which side was bigger, so to keep the statement true, we had to flip the symbol from < to >.\n\nThis happens every time you multiply or divide both sides by a negative, so the flip isn't optional — it's required to keep the inequality true. If you forget it, your shading ends up pointing the wrong way and your whole solution is backwards.\n\nBe careful about what triggers the flip, because this is where students get confused. The flip happens ONLY when you multiply or divide by a negative number. It does NOT happen just because there's a negative sign somewhere, and it does NOT happen when you add or subtract a negative. You can add or subtract any number — positive or negative — without flipping. The sign flips only for multiplication or division by a negative."
+    },
+    {
+      "type": "steps",
+      "heading": "How to Solve a Linear Inequality",
+      "steps": [
+        {
+          "title": "Simplify each side",
+          "content": "Distribute to clear parentheses and combine like terms, exactly as you would for an equation. Get each side as simple as possible before isolating the variable."
+        },
+        {
+          "title": "Undo addition and subtraction",
+          "content": "Add or subtract to move constants away from the variable term. Adding or subtracting NEVER flips the inequality sign, no matter whether the number is positive or negative."
+        },
+        {
+          "title": "Undo multiplication or division — and check for a flip",
+          "content": "Divide (or multiply) to isolate the variable. If you divide or multiply by a NEGATIVE number, reverse the inequality sign. If the number is positive, leave the sign as it is."
+        },
+        {
+          "title": "Graph and test",
+          "content": "Draw the solution on a number line: open circle for < or >, filled circle for ≤ or ≥, shading toward the values that satisfy the inequality. Pick one test value from the shaded region and confirm it works in the original."
+        }
+      ]
+    },
+    {
+      "type": "example",
+      "heading": "An Inequality That Requires Flipping",
+      "content": "Solve -2x + 1 > 9.\n\nStep 1 — Undo the addition; subtract 1 from both sides (no flip — we're subtracting):\n  -2x > 8\n\nStep 2 — Undo the multiplication; divide both sides by -2. Because we're dividing by a NEGATIVE, we flip the sign from > to <:\n  -2x / -2  <  8 / -2\n  x < -4\n\nGraph: open circle at -4 (because of <), shade to the left. Solution: all numbers less than -4.\n\nCheck with a test value: try x = -10 (should work). -2(-10) + 1 = 20 + 1 = 21, and 21 > 9 is true. Now try x = 0 (should NOT work): -2(0) + 1 = 1, and 1 > 9 is false. The test confirms x < -4.\n\nThe crucial moment was Step 2: dividing by -2 forced the > to become <. If we'd forgotten to flip, we'd have written x > -4 and shaded the wrong direction, making the entire answer wrong. The flip is what kept the statement true. Whenever your last step divides or multiplies by a negative, flip — and the test value will reward you for remembering."
+    },
+    {
+      "type": "callout",
+      "variant": "warning",
+      "heading": "Flip ONLY for Multiplying/Dividing by a Negative",
+      "content": "The flip rule has a precise trigger, and students misapply it constantly. You flip the inequality sign ONLY when you multiply or divide BOTH sides by a negative number. You do NOT flip when you add or subtract (even a negative number), and you do NOT flip just because the answer turns out negative. For example, solving x + 3 < -2 gives x < -5 with NO flip — we only subtracted. The negative answer didn't trigger a flip; only multiplying/dividing by a negative does."
+    },
+    {
+      "type": "callout",
+      "variant": "tip",
+      "heading": "Test a Point to Catch a Backwards Answer",
+      "content": "After solving, pick any number from your shaded region and plug it into the ORIGINAL inequality. If it makes the inequality true, your direction is right; if it makes it false, you probably forgot to flip and your shading is backwards. This 10-second test is the surest way to catch the most common inequality mistake. Always test a point — especially when you divided by a negative."
+    },
+    {
+      "type": "example",
+      "heading": "A Multi-Step Inequality With Distribution",
+      "content": "Solve 3(x - 2) < x + 4.\n\nStep 1 — Simplify. Distribute the 3 on the left:\n  3x - 6 < x + 4\n\nStep 2 — Collect variables. Subtract x from both sides (no flip — subtracting):\n  3x - 6 - x < 4\n  2x - 6 < 4\n\nStep 3 — Undo the subtraction; add 6 to both sides (no flip):\n  2x < 10\n\nStep 4 — Undo the multiplication; divide both sides by 2. This is a POSITIVE number, so the sign does NOT flip:\n  x < 5\n\nGraph: open circle at 5 (because of <), shade to the left. Solution: all numbers less than 5.\n\nCheck with x = 0: 3(0 - 2) = -6 on the left, and 0 + 4 = 4 on the right; -6 < 4 is true. Good. Notice that even though negatives appeared during the work (the -6, the -x), we never multiplied or divided by a negative, so the sign never flipped. The flip depends only on the final divide/multiply step's sign, not on negatives showing up along the way."
+    },
+    {
+      "type": "quiz",
+      "question": "Solve -5x ≥ 20. What is the solution?",
+      "options": [
+        "x ≥ 4, keeping the sign the same",
+        "x ≤ -4, because dividing by -5 flips the sign",
+        "x ≥ -4, dividing but not flipping",
+        "x ≤ 4"
+      ],
+      "correctIndex": 1,
+      "explanation": "Divide both sides by -5 to isolate x. Because you divide by a negative, flip the ≥ to ≤, and 20 / -5 = -4, giving x ≤ -4. Forgetting to flip (x ≥ -4) or mishandling the sign of -4 gives the wrong answers. Test x = -10: -5(-10) = 50 ≥ 20 is true, confirming x ≤ -4."
+    },
+    {
+      "type": "callout",
+      "variant": "remember",
+      "heading": "Solve Like an Equation, Flip for a Negative",
+      "content": "Solve an inequality with the same inverse operations as an equation, with ONE exception: multiplying or dividing both sides by a negative number reverses the inequality sign. Graph the result with an open circle for < or > and a filled circle for ≤ or ≥, shading toward the values that make it true. Adding or subtracting never flips the sign." },
+    {
+      "type": "keypoint",
+      "content": "Solve a linear inequality exactly like the matching equation, but reverse the inequality sign whenever you multiply or divide both sides by a negative number, then graph the solution set with the correct open or closed circle."
+    },
+    {
+      "type": "deepdive",
+      "heading": "Inequalities Describe the Real World's Limits",
+      "content": "Equations answer 'what exact value?' but the real world more often asks 'what's allowed?' or 'what's enough?' — and those are inequality questions. Once you start noticing, you'll see inequalities everywhere there are limits, budgets, requirements, and ranges.\n\nThink about money. If you have $50 and each item costs $7, how many can you buy? That's 7n ≤ 50, an inequality, and solving it tells you the most you can afford. A business needs revenue to be at least its costs to avoid losing money — a 'greater than or equal to' relationship. A nurse must keep a patient's dosage below a safe maximum. An engineer designs a bridge so the stress stays under a breaking point with room to spare. A delivery driver needs total weight at or under the truck's limit. Every one of these is solved with the skills from this lesson: isolate the variable, mind the flip, read off the range.\n\nInequalities also describe goals and qualifications. To make the honor roll you might need an average of at least 90 (a ≥ 90). To qualify for a discount you might need to spend more than $100. To pass a class you need a grade at or above some cutoff. These ranges, not single numbers, are how requirements actually work, and writing them as inequalities lets you reason about them precisely.\n\nThe deeper takeaway is that inequalities are the mathematics of 'good enough,' 'within limits,' and 'as many as possible' — ideas that run through budgeting, safety, planning, and decision-making for the rest of your life. And because solving them is almost identical to solving equations, mastering this one extra rule (flip for a negative) unlocks a whole category of real problems for very little new effort."
+    }
+  ],
+  "aiContext": "This is the first lesson of Algebra Unit 3 (Linear Inequalities), enriching the legacy inequalities content. Emphasize that solving inequalities mirrors solving equations, with the single exception that multiplying or dividing both sides by a negative reverses the inequality sign. The most common and important errors to watch for: flipping the sign at the wrong time (students flip when they merely add/subtract a negative or when the answer is negative — clarify the flip is ONLY for multiply/divide by a negative), and choosing the wrong circle (open for strict < >, filled for ≤ ≥) or shading direction. Reinforce testing a point in the original to catch backwards answers. This sets up compound and absolute-value inequalities next. After this lesson a student should solve and graph any one- or multi-step linear inequality, including ones requiring a sign flip."
+}

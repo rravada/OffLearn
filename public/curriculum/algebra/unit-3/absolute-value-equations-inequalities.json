@@ -1,0 +1,126 @@
+{
+  "id": "algebra-u3-absolute-value-equations-inequalities",
+  "title": "Absolute Value Equations & Inequalities",
+  "subject": "Algebra",
+  "unit": "Linear Inequalities",
+  "duration": "30 min",
+  "objectives": [
+    "Interpret absolute value as distance from zero on the number line",
+    "Solve absolute value equations by isolating the absolute value and splitting into two cases",
+    "Solve absolute value inequalities, recognizing the AND case (less than) and the OR case (greater than)",
+    "Identify absolute value equations and inequalities that have no solution"
+  ],
+  "sections": [
+    {
+      "type": "explanation",
+      "heading": "Absolute Value Is Distance From Zero",
+      "content": "Imagine you live at a house we'll call zero on a number line. If your friend lives 5 blocks away, they could be 5 blocks east or 5 blocks west — either way, the DISTANCE is 5 blocks. Absolute value captures exactly this idea: it measures how far a number is from zero, ignoring direction. That's why both 5 and -5 have an absolute value of 5: they're both 5 units from zero, just on opposite sides.\n\nWe write absolute value with two vertical bars: |5| = 5 and |-5| = 5. The bars say 'how far from zero is this?' and distance is never negative. So the absolute value of any number is always positive or zero — you can't be a negative distance from home.\n\nThis distance idea is the key that unlocks everything in this lesson. When you see an equation like |x| = 5, don't think 'what is x?' Think 'what numbers are exactly 5 units from zero?' The answer is two numbers: 5 and -5. That's the heart of absolute value problems — because distance ignores direction, there are usually TWO values that work, one on each side of zero.\n\nKeeping the 'distance from zero' picture in mind will guide you through every problem here. Absolute value equations ask 'which values are exactly this far from zero?' Absolute value inequalities ask 'which values are closer than this (AND, between)?' or 'which values are farther than this (OR, outside)?' Once you connect the symbols to distance, the rules stop feeling arbitrary and start making sense."
+    },
+    {
+      "type": "example",
+      "heading": "Why Absolute Value Equations Have Two Answers",
+      "content": "Solve |x| = 5.\n\nUsing the distance idea: we want every number that is exactly 5 units from zero. Going right from zero, that's 5. Going left from zero, that's -5. Both are distance 5 from zero, so both work:\n  x = 5  or  x = -5\n\nLet's verify: |5| = 5 (true) and |-5| = 5 (true). Two solutions, as expected.\n\nThis 'two cases' idea is what makes absolute value different from a plain equation. A regular equation like x = 5 has one answer. But |x| = 5 has two, because the thing inside the bars could be either positive 5 or negative 5 and still end up 5 units from zero. So whenever we solve an absolute value equation, we split it into two separate equations: one where the inside equals the positive value, and one where the inside equals the negative value.\n\nThere's an important limit, though. Distance can never be negative, so an equation like |x| = -3 has NO solution — there's no number whose distance from zero is negative 3, because distances are never negative. Spotting these impossible cases early saves you from chasing answers that don't exist."
+    },
+    {
+      "type": "steps",
+      "heading": "How to Solve an Absolute Value Equation",
+      "steps": [
+        {
+          "title": "Isolate the absolute value first",
+          "content": "Get the absolute value expression by itself on one side before doing anything else. For 2|x - 1| + 3 = 11, subtract 3 and divide by 2 so the equation reads |x - 1| = 4. You cannot split into cases until the bars stand alone."
+        },
+        {
+          "title": "Check for an impossible case",
+          "content": "Once isolated, look at the number on the other side. If the absolute value equals a NEGATIVE number, stop — there is no solution, because distance can't be negative. If it equals zero or a positive number, continue."
+        },
+        {
+          "title": "Split into two equations",
+          "content": "Write two equations: one where the inside equals the positive value, and one where the inside equals the negative value. For |x - 1| = 4, that's x - 1 = 4 and x - 1 = -4."
+        },
+        {
+          "title": "Solve each equation and check both",
+          "content": "Solve both equations separately to get two answers, then substitute each back into the original to confirm. Both solutions should make the absolute value equal the required distance."
+        }
+      ]
+    },
+    {
+      "type": "example",
+      "heading": "Solving an Absolute Value Equation",
+      "content": "Solve |2x - 3| = 7.\n\nStep 1 — The absolute value is already isolated (the bars are alone on the left).\n\nStep 2 — The right side, 7, is positive, so solutions exist. Continue.\n\nStep 3 — Split into two cases, since the inside (2x - 3) could be either 7 or -7:\n  Case A: 2x - 3 = 7\n  Case B: 2x - 3 = -7\n\nStep 4 — Solve each.\n  Case A: 2x - 3 = 7 → add 3 → 2x = 10 → divide by 2 → x = 5\n  Case B: 2x - 3 = -7 → add 3 → 2x = -4 → divide by 2 → x = -2\n\nSo x = 5 or x = -2. Check both in the original:\n  |2(5) - 3| = |10 - 3| = |7| = 7. True.\n  |2(-2) - 3| = |-4 - 3| = |-7| = 7. True.\n\nBoth answers work. The whole method came from one idea: the expression inside the bars, 2x - 3, had to be 7 units from zero, which means it equals either +7 or -7. Splitting into those two cases and solving each gave the two solutions. Always make two equations — the negative case is easy to forget, and it's a real answer."
+    },
+    {
+      "type": "quiz",
+      "question": "Solve |x + 4| = 6.",
+      "options": [
+        "x = 2 only",
+        "x = 2 or x = -10, from x + 4 = 6 and x + 4 = -6",
+        "x = 10 or x = -2",
+        "No solution"
+      ],
+      "correctIndex": 1,
+      "explanation": "Split into two cases: x + 4 = 6 gives x = 2, and x + 4 = -6 gives x = -10. Both are valid because the inside can be 6 units from zero in either direction. Giving only the positive case (x = 2) misses the second solution."
+    },
+    {
+      "type": "callout",
+      "variant": "warning",
+      "heading": "Isolate First, and Watch for No Solution",
+      "content": "Two critical cautions. (1) ISOLATE the absolute value before splitting into cases. In 3|x| - 2 = 10, you must first add 2 and divide by 3 to get |x| = 4; splitting too early gives wrong answers. (2) An absolute value can NEVER equal a negative number. |x| = -5 has NO solution, because distance from zero is never negative. Always check the isolated right side: if it's negative, the answer is 'no solution,' period."
+    },
+    {
+      "type": "explanation",
+      "heading": "Absolute Value Inequalities: Less Than (AND) vs. Greater Than (OR)",
+      "content": "Absolute value inequalities ask about distance ranges, and they split into two patterns based on the inequality direction. The distance picture makes both patterns intuitive.\n\nWhen the absolute value is LESS than a number — like |x| < 5 — you're asking 'which numbers are CLOSER than 5 units to zero?' Those are the numbers caught in the middle, between -5 and 5. So |x| < 5 becomes the AND (between) compound inequality -5 < x < 5. 'Less than' means 'close to zero,' which means 'trapped between two bounds' — an AND inequality with a single bounded segment.\n\nWhen the absolute value is GREATER than a number — like |x| > 5 — you're asking 'which numbers are FARTHER than 5 units from zero?' Those are the numbers way out on either end: less than -5 or greater than 5. So |x| > 5 becomes the OR compound inequality x < -5 OR x > 5. 'Greater than' means 'far from zero,' which means 'out past the bounds on either side' — an OR inequality with two spreading rays.\n\nThis is exactly why the last lesson on compound inequalities mattered: absolute value inequalities turn directly into AND or OR compound inequalities, which you already know how to solve and graph. The only new skill is choosing the right pattern: less-than gives AND (between), greater-than gives OR (outside). After you rewrite the absolute value inequality in compound form, isolate the variable just as before."
+    },
+    {
+      "type": "table",
+      "heading": "Absolute Value Inequality Patterns",
+      "headers": ["Form", "Becomes", "Type & graph"],
+      "rows": [
+        ["|x| < a  (or ≤)", "-a < x < a", "AND — a segment BETWEEN -a and a"],
+        ["|x| > a  (or ≥)", "x < -a OR x > a", "OR — two rays OUTSIDE -a and a"],
+        ["|x| < a, distance idea", "closer than a to zero", "the middle region"],
+        ["|x| > a, distance idea", "farther than a from zero", "the two outer regions"],
+        ["|x| < negative number", "no solution", "nothing is a negative distance from zero"],
+        ["|x| > negative number", "all real numbers", "every distance exceeds a negative"]
+      ]
+    },
+    {
+      "type": "example",
+      "heading": "Both Types of Absolute Value Inequality",
+      "content": "Less-than (AND) — Solve |x + 1| < 4.\n  'Less than' means 'within 4 of zero,' so rewrite as the between inequality:\n  -4 < x + 1 < 4\n  Subtract 1 from all three parts:\n  -5 < x < 3\n  Solution: all x between -5 and 3. Graph: open circles at -5 and 3, shaded segment between them (an AND result).\n  Check x = 0: |0 + 1| = 1, and 1 < 4 is true. Good.\n\nGreater-than (OR) — Solve |2x| ≥ 6.\n  'Greater than or equal' means 'at least 6 from zero,' so rewrite as the OR inequality:\n  2x ≤ -6 OR 2x ≥ 6\n  Divide each piece by 2:\n  x ≤ -3 OR x ≥ 3\n  Solution: all x that are ≤ -3 or ≥ 3. Graph: filled circles at -3 and 3, shading outward in both directions (an OR result with a gap between -3 and 3).\n  Check x = 5: |2(5)| = 10, and 10 ≥ 6 is true. Check x = 0: |0| = 0, and 0 ≥ 6 is false, so 0 is correctly excluded.\n\nNotice the pattern in action: the less-than problem produced a between-segment (AND), and the greater-than problem produced two outward rays (OR). Pick the pattern from the inequality direction, rewrite, then solve the compound inequality."
+    },
+    {
+      "type": "callout",
+      "variant": "tip",
+      "heading": "Remember 'Less thAND, GreatOR'",
+      "content": "A memory trick for absolute value inequalities: 'less thAND, greatOR.' When the absolute value is LESS than a number, you get an AND inequality (the between-segment). When the absolute value is GREATER than a number, you get an OR inequality (the two outward rays). The made-up words 'less-thAND' and 'great-OR' hide the right connector inside them. Pair it with the distance idea — less means close/between, greater means far/outside — and you'll never mix them up."
+    },
+    {
+      "type": "quiz",
+      "question": "Rewrite |x - 2| > 5 as a compound inequality.",
+      "options": [
+        "-5 < x - 2 < 5, an AND inequality",
+        "x - 2 < -5 OR x - 2 > 5, an OR inequality",
+        "x - 2 > 5 only",
+        "x - 2 < 5, a single inequality"
+      ],
+      "correctIndex": 1,
+      "explanation": "A 'greater than' absolute value inequality becomes an OR inequality (great-OR): x - 2 < -5 OR x - 2 > 5, which solves to x < -3 OR x > 7. Writing it as a between (AND) inequality would describe 'less than,' the opposite case."
+    },
+    {
+      "type": "callout",
+      "variant": "remember",
+      "heading": "Distance, Two Cases, and Less-thAND / Great-OR",
+      "content": "Absolute value means distance from zero, so it is never negative. An absolute value EQUATION splits into two cases (inside equals the positive value OR the negative value), after you isolate the bars. An absolute value INEQUALITY becomes a compound inequality: LESS than gives AND (between -a and a), GREATER than gives OR (outside -a and a). If an absolute value is set less than a negative, there is no solution." },
+    {
+      "type": "keypoint",
+      "content": "Absolute value measures distance from zero, so |expression| = a splits into two cases and |expression| < a becomes an AND (between) inequality while |expression| > a becomes an OR (outside) inequality — and an absolute value can never equal or be less than a negative number."
+    },
+    {
+      "type": "deepdive",
+      "heading": "Absolute Value Is the Math of 'How Far Off'",
+      "content": "Absolute value might feel abstract, but it answers a question that engineers, scientists, and quality inspectors ask every single day: 'how far off are we, regardless of direction?' Whenever the size of an error or a difference matters but its sign doesn't, absolute value is the right tool.\n\nThink about manufacturing. A factory making bolts that should be 10 millimeters wide can't make them perfectly; each is a little over or a little under. What matters is that the error stays small in either direction. 'The width must be within 0.2 mm of 10 mm' is exactly the absolute value inequality |w - 10| ≤ 0.2, which becomes 9.8 ≤ w ≤ 10.2 — the acceptable range. Engineers call that allowable wiggle room a tolerance, and tolerances are written as absolute value inequalities constantly, for everything from machine parts to medication doses to the spacing of train tracks.\n\nThe same idea drives GPS and science. A GPS reading might be 'accurate to within 3 meters' — your true position is somewhere within 3 meters of the reading, in any direction, an absolute value statement. Scientists describe measurement error the same way: a result of '50 grams, give or take 2' means the true value satisfies |actual - 50| ≤ 2. Weather forecasts, lab experiments, and financial models all express uncertainty as a distance that can fall either way, which is precisely what absolute value captures.\n\nThere's also a neat full-circle moment in this lesson: absolute value inequalities reduce to the AND/OR compound inequalities you learned last lesson, which connect to logical reasoning, which powers computers. Each piece of algebra you learn keeps linking to the next and reaching outward into the real world. Absolute value is your tool for measuring difference without direction — and 'how far off are we?' turns out to be one of the most practical questions there is."
+    }
+  ],
+  "aiContext": "This is the third and final lesson of Algebra Unit 3 (Linear Inequalities). Anchor everything in the distance-from-zero meaning of absolute value. For equations: isolate the absolute value first, then split into two cases (inside = +a or -a); watch for the no-solution case when the isolated absolute value equals a negative. For inequalities: less-than becomes AND (between, -a < x < a) and greater-than becomes OR (outside, x < -a OR x > a) — teach the 'less-thAND, great-OR' mnemonic alongside the distance intuition (close vs far). The most common errors: forgetting the negative case in equations, splitting before isolating, and choosing the wrong AND/OR pattern. This builds directly on the previous compound-inequalities lesson. After this lesson a student should solve absolute value equations and both types of absolute value inequalities, and recognize no-solution cases."
+}
