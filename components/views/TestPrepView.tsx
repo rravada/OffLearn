@@ -83,6 +83,7 @@ export function TestPrepView() {
     setTutorOpen,
     setTutorSystemPrompt,
     clearTutorMessages,
+    setCurrentLesson,
   } = useAppStore();
 
   const [activeSection, setActiveSection] = useState<string | null>(null);
@@ -153,9 +154,12 @@ export function TestPrepView() {
       if (!isCorrect) {
         const wrongOption = question.options[optionIdx];
         const correctOption = question.options[question.correct];
-        const systemPrompt = `The student answered "${wrongOption}" for this question: ${question.question}. The correct answer is "${correctOption}". ${question.aiHint}
+        const systemPrompt = `You are a friendly, clear tutor. The student answered "${wrongOption}" for this question: ${question.question}. The correct answer is "${correctOption}". Helpful context: ${question.aiHint}
 
-Guide the student Socratically to understand WHY the correct answer is right without just stating it. Ask questions that lead them to the reasoning. Be encouraging and patient.`;
+Explain clearly and directly why "${correctOption}" is correct and why the student's choice was not, using the context above. Keep it to 2 to 5 sentences. You may end with one short follow-up question, but do not require it. Write in plain English only — no markdown, asterisks, headings, or LaTeX. Respond only in English, and reply once without writing the student's side.`;
+        // No lesson grounding for test-prep hints — the question, answer, and
+        // hint are already in the prompt. Clear any stale lesson context.
+        setCurrentLesson(null);
         clearTutorMessages();
         setTutorSystemPrompt(systemPrompt);
         setTutorOpen(true);
@@ -171,6 +175,7 @@ Guide the student Socratically to understand WHY the correct answer is right wit
       clearTutorMessages,
       setTutorSystemPrompt,
       setTutorOpen,
+      setCurrentLesson,
     ]
   );
 

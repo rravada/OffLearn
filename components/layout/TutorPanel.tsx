@@ -4,6 +4,7 @@ import { useRef, useEffect, useState, useCallback, useMemo } from "react";
 import { X, Send, Sparkles, RotateCcw } from "lucide-react";
 import { useAppStore } from "@/lib/store/useAppStore";
 import { LLMSession } from "@/lib/inference/mediapipe";
+import { retrieveLessonContext, GENERIC_TUTOR_PROMPT } from "@/lib/inference/tutorContext";
 import {
   createSession,
   getAllSessions,
@@ -31,7 +32,6 @@ export function TutorPanel({ onSendOverride }: TutorPanelProps = {}) {
     setTutorMessages,
     currentSessionId,
     setCurrentSessionId,
-    tutorSystemPrompt,
     isTutorGenerating,
     setIsTutorGenerating,
     tutorStreamingContent,
@@ -181,12 +181,26 @@ export function TutorPanel({ onSendOverride }: TutorPanelProps = {}) {
           content: m.content,
         }));
 
+      // Ground the answer in the actual lesson the student is on. The grounding
+      // is retrieved fresh for this question and passed as the system preamble,
+      // so the model answers from lesson material instead of hallucinating.
+      const lesson = useAppStore.getState().currentLesson;
+      const baseSystemPrompt =
+        useAppStore.getState().tutorSystemPrompt || GENERIC_TUTOR_PROMPT;
+      let effectiveSystemPrompt = baseSystemPrompt;
+      if (lesson) {
+        const grounding = retrieveLessonContext(lesson, text, 1100);
+        if (grounding) {
+          effectiveSystemPrompt = `${baseSystemPrompt}\n\nLesson material to use for your answer (do not contradict it; if it does not cover the question, say so):\n${grounding}`;
+        }
+      }
+
       const result = await session.streamResponse(
         history,
         (chunk) => {
           appendTutorStreamingContent(chunk);
         },
-        tutorSystemPrompt
+        effectiveSystemPrompt
       );
 
       const cleaned = cleanResponse(result);
@@ -221,7 +235,6 @@ export function TutorPanel({ onSendOverride }: TutorPanelProps = {}) {
     setIsTutorGenerating,
     setTutorStreamingContent,
     appendTutorStreamingContent,
-    tutorSystemPrompt,
   ]);
 
   if (!tutorOpen) return null;

@@ -26,6 +26,7 @@ import {
 import { CheckCircle2, Check } from "lucide-react";
 import { AssessmentView } from "@/components/views/AssessmentView";
 import { cn } from "@/lib/utils";
+import { buildLessonSystemPrompt, GENERIC_TUTOR_PROMPT } from "@/lib/inference/tutorContext";
 import { getSubjectIcon } from "@/lib/subjectIcons";
 import {
   recordActivity,
@@ -81,6 +82,7 @@ export function LearnView({
     setTutorOpen,
     setTutorSystemPrompt,
     clearTutorMessages,
+    setCurrentLesson,
     tutorOpen,
     activeProfileId,
     bumpProgress,
@@ -229,6 +231,7 @@ export function LearnView({
       if (cached) {
         setLessonScrollEpoch((n) => n + 1);
         setViewState({ mode: "assessment", subject, unit, lessonIdx, data: cached });
+        setCurrentLesson(null);
         clearTutorMessages();
         return;
       }
@@ -248,6 +251,7 @@ export function LearnView({
         assessmentCache.current.set(key, data);
         setLessonScrollEpoch((n) => n + 1);
         setViewState({ mode: "assessment", subject, unit, lessonIdx, data });
+        setCurrentLesson(null);
         clearTutorMessages();
       } catch (err) {
         if ((err as Error).name !== "AbortError") {
@@ -258,7 +262,7 @@ export function LearnView({
         setOpeningKey(null);
       }
     },
-    [clearTutorMessages]
+    [clearTutorMessages, setCurrentLesson]
   );
 
   const openLesson = useCallback(
@@ -273,6 +277,7 @@ export function LearnView({
       if (cached) {
         setLessonScrollEpoch((n) => n + 1);
         setViewState({ mode: "lesson", subject, unit, lessonIdx, data: cached });
+        setCurrentLesson(cached);
         clearTutorMessages();
         return;
       }
@@ -291,6 +296,7 @@ export function LearnView({
         lessonCache.current.set(key, data);
         setLessonScrollEpoch((n) => n + 1);
         setViewState({ mode: "lesson", subject, unit, lessonIdx, data });
+        setCurrentLesson(data);
         clearTutorMessages();
       } catch (err) {
         if ((err as Error).name !== "AbortError") {
@@ -301,26 +307,18 @@ export function LearnView({
         setOpeningKey(null);
       }
     },
-    [clearTutorMessages, openAssessment]
+    [clearTutorMessages, openAssessment, setCurrentLesson]
   );
 
   const openTutor = useCallback(() => {
     if (viewState.mode !== "lesson") return;
     const { data } = viewState;
-    const systemPrompt = `You are a Socratic tutor helping a high school student understand: ${data.title} in ${data.subject} — ${data.unit}.
-
-Lesson context: ${data.aiContext}
-
-Rules:
-- Only answer questions related to this lesson topic
-- Never give direct answers — guide with questions and analogies
-- If the student answers correctly, confirm warmly and explain why
-- If the student answers incorrectly, redirect with a new guiding question
-- If asked something outside this lesson, say: 'Let us stay focused on ${data.title} for now — what part is confusing you?'
-- Adapt length to complexity. Never truncate mid-explanation.`;
-    setTutorSystemPrompt(systemPrompt);
+    // Persona only — the actual lesson grounding is retrieved per-question in
+    // TutorPanel from the current lesson, so answers stay accurate and on-topic.
+    setTutorSystemPrompt(buildLessonSystemPrompt(data));
+    setCurrentLesson(data);
     setTutorOpen(true);
-  }, [viewState, setTutorSystemPrompt, setTutorOpen]);
+  }, [viewState, setTutorSystemPrompt, setCurrentLesson, setTutorOpen]);
 
   const goToNextLesson = useCallback(() => {
     if (viewState.mode !== "lesson") return;
@@ -340,14 +338,24 @@ Rules:
 
   const goBack = useCallback(() => {
     setViewState({ mode: "browse" });
+    setCurrentLesson(null);
     setTutorOpen(false);
-  }, [setTutorOpen]);
+  }, [setCurrentLesson, setTutorOpen]);
 
+  // Switching subjects (via the sidebar) while the tutor is open: drop back to
+  // browse and reset the tutor so it doesn't keep answering about the old
+  // lesson. The session is re-keyed by subject in TutorPanel, which clears the
+  // visible messages; here we clear the grounding + fall back to a generic
+  // persona so a still-open chat switches subjects cleanly.
+  const prevSubjectRef = useRef(selectedSubject);
   useEffect(() => {
-    setViewState((prev) =>
-      prev.mode === "lesson" ? { mode: "browse" } : prev
-    );
-  }, [selectedSubject]);
+    if (prevSubjectRef.current === selectedSubject) return;
+    prevSubjectRef.current = selectedSubject;
+    setViewState((prev) => (prev.mode === "lesson" ? { mode: "browse" } : prev));
+    setCurrentLesson(null);
+    setTutorSystemPrompt(GENERIC_TUTOR_PROMPT);
+    clearTutorMessages();
+  }, [selectedSubject, setCurrentLesson, setTutorSystemPrompt, clearTutorMessages]);
 
   useEffect(() => {
     setQuizAnswers({});
