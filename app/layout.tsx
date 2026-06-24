@@ -8,7 +8,7 @@ const inter = Inter({ subsets: ["latin"] });
 export const metadata: Metadata = {
   title: "OffLearn — Offline-first learning in your browser",
   description:
-    "Offline curriculum and SAT/ACT prep in your browser (static PWA). Optional lesson help: local Gemma via MediaPipe/WebGPU, Transformers.js embeddings, Voy RAG — no backend, no data to third parties. Desktop only; mobile not supported.",
+    "Offline curriculum and SAT/ACT prep in your browser (static PWA). Optional lesson help: Gemma via MediaPipe/WebGPU when available, Transformers.js CPU fallback otherwise — no backend, no data to third parties.",
   manifest: "/manifest.json",
 };
 

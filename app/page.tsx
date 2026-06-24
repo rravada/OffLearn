@@ -2,7 +2,7 @@
 
 import { useEffect, useRef, useState, useCallback } from "react";
 import { useAppStore } from "@/lib/store/useAppStore";
-import { LLMSession, checkWebGPUSupport } from "@/lib/inference/mediapipe";
+import { getTutorEngine, selectEngineKind } from "@/lib/inference/engine";
 import { getMeta, setMeta, getAllProfiles } from "@/lib/db/indexeddb";
 import { LoadingScreen } from "@/components/LoadingScreen";
 import { WelcomeScreen } from "@/components/WelcomeScreen";
@@ -24,6 +24,7 @@ export default function Home() {
     setModelStatus,
     setModelProgress,
     setModelError,
+    setModelEngine,
     hasVisited,
     setHasVisited,
     appMode,
@@ -170,13 +171,11 @@ export default function Home() {
 
   useEffect(() => {
     if (modelInitStarted.current) return;
-    if (!checkWebGPUSupport()) {
-      setModelStatus("error");
-      setModelError(
-        "Your browser does not support WebGPU. Try Chrome 113+ on desktop."
-      );
-      return;
-    }
+
+    // Select GPU or CPU engine. This never hard-fails — CPU is the fallback
+    // for any device without WebGPU (no more "unsupported browser" dead-end).
+    const engineKind = selectEngineKind();
+    setModelEngine(engineKind);
 
     modelInitStarted.current = true;
     setModelStatus("loading");
@@ -210,11 +209,15 @@ export default function Home() {
         return;
       }
 
-      /** Worker fetches may not fill SW cache; prime from main thread so offline works right after first load. */
-      try {
-        await primeRemoteGemmaModelCacheIfNeeded();
-      } catch (e) {
-        console.warn("[OffLearn] Gemma cache prime skipped:", e);
+      // Gemma cache-priming is specific to the GPU path (.task file + SW).
+      // The CPU model is fetched directly from HuggingFace by Transformers.js
+      // and cached in its own Cache Storage — no priming needed.
+      if (engineKind === "gpu") {
+        try {
+          await primeRemoteGemmaModelCacheIfNeeded();
+        } catch (e) {
+          console.warn("[OffLearn] Gemma cache prime skipped:", e);
+        }
       }
 
       if (cancelled) {
@@ -222,7 +225,7 @@ export default function Home() {
         return;
       }
 
-      LLMSession.getInstance((pct) => {
+      getTutorEngine((pct) => {
         setModelProgress(pct);
       })
         .then(() => {
@@ -235,7 +238,7 @@ export default function Home() {
           console.error("Model init failed:", err);
           setModelStatus("error");
           setModelError(
-            err instanceof Error ? err.message : "Failed to finish setup"
+            err instanceof Error ? err.message : "Failed to set up lesson help"
           );
         })
         .finally(() => {
@@ -248,7 +251,7 @@ export default function Home() {
       clearInterval(progressInterval);
       modelInitStarted.current = false;
     };
-  }, [setModelStatus, setModelProgress, setModelError]);
+  }, [setModelStatus, setModelProgress, setModelError, setModelEngine]);
 
   const handleWelcomeDismiss = async () => {
     setShowWelcome(false);

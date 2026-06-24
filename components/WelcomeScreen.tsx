@@ -12,7 +12,7 @@ const FEATURES = [
     icon: WifiOff,
     title: "Runs 100% Offline",
     description:
-      "Courses and practice run entirely in your browser with WebGPU. No API keys, no servers.",
+      "Courses and practice run entirely in your browser. No API keys, no servers. Lesson help uses WebGPU where available, or a lighter CPU model otherwise.",
   },
   {
     icon: BookOpen,
@@ -72,8 +72,9 @@ export function WelcomeScreen({ onStart }: WelcomeScreenProps) {
         </button>
 
         <p className="text-xs text-le-text-hint">
-          Desktop browsers only. Mobile is not supported. Offline-first; your
-          study sessions stay on this device.
+          Desktop browsers recommended. Offline-first; your study sessions stay
+          on this device. Lesson help works best with WebGPU (Chrome 113+) but
+          falls back to a lighter CPU tutor on other browsers.
         </p>
       </div>
     </div>

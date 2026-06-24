@@ -47,6 +47,19 @@ export interface StoredMessage extends Message {
 
 export type ModelStatus = "idle" | "loading" | "ready" | "error";
 
+/** Which inference backend is active for the tutor. */
+export type EngineKind = "gpu" | "cpu";
+
+/** Shared interface both the GPU (MediaPipe) and CPU (Transformers.js) engines satisfy. */
+export interface InferenceEngine {
+  streamResponse(
+    messages: { role: "user" | "model"; content: string }[],
+    onChunk: (text: string, done: boolean) => void,
+    systemPrompt?: string
+  ): Promise<string>;
+  close(): void;
+}
+
 export type MasteryBadge = "Novice" | "Developing" | "Mastered";
 
 export function getMasteryBadge(score: number): MasteryBadge {

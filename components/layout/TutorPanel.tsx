@@ -3,7 +3,7 @@
 import { useRef, useEffect, useState, useCallback, useMemo } from "react";
 import { X, Send, Sparkles, RotateCcw } from "lucide-react";
 import { useAppStore } from "@/lib/store/useAppStore";
-import { LLMSession } from "@/lib/inference/mediapipe";
+import { getTutorEngine, closeTutorEngine } from "@/lib/inference/engine";
 import { retrieveLessonContext, GENERIC_TUTOR_PROMPT } from "@/lib/inference/tutorContext";
 import {
   createSession,
@@ -39,6 +39,7 @@ export function TutorPanel({ onSendOverride }: TutorPanelProps = {}) {
     appendTutorStreamingContent,
     modelStatus,
     modelError,
+    modelEngine,
     selectedSubject,
     currentLesson,
     activeProfileId,
@@ -124,9 +125,9 @@ export function TutorPanel({ onSendOverride }: TutorPanelProps = {}) {
   }, [contextKey, setCurrentSessionId, setTutorMessages, clearTutorMessages]);
 
   const handleNewConversation = useCallback(async () => {
-    // Destroy the in-memory LLM instance so the model context window is fully
-    // cleared. Model files remain in SW/local cache — no network requests are made.
-    LLMSession.closeInstance();
+    // Destroy the in-memory engine instance so the model context window is
+    // fully cleared. Model files remain cached — no network requests are made.
+    closeTutorEngine();
     if (currentSessionId) {
       await deleteSessionMessages(currentSessionId);
       await deleteSession(currentSessionId);
@@ -169,7 +170,7 @@ export function TutorPanel({ onSendOverride }: TutorPanelProps = {}) {
     setTutorStreamingContent("");
 
     try {
-      const session = await LLMSession.getInstance();
+      const session = await getTutorEngine();
 
       // Truncate to last 4 messages to stay within context window.
       // Full history is still shown in the UI — only the model input is trimmed.
@@ -247,6 +248,14 @@ export function TutorPanel({ onSendOverride }: TutorPanelProps = {}) {
           <span className="heading text-sm text-le-text">Lesson help</span>
           {modelStatus === "ready" && (
             <span className="h-2 w-2 rounded-full bg-le-green animate-pulse-dot" />
+          )}
+          {modelStatus === "ready" && modelEngine === "cpu" && (
+            <span
+              title="Running a lighter model on CPU — responses may be slower"
+              className="rounded px-1 py-0.5 text-[10px] font-medium text-le-text-hint bg-le-elevated border border-le-border"
+            >
+              Lite
+            </span>
           )}
         </div>
         <div className="flex items-center gap-1">
@@ -350,9 +359,9 @@ export function TutorPanel({ onSendOverride }: TutorPanelProps = {}) {
               modelStatus === "ready"
                 ? "Ask about this lesson…"
                 : modelStatus === "loading"
-                  ? "Type here — send when the model is ready…"
+                  ? "Type here — send when ready…"
                   : modelStatus === "error"
-                    ? "Help unavailable in this browser"
+                    ? "Lesson help unavailable — tap to retry?"
                     : "Ask about this lesson…"
             }
             readOnly={isTutorGenerating}
@@ -375,9 +384,12 @@ export function TutorPanel({ onSendOverride }: TutorPanelProps = {}) {
         </div>
         {modelStatus !== "ready" && (
           <p className="mt-2 px-0.5 text-xs leading-snug text-le-text-hint">
-            {modelStatus === "loading" && "Loading the help model — you can draft your message; Send stays off until ready."}
+            {modelStatus === "loading" &&
+              (modelEngine === "cpu"
+                ? "Downloading a lightweight model — this only runs once. You can draft your message; Send enables when ready."
+                : "Loading the help model — you can draft your message; Send stays off until ready.")}
             {modelStatus === "error" &&
-              (modelError ?? "WebGPU or model load failed. Try Chrome on desktop.")}
+              (modelError ?? "Could not load lesson help. Try refreshing the page.")}
             {modelStatus === "idle" && "Starting lesson help…"}
           </p>
         )}

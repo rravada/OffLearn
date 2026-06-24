@@ -2,6 +2,7 @@ import { create } from "zustand";
 import type {
   Message,
   ModelStatus,
+  EngineKind,
   AppMode,
   LessonData,
   TestQuestion,
@@ -11,6 +12,7 @@ interface AppState {
   modelStatus: ModelStatus;
   modelProgress: number;
   modelError: string | null;
+  modelEngine: EngineKind | null;
 
   hasVisited: boolean;
   appMode: AppMode;
@@ -47,6 +49,7 @@ interface AppState {
   setModelStatus: (status: ModelStatus) => void;
   setModelProgress: (progress: number) => void;
   setModelError: (error: string | null) => void;
+  setModelEngine: (engine: EngineKind | null) => void;
 
   setHasVisited: (v: boolean) => void;
   setAppMode: (mode: AppMode) => void;
@@ -82,6 +85,7 @@ export const useAppStore = create<AppState>((set) => ({
   modelStatus: "idle",
   modelProgress: 0,
   modelError: null,
+  modelEngine: null,
 
   hasVisited: false,
   appMode: "dashboard",
@@ -111,6 +115,7 @@ export const useAppStore = create<AppState>((set) => ({
   setModelStatus: (status) => set({ modelStatus: status }),
   setModelProgress: (progress) => set({ modelProgress: progress }),
   setModelError: (error) => set({ modelError: error }),
+  setModelEngine: (engine) => set({ modelEngine: engine }),
 
   setHasVisited: (v) => set({ hasVisited: v }),
   setAppMode: (mode) => set({ appMode: mode }),

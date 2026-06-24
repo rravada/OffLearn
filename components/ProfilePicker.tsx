@@ -43,6 +43,7 @@ export function ProfilePicker({
   const [manage, setManage] = useState(false);
   const modelStatus = useAppStore((s) => s.modelStatus);
   const modelProgress = useAppStore((s) => s.modelProgress);
+  const modelEngine = useAppStore((s) => s.modelEngine);
 
   // Never leave the user stranded in manage mode with no profiles and no
   // way to add one (the Manage/Done toggle hides at zero profiles).
@@ -228,7 +229,9 @@ export function ProfilePicker({
               <div className="flex w-full max-w-xs flex-col items-center gap-2">
                 <div className="flex items-center gap-2 text-xs text-le-text-secondary">
                   <Loader2 className="h-3.5 w-3.5 animate-spin text-le-accent" />
-                  Setting up the offline tutor… {Math.round(modelProgress)}%
+                  {modelEngine === "cpu"
+                    ? `Setting up a lighter offline tutor for this device… ${Math.round(modelProgress)}%`
+                    : `Setting up the offline tutor… ${Math.round(modelProgress)}%`}
                 </div>
                 <div className="h-1 w-full overflow-hidden rounded-full bg-le-surface">
                   <div
