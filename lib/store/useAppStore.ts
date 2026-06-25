@@ -9,6 +9,9 @@ import type {
 } from "@/types";
 
 interface AppState {
+  theme: "dark" | "light";
+  setTheme: (t: "dark" | "light") => void;
+
   modelStatus: ModelStatus;
   modelProgress: number;
   modelError: string | null;
@@ -82,6 +85,15 @@ interface AppState {
 }
 
 export const useAppStore = create<AppState>((set) => ({
+  theme: (typeof window !== "undefined"
+    ? (localStorage.getItem("offlearn-theme") as "dark" | "light") ?? "dark"
+    : "dark"),
+  setTheme: (t) => {
+    document.documentElement.setAttribute("data-theme", t);
+    try { localStorage.setItem("offlearn-theme", t); } catch (_) { /* noop */ }
+    set({ theme: t });
+  },
+
   modelStatus: "idle",
   modelProgress: 0,
   modelError: null,

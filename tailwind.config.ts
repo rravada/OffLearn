@@ -9,28 +9,44 @@ const config: Config = {
   theme: {
     extend: {
       fontFamily: {
-        sans: ["Inter", "system-ui", "sans-serif"],
+        sans: ["var(--font-sans)", "system-ui", "sans-serif"],
+        display: [
+          "var(--font-display)",
+          "var(--font-sans)",
+          "system-ui",
+          "sans-serif",
+        ],
       },
       letterSpacing: {
-        heading: "-0.02em",
-        label: "0.06em",
+        heading: "-0.025em",
+        label: "0.07em",
       },
       colors: {
-        "le-bg": "#0D1117",
-        "le-surface": "#161B27",
-        "le-elevated": "#1E2535",
-        "le-hover": "#252D40",
-        "le-accent": "#F0A500",
-        "le-accent-soft": "rgba(240,165,0,0.12)",
-        "le-mint": "#5EEAD4",
-        "le-violet": "#A78BFA",
-        "le-green": "#2ECC71",
-        "le-red": "#E74C3C",
-        "le-text": "#F0F2F5",
-        "le-text-secondary": "#8B92A5",
-        "le-text-hint": "#4A5168",
-        "le-border": "rgba(255,255,255,0.07)",
-        "le-border-strong": "rgba(255,255,255,0.14)",
+        // All le-* colors reference CSS custom properties so dark/light themes
+        // work by swapping the variable values — no class changes needed.
+        "le-bg": "rgb(var(--le-bg) / <alpha-value>)",
+        "le-surface": "rgb(var(--le-surface) / <alpha-value>)",
+        "le-elevated": "rgb(var(--le-elevated) / <alpha-value>)",
+        "le-hover": "rgb(var(--le-hover) / <alpha-value>)",
+        "le-accent": "rgb(var(--le-accent) / <alpha-value>)",
+        // Fixed-alpha convenience alias — used where the opacity never varies.
+        "le-accent-soft": "rgb(var(--le-accent) / 0.12)",
+        "le-mint": "rgb(var(--le-mint) / <alpha-value>)",
+        "le-violet": "rgb(var(--le-violet) / <alpha-value>)",
+        "le-green": "rgb(var(--le-green) / <alpha-value>)",
+        "le-red": "rgb(var(--le-red) / <alpha-value>)",
+        "le-text": "rgb(var(--le-text) / <alpha-value>)",
+        "le-text-secondary": "rgb(var(--le-text-secondary) / <alpha-value>)",
+        "le-text-hint": "rgb(var(--le-text-hint) / <alpha-value>)",
+        // Border colours flip between white-based (dark) and black-based (light).
+        "le-border": "rgb(var(--le-border-raw) / 0.07)",
+        "le-border-strong": "rgb(var(--le-border-raw) / 0.14)",
+      },
+      boxShadow: {
+        glow: "0 10px 30px -12px rgb(var(--le-accent) / 0.45)",
+        "glow-sm": "0 6px 18px -10px rgb(var(--le-accent) / 0.35)",
+        card: "0 1px 2px rgba(0,0,0,0.4), 0 8px 24px -16px rgba(0,0,0,0.7)",
+        "card-hover": "0 2px 4px rgba(0,0,0,0.35), 0 12px 32px -12px rgba(0,0,0,0.55)",
       },
       keyframes: {
         "slide-in-left": {
@@ -46,8 +62,16 @@ const config: Config = {
           "100%": { opacity: "1" },
         },
         "fade-in-up": {
-          "0%": { opacity: "0", transform: "translateY(8px)" },
+          "0%": { opacity: "0", transform: "translateY(10px)" },
           "100%": { opacity: "1", transform: "translateY(0)" },
+        },
+        "scale-in": {
+          "0%": { opacity: "0", transform: "scale(0.96)" },
+          "100%": { opacity: "1", transform: "scale(1)" },
+        },
+        float: {
+          "0%, 100%": { transform: "translateY(0)" },
+          "50%": { transform: "translateY(-6px)" },
         },
         "fade-out": {
           "0%": { opacity: "1" },
@@ -66,7 +90,10 @@ const config: Config = {
         "slide-in-left": "slide-in-left 0.3s ease-out",
         "slide-in-right": "slide-in-right 0.3s ease-out",
         "fade-in": "fade-in 0.3s ease-out",
-        "fade-in-up": "fade-in-up 0.3s ease-out",
+        "fade-in-up": "fade-in-up 0.35s ease-out",
+        "fade-in-up-slow": "fade-in-up 0.55s cubic-bezier(0.16,1,0.3,1)",
+        "scale-in": "scale-in 0.35s cubic-bezier(0.16,1,0.3,1)",
+        float: "float 5s ease-in-out infinite",
         "fade-out": "fade-out 0.4s ease-out forwards",
         "pulse-dot": "pulse-dot 2s ease-in-out infinite",
         "progress-fill": "progress-fill 2s ease-in-out infinite",

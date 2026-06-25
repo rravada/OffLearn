@@ -28,6 +28,7 @@ import { AssessmentView } from "@/components/views/AssessmentView";
 import { cn } from "@/lib/utils";
 import { buildLessonSystemPrompt, GENERIC_TUTOR_PROMPT } from "@/lib/inference/tutorContext";
 import { getSubjectIcon } from "@/lib/subjectIcons";
+import { getSubjectColor, subjectColorAlpha } from "@/lib/subjectColors";
 import {
   recordActivity,
   markLessonComplete,
@@ -467,40 +468,54 @@ export function LearnView({
     const sections = Array.isArray(data.sections) ? data.sections : [];
     return (
       <div className="flex w-full flex-col">
-        <div className="sticky top-0 z-20 border-b border-le-border bg-le-surface/95 px-8 py-4 backdrop-blur-sm">
+        <div className="sticky top-0 z-20 border-b border-le-border bg-le-surface/95 px-8 py-3.5 backdrop-blur-sm">
           <div className="flex items-center gap-3">
             <button
               type="button"
               onClick={goBack}
-              className="rounded-md p-1.5 text-le-text-secondary transition-colors hover:bg-le-hover hover:text-le-text"
+              className="rounded-lg p-1.5 text-le-text-secondary transition-colors hover:bg-le-hover hover:text-le-text"
             >
               <ArrowLeft className="h-4 w-4" />
             </button>
-            <div className="flex items-center gap-2 text-sm text-le-text-secondary">
-              <span>{subject.title}</span>
+            <div className="flex items-center gap-2 text-xs text-le-text-hint">
+              <span
+                className="font-medium"
+                style={{ color: getSubjectColor(subject.id) }}
+              >
+                {subject.title}
+              </span>
               <ChevronRight className="h-3 w-3" />
               <span>{unit.title}</span>
             </div>
+            <span className="ml-auto label-badge text-le-text-hint">
+              {lessonIdx + 1}/{totalLessons}
+            </span>
           </div>
-          <div className="mt-2 flex items-center gap-3">
-            <p className="label-badge text-le-accent">
-              Lesson {lessonIdx + 1} of {totalLessons}
-            </p>
-            <div className="h-1.5 flex-1 overflow-hidden rounded-full bg-le-elevated">
-              <div
-                className="h-full rounded-full bg-gradient-to-r from-le-mint/90 to-le-accent transition-all"
-                style={{ width: `${((lessonIdx + 1) / totalLessons) * 100}%` }}
-              />
-            </div>
+          <div className="mt-2.5 h-1 overflow-hidden rounded-full bg-le-elevated">
+            <div
+              className="h-full rounded-full transition-all duration-500"
+              style={{
+                width: `${((lessonIdx + 1) / totalLessons) * 100}%`,
+                backgroundColor: getSubjectColor(subject.id),
+              }}
+            />
           </div>
         </div>
 
-        <div className="px-8 pb-16 pt-6">
+        <div className="px-8 pb-16 pt-8">
           <div className="mx-auto max-w-[680px]">
-            <h1 ref={lessonTopRef} className="heading text-3xl text-le-text">
+            <div
+              className="mb-2 h-1 w-12 rounded-full"
+              style={{ backgroundColor: getSubjectColor(subject.id) }}
+            />
+            <h1
+              ref={lessonTopRef}
+              className="font-display font-bold text-le-text"
+              style={{ fontSize: "clamp(1.75rem, 3vw, 2.25rem)", lineHeight: 1.15, letterSpacing: "-0.03em" }}
+            >
               {data.title}
             </h1>
-            <div className="mt-2 flex items-center gap-4 text-sm text-le-text-secondary">
+            <div className="mt-3 flex items-center gap-4 text-sm text-le-text-secondary">
               <span className="flex items-center gap-1.5">
                 <Clock className="h-3.5 w-3.5" />
                 {data.duration}
@@ -508,12 +523,18 @@ export function LearnView({
             </div>
 
             {objectives.length > 0 && (
-              <div className="mt-6 rounded-lg border border-le-border bg-le-surface p-4">
-                <p className="label-badge mb-2 text-le-text-hint">Learning Objectives</p>
-                <ul className="space-y-1">
+              <div
+                className="mt-6 rounded-xl border px-5 py-4"
+                style={{
+                  borderColor: subjectColorAlpha(subject.id, 0.3),
+                  backgroundColor: subjectColorAlpha(subject.id, 0.06),
+                }}
+              >
+                <p className="label-badge mb-2.5 text-le-text-hint">Learning objectives</p>
+                <ul className="space-y-1.5">
                   {objectives.map((obj, i) => (
                     <li key={i} className="flex items-start gap-2 text-sm text-le-text-secondary">
-                      <span className="mt-0.5 text-le-accent">•</span>
+                      <span className="mt-1.5 h-1.5 w-1.5 flex-shrink-0 rounded-full" style={{ backgroundColor: getSubjectColor(subject.id) }} />
                       {obj}
                     </li>
                   ))}
@@ -536,13 +557,18 @@ export function LearnView({
                   );
                 }
                 if (section.type === "example") {
+                  const exColor = getSubjectColor(subject.id);
                   return (
                     <div
                       key={i}
-                      className="rounded-lg border-l-4 border-le-accent bg-le-surface/50 px-6 py-5"
+                      className="rounded-xl px-6 py-5"
+                      style={{
+                        borderLeft: `3px solid ${exColor}`,
+                        backgroundColor: subjectColorAlpha(subject.id, 0.07),
+                      }}
                     >
                       {section.heading && (
-                        <h3 className="heading mb-3 text-base text-le-accent">{section.heading}</h3>
+                        <h3 className="font-semibold mb-3 text-base" style={{ color: exColor }}>{section.heading}</h3>
                       )}
                       <div className="whitespace-pre-line font-mono text-sm leading-relaxed text-le-text/85">
                         {section.content}
@@ -551,12 +577,14 @@ export function LearnView({
                   );
                 }
                 if (section.type === "keypoint") {
+                  const kpColor = getSubjectColor(subject.id);
                   return (
                     <div
                       key={i}
-                      className="flex items-start gap-3 rounded-lg bg-le-accent-soft px-6 py-5"
+                      className="flex items-start gap-4 rounded-xl px-6 py-5"
+                      style={{ backgroundColor: subjectColorAlpha(subject.id, 0.1) }}
                     >
-                      <Key className="mt-0.5 h-5 w-5 flex-shrink-0 text-le-accent" />
+                      <Key className="mt-0.5 h-5 w-5 flex-shrink-0" style={{ color: kpColor }} />
                       <p className="text-[15px] font-semibold leading-relaxed text-le-text">
                         {section.content}
                       </p>
@@ -794,7 +822,7 @@ export function LearnView({
           <button
             type="button"
             onClick={openTutor}
-            className="fixed bottom-6 right-6 z-30 flex items-center gap-2 rounded-full bg-le-accent px-5 py-3 text-sm font-semibold text-le-bg shadow-lg shadow-le-accent/25 transition-all hover:brightness-110"
+            className="fixed bottom-6 right-6 z-30 flex items-center gap-2 rounded-full bg-le-accent px-5 py-3 text-sm font-semibold text-white shadow-glow transition-all hover:brightness-110"
           >
             <Sparkles className="h-4 w-4" />
             Get lesson help
@@ -807,14 +835,50 @@ export function LearnView({
   return (
     <div className="w-full px-8 py-8">
       <div className="mx-auto max-w-3xl">
-        <h1 className="heading text-2xl text-le-text">
-          {selectedSubject ? filteredSubjects[0]?.title : "All Subjects"}
-        </h1>
-        <p className="mt-1 text-sm text-le-text-secondary">
-          Start each unit from lesson 1, or open the list below to jump to another lesson.
-        </p>
 
-        <div className="relative mt-6">
+        {/* Subject header when a subject is selected */}
+        {selectedSubject && filteredSubjects[0] && (() => {
+          const SubjectHeaderGlyph = getSubjectIcon(selectedSubject);
+          const subjectColor = getSubjectColor(selectedSubject);
+          return (
+            <div
+              className="mb-8 flex items-center gap-4 rounded-2xl border px-6 py-5"
+              style={{
+                borderColor: `${subjectColor}40`,
+                background: `linear-gradient(135deg, ${subjectColorAlpha(selectedSubject, 0.08)} 0%, transparent 65%)`,
+              }}
+            >
+              <div
+                className="flex h-13 w-13 flex-shrink-0 items-center justify-center rounded-2xl"
+                style={{ backgroundColor: subjectColorAlpha(selectedSubject, 0.15), width: 52, height: 52 }}
+              >
+                <SubjectHeaderGlyph className="h-6 w-6" style={{ color: subjectColor }} />
+              </div>
+              <div>
+                <p className="text-xs font-semibold uppercase tracking-wider text-le-text-hint">Course</p>
+                <h1
+                  className="font-display font-bold text-2xl text-le-text"
+                  style={{ letterSpacing: "-0.025em" }}
+                >
+                  {filteredSubjects[0].title}
+                </h1>
+              </div>
+            </div>
+          );
+        })()}
+
+        {!selectedSubject && (
+          <div className="mb-6">
+            <h1 className="font-display font-bold text-2xl text-le-text" style={{ letterSpacing: "-0.025em" }}>
+              All Courses
+            </h1>
+            <p className="mt-1 text-sm text-le-text-secondary">
+              Select a subject from the sidebar, or browse all courses below.
+            </p>
+          </div>
+        )}
+
+        <div className="relative mt-2">
           <Search
             className="pointer-events-none absolute left-3.5 top-1/2 h-4 w-4 -translate-y-1/2 text-le-text-hint"
             aria-hidden
@@ -865,14 +929,20 @@ export function LearnView({
               const SubjectGlyph = getSubjectIcon(subject.id);
               return (
                 <div key={subject.id}>
-                  {!selectedSubject && (
-                    <h2 className="heading mb-4 flex items-center gap-2 text-lg text-le-text">
-                      <span className="flex h-8 w-8 items-center justify-center rounded-lg bg-le-accent-soft/80 ring-1 ring-le-mint/20">
-                        <SubjectGlyph className="h-4 w-4 text-le-mint" />
-                      </span>
-                      {subject.title}
-                    </h2>
-                  )}
+                  {!selectedSubject && (() => {
+                    const sColor = getSubjectColor(subject.id);
+                    return (
+                      <h2 className="heading mb-4 flex items-center gap-2.5 text-lg text-le-text">
+                        <span
+                          className="flex h-8 w-8 items-center justify-center rounded-lg flex-shrink-0"
+                          style={{ backgroundColor: subjectColorAlpha(subject.id, 0.15) }}
+                        >
+                          <SubjectGlyph className="h-4 w-4" style={{ color: sColor }} />
+                        </span>
+                        {subject.title}
+                      </h2>
+                    );
+                  })()}
                   {safeUnits(subject).map((unit) => {
                     const ul = safeLessons(unit);
                     const firstLesson = ul[0];
@@ -918,18 +988,17 @@ export function LearnView({
                             )}
                           >
                             <div
-                              className={cn(
-                                "flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-lg bg-gradient-to-br from-le-accent-soft to-le-mint/10 ring-1 ring-white/5"
-                              )}
+                              className="flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-xl"
+                              style={{ backgroundColor: subjectColorAlpha(subject.id, 0.15) }}
                             >
                               {isOpeningStart ? (
-                                <Loader2 className="h-5 w-5 animate-spin text-le-accent" />
+                                <Loader2 className="h-5 w-5 animate-spin" style={{ color: getSubjectColor(subject.id) }} />
                               ) : (
-                                <SubjectGlyph className="h-5 w-5 text-le-accent" />
+                                <SubjectGlyph className="h-5 w-5" style={{ color: getSubjectColor(subject.id) }} />
                               )}
                             </div>
                             <div className="flex-1">
-                              <p className="text-[11px] font-semibold uppercase tracking-label text-le-mint">
+                              <p className="text-[11px] font-semibold uppercase tracking-label" style={{ color: getSubjectColor(subject.id) }}>
                                 {isAssessmentId(firstLesson.id)
                                   ? firstLesson.id === "course-final"
                                     ? "Final Exam"

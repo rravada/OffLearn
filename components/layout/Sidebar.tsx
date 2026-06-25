@@ -2,16 +2,22 @@
 
 import { useMemo, useState, useEffect } from "react";
 import { createPortal } from "react-dom";
-import { BookOpen, ClipboardList, Download, X, LayoutDashboard, ChevronsUpDown } from "lucide-react";
+import {
+  BookOpen,
+  ClipboardList,
+  Download,
+  X,
+  LayoutDashboard,
+  ChevronsUpDown,
+  Moon,
+  Sun,
+} from "lucide-react";
 import { cn } from "@/lib/utils";
 import type { AppMode, CurriculumIndex, CurriculumSubject, Profile } from "@/types";
 import { getSubjectIcon } from "@/lib/subjectIcons";
+import { getSubjectColor } from "@/lib/subjectColors";
 import { BrandLogo } from "@/components/BrandLogo";
-
-function SubjectIcon({ subject }: { subject: CurriculumSubject }) {
-  const Icon = getSubjectIcon(subject.id);
-  return <Icon className="h-4 w-4 flex-shrink-0" />;
-}
+import { useAppStore } from "@/lib/store/useAppStore";
 
 interface SidebarProps {
   curriculum: CurriculumIndex | null;
@@ -23,6 +29,65 @@ interface SidebarProps {
   onSubjectChange: (subject: string) => void;
   onDashboard: () => void;
   onSwitchProfile: () => void;
+}
+
+const NAV_ITEMS = [
+  { id: "dashboard" as const, label: "My Progress", Icon: LayoutDashboard },
+  { id: "learn" as const, label: "Learn", Icon: BookOpen },
+  { id: "testprep" as const, label: "Test Prep", Icon: ClipboardList },
+];
+
+function SubjectRow({
+  subject,
+  isActive,
+  trackBadge,
+  trackColor,
+  onClick,
+}: {
+  subject: CurriculumSubject;
+  isActive: boolean;
+  trackBadge?: string;
+  trackColor?: string;
+  onClick: () => void;
+}) {
+  const Icon = getSubjectIcon(subject.id);
+  const color = getSubjectColor(subject.id);
+  return (
+    <button
+      type="button"
+      onClick={onClick}
+      className={cn(
+        "relative flex w-full items-center gap-2.5 rounded-lg px-3 py-2 text-left text-sm transition-colors",
+        isActive
+          ? "bg-le-elevated font-medium text-le-text"
+          : "text-le-text-secondary hover:bg-le-hover/70 hover:text-le-text"
+      )}
+    >
+      {isActive && (
+        <span
+          className="absolute left-0 inset-y-[6px] w-[3px] rounded-r-full"
+          style={{ backgroundColor: color }}
+        />
+      )}
+      <span
+        className="h-[7px] w-[7px] flex-shrink-0 rounded-full transition-opacity"
+        style={{ backgroundColor: color, opacity: isActive ? 1 : 0.65 }}
+      />
+      <Icon className="h-3.5 w-3.5 flex-shrink-0 opacity-80" />
+      <span className="min-w-0 flex-1 truncate">{subject.title}</span>
+      {trackBadge && trackColor && (
+        <span
+          className="flex-shrink-0 rounded px-1.5 py-0.5 text-[10px] font-semibold uppercase tracking-wide"
+          style={{
+            backgroundColor: `${trackColor}22`,
+            color: trackColor,
+          }}
+        >
+          {trackBadge}
+        </span>
+      )}
+    </button>
+  );
 }
 
 export function Sidebar({
@@ -40,6 +105,9 @@ export function Sidebar({
   const [mounted, setMounted] = useState(false);
   useEffect(() => { setMounted(true); }, []);
 
+  const theme = useAppStore((s) => s.theme);
+  const setTheme = useAppStore((s) => s.setTheme);
+
   const { standardSubjects, apSubjects, collegeSubjects } = useMemo(() => {
     const empty = {
       standardSubjects: [] as CurriculumSubject[],
@@ -48,7 +116,6 @@ export function Sidebar({
     };
     const list = curriculum?.subjects;
     if (!Array.isArray(list) || list.length === 0) return empty;
-
     const standard: CurriculumSubject[] = [];
     const ap: CurriculumSubject[] = [];
     const college: CurriculumSubject[] = [];
@@ -58,32 +125,43 @@ export function Sidebar({
       else if (s.track === "college-prep") college.push(s);
       else standard.push(s);
     }
-    return {
-      standardSubjects: standard,
-      apSubjects: ap,
-      collegeSubjects: college,
-    };
+    return { standardSubjects: standard, apSubjects: ap, collegeSubjects: college };
   }, [curriculum]);
 
+  const handleNavClick = (id: string) => {
+    if (id === "dashboard") onDashboard();
+    else if (id === "learn") onLearnHome();
+    else if (id === "testprep") onModeChange("testprep");
+  };
+
+  const isNavActive = (id: string) => {
+    if (id === "learn") return appMode === "learn";
+    if (id === "testprep") return appMode === "testprep";
+    if (id === "dashboard") return appMode === "dashboard";
+    return false;
+  };
+
   return (
-    <aside className="relative flex h-dvh w-[220px] flex-shrink-0 flex-col border-r border-le-border bg-le-surface/95 backdrop-blur-sm before:pointer-events-none before:absolute before:inset-y-0 before:right-0 before:w-px before:bg-gradient-to-b before:from-le-mint/25 before:via-le-accent/20 before:to-le-violet/25">
-      <div className="flex items-center gap-2.5 px-5 py-5">
+    <aside className="flex h-dvh w-[240px] flex-shrink-0 flex-col border-r border-le-border bg-le-surface">
+      {/* Brand */}
+      <div className="flex items-center gap-3 px-5 py-5">
         <BrandLogo size={30} />
-        <span className="heading bg-gradient-to-r from-le-mint via-le-accent to-le-violet bg-clip-text text-lg text-transparent">
+        <span className="font-display font-bold text-lg text-le-accent">
           OffLearn
         </span>
       </div>
 
+      {/* Profile chip */}
       {activeProfile && (
         <button
           type="button"
           onClick={onSwitchProfile}
           title="Switch profile"
-          className="mx-3 mb-3 flex items-center gap-2.5 rounded-lg border border-le-border bg-le-bg px-3 py-2 text-left transition-colors hover:bg-le-hover"
+          className="mx-3 mb-3 flex items-center gap-2.5 rounded-xl border border-le-border bg-le-elevated px-3 py-2.5 text-left transition-colors hover:bg-le-hover"
         >
           <span
-            className="flex h-7 w-7 flex-shrink-0 items-center justify-center rounded-full text-xs font-bold text-le-bg"
-            style={{ backgroundColor: activeProfile.color }}
+            className="flex h-7 w-7 flex-shrink-0 items-center justify-center rounded-full text-xs font-bold"
+            style={{ backgroundColor: activeProfile.color, color: "#0F0E0C" }}
           >
             {activeProfile.name.charAt(0).toUpperCase()}
           </span>
@@ -94,135 +172,97 @@ export function Sidebar({
         </button>
       )}
 
-      <nav className="flex flex-col gap-1 px-3">
-        <button
-          type="button"
-          onClick={onDashboard}
-          className={cn(
-            "flex items-center gap-3 rounded-lg px-3 py-2.5 text-sm font-medium transition-colors",
-            appMode === "dashboard"
-              ? "bg-le-accent-soft text-le-accent"
-              : "text-le-text-secondary hover:bg-le-hover hover:text-le-text"
-          )}
-        >
-          <LayoutDashboard className="h-4 w-4" />
-          My Progress
-        </button>
-        <button
-          type="button"
-          onClick={onLearnHome}
-          className={cn(
-            "flex items-center gap-3 rounded-lg px-3 py-2.5 text-sm font-medium transition-colors",
-            appMode === "learn"
-              ? "bg-le-accent-soft text-le-accent"
-              : "text-le-text-secondary hover:bg-le-hover hover:text-le-text"
-          )}
-        >
-          <BookOpen className="h-4 w-4" />
-          Learn
-        </button>
-        <button
-          type="button"
-          onClick={() => onModeChange("testprep")}
-          className={cn(
-            "flex items-center gap-3 rounded-lg px-3 py-2.5 text-sm font-medium transition-colors",
-            appMode === "testprep"
-              ? "bg-le-accent-soft text-le-accent"
-              : "text-le-text-secondary hover:bg-le-hover hover:text-le-text"
-          )}
-        >
-          <ClipboardList className="h-4 w-4" />
-          Test Prep
-        </button>
+      {/* Primary navigation */}
+      <nav className="flex flex-col gap-0.5 px-2 mb-3">
+        {NAV_ITEMS.map(({ id, label, Icon }) => {
+          const active = isNavActive(id);
+          return (
+            <button
+              key={id}
+              type="button"
+              onClick={() => handleNavClick(id)}
+              className={cn(
+                "relative flex items-center gap-2.5 rounded-lg px-3 py-2.5 text-sm font-medium transition-colors",
+                active
+                  ? "bg-le-accent/10 text-le-accent"
+                  : "text-le-text-secondary hover:bg-le-hover hover:text-le-text"
+              )}
+            >
+              {active && (
+                <span className="absolute left-0 inset-y-[7px] w-[3px] rounded-r-full bg-le-accent" />
+              )}
+              <Icon className="h-4 w-4" />
+              {label}
+            </button>
+          );
+        })}
       </nav>
 
-      <div className="mt-4 flex min-h-0 flex-1 flex-col overflow-hidden">
-        <div className="min-h-0 flex-1 overflow-y-auto px-3 pb-2">
+      <div className="mx-4 border-t border-le-border/60" />
+
+      {/* Course navigation */}
+      <div className="mt-2 flex min-h-0 flex-1 flex-col overflow-hidden">
+        <div className="min-h-0 flex-1 overflow-y-auto px-2 pb-2">
           {!curriculum && (
-            <p className="px-3 text-xs text-le-text-hint">Loading courses…</p>
+            <p className="px-3 py-2 text-xs text-le-text-hint">Loading courses…</p>
           )}
 
-          {curriculum && standardSubjects.length > 0 && (
-            <>
-              <p className="label-badge mb-2 px-3 text-le-text-hint">
-                Standard courses
+          {standardSubjects.length > 0 && (
+            <div className="mb-1">
+              <p className="label-badge mb-1.5 flex items-center gap-1.5 px-3 text-le-text-hint">
+                <span className="h-[7px] w-[7px] flex-shrink-0 rounded-full bg-le-mint" />
+                Standard
               </p>
-              <div className="flex flex-col gap-0.5">
-                {standardSubjects.map((subj) => (
-                  <button
-                    key={subj.id}
-                    type="button"
-                    onClick={() => onSubjectChange(subj.id)}
-                    className={cn(
-                      "flex w-full items-center gap-3 rounded-lg px-3 py-2 text-left text-sm transition-colors",
-                      selectedSubject === subj.id && appMode === "learn"
-                        ? "bg-le-hover font-medium text-le-text"
-                        : "text-le-text-secondary hover:bg-le-hover/50 hover:text-le-text"
-                    )}
-                  >
-                    <SubjectIcon subject={subj} />
-                    <span className="truncate">{subj.title}</span>
-                  </button>
-                ))}
-              </div>
-            </>
+              {standardSubjects.map((subj) => (
+                <SubjectRow
+                  key={subj.id}
+                  subject={subj}
+                  isActive={selectedSubject === subj.id && appMode === "learn"}
+                  onClick={() => onSubjectChange(subj.id)}
+                />
+              ))}
+            </div>
           )}
 
-          {curriculum && apSubjects.length > 0 && (
+          {apSubjects.length > 0 && (
             <>
-              <div className="my-3 border-t border-le-border/80" />
-              <p className="label-badge mb-2 px-3 text-le-text-hint">
-                Advanced Placement
-              </p>
-              <div className="flex flex-col gap-0.5">
+              <div className="my-2.5 border-t border-le-border/50" />
+              <div className="mb-1">
+                <p className="label-badge mb-1.5 flex items-center gap-1.5 px-3 text-le-text-hint">
+                  <span className="h-[7px] w-[7px] flex-shrink-0 rounded-full bg-le-violet" />
+                  Advanced Placement
+                </p>
                 {apSubjects.map((subj) => (
-                  <button
+                  <SubjectRow
                     key={subj.id}
-                    type="button"
+                    subject={subj}
+                    isActive={selectedSubject === subj.id && appMode === "learn"}
+                    trackBadge="AP"
+                    trackColor="#9158F3"
                     onClick={() => onSubjectChange(subj.id)}
-                    className={cn(
-                      "flex w-full items-center gap-3 rounded-lg px-3 py-2 text-left text-sm transition-colors",
-                      selectedSubject === subj.id && appMode === "learn"
-                        ? "bg-le-hover font-medium text-le-text"
-                        : "text-le-text-secondary hover:bg-le-hover/50 hover:text-le-text"
-                    )}
-                  >
-                    <SubjectIcon subject={subj} />
-                    <span className="min-w-0 flex-1 truncate">{subj.title}</span>
-                    <span className="flex-shrink-0 rounded bg-amber-500/15 px-1.5 py-0.5 text-[10px] font-semibold uppercase tracking-wide text-amber-600 dark:text-amber-400">
-                      AP
-                    </span>
-                  </button>
+                  />
                 ))}
               </div>
             </>
           )}
 
-          {curriculum && collegeSubjects.length > 0 && (
+          {collegeSubjects.length > 0 && (
             <>
-              <div className="my-3 border-t border-le-border/80" />
-              <p className="label-badge mb-2 px-3 text-le-text-hint">
-                College prep
-              </p>
-              <div className="flex flex-col gap-0.5">
+              <div className="my-2.5 border-t border-le-border/50" />
+              <div className="mb-1">
+                <p className="label-badge mb-1.5 flex items-center gap-1.5 px-3 text-le-text-hint">
+                  <span className="h-[7px] w-[7px] flex-shrink-0 rounded-full bg-le-accent" />
+                  College prep
+                </p>
                 {collegeSubjects.map((subj) => (
-                  <button
+                  <SubjectRow
                     key={subj.id}
-                    type="button"
+                    subject={subj}
+                    isActive={selectedSubject === subj.id && appMode === "learn"}
+                    trackBadge="CP"
+                    trackColor="#60A5FA"
                     onClick={() => onSubjectChange(subj.id)}
-                    className={cn(
-                      "flex w-full items-center gap-2 rounded-lg px-3 py-2 text-left text-sm transition-colors",
-                      selectedSubject === subj.id && appMode === "learn"
-                        ? "bg-le-hover font-medium text-le-text"
-                        : "text-le-text-secondary hover:bg-le-hover/50 hover:text-le-text"
-                    )}
-                  >
-                    <SubjectIcon subject={subj} />
-                    <span className="min-w-0 flex-1 truncate">{subj.title}</span>
-                    <span className="flex-shrink-0 rounded bg-amber-500/15 px-1.5 py-0.5 text-[10px] font-semibold uppercase tracking-wide text-amber-600 dark:text-amber-400">
-                      CP
-                    </span>
-                  </button>
+                  />
                 ))}
               </div>
             </>
@@ -230,71 +270,75 @@ export function Sidebar({
         </div>
       </div>
 
-      <button
-        type="button"
-        onClick={() => setShowExportModal(true)}
-        className="mx-3 mb-2 flex w-[calc(100%-1.5rem)] items-center gap-2 rounded-lg border border-le-border bg-le-bg px-3 py-2.5 text-xs font-medium text-le-text-secondary transition-colors hover:bg-le-hover hover:text-le-text"
-      >
-        <Download className="h-3.5 w-3.5 flex-shrink-0" />
-        Export for offline
-      </button>
-
-      <div className="mx-3 mb-4 flex flex-shrink-0 items-center gap-2 rounded-lg border border-le-border bg-le-bg px-3 py-2.5">
-        <span className="h-2 w-2 animate-pulse-dot rounded-full bg-le-green" />
-        <span className="text-xs font-medium text-le-text-secondary">
-          Studying offline
-        </span>
+      {/* Footer */}
+      <div className="px-3 pb-4 pt-2 space-y-1 border-t border-le-border/40">
+        <button
+          type="button"
+          onClick={() => setShowExportModal(true)}
+          className="flex w-full items-center gap-2 rounded-lg px-3 py-2.5 text-xs font-medium text-le-text-secondary transition-colors hover:bg-le-hover hover:text-le-text"
+        >
+          <Download className="h-3.5 w-3.5 flex-shrink-0" />
+          Export for offline
+        </button>
+        <button
+          type="button"
+          onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
+          className="flex w-full items-center gap-2 rounded-lg px-3 py-2.5 text-xs font-medium text-le-text-secondary transition-colors hover:bg-le-hover hover:text-le-text"
+          aria-label="Toggle theme"
+        >
+          {theme === "dark" ? (
+            <Sun className="h-3.5 w-3.5 flex-shrink-0" />
+          ) : (
+            <Moon className="h-3.5 w-3.5 flex-shrink-0" />
+          )}
+          {theme === "dark" ? "Light mode" : "Dark mode"}
+        </button>
+        <div className="flex items-center gap-2 px-3 py-1.5">
+          <span className="h-[7px] w-[7px] animate-pulse-dot rounded-full bg-le-green flex-shrink-0" />
+          <span className="text-xs text-le-text-hint">Studying offline</span>
+        </div>
       </div>
 
       {mounted &&
         showExportModal &&
         createPortal(
           <div
-            className="fixed inset-0 z-50 flex items-center justify-center bg-black/60 backdrop-blur-sm"
+            className="fixed inset-0 z-50 flex items-center justify-center bg-black/70 backdrop-blur-sm"
             onClick={() => setShowExportModal(false)}
           >
             <div
-              className="relative mx-4 w-full max-w-md rounded-xl border border-le-border bg-le-surface p-6 shadow-2xl"
+              className="relative mx-4 w-full max-w-md rounded-2xl border border-le-border bg-le-surface p-6 shadow-2xl"
               onClick={(e) => e.stopPropagation()}
             >
               <button
                 type="button"
                 onClick={() => setShowExportModal(false)}
-                className="absolute right-4 top-4 rounded-md p-1 text-le-text-hint transition-colors hover:bg-le-hover hover:text-le-text"
+                className="absolute right-4 top-4 rounded-lg p-1.5 text-le-text-hint transition-colors hover:bg-le-hover hover:text-le-text"
                 aria-label="Close"
               >
                 <X className="h-4 w-4" />
               </button>
-
-              <div className="mb-4 flex items-center gap-2.5">
-                <Download className="h-5 w-5 flex-shrink-0 text-le-accent" />
-                <h2 className="text-base font-semibold text-le-text">
-                  Portable and Offline-Ready
-                </h2>
+              <div className="mb-4 flex items-center gap-3">
+                <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-le-accent/10">
+                  <Download className="h-5 w-5 text-le-accent" />
+                </div>
+                <h2 className="heading text-base text-le-text">Portable &amp; Offline-Ready</h2>
               </div>
-
-              <p className="mb-3 text-sm text-le-text-secondary">
-                OffLearn can be packaged into a single portable file containing
-                the entire application and the on-device AI tutor model,
-                everything needed to run completely offline.
+              <p className="mb-3 text-sm leading-relaxed text-le-text-secondary">
+                OffLearn can be packaged into a single portable file — the full
+                app plus the on-device AI tutor — ready to run completely offline.
               </p>
-
-              <p className="mb-3 text-sm text-le-text-secondary">
-                This makes OffLearn deployable to schools with no internet
-                access. The package can be distributed via USB drives and run on
-                any school computer with zero setup beyond unzipping and
-                double-clicking.
+              <p className="mb-3 text-sm leading-relaxed text-le-text-secondary">
+                Distribute via USB to schools with no internet. Unzip and
+                double-click — zero setup required.
               </p>
-
-              <p className="text-sm text-le-text-secondary">
-                Built for districts where reliable connectivity can&apos;t be
-                assumed.
+              <p className="text-sm leading-relaxed text-le-text-secondary">
+                Built for districts where reliable connectivity can&apos;t be assumed.
               </p>
-
               <button
                 type="button"
                 onClick={() => setShowExportModal(false)}
-                className="mt-5 w-full rounded-lg bg-le-accent px-4 py-2.5 text-sm font-medium text-white transition-opacity hover:opacity-90"
+                className="mt-5 w-full rounded-xl bg-le-accent px-4 py-2.5 text-sm font-semibold text-white transition-all hover:brightness-110"
               >
                 Got it
               </button>

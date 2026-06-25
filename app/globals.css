@@ -2,9 +2,54 @@
 @tailwind components;
 @tailwind utilities;
 
+/* ─── Design token CSS custom properties ──────────────────────────────────── */
+/* All values are space-separated RGB triplets so Tailwind's alpha modifiers   */
+/* (e.g. bg-le-accent/10) resolve correctly via rgb(var(--X) / alpha).         */
+
+:root {
+  /* Dark theme (default) */
+  --le-bg: 15 14 12;
+  --le-surface: 27 25 23;
+  --le-elevated: 35 31 28;
+  --le-hover: 44 41 37;
+
+  --le-accent: 96 165 250;        /* blue-400  #60A5FA */
+  --le-mint: 13 204 170;          /* #0DCCAA  */
+  --le-violet: 145 88 243;        /* #9158F3  */
+  --le-green: 74 222 128;         /* green-400 #4ADE80 */
+  --le-red: 239 68 68;            /* red-500   #EF4444 */
+
+  --le-text: 240 237 232;
+  --le-text-secondary: 158 150 144;
+  --le-text-hint: 106 100 96;
+
+  /* Border base colour flips dark ↔ light */
+  --le-border-raw: 255 255 255;
+}
+
+[data-theme="light"] {
+  --le-bg: 248 247 244;
+  --le-surface: 255 255 255;
+  --le-elevated: 240 238 233;
+  --le-hover: 229 226 219;
+
+  --le-accent: 37 99 235;         /* blue-600  #2563EB */
+  --le-mint: 11 138 116;          /* #0B8A74 — darker for light-bg contrast */
+  --le-violet: 124 58 237;        /* violet-600 #7C3AED */
+  --le-green: 22 163 74;          /* green-600  #16A34A */
+  --le-red: 220 38 38;            /* red-600    #DC2626 */
+
+  --le-text: 26 25 23;
+  --le-text-secondary: 87 83 78;
+  --le-text-hint: 168 162 158;
+
+  --le-border-raw: 0 0 0;
+}
+
+/* ─── Base layer ──────────────────────────────────────────────────────────── */
 @layer base {
   * {
-    border-color: rgba(255, 255, 255, 0.07);
+    border-color: rgb(var(--le-border-raw) / 0.07);
   }
 
   html {
@@ -15,36 +60,40 @@
     @apply bg-le-bg font-sans text-le-text antialiased;
   }
 
+  /* App shell background — violet glow in dark, clean in light */
   .le-app-shell {
-    background-color: #0d1117;
-    background-image:
-      radial-gradient(ellipse 90% 70% at 8% -5%, rgba(94, 234, 212, 0.09), transparent 52%),
-      radial-gradient(ellipse 70% 55% at 92% 5%, rgba(167, 139, 250, 0.08), transparent 48%),
-      radial-gradient(ellipse 60% 45% at 50% 105%, rgba(240, 165, 0, 0.07), transparent 55%),
-      linear-gradient(180deg, rgba(22, 27, 39, 0.4) 0%, transparent 35%);
+    background-color: rgb(var(--le-bg));
+    background-image: radial-gradient(
+      ellipse 80% 35% at 50% -5%,
+      rgb(var(--le-violet) / 0.07),
+      transparent
+    );
   }
 
-  ::-webkit-scrollbar {
-    width: 6px;
+  [data-theme="light"] .le-app-shell {
+    background-image: radial-gradient(
+      ellipse 70% 25% at 50% -5%,
+      rgb(var(--le-accent) / 0.04),
+      transparent
+    );
   }
 
-  ::-webkit-scrollbar-track {
-    background: transparent;
-  }
-
+  /* Scrollbars */
+  ::-webkit-scrollbar { width: 5px; }
+  ::-webkit-scrollbar-track { background: transparent; }
   ::-webkit-scrollbar-thumb {
-    background: rgba(255, 255, 255, 0.1);
+    background: rgb(var(--le-border-raw) / 0.09);
     border-radius: 3px;
   }
-
   ::-webkit-scrollbar-thumb:hover {
-    background: rgba(255, 255, 255, 0.2);
+    background: rgb(var(--le-border-raw) / 0.18);
   }
 }
 
+/* ─── Component utilities ─────────────────────────────────────────────────── */
 @layer components {
   .heading {
-    @apply font-semibold tracking-heading;
+    @apply font-display font-bold tracking-heading;
   }
 
   .label-badge {
@@ -54,32 +103,40 @@
   .lesson-prose {
     @apply text-[17px] leading-[1.85] max-w-[680px];
   }
+
+  .subject-card {
+    @apply relative flex flex-col rounded-2xl border border-le-border bg-le-surface
+           transition-all duration-200 cursor-pointer overflow-hidden;
+  }
+
+  .subject-card:hover {
+    @apply border-le-border-strong bg-le-elevated shadow-card-hover;
+  }
 }
 
+/* ─── Skeleton shimmer ────────────────────────────────────────────────────── */
 @keyframes shimmer {
-  0% {
-    background-position: -200% 0;
-  }
-  100% {
-    background-position: 200% 0;
-  }
+  0% { background-position: -200% 0; }
+  100% { background-position: 200% 0; }
 }
 
 .skeleton {
   background: linear-gradient(
     90deg,
-    #161B27 25%,
-    #1E2535 50%,
-    #161B27 75%
+    rgb(var(--le-surface)) 25%,
+    rgb(var(--le-elevated)) 50%,
+    rgb(var(--le-surface)) 75%
   );
   background-size: 200% 100%;
   animation: shimmer 1.5s ease-in-out infinite;
 }
 
+/* ─── Progress bar glow ───────────────────────────────────────────────────── */
 .progress-bar-glow {
-  box-shadow: 0 0 12px rgba(240, 165, 0, 0.4);
+  box-shadow: 0 0 12px rgb(var(--le-accent) / 0.35);
 }
 
+/* ─── Celebrate pulse ─────────────────────────────────────────────────────── */
 @keyframes celebrate {
   0% { transform: scale(1); }
   50% { transform: scale(1.05); }

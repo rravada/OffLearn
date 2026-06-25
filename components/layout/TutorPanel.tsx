@@ -242,10 +242,12 @@ export function TutorPanel({ onSendOverride }: TutorPanelProps = {}) {
 
   return (
     <aside className="flex h-dvh w-[320px] flex-shrink-0 flex-col border-l border-le-border bg-le-surface animate-slide-in-right">
-      <div className="flex items-center justify-between border-b border-le-border px-4 py-3">
+      <div className="flex items-center justify-between border-b border-le-border px-4 py-3.5">
         <div className="flex items-center gap-2">
-          <Sparkles className="h-4 w-4 text-le-accent" />
-          <span className="heading text-sm text-le-text">Lesson help</span>
+          <div className="flex h-7 w-7 items-center justify-center rounded-lg bg-le-accent/12">
+            <Sparkles className="h-3.5 w-3.5 text-le-accent" />
+          </div>
+          <span className="font-semibold text-sm text-le-text">Lesson help</span>
           {modelStatus === "ready" && (
             <span className="h-2 w-2 rounded-full bg-le-green animate-pulse-dot" />
           )}
@@ -280,10 +282,13 @@ export function TutorPanel({ onSendOverride }: TutorPanelProps = {}) {
 
       <div ref={scrollRef} className="flex-1 overflow-y-auto px-4 py-4">
         {tutorMessages.length === 0 && !tutorStreamingContent && (
-          <div className="flex flex-col items-center justify-center py-12 text-center">
-            <Sparkles className="mb-3 h-8 w-8 text-le-text-hint" />
-            <p className="text-sm text-le-text-secondary">
-              Ask me anything about this lesson.
+          <div className="flex flex-col items-center justify-center py-14 text-center px-4">
+            <div className="mb-4 flex h-14 w-14 items-center justify-center rounded-2xl bg-le-accent/10">
+              <Sparkles className="h-6 w-6 text-le-accent" />
+            </div>
+            <p className="font-semibold text-sm text-le-text">Ask about this lesson</p>
+            <p className="mt-1 text-xs text-le-text-secondary leading-relaxed">
+              I can explain concepts, work through examples, or answer questions about what you just read.
             </p>
           </div>
         )}
@@ -293,10 +298,10 @@ export function TutorPanel({ onSendOverride }: TutorPanelProps = {}) {
               <div
                 key={msg.id}
                 className={cn(
-                  "rounded-lg px-3 py-2.5 text-sm leading-relaxed tabular-nums",
+                  "rounded-xl px-3.5 py-2.5 text-sm leading-relaxed",
                   msg.role === "user"
-                    ? "ml-8 bg-le-accent/15 text-le-text"
-                    : "mr-4 bg-le-elevated text-le-text"
+                    ? "ml-6 bg-le-accent/15 text-le-text"
+                    : "mr-2 bg-le-elevated text-le-text"
                 )}
               >
                 {msg.content}
